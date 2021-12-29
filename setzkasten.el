@@ -1,4 +1,5 @@
-;;;; code snippet helper
+;;;; code snippet helper, unrelated to setzkasten functionality
+;;;; TODO find a better place for this
 
 (defun jk/insert-slot (name)
   (interactive "MSlot name: ")
@@ -76,7 +77,13 @@
    (width-tail :initarg :width-tail
 	       :initform 1.2
 	       :accessor width-tail
-	       :documentation "Width of the note stem at the end of the stem, in proportion to its width at the note head."))
+	       :documentation "Width of the note stem at the end of the stem, in proportion to its width at the note head.")
+   (flag-thickness :initarg :flag-thickness
+		   :initform nil
+		   :accessor flag-thickness
+		   :documentation "Stroke thickness for flag. If nil, no flag will be produced.")
+   ;; TODO more flag parameters
+   )
   "Parameters for the creation of note stems.")
 
 (defclass setzkasten/rest ()
@@ -166,19 +173,21 @@
 		     :documentation "Length of the two short legs, in proportion to the space between two staff lines."))
   "Parameters for the creation of c-clefs.")
 
+(defclass setzkasten/g-clef ()
+  ;; TODO
+  ()
+  "Parameters for the creation of g-clefs.")
+
 (defclass setzkasten/barline ()
   ((overhead :initarg :overhead
 	     :initform 0.2
 	     :accessor overhead
 	     :documentation "Overhead length above and below staff, in proportion to the space between two staff lines.")
-   (double-distance :initarg :double-distance
-		    :initform nil
-		    :accessor double-distance
-		    :documentation "Horizontal distance between the two lines in case of a double barline. If nil, a single barline will be produced."))
+   (thickness :initarg :thickness
+	      :initform 2
+	      :accessor thickness
+	      :documentation "Stroke thickness."))
   "Parameters for the creation of bar lines.")
-
-
-
 
 
 ;;;; containers to group components into types
@@ -188,13 +197,24 @@
 	       :initform 35
 	       :accessor type-width
 	       :documentation "Width of type.")
-   (staff-instance :initarg :staff-instance
+   (filename :initarg :filename
+	     :initform "blank-type"
+	     :accessor filename
+	     :documentation "String that is used as main part of the file name for writing the SVG data to disk."))
+  "Specification of an empty type, only holding the meta information for the creation of SVG data.")
+
+(defclass setzkasten/type-staff (setzkasten/type)
+  ((staff-instance :initarg :staff-instance
 		   :initform nil
 		   :accessor staff-instance
-		   :documentation "Instance of setzkasten/staff. If nil, an empty type will be produced."))
-  "Specification of a type containing only staff lines.")
+		   :documentation "Instance of setzkasten/staff. If nil, an empty type will be produced.")
+   (type-instance :initarg :type-instance
+		  :initform nil
+		  :accessor type-instance
+		  :documentation "Instance of setzkasten/type"))
+  "Specification for the creation of staff lines, either to be used as a blank type, or to be combined with other typographical elements (subclasses of setzkasten/staff).")
 
-(defclass setzkasten/type-notehead (setzkasten/type)
+(defclass setzkasten/type-notehead (setzkasten/type-staff)
   ((notehead-position :initarg :notehead-position
 		      :initform 5
 		      :accessor notehead-position
@@ -207,13 +227,17 @@
 		  :initform nil
 		  :accessor stem-instance
 		  :documentation "Instance of setzkasten/stem. If nil, no stem will be generated.")
+   (dot-alignment :initarg :dot-alignment
+		  :initform 'center
+		  :accessor dot-alignment
+		  :documentation "'center for centered above, 'left for flush above the left edge of the notehead, 'right for flush above the right edge of the notehead. Left and  right are used for enharmonic ligatures.")
    (dot-instance :initarg :dot-instance
 		 :initform nil
 		 :accessor dot-instance
 		 :documentation "Instance of setzkasten/dot. If nil, no dot will be generated."))
   "Specification of a type containing a notehead, an optional stem and an optional (enharmonic) dot above the notehead.")
 
-(defclass setzkasten/type-rest (setzkasten/type)
+(defclass setzkasten/type-rest (setzkasten/type-staff)
   ((rest-position :initarg :rest-position
 		  :initform 5
 		  :accessor rest-position
@@ -224,7 +248,7 @@
 		  :documentation "Instance of setzkasten/rest. If nil, an empty staff type will be produced."))
   "Specification of a type containing a rest.")
 
-(defclass setzkasten/type-sharp (setzkasten/type)
+(defclass setzkasten/type-sharp (setzkasten/type-staff)
   ((sharp-position :initarg :sharp-position
 		   :initform 5
 		   :accessor sharp-position
@@ -235,7 +259,58 @@
 		   :documentation "Instance of setzkasten/sharp. If nil, an empty staff type will be produced."))
   "Specification of a type containing a sharp.")
 
+(defclass setzkasten/type-flat (setzkasten/type-staff)
+  ((flat-position :initarg :flat-position
+		  :initform 5
+		  :accessor flat-position
+		  :documentation "Position of the flat within the staff.")
+   (second-flat-position :initarg :second-flat-position
+			 :initform nil
+			 :accessor second-flat-position
+			 :documentation "Position of an optional second flat. If nil, only one flat will be produced.")
+   (flat-instance :initarg :flat-instance
+		  :initform nil
+		  :accessor flat-instance
+		  :documentation "Instance of setzkasten/flat. If nil, an empty staff type will be produced."))
+  "Specification of a type containing one or two flats.")
 
+(defclass setzkasten/type-clef (setzkasten/type-staff)
+  ((clef-position :initarg :clef-position
+		  :initform 5
+		  :accessor clef-position
+		  :documentation "Position of the clef.")
+   (clef-instance :initarg :clef-instance
+		  :initform nil
+		  :accessor clef-instance
+		  :documentation "Instance of setzkasten/c-clef or setzkasten/g-clef. In nil, an empty staff will be produced."))
+  "Specification of a type containing a c- or g-clef.")
+
+(defclass setzkasten/type-barline (setzkasten/type-staff)
+  ((double-distance :initarg :double-distance
+		    :initform nil
+		    :accessor double-distance
+		    :documentation "Horizontal distance between the two lines in case of a double barline. If nil, a single barline will be produced.")
+   (barline-instance :initarg :barline-instance
+		     :initform nil
+		     :accessor barline-instance
+		     :documentation "Instance of setzkasten/barline. If nil, an empty staff will be produced.")
+   (dot-distance :initarg :dot-distance
+		 :initform nil
+		 :accessor dot-distance
+		 :documentation "Distance between barline and dots.")
+   (number-of-dots :initarg :number-of-dots
+		   :initform 0
+		   :accessor number-of-dots
+		   :documentation "Number of dots, left or right of the barline(s). 0, 2 or 4 are accepted.")
+   (dot-placement :initarg :dot-placement
+		  :initform nil
+		  :accessor dot-placement
+		  :documentation "'right for only right of barline(s), 'left for only left of barline(s), or 'both.")
+   (dot-instance :initarg :dot-instance
+		 :initform nil
+		 :accessor dot-instance
+		 :documentation "Instance of setzkasten/dot, optional."))
+  "Specification of a type containig a singe or double barline, with optional two or four dots on one or both sides.")
 
 
 
@@ -244,7 +319,7 @@
 (cl-defgeneric cast (setzkasten/type)
   "Creates SVG files for any sort of type by calling the :around-method to create and close the SVG context and the applicable methods to generate the SVG paths of the types' components.")
 
-(setq setzkasten/tmp-image nil)
+(defvar setzkasten/tmp-image nil "Used to temporarily collect SVG fragments.")
 
 (cl-defmethod cast :around ((type-generic setzkasten/type))
   "Main casting method, wrapping all other casting methods for the components of this type."
@@ -255,11 +330,13 @@
   (insert "\n\n")
   (svg-print setzkasten/tmp-image))
 
-(cl-defmethod cast ((type-blank setzkasten/type))
+(cl-defmethod cast ((type-blank setzkasten/type-staff))
+  "Generates SVG data for staff lines."
   (insert "\nCasting " (format "%d" (number-of-lines (staff-instance type-blank))) " lines.")
   (svg-line setzkasten/tmp-image 0 0 10 10))
 
 (cl-defmethod cast ((type-notehead setzkasten/type-notehead))
+  "Generates SVG data for a notehead with optional stem and optional enharmonic dot above it."
   (insert "\nCasting notehead.")
   (svg-line setzkasten/tmp-image 0 0 10 10)
   (when (stem-instance type-notehead)
@@ -271,6 +348,7 @@
   (cl-call-next-method))
 
 (cl-defmethod cast ((type-rest setzkasten/type-rest))
+  "Generates SVG data for a rest."
   (insert "\nCasting rest.")
   (svg-line setzkasten/tmp-image 0 0 10 10)
   (cl-call-next-method))
@@ -280,7 +358,7 @@
 
 ;;;; code to parse definitions of typographical components (font parameters) and definitions of types. here the calling of the casting methods is issued. the output are SVG files, one for each type.
 
-;; under construction, will eventually be a macro to process font and types data, defined by the typesetter.
+;; under construction, will eventually be a macro to process font and types data, defined by the typesetting person.
 
 
 (defun generate-kasten ()
@@ -291,10 +369,10 @@
 	(staff (setzkasten/staff))
 	(rest-hanging (setzkasten/rest))
 	(dot-enharmonic (setzkasten/dot)))
-    (let ((blank-a (setzkasten/type :width 17
-				    :staff-instance staff))
-	  (blank-b (setzkasten/type :width 35
-				    :staff-instance staff))
+    (let ((blank-a (setzkasten/type-staff :width 17
+					  :staff-instance staff))
+	  (blank-b (setzkasten/type-staff :width 35
+					  :staff-instance staff))
 	  (minima-a (setzkasten/type-notehead :width 28
 					      :staff-instance staff
 					      :notehead-instance notehead-oblique
