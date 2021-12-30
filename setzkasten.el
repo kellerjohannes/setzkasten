@@ -393,6 +393,7 @@
   (let ((notehead-oblique (setzkasten/notehead))
 	(notehead-square (setzkasten/notehead))
 	(stem-minima (setzkasten/stem))
+	(flag-croma (setzkasten/flag))
 	(stem-longa (setzkasten/stem))
 	(staff (setzkasten/staff))
 	(rest-hanging (setzkasten/rest))
@@ -401,12 +402,13 @@
 					  :staff-instance staff))
 	  (blank-b (setzkasten/type-staff :width 35
 					  :staff-instance staff))
-	  (minima-a (setzkasten/type-notehead :width 28
-					      :staff-instance staff
-					      :notehead-instance notehead-oblique
-					      :notehead-position 0
-					      :stem-instance stem-minima
-					      :dot-instance dot-enharmonic))
+	  (minima-a (setzkasten/type-notehead-flagged :width 28
+						      :staff-instance staff
+						      :notehead-instance notehead-oblique
+						      :notehead-position 0
+						      :stem-instance stem-minima
+						      :flag-instance flag-croma
+						      :dot-instance dot-enharmonic))
 	  (rest-minima-b (setzkasten/type-rest :width 18
 					       :staff-instance staff
 					       :rest-instance rest-hanging
