@@ -21,6 +21,18 @@
 ;;;; parameter containers for typographic components ;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; containers (classes) for the following type components are available:
+;; - staff
+;; - notehead
+;; - stem
+;; - flag
+;; - rest
+;; - dot
+;; - sharp
+;; - flat
+;; - c-clef
+;; - g-clef
+
 (defclass setzkasten/staff ()
   ((number-of-lines :initarg :number-of-lines
 		    :initform 5
@@ -206,6 +218,20 @@
 ;;;; containers to group components into types ;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; the following grouping containers (classes) are available:
+;; - type
+;;   - type-staff
+;;     - type-notehead
+;;       - type-notehead-dot
+;;         - type-notehead-stem
+;;           - type-notehead-flagged
+;;     - type-rest
+;;     - type-sharp
+;;     - type-flat
+;;     - type-clef
+;;     - type-fclef-component
+;;     - type-barline
+
 (defclass setzkasten/type ()
   ((type-width :initarg :width
 	       :initform 35
@@ -313,6 +339,21 @@
 		  :documentation "Instance of setzkasten/c-clef or setzkasten/g-clef. In nil, an empty staff will be produced."))
   "Specification of a type containing a c- or g-clef.")
 
+(defclass setzkasten/type-fclef-component (setzkasten/type-staff)
+  ((clef-position :initarg :clef-position
+		  :initform 7
+		  :accessor clef-position
+		  :documentation "Position of the F pitch (7 for a standard bass clef).")
+   (notehead-instance :initarg :notehead-instance
+		      :initform nil
+		      :accessor notehead-instance
+		      :documentation "Instance of setzkasten/notehead. Two noteheads will be produced, above and below clef-position.")
+   (stem-instance :initarg :stem-instance
+		  :initform nil
+		  :accessor stem-instance
+		  :documentation "Instance of setzkasten/stem. This special stem points downwards unlike normal note stems."))
+  "Specification of a type containing the right part of an f-clef double-type.")
+
 (defclass setzkasten/type-barline (setzkasten/type-staff)
   ((double-distance :initarg :double-distance
 		    :initform nil
@@ -393,7 +434,30 @@
   (svg-line setzkasten/tmp-image 0 0 10 10)
   (cl-call-next-method))
 
+(cl-defmethod cast ((type-sharp setzkasten/type-sharp))
+  "Generates SVG data for a sharp sign."
+  (insert "\nCasting a sharp sign.")
+  (cl-call-next-method))
 
+(cl-defmethod cast ((type-flat setzkasten/type-flat))
+  "Generates SVG data for a flat sign."
+  (insert "\nCasting a flat sign.")
+  (cl-call-next-method))
+
+(cl-defmethod cast ((type-clef setzkasten/type-clef))
+  "Generates SVG data for a c- or g-clef."
+  (insert "\nCasting a c- or g-clef.")
+  (cl-call-next-method))
+
+(cl-defmethod cast ((type-fclef setzkasten/type-fclef-component))
+  "Generates SVG data for the right part of a f-clef."
+  (insert "\nCasting a f-clef component.")
+  (cl-call-next-method))
+
+(cl-defmethod cast ((type-barline setzkasten/type-barline))
+  "Generates SVG data for a barline."
+  (insert "\nCasting a barline.")
+  (cl-call-next-method))
 
 
 
@@ -427,7 +491,13 @@
 	  (rest-minima-b (setzkasten/type-rest :width 18
 					       :staff-instance staff
 					       :rest-instance rest-hanging
-					       :rest-position 3)))
+					       :rest-position 3))
+	  (fclef-c (setzkasten/type-fclef-component
+		    :staff-instance staff
+		    :notehead-instance notehead-oblique
+		    :stem-instance stem-minima)))
+      (insert "\n")
+      (cast fclef-c)
       (insert "\n")
       (cast minima-a)
       (insert "\n")
