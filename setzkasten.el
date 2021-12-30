@@ -78,13 +78,19 @@
 	       :initform 1.2
 	       :accessor width-tail
 	       :documentation "Width of the note stem at the end of the stem, in proportion to its width at the note head.")
-   (flag-thickness :initarg :flag-thickness
+   
+   )
+  "Parameters for the creation of note stems.")
+
+(defclass setzkasten/flag ()
+  ((flag-thickness :initarg :flag-thickness
 		   :initform nil
 		   :accessor flag-thickness
 		   :documentation "Stroke thickness for flag. If nil, no flag will be produced.")
    ;; TODO more flag parameters
    )
-  "Parameters for the creation of note stems.")
+  "Parameters for the creation of a stem flag.")
+
 
 (defclass setzkasten/rest ()
   ((vertical-length :initarg :vertical-length
@@ -222,12 +228,11 @@
    (notehead-instance :initarg :notehead-instance
 		      :initform nil
 		      :accessor notehead-instance
-		      :documentation "Instance of setzkasten/notehead.")
-   (stem-instance :initarg :stem-instance
-		  :initform nil
-		  :accessor stem-instance
-		  :documentation "Instance of setzkasten/stem. If nil, no stem will be generated.")
-   (dot-alignment :initarg :dot-alignment
+		      :documentation "Instance of setzkasten/notehead."))
+  "Specification of a type containing a notehead. For enharmonic dots, stems and fans see subclasses.")
+
+(defclass setzkasten/type-notehead-dot (setzkasten/type-notehead)
+  ((dot-alignment :initarg :dot-alignment
 		  :initform 'center
 		  :accessor dot-alignment
 		  :documentation "'center for centered above, 'left for flush above the left edge of the notehead, 'right for flush above the right edge of the notehead. Left and  right are used for enharmonic ligatures.")
@@ -235,8 +240,21 @@
 		 :initform nil
 		 :accessor dot-instance
 		 :documentation "Instance of setzkasten/dot. If nil, no dot will be generated."))
-  "Specification of a type containing a notehead, an optional stem and an optional (enharmonic) dot above the notehead.")
+  "Specification for the casting of an enharmonic dot, as a subcomponent of a notehead.")
 
+(defclass setzkasten/type-notehead-stem (setzkasten/type-notehead-dot)
+  ((stem-instance :initarg :stem-instance
+		  :initform nil
+		  :accessor stem-instance
+		  :documentation "Instance of setzkasten/stem. If nil, no stem will be generated."))
+  "Specification for the casting of a note stem, as a subcomponent of a notehead with an optional enharmonic dot.")
+
+(defclass setzkasten/type-notehead-flagged (setzkasten/type-notehead-stem)
+  ((flag-instance :initarg :flag-instance
+		  :initform nil
+		  :accessor flag-instance
+		  :documentation "Instance of setzkasten/flag. If nil, no flag will be generated."))
+  "Specification for the casting of a stem, as a subcomponent of a note stem.")
 
 
 (defclass setzkasten/type-rest (setzkasten/type-staff)
@@ -340,13 +358,21 @@
 (cl-defmethod cast ((type-notehead setzkasten/type-notehead))
   "Generates SVG data for a notehead with optional stem and optional enharmonic dot above it."
   (insert "\nCasting notehead.")
-  (svg-line setzkasten/tmp-image 0 0 10 10)
-  (when (stem-instance type-notehead)
-    (insert "\nCasting stem.")
-    (svg-line setzkasten/tmp-image 0 0 10 10))
-  (when (dot-instance type-notehead)
-    (insert "\nCasting dot.")
-    (svg-line setzkasten/tmp-image 0 0 10 10))
+  (cl-call-next-method))
+
+(cl-defmethod cast ((type-dot setzkasten/type-notehead-dot))
+  (when (dot-instance type-dot)
+    (insert "\nCasting enharmonic dot."))
+  (cl-call-next-method))
+
+(cl-defmethod cast ((type-stem setzkasten/type-notehead-stem))
+  (when (stem-instance type-stem)
+    (insert "\nCasting note stem."))
+  (cl-call-next-method))
+
+(cl-defmethod cast ((type-flag setzkasten/type-notehead-flagged))
+  (when (flag-instance type-flag)
+    (insert "\nCasting stem flag."))
   (cl-call-next-method))
 
 (cl-defmethod cast ((type-rest setzkasten/type-rest))
