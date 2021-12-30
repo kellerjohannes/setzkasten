@@ -47,9 +47,9 @@
 	      :accessor thickness
 	      :documentation "Thickness of the note lines.")
    (endings :initarg :endings
-	    :initform 'rounded
+	    :initform "round"
 	    :accessor endings
-	    :documentation "Type of note line endings, left and right of type.")
+	    :documentation "Type of note line endings, left and right of type. SVG values are accepted: 'round', 'butt', 'square'.")
    (offset :initarg :offset
 	   :initform 0.2
 	   :accessor offset
@@ -233,14 +233,22 @@
 ;;     - type-barline
 
 (defclass setzkasten/type ()
-  ((type-width :initarg :width
-	       :initform 35
+  ((type-width :initarg :type-width
+	       :initform 350
 	       :accessor type-width
 	       :documentation "Width of type.")
+   (type-height :initarg :type-height
+		:initform 1500
+		:accessor type-height
+		:documentation "Height of type.")
    (filename :initarg :filename
 	     :initform "blank-type"
 	     :accessor filename
-	     :documentation "String that is used as main part of the file name for writing the SVG data to disk."))
+	     :documentation "String that is used as main part of the file name for writing the SVG data to disk.")
+   (ink-color :initarg :ink-color
+	      :initform "black"
+	      :accessor ink-color
+	      :documentation "Color used for the production of SVG data."))
   "Specification of an empty type, only holding the meta information for the creation of SVG data.")
 
 (defclass setzkasten/type-staff (setzkasten/type)
@@ -396,17 +404,45 @@
 
 (cl-defmethod cast :around ((type-generic setzkasten/type))
   "Main casting method, wrapping all other casting methods for the components of this type."
-  (insert "\nOpening svg-context.")
-  (setf setzkasten/tmp-image (svg-create 100 100))
+;  (insert "\nOpening svg-context.")
+  (setf setzkasten/tmp-image (svg-create (* 1 (type-width type-generic))
+					 (* 1 (type-height type-generic))
+					 :viewbox (format "0 0 %d %d"
+							  (type-width type-generic)
+							  (type-height type-generic))
+					 :stroke-color (ink-color type-generic)))
   (cl-call-next-method)
-  (insert "\nClosing svg-context.")
-  (insert "\n\n")
-  (svg-print setzkasten/tmp-image))
+;  (insert "\nClosing svg-context.")
+;  (insert "\n\n")
+  (let ((output-buffer (get-buffer-create "*svg-output*")))
+    (set-buffer output-buffer)
+    (erase-buffer)
+    (nxml-mode)
+    (svg-print setzkasten/tmp-image)
+    (sgml-pretty-print (point-min) (point-max))
+    (write-file (concat (filename type-generic) "-" (ink-color type-generic) ".svg"))
+    ))
+
+(cl-defmethod vertical-center ((type setzkasten/type))
+  (* 0.5 (type-height type)))
 
 (cl-defmethod cast ((type-blank setzkasten/type-staff))
   "Generates SVG data for staff lines."
-  (insert "\nCasting " (format "%d" (number-of-lines (staff-instance type-blank))) " lines.")
-  (svg-line setzkasten/tmp-image 0 0 10 10))
+  (with-slots ((num-lines number-of-lines)
+	       (dist distance-between-lines)
+	       thickness
+	       offset
+	       (linecap endings))
+      (staff-instance type-blank)
+    (loop repeat num-lines for y from (- (vertical-center type-blank) (* dist (* 0.5 (1- num-lines)))) by dist
+	  do (svg-line setzkasten/tmp-image
+		       offset y
+		       (- (type-width type-blank) offset) y
+		       :stroke-width thickness
+		       :stroke-linecap linecap)))
+  ;; TODO test if (cl-call-next-method) is appropriate here
+  ;; -> causes error. consequence: setzkasten/type-staff always needs to be the last method to be called before wrapping up with the :around method.
+  )
 
 (cl-defmethod cast ((type-notehead setzkasten/type-notehead))
   "Generates SVG data for a notehead with optional stem and optional enharmonic dot above it."
@@ -467,6 +503,21 @@
 
 ;; under construction, will eventually be a macro to process font and types data, defined by the typesetting person.
 
+(defun test-generation ()
+  (let ((staff (setzkasten/staff :number-of-lines 5
+				 :distance-between-lines 100
+				 :thickness 30
+				 :endings "round"
+				 :offset 20)))
+    (let ((blank-b (setzkasten/type-staff
+		    :type-width 350
+		    :type-height 1000
+		    :ink-color "black"
+		    :staff-instance staff)))
+      (cast blank-b))))
+
+(test-generation)
+
 
 (defun generate-kasten ()
   (let ((notehead-oblique (setzkasten/notehead))
@@ -506,4 +557,5 @@
       (cast rest-minima-b)
       )))
 
-(generate-kasten)
+;(generate-kasten)
+
