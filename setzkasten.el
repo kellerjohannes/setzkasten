@@ -237,6 +237,8 @@
 		 :documentation "Instance of setzkasten/dot. If nil, no dot will be generated."))
   "Specification of a type containing a notehead, an optional stem and an optional (enharmonic) dot above the notehead.")
 
+
+
 (defclass setzkasten/type-rest (setzkasten/type-staff)
   ((rest-position :initarg :rest-position
 		  :initform 5
