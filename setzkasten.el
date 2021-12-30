@@ -423,76 +423,77 @@
     (write-file (concat (filename type-generic) "-" (ink-color type-generic) ".svg"))
     ))
 
-(cl-defmethod vertical-center ((type setzkasten/type))
+(cl-defmethod v-center ((type setzkasten/type))
   (* 0.5 (type-height type)))
 
+(cl-defmethod h-center ((type setzkasten/type))
+  (* 0.5 (type-width type)))
+
 (cl-defmethod cast ((type-blank setzkasten/type-staff))
-  "Generates SVG data for staff lines."
+  "Generates SVG data for staff lines, vertically centered."
   (with-slots ((num-lines number-of-lines)
 	       (dist distance-between-lines)
 	       thickness
 	       offset
 	       (linecap endings))
       (staff-instance type-blank)
-    (loop repeat num-lines for y from (- (vertical-center type-blank) (* dist (* 0.5 (1- num-lines)))) by dist
+    (loop repeat num-lines
+	  for y from (- (v-center type-blank) (* dist (* 0.5 (1- num-lines)))) by dist
 	  do (svg-line setzkasten/tmp-image
 		       offset y
 		       (- (type-width type-blank) offset) y
 		       :stroke-width thickness
-		       :stroke-linecap linecap)))
-  ;; TODO test if (cl-call-next-method) is appropriate here
-  ;; -> causes error. consequence: setzkasten/type-staff always needs to be the last method to be called before wrapping up with the :around method.
-  )
+		       :stroke-linecap linecap))))
 
 (cl-defmethod cast ((type-notehead setzkasten/type-notehead))
   "Generates SVG data for a notehead with optional stem and optional enharmonic dot above it."
-  (insert "\nCasting notehead.")
+  (insert "\nCasting notehead not implemented yet.")
   (cl-call-next-method))
 
 (cl-defmethod cast ((type-dot setzkasten/type-notehead-dot))
   (when (dot-instance type-dot)
-    (insert "\nCasting enharmonic dot."))
+    (insert "\nCasting enharmonic dot not implemented yet."))
   (cl-call-next-method))
 
 (cl-defmethod cast ((type-stem setzkasten/type-notehead-stem))
   (when (stem-instance type-stem)
-    (insert "\nCasting note stem."))
+    (insert "\nCasting note stem not implemented yet."))
   (cl-call-next-method))
 
 (cl-defmethod cast ((type-flag setzkasten/type-notehead-flagged))
   (when (flag-instance type-flag)
-    (insert "\nCasting stem flag."))
+    (insert "\nCasting stem flag not implemented yet."))
   (cl-call-next-method))
 
 (cl-defmethod cast ((type-rest setzkasten/type-rest))
   "Generates SVG data for a rest."
-  (insert "\nCasting rest.")
+  (insert "\nCasting rest not implemented yet.")
   (svg-line setzkasten/tmp-image 0 0 10 10)
   (cl-call-next-method))
 
 (cl-defmethod cast ((type-sharp setzkasten/type-sharp))
   "Generates SVG data for a sharp sign."
-  (insert "\nCasting a sharp sign.")
+  (insert "\nCasting a sharp sign not implemented yet.")
   (cl-call-next-method))
 
 (cl-defmethod cast ((type-flat setzkasten/type-flat))
   "Generates SVG data for a flat sign."
-  (insert "\nCasting a flat sign.")
+  (insert "\nCasting a flat sign not implemented yet.")
   (cl-call-next-method))
 
 (cl-defmethod cast ((type-clef setzkasten/type-clef))
   "Generates SVG data for a c- or g-clef."
-  (insert "\nCasting a c- or g-clef.")
+  (insert "\nCasting a c- or g-clef not implemented yet.")
   (cl-call-next-method))
 
 (cl-defmethod cast ((type-fclef setzkasten/type-fclef-component))
   "Generates SVG data for the right part of a f-clef."
-  (insert "\nCasting a f-clef component.")
+  (insert "\nCasting a f-clef component not implemented yet.")
   (cl-call-next-method))
 
 (cl-defmethod cast ((type-barline setzkasten/type-barline))
   "Generates SVG data for a barline."
-  (insert "\nCasting a barline.")
+  (insert "\nCasting a barline not implemented yet.")
   (cl-call-next-method))
 
 
@@ -513,8 +514,14 @@
 		    :type-width 350
 		    :type-height 1000
 		    :ink-color "black"
+		    :staff-instance staff))
+	  (blank-c (setzkasten/type-staff
+		    :type-width 550
+		    :type-height 1000
+		    :ink-color "red"
 		    :staff-instance staff)))
-      (cast blank-b))))
+      (cast blank-b)
+      (cast blank-c))))
 
 (test-generation)
 
