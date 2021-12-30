@@ -17,7 +17,9 @@
     (evil-insert 0)))
 
 
-;;;; parameter containers for typographic components
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; parameter containers for typographic components ;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defclass setzkasten/staff ()
   ((number-of-lines :initarg :number-of-lines
@@ -196,7 +198,13 @@
   "Parameters for the creation of bar lines.")
 
 
-;;;; containers to group components into types
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; containers to group components into types ;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defclass setzkasten/type ()
   ((type-width :initarg :width
@@ -334,7 +342,11 @@
 
 
 
-;;;; family of casting methods, to produce SVG output for each type container
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; family of casting methods, to produce SVG output for each type container ;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (cl-defgeneric cast (setzkasten/type)
   "Creates SVG files for any sort of type by calling the :around-method to create and close the SVG context and the applicable methods to generate the SVG paths of the types' components.")
@@ -380,6 +392,9 @@
   (insert "\nCasting rest.")
   (svg-line setzkasten/tmp-image 0 0 10 10)
   (cl-call-next-method))
+
+
+
 
 
 
