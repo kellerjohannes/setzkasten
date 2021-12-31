@@ -73,6 +73,10 @@
 		 :initform 1
 		 :accessor light-stroke
 		 :documentation "Width of the light lines in the note head.")
+   (oblique-p :initarg :oblique-p
+	      :initform t
+	      :accessor oblique-p
+	      :documentation "T if the notehead is diamond-shaped, nil if it is a regular recangle.")
    (black :initarg :black
 	  :initform nil
 	  :accessor black
@@ -412,8 +416,6 @@
 							  (type-height type-generic))
 					 :stroke-color (ink-color type-generic)))
   (cl-call-next-method)
-;  (insert "\nClosing svg-context.")
-;  (insert "\n\n")
   (let ((output-buffer (get-buffer-create "*svg-output*")))
     (set-buffer output-buffer)
     (erase-buffer)
@@ -429,6 +431,14 @@
 (cl-defmethod h-center ((type setzkasten/type))
   (* 0.5 (type-width type)))
 
+;; TODO testing, new method
+(cl-defmethod calculate-absolute-staff-position ((type setzkasten/type-staff) staff-position)
+  (with-slots ((dist distance-between-lines)
+	       (num-lines number-of-lines))
+      (staff-instance type)
+    (let ((pos-0 (- (v-center type) (* dist (+ 0.5 (* 0.5 (1- num-lines)))))))
+      (+ pos-0 (* dist staff-position)))))
+
 (cl-defmethod cast ((type-blank setzkasten/type-staff))
   "Generates SVG data for staff lines, vertically centered."
   (with-slots ((num-lines number-of-lines)
@@ -439,17 +449,47 @@
       (staff-instance type-blank)
     (loop repeat num-lines
 	  for y from (- (v-center type-blank) (* dist (* 0.5 (1- num-lines)))) by dist
+	  ;; TODO replace this formula with calls to calculate-absolute-staff-position
+	  ;; -> update with-slots, might get shorter
 	  do (svg-line setzkasten/tmp-image
 		       offset y
 		       (- (type-width type-blank) offset) y
 		       :stroke-width thickness
 		       :stroke-linecap linecap))))
 
+;; TODO testing, new function
+(defun draw-rectangle-relative (center-x center-y diamond-p width height)
+  (let ((h-width (* 0.5 width))
+	(h-height (* 0.5 height)))
+    (if diamond-p
+	(svg-path setzkasten/tmp-image '((moveto (((- center-x h-width) . center-y)
+						  (center-x . (+ center-y h-height))
+						  ((+ center-x h-width) . center-y)
+						  (center-x . (- center-y h-height))))
+					 (closepath)))
+      ;; TODO diamond-p nil: implement
+      )))
+
+;; TODO testing, new method
+(cl-defmethod calculate-notehead-height ((type setzkasten/type-notehead))
+  (with-slots ((dist distance-between-lines))
+      (staff-instance type)
+    (with-slots ((overhead length-over-line))
+	(notehead-instance type)
+      (+ dist (* 2 overhead dist)))))
+
+;; TODO testing, new method
 (cl-defmethod cast ((type-notehead setzkasten/type-notehead))
-  "Generates SVG data for a notehead with optional stem and optional enharmonic dot above it."
-  (insert "\nCasting notehead not implemented yet.")
+  "Generates SVG data for a notehead."
+  (with-slots (oblique-p)
+      (notehead-instance type-notehead)
+    (let ((x (h-center type-notehead))
+	  (y (calculate-absolute-staff-position type-notehead (notehead-position type-notehead))))
+      (draw-rectangle-relative x y oblique-p (calculate-notehead-height type-notehead))))
   (cl-call-next-method))
 
+
+;; TODO for all remaining cast-methods: add docstring
 (cl-defmethod cast ((type-dot setzkasten/type-notehead-dot))
   (when (dot-instance type-dot)
     (insert "\nCasting enharmonic dot not implemented yet."))
@@ -509,19 +549,15 @@
 				 :distance-between-lines 100
 				 :thickness 30
 				 :endings "round"
-				 :offset 20)))
-    (let ((blank-b (setzkasten/type-staff
-		    :type-width 350
-		    :type-height 1000
-		    :ink-color "black"
-		    :staff-instance staff))
-	  (blank-c (setzkasten/type-staff
-		    :type-width 550
-		    :type-height 1000
-		    :ink-color "red"
-		    :staff-instance staff)))
-      (cast blank-b)
-      (cast blank-c))))
+				 :offset 20))
+	(notehead-semibrevis (setzkasten/notehead :length-over-line 0.2
+						  :width 0.8
+						  :bold-stroke 40
+						  :light-stroke 15
+						  :black nil)))
+    (let ((semibrevis-a (setzkasten/type-notehead :notehead-position 0
+						  :notehead-instance notehead-semibrevis)))
+      (cast semibrevis-a))))
 
 (test-generation)
 
