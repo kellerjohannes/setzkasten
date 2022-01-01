@@ -425,18 +425,23 @@
     ))
 
 (cl-defmethod v-center ((type setzkasten/type))
+  "Returns the x-coordinate of the center line of the type."
   (* 0.5 (type-height type)))
 
 (cl-defmethod h-center ((type setzkasten/type))
+  "Returns the y-coordinate of the center line of the type."
   (* 0.5 (type-width type)))
 
 (cl-defmethod number-of-staff-positions ((type setzkasten/type-staff))
+  "Returns the highest possible staff position without using ledger lines."
   (1+ (* 2 (number-of-lines (staff-instance type)))))
 
 (cl-defmethod inverse-staff-position ((type setzkasten/type-staff) staff-position)
+  "Inverses the staff position by mirroring the position at the center position."
   (- (number-of-staff-positions type) 1 staff-position))
 
 (cl-defmethod calculate-absolute-staff-position ((type setzkasten/type-staff) staff-position)
+  "Returns the y-coordinate referencing a given staff position."
   (with-slots ((dist distance-between-lines)
 	       (num-lines number-of-lines))
       (staff-instance type)
@@ -460,6 +465,7 @@
 			 :stroke-linecap linecap)))))
 
 (defun draw-rectangle-relative (center-x center-y diamond-p width height)
+  "Generates SVG data (added to setzkasten/tmp-image) for a rectangle, relative to a center point."
   (let ((h-width (* 0.5 width))
 	(h-height (* 0.5 height)))
     (if diamond-p
@@ -468,17 +474,18 @@
 						  (,(+ center-x h-width) . ,center-y)
 						  (,center-x . ,(- center-y h-height))))
 					 (closepath)))
-      ;; TODO diamond-p nil: implement
+      ;; TODO diamond-p nil: implement square notehead
       )))
 
 (cl-defmethod calculate-notehead-height ((type setzkasten/type-notehead))
+  "Returns the vertical height of a notehead, including the overhead value."
   (with-slots ((dist distance-between-lines))
       (staff-instance type)
     (with-slots ((overhead length-over-line))
 	(notehead-instance type)
       (+ dist (* 2 overhead dist)))))
 
-;; TODO finish implementation
+;; TODO finish implementation: add hole in note head. 
 (cl-defmethod cast ((type-notehead setzkasten/type-notehead))
   "Generates SVG data for a notehead."
   (with-slots (oblique-p
@@ -490,19 +497,20 @@
       (draw-rectangle-relative x y oblique-p (* w h) h)))
   (cl-call-next-method))
 
-
-;; TODO for all remaining cast-methods: add docstring
 (cl-defmethod cast ((type-dot setzkasten/type-notehead-dot))
+  "Generates SVG data for an enharmonic dot above a notehead."
   (when (dot-instance type-dot)
     (insert "\nCasting enharmonic dot not implemented yet."))
   (cl-call-next-method))
 
 (cl-defmethod cast ((type-stem setzkasten/type-notehead-stem))
+  "Generates SVG data for a note stem."
   (when (stem-instance type-stem)
     (insert "\nCasting note stem not implemented yet."))
   (cl-call-next-method))
 
 (cl-defmethod cast ((type-flag setzkasten/type-notehead-flagged))
+  "Generates SVG data for a note stem flag."
   (when (flag-instance type-flag)
     (insert "\nCasting stem flag not implemented yet."))
   (cl-call-next-method))
