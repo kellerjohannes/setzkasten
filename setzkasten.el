@@ -408,7 +408,6 @@
 
 (cl-defmethod cast :around ((type-generic setzkasten/type))
   "Main casting method, wrapping all other casting methods for the components of this type."
-;  (insert "\nOpening svg-context.")
   (setf setzkasten/tmp-image (svg-create (* 1 (type-width type-generic))
 					 (* 1 (type-height type-generic))
 					 :viewbox (format "0 0 %d %d"
@@ -431,13 +430,18 @@
 (cl-defmethod h-center ((type setzkasten/type))
   (* 0.5 (type-width type)))
 
-;; TODO testing, new method
+(cl-defmethod number-of-staff-positions ((type setzkasten/type-staff))
+  (1+ (* 2 (number-of-lines (staff-instance type)))))
+
+(cl-defmethod inverse-staff-position ((type setzkasten/type-staff) staff-position)
+  (- (number-of-staff-positions type) 1 staff-position))
+
 (cl-defmethod calculate-absolute-staff-position ((type setzkasten/type-staff) staff-position)
   (with-slots ((dist distance-between-lines)
 	       (num-lines number-of-lines))
       (staff-instance type)
     (let ((pos-0 (- (v-center type) (* dist (+ 0.5 (* 0.5 (1- num-lines)))))))
-      (+ pos-0 (* dist staff-position)))))
+      (+ pos-0 (* 0.5 dist (inverse-staff-position type staff-position))))))
 
 (cl-defmethod cast ((type-blank setzkasten/type-staff))
   "Generates SVG data for staff lines, vertically centered."
@@ -457,20 +461,19 @@
 		       :stroke-width thickness
 		       :stroke-linecap linecap))))
 
-;; TODO testing, new function
 (defun draw-rectangle-relative (center-x center-y diamond-p width height)
   (let ((h-width (* 0.5 width))
 	(h-height (* 0.5 height)))
     (if diamond-p
-	(svg-path setzkasten/tmp-image '((moveto (((- center-x h-width) . center-y)
-						  (center-x . (+ center-y h-height))
-						  ((+ center-x h-width) . center-y)
-						  (center-x . (- center-y h-height))))
+	;; (svg-path setzkasten/tmp-image '((moveto ((0 . 0) (100 . 0) (100 . 100) (0 . 100))) (closepath)))
+	(svg-path setzkasten/tmp-image `((moveto ((,(- center-x h-width) . ,center-y)
+						  (,center-x . ,(+ center-y h-height))
+						  (,(+ center-x h-width) . ,center-y)
+						  (,center-x . ,(- center-y h-height))))
 					 (closepath)))
       ;; TODO diamond-p nil: implement
       )))
 
-;; TODO testing, new method
 (cl-defmethod calculate-notehead-height ((type setzkasten/type-notehead))
   (with-slots ((dist distance-between-lines))
       (staff-instance type)
@@ -478,14 +481,16 @@
 	(notehead-instance type)
       (+ dist (* 2 overhead dist)))))
 
-;; TODO testing, new method
+;; TODO finish implementation
 (cl-defmethod cast ((type-notehead setzkasten/type-notehead))
   "Generates SVG data for a notehead."
-  (with-slots (oblique-p)
+  (with-slots (oblique-p
+	       (w width))
       (notehead-instance type-notehead)
     (let ((x (h-center type-notehead))
-	  (y (calculate-absolute-staff-position type-notehead (notehead-position type-notehead))))
-      (draw-rectangle-relative x y oblique-p (calculate-notehead-height type-notehead))))
+	  (y (calculate-absolute-staff-position type-notehead (notehead-position type-notehead)))
+	  (h (calculate-notehead-height type-notehead)))
+      (draw-rectangle-relative x y oblique-p (* w h) h)))
   (cl-call-next-method))
 
 
@@ -547,20 +552,35 @@
 (defun test-generation ()
   (let ((staff (setzkasten/staff :number-of-lines 5
 				 :distance-between-lines 100
-				 :thickness 30
+				 :thickness 20
 				 :endings "round"
-				 :offset 20))
-	(notehead-semibrevis (setzkasten/notehead :length-over-line 0.2
+				 :offset 10))
+	(notehead-semibrevis (setzkasten/notehead :length-over-line 0.3
 						  :width 0.8
 						  :bold-stroke 40
 						  :light-stroke 15
 						  :black nil)))
-    (let ((semibrevis-a (setzkasten/type-notehead :notehead-position 0
+    (let ((semibrevis-a (setzkasten/type-notehead :notehead-position 6
+						  :type-width 350
+						  :filename "semibrevis-a"
+						  :ink-color "black"
+						  :staff-instance staff
 						  :notehead-instance notehead-semibrevis)))
-      (cast semibrevis-a))))
+      ;(inverse-staff-position semibrevis-a 10)
+      (cast semibrevis-a)
+      )))
 
 (test-generation)
+;; TODO reminder: try auto-revert-mode for SVG files
 
+(defun testground ()
+  (let ((head (setzkasten/notehead))
+	(staff (setzkasten/staff)))
+    (let ((testnote (setzkasten/type-notehead :notehead-instance head
+					      :staff-instance staff)))
+      (calculate-notehead-height testnote))))
+
+(testground)
 
 (defun generate-kasten ()
   (let ((notehead-oblique (setzkasten/notehead))
