@@ -446,26 +446,23 @@
 (cl-defmethod cast ((type-blank setzkasten/type-staff))
   "Generates SVG data for staff lines, vertically centered."
   (with-slots ((num-lines number-of-lines)
-	       (dist distance-between-lines)
 	       thickness
 	       offset
 	       (linecap endings))
       (staff-instance type-blank)
     (loop repeat num-lines
-	  for y from (- (v-center type-blank) (* dist (* 0.5 (1- num-lines)))) by dist
-	  ;; TODO replace this formula with calls to calculate-absolute-staff-position
-	  ;; -> update with-slots, might get shorter
-	  do (svg-line setzkasten/tmp-image
-		       offset y
-		       (- (type-width type-blank) offset) y
-		       :stroke-width thickness
-		       :stroke-linecap linecap))))
+	  for staff-pos from 1 by 2 
+	  do (let ((y (calculate-absolute-staff-position type-blank staff-pos)))
+	       (svg-line setzkasten/tmp-image
+			 offset y
+			 (- (type-width type-blank) offset) y
+			 :stroke-width thickness
+			 :stroke-linecap linecap)))))
 
 (defun draw-rectangle-relative (center-x center-y diamond-p width height)
   (let ((h-width (* 0.5 width))
 	(h-height (* 0.5 height)))
     (if diamond-p
-	;; (svg-path setzkasten/tmp-image '((moveto ((0 . 0) (100 . 0) (100 . 100) (0 . 100))) (closepath)))
 	(svg-path setzkasten/tmp-image `((moveto ((,(- center-x h-width) . ,center-y)
 						  (,center-x . ,(+ center-y h-height))
 						  (,(+ center-x h-width) . ,center-y)
