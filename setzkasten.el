@@ -1,7 +1,9 @@
 ;;;; code snippet helper, unrelated to setzkasten functionality
 ;;;; TODO find a better place for this
 
+;; redundant with the macro define-setzkasten-class
 (defun jk/insert-slot (name)
+  "Inserts a slot in a class definition."
   (interactive "MSlot name: ")
   (let ((start-region (point)))
     (insert "(" name " :initarg :" name)
@@ -15,6 +17,24 @@
     (indent-region start-region (point))
     (evil-goto-mark 65)
     (evil-insert 0)))
+
+;; example macro call
+(define-setzkasten-class setzkasten/test ()
+  "Docstring."
+  (number-of-lines 5 "Number of staff lines.")
+  (distance-between-lines 12 "The distance between two lines."))
+
+(defmacro define-setzkasten-class (class-name super-class class-docstring &rest parameters)
+  "Creates a simple class with parameters."
+  `(defclass ,class-name ,super-class 
+     ,(mapcar (lambda (par)
+		  `(,(first par)
+		    :initarg ,(intern (concat ":" (format "%s" (first par))))
+		    :initform ,(second par)
+		    :accessor ,(first par)
+		    :documentation ,(format "%s" (third par))))
+	      parameters)
+     ,(format "%s" class-docstring)))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
