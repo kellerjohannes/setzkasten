@@ -363,7 +363,7 @@
 						  :bold-stroke 40
 						  :light-stroke 15
 						  :black nil)))
-    (let ((semibrevis-a (setzkasten/type-notehead :notehead-position 6
+    (let ((semibrevis-a (setzkasten/type-notehead :notehead-position 5
 						  :type-width 350
 						  :filename "semibrevis-a"
 						  :ink-color "black"
@@ -374,7 +374,8 @@
       )))
 
 (test-generation)
-;; TODO reminder: try auto-revert-mode for SVG files
+
+
 
 (defun testground ()
   (let ((head (setzkasten/notehead))
