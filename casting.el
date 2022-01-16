@@ -77,10 +77,19 @@
 
 ;; notehead
 
-(defun draw-notehead-square (center-x center-y width height l1 l2 black)
+(defun draw-notehead-square (center-x center-y width height l1 l2 black distance-between-lines)
   ;; TODO implement it! don't forget the overhead offset
-  (let ((w-2 (* 0.5 width))
-	(h-2 (* 0.5 height)))))
+  ;; TODO add distance-between-lines to call. attention: distance between upper and lowe edge of lines needed. or center lines? (maybe clearer?)
+  (let* ((w-2 (* 0.5 width))
+	 (h-2 (* 0.5 height))
+	 (d-2 (* 0.5 distance-between-lines))
+	 (a (jk/vector (- center-x w-2) (+ center-y h-2)))
+	 (b (jk/vector (- center-x w-2) (- center-y h-2)))
+	 (c (jk/add b (jk/vector l2 0)))
+	 (d (jk/vector (jk/x-coord c) (+ center-y d-2)))
+	 ; e-l
+	 ; TODO implement mirror-x and mirror-y for all other points
+	 )))
 
 (defun draw-notehead-diamond (center-x center-y width height l1 l2 black)
   "Generates SVG data for a diamond shaped notehead, black or white notation."
