@@ -1,3 +1,5 @@
+(load "~/Vicentino21/edition/setzkasten/generic-macros.el")
+(load "~/Vicentino21/edition/setzkasten/vector-helpers.el")
 (load "~/Vicentino21/edition/setzkasten/class-definitions.el")
 (load "~/Vicentino21/edition/setzkasten/casting.el")
 

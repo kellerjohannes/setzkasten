@@ -77,38 +77,28 @@
 
 ;; notehead
 
-(defun draw-rectangle-relative (center-x center-y diamond-p width height)
-  "Generates SVG data (added to setzkasten/tmp-image) for a rectangle, relative to a center point."
-  (let ((h-width (* 0.5 width))
-	(h-height (* 0.5 height)))
-    (if diamond-p
-	(svg-path setzkasten/tmp-image `((moveto ((,(- center-x h-width) . ,center-y)
-						  (,center-x . ,(+ center-y h-height))
-						  (,(+ center-x h-width) . ,center-y)
-						  (,center-x . ,(- center-y h-height))))
-					 (closepath))
-		  :fill-rule 'evenodd)
-      ;; TODO diamond-p nil: implement square notehead
-      )))
+(defun draw-notehead-square (center-x center-y width height l1 l2 black)
+  ;; TODO implement it! don't forget the overhead offset
+  (let ((w-2 (* 0.5 width))
+	(h-2 (* 0.5 height)))))
 
-(defun draw-notehead (center-x center-y diamond-p width height l1 l2)
+(defun draw-notehead-diamond (center-x center-y width height l1 l2 black)
+  "Generates SVG data for a diamond shaped notehead, black or white notation."
   (let* ((a (jk/vector center-x (+ center-y (* 0.5 height))))
 	 (b (jk/vector (- center-x (* 0.5 width)) center-y))
 	 (c (jk/vector center-x (- center-y (* 0.5 height))))
 	 (d (jk/vector (+ center-x (* 0.5 width)) center-y))
-	 (center (jk/vector center-x center-y))
-     	 (e (jk/add a (jk/add (jk/scale (jk/unit-vector jk/a jk/b) l2)
-     			      (jk/scale (jk/unit-vector jk/a jk/d) l1))))
-     	 (f (jk/add b (jk/add (jk/scale (jk/unit-vector jk/b jk/a) l2)
-     			      (jk/scale (jk/unit-vector jk/a jk/d) l1))))
-     	 (g (jk/add center (jk/subtract e center)))
-	 (h (jk/add center (jk/subtract f center))))
-  (svg-path setzkasten/tmp-image `((moveto (,a ,b ,c ,d))
-				   (closepath)
-				   (moveto (,e ,f ,g ,h))
-				   (closepath))
-	    :fill-rule 'evenodd)
-))
+	 (path `((moveto (,a ,b ,c ,d)) (closepath))))
+    (unless black
+      (let* ((center (jk/vector center-x center-y))
+     	     (e (jk/add a (jk/add (jk/scale (jk/unit-vector jk/a jk/b) l2)
+     				  (jk/scale (jk/unit-vector jk/a jk/d) l1))))
+     	     (f (jk/add b (jk/add (jk/scale (jk/unit-vector jk/b jk/a) l2)
+     				  (jk/scale (jk/unit-vector jk/a jk/d) l1))))
+     	     (g (jk/add center (jk/subtract e center)))
+	     (h (jk/add center (jk/subtract f center))))
+	(setq path (append path `((moveto (,e ,f ,g ,h))) '((closepath))))))
+    (svg-path setzkasten/tmp-image path :fill-rule 'evenodd)))
 
 (cl-defmethod calculate-notehead-height ((type setzkasten/type-notehead))
   "Returns the vertical height of a notehead, including the overhead value."
@@ -133,10 +123,7 @@
 	       (notehead-position type-notehead)))
 	   (h (calculate-notehead-height type-notehead))
 	   (w (* width-factor h)))
-      (if black
-	  (draw-rectangle-relative x y oblique-p w h)
-	(draw-notehead x y oblique-p w h bold-stroke light-stroke))
-      ))
+      (draw-notehead-diamond x y w h bold-stroke light-stroke black)))
   (cl-call-next-method))
 
 
