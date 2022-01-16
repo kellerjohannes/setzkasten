@@ -91,6 +91,24 @@
       ;; TODO diamond-p nil: implement square notehead
       )))
 
+(defun draw-notehead (center-x center-y diamond-p width height thickness-a thickness-b)
+  (let* ((a (+ center-x (* 0.5 height)))
+	 (b (+ center-y (* -0.5 width)))
+	 (c (+ center-x (* -0.5 height)))
+	 (d (+ center-y (* 0.5 width)))
+	 (center (list center-x center-y))
+	 (l1 thickness-a)
+	 (l2 thickness-b)
+	 (e (jk/add a (jk/add (jk/scale (jk/unit-vector jk/a jk/b) l1)
+			      (jk/scale (jk/unit-vector jk/a jk/d) l2))))
+	 (f (jk/add b (jk/add (jk/scale (jk/unit-vector jk/b jk/a) l2)
+			      (jk/scale (jk/unit-vector jk/a jk/d) l1))))
+	 (g (jk/add center (jk/subtract center e)))
+	 (h (jk/add center (jk/subtract center f)))))
+  (svg-path setzkasten/tmp-image `((moveto (((,a . ,b)
+					     ())))))
+)
+
 (cl-defmethod calculate-notehead-height ((type setzkasten/type-notehead))
   "Returns the vertical height of a notehead, including the overhead value."
   (with-slots ((dist distance-between-lines))
@@ -104,6 +122,7 @@
   "Generates SVG data for a notehead."
   (with-slots (oblique-p
 	       (width-factor width)
+	       black
 	       bold-stroke
 	       light-stroke)
       (notehead-instance type-notehead)
@@ -116,8 +135,10 @@
 	   (length-side (sqrt (+ (* h h) (* w w))))
 	   (sum-of-strokes (+ bold-stroke light-stroke))
 	   (offset-hole (* 2 sum-of-strokes (/ h length-side))))
-      (draw-rectangle-relative x y oblique-p w h)
-      (draw-rectangle-relative x y oblique-p (- w offset-hole) (- h offset-hole))))
+      ;; TODO delete unused values
+      (if black
+	  (draw-rectangle-relative x y oblique-p w h)
+	  (draw-notehead x y oblique-p w h bold-stroke light-stroke))))
   (cl-call-next-method))
 
 
