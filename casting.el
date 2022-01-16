@@ -5,6 +5,9 @@
 (cl-defgeneric cast (setzkasten/type)
   "Creates SVG files for any sort of type by calling the :around-method to create and close the SVG context and the applicable methods to generate the SVG paths of the types' components.")
 
+
+;; container, svg stuff
+
 (defvar setzkasten/tmp-image nil "Used to temporarily collect SVG fragments.")
 
 (cl-defmethod cast :around ((type-generic setzkasten/type))
@@ -24,6 +27,11 @@
     (sgml-pretty-print (point-min) (point-max))
     (write-file (concat (filename type-generic) "-" (ink-color type-generic) ".svg"))
     ))
+
+
+
+
+;; staff lines
 
 (cl-defmethod v-center ((type setzkasten/type))
   "Returns the x-coordinate of the center line of the type."
@@ -65,6 +73,10 @@
 			 :stroke-width thickness
 			 :stroke-linecap linecap)))))
 
+
+
+;; notehead
+
 (defun draw-rectangle-relative (center-x center-y diamond-p width height)
   "Generates SVG data (added to setzkasten/tmp-image) for a rectangle, relative to a center point."
   (let ((h-width (* 0.5 width))
@@ -74,7 +86,8 @@
 						  (,center-x . ,(+ center-y h-height))
 						  (,(+ center-x h-width) . ,center-y)
 						  (,center-x . ,(- center-y h-height))))
-					 (closepath)))
+					 (closepath))
+		  :fill-rule 'evenodd)
       ;; TODO diamond-p nil: implement square notehead
       )))
 
@@ -90,13 +103,27 @@
 (cl-defmethod cast ((type-notehead setzkasten/type-notehead))
   "Generates SVG data for a notehead."
   (with-slots (oblique-p
-	       (w width))
+	       (width-factor width)
+	       bold-stroke
+	       light-stroke)
       (notehead-instance type-notehead)
-    (let ((x (h-center type-notehead))
-	  (y (calculate-absolute-staff-position type-notehead (notehead-position type-notehead)))
-	  (h (calculate-notehead-height type-notehead)))
-      (draw-rectangle-relative x y oblique-p (* w h) h)))
+    (let* ((x (h-center type-notehead))
+	   (y (calculate-absolute-staff-position
+	       type-notehead
+	       (notehead-position type-notehead)))
+	   (h (calculate-notehead-height type-notehead))
+	   (w (* width-factor h))
+	   (length-side (sqrt (+ (* h h) (* w w))))
+	   (sum-of-strokes (+ bold-stroke light-stroke))
+	   (offset-hole (* 2 sum-of-strokes (/ h length-side))))
+      (draw-rectangle-relative x y oblique-p w h)
+      (draw-rectangle-relative x y oblique-p (- w offset-hole) (- h offset-hole))))
   (cl-call-next-method))
+
+
+
+
+;; enharmonic dot
 
 (cl-defmethod cast ((type-dot setzkasten/type-notehead-dot))
   "Generates SVG data for an enharmonic dot above a notehead."
@@ -104,11 +131,19 @@
     (insert "\nCasting enharmonic dot not implemented yet."))
   (cl-call-next-method))
 
+
+
+;; stem
+
 (cl-defmethod cast ((type-stem setzkasten/type-notehead-stem))
   "Generates SVG data for a note stem."
   (when (stem-instance type-stem)
     (insert "\nCasting note stem not implemented yet."))
   (cl-call-next-method))
+
+
+
+;; flag
 
 (cl-defmethod cast ((type-flag setzkasten/type-notehead-flagged))
   "Generates SVG data for a note stem flag."
@@ -116,31 +151,49 @@
     (insert "\nCasting stem flag not implemented yet."))
   (cl-call-next-method))
 
+
+
+;; rest
+
 (cl-defmethod cast ((type-rest setzkasten/type-rest))
   "Generates SVG data for a rest."
   (insert "\nCasting rest not implemented yet.")
   (svg-line setzkasten/tmp-image 0 0 10 10)
   (cl-call-next-method))
 
+
+;; sharp
+
 (cl-defmethod cast ((type-sharp setzkasten/type-sharp))
   "Generates SVG data for a sharp sign."
   (insert "\nCasting a sharp sign not implemented yet.")
   (cl-call-next-method))
+
+
+;; flat
 
 (cl-defmethod cast ((type-flat setzkasten/type-flat))
   "Generates SVG data for a flat sign."
   (insert "\nCasting a flat sign not implemented yet.")
   (cl-call-next-method))
 
+;; g-clef
+
 (cl-defmethod cast ((type-clef setzkasten/type-clef))
   "Generates SVG data for a c- or g-clef."
   (insert "\nCasting a c- or g-clef not implemented yet.")
   (cl-call-next-method))
 
+
+;; f-clef
+
 (cl-defmethod cast ((type-fclef setzkasten/type-fclef-component))
   "Generates SVG data for the right part of a f-clef."
   (insert "\nCasting a f-clef component not implemented yet.")
   (cl-call-next-method))
+
+
+;; barline
 
 (cl-defmethod cast ((type-barline setzkasten/type-barline))
   "Generates SVG data for a barline."
