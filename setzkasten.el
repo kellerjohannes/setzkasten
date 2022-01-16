@@ -13,7 +13,7 @@
 				 :offset 10))
 	(notehead-semibrevis (setzkasten/notehead :length-over-line 0.3
 						  :width 0.8
-						  :bold-stroke 40
+						  :bold-stroke 33
 						  :light-stroke 15
 						  :black nil)))
     (let ((semibrevis-a (setzkasten/type-notehead :notehead-position 5
@@ -21,9 +21,16 @@
 						  :filename "semibrevis-a"
 						  :ink-color "black"
 						  :staff-instance staff
+						  :notehead-instance notehead-semibrevis))
+	  (semibrevis-b (setzkasten/type-notehead :notehead-position 4
+						  :type-width 350
+						  :filename "semibrevis-b"
+						  :ink-color "black"
+						  :staff-instance staff
 						  :notehead-instance notehead-semibrevis)))
       ;(inverse-staff-position semibrevis-a 10)
       (cast semibrevis-a)
+      (cast semibrevis-b)
       )))
 
 (test-generation)

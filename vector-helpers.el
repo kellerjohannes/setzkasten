@@ -15,20 +15,20 @@
 	(+ (jk/y-coord a) (jk/y-coord b))))
 
 (defun jk/subtract (a b)
-  (cons (- (jk/x-coord b) (jk/x-coord a))
-	(- (jk/y-coord b) (jk/y-coord a))))
+  (cons (- (jk/x-coord a) (jk/x-coord b))
+	(- (jk/y-coord a) (jk/y-coord b))))
 
 (defun jk/scale (v f)
   (cons (* (jk/x-coord v) f)
 	(* (jk/y-coord v) f)))
 
 (defun jk/distance (a b)
-  (let ((vect (jk/subtract a b)))
+  (let ((vect (jk/subtract b a)))
     (sqrt (+ (* (jk/x-coord vect) (jk/x-coord vect))
 	     (* (jk/y-coord vect) (jk/y-coord vect))))))
 
 (defun jk/unit-vector (a b)
-  (let ((vect (jk/subtract a b))
+  (let ((vect (jk/subtract b a))
 	(len (jk/distance a b)))
     (cons (/ (jk/x-coord vect) len)
 	  (/ (jk/y-coord vect) len))))
