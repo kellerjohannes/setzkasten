@@ -34,4 +34,10 @@
 	       (/ (jk/y-coord vect) len))))
 
 (defun jk/mirror-x (v x)
-  (jk/vector ... (jk/y-coord v)))
+  (jk/vector (+ x (- x (jk/x-coord v))) (jk/y-coord v)))
+
+(defun jk/mirror-y (v y)
+  (jk/vector (jk/x-coord v) (+ y (- y (jk/y-coord v)))))
+
+(defun jk/mirror-dot (v dot)
+  (jk/add dot (jk/subtract dot v)))
