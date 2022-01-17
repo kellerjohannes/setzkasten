@@ -10,13 +10,14 @@
 (defun test-generation ()
   (let ((staff (setzkasten/staff :number-of-lines 5
 				 :distance-between-lines 100
-				 :thickness 20
+				 :thickness 15
 				 :endings "round"
 				 :offset 10))
 	(notehead-semibrevis (setzkasten/notehead :length-over-line 0.3
-						  :width 0.8
-						  :bold-stroke 33
-						  :light-stroke 15
+						  :width 0.9
+						  :bold-stroke 27
+						  :light-stroke 13
+						  :oblique-p nil
 						  :black nil)))
     (let ((semibrevis-a (setzkasten/type-notehead :notehead-position 5
 						  :type-width 350

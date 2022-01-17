@@ -77,19 +77,32 @@
 
 ;; notehead
 
-(defun draw-notehead-square (center-x center-y width height l1 l2 black distance-between-lines)
-  ;; TODO implement it! don't forget the overhead offset
-  ;; TODO add distance-between-lines to call. attention: distance between upper and lowe edge of lines needed. or center lines? (maybe clearer?)
+(defun draw-notehead-square (center-x center-y width height l1 l2 black-p distance-between-lines)
+  "Generates SVG data for a square shaped notehead, black or white notation."
   (let* ((w-2 (* 0.5 width))
 	 (h-2 (* 0.5 height))
 	 (d-2 (* 0.5 distance-between-lines))
+	 (center (jk/vector center-x center-y))
 	 (a (jk/vector (- center-x w-2) (+ center-y h-2)))
 	 (b (jk/vector (- center-x w-2) (- center-y h-2)))
 	 (c (jk/add b (jk/vector l2 0)))
 	 (d (jk/vector (jk/x-coord c) (+ center-y d-2)))
-	 ; e-l
-	 ; TODO implement mirror-x and mirror-y for all other points
-	 )))
+	 (e (jk/mirror-x d center-x))
+	 (f (jk/mirror-x c center-x))
+	 (g (jk/mirror-x b center-x))
+	 (h (jk/mirror-dot b center))
+	 (i (jk/mirror-dot c center))
+	 (j (jk/mirror-dot d center))
+	 (k (jk/mirror-y d center-y))
+	 (l (jk/mirror-y c center-y))
+	 (path `((moveto (,a ,b ,c ,d ,e ,f ,g ,h ,i ,j ,k ,l)) (closepath))))
+    (unless black-p
+      (let* ((m (jk/add k (jk/vector 0 l1)))
+	     (n (jk/mirror-y m center-y))
+	     (o (jk/mirror-dot m center))
+	     (p (jk/mirror-x m center-x)))
+	(setq path (append path `((moveto (,m ,n ,o ,p))) '((closepath))))))
+    (svg-path setzkasten/tmp-image path :fill-rule 'evenodd)))
 
 (defun draw-notehead-diamond (center-x center-y width height l1 l2 black)
   "Generates SVG data for a diamond shaped notehead, black or white notation."
@@ -97,9 +110,7 @@
 	 (b (jk/vector (- center-x (* 0.5 width)) center-y))
 	 (c (jk/vector center-x (- center-y (* 0.5 height))))
 	 (d (jk/vector (+ center-x (* 0.5 width)) center-y))
-	 (path `((moveto (,a ,b ,c ,d)) (closepath)))
-	 ;; (path '())
-	 )
+	 (path `((moveto (,a ,b ,c ,d)) (closepath))))
     (unless black
       (let* ((center (jk/vector center-x center-y))
      	     (e (jk/add a (jk/add (jk/scale (jk/unit-vector a b) l2)
@@ -119,12 +130,11 @@
 	(notehead-instance type)
       (+ dist (* 2 overhead dist)))))
 
-;; TODO finish implementation: add hole in note head. 
 (cl-defmethod cast ((type-notehead setzkasten/type-notehead))
   "Generates SVG data for a notehead."
   (with-slots (oblique-p
 	       (width-factor width)
-	       black
+	       (black-p black)
 	       bold-stroke
 	       light-stroke)
       (notehead-instance type-notehead)
@@ -134,7 +144,10 @@
 	       (notehead-position type-notehead)))
 	   (h (calculate-notehead-height type-notehead))
 	   (w (* width-factor h)))
-      (draw-notehead-diamond x y w h bold-stroke light-stroke black)))
+      (if oblique-p
+	  (draw-notehead-diamond x y w h bold-stroke light-stroke black-p)
+	(draw-notehead-square x y w h bold-stroke light-stroke black-p
+			      (distance-between-lines (staff-instance type-notehead))))))
   (cl-call-next-method))
 
 
