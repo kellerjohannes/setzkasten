@@ -58,6 +58,7 @@
       (+ pos-0 (* 0.5 dist (inverse-staff-position type staff-position))))))
 
 (defun find-next-space-above (staff-position)
+  "Returns the staff position of the next available space above a notehead position."
   (let ((result (+ 2 staff-position)))
     (if (oddp result)
 	(1+ result)
@@ -161,18 +162,26 @@
 
 ;; enharmonic dot
 
+(cl-defmethod calculate-x-pos ((type-dot setzkasten/type-notehead-dot))
+  "Returns the absolute x coordinate for an enharmonic dot, aligned to the notehead."
+  (let ((center-x (h-center type-dot))
+	(h-w (* 0.5 (width (notehead-instance type-dot))
+		(calculate-notehead-height type-dot))))
+    (pcase (dot-alignment type-dot)
+      ('center center-x)
+      ('right (+ center-x h-w))
+      ('left (- center-x h-w)))))
+
 (cl-defmethod cast ((type-dot setzkasten/type-notehead-dot))
   "Generates SVG data for an enharmonic dot above a notehead."
   (when (dot-instance type-dot)
-    (let ((center-x (h-center type-dot))
+    (let ((center-x (calculate-x-pos type-dot))
 	  (center-y (calculate-absolute-staff-position
 		     type-dot
 		     (find-next-space-above (notehead-position type-dot))))
 	  (width (* (size (dot-instance type-dot))
 		    (distance-between-lines (staff-instance type-dot)))))
-      (draw-notehead-diamond center-x center-y width width 0 0 t))
-    ;; (insert "\nCasting enharmonic dot not implemented yet.")
-    )
+      (draw-notehead-diamond center-x center-y width width 0 0 t)))
   (cl-call-next-method))
 
 

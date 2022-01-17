@@ -38,12 +38,13 @@
 						  :ink-color "black"
 						  :staff-instance staff
 						  :notehead-instance notehead-brevis))
-	  (semibrevis-dot-a (setzkasten/type-notehead-dot :notehead-position 10
+	  (semibrevis-dot-a (setzkasten/type-notehead-dot :notehead-position 4
 							  :type-width 350
 							  :filename "semibrevis-dot-a"
 							  :ink-color "black"
 							  :staff-instance staff
-							  :notehead-instance notehead-semibrevis
+							  :notehead-instance notehead-brevis
+							  :dot-alignment 'center
 							  :dot-instance enharmonic-dot)))
       ;(inverse-staff-position semibrevis-a 10)
       (cast semibrevis-a)
