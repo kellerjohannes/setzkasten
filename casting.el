@@ -57,6 +57,12 @@
     (let ((pos-0 (- (v-center type) (* dist (+ 0.5 (* 0.5 (1- num-lines)))))))
       (+ pos-0 (* 0.5 dist (inverse-staff-position type staff-position))))))
 
+(defun find-next-space-above (staff-position)
+  (let ((result (+ 2 staff-position)))
+    (if (oddp result)
+	(1+ result)
+      result)))
+
 (cl-defmethod cast ((type-blank setzkasten/type-staff))
   "Generates SVG data for staff lines, vertically centered."
   (with-slots ((num-lines number-of-lines)
@@ -158,7 +164,15 @@
 (cl-defmethod cast ((type-dot setzkasten/type-notehead-dot))
   "Generates SVG data for an enharmonic dot above a notehead."
   (when (dot-instance type-dot)
-    (insert "\nCasting enharmonic dot not implemented yet."))
+    (let ((center-x (h-center type-dot))
+	  (center-y (calculate-absolute-staff-position
+		     type-dot
+		     (find-next-space-above (notehead-position type-dot))))
+	  (width (* (size (dot-instance type-dot))
+		    (distance-between-lines (staff-instance type-dot)))))
+      (draw-notehead-diamond center-x center-y width width 0 0 t))
+    ;; (insert "\nCasting enharmonic dot not implemented yet.")
+    )
   (cl-call-next-method))
 
 

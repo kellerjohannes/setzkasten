@@ -13,27 +13,42 @@
 				 :thickness 15
 				 :endings "round"
 				 :offset 10))
-	(notehead-semibrevis (setzkasten/notehead :length-over-line 0.3
-						  :width 0.9
+	(notehead-semibrevis (setzkasten/notehead :length-over-line 0.2
+						  :width 0.8
 						  :bold-stroke 27
 						  :light-stroke 13
-						  :oblique-p nil
-						  :black nil)))
+						  :oblique-p t
+						  :black nil))
+	(notehead-brevis (setzkasten/notehead :length-over-line 0.3
+					      :width 0.9
+					      :bold-stroke 27
+					      :light-stroke 13
+					      :oblique-p nil
+					      :black nil))
+	(enharmonic-dot (setzkasten/dot :size .3)))
     (let ((semibrevis-a (setzkasten/type-notehead :notehead-position 5
 						  :type-width 350
 						  :filename "semibrevis-a"
 						  :ink-color "black"
 						  :staff-instance staff
 						  :notehead-instance notehead-semibrevis))
-	  (semibrevis-b (setzkasten/type-notehead :notehead-position 4
+	  (brevis-b (setzkasten/type-notehead :notehead-position 4
 						  :type-width 350
-						  :filename "semibrevis-b"
+						  :filename "brevis-b"
 						  :ink-color "black"
 						  :staff-instance staff
-						  :notehead-instance notehead-semibrevis)))
+						  :notehead-instance notehead-brevis))
+	  (semibrevis-dot-a (setzkasten/type-notehead-dot :notehead-position 10
+							  :type-width 350
+							  :filename "semibrevis-dot-a"
+							  :ink-color "black"
+							  :staff-instance staff
+							  :notehead-instance notehead-semibrevis
+							  :dot-instance enharmonic-dot)))
       ;(inverse-staff-position semibrevis-a 10)
       (cast semibrevis-a)
-      (cast semibrevis-b)
+      (cast brevis-b)
+      (cast semibrevis-dot-a)
       )))
 
 (test-generation)
@@ -47,7 +62,7 @@
 					      :staff-instance staff)))
       (calculate-notehead-height testnote))))
 
-(testground)
+;; (testground)
 
 (defun generate-kasten ()
   (let ((notehead-oblique (setzkasten/notehead))
