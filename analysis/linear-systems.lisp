@@ -1,3 +1,59 @@
+
+(defun make-matrix (m n data)
+  (list m n data))
+
+(defun get-m (matrix)
+  (first matrix))
+
+(defun get-n (matrix)
+  (second matrix))
+
+(defun get-data (matrix)
+  (third matrix))
+
+(defun calc-index (i j m n)
+  (if (and (> i 0) (> j 0)
+	   (<= i m) (<= j n))
+      (+ (* (1- i) n) (1- j))
+      (format t "~&Index out of range: [~a,~a]" i j)))
+
+(defun get-element (i j matrix)
+  (let ((index (calc-index i j (get-m matrix) (get-n matrix))))
+    (when index (nth index (get-data matrix)))))
+
+(defun get-row (i matrix)
+  (subseq (get-data matrix)
+	  (calc-index i 1 (get-m matrix) (get-n matrix))
+	  (1+ (calc-index i (get-n matrix) (get-m matrix) (get-n matrix)))))
+
+(defun set-row (i matrix data)
+  (do ((x (calc-index i 1 (get-m matrix) (get-n matrix)) (1+ x))
+       (cnt 0 (1+ cnt))
+       (rest-data data (rest rest-data)))
+      ((null rest-data) t)
+    (setf (nth x (get-data matrix)) (nth cnt data))))
+
+(defun set-element (i j val matrix)
+  (setf (nth (calc-index i j (get-m matrix) (get-n matrix))
+	     (get-data matrix))
+	val))
+
+(defun swap-rows (i1 i2 matrix)
+  (let ((tmp (get-row i1 matrix)))
+    (set-row i1 matrix (get-row i2 matrix))
+    (set-row i2 matrix tmp)))
+
+(defun multiply-row (i num matrix)
+  (loop for j from 1 to (get-n matrix) do
+    (set-element i j (* num (get-element i j matrix)) matrix)))
+
+(defun add-multiple (i-source num i-dest matrix)
+  (set-row i-dest matrix
+	   (mapcar #'+
+		   (mapcar #'(lambda (x) (* x num))
+			   (get-row i-source matrix))
+		   (get-row i-dest matrix))))
+
 h := 1 /* Initialization of the pivot row */
 k := 1 /* Initialization of the pivot while h ≤ m and k ≤ n
     /* Find the k-th pivot: */
@@ -19,39 +75,34 @@ k := 1 /* Initialization of the pivot while h ≤ m and k ≤ n
          h := h + 1
          k := k + 1
 
-(defun debug ()
-  (posmax (loop for i from 1 to (get-m equations) collect
-		(abs (get-element equations i 1)))))
-
-(debug)
-
-(swap-rows equations 2 3)
-(set-element matrix 1 1 -17)
-
-
-(defun gaussian-elimination (matrix)
+(defun gaussian-elimination (this-matrix)
   (do ((h 1)
        (k 1)
-       (m (get-m matrix))
+       (m (get-m this-matrix))
        (i-max 0))
-      ((or (> h (get-m matrix))
-	   (> k (get-n matrix)))
-       matrix)
+      ((or (> h (get-m this-matrix))
+	   (> k (get-n this-matrix)))
+       this-matrix)
     (setf i-max (+ 1 (posmax (loop for i from h to m collect
-				   (abs (get-element matrix i k))))))
+				   (abs (get-element this-matrix i k))))))
     (cond
-     ((zerop (get-element matrix i-max k)) (incf k))
-     (t (swap-rows matrix h i-max)
+     ((zerop (get-element this-matrix i-max k)) (incf k))
+     (t (swap-rows this-matrix h i-max)
 	(loop for i from h to m do
-	      (let ((f (/ (get-element matrix i k)
-			  (get-element matrix h k))))
-		(set-element matrix i k 0)
-		(loop for j from (1+ k) to (get-n matrix) do
-		      (set-element matrix i j
-				   (- (get-element matrix i j)
-				      (* (get-element matrix h j) f))))))
+	      (let ((f (div (get-element this-matrix i k)
+			    (get-element this-matrix h k))))
+		(set-element this-matrix i k 0)
+		(loop for j from (1+ k) to (get-n this-matrix) do
+		  (set-element this-matrix i j
+			       (- (get-element this-matrix i j)
+				  (* (get-element this-matrix h j) f))))))
 	(incf h)
 	(incf k)))))
+
+(defun div (a b)
+  (if (and (numberp b) (not (zerop b)))
+      (/ a b)
+      0))
 
 (defun posmax (data)
   (let ((cnt 0)
@@ -119,15 +170,5 @@ k := 1 /* Initialization of the pivot while h ≤ m and k ≤ n
 
 (gaussian-elimination equations)
 
-(set-element testmatrix 3 2 'x)
 
-(setq testmatrix (make-matrix 5 5 0))
-
-(get-row testmatrix 2)
-(get-column testmatrix 3)
-(get-element testmatrix 3 2)
-
-
-
-(insert (format "\n\n%s" testmatrix))
-
+(set-element this-matrix 1 1 -17)

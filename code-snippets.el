@@ -2,6 +2,8 @@
 ;;;; TODO find a better place for this
 
 ;; redundant with the macro define-setzkasten-class
+;; is not used in Setzkasten code
+
 (defun jk/insert-slot (name)
   "Inserts a slot in a class definition."
   (interactive "MSlot name: ")
