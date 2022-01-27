@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://music-encoding.org/schema/4.0.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://music-encoding.org/schema/4.0.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei
+    xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <meiHead>
+        <fileDesc>
+            <titleStmt>
+                <title>78r</title>
+                <composer>vicentino</composer>
+            </titleStmt>
+            <pubStmt>
+                <publisher>
+                </publisher>
+                <date>2021</date>
+            </pubStmt>
+            <seriesStmt>
+                <title>Vicentino 21</title>
+                <editor>
+                    <persName>Rolf Wissmann</persName>
+                </editor>
+                <identifier>
+                </identifier>
+            </seriesStmt>
+            <notesStmt>
+                <annot label="original_clefs"/>
+                <annot label="commentary"/>
+            </notesStmt>
+            <sourceDesc>
+                <source targettype="IIIF" target="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52502759s/manifest.json">
+                    <locus>78r</locus>
+                </source>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application xml:id="MPEditor">
+                    <name>Measuring Polyphony Editor</name>
+                </application>
+            </appInfo>
+            <editorialDecl>
+                <p>This MEI encoding in mensural notation was made using the Measuring Polyphony Editor, transcribed from IIIF images of the original manuscript source one staff at a time, entering the pitches and rhythms for each stave using a combination of number and letter keystrokes. The Measuring Polyphony Editor generates two MEI files from this user input: an MEI parts file that captures each voice part entered, and an MEI score file that scores up the voice parts, which is viewable here.</p>
+            </editorialDecl>
+            <projectDesc>
+                <p>The Measuring Polyphony Editor, funded by a 2019-2020 NEH Digital Humanities Grant, is a prototype tool that allows a variety of modern readers (students and experts, musicologists, music theorists, those interested in the history of music notation, counterpoint, medieval palaeography and/or manuscript studies) to access and contribute transcriptions of music directly linked to digital images of the medieval manuscripts, and to learn about the original notation. This tool will offer new possibilities for the analysis and interpretation of late medieval music. In a broader humanities context, the project investigates how modeling the meanings of notational signs can lead to new understandings of the interaction between the sign and the signified, and of the relationship between notational style and changes in musical style across time and place.</p>
+            </projectDesc>
+        </encodingDesc>
+        <workList>
+            <work>
+                <identifier type="catalogue_number"/>
+                <title>78r</title>
+                <composer>Nicola Vicentino</composer>
+                <incip>
+                    <incipText>
+                        <lg>
+                            <l></l>
+                        </lg>
+                    </incipText>
+                </incip>
+                <classification>
+                    <termList>
+                        <term/>
+                    </termList>
+                </classification>
+            </work>
+        </workList>
+        <manifestationList>
+            <manifestation singleton="true">
+                <titleStmt>
+                    <title>
+                        <identifier label="siglum"/>
+                    </title>
+                </titleStmt>
+                <physLoc>
+                    <repository>
+                        <corpName>[LIBRARY NAME]</corpName>
+                        <identifier>[SHELFMARK]</identifier>
+                        <ptr targettype="IIIF" target="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52502759s/manifest.json"/>
+                    </repository>
+                </physLoc>
+                <notesStmt>
+                    <annot>Primary manuscript source for this encoding.</annot>
+                </notesStmt>
+            </manifestation>
+        </manifestationList>
+    </meiHead>
+    <music>
+        <facsimile>
+            <surface xml:id="m-69f0dd7e-3949-403d-be12-ed4831b3c1f0">
+                <graphic xml:id="m-b7eb42dd-f82f-4165-955a-a777dc4b05a3" target="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52502759s/canvas/f161">
+                    <zone xml:id="m8b91b56c-3b96-4c1b-b639-300390f942cc" ulx="353" uly="1257" lrx="2627" lry="2033"/>
+                </graphic>
+            </surface>
+        </facsimile>
+        <body>
+            <mdiv>
+                <score>                    
+                        <scoreDef>
+                            <staffGrp>
+                                <staffDef n="1" lines="5" notationtype="mensural.white">
+                                    <mensur/>
+                                </staffDef>
+                            </staffGrp>
+                        </scoreDef>
+                        <section>
+                            <staff n="1">
+                                <layer n="1">
+                                    <pb facs="#m-69f0dd7e-3949-403d-be12-ed4831b3c1f0" xml:id="m-a893f0c2-881f-4658-bd5e-667362e4a85e"/>
+                                    <sb facs="#m8b91b56c-3b96-4c1b-b639-300390f942cc" xml:id="m-8458c01d-9375-4a33-919b-90546f134594"/>
+                                    <clef xml:id="m-33c5416b-c2a2-4143-ab43-d7af8c527f9a" shape="C" line="4"/>
+                                    <note xml:id="m-e144f731-f171-428d-8731-eeb39ee03572" dur="maxima" oct="3" pname="b"/>
+                                    <dot form="aug" xml:id="m-0564dfa6-0c17-416c-bbd4-7614116833f0"/>
+                                    <note xml:id="m-47ff943a-e0ad-480a-9f31-973b76bc3a95" dur="longa" oct="4" pname="c"/>
+                                    <dot form="aug" xml:id="m-e17075a5-7abd-4de6-aabf-34f9f7c4283f"/>
+                                    <note xml:id="m-47ce9347-a1d2-478d-9aae-365281785ebf" dur="brevis" oct="3" pname="b"/>
+                                    <dot form="aug" xml:id="m-b75860c2-4bb2-499c-8282-25bef06c7fb8"/>
+                                    <note xml:id="m-9935f9b5-e769-4962-9403-1b231b5f90fb" dur="semibrevis" oct="3" pname="a"/>
+                                    <dot form="aug" xml:id="m-c42bc237-034f-4469-a6a0-f733c86d9dfb"/>
+                                    <note xml:id="m-f40a0074-828d-40fa-855c-2b50c52f9a0f" dur="minima" oct="3" pname="g"/>
+                                    <dot form="aug" xml:id="m-4555bbd8-3d99-451d-8014-e4eb0771b206"/>
+                                    <note xml:id="m-3d745424-cfb2-4b2e-b504-4c5803bc99da" dur="semiminima" oct="3" pname="f"/>
+                                    <note xml:id="m-9ad8e131-22bb-4a99-9531-d126cb6dbf40" dur="semiminima" oct="3" pname="e"/>
+                                    <dot form="aug" xml:id="m-b2f332f6-94bd-471f-bf25-9fe100fff852"/>
+                                    <note xml:id="m-c385a0da-18e2-4038-8837-a11e0e528262" dur="fusa" oct="3" pname="d"/>
+                                    <note xml:id="m-07c3ab62-736d-4d4f-962e-11816c6ca4de" dur="fusa" oct="3" pname="e"/>
+                                    <dot form="aug" xml:id="m-fd4a0e2d-39d6-4084-8060-fe12db639ba2"/>
+                                    <note xml:id="m-5ec17f7a-a8d4-47f7-9559-7a71d3306510" dur="semifusa" oct="3" pname="f"/>
+                                    <clef xml:id="m-33c5416b-c2a2-4143-ab43-d7af8c527f9a1" shape="C" line="4"/>
+                                    <mensur sign="O"/>
+                                    <note xml:id="m-47ce9347-a1d2-478d-9aae-365281785ebf1" dur="brevis" oct="3" pname="d"/>
+                                    <note xml:id="m-9935f9b5-e769-4962-9403-1b231b5f90fb1" dur="semibrevis" oct="3" pname="e"/>
+                                    <dot form="div"/>
+                                    <note xml:id="m-9935f9b5-e769-4962-9403-1b231b5f90fb2" dur="semibrevis" oct="3" pname="f"/>
+                                    <note xml:id="m-47ce9347-a1d2-478d-9aae-365281785ebf2" dur="brevis" oct="3" pname="g"/>
+                                    <barLine/>
+                                    <clef xml:id="m-33c5416b-c2a2-4143-ab43-d7af8c527f9a11" shape="C" line="4"/>
+                                    <mensur sign="O" dot="true"/>
+                                    <mensur sign="C" dot="true"/>
+                                    <note xml:id="m-47ce9347-a1d2-478d-9aae-365281785ebf12" dur="semibrevis" oct="3" pname="d"/>
+                                    <note xml:id="m-9935f9b5-e769-4962-9403-1b231b5f90fb12" dur="minima" oct="3" pname="e"/>
+                                    <note xml:id="m-9935f9b5-e769-4962-9403-1b231b5f90fb23" dur="semibrevis" oct="3" pname="f"/>
+                                    <note xml:id="m-47ce9347-a1d2-478d-9aae-365281785ebf23" dur="semibrevis" oct="3" pname="g"/>
+                                    <note xml:id="m-9935f9b5-e769-4962-9403-1b231b5f90fb13" dur="minima" oct="3" pname="a"/>
+                                    <barLine/>
+                                    <sb/>
+                                    <clef xml:id="m-33c5416b-c2a2-4143-ab43-d7af8c527f9a12" shape="C" line="4"/>
+                                    <note xml:id="m-47ce9347-a1d2-478d-9aae-365281785ebf3" dur="semibrevis" oct="3" pname="e"/>
+                                    <note xml:id="m-9935f9b5-e769-4962-9403-1b231b5f90fb3" dur="minima" oct="3" pname="f"/>
+                                    <note xml:id="m-9935f9b5-e769-4962-9403-1b231b5f90fb4" dur="minima" oct="3" pname="g"/>
+                                    <note xml:id="m-47ce9347-a1d2-478d-9aae-365281785ebf4" dur="semibrevis" oct="3" pname="a"/>
+                                    <barLine form="rptboth"/>
+                                    <note xml:id="m-47ce9347-a1d2-478d-9aae-365281785ebf5" dur="brevis" oct="3" pname="a">
+                                        <artic artic="stacc" />
+                                        <!-- visuelle Codierung, inhaltlich falsch, gilt für alle folgenden artic Attribute
+                              <artic artic="stacc" place="above"/>  -->
+                                        <!-- zukunftsträchtige Codierung, entweder als ligature mit zwei noten oder einzelne Note?
+                              <accid accid="1qf" form="dot" place="above-left"/> -->
+                                    </note>
+                                    <barLine/>
+                                    <note xml:id="m-47ce9347-a1d2-478d-9aae-365281785ebf6" dur="brevis" oct="3" pname="g">
+                                        <artic artic="stacc"/>
+                                        <!-- zukunftsträchtige Codierung, obwohl das Intervall noch zu spezifizieren wäre...
+                              <accid accid="1qf" form="dot" place="above"/> -->
+                                    </note>
+                                    <note xml:id="m-47ce9347-a1d2-478d-9aae-365281785ebf7" dur="brevis" oct="3" pname="a">
+                                        <artic artic="stacc"/>
+                                        <!-- zukunftsträchtige Codierung, entweder als ligature mit zwei noten oder einzelne Note?
+                              <accid accid="1qf" form="dot" place="above-right"/> -->
+                                    </note>
+                                    <barLine/>
+                                    <clef xml:id="m-33c5416b-c2a2-4143-ab43-d7af8c527f9" shape="C" line="4"/>
+                                    <note xml:id="m-47ce9347-a1d2-478d-9aae-365281785eb3" dur="semibrevis" oct="3" pname="d">
+                                        <artic artic="stacc"/>
+                                    </note>
+                                    <note xml:id="m-9935f9b5-e769-4962-9403-1b231b5f90f" dur="minima" oct="3" pname="a">
+                                        <artic artic="stacc"/>
+                                    </note>
+                                    <note xml:id="m-3d745424-cfb2-4b2e-b504-4c5803bc99d" dur="semiminima" oct="3" pname="a">
+                                        <artic artic="stacc"/>
+                                    </note>
+                                    <note xml:id="m-07c3ab62-736d-4d4f-962e-11816c6ca4" dur="fusa" oct="4" pname="c">
+                                        <artic artic="stacc"/>
+                                    </note>
+                                    <note xml:id="m-5ec17f7a-a8d4-47f7-9559-7a71d33065" dur="semifusa" oct="3" pname="e">
+                                        <artic artic="stacc"/>
+                                    </note>
+                                    <barLine/>
+                                    <note xml:id="m-47ce9347-a1d2-478d-9aae-365281785eb" dur="semibrevis" oct="4" pname="f">
+                                        <artic artic="spicc"/>
+                                    </note>
+                                    <note xml:id="m-47ce9347-a1d2-478d-9aae-365281785e" dur="semibrevis" oct="4" pname="e">
+                                        <artic artic="spicc"/>
+                                    </note>
+                                    <note xml:id="m-47ce9347-a1d2-478d-9aae-365281785" dur="semibrevis" oct="4" pname="d">
+                                        <artic artic="spicc"/>
+                                    </note>
+                                    <note xml:id="m-47ce9347-a1d2-478d-9aae-36528178" dur="semibrevis" oct="4" pname="c">
+                                        <artic artic="spicc"/>
+                                    </note>
+                                    <note xml:id="m-47ce9347-a1d2-478d-9aae-3652817" dur="brevis" oct="4" pname="c">
+                                        <artic artic="spicc"/>
+                                    </note>
+                                    <note xml:id="m-47ce9347-a1d2-478d-9aae-365281" dur="brevis" oct="4" pname="d">
+                                        <artic artic="spicc"/>
+                                    </note>
+                                    <barLine/>
+                                </layer>
+                            </staff>
+                        </section>                    
+                </score>
+            </mdiv>
+        </body>
+    </music>
+</mei>

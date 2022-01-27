@@ -1,0 +1,47 @@
+h := 1 /* Initialization of the pivot row */
+k := 1 /* Initialization of the pivot column */
+
+while h ≤ m and k ≤ n
+    /* Find the k-th pivot: */
+    i_max := argmax (i = h ... m, abs(A[i, k]))
+    if A[i_max, k] = 0
+        /* No pivot in this column, pass to next column */
+        k := k+1
+    else
+         swap rows(h, i_max)
+         /* Do for all rows below pivot: */
+         for i = h + 1 ... m:
+             f := A[i, k] / A[h, k]
+             /* Fill with zeros the lower part of pivot column: */
+             A[i, k] := 0
+             /* Do for all remaining elements in current row: */
+             for j = k + 1 ... n:
+                 A[i, j] := A[i, j] - A[h, j] * f
+         /* Increase pivot row and column */
+         h := h + 1
+         k := k + 1
+
+
+(defun make-matrix (m n initial-element)
+  (list m n (loop repeat (* m n) collect initial-element)))
+
+(defun get-m (matrix)
+  (first matrix))
+
+(defun get-n (matrix)
+  (second matrix))
+
+(defun get-matrix-data (matrix)
+  (third matrix))
+
+(defun set-data (matrix data)
+  (make-matrix (get-m matrix) (get-n matrix) data))
+
+(defun get-row (matrix i)
+  (let ((i (* i (get-n matrix))))
+    (subseq (get-matrix-data matrix) i (+ i (get-n matrix)))))
+
+
+(subseq (loop for i from 0 to 24 collect i) 10 15)
+
+(defun gaussian-elimination (matrix))

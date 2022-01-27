@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-Mensural.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-Mensural.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:xlink="http://www.w3.org/1999/xlink"
+   meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title label="work">17v</title>
+         </titleStmt>
+         <pubStmt/>
+         <sourceDesc>
+            <source>
+               <bibl>
+                  <title label="work">17v</title>
+                  <imprint/>
+                  <annot>Source MusicXML file created using MuseScore 3.3.0 on
+                        <date>2021-06-16</date>.</annot>
+               </bibl>
+            </source>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="v1.0_beta" xml:id="app_2021167132134362">
+               <name>mei30To40.xsl</name>
+            </application>
+         </appInfo>
+         <editorialDecl>
+            <normalization>
+               <p>Calculation of @tstamp and @tstamp2 values on control events, such as dir, dynam,
+                  hairpin, etc., includes MusicXML offset values.</p>
+               <p>The parameters for musicxml2mei.xsl were set as follows: <list>
+                     <li>accidStyle: "attr", </li>
+                     <li>articStyle: "elem", </li>
+                     <li>formeWork: "strip", </li>
+                     <li>generateMIDI: "false", </li>
+                     <li>keepAttributes: "false", </li>
+                     <li>keepRights: "false", </li>
+                     <li>labelStyle: "attr", </li>
+                     <li>layout: "strip", </li>
+                     <li>tieStyle: "attr"</li>
+                  </list>
+               </p>
+            </normalization>
+            <normalization label="description">
+               <p></p>
+               <p></p>
+               <p></p>
+            </normalization>
+         </editorialDecl>
+      </encodingDesc>
+      <workList>
+         <work>
+            <title label="work">17v</title>
+         </work>
+      </workList>
+      <revisionDesc>
+         <change n="1" resp="#app_2021167132134362">
+            <changeDesc>
+               <p>Transcoded from a MusicXML version 3.1 file using an XSLT stylesheet (musicxml2mei
+                  v. 3.0).</p>
+            </changeDesc>
+            <date>2021-06-16</date>
+         </change>
+         <change n="2" resp="#app_2021167132134362">
+            <changeDesc>
+               <p>Converted to MEI version 4.0.0 using mei30To40.xsl, version 1.0 beta</p>
+            </changeDesc>
+            <date isodate="2021-06-16"/>
+         </change>
+      </revisionDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>             
+                  <scoreDef key.sig="0">
+                  <staffGrp>
+                     <staffDef clef.line="4" clef.shape="C" key.sig="0" lines="5" n="1" xml:id="P1" notationtype="mensural.white"/>
+                  </staffGrp>
+               </scoreDef>
+               <section>                 
+                     <pb/>
+                     <sb/>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="brevis" oct="3" pname="g" xml:id="w82ab1c11b1b5">
+                              <artic artic="stacc" place="above"/>
+                              <!-- visuelle Codierung, inhaltlich falsch, gilt für alle folgenden artic Attribute
+                              <artic artic="stacc" place="above"/>  -->
+                              <!-- zukunftsträchtige Codierung, obwohl das Intervall noch zu spezifizieren wäre...
+                              <accid accid="1qf" form="dot" place="above"/> -->
+                           </note>
+                           <barLine/>
+                           <!--<ligature>-->
+                              <note dur="semibrevis" oct="3" pname="a" xml:id="w82ab1c11b1b7">
+                              <artic artic="stacc" place="above"/>
+                           </note>
+                           <note dur="semibrevis" oct="3" pname="a" xml:id="w82ab1c11b1b9"/>
+                           <!--</ligature>-->
+                           <barLine/>
+                           <!--<ligature>-->
+                              <note dur="semibrevis" oct="3" pname="a" xml:id="w82ab1c11b1c11">
+                              <artic artic="stacc" place="above"/>
+                           </note>
+                           <note dur="semibrevis" oct="3" pname="a" xml:id="w82ab1c11b1c13"/>
+                           <!--</ligature>-->
+                           <barLine/>
+                           <note dur="semibrevis" oct="3" pname="a" xml:id="w82ab1c11b1c15">
+                              <artic artic="stacc" place="above"/>
+                           </note>
+                           <barLine/>
+                           <!--<ligature>-->
+                              <note dur="minima" oct="4" pname="c" stem.dir="down" xml:id="w82ab1c11b1c17">
+                              <artic artic="stacc" place="above"/>
+                           </note>
+                           <note dur="minima" oct="4" pname="c" stem.dir="down" xml:id="w82ab1c11b1c19"/>
+                           <!--</ligature>-->
+                           <barLine/>
+                           <!--<ligature>-->
+                              <note dur="minima" oct="3" pname="g" stem.dir="up" xml:id="w82ab1c11b1c21"/>
+                           <note dur="minima" oct="3" pname="g" stem.dir="up" xml:id="w82ab1c11b1c23">
+                              <artic artic="stacc" place="above"/>
+                           </note>
+                           <!--</ligature>-->
+                           <barLine/>
+                           <clef line="4" shape="C"/>
+                           <keySig sig="1f"/>
+                           <!--<ligature>-->
+                              <note dur="semibrevis" oct="3" pname="a" xml:id="w82ab1c13b1b5"/>
+                           <note accid="f" dur="semibrevis" oct="3" pname="a" xml:id="w82ab1c13b1b7"/>
+                           <!--</ligature>-->
+                           <barLine/>
+                           <note accid="f" dur="brevis" oct="3" pname="g" xml:id="w82ab1c13b1b9">
+                              <artic artic="stacc" place="above"/>
+                           </note>
+                           <barLine/>
+                          <sb/>
+                           <clef line="4" shape="C"/>
+                           <!--<ligature>-->
+                              <note accid="f" dur="semibrevis" oct="3" pname="g" xml:id="w82ab1c13b1c11">
+                              <artic artic="stacc" place="above"/>
+                           </note>
+                           <note dur="semibrevis" oct="3" pname="g" xml:id="w82ab1c13b1c13">
+                              <artic artic="stacc" place="above"/>
+                              <accid accid="n"/>
+                           </note>
+                           <!--</ligature>-->
+                           <barLine/>
+                           <note accid.ges="f" dur="semibrevis" oct="3" pname="a" xml:id="w82ab1c13b1c15">
+                              <artic artic="stacc" place="above"/>
+                           </note>
+                           <note accid="f" dur="semibrevis" oct="3" pname="a" xml:id="w82ab1c13b1c17"/>
+                           <barLine/>
+                           <!--<ligature>-->
+                              <note accid="n" dur="minima" oct="3" pname="a" stem.dir="down"
+                              xml:id="w82ab1c13b1c19">
+                              <artic artic="stacc" place="above"/>
+                           </note>
+                           <note accid="f" dur="minima" oct="3" pname="a" stem.dir="down"
+                              xml:id="w82ab1c13b1c21">
+                              <artic artic="stacc" place="above"/>
+                           </note>
+                           <!--</ligature>-->
+                           <barLine/>
+                           <note accid.ges="n" dur="minima" oct="3" pname="g" stem.dir="down"
+                              xml:id="w82ab1c13b1c23">
+                              <artic artic="stacc" place="above"/>
+                           </note>
+                           <barLine/>
+                           <!--<ligature>-->
+                              <note accid.ges="n" dur="semiminima" oct="3" pname="g" stem.dir="down"
+                              xml:id="w82ab1c13b1c25">
+                              <artic artic="stacc" place="above"/>
+                           </note>
+                           <note accid.ges="n" dur="semiminima" oct="3" pname="g" stem.dir="down"
+                              xml:id="w82ab1c13b1c27"/>
+                           <!--</ligature>-->
+                           <barLine/>
+                           <!--<ligature>-->
+                              <note dur="fusa" oct="3" pname="f" stem.dir="up" xml:id="w82ab1c13b1c29"/>
+                           <note dur="fusa" oct="3" pname="f" stem.dir="up" xml:id="w82ab1c13b1c31">
+                              <artic artic="stacc" place="above"/>
+                           </note>
+                           <!--</ligature>-->
+                        </layer>
+                     </staff>                                                        
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

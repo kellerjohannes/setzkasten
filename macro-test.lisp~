@@ -1,0 +1,2 @@
+(defmacro define-class (name doc-string &rest parameters)
+  ())

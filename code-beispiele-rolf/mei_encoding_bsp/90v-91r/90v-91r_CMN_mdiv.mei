@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-model href="http://music-encoding.org/schema/4.0.0/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://music-encoding.org/schema/4.0.0/mei-CMN.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:xlink="http://www.w3.org/1999/xlink"
+   meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title label="work">90v-91r</title>
+         </titleStmt>
+         <pubStmt/>
+         <sourceDesc>
+            <source>
+               <bibl>
+                  <title label="work">90v-91r_1</title>
+                  <imprint/>
+                  <annot>Source MusicXML file created using MuseScore 3.3.0 on
+                        <date>2021-06-22</date>.</annot>
+               </bibl>
+            </source>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="v1.0_beta" xml:id="app_202117393100002">
+               <name>mei30To40.xsl</name>
+            </application>
+         </appInfo>
+         <editorialDecl>
+            <normalization>
+               <p>Calculation of @tstamp and @tstamp2 values on control events, such as dir, dynam,
+                  hairpin, etc., includes MusicXML offset values.</p>
+               <p>The parameters for musicxml2mei.xsl were set as follows: <list>
+                     <li>accidStyle: "attr", </li>
+                     <li>articStyle: "elem", </li>
+                     <li>formeWork: "strip", </li>
+                     <li>generateMIDI: "false", </li>
+                     <li>keepAttributes: "false", </li>
+                     <li>keepRights: "false", </li>
+                     <li>labelStyle: "attr", </li>
+                     <li>layout: "strip", </li>
+                     <li>tieStyle: "attr"</li>
+                  </list>
+               </p>
+            </normalization>
+         </editorialDecl>
+      </encodingDesc>
+      <workList>
+         <work>
+            <title label="work">90v-91r</title>
+         </work>
+      </workList>
+      <revisionDesc>
+         <change n="1" resp="#app_202117393100002">
+            <changeDesc>
+               <p>Transcoded from a MusicXML version 3.1 file using an XSLT stylesheet (musicxml2mei
+                  v. 3.0).</p>
+            </changeDesc>
+            <date>2021-06-22</date>
+         </change>
+         <change n="2" resp="#app_202117393100002">
+            <changeDesc>
+               <p>Converted to MEI version 4.0.0 using mei30To40.xsl, version 1.0 beta</p>
+            </changeDesc>
+            <date isodate="2021-06-22"/>
+         </change>
+      </revisionDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv n="1">
+            <score>
+               <scoreDef key.sig="0">
+                  <staffGrp>
+                     <staffDef clef.line="2" clef.shape="G" key.sig="0" lines="5" n="1" xml:id="P1">
+                        <label/>
+                     </staffDef>
+                     <staffDef clef.line="4" clef.shape="F" key.sig="0" lines="5" n="2" xml:id="P2">
+                        <label/>
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <pb/>
+                  <sb/>
+                  <measure n="1" xml:id="w1420ab1c11">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="2" xml:id="w1420ab1c11b1b7"/>
+                           <note dots="1" dur="2" oct="4" pname="e" stem.dir="up"
+                              xml:id="w1420ab1c11b1b9"/>
+                           <note dur="4" oct="4" pname="d" stem.dir="up" xml:id="w1420ab1c11b1c11"/>
+                           <note dur="2" oct="4" pname="c" stem.dir="up" xml:id="w1420ab1c11b1c13"/>
+                           <note dur="2" oct="3" pname="b" stem.dir="up" xml:id="w1420ab1c11b1c15"/>
+                           <note dur="2" oct="4" pname="e" stem.dir="up" xml:id="w1420ab1c11b1c17"/>
+                           <note dur="2" oct="4" pname="d" stem.dir="up" xml:id="w1420ab1c11b1c19"/>
+                           <note dots="1" dur="2" oct="4" pname="e" stem.dir="up"
+                              xml:id="w1420ab1c11b1c21"/>
+                           <note dur="4" oct="4" pname="c" stem.dir="up" xml:id="w1420ab1c11b1c23"/>
+                           <note dur="2" oct="4" pname="f" stem.dir="up" xml:id="w1420ab1c11b1c25"/>
+                           <note dur="2" oct="4" pname="d" stem.dir="up" xml:id="w1420ab1c11b1c27"/>
+                           <note dur="1" oct="4" pname="g" xml:id="w1420ab1c11b1c29"/>
+                           <note dots="1" dur="2" oct="4" pname="a" stem.dir="up"
+                              xml:id="w1420ab1c11b1c31"/>
+                           <note dur="4" oct="4" pname="g" stem.dir="up" xml:id="w1420ab1c11b1c33"/>
+                           <note dur="4" oct="4" pname="f" stem.dir="up" xml:id="w1420ab1c11b1c35"/>
+                           <note dur="4" oct="4" pname="e" stem.dir="up" xml:id="w1420ab1c11b1c37"/>
+                           <note dur="2" oct="4" pname="f" stem.dir="up" xml:id="w1420ab1c11b1c39"/>
+                           <note dur="2" oct="4" pname="e" stem.dir="up" xml:id="w1420ab1c11b1c41"/>
+                           <!--<rest dur="1" xml:id="w1420ab1c11b1c43" />-->
+                           <!-- es fehlt eine ganze Note/Pause im Vergleich zur zweiten Stimme -->
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="1" oct="3" pname="e" xml:id="w1420ab1c11b3b5"/>
+                           <note dur="1" oct="3" pname="e" xml:id="w1420ab1c11b3b7"/>
+                           <note dur="1" oct="3" pname="e" xml:id="w1420ab1c11b3b9"/>
+                           <note dur="1" oct="3" pname="g" xml:id="w1420ab1c11b3c11"/>
+                           <note dur="1" oct="3" pname="a" xml:id="w1420ab1c11b3c13"/>
+                           <note dur="1" oct="3" pname="b" xml:id="w1420ab1c11b3c15"/>
+                           <note dur="1" oct="4" pname="c" xml:id="w1420ab1c11b3c17"/>
+                           <note dur="1" oct="3" pname="a" xml:id="w1420ab1c11b3c19"/>
+                           <note dur="breve" oct="3" pname="a" xml:id="w1420ab1c11b3c21"/>
+                        </layer>
+                     </staff>
+                     <dir label="words " place="above" staff="1" tstamp="1">A due voci sopra il
+                        canto fermo per ottavaIl medesimo procedere, ei gradi medesimi</dir>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+         <mdiv n="2">
+            <score>
+               <pb/>
+               <sb/>
+               <scoreDef key.sig="0">
+                  <staffGrp>
+                     <staffDef clef.line="4" clef.shape="F" key.sig="0" lines="5" n="1"
+                        xml:id="P1-2"/>
+                     <staffDef clef.line="4" clef.shape="F" key.sig="0" lines="5" n="2"
+                        xml:id="P2-2"/>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="2" xml:id="w1501ab1c11">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="1" oct="3" pname="e" xml:id="w1501ab1c11b1b7"/>
+                           <note dur="1" oct="3" pname="e" xml:id="w1501ab1c11b1b9"/>
+                           <note dur="1" oct="3" pname="e" xml:id="w1501ab1c11b1c11"/>
+                           <note dur="1" oct="3" pname="g" xml:id="w1501ab1c11b1c13"/>
+                           <note dur="1" oct="3" pname="a" xml:id="w1501ab1c11b1c15"/>
+                           <note dur="1" oct="3" pname="b" xml:id="w1501ab1c11b1c17"/>
+                           <note dur="1" oct="4" pname="c" xml:id="w1501ab1c11b1c19"/>
+                           <note dur="1" oct="3" pname="a" xml:id="w1501ab1c11b1c21"/>
+                           <note dur="1" oct="3" pname="a" xml:id="w1501ab1c11b1c23"/>
+                           <rest dur="2" xml:id="w1501ab1c11b1c25"/>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <rest dur="2" xml:id="w1501ab1c11b3b5"/>
+                           <note dots="1" dur="2" oct="3" pname="c" stem.dir="up"
+                              xml:id="w1501ab1c11b3b7"/>
+                           <note dur="4" oct="2" pname="b" stem.dir="up" xml:id="w1501ab1c11b3b9"/>
+                           <note dur="2" oct="2" pname="a" stem.dir="up" xml:id="w1501ab1c11b3c11"/>
+                           <note dur="2" oct="2" pname="g" stem.dir="up" xml:id="w1501ab1c11b3c13"/>
+                           <note dur="1" oct="3" pname="c" xml:id="w1501ab1c11b3c15"/>
+                           <note dur="2" oct="2" pname="b" stem.dir="up" xml:id="w1501ab1c11b3c17"/>
+                           <note dots="1" dur="2" oct="3" pname="c" stem.dir="up"
+                              xml:id="w1501ab1c11b3c19"/>
+                           <note dur="4" oct="2" pname="a" stem.dir="up" xml:id="w1501ab1c11b3c21"/>
+                           <note dur="2" oct="3" pname="d" stem.dir="down" xml:id="w1501ab1c11b3c23"/>
+                           <note dur="2" oct="2" pname="b" stem.dir="up" xml:id="w1501ab1c11b3c25"/>
+                           <note dur="1" oct="3" pname="e" xml:id="w1501ab1c11b3c27"/>
+                           <note dots="1" dur="2" oct="3" pname="f" stem.dir="down"
+                              xml:id="w1501ab1c11b3c29"/>
+                           <note dur="4" oct="3" pname="e" stem.dir="down" xml:id="w1501ab1c11b3c31"/>
+                           <note dur="4" oct="3" pname="d" stem.dir="down" xml:id="w1501ab1c11b3c33"/>
+                           <note dur="4" oct="3" pname="c" stem.dir="up" xml:id="w1501ab1c11b3c35"/>
+                           <note dur="2" oct="3" pname="d" stem.dir="down" xml:id="w1501ab1c11b3c37"/>
+                           <note dur="2" oct="3" pname="c" stem.dir="up" xml:id="w1501ab1c11b3c39"/>
+                        </layer>
+                     </staff>
+                     <dir label="words" place="above" staff="1" tstamp="1">A due voci di sotto dal
+                        canto fermo per terzo</dir>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+         <mdiv n="3">
+            <score>
+               <scoreDef key.sig="0">
+                  <staffGrp>
+                     <staffDef clef.line="2" clef.shape="G" key.sig="0" lines="5" n="1"
+                        xml:id="P1-3"/>
+                     <staffDef clef.line="4" clef.shape="F" key.sig="0" lines="5" n="2"
+                        xml:id="P2-3"/>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="3" xml:id="w1581ab1c11">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="4" pname="g" stem.dir="up"
+                              xml:id="w1581ab1c11b1b7"/>
+                           <note dur="4" oct="4" pname="f" stem.dir="up" xml:id="w1581ab1c11b1b9"/>
+                           <note dur="2" oct="4" pname="e" stem.dir="up" xml:id="w1581ab1c11b1c11"/>
+                           <note dur="2" oct="4" pname="d" stem.dir="up" xml:id="w1581ab1c11b1c13"/>
+                           <note dur="2" oct="4" pname="f" stem.dir="up" xml:id="w1581ab1c11b1c15"/>
+                           <note dur="2" oct="4" pname="e" stem.dir="up" xml:id="w1581ab1c11b1c17"/>
+                           <note dur="2" oct="4" pname="g" stem.dir="up" xml:id="w1581ab1c11b1c19"/>
+                           <note dur="2" oct="4" pname="f" stem.dir="up" xml:id="w1581ab1c11b1c21"/>
+                           <note dur="1" oct="4" pname="e" xml:id="w1581ab1c11b1c23"/>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="1" oct="3" pname="e" xml:id="w1581ab1c11b3b5"/>
+                           <note dur="1" oct="3" pname="g" xml:id="w1581ab1c11b3b7"/>
+                           <note dur="1" oct="3" pname="a" xml:id="w1581ab1c11b3b9"/>
+                           <note dur="1" oct="3" pname="b" xml:id="w1581ab1c11b3c11"/>
+                           <note dur="1" oct="4" pname="c" xml:id="w1581ab1c11b3c13"/>
+                        </layer>
+                     </staff>
+                     <dir label="words" place="above" staff="1" tstamp="1">A due voci per decima
+                        sopra</dir>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+         <mdiv n="4">
+            <score>
+               <scoreDef key.sig="0">
+                  <staffGrp>
+                     <staffDef clef.line="4" clef.shape="F" key.sig="0" lines="5" n="1"
+                        xml:id="P1-4"/>
+                     <staffDef clef.line="4" clef.shape="F" key.sig="0" lines="5" n="2"
+                        xml:id="P2-4"/>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="4" xml:id="w1645ab1c11">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="1" oct="3" pname="e" xml:id="w1645ab1c11b1b7"/>
+                           <note dur="1" oct="3" pname="g" xml:id="w1645ab1c11b1b9"/>
+                           <note dur="1" oct="3" pname="a" xml:id="w1645ab1c11b1c11"/>
+                           <note dur="1" oct="3" pname="b" xml:id="w1645ab1c11b1c13"/>
+                           <note dur="1" oct="4" pname="c" xml:id="w1645ab1c11b1c15"/>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <rest dur="2" xml:id="w1645ab1c11b3b5"/>
+                           <note dots="1" dur="2" oct="3" pname="g" stem.dir="down"
+                              xml:id="w1645ab1c11b3b7"/>
+                           <note dur="4" oct="3" pname="f" stem.dir="down" xml:id="w1645ab1c11b3b9"/>
+                           <note dur="2" oct="3" pname="e" stem.dir="down" xml:id="w1645ab1c11b3c11"/>
+                           <note dur="2" oct="3" pname="d" stem.dir="down" xml:id="w1645ab1c11b3c13"/>
+                           <note dur="2" oct="3" pname="f" stem.dir="down" xml:id="w1645ab1c11b3c15"/>
+                           <note dur="2" oct="3" pname="e" stem.dir="down" xml:id="w1645ab1c11b3c17"/>
+                           <note dur="2" oct="3" pname="g" stem.dir="down" xml:id="w1645ab1c11b3c19"/>
+                           <note dur="2" oct="3" pname="f" stem.dir="down" xml:id="w1645ab1c11b3c21"/>
+                           <note dur="2" oct="3" pname="e" stem.dir="down" xml:id="w1645ab1c11b3c23"
+                           />
+                        </layer>
+                     </staff>
+                     <dir label="words" place="above" staff="1" tstamp="1">A due voci, con un
+                        sospiro, per terza sopra</dir>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+         <mdiv n="5">
+            <score>
+               <scoreDef key.sig="0">
+                  <staffGrp>
+                     <staffDef clef.line="2" clef.shape="G" key.sig="0" lines="5" n="1"
+                        xml:id="P1-5"/>
+                     <staffDef clef.line="2" clef.shape="G" key.sig="0" lines="5" n="2"
+                        xml:id="P2-5"/>
+                     <staffDef clef.line="4" clef.shape="F" key.sig="0" lines="5" n="3"
+                        xml:id="P3-5"/>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="5" xml:id="w1711ab1c11">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="4" pname="g" stem.dir="up"
+                              xml:id="w1711ab1c11b1b7"/>
+                           <note dur="4" oct="4" pname="f" stem.dir="up" xml:id="w1711ab1c11b1b9"/>
+                           <note dur="2" oct="4" pname="e" stem.dir="up" xml:id="w1711ab1c11b1c11"/>
+                           <note dur="2" oct="4" pname="d" stem.dir="up" xml:id="w1711ab1c11b1c13"/>
+                           <note dur="2" oct="4" pname="f" stem.dir="up" xml:id="w1711ab1c11b1c15"/>
+                           <note dur="2" oct="4" pname="e" stem.dir="up" xml:id="w1711ab1c11b1c17"/>
+                           <note dur="2" oct="4" pname="g" stem.dir="up" xml:id="w1711ab1c11b1c19"/>
+                           <note dur="2" oct="4" pname="f" stem.dir="up" xml:id="w1711ab1c11b1c21"/>
+                           <note dur="1" oct="4" pname="e" xml:id="w1711ab1c11b1c23"/>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <supplied>
+                              <note dur="1" oct="4" pname="g" xml:id="w1711ab1c11b3b5"/>
+                              <note dur="1" oct="4" pname="b" xml:id="w1711ab1c11b3b7"/>
+                              <note dur="1" oct="5" pname="c" xml:id="w1711ab1c11b3b9"/>
+                              <note dur="1" oct="5" pname="d" xml:id="w1711ab1c11b3c11"/>
+                              <note dur="1" oct="5" pname="e" xml:id="w1711ab1c11b3c13"/>
+                           </supplied>
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <note dur="1" oct="3" pname="e" xml:id="w1711ab1c11b5b5"/>
+                           <note dur="1" oct="3" pname="g" xml:id="w1711ab1c11b5b7"/>
+                           <note dur="1" oct="3" pname="a" xml:id="w1711ab1c11b5b9"/>
+                           <note dur="1" oct="3" pname="b" xml:id="w1711ab1c11b5c11"/>
+                           <note dur="1" oct="4" pname="c" xml:id="w1711ab1c11b5c13"/>
+                        </layer>
+                     </staff>
+                     <dir label="words" place="above" staff="1" tstamp="1">A tre voci alla decima
+                        sopra</dir>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

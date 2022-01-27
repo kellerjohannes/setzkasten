@@ -1,0 +1,14 @@
+<svg width="350" height="1500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 350 1500" stroke="black">
+  <path d="M (- center-x h-width) center-y center-x (+ center-y h-height) (+ center-x h-width) center-y center-x (- center-y h-height) Z">
+  </path>
+  <line x1="20" x2="330" y1="550.0" y2="550.0" stroke-linecap="round" stroke-width="30">
+  </line>
+  <line x1="20" x2="330" y1="650.0" y2="650.0" stroke-linecap="round" stroke-width="30">
+  </line>
+  <line x1="20" x2="330" y1="750.0" y2="750.0" stroke-linecap="round" stroke-width="30">
+  </line>
+  <line x1="20" x2="330" y1="850.0" y2="850.0" stroke-linecap="round" stroke-width="30">
+  </line>
+  <line x1="20" x2="330" y1="950.0" y2="950.0" stroke-linecap="round" stroke-width="30">
+  </line>
+</svg>

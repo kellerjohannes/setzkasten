@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-model href="http://music-encoding.org/schema/4.0.0/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://music-encoding.org/schema/4.0.0/mei-CMN.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" xmlns:xlink="http://www.w3.org/1999/xlink"
+   meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title label="work">17r</title>
+         </titleStmt>
+         <pubStmt/>
+         <sourceDesc>
+            <source>
+               <bibl>
+                  <title label="work">17r</title>
+                  <imprint/>
+                  <annot>Source MusicXML file created using MuseScore 3.3.0 on
+                        <date>2021-06-16</date>.</annot>
+               </bibl>
+            </source>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="v1.0_beta" xml:id="app_2021167100312941">
+               <name>mei30To40.xsl</name>
+            </application>
+         </appInfo>
+         <editorialDecl>
+            <normalization>
+               <p>Calculation of @tstamp and @tstamp2 values on control events, such as dir, dynam,
+                  hairpin, etc., includes MusicXML offset values.</p>
+               <p>The parameters for musicxml2mei.xsl were set as follows: <list>
+                     <li>accidStyle: "attr", </li>
+                     <li>articStyle: "elem", </li>
+                     <li>formeWork: "strip", </li>
+                     <li>generateMIDI: "false", </li>
+                     <li>keepAttributes: "false", </li>
+                     <li>keepRights: "false", </li>
+                     <li>labelStyle: "attr", </li>
+                     <li>layout: "strip", </li>
+                     <li>tieStyle: "attr"</li>
+                  </list>
+               </p>
+            </normalization>
+         </editorialDecl>
+      </encodingDesc>
+      <workList>
+         <work>
+            <title label="work">17r</title>
+         </work>
+      </workList>
+      <revisionDesc>
+         <change n="1" resp="#app_2021167100312941">
+            <changeDesc>
+               <p>Transcoded from a MusicXML version 3.1 file using an XSLT stylesheet (musicxml2mei
+                  v. 3.0).</p>
+            </changeDesc>
+            <date>2021-06-16</date>
+         </change>
+         <change n="2" resp="#app_2021167100312941">
+            <changeDesc>
+               <p>Converted to MEI version 4.0.0 using mei30To40.xsl, version 1.0 beta</p>
+            </changeDesc>
+            <date isodate="2021-06-16"/>
+         </change>
+      </revisionDesc>
+   </meiHead>
+   <music>
+      <!-- measure elements instead of barline elements -->
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef key.sig="0">
+                  <staffGrp>
+                     <staffDef clef.line="4" clef.shape="C" key.sig="0" lines="5" n="1" xml:id="P1"/>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <pb/>
+                  <sb/>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note accid="s" dur="long" oct="3" pname="b" stem.dir="down"
+                              xml:id="w15ab1c11b1b5"/>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note accid="s" dur="breve" oct="3" pname="a" xml:id="w15ab1c11b1b7"/>
+                           <note dur="breve" oct="3" pname="a" xml:id="w15ab1c11b1b9">
+                              <accid accid="n" enclose="paren"/>
+                           </note>
+                        </layer>
+                     </staff>
+                     <bracketSpan staff="1" func="ligature" lform="solid" startid="#w15ab1c11b1b7"
+                        endid="#w15ab1c11b1b9"/>
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="1" oct="3" pname="g" xml:id="w15ab1c11b1c11"/>
+                           <note accid="s" dur="1" oct="3" pname="g" xml:id="w15ab1c11b1c13"/>
+                        </layer>
+                     </staff>
+                     <bracketSpan staff="1" func="ligature" lform="solid" startid="#w15ab1c11b1c11"
+                        endid="#w15ab1c11b1c13"/>
+                  </measure>
+                  <measure n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <note accid="f" dur="breve" oct="3" pname="b" xml:id="w15ab1c11b1c15"/>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="5">
+                     <staff n="1">
+                        <layer n="1">
+                           <note accid.ges="f" dur="1" oct="3" pname="b" xml:id="w15ab1c11b1c17"/>
+                           <note dur="1" oct="3" pname="b" xml:id="w15ab1c11b1c19">
+                              <accid accid="n" enclose="paren"/>
+                           </note>
+                        </layer>
+                     </staff>
+                     <bracketSpan staff="1" func="ligature" lform="solid" startid="#w15ab1c11b1c17"
+                        endid="#w15ab1c11b1c19"/>
+                  </measure>
+                  <measure n="6">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="1" oct="3" pname="a" xml:id="w15x"/>
+                           <note dur="1" oct="3" pname="a" xml:id="w15y">
+                              <accid accid="f"/>
+                           </note>
+                        </layer>
+                     </staff>
+                     <bracketSpan staff="1" func="ligature" lform="solid" startid="#w15x"
+                        endid="#w15y"/>
+                  </measure>
+                  <scoreDef key.sig="1f">
+                     <staffGrp>
+                        <staffDef clef.shape="C" clef.line="4" key.sig="1f" n="1"/>
+                     </staffGrp>
+                  </scoreDef>
+                  <measure n="7">
+                     <staff n="1">
+                        <layer n="1">
+                           <note accid="n" dur="breve" oct="3" pname="b" xml:id="w15ab1c13b1b5"/>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="8">
+                     <staff n="1">
+                        <layer n="1">
+                           <note accid="n" dur="1" oct="3" pname="b" xml:id="w15ab1c13b1b7"/>
+                           <note dur="1" oct="3" pname="b" xml:id="w15ab1c13b1b9">
+                              <accid accid="f" enclose="paren"/>
+                           </note>
+                        </layer>
+                     </staff>
+                     <bracketSpan staff="1" func="ligature" lform="solid" startid="#w15ab1c13b1b7"
+                        endid="#w15ab1c13b1b9"/>
+                  </measure>
+                  <measure n="9">
+                     <staff n="1">
+                        <layer n="1">
+                           <note accid.ges="f" dur="1" oct="3" pname="b" xml:id="w15ab1c13b1c11"/>
+                           <note accid="n" dur="1" oct="3" pname="b" xml:id="w15ab1c13b1c13"/>
+                        </layer>
+                     </staff>
+                     <bracketSpan staff="1" func="ligature" lform="solid" startid="#w15ab1c13b1c11"
+                        endid="#w15ab1c13b1c13"/>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

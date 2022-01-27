@@ -1,0 +1,16 @@
+<svg width="350" height="1500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 350 1500" stroke="black">
+  <path d="M 175.0 715.0 160.0 700.0 175.0 685.0 190.0 700.0 Z" fill-rule="evenodd">
+  </path>
+  <path d="M 103.0 880.0 103.0 720.0 116.0 720.0 116.0 850.0 234.0 850.0 234.0 720.0 247.0 720.0 247.0 880.0 234.0 880.0 234.0 750.0 116.0 750.0 116.0 880.0 Z M 116.0 777.0 116.0 823.0 234.0 823.0 234.0 777.0 Z" fill-rule="evenodd">
+  </path>
+  <line x1="10" x2="340" y1="950.0" y2="950.0" stroke-linecap="round" stroke-width="15">
+  </line>
+  <line x1="10" x2="340" y1="850.0" y2="850.0" stroke-linecap="round" stroke-width="15">
+  </line>
+  <line x1="10" x2="340" y1="750.0" y2="750.0" stroke-linecap="round" stroke-width="15">
+  </line>
+  <line x1="10" x2="340" y1="650.0" y2="650.0" stroke-linecap="round" stroke-width="15">
+  </line>
+  <line x1="10" x2="340" y1="550.0" y2="550.0" stroke-linecap="round" stroke-width="15">
+  </line>
+</svg>
