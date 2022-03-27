@@ -2,6 +2,11 @@
 ;;;; family of casting methods, to produce SVG output for each type container ;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; TODO
+;; - relocate path macros (path el) and (generate-path)
+;;   -> create separate macro collection file?
+
+
 (in-package :setzkasten)
 
 
@@ -10,13 +15,7 @@
    "Creates SVG files for any sort of type by calling the :around-method to create and close the SVG context and the applicable methods to generate the SVG paths of the types' components."))
 
 
-;; container, svg stuff
-
-;; (let ((scene (make-svg-toplevel 'svg-1.1-toplevel :height 300 :width 300)))
-;;   (draw scene (:rect :x 5 :y 5 :width 30 :height 30))
-;;   (stream-out *standard-output* scene))
-
-;; (defparameter tmp-image nil "Used to temporarily collect SVG fragments.")
+;; container, svg stuff, wraps :around casting methods that generate svg code
 
 (defmethod cast :around ((type-generic setzkasten/type))
   "Main casting method, wrapping all other casting methods for the components of this type."
@@ -95,46 +94,52 @@
 ;; notehead
 
 (defmacro path-el (command vec)
+  "Resolves coordinates in the format of vec for use with the cl-svg path API."
   `(,command (vec:x-coord ,vec) (vec:y-coord ,vec)))
 
 (defmacro generate-path (stream fill-rule &rest instructions)
+  "Rudimentary abstraction layer for the cl-svg path API."
   `(draw ,stream
-       :fill-rule ,fill-rule
-       (:path :d (path
-		   ,@(mapcar #'(lambda (instruction)
-				 (case (first instruction)
-				   (m `(path-el move-to ,(second instruction)))
-				   (l `(path-el line-to ,(second instruction)))
-				   (c `(close-path))))
-			     instructions)))))
+       (:path :fill-rule ,fill-rule
+	 :d (path ,@(mapcar #'(lambda (instruction)
+				(case (first instruction)
+				  (m `(path-el move-to ,(second instruction)))
+				  (l `(path-el line-to ,(second instruction)))
+				  (c `(close-path))))
+			    instructions)))))
 
 
-(defmethod draw-notehead-square ((type-notehead-i setzkasten/type-notehead) center-x center-y width height l1 l2 black-p distance-between-lines)
+(defmethod draw-notehead-square ((type-notehead-i setzkasten/type-notehead) center-x center-y width height)
   "Generates SVG data for a square shaped notehead, black or white notation."
-  (let* ((w-2 (* 0.5 width))
-	 (h-2 (* 0.5 height))
-	 (d-2 (* 0.5 distance-between-lines))
-	 (center (vec:create center-x center-y))
-	 (a (vec:create (- center-x w-2) (+ center-y h-2)))
-	 (b (vec:create (- center-x w-2) (- center-y h-2)))
-	 (c (vec:add b (vec:create l2 0)))
-	 (d (vec:create (vec:x-coord c) (+ center-y d-2)))
-	 (e (vec:mirror-x d center-x))
-	 (f (vec:mirror-x c center-x))
-	 (g (vec:mirror-x b center-x))
-	 (h (vec:mirror-dot b center))
-	 (i (vec:mirror-dot c center))
-	 (j (vec:mirror-dot d center))
-	 (k (vec:mirror-y d center-y))
-	 (l (vec:mirror-y c center-y))
-	 (path-notehead (create-path (list a b c d e f g h i j k l))))
-    (unless black-p
-      (let* ((m (vec:add k (vec:create 0 l1)))
-	     (n (vec:mirror-y m center-y))
-	     (o (vec:mirror-dot m center))
-	     (p (vec:mirror-x m center-x)))
-	(setf path-notehead (append path-notehead (create-path (list m n o p))))))
-    (draw (svg-object type-notehead-i) (:path :d path-notehead) :fill-rule 'evenodd)))
+  (with-slots (bold-stroke light-stroke black) (notehead-instance type-notehead-i)
+    (let* ((w-2 (* 0.5 width))
+	   (h-2 (* 0.5 height))
+	   (d-2 (* 0.5 (distance-between-lines (staff-instance type-notehead-i))))
+	   (center (vec:create center-x center-y))
+	   (a (vec:create (- center-x w-2) (+ center-y h-2)))
+	   (b (vec:create (- center-x w-2) (- center-y h-2)))
+	   (c (vec:add b (vec:create light-stroke 0)))
+	   (d (vec:create (vec:x-coord c) (+ center-y d-2)))
+	   (e (vec:mirror-x d center-x))
+	   (f (vec:mirror-x c center-x))
+	   (g (vec:mirror-x b center-x))
+	   (h (vec:mirror-dot b center))
+	   (i (vec:mirror-dot c center))
+	   (j (vec:mirror-dot d center))
+	   (k (vec:mirror-y d center-y))
+	   (l (vec:mirror-y c center-y)))
+      (if black
+	  (generate-path (svg-object type-notehead-i) 'evenodd
+			 (m a) (l b) (l c) (l d)
+			 (l e) (l f) (l g) (l h) (l i) (l j) (l k) (l l) (c))
+	  (let* ((m (vec:add k (vec:create 0 bold-stroke)))
+		 (n (vec:mirror-y m center-y))
+		 (o (vec:mirror-dot m center))
+		 (p (vec:mirror-x m center-x)))
+	    (generate-path (svg-object type-notehead-i) 'evenodd
+			   (m a) (l b) (l c) (l d)
+			   (l e) (l f) (l g) (l h) (l i) (l j) (l k) (l l) (c)
+			   (m m) (l n) (l o) (l p) (c)))))))
 
 
 (defmethod draw-notehead-diamond ((type-notehead-i setzkasten/type-notehead) center-x center-y width height)
@@ -145,12 +150,8 @@
 	   (c (vec:create center-x (- center-y (* 0.5 height))))
 	   (d (vec:create (+ center-x (* 0.5 width)) center-y)))
       (if black
-	  (draw (svg-object type-notehead-i)
-	      (:path :d (path (path-el move-to a)
-			  (path-el line-to b)
-			  (path-el line-to c)
-			  (path-el line-to d)
-			  (close-path))))
+	  (generate-path (svg-object type-notehead-i) 'evenodd
+			 (m a) (l b) (l c) (l d) (c))
 	  (let* ((center (vec:create center-x center-y))
      		 (e (vec:add a (vec:add (vec:scale (vec:unit-vector a b) light-stroke)
      					(vec:scale (vec:unit-vector a d) bold-stroke))))
@@ -158,18 +159,9 @@
      					(vec:scale (vec:unit-vector a d) bold-stroke))))
      		 (g (vec:add center (vec:subtract center e)))
 		 (h (vec:add center (vec:subtract center f))))
-	    (draw (svg-object type-notehead-i)
-		(:path :fill-rule 'evenodd
-		  :d (path (path-el move-to a)
-		       (path-el line-to b)
-		       (path-el line-to c)
-		       (path-el line-to d)
-		       (close-path)
-		       (path-el move-to e)
-		       (path-el line-to f)
-		       (path-el line-to g)
-		       (path-el line-to h)
-		       (close-path)))))))))
+	    (generate-path (svg-object type-notehead-i) 'evenodd
+			   (m a) (l b) (l c) (l d) (c)
+			   (m e) (l f) (l g) (l h) (c)))))))
 
 (defmethod calculate-notehead-height ((type setzkasten/type-notehead))
   "Returns the vertical height of a notehead, including the overhead value."
@@ -195,10 +187,8 @@
 	   (w (* width-factor h)))
       (if oblique-p
 	  (draw-notehead-diamond type-notehead x y w h)
-	(draw-notehead-square type-notehead x y w h bold-stroke light-stroke black-p
-			      (distance-between-lines (staff-instance type-notehead))))))
+	(draw-notehead-square type-notehead x y w h))))
   (call-next-method))
-
 
 
 
