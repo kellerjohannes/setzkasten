@@ -94,26 +94,20 @@
 
 ;; notehead
 
-(defun create-path (list-of-vecs)
-  (append (list (list 'move-to
-		      (vec:x-coord (first list-of-vecs))
-		      (vec:y-coord (second list-of-vecs))))
-	  (mapcar #'(lambda (vec) (list 'line-to (vec:x-coord vec) (vec:y-coord vec)))
-		  (rest list-of-vecs))
-	  '((close-path))))
-
-(defmacro draw-path-from-vecs (stream &rest list-of-vecs)
-  `(draw ,stream (:path :d (path (move-to (vec:x-coord ,(first list-of-vecs))
-					  (vec:y-coord ,(first list-of-vecs)))
-			     ,@(mapcar #'(lambda (vec) (list 'line-to
-							     (list 'vec:x-coord vec)
-							     (list 'vec:y-coord vec)))
-				       (rest list-of-vecs))
-			     (close-path))
-		   :fill-rule 'evenodd)))
-
 (defmacro path-el (command vec)
   `(,command (vec:x-coord ,vec) (vec:y-coord ,vec)))
+
+(defmacro generate-path (stream fill-rule &rest instructions)
+  `(draw ,stream
+       :fill-rule ,fill-rule
+       (:path :d (path
+		   ,@(mapcar #'(lambda (instruction)
+				 (case (first instruction)
+				   (m `(path-el move-to ,(second instruction)))
+				   (l `(path-el line-to ,(second instruction)))
+				   (c `(close-path))))
+			     instructions)))))
+
 
 (defmethod draw-notehead-square ((type-notehead-i setzkasten/type-notehead) center-x center-y width height l1 l2 black-p distance-between-lines)
   "Generates SVG data for a square shaped notehead, black or white notation."
