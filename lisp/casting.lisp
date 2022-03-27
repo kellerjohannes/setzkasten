@@ -102,6 +102,18 @@
 		  (rest list-of-vecs))
 	  '((close-path))))
 
+(defmacro draw-path-from-vecs (stream &rest list-of-vecs)
+  `(draw ,stream (:path :d (path (move-to (vec:x-coord ,(first list-of-vecs))
+					  (vec:y-coord ,(first list-of-vecs)))
+			     ,@(mapcar #'(lambda (vec) (list 'line-to
+							     (list 'vec:x-coord vec)
+							     (list 'vec:y-coord vec)))
+				       (rest list-of-vecs))
+			     (close-path))
+		   :fill-rule 'evenodd)))
+
+(defmacro path-el (command vec)
+  `(,command (vec:x-coord ,vec) (vec:y-coord ,vec)))
 
 (defmethod draw-notehead-square ((type-notehead-i setzkasten/type-notehead) center-x center-y width height l1 l2 black-p distance-between-lines)
   "Generates SVG data for a square shaped notehead, black or white notation."
@@ -130,15 +142,6 @@
 	(setf path-notehead (append path-notehead (create-path (list m n o p))))))
     (draw (svg-object type-notehead-i) (:path :d path-notehead) :fill-rule 'evenodd)))
 
-(defmacro draw-path-from-vecs (stream &rest list-of-vecs)
-  `(draw ,stream (:path :d (path (move-to (vec:x-coord ,(first list-of-vecs))
-					  (vec:y-coord ,(first list-of-vecs)))
-			     ,@(mapcar #'(lambda (vec) (list 'line-to
-							     (list 'vec:x-coord vec)
-							     (list 'vec:y-coord vec)))
-				       (rest list-of-vecs))
-			     (close-path))
-		   :fill-rule 'evenodd)))
 
 (defmethod draw-notehead-diamond ((type-notehead-i setzkasten/type-notehead) center-x center-y width height)
   "Generates SVG data for a diamond shaped notehead, black or white notation."
@@ -148,15 +151,31 @@
 	   (c (vec:create center-x (- center-y (* 0.5 height))))
 	   (d (vec:create (+ center-x (* 0.5 width)) center-y)))
       (if black
-	  (draw-path-from-vecs (svg-object type-notehead-i) a b c d)
-	(let* ((center (vec:create center-x center-y))
-     	       (e (vec:add a (vec:add (vec:scale (vec:unit-vector a b) light-stroke)
-     				      (vec:scale (vec:unit-vector a d) bold-stroke))))
-     	       (f (vec:add b (vec:add (vec:scale (vec:unit-vector b a) light-stroke)
-     				      (vec:scale (vec:unit-vector a d) bold-stroke))))
-     	       (g (vec:add center (vec:subtract center e)))
-	       (h (vec:add center (vec:subtract center f))))
-	  (draw-path-from-vecs (svg-object type-notehead-i) a b c d e f g h))))))
+	  (draw (svg-object type-notehead-i)
+	      (:path :d (path (path-el move-to a)
+			  (path-el line-to b)
+			  (path-el line-to c)
+			  (path-el line-to d)
+			  (close-path))))
+	  (let* ((center (vec:create center-x center-y))
+     		 (e (vec:add a (vec:add (vec:scale (vec:unit-vector a b) light-stroke)
+     					(vec:scale (vec:unit-vector a d) bold-stroke))))
+     		 (f (vec:add b (vec:add (vec:scale (vec:unit-vector b a) light-stroke)
+     					(vec:scale (vec:unit-vector a d) bold-stroke))))
+     		 (g (vec:add center (vec:subtract center e)))
+		 (h (vec:add center (vec:subtract center f))))
+	    (draw (svg-object type-notehead-i)
+		(:path :fill-rule 'evenodd
+		  :d (path (path-el move-to a)
+		       (path-el line-to b)
+		       (path-el line-to c)
+		       (path-el line-to d)
+		       (close-path)
+		       (path-el move-to e)
+		       (path-el line-to f)
+		       (path-el line-to g)
+		       (path-el line-to h)
+		       (close-path)))))))))
 
 (defmethod calculate-notehead-height ((type setzkasten/type-notehead))
   "Returns the vertical height of a notehead, including the overhead value."
