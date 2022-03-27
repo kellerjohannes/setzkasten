@@ -1,0 +1,11 @@
+(require :cl-who)
+(require :hunchentoot)
+(require :parenscript)
+
+(defpackage :setzkasten
+  (:use :cl :cl-who :hunchentoot :parenscript))
+
+(in-package :setzkasten)
+
+(load "class-definitions.lisp")
+(load "casting.lisp")

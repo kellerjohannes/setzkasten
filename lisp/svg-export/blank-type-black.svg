@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="350" height="1500" version="1.1" id="toplevel"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+  <line x1="0.20" y1="774.00" x2="349.80" y2="774.00" stroke-width="1.20"
+        stroke-linecap="round"/>
+  <line x1="0.20" y1="762.00" x2="349.80" y2="762.00" stroke-width="1.20"
+        stroke-linecap="round"/>
+  <line x1="0.20" y1="750.00" x2="349.80" y2="750.00" stroke-width="1.20"
+        stroke-linecap="round"/>
+  <line x1="0.20" y1="738.00" x2="349.80" y2="738.00" stroke-width="1.20"
+        stroke-linecap="round"/>
+  <line x1="0.20" y1="726.00" x2="349.80" y2="726.00" stroke-width="1.20"
+        stroke-linecap="round"/>
+</svg>
