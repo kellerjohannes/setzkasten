@@ -8,49 +8,60 @@
 ;; under construction, will eventually be a macro to process font and types data, defined by the typesetting person.
 
 (defun test-generation ()
-  (let ((staff (setzkasten/staff :number-of-lines 5
-				 :distance-between-lines 100
-				 :thickness 15
-				 :endings "round"
-				 :offset 10))
-	(notehead-semibrevis (setzkasten/notehead :length-over-line 0.2
-						  :width 0.8
-						  :bold-stroke 27
-						  :light-stroke 13
-						  :oblique-p t
-						  :black nil))
-	(notehead-brevis (setzkasten/notehead :length-over-line 0.3
-					      :width 0.9
-					      :bold-stroke 27
-					      :light-stroke 13
-					      :oblique-p nil
-					      :black nil))
+  (let ((staff
+	 (setzkasten/staff
+	  :number-of-lines 5
+	  :distance-between-lines 100
+	  :thickness 15
+	  :endings "round"
+	  :offset 10))
+	(notehead-semibrevis
+	 (setzkasten/notehead
+	  :length-over-line 0.2
+	  :width 0.8
+	  :bold-stroke 27
+	  :light-stroke 13
+	  :oblique-p t
+	  :black nil))
+	(notehead-brevis
+	 (setzkasten/notehead
+	  :length-over-line 0.3
+	  :width 0.9
+	  :bold-stroke 27
+	  :light-stroke 13
+	  :oblique-p nil
+	  :black nil))
 	(enharmonic-dot (setzkasten/dot :size .3)))
-    (let ((semibrevis-a (setzkasten/type-notehead :notehead-position 5
-						  :type-width 350
-						  :filename "semibrevis-a"
-						  :ink-color "black"
-						  :staff-instance staff
-						  :notehead-instance notehead-semibrevis))
-	  (brevis-b (setzkasten/type-notehead :notehead-position 4
-						  :type-width 350
-						  :filename "brevis-b"
-						  :ink-color "black"
-						  :staff-instance staff
-						  :notehead-instance notehead-brevis))
-	  (semibrevis-dot-a (setzkasten/type-notehead-dot :notehead-position 4
-							  :type-width 350
-							  :filename "semibrevis-dot-a"
-							  :ink-color "black"
-							  :staff-instance staff
-							  :notehead-instance notehead-brevis
-							  :dot-alignment 'center
-							  :dot-instance enharmonic-dot)))
+    (let ((semibrevis-a
+	   (setzkasten/type-notehead
+	    :notehead-position 5
+	    :type-width 350
+	    :filename "semibrevis-a"
+	    :ink-color "black"
+	    :staff-instance staff
+	    :notehead-instance notehead-semibrevis))
+	  (brevis-b
+	   (setzkasten/type-notehead
+	    :notehead-position 4
+	    :type-width 350
+	    :filename "brevis-b"
+	    :ink-color "black"
+	    :staff-instance staff
+	    :notehead-instance notehead-brevis))
+	  (semibrevis-dot-a
+	   (setzkasten/type-notehead-dot
+	    :notehead-position 4
+	    :type-width 350
+	    :filename "semibrevis-dot-a"
+	    :ink-color "black"
+	    :staff-instance staff
+	    :notehead-instance notehead-brevis
+	    :dot-alignment 'center
+	    :dot-instance enharmonic-dot)))
       ;(inverse-staff-position semibrevis-a 10)
       (cast semibrevis-a)
       (cast brevis-b)
-      (cast semibrevis-dot-a)
-      )))
+      (cast semibrevis-dot-a))))
 
 (test-generation)
 
@@ -74,25 +85,34 @@
 	(staff (setzkasten/staff))
 	(rest-hanging (setzkasten/rest))
 	(dot-enharmonic (setzkasten/dot)))
-    (let ((blank-a (setzkasten/type-staff :width 17
-					  :staff-instance staff))
-	  (blank-b (setzkasten/type-staff :width 35
-					  :staff-instance staff))
-	  (minima-a (setzkasten/type-notehead-flagged :width 28
-						      :staff-instance staff
-						      :notehead-instance notehead-oblique
-						      :notehead-position 0
-						      :stem-instance stem-minima
-						      :flag-instance flag-croma
-						      :dot-instance dot-enharmonic))
-	  (rest-minima-b (setzkasten/type-rest :width 18
-					       :staff-instance staff
-					       :rest-instance rest-hanging
-					       :rest-position 3))
-	  (fclef-c (setzkasten/type-fclef-component
-		    :staff-instance staff
-		    :notehead-instance notehead-oblique
-		    :stem-instance stem-minima)))
+    (let ((blank-a
+	   (setzkasten/type-staff
+	    :width 17
+	    :staff-instance staff))
+	  (blank-b
+	   (setzkasten/type-staff
+	    :width 35
+	    :staff-instance staff))
+	  (minima-a
+	   (setzkasten/type-notehead-flagged
+	    :width 28
+	    :staff-instance staff
+	    :notehead-instance notehead-oblique
+	    :notehead-position 0
+	    :stem-instance stem-minima
+	    :flag-instance flag-croma
+	    :dot-instance dot-enharmonic))
+	  (rest-minima-b
+	   (setzkasten/type-rest
+	    :width 18
+	    :staff-instance staff
+	    :rest-instance rest-hanging
+	    :rest-position 3))
+	  (fclef-c
+	   (setzkasten/type-fclef-component
+	    :staff-instance staff
+	    :notehead-instance notehead-oblique
+	    :stem-instance stem-minima)))
       (insert "\n")
       (cast fclef-c)
       (insert "\n")

@@ -45,28 +45,28 @@
 (define-setzkasten-class setzkasten/notehead ()
   "Parameters for the creation of noteheads, oblique and square ones."
   (length-over-line 0.25 "If the notehead is located in a space: overhead distance that goes above the line, in fraction of line space.")
-   (width .8 "Width (horizontally) of the notehead, as proportion to its height.")
-   (bold-stroke 3 "Width of the bold lines in the note head.")
-   (light-stroke 1 "Width of the light lines in the note head.")
-   (oblique-p t "T if the notehead is diamond-shaped, nil if it is a regular recangle.")
-   (black nil "nil for normal notehead, T for black notation."))
+  (width .8 "Width (horizontally) of the notehead, as proportion to its height.")
+  (bold-stroke 3 "Width of the bold lines in the note head.")
+  (light-stroke 1 "Width of the light lines in the note head.")
+  (oblique-p t "T if the notehead is diamond-shaped, nil if it is a regular recangle.")
+  (black nil "nil for normal notehead, T for black notation."))
 
 (define-setzkasten-class setzkasten/stem ()
   "Parameters for the creation of note stems."
   (stem-length 2.3 "Length of note stem, in proportion to distance between lines.")
-   (width-head 1.8 "Width of the note stem at note head.")
-   (width-tail 1.2 "Width of the note stem at the end of the stem, in proportion to its width at the note head."))
+  (width-head 1.8 "Width of the note stem at note head.")
+  (width-tail 1.2 "Width of the note stem at the end of the stem, in proportion to its width at the note head."))
 
 (define-setzkasten-class setzkasten/flag ()
   "Parameters for the creation of a stem flag."
   (flag-thickness nil "Stroke thickness for flag. If nil, no flag will be produced.")
-   ;; TODO more flag parameters
-   )
+  ;; TODO more flag parameters
+  )
 
 (define-setzkasten-class setzkasten/rest ()
   "Parameters for the creation of rests."
   (vertical-length 0.5 "Length of the vertical line, in proportion to the space between staff lines. Negative value for hanging rests, positive value for sitting rests.")
-   (horizontal-length 0 "Length of the horizontal line, in proportion to the space between staff lines. 0 for no line. Negative value for pointing to the left (croma), positive value for pointing to the right (semiminima)."))
+  (horizontal-length 0 "Length of the horizontal line, in proportion to the space between staff lines. 0 for no line. Negative value for pointing to the left (croma), positive value for pointing to the right (semiminima)."))
 
 (define-setzkasten-class setzkasten/dot ()
   "Parameters for the creation of dots."
@@ -75,26 +75,26 @@
 (define-setzkasten-class setzkasten/sharp ()
   "Parameters for the creation of sharps."
   (thickness 0.5 "Stroke thickness.")
-   (size 1 "Overall size of the sharp. Length of one side (they are always square-shaped) in proportion to the distance between two staff-lines.")
-   (double-p t "nil if only two lines are used, t if four lines are used."))
+  (size 1 "Overall size of the sharp. Length of one side (they are always square-shaped) in proportion to the distance between two staff-lines.")
+  (double-p t "nil if only two lines are used, t if four lines are used."))
 
 (define-setzkasten-class setzkasten/flat ()
   "Parameters for the creation of flats."
   (thickness-circle 0.8 "Stroke thickness of the semi circle.")
-   (thickness-stem-head 0.8 "Stroke thickness at the lower end of the stem.")
-   (thickness-stem-head 1.2 "Stroke thickness at the upper end of the stem, in proportion to the stem thickness at the lower end.")
-   (stem-length 2.2 "Length of the stem, from above the semi circle to the upper end of the stem, proportional to the distance between staff lines.")
-   (diameter 4 "Diameter of the semi circle."))
+  (thickness-stem-head 0.8 "Stroke thickness at the lower end of the stem.")
+  (thickness-stem-head 1.2 "Stroke thickness at the upper end of the stem, in proportion to the stem thickness at the lower end.")
+  (stem-length 2.2 "Length of the stem, from above the semi circle to the upper end of the stem, proportional to the distance between staff lines.")
+  (diameter 4 "Diameter of the semi circle."))
 
 (define-setzkasten-class setzkasten/c-clef ()
   "Parameters for the creation of c-clefs."
   (vertical-thickness 0.2 "Stroke thickness of the three vertical lines.")
-   (horizontal-thickness 0.3 "Stroke thickness of the four horizontal lines.")
-   (rectangle-height 0.7 "Height of the two rectangles, in proportion to the distance between two staff lines.")
-   (rectangle-width 1.5 "Width of the two rectangles, in proportion to their height.")
-   (length-long-leg 2.2 "Length of the longest leg, in proportion to the space between two staff lines.")
-   (length-middle-leg 1 "Length of the top left leg (usually medium length), in proportion to the space between two staff lines.")
-   (length-short-leg 0.8 "Length of the two short legs, in proportion to the space between two staff lines."))
+  (horizontal-thickness 0.3 "Stroke thickness of the four horizontal lines.")
+  (rectangle-height 0.7 "Height of the two rectangles, in proportion to the distance between two staff lines.")
+  (rectangle-width 1.5 "Width of the two rectangles, in proportion to their height.")
+  (length-long-leg 2.2 "Length of the longest leg, in proportion to the space between two staff lines.")
+  (length-middle-leg 1 "Length of the top left leg (usually medium length), in proportion to the space between two staff lines.")
+  (length-short-leg 0.8 "Length of the two short legs, in proportion to the space between two staff lines."))
 
 (define-setzkasten-class setzkasten/g-clef ()
   "Parameters for the creation of g-clefs."
@@ -104,7 +104,7 @@
 (define-setzkasten-class setzkasten/barline ()
   "Parameters for the creation of bar lines."
   (overhead 0.2 "Overhead length above and below staff, in proportion to the space between two staff lines.")
-   (thickness 2 "Stroke thickness."))
+  (thickness 2 "Stroke thickness."))
 
 
 
