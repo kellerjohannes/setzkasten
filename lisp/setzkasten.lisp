@@ -26,7 +26,7 @@
 					:width 0.9
 					:bold-stroke 27
 					:light-stroke 13
-					:oblique-p nil
+					:oblique-p t
 					:black nil)))
     (let ((blank (make-instance 'setzkasten/type-staff
 				:staff-instance staff
