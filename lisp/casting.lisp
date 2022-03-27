@@ -10,82 +10,82 @@
 (in-package :setzkasten)
 
 
-(defgeneric cast (setzkasten/type)
+(defgeneric cast (glyph)
   (:documentation
    "Creates SVG files for any sort of type by calling the :around-method to create and close the SVG context and the applicable methods to generate the SVG paths of the types' components."))
 
 
 ;; container, svg stuff, wraps :around casting methods that generate svg code
 
-(defmethod cast :around ((type-generic setzkasten/type))
+(defmethod cast :around ((stencil glyph))
   "Main casting method, wrapping all other casting methods for the components of this type."
-  (setf (svg-object type-generic)
+  (setf (svg-object stencil)
 	(make-svg-toplevel 'svg-1.1-toplevel
-			   :height (* 1 (type-height type-generic))
-			   :width (* 1 (type-width type-generic))
-			   :stroke (ink-color type-generic)))
+			   :height (* 1 (type-height stencil))
+			   :width (* 1 (type-width stencil))
+			   :stroke (ink-color stencil)))
   (call-next-method)
   (with-open-file (stream (merge-pathnames
 			   *svg-export-path*
 			   (pathname (format nil "~a-~a.svg"
-					     (filename type-generic)
-					     (ink-color type-generic))))
+					     (filename stencil)
+					     (ink-color stencil))))
 			  :direction :output
 			  :if-exists :supersede
 			  :if-does-not-exist :create)
-    (stream-out stream (svg-object type-generic)))
-  (stream-out *standard-output* (svg-object type-generic)))
+    (stream-out stream (svg-object stencil)))
+  (stream-out *standard-output* (svg-object stencil)))
 
 
 
 
 ;; staff lines
 
-(defmethod v-center ((type setzkasten/type))
+(defmethod v-center ((stencil glyph))
   "Returns the x-coordinate of the center line of the type."
-  (* 0.5 (type-height type)))
+  (* 0.5 (type-height stencil)))
 
-(defmethod h-center ((type setzkasten/type))
+(defmethod h-center ((stencil glyph))
   "Returns the y-coordinate of the center line of the type."
-  (* 0.5 (type-width type)))
+  (* 0.5 (type-width stencil)))
 
-(defmethod number-of-staff-positions ((type setzkasten/type-staff))
+(defmethod number-of-staff-positions ((stencil glyph-staff))
   "Returns the highest possible staff position without using ledger lines."
-  (1+ (* 2 (number-of-lines (staff-instance type)))))
+  (1+ (* 2 (number-of-lines (staff-component stencil)))))
 
-(defmethod inverse-staff-position ((type setzkasten/type-staff) staff-position)
+(defmethod inverse-staff-position ((stencil glyph-staff) staff-position)
   "Inverses the staff position by mirroring the position at the center position."
-  (- (number-of-staff-positions type) 1 staff-position))
+  (- (number-of-staff-positions stencil) 1 staff-position))
 
-(defmethod calculate-absolute-staff-position ((type setzkasten/type-staff) staff-position)
+(defmethod calculate-absolute-staff-position ((stencil glyph-staff) staff-position)
   "Returns the y-coordinate referencing a given staff position."
   (with-slots ((dist distance-between-lines)
 	       (num-lines number-of-lines))
-      (staff-instance type)
-    (let ((pos-0 (- (v-center type) (* dist (+ 0.5 (* 0.5 (1- num-lines)))))))
-      (+ pos-0 (* 0.5 dist (inverse-staff-position type staff-position))))))
+      (staff-component stencil)
+    (let ((pos-0 (- (v-center stencil) (* dist (+ 0.5 (* 0.5 (1- num-lines)))))))
+      (+ pos-0 (* 0.5 dist (inverse-staff-position stencil staff-position))))))
 
 (defun find-next-space-above (staff-position)
   "Returns the staff position of the next available space above a notehead position."
   (let ((result (+ 2 staff-position)))
     (if (oddp result)
 	(1+ result)
-      result)))
+	result)))
 
-(defmethod cast ((type-blank setzkasten/type-staff))
+(defmethod cast ((stencil glyph-staff))
   "Generates SVG data for staff lines, vertically centered."
   (with-slots ((num-lines number-of-lines)
 	       thickness
 	       offset
 	       (linecap endings))
-      (staff-instance type-blank)
+      (staff-component stencil)
     (loop repeat num-lines
 	  for staff-pos from 1 by 2 
-	  do (let ((y (calculate-absolute-staff-position type-blank staff-pos)))
-	       (draw (svg-object type-blank) (:line :x1 offset
-					  :y1 y
-					  :x2 (- (type-width type-blank) offset)
-					  :y2 y)
+	  do (let ((y (calculate-absolute-staff-position stencil staff-pos)))
+	       (draw (svg-object stencil) (:line :x1 offset
+						 :y1 y
+						 :x2 (- (type-width stencil) offset)
+						 :y2 y)
 		     :stroke-width thickness
 		     :stroke-linecap linecap)))))
 
@@ -109,12 +109,12 @@
 			    instructions)))))
 
 
-(defmethod draw-notehead-square ((type-notehead-i setzkasten/type-notehead) center-x center-y width height)
+(defmethod draw-notehead-square ((stencil glyph-notehead) center-x center-y width height)
   "Generates SVG data for a square shaped notehead, black or white notation."
-  (with-slots (bold-stroke light-stroke black) (notehead-instance type-notehead-i)
+  (with-slots (bold-stroke light-stroke black) (notehead-component stencil)
     (let* ((w-2 (* 0.5 width))
 	   (h-2 (* 0.5 height))
-	   (d-2 (* 0.5 (distance-between-lines (staff-instance type-notehead-i))))
+	   (d-2 (* 0.5 (distance-between-lines (staff-component stencil))))
 	   (center (vec:create center-x center-y))
 	   (a (vec:create (- center-x w-2) (+ center-y h-2)))
 	   (b (vec:create (- center-x w-2) (- center-y h-2)))
@@ -129,28 +129,28 @@
 	   (k (vec:mirror-y d center-y))
 	   (l (vec:mirror-y c center-y)))
       (if black
-	  (generate-path (svg-object type-notehead-i) 'evenodd
+	  (generate-path (svg-object stencil) 'evenodd
 			 (m a) (l b) (l c) (l d)
 			 (l e) (l f) (l g) (l h) (l i) (l j) (l k) (l l) (c))
 	  (let* ((m (vec:add k (vec:create 0 bold-stroke)))
 		 (n (vec:mirror-y m center-y))
 		 (o (vec:mirror-dot m center))
 		 (p (vec:mirror-x m center-x)))
-	    (generate-path (svg-object type-notehead-i) 'evenodd
+	    (generate-path (svg-object stencil) 'evenodd
 			   (m a) (l b) (l c) (l d)
 			   (l e) (l f) (l g) (l h) (l i) (l j) (l k) (l l) (c)
 			   (m m) (l n) (l o) (l p) (c)))))))
 
 
-(defmethod draw-notehead-diamond ((type-notehead-i setzkasten/type-notehead) center-x center-y width height)
+(defmethod draw-notehead-diamond ((stencil glyph-notehead) center-x center-y width height)
   "Generates SVG data for a diamond shaped notehead, black or white notation."
-  (with-slots (bold-stroke light-stroke black) (notehead-instance type-notehead-i)
+  (with-slots (bold-stroke light-stroke black) (notehead-component stencil)
     (let* ((a (vec:create center-x (+ center-y (* 0.5 height))))
 	   (b (vec:create (- center-x (* 0.5 width)) center-y))
 	   (c (vec:create center-x (- center-y (* 0.5 height))))
 	   (d (vec:create (+ center-x (* 0.5 width)) center-y)))
       (if black
-	  (generate-path (svg-object type-notehead-i) 'evenodd
+	  (generate-path (svg-object stencil) 'evenodd
 			 (m a) (l b) (l c) (l d) (c))
 	  (let* ((center (vec:create center-x center-y))
      		 (e (vec:add a (vec:add (vec:scale (vec:unit-vector a b) light-stroke)
@@ -159,128 +159,127 @@
      					(vec:scale (vec:unit-vector a d) bold-stroke))))
      		 (g (vec:add center (vec:subtract center e)))
 		 (h (vec:add center (vec:subtract center f))))
-	    (generate-path (svg-object type-notehead-i) 'evenodd
+	    (generate-path (svg-object stencil) 'evenodd
 			   (m a) (l b) (l c) (l d) (c)
 			   (m e) (l f) (l g) (l h) (c)))))))
 
-(defmethod calculate-notehead-height ((type setzkasten/type-notehead))
+(defmethod calculate-notehead-height ((stencil glyph-notehead))
   "Returns the vertical height of a notehead, including the overhead value."
-  (with-slots ((dist distance-between-lines))
-      (staff-instance type)
-    (with-slots ((overhead length-over-line))
-	(notehead-instance type)
+  (with-slots ((dist distance-between-lines)) (staff-component stencil)
+    (with-slots ((overhead length-over-line)) (notehead-component stencil)
       (+ dist (* 2 overhead dist)))))
 
-(defmethod cast ((type-notehead setzkasten/type-notehead))
+(defmethod cast ((stencil glyph-notehead))
   "Generates SVG data for a notehead."
-  (with-slots (oblique-p
-	       (width-factor width)
-	       (black-p black)
-	       bold-stroke
-	       light-stroke)
-      (notehead-instance type-notehead)
-    (let* ((x (h-center type-notehead))
+  (with-slots (oblique-p width) (notehead-component stencil)
+    (let* ((x (h-center stencil))
 	   (y (calculate-absolute-staff-position
-	       type-notehead
-	       (notehead-position type-notehead)))
-	   (h (calculate-notehead-height type-notehead))
-	   (w (* width-factor h)))
+	       stencil
+	       (notehead-position stencil)))
+	   (h (calculate-notehead-height stencil))
+	   (w (* width h)))
       (if oblique-p
-	  (draw-notehead-diamond type-notehead x y w h)
-	(draw-notehead-square type-notehead x y w h))))
+	  (draw-notehead-diamond stencil x y w h)
+	  (draw-notehead-square stencil x y w h))))
   (call-next-method))
 
 
 
 ;; enharmonic dot
 
-(cl-defmethod calculate-x-pos ((type-dot setzkasten/type-notehead-dot))
+(defmethod calculate-x-pos ((stencil glyph-notehead-dot))
   "Returns the absolute x coordinate for an enharmonic dot, aligned to the notehead."
-  (let ((center-x (h-center type-dot))
-	(h-w (* 0.5 (width (notehead-instance type-dot))
-		(calculate-notehead-height type-dot))))
-    (pcase (dot-alignment type-dot)
-      ('center center-x)
-      ('right (+ center-x h-w))
-      ('left (- center-x h-w)))))
+  (let ((center-x (h-center stencil))
+	(h-w (* 0.5 (width (notehead-component stencil))
+		(calculate-notehead-height stencil))))
+    (case (dot-alignment stencil)
+      (:center center-x)
+      (:right (+ center-x h-w))
+      (:left (- center-x h-w)))))
 
-(cl-defmethod cast ((type-dot setzkasten/type-notehead-dot))
+(defmethod cast ((stencil glyph-notehead-dot))
   "Generates SVG data for an enharmonic dot above a notehead."
-  (when (dot-instance type-dot)
-    (let ((center-x (calculate-x-pos type-dot))
-	  (center-y (calculate-absolute-staff-position
-		     type-dot
-		     (find-next-space-above (notehead-position type-dot))))
-	  (width (* (size (dot-instance type-dot))
-		    (distance-between-lines (staff-instance type-dot)))))
-      (draw-notehead-diamond center-x center-y width width 0 0 t)))
-  (cl-call-next-method))
+  (when (dot-component stencil)
+    (let* ((center-x (calculate-x-pos stencil))
+	   (center-y (calculate-absolute-staff-position
+		      stencil
+		      (find-next-space-above (notehead-position stencil))))
+	   (width-2 (* 0.5 (size (dot-component stencil))
+		       (distance-between-lines (staff-component stencil))))
+	   (a (vec:create center-x (+ center-y width-2)))
+	   (b (vec:create (- center-x width-2) center-y))
+	   (c (vec:create center-x (- center-y width-2)))
+	   (d (vec:create (+ center-x width-2) center-y)))
+      (generate-path (svg-object stencil) 'evenodd
+		     (m a) (l b) (l c) (l d) (c))))
+  (call-next-method))
 
 
 
 ;; stem
+;;; BOOKMARK: transcoding until here
 
 (cl-defmethod cast ((type-stem setzkasten/type-notehead-stem))
-  "Generates SVG data for a note stem."
-  (when (stem-instance type-stem)
-    (insert "\nCasting note stem not implemented yet."))
-  (cl-call-next-method))
+	      "Generates SVG data for a note stem."
+	      (when (stem-instance type-stem)
+		(insert "\nCasting note stem not implemented yet."))
+	      (cl-call-next-method))
 
 
 
 ;; flag
 
 (cl-defmethod cast ((type-flag setzkasten/type-notehead-flagged))
-  "Generates SVG data for a note stem flag."
-  (when (flag-instance type-flag)
-    (insert "\nCasting stem flag not implemented yet."))
-  (cl-call-next-method))
+	      "Generates SVG data for a note stem flag."
+	      (when (flag-instance type-flag)
+		(insert "\nCasting stem flag not implemented yet."))
+	      (cl-call-next-method))
 
 
 
 ;; rest
 
 (cl-defmethod cast ((type-rest setzkasten/type-rest))
-  "Generates SVG data for a rest."
-  (insert "\nCasting rest not implemented yet.")
-  (svg-line setzkasten/tmp-image 0 0 10 10)
-  (cl-call-next-method))
+	      "Generates SVG data for a rest."
+	      (insert "\nCasting rest not implemented yet.")
+	      (svg-line setzkasten/tmp-image 0 0 10 10)
+	      (cl-call-next-method))
 
 
 ;; sharp
 
 (cl-defmethod cast ((type-sharp setzkasten/type-sharp))
-  "Generates SVG data for a sharp sign."
-  (insert "\nCasting a sharp sign not implemented yet.")
-  (cl-call-next-method))
+	      "Generates SVG data for a sharp sign."
+	      (insert "\nCasting a sharp sign not implemented yet.")
+	      (cl-call-next-method))
 
 
 ;; flat
 
 (cl-defmethod cast ((type-flat setzkasten/type-flat))
-  "Generates SVG data for a flat sign."
-  (insert "\nCasting a flat sign not implemented yet.")
-  (cl-call-next-method))
+	      "Generates SVG data for a flat sign."
+	      (insert "\nCasting a flat sign not implemented yet.")
+	      (cl-call-next-method))
 
 ;; g-clef
 
 (cl-defmethod cast ((type-clef setzkasten/type-clef))
-  "Generates SVG data for a c- or g-clef."
-  (insert "\nCasting a c- or g-clef not implemented yet.")
-  (cl-call-next-method))
+	      "Generates SVG data for a c- or g-clef."
+	      (insert "\nCasting a c- or g-clef not implemented yet.")
+	      (cl-call-next-method))
 
 
 ;; f-clef
 
 (cl-defmethod cast ((type-fclef setzkasten/type-fclef-component))
-  "Generates SVG data for the right part of a f-clef."
-  (insert "\nCasting a f-clef component not implemented yet.")
-  (cl-call-next-method))
+	      "Generates SVG data for the right part of a f-clef."
+	      (insert "\nCasting a f-clef component not implemented yet.")
+	      (cl-call-next-method))
 
 
 ;; barline
 
 (cl-defmethod cast ((type-barline setzkasten/type-barline))
-  "Generates SVG data for a barline."
-  (insert "\nCasting a barline not implemented yet.")
-  (cl-call-next-method))
+	      "Generates SVG data for a barline."
+	      (insert "\nCasting a barline not implemented yet.")
+	      (cl-call-next-method))
