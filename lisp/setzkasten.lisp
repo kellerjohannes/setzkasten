@@ -10,8 +10,9 @@
 
 (defparameter *svg-export-path* (pathname "~/Vicentino21/edition/setzkasten/lisp/svg-export/"))
 
-(load "class-definitions.lisp")
-(load "casting.lisp")
+(load "~/Vicentino21/edition/setzkasten/lisp/vector-package.lisp")
+(load "~/Vicentino21/edition/setzkasten/lisp/class-definitions.lisp")
+(load "~/Vicentino21/edition/setzkasten/lisp/casting.lisp")
 
 
 (defun tests ()
@@ -33,11 +34,11 @@
     (let ((blank (make-instance 'glyph-staff
 				:staff-component staff
 				:ink-color "black"
-				:type-width 350
-				:type-height 1500
+				:glyph-width 350
+				:glyph-height 1500
 				:filename "blank-small"))
 	  (brevis (make-instance 'glyph-notehead :notehead-position 5
-						 :type-width 350
+						 :glyph-width 350
 						 :filename "brevis-f"
 						 :ink-color "black"
 						 :staff-component staff
@@ -49,8 +50,8 @@
 					    :notehead-position 3
 					    :staff-component staff
 					    :ink-color "red"
-					    :type-height 1500
-					    :type-width 350
+					    :glyph-height 1500
+					    :glyph-width 350
 					    :filename "brevis-enharmonic")))
       (cast blank)
       (cast brevis)

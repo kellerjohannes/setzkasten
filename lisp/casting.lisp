@@ -21,8 +21,8 @@
   "Main casting method, wrapping all other casting methods for the components of this type."
   (setf (svg-object stencil)
 	(make-svg-toplevel 'svg-1.1-toplevel
-			   :height (* 1 (type-height stencil))
-			   :width (* 1 (type-width stencil))
+			   :height (* 1 (glyph-height stencil))
+			   :width (* 1 (glyph-width stencil))
 			   :stroke (ink-color stencil)))
   (call-next-method)
   (with-open-file (stream (merge-pathnames
@@ -43,11 +43,11 @@
 
 (defmethod v-center ((stencil glyph))
   "Returns the x-coordinate of the center line of the type."
-  (* 0.5 (type-height stencil)))
+  (* 0.5 (glyph-height stencil)))
 
 (defmethod h-center ((stencil glyph))
   "Returns the y-coordinate of the center line of the type."
-  (* 0.5 (type-width stencil)))
+  (* 0.5 (glyph-width stencil)))
 
 (defmethod number-of-staff-positions ((stencil glyph-staff))
   "Returns the highest possible staff position without using ledger lines."
@@ -84,7 +84,7 @@
 	  do (let ((y (calculate-absolute-staff-position stencil staff-pos)))
 	       (draw (svg-object stencil) (:line :x1 offset
 						 :y1 y
-						 :x2 (- (type-width stencil) offset)
+						 :x2 (- (glyph-width stencil) offset)
 						 :y2 y)
 		     :stroke-width thickness
 		     :stroke-linecap linecap)))))
@@ -219,67 +219,67 @@
 ;; stem
 ;;; BOOKMARK: transcoding until here
 
-(cl-defmethod cast ((type-stem setzkasten/type-notehead-stem))
-	      "Generates SVG data for a note stem."
-	      (when (stem-instance type-stem)
-		(insert "\nCasting note stem not implemented yet."))
-	      (cl-call-next-method))
+;; (cl-defmethod cast ((type-stem setzkasten/type-notehead-stem))
+;; 	      "Generates SVG data for a note stem."
+;; 	      (when (stem-instance type-stem)
+;; 		(insert "\nCasting note stem not implemented yet."))
+;; 	      (cl-call-next-method))
 
 
 
-;; flag
+;; ;; flag
 
-(cl-defmethod cast ((type-flag setzkasten/type-notehead-flagged))
-	      "Generates SVG data for a note stem flag."
-	      (when (flag-instance type-flag)
-		(insert "\nCasting stem flag not implemented yet."))
-	      (cl-call-next-method))
-
-
-
-;; rest
-
-(cl-defmethod cast ((type-rest setzkasten/type-rest))
-	      "Generates SVG data for a rest."
-	      (insert "\nCasting rest not implemented yet.")
-	      (svg-line setzkasten/tmp-image 0 0 10 10)
-	      (cl-call-next-method))
+;; (cl-defmethod cast ((type-flag setzkasten/type-notehead-flagged))
+;; 	      "Generates SVG data for a note stem flag."
+;; 	      (when (flag-instance type-flag)
+;; 		(insert "\nCasting stem flag not implemented yet."))
+;; 	      (cl-call-next-method))
 
 
-;; sharp
 
-(cl-defmethod cast ((type-sharp setzkasten/type-sharp))
-	      "Generates SVG data for a sharp sign."
-	      (insert "\nCasting a sharp sign not implemented yet.")
-	      (cl-call-next-method))
+;; ;; rest
 
-
-;; flat
-
-(cl-defmethod cast ((type-flat setzkasten/type-flat))
-	      "Generates SVG data for a flat sign."
-	      (insert "\nCasting a flat sign not implemented yet.")
-	      (cl-call-next-method))
-
-;; g-clef
-
-(cl-defmethod cast ((type-clef setzkasten/type-clef))
-	      "Generates SVG data for a c- or g-clef."
-	      (insert "\nCasting a c- or g-clef not implemented yet.")
-	      (cl-call-next-method))
+;; (cl-defmethod cast ((type-rest setzkasten/type-rest))
+;; 	      "Generates SVG data for a rest."
+;; 	      (insert "\nCasting rest not implemented yet.")
+;; 	      (svg-line setzkasten/tmp-image 0 0 10 10)
+;; 	      (cl-call-next-method))
 
 
-;; f-clef
+;; ;; sharp
 
-(cl-defmethod cast ((type-fclef setzkasten/type-fclef-component))
-	      "Generates SVG data for the right part of a f-clef."
-	      (insert "\nCasting a f-clef component not implemented yet.")
-	      (cl-call-next-method))
+;; (cl-defmethod cast ((type-sharp setzkasten/type-sharp))
+;; 	      "Generates SVG data for a sharp sign."
+;; 	      (insert "\nCasting a sharp sign not implemented yet.")
+;; 	      (cl-call-next-method))
 
 
-;; barline
+;; ;; flat
 
-(cl-defmethod cast ((type-barline setzkasten/type-barline))
-	      "Generates SVG data for a barline."
-	      (insert "\nCasting a barline not implemented yet.")
-	      (cl-call-next-method))
+;; (cl-defmethod cast ((type-flat setzkasten/type-flat))
+;; 	      "Generates SVG data for a flat sign."
+;; 	      (insert "\nCasting a flat sign not implemented yet.")
+;; 	      (cl-call-next-method))
+
+;; ;; g-clef
+
+;; (cl-defmethod cast ((type-clef setzkasten/type-clef))
+;; 	      "Generates SVG data for a c- or g-clef."
+;; 	      (insert "\nCasting a c- or g-clef not implemented yet.")
+;; 	      (cl-call-next-method))
+
+
+;; ;; f-clef
+
+;; (cl-defmethod cast ((type-fclef setzkasten/type-fclef-component))
+;; 	      "Generates SVG data for the right part of a f-clef."
+;; 	      (insert "\nCasting a f-clef component not implemented yet.")
+;; 	      (cl-call-next-method))
+
+
+;; ;; barline
+
+;; (cl-defmethod cast ((type-barline setzkasten/type-barline))
+;; 	      "Generates SVG data for a barline."
+;; 	      (insert "\nCasting a barline not implemented yet.")
+;; 	      (cl-call-next-method))

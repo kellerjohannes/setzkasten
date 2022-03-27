@@ -133,8 +133,8 @@
 
 (define-setzkasten-class glyph ()
   "Specification of an empty type, only holding the meta information for the creation of SVG data."
-  (type-width 350 "Width of type.")
-  (type-height 1500 "Height of type.")
+  (glyph-width 350 "Width of type.")
+  (glyph-height 1500 "Height of type.")
   (filename "blank-type" "String that is used as main part of the file name for writing the SVG data to disk.")
   (ink-color "black" "Color used for the production of SVG data.")
   (svg-object nil "Container for the SVG object (created by cl-svg)."))
