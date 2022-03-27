@@ -23,7 +23,8 @@
   (setf (svg-object type-generic)
 	(make-svg-toplevel 'svg-1.1-toplevel
 			   :height (* 1 (type-height type-generic))
-			   :width (* 1 (type-width type-generic))))
+			   :width (* 1 (type-width type-generic))
+			   :stroke (ink-color type-generic)))
   (call-next-method)
   (with-open-file (stream (merge-pathnames
 			   *svg-export-path*
@@ -93,52 +94,61 @@
 
 ;; notehead
 
-(defun draw-notehead-square (center-x center-y width height l1 l2 black-p distance-between-lines)
+(defun create-path (list-of-vecs)
+  (append (list (list 'move-to
+		      (vec:x-coord (first list-of-vecs))
+		      (vec:y-coord (second list-of-vecs))))
+	  (mapcar #'(lambda (vec) (list 'line-to (vec:x-coord vec) (vec:y-coord vec)))
+		  (rest list-of-vecs))
+	  '((close-path))))
+
+
+(defmethod draw-notehead-square ((type-notehead-i setzkasten/type-notehead) center-x center-y width height l1 l2 black-p distance-between-lines)
   "Generates SVG data for a square shaped notehead, black or white notation."
   (let* ((w-2 (* 0.5 width))
 	 (h-2 (* 0.5 height))
 	 (d-2 (* 0.5 distance-between-lines))
-	 (center (jk/vector center-x center-y))
-	 (a (jk/vector (- center-x w-2) (+ center-y h-2)))
-	 (b (jk/vector (- center-x w-2) (- center-y h-2)))
-	 (c (jk/add b (jk/vector l2 0)))
-	 (d (jk/vector (jk/x-coord c) (+ center-y d-2)))
-	 (e (jk/mirror-x d center-x))
-	 (f (jk/mirror-x c center-x))
-	 (g (jk/mirror-x b center-x))
-	 (h (jk/mirror-dot b center))
-	 (i (jk/mirror-dot c center))
-	 (j (jk/mirror-dot d center))
-	 (k (jk/mirror-y d center-y))
-	 (l (jk/mirror-y c center-y))
-	 (path `((moveto (,a ,b ,c ,d ,e ,f ,g ,h ,i ,j ,k ,l)) (closepath))))
+	 (center (vec:create center-x center-y))
+	 (a (vec:create (- center-x w-2) (+ center-y h-2)))
+	 (b (vec:create (- center-x w-2) (- center-y h-2)))
+	 (c (vec:add b (vec:create l2 0)))
+	 (d (vec:create (vec:x-coord c) (+ center-y d-2)))
+	 (e (vec:mirror-x d center-x))
+	 (f (vec:mirror-x c center-x))
+	 (g (vec:mirror-x b center-x))
+	 (h (vec:mirror-dot b center))
+	 (i (vec:mirror-dot c center))
+	 (j (vec:mirror-dot d center))
+	 (k (vec:mirror-y d center-y))
+	 (l (vec:mirror-y c center-y))
+	 (path-notehead (create-path (list a b c d e f g h i j k l))))
     (unless black-p
-      (let* ((m (jk/add k (jk/vector 0 l1)))
-	     (n (jk/mirror-y m center-y))
-	     (o (jk/mirror-dot m center))
-	     (p (jk/mirror-x m center-x)))
-	(setq path (append path `((moveto (,m ,n ,o ,p))) '((closepath))))))
-    (svg-path setzkasten/tmp-image path :fill-rule 'evenodd)))
+      (let* ((m (vec:add k (vec:create 0 l1)))
+	     (n (vec:mirror-y m center-y))
+	     (o (vec:mirror-dot m center))
+	     (p (vec:mirror-x m center-x)))
+	(setf path-notehead (append path-notehead (create-path (list m n o p))))))
+    (draw (svg-object type-notehead-i) (:path :d path-notehead) :fill-rule 'evenodd)))
 
-(defun draw-notehead-diamond (center-x center-y width height l1 l2 black)
+(defmethod draw-notehead-diamond ((type-notehead-i setzkasten/type-notehead) center-x center-y width height l1 l2 black)
   "Generates SVG data for a diamond shaped notehead, black or white notation."
-  (let* ((a (jk/vector center-x (+ center-y (* 0.5 height))))
-	 (b (jk/vector (- center-x (* 0.5 width)) center-y))
-	 (c (jk/vector center-x (- center-y (* 0.5 height))))
-	 (d (jk/vector (+ center-x (* 0.5 width)) center-y))
-	 (path `((moveto (,a ,b ,c ,d)) (closepath))))
+  (let* ((a (vec:create center-x (+ center-y (* 0.5 height))))
+	 (b (vec:create (- center-x (* 0.5 width)) center-y))
+	 (c (vec:create center-x (- center-y (* 0.5 height))))
+	 (d (vec:create (+ center-x (* 0.5 width)) center-y))
+	 (path-notehead (create-path (list a b c d))))
     (unless black
-      (let* ((center (jk/vector center-x center-y))
-     	     (e (jk/add a (jk/add (jk/scale (jk/unit-vector a b) l2)
-     				  (jk/scale (jk/unit-vector a d) l1))))
-     	     (f (jk/add b (jk/add (jk/scale (jk/unit-vector b a) l2)
-     				  (jk/scale (jk/unit-vector a d) l1))))
-     	     (g (jk/add center (jk/subtract center e)))
-	     (h (jk/add center (jk/subtract center f))))
-	(setq path (append path `((moveto (,e ,f ,g ,h))) '((closepath))))))
-    (svg-path setzkasten/tmp-image path :fill-rule 'evenodd)))
+      (let* ((center (vec:create center-x center-y))
+     	     (e (vec:add a (vec:add (vec:scale (vec:unit-vector a b) l2)
+     				  (vec:scale (vec:unit-vector a d) l1))))
+     	     (f (vec:add b (vec:add (vec:scale (vec:unit-vector b a) l2)
+     				  (vec:scale (vec:unit-vector a d) l1))))
+     	     (g (vec:add center (vec:subtract center e)))
+	     (h (vec:add center (vec:subtract center f))))
+	(setf path-notehead (append path-notehead (create-path (list e f g h))))))
+    (draw (svg-object type-notehead-i) (:path :d path-notehead) :fill-rule 'evenodd)))
 
-(cl-defmethod calculate-notehead-height ((type setzkasten/type-notehead))
+(defmethod calculate-notehead-height ((type setzkasten/type-notehead))
   "Returns the vertical height of a notehead, including the overhead value."
   (with-slots ((dist distance-between-lines))
       (staff-instance type)
@@ -146,7 +156,7 @@
 	(notehead-instance type)
       (+ dist (* 2 overhead dist)))))
 
-(cl-defmethod cast ((type-notehead setzkasten/type-notehead))
+(defmethod cast ((type-notehead setzkasten/type-notehead))
   "Generates SVG data for a notehead."
   (with-slots (oblique-p
 	       (width-factor width)
@@ -161,10 +171,10 @@
 	   (h (calculate-notehead-height type-notehead))
 	   (w (* width-factor h)))
       (if oblique-p
-	  (draw-notehead-diamond x y w h bold-stroke light-stroke black-p)
-	(draw-notehead-square x y w h bold-stroke light-stroke black-p
+	  (draw-notehead-diamond type-notehead x y w h bold-stroke light-stroke black-p)
+	(draw-notehead-square type-notehead x y w h bold-stroke light-stroke black-p
 			      (distance-between-lines (staff-instance type-notehead))))))
-  (cl-call-next-method))
+  (call-next-method))
 
 
 
