@@ -5,6 +5,7 @@
 ;; TODO
 ;; - relocate path macros (path el) and (generate-path)
 ;;   -> create separate macro collection file?
+;; - update docstrings for new terminology (type / glyph / instance / component)
 
 
 (in-package :setzkasten)

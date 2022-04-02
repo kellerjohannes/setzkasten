@@ -1,3 +1,8 @@
+;;;; TODO
+;; - update docstrings for new terminology (type / glyph / instance / component)
+
+
+
 (in-package :setzkasten)
 ;; example macro call
 ;; (define-setzkasten-class setzkasten/test ()
