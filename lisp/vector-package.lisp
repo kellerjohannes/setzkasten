@@ -3,7 +3,18 @@
 
 (defpackage :vec
   (:use :cl)
-  (:export :create :x-coord :y-coord :add :subtract :scale :distance :unit-vector :mirror-x :mirror-y :mirror-dot))
+  (:export
+   :create
+   :x-coord
+   :y-coord
+   :add
+   :subtract
+   :scale
+   :distance
+   :unit-vector
+   :mirror-x
+   :mirror-y
+   :mirror-dot))
 
 (in-package :vec)
 
