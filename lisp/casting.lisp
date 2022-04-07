@@ -20,23 +20,34 @@
 
 (defmethod cast :around ((stencil glyph))
   "Main casting method, wrapping all other casting methods for the components of this type."
-  (setf (svg-object stencil)
-	(make-svg-toplevel 'svg-1.1-toplevel
-			   :height (* 1 (glyph-height stencil))
-			   :width (* 1 (glyph-width stencil))
-			   :stroke (ink-color stencil)))
+  (setf (svg-object stencil) nil)
   (call-next-method)
-  (with-open-file (stream (merge-pathnames
-			   *svg-export-path*
-			   (pathname (format nil "~a-~a.svg"
-					     (filename stencil)
-					     (ink-color stencil))))
-			  :direction :output
-			  :if-exists :supersede
-			  :if-does-not-exist :create)
-    (stream-out stream (svg-object stencil)))
-  (stream-out *standard-output* (svg-object stencil)))
+  (let ((svg-data (reduce-string-list (svg-object stencil))))
+    (setf (svg-object stencil)
+	  (concatenate 'string
+		       (output-svg-symbol-open (filename stencil))
+		       svg-data
+		       (output-svg-symbol-close))))
+  ;; (let ((result (make-svg-symbol (svg-object stencil) (:id "testglyph" :view-box "0 0 200 200")
+  ;; 				 (call-next-method))))
+  ;;   result) 
+  ;; (setf svg (make-svg-toplevel 'svg-1.1-toplevel
+  ;; 			       :height (* 1 (glyph-height stencil))
+  ;; 			       :width (* 1 (glyph-width stencil))
+  ;; 			       :stroke (ink-color stencil)))
+  ;; (call-next-method)
+  ;; (with-open-file (stream (merge-pathnames
+  ;; 			   *svg-export-path*
+  ;; 			   (pathname (format nil "~a-~a.svg"
+  ;; 					     (filename stencil)
+  ;; 					     (ink-color stencil))))
+  ;; 			  :direction :output
+  ;; 			  :if-exists :supersede
+  ;; 			  :if-does-not-exist :create)
+  ;;   (stream-out stream (svg-object stencil)))
+  ;; (stream-out *standard-output* (svg-object stencil)))
 
+  )
 
 
 
@@ -83,32 +94,12 @@
     (loop repeat num-lines
 	  for staff-pos from 1 by 2 
 	  do (let ((y (calculate-absolute-staff-position stencil staff-pos)))
-	       (draw (svg-object stencil) (:line :x1 offset
-						 :y1 y
-						 :x2 (- (glyph-width stencil) offset)
-						 :y2 y)
-		     :stroke-width thickness
-		     :stroke-linecap linecap)))))
+	       (push (output-line offset y (- (glyph-width stencil) offset) y thickness linecap)
+		     (svg-object stencil))))))
 
 
 
 ;; notehead
-
-(defmacro path-el (command vec)
-  "Resolves coordinates in the format of vec for use with the cl-svg path API."
-  `(,command (vec:x-coord ,vec) (vec:y-coord ,vec)))
-
-(defmacro generate-path (stream fill-rule &rest instructions)
-  "Rudimentary abstraction layer for the cl-svg path API."
-  `(draw ,stream
-       (:path :fill-rule ,fill-rule
-	 :d (path ,@(mapcar #'(lambda (instruction)
-				(case (first instruction)
-				  (m `(path-el move-to ,(second instruction)))
-				  (l `(path-el line-to ,(second instruction)))
-				  (c `(close-path))))
-			    instructions)))))
-
 
 (defmethod draw-notehead-square ((stencil glyph-notehead) center-x center-y width height)
   "Generates SVG data for a square shaped notehead, black or white notation."
@@ -130,17 +121,17 @@
 	   (k (vec:mirror-y d center-y))
 	   (l (vec:mirror-y c center-y)))
       (if black
-	  (generate-path (svg-object stencil) 'evenodd
-			 (m a) (l b) (l c) (l d)
-			 (l e) (l f) (l g) (l h) (l i) (l j) (l k) (l l) (c))
+	  (output-path "evenodd" (ink-color stencil)
+		       `((m ,a) (l ,b) (l ,c) (l ,d)
+			 (l ,e) (l ,f) (l ,g) (l ,h) (l ,i) (l ,j) (l ,k) (l ,l) (c)))
 	  (let* ((m (vec:add k (vec:create 0 bold-stroke)))
 		 (n (vec:mirror-y m center-y))
 		 (o (vec:mirror-dot m center))
 		 (p (vec:mirror-x m center-x)))
-	    (generate-path (svg-object stencil) 'evenodd
-			   (m a) (l b) (l c) (l d)
-			   (l e) (l f) (l g) (l h) (l i) (l j) (l k) (l l) (c)
-			   (m m) (l n) (l o) (l p) (c)))))))
+	    (output-path "evenodd" (ink-color stencil)
+			 `((m ,a) (l ,b) (l ,c) (l ,d)
+			   (l ,e) (l ,f) (l ,g) (l ,h) (l ,i) (l ,j) (l ,k) (l ,l) (c)
+			   (m ,m) (l ,n) (l ,o) (l ,p) (c))))))))
 
 
 (defmethod draw-notehead-diamond ((stencil glyph-notehead) center-x center-y width height)
@@ -151,8 +142,8 @@
 	   (c (vec:create center-x (- center-y (* 0.5 height))))
 	   (d (vec:create (+ center-x (* 0.5 width)) center-y)))
       (if black
-	  (generate-path (svg-object stencil) 'evenodd
-			 (m a) (l b) (l c) (l d) (c))
+	  (output-path "evenodd" (ink-color stencil)
+		       `((m ,a) (l ,b) (l ,c) (l ,d) (c)))
 	  (let* ((center (vec:create center-x center-y))
      		 (e (vec:add a (vec:add (vec:scale (vec:unit-vector a b) light-stroke)
      					(vec:scale (vec:unit-vector a d) bold-stroke))))
@@ -160,9 +151,9 @@
      					(vec:scale (vec:unit-vector a d) bold-stroke))))
      		 (g (vec:add center (vec:subtract center e)))
 		 (h (vec:add center (vec:subtract center f))))
-	    (generate-path (svg-object stencil) 'evenodd
-			   (m a) (l b) (l c) (l d) (c)
-			   (m e) (l f) (l g) (l h) (c)))))))
+	    (output-path "evenodd" (ink-color stencil)
+			 `((m ,a) (l ,b) (l ,c) (l ,d) (c)
+			   (m ,e) (l ,f) (l ,g) (l ,h) (c))))))))
 
 (defmethod calculate-notehead-height ((stencil glyph-notehead))
   "Returns the vertical height of a notehead, including the overhead value."
@@ -180,8 +171,8 @@
 	   (h (calculate-notehead-height stencil))
 	   (w (* width h)))
       (if oblique-p
-	  (draw-notehead-diamond stencil x y w h)
-	  (draw-notehead-square stencil x y w h))))
+	  (push (draw-notehead-diamond stencil x y w h) (svg-object stencil))
+	  (push (draw-notehead-square stencil x y w h) (svg-object stencil)))))
   (call-next-method))
 
 
@@ -211,8 +202,9 @@
 	   (b (vec:create (- center-x width-2) center-y))
 	   (c (vec:create center-x (- center-y width-2)))
 	   (d (vec:create (+ center-x width-2) center-y)))
-      (generate-path (svg-object stencil) 'evenodd
-		     (m a) (l b) (l c) (l d) (c))))
+      (push (output-path "evenodd" (ink-color stencil)
+			 `((m ,a) (l ,b) (l ,c) (l ,d) (c)))
+	    (svg-object stencil))))
   (call-next-method))
 
 
@@ -284,3 +276,15 @@
 ;; 	      "Generates SVG data for a barline."
 ;; 	      (insert "\nCasting a barline not implemented yet.")
 ;; 	      (cl-call-next-method))
+
+
+
+
+
+(defun access-stencil (stencil svg)
+  (let ((ref (xlink-href (svg-object stencil))))
+    (if ref
+	ref
+	(setf (svg-object stencil)
+	      (make-svg-symbol svg (:id (filename stencil) :view-box "0 0 200 200")
+		(cast stencil))))))
