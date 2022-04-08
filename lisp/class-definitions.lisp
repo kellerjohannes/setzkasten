@@ -16,14 +16,25 @@
 
 (defmacro define-setzkasten-class (class-name super-class class-docstring &rest parameters)
   "Creates a simple class with parameters."
-  `(defclass ,class-name ,super-class 
-     ,(mapcar (lambda (par)
-		`(,(first par) :initarg ,(make-keyword (first par))
-			       :initform ,(second par)
-			       :accessor ,(first par)
-			       :documentation ,(third par)))
-       parameters)
-     (:documentation ,class-docstring)))
+  `(progn
+     (defclass ,class-name ,super-class 
+       ,(mapcar (lambda (par)
+		  `(,(first par) :initarg ,(make-keyword (first par))
+				 :initform ,(second par)
+				 :accessor ,(first par)
+				 :documentation ,(third par)))
+	 parameters)
+       (:documentation ,class-docstring))
+     (defun ,(intern (string-upcase (concatenate 'string
+						 "init-setzkasten-"
+						 (symbol-name class-name))))
+	 (instance ,@(mapcar (lambda (par)
+			       (intern (concatenate 'string (symbol-name (car par)) "-PAR")))
+		      parameters))
+       ,@(mapcar (lambda (par)
+		   `(setf (,(first par) instance)
+			  ,(intern (concatenate 'string (symbol-name (car par)) "-PAR"))))
+		 parameters))))
 
 
 

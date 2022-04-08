@@ -34,9 +34,21 @@
 		 (push (output-use (filename stencil) :x x-cursor :y y-cursor) svg-use-container)
 		 (incf x-cursor (glyph-width stencil))))))))
 
-(generate-setzkasten (component-staff-lines ))
+(generate-setzkasten ((staff-lines 5-stave 5 100 15 "round" 10)
+		      (staff-lines 3-staves 3 100 15 "round" 12))
+		     ((staff 5-staves "black" 50 1500 "blank-a")))
 
-(defmacro generate-setzkasten (component-definitions glyph-definitions))
+(let ((5-staves (make-instance 'component-staff-lines))
+      (3-staves (make-instance 'component-staff-lines)))
+  (init-setzkasten-component-staff-lines 5-staves 5 100 15 "round" 10)
+  (init-setzkasten-component-staff-lines 3-staves 3 100 15 "round" 12)
+  (let ((blank-a (make-instance 'glyph-staff)))
+    (init-setzkasten-glyph-staff 5-staves )))
+
+(defmacro generate-setzkasten (component-definitions glyph-definitions)
+  `(let (,@(mapcar ))))
+
+
 (defun generate-setzkasten ()
   (let ((staff (make-instance 'component-staff-lines
 			      :number-of-lines 5
