@@ -14,6 +14,7 @@
 (defun make-keyword (name)
   (values (intern (string-upcase name) "KEYWORD")))
 
+;; TODO remove defun / progn (obsolete)
 (defmacro define-setzkasten-class (class-name super-class class-docstring &rest parameters)
   "Creates a simple class with parameters."
   `(progn
@@ -54,7 +55,11 @@
 ;; - c-clef
 ;; - g-clef
 
-(define-setzkasten-class component-staff-lines ()
+(define-setzkasten-class component ()
+  "Parent class for all components."
+  (id "" "Name of the component, for further reference."))
+
+(define-setzkasten-class component-staff-lines (component)
   "Parameters for the creation of staff lines."
   (number-of-lines 5 "Number of staff lines.")
   (distance-between-lines 12 "The distance between two lines.")
@@ -62,7 +67,7 @@
   (endings "round" "Type of note line endings, left and right of type. SVG values are accepted: 'round', 'butt', 'square'.")
   (offset 0.2 "Gap between type left and right type edge and line endings."))
 
-(define-setzkasten-class component-notehead ()
+(define-setzkasten-class component-notehead (component)
   "Parameters for the creation of noteheads, oblique and square ones."
   (length-over-line 0.25 "If the notehead is located in a space: overhead distance that goes above the line, in fraction of line space.")
   (width .8 "Width (horizontally) of the notehead, as proportion to its height.")
@@ -71,34 +76,34 @@
   (oblique-p t "T if the notehead is diamond-shaped, nil if it is a regular recangle.")
   (black nil "nil for normal notehead, T for black notation."))
 
-(define-setzkasten-class component-stem ()
+(define-setzkasten-class component-stem (component)
   "Parameters for the creation of note stems."
   (stem-length 2.3 "Length of note stem, in proportion to distance between lines.")
   (width-head 1.8 "Width of the note stem at note head.")
   (width-tail 1.2 "Width of the note stem at the end of the stem, in proportion to its width at the note head."))
 
-(define-setzkasten-class component-flag ()
+(define-setzkasten-class component-flag (component)
   "Parameters for the creation of a stem flag."
   (flag-thickness nil "Stroke thickness for flag. If nil, no flag will be produced.")
   ;; TODO more flag parameters
   )
 
-(define-setzkasten-class component-rest ()
+(define-setzkasten-class component-rest (component)
   "Parameters for the creation of rests."
   (vertical-length 0.5 "Length of the vertical line, in proportion to the space between staff lines. Negative value for hanging rests, positive value for sitting rests.")
   (horizontal-length 0 "Length of the horizontal line, in proportion to the space between staff lines. 0 for no line. Negative value for pointing to the left (croma), positive value for pointing to the right (semiminima)."))
 
-(define-setzkasten-class component-dot ()
+(define-setzkasten-class component-dot (component)
   "Parameters for the creation of dots."
   (size 0.2 "Size of the dot, vertically, proportional to distance between staff lines."))
 
-(define-setzkasten-class component-sharp ()
+(define-setzkasten-class component-sharp (component)
   "Parameters for the creation of sharps."
   (thickness 0.5 "Stroke thickness.")
   (size 1 "Overall size of the sharp. Length of one side (they are always square-shaped) in proportion to the distance between two staff-lines.")
   (double-p t "nil if only two lines are used, t if four lines are used."))
 
-(define-setzkasten-class component-flat ()
+(define-setzkasten-class component-flat (component)
   "Parameters for the creation of flats."
   (thickness-circle 0.8 "Stroke thickness of the semi circle.")
   (thickness-stem-head-bottom 0.8 "Stroke thickness at the lower end of the stem.")
@@ -106,7 +111,7 @@
   (stem-length 2.2 "Length of the stem, from above the semi circle to the upper end of the stem, proportional to the distance between staff lines.")
   (diameter 4 "Diameter of the semi circle."))
 
-(define-setzkasten-class component-c-clef ()
+(define-setzkasten-class component-c-clef (component)
   "Parameters for the creation of c-clefs."
   (vertical-thickness 0.2 "Stroke thickness of the three vertical lines.")
   (horizontal-thickness 0.3 "Stroke thickness of the four horizontal lines.")
@@ -121,7 +126,7 @@
 ;;   ;; TODO
 ;;   ())
 
-(define-setzkasten-class component-barline ()
+(define-setzkasten-class component-barline (component)
   "Parameters for the creation of bar lines."
   (overhead 0.2 "Overhead length above and below staff, in proportion to the space between two staff lines.")
   (thickness 2 "Stroke thickness."))
@@ -151,7 +156,7 @@
   "Specification of an empty type, only holding the meta information for the creation of SVG data."
   (glyph-width 350 "Width of type.")
   (glyph-height 1500 "Height of type.")
-  (filename "blank-type" "String that is used as main part of the file name for writing the SVG data to disk.")
+  (id "blank-type" "String that is used as main part of the file name for writing the SVG data to disk.")
   (ink-color "black" "Color used for the production of SVG data.")
   (svg-object nil "Container for the SVG object (created by cl-svg)."))
 

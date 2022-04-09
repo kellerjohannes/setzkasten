@@ -21,7 +21,7 @@
 	(svg-symbol-container nil)
 	(svg-use-container nil))
     (lambda (stencil-name)
-      (let ((stencil (find stencil-name list-of-stencils :test #'string= :key #'filename)))
+      (let ((stencil (find stencil-name list-of-stencils :test #'string= :key #'id)))
 	(cond ((not stencil-name)
 	       (concatenate 'string
 			    (toplevel-open score-width score-height score-name)
@@ -31,8 +31,11 @@
 	      (t (unless (svg-object stencil)
 		   (cast stencil)
 		   (push (svg-object stencil) svg-symbol-container))
-		 (push (output-use (filename stencil) :x x-cursor :y y-cursor) svg-use-container)
+		 (push (output-use (id stencil) :x x-cursor :y y-cursor) svg-use-container)
 		 (incf x-cursor (glyph-width stencil))))))))
+
+
+;; sketch: develop setzkasten-creation context
 
 (generate-setzkasten ((staff-lines 5-stave 5 100 15 "round" 10)
 		      (staff-lines 3-staves 3 100 15 "round" 12))
@@ -48,6 +51,107 @@
 (defmacro generate-setzkasten (component-definitions glyph-definitions)
   `(let (,@(mapcar ))))
 
+
+
+(defparameter *setzkasten-syntax* '((component-staff-lines
+				     ((id "stave")
+				      (number-of-lines 5)
+				      (distance-between-lines 100)
+				      (thickness 15)
+				      (offset 10))
+				     ((endings "round")))
+				    (component-notehead
+				     ((id "notehead")
+				      (length-over-line 0.3)
+				      (width 0.9)
+				      (bold-stroke 27)
+				      (light-stroke 13)
+				      (oblique-p t)
+				      (black nil))
+				     ())
+				    (glyph-staff
+				     ((id "glyph-staff")
+				      (staff-component :instance)
+				      (glyph-width 50)
+				      (glyph-height 1500))
+				     ((ink-color "black")))))
+
+(defparameter *setzkasten-definition-components* '((component-staff-lines "5-stave" 5 101 17 11)
+						   (component-staff-lines "3-stave" 3 100 15 12)))
+
+(defparameter *setzkasten-definition-glyphs* '((glyph-staff "blank-a" "5-stave" 150 1500)))
+
+(defun parse-setzkasten-instance (instance-definition syntax-definition &optional list-of-components)
+  "Takes the definition of one instance and the syntax description of one instance and returns a new actual instance with parameters set according to the two input arguments."
+  (let ((new-stencil (make-instance (first instance-definition))))
+    (labels ((rec-user-defined (accessors values)
+	       (cond ((or (null accessors) (null values)) nil)
+		     (t (let ((value (first values))
+			      (accessor (first (first accessors)))
+			      (default-value (second (first accessors))))
+			  (cond ((eq default-value :instance)
+				 (setf (slot-value new-stencil accessor)
+				       (find value list-of-components :key #'id :test #'string=)))
+				((eq value 'default)
+				 (setf (slot-value new-stencil accessor) default-value))
+				(t (setf (slot-value new-stencil accessor) value))))
+			(rec-user-defined (rest accessors) (rest values)))))
+	     (rec-pre-defined (accessor)
+	       (cond ((null accessor) nil)
+		     (t (setf (slot-value new-stencil (first (first accessor)))
+			      (second (first accessor)))
+			(rec-pre-defined (rest accessor))))))
+      (rec-user-defined (second syntax-definition) (rest instance-definition))
+      (rec-pre-defined (third syntax-definition)))
+    new-stencil))
+
+(defun parse-setzkasten (definition-components definition-glyphs syntax-definition)
+  "Takes user defined stencils and a syntax definition, returns a list of stencil instances."
+  (let ((list-of-components
+	  (mapcar (lambda (definition)
+		    (parse-setzkasten-instance definition (assoc (first definition)
+								 syntax-definition)))
+		  definition-components)))
+    (mapcar (lambda (definition)
+	      (parse-setzkasten-instance definition (assoc (first definition) syntax-definition)
+				      list-of-components))
+	    definition-glyphs)))
+
+(defun print-setzkasten-syntax (syntax-definition)
+  (mapc (lambda (el)
+	  (format t "Element ~s:~&  Manually to define:~&~{    ~a~&~}~&  Predefined:~&~{    ~a~&~}~%"
+		  (symbol-name (first el))
+		  (mapcar (lambda (par)
+			    (format nil "~a [~a]"
+				    (symbol-name (first par))
+				    (second par)))
+			  (second el))
+		  (mapcar (lambda (par)
+			    (format nil "~a: ~s"
+				    (symbol-name (first par))
+				    (second par)))
+			  (third el))))
+	syntax-definition)
+  t)
+
+;; manual score typesetting, ok for testing, needs to be replaced by automated process (vicentino-code-parser?)
+
+(defun test-score ()
+  (let ((setter (make-typesetter 2000 1500 "test-score" (parse-setzkasten *setzkasten-definition-components* *setzkasten-definition-glyphs* *setzkasten-syntax*))))
+    (funcall setter "blank-a")
+    (funcall setter "blank-a")
+    (funcall setter "blank-a")
+    (let ((svg-score (funcall setter nil)))
+      (with-open-file (stream (merge-pathnames *svg-export-path*
+					       (pathname "test-score.svg"))
+			      :direction :output
+			      :if-exists :supersede
+			      :if-does-not-exist :create)
+	(format stream "~a" svg-score)))))
+
+
+
+;; manual creation (too verbose)
 
 (defun generate-setzkasten ()
   (let ((staff (make-instance 'component-staff-lines
@@ -77,42 +181,30 @@
 				  :ink-color "black"
 				  :glyph-width 50
 				  :glyph-height 1500
-				  :filename "blank-a"))
+				  :id "blank-a"))
 	  (blank-b (make-instance 'glyph-staff
 				  :staff-component staff
 				  :ink-color "black"
 				  :glyph-width 150
 				  :glyph-height 1500
-				  :filename "blank-b"))
+				  :id "blank-b"))
 	  (blank-c (make-instance 'glyph-staff
 				  :staff-component staff
 				  :ink-color "black"
 				  :glyph-width 300 
 				  :glyph-height 1500
-				  :filename "blank-c"))
+				  :id "blank-c"))
 	  (semibrevis-a (make-instance 'glyph-notehead
-					 :notehead-position 0
-					 :glyph-width 200
-					 :filename "semibrevis-a"
-					 :ink-color "black"
-					 :staff-component staff
-					 :notehead-component notehead-semibrevis)))
+				       :notehead-position 0
+				       :glyph-width 200
+				       :id "semibrevis-a"
+				       :ink-color "black"
+				       :staff-component staff
+				       :notehead-component notehead-semibrevis)))
       (list blank-a blank-b blank-c semibrevis-a))))
 
-(defun test-score ()
-  (let ((setter (make-typesetter 2000 1500 "test-score" (generate-setzkasten))))
-    (funcall setter "blank-a")
-    (funcall setter "blank-b")
-    (funcall setter "blank-c")
-    (funcall setter "semibrevis-a")
-    (let ((svg-score (funcall setter nil)))
-      (with-open-file (stream (merge-pathnames *svg-export-path*
-					       (pathname "test-score.svg"))
-			      :direction :output
-			      :if-exists :supersede
-			      :if-does-not-exist :create)
-	(format stream "~a" svg-score)))))
 
+;; obsolete testing
 
 (defun tests ()
   (let ((staff (make-instance 'component-staff-lines
@@ -135,10 +227,10 @@
 				:ink-color "black"
 				:glyph-width 350
 				:glyph-height 1500
-				:filename "blank-small"))
+				:id "blank-small"))
 	  (brevis (make-instance 'glyph-notehead :notehead-position 5
 						 :glyph-width 350
-						 :filename "brevis-f"
+						 :id "brevis-f"
 						 :ink-color "black"
 						 :staff-component staff
 						 :notehead-component notehead-brevis))
@@ -151,7 +243,7 @@
 					    :ink-color "red"
 					    :glyph-height 1500
 					    :glyph-width 350
-					    :filename "brevis-enharmonic")))
+					    :id "brevis-enharmonic")))
       (cast blank)
       (cast brevis)
       (cast brevis-enharmonic))))

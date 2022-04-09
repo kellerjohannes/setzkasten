@@ -25,7 +25,7 @@
   (let ((svg-data (reduce-string-list (svg-object stencil))))
     (setf (svg-object stencil)
 	  (concatenate 'string
-		       (output-svg-symbol-open (filename stencil))
+		       (output-svg-symbol-open (id stencil))
 		       svg-data
 		       (output-svg-symbol-close))))
   ;; (let ((result (make-svg-symbol (svg-object stencil) (:id "testglyph" :view-box "0 0 200 200")
@@ -286,5 +286,5 @@
     (if ref
 	ref
 	(setf (svg-object stencil)
-	      (make-svg-symbol svg (:id (filename stencil) :view-box "0 0 200 200")
+	      (make-svg-symbol svg (:id (id stencil) :view-box "0 0 200 200")
 		(cast stencil))))))
