@@ -14,29 +14,16 @@
 (defun make-keyword (name)
   (values (intern (string-upcase name) "KEYWORD")))
 
-;; TODO remove defun / progn (obsolete)
 (defmacro define-setzkasten-class (class-name super-class class-docstring &rest parameters)
   "Creates a simple class with parameters."
-  `(progn
-     (defclass ,class-name ,super-class 
-       ,(mapcar (lambda (par)
-		  `(,(first par) :initarg ,(make-keyword (first par))
-				 :initform ,(second par)
-				 :accessor ,(first par)
-				 :documentation ,(third par)))
-	 parameters)
-       (:documentation ,class-docstring))
-     (defun ,(intern (string-upcase (concatenate 'string
-						 "init-setzkasten-"
-						 (symbol-name class-name))))
-	 (instance ,@(mapcar (lambda (par)
-			       (intern (concatenate 'string (symbol-name (car par)) "-PAR")))
-		      parameters))
-       ,@(mapcar (lambda (par)
-		   `(setf (,(first par) instance)
-			  ,(intern (concatenate 'string (symbol-name (car par)) "-PAR"))))
-		 parameters))))
-
+  `(defclass ,class-name ,super-class 
+     ,(mapcar (lambda (par)
+		`(,(first par) :initarg ,(make-keyword (first par))
+			       :initform ,(second par)
+			       :accessor ,(first par)
+			       :documentation ,(third par)))
+       parameters)
+     (:documentation ,class-docstring)))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -173,7 +160,7 @@
 
 (define-setzkasten-class glyph-notehead-dot (glyph-notehead)
   "Specification for the casting of an enharmonic dot, as a subcomponent of a notehead."
-  (dot-alignment 'center "'center for centered above, 'left for flush above the left edge of the notehead, 'right for flush above the right edge of the notehead. Left and  right are used for enharmonic ligatures.")
+  (dot-alignment :center "'center for centered above, 'left for flush above the left edge of the notehead, 'right for flush above the right edge of the notehead. Left and  right are used for enharmonic ligatures.")
   (dot-component nil "Instance of component-dot. If nil, no dot will be generated."))
 
 (define-setzkasten-class glyph-notehead-stem (glyph-notehead-dot)

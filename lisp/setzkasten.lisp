@@ -14,6 +14,62 @@
 (load "~/Vicentino21/edition/setzkasten/lisp/vector-package.lisp")
 (load "~/Vicentino21/edition/setzkasten/lisp/class-definitions.lisp")
 (load "~/Vicentino21/edition/setzkasten/lisp/casting.lisp")
+(load "~/Vicentino21/edition/setzkasten/lisp/setzkasten-syntax.lisp")
+
+(defparameter *setzkasten-definition-components*
+  '((component-staff-lines "5-stave" 5 100 12 10)
+    (component-notehead "notehead-brevis" 0.3 0.95 28 16 nil nil)
+    (component-notehead "notehead-brevis-black" 0.3 0.95 28 16 nil t)
+    (component-notehead "notehead-semibrevis" 0.25 1.0 35 14 t nil)
+    (component-notehead "notehead-semibrevis-black" 0.25 1.0 35 14 t t)
+    (component-dot "enharmonic-dot" 0.4)))
+
+(defparameter *setzkasten-definition-glyphs*
+  '((glyph-staff "blank-a" "5-stave" 50 1500)
+    (glyph-staff "blank-b" "5-stave" 150 1500)
+    (glyph-staff "blank-c" "5-stave" 450 1500)
+    (glyph-notehead "brevis-a" "5-stave" "notehead-brevis" 205 1500 0)
+    (glyph-notehead "brevis-b" "5-stave" "notehead-brevis" 205 1500 1)
+    (glyph-notehead "brevis-c" "5-stave" "notehead-brevis" 205 1500 2)
+    (glyph-notehead "brevis-d" "5-stave" "notehead-brevis" 205 1500 3)
+    (glyph-notehead "brevis-e" "5-stave" "notehead-brevis" 205 1500 4)
+    (glyph-notehead "brevis-f" "5-stave" "notehead-brevis" 205 1500 5)
+    (glyph-notehead "semibrevis-a" "5-stave" "notehead-semibrevis" 180 1500 0)
+    (glyph-notehead "semibrevis-b" "5-stave" "notehead-semibrevis" 180 1500 1)
+    (glyph-notehead "semibrevis-c" "5-stave" "notehead-semibrevis" 180 1500 2)
+    (glyph-notehead "semibrevis-d" "5-stave" "notehead-semibrevis" 180 1500 3)
+    (glyph-notehead "semibrevis-e" "5-stave" "notehead-semibrevis" 180 1500 4)
+    (glyph-notehead "semibrevis-f" "5-stave" "notehead-semibrevis" 180 1500 5)
+    (glyph-notehead "brevis-a-black" "5-stave" "notehead-brevis-black" 205 1500 0)
+    (glyph-notehead "brevis-b-black" "5-stave" "notehead-brevis-black" 205 1500 1)
+    (glyph-notehead "brevis-c-black" "5-stave" "notehead-brevis-black" 205 1500 2)
+    (glyph-notehead "brevis-d-black" "5-stave" "notehead-brevis-black" 205 1500 3)
+    (glyph-notehead "brevis-e-black" "5-stave" "notehead-brevis-black" 205 1500 4)
+    (glyph-notehead "brevis-f-black" "5-stave" "notehead-brevis-black" 205 1500 5)
+    (glyph-notehead "semibrevis-a-black" "5-stave" "notehead-semibrevis-black" 180 1500 0)
+    (glyph-notehead "semibrevis-b-black" "5-stave" "notehead-semibrevis-black" 180 1500 1)
+    (glyph-notehead "semibrevis-c-black" "5-stave" "notehead-semibrevis-black" 180 1500 2)
+    (glyph-notehead "semibrevis-d-black" "5-stave" "notehead-semibrevis-black" 180 1500 3)
+    (glyph-notehead "semibrevis-e-black" "5-stave" "notehead-semibrevis-black" 180 1500 4)
+    (glyph-notehead "semibrevis-f-black" "5-stave" "notehead-semibrevis-black" 180 1500 5)
+    (glyph-notehead-dot "brevis-a-dot" "5-stave" "notehead-brevis" "enharmonic-dot" 205 1500 0 :center)
+    (glyph-notehead-dot "brevis-b-dot" "5-stave" "notehead-brevis" "enharmonic-dot" 205 1500 1 :center)
+    (glyph-notehead-dot "brevis-c-dot" "5-stave" "notehead-brevis" "enharmonic-dot" 205 1500 2 :center)
+    (glyph-notehead-dot "brevis-d-dot" "5-stave" "notehead-brevis" "enharmonic-dot" 205 1500 3 :center)
+    (glyph-notehead-dot "brevis-e-dot" "5-stave" "notehead-brevis" "enharmonic-dot" 205 1500 4 :center)
+    (glyph-notehead-dot "brevis-f-dot" "5-stave" "notehead-brevis" "enharmonic-dot" 205 1500 5 :center)
+    (glyph-notehead-dot "brevis-g-dot" "5-stave" "notehead-brevis" "enharmonic-dot" 205 1500 6 :center)
+    (glyph-notehead-dot "brevis-h-dot" "5-stave" "notehead-brevis" "enharmonic-dot" 205 1500 7 :center)
+    (glyph-notehead-dot "brevis-i-dot" "5-stave" "notehead-brevis" "enharmonic-dot" 205 1500 8 :center)
+    (glyph-notehead-dot "brevis-j-dot" "5-stave" "notehead-brevis" "enharmonic-dot" 205 1500 9 :center)
+    (glyph-notehead-dot "brevis-k-dot" "5-stave" "notehead-brevis" "enharmonic-dot" 205 1500 10 :center)
+    (glyph-notehead-dot "semibrevis-a-dot" "5-stave" "notehead-semibrevis" "enharmonic-dot" 180 1500 0 :center)
+    (glyph-notehead-dot "semibrevis-b-dot" "5-stave" "notehead-semibrevis" "enharmonic-dot" 180 1500 1 :center)
+    (glyph-notehead-dot "semibrevis-c-dot" "5-stave" "notehead-semibrevis" "enharmonic-dot" 180 1500 2 :center)
+    (glyph-notehead-dot "semibrevis-d-dot" "5-stave" "notehead-semibrevis" "enharmonic-dot" 180 1500 3 :center)
+    (glyph-notehead-dot "semibrevis-e-dot" "5-stave" "notehead-semibrevis" "enharmonic-dot" 180 1500 4 :center)
+    (glyph-notehead-dot "semibrevis-f-dot" "5-stave" "notehead-semibrevis" "enharmonic-dot" 180 1500 5 :center)
+    ))
 
 (defun make-typesetter (score-width score-height score-name list-of-stencils)
   (let ((x-cursor 0)
@@ -33,53 +89,6 @@
 		   (push (svg-object stencil) svg-symbol-container))
 		 (push (output-use (id stencil) :x x-cursor :y y-cursor) svg-use-container)
 		 (incf x-cursor (glyph-width stencil))))))))
-
-
-;; sketch: develop setzkasten-creation context
-
-(generate-setzkasten ((staff-lines 5-stave 5 100 15 "round" 10)
-		      (staff-lines 3-staves 3 100 15 "round" 12))
-		     ((staff 5-staves "black" 50 1500 "blank-a")))
-
-(let ((5-staves (make-instance 'component-staff-lines))
-      (3-staves (make-instance 'component-staff-lines)))
-  (init-setzkasten-component-staff-lines 5-staves 5 100 15 "round" 10)
-  (init-setzkasten-component-staff-lines 3-staves 3 100 15 "round" 12)
-  (let ((blank-a (make-instance 'glyph-staff)))
-    (init-setzkasten-glyph-staff 5-staves )))
-
-(defmacro generate-setzkasten (component-definitions glyph-definitions)
-  `(let (,@(mapcar ))))
-
-
-
-(defparameter *setzkasten-syntax* '((component-staff-lines
-				     ((id "stave")
-				      (number-of-lines 5)
-				      (distance-between-lines 100)
-				      (thickness 15)
-				      (offset 10))
-				     ((endings "round")))
-				    (component-notehead
-				     ((id "notehead")
-				      (length-over-line 0.3)
-				      (width 0.9)
-				      (bold-stroke 27)
-				      (light-stroke 13)
-				      (oblique-p t)
-				      (black nil))
-				     ())
-				    (glyph-staff
-				     ((id "glyph-staff")
-				      (staff-component :instance)
-				      (glyph-width 50)
-				      (glyph-height 1500))
-				     ((ink-color "black")))))
-
-(defparameter *setzkasten-definition-components* '((component-staff-lines "5-stave" 5 101 17 11)
-						   (component-staff-lines "3-stave" 3 100 15 12)))
-
-(defparameter *setzkasten-definition-glyphs* '((glyph-staff "blank-a" "5-stave" 150 1500)))
 
 (defun parse-setzkasten-instance (instance-definition syntax-definition &optional list-of-components)
   "Takes the definition of one instance and the syntax description of one instance and returns a new actual instance with parameters set according to the two input arguments."
@@ -137,10 +146,17 @@
 ;; manual score typesetting, ok for testing, needs to be replaced by automated process (vicentino-code-parser?)
 
 (defun test-score ()
-  (let ((setter (make-typesetter 2000 1500 "test-score" (parse-setzkasten *setzkasten-definition-components* *setzkasten-definition-glyphs* *setzkasten-syntax*))))
-    (funcall setter "blank-a")
-    (funcall setter "blank-a")
-    (funcall setter "blank-a")
+  (let ((setter (make-typesetter 10000 1500 "test-score" (parse-setzkasten *setzkasten-definition-components* *setzkasten-definition-glyphs* *setzkasten-syntax*)))
+	(minimal '("blank-b"))
+	(catalog '("blank-a" "blank-b" "blank-c"
+	      "brevis-a" "brevis-b" "brevis-c" "brevis-d" "brevis-e" "brevis-f"
+	      "semibrevis-a" "semibrevis-b" "semibrevis-c" "semibrevis-d" "semibrevis-e" "semibrevis-f"
+	      "brevis-a-black" "brevis-b-black" "brevis-c-black" "brevis-d-black" "brevis-e-black" "brevis-f-black"
+	      "semibrevis-a-black" "semibrevis-b-black" "semibrevis-c-black" "semibrevis-d-black" "semibrevis-e-black" "semibrevis-f-black"
+	      "brevis-a-dot" "brevis-b-dot" "brevis-c-dot" "brevis-d-dot" "brevis-e-dot" "brevis-f-dot" "brevis-g-dot" "brevis-h-dot" "brevis-i-dot" "brevis-j-dot" "brevis-k-dot"
+	      "semibrevis-a-dot" "semibrevis-b-dot" "semibrevis-c-dot" "semibrevis-d-dot" "semibrevis-e-dot" "semibrevis-f-dot")))
+    (mapcar (lambda (n) (funcall setter n))
+	    catalog)
     (let ((svg-score (funcall setter nil)))
       (with-open-file (stream (merge-pathnames *svg-export-path*
 					       (pathname "test-score.svg"))
@@ -148,103 +164,4 @@
 			      :if-exists :supersede
 			      :if-does-not-exist :create)
 	(format stream "~a" svg-score)))))
-
-
-
-;; manual creation (too verbose)
-
-(defun generate-setzkasten ()
-  (let ((staff (make-instance 'component-staff-lines
-			      :number-of-lines 5
-			      :distance-between-lines 100
-			      :thickness 15
-			      :endings "round"
-			      :offset 10))
-	(notehead-brevis (make-instance 'component-notehead
-					:length-over-line 0.3
-					:width 0.9
-					:bold-stroke 27
-					:light-stroke 13
-					:oblique-p nil
-					:black nil))
-	(notehead-semibrevis (make-instance 'component-notehead
-					    :length-over-line 0.3
-					    :width 0.9
-					    :bold-stroke 27
-					    :light-stroke 13
-					    :oblique-p t 
-					    :black nil))
-	(enharmonic-dot (make-instance 'component-dot
-				       :size 0.5)))
-    (let ((blank-a (make-instance 'glyph-staff
-				  :staff-component staff
-				  :ink-color "black"
-				  :glyph-width 50
-				  :glyph-height 1500
-				  :id "blank-a"))
-	  (blank-b (make-instance 'glyph-staff
-				  :staff-component staff
-				  :ink-color "black"
-				  :glyph-width 150
-				  :glyph-height 1500
-				  :id "blank-b"))
-	  (blank-c (make-instance 'glyph-staff
-				  :staff-component staff
-				  :ink-color "black"
-				  :glyph-width 300 
-				  :glyph-height 1500
-				  :id "blank-c"))
-	  (semibrevis-a (make-instance 'glyph-notehead
-				       :notehead-position 0
-				       :glyph-width 200
-				       :id "semibrevis-a"
-				       :ink-color "black"
-				       :staff-component staff
-				       :notehead-component notehead-semibrevis)))
-      (list blank-a blank-b blank-c semibrevis-a))))
-
-
-;; obsolete testing
-
-(defun tests ()
-  (let ((staff (make-instance 'component-staff-lines
-			      :number-of-lines 5
-			      :distance-between-lines 100
-			      :thickness 15
-			      :endings "round"
-			      :offset 10))
-	(notehead-brevis (make-instance 'component-notehead
-					:length-over-line 0.3
-					:width 0.9
-					:bold-stroke 27
-					:light-stroke 13
-					:oblique-p nil 
-					:black nil))
-	(enharmonic-dot (make-instance 'component-dot
-				       :size 0.5)))
-    (let ((blank (make-instance 'glyph-staff
-				:staff-component staff
-				:ink-color "black"
-				:glyph-width 350
-				:glyph-height 1500
-				:id "blank-small"))
-	  (brevis (make-instance 'glyph-notehead :notehead-position 5
-						 :glyph-width 350
-						 :id "brevis-f"
-						 :ink-color "black"
-						 :staff-component staff
-						 :notehead-component notehead-brevis))
-	  (brevis-enharmonic (make-instance 'glyph-notehead-dot
-					    :dot-component enharmonic-dot
-					    :dot-alignment :center
-					    :notehead-component notehead-brevis
-					    :notehead-position 3
-					    :staff-component staff
-					    :ink-color "red"
-					    :glyph-height 1500
-					    :glyph-width 350
-					    :id "brevis-enharmonic")))
-      (cast blank)
-      (cast brevis)
-      (cast brevis-enharmonic))))
 
