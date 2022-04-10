@@ -1,8 +1,0 @@
-(defun x-coord (v)
-  (first v))
-
-(defun y-coord (v)
-  (second v))
-
-(defun distance (a b)
-  ())
