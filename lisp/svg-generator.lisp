@@ -6,6 +6,9 @@
     xmlns:xlink=\"http://www.w3.org/1999/xlink\">"
 	  width height id-string))
 
+(defun output-background (color)
+  (format nil "<rect width=\"100%\" height=\"100%\" fill=~s/>" color))
+
 (defun toplevel-close ()
   (format nil "</svg>"))
 

@@ -25,11 +25,12 @@
 	(y-cursor 0)
 	(svg-symbol-container nil)
 	(svg-use-container nil))
-    (lambda (stencil-name)
+    (lambda (stencil-name &optional bg-color)
       (let ((stencil (find stencil-name list-of-stencils :test #'string= :key #'id)))
 	(cond ((not stencil-name)
 	       (concatenate 'string
 			    (toplevel-open score-width score-height score-name)
+			    (when bg-color (output-background bg-color))
 			    (reduce-string-list svg-symbol-container)
 			    (reduce-string-list svg-use-container)
 			    (toplevel-close)))
@@ -100,8 +101,8 @@
 (defun parse-vicentino-code (data glyph-definitions)
   (mapcar (lambda (item) (lookup-vicentino-code item glyph-definitions)) data))
 
-(defun write-svg-to-file (typesetter filename)
-  (let ((svg-score (funcall typesetter nil)))
+(defun write-svg-to-file (typesetter filename background-color)
+  (let ((svg-score (funcall typesetter nil background-color)))
     (with-open-file (stream (merge-pathnames *svg-export-path*
 					     (pathname (format nil "~a.svg" filename)))
 			    :direction :output
@@ -111,12 +112,12 @@
 
 (defun create-scores (data)
   (mapc (lambda (score)
-	  (let ((setter (make-typesetter 12000 1500 (first score)
+	  (let ((setter (make-typesetter (second (first score)) (third (first score)) (first (first score))
 					 (parse-setzkasten *setzkasten-definition-components*
 							   *setzkasten-definition-glyphs*
 							   *setzkasten-syntax*))))
 	    (mapcar (lambda (n) (funcall setter n))
 		    (parse-vicentino-code (second score) *setzkasten-definition-glyphs*))
-	    (write-svg-to-file setter (first score))))
+	    (write-svg-to-file setter (first (first score)) (fourth (first score)))))
 	data)
   nil)
