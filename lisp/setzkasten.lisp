@@ -8,71 +8,17 @@
 (defun reduce-string-list (lst)
   (reduce (lambda (a b) (concatenate 'string a b)) lst))
 
-
+;; system components
 (load "~/Vicentino21/edition/setzkasten/lisp/vector-package.lisp")
 (load "~/Vicentino21/edition/setzkasten/lisp/class-definitions.lisp")
 (load "~/Vicentino21/edition/setzkasten/lisp/casting.lisp")
 (load "~/Vicentino21/edition/setzkasten/lisp/setzkasten-syntax.lisp")
 
-(defparameter *setzkasten-definition-components*
-  '((component-staff-lines nil "5-stave" 5 100 12 8)
-    (component-notehead nil "notehead-brevis" 0.3 0.95 28 16 nil nil)
-    (component-notehead nil "notehead-brevis-black" 0.3 0.95 28 16 nil t)
-    (component-notehead nil "notehead-semibrevis" 0.25 1.0 35 14 t nil)
-    (component-notehead nil "notehead-semibrevis-black" 0.25 1.0 35 14 t t)
-    (component-dot nil "enharmonic-dot" 0.4)))
+;; user defined data
+(load "~/Vicentino21/edition/setzkasten/lisp/glyph-definitions.lisp")
+(load "~/Vicentino21/edition/setzkasten/lisp/score-definitions.lisp")
 
-(defparameter *setzkasten-definition-glyphs*
-  '((glyph-staff ba "blank-a" "5-stave" 50 1500)
-    (glyph-staff bb "blank-b" "5-stave" 150 1500)
-    (glyph-staff bc "blank-c" "5-stave" 450 1500)
-    (glyph-notehead br0 "brevis-a" "5-stave" "notehead-brevis" 205 1500 0)
-    (glyph-notehead br1 "brevis-b" "5-stave" "notehead-brevis" 205 1500 1)
-    (glyph-notehead br2 "brevis-c" "5-stave" "notehead-brevis" 205 1500 2)
-    (glyph-notehead br3 "brevis-d" "5-stave" "notehead-brevis" 205 1500 3)
-    (glyph-notehead br4 "brevis-e" "5-stave" "notehead-brevis" 205 1500 4)
-    (glyph-notehead br5 "brevis-f" "5-stave" "notehead-brevis" 205 1500 5)
-    (glyph-notehead sb0 "semibrevis-a" "5-stave" "notehead-semibrevis" 180 1500 0)
-    (glyph-notehead sb1 "semibrevis-b" "5-stave" "notehead-semibrevis" 180 1500 1)
-    (glyph-notehead sb2 "semibrevis-c" "5-stave" "notehead-semibrevis" 180 1500 2)
-    (glyph-notehead sb3 "semibrevis-d" "5-stave" "notehead-semibrevis" 180 1500 3)
-    (glyph-notehead sb4 "semibrevis-e" "5-stave" "notehead-semibrevis" 180 1500 4)
-    (glyph-notehead sb5 "semibrevis-f" "5-stave" "notehead-semibrevis" 180 1500 5)
-    (glyph-notehead brb0 "brevis-a-black" "5-stave" "notehead-brevis-black" 205 1500 0)
-    (glyph-notehead brb1 "brevis-b-black" "5-stave" "notehead-brevis-black" 205 1500 1)
-    (glyph-notehead brb2 "brevis-c-black" "5-stave" "notehead-brevis-black" 205 1500 2)
-    (glyph-notehead brb3 "brevis-d-black" "5-stave" "notehead-brevis-black" 205 1500 3)
-    (glyph-notehead brb4 "brevis-e-black" "5-stave" "notehead-brevis-black" 205 1500 4)
-    (glyph-notehead brb5 "brevis-f-black" "5-stave" "notehead-brevis-black" 205 1500 5)
-    (glyph-notehead sbb0 "semibrevis-a-black" "5-stave" "notehead-semibrevis-black" 180 1500 0)
-    (glyph-notehead sbb1 "semibrevis-b-black" "5-stave" "notehead-semibrevis-black" 180 1500 1)
-    (glyph-notehead sbb2 "semibrevis-c-black" "5-stave" "notehead-semibrevis-black" 180 1500 2)
-    (glyph-notehead sbb3 "semibrevis-d-black" "5-stave" "notehead-semibrevis-black" 180 1500 3)
-    (glyph-notehead sbb4 "semibrevis-e-black" "5-stave" "notehead-semibrevis-black" 180 1500 4)
-    (glyph-notehead sbb5 "semibrevis-f-black" "5-stave" "notehead-semibrevis-black" 180 1500 5)
-    (glyph-notehead-dot brd0 "brevis-a-dot" "5-stave" "notehead-brevis" "enharmonic-dot" 205 1500 0 :center)
-    (glyph-notehead-dot brd1 "brevis-b-dot" "5-stave" "notehead-brevis" "enharmonic-dot" 205 1500 1 :center)
-    (glyph-notehead-dot brd2 "brevis-c-dot" "5-stave" "notehead-brevis" "enharmonic-dot" 205 1500 2 :center)
-    (glyph-notehead-dot brd3 "brevis-d-dot" "5-stave" "notehead-brevis" "enharmonic-dot" 205 1500 3 :center)
-    (glyph-notehead-dot brd4 "brevis-e-dot" "5-stave" "notehead-brevis" "enharmonic-dot" 205 1500 4 :center)
-    (glyph-notehead-dot brd5 "brevis-f-dot" "5-stave" "notehead-brevis" "enharmonic-dot" 205 1500 5 :center)
-    (glyph-notehead-dot brd6 "brevis-g-dot" "5-stave" "notehead-brevis" "enharmonic-dot" 205 1500 6 :center)
-    (glyph-notehead-dot brd7 "brevis-h-dot" "5-stave" "notehead-brevis" "enharmonic-dot" 205 1500 7 :center)
-    (glyph-notehead-dot brd8 "brevis-i-dot" "5-stave" "notehead-brevis" "enharmonic-dot" 205 1500 8 :center)
-    (glyph-notehead-dot brd9 "brevis-j-dot" "5-stave" "notehead-brevis" "enharmonic-dot" 205 1500 9 :center)
-    (glyph-notehead-dot brd10 "brevis-k-dot" "5-stave" "notehead-brevis" "enharmonic-dot" 205 1500 10 :center)
-    (glyph-notehead-dot sbd0 "semibrevis-a-dot" "5-stave" "notehead-semibrevis" "enharmonic-dot" 180 1500 0 :center)
-    (glyph-notehead-dot sbd1 "semibrevis-b-dot" "5-stave" "notehead-semibrevis" "enharmonic-dot" 180 1500 1 :center)
-    (glyph-notehead-dot sbd2 "semibrevis-c-dot" "5-stave" "notehead-semibrevis" "enharmonic-dot" 180 1500 2 :center)
-    (glyph-notehead-dot sbd3 "semibrevis-d-dot" "5-stave" "notehead-semibrevis" "enharmonic-dot" 180 1500 3 :center)
-    (glyph-notehead-dot sbd4 "semibrevis-e-dot" "5-stave" "notehead-semibrevis" "enharmonic-dot" 180 1500 4 :center)
-    (glyph-notehead-dot sbd5 "semibrevis-f-dot" "5-stave" "notehead-semibrevis" "enharmonic-dot" 180 1500 5 :center)
-    (glyph-notehead-dot sbd6 "semibrevis-g-dot" "5-stave" "notehead-semibrevis" "enharmonic-dot" 180 1500 6 :center)
-    (glyph-notehead-dot sbd7 "semibrevis-h-dot" "5-stave" "notehead-semibrevis" "enharmonic-dot" 180 1500 7 :center)
-    (glyph-notehead-dot sbd8 "semibrevis-i-dot" "5-stave" "notehead-semibrevis" "enharmonic-dot" 180 1500 8 :center)
-    (glyph-notehead-dot sbd9 "semibrevis-j-dot" "5-stave" "notehead-semibrevis" "enharmonic-dot" 180 1500 9 :center)
-    (glyph-notehead-dot sbd10 "semibrevis-k-dot" "5-stave" "notehead-semibrevis" "enharmonic-dot" 180 1500 10 :center)
-    ))
+
 
 (defun make-typesetter (score-width score-height score-name list-of-stencils)
   (let ((x-cursor 0)
@@ -87,9 +33,9 @@
 			    (reduce-string-list svg-symbol-container)
 			    (reduce-string-list svg-use-container)
 			    (toplevel-close)))
-	      (t (unless (svg-object stencil)
+	      (t (unless (svg-data stencil)
 		   (cast stencil)
-		   (push (svg-object stencil) svg-symbol-container))
+		   (push (svg-data stencil) svg-symbol-container))
 		 (push (output-use (id stencil) :x x-cursor :y y-cursor) svg-use-container)
 		 (incf x-cursor (glyph-width stencil))))))))
 
@@ -144,7 +90,7 @@
 				    (second par)))
 			  (third el))))
 	syntax-definition)
-  t)
+  nil)
 
 
 
@@ -165,7 +111,7 @@
 
 (defun create-scores (data)
   (mapc (lambda (score)
-	  (let ((setter (make-typesetter 10000 1500 (first score)
+	  (let ((setter (make-typesetter 12000 1500 (first score)
 					 (parse-setzkasten *setzkasten-definition-components*
 							   *setzkasten-definition-glyphs*
 							   *setzkasten-syntax*))))
@@ -174,9 +120,3 @@
 	    (write-svg-to-file setter (first score))))
 	data)
   nil)
-
-
-
-(defparameter *scores* '(("glyph-catalog" (ba bb bc br0 br1 br2 br3 br4 br5 sb0 sb1 sb2 sb3 sb4 sb5 brb0 brb1 brb2 brb3 brb4 brb5 sbb0 sbb1 sbb2 sbb3 sbb4 sbb5 brd0 brd1 brd2 brd3 brd4 brd5 brd6 brd7 brd8 brd9 brd10 sbd0 sbd1 sbd2 sbd3 sbd4 sbd5 sbd6 sbd7 sbd8 sbd9 sbd10))
-			 ("minimal-test" (bb))
-			 ("test-melody" (bc br1 br5 sb2 sb3 sb2 br1 br1 ba))))

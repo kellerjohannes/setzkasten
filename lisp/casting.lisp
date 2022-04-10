@@ -20,34 +20,14 @@
 
 (defmethod cast :around ((stencil glyph))
   "Main casting method, wrapping all other casting methods for the components of this type."
-  (setf (svg-object stencil) nil)
+  (setf (svg-data stencil) nil)
   (call-next-method)
-  (let ((svg-data (reduce-string-list (svg-object stencil))))
-    (setf (svg-object stencil)
+  (let ((svg-all-data (reduce-string-list (svg-data stencil))))
+    (setf (svg-data stencil)
 	  (concatenate 'string
 		       (output-svg-symbol-open (id stencil))
-		       svg-data
-		       (output-svg-symbol-close))))
-  ;; (let ((result (make-svg-symbol (svg-object stencil) (:id "testglyph" :view-box "0 0 200 200")
-  ;; 				 (call-next-method))))
-  ;;   result) 
-  ;; (setf svg (make-svg-toplevel 'svg-1.1-toplevel
-  ;; 			       :height (* 1 (glyph-height stencil))
-  ;; 			       :width (* 1 (glyph-width stencil))
-  ;; 			       :stroke (ink-color stencil)))
-  ;; (call-next-method)
-  ;; (with-open-file (stream (merge-pathnames
-  ;; 			   *svg-export-path*
-  ;; 			   (pathname (format nil "~a-~a.svg"
-  ;; 					     (filename stencil)
-  ;; 					     (ink-color stencil))))
-  ;; 			  :direction :output
-  ;; 			  :if-exists :supersede
-  ;; 			  :if-does-not-exist :create)
-  ;;   (stream-out stream (svg-object stencil)))
-  ;; (stream-out *standard-output* (svg-object stencil)))
-
-  )
+		       svg-all-data
+		       (output-svg-symbol-close)))))
 
 
 
@@ -95,7 +75,7 @@
 	  for staff-pos from 1 by 2 
 	  do (let ((y (calculate-absolute-staff-position stencil staff-pos)))
 	       (push (output-line offset y (- (glyph-width stencil) offset) y thickness linecap)
-		     (svg-object stencil))))))
+		     (svg-data stencil))))))
 
 
 
@@ -171,8 +151,8 @@
 	   (h (calculate-notehead-height stencil))
 	   (w (* width h)))
       (if oblique-p
-	  (push (draw-notehead-diamond stencil x y w h) (svg-object stencil))
-	  (push (draw-notehead-square stencil x y w h) (svg-object stencil)))))
+	  (push (draw-notehead-diamond stencil x y w h) (svg-data stencil))
+	  (push (draw-notehead-square stencil x y w h) (svg-data stencil)))))
   (call-next-method))
 
 
@@ -204,12 +184,35 @@
 	   (d (vec:create (+ center-x width-2) center-y)))
       (push (output-path "evenodd" (ink-color stencil)
 			 `((m ,a) (l ,b) (l ,c) (l ,d) (c)))
-	    (svg-object stencil))))
+	    (svg-data stencil))))
   (call-next-method))
 
 
 
 ;; stem
+
+
+(defmethod cast ((stencil glyph-notehead-stem))
+  (with-slots (stem-length width-head width-tail)
+      (stem-component stencil)
+    (let* ((stem-length-absolute (* stem-length (distance-between-lines (staff-component stencil))))
+	   (width-tail-absolute (* width-head width-tail))
+	   (x-center (h-center stencil))
+	   (y-head (- (calculate-absolute-staff-position stencil (notehead-position stencil))
+		      (* 0.5 (calculate-notehead-height stencil))))
+	   (a (vec:create (- x-center (* 0.5 width-head)) y-head))
+	   (b (vec:create (+ x-center (* 0.5 width-head)) y-head))
+	   (c (vec:create (+ x-center (* 0.5 width-tail-absolute)) (- y-head stem-length-absolute)))
+	   (d (vec:create (- x-center (* 0.5 width-tail-absolute)) (- y-head stem-length-absolute))))
+      (push (output-path "evenodd" (ink-color stencil)
+			 `((m ,a) (l ,b) (l ,c) (l ,d) (c)))
+	    (svg-data stencil))))
+  (call-next-method))
+
+
+
+
+
 ;;; BOOKMARK: transcoding until here
 
 ;; (cl-defmethod cast ((type-stem setzkasten/type-notehead-stem))
@@ -279,12 +282,3 @@
 
 
 
-
-
-(defun access-stencil (stencil svg)
-  (let ((ref (xlink-href (svg-object stencil))))
-    (if ref
-	ref
-	(setf (svg-object stencil)
-	      (make-svg-symbol svg (:id (id stencil) :view-box "0 0 200 200")
-		(cast stencil))))))
