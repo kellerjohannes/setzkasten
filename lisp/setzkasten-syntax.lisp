@@ -60,5 +60,6 @@
 				      (stem-component :instance)
 				      (glyph-width 50)
 				      (glyph-height 1500)
-				      (notehead-position 5))
+				      (notehead-position 5)
+				      (stem-direction :up))
 				     ((dot-alignment :center)))))

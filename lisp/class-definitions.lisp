@@ -163,7 +163,8 @@
 
 (define-setzkasten-class glyph-notehead-stem (glyph-notehead-dot)
   "Specification for the casting of a note stem, as a subcomponent of a notehead with an optional enharmonic dot."
-  (stem-component nil "Instance of component-stem. If nil, no stem will be generated."))
+  (stem-component nil "Instance of component-stem. If nil, no stem will be generated.")
+  (stem-direction :up "Direction of stem: :up or :down."))
 
 (define-setzkasten-class glyph-notehead-flagged (glyph-notehead-stem)
   "Specification for the casting of a stem, as a subcomponent of a note stem."
