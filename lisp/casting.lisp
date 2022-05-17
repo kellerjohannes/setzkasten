@@ -51,8 +51,8 @@
 
 (defmethod calculate-absolute-staff-position ((stencil glyph-staff) staff-position)
   "Returns the y-coordinate referencing a given staff position."
-  (with-slots ((dist distance-between-lines)
-	       (num-lines number-of-lines))
+  (with-accessors ((dist distance-between-lines)
+		   (num-lines number-of-lines))
       (staff-component stencil)
     (let ((pos-0 (- (v-center stencil) (* dist (+ 0.5 (* 0.5 (1- num-lines)))))))
       (+ pos-0 (* 0.5 dist (inverse-staff-position stencil staff-position))))))
@@ -66,10 +66,10 @@
 
 (defmethod cast ((stencil glyph-staff))
   "Generates SVG data for staff lines, vertically centered."
-  (with-slots ((num-lines number-of-lines)
-	       thickness
-	       offset
-	       (linecap endings))
+  (with-accessors ((num-lines number-of-lines)
+		   (thickness thickness)
+		   (offset offset)
+		   (linecap endings))
       (staff-component stencil)
     (loop repeat num-lines
 	  for staff-pos from 1 by 2 
@@ -83,7 +83,10 @@
 
 (defmethod draw-notehead-square ((stencil glyph-notehead) center-x center-y width height)
   "Generates SVG data for a square shaped notehead, black or white notation."
-  (with-slots (bold-stroke light-stroke black) (notehead-component stencil)
+  (with-accessors ((bold-stroke bold-stroke)
+		   (light-stroke light-stroke)
+		   (black black))
+      (notehead-component stencil)
     (let* ((w-2 (* 0.5 width))
 	   (h-2 (* 0.5 height))
 	   (d-2 (* 0.5 (distance-between-lines (staff-component stencil))))
@@ -116,7 +119,10 @@
 
 (defmethod draw-notehead-diamond ((stencil glyph-notehead) center-x center-y width height)
   "Generates SVG data for a diamond shaped notehead, black or white notation."
-  (with-slots (bold-stroke light-stroke black) (notehead-component stencil)
+  (with-accessors ((bold-stroke bold-stroke)
+		   (light-stroke light-stroke)
+		   (black black))
+      (notehead-component stencil)
     (let* ((a (vec:create center-x (+ center-y (* 0.5 height))))
 	   (b (vec:create (- center-x (* 0.5 width)) center-y))
 	   (c (vec:create center-x (- center-y (* 0.5 height))))
@@ -137,13 +143,17 @@
 
 (defmethod calculate-notehead-height ((stencil glyph-notehead))
   "Returns the vertical height of a notehead, including the overhead value."
-  (with-slots ((dist distance-between-lines)) (staff-component stencil)
-    (with-slots ((overhead length-over-line)) (notehead-component stencil)
+  (with-accessors ((dist distance-between-lines))
+      (staff-component stencil)
+    (with-accessors ((overhead length-over-line))
+	(notehead-component stencil)
       (+ dist (* 2 overhead dist)))))
 
 (defmethod cast ((stencil glyph-notehead))
   "Generates SVG data for a notehead."
-  (with-slots (oblique-p width) (notehead-component stencil)
+  (with-accessors ((oblique-p oblique-p)
+		   (width width))
+      (notehead-component stencil)
     (let* ((x (h-center stencil))
 	   (y (calculate-absolute-staff-position
 	       stencil
@@ -171,9 +181,9 @@
 
 (defmethod calculate-y-position ((stencil glyph-notehead-dot))
   "Returns y-coordinate of the center point of an enharmonic dot. There are 3 cases:
+   - above the stave lines, in case (dot-above-staff stencil) is T
    - in the space above the notehead without a stem or a :down stem
-   - in the space above the end of an :up stem
-   - above the stave lines, in case (dot-above-staff stencil) is T"
+   - in the space above the end of an :up stem"
 
   (let ((type (type-of stencil)))
     (cond ((dot-above-staff stencil)
@@ -216,7 +226,9 @@
 
 
 (defmethod cast ((stencil glyph-notehead-stem))
-  (with-slots (stem-length width-head width-tail)
+  (with-accessors ((stem-length stem-length)
+		   (width-head width-head)
+		   (width-tail width-tail))
       (stem-component stencil)
     (let* ((stem-length-absolute (* stem-length (distance-between-lines (staff-component stencil))))
 	   (width-tail-absolute (* width-head width-tail))
