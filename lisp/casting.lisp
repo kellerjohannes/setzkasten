@@ -184,25 +184,28 @@
    - above the stave lines, in case (dot-above-staff stencil) is T
    - in the space above the notehead without a stem or a :down stem
    - in the space above the end of an :up stem"
-
   (let ((type (type-of stencil)))
-    (cond ((dot-above-staff stencil)
-	   (calculate-absolute-staff-position
-	    stencil
-	    (+ (dot-above-staff-offset stencil) (* 2 (number-of-lines (staff-component stencil))))))
-	  ((or (not (eq type 'glyph-notehead-stem))
-	       (and (eq type 'glyph-notehead-stem)
-		    (eq (stem-direction stencil) :down)))
-	   (calculate-absolute-staff-position
-	    stencil
-	    (find-next-space-above (notehead-position stencil)
-				   (number-of-lines (staff-component stencil)))))
-	  ((eq type 'glyph-notehead-stem)
-	   (- (- (calculate-absolute-staff-position stencil (notehead-position stencil))
-		 (* 0.5 (calculate-notehead-height stencil))
-		 (* (distance-between-lines (staff-component stencil)) (stem-length (stem-component stencil))))
-	      (* (dot-above-stem-offset stencil) (distance-between-lines (staff-component stencil)))))
-	  (t 0))))
+    (with-accessors ((unit-length distance-between-lines)
+		     (number-of-lines number-of-lines))
+	(staff-component stencil)
+      (with-accessors ((notehead-position notehead-position))
+	  stencil
+	(cond ((dot-above-staff stencil)
+	       (calculate-absolute-staff-position
+		stencil
+		(+ (dot-above-staff-offset stencil) (* 2 number-of-lines))))
+	      ((or (not (eq type 'glyph-notehead-stem))
+		   (and (eq type 'glyph-notehead-stem)
+			(eq (stem-direction stencil) :down)))
+	       (calculate-absolute-staff-position
+		stencil
+		(find-next-space-above notehead-position number-of-lines)))
+	      ((eq type 'glyph-notehead-stem)
+	       (- (- (calculate-absolute-staff-position stencil notehead-position)
+		     (* 0.5 (calculate-notehead-height stencil))
+		     (* unit-length (stem-length (stem-component stencil))))
+		  (* (dot-above-stem-offset stencil) unit-length)))
+	      (t 0))))))
 
 (defmethod cast ((stencil glyph-notehead-dot))
   "Generates SVG data for an enharmonic dot above a notehead."
@@ -234,12 +237,15 @@
 	   (width-tail-absolute (* width-head width-tail))
 	   (x-center (h-center stencil))
 	   (direction-operator (if (eq (stem-direction stencil) :up) #'- #'+))
-	   (y-head (funcall direction-operator (calculate-absolute-staff-position stencil (notehead-position stencil))
+	   (y-head (funcall direction-operator
+			    (calculate-absolute-staff-position stencil (notehead-position stencil))
 			    (* 0.5 (calculate-notehead-height stencil))))
 	   (a (vec:create (- x-center (* 0.5 width-head)) y-head))
 	   (b (vec:create (+ x-center (* 0.5 width-head)) y-head))
-	   (c (vec:create (+ x-center (* 0.5 width-tail-absolute)) (funcall direction-operator y-head stem-length-absolute)))
-	   (d (vec:create (- x-center (* 0.5 width-tail-absolute)) (funcall direction-operator y-head stem-length-absolute))))
+	   (c (vec:create (+ x-center (* 0.5 width-tail-absolute))
+			  (funcall direction-operator y-head stem-length-absolute)))
+	   (d (vec:create (- x-center (* 0.5 width-tail-absolute))
+			  (funcall direction-operator y-head stem-length-absolute))))
       (push (output-path "evenodd" (ink-color stencil)
 			 `((m ,a) (l ,b) (l ,c) (l ,d) (c)))
 	    (svg-data stencil))))
