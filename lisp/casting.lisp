@@ -57,10 +57,10 @@
     (let ((pos-0 (- (v-center stencil) (* dist (+ 0.5 (* 0.5 (1- num-lines)))))))
       (+ pos-0 (* 0.5 dist (inverse-staff-position stencil staff-position))))))
 
-(defun find-next-space-above (staff-position)
+(defun find-next-space-above (staff-position number-of-lines)
   "Returns the staff position of the next available space above a notehead position."
   (let ((result (+ 2 staff-position)))
-    (if (oddp result)
+    (if (and (oddp result) (< staff-position (- (* number-of-lines 2) 1)))
 	(1+ result)
 	result)))
 
@@ -169,13 +169,36 @@
       (:right (+ center-x h-w))
       (:left (- center-x h-w)))))
 
+(defmethod calculate-y-position ((stencil glyph-notehead-dot))
+  "Returns y-coordinate of the center point of an enharmonic dot. There are 3 cases:
+   - in the space above the notehead without a stem or a :down stem
+   - in the space above the end of an :up stem
+   - above the stave lines, in case (dot-above-staff stencil) is T"
+
+  (let ((type (type-of stencil)))
+    (cond ((dot-above-staff stencil)
+	   (calculate-absolute-staff-position
+	    stencil
+	    (+ (dot-above-staff-offset stencil) (* 2 (number-of-lines (staff-component stencil))))))
+	  ((or (not (eq type 'glyph-notehead-stem))
+	       (and (eq type 'glyph-notehead-stem)
+		    (eq (stem-direction stencil) :down)))
+	   (calculate-absolute-staff-position
+	    stencil
+	    (find-next-space-above (notehead-position stencil)
+				   (number-of-lines (staff-component stencil)))))
+	  ((eq type 'glyph-notehead-stem)
+	   (- (- (calculate-absolute-staff-position stencil (notehead-position stencil))
+		 (* 0.5 (calculate-notehead-height stencil))
+		 (* (distance-between-lines (staff-component stencil)) (stem-length (stem-component stencil))))
+	      (* (dot-above-stem-offset stencil) (distance-between-lines (staff-component stencil)))))
+	  (t 0))))
+
 (defmethod cast ((stencil glyph-notehead-dot))
   "Generates SVG data for an enharmonic dot above a notehead."
   (when (dot-component stencil)
     (let* ((center-x (calculate-x-pos stencil))
-	   (center-y (calculate-absolute-staff-position
-		      stencil
-		      (find-next-space-above (notehead-position stencil))))
+	   (center-y (calculate-y-position stencil))
 	   (width-2 (* 0.5 (size (dot-component stencil))
 		       (distance-between-lines (staff-component stencil))))
 	   (a (vec:create center-x (+ center-y width-2)))

@@ -67,7 +67,8 @@
   "Parameters for the creation of note stems."
   (stem-length 2.3 "Length of note stem, in proportion to distance between lines.")
   (width-head 1.8 "Width of the note stem at note head.")
-  (width-tail 1.2 "Width of the note stem at the end of the stem, in proportion to its width at the note head."))
+  (width-tail 1.2 "Width of the note stem at the end of the stem, in proportion to its width at the note head.")
+  (dot-offset 0.5 "Gap between upper end of stem and enharmonic dot (if existing), in proportion to distance between lines."))
 
 (define-setzkasten-class component-flag (component)
   "Parameters for the creation of a stem flag."
@@ -159,11 +160,14 @@
 (define-setzkasten-class glyph-notehead-dot (glyph-notehead)
   "Specification for the casting of an enharmonic dot, as a subcomponent of a notehead."
   (dot-alignment :center "'center for centered above, 'left for flush above the left edge of the notehead, 'right for flush above the right edge of the notehead. Left and  right are used for enharmonic ligatures.")
+  (dot-above-staff nil "T if dot is placed above top staff line, nil if dot is placed just above the notehead.")
+  (dot-above-staff-offset 1 "Vertical offset proportional to distance between staff lines in case 'dot-above-staff' is T.")
   (dot-component nil "Instance of component-dot. If nil, no dot will be generated."))
 
 (define-setzkasten-class glyph-notehead-stem (glyph-notehead-dot)
   "Specification for the casting of a note stem, as a subcomponent of a notehead with an optional enharmonic dot."
   (stem-component nil "Instance of component-stem. If nil, no stem will be generated.")
+  (dot-above-stem-offset 1 "Distance between end of stem and enharmonic dot, proportional to distance between lines.")
   (stem-direction :up "Direction of stem: :up or :down."))
 
 (define-setzkasten-class glyph-notehead-flagged (glyph-notehead-stem)

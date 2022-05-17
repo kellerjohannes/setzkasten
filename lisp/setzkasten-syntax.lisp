@@ -23,7 +23,7 @@
 				      (stem-length 2.3)
 				      (width-head 1.8)
 				      (width-tail 1.2))
-				     ())
+				     ((dot-offset 0.5)))
 				    (component-flag
 				     ((id "flag")
 				      (flag-thickness 7))
@@ -51,6 +51,8 @@
 				      (glyph-width 50)
 				      (glyph-height 1500)
 				      (notehead-position 5)
+				      (dot-above-staff nil)
+				      (dot-above-staff-offset 1)
 				      (dot-alignment :center)))
 				    (glyph-notehead-stem
 				     ((id "glyph-notehead-stem")
@@ -61,5 +63,8 @@
 				      (glyph-width 50)
 				      (glyph-height 1500)
 				      (notehead-position 5)
-				      (stem-direction :up))
+				      (stem-direction :up)
+				      (dot-above-staff nil)
+				      (dot-above-staff-offset 1)
+				      (dot-above-stem-offset 0.8))
 				     ((dot-alignment :center)))))

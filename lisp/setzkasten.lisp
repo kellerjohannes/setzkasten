@@ -1,5 +1,5 @@
 (defpackage :setzkasten
-  (:use :cl :cl-svg))
+  (:use :cl))
 
 (in-package :setzkasten)
 
@@ -9,6 +9,7 @@
   (reduce (lambda (a b) (concatenate 'string a b)) lst))
 
 ;; system components
+(load "~/Vicentino21/edition/setzkasten/lisp/svg-generator.lisp")
 (load "~/Vicentino21/edition/setzkasten/lisp/vector-package.lisp")
 (load "~/Vicentino21/edition/setzkasten/lisp/class-definitions.lisp")
 (load "~/Vicentino21/edition/setzkasten/lisp/casting.lisp")
