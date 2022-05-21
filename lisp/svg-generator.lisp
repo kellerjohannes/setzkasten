@@ -22,6 +22,13 @@
   (format nil "<use href=\"#~a\"~@[ x=\"~d\"~]~@[ y=\"~d\"~]/>"
 	  id-string x y))
 
+(defun output-circle (x y r color)
+  (format nil "<circle cx=\"~d\" cy=\"~d\" r=\"~d\" stroke=~s fill=~s/>"
+	  x y r color color))
+
+(defun output-debug-circle (vec)
+  (output-circle (vec:x-coord vec) (vec:y-coord vec) 15 "red"))
+
 (defun output-line (x1 y1 x2 y2 stroke-width stroke-linecap)
   (format nil "<line x1=\"~d\" y1=\"~d\" x2=\"~d\" y2=\"~d\" stroke-width=\"~d\" stroke-linecap=~s/>"
 	  x1 y1 x2 y2 stroke-width stroke-linecap))

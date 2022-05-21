@@ -72,8 +72,13 @@
 
 (define-setzkasten-class component-flag (component)
   "Parameters for the creation of a stem flag."
-  (flag-thickness nil "Stroke thickness for flag. If nil, no flag will be produced.")
-  ;; TODO more flag parameters
+  (flag-thickness-bold nil "Stroke thickness for bold part of flag. If nil, no flag will be produced.")
+  (flag-thickness-light nil "Stroke thickness for light part of flag (end). If nil, no flag will be produced.")
+  (flag-corner-level nil "Relative to stem length.")
+  (flag-merge-level nil "Relative to stem length.")
+  (flag-tail-p nil "T if z-shaped flag is required.")
+  (flag-tail-level nil "Relative to stem length.")
+  (flag-y-offset nil "Relative to note head width.")
   )
 
 (define-setzkasten-class component-rest (component)
@@ -170,7 +175,7 @@
   (dot-above-stem-offset 1 "Distance between end of stem and enharmonic dot, proportional to distance between lines.")
   (stem-direction :up "Direction of stem: :up or :down."))
 
-(define-setzkasten-class glyph-notehead-flagged (glyph-notehead-stem)
+(define-setzkasten-class glyph-notehead-flag (glyph-notehead-stem)
   "Specification for the casting of a stem, as a subcomponent of a note stem."
   (flag-component nil "Instance of component-flag. If nil, no flag will be generated."))
 

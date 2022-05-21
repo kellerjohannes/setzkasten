@@ -16,7 +16,7 @@
    "Creates SVG files for any sort of type by calling the :around-method to create and close the SVG context and the applicable methods to generate the SVG paths of the types' components."))
 
 
-;; container, svg stuff, wraps :around casting methods that generate svg code
+;;; container, svg stuff, wraps :around casting methods that generate svg code
 
 (defmethod cast :around ((stencil glyph))
   "Main casting method, wrapping all other casting methods for the components of this type."
@@ -31,7 +31,7 @@
 
 
 
-;; staff lines
+;;; staff lines
 
 (defmethod v-center ((stencil glyph))
   "Returns the x-coordinate of the center line of the type."
@@ -79,7 +79,7 @@
 
 
 
-;; notehead
+;;; notehead
 
 (defmethod draw-notehead-square ((stencil glyph-notehead) center-x center-y width height)
   "Generates SVG data for a square shaped notehead, black or white notation."
@@ -167,7 +167,7 @@
 
 
 
-;; enharmonic dot
+;;; enharmonic dot
 
 (defmethod calculate-x-pos ((stencil glyph-notehead-dot))
   "Returns the absolute x coordinate for an enharmonic dot, aligned to the notehead."
@@ -225,7 +225,7 @@
 
 
 
-;; stem
+;;; stem
 
 
 (defmethod cast ((stencil glyph-notehead-stem))
@@ -255,25 +255,92 @@
 
 
 
+
+;;; flag
+
+;; TODO flesh out flag production
+
+;; TODO outsource other scaling operations to similar methods
+
+;; TODO move this method to stem group
+(defmethod scale-to-stem ((stencil glyph-notehead-stem) relative-length)
+  (* relative-length (stem-length (stem-component stencil))))
+
+;; TODO move to macro corner
+(defmacro transform-coordinates (transformation argument &rest coordinates)
+  "Applies a vector transformation (currently only vec:mirror-x, vec:mirror-y and vec:mirror-dot) to a set of vectors (vec:create). Destructive, uses 'setf' to overwrite the coordinates."
+  `(progn ,@(mapcar (lambda (vec)
+		      `(setf ,vec (funcall ,transformation ,vec ,argument)))
+		    coordinates)))
+
+;; will be obsolete, to be deleted
+(defmethod draw-flag ((stencil glyph-notehead-flag) notehead-y stem-end-x stem-end-y corner-x corner-y merge-y tail-end-y)
+  (let* ((a (vec:create stem-end-x stem-end-y))
+	 (h )
+	 (b (vec:create corner-x corner-y))
+	 (c (vec:create stem-end-x merge-y))
+	 (d (vec:create corner-x tail-end-y)))
+    (when (eq (stem-direction stencil) :down)
+      (transform-coordinates #'vec:mirror-y notehead-y a b c d))
+    ;;(output-circle (vec:x-coord d) (vec:y-coord d) 15 "red")
+    (output-path "" (ink-color stencil) `((m ,a) (l ,b) (l ,c) (l ,d) (l ,c)))
+    ))
+
+(defmethod cast ((stencil glyph-notehead-flag))
+  "Generates SVG data for a note stem flag."
+  (with-accessors ((thickness-bold flag-thickness-bold)
+		   (thickness-light flag-thickness-light)
+		   (corner-level flag-corner-level)
+		   (merge-level flag-merge-level)
+		   (tailp flag-tail-p)
+		   (tail-level flag-tail-level)
+		   (y-offset flag-y-offset))
+      (flag-component stencil)
+    (with-accessors ((unit-length distance-between-lines))
+	(staff-component stencil)
+      (with-accessors ((stem-width-factor width-tail)
+		       (stem-width-head width-head))
+	  (stem-component stencil)
+	(let* ((notehead-y (calculate-absolute-staff-position stencil (notehead-position stencil)))
+	       (stem-length (* (stem-length (stem-component stencil)) unit-length))
+	       (stem-end-y (- notehead-y
+			      (* 0.5 (calculate-notehead-height stencil))
+			      stem-length))
+	       (stem-width-tail (* stem-width-head stem-width-factor))
+	       (a (vec:create (+ (h-center stencil) (* 0.5 stem-width-tail)) stem-end-y))
+	       (b (vec:create (+ (h-center stencil) (* y-offset unit-length))
+			      (+ stem-end-y (* corner-level stem-length))))
+	       (angle-1 (vec:sin-between-vectors (vec:subtract b a)
+						 (vec:subtract (vec:add a (vec:create 1 0)) a)))
+	       (h (vec:create (- (vec:x-coord a)
+				 (/ thickness-bold angle-1))
+			      stem-end-y))
+	       (b2 (vec:add h (vec:subtract b a)))
+	       (u (vec:create (h-center stencil) (+ stem-end-y (* merge-level stem-length))))
+	       (angle-3 (acos (/ (* 0.5 thickness-light) (vec:len (vec:subtract b u)))))
+	       (r (vec:add u (vec:rotate (vec:scale (vec:unit-vector u b) (* 0.5 thickness-light)) (- angle-3))))
+	       (angle-4 (vec:cos-between-vectors (vec:subtract r u)
+						 (vec:subtract (vec:add u (vec:create 1 0)) u)))
+	       (c (vec:create (+ (/ angle-4 (* 0.5 thickness-light)) (vec:x-coord u)) (vec:y-coord u)))
+	       (f (vec:add u (vec:subtract u c)))
+	       (angle-2 (vec:sin-between-vectors (vec:subtract b c)
+						 (vec:subtract (vec:add a (vec:create 1 0)) a)))
+	       (helper-length (* angle-2 (/ (/ thickness-bold angle-1) angle-1)))
+	       (g (vec:add b2 (vec:scale (vec:unit-vector h b2) (- helper-length thickness-light))))
+	       (d (vec:create (vec:x-coord b) (+ stem-end-y (* tail-level stem-length)))))
+	  (when (eq (stem-direction stencil) :down)
+	    (transform-coordinates #'vec:mirror-y notehead-y a b c d f g h))
+	  ;; TODO when semi-flag ...
+	  ;;(push (output-debug-circle r) (svg-data stencil))
+	  (push (output-path "even-odd" (ink-color stencil)
+			     `((m ,a) (l ,b) (l ,c) (l ,d) (l ,f) (l ,g) (l ,h) (c)))
+		(svg-data stencil))))))
+  (call-next-method))
+
+
+
+
 ;;; BOOKMARK: transcoding until here
-
-;; (cl-defmethod cast ((type-stem setzkasten/type-notehead-stem))
-;; 	      "Generates SVG data for a note stem."
-;; 	      (when (stem-instance type-stem)
-;; 		(insert "\nCasting note stem not implemented yet."))
-;; 	      (cl-call-next-method))
-
-
-
-;; ;; flag
-
-;; (cl-defmethod cast ((type-flag setzkasten/type-notehead-flagged))
-;; 	      "Generates SVG data for a note stem flag."
-;; 	      (when (flag-instance type-flag)
-;; 		(insert "\nCasting stem flag not implemented yet."))
-;; 	      (cl-call-next-method))
-
-
 
 ;; ;; rest
 
