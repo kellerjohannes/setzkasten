@@ -20,7 +20,8 @@
    :unit-vector
    :mirror-x
    :mirror-y
-   :mirror-dot))
+   :mirror-dot
+   :hypothenuse-a-o))
 
 (in-package :vec)
 
@@ -89,3 +90,28 @@
 
 (defun mirror-dot (v dot)
   (add dot (subtract dot v)))
+
+
+
+(defun hypothenuse-a-o (sin-of-angle opposite)
+  (/ opposite sin-of-angle))
+
+
+(defun trigo-adjacent (opposite hypothenuse)
+  (asin (/ opposite hypothenuse)))
+
+(defun trigo-opposite (adjacent hypothenuse)
+  (acos (/ adjacent hypothenuse)))
+
+(defun trigo-hypothenuse (adjacent opposite)
+  (atan (/ adjacent opposite)))
+
+(defun trigo-asa (angle-a side-c angle-b)
+  "Returns list with angle-c, side-a, side-b."
+  (let* ((angle-c (- 180 angle-a angle-b))
+	 (side-a (* (sin angle-a) (/ side-c (sin angle-c))))
+	 (side-b (* (sin angle-b) (/ side-a (sin angle-a)))))
+    (list angle-c side-a side-b)))
+
+(defun triangular-proportion (a b c d)
+  (+ b (/ (* d (- a b)) c)))

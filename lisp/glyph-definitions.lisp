@@ -9,7 +9,7 @@
     (component-stem nil "minima-stem" 2.5 14 1.8)
     (component-stem nil "minima-stem-short-a" 2.1 14 1.8)
     (component-stem nil "minima-stem-short-b" 1.6 14 1.8)
-    (component-flag nil "semicroma-flag" 14 9 0.25 0.6 t 0.8 0.5)
+    (component-flag nil "semicroma-flag" 14 11 0.25 0.6 t 0.8 0.5)
     ))
 
 (defparameter *setzkasten-definition-glyphs*
