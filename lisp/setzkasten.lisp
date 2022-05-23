@@ -20,14 +20,18 @@
 (load "~/Vicentino21/edition/setzkasten/lisp/score-definitions.lisp")
 
 
+;;; memory bug: typesetter instances remain in memory and grow
 (defclass typesetter ()
   ((svg-symbol-container :initform nil :accessor svg-symbol-container)
-   (lines :initform '(()) :allocation :instance :accessor lines)
+   (lines :initform nil :allocation :instance :accessor lines)
    (name :initform "" :initarg :name :accessor name)
    (width :initform 0 :initarg :width :accessor width)
    (height :initform 0 :initarg :height :accessor height)
    (bg-color :initform 0 :initarg :bg-color :accessor bg-color)
    (svg-data :initform "" :accessor svg-data)))
+
+(defmethod initialize-instance :after ((score typesetter) &key)
+  (setf (lines score) '(())))
 
 (defmethod add-to-line ((score typesetter) (stencil glyph))
   (unless (svg-data stencil)
@@ -37,6 +41,9 @@
 
 (defmethod next-line ((score typesetter))
   (push '() (lines score)))
+
+
+;;; flexible spacing needs to be implemented
 
 (defmethod typeset ((score typesetter))
   (let ((y-cursor 0)
@@ -70,6 +77,7 @@
 
 
 
+;;; does not support score liste with vicentino code yet
 
 (defun test-score ()
   (let ((list-of-stencils (parse-setzkasten *setzkasten-definition-components*
@@ -80,11 +88,19 @@
     (add-to-line score (second list-of-stencils))
     (add-to-line score (third list-of-stencils))
     (add-to-line score (fourth list-of-stencils))
+    (next-line score)
+    (add-to-line score (fifth list-of-stencils))
     (typeset score)
     (write-score score)
     nil))
 
 
+
+
+
+
+
+;;; old typesetting system
 
 (defun make-typesetter (score-width score-height score-name list-of-stencils)
   (let ((x-cursor 0)
