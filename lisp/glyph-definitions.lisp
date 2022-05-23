@@ -9,7 +9,8 @@
     (component-stem nil "minima-stem" 2.5 14 1.8)
     (component-stem nil "minima-stem-short-a" 2.1 14 1.8)
     (component-stem nil "minima-stem-short-b" 1.6 14 1.8)
-    (component-flag nil "semicroma-flag" 14 11 0.25 0.6 t 0.8 0.5)
+    (component-flag nil "croma-flag" 15 9 0.35 0.7 nil 0.8 0.7)
+    (component-flag nil "semicroma-flag" 11 11 0.2 0.5 t 0.8 0.7)
     ))
 
 (defparameter *setzkasten-definition-glyphs*
@@ -75,4 +76,6 @@
     (glyph-notehead-stem m10 "minima-k" "5-stave" "notehead-semibrevis" "enharmonic-dot" "minima-stem" 180 1500 10 :down nil 0)
     (glyph-notehead-flag scr1u "semicroma-f-u" "5-stave" "notehead-semibrevis" "" "minima-stem" "semicroma-flag" 180 1500 5 :up)
     (glyph-notehead-flag scr1d "semicroma-f-d" "5-stave" "notehead-semibrevis" "" "minima-stem" "semicroma-flag" 180 1500 5 :down)
+    (glyph-notehead-flag cr1u "croma-f-u" "5-stave" "notehead-semibrevis" "" "minima-stem" "croma-flag" 180 1500 5 :up)
+    (glyph-notehead-flag cr1d "croma-f-d" "5-stave" "notehead-semibrevis" "" "minima-stem" "croma-flag" 180 1500 5 :down)
     ))

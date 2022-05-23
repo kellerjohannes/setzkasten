@@ -21,7 +21,9 @@
    :mirror-x
    :mirror-y
    :mirror-dot
-   :hypothenuse-a-o))
+   :hypothenuse-a-o
+   :trigo-asa
+   :triangular-proportion))
 
 (in-package :vec)
 

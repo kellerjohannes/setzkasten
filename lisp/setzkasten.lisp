@@ -20,6 +20,71 @@
 (load "~/Vicentino21/edition/setzkasten/lisp/score-definitions.lisp")
 
 
+(defclass typesetter ()
+  ((svg-symbol-container :initform nil :accessor svg-symbol-container)
+   (lines :initform '(()) :allocation :instance :accessor lines)
+   (name :initform "" :initarg :name :accessor name)
+   (width :initform 0 :initarg :width :accessor width)
+   (height :initform 0 :initarg :height :accessor height)
+   (bg-color :initform 0 :initarg :bg-color :accessor bg-color)
+   (svg-data :initform "" :accessor svg-data)))
+
+(defmethod add-to-line ((score typesetter) (stencil glyph))
+  (unless (svg-data stencil)
+    (cast stencil)
+    (push (svg-data stencil) (svg-symbol-container score)))
+  (push stencil (first (lines score))))
+
+(defmethod next-line ((score typesetter))
+  (push '() (lines score)))
+
+(defmethod typeset ((score typesetter))
+  (let ((y-cursor 0)
+	(svg-output nil))
+    (format t "~a" (lines score))
+    (mapcar (lambda (line)
+	      (let ((x-cursor 0))
+		(mapcar (lambda (stencil)
+			  (push (output-use (id stencil) :x x-cursor :y y-cursor)
+				svg-output)
+			  (incf x-cursor (glyph-width stencil)))
+			(reverse line)))
+	      (incf y-cursor (glyph-height (first line))))
+	    (reverse (lines score)))
+    (setf (svg-data score)
+	  (concatenate 'string
+		       (toplevel-open (width score) (height score) (name score))
+		       (when (bg-color score) (output-background (bg-color score)))
+		       (reduce-string-list (svg-symbol-container score))
+		       (reduce-string-list svg-output)
+		       (toplevel-close)))))
+
+(defmethod write-score ((score typesetter))
+  (with-open-file (stream (merge-pathnames *svg-export-path*
+					   (pathname (format nil "~a.svg" (name score))))
+			  :direction :output
+			  :if-exists :supersede
+			  :if-does-not-exist :create)
+    (format stream "~a" (svg-data score))))
+
+
+
+
+
+(defun test-score ()
+  (let ((list-of-stencils (parse-setzkasten *setzkasten-definition-components*
+					    *setzkasten-definition-glyphs*
+					    *setzkasten-syntax*))
+	(score (make-instance 'typesetter :bg-color "white" :height 1500 :width 20000 :name "test-score")))
+    (add-to-line score (first list-of-stencils))
+    (add-to-line score (second list-of-stencils))
+    (add-to-line score (third list-of-stencils))
+    (add-to-line score (fourth list-of-stencils))
+    (typeset score)
+    (write-score score)
+    nil))
+
+
 
 (defun make-typesetter (score-width score-height score-name list-of-stencils)
   (let ((x-cursor 0)
