@@ -89,3 +89,21 @@
 				      (dot-above-staff-offset 0)
 				      (dot-above-stem-offset 0)
 				      (dot-alignment :center)))))
+
+
+(defun print-setzkasten-syntax (syntax-definition)
+  (mapc (lambda (el)
+	  (format t "Element ~s:~&  Manually to define:~&~{    ~a~&~}~&  Predefined:~&~{    ~a~&~}~%"
+		  (symbol-name (first el))
+		  (mapcar (lambda (par)
+			    (format nil "~a [~a]"
+				    (symbol-name (first par))
+				    (second par)))
+			  (second el))
+		  (mapcar (lambda (par)
+			    (format nil "~a: ~s"
+				    (symbol-name (first par))
+				    (second par)))
+			  (third el))))
+	syntax-definition)
+  nil)

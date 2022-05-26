@@ -40,7 +40,6 @@
 
 
 
-;;; minimal class sketch
 
 (defclass typesetter ()
   ((line-container :initform nil :accessor line-container)
@@ -126,28 +125,7 @@
 	    (toplevel-close))))
 
 
-(defun test-debug ()
-  (let ((stencil-list (parse-setzkasten *setzkasten-definition-components*
-					*setzkasten-definition-glyphs*
-					*setzkasten-syntax*))
-	(thing (make-instance 'typesetter :bg-color "white"
-					  :width 4000
-					  :height nil
-					  :margins '(0 50 0 50)
-					  :name "new-typesetter-test")))
-    (add-line thing 800)
-    (add-stencil-to-line thing (first stencil-list))
-    (add-stencil-to-line thing (second stencil-list))
-    (add-stencil-to-line thing (third stencil-list))
-    (add-line thing 500)
-    (add-stencil-to-line thing (fourth stencil-list))
-    (add-stencil-to-line thing (fifth stencil-list))
-    (typeset thing :flushed)
-    (write-score thing)))
-
-
-
-
+;;; parsing vicentino code
 
 (defun lookup-vicentino-code (item glyph-definitions)
   (let ((result (third (find item glyph-definitions :key #'second))))
@@ -190,23 +168,5 @@
 	data)
   t)
 
-(defun create-all ()
-  (create-scores *scores*
-		 *setzkasten-definition-components*
-		 *setzkasten-definition-glyphs*
-		 *setzkasten-syntax*))
 
 
-
-
-(defun create-scores (data)
-  (mapc (lambda (score)
-	  (let ((setter (make-typesetter (second (first score)) (third (first score)) (first (first score))
-					 (parse-setzkasten *setzkasten-definition-components*
-							   *setzkasten-definition-glyphs*
-							   *setzkasten-syntax*))))
-	    (mapcar (lambda (n) (funcall setter n))
-		    (parse-vicentino-code (second score) *setzkasten-definition-glyphs*))
-	    (write-svg-to-file setter (first (first score)) (fourth (first score)))))
-	data)
-  nil)
