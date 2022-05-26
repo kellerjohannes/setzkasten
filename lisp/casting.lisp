@@ -233,7 +233,8 @@
 		   (width-head width-head)
 		   (width-tail width-tail))
       (stem-component stencil)
-    (let* ((stem-length-absolute (* stem-length (distance-between-lines (staff-component stencil))))
+    (let* ((stem-length-absolute (* stem-length
+				    (distance-between-lines (staff-component stencil))))
 	   (width-tail-absolute (* width-head width-tail))
 	   (x-center (h-center stencil))
 	   (direction-operator (if (eq (stem-direction stencil) :up) #'- #'+))
@@ -289,9 +290,11 @@
 		       (stem-width-head width-head))
 	  (stem-component stencil)
 	(let* ((stem-length (* (stem-length (stem-component stencil)) unit-length))
-	       (notehead-y (calculate-absolute-staff-position stencil (notehead-position stencil)))
+	       (notehead-y (calculate-absolute-staff-position stencil
+							      (notehead-position stencil)))
 	       (m (vec:create (h-center stencil)
-			      (- notehead-y (* 0.5 (calculate-notehead-height stencil)) stem-length)))
+			      (- notehead-y (* 0.5 (calculate-notehead-height stencil))
+				 stem-length)))
 	       (n (vec:create (h-center stencil)
 			      (+ (vec:y-coord m) (* merge-level stem-length))))
 	       (a (vec:add m (vec:create (* 0.5 stem-width-factor stem-width-head) 0)))
@@ -300,15 +303,17 @@
 	       (alpha (vec:sin-between-vectors (vec:subtract b a) (vec:create 1 0)))
 	       (h (vec:add a (vec:create (- (vec:hypothenuse-a-o alpha thickness-bold))
 					 0)))
-	       (c (vec:create (+ (h-center stencil) (vec:triangular-proportion (vec:len (vec:subtract m a))
-									       (* 0.5 stem-width-head)
-									       stem-length
-									       (vec:len (vec:subtract n m))))
+	       (c (vec:create (+ (h-center stencil)
+				 (vec:triangular-proportion (vec:len (vec:subtract m a))
+							    (* 0.5 stem-width-head)
+							    stem-length
+							    (vec:len (vec:subtract n m))))
 			      (vec:y-coord n)))
 	       (beta (vec:sin-between-vectors (vec:subtract b c) (vec:create 1 0)))
 	       (f (vec:add c (vec:create (- (vec:hypothenuse-a-o beta thickness-light))
 					 0)))
-	       (d (vec:create (vec:x-coord b) (+ (vec:y-coord c) (- (vec:y-coord c) (vec:y-coord b)))))
+	       (d (vec:create (vec:x-coord b) (+ (vec:y-coord c)
+						 (- (vec:y-coord c) (vec:y-coord b)))))
 	       (e (vec:add d (vec:subtract f c)))
 	       (o (vec:add b (vec:subtract h a)))
 	       (g (vec:add o (vec:scale (vec:unit-vector h o)
@@ -318,10 +323,11 @@
 					   thickness-light)))))
 	  (when (eq (stem-direction stencil) :down)
 	    (transform-coordinates #'vec:mirror-y notehead-y a b c d e f g h))
-	  ;; (push (output-debug-circle b) (svg-data stencil))
+	  ;; (push (output-debug-circle b) (svg-data stencil)) ; only for debugging
 	  (if tailp
 	      (push (output-path "even-odd" (ink-color stencil)
-	  			 `((m ,a) (l ,b) (l ,c) (l ,d) (l ,e) (l ,f) (l ,g) (l ,h) (c)))
+	  			 `((m ,a) (l ,b) (l ,c) (l ,d) (l ,e) (l ,f)
+				   (l ,g) (l ,h) (c)))
 	   	    (svg-data stencil))
 	      (push (output-path "even-odd" (ink-color stencil)
 	  			 `((m ,a) (l ,b) (l ,c) (l ,f) (l ,g) (l ,h) (c)))
@@ -339,13 +345,11 @@
 
 ;;; BOOKMARK: transcoding until here
 
-;; ;; rest
+;; rest
 
-;; (cl-defmethod cast ((type-rest setzkasten/type-rest))
-;; 	      "Generates SVG data for a rest."
-;; 	      (insert "\nCasting rest not implemented yet.")
-;; 	      (svg-line setzkasten/tmp-image 0 0 10 10)
-;; 	      (cl-call-next-method))
+(defmethod cast ((stencil glyph-rest))
+	      "Generates SVG data for a rest."
+	      (call-next-method))
 
 
 ;; ;; sharp
