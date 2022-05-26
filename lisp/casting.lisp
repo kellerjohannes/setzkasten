@@ -273,75 +273,6 @@
 		      `(setf ,vec (funcall ,transformation ,vec ,argument)))
 		    coordinates)))
 
-;; will be obsolete, to be deleted
-(defmethod draw-flag ((stencil glyph-notehead-flag) notehead-y stem-end-x stem-end-y corner-x corner-y merge-y tail-end-y)
-  (let* ((a (vec:create stem-end-x stem-end-y))
-	 (h )
-	 (b (vec:create corner-x corner-y))
-	 (c (vec:create stem-end-x merge-y))
-	 (d (vec:create corner-x tail-end-y)))
-    (when (eq (stem-direction stencil) :down)
-      (transform-coordinates #'vec:mirror-y notehead-y a b c d))
-    ;;(output-circle (vec:x-coord d) (vec:y-coord d) 15 "red")
-    (output-path "" (ink-color stencil) `((m ,a) (l ,b) (l ,c) (l ,d) (l ,c)))
-    ))
-
-(defmethod cast ((stencil glyph-notehead-flag))
-  "Generates SVG data for a note stem flag."
-  (with-accessors ((thickness-bold flag-thickness-bold)
-		   (thickness-light flag-thickness-light)
-		   (corner-level flag-corner-level)
-		   (merge-level flag-merge-level)
-		   (tailp flag-tail-p)
-		   (tail-level flag-tail-level)
-		   (y-offset flag-y-offset))
-      (flag-component stencil)
-    (with-accessors ((unit-length distance-between-lines))
-	(staff-component stencil)
-      (with-accessors ((stem-width-factor width-tail)
-		       (stem-width-head width-head))
-	  (stem-component stencil)
-	(let* ((notehead-y (calculate-absolute-staff-position stencil (notehead-position stencil)))
-	       (stem-length (* (stem-length (stem-component stencil)) unit-length))
-	       (stem-end-y (- notehead-y
-			      (* 0.5 (calculate-notehead-height stencil))
-			      stem-length))
-	       (stem-width-tail (* stem-width-head stem-width-factor))
-	       (a (vec:create (+ (h-center stencil) (* 0.5 stem-width-tail)) stem-end-y))
-	       (b (vec:create (+ (h-center stencil) (* y-offset unit-length))
-			      (+ stem-end-y (* corner-level stem-length))))
-	       (angle-1 (vec:sin-between-vectors (vec:subtract b a)
-						 (vec:subtract (vec:add a (vec:create 1 0)) a)))
-	       (h (vec:create (- (vec:x-coord a)
-				 (/ thickness-bold angle-1))
-			      stem-end-y))
-	       (b2 (vec:add h (vec:subtract b a)))
-	       (u (vec:create (h-center stencil) (+ stem-end-y (* merge-level stem-length))))
-	       (angle-3 (acos (/ (* 0.5 thickness-light) (vec:len (vec:subtract b u)))))
-	       (r (vec:add u (vec:rotate (vec:scale (vec:unit-vector u b) (* 0.5 thickness-light)) (- angle-3))))
-	       (angle-4 (vec:cos-between-vectors (vec:subtract (vec:add u (vec:create 1 0)) u)
-						 (vec:subtract r u)))
-	       (merge-offset (/ angle-4 (* 0.5 thickness-light)))
-	       (c (vec:create (+ (vec:x-coord u) merge-offset) (vec:y-coord u)))
-	       (f (vec:create (- (vec:x-coord u) merge-offset) (vec:y-coord u)))
-	       (angle-2 (vec:sin-between-vectors (vec:subtract b c)
-						 (vec:subtract (vec:add a (vec:create 1 0)) a)))
-	       (helper-length (* angle-2 (/ (/ thickness-bold angle-1) angle-1)))
-	       (g (vec:add b2 (vec:scale (vec:unit-vector h b2) (- helper-length thickness-light))))
-	       (d (vec:create (vec:x-coord b) (+ stem-end-y (* tail-level stem-length)))))
-	  (when (eq (stem-direction stencil) :down)
-	    (transform-coordinates #'vec:mirror-y notehead-y a b c d f g h))
-	  ;; TODO when semi-flag ...
-	  (push (output-debug-circle u) (svg-data stencil))
-	  (format t "~&c: ~a, ~a" (vec:x-coord c) (vec:y-coord c))
-	  (format t "~&offset: ~a" merge-offset)
-	  (format t "~&angle-4: ~a" angle-4)
-	  (push (output-path "even-odd" "blue" ; (ink-color stencil)
-			     `((m ,a) (l ,b) (l ,c) (l ,d) (l ,f) (l ,g) (l ,h) (c)))
-		(svg-data stencil))))))
-  (call-next-method))
-
-
 (defmethod cast ((stencil glyph-notehead-flag))
   "Generates SVG data for a note stem flag."
   (with-accessors ((thickness-bold flag-thickness-bold)
@@ -397,6 +328,12 @@
 	   	    (svg-data stencil)))
 	  ))))
   (call-next-method))
+
+
+
+
+
+
 
 ;; TODO swap h-center with x-center-stem
 

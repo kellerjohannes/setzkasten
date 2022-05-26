@@ -9,8 +9,8 @@
   (reduce (lambda (a b) (concatenate 'string a b)) lst))
 
 ;; system components
-(load "~/Vicentino21/edition/setzkasten/lisp/svg-generator.lisp")
 (load "~/Vicentino21/edition/setzkasten/lisp/vector-package.lisp")
+(load "~/Vicentino21/edition/setzkasten/lisp/svg-generator.lisp")
 (load "~/Vicentino21/edition/setzkasten/lisp/class-definitions.lisp")
 (load "~/Vicentino21/edition/setzkasten/lisp/casting.lisp")
 (load "~/Vicentino21/edition/setzkasten/lisp/setzkasten-syntax.lisp")
@@ -19,80 +19,8 @@
 (load "~/Vicentino21/edition/setzkasten/lisp/glyph-definitions.lisp")
 (load "~/Vicentino21/edition/setzkasten/lisp/score-definitions.lisp")
 
-
-;;; memory bug: typesetter instances remain in memory and grow
-(defclass typesetter ()
-  ((svg-symbol-container :initform nil :accessor svg-symbol-container)
-   (lines :initform nil :allocation :instance :accessor lines)
-   (name :initform "" :initarg :name :accessor name)
-   (width :initform 0 :initarg :width :accessor width)
-   (height :initform 0 :initarg :height :accessor height)
-   (bg-color :initform 0 :initarg :bg-color :accessor bg-color)
-   (svg-data :initform "" :accessor svg-data)))
-
-(defmethod initialize-instance :after ((score typesetter) &key)
-  (setf (lines score) '(())))
-
-(defmethod add-to-line ((score typesetter) (stencil glyph))
-  (unless (svg-data stencil)
-    (cast stencil)
-    (push (svg-data stencil) (svg-symbol-container score)))
-  (push stencil (first (lines score))))
-
-(defmethod next-line ((score typesetter))
-  (push '() (lines score)))
-
-
-;;; flexible spacing needs to be implemented
-
-(defmethod typeset ((score typesetter))
-  (let ((y-cursor 0)
-	(svg-output nil))
-    (format t "~a" (lines score))
-    (mapcar (lambda (line)
-	      (let ((x-cursor 0))
-		(mapcar (lambda (stencil)
-			  (push (output-use (id stencil) :x x-cursor :y y-cursor)
-				svg-output)
-			  (incf x-cursor (glyph-width stencil)))
-			(reverse line)))
-	      (incf y-cursor (glyph-height (first line))))
-	    (reverse (lines score)))
-    (setf (svg-data score)
-	  (concatenate 'string
-		       (toplevel-open (width score) (height score) (name score))
-		       (when (bg-color score) (output-background (bg-color score)))
-		       (reduce-string-list (svg-symbol-container score))
-		       (reduce-string-list svg-output)
-		       (toplevel-close)))))
-
-(defmethod write-score ((score typesetter))
-  (with-open-file (stream (merge-pathnames *svg-export-path*
-					   (pathname (format nil "~a.svg" (name score))))
-			  :direction :output
-			  :if-exists :supersede
-			  :if-does-not-exist :create)
-    (format stream "~a" (svg-data score))))
-
-
-
-
-;;; does not support score liste with vicentino code yet
-
-(defun test-score ()
-  (let ((list-of-stencils (parse-setzkasten *setzkasten-definition-components*
-					    *setzkasten-definition-glyphs*
-					    *setzkasten-syntax*))
-	(score (make-instance 'typesetter :bg-color "white" :height 1500 :width 20000 :name "test-score")))
-    (add-to-line score (first list-of-stencils))
-    (add-to-line score (second list-of-stencils))
-    (add-to-line score (third list-of-stencils))
-    (add-to-line score (fourth list-of-stencils))
-    (next-line score)
-    (add-to-line score (fifth list-of-stencils))
-    (typeset score)
-    (write-score score)
-    nil))
+;; typesetting system
+(load "~/Vicentino21/edition/setzkasten/lisp/typesetter.lisp")
 
 
 
@@ -101,6 +29,8 @@
 
 
 ;;; old typesetting system
+
+;; recursive version, using a closure
 
 (defun make-typesetter (score-width score-height score-name list-of-stencils)
   (let ((x-cursor 0)
@@ -158,6 +88,7 @@
 				      list-of-components))
 	    definition-glyphs)))
 
+
 (defun print-setzkasten-syntax (syntax-definition)
   (mapc (lambda (el)
 	  (format t "Element ~s:~&  Manually to define:~&~{    ~a~&~}~&  Predefined:~&~{    ~a~&~}~%"
@@ -177,29 +108,3 @@
 
 
 
-(defun lookup-vicentino-code (item glyph-definitions)
-  (third (find item glyph-definitions :key #'second)))
-
-(defun parse-vicentino-code (data glyph-definitions)
-  (mapcar (lambda (item) (lookup-vicentino-code item glyph-definitions)) data))
-
-(defun write-svg-to-file (typesetter filename background-color)
-  (let ((svg-score (funcall typesetter nil background-color)))
-    (with-open-file (stream (merge-pathnames *svg-export-path*
-					     (pathname (format nil "~a.svg" filename)))
-			    :direction :output
-			    :if-exists :supersede
-			    :if-does-not-exist :create)
-      (format stream "~a" svg-score))))
-
-(defun create-scores (data)
-  (mapc (lambda (score)
-	  (let ((setter (make-typesetter (second (first score)) (third (first score)) (first (first score))
-					 (parse-setzkasten *setzkasten-definition-components*
-							   *setzkasten-definition-glyphs*
-							   *setzkasten-syntax*))))
-	    (mapcar (lambda (n) (funcall setter n))
-		    (parse-vicentino-code (second score) *setzkasten-definition-glyphs*))
-	    (write-svg-to-file setter (first (first score)) (fourth (first score)))))
-	data)
-  nil)
