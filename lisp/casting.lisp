@@ -343,7 +343,6 @@
 
 ;; TODO swap h-center with x-center-stem
 
-;;; BOOKMARK: transcoding until here
 
 ;; rest
 
@@ -365,7 +364,8 @@
 	       (c (vec:add b (vec:create (* (abs horizontal-length) unit-length) 0)))
 	       (d (vec:add c (vec:create 0 horizontal-thickness)))
 	       (e (vec:add d (vec:create (- (+ vertical-thickness
-					       (* (abs horizontal-length) unit-length))) 0)))
+					       (* (abs horizontal-length) unit-length)))
+					 0)))
 	       (f (vec:add a (vec:create (- vertical-thickness) 0))))
 	  (when (eq rest-direction :up)
 	    (transform-coordinates #'vec:mirror-y
@@ -383,12 +383,30 @@
   (call-next-method))
 
 
-;; ;; sharp
+;;; BOOKMARK: transcoding until here
 
-;; (cl-defmethod cast ((type-sharp setzkasten/type-sharp))
-;; 	      "Generates SVG data for a sharp sign."
-;; 	      (insert "\nCasting a sharp sign not implemented yet.")
-;; 	      (cl-call-next-method))
+;; sharp
+
+(defmethod cast ((stencil glyph-sharp))
+  "Generates SVG data for a sharp sign."
+  (with-accessors ((line-thickness thickness)
+		   (sharp-size size)
+		   (double-p double-p))
+      (sharp-component stencil)
+    (with-accessors ((unit-length distance-between-lines))
+	(staff-component stencil)
+      (let* ((y-center (calculate-absolute-staff-position stencil (sharp-position stencil)))
+	     (a (vec:create (+ (h-center stencil) (* 0.5 unit-length sharp-size))
+			    (- y-center (* 0.5 unit-length sharp-size))))
+	     (b (vec:mirror-y a y-center))
+	     (c (vec:mirror-dot a (vec:create (h-center stencil) y-center)))
+	     (d (vec:mirror-x a (h-center stencil))))
+	(push (output-line-vec a c line-thickness "round")
+	      (svg-data stencil))
+	(push (output-line-vec b d line-thickness "round")
+	      (svg-data stencil)))))
+  (format t "~&creating sharp.")
+  (call-next-method))
 
 
 ;; ;; flat

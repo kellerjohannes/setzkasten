@@ -40,6 +40,11 @@
 				      (vertical-thickness 15)
 				      (horizontal-length 0.3)
 				      (horizontal-thickness 9)))
+				    (component-sharp
+				     ((id "sharp")
+				      (thickness 3)
+				      (size 1)
+				      (double-p t)))
 				    ;; more to add
 				    (glyph-staff
 				     ((id "glyph-staff")
@@ -102,7 +107,14 @@
 				      (glyph-width 40)
 				      (glyph-height 1500)
 				      (rest-position 5)
-				      (rest-direction :up)))))
+				      (rest-direction :up)))
+				    (glyph-sharp
+				     ((id "glyph-sharp")
+				      (staff-component :instance)
+				      (sharp-component :instance)
+				      (glyph-width 60)
+				      (glyph-height 1500)
+				      (sharp-position 5)))))
 
 
 (defun print-setzkasten-syntax (syntax-definition)

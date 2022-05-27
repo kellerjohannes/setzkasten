@@ -33,6 +33,12 @@
   (format nil "<line x1=\"~d\" y1=\"~d\" x2=\"~d\" y2=\"~d\" stroke-width=\"~d\" stroke-linecap=~s/>"
 	  x1 y1 x2 y2 stroke-width stroke-linecap))
 
+(defun output-line-vec (vec1 vec2 stroke-width stroke-linecap)
+  (output-line (vec:x-coord vec1) (vec:y-coord vec1)
+	       (vec:x-coord vec2) (vec:y-coord vec2)
+	       stroke-width
+	       stroke-linecap))
+
 (defparameter *path-command-dict* '((l . "L")
 				    (lr . "l")
 				    (m . "M")
