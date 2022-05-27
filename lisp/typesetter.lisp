@@ -74,10 +74,18 @@
 (defmethod calculate-glyph-width (line)
   (reduce #'+ line :key #'glyph-width))
 
+(defmethod top-margin ((score typesetter)) (first (margins score)))
+
+(defmethod right-margin ((score typesetter)) (second (margins score)))
+
+(defmethod bottom-margin ((score typesetter)) (third (margins score)))
+
+(defmethod left-margin ((score typesetter)) (fourth (margins score)))
+
 (defmethod typeset ((score typesetter) alignment)
-  (let ((y-counter (first (margins score))))
+  (let ((y-counter (top-margin score)))
     (mapc (lambda (line line-width)
-	    (let ((x-counter (fourth (margins score)))
+	    (let ((x-counter (left-margin score))
 		  (padding (if (eq alignment :block)
 			       (/ (- line-width (calculate-glyph-width line))
 				  (- (length line) 0.0))
@@ -96,8 +104,8 @@
 	  (reverse (line-width-list score)))))
 
 (defmethod get-svg-height ((score typesetter))
-  (let ((top-and-bottom-margin (+ (first (margins score))
-				  (third (margins score)))))
+  (let ((top-and-bottom-margin (+ (top-margin score)
+				  (bottom-margin score))))
     (if (height score)
 	(+ top-and-bottom-margin (height score))
 	(+ top-and-bottom-margin
@@ -105,9 +113,14 @@
 		   :key (lambda (line) (glyph-height (first line))))))))
 
 (defmethod get-svg-width ((score typesetter))
-  (let ((left-and-right-margin (+ (second (margins score))
-				  (fourth (margins score)))))
-    (+ left-and-right-margin (width score))))
+  (let ((left-and-right-margin (+ (right-margin score)
+				  (left-margin score))))
+    (if (width score)
+	(+ left-and-right-margin (width score))
+	(+ left-and-right-margin
+	   (loop for line in (line-container score)
+		 maximize (calculate-glyph-width line))))
+    ))
 
 (defmethod write-score ((score typesetter))
   (with-open-file (stream (merge-pathnames *svg-export-path*
@@ -157,7 +170,7 @@
 				       :bg-color (score-bg-color score)
 				       :width (score-width score)
 				       :height (score-height score)
-				       :margins '(200 100 0 100)
+				       :margins '(50 100 0 100)
 				       :name (score-name score))))
 	    (mapc (lambda (element)
 		    (cond ((eq element 'nl) (add-line setter (score-width score)))
