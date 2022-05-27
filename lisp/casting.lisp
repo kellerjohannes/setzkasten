@@ -432,7 +432,7 @@
       (flat-component stencil)
     (with-accessors ((unit-length distance-between-lines))
 	(staff-component stencil)
-      (let* ((r (* 0.5 unit-length circle-diameter))
+      (let* ((r (* 0.4 unit-length circle-diameter))
 	     (stem-x (- (h-center stencil) r))
 	     (y-center (calculate-absolute-staff-position stencil staff-position))
 	     (a (vec:create (- stem-x (* 0.5 thickness-bottom))
@@ -441,15 +441,16 @@
 	     (c (vec:create (+ stem-x (* 0.5 thickness-bottom thickness-top))
 			    (- (vec:y-coord b) (* stem-length unit-length))))
 	     (d (vec:add c (vec:create (* -1.5 thickness-bottom thickness-top) 0)))
-	     (center (vec:create stem-x y-center)))
+	     (e (vec:create stem-x (vec:y-coord a))))
 	(format t "~&vectors: ~a ~a ~a ~a" a b c d)
 	(push (output-path `("fill" ,(ink-color stencil))
 			   `((m ,a) (l ,b) (l ,c) (l ,d) (c)))
 	      (svg-data stencil))
 	(push (output-path `("stroke" ,(ink-color stencil)
 			     "fill" "none"
-			     "stroke-width" ,(format nil "~s" thickness-circle))
-			   `((m ,center) (a ,r ,r 0 0 0 0 360)))
+			     "stroke-width" ,(format nil "~s" thickness-circle)
+			     "stroke-linecap" "round")
+			   `((m ,e) (a ,(* 1.2 r) ,(* 1.2 r) 0 1 0 ,(vec:x-coord e) ,(- (vec:y-coord e) (* 2 r)))))
 	      (svg-data stencil))))))
 
 (defmethod cast ((stencil glyph-flat))
@@ -458,6 +459,10 @@
   (when (second-flat-position stencil)
     (draw-flat stencil (second-flat-position stencil)))
   (call-next-method))
+
+;;; TODO mirror option for flats
+
+
 
 ;; ;; g-clef
 

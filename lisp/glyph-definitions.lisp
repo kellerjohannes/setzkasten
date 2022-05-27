@@ -16,7 +16,7 @@
     (component-rest nil "maxima-rest" 2 15 0 0)
     (component-sharp nil "double-sharp" 9 1 t 27)
     (component-sharp nil "single-sharp" 9 1 nil 0)
-    (component-flat nil "flat" 5 8 1.2 2.5 1)
+    (component-flat nil "flat" 9 8 1.2 2.8 1)
     ))
 
 (defparameter *glyph-height* 800)
@@ -127,6 +127,6 @@
     (glyph-sharp ssh8 "single-sharp-8" "5-stave" "single-sharp" 120 ,*glyph-height* 8)
     (glyph-sharp ssh9 "single-sharp-9" "5-stave" "single-sharp" 120 ,*glyph-height* 9)
     (glyph-sharp ssh10 "single-sharp-10" "5-stave" "single-sharp" 120 ,*glyph-height* 10)
-    (glyph-flat f5 "flat-5" "5-stave" "flat" 80 ,*glyph-height* 5 nil)
-    (glyph-flat f2-9 "flat-2-9" "5-stave" "flat" 80 ,*glyph-height* 2 9)
+    (glyph-flat f5 "flat-5" "5-stave" "flat" 120 ,*glyph-height* 5 nil)
+    (glyph-flat f2-9 "flat-2-9" "5-stave" "flat" 120 ,*glyph-height* 2 9)
     ))
