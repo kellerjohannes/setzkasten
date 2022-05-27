@@ -10,4 +10,6 @@
 			 (("sharp-devel" nil nil "white")
 			  (bc nl bb sh5 sb5 ba sh4 sb4 ba ssh5 sb5 ba ssh4 sb4 ba bb))
 			 (("libro-5-test" nil nil "white")
-			  (bb))))
+			  (bc sh1 sb1 sh2 sb2 sb3 sh4 sb4 ssh5 sb5 sb6 sh7 sb7 sh8 sb8 bb))
+			 (("flat-devel" nil nil "white")
+			  (bc f5 bb f2-9 bc))))

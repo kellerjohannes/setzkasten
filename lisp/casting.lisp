@@ -104,14 +104,14 @@
 	   (k (vec:mirror-y d center-y))
 	   (l (vec:mirror-y c center-y)))
       (if black
-	  (output-path "evenodd" (ink-color stencil)
+	  (output-path `("fill-rule" "evenodd" "fill" ,(ink-color stencil)) 
 		       `((m ,a) (l ,b) (l ,c) (l ,d)
 			 (l ,e) (l ,f) (l ,g) (l ,h) (l ,i) (l ,j) (l ,k) (l ,l) (c)))
 	  (let* ((m (vec:add k (vec:create 0 bold-stroke)))
 		 (n (vec:mirror-y m center-y))
 		 (o (vec:mirror-dot m center))
 		 (p (vec:mirror-x m center-x)))
-	    (output-path "evenodd" (ink-color stencil)
+	    (output-path `("fill-rule" "evenodd" "fill" ,(ink-color stencil))
 			 `((m ,a) (l ,b) (l ,c) (l ,d)
 			   (l ,e) (l ,f) (l ,g) (l ,h) (l ,i) (l ,j) (l ,k) (l ,l) (c)
 			   (m ,m) (l ,n) (l ,o) (l ,p) (c))))))))
@@ -128,7 +128,7 @@
 	   (c (vec:create center-x (- center-y (* 0.5 height))))
 	   (d (vec:create (+ center-x (* 0.5 width)) center-y)))
       (if black
-	  (output-path "evenodd" (ink-color stencil)
+	  (output-path `("fill-rule" "evenodd" "fill" ,(ink-color stencil)) 
 		       `((m ,a) (l ,b) (l ,c) (l ,d) (c)))
 	  (let* ((center (vec:create center-x center-y))
      		 (e (vec:add a (vec:add (vec:scale (vec:unit-vector a b) light-stroke)
@@ -137,7 +137,7 @@
      					(vec:scale (vec:unit-vector a d) bold-stroke))))
      		 (g (vec:add center (vec:subtract center e)))
 		 (h (vec:add center (vec:subtract center f))))
-	    (output-path "evenodd" (ink-color stencil)
+	    (output-path `("fill-rule" "evenodd" "fill" ,(ink-color stencil))
 			 `((m ,a) (l ,b) (l ,c) (l ,d) (c)
 			   (m ,e) (l ,f) (l ,g) (l ,h) (c))))))))
 
@@ -218,7 +218,7 @@
 	   (b (vec:create (- center-x width-2) center-y))
 	   (c (vec:create center-x (- center-y width-2)))
 	   (d (vec:create (+ center-x width-2) center-y)))
-      (push (output-path "evenodd" (ink-color stencil)
+      (push (output-path `("fill" ,(ink-color stencil))
 			 `((m ,a) (l ,b) (l ,c) (l ,d) (c)))
 	    (svg-data stencil))))
   (call-next-method))
@@ -247,7 +247,7 @@
 			  (funcall direction-operator y-head stem-length-absolute)))
 	   (d (vec:create (- x-center (* 0.5 width-tail-absolute))
 			  (funcall direction-operator y-head stem-length-absolute))))
-      (push (output-path "evenodd" (ink-color stencil)
+      (push (output-path `("fill" ,(ink-color stencil))
 			 `((m ,a) (l ,b) (l ,c) (l ,d) (c)))
 	    (svg-data stencil))))
   (call-next-method))
@@ -325,11 +325,11 @@
 	    (transform-coordinates #'vec:mirror-y notehead-y a b c d e f g h))
 	  ;; (push (output-debug-circle b) (svg-data stencil)) ; only for debugging
 	  (if tailp
-	      (push (output-path "even-odd" (ink-color stencil)
+	      (push (output-path `("fill" ,(ink-color stencil))
 	  			 `((m ,a) (l ,b) (l ,c) (l ,d) (l ,e) (l ,f)
 				   (l ,g) (l ,h) (c)))
 	   	    (svg-data stencil))
-	      (push (output-path "even-odd" (ink-color stencil)
+	      (push (output-path `("fill" ,(ink-color stencil))
 	  			 `((m ,a) (l ,b) (l ,c) (l ,f) (l ,g) (l ,h) (c)))
 	   	    (svg-data stencil)))
 	  ))))
@@ -375,7 +375,7 @@
 	    (transform-coordinates #'vec:mirror-x
 				   (h-center stencil)
 				   a b c d e f))
-	  (push (output-path "even-odd" (ink-color stencil)
+	  (push (output-path `("fill" ,(ink-color stencil))
 			     (if (zerop horizontal-length)
 				 `((m ,a) (l ,b) (l ,e) (l ,f) (c))
 				 `((m ,a) (l ,b) (l ,c) (l ,d) (l ,e) (l ,f) (c))))
@@ -417,19 +417,47 @@
 	       (push (offset-line b d (* 0.5 offset)) (svg-data stencil)))
 	      (t
 	       (push (output-line-vec a c line-thickness "round") (svg-data stencil))
-	       (push (output-line-vec b d line-thickness "round") (svg-data stencil))))
-	
-	)))
-  (format t "~&creating sharp.")
+	       (push (output-line-vec b d line-thickness "round") (svg-data stencil)))))))
   (call-next-method))
 
 
-;; ;; flat
+;; flat
 
-;; (cl-defmethod cast ((type-flat setzkasten/type-flat))
-;; 	      "Generates SVG data for a flat sign."
-;; 	      (insert "\nCasting a flat sign not implemented yet.")
-;; 	      (cl-call-next-method))
+(defmethod draw-flat ((stencil glyph-flat) staff-position)
+  (with-accessors ((circle-diameter diameter)
+		   (thickness-circle thickness-circle)
+		   (thickness-bottom thickness-stem-bottom)
+		   (thickness-top thickness-stem-top)
+		   (stem-length stem-length))
+      (flat-component stencil)
+    (with-accessors ((unit-length distance-between-lines))
+	(staff-component stencil)
+      (let* ((r (* 0.5 unit-length circle-diameter))
+	     (stem-x (- (h-center stencil) r))
+	     (y-center (calculate-absolute-staff-position stencil staff-position))
+	     (a (vec:create (- stem-x (* 0.5 thickness-bottom))
+			    (+ y-center r)))
+	     (b (vec:add a (vec:create thickness-bottom 0)))
+	     (c (vec:create (+ stem-x (* 0.5 thickness-bottom thickness-top))
+			    (- (vec:y-coord b) (* stem-length unit-length))))
+	     (d (vec:add c (vec:create (* -1.5 thickness-bottom thickness-top) 0)))
+	     (center (vec:create stem-x y-center)))
+	(format t "~&vectors: ~a ~a ~a ~a" a b c d)
+	(push (output-path `("fill" ,(ink-color stencil))
+			   `((m ,a) (l ,b) (l ,c) (l ,d) (c)))
+	      (svg-data stencil))
+	(push (output-path `("stroke" ,(ink-color stencil)
+			     "fill" "none"
+			     "stroke-width" ,(format nil "~s" thickness-circle))
+			   `((m ,center) (a ,r ,r 0 0 0 0 360)))
+	      (svg-data stencil))))))
+
+(defmethod cast ((stencil glyph-flat))
+  "Generates SVG data for a flat sign."
+  (draw-flat stencil (flat-position stencil))
+  (when (second-flat-position stencil)
+    (draw-flat stencil (second-flat-position stencil)))
+  (call-next-method))
 
 ;; ;; g-clef
 

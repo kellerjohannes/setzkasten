@@ -43,11 +43,31 @@
 				    (lr . "l")
 				    (m . "M")
 				    (mr . "m")
-				    (c . "z")))
+				    (c . "z")
+				    (a . "A")
+				    (ar . "a")))
 
 (defun lookup-path-command (shorthand)
   (cdr (assoc shorthand *path-command-dict*)))
 
+(defun output-path (list-of-attributes list-of-commands)
+  (format nil "<path ~{~a=~s ~}d=~s />"
+	  list-of-attributes
+	  (reduce (lambda (a b) (concatenate 'string a b))
+		  (mapcar (lambda (command)
+			    (cond ((eq (first command) 'a)
+				   (format nil "~a~{~a ~}"
+					   (lookup-path-command (first command))
+					   (rest command)))
+				  (t (format nil "~a~@[~d ~]~@[~d ~]"
+					     (lookup-path-command (first command))
+					     (car (second command))
+					     (cdr (second
+						   command))))))
+			  list-of-commands))))
+
+
+;; TODO delete this obsolete definition (after updating all function calls)
 (defun output-path (fill-rule color list-of-commands)
   (format nil "<path fill-rule=~s stroke=~s fill=~s d=~s />"
 	  fill-rule
@@ -55,8 +75,13 @@
 	  color
 	  (reduce (lambda (a b) (concatenate 'string a b))
 		  (mapcar (lambda (command)
-			    (format nil "~a~@[~d ~]~@[~d ~]"
-				    (lookup-path-command (first command))
-				    (car (second command))
-				    (cdr (second command))))
+			    (cond ((eq (first command) 'a)
+				   (format nil "~a~{~a ~}"
+					   (lookup-path-command (first command))
+					   (rest command)))
+				  (t (format nil "~a~@[~d ~]~@[~d ~]"
+					     (lookup-path-command (first command))
+					     (car (second command))
+					     (cdr (second
+						   command))))))
 			  list-of-commands))))

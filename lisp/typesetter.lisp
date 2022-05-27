@@ -164,22 +164,22 @@
 	(format t "~&~a not found." id))))
 
 (defun create-scores (data components glyphs syntax)
-  (mapc (lambda (score)
-	  (let ((stencil-list (parse-setzkasten components glyphs syntax))
-		(setter (make-instance 'typesetter
-				       :bg-color (score-bg-color score)
-				       :width (score-width score)
-				       :height (score-height score)
-				       :margins '(50 100 0 100)
-				       :name (score-name score))))
-	    (mapc (lambda (element)
-		    (cond ((eq element 'nl) (add-line setter (score-width score)))
-			(t (add-stencil-to-line setter (get-stencil element stencil-list)))))
-		  (parse-vicentino-code (score-elements score) glyphs))
-	    (typeset setter :flushed)  ; use :block for Blocksatz
-	    (write-score setter)))
-	data)
-  t)
+  (mapcar (lambda (score)
+	    (let ((stencil-list (parse-setzkasten components glyphs syntax))
+		  (setter (make-instance 'typesetter
+					 :bg-color (score-bg-color score)
+					 :width (score-width score)
+					 :height (score-height score)
+					 :margins '(50 100 0 100)
+					 :name (score-name score))))
+	      (mapc (lambda (element)
+		      (cond ((eq element 'nl) (add-line setter (score-width score)))
+			    (t (add-stencil-to-line setter (get-stencil element stencil-list)))))
+		    (parse-vicentino-code (score-elements score) glyphs))
+	      (typeset setter :flushed)  ; use :block for Blocksatz
+	      (write-score setter)
+	      (score-name score)))
+	  data))
 
 
 

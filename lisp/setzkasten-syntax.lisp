@@ -46,6 +46,13 @@
 				      (size 1)
 				      (double-p t)
 				      (x-offset 20)))
+				    (component-flat
+				     ((id "flat")
+				      (thickness-circle 5)
+				      (thickness-stem-bottom 8)
+				      (thickness-stem-top 1.2)
+				      (stem-length 2.5)
+				      (diameter 1)))
 				    ;; more to add
 				    (glyph-staff
 				     ((id "glyph-staff")
@@ -115,7 +122,16 @@
 				      (sharp-component :instance)
 				      (glyph-width 60)
 				      (glyph-height 1500)
-				      (sharp-position 5)))))
+				      (sharp-position 5)))
+				    (glyph-flat
+				     ((id "glyph-flat")
+				      (staff-component :instance)
+				      (flat-component :instance)
+				      (glyph-width 60)
+				      (glyph-height 1500)
+				      (flat-position 5)
+				      (second-flat-position nil)
+				      ))))
 
 
 (defun print-setzkasten-syntax (syntax-definition)

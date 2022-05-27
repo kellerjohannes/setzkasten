@@ -102,10 +102,10 @@
 (define-setzkasten-class component-flat (component)
   "Parameters for the creation of flats."
   (thickness-circle 0.8 "Stroke thickness of the semi circle.")
-  (thickness-stem-head-bottom 0.8 "Stroke thickness at the lower end of the stem.")
-  (thickness-stem-head-top 1.2 "Stroke thickness at the upper end of the stem, in proportion to the stem thickness at the lower end.")
+  (thickness-stem-bottom 0.8 "Stroke thickness at the lower end of the stem.")
+  (thickness-stem-top 1.2 "Stroke thickness at the upper end of the stem, in proportion to the stem thickness at the lower end.")
   (stem-length 2.2 "Length of the stem, from above the semi circle to the upper end of the stem, proportional to the distance between staff lines.")
-  (diameter 4 "Diameter of the semi circle."))
+  (diameter 1 "Diameter of the semi circle, in proportion to distance between lines."))
 
 (define-setzkasten-class component-c-clef (component)
   "Parameters for the creation of c-clefs."
