@@ -349,7 +349,37 @@
 
 (defmethod cast ((stencil glyph-rest))
   "Generates SVG data for a rest."
-  (format t "~&generating rest.")
+  (with-accessors ((horizontal-length horizontal-length)
+		   (horizontal-thickness horizontal-thickness)
+		   (vertical-length vertical-length)
+		   (vertical-thickness vertical-thickness))
+      (rest-component stencil)
+    (with-accessors ((rest-position rest-position)
+		     (rest-direction rest-direction))
+	stencil
+      (with-accessors ((unit-length distance-between-lines))
+	  (staff-component stencil)
+	(let* ((a (vec:create (+ (h-center stencil) (* 0.5 vertical-thickness))
+			      (calculate-absolute-staff-position stencil rest-position)))
+	       (b (vec:add a (vec:create 0 (* vertical-length unit-length))))
+	       (c (vec:add b (vec:create (* (abs horizontal-length) unit-length) 0)))
+	       (d (vec:add c (vec:create 0 horizontal-thickness)))
+	       (e (vec:add d (vec:create (- (+ vertical-thickness
+					       (* (abs horizontal-length) unit-length))) 0)))
+	       (f (vec:add a (vec:create (- vertical-thickness) 0))))
+	  (when (eq rest-direction :up)
+	    (transform-coordinates #'vec:mirror-y
+				   (calculate-absolute-staff-position stencil rest-position)
+				   a b c d e f))
+	  (when (< horizontal-length 0)
+	    (transform-coordinates #'vec:mirror-x
+				   (h-center stencil)
+				   a b c d e f))
+	  (push (output-path "even-odd" (ink-color stencil)
+			     (if (zerop horizontal-length)
+				 `((m ,a) (l ,b) (l ,e) (l ,f) (c))
+				 `((m ,a) (l ,b) (l ,c) (l ,d) (l ,e) (l ,f) (c))))
+		(svg-data stencil))))))
   (call-next-method))
 
 

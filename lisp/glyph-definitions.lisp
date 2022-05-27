@@ -12,6 +12,7 @@
     (component-flag nil "croma-flag" 15 9 0.35 0.7 nil 0.8 0.7)
     (component-flag nil "semicroma-flag" 11 11 0.2 0.5 t 0.8 0.7)
     (component-rest nil "minima-semibrevis-rest" 0.5 15 0 0)
+    (component-rest nil "semiminima-rest" 0.5 15 -0.4 13)
     ))
 
 (defparameter *glyph-height* 800)
@@ -98,4 +99,5 @@
     (glyph-notehead-flag cr1u "croma-f-u" "5-stave" "notehead-semibrevis" "" "minima-stem" "croma-flag" 180 ,*glyph-height* 5 :up)
     (glyph-notehead-flag cr1d "croma-f-d" "5-stave" "notehead-semibrevis" "" "minima-stem" "croma-flag" 180 ,*glyph-height* 5 :down)
     (glyph-rest rm5 "rest-minima-c" "5-stave" "minima-semibrevis-rest" 150 ,*glyph-height* 5 :up)
+    (glyph-rest rsm5 "rest-semiminima-c" "5-stave" "semiminima-rest" 150 ,*glyph-height* 5 :up)
     ))
