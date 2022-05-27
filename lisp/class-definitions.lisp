@@ -96,7 +96,8 @@
   "Parameters for the creation of sharps."
   (thickness 0.5 "Stroke thickness.")
   (size 1 "Overall size of the sharp. Length of one side (they are always square-shaped) in proportion to the distance between two staff-lines.")
-  (double-p t "nil if only two lines are used, t if four lines are used."))
+  (double-p t "nil if only two lines are used, t if four lines are used.")
+  (x-offset 18 "Horizontal distance between lines."))
 
 (define-setzkasten-class component-flat (component)
   "Parameters for the creation of flats."

@@ -387,11 +387,20 @@
 
 ;; sharp
 
+(defun apply-x-offset (v offset)
+  (vec:add v (vec:create offset 0)))
+
+(defmacro offset-line (vec1 vec2 x-offset)
+  `(output-line-vec (apply-x-offset ,vec1 ,x-offset)
+		    (apply-x-offset ,vec2 ,x-offset)
+		    line-thickness "round"))
+
 (defmethod cast ((stencil glyph-sharp))
   "Generates SVG data for a sharp sign."
   (with-accessors ((line-thickness thickness)
 		   (sharp-size size)
-		   (double-p double-p))
+		   (double-p double-p)
+		   (offset x-offset))
       (sharp-component stencil)
     (with-accessors ((unit-length distance-between-lines))
 	(staff-component stencil)
@@ -401,10 +410,16 @@
 	     (b (vec:mirror-y a y-center))
 	     (c (vec:mirror-dot a (vec:create (h-center stencil) y-center)))
 	     (d (vec:mirror-x a (h-center stencil))))
-	(push (output-line-vec a c line-thickness "round")
-	      (svg-data stencil))
-	(push (output-line-vec b d line-thickness "round")
-	      (svg-data stencil)))))
+	(cond (double-p
+	       (push (offset-line a c (* -0.5 offset)) (svg-data stencil))
+	       (push (offset-line b d (* -0.5 offset)) (svg-data stencil))
+	       (push (offset-line a c (* 0.5 offset)) (svg-data stencil))
+	       (push (offset-line b d (* 0.5 offset)) (svg-data stencil)))
+	      (t
+	       (push (output-line-vec a c line-thickness "round") (svg-data stencil))
+	       (push (output-line-vec b d line-thickness "round") (svg-data stencil))))
+	
+	)))
   (format t "~&creating sharp.")
   (call-next-method))
 

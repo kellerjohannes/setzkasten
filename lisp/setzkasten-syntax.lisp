@@ -44,7 +44,8 @@
 				     ((id "sharp")
 				      (thickness 3)
 				      (size 1)
-				      (double-p t)))
+				      (double-p t)
+				      (x-offset 20)))
 				    ;; more to add
 				    (glyph-staff
 				     ((id "glyph-staff")
