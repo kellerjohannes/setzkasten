@@ -348,8 +348,9 @@
 ;; rest
 
 (defmethod cast ((stencil glyph-rest))
-	      "Generates SVG data for a rest."
-	      (call-next-method))
+  "Generates SVG data for a rest."
+  (format t "~&generating rest.")
+  (call-next-method))
 
 
 ;; ;; sharp

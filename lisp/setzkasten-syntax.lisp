@@ -34,6 +34,12 @@
 				      (flag-tail-level 0.8)
 				      (flag-y-offset 0.5))
 				     ())
+				    (component-rest
+				     ((id "rest")
+				      (vertical-length 0.5)
+				      (vertical-thickness 15)
+				      (horizontal-length 0.3)
+				      (horizontal-thickness 9)))
 				    ;; more to add
 				    (glyph-staff
 				     ((id "glyph-staff")
@@ -88,7 +94,15 @@
 				     ((dot-above-staff nil)
 				      (dot-above-staff-offset 0)
 				      (dot-above-stem-offset 0)
-				      (dot-alignment :center)))))
+				      (dot-alignment :center)))
+				    (glyph-rest
+				     ((id "glyph-rest")
+				      (staff-component :instance)
+				      (rest-component :instance)
+				      (glyph-width 40)
+				      (glyph-height 1500)
+				      (rest-position 5)
+				      (rest-direction :up)))))
 
 
 (defun print-setzkasten-syntax (syntax-definition)

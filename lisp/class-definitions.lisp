@@ -84,7 +84,9 @@
 (define-setzkasten-class component-rest (component)
   "Parameters for the creation of rests."
   (vertical-length 0.5 "Length of the vertical line, in proportion to the space between staff lines. Negative value for hanging rests, positive value for sitting rests.")
-  (horizontal-length 0 "Length of the horizontal line, in proportion to the space between staff lines. 0 for no line. Negative value for pointing to the left (croma), positive value for pointing to the right (semiminima)."))
+  (vertical-thickness 15 "Stroke thickness of the vertical line.")
+  (horizontal-length 0 "Length of the horizontal line, in proportion to the space between staff lines. 0 for no line. Negative value for pointing to the left (croma), positive value for pointing to the right (semiminima).")
+  (horizontal-thickness 9 "Stroke thickness of the horizontal line."))
 
 (define-setzkasten-class component-dot (component)
   "Parameters for the creation of dots."
@@ -182,6 +184,7 @@
 (define-setzkasten-class glyph-rest (glyph-staff)
   "Specification of a type containing a rest."
   (rest-position 5 "Position of the starting point of the rest. Needs to be a line (only 1 3 5 7 9 are valid positions).")
+  (rest-direction :up "':up' or ':down', indicates the direction of the rest sign, starting on the line specified with 'rest-position'.")
   (rest-component nil "Instance of component-rest. If nil, an empty staff type will be produced."))
 
 (define-setzkasten-class glyph-sharp (glyph-staff)

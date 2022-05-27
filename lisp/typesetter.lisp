@@ -163,7 +163,7 @@
 		    (cond ((eq element 'nl) (add-line setter (score-width score)))
 			(t (add-stencil-to-line setter (get-stencil element stencil-list)))))
 		  (parse-vicentino-code (score-elements score) glyphs))
-	    (typeset setter :block)
+	    (typeset setter :flushed)  ; use :block for Blocksatz
 	    (write-score setter)))
 	data)
   t)
