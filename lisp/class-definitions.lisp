@@ -197,7 +197,8 @@
   "Specification of a type containing one or two flats."
   (flat-position 5 "Position of the flat within the staff.")
   (second-flat-position nil "Position of an optional second flat. If nil, only one flat will be produced.")
-  (flat-component nil "Instance of component-flat. If nil, an empty staff type will be produced."))
+  (flat-component nil "Instance of component-flat. If nil, an empty staff type will be produced.")
+  (mirrored-p nil "T for flats pointing left."))
 
 (define-setzkasten-class glyph-clef (glyph-staff)
   "Specification of a type containing a c- or g-clef."

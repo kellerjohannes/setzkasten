@@ -131,6 +131,7 @@
 				      (glyph-height 1500)
 				      (flat-position 5)
 				      (second-flat-position nil)
+				      (mirrored-p nil)
 				      ))))
 
 
