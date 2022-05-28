@@ -237,30 +237,45 @@
 
 ;;; stem
 
-
-(defmethod cast ((stencil glyph-notehead-stem))
+(defmethod draw-stem ((component component-stem) unit-length h-center y-position y-offset stem-direction color)
   (with-accessors ((stem-length stem-length)
 		   (width-head width-head)
 		   (width-tail width-tail))
-      (stem-component stencil)
-    (let* ((stem-length-absolute (* stem-length
-				    (distance-between-lines (staff-component stencil))))
+      component
+    (let* ((stem-length-absolute (* stem-length unit-length))
 	   (width-tail-absolute (* width-head width-tail))
-	   (x-center (h-center stencil))
-	   (direction-operator (if (eq (stem-direction stencil) :up) #'- #'+))
+	   (x-center h-center)
+	   (direction-operator (if (eq stem-direction :up) #'- #'+))
 	   (y-head (funcall direction-operator
-			    (calculate-absolute-staff-position stencil (notehead-position stencil))
-			    (* 0.5 (calculate-notehead-height (notehead-component stencil)
-							      (distance-between-lines (staff-component stencil))))))
+			    y-position
+			    y-offset))
 	   (a (vec:create (- x-center (* 0.5 width-head)) y-head))
 	   (b (vec:create (+ x-center (* 0.5 width-head)) y-head))
 	   (c (vec:create (+ x-center (* 0.5 width-tail-absolute))
-			  (funcall direction-operator y-head stem-length-absolute)))
+			  (funcall direction-operator
+				   y-head
+				   stem-length-absolute)))
 	   (d (vec:create (- x-center (* 0.5 width-tail-absolute))
-			  (funcall direction-operator y-head stem-length-absolute))))
-      (push (output-path `("fill" ,(ink-color stencil))
-			 `((m ,a) (l ,b) (l ,c) (l ,d) (c)))
-	    (svg-data stencil))))
+			  (funcall direction-operator
+				   y-head
+				   stem-length-absolute))))
+      (output-path `("fill" ,color)
+		   `((m ,a) (l ,b) (l ,c) (l ,d) (c))))))
+
+(defmethod cast ((stencil glyph-notehead-stem))
+  (let ((unit-length (distance-between-lines (staff-component stencil))))
+    (push
+     (draw-stem (stem-component stencil)
+		unit-length
+		(h-center stencil)
+		(calculate-absolute-staff-position
+		 stencil
+		 (notehead-position stencil))
+		(* 0.5 (calculate-notehead-height (notehead-component stencil)
+						  unit-length))
+		(stem-direction stencil)
+		(ink-color stencil))
+     (svg-data stencil)))
   (call-next-method))
 
 
@@ -482,11 +497,19 @@
 (defmethod cast ((stencil glyph-f-clef-part))
   "Generates SVG data for the right part of a f-clef."
   (format t "~&    generating f-clef.")
-  (draw-notehead-diamond (notehead-component stencil)
-			 (h-center stencil)
-			 (calculate-absolute-staff-position stencil (1+ (clef-position stencil)))
-			 (calculate-notehead-width ))
-
+  (let ((h (calculate-notehead-height (notehead-component stencil)
+				      (distance-between-lines
+				       (staff-component stencil)))))
+    (mapc (lambda (position-delta)
+	    (push (draw-notehead-diamond (notehead-component stencil)
+				 (h-center stencil)
+				 (calculate-absolute-staff-position stencil
+								    (+ position-delta (clef-position stencil)))
+				 (* (width (notehead-component stencil)) h)
+				 h
+				 (ink-color stencil))
+		  (svg-data stencil)))
+	  '(1 -1)))
   (call-next-method))
 
 ;;; TODO console output with score titles and padding info
