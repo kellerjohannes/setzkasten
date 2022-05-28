@@ -131,8 +131,15 @@
 				      (glyph-height 1500)
 				      (flat-position 5)
 				      (second-flat-position nil)
-				      (mirrored-p nil)
-				      ))))
+				      (mirrored-p nil)))
+				    (glyph-f-clef-part
+				     ((id "f-clef")
+				      (staff-component :instance)
+				      (notehead-component :instance)
+				      (stem-component :instance)
+				      (glyph-width 80)
+				      (glyph-height 1500)
+				      (clef-position 7)))))
 
 
 (defun print-setzkasten-syntax (syntax-definition)

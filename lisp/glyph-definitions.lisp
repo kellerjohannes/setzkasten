@@ -130,4 +130,5 @@
     (glyph-flat f5 "flat-5" "5-stave" "flat" 120 ,*glyph-height* 5 nil nil)
     (glyph-flat f5m "flat-5-mirrored" "5-stave" "flat" 120 ,*glyph-height* 5 nil t)
     (glyph-flat f2-9 "flat-2-9" "5-stave" "flat" 120 ,*glyph-height* 2 9 nil)
+    (glyph-f-clef-part fclef7 "f-clef-part-7" "5-stave" "notehead-semibrevis" "minima-stem" 140 ,*glyph-height* 7)
     ))

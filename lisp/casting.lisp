@@ -81,15 +81,15 @@
 
 ;;; notehead
 
-(defmethod draw-notehead-square ((stencil glyph-notehead) center-x center-y width height)
+(defmethod draw-notehead-square ((component component-notehead) center-x center-y width height unit-length color)
   "Generates SVG data for a square shaped notehead, black or white notation."
   (with-accessors ((bold-stroke bold-stroke)
 		   (light-stroke light-stroke)
 		   (black black))
-      (notehead-component stencil)
+      component
     (let* ((w-2 (* 0.5 width))
 	   (h-2 (* 0.5 height))
-	   (d-2 (* 0.5 (distance-between-lines (staff-component stencil))))
+	   (d-2 (* 0.5 unit-length))
 	   (center (vec:create center-x center-y))
 	   (a (vec:create (- center-x w-2) (+ center-y h-2)))
 	   (b (vec:create (- center-x w-2) (- center-y h-2)))
@@ -104,31 +104,31 @@
 	   (k (vec:mirror-y d center-y))
 	   (l (vec:mirror-y c center-y)))
       (if black
-	  (output-path `("fill-rule" "evenodd" "fill" ,(ink-color stencil)) 
+	  (output-path `("fill-rule" "evenodd" "fill" ,color) 
 		       `((m ,a) (l ,b) (l ,c) (l ,d)
 			 (l ,e) (l ,f) (l ,g) (l ,h) (l ,i) (l ,j) (l ,k) (l ,l) (c)))
 	  (let* ((m (vec:add k (vec:create 0 bold-stroke)))
 		 (n (vec:mirror-y m center-y))
 		 (o (vec:mirror-dot m center))
 		 (p (vec:mirror-x m center-x)))
-	    (output-path `("fill-rule" "evenodd" "fill" ,(ink-color stencil))
+	    (output-path `("fill-rule" "evenodd" "fill" ,color)
 			 `((m ,a) (l ,b) (l ,c) (l ,d)
 			   (l ,e) (l ,f) (l ,g) (l ,h) (l ,i) (l ,j) (l ,k) (l ,l) (c)
 			   (m ,m) (l ,n) (l ,o) (l ,p) (c))))))))
 
 
-(defmethod draw-notehead-diamond ((stencil glyph-notehead) center-x center-y width height)
+(defmethod draw-notehead-diamond ((component component-notehead) center-x center-y width height color)
   "Generates SVG data for a diamond shaped notehead, black or white notation."
   (with-accessors ((bold-stroke bold-stroke)
 		   (light-stroke light-stroke)
 		   (black black))
-      (notehead-component stencil)
+      component
     (let* ((a (vec:create center-x (+ center-y (* 0.5 height))))
 	   (b (vec:create (- center-x (* 0.5 width)) center-y))
 	   (c (vec:create center-x (- center-y (* 0.5 height))))
 	   (d (vec:create (+ center-x (* 0.5 width)) center-y)))
       (if black
-	  (output-path `("fill-rule" "evenodd" "fill" ,(ink-color stencil)) 
+	  (output-path `("fill-rule" "evenodd" "fill" ,color) 
 		       `((m ,a) (l ,b) (l ,c) (l ,d) (c)))
 	  (let* ((center (vec:create center-x center-y))
      		 (e (vec:add a (vec:add (vec:scale (vec:unit-vector a b) light-stroke)
@@ -137,17 +137,15 @@
      					(vec:scale (vec:unit-vector a d) bold-stroke))))
      		 (g (vec:add center (vec:subtract center e)))
 		 (h (vec:add center (vec:subtract center f))))
-	    (output-path `("fill-rule" "evenodd" "fill" ,(ink-color stencil))
+	    (output-path `("fill-rule" "evenodd" "fill" ,color)
 			 `((m ,a) (l ,b) (l ,c) (l ,d) (c)
 			   (m ,e) (l ,f) (l ,g) (l ,h) (c))))))))
 
-(defmethod calculate-notehead-height ((stencil glyph-notehead))
+(defmethod calculate-notehead-height ((component component-notehead) unit-length)
   "Returns the vertical height of a notehead, including the overhead value."
-  (with-accessors ((dist distance-between-lines))
-      (staff-component stencil)
     (with-accessors ((overhead length-over-line))
-	(notehead-component stencil)
-      (+ dist (* 2 overhead dist)))))
+	component
+      (+ unit-length (* 2 overhead unit-length))))
 
 (defmethod cast ((stencil glyph-notehead))
   "Generates SVG data for a notehead."
@@ -158,11 +156,20 @@
 	   (y (calculate-absolute-staff-position
 	       stencil
 	       (notehead-position stencil)))
-	   (h (calculate-notehead-height stencil))
+	   (h (calculate-notehead-height (notehead-component stencil)
+					 (distance-between-lines
+					  (staff-component stencil))))
 	   (w (* width h)))
       (if oblique-p
-	  (push (draw-notehead-diamond stencil x y w h) (svg-data stencil))
-	  (push (draw-notehead-square stencil x y w h) (svg-data stencil)))))
+	  (push (draw-notehead-diamond (notehead-component stencil)
+				       x y w h (ink-color stencil))
+		(svg-data stencil))
+	  (push (draw-notehead-square (notehead-component stencil)
+				      x y w h
+				      (distance-between-lines
+				       (staff-component stencil))
+				      (ink-color stencil))
+		(svg-data stencil)))))
   (call-next-method))
 
 
@@ -173,7 +180,9 @@
   "Returns the absolute x coordinate for an enharmonic dot, aligned to the notehead."
   (let ((center-x (h-center stencil))
 	(h-w (* 0.5 (width (notehead-component stencil))
-		(calculate-notehead-height stencil))))
+		(calculate-notehead-height (notehead-component stencil)
+					   (distance-between-lines
+					    (staff-component stencil))))))
     (case (dot-alignment stencil)
       (:center center-x)
       (:right (+ center-x h-w))
@@ -202,7 +211,8 @@
 		(find-next-space-above notehead-position number-of-lines)))
 	      ((eq type 'glyph-notehead-stem)
 	       (- (- (calculate-absolute-staff-position stencil notehead-position)
-		     (* 0.5 (calculate-notehead-height stencil))
+		     (* 0.5 (calculate-notehead-height (notehead-component stencil)
+						       (distance-between-lines (staff-component stencil))))
 		     (* unit-length (stem-length (stem-component stencil))))
 		  (* (dot-above-stem-offset stencil) unit-length)))
 	      (t 0))))))
@@ -240,7 +250,8 @@
 	   (direction-operator (if (eq (stem-direction stencil) :up) #'- #'+))
 	   (y-head (funcall direction-operator
 			    (calculate-absolute-staff-position stencil (notehead-position stencil))
-			    (* 0.5 (calculate-notehead-height stencil))))
+			    (* 0.5 (calculate-notehead-height (notehead-component stencil)
+							      (distance-between-lines (staff-component stencil))))))
 	   (a (vec:create (- x-center (* 0.5 width-head)) y-head))
 	   (b (vec:create (+ x-center (* 0.5 width-head)) y-head))
 	   (c (vec:create (+ x-center (* 0.5 width-tail-absolute))
@@ -293,7 +304,8 @@
 	       (notehead-y (calculate-absolute-staff-position stencil
 							      (notehead-position stencil)))
 	       (m (vec:create (h-center stencil)
-			      (- notehead-y (* 0.5 (calculate-notehead-height stencil))
+			      (- notehead-y (* 0.5 (calculate-notehead-height (notehead-component stencil)
+									      (distance-between-lines (staff-component stencil))))
 				 stem-length)))
 	       (n (vec:create (h-center stencil)
 			      (+ (vec:y-coord m) (* merge-level stem-length))))
@@ -464,8 +476,21 @@
     (draw-flat stencil (second-flat-position stencil)))
   (call-next-method))
 
-;;; TODO mirror option for flats
 
+;; f-clef
+
+(defmethod cast ((stencil glyph-f-clef-part))
+  "Generates SVG data for the right part of a f-clef."
+  (format t "~&    generating f-clef.")
+  (draw-notehead-diamond (notehead-component stencil)
+			 (h-center stencil)
+			 (calculate-absolute-staff-position stencil (1+ (clef-position stencil)))
+			 (calculate-notehead-width ))
+
+  (call-next-method))
+
+;;; TODO console output with score titles and padding info
+;;; TODO huchentoot output
 
 
 ;; ;; g-clef

@@ -205,7 +205,7 @@
   (clef-position 5 "Position of the clef.")
   (clef-component nil "Instance of component-c-clef or component-g-clef. In nil, an empty staff will be produced."))
 
-(define-setzkasten-class glyph-fclef-component (glyph-staff)
+(define-setzkasten-class glyph-f-clef-part (glyph-staff)
   "Specification of a type containing the right part of an f-clef double-type."
   (clef-position 7 "Position of the F pitch (7 for a standard bass clef).")
   (notehead-component nil "Instance of component-notehead. Two noteheads will be produced, above and below clef-position.")
@@ -214,7 +214,7 @@
 (define-setzkasten-class glyph-barline (glyph-staff)
   "Specification of a type containig a singe or double barline, with optional two or four dots on one or both sides."
   (double-distance nil "Horizontal distance between the two lines in case of a double barline. If nil, a single barline will be produced.")
-  (barline-instance nil "Instance of component-barline. If nil, an empty staff will be produced.")
+  (barline-component nil "Instance of component-barline. If nil, an empty staff will be produced.")
   (dot-distance nil "Distance between barline and dots.")
   (number-of-dots 0 "Number of dots, left or right of the barline(s). 0, 2 or 4 are accepted.")
   (dot-placement nil "'right for only right of barline(s), 'left for only left of barline(s), or 'both.")
