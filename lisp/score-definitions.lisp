@@ -14,4 +14,4 @@
 			 (("flat-devel" nil nil "white")
 			  (bc f5 bb f2-9 bb f5m bc))
 			 (("clef-devel" nil nil "white")
-			  (ba maxima7 fclef7 bc))))
+			  (ba maxima7 fclef7 bb))))

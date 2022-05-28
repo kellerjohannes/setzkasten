@@ -53,6 +53,15 @@
 				      (thickness-stem-top 1.2)
 				      (stem-length 2.5)
 				      (diameter 1)))
+				    (component-c-clef
+				     ((id "c-clef")
+				      (vertical-thickness 12)
+				      (horizontal-thickness 8)
+				      (rectancle-height 0.7)
+				      (rectangle-width 1.5)
+				      (length-long-leg 2.2)
+				      (length-middle-leg 1)
+				      (length-short-leg 0.8)))
 				    ;; more to add
 				    (glyph-staff
 				     ((id "glyph-staff")
@@ -138,6 +147,13 @@
 				      (notehead-component :instance)
 				      (stem-component :instance)
 				      (glyph-width 80)
+				      (glyph-height 1500)
+				      (clef-position 7)))
+				    (glyph-c-clef
+				     ((id "c-clef")
+				      (staff-component :instance)
+				      (clef-component :instance)
+				      (glyph-width 120)
 				      (glyph-height 1500)
 				      (clef-position 7)))))
 

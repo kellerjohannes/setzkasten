@@ -200,10 +200,10 @@
   (flat-component nil "Instance of component-flat. If nil, an empty staff type will be produced.")
   (mirrored-p nil "T for flats pointing left."))
 
-(define-setzkasten-class glyph-clef (glyph-staff)
+(define-setzkasten-class glyph-c-clef (glyph-staff)
   "Specification of a type containing a c- or g-clef."
   (clef-position 5 "Position of the clef.")
-  (clef-component nil "Instance of component-c-clef or component-g-clef. In nil, an empty staff will be produced."))
+  (clef-component nil "Instance of component-c-clef. In nil, an empty staff will be produced."))
 
 (define-setzkasten-class glyph-f-clef-part (glyph-staff)
   "Specification of a type containing the right part of an f-clef double-type."

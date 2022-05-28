@@ -297,8 +297,6 @@
 
 ;;; flag
 
-;; TODO flesh out flag production
-
 ;; TODO outsource other scaling operations to similar methods
 
 ;; TODO move this method to stem group
@@ -422,7 +420,6 @@
   (call-next-method))
 
 
-;;; BOOKMARK: transcoding until here
 
 ;; sharp
 
@@ -531,9 +528,15 @@
 	  (svg-data stencil)))
   (call-next-method))
 
-;;; TODO console output with score titles and padding info
 ;;; TODO huchentoot output
+;;; TODO add logfile output support
 
+
+(defmethod cast ((stencil glyph-c-clef))
+  (format t "~&generating c-clef")
+  (call-next-method))
+
+;;; BOOKMARK: transcoding until here
 
 ;; ;; g-clef
 
@@ -542,13 +545,6 @@
 ;; 	      (insert "\nCasting a c- or g-clef not implemented yet.")
 ;; 	      (cl-call-next-method))
 
-
-;; ;; f-clef
-
-;; (cl-defmethod cast ((type-fclef setzkasten/type-fclef-component))
-;; 	      "Generates SVG data for the right part of a f-clef."
-;; 	      (insert "\nCasting a f-clef component not implemented yet.")
-;; 	      (cl-call-next-method))
 
 
 ;; ;; barline
