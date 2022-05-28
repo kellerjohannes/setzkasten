@@ -262,12 +262,24 @@
       (output-path `("fill" ,color)
 		   `((m ,a) (l ,b) (l ,c) (l ,d) (c))))))
 
+(defmethod calculate-x-stem-position ((stencil glyph-notehead-stem))
+  (let ((unit-length (distance-between-lines (staff-component stencil))))
+    (if (oblique-p (notehead-component stencil)) 
+	(h-center stencil)
+	(+ (h-center stencil)
+	   (- (* 0.5
+		 (calculate-notehead-height
+		  (notehead-component stencil)
+		  unit-length)
+		 (width (notehead-component stencil)))
+	      (* 0.5 (light-stroke (notehead-component stencil))))))))
+
 (defmethod cast ((stencil glyph-notehead-stem))
   (let ((unit-length (distance-between-lines (staff-component stencil))))
     (push
      (draw-stem (stem-component stencil)
 		unit-length
-		(h-center stencil)
+		(calculate-x-stem-position stencil)
 		(calculate-absolute-staff-position
 		 stencil
 		 (notehead-position stencil))
