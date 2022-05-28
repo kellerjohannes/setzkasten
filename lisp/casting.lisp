@@ -497,9 +497,8 @@
 (defmethod cast ((stencil glyph-f-clef-part))
   "Generates SVG data for the right part of a f-clef."
   (format t "~&    generating f-clef.")
-  (let ((h (calculate-notehead-height (notehead-component stencil)
-				      (distance-between-lines
-				       (staff-component stencil)))))
+  (let* ((unit-length (distance-between-lines (staff-component stencil)))
+	 (h (calculate-notehead-height (notehead-component stencil) unit-length)))
     (mapc (lambda (position-delta)
 	    (push (draw-notehead-diamond (notehead-component stencil)
 				 (h-center stencil)
@@ -509,7 +508,15 @@
 				 h
 				 (ink-color stencil))
 		  (svg-data stencil)))
-	  '(1 -1)))
+	  '(1 -1))
+    (push (draw-stem (stem-component stencil)
+		     unit-length
+		     (h-center stencil)
+		     (calculate-absolute-staff-position stencil (1+ (clef-position stencil)))
+		     (calculate-notehead-height (notehead-component stencil) unit-length)
+		     :down
+		     (ink-color stencil))
+	  (svg-data stencil)))
   (call-next-method))
 
 ;;; TODO console output with score titles and padding info
