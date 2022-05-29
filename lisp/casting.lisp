@@ -608,9 +608,30 @@
 		(list (h-center stencil))
 		(list (+ (h-center stencil) (* 0.5 double-distance))
 		      (- (h-center stencil) (* 0.5 double-distance)))))
-      (mapc (lambda (x-position)
-	      (mapc (lambda (y-position)
-		      (push (output-circle ))))))))
+      (when (> (number-of-dots stencil) 0)
+	(mapc (lambda (x-position)
+		(mapc (lambda (y-position)
+			(push (draw-dot x-position y-position
+					(width (dot-component stencil))
+					(ink-color stencil))
+			      (svg-data stencil)))
+		      (mapcar (lambda (m)
+				(calculate-absolute-staff-position stencil m))
+			      (loop for i from 5
+				    for j downfrom 5
+				    repeat (floor (number-of-dots stencil))
+				    collect i))))
+	      (let ((offset (if (zerop double-distance)
+				(dot-distance stencil)
+				(+ (* 0.5 double-distance) (dot-distance stencil))))))
+	      (mapcar (lambda (offset-operator)
+			(funcall offset-operator (h-center stencil) offset))
+		      (cond ((eq (dot-alignment stencil) :right)
+			     (list #'+))
+			    ((eq (dot-alignment stencil) :left)
+			     (list #'-))
+			    ((eq (dot-alignment stencil) :both)
+			     (list #'+ #'-))))))))
   (call-next-method))
 
 

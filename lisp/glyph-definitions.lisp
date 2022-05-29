@@ -138,5 +138,5 @@
     (glyph-c-clef cclef7 "c-clef-7" "5-stave" "c-clef" 150 ,*glyph-height* 7)
     (glyph-barline bl "single-barline" "5-stave" "barline" "" 100 ,*glyph-height* 0 0 0 nil)
     (glyph-barline dbl "double-barline" "5-stave" "barline" "" 100 ,*glyph-height* 35 0 0 nil)
-    (glyph-barline bldd "double-barline-with-4-dots-both" "5-stave" "barline" "barline-dot" 100 ,*glyph-height* 35 35 4 :both)
+    (glyph-barline bldd "double-barline-with-4-dots-both" "5-stave" "barline" "barline-dot" 100 ,*glyph-height* 0 35 4 :both)
     ))
