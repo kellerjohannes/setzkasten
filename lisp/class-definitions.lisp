@@ -81,7 +81,7 @@
   (flag-y-offset nil "Relative to note head width.")
   )
 
-(define-setzkasten-class omponent-rest (component)
+(define-setzkasten-class component-rest (component)
   "Parameters for the creation of rests."
   (vertical-length 0.5 "Length of the vertical line, in proportion to the space between staff lines. Negative value for hanging rests, positive value for sitting rests.")
   (vertical-thickness 15 "Stroke thickness of the vertical line.")

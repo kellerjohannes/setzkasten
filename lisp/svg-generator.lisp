@@ -67,21 +67,3 @@
 			  list-of-commands))))
 
 
-;; TODO delete this obsolete definition (after updating all function calls)
-(defun output-path (fill-rule color list-of-commands)
-  (format nil "<path fill-rule=~s stroke=~s fill=~s d=~s />"
-	  fill-rule
-	  color
-	  color
-	  (reduce (lambda (a b) (concatenate 'string a b))
-		  (mapcar (lambda (command)
-			    (cond ((eq (first command) 'a)
-				   (format nil "~a~{~a ~}"
-					   (lookup-path-command (first command))
-					   (rest command)))
-				  (t (format nil "~a~@[~d ~]~@[~d ~]"
-					     (lookup-path-command (first command))
-					     (car (second command))
-					     (cdr (second
-						   command))))))
-			  list-of-commands))))
