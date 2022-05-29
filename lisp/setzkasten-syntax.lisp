@@ -166,6 +166,8 @@
 				      (staff-component :instance)
 				      (barline-component :instance)
 				      (dot-component :instance)
+				      (glyph-width 100)
+				      (glyph-height 1500)
 				      (double-distance 25)
 				      (dot-distance 30)
 				      (number-of-dots 0)

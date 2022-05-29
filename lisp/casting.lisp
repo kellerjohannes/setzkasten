@@ -217,19 +217,23 @@
 		  (* (dot-above-stem-offset stencil) unit-length)))
 	      (t 0))))))
 
+(defun draw-dot (center-x center-y width color)
+  (let ((width-2 (* 0.5 width)))
+    (let ((a (vec:create center-x (+ center-y width-2)))
+	  (b (vec:create (- center-x width-2) center-y))
+	  (c (vec:create center-x (- center-y width-2)))
+	  (d (vec:create (+ center-x width-2) center-y)))
+      (output-path `("fill" ,color)
+		   `((m ,a) (l ,b) (l ,c) (l ,d) (c))))))
+
 (defmethod cast ((stencil glyph-notehead-dot))
   "Generates SVG data for an enharmonic dot above a notehead."
   (when (dot-component stencil)
     (let* ((center-x (calculate-x-pos stencil))
 	   (center-y (calculate-y-position stencil))
-	   (width-2 (* 0.5 (size (dot-component stencil))
-		       (distance-between-lines (staff-component stencil))))
-	   (a (vec:create center-x (+ center-y width-2)))
-	   (b (vec:create (- center-x width-2) center-y))
-	   (c (vec:create center-x (- center-y width-2)))
-	   (d (vec:create (+ center-x width-2) center-y)))
-      (push (output-path `("fill" ,(ink-color stencil))
-			 `((m ,a) (l ,b) (l ,c) (l ,d) (c)))
+	   (width (* (size (dot-component stencil))
+		     (distance-between-lines (staff-component stencil)))))
+      (push (draw-dot center-x center-y width (ink-color stencil))
 	    (svg-data stencil))))
   (call-next-method))
 
@@ -587,7 +591,26 @@
 
 (defmethod cast ((stencil glyph-barline))
   "Generates SVG data for a barline."
-  (format t "~&generating barline.")
+  (with-accessors ((double-distance double-distance))
+      stencil
+    (let* ((ul (distance-between-lines (staff-component stencil)))
+	   (y-bottom (+ (* (overhead (barline-component stencil)) ul)
+			(calculate-absolute-staff-position stencil 1)))
+	   (y-top (- (calculate-absolute-staff-position
+		      stencil
+		      (1- (* 2 (number-of-lines (staff-component stencil)))))
+		     (* (overhead (barline-component stencil)) ul))))
+      (mapc (lambda (x-position)
+	      (push (output-line x-position y-bottom x-position y-top
+				 (thickness (barline-component stencil)) "square")
+		    (svg-data stencil)))
+	    (if (zerop double-distance)
+		(list (h-center stencil))
+		(list (+ (h-center stencil) (* 0.5 double-distance))
+		      (- (h-center stencil) (* 0.5 double-distance)))))
+      (mapc (lambda (x-position)
+	      (mapc (lambda (y-position)
+		      (push (output-circle ))))))))
   (call-next-method))
 
 

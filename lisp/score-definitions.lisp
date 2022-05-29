@@ -16,4 +16,4 @@
 			 (("clef-devel" nil nil "white")
 			  (ba maxima7 fclef7 bb cclef7 bc))
 			 (("barline-devel" nil nil "white")
-			  (ba bl ba))))
+			  (ba bl ba dbl ba bldd ba))))
