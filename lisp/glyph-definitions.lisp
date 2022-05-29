@@ -17,6 +17,8 @@
     (component-sharp nil "double-sharp" 9 1 t 27)
     (component-sharp nil "single-sharp" 9 1 nil 0)
     (component-flat nil "flat" 9 8 1.2 2.8 1)
+    (component-c-clef nil "c-clef" 25 18 15 0.8 1.2 2.2 1 0.8)
+    (component-barline nil "barline" 0.2 25)
     ))
 
 (defparameter *glyph-height* 800)
@@ -132,4 +134,6 @@
     (glyph-flat f2-9 "flat-2-9" "5-stave" "flat" 120 ,*glyph-height* 2 9 nil)
     (glyph-f-clef-part fclef7 "f-clef-part-7" "5-stave" "notehead-semibrevis" "minima-stem" 180 ,*glyph-height* 7)
     (glyph-notehead-stem maxima7 "maxima7" "5-stave" "notehead-brevis" "" "minima-stem" 180 ,*glyph-height* 7 :down nil nil nil)
+    (glyph-c-clef cclef7 "c-clef-7" "5-stave" "c-clef" 150 ,*glyph-height* 7)
+    (glyph-barline bl "single-barline" "5-stave" "barline" "" 0 0 0 nil)
     ))

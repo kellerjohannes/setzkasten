@@ -505,7 +505,6 @@
 
 (defmethod cast ((stencil glyph-f-clef-part))
   "Generates SVG data for the right part of a f-clef."
-  (format t "~&    generating f-clef.")
   (let* ((unit-length (distance-between-lines (staff-component stencil)))
 	 (h (calculate-notehead-height (notehead-component stencil) unit-length)))
     (mapc (lambda (position-delta)
@@ -533,8 +532,65 @@
 
 
 (defmethod cast ((stencil glyph-c-clef))
-  (format t "~&generating c-clef")
+  (with-accessors ((ta vertical-thickness)
+		   (td horizontal-thickness)
+		   (tc short-leg-thickness)
+		   (hr rectangle-height)
+		   (wr rectangle-width)
+		   (la length-long-leg)
+		   (lb length-middle-leg)
+		   (lc length-short-leg))
+      (clef-component stencil)
+    (with-accessors ((ul distance-between-lines))
+	(staff-component stencil)
+      (setf hr (* hr ul)
+	    wr (* wr hr)
+	    la (* la ul)
+	    lb (* lb ul)
+	    lc (* lc ul))
+      (let* ((hc (calculate-absolute-staff-position stencil (clef-position stencil)))
+	     (a (vec:create (- (h-center stencil) (* 0.5 (+ ta wr)))
+			    (- hc ul lb)))
+	     (b (vec:add a (vec:create 0 (+ lb ul ul la))))
+	     (c (vec:add b (vec:create ta 0)))
+	     (d (vec:add c (vec:create 0 (- la))))
+	     (e (vec:add d (vec:create (- wr tc) 0)))
+	     (f (vec:add e (vec:create 0 lc)))
+	     (g (vec:add f (vec:create tc 0)))
+	     (h (vec:add g (vec:create 0 (- (+ lc hr)))))
+	     (i (vec:add h (vec:create (- wr) 0)))
+	     (j (vec:mirror-y i hc))
+	     (k (vec:mirror-y h hc))
+	     (l (vec:mirror-y g hc))
+	     (m (vec:mirror-y f hc))
+	     (n (vec:mirror-y e hc))
+	     (o (vec:mirror-y d hc))
+	     (p (vec:add c (vec:create 0 (- (+ la ul ul lb)))))
+	     (q (vec:add d (vec:create 0 (- td))))
+	     (r (vec:add q (vec:create (- wr tc) 0)))
+	     (s (vec:add r (vec:create 0 (- (- hr td td)))))
+	     (tt (vec:add s (vec:create (- (- wr tc)) 0)))
+	     (u (vec:mirror-y tt hc))
+	     (v (vec:mirror-y s hc))
+	     (w (vec:mirror-y r hc))
+	     (x (vec:mirror-y q hc)))
+	(push (output-path `("fill-rule" "evenodd" "color" ,(ink-color stencil))
+			   `((m ,a) (l ,b) (l ,c) (l ,d) (l ,e) (l ,f) (l ,g)
+			     (l ,h) (l ,i) (l ,j) (l ,k) (l ,l) (l ,m) (l ,n)
+			     (l ,o) (l ,p) (c)
+			     (m ,q) (l ,r) (l ,s) (l ,tt) (c)
+			     (m ,u) (l ,v) (l ,w) (l ,x) (c)))
+	      (svg-data stencil)))))
   (call-next-method))
+
+;; barline
+
+(defmethod cast ((stencil glyph-barline))
+  "Generates SVG data for a barline."
+  (format t "~&generating barline.")
+  (call-next-method))
+
+
 
 ;;; BOOKMARK: transcoding until here
 
@@ -547,12 +603,6 @@
 
 
 
-;; ;; barline
-
-;; (cl-defmethod cast ((type-barline setzkasten/type-barline))
-;; 	      "Generates SVG data for a barline."
-;; 	      (insert "\nCasting a barline not implemented yet.")
-;; 	      (cl-call-next-method))
 
 
 

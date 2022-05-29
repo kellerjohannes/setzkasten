@@ -109,13 +109,14 @@
 
 (define-setzkasten-class component-c-clef (component)
   "Parameters for the creation of c-clefs."
-  (vertical-thickness 0.2 "Stroke thickness of the three vertical lines.")
-  (horizontal-thickness 0.3 "Stroke thickness of the four horizontal lines.")
+  (vertical-thickness 18 "Stroke thickness of the three vertical lines.")
+  (horizontal-thickness 12 "Stroke thickness of the four horizontal lines.")
+  (short-leg-thickness 10 "Thickness of the short vertical legs.")
   (rectangle-height 0.7 "Height of the two rectangles, in proportion to the distance between two staff lines.")
   (rectangle-width 1.5 "Width of the two rectangles, in proportion to their height.")
-  (length-long-leg 2.2 "Length of the longest leg, in proportion to the space between two staff lines.")
-  (length-middle-leg 1 "Length of the top left leg (usually medium length), in proportion to the space between two staff lines.")
-  (length-short-leg 0.8 "Length of the two short legs, in proportion to the space between two staff lines."))
+  (length-long-leg 2.2 "Length of the longest leg, in proportion to the space between staff lines.")
+  (length-middle-leg 1 "Length of the top left leg (usually medium length), in proportion to the space between staff lines.")
+  (length-short-leg 0.8 "Length of the two short legs, in proportion to the space between staff lines."))
 
 ;; (define-setzkasten-class component-g-clef ()
 ;;   "Parameters for the creation of g-clefs."

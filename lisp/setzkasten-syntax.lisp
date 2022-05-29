@@ -57,11 +57,16 @@
 				     ((id "c-clef")
 				      (vertical-thickness 12)
 				      (horizontal-thickness 8)
-				      (rectancle-height 0.7)
+				      (short-leg-thickness 5)
+				      (rectangle-height 0.7)
 				      (rectangle-width 1.5)
 				      (length-long-leg 2.2)
 				      (length-middle-leg 1)
 				      (length-short-leg 0.8)))
+				    (component-barline
+				     ((id "barline")
+				      (overhead 0.2)
+				      (thickness 15)))
 				    ;; more to add
 				    (glyph-staff
 				     ((id "glyph-staff")
@@ -155,7 +160,18 @@
 				      (clef-component :instance)
 				      (glyph-width 120)
 				      (glyph-height 1500)
-				      (clef-position 7)))))
+				      (clef-position 7)))
+				    (glyph-barline
+				     ((id "barline")
+				      (staff-component :instance)
+				      (barline-component :instance)
+				      (dot-component :instance)
+				      (double-distance 25)
+				      (dot-distance 30)
+				      (number-of-dots 0)
+				      (dot-placement nil)))
+				    ))
+
 
 
 (defun print-setzkasten-syntax (syntax-definition)
