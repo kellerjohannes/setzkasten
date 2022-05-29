@@ -16,4 +16,15 @@
 			 (("clef-devel" nil nil "white")
 			  (ba maxima7 fclef7 bb cclef7 bc))
 			 (("barline-devel" nil nil "white")
-			  (ba bl ba dbl ba bldd ba dbldd ba dbldl))))
+			  (ba bl ba dbl ba bldd ba dbldd ba dbldl))
+			 (("m1.38-devel" nil nil "white")
+			  (cclef7 ba sb1 ba sb2 ba sh3 sb3 bl
+			   sb2 ba sh4 ba sb4 bl
+			   sh3 ba sb3 ba sh5 ba sb5 bl
+			   f4 ba sb4 ba sb5 ba f6 ba sb6 bl
+			   sb8 ba sb7 ba f6 ba sb6 bl
+			   f5 ba sb5 ba sbd3 bl
+			   sh3 ba sb3 ba sb2 ba sb1 bl))
+			 (("m3.101-devel" nil nil "white")
+			  (cclef5 sb0 sh2 ba sb2 f3 sbd3 sb3 ba sbd3 f6 ba sb6 ba f6 sbd6 sb6 sbd6 f7 ba sb7 ba f7 sbd7 sb7 bl
+			   sb1 ba sbd1 f2 ba sb2 f2 ba sbd2 f4 sbd4 ba sb4 sbd4 f7 ba sb7 ba f7 ba sbd7 ba sb7 ba sbd7 sb8 bl))))
