@@ -1,3 +1,6 @@
+(require :hunchentoot)
+(require :cl-who)
+
 (defpackage :setzkasten
   (:use :cl :hunchentoot :cl-who))
 
