@@ -531,7 +531,6 @@
 	  (svg-data stencil)))
   (call-next-method))
 
-;;; TODO huchentoot output
 ;;; TODO add logfile output support
 
 

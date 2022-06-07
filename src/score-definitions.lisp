@@ -27,4 +27,23 @@
 			   sh3 ba sb3 ba sb2 ba sb1 bl))
 			 (("m3.101-devel" nil nil "white")
 			  (cclef5 sb0 sh2 ba sb2 f3 sbd3 sb3 ba sbd3 f6 ba sb6 ba f6 sbd6 sb6 sbd6 f7 ba sb7 ba f7 sbd7 sb7 bl
-			   sb1 ba sbd1 f2 ba sb2 f2 ba sbd2 f4 sbd4 ba sb4 sbd4 f7 ba sb7 ba f7 ba sbd7 ba sb7 ba sbd7 sb8 bl))))
+			   sb1 ba sbd1 f2 ba sb2 f2 ba sbd2 f4 sbd4 ba sb4 sbd4 f7 ba sb7 ba f7 ba sbd7 ba sb7 ba sbd7 sb8 bl))
+			 (("m2.33-devel" nil nil "white")
+			  (cclef7 ba sb4 ba sb3 ba ba bl
+			   ba sb4 ba sb3 ba bl
+			   ba sb4 ba sb3 ba bl
+			   ba sb4 ba sb3 ba bl
+			   ba sb4 ba sb3 ba bl
+			   ba sb4 ba sb3 ba bl
+			   ba sb4 ba sb3 ba bl
+			   ba sb8 ba sb7 ba bl
+			   ba sb8 ba sb7 ba bl nl
+			   maxima7 fclef7 f3 ba sb6 ba sb7 bl
+			   ba sb4 ba sb7 ba bl
+			   ba sb6 ba sb5 ba bl
+			   f6 sb6 ba sb5 ba bl
+			   m3 m4 m2 m3 bl
+			   ba sb1 m2 m9 ba bl
+			   ba sb4 ba sb9 bl
+			   ba sb7 ba sb6 ba bl
+			   ba sb8 sb9 ba bl))))

@@ -83,17 +83,17 @@
 (defmethod left-margin ((score typesetter)) (fourth (margins score)))
 
 (defmethod typeset ((score typesetter) alignment)
-  (format t "~&Typesetting score '~s'." (name score))
+  ;; (format t "~&Typesetting score '~s'." (name score))
   (let ((y-counter (top-margin score))
 	(line-counter 0))
     (mapc (lambda (line line-width)
-	    (format t "~&  Line ~a:" (incf line-counter))
+	    ;; (format t "~&  Line ~a:" (incf line-counter))
 	    (let ((x-counter (left-margin score))
 		  (padding (if (eq alignment :block)
 			       (/ (- line-width (calculate-glyph-width line))
 				  (- (length line) 0.0))
 			       0)))
-	      (format t "~&    padding: ~a" padding)
+	      ;; (format t "~&    padding: ~a" padding)
 	      (mapc (lambda (stencil)
 		      (unless (svg-data stencil)
 			(cast stencil)
@@ -164,7 +164,8 @@
   (let ((result (find id stencils :test #'string= :key #'id)))
     (if result
 	result
-	(format t "~&~a not found." id))))
+	;; (format t "~&~a not found." id)
+	)))
 
 (defun create-scores (data components glyphs syntax)
   (mapcar (lambda (score)
