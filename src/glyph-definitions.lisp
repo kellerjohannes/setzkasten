@@ -1,4 +1,3 @@
-
 (defparameter *setzkasten-definition-components*
   '((component-staff-lines nil "5-stave" 5 100 12 8)
     (component-notehead nil "notehead-brevis" 0.3 0.95 28 16 nil nil)
@@ -12,9 +11,9 @@
     (component-stem nil "minima-stem-short-b" 1.6 14 1.8)
     (component-flag nil "croma-flag" 15 9 0.35 0.7 nil 0.8 0.7)
     (component-flag nil "semicroma-flag" 11 11 0.2 0.5 t 0.8 0.7)
-    (component-rest nil "minima-semibrevis-rest" 0.5 15 0 0)
-    (component-rest nil "semiminima-rest" 0.5 15 -0.4 13)
-    (component-rest nil "maxima-rest" 2 15 0 0)
+    (component-rest nil "minima-semibrevis-rest" 0.5 18 0 0)
+    (component-rest nil "semiminima-rest" 0.5 18 -0.4 16)
+    (component-rest nil "maxima-rest" 2 18 0 0)
     (component-sharp nil "double-sharp" 9 1 t 27)
     (component-sharp nil "single-sharp" 9 1 nil 0)
     (component-flat nil "flat" 12 10 1.2 2.8 0.8)

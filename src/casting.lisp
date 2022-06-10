@@ -2,13 +2,24 @@
 ;;;; family of casting methods, to produce SVG output for each type container ;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; TODO
-;; - relocate path macros (path el) and (generate-path)
-;;   -> create separate macro collection file?
-;; - update docstrings for new terminology (type / glyph / instance / component)
-
+;; TODO update docstrings for new terminology (type / glyph / instance / component)
+;; TODO add logfile output support
+;; TODO outsource generic helper functions
+;; TODO stem-casting: swap h-center with x-center-stem
 
 (in-package :setzkasten)
+
+
+
+;;; Macro corner, will be outsourced
+(defmacro transform-coordinates (transformation argument &rest coordinates)
+  "Applies a vector transformation (currently only vec:mirror-x, vec:mirror-y and vec:mirror-dot) to a set of vectors (vec:create). Destructive, uses 'setf' to overwrite the coordinates."
+  `(progn ,@(mapcar (lambda (vec)
+		      `(setf ,vec (funcall ,transformation ,vec ,argument)))
+		    coordinates)))
+
+
+
 
 
 (defgeneric cast (glyph)
@@ -241,6 +252,9 @@
 
 ;;; stem
 
+(defmethod scale-to-stem ((stencil glyph-notehead-stem) relative-length)
+  (* relative-length (stem-length (stem-component stencil))))
+
 (defmethod draw-stem ((component component-stem) unit-length h-center y-position y-offset stem-direction color)
   (with-accessors ((stem-length stem-length)
 		   (width-head width-head)
@@ -301,18 +315,8 @@
 
 ;;; flag
 
-;; TODO outsource other scaling operations to similar methods
 
-;; TODO move this method to stem group
-(defmethod scale-to-stem ((stencil glyph-notehead-stem) relative-length)
-  (* relative-length (stem-length (stem-component stencil))))
 
-;; TODO move to macro corner
-(defmacro transform-coordinates (transformation argument &rest coordinates)
-  "Applies a vector transformation (currently only vec:mirror-x, vec:mirror-y and vec:mirror-dot) to a set of vectors (vec:create). Destructive, uses 'setf' to overwrite the coordinates."
-  `(progn ,@(mapcar (lambda (vec)
-		      `(setf ,vec (funcall ,transformation ,vec ,argument)))
-		    coordinates)))
 
 (defmethod cast ((stencil glyph-notehead-flag))
   "Generates SVG data for a note stem flag."
@@ -377,12 +381,6 @@
   (call-next-method))
 
 
-
-
-
-
-
-;; TODO swap h-center with x-center-stem
 
 
 ;; rest
@@ -531,7 +529,6 @@
 	  (svg-data stencil)))
   (call-next-method))
 
-;;; TODO add logfile output support
 
 
 (defmethod cast ((stencil glyph-c-clef))
@@ -586,6 +583,7 @@
 	      (svg-data stencil)))))
   (call-next-method))
 
+
 ;; barline
 
 (defmethod cast ((stencil glyph-barline))
@@ -634,6 +632,7 @@
   (call-next-method))
 
 
+;; TODO generic dot casting (not enharmonic dot)
 
 ;;; BOOKMARK: transcoding until here
 

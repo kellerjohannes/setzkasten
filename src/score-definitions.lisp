@@ -46,4 +46,6 @@
 			   ba sb1 m2 m9 ba bl
 			   ba sb4 ba sb9 bl
 			   ba sb7 ba sb6 ba bl
-			   ba sb8 sb9 ba bl))))
+			   ba sb8 sb9 ba bl))
+			 (("test vicentino21" nil nil "white")
+			  (bc sb5 sb4 m1 bl))))
