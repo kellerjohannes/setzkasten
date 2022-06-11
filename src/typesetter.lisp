@@ -53,6 +53,7 @@
    (bg-color :initform nil :initarg :bg-color :accessor bg-color)
    (svg-use-container :initform nil :accessor svg-use-container)))
 
+;; TODO probably redundant
 (defmethod add-line ((score typesetter) line-width)
   (push '() (line-container score))
   (push line-width (line-width-list score)))
@@ -70,6 +71,15 @@
 (defmethod add-stencil-to-line ((score typesetter) (stencil glyph))
   (push stencil (first (line-container score))))
 
+(defmethod add-music-line ((score typesetter) music-data stencil-list)
+  (push '() (line-container score))
+  (push (second music-data) (line-width-list score))
+  (mapc (lambda (element)
+	  (add-stencil-to-line score (get-stencil element stencil-list)))
+	(rest (rest music-data)))
+  (push (second music-data) (first (line-container score)))
+  (push 'music (first (line-container score))))
+
 (defmethod show-data ((score typesetter))
   (format t "~&----line-container:~&~s
 ~&----svg-symbol-container:~&~s
@@ -79,7 +89,7 @@
 	  (svg-use-container score)))
 
 (defmethod calculate-glyph-width (line)
-  (reduce #'+ line :key #'glyph-width))
+  (reduce #'+ (rest (rest line)) :key #'glyph-width))
 
 (defmethod top-margin ((score typesetter)) (first (margins score)))
 
@@ -89,11 +99,11 @@
 
 (defmethod left-margin ((score typesetter)) (fourth (margins score)))
 
-(defmethod typeset-line ((score typesetter) line line-width alignment y-counter)
+(defmethod typeset-music-line ((score typesetter) line line-width alignment y-counter)
   (let ((x-counter (left-margin score))
 	(padding (if (eq alignment :block)
 		     (/ (- line-width (calculate-glyph-width line))
-			(- (length line) 0.0))
+			(- (length line) 2.0))
 		     0)))
     (mapc (lambda (stencil)
 	    (unless (svg-data stencil)
@@ -102,31 +112,31 @@
 	    (push (output-use (id stencil) :x x-counter :y y-counter)
 		  (svg-use-container score))
 	    (incf x-counter (+ padding (glyph-width stencil))))
-	  (reverse line)))
-  (glyph-height (first line)))
+	  (reverse (rest (rest line)))))
+  (glyph-height (third line)))
 
+;; ('text height y-offset (x-offset length string) (x-offset length string))
 (defmethod typeset-text-line ((score typesetter) text-data y-counter)
   (mapc (lambda (text-element)
 	  (push (output-text (+ (first text-element) (left-margin score))
-		     (+ y-counter (* 0.5 (second text-data)))
-		     (third text-element)
-		     150
-		     (second text-element))
+			     (+ y-counter (third text-data))
+			     (third text-element)
+			     150
+			     (second text-element))
 		(svg-use-container score)))
-	(rest (rest text-data)))
+	(rest (rest (rest text-data))))
   (second text-data))
 
 (defmethod typeset ((score typesetter) alignment)
-  ;(format t "~&data:~&~s" (show-data score))
   (let ((y-counter (top-margin score)))
     (mapc (lambda (line line-width)
-	    (if (eq (first line) 'text)
-		(incf y-counter
-		      (typeset-text-line score line y-counter))
-		(incf y-counter
-		      (typeset-line score line line-width alignment y-counter))))
+	    ;; TODO restructure case: incf -> case
+	    (case (first line)
+	      (text (incf y-counter (typeset-text-line score line y-counter)))
+	      (otherwise (incf y-counter (typeset-music-line score line line-width alignment y-counter)))))
 	  (reverse (line-container score))
 	  (reverse (line-width-list score)))))
+  
 
 (defmethod get-svg-height ((score typesetter))
   (let ((top-and-bottom-margin (+ (top-margin score)
@@ -138,7 +148,7 @@
 		   :key (lambda (line)
 			  (if (eq (first line) 'text)
 			      (second line)
-			      (glyph-height (first line)))))))))
+			      (glyph-height (third line)))))))))
 
 (defmethod get-svg-width ((score typesetter))
   (let ((left-and-right-margin (+ (right-margin score)
@@ -174,7 +184,13 @@
     (if result result item)))
 
 (defun parse-vicentino-code (data glyph-definitions)
-  (mapcar (lambda (item) (lookup-vicentino-code item glyph-definitions)) data))
+  (mapcar (lambda (line)
+	    (if (eq (first line) 'music)
+		(mapcar (lambda (item)
+			  (lookup-vicentino-code item glyph-definitions))
+			line)
+		line))
+	  data))
 
 (defun score-name (score) (first (first score)))
 
@@ -202,11 +218,12 @@
 					 :height (score-height score)
 					 :margins '(50 100 0 100)
 					 :name (score-name score))))
-	      (mapc (lambda (element)
-		      (cond ((eq element 'nl) (add-line setter (score-width score)))
-			    ((and (listp element) (eq (first element) 'text))
-			     (add-text-line setter element))
-			    (t (add-stencil-to-line setter (get-stencil element stencil-list)))))
+	      (mapc (lambda (line)
+		      (cond ((eq (first line) 'music)
+			     (add-music-line setter line stencil-list))
+			    ((eq (first line) 'text)
+			     (add-text-line setter line))
+			    (t nil)))
 		    (parse-vicentino-code (score-elements score) glyphs))
 	      (typeset setter :flushed)  ; use :block for Blocksatz
 	      (write-score setter)

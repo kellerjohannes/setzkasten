@@ -58,6 +58,5 @@
 
 (defparameter *scores*
   '((("m1.47-devel" nil nil "white")
-     ((music sb1)
-      (text 100 (140 1100 "Eſſempio di più di Quinta imperfetta accidentale, compoſto & incompoﬆo.")) nl
-      (music maxima7 fclef7 sb3 sb4 sb5 sb6 sbd7 cclef5)))))
+     ((text 200 150 (140 5100 "Eſſempio di più di Quinta imperfetta accidentale, compoſto & incompoﬆo."))
+      (music 1500 maxima7 fclef7 sb3 sb4 sb5 sb6 sbd7 cclef5)))))
