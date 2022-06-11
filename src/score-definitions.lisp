@@ -54,8 +54,10 @@
 			   (text 100 (100 800 "text string"))
 			   nl
 			   bb sb1 sb2 sb3 sb4 sb5))
-			 (("m1.47-devel" nil nil "white")
-			  (sb1
-			   (text 100 (140 1100 "Eſſempio di più di Quinta imperfetta accidentale, compoſto & incompoﬆo.")) nl
-			   maxima7 fclef7 sb3 sb4 sb5 sb6 sbd7 cclef5
-			   ))))
+			 ))
+
+(defparameter *scores*
+  '((("m1.47-devel" nil nil "white")
+     ((music sb1)
+      (text 100 (140 1100 "Eſſempio di più di Quinta imperfetta accidentale, compoſto & incompoﬆo.")) nl
+      (music maxima7 fclef7 sb3 sb4 sb5 sb6 sbd7 cclef5)))))
