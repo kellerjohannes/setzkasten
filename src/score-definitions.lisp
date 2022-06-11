@@ -48,4 +48,9 @@
 			   ba sb7 ba sb6 ba bl
 			   ba sb8 sb9 ba bl))
 			 (("test vicentino21" nil nil "white")
-			  (bc sb5 sb4 m1 bl))))
+			  (bc sb5 sb4 m1 bl))
+			 (("text implementation devel" nil nil "white")
+			  (bb m1 m2 m3 m4 m5
+			   (text 100 "whatever")
+			   nl
+			   bb sb1 sb2 sb3 sb4 sb5))))

@@ -1,5 +1,6 @@
 ;;;; TODO describe this file
 
+(in-package :setzkasten)
 
 (defun parse-setzkasten-instance (instance-definition syntax-definition &optional list-of-components)
   "Takes the definition of one instance and the syntax description of one instance and returns a new actual instance with parameters set according to the two input arguments."
@@ -56,6 +57,10 @@
   (push '() (line-container score))
   (push line-width (line-width-list score)))
 
+(defmethod add-text-line ((score typesetter) text-data)
+  (push text-data (line-container score))
+  (push nil (line-width-list score)))
+
 (defmethod initialize-instance :after ((score typesetter) &key)
   (setf (line-container score) nil)
   (add-line score (width score)))
@@ -82,27 +87,39 @@
 
 (defmethod left-margin ((score typesetter)) (fourth (margins score)))
 
+(defmethod typeset-line ((score typesetter) line line-width alignment y-counter)
+  (let ((x-counter (left-margin score))
+	(padding (if (eq alignment :block)
+		     (/ (- line-width (calculate-glyph-width line))
+			(- (length line) 0.0))
+		     0)))
+    (mapc (lambda (stencil)
+	    (unless (svg-data stencil)
+	      (cast stencil)
+	      (push (svg-data stencil) (svg-symbol-container score)))
+	    (push (output-use (id stencil) :x x-counter :y y-counter)
+		  (svg-use-container score))
+	    (incf x-counter (+ padding (glyph-width stencil))))
+	  (reverse line)))
+  (glyph-height (first line)))
+
+(defmethod typeset-text-line ((score typesetter) text-data y-counter)
+  (push (output-text (left-margin score)
+		     (+ y-counter (* 0.5 (second text-data)))
+		     (third text-data))
+	(svg-use-container score))
+  ;(format t "~&text created.")
+  (second text-data))
+
 (defmethod typeset ((score typesetter) alignment)
-  ;; (format t "~&Typesetting score '~s'." (name score))
-  (let ((y-counter (top-margin score))
-	(line-counter 0))
+  ;(format t "~&data:~&~s" (show-data score))
+  (let ((y-counter (top-margin score)))
     (mapc (lambda (line line-width)
-	    ;; (format t "~&  Line ~a:" (incf line-counter))
-	    (let ((x-counter (left-margin score))
-		  (padding (if (eq alignment :block)
-			       (/ (- line-width (calculate-glyph-width line))
-				  (- (length line) 0.0))
-			       0)))
-	      ;; (format t "~&    padding: ~a" padding)
-	      (mapc (lambda (stencil)
-		      (unless (svg-data stencil)
-			(cast stencil)
-			(push (svg-data stencil) (svg-symbol-container score)))
-		      (push (output-use (id stencil) :x x-counter :y y-counter)
-			    (svg-use-container score))
-		      (incf x-counter (+ padding (glyph-width stencil))))
-		    (reverse line)))
-	    (incf y-counter (glyph-height (first line))))
+	    (if (eq (first line) 'text)
+		(incf y-counter
+		      (typeset-text-line score line y-counter))
+		(incf y-counter
+		      (typeset-line score line line-width alignment y-counter))))
 	  (reverse (line-container score))
 	  (reverse (line-width-list score)))))
 
@@ -113,7 +130,10 @@
 	(+ top-and-bottom-margin (height score))
 	(+ top-and-bottom-margin
 	   (reduce #'+ (line-container score)
-		   :key (lambda (line) (glyph-height (first line))))))))
+		   :key (lambda (line)
+			  (if (eq (first line) 'text)
+			      (second line)
+			      (glyph-height (first line)))))))))
 
 (defmethod get-svg-width ((score typesetter))
   (let ((left-and-right-margin (+ (right-margin score)
@@ -122,8 +142,9 @@
 	(+ left-and-right-margin (width score))
 	(+ left-and-right-margin
 	   (loop for line in (line-container score)
-		 maximize (calculate-glyph-width line))))
-    ))
+		 maximize (if (eq (first line) 'text)
+			      0
+			      (calculate-glyph-width line)))))))
 
 (defmethod write-score ((score typesetter))
   (with-open-file (stream (merge-pathnames *svg-export-path*
@@ -178,6 +199,8 @@
 					 :name (score-name score))))
 	      (mapc (lambda (element)
 		      (cond ((eq element 'nl) (add-line setter (score-width score)))
+			    ((and (listp element) (eq (first element) 'text))
+			     (add-text-line setter element))
 			    (t (add-stencil-to-line setter (get-stencil element stencil-list)))))
 		    (parse-vicentino-code (score-elements score) glyphs))
 	      (typeset setter :flushed)  ; use :block for Blocksatz
