@@ -133,7 +133,7 @@
 	    ;; TODO restructure case: incf -> case
 	    (case (first line)
 	      (text (incf y-counter (typeset-text-line score line y-counter)))
-	      (otherwise (incf y-counter (typeset-music-line score line line-width alignment y-counter)))))
+	      (music (incf y-counter (typeset-music-line score line line-width alignment y-counter)))))
 	  (reverse (line-container score))
 	  (reverse (line-width-list score)))))
   
