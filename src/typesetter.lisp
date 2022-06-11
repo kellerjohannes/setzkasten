@@ -61,9 +61,11 @@
   (push text-data (line-container score))
   (push nil (line-width-list score)))
 
+;; TODO keep an eye on this, probably not necessary
 (defmethod initialize-instance :after ((score typesetter) &key)
   (setf (line-container score) nil)
-  (add-line score (width score)))
+  ;(add-line score (width score))
+  )
 
 (defmethod add-stencil-to-line ((score typesetter) (stencil glyph))
   (push stencil (first (line-container score))))
@@ -104,11 +106,14 @@
   (glyph-height (first line)))
 
 (defmethod typeset-text-line ((score typesetter) text-data y-counter)
-  (push (output-text (left-margin score)
+  (mapc (lambda (text-element)
+	  (push (output-text (+ (first text-element) (left-margin score))
 		     (+ y-counter (* 0.5 (second text-data)))
-		     (third text-data))
-	(svg-use-container score))
-  ;(format t "~&text created.")
+		     (third text-element)
+		     150
+		     (second text-element))
+		(svg-use-container score)))
+	(rest (rest text-data)))
   (second text-data))
 
 (defmethod typeset ((score typesetter) alignment)

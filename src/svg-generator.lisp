@@ -30,10 +30,12 @@
   (output-circle (vec:x-coord vec) (vec:y-coord vec) 9 "red"))
 
 ;; TODO extract attributes to function
-(defun output-text (x y text-string)
-  (format nil "<text x=\"~a\" y=\"~a\" font-size=\"100\" alignment-baseline=\"middle\">~a</text>"
+(defun output-text (x y text-string font-size text-length)
+  (format nil "<text x=\"~a\" y=\"~a\" font-size=\"~a\" alignment-baseline=\"hanging\" textLength=\"~a\" font-family=\"Times, Georgia, serif\">~a</text>"
 	  x
 	  y
+	  font-size
+	  text-length
 	  text-string))
 
 (defun output-line (x1 y1 x2 y2 stroke-width stroke-linecap)
