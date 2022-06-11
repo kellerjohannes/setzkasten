@@ -25,7 +25,7 @@
 
 (defparameter *setzkasten-definition-glyphs*
   `((glyph-staff ba "blank-a" "5-stave" 50 ,*glyph-height*)
-    (glyph-staff bb "blank-b" "5-stave" 150 ,*glyph-height*)
+    (glyph-staff bb "blank-b" "5-stave" 110 ,*glyph-height*)
     (glyph-staff bc "blank-c" "5-stave" 450 ,*glyph-height*)
     (glyph-notehead br0 "brevis-a" "5-stave" "notehead-brevis" 205 ,*glyph-height* 0)
     (glyph-notehead br1 "brevis-b" "5-stave" "notehead-brevis" 205 ,*glyph-height* 1)

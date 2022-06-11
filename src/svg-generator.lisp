@@ -31,7 +31,7 @@
 
 ;; TODO extract attributes to function
 (defun output-text (x y text-string font-size text-length)
-  (format nil "<text x=\"~a\" y=\"~a\" font-size=\"~a\" alignment-baseline=\"hanging\" textLength=\"~a\" font-family=\"Times, Georgia, serif\">~a</text>"
+  (format nil "<text x=\"~a\" y=\"~a\" font-size=\"~a\" alignment-baseline=\"hanging\"~@[ textLength=\"~a\" ~]font-family=\"Times, Georgia, serif\" font-syle=\"italic\">~a</text>"
 	  x
 	  y
 	  font-size

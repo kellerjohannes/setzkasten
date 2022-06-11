@@ -102,7 +102,9 @@
 (defmethod typeset-music-line ((score typesetter) line line-width alignment y-counter)
   (let ((x-counter (left-margin score))
 	(padding (if (eq alignment :block)
-		     (/ (- line-width (calculate-glyph-width line))
+		     (/ (if line-width
+			    (- line-width (calculate-glyph-width line))
+			    0) 
 			(- (length line) 2.0))
 		     0)))
     (mapc (lambda (stencil)
@@ -121,7 +123,7 @@
 	  (push (output-text (+ (first text-element) (left-margin score))
 			     (+ y-counter (third text-data))
 			     (third text-element)
-			     150
+			     170
 			     (second text-element))
 		(svg-use-container score)))
 	(rest (rest (rest text-data))))
@@ -225,7 +227,7 @@
 			     (add-text-line setter line))
 			    (t nil)))
 		    (parse-vicentino-code (score-elements score) glyphs))
-	      (typeset setter :flushed)  ; use :block for Blocksatz
+	      (typeset setter :block)  ; use :block for Blocksatz, use :flushed for Flattersatz
 	      (write-score setter)
 	      (score-name score)))
 	  data))
