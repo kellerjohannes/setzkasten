@@ -13,13 +13,13 @@
   (format nil "</svg>"))
 
 (defun output-svg-symbol-open (id-string)
-  (format nil "<symbol id=~s>" id-string))
+  (format nil "<g id=~s>" id-string))
 
 (defun output-svg-symbol-close ()
-  (format nil "</symbol>"))
+  (format nil "</g>"))
 
 (defun output-use (id-string &key (x nil) (y nil))
-  (format nil "<use href=\"#~a\"~@[ x=\"~d\"~]~@[ y=\"~d\"~]/>"
+  (format nil "<use xlink:href=\"#~a\"~@[ x=\"~d\"~]~@[ y=\"~d\"~]/>"
 	  id-string x y))
 
 (defun output-circle (x y r color)
@@ -31,7 +31,7 @@
 
 ;; TODO extract attributes to function
 (defun output-text (x y text-string font-size text-length)
-  (format nil "<text x=\"~a\" y=\"~a\" font-size=\"~a\" alignment-baseline=\"hanging\"~@[ textLength=\"~a\" ~]font-family=\"Times, Georgia, serif\" font-syle=\"italic\">~a</text>"
+  (format nil "<text x=\"~a\" y=\"~a\" font-size=\"~a\" alignment-baseline=\"hanging\"~@[ textLength=\"~a\" ~] font-family=\"Times, Georgia, serif\" font-style=\"italic\">~a</text>"
 	  x
 	  y
 	  font-size
