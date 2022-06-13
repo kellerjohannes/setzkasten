@@ -169,7 +169,7 @@
 			  :direction :output
 			  :if-exists :supersede
 			  :if-does-not-exist :create)
-    (format stream "~a~@[~a~]~{~a~}~{~a~}~a"
+    (format stream "~a~@[~a~]<defs>~{~a~}</defs>~{~a~}~a"
 	    (toplevel-open (get-svg-width score)
 			   (get-svg-height score)
 			   (name score))
