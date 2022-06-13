@@ -1,3 +1,5 @@
+(in-package :setzkasten)
+
 (defparameter *setzkasten-syntax* '((component-staff-lines
 				     ((id "stave")
 				      (number-of-lines 5)

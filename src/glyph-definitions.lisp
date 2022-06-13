@@ -1,3 +1,5 @@
+(in-package :setzkasten)
+
 (defparameter *setzkasten-definition-components*
   '((component-staff-lines nil "5-stave" 5 100 12 8)
     (component-notehead nil "notehead-brevis" 0.3 0.95 28 16 nil nil)
