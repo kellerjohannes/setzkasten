@@ -633,6 +633,7 @@
 
 
 ;; TODO generic dot casting (not enharmonic dot)
+;; TODO bequadro
 
 ;;; BOOKMARK: transcoding until here
 
@@ -642,7 +643,6 @@
 ;; 	      "Generates SVG data for a c- or g-clef."
 ;; 	      (insert "\nCasting a c- or g-clef not implemented yet.")
 ;; 	      (cl-call-next-method))
-
 
 
 

@@ -98,4 +98,28 @@
 	(3200 nil "comp.")
 	(4300 nil "incomp.")
 	(5150 nil "comp.")
-	(6150 nil "incomp."))))))
+       (6150 nil "incomp."))))
+    (("m2.22-devel" nil nil "white")
+     ((text 400 150 (800 nil "Eſſempio della Seſta minore, come in varÿ modi ſi può comporre."))
+      (text 200 150
+       (320 nil "à due  uoci")
+       (1600 nil "à tre  uoci")
+       (2800 nil "de ſalti")
+       (5200 nil "à due uoci."))
+      (music nil cclef7 bb sb7 sb8 ba
+       cclef7 ba sb2 sb1 bb bl
+       bb sb10 sb9 bl
+       sb5 bb sb2 ba
+       cclef7 bb sb7 ba sb9 bb
+       maxima7 fclef7 ba sb6 sb2
+       cclef7 ba rm7 sb7 ba m9 bb
+       cclef7 bb sb3 sb2 bl
+       rm7 m7 ba sm6 sb9 bl)))
+    (("m1.21-devel" nil nil "white")
+     ((music nil cclef7 sh6 supermaxima6 bl
+       ba sh3 maxima5 bb bb bl
+       bb br4 sh2 ba bl
+       ba f6 br6 bl
+       bb ba f4 br6 bb bl
+       bb br5 f4m bb bb bl
+       bb cclef7 f6 ba br6)))))
