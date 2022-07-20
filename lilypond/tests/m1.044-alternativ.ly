@@ -17,58 +17,133 @@ musicExcerpt =
     \center-column
     {
       \vspace #1
-      \line { \small \italic "Trit. inco." }
-      \line { \small \italic "accident." }
+      \line { \tiny \italic "Trit. inco." }
+      \line { \tiny \italic "accident." }
     }
-  } fis1 |
+  }
+  fis1 |
 
-  \time 1/4
-  \stopStaff s4 \bar "" | \startStaff
+  \time 1/1
+  \stopStaff s1 \bar "" | \startStaff
   \time 2/1
   \clef "tenor"
   \set Staff.forceClef = ##t
 
-  d1^\markup { \bold [B] } gis1 |
+  d1^\markup { \bold [B] }_\markup
+  {
+    \hspace #-3
+    \override #'( baseline-skip . 2.2 )
+    \center-column
+    {
+      \vspace #1
+      \line { \tiny \italic "Trit. incom." }
+      \line { \tiny \italic "accidentale" }
+    }
+  }
+ gis1 |
 
-  \time 1/4
-  \stopStaff s4 \bar "" | \startStaff
+  \time 1/1
+  \stopStaff s1 \bar "" | \startStaff
   \time 2/1
   \clef "tenor"
   \set Staff.forceClef = ##t
 
-  e1^\markup { \bold [C] } ais1 |
+  e1^\markup { \bold [C] }_\markup
+  {
+    \hspace #-3
+    \override #'( baseline-skip . 2.2 )
+    \center-column
+    {
+      \vspace #1
+      \line { \tiny \italic "Trit. incom." }
+      \line { \tiny \italic "accidentale" }
+    }
+  }
+ ais1 |
 
-  \time 1/4
-  \stopStaff s4 \bar "" | \startStaff
+  \time 1/1
+  \stopStaff s1 \bar "" | \startStaff
   \time 2/1
   \clef "tenor"
   \set Staff.forceClef = ##t
 
-  fis1^\markup { \bold [D] } bis1 |
+  fis1^\markup { \bold [D] }_\markup
+  {
+    \hspace #-3
+    \override #'( baseline-skip . 2.2 )
+    \center-column
+    {
+      \vspace #1
+      \line { \tiny \italic "Trit. incom." }
+      \line { \tiny \italic "accidentale" }
+    }
+  }
+ bis1 |
 
-  \time 1/4
-  \stopStaff s4 \bar "" | \startStaff
+  \time 1/1
+  \stopStaff s1 \bar "" | \startStaff
   \time 4/1
   \clef "tenor"
   \set Staff.forceClef = ##t
 
-  bis1^\markup { \bold [E] } ais1 gis1 fis1 |
+  bis1^\markup { \bold [E] }_\markup
+  {
+    \hspace #-3
+    \override #'( baseline-skip . 2.2 )
+    \center-column
+    {
+      \vspace #1
+      \line { \tiny \italic "Trit. compoſto" }
+      \line { \tiny \italic "accidentale" }
+    }
+  }
+ ais1 gis1 fis1 |
 
-  \time 1/4
-  \stopStaff s4 \bar "" | \startStaff
+  \time 1/1
+  \stopStaff s1 \bar "" | \startStaff
   \time 4/1
   \clef "tenor"
   \set Staff.forceClef = ##t
 
-  ges1^\markup { \bold [F] } as1 bes1 c1 |
+  ges1^\markup { \bold [F] }_\markup
+  {
+    \hspace #-3
+    \override #'( baseline-skip . 2.2 )
+    \center-column
+    {
+      \vspace #1
+      \line { \tiny \italic "Tritono compoſto" }
+      \line { \tiny \italic "accidentale" }
+    }
+  }
+ as1 bes1 c1 |
 
 }
 
+#(set! paper-alist (cons '("snippet" . (cons (* 170 mm) (* 45 mm))) paper-alist))
 
-\score
+\paper {
+  #(set-paper-size "snippet")
+  tagline = ##f
+  indent = 0
+}
+
+\markuplist
 {
-  \new Staff
+  \center-column
   {
-    \musicExcerpt
+    \line { "Eſſempio del Tritono accidentale, incompoſto & compoſto." }
+    \line { \italic "[m1.044, fol. 24r, Cap. 36]" }
+    \vspace #1
+    \line
+    {
+      \score
+      {
+	\new Staff
+	{
+	  \musicExcerpt
+	}
+      }
+    }
   }
 }
