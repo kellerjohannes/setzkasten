@@ -631,6 +631,8 @@
 			  (:both (list #'+ #'-)))))))))
   (call-next-method))
 
+;; (defmethod cast ((stencil glyph-dot))
+;;   "Generates SVG data for a barline.")
 
 ;; TODO generic dot casting (not enharmonic dot)
 ;; TODO bequadro
