@@ -1,5 +1,5 @@
-(require :hunchentoot)
-(require :cl-who)
+(ql:quickload :hunchentoot)
+(ql:quickload :cl-who)
 
 (defpackage :setzkasten
   (:use :cl :hunchentoot :cl-who))
