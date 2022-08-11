@@ -174,6 +174,13 @@
 				      (dot-distance 30)
 				      (number-of-dots 0)
 				      (dot-placement nil)))
+				    (glyph-dot
+				     ((id "dot")
+				      (staff-component :instance)
+				      (dot-component :instance)
+				      (glyph-width 80)
+				      (glyph-height 1500)
+				      (dot-position 5)))
 				    ))
 
 

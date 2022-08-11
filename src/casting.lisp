@@ -92,7 +92,8 @@
 
 ;;; notehead
 
-(defmethod draw-notehead-square ((component component-notehead) center-x center-y width height unit-length color)
+(defmethod draw-notehead-square ((component component-notehead)
+				 center-x center-y width height unit-length color)
   "Generates SVG data for a square shaped notehead, black or white notation."
   (with-accessors ((bold-stroke bold-stroke)
 		   (light-stroke light-stroke)
@@ -128,7 +129,8 @@
 			   (m ,m) (l ,n) (l ,o) (l ,p) (c))))))))
 
 
-(defmethod draw-notehead-diamond ((component component-notehead) center-x center-y width height color)
+(defmethod draw-notehead-diamond ((component component-notehead)
+				  center-x center-y width height color)
   "Generates SVG data for a diamond shaped notehead, black or white notation."
   (with-accessors ((bold-stroke bold-stroke)
 		   (light-stroke light-stroke)
@@ -154,9 +156,9 @@
 
 (defmethod calculate-notehead-height ((component component-notehead) unit-length)
   "Returns the vertical height of a notehead, including the overhead value."
-    (with-accessors ((overhead length-over-line))
-	component
-      (+ unit-length (* 2 overhead unit-length))))
+  (with-accessors ((overhead length-over-line))
+      component
+    (+ unit-length (* 2 overhead unit-length))))
 
 (defmethod cast ((stencil glyph-notehead))
   "Generates SVG data for a notehead."
@@ -222,8 +224,9 @@
 		(find-next-space-above notehead-position number-of-lines)))
 	      ((eq type 'glyph-notehead-stem)
 	       (- (- (calculate-absolute-staff-position stencil notehead-position)
-		     (* 0.5 (calculate-notehead-height (notehead-component stencil)
-						       (distance-between-lines (staff-component stencil))))
+		     (* 0.5 (calculate-notehead-height
+			     (notehead-component stencil)
+			     (distance-between-lines (staff-component stencil))))
 		     (* unit-length (stem-length (stem-component stencil))))
 		  (* (dot-above-stem-offset stencil) unit-length)))
 	      (t 0))))))
@@ -252,10 +255,15 @@
 
 ;;; stem
 
+<<<<<<< HEAD
 (defmethod scale-to-stem ((stencil glyph-notehead-stem) relative-length)
   (* relative-length (stem-length (stem-component stencil))))
 
 (defmethod draw-stem ((component component-stem) unit-length h-center y-position y-offset stem-direction color)
+=======
+(defmethod draw-stem ((component component-stem)
+		      unit-length h-center y-position y-offset stem-direction color)
+>>>>>>> 6a9cf37 (added rhythmic dot casting)
   (with-accessors ((stem-length stem-length)
 		   (width-head width-head)
 		   (width-tail width-tail))
@@ -317,6 +325,17 @@
 
 
 
+<<<<<<< HEAD
+=======
+;; TODO move to macro corner
+(defmacro transform-coordinates (transformation argument &rest coordinates)
+  "Applies a vector transformation (currently only vec:mirror-x,
+   vec:mirror-y and vec:mirror-dot) to a set of vectors (vec:create).
+   Destructive, uses 'setf' to overwrite the coordinates."
+  `(progn ,@(mapcar (lambda (vec)
+		      `(setf ,vec (funcall ,transformation ,vec ,argument)))
+		    coordinates)))
+>>>>>>> 6a9cf37 (added rhythmic dot casting)
 
 (defmethod cast ((stencil glyph-notehead-flag))
   "Generates SVG data for a note stem flag."
@@ -337,8 +356,10 @@
 	       (notehead-y (calculate-absolute-staff-position stencil
 							      (notehead-position stencil)))
 	       (m (vec:create (h-center stencil)
-			      (- notehead-y (* 0.5 (calculate-notehead-height (notehead-component stencil)
-									      (distance-between-lines (staff-component stencil))))
+			      (- notehead-y
+				 (* 0.5 (calculate-notehead-height
+					 (notehead-component stencil)
+					 (distance-between-lines (staff-component stencil))))
 				 stem-length)))
 	       (n (vec:create (h-center stencil)
 			      (+ (vec:y-coord m) (* merge-level stem-length))))
@@ -486,9 +507,9 @@
 			   `((m ,a) (l ,b) (l ,c) (l ,d) (c)))
 	      (svg-data stencil))
 	(push (output-path `("stroke" ,(ink-color stencil)
-			     "fill" "none"
-			     "stroke-width" ,(format nil "~s" thickness-circle)
-			     "stroke-linecap" "round")
+				      "fill" "none"
+				      "stroke-width" ,(format nil "~s" thickness-circle)
+				      "stroke-linecap" "round")
 			   `((m ,e) (a ,(* 1.2 r) ,(* 1.2 r) 0 1
 				       ,(if (mirrored-p stencil) 1 0)
 				       ,(vec:x-coord e)
@@ -511,9 +532,9 @@
 	 (h (calculate-notehead-height (notehead-component stencil) unit-length)))
     (mapc (lambda (position-delta)
 	    (push (draw-notehead-diamond (notehead-component stencil)
-				 (h-center stencil)
-				 (calculate-absolute-staff-position stencil
-								    (+ position-delta (clef-position stencil)))
+					 (h-center stencil)
+					 (calculate-absolute-staff-position
+					  stencil (+ position-delta (clef-position stencil)))
 				 (* (width (notehead-component stencil)) h)
 				 h
 				 (ink-color stencil))
@@ -631,11 +652,26 @@
 			  (:both (list #'+ #'-)))))))))
   (call-next-method))
 
-;; (defmethod cast ((stencil glyph-dot))
-;;   "Generates SVG data for a barline.")
+;; dot (generic, to be used as rhythmic dots)
 
-;; TODO generic dot casting (not enharmonic dot)
+(defmethod calculate-x-pos ((stencil glyph))
+  (* 0.5 (glyph-width stencil)))
+
+(defmethod cast ((stencil glyph-dot))
+  "Generates SVG data for a rhythmic dot."
+  (push (draw-dot (calculate-x-pos stencil)
+		  (calculate-absolute-staff-position stencil
+						     (dot-position stencil))
+		  (* (size (dot-component stencil))
+		     (distance-between-lines (staff-component stencil)))
+		  (ink-color stencil))
+	(svg-data stencil))
+  (call-next-method))
+
+
+
 ;; TODO bequadro
+
 
 ;;; BOOKMARK: transcoding until here
 

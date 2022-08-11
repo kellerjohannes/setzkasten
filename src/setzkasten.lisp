@@ -67,5 +67,6 @@
       (htm
        (:div
 	(:h3 (fmt "~&Score '~a':" score))
-	(fmt "~a" (read-file (merge-pathnames *svg-export-path*
-					      (pathname (format nil "~a.svg" score))))))))))
+	(fmt "~a"
+	     (read-file (merge-pathnames *svg-export-path*
+					 (pathname (format nil "~a.svg" score))))))))))
