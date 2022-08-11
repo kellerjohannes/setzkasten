@@ -124,4 +124,4 @@
        bb br5 f4m bb bb bl
        bb cclef7 f6 ba br6)))
     (("dot-test" nil nil "white")
-     (ba sb5 dot6 ba sb6 dot6 ba))))
+     ((music nil ba sb5 dot6 ba sb6 dot6 ba)))))
