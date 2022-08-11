@@ -42,6 +42,10 @@
 
 
 
+(defmethod calculate-x-pos ((stencil glyph))
+  "Returns the vertical center line of a glyph."
+  (* 0.5 (glyph-width stencil)))
+
 ;;; staff lines
 
 (defmethod v-center ((stencil glyph))
@@ -642,10 +646,8 @@
 			  (:both (list #'+ #'-)))))))))
   (call-next-method))
 
-;; dot (generic, to be used as rhythmic dots)
 
-(defmethod calculate-x-pos ((stencil glyph))
-  (* 0.5 (glyph-width stencil)))
+;; dot (generic, to be used as rhythmic dots)
 
 (defmethod cast ((stencil glyph-dot))
   "Generates SVG data for a rhythmic dot."
@@ -660,7 +662,39 @@
 
 
 
-;; TODO bequadro
+;; bequadro 
+
+(defmethod draw-bequadro ((stencil glyph) x-offset y-offset stem-length)
+  (with-accessors ((thickness thickness))
+      (bequadro-component stencil)
+    (let* ((x-origin (calculate-x-pos stencil))
+	   (y-origin (calculate-absolute-staff-position stencil
+							(sign-position stencil)))
+	   (origin (vec:create x-origin y-origin))
+	   (helper (- x-origin x-offset))
+	   (a (vec:create helper (+ y-origin y-offset)))
+	   (b (vec:create helper (- y-origin y-offset)))
+	   (c (vec:add a (vec:create 0 (- stem-length))))
+	   (d (vec:mirror-dot a origin))
+	   (e (vec:mirror-dot b origin))
+	   (f (vec:mirror-dot c origin)))
+      (concatenate 'string
+		   (output-line-vec a c thickness "round")
+		   (output-line-vec a e thickness "round")
+		   (output-line-vec b d thickness "round")
+		   (output-line-vec d f thickness "round")))))
+
+(defmethod cast ((stencil glyph-bequadro))
+  "Generates SVG data for a 'natural sign'."
+  (push (draw-bequadro stencil
+		       (x-offset (bequadro-component stencil))
+		       (y-offset (bequadro-component stencil))
+		       (* (distance-between-lines (staff-component stencil))
+			  (stem-length (bequadro-component stencil))))
+	(svg-data stencil))
+  (call-next-method))
+
+
 
 
 ;;; BOOKMARK: transcoding until here

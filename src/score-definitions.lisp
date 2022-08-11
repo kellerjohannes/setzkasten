@@ -6,7 +6,13 @@
 
 (defparameter *scores*
   `((("m1.01" nil nil ,*score-bg-color*)
-     ((music nil b8 max7 fclef7 b8 sb2 b8 sb2 b8 sb2 b8 bl b6 fl3 b8 sb3 b8)))))
+     ((music nil b8 max7 fclef7 b8 sb2 b8 sb2 b8 sb2 b8 bl
+	     b8 fl3 b8 sb3 b8 nat3 b8 sb3 b8 bl
+	     b8 sb4 b8 sb4 b8 sb4 b8 bl
+	     b8 sb5 b8 sb5 b8 sb5 b8 bl
+	     b8 sb6 b8 sb6 b8 bl
+	     b8 sb7 b8 sb7 b8 bl
+	     b8 sb8 b8 sb8 b8 sb8 b8 bl)))))
 
 ;; (defparameter *scores*
 ;;   '((("glyph-catalog" 12000 1500 "white")

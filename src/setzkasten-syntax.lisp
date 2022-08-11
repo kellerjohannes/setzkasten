@@ -56,6 +56,12 @@
       (thickness-stem-top 1.2)
       (stem-length 2.5)
       (diameter 1)))
+    (component-bequadro
+     ((id "bequadro")
+      (thickness 1)
+      (x-offset 5)
+      (y-offset 5)
+      (stem-length 2.5)))
     (component-c-clef
      ((id "c-clef")
       (vertical-thickness 12)
@@ -149,6 +155,13 @@
       (flat-position 5)
       (second-flat-position nil)
       (mirrored-p nil)))
+    (glyph-bequadro
+     ((id "glyph-bequadro")
+      (staff-component :instance)
+      (bequadro-component :instance)
+      (glyph-width 10)
+      (glyph-height 70)
+      (sign-position 5)))
     (glyph-f-clef-part
      ((id "f-clef")
       (staff-component :instance)

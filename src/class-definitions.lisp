@@ -107,6 +107,13 @@
   (stem-length 2.2 "Length of the stem, from above the semi circle to the upper end of the stem, proportional to the distance between staff lines.")
   (diameter 1 "Diameter of the semi circle, in proportion to distance between lines."))
 
+(define-setzkasten-class component-bequadro (component)
+  "Parameters for the appearance of the 'natural' sign."
+  (thickness 1 "Stroke thickness of all lines.")
+  (x-offset 6 "Distance between centerline and vertical strokes.")
+  (y-offset 6 "Distance between centerline and horizontal strokes.")
+  (stem-length 2.5 "Length of the vertical legs, proportional to `distance-between-lines'."))
+
 (define-setzkasten-class component-c-clef (component)
   "Parameters for the creation of c-clefs."
   (vertical-thickness 18 "Stroke thickness of the three vertical lines.")
@@ -203,6 +210,11 @@
   (second-flat-position nil "Position of an optional second flat. If nil, only one flat will be produced.")
   (flat-component nil "Instance of component-flat. If nil, an empty staff type will be produced.")
   (mirrored-p nil "T for flats pointing left."))
+
+(define-setzkasten-class glyph-bequadro (glyph-staff)
+  "Specification of a glyph containing a 'natural' sign."
+  (sign-position 5 "Position of the bequadro within the staff.")
+  (bequadro-component nil "Instance of component-bequadro."))
 
 (define-setzkasten-class glyph-c-clef (glyph-staff)
   "Specification of a type containing a c- or g-clef."

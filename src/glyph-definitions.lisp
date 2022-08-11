@@ -5,20 +5,26 @@
   '((component-staff-lines nil "stave"               5    10    1.1  0.8)
     (component-barline     nil "barline"             0.2  1.9)
     (component-flat        nil "flat"                1.2  0.4   1.2  3.1 0.85)
+    (component-bequadro    nil "bequadro"            1.2  2.7   2.7    2.2)
     (component-notehead    nil "notehead-brevis"     0.3  0.7   2.6  0.7 nil nil)
-    (component-notehead    nil "notehead-semibrevis" 0.15 0.8   2.7  0.7 t   nil)
+    (component-notehead    nil "notehead-semibrevis" 0.15 0.9   2.7  0.7 t   nil)
     (component-stem        nil "stem-minima"         1.9  0.7   1.3)))
 
 ;;     (glyph-flat f2 "flat-2" "5-stave" "flat" 120 ,*glyph-height* 2 nil nil)
 (defparameter *setzkasten-definition-glyphs*
   `(
     (glyph-staff                  b8     "blank-8"       "stave" 8 ,*glyph-height*)
-    (glyph-staff                  b6     "blank-6"       "stave" 6 ,*glyph-height*)
     (glyph-barline                bl     "simple-barline" "stave" "barline" "" 11 ,*glyph-height* 0 0 0 nil)
     (glyph-flat                   fl3     "flat-3"        "stave" "flat" 9 ,*glyph-height* 3 nil nil)
+    (glyph-bequadro               nat3   "bequadro-3"     "stave" "bequadro" 13 ,*glyph-height* 3)
     (glyph-notehead-stem          max7   "maxima-7"      "stave" "notehead-brevis"     "" "stem-minima" 14 ,*glyph-height* 7 :down nil nil nil)
-    (glyph-notehead               sb2    "semibrevis-2"  "stave" "notehead-semibrevis" 11 ,*glyph-height* 2)
-    (glyph-notehead               sb3    "semibrevis-3"  "stave" "notehead-semibrevis" 11 ,*glyph-height* 3)
+    (glyph-notehead               sb2    "semibrevis-2"  "stave" "notehead-semibrevis" 14 ,*glyph-height* 2)
+    (glyph-notehead               sb3    "semibrevis-3"  "stave" "notehead-semibrevis" 14 ,*glyph-height* 3)
+    (glyph-notehead               sb4    "semibrevis-4"  "stave" "notehead-semibrevis" 14 ,*glyph-height* 4)
+    (glyph-notehead               sb5    "semibrevis-5"  "stave" "notehead-semibrevis" 14 ,*glyph-height* 5)
+    (glyph-notehead               sb6    "semibrevis-6"  "stave" "notehead-semibrevis" 14 ,*glyph-height* 6)
+    (glyph-notehead               sb7    "semibrevis-7"  "stave" "notehead-semibrevis" 14 ,*glyph-height* 7)
+    (glyph-notehead               sb8    "semibrevis-8"  "stave" "notehead-semibrevis" 14 ,*glyph-height* 8)
     (glyph-f-clef-part            fclef7 "f-clef-part-7" "stave" "notehead-semibrevis" "stem-minima" 15 ,*glyph-height* 7)))
 
 
