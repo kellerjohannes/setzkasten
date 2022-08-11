@@ -6,7 +6,10 @@
 <svg stroke=\"black\" width=\"~d\" viewBox=\"0 0 ~d ~d\" id=~s version=\"1.1\"
     xmlns=\"http://www.w3.org/2000/svg\"
     xmlns:xlink=\"http://www.w3.org/1999/xlink\">"
-	  (/ width 7.0) width height id-string))
+	  (* width 2.0) ; overall scaling
+	  (* width 1.0) ; x scaling of viewBox
+	  (* height 1.0) ; y scaling of viewBox
+	  id-string))
 
 (defun output-background (color)
   (format nil "<rect width=\"100%\" height=\"100%\" fill=~s/>" color))

@@ -2,8 +2,11 @@
 
 (in-package :setzkasten)
 
-(defun parse-setzkasten-instance (instance-definition syntax-definition &optional list-of-components)
-  "Takes the definition of one instance and the syntax description of one instance and returns a new actual instance with parameters set according to the two input arguments."
+(defun parse-setzkasten-instance (instance-definition syntax-definition
+				  &optional list-of-components)
+  "Takes the definition of one instance and the syntax description of one
+   instance and returns a new actual instance with parameters set according
+   to the two input arguments."
   (let ((new-stencil (make-instance (first instance-definition))))
     (labels ((rec-user-defined (accessors values)
 	       (cond ((or (null accessors) (null values)) nil)
@@ -49,7 +52,7 @@
    (name :initform "" :initarg :name :accessor name)
    (width :initform 0 :initarg :width :accessor width)
    (height :initform 0 :initarg :height :accessor height)
-   (margins :initform '(0 0 0 0) :initarg :margins :accessor margins)
+   (margins :initform '(0 0 0 0) :initarg :margins :accessor margins :documentation "Top, Right, Bottom, Left")
    (bg-color :initform nil :initarg :bg-color :accessor bg-color)
    (svg-use-container :initform nil :accessor svg-use-container)))
 
@@ -218,7 +221,7 @@
 					 :bg-color (score-bg-color score)
 					 :width (score-width score)
 					 :height (score-height score)
-					 :margins '(50 100 0 100)
+					 :margins *score-margins*
 					 :name (score-name score))))
 	      (mapc (lambda (line)
 		      (cond ((eq (first line) 'music)
