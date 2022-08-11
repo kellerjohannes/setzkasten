@@ -255,15 +255,8 @@
 
 ;;; stem
 
-<<<<<<< HEAD
-(defmethod scale-to-stem ((stencil glyph-notehead-stem) relative-length)
-  (* relative-length (stem-length (stem-component stencil))))
-
-(defmethod draw-stem ((component component-stem) unit-length h-center y-position y-offset stem-direction color)
-=======
 (defmethod draw-stem ((component component-stem)
 		      unit-length h-center y-position y-offset stem-direction color)
->>>>>>> 6a9cf37 (added rhythmic dot casting)
   (with-accessors ((stem-length stem-length)
 		   (width-head width-head)
 		   (width-tail width-tail))
@@ -325,8 +318,6 @@
 
 
 
-<<<<<<< HEAD
-=======
 ;; TODO move to macro corner
 (defmacro transform-coordinates (transformation argument &rest coordinates)
   "Applies a vector transformation (currently only vec:mirror-x,
@@ -335,7 +326,6 @@
   `(progn ,@(mapcar (lambda (vec)
 		      `(setf ,vec (funcall ,transformation ,vec ,argument)))
 		    coordinates)))
->>>>>>> 6a9cf37 (added rhythmic dot casting)
 
 (defmethod cast ((stencil glyph-notehead-flag))
   "Generates SVG data for a note stem flag."
