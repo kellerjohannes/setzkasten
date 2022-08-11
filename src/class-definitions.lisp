@@ -135,6 +135,8 @@
 ;;;; containers to group components into glyphs ;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;;; TODO replace all 'type' with 'glyph'
+
 ;; the following grouping containers (classes) are available:
 ;; - type
 ;;   - type-staff
@@ -148,6 +150,7 @@
 ;;     - type-clef
 ;;     - type-fclef-component
 ;;     - type-barline
+;;     - glyph-dot
 
 (define-setzkasten-class glyph ()
   "Specification of an empty type, only holding the meta information for the creation of SVG data."
@@ -221,3 +224,7 @@
   (dot-placement nil "'right for only right of barline(s), 'left for only left of barline(s), or 'both.")
   (dot-component nil "Instance of component-dot, optional."))
 
+(define-setzkasten-class glyph-dot (glyph-staff)
+  "Specification of a glyph containing staff lines and a dot."
+  (dot-position 5 "Staff position of dot.")
+  (dot-component nil "Instance of `component-dot'."))

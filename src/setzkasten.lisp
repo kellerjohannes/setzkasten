@@ -34,6 +34,7 @@
 
 (defmacro standard-page ((&key title script) &body body)
   `(with-html-output-to-string (*standard-output* nil :prologue t :indent t)
+
      (:html :lang "en" :style "background-color:PeachPuff"
 	    (:head (:meta :charset "utf-8")
 		   (:title ,title)
@@ -67,5 +68,6 @@
       (htm
        (:div
 	(:h3 (fmt "~&Score '~a':" score))
-	(fmt "~a" (read-file (merge-pathnames *svg-export-path*
-					      (pathname (format nil "~a.svg" score))))))))))
+	(fmt "~a"
+	     (read-file (merge-pathnames *svg-export-path*
+					 (pathname (format nil "~a.svg" score))))))))))
