@@ -3,10 +3,14 @@
 (defparameter *score-margins* '(5 10 0 10)) ; 
 
 (defparameter *score-bg-color* "white")
+(defparameter *font-height* 15)
+
+;;      ((text 400 150 (800 nil "Eſſempio della Seſta minore, come in varÿ modi ſi può comporre."))
 
 (defparameter *scores*
   `((("m1.01" nil nil ,*score-bg-color*)
-     ((music nil b8 max7 fclef7 b8 sb2 b8 sb2 b8 sb2 b8 bl
+     ((text 4.0 9.5 (340 nil "Dimoſtratione della Mano Diatonica."))
+      (music nil b8 max7 fclef7 b8 sb2 b8 sb2 b8 sb2 b8 bl
 	     b8 fl3 b8 sb3 b8 nat3 b8 sb3 b8 bl
 	     b8 sb4 b8 sb4 b8 sb4 b8 bl
 	     b8 sb5 b8 sb5 b8 sb5 b8 bl

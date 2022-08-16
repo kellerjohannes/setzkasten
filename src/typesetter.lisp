@@ -126,7 +126,7 @@
 	  (push (output-text (+ (first text-element) (left-margin score))
 			     (+ y-counter (third text-data))
 			     (third text-element)
-			     170
+			     *font-height* 
 			     (second text-element))
 		(svg-use-container score)))
 	(rest (rest (rest text-data))))
