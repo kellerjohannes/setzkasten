@@ -1,9 +1,9 @@
 (in-package :setzkasten)
 
-(defparameter *score-margins* '(5 10 0 10)) ; 
+(defparameter *score-margins* '(5 10 0 10)) ;
 
 (defparameter *score-bg-color* "white")
-(defparameter *font-height* 15)
+(defparameter *font-height* 10)
 
 ;;      ((text 400 150 (800 nil "Eſſempio della Seſta minore, come in varÿ modi ſi può comporre."))
 
@@ -11,12 +11,12 @@
   `((("m1.01" nil nil ,*score-bg-color*)
      ((text 4.0 9.5 (340 nil "Dimoſtratione della Mano Diatonica."))
       (music nil b8 max7 fclef7 b8 sb2 b8 sb2 b8 sb2 b8 bl
-	     b8 fl3 b8 sb3 b8 nat3 b8 sb3 b8 bl
-	     b8 sb4 b8 sb4 b8 sb4 b8 bl
-	     b8 sb5 b8 sb5 b8 sb5 b8 bl
-	     b8 sb6 b8 sb6 b8 bl
-	     b8 sb7 b8 sb7 b8 bl
-	     b8 sb8 b8 sb8 b8 sb8 b8 bl)))))
+         b8 fl3 b8 sb3 b8 nat3 b8 sb3 b8 bl
+         b8 sb4 b8 sb4 b8 sb4 b8 bl
+         b8 sb5 b8 sb5 b8 sb5 b8 bl
+         b8 sb6 b8 sb6 b8 bl
+         b8 sb7 b8 sb7 b8 bl
+         b8 sb8 b8 sb8 b8 sb8 b8 bl)))))
 
 ;; (defparameter *scores*
 ;;   '((("glyph-catalog" 12000 1500 "white")
@@ -94,28 +94,28 @@
 ;;        sb7 sb6 sb5 sb4 sbd3 bl
 ;;        bb sb6 bb sbd2 bb bl)
 ;;       (text 200 150
-;; 	(290 nil "più di quinta")
-;; 	(1300 nil "più di quin.")
-;; 	(2300 nil "più di quin.")
-;; 	(3200 nil "più di quinta")
-;; 	(4300 nil "più di quin.")
-;; 	(5150 nil "più di quinta")
-;; 	(6150 nil "più di quin."))
+;;  (290 nil "più di quinta")
+;;  (1300 nil "più di quin.")
+;;  (2300 nil "più di quin.")
+;;  (3200 nil "più di quinta")
+;;  (4300 nil "più di quin.")
+;;  (5150 nil "più di quinta")
+;;  (6150 nil "più di quin."))
 ;;       (text 200 150
-;; 	(290 nil "imper. natur.")
-;; 	(1300 nil "imper. nat.")
-;; 	(2300 nil "imp. accid.")
-;; 	(3200 nil "imper.accid.")
-;; 	(4300 nil "imper.acci.")
-;; 	(5150 nil "imper. acci.")
-;; 	(6150 nil "impe. accid."))
+;;  (290 nil "imper. natur.")
+;;  (1300 nil "imper. nat.")
+;;  (2300 nil "imp. accid.")
+;;  (3200 nil "imper.accid.")
+;;  (4300 nil "imper.acci.")
+;;  (5150 nil "imper. acci.")
+;;  (6150 nil "impe. accid."))
 ;;       (text 200 150
-;; 	(290 nil "comp.")
-;; 	(1300 nil "incomp.")
-;; 	(2300 nil "incomp.")
-;; 	(3200 nil "comp.")
-;; 	(4300 nil "incomp.")
-;; 	(5150 nil "comp.")
+;;  (290 nil "comp.")
+;;  (1300 nil "incomp.")
+;;  (2300 nil "incomp.")
+;;  (3200 nil "comp.")
+;;  (4300 nil "incomp.")
+;;  (5150 nil "comp.")
 ;;        (6150 nil "incomp."))))
 ;;     (("m2.22-devel" nil nil "white")
 ;;      ((text 400 150 (800 nil "Eſſempio della Seſta minore, come in varÿ modi ſi può comporre."))
