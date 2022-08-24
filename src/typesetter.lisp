@@ -3,28 +3,28 @@
 (in-package :setzkasten)
 
 (defun parse-setzkasten-instance (instance-definition syntax-definition
-				  &optional list-of-components)
+                  &optional list-of-components)
   "Takes the definition of one instance and the syntax description of one
    instance and returns a new actual instance with parameters set according
    to the two input arguments."
   (let ((new-stencil (make-instance (first instance-definition))))
     (labels ((rec-user-defined (accessors values)
-	       (cond ((or (null accessors) (null values)) nil)
-		     (t (let ((value (first values))
-			      (accessor (first (first accessors)))
-			      (default-value (second (first accessors))))
-			  (cond ((eq default-value :instance)
-				 (setf (slot-value new-stencil accessor)
-				       (find value list-of-components :key #'id :test #'string=)))
-				((eq value 'default)
-				 (setf (slot-value new-stencil accessor) default-value))
-				(t (setf (slot-value new-stencil accessor) value))))
-			(rec-user-defined (rest accessors) (rest values)))))
-	     (rec-pre-defined (accessor)
-	       (cond ((null accessor) nil)
-		     (t (setf (slot-value new-stencil (first (first accessor)))
-			      (second (first accessor)))
-			(rec-pre-defined (rest accessor))))))
+           (cond ((or (null accessors) (null values)) nil)
+             (t (let ((value (first values))
+                  (accessor (first (first accessors)))
+                  (default-value (second (first accessors))))
+              (cond ((eq default-value :instance)
+                 (setf (slot-value new-stencil accessor)
+                       (find value list-of-components :key #'id :test #'string=)))
+                ((eq value 'default)
+                 (setf (slot-value new-stencil accessor) default-value))
+                (t (setf (slot-value new-stencil accessor) value))))
+            (rec-user-defined (rest accessors) (rest values)))))
+         (rec-pre-defined (accessor)
+           (cond ((null accessor) nil)
+             (t (setf (slot-value new-stencil (first (first accessor)))
+                  (second (first accessor)))
+            (rec-pre-defined (rest accessor))))))
       (rec-user-defined (second syntax-definition) (rest (rest instance-definition)))
       (rec-pre-defined (third syntax-definition)))
     new-stencil))
@@ -32,14 +32,14 @@
 (defun parse-setzkasten (definition-components definition-glyphs syntax-definition)
   "Takes user defined stencils and a syntax definition, returns a list of stencil instances."
   (let ((list-of-components
-	  (mapcar (lambda (definition)
-		    (parse-setzkasten-instance definition (assoc (first definition)
-								 syntax-definition)))
-		  definition-components)))
+      (mapcar (lambda (definition)
+            (parse-setzkasten-instance definition (assoc (first definition)
+                                 syntax-definition)))
+          definition-components)))
     (mapcar (lambda (definition)
-	      (parse-setzkasten-instance definition (assoc (first definition) syntax-definition)
-				      list-of-components))
-	    definition-glyphs)))
+          (parse-setzkasten-instance definition (assoc (first definition) syntax-definition)
+                      list-of-components))
+        definition-glyphs)))
 
 
 
@@ -78,8 +78,8 @@
   (push '() (line-container score))
   (push (second music-data) (line-width-list score))
   (mapc (lambda (element)
-	  (add-stencil-to-line score (get-stencil element stencil-list)))
-	(rest (rest music-data)))
+      (add-stencil-to-line score (get-stencil element stencil-list)))
+    (rest (rest music-data)))
   (push (second music-data) (first (line-container score)))
   (push 'music (first (line-container score))))
 
@@ -87,9 +87,9 @@
   (format t "~&----line-container:~&~s
 ~&----svg-symbol-container:~&~s
 ~&----svg-use-container:~&~s"
-	  (line-container score)
-	  (svg-symbol-container score)
-	  (svg-use-container score)))
+      (line-container score)
+      (svg-symbol-container score)
+      (svg-use-container score)))
 
 (defmethod calculate-glyph-width (line)
   (reduce #'+ (rest (rest line)) :key #'glyph-width))
@@ -104,82 +104,82 @@
 
 (defmethod typeset-music-line ((score typesetter) line line-width alignment y-counter)
   (let ((x-counter (left-margin score))
-	(padding (if (eq alignment :block)
-		     (/ (if line-width
-			    (- line-width (calculate-glyph-width line))
-			    0) 
-			(- (length line) 2.0))
-		     0)))
+    (padding (if (eq alignment :block)
+             (/ (if line-width
+                (- line-width (calculate-glyph-width line))
+                0)
+            (- (length line) 2.0))
+             0)))
     (mapc (lambda (stencil)
-	    (unless (svg-data stencil)
-	      (cast stencil)
-	      (push (svg-data stencil) (svg-symbol-container score)))
-	    (push (output-use (id stencil) :x x-counter :y y-counter)
-		  (svg-use-container score))
-	    (incf x-counter (+ padding (glyph-width stencil))))
-	  (reverse (rest (rest line)))))
+        (unless (svg-data stencil)
+          (cast stencil)
+          (push (svg-data stencil) (svg-symbol-container score)))
+        (push (output-use (id stencil) :x x-counter :y y-counter)
+          (svg-use-container score))
+        (incf x-counter (+ padding (glyph-width stencil))))
+      (reverse (rest (rest line)))))
   (glyph-height (third line)))
 
 ;; ('text height y-offset (x-offset length string) (x-offset length string))
 (defmethod typeset-text-line ((score typesetter) text-data y-counter)
   (mapc (lambda (text-element)
-	  (push (output-text (+ (first text-element) (left-margin score))
-			     (+ y-counter (third text-data))
-			     (third text-element)
-			     *font-height* 
-			     (second text-element))
-		(svg-use-container score)))
-	(rest (rest (rest text-data))))
+      (push (output-text (+ (first text-element) (left-margin score))
+                 (+ y-counter (third text-data))
+                 (third text-element)
+                 *font-height*
+                 (second text-element))
+        (svg-use-container score)))
+    (rest (rest (rest text-data))))
   (second text-data))
 
 (defmethod typeset ((score typesetter) alignment)
   (let ((y-counter (top-margin score)))
     (mapc (lambda (line line-width)
-	    ;; TODO restructure case: incf -> case
-	    (case (first line)
-	      (text (incf y-counter (typeset-text-line score line y-counter)))
-	      (music (incf y-counter (typeset-music-line score line line-width alignment y-counter)))))
-	  (reverse (line-container score))
-	  (reverse (line-width-list score)))))
-  
+        ;; TODO restructure case: incf -> case
+        (case (first line)
+          (text (incf y-counter (typeset-text-line score line y-counter)))
+          (music (incf y-counter (typeset-music-line score line line-width alignment y-counter)))))
+      (reverse (line-container score))
+      (reverse (line-width-list score)))))
+
 
 (defmethod get-svg-height ((score typesetter))
   (let ((top-and-bottom-margin (+ (top-margin score)
-				  (bottom-margin score))))
+                  (bottom-margin score))))
     (if (height score)
-	(+ top-and-bottom-margin (height score))
-	(+ top-and-bottom-margin
-	   (reduce #'+ (line-container score)
-		   :key (lambda (line)
-			  (if (eq (first line) 'text)
-			      (second line)
-			      (glyph-height (third line)))))))))
+    (+ top-and-bottom-margin (height score))
+    (+ top-and-bottom-margin
+       (reduce #'+ (line-container score)
+           :key (lambda (line)
+              (if (eq (first line) 'text)
+                  (second line)
+                  (glyph-height (third line)))))))))
 
 (defmethod get-svg-width ((score typesetter))
   (let ((left-and-right-margin (+ (right-margin score)
-				  (left-margin score))))
+                  (left-margin score))))
     (if (width score)
-	(+ left-and-right-margin (width score))
-	(+ left-and-right-margin
-	   (loop for line in (line-container score)
-		 maximize (if (eq (first line) 'text)
-			      0
-			      (calculate-glyph-width line)))))))
+    (+ left-and-right-margin (width score))
+    (+ left-and-right-margin
+       (loop for line in (line-container score)
+         maximize (if (eq (first line) 'text)
+                  0
+                  (calculate-glyph-width line)))))))
 
 (defmethod write-score ((score typesetter))
   (with-open-file (stream (merge-pathnames *svg-export-path*
-					   (pathname (format nil "~a.svg" (name score))))
-			  :direction :output
-			  :if-exists :supersede
-			  :if-does-not-exist :create)
+                       (pathname (format nil "~a.svg" (name score))))
+              :direction :output
+              :if-exists :supersede
+              :if-does-not-exist :create)
     (format stream "~a~@[~a~]<defs>~{~a~}</defs>~{~a~}~a"
-	    (toplevel-open (get-svg-width score)
-			   (get-svg-height score)
-			   (name score))
-	    (when (bg-color score) (output-background (bg-color score)))
-	    (svg-symbol-container score)
-	    (svg-use-container score)
-	    (toplevel-close))))
+        (toplevel-open (get-svg-width score)
+               (get-svg-height score)
+               (name score))
+        (when (bg-color score) (output-background (bg-color score)))
+        (svg-symbol-container score)
+        (svg-use-container score)
+        (toplevel-close))))
 
 
 ;;; parsing vicentino code
@@ -190,12 +190,12 @@
 
 (defun parse-vicentino-code (data glyph-definitions)
   (mapcar (lambda (line)
-	    (if (eq (first line) 'music)
-		(mapcar (lambda (item)
-			  (lookup-vicentino-code item glyph-definitions))
-			line)
-		line))
-	  data))
+        (if (eq (first line) 'music)
+        (mapcar (lambda (item)
+              (lookup-vicentino-code item glyph-definitions))
+            line)
+        line))
+      data))
 
 (defun score-name (score) (first (first score)))
 
@@ -210,31 +210,27 @@
 (defun get-stencil (id stencils)
   (let ((result (find id stencils :test #'string= :key #'id)))
     (if result
-	result
-	;; (format t "~&~a not found." id)
-	)))
+    result
+    ;; (format t "~&~a not found." id)
+    )))
 
 (defun create-scores (data components glyphs syntax)
   (mapcar (lambda (score)
-	    (let ((stencil-list (parse-setzkasten components glyphs syntax))
-		  (setter (make-instance 'typesetter
-					 :bg-color (score-bg-color score)
-					 :width (score-width score)
-					 :height (score-height score)
-					 :margins *score-margins*
-					 :name (score-name score))))
-	      (mapc (lambda (line)
-		      (cond ((eq (first line) 'music)
-			     (add-music-line setter line stencil-list))
-			    ((eq (first line) 'text)
-			     (add-text-line setter line))
-			    (t nil)))
-		    (parse-vicentino-code (score-elements score) glyphs))
-	      (typeset setter :block)  ; use :block for Blocksatz, use :flushed for Flattersatz
-	      (write-score setter)
-	      (score-name score)))
-	  data))
-
-
-
-
+        (let ((stencil-list (parse-setzkasten components glyphs syntax))
+          (setter (make-instance 'typesetter
+                     :bg-color (score-bg-color score)
+                     :width (score-width score)
+                     :height (score-height score)
+                     :margins *score-margins*
+                     :name (score-name score))))
+          (mapc (lambda (line)
+              (cond ((eq (first line) 'music)
+                 (add-music-line setter line stencil-list))
+                ((eq (first line) 'text)
+                 (add-text-line setter line))
+                (t nil)))
+            (parse-vicentino-code (score-elements score) glyphs))
+          (typeset setter :block)  ; use :block for Blocksatz, use :flushed for Flattersatz
+          (write-score setter)
+          (score-name score)))
+      data))

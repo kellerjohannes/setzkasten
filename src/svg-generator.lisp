@@ -6,9 +6,9 @@
 <svg stroke=\"black\" width=\"~d\" viewBox=\"0 0 ~d ~d\" id=~s version=\"1.1\"
     xmlns=\"http://www.w3.org/2000/svg\"
     xmlns:xlink=\"http://www.w3.org/1999/xlink\">"
-      (* width 0.3) ; overall scaling
-      (* width 1.1) ; x scaling of viewBox
-      (* height 1.1) ; y scaling of viewBox
+      (* width 1.0) ; overall scaling
+      (* width 1.0) ; x scaling of viewBox
+      (* height 1.0) ; y scaling of viewBox
       id-string))
 
 (defun output-background (color)
