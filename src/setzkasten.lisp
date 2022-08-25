@@ -36,7 +36,6 @@
 
 (defmacro standard-page ((&key title script) &body body)
   `(with-html-output-to-string (*standard-output* nil :prologue t :indent t)
-
      (:html :lang "en" :style "background-color:PeachPuff"
         (:head (:meta :charset "utf-8")
            (:title ,title)

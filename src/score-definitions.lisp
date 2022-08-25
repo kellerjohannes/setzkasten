@@ -4,29 +4,29 @@
 (defparameter *score-margins* '(10 10 10 10)) ;
 
 (defparameter *score-bg-color* "white")
-(defparameter *font-height* 42)
+(defparameter *font-height* 58)
 
 ;;      ((text 400 150 (800 nil "Eſſempio della Seſta minore, come in varÿ modi ſi può comporre."))
 
 (defparameter *scores*
   `((("m1.01" nil nil ,*score-bg-color*)
      (
-      (text 170 42 (1375 875 "Dimoſtratione della Mano Diatonica."))
-      ;; (text 200 170
-      ;;       (400 550 "A lamire")
-      ;;       (1350 550 "B fa b mi")
-      ;;       (2300 630 "C ſolfaut")
-      ;;       (3200 600 "D laſolre")
-      ;;       (3950 450 "E lami")
-      ;;       (4600 400 "F faut")
-      ;;       (5200 550 "G ſolreut"))
-      (music nil b8 max7 fclef7 b8 sb2 b8 sb2 b8 sb2 b8 bl
-         b8 fl3 b8 sb3 b8 nat3 b8 sb3 b8 bl
-         b8 sb4 b8 sb4 b8 sb4 b8 bl
-         b8 sb5 b8 sb5 b8 sb5 b8 bl
-         b8 sb6 b8 sb6 b8 bl
-         b8 sb7 b8 sb7 b8 bl
-         b8 sb8 b8 sb8 b8 sb8 b8 bl)
+      (text 70 58 (1253 875 "Dimoſtratione della Mano Diatonica."))
+      (text 70 58
+            (130 222 "A lamire")
+            (504 220 "B fa b mi")
+            (2300 630 "C ſolfaut")
+            (3200 600 "D laſolre")
+            (3950 450 "E lami")
+            (4600 400 "F faut")
+            (5200 550 "G ſolreut"))
+      (music 2200 b22 max7 fclef7 b38 sb2 b38 sb2 b38 sb2 b22 bl
+         b22 fl3 b38 sb3 b38 nat3 b38 sb3 b22 bl
+         b22 sb4 b38 sb4 b38 sb4 b22 bl
+         b22 sb5 b38 sb5 b38 sb5 b22 bl
+         b22 sb6 b38 sb6 b22 bl
+         b22 sb7 b38 sb7 b22 bl
+         b22 sb8 b38 sb8 b38 sb8 b38 bl)
       ;; (text 200 70
       ;;       (450 nil "la") (650 nil "mi") (850 nil "re")
       ;;       (1500 nil "fa") (1900 nil "mi")
@@ -34,7 +34,7 @@
       ;;       (3150 nil "la") (3350 nil "ſol") (3550 nil "re")
       ;;       (4000 nil "la")
       ;;       (4200 nil "mi")
-            )))))
+            ))))
 
 ;; (defparameter *scores*
 ;;   '((("glyph-catalog" 12000 1500 "white")

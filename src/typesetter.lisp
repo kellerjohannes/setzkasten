@@ -116,6 +116,7 @@
           (push (svg-data stencil) (svg-symbol-container score)))
         (push (output-use (id stencil) :x x-counter :y y-counter)
           (svg-use-container score))
+        (format t "~&x: ~a" x-counter)
         (incf x-counter (+ padding (glyph-width stencil))))
       (reverse (rest (rest line)))))
   (glyph-height (third line)))
