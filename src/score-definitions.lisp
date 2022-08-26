@@ -1,163 +1,120 @@
 (in-package :setzkasten)
 
-(defparameter *score-margins* '(50 100 0 100)) ;
 (defparameter *score-margins* '(10 10 10 10)) ;
 
 (defparameter *score-bg-color* "white")
 (defparameter *font-height* 58)
 
-;;      ((text 400 150 (800 nil "Eſſempio della Seſta minore, come in varÿ modi ſi può comporre."))
-
 (defparameter *scores*
   `((("m1.01" nil nil ,*score-bg-color*)
-     (
-      (text 70 58 (1253 875 "Dimoſtratione della Mano Diatonica."))
-      (text 70 58
+     ((text 70 58 (1253 875 "Dimoſtratione della Mano Diatonica."))
+      (text 100 58
             (130 222 "A lamire")
             (504 220 "B fa b mi")
-            (2300 630 "C ſolfaut")
-            (3200 600 "D laſolre")
-            (3950 450 "E lami")
-            (4600 400 "F faut")
-            (5200 550 "G ſolreut"))
-      (music 2200 b22 max7 fclef7 b38 sb2 b38 sb2 b38 sb2 b22 bl
-         b22 fl3 b38 sb3 b38 nat3 b38 sb3 b22 bl
-         b22 sb4 b38 sb4 b38 sb4 b22 bl
-         b22 sb5 b38 sb5 b38 sb5 b22 bl
-         b22 sb6 b38 sb6 b22 bl
-         b22 sb7 b38 sb7 b22 bl
-         b22 sb8 b38 sb8 b38 sb8 b38 bl)
-      ;; (text 200 70
-      ;;       (450 nil "la") (650 nil "mi") (850 nil "re")
-      ;;       (1500 nil "fa") (1900 nil "mi")
-      ;;       (2350 nil "ſol") (2550 nil "fa") (2750 nil "ut")
-      ;;       (3150 nil "la") (3350 nil "ſol") (3550 nil "re")
-      ;;       (4000 nil "la")
-      ;;       (4200 nil "mi")
-            ))))
-
-;; (defparameter *scores*
-;;   '((("glyph-catalog" 12000 1500 "white")
-;;      ((music nil sm0 ba bb bc br0 br1 br2 br3 br4 br5 sb0 sb1 sb2 sb3 sb4 sb5 brb0 brb1 brb2 brb3 brb4 brb5 sbb0 sbb1 sbb2 sbb3 sbb4 sbb5 brd0 brd1 brd2 brd3 brd4 brd5 brd6 brd7 brd8 brd9 brd10 sbd0 sbd1 sbd2 sbd3 sbd4 sbd5 sbd6 sbd7 sbd8 sbd9 sbd10 m0 m1 m2 m3 m4 m5 m6 m7 m8 m9 m10 cr1u scr1u)))
-;;     (("minimal-test" 500 1500 "white")
-;;      ((music nil m5)))
-;;     (("test-melody" 3000 1500 "white")
-;;      ((music nil bc br1 br5 sb2 sb3 sb2 br1 br1 ba)))
-;;     (("flag-devel" 800 1500 "white")
-;;      ((music nil scr1u scr1d cr1u cr1d)))
-;;     (("multiline-test" 5000 3000 "white")
-;;      ((music nil br0 br1 br2 br3 br4)
-;;       (music nil sb0 sb1 sb2 sb4)
-;;       (music nil m0 m1 m2 m3 m4)))
-;;     (("padding-test" 6500 3000 "white")
-;;      ((music nil sb4 ba m3 ba m2 ba m1 ba sb4 ba m3 ba m2 ba m1 ba m8 ba sb9 ba m8 ba m4 ba sb5 ba m4 ba sb7 bb sm6 ba sm4 ba sm5 ba m6 ba m3 ba m4 ba m5 bb sm4 ba m3 ba sb2 m1 sb4 br1 bb)
-;;       (music nil bb sb5 bb sb8 bb m7 m6 ba sm5 ba m4 ba m3 ba sb2 ba sm1 ba sm2 ba sm3 ba sm4 ba sm1 ba m8 ba sm7 ba m9 ba m8 ba m7 bb sm6 ba m5 ba sb4 ba m3 ba br1 bb)
-;;       (music nil m2 bb sm2 ba m3 ba sb2 ba sb5 ba m4 ba m5 ba sb2 ba sb9 ba m8 ba sb9 ba m8 ba m9 ba m6 ba m7 ba m5 ba m2 ba m9 ba m6 bb sm7 ba m8 ba sb5 ba m4 ba m4 ba m2 ba sb5 ba br2 bb)))
-;;     (("rest-devel" 800 1500 "white")
-;;      ((music nil bb rm5 rsm5 ba rmaxima3 rmaxima3 bb)))
-;;     (("sharp-devel" nil nil "white")
-;;      ((music nil bc)
-;;       (music nil bb sh5 sb5 ba sh4 sb4 ba ssh5 sb5 ba ssh4 sb4 ba bb)))
-;;     (("libro-5-test" nil nil "white")
-;;      ((music nil bc sh1 sb1 sh2 sb2 sb3 sh4 sb4 ssh5 sb5 sb6 sh7 sb7 sh8 sb8 bb)))
-;;     (("flat-devel" nil nil "white")
-;;      ((music nil bc f5 bb f2-9 bb f5m bc)))
-;;     (("clef-devel" nil nil "white")
-;;      ((music nil ba maxima7 fclef7 bb cclef7 bc)))
-;;     (("barline-devel" nil nil "white")
-;;      ((music nil ba bl ba dbl ba bldd ba dbldd ba dbldl)))
-;;     (("m1.38-devel" nil nil "white")
-;;      ((music nil cclef7 ba sb1 ba sb2 ba sh3 sb3 bl
-;;        sb2 ba sh4 ba sb4 bl
-;;        sh3 ba sb3 ba sh5 ba sb5 bl
-;;        f4 ba sb4 ba sb5 ba f6 ba sb6 bl
-;;        sb8 ba sb7 ba f6 ba sb6 bl
-;;        f5 ba sb5 ba sbd3 bl
-;;        sh3 ba sb3 ba sb2 ba sb1 bl)))
-;;     (("m3.101-devel" nil nil "white")
-;;      ((music nil cclef5 sb0 sh2 ba sb2 f3 sbd3 sb3 ba sbd3 f6 ba sb6 ba f6 sbd6 sb6 sbd6 f7 ba sb7 ba f7 sbd7 sb7 bl
-;;        sb1 ba sbd1 f2 ba sb2 f2 ba sbd2 f4 sbd4 ba sb4 sbd4 f7 ba sb7 ba f7 ba sbd7 ba sb7 ba sbd7 sb8 bl)))
-;;     (("m2.33-devel" nil nil "white")
-;;      ((music nil cclef7 ba sb4 ba sb3 ba ba bl
-;;        ba sb4 ba sb3 ba bl
-;;        ba sb4 ba sb3 ba bl
-;;        ba sb4 ba sb3 ba bl
-;;        ba sb4 ba sb3 ba bl
-;;        ba sb4 ba sb3 ba bl
-;;        ba sb4 ba sb3 ba bl
-;;        ba sb8 ba sb7 ba bl
-;;        ba sb8 ba sb7 ba bl)
-;;       (music nil maxima7 fclef7 f3 ba sb6 ba sb7 bl
-;;        ba sb4 ba sb7 ba bl
-;;        ba sb6 ba sb5 ba bl
-;;        f6 sb6 ba sb5 ba bl
-;;        m3 m4 m2 m3 bl
-;;        ba sb1 m2 m9 ba bl
-;;        ba sb4 ba sb9 bl
-;;        ba sb7 ba sb6 ba bl
-;;        ba sb8 sb9 ba bl)))
-;;     (("test vicentino21" nil nil "white")
-;;      ((music nil bc sb5 sb4 m1 bl)))
-;;     (("text implementation devel" nil nil "white")
-;;      ((music nil bb m1 m2 m3 m4 m5)
-;;       (text 100 80 (100 800 "text string"))
-;;       (music nil bb sb1 sb2 sb3 sb4 sb5)))
-;;     (("m1.47-devel" nil nil "white")
-;;      ((text 200 150 (780 5300 "Eſſempio di più di Quinta imperfetta accidentale, compoſto & incompoﬆo."))
-;;       (music nil maxima7 fclef7 sb3 sb4 sb5 sb6 sbd7
-;;        cclef5 bb sb4 bb sbd8 bb
-;;        cclef5 bb sh1 bb sb1 bb sbd5 bl
-;;        sh2 sb2 sb3 sb4 sb5 sbd6 bl
-;;        sb8 bb f4 bb sbd4 bb bl
-;;        sb7 sb6 sb5 sb4 sbd3 bl
-;;        bb sb6 bb sbd2 bb bl)
-;;       (text 200 150
-;;  (290 nil "più di quinta")
-;;  (1300 nil "più di quin.")
-;;  (2300 nil "più di quin.")
-;;  (3200 nil "più di quinta")
-;;  (4300 nil "più di quin.")
-;;  (5150 nil "più di quinta")
-;;  (6150 nil "più di quin."))
-;;       (text 200 150
-;;  (290 nil "imper. natur.")
-;;  (1300 nil "imper. nat.")
-;;  (2300 nil "imp. accid.")
-;;  (3200 nil "imper.accid.")
-;;  (4300 nil "imper.acci.")
-;;  (5150 nil "imper. acci.")
-;;  (6150 nil "impe. accid."))
-;;       (text 200 150
-;;  (290 nil "comp.")
-;;  (1300 nil "incomp.")
-;;  (2300 nil "incomp.")
-;;  (3200 nil "comp.")
-;;  (4300 nil "incomp.")
-;;  (5150 nil "comp.")
-;;        (6150 nil "incomp."))))
-;;     (("m2.22-devel" nil nil "white")
-;;      ((text 400 150 (800 nil "Eſſempio della Seſta minore, come in varÿ modi ſi può comporre."))
-;;       (text 200 150
-;;        (320 nil "à due  uoci")
-;;        (1600 nil "à tre  uoci")
-;;        (2800 nil "de ſalti")
-;;        (5200 nil "à due uoci."))
-;;       (music nil cclef7 bb sb7 sb8 ba
-;;        cclef7 ba sb2 sb1 bb bl
-;;        bb sb10 sb9 bl
-;;        sb5 bb sb2 ba
-;;        cclef7 bb sb7 ba sb9 bb
-;;        maxima7 fclef7 ba sb6 sb2
-;;        cclef7 ba rm7 sb7 ba m9 bb
-;;        cclef7 bb sb3 sb2 bl
-;;        rm7 m7 ba sm6 sb9 bl)))
-;;     (("m1.21-devel" nil nil "white")
-;;      ((music nil cclef7 sh6 supermaxima6 bl
-;;        ba sh3 maxima5 bb bb bl
-;;        bb br4 sh2 ba bl
-;;        ba f6 br6 bl
-;;        bb ba f4 br6 bb bl
-;;        bb br5 f4m bb bb bl
-;;        bb cclef7 f6 ba br6)))
-;;     (("dot-test" nil nil "white")
-;;      ((music nil ba sb5 dot6 ba sb6 dot6 ba)))))
+            (860 225 "C ſolfaut")
+            (1157 223 "D laſolre")
+            (1457 151 "E lami")
+            (1687 152 "F faut")
+            (1917 218 "G ſolreut"))
+      (music 2200
+             b22 max7 fclef7 b38 sb2 b38 sb2 b38 sb2 b22 bl
+             b22 fl3 b38 sb3 b38 nat3 b38 sb3 b22 bl
+             b22 sb4 b38 sb4 b38 sb4 b22 bl
+             b22 sb5 b38 sb5 b38 sb5 b22 bl
+             b22 sb6 b38 sb6 b22 bl
+             b22 sb7 b38 sb7 b22 bl
+             b22 sb8 b38 sb8 b38 sb8 b38 bl)
+      (text 70 58
+            (167 nil "la") (263 nil "mi") (347 nil "re")
+            (543 nil "fa") (713 nil "mi")
+            (838 nil "ſol") (935 nil "fa") (1028 nil "ut")
+            (1155 nil "la") (1232 nil "ſol") (1324 nil "re")
+            (1478 nil "la") (1559 nil "mi")
+            (1673 nil "fa") (1770 nil "ut")
+            (1904 nil "ſol") (2001 nil "re") (2072 nil "ut"))
+      (text 60 58
+            (153 nil "per nat.")
+            (834 nil "per b.")
+            (1156 nil "per b.")
+            (1481 nil "per ♮.")
+            (1713 nil "per nat.")
+            (1926 nil "per nat."))
+      (text 60 58
+            (153 nil "per b.")
+            (511 nil "per b.")
+            (835 nil "per ♮.")
+            (1152 nil "per ♮.")
+            (1471 nil "per nat.")
+            (1701 nil "per b.")
+            (1920 nil "per b."))
+      (text 100 58
+            (150 nil "per ♮.")
+            (508 nil "per ♮.")
+            (834 nil "per natura")
+            (1148 nil "per natura")
+            (1921 nil "per ♮."))))
+    (("m1.02" nil nil ,*score-bg-color*)
+     ((text 70 58
+            (90 1974 "Dimoſtratione della mano Cromatica, aſcendente, con li Semitoni minore, e con l'eſſempio."))
+      (text 100 58
+            (41 nil "A lamire")
+            (366 nil "B mi")
+            (680 nil "C ſolfaut")
+            (1002 nil "D laſolre")
+            (1301 nil "E lami")
+            (1613 nil "F faut")
+            (1919 nil "G ſolreut"))
+      (music 2193
+             b22 max7 fclef7 b22 sb2 sh2 b22 sb2 b22 bl
+             b22 sb3 b22 sh3 b22 sb3 b22 bl
+             b22 sb4 b22 sh4 b22 sb4 b22 bl
+             b22 sb5 b38 sh5 b38 sb5 b22 bl
+             b22 sb6 b38 sh6 b38 sb6 b22 bl
+             b22 sb7 b38 sh7 b38 sb7 b22 bl
+             b22 sb8 b22 sh8 b22 sb8 b22 bl b38)
+      (text 60 58
+            (43 nil "la") (121 nil "mi") (206 nil "re")
+            (345 nil "mi")
+            (653 nil "ſol") (740 nil "fa") (835 nil "ut")
+            (959 nil "la") (1044 nil "ſol") (1141 nil "re")
+            (1279 nil "la") (1363 nil "mi")
+            (1567 nil "fa") (1676 nil "ut")
+            (1902 nil "ſol") (1999 nil "re") (2075 nil "ut"))
+      (text 100 58
+            (0 2194 "per nat. ꝑ b. ꝑ ♮. per ♮. per n. ꝑ b. ꝑ ♮ ꝑ b. ꝑ b. ꝑ n. ꝑ ♮. ꝑ nat. per nat. ꝑ b. ꝑ n. ꝑ b. ꝑ ♮."))))
+    (("m1.03" nil nil ,*score-bg-color*)
+     ((text 70 58 (231 1648 "Dimoſtratione della mano Cromatica con li ſemitoni maggiori aſcendenti."))
+      (text 100 58
+            (42 nil "A la mire")
+            (287 nil "B fa b mi")
+            (622 nil "B et C")
+            (866 nil "C ſol fa ut")
+            (1202 nil "D la ſol re")
+            (1527 nil "E la mi")
+            (1778 nil "F fa ut"))
+      (music 2200
+             b38 max7 fclef7 b38 sb2 b38 bl
+             fl3 b38 sb3 b38 nat3 b38 sbd3 bl
+             b38 sb3 b38 sb4 b38 bl
+             b38 sb4 b38 fl5 b38 sb5 b38 bl
+             b38 sb5 b38 fl6 b38 sb6 b38 bl
+             b38 sb6 b38 sb7 b38 bl
+             b38 sb7 b38 fl8 b38 sb8 b38 bl b70)
+      (text 70 58
+            (43 nil "la") (126 nil "mi re")
+            (288 nil "fa") (391 nil "mi")
+            (619 nil "mi fa ſol")
+            (872 nil "ſol fa ut")
+            (1204 nil "la ſol re")
+            (1541 nil "la mi fa")
+            (1794 nil "fa ut re"))
+      (text 70 58
+            (43 nil "ut fa ſol")
+            (295 nil "la ſol re ut")
+            (635 nil "la reut")
+            (883 nil "re mi la")
+            (1195 nil "fa mi ut")
+            (1542 nil "ut re ſol")
+            (1799 nil "mi ſol la"))
+      (text 70 58
+            (5 548 "ꝑ n. ꝑ b.ꝑ ♮. ꝑ b. ꝑ ♮."))))))
