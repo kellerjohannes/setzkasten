@@ -158,4 +158,14 @@
 	    (1642 nil "fa ut")
 	    (1908 nil "ſol re ut"))))
     (("m1.05" nil nil ,*score-bg-color*)
-     ((text 70 58 (115 1903 "Mano della diuiſione del tono in quattro Dieſis En. aſcendenti con lo ſemitono minore."))))))
+     ((text 70 58 (115 1903 "Mano della diuiſione del tono in quattro Dieſis En. aſcendenti con lo ſemitono minore."))
+      (text 100 58
+	    (43 nil "da Alamire à B mi")
+	    (620 nil "da B mi à C ſol fa ut")
+	    (1156 nil "da B fa à C ſol fa ut")
+	    (1673 nil "da C ſol fa ut à D laſol"))
+      (music 2196
+	     max7 fclef7 sb2 b22 sbd2 b22 sh2 b22 sb2 b22 fl3 b22 sbd3 b22 sb3 bl
+	     sb3 b22 sbd3 b22 sh3 b22 sb3 b22 fl4 b22 sbd4 b22 sb4 bl
+	     fl3 b22 sb3 b22 fl3 b22 sbd3 b22 nat3 b22 sb3 b22 sbd3 b22 sb4 bl
+	     sb4 b22 sbd4 b22 sh4 b22 sb4 b22 fl5 b22 sbd5 b22 sb5)))))
