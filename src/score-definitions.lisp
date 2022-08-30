@@ -10,7 +10,7 @@
      ((text 70 58 (1253 875 "Dimoſtratione della Mano Diatonica."))
       (text 100 58
             (130 222 "A lamire")
-            (504 220 "B fa b mi")
+            (504 220 "B fa ♭ mi")
             (860 225 "C ſolfaut")
             (1157 223 "D laſolre")
             (1457 151 "E lami")
@@ -34,19 +34,19 @@
             (1904 nil "ſol") (2001 nil "re") (2072 nil "ut"))
       (text 60 58
             (153 nil "per nat.")
-            (834 nil "per b.")
-            (1156 nil "per b.")
+            (834 nil "per ♭.")
+            (1156 nil "per ♭.")
             (1481 nil "per ♮.")
             (1713 nil "per nat.")
             (1926 nil "per nat."))
       (text 60 58
-            (153 nil "per b.")
-            (511 nil "per b.")
+            (153 nil "per ♭.")
+            (511 nil "per ♭.")
             (835 nil "per ♮.")
             (1152 nil "per ♮.")
             (1471 nil "per nat.")
-            (1701 nil "per b.")
-            (1920 nil "per b."))
+            (1701 nil "per ♭.")
+            (1920 nil "per ♭."))
       (text 100 58
             (150 nil "per ♮.")
             (508 nil "per ♮.")
@@ -81,12 +81,12 @@
             (1567 nil "fa") (1676 nil "ut")
             (1902 nil "ſol") (1999 nil "re") (2075 nil "ut"))
       (text 100 58
-            (0 2194 "per nat. ꝑ b. ꝑ ♮. per ♮. per n. ꝑ b. ꝑ ♮ ꝑ b. ꝑ b. ꝑ n. ꝑ ♮. ꝑ nat. per nat. ꝑ b. ꝑ n. ꝑ b. ꝑ ♮."))))
+            (0 2194 "per nat. ꝑ ♭. ꝑ ♭. per ♮. per n. ꝑ ♭. ꝑ ♮ ꝑ ♭. ꝑ ♭. ꝑ n. ꝑ ♮. ꝑ nat. per nat. ꝑ ♭. ꝑ n. ꝑ ♭. ꝑ ♮."))))
     (("m1.03" nil nil ,*score-bg-color*)
      ((text 70 58 (231 1648 "Dimoſtratione della mano Cromatica con li ſemitoni maggiori aſcendenti."))
       (text 100 58
             (42 nil "A la mire")
-            (287 nil "B fa b mi")
+            (287 nil "B fa ♭ mi")
             (622 nil "B et C")
             (866 nil "C ſol fa ut")
             (1202 nil "D la ſol re")
@@ -117,12 +117,12 @@
             (1542 nil "ut re ſol")
             (1799 nil "mi ſol la"))
       (text 70 58
-            (5 309 "ꝑ n. ꝑ b.ꝑ ♮.")
-	    (325 218 "ꝑ b. ꝑ ♮.")
-	    (644 480 "per ♮.ꝑ n. ꝑ n. ꝑ b.")
-	    (1198 220 "ꝑ n. ꝑ b.")
+            (5 309 "ꝑ n. ꝑ ♭.ꝑ ♮.")
+	    (325 218 "ꝑ ♭. ꝑ ♮.")
+	    (644 480 "per ♮.ꝑ n. ꝑ n. ꝑ ♭.")
+	    (1198 220 "ꝑ n. ꝑ ♭.")
 	    (1542 227 "ꝑ n. ꝑ ♮.")
-	    (1807 213 "ꝑ n.ꝑ b."))))
+	    (1807 213 "ꝑ n.ꝑ ♭."))))
     (("m1.04" nil nil ,*score-bg-color*)
      ((text 70 58 (86 2053 "Dimoſtratione della mano Enarmonica Diatonica, aſcendente con le ſette lettere della Mano."))
       (text 90 58
@@ -142,13 +142,13 @@
 	     b22 sbd7 b38 sbd7 b38 bl
 	     b22 sbd8 b38 sbd8 b38 sbd8 b38 bl b22)
       (text 70 58
-	    (44 354 "ꝑ nat. ꝑ b. ꝑ ♮.")
+	    (44 354 "ꝑ nat. ꝑ ♭. ꝑ ♮.")
 	    (478 139 "per ♮.")
-	    (646 307 "ꝑ b.ꝑ ♮. ꝑ n.")
-	    (994 297 "ꝑ b.ꝑ ♮.ꝑ n.")
+	    (646 307 "ꝑ ♭.ꝑ ♮. ꝑ n.")
+	    (994 297 "ꝑ ♭.ꝑ ♮.ꝑ n.")
 	    (1346 204 "ꝑ ♮. ꝑ n.")
 	    (1594 209 "ꝑ n. ꝑ b.")
-	    (1826 341 "per n.ꝑ b.ꝑ ♮."))
+	    (1826 341 "per n.ꝑ ♭.ꝑ ♮."))
       (text 70 58
 	    (169 nil "la mi re")
 	    (556 nil "mi")
@@ -172,5 +172,5 @@
       (text 70 58
 	    (25 507 "ꝑ ♮. re. mi fa. re. mi.")
 	    (593 530 "per ♮. mi. fa. re. mi. fa.")
-	    (1123 514 "ꝑ b. fa. ſol. re. mi. fa.")
+	    (1123 514 "ꝑ ♭. fa. ſol. re. mi. fa.")
 	    (1669 523 "per n. ut. re. mi. fa.re."))))))
