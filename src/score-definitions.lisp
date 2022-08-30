@@ -140,4 +140,20 @@
 	     b38 sbd5 b38 sbd5 b38 sbd5 b38 bl
 	     b22 sbd4 b38 sbd4 b22 bl
 	     b22 sbd7 b38 sbd7 b38 bl
-	     b22 sbd8 b38 sbd8 b38 sbd8 b38 bl b22)))))
+	     b22 sbd8 b38 sbd8 b38 sbd8 b38 bl b22)
+      (text 70 58
+	    (44 354 "ꝑ nat. ꝑ b. ꝑ ♮.")
+	    (478 139 "per ♮.")
+	    (646 307 "ꝑ b.ꝑ ♮. ꝑ n.")
+	    (994 297 "ꝑ b.ꝑ ♮.ꝑ n.")
+	    (1346 204 "ꝑ ♮. ꝑ n.")
+	    (1594 209 "ꝑ n. ꝑ b.")
+	    (1826 341 "per n.ꝑ b.ꝑ ♮."))
+      (text 70 58
+	    (169 nil "la mi re")
+	    (556 nil "mi")
+	    (695 nil "ſol fa ut")
+	    (1045 nil "la ſol re")
+	    (1386 nil "la mi")
+	    (1642 nil "fa ut")
+	    (1908 nil "ſol re ut"))))))
