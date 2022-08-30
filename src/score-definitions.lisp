@@ -122,4 +122,22 @@
 	    (644 480 "per ♮.ꝑ n. ꝑ n. ꝑ b.")
 	    (1198 220 "ꝑ n. ꝑ b.")
 	    (1542 227 "ꝑ n. ꝑ ♮.")
-	    (1807 213 "ꝑ n.ꝑ b."))))))
+	    (1807 213 "ꝑ n.ꝑ b."))))
+    (("m1.04" nil nil ,*score-bg-color*)
+     ((text 70 58 (86 2053 "Dimoſtratione della mano Enarmonica Diatonica, aſcendente con le ſette lettere della Mano."))
+      (text 90 58
+	    (43 nil "A la mi re")
+	    (459 nil "B mi")
+	    (622 nil "C ſol fa ut")
+	    (983 nil "D la ſol re")
+	    (1320 nil "E la mi")
+	    (1565 nil "F fa ut")
+	    (1809 nil "G ſol re ut"))
+      (music 2214
+	     b38 max7 fclef7 b22 sbd2 b38 sbd2 b38 sbd2 b38 bl
+	     b38 sbd3 b38 bl
+	     b38 sbd4 b38 sbd4 b38 sbd4 b38 bl
+	     b38 sbd5 b38 sbd5 b38 sbd5 b38 bl
+	     b22 sbd4 b38 sbd4 b22 bl
+	     b22 sbd7 b38 sbd7 b38 bl
+	     b22 sbd8 b38 sbd8 b38 sbd8 b38 bl b22)))))

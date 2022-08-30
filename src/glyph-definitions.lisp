@@ -48,7 +48,13 @@
     (glyph-sharp                  sh6    "sharp-6"       "stave" "sharp-large" 48 ,*glyph-height* 6)
     (glyph-sharp                  sh7    "sharp-7"       "stave" "sharp-small" 48 ,*glyph-height* 7)
     (glyph-sharp                  sh8    "sharp-8"       "stave" "sharp-large" 48 ,*glyph-height* 8)
+    (glyph-notehead-dot           sbd2   "semibrevis-dot-2" "stave" "notehead-semibrevis" "enharmonic-dot" 51 ,*glyph-height* 2)
     (glyph-notehead-dot           sbd3   "semibrevis-dot-3" "stave" "notehead-semibrevis" "enharmonic-dot" 51 ,*glyph-height* 3)
+    (glyph-notehead-dot           sbd4   "semibrevis-dot-4" "stave" "notehead-semibrevis" "enharmonic-dot" 51 ,*glyph-height* 4)
+    (glyph-notehead-dot           sbd5   "semibrevis-dot-5" "stave" "notehead-semibrevis" "enharmonic-dot" 51 ,*glyph-height* 5)
+    (glyph-notehead-dot           sbd6   "semibrevis-dot-6" "stave" "notehead-semibrevis" "enharmonic-dot" 51 ,*glyph-height* 6)
+    (glyph-notehead-dot           sbd7   "semibrevis-dot-7" "stave" "notehead-semibrevis" "enharmonic-dot" 51 ,*glyph-height* 7)
+    (glyph-notehead-dot           sbd8   "semibrevis-dot-8" "stave" "notehead-semibrevis" "enharmonic-dot" 51 ,*glyph-height* 8)
     ))
 
 
