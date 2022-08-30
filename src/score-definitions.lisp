@@ -168,4 +168,9 @@
 	     max7 fclef7 sb2 b22 sbd2 b22 sh2 b22 sb2 b22 fl3 b22 sbd3 b22 sb3 bl
 	     sb3 b22 sbd3 b22 sh3 b22 sb3 b22 fl4 b22 sbd4 b22 sb4 bl
 	     fl3 b22 sb3 b22 fl3 b22 sbd3 b22 nat3 b22 sb3 b22 sbd3 b22 sb4 bl
-	     sb4 b22 sbd4 b22 sh4 b22 sb4 b22 fl5 b22 sbd5 b22 sb5)))))
+	     sb4 b22 sbd4 b22 sh4 b22 sb4 b22 fl5 b22 sbd5 b22 sb5)
+      (text 70 58
+	    (25 507 "ꝑ ♮. re. mi fa. re. mi.")
+	    (593 530 "per ♮. mi. fa. re. mi. fa.")
+	    (1123 514 "ꝑ b. fa. ſol. re. mi. fa.")
+	    (1669 523 "per n. ut. re. mi. fa.re."))))))
