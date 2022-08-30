@@ -6,7 +6,7 @@
 <svg stroke=\"black\" width=\"~d\" viewBox=\"0 0 ~d ~d\" id=~s version=\"1.1\"
     xmlns=\"http://www.w3.org/2000/svg\"
     xmlns:xlink=\"http://www.w3.org/1999/xlink\">"
-      (* width 1.0) ; overall scaling
+      (* width 0.5) ; overall scaling
       (* width 1.0) ; x scaling of viewBox
       (* height 1.0) ; y scaling of viewBox
       id-string))
@@ -36,7 +36,7 @@
 
 ;; TODO extract attributes to function
 (defun output-text (x y text-string font-size text-length)
-  (format nil "<text x=\"~a\" y=\"~a\" font-size=\"~a\" alignment-baseline=\"hanging\"~@[ textLength=\"~a\" ~] font-weight=\"normal\" font-family=\"Times, serif\" font-style=\"normal\">~a</text>"
+  (format nil "<text x=\"~a\" y=\"~a\" font-size=\"~a\" alignment-baseline=\"hanging\"~@[ textLength=\"~a\" ~] font-weight=\"normal\" font-family=\"Times, serif\" font-style=\"normal\" stroke=\"black\" fill=\"black\">~a</text>"
       x
       y
       font-size
