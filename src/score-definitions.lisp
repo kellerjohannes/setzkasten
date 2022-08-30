@@ -138,7 +138,7 @@
 	     b38 sbd3 b38 bl
 	     b38 sbd4 b38 sbd4 b38 sbd4 b38 bl
 	     b38 sbd5 b38 sbd5 b38 sbd5 b38 bl
-	     b22 sbd4 b38 sbd4 b22 bl
+	     b22 sbd6 b38 sbd6 b22 bl
 	     b22 sbd7 b38 sbd7 b38 bl
 	     b22 sbd8 b38 sbd8 b38 sbd8 b38 bl b22)
       (text 70 58
@@ -156,4 +156,6 @@
 	    (1045 nil "la ſol re")
 	    (1386 nil "la mi")
 	    (1642 nil "fa ut")
-	    (1908 nil "ſol re ut"))))))
+	    (1908 nil "ſol re ut"))))
+    (("m1.05" nil nil ,*score-bg-color*)
+     ((text 70 58 (115 1903 "Mano della diuiſione del tono in quattro Dieſis En. aſcendenti con lo ſemitono minore."))))))
