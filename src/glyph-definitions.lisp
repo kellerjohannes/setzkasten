@@ -10,6 +10,7 @@
     (component-barline     nil "barline"             0.2   4.75)
     (component-flat        nil "flat-normal"         3.25    2.5    1.1  3.2  0.80)
     (component-flat        nil "flat-short"          3.25    2.5    1.1  2.2  0.80)
+    (component-flat        nil "flat-very-short"     3.25    2.5    1.1  1.8  0.80)
     (component-bequadro    nil "bequadro"            3.25    10   11.25    2.1)
     (component-notehead    nil "notehead-brevis"     0.2   0.6  12.5  2.75 nil nil)
     (component-notehead    nil "notehead-semibrevis" 0.15  0.9    12.5  2.75 t   nil)
@@ -32,6 +33,7 @@
     (glyph-flat                   fl6     "flat-6"        "stave" "flat-short" 30 ,*glyph-height* 6 nil nil)
     (glyph-flat                   fl7     "flat-7"        "stave" "flat-short" 30 ,*glyph-height* 7 nil nil)
     (glyph-flat                   fl8     "flat-8"        "stave" "flat-short" 30 ,*glyph-height* 8 nil nil)
+    (glyph-flat                   fl9     "flat-9"        "stave" "flat-very-short" 30 ,*glyph-height* 9 nil nil)
     (glyph-bequadro               nat3   "bequadro-3"     "stave" "bequadro" 47 ,*glyph-height* 3)
     (glyph-notehead-stem          max7   "maxima-7"      "stave" "notehead-brevis"     "" "stem-minima" 68 ,*glyph-height* 7 :down nil nil nil)
     (glyph-notehead               sb2    "semibrevis-2"  "stave" "notehead-semibrevis" 51 ,*glyph-height* 2)
@@ -41,6 +43,7 @@
     (glyph-notehead               sb6    "semibrevis-6"  "stave" "notehead-semibrevis" 51 ,*glyph-height* 6)
     (glyph-notehead               sb7    "semibrevis-7"  "stave" "notehead-semibrevis" 51 ,*glyph-height* 7)
     (glyph-notehead               sb8    "semibrevis-8"  "stave" "notehead-semibrevis" 51 ,*glyph-height* 8)
+    (glyph-notehead               sb9    "semibrevis-9"  "stave" "notehead-semibrevis" 51 ,*glyph-height* 9)
     (glyph-f-clef-part            fclef7 "f-clef-part-7" "stave" "notehead-semibrevis" "stem-minima" 45 ,*glyph-height* 7)
     (glyph-sharp                  sh2    "sharp-2"       "stave" "sharp-large" 48 ,*glyph-height* 2)
     (glyph-sharp                  sh3    "sharp-3"       "stave" "sharp-small" 48 ,*glyph-height* 3)
@@ -56,6 +59,7 @@
     (glyph-notehead-dot           sbd6   "semibrevis-dot-6" "stave" "notehead-semibrevis" "enharmonic-dot" 51 ,*glyph-height* 6)
     (glyph-notehead-dot           sbd7   "semibrevis-dot-7" "stave" "notehead-semibrevis" "enharmonic-dot" 51 ,*glyph-height* 7)
     (glyph-notehead-dot           sbd8   "semibrevis-dot-8" "stave" "notehead-semibrevis" "enharmonic-dot" 51 ,*glyph-height* 8)
+    (glyph-notehead-dot           sbd9   "semibrevis-dot-9" "stave" "notehead-semibrevis" "enharmonic-dot" 51 ,*glyph-height* 9)
     ))
 
 

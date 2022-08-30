@@ -173,4 +173,20 @@
 	    (25 507 "ꝑ ♮. re. mi fa. re. mi.")
 	    (593 530 "per ♮. mi. fa. re. mi. fa.")
 	    (1123 514 "ꝑ b. fa. ſol. re. mi. fa.")
-	    (1669 523 "per n. ut. re. mi. fa.re."))))))
+	    (1669 523 "per n. ut. re. mi. fa.re."))
+      (text 90 58
+	    (25 575 "per ♭. mi. fa. ſol. re. mi.")
+	    (1669 500 "ſol & fa. diſcendono."))
+      (text 110 58
+	    (10 550 "da D la ſol re à E la mi")
+	    (642 318 "da Elami a F .")
+	    (1016 321 "da F faut à G.")
+	    (1510 636 "da G ſol re ut à A la mi re."))
+      (music 2190
+	     max7 fclef7 b22 sb5 b22 sbd5 b22 sh5 b22 sb5 b22 fl6 b22 sbd6 b22 sbd6 b22 bl
+	     b22 sb6 b22 sbd6 b22 sb7 b22 bl
+	     b22 sb7 b22 sbd7 b22 sh7 b22 sb7 b22 fl8 b22 sbd8 b22 sb8 b22 bl
+	     b22 sb8 b38 sbd8 b38 sh8 sb8 b22
+	     fl9 b22 sbd9 b22 sb9 b22 bl b22)
+      (text 100 58
+	    (0 nil "per n. re. mi. fa. re. mi."))))))
