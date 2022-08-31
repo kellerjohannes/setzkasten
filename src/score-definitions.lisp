@@ -188,7 +188,58 @@
 	     b22 sb7 b22 sbd7 b22 sh7 b22 sb7 b22 fl8 b22 sbd8 b22 sb8 b22 bl
 	     b22 sb8 b38 sbd8 b38 sh8 sb8 b22
 	     fl9 b22 sbd9 b22 sb9 b22 bl b22)
+      (text 80 58
+	    (0 588 "per n. re. mi. fa. re. mi.")
+	    (654 310 "ꝑ n.mi.mi.fa.")
+	    (973 527 "per n. fa. re. mi. fa ſol.")
+	    (1533 570 "per nat. ſol re. mi. fa re."))
+      (text 80 58
+	    (168 464 "la.& ſol diſcendono")
+	    (664 243 "la diſcende")
+	    (982 527 "per ♭.fa.re.mi.fa.re.")
+	    (1529 557 "per ♭.re.mi.fa.re.mi."))
+      (text 70 58
+	    (1552 536 "per ♮.ut.re.mi.fa.re."))))
+    (("m1.06" nil nil ,*score-bg-color*)
+     ((text 70 58 (0 2210 "Mano Enarmonica diſcendente con i ſemitoni minori, nel principio del tono per le ſette lettere della"))
+      (text 70 58 (0 1484 "Mano, con il tono diuiſo in quattro parti:& come ſi à da leggere."))
+      (text 110 58
+	    (162 nil "da A.")
+	    (460 nil "à G.")
+	    (734 nil "da G.")
+	    (1036 nil "à F.")
+	    (1320 nil "da F.")
+	    (1524 nil "à E.")
+	    (1738 nil "da E.")
+	    (1960 nil "à D."))
+      (music 2210
+	     max7 fclef7 b38 sb9 b38 fl9 b38 sbd9 b38 fl9 b38 sb9 b38 sbd8 b38 sb8 bl
+	     sb8 b38 fl8 b38 sbd8 b38 fl8 b38 sb8 b38 sbd7 b38 sb7 bl
+	     b38 b22 sb7 b38 sbd6 b38 sb6 b38 b22 bl
+	     sb6 b22 fl6 sbd6 b22 fl6 sb6 sbd5 b22 sb5 bl)
+      (text 70 58
+	    (10 nil "ꝑ n.")
+	    (130 390 "la. ſol. fa. la. ſol.")
+	    (724 530 "per n. ſol. fa. la. ſol. fa.")
+	    (1302 412 "ꝑn.fa.mi.la.ꝑ diſ.")
+	    (1742 454 "ꝑ♮. la.ſol.fa.mi.re."))
+      (text 70 58
+	    (150 490 "mi.& re. aſcendino")
+	    (864 444 "re.& ut.aſcendeno")
+	    (1374 258 "fa.mi.mi.")
+	    (1842 350 "la.ſol.fa.la. ſol."))
+      (text 70 58
+	    (1382 218 "ꝑ aſcend.")
+	    (1870 262 "mi aſcende,"))
       (text 100 58
-	    (0 nil "per n. re. mi. fa. re. mi.")
-	    (1123 514 "ꝑ ♭. fa. ſol. re. mi. fa.")
-	    (1669 523 "per n. ut. re. mi. fa.re."))))))
+	    (176 nil "da D.")
+	    (500 nil "à C.")
+	    (782 nil "da C.")
+	    (986 nil "à B.")
+	    (1198 nil "da B.")
+	    (1502 nil "à A."))
+      (music 2210
+	     max7 fclef7 b38 sb5 b38 fl5 b38 sbd5 b38 fl5 b38 sb5 b38 sbd4 b38 sb4 b22 bl
+	     b38 sb4 b38 sbd3 b38 sb3 b38 bl
+	     b22 sb3 b38 fl3 b38 sbd3 b38 fl3 b38 sb3 b38 sbd2 b38 sb2 b38 bl
+	     b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38)))))
