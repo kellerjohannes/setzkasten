@@ -28,35 +28,35 @@
 
 (defun create-all ()
   (create-scores *scores*
-         *setzkasten-definition-components*
-         *setzkasten-definition-glyphs*
-         *setzkasten-syntax*))
+                 *setzkasten-definition-components*
+                 *setzkasten-definition-glyphs*
+                 *setzkasten-syntax*))
 
 
 
 (defmacro standard-page ((&key title script) &body body)
   `(with-html-output-to-string (*standard-output* nil :prologue t :indent t)
      (:html :lang "en" :style "background-color:PeachPuff"
-        (:head (:meta :charset "utf-8")
-           (:title ,title)
-           (:link :type "text/css"
-              :rel "stylesheet"
-              :href "/retro.css")
-           ,(when script
-              `(:script :type "text/javascript"
-                (str ,script))))
-        (:body
-         (:div :id "header"
-           (:span :class "strapline"
-              "Setzkasten Output"))
-         ,@body))))
+            (:head (:meta :charset "utf-8")
+                   (:title ,title)
+                   (:link :type "text/css"
+                          :rel "stylesheet"
+                          :href "/retro.css")
+                   ,(when script
+                      `(:script :type "text/javascript"
+                                (str ,script))))
+            (:body
+             (:div :id "header"
+                   (:span :class "strapline"
+                          "Setzkasten Output"))
+             ,@body))))
 
 (defun start-server (port)
   (start (make-instance 'easy-acceptor :port port)))
 
 (defun read-file (infile)
   (with-open-file (instream infile :direction :input
-                   :if-does-not-exist nil)
+                                   :if-does-not-exist nil)
     (when instream
       (let ((string (make-string (file-length instream))))
         (read-sequence string instream)
@@ -68,7 +68,7 @@
     (dolist (score (create-all))
       (htm
        (:div
-    (:h3 (fmt "~&Score '~a':" score))
-    (fmt "~a"
-         (read-file (merge-pathnames *svg-export-path*
-                     (pathname (format nil "~a.svg" score))))))))))
+        (:h3 (fmt "~&Score '~a':" score))
+        (fmt "~a"
+             (read-file (merge-pathnames *svg-export-path*
+                                         (pathname (format nil "~a.svg" score))))))))))
