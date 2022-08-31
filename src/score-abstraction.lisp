@@ -30,6 +30,10 @@
 (defclass voice ()
   ((mobjects :initform (list (make-instance 'mobject))
              :accessor mobjects)
+   (id :initform nil
+       :initarg :id
+       :accessor id
+       :documentation "This symbol can be used to reference the voice internally. It is taken from the score definition. It can occur multiple times within a score, in different sections.")
    (label :initform :inherit
           :initarg :label
           :accessor label
@@ -62,6 +66,15 @@
          :accessor clef
          :documentation "Describes the clef a note is contextualised in. Clef format: (type . line).")))
 
+
+
+
+
+
+
+;;; Lilypond translators
+
+
 (defparameter *dict-ly-duration* '((:maxima . "\\maxima")
                                    (:longa . "\\longa")
                                    (:brevis . "\\breve")
@@ -76,6 +89,13 @@
                                  (3 . "'")
                                  (4 . "''")
                                  (5 . "'''")))
+
+(defparameter *dict-ly-notenames* '(("c1" . "d")
+                                    ("c3" . "bis")
+                                    ("c4" . "c-.")
+                                    (
+                                        ;work
+                                     )))
 
 (defun value->ly-duration (value)
   (cdr (assoc value *dict-ly-duration*)))
