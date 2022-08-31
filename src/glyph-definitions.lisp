@@ -26,6 +26,7 @@
     (glyph-staff                  b22     "blank-22"       "stave" 22 ,*glyph-height*)
     (glyph-staff                  b38     "blank-38"       "stave" 38 ,*glyph-height*)
     (glyph-staff                  b70     "blank-70"       "stave" 70 ,*glyph-height*)
+    (glyph-staff                  b430    "blank-430"      "stave" 430 ,*glyph-height*)
     (glyph-barline                bl     "simple-barline" "stave" "barline" "" 40 ,*glyph-height* 0 0 0 nil)
     (glyph-flat                   fl3     "flat-3"        "stave" "flat-normal" 30 ,*glyph-height* 3 nil nil)
     (glyph-flat                   fl4     "flat-4"        "stave" "flat-normal" 30 ,*glyph-height* 4 nil nil)
