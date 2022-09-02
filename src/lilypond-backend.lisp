@@ -61,55 +61,86 @@
 
 ;;; testscore
 
-(defparameter *testscore* (make-instance 'score))
+(defparameter *testscore* nil)
 
-(add-section *testscore* (make-instance 'section :id "section1"))
-(add-section *testscore* (make-instance 'section :id "section2"))
+(defun reset-score ()
+  (setf *testscore* (make-instance 'score))
 
-(add-voice-to-score *testscore* "section1" (make-instance 'voice :id "canto" :label "Canto"))
-(add-voice-to-score *testscore* "section1" (make-instance 'voice :id "tenor" :label "Tenor"))
+  (add-section *testscore* (make-instance 'section :id "section1" :heading "[A]"))
+  (add-section *testscore* (make-instance 'section :id "section2" :heading "[B]"))
 
-(add-voice-to-score *testscore* "section2" (make-instance 'voice :id "canto" :label "Canto"))
-(add-voice-to-score *testscore* "section2" (make-instance 'voice :id "alto" :label "Alto"))
-(add-voice-to-score *testscore* "section2" (make-instance 'voice :id "tenor" :label "Tenor"))
-(add-voice-to-score *testscore* "section2" (make-instance 'voice :id "basso" :label "Basso"))
+  (add-voice-to-score *testscore* "section1" (make-instance 'voice :id "canto" :label "Canto"))
+  (add-voice-to-score *testscore* "section1" (make-instance 'voice :id "tenor" :label "Tenor"))
 
-(add-mobject-to-score *testscore* "section1" "canto" (make-note "n1" 'd 1 3 :semibrevis nil '(cclef . 1)))
-(add-mobject-to-score *testscore* "section1" "canto" (make-note "n2" 'd 2 3 :semibrevis nil '(cclef . 1)))
-(add-mobject-to-score *testscore* "section1" "canto" (make-note "n3" 'e 1 3 :semibrevis nil '(cclef . 1)))
-(add-mobject-to-score *testscore* "section1" "canto" (make-note "n4" 'e 2 3 :semibrevis nil '(cclef . 1)))
+  (add-voice-to-score *testscore* "section2" (make-instance 'voice :id "canto" :label "Canto"))
+  (add-voice-to-score *testscore* "section2" (make-instance 'voice :id "alto" :label "Alto"))
+  (add-voice-to-score *testscore* "section2" (make-instance 'voice :id "tenor" :label "Tenor"))
+  (add-voice-to-score *testscore* "section2" (make-instance 'voice :id "basso" :label "Basso"))
 
-(add-mobject-to-score *testscore* "section1" "tenor" (make-note "n1" 'd 1 3 :semibrevis nil '(fclef . 4)))
-(add-mobject-to-score *testscore* "section1" "tenor" (make-note "n2" 'd 2 3 :semibrevis nil '(fclef . 4)))
-(add-mobject-to-score *testscore* "section1" "tenor" (make-note "n3" 'e 1 3 :semibrevis nil '(fclef . 4)))
-(add-mobject-to-score *testscore* "section1" "tenor" (make-note "n4" 'e 2 3 :semibrevis nil '(fclef . 4)))
+  (add-mobject-to-score *testscore* "section1" "canto" (make-note "n1" 'd 1 3 :semibrevis nil '(cclef . 1)))
+  (add-mobject-to-score *testscore* "section1" "canto" (make-note "n2" 'd 2 3 :semibrevis nil '(cclef . 1)))
+  (add-mobject-to-score *testscore* "section1" "canto" (make-note "n3" 'e 1 3 :semibrevis nil '(cclef . 1)))
+  (add-mobject-to-score *testscore* "section1" "canto" (make-note "n4" 'e 2 3 :semibrevis nil '(cclef . 1)))
 
-(add-mobject-to-score *testscore* "section2" "canto" (make-note "n1" 'c 1 3 :semibrevis nil '(cclef . 4)))
-(add-mobject-to-score *testscore* "section2" "alto" (make-note "n1" 'c 1 3 :semibrevis nil '(cclef . 4)))
-(add-mobject-to-score *testscore* "section2" "tenor" (make-note "n1" 'c 1 3 :semibrevis nil '(cclef . 4)))
-(add-mobject-to-score *testscore* "section2" "basso" (make-note "n1" 'c 1 3 :semibrevis nil '(fclef . 4)))
+  (add-mobject-to-score *testscore* "section1" "tenor" (make-note "n1" 'd 1 3 :semibrevis nil '(fclef . 4)))
+  (add-mobject-to-score *testscore* "section1" "tenor" (make-note "n2" 'd 2 3 :semibrevis nil '(fclef . 4)))
+  (add-mobject-to-score *testscore* "section1" "tenor" (make-note "n3" 'e 1 3 :semibrevis nil '(fclef . 4)))
+  (add-mobject-to-score *testscore* "section1" "tenor" (make-note "n4" 'e 2 3 :semibrevis nil '(fclef . 4)))
+
+  (add-mobject-to-score *testscore* "section2" "canto" (make-note "n1" 'c 1 3 :semibrevis nil '(cclef . 4)))
+  (add-mobject-to-score *testscore* "section2" "alto" (make-note "n1" 'c 1 3 :semibrevis nil '(cclef . 4)))
+  (add-mobject-to-score *testscore* "section2" "tenor" (make-note "n1" 'c 1 3 :semibrevis nil '(cclef . 4)))
+  (add-mobject-to-score *testscore* "section2" "basso" (make-note "n1" 'c 1 3 :semibrevis nil '(fclef . 4))))
 
 (defmethod generate-ly-code ((mobject mobject))
   (key->ly-pitch (key mobject) (value mobject)))
 
 (defmethod generate-ly-code ((voice voice))
-  (format nil "~&\\new Staff~&{~&~{~a ~}~&}"
+  (format nil "
+~&              \\new Staff \\with { instrumentName = \"~a\"}
+~&              {
+~&                 ~{~a ~}
+~&              }"
+          (label voice)
           (mapcar (lambda (mobject)
                     (generate-ly-code mobject))
                   (mobjects voice))))
 
+
 (defmethod generate-ly-code ((section section))
-  (format nil "\\center-column~&{~&\\line~&{~&\\score~&{~&<<~{~&~a~}~&>>~&}~&}~&}"
+  (format nil "
+    \\center-column
+~&    {
+~&      \\line
+~&      {
+~&        \\score
+~&        {
+~&          <<~{
+~&              ~a~}
+~&          >>
+~&        }
+~&      }
+~&    }"
           (mapcar (lambda (voice)
                     (generate-ly-code voice))
                   (voices section))))
 
 (defmethod generate-ly-code ((score score))
-  (format nil "\\version \"2.22.2\"~&\\markup{~&~{~a~&~}~&}"
+  (format nil "
+\\version \"2.22.2\"
+~&\\markup
+~&{
+~&  ~{~a ~&~}
+~&}"
           (mapcar (lambda (section)
                     (generate-ly-code section))
                   (sections score))))
 
-(defmethod write-ly ((score score))
-  (with-open-file (file "~/Vicentino21/edition/setzkasten/ly-export/textscore.ly" :direction :output :if-exists :supersede :if-does-not-exist :create)
-    (format file "~a" (generate-ly-code score))))
+(defun write-ly ()
+  (reset-score)
+
+  (with-open-file (file "~/Vicentino21/edition/setzkasten/ly-export/textscore.ly"
+                        :direction :output
+                        :if-exists :supersede
+                        :if-does-not-exist :create)
+    (format file "~a" (generate-ly-code *testscore*))))

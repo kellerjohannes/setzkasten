@@ -15,20 +15,6 @@
                  :accessor voice-labels
                  :documentation "This alist contains pairs of voice ids and strings that will be printed as instrument names in front of staves. They can be overridden by local label definitions in voice instances.")))
 
-(defmethod add-section ((score score) section-instance)
-  (setf (sections score) (append (sections score) (list section-instance))))
-
-(defmethod get-section ((score score) section-id)
-  (find section-id (sections score) :key #'id :test #'string=))
-
-(defmethod add-voice-to-score ((score score) section-id voice-instance)
-  (add-voice (get-section score section-id) voice-instance))
-
-(defmethod add-mobject-to-score ((score score) section-id voice-id mobject-instance)
-  (add-mobject (get-voice (get-section score section-id) voice-id)
-               mobject-instance))
-
-
 (defclass section ()
   ((voices :initform nil
            :accessor voices)
@@ -41,13 +27,6 @@
             :accessor heading
             :documentation "This string will be displayed as a heading, flush-left above the section.")))
 
-(defmethod add-voice ((section section) voice-instance)
-  (setf (voices section) (append (voices section) (list voice-instance))))
-
-(defmethod get-voice ((section section) voice-id)
-  (find voice-id (voices section) :key #'id :test #'string=))
-
-
 (defclass voice ()
   ((mobjects :initform nil
              :accessor mobjects)
@@ -59,12 +38,6 @@
           :initarg :label
           :accessor label
           :documentation "This string will be displayed as instrument labels at the beginning of a stave. When set to :inherit it will be taken from the labels defined on score level.")))
-
-(defmethod add-mobject ((voice voice) mobject-instance)
-  (setf (mobjects voice) (append (mobjects voice) (list mobject-instance))))
-
-(defmethod get-mobject ((voice voice) mobject-id)
-  (find mobject-id (mobjects voice) :key #'id :test #'string=))
 
 (defclass mobject ()
   ((key :initform nil
@@ -87,6 +60,31 @@
          :accessor clef
          :documentation "Describes the clef a note is contextualised in. Clef format: (type . line).")))
 
+
+(defmethod add-mobject ((voice voice) mobject-instance)
+  (setf (mobjects voice) (append (mobjects voice) (list mobject-instance))))
+
+(defmethod get-mobject ((voice voice) mobject-id)
+  (find mobject-id (mobjects voice) :key #'id :test #'string=))
+
+(defmethod add-section ((score score) section-instance)
+  (setf (sections score) (append (sections score) (list section-instance))))
+
+(defmethod get-section ((score score) section-id)
+  (find section-id (sections score) :key #'id :test #'string=))
+
+(defmethod add-voice ((section section) voice-instance)
+  (setf (voices section) (append (voices section) (list voice-instance))))
+
+(defmethod get-voice ((section section) voice-id)
+  (find voice-id (voices section) :key #'id :test #'string=))
+
+(defmethod add-voice-to-score ((score score) section-id voice-instance)
+  (add-voice (get-section score section-id) voice-instance))
+
+(defmethod add-mobject-to-score ((score score) section-id voice-id mobject-instance)
+  (add-mobject (get-voice (get-section score section-id) voice-id)
+               mobject-instance))
 
 (defmethod make-note (id lettera ordine octave value dottedp clef)
   (make-instance 'mobject :id id
