@@ -1,7 +1,7 @@
 (in-package :setzkasten)
 
 (defclass score ()
-  ((sections :initform (list (make-instance 'section))
+  ((sections :initform nil
              :accessor sections)
    (filename :initform ""
              :initarg :filename
@@ -15,8 +15,22 @@
                  :accessor voice-labels
                  :documentation "This alist contains pairs of voice ids and strings that will be printed as instrument names in front of staves. They can be overridden by local label definitions in voice instances.")))
 
+(defmethod add-section ((score score) section-instance)
+  (setf (sections score) (append (sections score) (list section-instance))))
+
+(defmethod get-section ((score score) section-id)
+  (find section-id (sections score) :key #'id :test #'string=))
+
+(defmethod add-voice-to-score ((score score) section-id voice-instance)
+  (add-voice (get-section score section-id) voice-instance))
+
+(defmethod add-mobject-to-score ((score score) section-id voice-id mobject-instance)
+  (add-mobject (get-voice (get-section score section-id) voice-id)
+               mobject-instance))
+
+
 (defclass section ()
-  ((voices :initform (list (make-instance 'voice))
+  ((voices :initform nil
            :accessor voices)
    (id :initform nil
        :initarg :id
@@ -27,8 +41,15 @@
             :accessor heading
             :documentation "This string will be displayed as a heading, flush-left above the section.")))
 
+(defmethod add-voice ((section section) voice-instance)
+  (setf (voices section) (append (voices section) (list voice-instance))))
+
+(defmethod get-voice ((section section) voice-id)
+  (find voice-id (voices section) :key #'id :test #'string=))
+
+
 (defclass voice ()
-  ((mobjects :initform (list (make-instance 'mobject))
+  ((mobjects :initform nil
              :accessor mobjects)
    (id :initform nil
        :initarg :id
@@ -39,20 +60,20 @@
           :accessor label
           :documentation "This string will be displayed as instrument labels at the beginning of a stave. When set to :inherit it will be taken from the labels defined on score level.")))
 
+(defmethod add-mobject ((voice voice) mobject-instance)
+  (setf (mobjects voice) (append (mobjects voice) (list mobject-instance))))
+
+(defmethod get-mobject ((voice voice) mobject-id)
+  (find mobject-id (mobjects voice) :key #'id :test #'string=))
 
 (defclass mobject ()
   ((key :initform nil
                  :initarg :key
                  :accessor key
                  :documentation "This describes the pitch of a note as an organ key: (lettera ordine octave). 'lettera' is one of the seven root note letters, as symbols. 'ordine' is 1-6, referencing the rows of keys. 'octave' is 1-5, where middle-C is 3. If NIL, the object is treated as a rest.")
-   (chromatic-accidental :initform nil
-                         :initarg :chromatic-accidental
-                         :accessor chromatic-accidental
-                         :documentation "This describes the alteration sign in front of a note: :natural, :sharp, :flat.")
-   (enharmonic-accidental :initform nil
-                          :initarg :enharmonic-accidental
-                          :accessor enharmonic-accidental
-                          :documentation "This describes the enharmonic alteration sign of a dot above the note.")
+   (id :initform nil
+       :initarg :id
+       :accessor id)
    (value :initform nil
           :initarg :value
           :accessor value
@@ -67,45 +88,31 @@
          :documentation "Describes the clef a note is contextualised in. Clef format: (type . line).")))
 
 
+(defmethod make-note (id lettera ordine octave value dottedp clef)
+  (make-instance 'mobject :id id
+                          :key (list lettera ordine octave)
+                          :value value
+                          :dottedp dottedp
+                          :clef clef))
 
+(defmethod make-rest (id value dottedp)
+  (make-instance 'mobject :id id
+                          :key nil
+                          :value value
+                          :dottedp dottedp
+                          :clef nil))
 
+(defmethod print-element ((voice voice))
+  (format t "~&    Voice ~a:" (id voice))
+  (dolist (mobject (mobjects voice))
+    (format t "~&      Musical Object ~a:~&" (id mobject))))
 
+(defmethod print-element ((section section))
+  (format t "~&  Section ~a:" (id section))
+  (dolist (voice (voices section))
+    (print-element voice)))
 
-
-;;; Lilypond translators
-
-
-(defparameter *dict-ly-duration* '((:maxima . "\\maxima")
-                                   (:longa . "\\longa")
-                                   (:brevis . "\\breve")
-                                   (:semibrevis . "1")
-                                   (:minima . "2")
-                                   (:semiminima . "4")
-                                   (:croma . "8")
-                                   (:semicroma . "16")))
-
-(defparameter *dict-ly-octave* '((1 . ",")
-                                 (2 . "")
-                                 (3 . "'")
-                                 (4 . "''")
-                                 (5 . "'''")))
-
-(defparameter *dict-ly-notenames* '(("c1" . "d")
-                                    ("c3" . "bis")
-                                    ("c4" . "c-.")
-                                    (
-                                        ;work
-                                     )))
-
-(defun value->ly-duration (value)
-  (cdr (assoc value *dict-ly-duration*)))
-
-(defun octave->ly-octave (octave)
-  (cdr (assoc octave *dict-ly-octave*)))
-
-(defun key->ly-notename (lettera ordine)
-  ;; work: 2 classes of mappings
-  )
-
-(defun key->ly-pitch (key)
-  ())
+(defmethod print-element ((score score))
+  (format t "~&Score:")
+  (dolist (section (sections score))
+    (print-element section)))
