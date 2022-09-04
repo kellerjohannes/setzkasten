@@ -117,19 +117,86 @@
 
 
 (defparameter *test-data*
-  '(("m1.13" nil nil "white")
-    ((music nil
-      max7 fclef7 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb5 b22 sb4 b22 sb3 b38 bl))))
+  '((:metadata
+     (:file-name "m1.13"))
+    (:preamble-types
+     (:width nil)
+     (:height nil)
+     (:background "white"))
+    (:preamble-lilypond
+     (:title "Descritione Test"))
+    (:data
+     (:text 50 78 (230 nil "Testext."))
+     (:music nil
+      max7 fclef7 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb5 b22 sb4 b22 sb3 b38 bl)
+     (:music 3748 max7 fclef7 b22 sb4 bl))))
 
 
 ;;; parsing
 
 (defparameter *list-ignore* '(b22 b38))
+(defparameter *list-notes* '(sb1 sb2 sb3 sb4 sb5 sb6 sb7 sb8 sb9 sb10))
 
-(defmethod populate-score ((score score) data)
-  (do ((clef-state nil)
-       (accidental-state nil)
-       (f-clef-flag nil)
-       (remaining-data data (rest remaining-data)))
-      ((null remaining-data) nil)
-    ()))
+
+
+(defun extract-item (category sub-category data)
+  (second (find sub-category (rest (find category data :key #'first))
+                :key #'first)))
+
+(defun filter-music (data)
+  (remove nil
+          (remove-if #'numberp
+                     (remove :music
+                             (reduce #'append
+                                     (remove-if-not (lambda (candidate)
+                                                      (eq :music (first candidate)))
+                                                    (rest (find :data data :key #'first))))))))
+
+
+
+
+(defparameter *score* nil)
+
+(defun push-note (score section-state voice-state accidental-state clef-state glyph)
+  (declare (ignore glyph))
+  (unless section-state
+    (setf section-state "anonymous")
+    (add-section score (make-instance 'section :id section-state :heading "")))
+  (unless voice-state
+    (setf voice-state "anonymous")
+    (add-voice-to-score score section-state (make-instance 'voice :id voice-state :label "")))
+  ;; TODO convert glyph into key / value
+  ;; TODO id-generation
+  (add-mobject-to-score score
+                        section-state
+                        voice-state
+                        (make-instance 'mobject :clef clef-state
+                                                :id "[test]"
+                                                :key '(c 1 3)
+                                                :value :semibrevis))
+  (values section-state voice-state accidental-state))
+
+(defun populate-score (data)
+  (let ((*score* (make-instance 'score :title (extract-item :preamble-lilypond :title data))))
+    (do* ((clef-state nil)
+          (accidental-state nil)
+          (f-clef-flag nil)
+          (section-state nil)
+          (voice-state nil)
+          (remaining-data (filter-music data) (rest remaining-data))
+          (candidate (first remaining-data) (first remaining-data)))
+         ((null remaining-data) nil)
+      (cond ((eq candidate 'max7) (setf f-clef-flag t))
+            ((eq candidate 'fclef7)
+             (setf f-clef-flat nil)
+             (setf clef-state '(:c . 4)))
+            ((member candidate *list-notes*)
+             (multiple-value-bind (new-section new-voice new-accidental)
+                 (push-note *score* section-state voice-state accidental-state clef-state candidate)
+               ;; possible to bind directly?
+               (setf section-state new-section)
+               (setf voice-state new-voice)
+               (setf accidental-state new-accidental)))
+            (t (unless (member candidate *list-ignore*)
+                 (format t "~&Symbol ~a unknown." candidate)))))
+    *score*))

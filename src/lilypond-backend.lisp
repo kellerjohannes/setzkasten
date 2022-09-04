@@ -220,11 +220,11 @@ dot = {
                     (generate-section-ly-code section))
                   (sections score))))
 
-(defun write-ly ()
-  (reset-score)
-
-  (with-open-file (file "~/Vicentino21/edition/setzkasten/ly-export/textscore.ly"
+(defun write-ly (score)
+  ;;(reset-score)
+  (with-open-file (file "~/Vicentino21/edition/setzkasten/ly-export/testscore.ly"
                         :direction :output
                         :if-exists :supersede
                         :if-does-not-exist :create)
-    (format file "~a" (generate-score-ly-code *testscore*))))
+    (print-element score)
+    (format file "~a" (generate-score-ly-code score))))
