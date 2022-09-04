@@ -151,14 +151,80 @@
                                      (remove-if-not (lambda (candidate)
                                                       (eq :music (first candidate)))
                                                     (rest (find :data data :key #'first))))))))
+(defparameter *dict-values*
+  ;; TODO complete
+  '(("sb" . :semibrevis)))
 
+(defparameter *gamut*
+  '((:c . 1) (:d . 1) (:e . 1) (:f . 1) (:g . 1) (:a . 1) (:b . 1)
+    (:c . 2) (:d . 2) (:e . 2) (:f . 2) (:g . 2) (:a . 2) (:b . 2)
+    (:c . 3) (:d . 3) (:e . 3) (:f . 3) (:g . 3) (:a . 3) (:b . 3)
+    (:c . 4) (:d . 4) (:e . 4) (:f . 4) (:g . 4) (:a . 4) (:b . 4)
+    (:c . 5)))
 
+(defparameter *dict-clef-gamut*
+  '((:c . (:c . 3))
+    (:f . (:f . 2))
+    (:g . (:g . 3))))
+
+(defun glyph-name->value (name)
+  "`name': string such as 'sb', will return `:semibrevis'. If there is the letter 'd' attached to the glyph name, the second return value will be T (meaning there is an enharmonic dot above the note)."
+  (values
+   ;;; BUG: suffix needs to be removed from search string
+   (cdr (assoc name *dict-values* :test #'string=))
+   (let ((suffix (subseq name (1- (length name)))))
+     (cond ((string= "d" suffix) :diesis)
+           ((string= "c" suffix) :comma)))))
+
+(defun split-string-at-digit (str)
+  "Splits a string before the first occurrence of a digit."
+  (let ((split-point (position-if #'digit-char-p str)))
+    (cons (subseq str 0 split-point)
+          (subseq str split-point))))
+
+(defun clef->root-pitch (clef)
+  "Takes a `clef' in the form of '(:c . 7) and returns a root pitch of the clefs reference note in the form of '(:c . 3), which is pitchclass and octave indicator."
+  (cdr (assoc (first clef) *dict-clef-gamut*)))
+
+(defun glyph->root-pitch (clef staff-position)
+  "`glyph': string such as 'sb', `clef': '(:c . 7), `staff-position' of notehead: 0-10. Returns a note in the form of '(:c . 3), where the cdr is the octave indicator."
+  (nth (- (position (clef->root-pitch clef) *gamut* :test #'equal)
+          (- (cdr clef) staff-position))
+       *gamut*))
+
+(defparameter *glyph-key*
+  '(((:c nil nil) (:c 1))
+    ((:c nil :diesis) (:c 4))
+    ((:c :sharp nil) (:d 2))
+    ((:d :flat nil) (:d 3))
+    ((:d :flat :diesis) (:d 5))
+    ((:d nil :comma) (:d 6))
+    ((:d nil nil) (:d 1))
+    ((:d nil :diesis) (:d 4))
+    ((:d :sharp nil) (:e 2))
+    ((:e :flat nil) (:e 3))
+    ((:e :flat :diesis) (:e 5))
+    ((:e nil :comma) (:e 6))))
+
+(defun glyph->key (root accidental enharmonic)
+  "`root' in the form of '(:c . 2) where 2 is the octave indicator, `accidental' in the form of :sharp, `enharmonicp' is T if there is a dot above the notehead. Returns a Vicentino-key in the form of '(:c 5 2) where 5 is the 'ordine' and 2 is the octave indicator."
+  ;;; TODO reshuffle all these things:
+  ;;; look up in *glyph-key*, recombine with octave
+  )
+
+;;; TODO test
+(defun parse-note (clef accidental glyph)
+  "`clef' in the form of '(:c . 7), `accidental' in the form of :sharp, :flat, :natural, `glyph' in the form of 'sb3'. Returns a value pair with a `score'-class compatible key in the form of '(:d 1 2) where :d is the Vicentino-note-identifier, 1 is the 'ordine' and 2 is the octave indicator. The second value is the rhythmic value of the note in the form of `:semibrevis'."
+  (let* ((split-glyph (split-string-at-digit glyph))
+         (root-pitch (glyph->root-pitch clef (cdr split-glyph))))
+    (multiple-value-bind (note-value enharmonic)
+        (glyph-name->value (car split-glyph))
+      (values (glyph->key root-pitch accidental enharmonic) note-value))))
 
 
 (defparameter *score* nil)
 
-(defun push-note (score section-state voice-state accidental-state clef-state glyph)
-  (declare (ignore glyph))
+(defun push-note (score section-state voice-state accidental-state clef-state counter glyph)
   (unless section-state
     (setf section-state "anonymous")
     (add-section score (make-instance 'section :id section-state :heading "")))
@@ -166,13 +232,15 @@
     (setf voice-state "anonymous")
     (add-voice-to-score score section-state (make-instance 'voice :id voice-state :label "")))
   ;; TODO convert glyph into key / value
-  ;; TODO id-generation
   (add-mobject-to-score score
                         section-state
                         voice-state
                         (make-instance 'mobject :clef clef-state
-                                                :id "[test]"
-                                                :key '(c 1 3)
+                                                :id (format nil "~a-~a-~a"
+                                                            section-state
+                                                            voice-state
+                                                            counter)
+                                                :key '(:c 1 3)
                                                 :value :semibrevis))
   (values section-state voice-state accidental-state))
 
@@ -183,6 +251,7 @@
           (f-clef-flag nil)
           (section-state nil)
           (voice-state nil)
+          (object-id-counter 0)
           (remaining-data (filter-music data) (rest remaining-data))
           (candidate (first remaining-data) (first remaining-data)))
          ((null remaining-data) nil)
@@ -192,11 +261,18 @@
              (setf clef-state '(:c . 4)))
             ((member candidate *list-notes*)
              (multiple-value-bind (new-section new-voice new-accidental)
-                 (push-note *score* section-state voice-state accidental-state clef-state candidate)
+                 (push-note *score*
+                            section-state
+                            voice-state
+                            accidental-state
+                            clef-state
+                            object-id-counter
+                            candidate)
                ;; possible to bind directly?
                (setf section-state new-section)
                (setf voice-state new-voice)
-               (setf accidental-state new-accidental)))
+               (setf accidental-state new-accidental)
+               (incf object-id-counter)))
             (t (unless (member candidate *list-ignore*)
                  (format t "~&Symbol ~a unknown." candidate)))))
     *score*))

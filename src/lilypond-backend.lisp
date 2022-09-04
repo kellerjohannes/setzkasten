@@ -123,20 +123,20 @@
   (add-voice-to-score *testscore* "section2" (make-instance 'voice :id "tenor" :label "Tenor"))
   (add-voice-to-score *testscore* "section2" (make-instance 'voice :id "basso" :label "Basso"))
 
-  (add-mobject-to-score *testscore* "section1" "canto" (make-note "n1" 'd 1 3 :semibrevis nil '(:c . 1)))
-  (add-mobject-to-score *testscore* "section1" "canto" (make-note "n2" 'd 2 3 :semibrevis nil '(:c . 1)))
-  (add-mobject-to-score *testscore* "section1" "canto" (make-note "n3" 'e 1 3 :semibrevis nil '(:c . 2)))
-  (add-mobject-to-score *testscore* "section1" "canto" (make-note "n4" 'e 2 3 :semibrevis nil '(:c . 1)))
+  (add-mobject-to-score *testscore* "section1" "canto" (make-note "n1" :d 1 3 :semibrevis nil '(:c . 1)))
+  (add-mobject-to-score *testscore* "section1" "canto" (make-note "n2" :d 2 3 :semibrevis nil '(:c . 1)))
+  (add-mobject-to-score *testscore* "section1" "canto" (make-note "n3" :e 1 3 :semibrevis nil '(:c . 2)))
+  (add-mobject-to-score *testscore* "section1" "canto" (make-note "n4" :e 2 3 :semibrevis nil '(:c . 1)))
 
-  (add-mobject-to-score *testscore* "section1" "tenor" (make-note "n1" 'd 1 3 :semibrevis nil '(:c . 4)))
-  (add-mobject-to-score *testscore* "section1" "tenor" (make-note "n2" 'd 2 3 :semibrevis nil '(:c . 4)))
-  (add-mobject-to-score *testscore* "section1" "tenor" (make-note "n3" 'e 5 3 :semibrevis nil '(:c . 4)))
-  (add-mobject-to-score *testscore* "section1" "tenor" (make-note "n4" 'e 2 3 :semibrevis nil '(:c . 4)))
+  (add-mobject-to-score *testscore* "section1" "tenor" (make-note "n1" :d 1 3 :semibrevis nil '(:c . 4)))
+  (add-mobject-to-score *testscore* "section1" "tenor" (make-note "n2" :d 2 3 :semibrevis nil '(:c . 4)))
+  (add-mobject-to-score *testscore* "section1" "tenor" (make-note "n3" :e 5 3 :semibrevis nil '(:c . 4)))
+  (add-mobject-to-score *testscore* "section1" "tenor" (make-note "n4" :e 2 3 :semibrevis nil '(:c . 4)))
 
-  (add-mobject-to-score *testscore* "section2" "canto" (make-note "n1" 'c 1 3 :semibrevis nil '(:c . 1)))
-  (add-mobject-to-score *testscore* "section2" "alto" (make-note "n1" 'c 1 3 :semibrevis nil '(:c . 3)))
-  (add-mobject-to-score *testscore* "section2" "tenor" (make-note "n1" 'c 1 3 :semibrevis nil '(:c . 4)))
-  (add-mobject-to-score *testscore* "section2" "basso" (make-note "n1" 'c 1 3 :semibrevis nil '(:f . 4))))
+  (add-mobject-to-score *testscore* "section2" "canto" (make-note "n1" :c 1 3 :semibrevis nil '(:c . 1)))
+  (add-mobject-to-score *testscore* "section2" "alto" (make-note "n1"  :c 1 3 :semibrevis nil '(:c . 3)))
+  (add-mobject-to-score *testscore* "section2" "tenor" (make-note "n1" :c 1 3 :semibrevis nil '(:c . 4)))
+  (add-mobject-to-score *testscore* "section2" "basso" (make-note "n1" :c 1 3 :semibrevis nil '(:f . 4))))
 
 
 
