@@ -58,7 +58,7 @@
    (clef :initform nil
          :initarg :clef
          :accessor clef
-         :documentation "Describes the clef a note is contextualised in. Clef format: (type . line).")))
+         :documentation "Describes the clef a note is contextualised in. Clef format: (type . line). Type is :c, :f or :g.")))
 
 
 (defmethod add-mobject ((voice voice) mobject-instance)
@@ -114,3 +114,22 @@
   (format t "~&Score:")
   (dolist (section (sections score))
     (print-element section)))
+
+
+(defparameter *test-data*
+  '(("m1.13" nil nil "white")
+    ((music nil
+      max7 fclef7 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb5 b22 sb4 b22 sb3 b38 bl))))
+
+
+;;; parsing
+
+(defparameter *list-ignore* '(b22 b38))
+
+(defmethod populate-score ((score score) data)
+  (do ((clef-state nil)
+       (accidental-state nil)
+       (f-clef-flag nil)
+       (remaining-data data (rest remaining-data)))
+      ((null remaining-data) nil)
+    ()))
