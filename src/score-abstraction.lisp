@@ -129,7 +129,7 @@
      (:text 50 78 (230 nil "Testext."))
      (:music nil
       max7 fclef7 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb5 b22 sb4 b22 sb3 b38 bl)
-     (:music 3748 max7 fclef7 b22 sb4 bl))))
+     )))
 
 
 ;;; parsing
@@ -187,9 +187,9 @@
   (cdr (assoc (first clef) *dict-clef-gamut*)))
 
 (defun glyph->root-pitch (clef staff-position)
-  "`glyph': string such as 'sb', `clef': '(:c . 7), `staff-position' of notehead: 0-10. Returns a note in the form of '(:c . 3), where the cdr is the octave indicator."
+  "`glyph': string such as 'sb', `clef': '(:c . 7), `staff-position' of notehead as a string: 0-10. Returns a note in the form of '(:c . 3), where the cdr is the octave indicator."
   (nth (- (position (clef->root-pitch clef) *gamut* :test #'equal)
-          (- (cdr clef) staff-position))
+          (- (cdr clef) (parse-integer staff-position)))
        *gamut*))
 
 (defparameter *glyph-key*
@@ -208,13 +208,14 @@
 
 (defun glyph->key (root accidental enharmonic)
   "`root' in the form of '(:c . 2) where 2 is the octave indicator, `accidental' in the form of :sharp, `enharmonicp' is T if there is a dot above the notehead. Returns a Vicentino-key in the form of '(:c 5 2) where 5 is the 'ordine' and 2 is the octave indicator."
-  ;;; TODO reshuffle all these things:
-  ;;; look up in *glyph-key*, recombine with octave
-  )
+  (let ((root-ordine (second (find (list (first root) accidental enharmonic)
+                                   *glyph-key*
+                                   :test #'equal))))
+    (append root-ordine (list (cdr root)))))
 
 ;;; TODO test
 (defun parse-note (clef accidental glyph)
-  "`clef' in the form of '(:c . 7), `accidental' in the form of :sharp, :flat, :natural, `glyph' in the form of 'sb3'. Returns a value pair with a `score'-class compatible key in the form of '(:d 1 2) where :d is the Vicentino-note-identifier, 1 is the 'ordine' and 2 is the octave indicator. The second value is the rhythmic value of the note in the form of `:semibrevis'."
+  "`clef' in the form of '(:c . 7), `accidental' in the form of :sharp, :flat, :natural, `glyph' in the form of a string like 'sb3'. Returns a value pair with a `score'-class compatible key in the form of '(:d 1 2) where :d is the Vicentino-note-identifier, 1 is the 'ordine' and 2 is the octave indicator. The second value is the rhythmic value of the note in the form of `:semibrevis'."
   (let* ((split-glyph (split-string-at-digit glyph))
          (root-pitch (glyph->root-pitch clef (cdr split-glyph))))
     (multiple-value-bind (note-value enharmonic)
@@ -240,7 +241,9 @@
                                                             section-state
                                                             voice-state
                                                             counter)
-                                                :key '(:c 1 3)
+                                                :key (parse-note clef-state
+                                                                 accidental-state
+                                                                 (symbol-name glyph))
                                                 :value :semibrevis))
   (values section-state voice-state accidental-state))
 
