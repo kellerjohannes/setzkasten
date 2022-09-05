@@ -1,3 +1,12 @@
+;;; TODOs:
+;;; - debug glyph name parsing: dotted rhythms
+;;; - create parser state class, use dynamic global instance to deal with it
+;;; - implement section and voice tags in source data
+;;; - implement voice label list in preamble
+;;; - solve voice order problem
+
+
+
 (in-package :setzkasten)
 
 (defclass score ()
@@ -100,13 +109,42 @@
                           :dottedp dottedp
                           :clef nil))
 
+(defparameter *dict-value-number* '((:semibrevis . 1)
+                                    (:brevis . 2)
+                                    (:longa . 4)
+                                    (:maxima . 8)
+                                    (:minima . 1/2)
+                                    (:semiminima . 1/4)
+                                    (:croma . 1/8)
+                                    (:biscroma . 1/16)))
+
+(defun value->number (value)
+  (cdr (assoc value *dict-value-number*)))
+
+(defmethod find-shortest-duration ((score score))
+  (let ((result 8))
+    (mapc (lambda (section)
+            (mapc (lambda (voice)
+                    (mapc (lambda (mobject)
+                            (let ((duration (value mobject)))
+                              (format t "~&Duration: ~a" duration)
+                              (when (and duration (< (value->number duration) result))
+                                (setf result (value->number duration)))))
+                          (mobjects voice)))
+                  (voices section)))
+          (sections score))
+    result))
+
 (defmethod print-element ((voice voice))
-  (format t "~&    Voice ~a:" (id voice))
+  (format t "~&~4,0tVoice ~a:" (id voice))
   (dolist (mobject (mobjects voice))
-    (format t "~&      Musical Object ~a:~&" (id mobject))))
+    (format t "~&~6,0tMusical Object ~a:~&~8,0tKey = ~a~&~8,0tValue = ~a"
+            (id mobject)
+            (key mobject)
+            (value mobject))))
 
 (defmethod print-element ((section section))
-  (format t "~&  Section ~a:" (id section))
+  (format t "~&~2,0tSection ~a:" (id section))
   (dolist (voice (voices section))
     (print-element voice)))
 
@@ -128,14 +166,15 @@
     (:data
      (:text 50 78 (230 nil "Testext."))
      (:music nil
-      max7 fclef7 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb5 b22 sb4 b22 sb3 b38 bl)
+      max7 fclef7 b22 sb3 b22 sb4 b22 sb5 b22 m6 b22 sb5 b22 sb4 b22 sb3 b38 bl)
      )))
 
 
 ;;; parsing
 
-(defparameter *list-ignore* '(b22 b38))
-(defparameter *list-notes* '(sb1 sb2 sb3 sb4 sb5 sb6 sb7 sb8 sb9 sb10))
+(defparameter *list-ignore* '(b22 b38 bl))
+(defparameter *list-notes* '(sb0 sb1 sb2 sb3 sb4 sb5 sb6 sb7 sb8 sb9 sb10
+                             m0 m1 m2 m3 m4 m5 m6 m7 m8 m9 m10))
 
 
 
@@ -153,7 +192,8 @@
                                                     (rest (find :data data :key #'first))))))))
 (defparameter *dict-values*
   ;; TODO complete
-  '(("sb" . :semibrevis)))
+  '(("sb" . :semibrevis)
+    ("m" . :minima)))
 
 (defparameter *gamut*
   '((:c . 1) (:d . 1) (:e . 1) (:f . 1) (:g . 1) (:a . 1) (:b . 1)
@@ -169,12 +209,14 @@
 
 (defun glyph-name->value (name)
   "`name': string such as 'sb', will return `:semibrevis'. If there is the letter 'd' attached to the glyph name, the second return value will be T (meaning there is an enharmonic dot above the note)."
-  (values
+  (let ((result (cdr (assoc name *dict-values* :test #'string-equal))))
+     (unless result (format t "~&Warning: unknown glyph name ~s." name))
+    (values
    ;;; BUG: suffix needs to be removed from search string
-   (cdr (assoc name *dict-values* :test #'string=))
-   (let ((suffix (subseq name (1- (length name)))))
-     (cond ((string= "d" suffix) :diesis)
-           ((string= "c" suffix) :comma)))))
+     result
+     (let ((suffix (subseq name (1- (length name)))))
+       (cond ((string= "d" suffix) :diesis)
+             ((string= "c" suffix) :comma))))))
 
 (defun split-string-at-digit (str)
   "Splits a string before the first occurrence of a digit."
@@ -193,27 +235,53 @@
        *gamut*))
 
 (defparameter *glyph-key*
-  '(((:c nil nil) (:c 1))
-    ((:c nil :diesis) (:c 4))
-    ((:c :sharp nil) (:d 2))
-    ((:d :flat nil) (:d 3))
+  '(((:c nil nil)       (:c 1))
+    ((:c nil :diesis)   (:c 4))
+    ((:c :sharp nil)    (:d 2))
+    ((:d :flat nil)     (:d 3))
     ((:d :flat :diesis) (:d 5))
-    ((:d nil :comma) (:d 6))
-    ((:d nil nil) (:d 1))
-    ((:d nil :diesis) (:d 4))
-    ((:d :sharp nil) (:e 2))
-    ((:e :flat nil) (:e 3))
+    ((:d nil nil)       (:d 1))
+    ((:d nil :comma)    (:d 6))
+    ((:d nil :diesis)   (:d 4))
+    ((:d :sharp nil)    (:e 3))
+    ((:e :flat nil)     (:e 2))
     ((:e :flat :diesis) (:e 5))
-    ((:e nil :comma) (:e 6))))
+    ((:e nil nil)       (:e 1))
+    ((:e nil :comma)    (:e 6))
+    ((:e nil :diesis)   (:e 4))
+    ((:e :sharp nil)    (:f 3))
+    ((:f nil nil)       (:f 1))
+    ((:f nil :diesis)   (:f 4))
+    ((:f :sharp nil)    (:g 2))
+    ((:g :flat nil)     (:g 3))
+    ((:g :flat :diesis) (:g 5))
+    ((:g nil nil)       (:g 1))
+    ((:g nil :comma)    (:g 6))
+    ((:g nil :diesis)   (:g 4))
+    ((:g :sharp nil)    (:a 2))
+    ((:a :flat nil)     (:a 3))
+    ((:a :flat :diesis) (:a 5))
+    ((:a nil nil)       (:a 1))
+    ((:a nil :comma)    (:a 6))
+    ((:a nil :diesis)   (:a 4))
+    ((:a :sharp nil)    (:b 3))
+    ((:a :flat nil)     (:b 2))
+    ((:a :flat :diesis) (:b 5))
+    ((:b nil nil)       (:b 1))
+    ((:b nil :comma)    (:b 6))
+    ((:b nil :diesis)   (:b 4))
+    ((:b :sharp nil)    (:c 3))))
 
 (defun glyph->key (root accidental enharmonic)
   "`root' in the form of '(:c . 2) where 2 is the octave indicator, `accidental' in the form of :sharp, `enharmonicp' is T if there is a dot above the notehead. Returns a Vicentino-key in the form of '(:c 5 2) where 5 is the 'ordine' and 2 is the octave indicator."
   (let ((root-ordine (second (find (list (first root) accidental enharmonic)
                                    *glyph-key*
-                                   :test #'equal))))
+                                   :test #'equalp
+                                   :key #'first))))
+    (unless root-ordine (format t "~&Warning: glyph ~s not found."
+                                (list (first root) accidental enharmonic)))
     (append root-ordine (list (cdr root)))))
 
-;;; TODO test
 (defun parse-note (clef accidental glyph)
   "`clef' in the form of '(:c . 7), `accidental' in the form of :sharp, :flat, :natural, `glyph' in the form of a string like 'sb3'. Returns a value pair with a `score'-class compatible key in the form of '(:d 1 2) where :d is the Vicentino-note-identifier, 1 is the 'ordine' and 2 is the octave indicator. The second value is the rhythmic value of the note in the form of `:semibrevis'."
   (let* ((split-glyph (split-string-at-digit glyph))
@@ -233,18 +301,18 @@
     (setf voice-state "anonymous")
     (add-voice-to-score score section-state (make-instance 'voice :id voice-state :label "")))
   ;; TODO convert glyph into key / value
-  (add-mobject-to-score score
-                        section-state
-                        voice-state
-                        (make-instance 'mobject :clef clef-state
-                                                :id (format nil "~a-~a-~a"
-                                                            section-state
-                                                            voice-state
-                                                            counter)
-                                                :key (parse-note clef-state
-                                                                 accidental-state
-                                                                 (symbol-name glyph))
-                                                :value :semibrevis))
+  (multiple-value-bind (key value)
+      (parse-note clef-state accidental-state (symbol-name glyph))
+    (add-mobject-to-score score
+                          section-state
+                          voice-state
+                          (make-instance 'mobject :clef clef-state
+                                                  :id (format nil "~a-~a-~a"
+                                                              section-state
+                                                              voice-state
+                                                              counter)
+                                                  :key key
+                                                  :value value)))
   (values section-state voice-state accidental-state))
 
 (defun populate-score (data)
@@ -261,7 +329,7 @@
       (cond ((eq candidate 'max7) (setf f-clef-flag t))
             ((eq candidate 'fclef7)
              (setf f-clef-flat nil)
-             (setf clef-state '(:c . 4)))
+             (setf clef-state '(:f . 7)))
             ((member candidate *list-notes*)
              (multiple-value-bind (new-section new-voice new-accidental)
                  (push-note *score*

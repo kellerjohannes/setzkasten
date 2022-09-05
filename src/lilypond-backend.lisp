@@ -52,22 +52,22 @@
                                     ("B5" "\\dot b" "es" "-.")
                                     ("B6" "b" "" "^\\markup{,}")))
 
-(defparameter *dict-ly-clefs* '(("C4" . "tenor")
-                                ("C3" . "alto")
-                                ("C2" . "mezzosoprano")
+(defparameter *dict-ly-clefs* '(("C7" . "tenor")
+                                ("C5" . "alto")
+                                ("C3" . "mezzosoprano")
                                 ("C1" . "soprano")
-                                ("F4" . "bass")
-                                ("F3" . "varbaritone")
-                                ("G2" . "treble")
+                                ("F7" . "bass")
+                                ("F5" . "varbaritone")
+                                ("G3" . "treble")
                                 ("G1" . "french")))
 
-(defparameter *dict-ly-modern-clefs* '(("C4" . "treble_8")
+(defparameter *dict-ly-modern-clefs* '(("C7" . "treble_8")
+                                       ("C5" . "treble")
                                        ("C3" . "treble")
-                                       ("C2" . "treble")
                                        ("C1" . "treble")
-                                       ("F4" . "bass")
-                                       ("F3" . "bass")
-                                       ("G2" . "treble")
+                                       ("F7" . "bass")
+                                       ("F5" . "bass")
+                                       ("G3" . "treble")
                                        ("G1" . "treble")))
 
 (defun value->ly-duration (value)
@@ -90,7 +90,7 @@
             (third notename))))
 
 (defun clef->ly-clef (clef modernp)
-  "Clef is '(type . position), `type' is :c, :f or :g, `position' is 1-5. Set `modernp' to T to get modern key equivalents."
+  "Clef is '(type . position), `type' is :c, :f or :g, `position' is 0-10. Set `modernp' to T to get modern key equivalents."
   (cdr (assoc (format nil "~a~a" (symbol-name (car clef)) (cdr clef))
               (if modernp
                   *dict-ly-modern-clefs*
@@ -123,20 +123,32 @@
   (add-voice-to-score *testscore* "section2" (make-instance 'voice :id "tenor" :label "Tenor"))
   (add-voice-to-score *testscore* "section2" (make-instance 'voice :id "basso" :label "Basso"))
 
-  (add-mobject-to-score *testscore* "section1" "canto" (make-note "n1" :d 1 3 :semibrevis nil '(:c . 1)))
-  (add-mobject-to-score *testscore* "section1" "canto" (make-note "n2" :d 2 3 :semibrevis nil '(:c . 1)))
-  (add-mobject-to-score *testscore* "section1" "canto" (make-note "n3" :e 1 3 :semibrevis nil '(:c . 2)))
-  (add-mobject-to-score *testscore* "section1" "canto" (make-note "n4" :e 2 3 :semibrevis nil '(:c . 1)))
+  (add-mobject-to-score *testscore* "section1" "canto"
+                        (make-note "n1" :d 1 3 :semibrevis nil '(:c . 1)))
+  (add-mobject-to-score *testscore* "section1" "canto"
+                        (make-note "n2" :d 2 3 :semibrevis nil '(:c . 1)))
+  (add-mobject-to-score *testscore* "section1" "canto"
+                        (make-note "n3" :e 1 3 :semibrevis nil '(:c . 2)))
+  (add-mobject-to-score *testscore* "section1" "canto"
+                        (make-note "n4" :e 2 3 :semibrevis nil '(:c . 1)))
 
-  (add-mobject-to-score *testscore* "section1" "tenor" (make-note "n1" :d 1 3 :semibrevis nil '(:c . 4)))
-  (add-mobject-to-score *testscore* "section1" "tenor" (make-note "n2" :d 2 3 :semibrevis nil '(:c . 4)))
-  (add-mobject-to-score *testscore* "section1" "tenor" (make-note "n3" :e 5 3 :semibrevis nil '(:c . 4)))
-  (add-mobject-to-score *testscore* "section1" "tenor" (make-note "n4" :e 2 3 :semibrevis nil '(:c . 4)))
+  (add-mobject-to-score *testscore* "section1" "tenor"
+                        (make-note "n1" :d 1 3 :semibrevis nil '(:c . 4)))
+  (add-mobject-to-score *testscore* "section1" "tenor"
+                        (make-note "n2" :d 2 3 :semibrevis nil '(:c . 4)))
+  (add-mobject-to-score *testscore* "section1" "tenor"
+                        (make-note "n3" :e 5 3 :semibrevis nil '(:c . 4)))
+  (add-mobject-to-score *testscore* "section1" "tenor"
+                        (make-note "n4" :e 2 3 :semibrevis nil '(:c . 4)))
 
-  (add-mobject-to-score *testscore* "section2" "canto" (make-note "n1" :c 1 3 :semibrevis nil '(:c . 1)))
-  (add-mobject-to-score *testscore* "section2" "alto" (make-note "n1"  :c 1 3 :semibrevis nil '(:c . 3)))
-  (add-mobject-to-score *testscore* "section2" "tenor" (make-note "n1" :c 1 3 :semibrevis nil '(:c . 4)))
-  (add-mobject-to-score *testscore* "section2" "basso" (make-note "n1" :c 1 3 :semibrevis nil '(:f . 4))))
+  (add-mobject-to-score *testscore* "section2" "canto"
+                        (make-note "n1" :c 1 3 :semibrevis nil '(:c . 1)))
+  (add-mobject-to-score *testscore* "section2" "alto"
+                        (make-note "n1"  :c 1 3 :semibrevis nil '(:c . 3)))
+  (add-mobject-to-score *testscore* "section2" "tenor"
+                        (make-note "n1" :c 1 3 :semibrevis nil '(:c . 4)))
+  (add-mobject-to-score *testscore* "section2" "basso"
+                        (make-note "n1" :c 1 3 :semibrevis nil '(:f . 4))))
 
 
 
@@ -159,7 +171,10 @@
     (format nil "~
 ~14,0t\\new Staff \\with { instrumentName = \"~a\"} {
 ~16,0t\\override Staff.TimeSignature.stencil = ##f
-~16,0t~a~{~a ~}
+~16,0t\\override Staff.NoteHead.style = #'baroque
+~16,0t~a
+~16,0t\\cadenzaOn~{~a ~}
+~16,0t\\cadenzaOff
 ~14,0t}"
             (label voice)
             (unless headingp
@@ -173,7 +188,8 @@
                     (mobjects voice)))))
 
 
-(defmethod generate-section-ly-code ((section section))
+(defmethod generate-section-ly-code ((section section) shortest-duration)
+  "`shortest-duration' in Lilypond note value (1/2 for minima)."
   (format nil "~
 ~6,0t\\center-column {
 ~8,0t\\line {
@@ -181,12 +197,19 @@
 ~12,0t<<
 ~{~&~a~}
 ~12,0t>>
+~12,0t\\layout {
+~14,0t\\context {
+~16,0t\\Score
+~16,0t\\override SpacingSpanner.common-shortest-duration = #(ly:make-moment ~a)
+~14,0t}
+~12,0t}
 ~10,0t}
 ~8,0t}
 ~6,0t}"
           (mapcar (lambda (voice)
                     (generate-voice-ly-code voice (heading section)))
-                  (voices section))))
+                  (voices section))
+          shortest-duration))
 
 (defmethod generate-score-ly-code ((score score))
   (format nil "~
@@ -217,14 +240,15 @@ dot = {
           ;; alternative: fill-line instead of line, only works if ly linewidth is set sanely
           (title score)
           (mapcar (lambda (section)
-                    (generate-section-ly-code section))
+                    (generate-section-ly-code section (find-shortest-duration score)))
                   (sections score))))
 
 (defun write-ly (score)
+  ;;if testing manually, don't forget to call 'reset-score in REPL
   ;;(reset-score)
   (with-open-file (file "~/Vicentino21/edition/setzkasten/ly-export/testscore.ly"
                         :direction :output
                         :if-exists :supersede
                         :if-does-not-exist :create)
-    (print-element score)
+    ;;(print-element score)
     (format file "~a" (generate-score-ly-code score))))
