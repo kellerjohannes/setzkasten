@@ -413,4 +413,81 @@
             (998 nil "mi")
             (1136 nil "fa")
             (1306 nil "re")
-            (1396 nil "mi"))))))
+            (1396 nil "mi"))))
+    (("m1.17" nil nil ,*score-bg-color*)
+     ((text 90 58
+            (36 691 "Tono diuiſo in 4. parti aſcen.")
+            (754 650 "To.diuiſo in 4. parti aſcen."))
+      (music 1400
+             cclef7 b38 sb4 b38 sbd4 b22 sh4 b22 sbd4 b38 fl5 b38 sbd5 b38 sb5 b38
+             cclef7 b38 sb4 b38 sbd4 b38 sh4 b22 sb4 b38 fl5 b38 sbd5 b38 sb5 bl)
+      (text 90 58
+            (113 nil "ut")
+            (203 nil "re")
+            (344 nil "mi")
+            (517 nil "fa")
+            (604 nil "re")
+            (801 nil "re")
+            (890 nil "mi")
+            (1058 nil "fa")
+            (1206 nil "re")
+            (1295 nil "mi"))))
+    ;; attention, sharp-dot is doubtful
+    (("m1.18" nil nil ,*score-bg-color*)
+     ((music nil
+             cclef7 b38 sb5 b38 fl5 b38 sbd5 b22 sh4 b22 sb4 b38 sbd4 b38 sb4 b38
+             cclef7 b38 fl6 b38 sb5 b38 fl5 b38 sbd5 b38 fl5 b38 sb5 b22 sbd4 b38 sb4 b22 bl
+             b22 sb4 b38 fl4 b38 sbd4 b22 fl4 b22 sb4 b38 sbd3 b38 sb3 b38 sbd2 b22 b56)
+      (text 70 58
+            (120 nil "la")
+            (263 nil "ſol")
+            (400 nil "fa")
+            (493 nil "la")
+            (572 nil "ſol")
+            (858 nil "la")
+            (1022 nil "ſol")
+            (1188 nil "fa")
+            (1281 nil "mi")
+            (1365 nil "re")
+            (1506 nil "ſol")
+            (1670 nil "fa")
+            (1813 nil "la")
+            (1899 nil "ſol")
+            (1990 nil "fa")
+            (2064 nil "mi")
+            (2135 nil "mi"))
+      (text 70 58
+            (116 nil "per ♮. incitato")
+            (850 nil "per ♭. molle")
+            (1502 nil "per natura"))))
+    (("m1.19" nil nil ,*score-bg-color*)
+     ((music 2168
+             cclef7 sh6 max6 bl
+             b22 sh3 longa5 b38 b38 bl
+             b38 b22 br4 sh2 b22 bl
+             b22 fl6 b22 br6 b22 bl
+             b38 b22 fl4 br6 b38 bl
+             b38 br5 flrev4 b38 b38 bl
+             b38 cclef7 fl6 b22 nat6 br6 b22 bl
+             b38 nat4 br6 b38 bl
+             b38 br6 nat4 b22 b38 bl
+             )
+      (text 70 58
+            (38 nil "per tutta")
+            (263 nil "ꝑ la metà")
+            (496 nil "ꝑ la metà")
+            (734 nil "ꝑ tutta")
+            (913 nil "ꝑ la metà")
+            (1155 nil "ꝑ la metà")
+            (1484 nil "per tutta")
+            (1729 nil "ꝑla metà")
+            (1968 222 "ꝑ la metà"))
+      (text 70 58
+            (271 nil "dinanzi")
+            (532 nil "doppò")
+            (941 nil "dinanzi")
+            (1173 nil "doppò")
+            (1735 nil "dinanzi")
+            (1977 nil "doppò"))))))
+
+;; to be done: S. 34, example with enharmonic ligatures
