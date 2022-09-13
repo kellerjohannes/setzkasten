@@ -266,6 +266,7 @@
         (1756 nil "da ᴅ.")
         (2012 nil "à ᴇ."))
       (music 2202
+            ;; achtung, siehe Maniates S. 65, ev. Korrekturen nötig
          max7 fclef7 sb2 b22 sbd2 b22 fl3 b22 sb3 b22 fl3 b22 sbd3 b22 sb3 bl
          b22 fl3 b22 sb3 b22 fl3 b22 sbd3 bl
          sb3 b22 sbd3 b22 sb4 bl
@@ -488,6 +489,9 @@
             (941 nil "dinanzi")
             (1173 nil "doppò")
             (1735 nil "dinanzi")
-            (1977 nil "doppò"))))))
+            (1977 nil "doppò"))))
+    (("special-early-music-performer" nil nil ,*score-bg-color*)
+     ((music nil
+             b22 cclef7 b38 sb4 b38 sbd4 b38 fl5 b38 sb5 b38 fl5 b38 sbd5 b38 sb5 b38 b38)))))
 
 ;; to be done: S. 34, example with enharmonic ligatures
