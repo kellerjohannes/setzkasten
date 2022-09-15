@@ -33,7 +33,8 @@
     ("cf" (insert "ꜰ"))
     ("cs" (insert "ꜱ"))
     ("q" (insert "Ɋ"))
-    ("z" (insert "ȥ"))))
+    ("z" (insert "ȥ"))
+    ("apo" (insert "ʼ"))))
 
 
 (global-set-key (kbd "C-M-k") 'jk/unicode-entry)
