@@ -471,8 +471,7 @@
              b38 br5 flrev4 b38 b38 bl
              b38 cclef7 fl6 b22 nat6 br6 b22 bl
              b38 nat4 br6 b38 bl
-             b38 br6 nat4 b22 b38 bl
-             )
+             b38 br6 nat4 b22 b38 bl)
       (text 70 58
             (38 nil "per tutta")
             (263 nil "ꝑ la metà")
@@ -490,8 +489,9 @@
             (1173 nil "doppò")
             (1735 nil "dinanzi")
             (1977 nil "doppò"))))
-    (("special-early-music-performer" nil nil ,*score-bg-color*)
-     ((music nil
-             b22 cclef7 b38 sb4 b38 sbd4 b38 fl5 b38 sb5 b38 fl5 b38 sbd5 b38 sb5 b38 b38)))))
+    ;; (("special-early-music-performer" nil nil ,*score-bg-color*)
+    ;;  ((music nil
+    ;;          b22 cclef7 b38 sb4 b38 sbd4 b38 fl5 b38 sb5 b38 fl5 b38 sbd5 b38 sb5 b38 b38)))
+    ))
 
 ;; to be done: S. 34, example with enharmonic ligatures
