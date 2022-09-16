@@ -16,12 +16,12 @@
 
 (defmacro define-setzkasten-class (class-name super-class class-docstring &rest parameters)
   "Creates a simple class with parameters."
-  `(defclass ,class-name ,super-class 
+  `(defclass ,class-name ,super-class
      ,(mapcar (lambda (par)
-		`(,(first par) :initarg ,(make-keyword (first par))
-			       :initform ,(second par)
-			       :accessor ,(first par)
-			       :documentation ,(third par)))
+        `(,(first par) :initarg ,(make-keyword (first par))
+                   :initform ,(second par)
+                   :accessor ,(first par)
+                   :documentation ,(third par)))
        parameters)
      (:documentation ,class-docstring)))
 
@@ -181,7 +181,8 @@
   (dot-alignment :center "'center for centered above, 'left for flush above the left edge of the notehead, 'right for flush above the right edge of the notehead. Left and  right are used for enharmonic ligatures.")
   (dot-above-staff nil "T if dot is placed above top staff line, nil if dot is placed just above the notehead.")
   (dot-above-staff-offset 1 "Vertical offset proportional to distance between staff lines in case 'dot-above-staff' is T.")
-  (dot-component nil "Instance of component-dot. If nil, no dot will be generated."))
+  (dot-component nil "Instance of component-dot. If nil, no dot will be generated.")
+  (dot-staff-position-correction nil "nil if standard behaviour is requested, otherwise vertical correction of staffposition."))
 
 (define-setzkasten-class glyph-notehead-stem (glyph-notehead-dot)
   "Specification for the casting of a note stem, as a subcomponent of a notehead with an optional enharmonic dot."

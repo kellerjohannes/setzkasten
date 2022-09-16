@@ -101,7 +101,8 @@
       (notehead-position 5)
       (dot-above-staff nil)
       (dot-above-staff-offset 1)
-      (dot-alignment :center)))
+      (dot-alignment :center)
+      (dot-staff-position-correction nil)))
     (glyph-notehead-stem
      ((id "glyph-notehead-stem")
       (staff-component :instance)
@@ -114,8 +115,9 @@
       (stem-direction :up)
       (dot-above-staff nil)
       (dot-above-staff-offset 1)
-      (dot-above-stem-offset 0.8))
-     ((dot-alignment :center)))
+      (dot-above-stem-offset 0.8)
+      (dot-alignment :center))
+     ())
     (glyph-notehead-flag
      ((id "glyph-notehead-flag")
       (staff-component :instance)
@@ -201,17 +203,17 @@
 
 (defun print-setzkasten-syntax (syntax-definition)
   (mapc (lambda (el)
-	  (format t "Element ~s:~&  Manually to define:~&~{    ~a~&~}~&  Predefined:~&~{    ~a~&~}~%"
-		  (symbol-name (first el))
-		  (mapcar (lambda (par)
-			    (format nil "~a [~a]"
-				    (symbol-name (first par))
-				    (second par)))
-			  (second el))
-		  (mapcar (lambda (par)
-			    (format nil "~a: ~s"
-				    (symbol-name (first par))
-				    (second par)))
-			  (third el))))
-	syntax-definition)
+      (format t "Element ~s:~&  Manually to define:~&~{    ~a~&~}~&  Predefined:~&~{    ~a~&~}~%"
+          (symbol-name (first el))
+          (mapcar (lambda (par)
+                (format nil "~a [~a]"
+                    (symbol-name (first par))
+                    (second par)))
+              (second el))
+          (mapcar (lambda (par)
+                (format nil "~a: ~s"
+                    (symbol-name (first par))
+                    (second par)))
+              (third el))))
+    syntax-definition)
   nil)

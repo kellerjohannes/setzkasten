@@ -1,6 +1,6 @@
 (in-package :setzkasten)
 
-(defparameter *score-margins* '(10 10 10 10)) ;
+(defparameter *score-margins* '(10 10 10 10))
 
 (defparameter *score-bg-color* "white")
 (defparameter *font-height* 58)
@@ -492,6 +492,131 @@
     ;; (("special-early-music-performer" nil nil ,*score-bg-color*)
     ;;  ((music nil
     ;;          b22 cclef7 b38 sb4 b38 sbd4 b38 fl5 b38 sb5 b38 fl5 b38 sbd5 b38 sb5 b38 b38)))
-    ))
 
-;; to be done: S. 34, example with enharmonic ligatures
+    (("m1.20" nil nil ,*score-bg-color*)
+     ((music 2218
+             cclef7 b22 brd4 b22 b38 bl
+             b27 b27 b27 brdl5 b27 b27 b27 bl
+             b27 b27 b27 brdr5 b22 b22 b22 bl
+             b27 b27 b27 sbd5 b22 bl
+             b27 b27 b27 sbdl7 b22 b22 b22 bl
+             b22 b22 sbdr4 b22 b22 b22 bl
+             cclef7 b22 fl6 b22 br5 b22 flrev4 bl
+             b22 fl4 b22 brd4 b22 bl
+             b38 b22 fl3 b22 brd4 b38 bl)
+      (text 70 58
+            (43 nil "ꝑ tutta")
+            (218 nil "ꝑ la parte")
+            (454 nil "ꝑ la parte")
+            (691 nil "per tutta")
+            (911 nil "ꝑ la parte")
+            (1154 nil "ꝑ la parte")
+            (1384 nil "per la metà")
+            (1677 nil "ꝑ tutta")
+            (1907 nil "per la metà"))
+      (text 90 58
+            (234 nil "dinanzi")
+            (455 nil "doppo")
+            (910 nil "dinanzi")
+            (1155 nil "doppò")
+            (1391 nil "doppò")
+            (1909 nil "dinanzi"))
+      (music 2200
+             cclef7 b27 b27 b27 brdl5 b22 flrev4 b27 b27 b27 bl
+             b27 b27 b27 sbd5 b22 flrev4 b22 b27 b27 bl
+             b27 b27 b27 b27 md4 b22 b22 b27 bl
+             b27 b27 b27 mdl4 b27 b27 b27 b27 bl
+             b27 b27 b27 b27 smdr3 b27 b27 b27 bl b677)
+      (text 70 58
+            (68 nil "la prima me")
+            (362 nil "& la metà ſe")
+            (682 nil "per tutta")
+            (955 nil "ꝑ la metà")
+            (1229 nil "ꝑ la metà"))
+      (text 70 58
+            (66 nil "tà ᴇ.et la ſe")
+            (362 nil "conda è ᴄ.ᴇ.")
+            (957 nil "dinanzi")
+            (1227 nil "doppò"))
+      (text 70 58
+            (70 nil "conda c."))))
+    (("m1.21" nil nil ,*score-bg-color*)
+     ((text 90 58
+            (212 1795 "ᴇſſempio delli gradi,delli ᴅieſis minori ᴇnarmonici, aſcendenti & diſcendenti."))
+      (music 2207
+             cclef7 b38 sb4 b27 b38 b27 sbd4 b38 b27 b22 bl
+             b38 sb6 b38 sbd6 b22 b22 bl
+             b38 sb7 b38 sbd7 b38 bl
+             b38 sb8 b38 sbd8 b38 bl
+             b38 sb5 b38 sbd5 b38 bl
+             b38 b22 sb4 b38 sbd4 b38 bl
+             b38 sb3 b38 sbd3 b22 bl
+             b22 sb2 b38 sbd2 b38 bl)
+      (text 70 58
+            (46 nil "ᴅieſis minore")
+            (412 nil "ᴅi.min.")
+            (664 nil "ᴅi.min.")
+            (916 nil "ᴅi. min.")
+            (1171 nil "ᴅi. min.")
+            (1421 nil "ᴅi. min.")
+            (1703 nil "ᴅi. min.")
+            (1943 nil "ᴅi.min."))))
+    (("m1.22" nil nil ,*score-bg-color*)
+     ((text 90 58
+            (166 1861 "ᴇſſempio delli gradi,delli ᴅieſis maggiori ᴇnarmonici,aſcendenti & diſcendenti."))
+      (music 2202
+             cclef7 b22 sbd2 b27 sb3 b22 bl
+             sbd4 b27 fl5 b38 sb5 b22 bl
+             b38 sbd6 b38 sb7 b38 bl
+             b38 sbd8 b38 fl9 b27 sb9 b38 bl
+             b38 fl9 b27 sb9 b27 sbd8 b38 bl
+             b38 fl8 b38 sb8 b27 sbd7 bl
+             b27 sb7 b27 sbd6 bl
+             sbd5 b38 fl5 b27 sb5 bl)
+      (text 70 58
+            (0 nil "ᴅieſis mag.")
+            (290 nil "ᴅies.mag.")
+            (550 nil "ᴅies.mag.")
+            (806 nil "ᴅies.mag.")
+            (1100 nil "ᴅies.mag.")
+            (1411 nil "ᴅies.mag.")
+            (1700 nil "ᴅies.ma.")
+            (1929 nil "ᴅies. mag."))))
+    (("m1.23" nil nil ,*score-bg-color*)
+     ((music 2214
+             cclef7 b38 sb2 b22 sbd2 b22 sb3 b22 bl
+             b22 b27 sb3 b38 sbd3 b38 fl4 b38 sb4 b38 fl4 b38 sbd4 b27 sb4 b27 bl
+             b22 sb4 b22 sbd4 b22 sh4 b22 sb4 b22 b22 fl5 b22 sbd5 b22 sb5 b22 bl
+             b27 sb8 b22 fl8 b22 sbd8 b22 fl8 b22 sb8 b22 sbd7 b38 sb7 b38 bl)
+      (text 70 58
+            (0 325 "due ᴅieſis in.")
+            (339 631 "4. ᴅieſis in un tono aſcen.")
+            (972 580 "4. ᴅieſis in un tono aſc.")
+            (1588 617 "4.ᴅieſis in un tono diſc."))
+      (text 70 58
+            (0 nil "un ſemitono"))))
+    (("m1.24" nil nil ,*score-bg-color*)
+     ((music 2206
+             cclef7 fl1 b22 sb1 b22 fl1 b22 sbd1 b22 sb1 bl
+             fl2 b22 sb2 b22 fl2 b22 sbd2 b22 sb2 bl
+             fl4 b22 sb4 b22 fl4 b22 sbd4 b22 sb4 bl
+             sb4 b22 sh4 b22 sb4 bl
+             sb5 b22 sh5 b22 sb5 bl
+             sb9 b22 fl8 b22 sb8 bl
+             sb7 b22 sbd6 bl
+             sb6 fl6 sb6 bl)
+      (text 70 58
+            (36 nil "ſemit.mi.comp.")
+            (414 nil "ſe.mi.comp.")
+            (777 nil "ſem.mi.comp.")
+            (1118 nil "ſe.mi.incō.")
+            (1375 nil "ſe.mi.inc.")
+            (1607 nil "ſem.min.")
+            (1834 nil "di.mag.")
+            (2046 nil "ſe.min."))
+      (text 70 58
+            (1620 nil "incomp.")
+            (1829 nil "ꝑ ſe.mi.ī")
+            (2045 nil "ᴇn.inc."))))))
+
+;; reading mark: q021_s036 done
