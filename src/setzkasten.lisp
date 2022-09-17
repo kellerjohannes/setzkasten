@@ -1,7 +1,9 @@
 (ql:quickload :hunchentoot)
 (ql:quickload :cl-who)
+(ql:quickload :cl-ppcre)
 
 (defpackage :setzkasten
+  (:import-from :cl-ppcre :regex-replace-all)
   (:use :cl :hunchentoot :cl-who))
 
 (in-package :setzkasten)

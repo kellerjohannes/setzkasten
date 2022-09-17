@@ -34,6 +34,11 @@
 (defun output-debug-circle (vec)
   (output-circle (vec:x-coord vec) (vec:y-coord vec) 9 "red"))
 
+
+(defun make-string-html-compatible (str)
+  (regex-replace-all "&" str "&amp;"))
+
+
 ;; TODO extract attributes to function
 (defun output-text (x y text-string font-size text-length)
   (format nil "<text x=\"~a\" y=\"~a\" font-size=\"~a\" alignment-baseline=\"hanging\"~@[ textLength=\"~a\" ~] font-weight=\"normal\" font-family=\"Times, serif\" font-style=\"normal\" stroke=\"black\" fill=\"black\">~a</text>"
@@ -41,7 +46,7 @@
       y
       font-size
       text-length
-      text-string))
+      (make-string-html-compatible text-string)))
 
 (defun output-line (x1 y1 x2 y2 stroke-width stroke-linecap)
   (format nil "<line x1=\"~d\" y1=\"~d\" x2=\"~d\" y2=\"~d\" stroke-width=\"~d\" stroke-linecap=~s/>"
