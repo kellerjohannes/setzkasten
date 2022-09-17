@@ -617,6 +617,114 @@
       (text 70 58
             (1620 nil "incomp.")
             (1829 nil "ꝑ ſe.mi.ī")
-            (2045 nil "ᴇn.inc."))))))
+            (2045 nil "ᴇn.inc."))))
+    (("m1.25" nil nil ,*score-bg-color*)
+     ((music 2205
+             cclef7 b22 sb2 b22 sbd2 b22 sb3 b22 bl
+             b22 sb3 b38 fl4 b38 sb4 b22 bl
+             sb4 b22 sbd4 b22 fl5 b22 sb5 bl
+             b38 sb5 b22 fl6 b22 sb6 bl
+             sb6 b22 sbd6 b22 sb7 bl
+             b38 sb7 b27 sb6 b38 bl
+             sb5 b27 sh4 b22 sb4 bl
+             b38 sb3 b38 sb2 b38 bl)
+      (text 70 58
+            (38 nil "ſemit.mag.")
+            (330 nil "ſemit.mag.")
+            (640 nil "ſemit.mag.")
+            (951 nil "ſemit.mag.")
+            (1215 nil "ſem.mag.")
+            (1457 nil "ſem.mag.")
+            (1702 nil "ſem.mag.")
+            (1948 nil "ſemi.mag."))
+      (text 70 58
+            (54 nil "naturale")
+            (339 nil "accident.")
+            (630 nil "accidentale")
+            (947 nil "accident.")
+            (1223 nil "naturale")
+            (1475 nil "naturale")
+            (1714 nil "accident.")
+            (1939 nil "naturale."))
+      (text 70 58
+            (46 nil "comp.")
+            (360 nil "incom.")
+            (647 nil "comp.")
+            (953 nil "incomp.")
+            (1234 nil "comp.")
+            (1483 nil "incomp.")
+            (1716 nil "incomp.")
+            (1942 nil "incomp."))))
+    (("m1.26" nil nil ,*score-bg-color*)
+     ((text 90 58
+            (0 2234 "ᴇſſempio di più ꜱemitoni mag.et minori,aſcendenti,et diſcendenti, comp.et incomp.nat.et acci"))
+      (music 2220
+             cclef7 b38 sb2 b38 sbd2 b38 sb3 bl
+             sh3 b27 sb3 fl4 b27 sbd4 b27 sb4 bl
+             sb4 b38 sh4 b38 sb4 bl
+             sb5 b38 fl6 b38 sb6 bl
+             fl6 b38 sb6 b27 fl6 b38 sbd6 b27 sb6 bl
+             sb6 b27 sbd6 b27 sb7 bl
+             sb7 b38 sh7 b27 sb7 bl)
+      (text 70 58
+            (26 nil "ſemit.mag.")
+            (344 nil "ſemit.magg.")
+            (695 nil "ſemit. mi.")
+            (964 nil "ſemit. ma.")
+            (1229 nil "ſemit.minore")
+            (1664 nil "ſemit.mag.")
+            (1955 nil "ſemit.mino."))
+      (text 120 58
+            (24 nil "nat.comp.")
+            (327 nil "accid. compo.")
+            (683 nil "acci.inco.")
+            (939 nil "ac.imcomp.")
+            (1208 nil "accid.comp.")
+            (1650 nil "nat.comp.")
+            (1941 nil "acc. incom."))
+      (music 2225
+             cclef7 sb9 b22 sh8 b38 sb8 b38 fl8 b38 sbd8 bl
+             sbd7 b38 sb7 b38 sbd6 b38 bl
+             b38 fl6 b38 sb6 b38 sb5 b38 bl
+             fl5 b38 sb5 b38 sb4 b38 fl4 b38 sb4 b38 sbd4 bl
+             sb3 b38 sbd2 b38 fl2 b38 sb2 bl
+             b38 b38 b38 b38 b38 b38)
+      (text 70 58
+            (26 nil "ſemit.maggiori")
+            (467 nil "ſem.ma.acc.")
+            (775 nil "ſemit.magg.")
+            (1105 nil "ſemit.magg. et min.")
+            (1622 nil "ſe.min.et mag."))
+      (text 70 58
+            (39 nil "accid.incomp.")
+            (475 nil "comp.")
+            (778 nil "accid.incom.")
+            (1099 nil "accid.incomp.")
+            (1618 nil "accid.incomp."))))
+    (("m1.27" nil nil ,*score-bg-color*)
+     ((text 110 58
+            (372 1464 "ᴇſſempio del ɢrado del tono minore compoſto et non compoſto."))
+      (music 2210
+             cclef7 b38 sb3 fl4 b38 sbd4 bl
+             sb4 b22 sbd4 b38 fl5 b22 sbd5 bl
+             sb5 b27 fl6 b22 sb6 b22 fl6 b22 sbd6 bl
+             fl6 b38 sb6 b27 sh6 b38 sb6 bl
+             sh6 b22 sb6 b27 sb6 b22 fl6 b38 sb6 bl
+             b38 sh5 b27 sb5 b22 b22 fl5 b38 sb5 b38 bl b38)
+      (text 70 58
+            (43 nil "to.mi.aſc.")
+            (295 nil "to.min.aſcen.")
+            (632 nil "tono min.aſcen.")
+            (999 nil "to.mi. aſcen.")
+            (1333 nil "tono min.diſcen.")
+            (1726 nil "tono min.diſcend.")
+            )
+      (text 70 58
+            (45 nil "incomp.")
+            (295 nil "comp.")
+            (629 nil "compo.")
+            (993 nil "incomp.")
+            (1330 nil "comp.")
+            (1722 nil "incompoſto"))))))
 
-;; reading mark: q021_s036 done
+;; reading mark: q021_s038 done

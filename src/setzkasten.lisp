@@ -4,7 +4,9 @@
 
 (defpackage :setzkasten
   (:import-from :cl-ppcre :regex-replace-all)
-  (:use :cl :hunchentoot :cl-who))
+  (:import-from :hunchentoot :define-easy-handler)
+  (:import-from :cl-who :fmt :htm :with-html-output-to-string)
+  (:use :cl))
 
 (in-package :setzkasten)
 
@@ -54,7 +56,7 @@
              ,@body))))
 
 (defun start-server (port)
-  (start (make-instance 'easy-acceptor :port port)))
+  (hunchentoot:start (make-instance 'hunchentoot:easy-acceptor :port port)))
 
 (defun read-file (infile)
   (with-open-file (instream infile :direction :input
