@@ -34,7 +34,11 @@
    (heading :initform ""
             :initarg :heading
             :accessor heading
-            :documentation "This string will be displayed as a heading, flush-left above the section.")))
+            :documentation "This string will be displayed as a heading, flush-left above the section.")
+   (caption :initform ""
+            :initarg :caption
+            :accessor caption
+            :documentation "This string contains Text to be displayed centered below the section.")))
 
 (defclass voice ()
   ((mobjects :initform nil
@@ -43,10 +47,10 @@
        :initarg :id
        :accessor id
        :documentation "This symbol can be used to reference the voice internally. It is taken from the score definition. It can occur multiple times within a score, in different sections.")
-   (label :initform :inherit
+   (label :initform ""
           :initarg :label
           :accessor label
-          :documentation "This string will be displayed as instrument labels at the beginning of a stave. When set to :inherit it will be taken from the labels defined on score level.")))
+          :documentation "This string will be displayed as instrument labels at the beginning of a stave.")))
 
 (defclass mobject ()
   ((key :initform nil
@@ -82,14 +86,41 @@
 (defmethod get-section ((score score) section-id)
   (find section-id (sections score) :key #'id :test #'string=))
 
+(defmethod set-section-heading* ((score score) id new-heading)
+  "Sets the `heading' of a section with `id'. If it doesn't exists in `score', it will create a section."
+  (let ((candidate (get-section score id)))
+    (if candidate
+        (setf (heading candidate) new-heading)
+        (add-section score (make-instance 'section :id id :heading new-heading)))))
+
+(defmethod set-section-caption* ((score score) id new-caption)
+  "Sets the `caption' of a section with `id'. If it doesn't exists in `score', it will create a section."
+  (let ((candidate (get-section score id)))
+    (if candidate
+        (setf (caption candidate) new-caption)
+        (add-section score (make-instance 'section :id id :caption new-caption)))))
+
 (defmethod add-voice ((section section) voice-instance)
   (setf (voices section) (append (voices section) (list voice-instance))))
 
 (defmethod get-voice ((section section) voice-id)
   (find voice-id (voices section) :key #'id :test #'string=))
 
-(defmethod add-voice-to-score ((score score) section-id voice-instance)
+(defmethod add-voice-to-section ((score score) section-id voice-instance)
   (add-voice (get-section score section-id) voice-instance))
+
+(defmethod get-voice-in-section ((score score) section-id voice-id)
+  (let ((sec (get-section score section-id)))
+    (when sec (get-voice sec voice-id))))
+
+(defmethod set-voice-label* ((score score) section-id voice-id voice-label)
+  (let ((sec-candidate (get-section score section-id)))
+    (unless sec-candidate
+      (add-section score (make-instance 'section :id section-id)))
+    (let ((voice-candidate (get-voice-in-section score section-id voice-id)))
+      (unless voice-candidate
+        (add-voice sec-candidate (make-instance 'voice :id voice-id)))
+      (setf (label (get-voice-in-section score section-id voice-id)) voice-label))))
 
 (defmethod add-mobject-to-score ((score score) section-id voice-id mobject-instance)
   (add-mobject (get-voice (get-section score section-id) voice-id)
@@ -136,7 +167,7 @@
     result))
 
 (defmethod print-element ((voice voice))
-  (format t "~&~4,0tVoice ~a:" (id voice))
+  (format t "~&~4,0tVoice ~a (~s):" (id voice) (label voice))
   (dolist (mobject (mobjects voice))
     (format t "~&~6,0tMusical Object ~a:~&~8,0tKey = ~a~&~8,0tValue = ~a"
             (id mobject)
@@ -144,33 +175,25 @@
             (value mobject))))
 
 (defmethod print-element ((section section))
-  (format t "~&~2,0tSection ~a:" (id section))
+  (format t "~&~2,0tSection ~a (~s / ~s):" (id section) (heading section) (caption section))
   (dolist (voice (voices section))
     (print-element voice)))
 
 (defmethod print-element ((score score))
-  (format t "~&Score:")
+  (format t "~&Score (~s, ~s):" (title score) (filename score))
   (dolist (section (sections score))
     (print-element section)))
 
 
-(defparameter *test-data*
-  '((:metadata
-     (:file-name "m1.13"))
-    (:preamble-types
-     (:width nil)
-     (:height nil)
-     (:background "white"))
-    (:preamble-lilypond
-     (:title "Descritione Test"))
-    (:data
-     (:text 50 78 (230 nil "Testext."))
-     (:music nil
-      max7 fclef7 b22 sb3 b22 sb4 b22 sb5 b22 m6 b22 sb5 b22 sb4 b22 sb3 b38 bl)
-     )))
+
+
+;;; testing / development
+
 
 
 ;;; parsing
+;; OBSOLETE, will be replaced by score-parser.lisp, incorporating all the following
+;; functionality
 
 (defparameter *list-ignore* '(b22 b38 bl))
 (defparameter *list-notes* '(sb0 sb1 sb2 sb3 sb4 sb5 sb6 sb7 sb8 sb9 sb10
@@ -314,6 +337,10 @@
                                                   :key key
                                                   :value value)))
   (values section-state voice-state accidental-state))
+
+
+
+
 
 (defun populate-score (data)
   (let ((*score* (make-instance 'score :title (extract-item :preamble-lilypond :title data))))
