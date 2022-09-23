@@ -57,6 +57,7 @@
     (glyph-notehead-dot           brd4   "brevis-dot-4" "stave" "notehead-brevis" "enharmonic-dot" 67 ,*glyph-height* 4)
     (glyph-notehead-dot           brdl5   "brevis-dot-left-5" "stave" "notehead-brevis" "enharmonic-dot" 71 ,*glyph-height* 5 nil nil :left)
     (glyph-notehead-dot           brdr5   "brevis-dot-right-5" "stave" "notehead-brevis" "enharmonic-dot" 51 ,*glyph-height* 5 nil nil :right)
+    (glyph-notehead               sb0    "semibrevis-0"  "stave" "notehead-semibrevis" 53 ,*glyph-height* 0)
     (glyph-notehead               sb1    "semibrevis-1"  "stave" "notehead-semibrevis" 53 ,*glyph-height* 1)
     (glyph-notehead               sb2    "semibrevis-2"  "stave" "notehead-semibrevis" 53 ,*glyph-height* 2)
     (glyph-notehead               sb3    "semibrevis-3"  "stave" "notehead-semibrevis" 53 ,*glyph-height* 3)
