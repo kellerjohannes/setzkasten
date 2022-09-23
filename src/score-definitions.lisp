@@ -747,7 +747,6 @@
             (1126 nil "ſemit.")
             (1367 nil "tono")
             (1589 nil "ſemit.")
-            (1832 nil "tono."))
-      ))))
+            (1832 nil "tono."))))))
 
-;; reading mark: q021_s038 done
+;; reading mark: q021_s039 first example done
