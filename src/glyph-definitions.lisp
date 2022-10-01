@@ -68,6 +68,7 @@
     (glyph-notehead               sb8    "semibrevis-8"  "stave" "notehead-semibrevis" 53 ,*glyph-height* 8)
     (glyph-notehead               sb9    "semibrevis-9"  "stave" "notehead-semibrevis" 53 ,*glyph-height* 9)
     (glyph-f-clef-part            fclef7 "f-clef-part-7" "stave" "notehead-semibrevis" "stem-minima" 45 ,*glyph-height* 7)
+    (glyph-sharp                  sh1    "sharp-1"       "stave" "sharp-large" 48 ,*glyph-height* 1)
     (glyph-sharp                  sh2    "sharp-2"       "stave" "sharp-large" 48 ,*glyph-height* 2)
     (glyph-sharp                  sh3    "sharp-3"       "stave" "sharp-small" 48 ,*glyph-height* 3)
     (glyph-sharp                  sh4    "sharp-4"       "stave" "sharp-large" 48 ,*glyph-height* 4)

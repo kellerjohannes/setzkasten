@@ -747,6 +747,8 @@
             (1126 nil "ſemit.")
             (1367 nil "tono")
             (1589 nil "ſemit.")
-            (1832 nil "tono."))))))
-
-;; reading mark: q021_s039 first example done
+            (1832 nil "tono."))))
+    (("m1.29" nil nil ,*score-bg-color*)
+     ((text 100 58
+            (525 1098 "ᴇſſempio d")
+            )))))
