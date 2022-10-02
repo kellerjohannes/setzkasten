@@ -1,30 +1,7 @@
 ;;;; TODO
 ;; - update docstrings for new terminology (type / glyph / instance / component)
 
-
-
 (in-package :setzkasten)
-;; example macro call
-;; (define-setzkasten-class setzkasten/test ()
-;;   "Docstring."
-;;   (number-of-lines 5 "Number of staff lines.")
-;;   (distance-between-lines 12 "The distance between two lines."))
-
-
-(defun make-keyword (name)
-  (values (intern (string-upcase name) "KEYWORD")))
-
-(defmacro define-setzkasten-class (class-name super-class class-docstring &rest parameters)
-  "Creates a simple class with parameters."
-  `(defclass ,class-name ,super-class
-     ,(mapcar (lambda (par)
-        `(,(first par) :initarg ,(make-keyword (first par))
-                   :initform ,(second par)
-                   :accessor ,(first par)
-                   :documentation ,(third par)))
-       parameters)
-     (:documentation ,class-docstring)))
-
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; parameter containers for typographic components ;;;;
