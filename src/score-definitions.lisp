@@ -750,5 +750,76 @@
             (1832 nil "tono."))))
     (("m1.29" nil nil ,*score-bg-color*)
      ((text 100 58
-            (525 1098 "ᴇſſempio d")
-            )))))
+            (525 1098 "ᴇſſempio dʼalcuni ᴛoni,et ſemitoni accidentali."))
+      (music 2197
+             cclef7 b38 sh1 b38 sb1 b38 sb2 b38 sh2 b38 sb2 b22 bl
+             b22 sb2 b38 sh3 b38 sb3 b22 bl
+             b22 sh3 b22 sb3 b13 sb4 b13 sh4 b13 sb4 bl
+             fl5 b13 sb5 b13 fl6 b13 sb6 bl
+             fl6 b13 sb6 b13 sb6 b13 sb7 bl
+             b38 sb7 b38 fl6 b38 sb6 b38 bl)
+      (text 70 58
+            (92 nil "tono acci.comp.")
+            (543 nil "tono accid.")
+            (875 nil "tono acci.comp.")
+            (1256 nil "tono accid.")
+            (1547 nil "tono accid.")
+            (1845 nil "tono accid."))
+      (text 70 58
+            (545 nil "incomp.")
+            (1262 nil "incomp.")
+            (1543 nil "comp.")
+            (1852 nil "incomp."))
+      (music 2202
+             cclef7 b38 sh5 b22 sb5 b22 sb4 b22 sh4 b22 sb4 b38 bl
+             b38 sh4 b22 sb4 b22 sh3 b22 sb3 b38 bl
+             b38 fl5 b22 sb5 b38 fl4 b38 sb4 b38 bl
+             b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38)
+      (text 70 58
+            (85 nil "tono accid.comp.")
+            (521 nil "tono acci.incom.")
+            (911 nil "tono.acc. incom."))))
+    (("m1.30" nil nil ,*score-bg-color*)
+     ((text 100 58
+            (414 1235 "ᴇſſempio del ᴛono maggiore,compoſto et incompoﬆo."))
+      (music 2209
+             cclef7 sb1 b22 sb2 b22 sbd2 bl
+             fl2 b22 sb2 b22 sbd4 b22 bl
+             sh3 sb3 b22 sb4 fl5 sb5 bl
+             sh4 sb4 fl6 sb6 bl
+             sb6 fl8 sb8 b22 bl
+             sbd8 b22 sb8 b22 sb7 bl
+             sb7 b13 sb6 sh5 sb5 bl
+             fl6 sb6 sh4 sb4 bl
+             sb3 sh1 sb1 bl)
+      (text 70 58
+            (38 nil "ton.mag.")
+            (275 nil "ton.mag.")
+            (525 nil "tono magg.")
+            (828 nil "to.mag.")
+            (1058 nil "to.mag.")
+            (1262 nil "to.mag.")
+            (1484 nil "ton.mag.")
+            (1749 nil "to.mag.")
+            (1973 nil "ton.mag."))
+      (text 80 58
+            (50 nil "compo.")
+            (284 nil "incomp.")
+            (515 nil "compo.")
+            (834 nil "incomp.")
+            (1058 nil "incomp.")
+            (1282 nil "comp.")
+            (1493 nil "comp.")
+            (1771 nil "incomp.")
+            (2000 nil "incomp."))))
+    (("m1.31" nil nil ,*score-bg-color*)
+     ((text 90 58
+            (0 2201 "ᴇſſempio del grado ò ſalto della ᴛerza manco di minore, ouero minima compoſto & incompoſto."))
+      (music 2208
+             cclef7 b22 sb1 b22 sh2 b22 sb2 b22 bl
+             sb3 b22 sb4 b22 sh4 b22 sb4 bl
+             b22 sb4 b22 sh5 b22 sb5 b38 bl
+             sh5 b22 sb5 b22 sb5 b22 sb4 bl
+             b22 sh4 b22 sb4 b22 sb3 b22 bl
+             sh3 b22 sb3 b22 sb3 b22 fl2 b22 sb2 bl
+             b22 sh2 b38 sb2 b38 sb1 bl)))))

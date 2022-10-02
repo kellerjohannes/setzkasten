@@ -1,5 +1,8 @@
 (in-package :setzkasten)
 
+(defun avg (&rest numbers)
+  (/ (reduce #'+ numbers) (length numbers)))
+
 (defun reduce-string-list (lst)
   (reduce (lambda (a b) (concatenate 'string a b)) lst))
 
