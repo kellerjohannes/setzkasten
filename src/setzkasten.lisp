@@ -6,6 +6,6 @@
 
 (in-package :setzkasten)
 
-(defparameter *svg-export-path* (pathname "~/Vicentino21/edition/setzkasten/svg-export/"))
+(defparameter *svg-export-path* (pathname "~/common-lisp/setzkasten/svg-export/"))
 
 (defparameter *score-margins* '(0 0 0 0))
