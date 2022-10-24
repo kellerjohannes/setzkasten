@@ -838,4 +838,9 @@
             (934 nil "mini.comp.")
             (1245 nil "mini.incom.")
             (1541 nil "mini.comp.")
-            (1911 nil "mini.incom."))))))
+            (1911 nil "mini.incom."))))
+    (("m1.32" nil nil ,*score-bg-color*)
+     ((text 80 58
+            (367 1446 "ᴇſſempio de i gradi,di ᴛerza minore,compoſti & incompoﬆi."))
+      (music nil
+             cclef7 b38)))))
