@@ -1010,4 +1010,135 @@
              fl6 b22 sb6 b22 sb7 b22 sbc8 bl
              fl8 b22 sb8 b22 sb6 bl
              fl6 b22 sb6 b22 sb5 b22 sb4 b22 sh3 b22 sb3 bl
-             sbd4 b27 fl2 b22 sb2 bl)))))
+             sbd4 b27 fl2 b22 sb2 bl)
+      (text 70 58
+            (39 nil "grad.di 3.")
+            (307 nil "gra.di 3.")
+            (548 nil "grad. di terza un")
+            (989 nil "grad. di 3.")
+            (1275 nil "gra.di 3.")
+            (1496 nil "grad.di terza più")
+            (1935 nil "gra. di 3."))
+      (text 70 58
+            (45 nil "più di ma.")
+            (311 nil "più di ma.")
+            (564 nil "cōma più di mag.")
+            (982 nil "più di ma.")
+            (1268 nil "più di ma.")
+            (1502 nil "di magg.comp.")
+            (1932 nil "più di ma."))
+      (text 70 58
+            (41 nil "incomp. .")
+            (302 nil "compoſto")
+            (570 nil "incomp. et comp.")
+            (977 nil "compoſto")
+            (1256 nil "incomp.")
+            (1930 nil "incomp."))))
+    (("l1c32m1" nil nil ,*score-bg-color*)
+     ((text 140 58
+            (172 1866 "ᴇſſempio del ꜱalto della Ɋuarta naturale,e du ſuoi gradi incompoſto et compoſto."))
+      (text 100 58
+            (61 352 "ᴘrima Ɋuarta.")
+            (432 nil "ꜱecōda Ɋuar.")
+            (759 nil "ᴛerza Ɋuar.")
+            (1093 nil "ᴘrima Ɋuarta")
+            (1429 nil "ꜱecōda Ɋuarta")
+            (1822 nil "ᴛerza Ɋuarta"))
+      (music 2200
+             max7 fclef7 b22 sb2 b38 b38 sb5 b27 b27 bl
+             b27 b38 sb3 b38 b38 sb6 b27 b38 bl
+             b38 sb4 b38 b38 b22 sb7 b38 bl
+             b38 sb2 b38 sb3 b38 sb4 b38 sb5 bl
+             sb3 b38 sb4 b38 sb5 b38 sb6 bl
+             b38 sb4 b38 sb5 b38 sb6 b38 sb7 bl)
+      (text 80 58
+            (89 nil "ſalto di 4.")
+            (394 nil "ſalto di 4.")
+            (735 nil "ſalto di 4.")
+            (1039 nil "quarta compò.")
+            (1428 nil "quarta comp.")
+            (1793 nil "quarta compoſta"))
+      (text 70 58
+            (83 nil "incompoſta")
+            (392 nil "incomp.")
+            (715 nil "incomp.")
+            (1033 nil "de gradi")
+            (1422 nil "de gradi")
+            (1797 nil "de gradi"))))
+    (("l1c33m1" nil nil ,*score-bg-color*)
+     ((text 150 58
+            (137 1893 "ᴇſſempio del ſalto,& de i gradi de Ɋuarta accidentale,incompoſta & compoſta."))
+      (music 2193
+             cclef7 sh1 b27 sb1 sh4 b22 sb4 bl
+             fl2 b22 sb2 b22 sb3 sb4 b22 fl5 b22 sb5 bl
+             sh3 b22 sb3 sb4 sb5 sb6 bl
+             sh4 b22 sb4 b22 sh7 b22 sb7 bl
+             fl8 b22 sb8 b22 sb7 b22 fl6 b22 sb6 b22 fl5 b22 sb5 bl
+             fl4 b38 sb4 b22 fl1 b22 sb1 bl)
+      (text 80 58
+            (48 nil "ſalto di 4.")
+            (340 nil "gradi di quarta")
+            (750 nil "gradi di 4.")
+            (1062 nil "ſalto di 4.")
+            (1375 nil "gradi di quarta acci.")
+            (1882 nil "ſalti di 4."))
+      (text 70 58
+            (51 nil "accidentale")
+            (353 nil "accidentale")
+            (746 nil "accidentale")
+            (1067 nil "accidentale")
+            (1366 nil "accidentale comp.")
+            (1880 nil "accidentale"))
+      (text 70 58
+            (57 nil "incomp.")
+            (360 nil "compoſta")
+            (751 nil "compoſta")
+            (1062 nil "incompoﬆa")
+            (1887 nil "incompoſta"))))
+    (("l1c34m1" nil nil ,*score-bg-color*)
+     ((text 150 58
+            (181 1818 "ᴇſſempio del ſalto piùche di Ɋuarta,& de ſuoi gradi incompoſto & compoſto."))
+      (music 2218
+             cclef7 b38 sb1 b38 sbd4 b38 bl
+             sb2 b22 sb3 b22 sb4 b22 sbd5 bl
+             sb6 sbc9 sb5 b22 sbd8 bl
+             sbd8 b22 sb7 b22 sb6 b22 sb5 bl
+             b38 fl6 b27 sbd6 b38 sb3 bl
+             fl5 b22 sbd5 sb4 sb3 b22 fl2 sb2 bl
+             fl4 b38 sbd4 b38 fl1 b22 sb1 bl)
+      (text 80 58
+            (35 nil "ſalti di più")
+            (325 nil "gradi di più")
+            (607 nil "ſalto di più")
+            (896 nil "gradi di più")
+            (1193 nil "ſalto  di più")
+            (1503 nil "gradi di più di")
+            (1880 nil "ſalto di più"))
+      (text 70 58
+            (38 nil "di 4. acci.")
+            (320 nil "di 4. accid.")
+            (608 nil "di 4. acci.")
+            (891 nil "di 4. accid.")
+            (1190 nil "di 4. accid.")
+            (1500 nil "quarta accid.")
+            (1868 nil "di 4.accid."))
+      (text 70 58
+            (37 nil "incomp.")
+            (312 nil "comp.")
+            (605 nil "incomp.")
+            (882 nil "comp.")
+            (1182 nil "incomp.")
+            (1500 nil "comp.")
+            (1867 nil "incomp."))))
+    (("l1c35m1" nil nil ,*score-bg-color*)
+     ((text 125 58
+            (459 1239 "ᴇſſempio del ᴛritono naturale,incompoſto et compoſto."))
+      (music nil
+             cclef7 b38 sb3 b38 b38 sb6 b38 b27 bl
+             b38 sb6 b38 b38 sb3 b38 bl
+             b38 b38 cclef1
+             b27 sb4 b38 b38 sb7 b27 b38 bl
+             b38 sb7 b38 b38 sb4 b38 bl
+             b38 sb4 b22 sb5 b22 sb6 b22 sb7 b38 bl
+             b38 sb7 b38 sb6 b38 sb5 b38 sb4 bl
+             )))))
