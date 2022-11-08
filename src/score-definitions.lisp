@@ -1003,7 +1003,11 @@
     (("l1c31m1" nil nil ,*score-bg-color*)
      ((text 150 58
             (284 1607 "ᴇſſempio de i gradi di ᴛerza più di maggiore incompoﬆo & compoſto."))
-      (music nil
+      (music 2209
              cclef7 b22 b22 sb0 b38 sbd2 b38 bl
              sb3 b22 sb4 b22 sbd5 bl
-             fl6 sb6 b38 sbc8 b22)))))
+             fl6 sb6 b38 sbc8 b22 fl5 sb5 sb6 b22 sbc7 bl
+             fl6 b22 sb6 b22 sb7 b22 sbc8 bl
+             fl8 b22 sb8 b22 sb6 bl
+             fl6 b22 sb6 b22 sb5 b22 sb4 b22 sh3 b22 sb3 bl
+             sbd4 b27 fl2 b22 sb2 bl)))))
