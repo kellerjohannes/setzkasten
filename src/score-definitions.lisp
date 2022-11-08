@@ -1001,9 +1001,9 @@
             (1625 nil "incomp.")
             (1899 nil "comp."))))
     (("l1c31m1" nil nil ,*score-bg-color*)
-     ((text 70 58
+     ((text 150 58
             (284 1607 "ᴇſſempio de i gradi di ᴛerza più di maggiore incompoﬆo & compoſto."))
       (music nil
              cclef7 b22 b22 sb0 b38 sbd2 b38 bl
              sb3 b22 sb4 b22 sbd5 bl
-             fl6 sb6 b38)))))
+             fl6 sb6 b38 sbc8 b22)))))

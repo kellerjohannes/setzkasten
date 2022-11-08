@@ -19,7 +19,8 @@
      ())
     (component-dot
      ((id "dot")
-      (size 0.2))
+      (size 0.2)
+      (shape :dot))
      ())
     (component-stem
      ((id "stem")

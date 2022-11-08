@@ -17,7 +17,8 @@
     (component-stem        nil "stem-minima"         2.1   2.75    1.3)
     (component-sharp       nil "sharp-large"               2.5 1 t 10)
     (component-sharp       nil "sharp-small"               2.5 0.69 t 7)
-    (component-dot         nil "enharmonic-dot"      0.3)
+    (component-dot         nil "enharmonic-dot"      0.3 :dot)
+    (component-dot         nil "comma"               80 :comma)
     (component-c-clef      nil "c-clef"              5.5 10.5 3.5 0.8 1.2 2.2 1 0.6)
     ))
 
@@ -85,6 +86,8 @@
     (glyph-notehead-dot           sbd7   "semibrevis-dot-7" "stave" "notehead-semibrevis" "enharmonic-dot" 53 ,*glyph-height* 7)
     (glyph-notehead-dot           sbd8   "semibrevis-dot-8" "stave" "notehead-semibrevis" "enharmonic-dot" 53 ,*glyph-height* 8)
     (glyph-notehead-dot           sbd9   "semibrevis-dot-9" "stave" "notehead-semibrevis" "enharmonic-dot" 53 ,*glyph-height* 9)
+    (glyph-notehead-dot           sbd9   "semibrevis-dot-9" "stave" "notehead-semibrevis" "enharmonic-dot" 53 ,*glyph-height* 9)
+    (glyph-notehead-dot           sbc8   "semibrevis-comma-8" "stave" "notehead-semibrevis" "comma" 53 ,*glyph-height* 8 t 1 :center nil)
     (glyph-notehead-dot           sbdl7   "semibrevis-dot-left-7" "stave" "notehead-semibrevis" "enharmonic-dot" 76 ,*glyph-height* 7 nil nil :left -2)
     (glyph-notehead-dot           sbdr4   "semibrevis-dot-right-4" "stave" "notehead-semibrevis" "enharmonic-dot" 72 ,*glyph-height* 4 nil nil :right nil)
     (glyph-notehead-stem          md4     "minima-dot-4" "stave" "notehead-semibrevis" "enharmonic-dot" "stem-minima" 55 ,*glyph-height* 4 :down nil 1 0.8 :center)

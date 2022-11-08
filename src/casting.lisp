@@ -246,6 +246,9 @@
       (output-path `("fill" ,color)
            `((m ,a) (l ,b) (l ,c) (l ,d) (c))))))
 
+(defun draw-comma (center-x center-y size color)
+  (output-text center-x center-y "," size nil color t))
+
 (defmethod cast ((stencil glyph-notehead-dot))
   "Generates SVG data for an enharmonic dot above a notehead."
   (when (dot-component stencil)
@@ -253,7 +256,11 @@
        (center-y (calculate-y-position stencil))
        (width (* (size (dot-component stencil))
              (distance-between-lines (staff-component stencil)))))
-      (push (draw-dot center-x center-y width (ink-color stencil))
+      (push (if (eq (shape (dot-component stencil)) :dot)
+                (draw-dot center-x center-y width (ink-color stencil))
+                (draw-comma center-x center-y
+                            (size (dot-component stencil))
+                            (ink-color stencil)))
         (svg-data stencil))))
   (call-next-method))
 
