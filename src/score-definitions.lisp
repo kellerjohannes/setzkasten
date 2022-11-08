@@ -911,4 +911,99 @@
             (373 nil "grad.di 3.min."))
       (text 70 58
             (39 nil "accid.incomp.")
-            (361 nil "accid.incomp."))))))
+            (361 nil "accid.incomp."))))
+    (("l1c28m1" nil nil ,*score-bg-color*)
+     ((text 90 58
+            (327 1549 "ᴇſſempio de i gradi di ᴛerza più di minore compoﬆo & incompoſto."))
+      (music 2218
+             cclef7 b27 b27 sb1 b38 b22 sbd3 b38 bl
+             b22 sb2 b22 sb3 b27 sbd4 b22 bl
+             sb4 b38 fl6 b22 sbd6 b22 bl
+             sb7 b22 sb8 b22 fl9 sbd9 bl
+             sb8 b22 fl6 b22 sbd6 b22 bl
+             sbd7 b22 sb6 b38 sb5 bl
+             fl6 b27 sb6 b22 fl4 b22 sbd4 bl
+             sbd4 b22 sb3 b22 sb2 bl)
+      (text 80 58
+            (50 nil "grad.di 3.")
+            (321 nil "grad. di 3.")
+            (611 nil "grad.di 3.")
+            (861 nil "grad. di 3.")
+            (1141 nil "grad.di 3.")
+            (1389 nil "grad. di 3.")
+            (1659 nil "grad. di 3.")
+            (1952 nil "grad. di 3."))
+      (text 70 58
+            (50 nil "più di min.")
+            (319 nil "più di min.")
+            (619 nil "più di mi.")
+            (860 nil "più di min.")
+            (1141 nil "più di min.")
+            (1401 nil "più di min.")
+            (1652 nil "più di min.")
+            (1948 nil "più di min."))
+      (text 70 58
+            (57 nil "incompoſto")
+            (324 nil "compoſto")
+            (616 nil "incomp.")
+            (861 nil "compoſto")
+            (1149 nil "incomp.")
+            (1390 nil "compoﬆo")
+            (1665 nil "incomp.")
+            (1938 nil "compoſto."))))
+    (("l1c29m1" nil nil ,*score-bg-color*)
+     ((text 70 58
+            (230 1732 "ᴇſſempio del grado di ᴛerza maggiore naturale, incompoﬆo & compoſto."))
+      (music 2213
+             cclef7 b38 sb0 b38 sb2 b38 bl
+             b38 sb3 b38 sb5 b38 bl
+             b38 sb9 b38 sb7 b38 bl
+             b38 sb6 b38 sb4 b38 bl
+             b27 sb0 b38 sb1 b38 sb2 b22 bl
+             b27 sb3 b22 sb4 b22 sb5 bl
+             b22 sb9 b22 sb8 b22 sb7 b22 bl
+             sb6 b22 sb5 b22 sb4 b22 bl)
+      (text 80 58
+            (0 nil "grado di 3.")
+            (310 nil "gra.di 3.")
+            (555 nil "grad. di. 3.")
+            (817 nil "grad.di 3.")
+            (1078 nil "terza mag.")
+            (1367 nil "terza mag.")
+            (1648 nil "terza mag.")
+            (1937 nil "terza mag."))
+      (text 70 58
+            (0 nil "mag. nat.")
+            (300 nil "mag.nat.")
+            (556 nil "mag.nat.")
+            (813 nil "mag.nat.")
+            (1068 nil "comp.nat.")
+            (1361 nil "comp.nat.")
+            (1652 nil "comp. nat.")
+            (1934 nil "comp.nat."))))
+    (("l1c30m1" nil nil ,*score-bg-color*)
+     ((text 70 58
+            (217 1780 "ᴇſſempio de i gradi,di ᴛerza maggiore accidentale,incompoſti & compoﬆi."))
+      (music 2225
+             cclef7 b22 sb1 b38 sb2 b38 sh3 sb3 bl
+             sb2 b38 sh4 b38 sb4 bl
+             sh3 b22 sb3 b22 sh5 b22 sb5 bl
+             fl4 b22 sb4 b22 sb5 b22 fl6 b22 sb6 bl
+             sb8 b22 sb7 b22 fl6 b27 sb6 bl
+             fl5 b38 sb5 b38 sbd2 bl
+             sh3 b22 sb3 b22 sb2 b22 sb1 bl)
+      (text 70 58
+            (84 nil "compo.")
+            (393 nil "incomp.")
+            (649 nil "incomp.")
+            (958 nil "comp.")
+            (1318 nil "comp.")
+            (1625 nil "incomp.")
+            (1899 nil "comp."))))
+    (("l1c31m1" nil nil ,*score-bg-color*)
+     ((text 70 58
+            (284 1607 "ᴇſſempio de i gradi di ᴛerza più di maggiore incompoﬆo & compoſto."))
+      (music nil
+             cclef7 b22 b22 sb0 b38 sbd2 b38 bl
+             sb3 b22 sb4 b22 sbd5 bl
+             fl6 sb6 b38)))))
