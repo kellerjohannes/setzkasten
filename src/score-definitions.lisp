@@ -1275,9 +1275,116 @@
             (1056 nil "comp.")
             (1350 nil "incomp.")
             (1620 nil "comp.")
-            (1938 nil "incomp."))))))
+            (1938 nil "incomp."))))
+    (("l1c39m1" nil nil ,*score-bg-color*)
+     ((text 140 58
+            (595 952 "ᴇſſempio della Quinta naturale incomp."))
+      (text 90 58
+            (87 nil "prima 5.")
+            (356 nil "ſeconda 5.")
+            (655 nil "terza 5.")
+            (925 nil "quarta 5.")
+            (1248 nil "ʟe medeſime Ɋuinte music."))
+      (music 2214
+             cclef7 b38 sb1 b38 b38 sb5 b38 bl
+             b38 sb2 b38 b38 sb6 b38 bl
+             b38 sb3 b38 b38 sb7 b38 bl
+             b38 sb4 b38 b27 sb8 b38 bl
+             b38 sb8 b38 sb4 b38 bl
+             b38 sb7 b38 sb3 b38 bl
+             b38 sb6 b38 sb2 b38 bl
+             b38 sb5 b38 sb1 b38 bl)
+      (text 70 58
+            (96 nil "ſalto di 5.")
+            (369 nil "ſalto di 5.")
+            (653 nil "ſal. di quin.")
+            (943 nil "ſalto di 5.")
+            (1203 nil "ſal. di 5.")
+            (1444 nil "ſal. di 5.")
+            (1684 nil "ſalto di 5.")
+            (1953 nil "ſalto di 5."))
+      (text 70 58
+            (107 nil "ꝑfet. nat.")
+            (368 nil "ꝑfet. nat.")
+            (652 nil "perfet.nat.")
+            (955 nil "ꝑſet. nat.")
+            (1228 nil "ꝑfet.na.")
+            (1446 nil "ꝑfet.nat.")
+            (1686 nil "ꝑfet. nat.")
+            (1959 nil "ꝑfet.nat."))
+      (text 70 58
+            (100 nil "incomp.")
+            (368 nil "incomp.")
+            (641 nil "incomp.")
+            (955 nil "incomp.")
+            (1216 nil "incomp.")
+            (1439 nil "incomp.")
+            (1684 nil "incomp.")
+            (1962 nil "incomp."))))
+    (("l1c39m2" nil nil ,*score-bg-color*)
+     ((text 90 58
+            (595 984 "ᴇſſempio de i gradi delle Ɋuinte naturali."))
+      (music 2210
+             cclef7 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 bl
+             b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 bl
+             b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 bl
+             b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 bl b38 b38)
+      (text 70 58
+            (97 nil "ordine 1. de gradi")
+            (582 nil "ordine 2. de gradi")
+            (1097 nil "ordine 3. de gradi")
+            (1602 nil "ordine 4. de gradi"))
+      (text 70 58
+            (91 nil "della prima quinta")
+            (575 nil "della ſeconda quinta")
+            (1100 nil "della terza quinta")
+            (1604 nil "della quarta quinta"))
+      (text 70 58
+            (95 nil "compoſta")
+            (580 nil "compoſta")
+            (1097 nil "compoſto")
+            (1605 nil "compoſta"))))
+    (("l1c40m1" nil nil ,*score-bg-color*)
+     ((text 120 58
+            (465 1267 "ᴇſſempio de ꜱalti de Ɋuinte accidentali, incompoſti."))
+      (music nil
+             cclef7 sh1 b27 sb1 b22 sh5 b27 sb5 bl
+             sh2 b22 sb2 b22 sh6 b27 sb6 bl
+             sh3 b22 sb3 b22 sh7 b22 sb7 bl
+             sh4 b22 sb4 b27 sh8 b22 sb8 bl
+             fl1 b22 sb1 b38 fl5 b22 sb5 bl
+             fl2 b22 sb2 b22 fl6 b22 sb6 bl
+             fl4 b27 sb4 b38 fl8 b38 sb8 bl)
+      (text 70 58
+            (57 nil "ſalto di 5.")
+            (366 nil "ſalto di 5.")
+            (678 nil "ſalto di 5.")
+            (993 nil "ſalto di 5.")
+            (1295 nil "ſalto di 5.")
+            (1595 nil "ſalto di 5.")
+            (1893 nil "ſalto di 5."))
+      (text 70 58
+            (57 nil "accidentale")
+            (364 nil "accidentale")
+            (684 nil "accidentale")
+            (984 nil "accidentale")
+            (1286 nil "accidentale")
+            (1596 nil "accident.")
+            (1893 nil "accidentale"))
+      (text 70 58
+            (64 nil "incomp.")
+            (362 nil "incomp.")
+            (682 nil "incomp.")
+            )))))
 
-;; s048, l1c38m1 (ex 47), margin 1064
-;; s047, l1c37m2 (ex 46), margin 373
-;; s047, l1c37m1 (ex 45), margin 368
+
+
+;; Log book: image file number, new numbering, old numbering, origin for x-coordinates.
+;;
 ;; s047, l1c36m1 (ex 44), margin 364
+;; s047, l1c37m1 (ex 45), margin 368
+;; s047, l1c37m2 (ex 46), margin 373
+;; s048, l1c38m1 (ex 47), margin 1064
+;; s049, l1c39m1 (ex 48), margin 393
+;; s049, l1c39m2 (ex 49), margin 407
+;; s050, l1c40m1 (ex 50), margin 968, rotated -0.77
