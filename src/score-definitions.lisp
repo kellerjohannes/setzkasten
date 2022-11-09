@@ -1133,7 +1133,7 @@
     (("l1c35m1" nil nil ,*score-bg-color*)
      ((text 125 58
             (459 1239 "ᴇſſempio del ᴛritono naturale,incompoſto et compoſto."))
-      (music nil
+      (music 2207
              cclef7 b38 sb3 b38 b38 sb6 b38 b27 bl
              b38 sb6 b38 b38 sb3 b38 bl
              b38 b38 cclef1
@@ -1141,7 +1141,7 @@
              b38 sb7 b38 b38 sb4 b38 bl
              b38 sb4 b22 sb5 b22 sb6 b22 sb7 b38 bl
              b38 sb7 b38 sb6 b38 sb5 b38 sb4 bl)
-      (text 80 70
+      (text 100 90
             (58 nil "ſalto di ᴛrit.")
             (369 nil "ſalto di ᴛri.")
             (812 nil "ſalto di ᴛri.")
@@ -1154,4 +1154,130 @@
             (809 nil "incompoſto")
             (1107 nil "incompoſto")
             (1405 nil "compoſto")
-            (1795 nil "compoſto"))))))
+            (1795 nil "compoſto"))))
+    (("l1c36m1" nil nil ,*score-bg-color*)
+     ((text 70 58
+            (432 1372 "ᴇſſempio del ᴛritono accidentale,incompoſto & compoſto."))
+      (music 2197
+             cclef7 b22 sb0 b22 sh3 b22 sb3 bl
+             b38 sb1 b22 sh4 b22 sb4 b38 bl
+             sb2 b22 sh5 b38 sb5 b38 bl
+             sh3 b22 sb3 b22 sh6 b22 sb6 bl
+             sh6 sb6 sh5 sb5 sh4 sb4 sh3 sb3 bl
+             fl4 b22 b22 sb4 b22 fl5 b22 sb5 b22 fl6 b22 sb6 b22 sb7 bl)
+      (text 80 68
+            (50 nil "ᴛrit.inco.")
+            (313 nil "ᴛrit.incom.")
+            (632 nil "ᴛrit.incom.")
+            (922 nil "ᴛrit.incom.")
+            (1222 nil "ᴛrit.compoſto")
+            (1672 nil "ᴛritono compoſto"))
+      (text 70 58
+            (50 nil "accident.")
+            (306 nil "accidentale")
+            (627 nil "accidentale")
+            (932 nil "accidentale")
+            (1227 nil "accidentale")
+            (1666 nil "accidentale"))))
+    (("l1c37m1" nil nil ,*score-bg-color*)
+     ((text 80 58
+            (200 1805 "ᴇſſempio del ſalto de Ɋuinta imperfetta,naturale & accidentale,incompoﬆo."))
+      (music 2219
+             max7 fclef7 b38 sb3 b38 sb7 b38
+             cclef5 b38 sb4 b38 b38 sb8 b38 bl
+             b38 sb0 b38 fl4 b38 sb4 b38
+             cclef5 b38 sb3 fl7 b38 sb7 b38
+             cclef5 b38 fl4 b38 sb4 b38 sbd7 bl
+             sb2 b38 fl6 b38 sb7 b22 bl
+             sb5 b38 sh1 b38 sb1 b38 bl)
+      (text 70 58
+            (48 nil "ſalto di quinta")
+            (419 nil "ſalto di 5.")
+            (684 nil "ſalto di quin.")
+            (1016 nil "ſalto di 5.")
+            (1305 nil "ſalto di quin.")
+            (1641 nil "ſalto di 5.")
+            (1891 nil "ſalto di quinta"))
+      (text 70 58
+            (52 nil "imper.nat.&")
+            (425 nil "imp.nat.")
+            (698 nil "imp.accid.&")
+            (1023 nil "imp. accid.")
+            (1320 nil "imp.accid.&")
+            (1648 nil "imp.acci.")
+            (1889 nil "imper.acci. et"))
+      (text 70 58
+            (52 nil "incompoſto")
+            (436 nil "incomp.")
+            (700 nil "incompoſto")
+            (1028 nil "incompoſto")
+            (1332 nil "incompoſto")
+            (1644 nil "et incom.")
+            (1878 nil "incompoﬆo"))))
+    (("l1c37m2" nil nil ,*score-bg-color*)
+     ((text 90 58
+            (254 1691 "ᴇſſempio de gradi di alcune Ɋuinte imperfette,naturali & accidentali."))
+      (music 2202
+             max7 fclef7 b38 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b38
+             cclef5 b38 sb4 sb5 sb6 sb7 sb8 b38
+             cclef5 b38 fl4 b38 sb4 sb5 sb6 sbd7 bl
+             sb2 sb3 fl4 b38 sb4 sb5 b38 fl6 b22 sb6 bl
+             sb5 sb4 sb3 b22 sb2 sh1 b22 sb1 bl)
+      (text 70 58
+            (113 nil "gradi di quinta")
+            (591 nil "gradi di quinta")
+            (984 nil "gradi di quin.")
+            (1338 nil "gradi di quinta")
+            (1804 nil "gradi di quinta"))
+      (text 70 58
+            (127 nil "imp.compoſta")
+            (597 nil "imper. compo.")
+            (993 nil "imp.compoſta")
+            (1347 nil "imp.compoſta")
+            (1802 nil "imp.compoſta"))
+      (text 70 58
+            (120 nil "naturale")
+            (611 nil "naturale")
+            (993 nil "accidentale")
+            (1345 nil "accidentale")
+            (1822 nil "accidentale"))))
+    (("l1c38m1" nil nil ,*score-bg-color*)
+     ((text 90 58
+            (213 1734 "ᴇſſempio di più di Ɋuinta imperfetta accidentale,compoſto & incompoﬆo."))
+      (music 2232
+             max7 fclef7 sb3 sb4 sb5 sb6 sbd7
+             cclef5 b38 sb4 b38 sbd8 b38
+             cclef5 b38 sh1 b38 sb1 b38 sbd5 bl
+             sh2 sb2 sb3 sb4 sb5 sbd6 bl
+             sb8 b38 fl4 b38 sbd4 b38 bl
+             sb7 sb6 sb5 sb4 sbd3 bl
+             b38 sb6 b38 sbd2 b38 bl)
+      (text 70 58
+            (88 nil "più di quinta")
+            (420 nil "più di quin.")
+            (740 nil "più di quin.")
+            (1041 nil "più di quinta")
+            (1363 nil "più di quin.")
+            (1640 nil "più di quinta")
+            (1954 nil "più di quin."))
+      (text 80 58
+            (81 nil "imper.natur.")
+            (425 nil "imper. nat.")
+            (720 nil "imp. accid.")
+            (1040 nil "imper.accid.")
+            (1354 nil "imper.acci.")
+            (1634 nil "imper. acci.")
+            (1936 nil "impe. accid."))
+      (text 70 58
+            (81 nil "comp.")
+            (420 nil "incomp.")
+            (738 nil "incomp.")
+            (1056 nil "comp.")
+            (1350 nil "incomp.")
+            (1620 nil "comp.")
+            (1938 nil "incomp."))))))
+
+;; s048, l1c38m1 (ex 47), margin 1064
+;; s047, l1c37m2 (ex 46), margin 373
+;; s047, l1c37m1 (ex 45), margin 368
+;; s047, l1c36m1 (ex 44), margin 364

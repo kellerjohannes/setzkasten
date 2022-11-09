@@ -20,6 +20,7 @@
     (component-dot         nil "enharmonic-dot"      0.3 :dot)
     (component-dot         nil "comma"               80 :comma)
     (component-c-clef      nil "c-clef"              5.5 10.5 3.5 0.8 1.2 2.2 1 0.6)
+    (component-c-clef      nil "c-clef-short"        5.5 10.5 3.5 0.8 1.2 1.2 1.2 0.6)
     ))
 
 (defparameter *setzkasten-definition-glyphs*
@@ -95,6 +96,7 @@
     (glyph-notehead-stem          md4     "minima-dot-4" "stave" "notehead-semibrevis" "enharmonic-dot" "stem-minima" 55 ,*glyph-height* 4 :down nil 1 0.8 :center)
     (glyph-notehead-stem          mdl4     "minima-dot-left-4" "stave" "notehead-semibrevis" "enharmonic-dot" "stem-minima" 68 ,*glyph-height* 4 :up t 0 0.8 :left)
     (glyph-notehead-stem          smdr3     "semiminima-dot-right-3" "stave" "notehead-semibrevis-black" "enharmonic-dot" "stem-minima" 68 ,*glyph-height* 3 :up t -2 0.8 :right)
-    (glyph-c-clef                 cclef1 "c-clef-1" "stave" "c-clef" 66 ,*glyph-height* 1)
     (glyph-c-clef                 cclef7 "c-clef-7" "stave" "c-clef" 66 ,*glyph-height* 7)
+    (glyph-c-clef                 cclef1 "c-clef-1" "stave" "c-clef-short" 66 ,*glyph-height* 1)
+    (glyph-c-clef                 cclef5 "c-clef-5" "stave" "c-clef" 66 ,*glyph-height* 5)
     ))
