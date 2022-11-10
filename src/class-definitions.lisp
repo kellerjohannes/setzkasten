@@ -67,6 +67,7 @@
 
 (define-setzkasten-class component-dot (component)
   "Parameters for the creation of dots."
+  (shape :dot "Shape of the dot, can be :dot or :comma.")
   (size 0.2 "Size of the dot, vertically, proportional to distance between staff lines."))
 
 (define-setzkasten-class component-sharp (component)
