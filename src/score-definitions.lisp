@@ -6,7 +6,9 @@
 (defparameter *font-height* 58)
 
 (defparameter *scores*
-  `((("l1c5m1" nil nil ,*score-bg-color*)
+  `(
+    ;; m1.04
+    (("l1c5m1" nil nil ,*score-bg-color*)
      ((text 70 58 (1253 875 "ᴅimoſtratione della ᴍano ᴅiatonica."))
       (text 100 58
             (130 222 "ᴀ lamire")
@@ -53,6 +55,7 @@
             (834 nil "per natura")
             (1148 nil "per natura")
             (1921 nil "per ♮."))))
+    ;; m1.05
     (("l1c5m2" nil nil ,*score-bg-color*)
      ((text 70 58
             (90 1974 "ᴅimoſtratione della ᴍano ᴄromatica, aſcendente, con li ꜱemitoni minore, e con l'eſſempio."))
@@ -82,6 +85,7 @@
             (1902 nil "ſol") (1999 nil "re") (2075 nil "ut"))
       (text 100 58
             (0 2194 "per nat. ꝑ ♭. ꝑ ♭. per ♮. per n. ꝑ ♭. ꝑ ♮ ꝑ ♭. ꝑ ♭. ꝑ n. ꝑ ♮. ꝑ nat. per nat. ꝑ ♭. ꝑ n. ꝑ ♭. ꝑ ♮."))))
+    ;; m1.06
     (("l1c5m3" nil nil ,*score-bg-color*)
      ((text 70 58 (231 1648 "ᴅimoſtratione della ᴍano ᴄromatica con li ſemitoni maggiori aſcendenti."))
       (text 100 58
@@ -123,6 +127,7 @@
         (1198 220 "ꝑ n. ꝑ ♭.")
         (1542 227 "ꝑ n. ꝑ ♮.")
         (1807 213 "ꝑ n.ꝑ ♭."))))
+    ;; m1.07
     (("l1c5m4" nil nil ,*score-bg-color*)
      ((text 70 58 (86 2053 "ᴅimoſtratione della mano ᴇnarmonica ᴅiatonica, aſcendente con le ſette lettere della ᴍano."))
       (text 90 58
@@ -157,6 +162,7 @@
         (1386 nil "la mi")
         (1642 nil "fa ut")
         (1908 nil "ſol re ut"))))
+    ;; m1.08
     (("l1c5m5" nil nil ,*score-bg-color*)
      ((text 70 58 (115 1903 "ᴍano della diuiſione del tono in quattro ᴅieſis ᴇn. aſcendenti con lo ſemitono minore."))
       (text 100 58
@@ -253,6 +259,7 @@
         (144 480 "ſol. fa. la. ſol. fa.")
         (1124 nil "ꝑ ♭.")
         (1452 446 "fa.mi.la.ꝑ diſcend."))))
+    ;; m1.09
     (("l1c5m7" nil nil ,*score-bg-color*)
      ((text 70 58 (0 2212 "ᴍano ᴇnarmonica aſcendente , con i ſemitomi maggiori, & con il tono diuiſo in quattro parti,&"))
       (text 90 58 (10 1262 "delle ſette lettere della ᴍano : come ſi hanno da leggere."))
@@ -309,6 +316,7 @@
         (1004 516 "ꝑ ♭. re. mi. fa. re. mi."))
       (text 70 58
             (1008 504 "ꝑ ♮. ut. re. mi. fa. re."))))
+    ;; m1.10
     (("l1c5m8" nil nil ,*score-bg-color*)
      ((text 70 58 (10 2198 "ᴍano ᴇnarmonica , con ſemitoni maggiori diſcendenti nel principio del tono,con il tono, in quattro"))
       (text 70 58 (10 976 "parti diuiſo , per leſette lettere della ᴍano."))
@@ -346,24 +354,31 @@
       (text 70 58
             (838 336 "mi. per aſcend.")
             (1264 294 "re. ꝑ aſcend."))))
+    ;; m1.11
     (("l1c6m1" nil nil ,*score-bg-color*)
      ((music nil ;462
              max7 fclef7 b22 sb3 b22 sb4 b22 sb5 b22 sb6 bl)))
+    ;; m1.12
     (("l1c7m1" nil nil ,*score-bg-color*)
      ((music nil
              max7 fclef7 b38 sb3 b38 sb4 b38 sh4 b38 sb4 b38 sb6 b38 b38 bl)))
+    ;; m1.13
     (("l1c8m1" nil nil ,*score-bg-color*)
      ((music nil
              max7 fclef7 b38 sb3 b38 sbd3 b38 sb4 b38 sb6 b38 bl)))
+    ;; m1.14
     (("l1c8m2" nil nil ,*score-bg-color*)
      ((music nil
              max7 fclef7 b22 fl3 b38 sb5 b38 sb7 b38 fl6 b38 sb6 b38 sb5 b38 bl)))
+    ;; m1.15
     (("l1c9m1" nil nil ,*score-bg-color*)
      ((music nil
              max7 fclef7 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb5 b22 sb4 b22 sb3 b38 bl)))
+    ;; m1.16
     (("l1c10m1" nil nil ,*score-bg-color*)
      ((music nil
              max7 fclef7 b38 sb3 b22 sb4 b38 sh4 b38 sb4 b38 sb6 b22)))
+    ;; m1.17
     (("l1c10m2" nil nil ,*score-bg-color*)
      ((music 2214
              cclef7 b22 sb1 b38 fl2 b22 sb2 bl
@@ -395,6 +410,7 @@
             (1468 nil "ſem. cro.")
             (1704 nil "ſem. cro.")
             (1956 nil "tono cro."))))
+    ;; m1.18
     (("l1c11m1" nil nil ,*score-bg-color*)
      ((text 90 58
             (54 720 "ᴛono diuiſo in 4. parti aſcend.")
@@ -415,6 +431,7 @@
             (1136 nil "fa")
             (1306 nil "re")
             (1396 nil "mi"))))
+    ;; m1.19
     (("l1c11m2" nil nil ,*score-bg-color*)
      ((text 90 58
             (36 691 "Tono diuiſo in 4. parti aſcen.")
@@ -434,6 +451,7 @@
             (1206 nil "re")
             (1295 nil "mi"))))
     ;; attention, sharp-dot is doubtful
+    ;; m1.20
     (("l1c11m3" nil nil ,*score-bg-color*)
      ((music nil
              cclef7 b38 sb5 b38 fl5 b38 sbd5 b22 sh4 b22 sb4 b38 sbd4 b38 sb4 b38
@@ -461,6 +479,7 @@
             (116 nil "per ♮. incitato")
             (850 nil "per ♭. molle")
             (1502 nil "per natura"))))
+    ;; m1.21
     (("l1c12m1" nil nil ,*score-bg-color*)
      ((music 2168
              cclef7 sh6 max6 bl
@@ -493,6 +512,7 @@
     ;;  ((music nil
     ;;          b22 cclef7 b38 sb4 b38 sbd4 b38 fl5 b38 sb5 b38 fl5 b38 sbd5 b38 sb5 b38 b38)))
 
+    ;; m1.22
     (("l1c13m1" nil nil ,*score-bg-color*)
      ((music 2218
              cclef7 b22 brd4 b22 b38 bl
@@ -540,6 +560,7 @@
             (1227 nil "doppò"))
       (text 70 58
             (70 nil "conda c."))))
+    ;; m1.23
     (("l1c15m1" nil nil ,*score-bg-color*)
      ((text 90 58
             (212 1795 "ᴇſſempio delli gradi,delli ᴅieſis minori ᴇnarmonici, aſcendenti & diſcendenti."))
@@ -561,6 +582,7 @@
             (1421 nil "ᴅi. min.")
             (1703 nil "ᴅi. min.")
             (1943 nil "ᴅi.min."))))
+    ;; m1.24
     (("l1c16m1" nil nil ,*score-bg-color*)
      ((text 90 58
             (166 1861 "ᴇſſempio delli gradi,delli ᴅieſis maggiori ᴇnarmonici,aſcendenti & diſcendenti."))
@@ -582,6 +604,7 @@
             (1411 nil "ᴅies.mag.")
             (1700 nil "ᴅies.ma.")
             (1929 nil "ᴅies. mag."))))
+    ;; m1.25
     (("l1c17m1" nil nil ,*score-bg-color*)
      ((music 2214
              cclef7 b38 sb2 b22 sbd2 b22 sb3 b22 bl
@@ -595,6 +618,7 @@
             (1588 617 "4.ᴅieſis in un tono diſc."))
       (text 70 58
             (0 nil "un ſemitono"))))
+    ;; m1.26
     (("l1c18m1" nil nil ,*score-bg-color*)
      ((music 2206
              cclef7 fl1 b22 sb1 b22 fl1 b22 sbd1 b22 sb1 bl
@@ -618,6 +642,7 @@
             (1620 nil "incomp.")
             (1829 nil "ꝑ ſe.mi.ī")
             (2045 nil "ᴇn.inc."))))
+    ;; m1.27
     (("l1c19m1" nil nil ,*score-bg-color*)
      ((music 2205
              cclef7 b22 sb2 b22 sbd2 b22 sb3 b22 bl
@@ -655,6 +680,7 @@
             (1483 nil "incomp.")
             (1716 nil "incomp.")
             (1942 nil "incomp."))))
+    ;; m1.28
     (("l1c20m1" nil nil ,*score-bg-color*)
      ((text 90 58
             (0 2234 "ᴇſſempio di più ꜱemitoni mag.et minori,aſcendenti,et diſcendenti, comp.et incomp.nat.et acci"))
@@ -701,6 +727,7 @@
             (778 nil "accid.incom.")
             (1099 nil "accid.incomp.")
             (1618 nil "accid.incomp."))))
+    ;; m1.29
     (("l1c21m1" nil nil ,*score-bg-color*)
      ((text 110 58
             (372 1464 "ᴇſſempio del ɢrado del tono minore compoſto et non compoſto."))
@@ -726,6 +753,7 @@
             (993 nil "incomp.")
             (1330 nil "comp.")
             (1722 nil "incompoſto"))))
+    ;; m1.30
     (("l1c22m1" nil nil ,*score-bg-color*)
      ((text 90 58
             (429 991 "ᴇſſempio delli ᴛoni, & ꜱemitoni naturali."))
@@ -748,6 +776,7 @@
             (1367 nil "tono")
             (1589 nil "ſemit.")
             (1832 nil "tono."))))
+    ;; m1.31
     (("l1c23m1" nil nil ,*score-bg-color*)
      ((text 100 58
             (525 1098 "ᴇſſempio dʼalcuni ᴛoni,et ſemitoni accidentali."))
@@ -779,6 +808,7 @@
             (85 nil "tono accid.comp.")
             (521 nil "tono acci.incom.")
             (911 nil "tono.acc. incom."))))
+    ;; m1.32
     (("l1c24m1" nil nil ,*score-bg-color*)
      ((text 100 58
             (414 1235 "ᴇſſempio del ᴛono maggiore,compoſto et incompoﬆo."))
@@ -812,6 +842,7 @@
             (1493 nil "comp.")
             (1771 nil "incomp.")
             (2000 nil "incomp."))))
+    ;; m1.33
     (("l1c25m1" nil nil ,*score-bg-color*)
      ((text 90 58
             (0 2201 "ᴇſſempio del grado ò ſalto della ᴛerza manco di minore, ouero minima compoſto & incompoſto."))
@@ -839,6 +870,7 @@
             (1245 nil "mini.incom.")
             (1541 nil "mini.comp.")
             (1911 nil "mini.incom."))))
+    ;; m1.34
     (("l1c26m1" nil nil ,*score-bg-color*)
      ((text 80 58
             (367 1446 "ᴇſſempio de i gradi,di ᴛerza minore,compoſti & incompoﬆi."))
@@ -878,6 +910,7 @@
             (1297 nil "& tono")
             (1607 nil "& tono")
             (1907 nil "& ſemitono."))))
+    ;; m1.35
     (("l1c27m1" nil nil ,*score-bg-color*)
      ((text 80 58
             (250 1694 "ᴇſſempio de i gradi di ᴛerza minore accidentale,compoﬆi & incompoſti."))
@@ -912,6 +945,7 @@
       (text 70 58
             (39 nil "accid.incomp.")
             (361 nil "accid.incomp."))))
+    ;; m1.36
     (("l1c28m1" nil nil ,*score-bg-color*)
      ((text 90 58
             (327 1549 "ᴇſſempio de i gradi di ᴛerza più di minore compoﬆo & incompoſto."))
@@ -951,6 +985,7 @@
             (1390 nil "compoﬆo")
             (1665 nil "incomp.")
             (1938 nil "compoſto."))))
+    ;; m1.37
     (("l1c29m1" nil nil ,*score-bg-color*)
      ((text 70 58
             (230 1732 "ᴇſſempio del grado di ᴛerza maggiore naturale, incompoﬆo & compoſto."))
@@ -981,6 +1016,7 @@
             (1361 nil "comp.nat.")
             (1652 nil "comp. nat.")
             (1934 nil "comp.nat."))))
+    ;; m1.38
     (("l1c30m1" nil nil ,*score-bg-color*)
      ((text 70 58
             (217 1780 "ᴇſſempio de i gradi,di ᴛerza maggiore accidentale,incompoſti & compoﬆi."))
@@ -1000,6 +1036,7 @@
             (1318 nil "comp.")
             (1625 nil "incomp.")
             (1899 nil "comp."))))
+    ;; m1.39
     (("l1c31m1" nil nil ,*score-bg-color*)
      ((text 150 58
             (284 1607 "ᴇſſempio de i gradi di ᴛerza più di maggiore incompoﬆo & compoſto."))
@@ -1034,6 +1071,7 @@
             (977 nil "compoſto")
             (1256 nil "incomp.")
             (1930 nil "incomp."))))
+    ;; m1.40
     (("l1c32m1" nil nil ,*score-bg-color*)
      ((text 140 58
             (172 1866 "ᴇſſempio del ꜱalto della Ɋuarta naturale,e du ſuoi gradi incompoſto et compoſto."))
@@ -1065,6 +1103,7 @@
             (1033 nil "de gradi")
             (1422 nil "de gradi")
             (1797 nil "de gradi"))))
+    ;; m1.41
     (("l1c33m1" nil nil ,*score-bg-color*)
      ((text 150 58
             (137 1893 "ᴇſſempio del ſalto,& de i gradi de Ɋuarta accidentale,incompoſta & compoſta."))
@@ -1095,6 +1134,7 @@
             (751 nil "compoſta")
             (1062 nil "incompoﬆa")
             (1887 nil "incompoſta"))))
+    ;; m1.42
     (("l1c34m1" nil nil ,*score-bg-color*)
      ((text 150 58
             (181 1818 "ᴇſſempio del ſalto piùche di Ɋuarta,& de ſuoi gradi incompoſto & compoſto."))
@@ -1130,6 +1170,7 @@
             (1182 nil "incomp.")
             (1500 nil "comp.")
             (1867 nil "incomp."))))
+    ;; m1.43
     (("l1c35m1" nil nil ,*score-bg-color*)
      ((text 125 58
             (459 1239 "ᴇſſempio del ᴛritono naturale,incompoſto et compoſto."))
@@ -1155,6 +1196,7 @@
             (1107 nil "incompoſto")
             (1405 nil "compoſto")
             (1795 nil "compoſto"))))
+    ;; m1.44
     (("l1c36m1" nil nil ,*score-bg-color*)
      ((text 70 58
             (432 1372 "ᴇſſempio del ᴛritono accidentale,incompoſto & compoſto."))
@@ -1179,6 +1221,7 @@
             (932 nil "accidentale")
             (1227 nil "accidentale")
             (1666 nil "accidentale"))))
+    ;; m1.45
     (("l1c37m1" nil nil ,*score-bg-color*)
      ((text 80 58
             (200 1805 "ᴇſſempio del ſalto de Ɋuinta imperfetta,naturale & accidentale,incompoﬆo."))
@@ -1214,6 +1257,7 @@
             (1332 nil "incompoſto")
             (1644 nil "et incom.")
             (1878 nil "incompoﬆo"))))
+    ;; m1.46
     (("l1c37m2" nil nil ,*score-bg-color*)
      ((text 90 58
             (254 1691 "ᴇſſempio de gradi di alcune Ɋuinte imperfette,naturali & accidentali."))
@@ -1241,6 +1285,7 @@
             (993 nil "accidentale")
             (1345 nil "accidentale")
             (1822 nil "accidentale"))))
+    ;; m1.47
     (("l1c38m1" nil nil ,*score-bg-color*)
      ((text 90 58
             (213 1734 "ᴇſſempio di più di Ɋuinta imperfetta accidentale,compoſto & incompoﬆo."))
@@ -1276,6 +1321,7 @@
             (1350 nil "incomp.")
             (1620 nil "comp.")
             (1938 nil "incomp."))))
+    ;; m1.48
     (("l1c39m1" nil nil ,*score-bg-color*)
      ((text 140 58
             (595 952 "ᴇſſempio della Quinta naturale incomp."))
@@ -1321,6 +1367,7 @@
             (1439 nil "incomp.")
             (1684 nil "incomp.")
             (1962 nil "incomp."))))
+    ;; m1.49
     (("l1c39m2" nil nil ,*score-bg-color*)
      ((text 90 58
             (595 984 "ᴇſſempio de i gradi delle Ɋuinte naturali."))
@@ -1344,6 +1391,7 @@
             (580 nil "compoſta")
             (1097 nil "compoſto")
             (1605 nil "compoſta"))))
+    ;; m1.50
     (("l1c40m1" nil nil ,*score-bg-color*)
      ((text 120 58
             (465 1267 "ᴇſſempio de ꜱalti de Ɋuinte accidentali, incompoſti."))
@@ -1388,3 +1436,20 @@
 ;; s049, l1c39m1 (ex 48), margin 393
 ;; s049, l1c39m2 (ex 49), margin 407
 ;; s050, l1c40m1 (ex 50), margin 968, rotated -0.77
+
+
+
+;; Corrections for l1
+;;
+;; M1.07: 1 originale Korrektur, 2 weitere Fehler (moderne Korrekturen)
+;; M1.09: 3 Fehler (moderne Korrekturen)
+;; M1.17: 1 Fehler (moderne Korrektur)
+;; M1.19: 2 Fehler (moderne Korrekturen)
+;; M1.20: 1 originale Korrektur
+;; M1.22: unterschiedliche Fassungen (neue Komposition der Seite) > nur für den krit. Apparat (d.h. später)
+;; M1.23: 4 Fehler (moderne Korrekturen)
+;; M1.24: 1 Fehler (moderne Korrektur)
+;; M1.28: 1 Fehler (moderne Korrektur)
+;; M1.31: 1 Fehler (moderne Korrektur)
+;; M1.32: 1 Fehler (moderne Korrektur) > zu diskutieren
+;; M1.47: 2 Fehler (moderne Korrekturen) > zu diskutieren
