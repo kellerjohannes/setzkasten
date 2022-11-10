@@ -1456,14 +1456,14 @@
 
 ;; Log book: image file number, new numbering, old numbering, origin for x-coordinates.
 ;;
-;; s047, l1c36m1 (ex 44), margin 364
-;; s047, l1c37m1 (ex 45), margin 368
-;; s047, l1c37m2 (ex 46), margin 373
-;; s048, l1c38m1 (ex 47), margin 1064
-;; s049, l1c39m1 (ex 48), margin 393
-;; s049, l1c39m2 (ex 49), margin 407
-;; s050, l1c40m1 (ex 50), margin 968, rotated -1.77
-;; s050, l1c40m2 (ex 51), margin 978, rotated -1.8
+;; s047, b1-c36-m1 (ex 44), margin 364
+;; s047, b1-c37-m1 (ex 45), margin 368
+;; s047, b1-c37-m2 (ex 46), margin 373
+;; s048, b1-c38-m1 (ex 47), margin 1064
+;; s049, b1-c39-m1 (ex 48), margin 393
+;; s049, b1-c39-m2 (ex 49), margin 407
+;; s050, b1-c40-m1 (ex 50), margin 968, rotated -1.77
+;; s050, b1-c40-m2 (ex 51), margin 978, rotated -1.8
 
 
 
