@@ -1,0 +1,22 @@
+<score>
+  <scoreDef key.sig="0">
+    <staffGrp>
+      <staffDef clef.line="4" clef.shape="C" key.sig="0" lines="5" n="1" />
+    </staffGrp>
+  </scoreDef>
+  <section>
+    <pb/>
+    <sb/>
+    <measure n="1">
+      <staff n="1">
+        <layer n="1">
+          <note dur="1" oct="3" pname="G1" />
+          <note dur="1" oct="3" pname="G4" />
+          <note dur="1" oct="3" pname="A3" />
+          <note dur="1" oct="3" pname="A5" />
+          <note dur="1" oct="3" pname="A1" />
+        </layer>
+      </staff>
+    </measure>
+  </section>
+</score>
