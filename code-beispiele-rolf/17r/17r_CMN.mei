@@ -73,17 +73,18 @@
             <score>
                <scoreDef key.sig="0">
                   <staffGrp>
-                     <staffDef clef.line="4" clef.shape="C" key.sig="0" lines="5" n="1" xml:id="P1"/>
+                     <staffDef clef.line="4" clef.shape="C" key.sig="0" lines="5" n="1" />
                   </staffGrp>
                </scoreDef>
-               <section>
-                  <pb/>
-                  <sb/>
+               <section> <pb/> <sb/>
                   <measure n="1">
                      <staff n="1">
                         <layer n="1">
-                           <note accid="s" dur="long" oct="3" pname="b" stem.dir="down"
-                              xml:id="w15ab1c11b1b5"/>
+                           <note dur="semibreve" oct="3" pname="G1" />
+                           <note dur="semibreve" oct="3" pname="G1" />
+                           <note dur="semibreve" oct="3" pname="G1" />
+                           <note dur="semibreve" oct="3" pname="G1" />
+                           <note dur="semibreve" oct="3" pname="G1" />
                         </layer>
                      </staff>
                   </measure>

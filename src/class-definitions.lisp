@@ -1,30 +1,7 @@
 ;;;; TODO
 ;; - update docstrings for new terminology (type / glyph / instance / component)
 
-
-
 (in-package :setzkasten)
-;; example macro call
-;; (define-setzkasten-class setzkasten/test ()
-;;   "Docstring."
-;;   (number-of-lines 5 "Number of staff lines.")
-;;   (distance-between-lines 12 "The distance between two lines."))
-
-
-(defun make-keyword (name)
-  (values (intern (string-upcase name) "KEYWORD")))
-
-(defmacro define-setzkasten-class (class-name super-class class-docstring &rest parameters)
-  "Creates a simple class with parameters."
-  `(defclass ,class-name ,super-class 
-     ,(mapcar (lambda (par)
-		`(,(first par) :initarg ,(make-keyword (first par))
-			       :initform ,(second par)
-			       :accessor ,(first par)
-			       :documentation ,(third par)))
-       parameters)
-     (:documentation ,class-docstring)))
-
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; parameter containers for typographic components ;;;;
@@ -90,6 +67,7 @@
 
 (define-setzkasten-class component-dot (component)
   "Parameters for the creation of dots."
+  (shape :dot "Shape of the dot, can be :dot or :comma.")
   (size 0.2 "Size of the dot, vertically, proportional to distance between staff lines."))
 
 (define-setzkasten-class component-sharp (component)
@@ -106,6 +84,13 @@
   (thickness-stem-top 1.2 "Stroke thickness at the upper end of the stem, in proportion to the stem thickness at the lower end.")
   (stem-length 2.2 "Length of the stem, from above the semi circle to the upper end of the stem, proportional to the distance between staff lines.")
   (diameter 1 "Diameter of the semi circle, in proportion to distance between lines."))
+
+(define-setzkasten-class component-bequadro (component)
+  "Parameters for the appearance of the 'natural' sign."
+  (thickness 1 "Stroke thickness of all lines.")
+  (x-offset 6 "Distance between centerline and vertical strokes.")
+  (y-offset 6 "Distance between centerline and horizontal strokes.")
+  (stem-length 2.5 "Length of the vertical legs, proportional to `distance-between-lines'."))
 
 (define-setzkasten-class component-c-clef (component)
   "Parameters for the creation of c-clefs."
@@ -174,7 +159,8 @@
   (dot-alignment :center "'center for centered above, 'left for flush above the left edge of the notehead, 'right for flush above the right edge of the notehead. Left and  right are used for enharmonic ligatures.")
   (dot-above-staff nil "T if dot is placed above top staff line, nil if dot is placed just above the notehead.")
   (dot-above-staff-offset 1 "Vertical offset proportional to distance between staff lines in case 'dot-above-staff' is T.")
-  (dot-component nil "Instance of component-dot. If nil, no dot will be generated."))
+  (dot-component nil "Instance of component-dot. If nil, no dot will be generated.")
+  (dot-staff-position-correction nil "nil if standard behaviour is requested, otherwise vertical correction of staffposition."))
 
 (define-setzkasten-class glyph-notehead-stem (glyph-notehead-dot)
   "Specification for the casting of a note stem, as a subcomponent of a notehead with an optional enharmonic dot."
@@ -203,6 +189,11 @@
   (second-flat-position nil "Position of an optional second flat. If nil, only one flat will be produced.")
   (flat-component nil "Instance of component-flat. If nil, an empty staff type will be produced.")
   (mirrored-p nil "T for flats pointing left."))
+
+(define-setzkasten-class glyph-bequadro (glyph-staff)
+  "Specification of a glyph containing a 'natural' sign."
+  (sign-position 5 "Position of the bequadro within the staff.")
+  (bequadro-component nil "Instance of component-bequadro."))
 
 (define-setzkasten-class glyph-c-clef (glyph-staff)
   "Specification of a type containing a c- or g-clef."
