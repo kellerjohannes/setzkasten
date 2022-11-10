@@ -190,7 +190,7 @@
 
 (defmethod write-score ((score typesetter))
   (with-open-file (stream (merge-pathnames *svg-export-path*
-                                           (pathname (format nil "~a.svg" (name score))))
+                                           (pathname (format nil "~a-a.svg" (name score))))
                           :direction :output
                           :if-exists :supersede
                           :if-does-not-exist :create)
@@ -248,5 +248,5 @@
             (parse-vicentino-code (score-elements score) glyphs))
           (typeset setter :block)  ; use :block for Blocksatz, use :flushed for Flattersatz
           (write-score setter)
-          (score-name score)))
+          (format nil "~a-a" (score-name score))))
       data))
