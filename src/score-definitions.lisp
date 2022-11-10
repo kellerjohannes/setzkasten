@@ -843,4 +843,4 @@
      ((text 80 58
             (367 1446 "ᴇſſempio de i gradi,di ᴛerza minore,compoſti & incompoﬆi."))
       (music nil
-             cclef7 b38)))))
+             cclef7 b38 )))))
