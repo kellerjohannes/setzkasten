@@ -229,24 +229,25 @@
 
 (defun score-elements (score) (second score))
 
+;; probably the only public symbol, in case I decide to isolate type-imitation into a separate package
+(defun create-type-imitation-score (score components glyphs syntax)
+  (let ((stencil-list (parse-setzkasten components glyphs syntax))
+        (setter (make-instance 'typesetter
+                               :bg-color (score-bg-color score)
+                               :width (score-width score)
+                               :height (score-height score)
+                               :margins *score-margins*
+                               :name (score-name score))))
+    (mapc (lambda (line)
+            (cond ((eq (first line) 'music)
+                   (add-music-line setter line stencil-list))
+                  ((eq (first line) 'text)
+                   (add-text-line setter line))
+                  (t nil)))
+          (parse-vicentino-code (score-elements score) glyphs))
+    (typeset setter :block)  ; use :block for Blocksatz, use :flushed for Flattersatz
+    (write-score setter)
+    (format nil "~a-a" (score-name score))))
 
 (defun create-scores (data components glyphs syntax)
-  (mapcar (lambda (score)
-        (let ((stencil-list (parse-setzkasten components glyphs syntax))
-          (setter (make-instance 'typesetter
-                     :bg-color (score-bg-color score)
-                     :width (score-width score)
-                     :height (score-height score)
-                     :margins *score-margins*
-                     :name (score-name score))))
-          (mapc (lambda (line)
-              (cond ((eq (first line) 'music)
-                 (add-music-line setter line stencil-list))
-                ((eq (first line) 'text)
-                 (add-text-line setter line))
-                (t nil)))
-            (parse-vicentino-code (score-elements score) glyphs))
-          (typeset setter :block)  ; use :block for Blocksatz, use :flushed for Flattersatz
-          (write-score setter)
-          (format nil "~a-a" (score-name score))))
-      data))
+  (mapcar (lambda (score) (create-type-imitation-score score components glyphs syntax)) data))
