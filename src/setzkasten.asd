@@ -10,10 +10,11 @@
                (:file "casting" :depends-on ("class-definitions"))
                (:file "typesetter" :depends-on ("casting"))
                (:file "svg-generator")
+               (:file "backend-class")
                (:file "setzkasten-syntax")
                (:file "glyph-definitions")
                (:file "score-definitions")
-               (:file "backend-type-imitation" :depends-on ("typesetter"))
+               (:file "backend-type-imitation" :depends-on ("backend-class" "typesetter"))
                (:file "webserver-display" :depends-on ("backend-type-imitation")))
   :depends-on (:hunchentoot
                :cl-who

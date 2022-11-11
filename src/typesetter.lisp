@@ -190,7 +190,7 @@
 
 (defmethod write-score ((score typesetter))
   (with-open-file (stream (merge-pathnames *svg-export-path*
-                                           (pathname (format nil "~a-a.svg" (name score))))
+                                           (pathname (format nil "~a.svg" (name score))))
                           :direction :output
                           :if-exists :supersede
                           :if-does-not-exist :create)
@@ -230,14 +230,14 @@
 (defun score-elements (score) (second score))
 
 ;; probably the only public symbol, in case I decide to isolate type-imitation into a separate package
-(defun create-type-imitation-score (score components glyphs syntax)
+(defun create-type-imitation-score (score suffix components glyphs syntax)
   (let ((stencil-list (parse-setzkasten components glyphs syntax))
         (setter (make-instance 'typesetter
                                :bg-color (score-bg-color score)
                                :width (score-width score)
                                :height (score-height score)
                                :margins *score-margins*
-                               :name (score-name score))))
+                               :name (format nil "~a-~a" (score-name score) suffix))))
     (mapc (lambda (line)
             (cond ((eq (first line) 'music)
                    (add-music-line setter line stencil-list))
@@ -247,7 +247,7 @@
           (parse-vicentino-code (score-elements score) glyphs))
     (typeset setter :block)  ; use :block for Blocksatz, use :flushed for Flattersatz
     (write-score setter)
-    (format nil "~a-a" (score-name score))))
+    (format nil "~a-~a" (score-name score) suffix)))
 
 (defun create-scores (data components glyphs syntax)
   (mapcar (lambda (score) (create-type-imitation-score score components glyphs syntax)) data))
