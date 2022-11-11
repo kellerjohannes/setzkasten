@@ -1,0 +1,23 @@
+`(("b1-c39-m2" nil nil ,*score-bg-color*)
+  ((text 90 58
+         (595 984 "ᴇſſempio de i gradi delle Ɋuinte naturali."))
+   (music 2210
+          cclef7 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 bl
+          b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 bl
+          b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 bl
+          b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 bl b38 b38)
+   (text 70 58
+         (97 nil "ordine 1. de gradi")
+         (582 nil "ordine 2. de gradi")
+         (1097 nil "ordine 3. de gradi")
+         (1602 nil "ordine 4. de gradi"))
+   (text 70 58
+         (91 nil "della prima quinta")
+         (575 nil "della ſeconda quinta")
+         (1100 nil "della terza quinta")
+         (1604 nil "della quarta quinta"))
+   (text 70 58
+         (95 nil "compoſta")
+         (580 nil "compoſta")
+         (1097 nil "compoſto")
+         (1605 nil "compoſta"))))
