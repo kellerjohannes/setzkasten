@@ -23,7 +23,7 @@
   (setf *apparatus-string* (concatenate 'string *apparatus-string* line)))
 
 (defun generate-apparatus-item (line glyph element reading content)
-  (format nil "Line ~a, glyph ~a (element ~a): reading ~a used ~a.~%"
+  (format nil "Line ~a, glyph ~a (element ~a): reading ~a used ~s.~%"
           line glyph element reading content))
 
 (defun loop-alt (alt-list filter)
@@ -48,7 +48,7 @@
          (let ((item (first restdata)))
            (incf *glyph-counter*)
            (when (member item *musical-elements*) (incf *musical-element-counter*))
-           (when (eq item 'music)
+           (when (or (eq item 'music) (eq item 'text))
              (setf *glyph-counter* 0 *musical-element-counter* 0)
              (incf *line-counter*))
            (cons item (loop-data (rest restdata) filter))))

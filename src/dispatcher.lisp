@@ -1,11 +1,8 @@
 (in-package :setzkasten)
 
-
-
 (defparameter *score-margins* '(10 10 10 10))
 (defparameter *score-bg-color* "white")
 (defparameter *font-height* 58)
-
 
 ;; central processing function, one specific reading with one specific backend
 (defun process-score (filename suffix extraction-arguments backend-instance)
@@ -16,7 +13,8 @@
       (multiple-value-bind (simplified-score apparatus-string)
           (extract-apparatus score extraction-arguments)
         (with-open-file (apparatus-stream (merge-pathnames *apparatus-export-path*
-                                                            (pathname (format nil "app-~a.txt" filename)))
+                                                           (pathname (format nil "app-~a-~a.txt"
+                                                                             filename suffix)))
                                           :direction :output
                                           :if-exists :supersede
                                           :if-does-not-exist :create)
@@ -59,7 +57,9 @@
 
 
 (defparameter *mission*
-  `(("b1-c5-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+  `(
+    ("b1-c5-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c5-m1" "b" (:idealised) ,*vicentino-types-backend*)
     ("b1-c5-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b1-c5-m3" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b1-c5-m4" "a" (:diplomatic) ,*vicentino-types-backend*)
