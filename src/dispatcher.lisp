@@ -15,7 +15,13 @@
     (let ((score (eval (read encoding-stream))))
       (multiple-value-bind (simplified-score apparatus-string)
           (extract-apparatus score extraction-arguments)
-        (format t "~&~a-~a: ~a" filename suffix apparatus-string)
+        (with-open-file (apparatus-stream (merge-pathnames *apparatus-export-path*
+                                                            (pathname (format nil "app-~a.txt" filename)))
+                                          :direction :output
+                                          :if-exists :supersede
+                                          :if-does-not-exist :create)
+          (format apparatus-stream "Auto-generated critical apparatus for file ~a-~a:~%~%~a"
+                  filename suffix apparatus-string))
         (create-score-file backend-instance simplified-score suffix)))))
 
 ;; looping over mission, entry point to everything
