@@ -38,13 +38,13 @@
 (defparameter *vicentino-types-backend* (make-instance 'type-imitation-backend))
 
 (read-configuration *vicentino-types-backend*
-                    "../backend-configuration/vicentino-types-components.lisp"
+                    "~/common-lisp/setzkasten/backend-configuration/vicentino-types-components.lisp"
                     :components)
 (read-configuration *vicentino-types-backend*
-                    "../backend-configuration/vicentino-types-glyphs.lisp"
+                    "~/common-lisp/setzkasten/backend-configuration/vicentino-types-glyphs.lisp"
                     :glyphs)
 (read-configuration *vicentino-types-backend*
-                    "../backend-configuration/vicentino-types-syntax.lisp"
+                    "~/common-lisp/setzkasten/backend-configuration/vicentino-types-syntax.lisp"
                     :syntax)
 
 

@@ -6,6 +6,9 @@
 
 (in-package :setzkasten)
 
-(defparameter *svg-export-path* (pathname "~/common-lisp/setzkasten/svg-export/"))
-(defparameter *apparatus-export-path* (pathname "~/common-lisp/setzkasten/apparatus-export/"))
-(defparameter *encoding-source* (pathname "~/common-lisp/setzkasten/encoding/"))
+(defparameter *svg-export-path*
+  (pathname "~/common-lisp/setzkasten/svg-export/"))
+(defparameter *apparatus-export-path*
+  (pathname "~/common-lisp/setzkasten/apparatus-export/"))
+(defparameter *encoding-source*
+  (pathname "~/common-lisp/setzkasten/encoding/"))

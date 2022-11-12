@@ -1,13 +1,8 @@
 (in-package :setzkasten)
 
-;; to be completed and placed somewhere else, maybe together with glyph definitions
+;; TODO: to be completed and placed somewhere else, maybe together with glyph definitions
 (defparameter *musical-elements*
   '(max7 fclef7 cclef7 sb3 sb4 sh4 sb6))
-
-
-(defparameter *testdata*
-  '(("b1-c10-m1" nil nil "white")
-    ((music nil max7 (:alt (:diplomatic fclef7) (:idealised (section 1 "haha") cclef7)) b38 sb3 b22 sb4 b38 (:alt (:diplomatic sh4) (:idealised fl4)) b38 sb4 b38 sb6 b22))))
 
 (defparameter *apparatus-string* nil)
 (defparameter *glyph-counter* nil)
