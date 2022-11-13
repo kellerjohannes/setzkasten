@@ -79,7 +79,7 @@
    (clef :initform nil
          :initarg :clef
          :accessor clef
-         :documentation "Describes the clef a note is contextualised in. Clef format: (type . line). Type is :c, :f or :g.")
+         :documentation "Describes the clef a note is contextualised in. Clef format: (type . line). Type is :c, :f or :g. A tenor clef is represented by '(:c . 7).")
    ;; TODO add a slot for 'tonality context', including an implementation on the level of glyph encoding (because the parser can't decide whether a 'sh' is for a note or for the whole system)
    )
   (:documentation "This class contains all information about a rest or note. Pitch encoding and duration are obvious. Also clef and tonality context are stored for each note individually. When rendering the `mobject' clef and tonality changes need to be identified with a state variable in order to trigger clef display correctly."))
@@ -147,10 +147,10 @@
   (add-mobject (get-voice (get-section score section-id) voice-id)
                mobject-instance))
 
-(defmethod make-note (id lettera ordine octave value dottedp clef)
-  "Instanciates a `mobject' representing a note (not a rest)."
+(defmethod make-note (id lettera chromatic-alteration enharmonic-alteration octave value dottedp clef)
+  "Instanciates a `mobject' representing a note (not a rest). `lettera', `chromatic-alteration' and `enharmonic-alteration' all need to be provided in keyword form."
   (make-instance 'mobject :id id
-                          :pitch (list lettera ordine octave)
+                          :pitch (list lettera chromatic-alteration enharmonic-alteration)
                           :value value
                           :dottedp dottedp
                           :clef clef))
@@ -163,46 +163,24 @@
                           :dottedp dottedp
                           :clef nil))
 
-(defparameter *dict-value-number* '((:semibrevis . 1)
-                                    (:brevis . 2)
-                                    (:longa . 4)
-                                    (:maxima . 8)
-                                    (:minima . 1/2)
-                                    (:semiminima . 1/4)
-                                    (:croma . 1/8)
-                                    (:biscroma . 1/16)))
-
-(defun value->number (value)
-  (cdr (assoc value *dict-value-number*)))
-
-(defmethod find-shortest-duration ((score score))
-  (let ((result 8))
-    (mapc (lambda (section)
-            (mapc (lambda (voice)
-                    (mapc (lambda (mobject)
-                            (let ((duration (value mobject)))
-                              (format t "~&Duration: ~a" duration)
-                              (when (and duration (< (value->number duration) result))
-                                (setf result (value->number duration)))))
-                          (mobjects voice)))
-                  (voices section)))
-          (sections score))
-    result))
 
 (defmethod print-element ((voice voice))
+  "Printing to standard-output, for debugging purposes."
   (format t "~&~4,0tVoice ~a (~s):" (id voice) (label voice))
   (dolist (mobject (mobjects voice))
-    (format t "~&~6,0tMusical Object ~a:~&~8,0tKey = ~a~&~8,0tValue = ~a"
+    (format t "~&~6,0tMusical Object ~a:~&~8,0tPitch = ~a~&~8,0tValue = ~a"
             (id mobject)
             (pitch mobject)
             (value mobject))))
 
 (defmethod print-element ((section section))
+  "Printing to standard-output, for debugging purposes."
   (format t "~&~2,0tSection ~a (~s / ~s):" (id section) (heading section) (caption section))
   (dolist (voice (voices section))
     (print-element voice)))
 
 (defmethod print-element ((score score))
+  "Printing to standard-output, for debugging purposes."
   (format t "~&Score (~s, ~s):" (title score) (filename score))
   (dolist (section (sections score))
     (print-element section)))

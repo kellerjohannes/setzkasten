@@ -153,6 +153,42 @@
 
 
 
+
+
+;; imported from old score class file, needs to be tested or reimplemented
+
+(defparameter *dict-value-number* '((:semibrevis . 1)
+                                    (:brevis . 2)
+                                    (:longa . 4)
+                                    (:maxima . 8)
+                                    (:minima . 1/2)
+                                    (:semiminima . 1/4)
+                                    (:croma . 1/8)
+                                    (:biscroma . 1/16)))
+
+(defun value->number (value)
+  (cdr (assoc value *dict-value-number*)))
+
+(defmethod find-shortest-duration ((score score))
+  (let ((result 8))
+    (mapc (lambda (section)
+            (mapc (lambda (voice)
+                    (mapc (lambda (mobject)
+                            (let ((duration (value mobject)))
+                              (format t "~&Duration: ~a" duration)
+                              (when (and duration (< (value->number duration) result))
+                                (setf result (value->number duration)))))
+                          (mobjects voice)))
+                  (voices section)))
+          (sections score))
+    result))
+
+
+
+
+
+
+
 ;;; ly code generation
 
 (defmethod generate-mobject-ly-code ((mobject mobject) clef-state)
