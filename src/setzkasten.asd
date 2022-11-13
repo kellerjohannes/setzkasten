@@ -15,7 +15,7 @@
                (:file "svg-generator")
                (:file "backend-class")
                (:file "backend-type-imitation" :depends-on ("backend-class" "typesetter"))
-               (:file "dispatcher" :depends-on ("backend-type-imitation" "apparatus"))
+               (:file "dispatcher" :depends-on ("backend-type-imitation" "apparatus" "score-parser"))
                (:file "webserver-display" :depends-on ("backend-type-imitation")))
   :depends-on (:hunchentoot :cl-who :cl-ppcre)
   :build-pathname "setzkasten-bin"
