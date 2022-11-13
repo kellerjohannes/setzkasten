@@ -12,3 +12,7 @@
   (pathname "~/common-lisp/setzkasten/apparatus-export/"))
 (defparameter *encoding-source*
   (pathname "~/common-lisp/setzkasten/encoding/"))
+(defparameter *log-file-path*
+  (pathname "~/common-lisp/setzkasten/logfiles/"))
+(defparameter *configuration-path*
+  (pathname "~/common-lisp/setzkasten/backend-configuration/"))

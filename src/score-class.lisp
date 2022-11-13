@@ -20,6 +20,14 @@
           :initarg :title
           :accessor title
           :documentation "This string will be displayed as a centered title.")
+   (comment :initform ""
+            :initarg :comment
+            :accessor comment
+            :documentation "This string contains comments, for example about the state of the transcription or version information.")
+   (creator :initform ""
+            :initarg :creator
+            :accessor creator
+            :documentation "This string contains information about the author of the encoding file.")
    (voice-labels :initform nil
                  :initarg :voice-labels
                  :accessor voice-labels
@@ -63,7 +71,7 @@
           :initarg :pitch
           :accessor pitch
           ;; needs to be changed, because the notation is more expressive than the keyboard:
-          ;; probably in the form of '(:a :♯ :⋅)
+          ;; probably in the form of '(:a :♯ :⋅ 3)
           :documentation "This list describes the pitch of a note as an organ key: (lettera ordine octave). 'lettera' is one of the seven root note letters, as symbols. 'ordine' is 1-6, referencing the rows of keys. 'octave' is 1-5, where middle-C is 3. If NIL, the object is treated as a rest.")
    (id :initform nil
        :initarg :id
@@ -80,7 +88,10 @@
          :initarg :clef
          :accessor clef
          :documentation "Describes the clef a note is contextualised in. Clef format: (type . line). Type is :c, :f or :g. A tenor clef is represented by '(:c . 7).")
-   ;; TODO add a slot for 'tonality context', including an implementation on the level of glyph encoding (because the parser can't decide whether a 'sh' is for a note or for the whole system)
+   (key-signature :initform '(nil nil)
+                  :initarg :key-signature
+                  :accessor key-signature
+                  :documentation "This slot decribes the key signature context of the mobject. It is not used to determine the actual pitch of the mobject, but to determine if a key change should be rendered for graphical output.")
    )
   (:documentation "This class contains all information about a rest or note. Pitch encoding and duration are obvious. Also clef and tonality context are stored for each note individually. When rendering the `mobject' clef and tonality changes need to be identified with a state variable in order to trigger clef display correctly."))
 
@@ -147,13 +158,14 @@
   (add-mobject (get-voice (get-section score section-id) voice-id)
                mobject-instance))
 
-(defmethod make-note (id lettera chromatic-alteration enharmonic-alteration octave value dottedp clef)
+(defmethod make-note (id lettera chromatic-alteration enharmonic-alteration octave value dottedp clef key-signature)
   "Instanciates a `mobject' representing a note (not a rest). `lettera', `chromatic-alteration' and `enharmonic-alteration' all need to be provided in keyword form."
   (make-instance 'mobject :id id
-                          :pitch (list lettera chromatic-alteration enharmonic-alteration)
+                          :pitch (list lettera chromatic-alteration enharmonic-alteration octave)
                           :value value
                           :dottedp dottedp
-                          :clef clef))
+                          :clef clef
+                          :key-signature key-signature))
 
 (defmethod make-rest (id value dottedp)
   "Instanciates a `mobject' representing a rest (not a note)."
@@ -168,10 +180,12 @@
   "Printing to standard-output, for debugging purposes."
   (format t "~&~4,0tVoice ~a (~s):" (id voice) (label voice))
   (dolist (mobject (mobjects voice))
-    (format t "~&~6,0tMusical Object ~a:~&~8,0tPitch = ~a~&~8,0tValue = ~a"
+    (format t "~&~6,0tMusical Object ~a:~&~8,0tPitch = ~a~&~8,0tValue = ~a,~&~8,0tClef = ~a~&~8,0tKey Signature = ~a"
             (id mobject)
             (pitch mobject)
-            (value mobject))))
+            (value mobject)
+            (clef mobject)
+            (key-signature mobject))))
 
 (defmethod print-element ((section section))
   "Printing to standard-output, for debugging purposes."
@@ -181,7 +195,11 @@
 
 (defmethod print-element ((score score))
   "Printing to standard-output, for debugging purposes."
-  (format t "~&Score (~s, ~s):" (title score) (filename score))
+  (format t "~&Score (Title ~s, file ~s, creator ~s)~%[Comment ~s]:"
+          (title score)
+          (filename score)
+          (creator score)
+          (comment score))
   (dolist (section (sections score))
     (print-element section)))
 
