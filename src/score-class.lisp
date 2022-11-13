@@ -168,29 +168,29 @@
                           :clef nil))
 
 
-(defmethod print-element ((voice voice))
+(defmethod print-element ((voice voice) stream)
   "Printing to standard-output, for debugging purposes."
-  (format t "~&~4,0tVoice ~a (~s):" (id voice) (label voice))
+  (format stream "~&~4,0tVoice ~a (~s):" (id voice) (label voice))
   (dolist (mobject (mobjects voice))
-    (format t "~&~6,0tMusical Object ~a:~&~8,0tPitch = ~a~&~8,0tValue = ~a,~&~8,0tClef = ~a~&~8,0tKey Signature = ~a"
+    (format stream "~&~6,0tMusical Object ~a:~&~8,0tPitch = ~a~&~8,0tValue = ~a~&~8,0tClef = ~a~&~8,0tKey Signature = ~a"
             (id mobject)
             (pitch mobject)
             (value mobject)
             (clef mobject)
             (key-signature mobject))))
 
-(defmethod print-element ((section section))
+(defmethod print-element ((section section) stream)
   "Printing to standard-output, for debugging purposes."
-  (format t "~&~2,0tSection ~a (~s / ~s):" (id section) (heading section) (caption section))
+  (format stream "~&~2,0tSection ~a (~s / ~s):" (id section) (heading section) (caption section))
   (dolist (voice (voices section))
-    (print-element voice)))
+    (print-element voice stream)))
 
-(defmethod print-element ((score score))
+(defmethod print-element ((score score) stream)
   "Printing to standard-output, for debugging purposes."
-  (format t "~&Score (Title ~s, file ~s, creator ~s)~%[Comment ~s]:"
+  (format stream "~&Score (Title ~s, file ~s, creator ~s)~%[Comment ~s]:"
           (title score)
           (filename score)
           (creator score)
           (comment score))
   (dolist (section (sections score))
-    (print-element section)))
+    (print-element section stream)))

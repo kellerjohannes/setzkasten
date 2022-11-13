@@ -33,7 +33,7 @@
      (:text 50 78 (230 nil "Testext."))
      (:music nil
       (:section s1) (:voice v1)
-      (:f-clef) max7 fclef7 (:key-signature (3 6) nil) fl3 fl6 b22 sbd5 b22 sb6 b22 nat6 b22 sb6 b22 sb4 b22 sh5 b22 sb5 b22 m6 b22 sb5 b22 sb4 b22 sb3 b38 bl
+      (:f-clef) max7 fclef7 (:key-signature (3 6) nil) fl3 fl6 b22 sbd5 b22 sb6 b22 nat6 b22 sb6 b22 m9 b22 sb4 b22 sh5 b22 sb5 b22 m6 b22 sb5 b22 sb4 b22 sb3 b38 bl
       (:section s2)
       cclef7 (:key-signature nil nil) b38 sb5 b38 sb6 b38 bl
       (:section s3) (:voice v1)
@@ -262,11 +262,16 @@
 
 (defun parse-score (data)
   (let ((score (make-instance 'score))
-        (parser-state (make-instance 'parser-state)))
-    (process-metadata score parser-state data)
-    (process-music score parser-state (extract-category :data data))
-    ;; this is for debugging / development only. possibly this output could go into a file.
-    (print-element score)
+        (parser-state-instance (make-instance 'parser-state)))
+    (format t "state: ~a" (object-id-counter parser-state-instance))
+    (process-metadata score parser-state-instance data)
+    (process-music score parser-state-instance (extract-category :data data))
+    (with-open-file (logfile (merge-pathnames *log-file-path*
+                                              (pathname (filename score)))
+                             :direction :output
+                             :if-exists :supersede
+                             :if-does-not-exist :create)
+      (print-element score logfile))
     score))
 
 
