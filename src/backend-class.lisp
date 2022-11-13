@@ -11,3 +11,13 @@
 
 (defmethod add-output-file ((backend setzkasten-backend) filename)
   (push filename (output-file-list backend)))
+
+
+
+(defclass backend-with-score (setzkasten-backend)
+  ((score-abstraction :initform nil :accessor score-abstraction)))
+
+
+;; TODO to be implemented
+(defmethod parse-score ((backend setzkasten-backend) score-data)
+  (declare (ignore backend score-data)))
