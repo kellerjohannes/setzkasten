@@ -53,10 +53,12 @@
           :documentation "This string will be displayed as instrument labels at the beginning of a stave.")))
 
 (defclass mobject ()
-  ((key :initform nil
-                 :initarg :key
-                 :accessor key
-                 :documentation "This describes the pitch of a note as an organ key: (lettera ordine octave). 'lettera' is one of the seven root note letters, as symbols. 'ordine' is 1-6, referencing the rows of keys. 'octave' is 1-5, where middle-C is 3. If NIL, the object is treated as a rest.")
+  ((pitch :initform nil
+          :initarg :pitch
+          :accessor pitch
+          ;; needs to be changed, because the notation is more expressive than the keyboard:
+          ;; probably in the form of '(:a :♯ :⋅)
+          :documentation "This list describes the pitch of a note as an organ key: (lettera ordine octave). 'lettera' is one of the seven root note letters, as symbols. 'ordine' is 1-6, referencing the rows of keys. 'octave' is 1-5, where middle-C is 3. If NIL, the object is treated as a rest.")
    (id :initform nil
        :initarg :id
        :accessor id)
@@ -71,7 +73,9 @@
    (clef :initform nil
          :initarg :clef
          :accessor clef
-         :documentation "Describes the clef a note is contextualised in. Clef format: (type . line). Type is :c, :f or :g.")))
+         :documentation "Describes the clef a note is contextualised in. Clef format: (type . line). Type is :c, :f or :g.")
+   ;; TODO add a slot for 'tonality context', including an implementation on the level of glyph encoding (because the parser can't decide whether a 'sh' is for a note or for the whole system)
+   ))
 
 
 (defmethod add-mobject ((voice voice) mobject-instance)
@@ -114,6 +118,7 @@
     (when sec (get-voice sec voice-id))))
 
 (defmethod set-voice-label* ((score score) section-id voice-id voice-label)
+  "... if it doesn't exist, it creates one."
   (let ((sec-candidate (get-section score section-id)))
     (unless sec-candidate
       (add-section score (make-instance 'section :id section-id)))
@@ -128,14 +133,14 @@
 
 (defmethod make-note (id lettera ordine octave value dottedp clef)
   (make-instance 'mobject :id id
-                          :key (list lettera ordine octave)
+                          :pitch (list lettera ordine octave)
                           :value value
                           :dottedp dottedp
                           :clef clef))
 
 (defmethod make-rest (id value dottedp)
   (make-instance 'mobject :id id
-                          :key nil
+                          :pitch nil
                           :value value
                           :dottedp dottedp
                           :clef nil))
@@ -171,7 +176,7 @@
   (dolist (mobject (mobjects voice))
     (format t "~&~6,0tMusical Object ~a:~&~8,0tKey = ~a~&~8,0tValue = ~a"
             (id mobject)
-            (key mobject)
+            (pitch mobject)
             (value mobject))))
 
 (defmethod print-element ((section section))
@@ -183,6 +188,12 @@
   (format t "~&Score (~s, ~s):" (title score) (filename score))
   (dolist (section (sections score))
     (print-element section)))
+
+
+
+
+
+
 
 
 

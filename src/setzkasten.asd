@@ -6,6 +6,7 @@
   :components ((:file "vector-package")
                (:file "setzkasten")
                (:file "macros")
+               (:file "score-class")
                (:file "apparatus")
                (:file "class-definitions" :depends-on ("macros" "setzkasten"))
                (:file "casting" :depends-on ("class-definitions"))
