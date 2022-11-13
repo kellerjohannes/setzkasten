@@ -10,10 +10,12 @@
 
 (defclass score ()
   ((sections :initform nil
-             :accessor sections)
+             :accessor sections
+             :documentation "This simple list contains instances of the `section' class.")
    (filename :initform ""
              :initarg :filename
-             :accessor filename)
+             :accessor filename
+             :documentation "This string contains the filename of the encoding file describing the score, without suffix.")
    (title :initform ""
           :initarg :title
           :accessor title
@@ -21,35 +23,40 @@
    (voice-labels :initform nil
                  :initarg :voice-labels
                  :accessor voice-labels
-                 :documentation "This alist contains pairs of voice ids and strings that will be printed as instrument names in front of staves. They can be overridden by local label definitions in voice instances.")))
+                 :documentation "This alist contains pairs of voice ids and strings that will be printed as instrument names in front of staves. They can be overridden by local label definitions in voice instances."))
+  (:documentation "This class contains a model of the complete score."))
 
 (defclass section ()
   ((voices :initform nil
-           :accessor voices)
+           :accessor voices
+           :documentation "This simple list contains instances of the `section' class, the order is relevant for the graphical output.")
    (id :initform nil
        :initarg :id
        :accessor id
-       :documentation "This symbol can be used to reference the section internally. It is taken from the score definition.")
+       :documentation "This symbol can be used to reference the section internally. It is taken from the score encoding file.")
    (heading :initform ""
             :initarg :heading
             :accessor heading
-            :documentation "This string will be displayed as a heading, flush-left above the section.")
+            :documentation "This string will be displayed as a heading, flush-left above the section. In a normal use case this would resemble the `id' slot, but can be defined independently in the score encoding file.")
    (caption :initform ""
             :initarg :caption
             :accessor caption
-            :documentation "This string contains Text to be displayed centered below the section.")))
+            :documentation "This string contains text to be displayed centered below the section."))
+  (:documentation "This class contains all information of one section of the score. It acts independently of other sections."))
 
 (defclass voice ()
   ((mobjects :initform nil
-             :accessor mobjects)
+             :accessor mobjects
+             :documentation "This simple list contains instances of `mobject' (notes and rests). The order is musically relevant and should be respected in the graphical output.")
    (id :initform nil
        :initarg :id
        :accessor id
-       :documentation "This symbol can be used to reference the voice internally. It is taken from the score definition. It can occur multiple times within a score, in different sections.")
+       :documentation "This symbol can be used to reference the voice internally. It is taken from the score encoding file. It can occur multiple times within a score, in different sections.")
    (label :initform ""
           :initarg :label
           :accessor label
-          :documentation "This string will be displayed as instrument labels at the beginning of a stave.")))
+          :documentation "This string will be displayed as instrument labels at the beginning of a stave. If `nil' it will be ignored for graphical output."))
+  (:documentation "This class contains all the information about a voice within a section of the score. Voices in other sections need to be instanciated independently in the `voices' slot of each section."))
 
 (defclass mobject ()
   ((pitch :initform nil
@@ -74,50 +81,59 @@
          :accessor clef
          :documentation "Describes the clef a note is contextualised in. Clef format: (type . line). Type is :c, :f or :g.")
    ;; TODO add a slot for 'tonality context', including an implementation on the level of glyph encoding (because the parser can't decide whether a 'sh' is for a note or for the whole system)
-   ))
+   )
+  (:documentation "This class contains all information about a rest or note. Pitch encoding and duration are obvious. Also clef and tonality context are stored for each note individually. When rendering the `mobject' clef and tonality changes need to be identified with a state variable in order to trigger clef display correctly."))
 
 
 (defmethod add-mobject ((voice voice) mobject-instance)
+  "Adds an instance of `mobject' to an instance of `voice'."
   (setf (mobjects voice) (append (mobjects voice) (list mobject-instance))))
 
 (defmethod get-mobject ((voice voice) mobject-id)
+  "Returns the instance of a `mobject' based on its `id' slot, given a `voice' instance."
   (find mobject-id (mobjects voice) :key #'id :test #'string=))
 
 (defmethod add-section ((score score) section-instance)
+  "Adds an instance of `section' to a given instance of `score'."
   (setf (sections score) (append (sections score) (list section-instance))))
 
 (defmethod get-section ((score score) section-id)
+  "Returns the instance of a `section' based on its `id', given a `score' instance."
   (find section-id (sections score) :key #'id :test #'string=))
 
 (defmethod set-section-heading* ((score score) id new-heading)
-  "Sets the `heading' of a section with `id'. If it doesn't exists in `score', it will create a section."
+  "Sets the `heading' of a section referenced by its `id'. If no `section' instance with this `id' exists in `score', it will will be created."
   (let ((candidate (get-section score id)))
     (if candidate
         (setf (heading candidate) new-heading)
         (add-section score (make-instance 'section :id id :heading new-heading)))))
 
 (defmethod set-section-caption* ((score score) id new-caption)
-  "Sets the `caption' of a section with `id'. If it doesn't exists in `score', it will create a section."
+  "Sets the `caption' of a section referenced by its `id'. If no `section' instance with this `id' exists in `score', it will be created."
   (let ((candidate (get-section score id)))
     (if candidate
         (setf (caption candidate) new-caption)
         (add-section score (make-instance 'section :id id :caption new-caption)))))
 
 (defmethod add-voice ((section section) voice-instance)
+  "Adds the instance of `voice' to an instance of `section'."
   (setf (voices section) (append (voices section) (list voice-instance))))
 
 (defmethod get-voice ((section section) voice-id)
+  "Returns the instance of a voice with a given `id' in an instance of `section'"
   (find voice-id (voices section) :key #'id :test #'string=))
 
 (defmethod add-voice-to-section ((score score) section-id voice-instance)
+  "Adds a given instance of `voice' to a `section' referenced by its `id' in a given `score'."
   (add-voice (get-section score section-id) voice-instance))
 
 (defmethod get-voice-in-section ((score score) section-id voice-id)
+  "Returns the instance of `voice', referenced by its `id' and the `id' of a section within the instance of `score'."
   (let ((sec (get-section score section-id)))
     (when sec (get-voice sec voice-id))))
 
 (defmethod set-voice-label* ((score score) section-id voice-id voice-label)
-  "... if it doesn't exist, it creates one."
+  "Sets the `label' slot of a voice in a `score', referenced by the `id' of the `voice' and the `id' of the `section'."
   (let ((sec-candidate (get-section score section-id)))
     (unless sec-candidate
       (add-section score (make-instance 'section :id section-id)))
@@ -127,10 +143,12 @@
       (setf (label (get-voice-in-section score section-id voice-id)) voice-label))))
 
 (defmethod add-mobject-to-score ((score score) section-id voice-id mobject-instance)
+  "Adds the instance of `mobject' to a voice in a `score', references by the voice's `id' and the section's `id'."
   (add-mobject (get-voice (get-section score section-id) voice-id)
                mobject-instance))
 
 (defmethod make-note (id lettera ordine octave value dottedp clef)
+  "Instanciates a `mobject' representing a note (not a rest)."
   (make-instance 'mobject :id id
                           :pitch (list lettera ordine octave)
                           :value value
@@ -138,6 +156,7 @@
                           :clef clef))
 
 (defmethod make-rest (id value dottedp)
+  "Instanciates a `mobject' representing a rest (not a note)."
   (make-instance 'mobject :id id
                           :pitch nil
                           :value value
