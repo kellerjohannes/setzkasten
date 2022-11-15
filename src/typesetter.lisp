@@ -89,7 +89,7 @@
           (add-stencil-to-line score (get-stencil element stencil-list)))
         (rest (rest music-data)))
   (push (second music-data) (first (line-container score)))
-  (push 'music (first (line-container score))))
+  (push :music (first (line-container score))))
 
 (defmethod show-data ((score typesetter))
   (format t "~&----line-container:~&~s
@@ -148,8 +148,8 @@
     (mapc (lambda (line line-width)
             ;; TODO restructure case: incf -> case
             (case (first line)
-              (text (incf y-counter (typeset-text-line score line y-counter)))
-              (music (incf y-counter (typeset-music-line score line line-width alignment y-counter)))))
+              (:text (incf y-counter (typeset-text-line score line y-counter)))
+              (:music (incf y-counter (typeset-music-line score line line-width alignment y-counter)))))
           (reverse (line-container score))
           (reverse (line-width-list score)))))
 
@@ -162,7 +162,7 @@
         (+ top-and-bottom-margin
            (reduce #'+ (line-container score)
                    :key (lambda (line)
-                          (if (eq (first line) 'text)
+                          (if (eq (first line) :text)
                               (second line)
                               (glyph-height (third line)))))))))
 
@@ -182,7 +182,7 @@
         (+ left-and-right-margin (width score))
         (+ left-and-right-margin
            (loop for line in (line-container score)
-                 maximize (if (eq (first line) 'text)
+                 maximize (if (eq (first line) :text)
                               (calculate-text-width line)
                               (if (second line)
                                   (second line)
@@ -190,7 +190,7 @@
 
 (defmethod write-score ((score typesetter))
   (with-open-file (stream (merge-pathnames *svg-export-path*
-                                           (pathname (format nil "~a-a.svg" (name score))))
+                                           (pathname (format nil "~a.svg" (name score))))
                           :direction :output
                           :if-exists :supersede
                           :if-does-not-exist :create)
@@ -212,41 +212,43 @@
 
 (defun parse-vicentino-code (data glyph-definitions)
   (mapcar (lambda (line)
-            (if (eq (first line) 'music)
-                (mapcar (lambda (item)
-                          (lookup-vicentino-code item glyph-definitions))
-                        line)
+            (if (eq (first line) :music)
+                (append (list :music (second line))
+                        (remove nil (mapcar (lambda (item)
+                                              (when (atom item)
+                                                (lookup-vicentino-code item glyph-definitions)))
+                                            (rest (rest line)))))
                 line))
           data))
 
-(defun score-name (score) (first (first score)))
+(defun score-name (score) (extract-item :header :filename score))
+(defun score-width (score) (extract-item :preamble-type-imitation :width score))
+(defun score-height (score) (extract-item :preamble-type-imitation :height score))
+(defun score-bg-color (score) (extract-item :preamble-type-imitation :background score))
+(defun score-elements (score) (extract-category :data score))
 
-(defun score-width (score) (second (first score)))
+;; probably the only public symbol, in case I decide to isolate type-imitation into a separate package
+(defun create-type-imitation-score (score suffix components glyphs syntax)
+  "Takes a complete score encoding expression (including :header), writes a svg file."
+  (let ((stencil-list (parse-setzkasten components glyphs syntax))
+        (setter (make-instance 'typesetter
+                               :bg-color (score-bg-color score)
+                               :width (score-width score)
+                               :height (score-height score)
+                               :margins *score-margins*
+                               :name (format nil "~a-~a" (score-name score) suffix))))
+    (mapc (lambda (line)
+            (cond ((eq (first line) :music)
+                   (add-music-line setter line stencil-list))
+                  ((eq (first line) :text)
+                   (add-text-line setter line))
+                  (t nil)))
+          (parse-vicentino-code (score-elements score) glyphs))
+    (typeset setter :block)  ; use :block for Blocksatz, use :flushed for Flattersatz
+    (write-score setter)
+    (format nil "~a-~a" (score-name score) suffix)))
 
-(defun score-height (score) (third (first score)))
 
-(defun score-bg-color (score) (fourth (first score)))
-
-(defun score-elements (score) (second score))
-
-
+;; obsolete, needs to be deleted once hunchentoot is reimplemented
 (defun create-scores (data components glyphs syntax)
-  (mapcar (lambda (score)
-        (let ((stencil-list (parse-setzkasten components glyphs syntax))
-          (setter (make-instance 'typesetter
-                     :bg-color (score-bg-color score)
-                     :width (score-width score)
-                     :height (score-height score)
-                     :margins *score-margins*
-                     :name (score-name score))))
-          (mapc (lambda (line)
-              (cond ((eq (first line) 'music)
-                 (add-music-line setter line stencil-list))
-                ((eq (first line) 'text)
-                 (add-text-line setter line))
-                (t nil)))
-            (parse-vicentino-code (score-elements score) glyphs))
-          (typeset setter :block)  ; use :block for Blocksatz, use :flushed for Flattersatz
-          (write-score setter)
-          (format nil "~a-a" (score-name score))))
-      data))
+  (mapcar (lambda (score) (create-type-imitation-score score components glyphs syntax)) data))
