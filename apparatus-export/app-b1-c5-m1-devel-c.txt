@@ -1,4 +1,0 @@
-Auto-generated critical apparatus for file b1-c5-m1-devel-c:
-
-Line 0, glyph 8 (element 0): reading IT used ("Mano della divisione del tono in quattro diesis enarmonici ascendenti con lo semitono minore.").
-Line 0, glyph 276 (element 15): reading IDEALISED used ("per ♭.ut.re.mi.fa.re.").

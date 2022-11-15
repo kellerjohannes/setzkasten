@@ -1,3 +1,0 @@
-Auto-generated critical apparatus for file b1-c5-m1-devel-b:
-
-Line 0, glyph 275 (element 15): reading IDEALISED used ("per ♭.ut.re.mi.fa.re.").

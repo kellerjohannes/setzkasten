@@ -16,7 +16,7 @@
                                                     (:idealised sb4)) sbd4 b38 fl5 b38 sbd5 b38 sb5 b38
           cclef7 (:alt (:diplomatic b38)
                        ;; Achtung, tonality definition muss ergänzt werden
-                       (:idealised fl4)) sb4 b38 sbd4 b38 sh4 b22 sb4 b38 fl5 b38 sbd5 b38 sb5 bl)
+                       (:idealised fl6)) sb4 b38 sbd4 b38 sh4 b22 sb4 b38 fl5 b38 sbd5 b38 sb5 bl)
    (:text 90 58
          (113 nil "ut")
          (203 nil "re")

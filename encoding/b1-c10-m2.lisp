@@ -14,7 +14,7 @@
           sb3 b22 fl4 b22 sb4 bl
           sb4 b22 fl5 b22 sb5 bl
           (:alt (:diplomatic sb5 b22 sh4 b22 sb4)
-                (:idealised sh4 b22 sb4 b22 sb5)) bl
+                (:idealised sb5 b22 fl6 b22 sb6)) bl
           b22 sb7 b22 fl6 b22 sb6 bl
           sb5 b22 sh4 b22 sb4 bl
           sb4 b22 sh3 b22 sb3 bl
