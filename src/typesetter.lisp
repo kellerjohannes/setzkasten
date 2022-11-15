@@ -232,7 +232,9 @@
   "Takes a complete score encoding expression (including :header), writes a svg file."
   (let ((stencil-list (parse-setzkasten components glyphs syntax))
         (setter (make-instance 'typesetter
-                               :bg-color (score-bg-color score)
+                               :bg-color (if *global-bg-color*
+                                             *global-bg-color*
+                                             (score-bg-color score))
                                :width (score-width score)
                                :height (score-height score)
                                :margins *score-margins*

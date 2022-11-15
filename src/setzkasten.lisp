@@ -6,6 +6,7 @@
 
 (in-package :setzkasten)
 
+(defparameter *global-bg-color* "#e3f3ff")
 (defparameter *svg-export-path*
   (pathname "~/common-lisp/setzkasten/svg-export/"))
 (defparameter *apparatus-export-path*
