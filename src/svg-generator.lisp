@@ -42,7 +42,7 @@
 ;; TODO extract attributes to function
 (defun output-text (x y text-string font-size text-length &optional (color "black") (center nil))
   "`text-length' can be nil, then the argument will be ommited."
-  (format nil "<text x=\"~a\" y=\"~a\" font-size=\"~a\" text-anchor=\"~a\" alignment-baseline=\"hanging\"~@[ textLength=\"~a\" ~] font-weight=\"normal\" font-family=\"Times, serif\" font-style=\"normal\" stroke=\"~a\" fill=\"~a\">~a</text>"
+  (format nil "<text x=\"~a\" y=\"~a\" font-size=\"~a\" text-anchor=\"~a\" alignment-baseline=\"baseline\"~@[ textLength=\"~a\" ~] font-weight=\"normal\" font-family=\"Times, serif\" font-style=\"normal\" stroke=\"~a\" fill=\"~a\">~a</text>"
       x
       y
       font-size
