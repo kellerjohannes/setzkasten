@@ -266,6 +266,7 @@ dot = {
         (unless output-file-supplied-p (uiop:delete-file-if-exists output-file))))))
 
 (defun create-lilypond-score (score-instance suffix)
+  (format t "~&Running Lilypond on ~a-~a" (filename score-instance) suffix)
   (run-lilypond (generate-score-ly-code score-instance)
                 :output-file (merge-pathnames *lilypond-export-path*
                                               (pathname

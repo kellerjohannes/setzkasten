@@ -230,6 +230,7 @@
 ;; probably the only public symbol, in case I decide to isolate type-imitation into a separate package
 (defun create-type-imitation-score (score suffix components glyphs syntax)
   "Takes a complete score encoding expression (including :header), writes a svg file. Returns a string with the filename of the generated file."
+  (format t "~&Crafting SVG type imitation for ~a-~a" (score-name score) suffix)
   (let ((stencil-list (parse-setzkasten components glyphs syntax))
         (setter (make-instance 'typesetter
                                :bg-color (if *global-bg-color*
