@@ -56,27 +56,41 @@
     ("b1-c5-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b1-c5-m1" "b" (:idealised) ,*vicentino-types-backend*)
     ("b1-c5-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c5-m2" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c5-m3" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c5-m3" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c5-m4" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c5-m4" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c5-m5" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b1-c5-m5" "b" (:idealised) ,*vicentino-types-backend*)
     ("b1-c5-m6" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c5-m6" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c5-m7" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b1-c5-m7" "b" (:idealised) ,*vicentino-types-backend*)
     ("b1-c5-m8" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c5-m8" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c6-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c6-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c7-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c7-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c8-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c8-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c8-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c8-m2" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c9-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c9-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c10-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c10-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c10-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b1-c10-m2" "b" (:idealised) ,*vicentino-types-backend*)
     ("b1-c11-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c11-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c11-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b1-c11-m2" "b" (:idealised) ,*vicentino-types-backend*)
     ("b1-c11-m3" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c11-m3" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c12-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c12-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c13-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b1-c13-m1" "b" (:idealised) ,*vicentino-types-backend*)
     ("b1-c15-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
@@ -84,32 +98,56 @@
     ("b1-c16-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b1-c16-m1" "b" (:idealised) ,*vicentino-types-backend*)
     ("b1-c17-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c17-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c18-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c18-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c19-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c19-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c20-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b1-c20-m1" "b" (:idealised) ,*vicentino-types-backend*)
     ("b1-c21-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c21-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c22-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c22-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c23-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b1-c23-m1" "b" (:idealised) ,*vicentino-types-backend*)
     ("b1-c24-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c24-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c25-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c25-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c26-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c26-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c27-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c27-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c28-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c28-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c29-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c29-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c30-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c30-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c31-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c31-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c32-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c32-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c33-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c33-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c34-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c34-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c35-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c35-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c36-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c36-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c37-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c37-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c37-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c37-m2" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c38-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c38-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c39-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b1-c39-m1" "b" (:idealised) ,*vicentino-types-backend*)
     ("b1-c39-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c39-m2" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
     ("b1-c40-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ("b1-c40-m2" "a" (:diplomatic) ,*vicentino-types-backend*)))
+    ("b1-c40-m1" "b" (:idealised) ,*vicentino-types-backend*) ; redundant
+    ("b1-c40-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c40-m2" "b" (:idealised) ,*vicentino-types-backend*))) ; redundant
