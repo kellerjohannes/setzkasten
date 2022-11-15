@@ -241,35 +241,37 @@ dot = {
 
 (defun exec-lilypond (input &key (output "") (lilypond-path *lilypond-path*))
   (uiop:run-program (list lilypond-path
-              "-o" (uiop:native-namestring (namestring (make-pathname :type nil
-                                          :defaults output)))
-              (uiop:native-namestring input))
-            :output :interactive :error-output :interactive))
+                          "-dbackend=svg"
+                          "-dcrop"
+                          "-o"
+                          (uiop:native-namestring
+                           (namestring (make-pathname :type nil :defaults output)))
+                          (uiop:native-namestring input))
+                    :output :interactive :error-output :interactive))
 
 (defun run-lilypond (ly-code &key (ly-file nil ly-file-supplied-p)
-                   (output-file nil output-file-supplied-p)
-                   (lilypond-path *lilypond-path*))
+                               (output-file nil output-file-supplied-p)
+                               (lilypond-path *lilypond-path*))
   (flet ((tmp (pathname)
-       (uiop:tmpize-pathname (uiop:merge-pathnames* (uiop:temporary-directory)
-                            pathname))))
+           (uiop:tmpize-pathname (uiop:merge-pathnames* (uiop:temporary-directory)
+                                                        pathname))))
     (let* ((ly-file (or ly-file (tmp "cl-lilypond.ly")))
-       (output-file (or output-file (tmp "lilypond.pdf"))))
+           (output-file (or output-file (tmp "lilypond.pdf"))))
       (unwind-protect
-       (progn
-         (alexandria:write-string-into-file ly-code ly-file :if-exists :overwrite)
-         (exec-lilypond ly-file
-                :output output-file :lilypond-path lilypond-path))
-    (unless ly-file-supplied-p (uiop:delete-file-if-exists ly-file))
-    (unless output-file-supplied-p (uiop:delete-file-if-exists output-file))))))
+           (progn
+             (alexandria:write-string-into-file ly-code ly-file :if-exists :overwrite)
+             (exec-lilypond ly-file
+                            :output output-file :lilypond-path lilypond-path))
+        (unless ly-file-supplied-p (uiop:delete-file-if-exists ly-file))
+        (unless output-file-supplied-p (uiop:delete-file-if-exists output-file))))))
 
 (defun create-lilypond-score (score-instance suffix)
-  (let ((ly-pathname (format nil "~a-~a.ly" (filename score-instance) suffix)))
-    (with-open-file (ly-file (merge-pathnames *lilypond-export-path*
-                                              (pathname ly-pathname))
-                             :direction :output
-                             :if-exists :supersede
-                             :if-does-not-exist :create)
-      (format ly-file "~a" (generate-score-ly-code score-instance))))
+  (run-lilypond (generate-score-ly-code score-instance)
+                :output-file (merge-pathnames *lilypond-export-path*
+                                              (pathname
+                                               (format nil "~a-~a.ly"
+                                                       (filename score-instance)
+                                                       suffix))))
   (format nil "~a-~a" (filename score-instance) suffix))
 
 

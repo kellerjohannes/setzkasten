@@ -1,0 +1,8 @@
+Auto-generated critical apparatus for file b1-c5-m1-e:
+
+Line 0, glyph 10 (element 0): reading EN used ("Demonstration of the diatonic hand").
+Line 0, glyph 13 (element 0): reading EN used ("A").
+Line 0, glyph 15 (element 0): reading EN used ("B♭").
+Line 0, glyph 17 (element 0): reading EN used ("C").
+Line 0, glyph 19 (element 0): reading EN used ("D").
+Line 0, glyph 21 (element 0): reading EN used ("E").
