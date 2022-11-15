@@ -212,25 +212,22 @@
 
 (defun parse-vicentino-code (data glyph-definitions)
   (mapcar (lambda (line)
-            (if (eq (first line) 'music)
+            (if (eq (first line) :music)
                 (mapcar (lambda (item)
                           (lookup-vicentino-code item glyph-definitions))
                         line)
                 line))
           data))
 
-(defun score-name (score) (first (first score)))
-
-(defun score-width (score) (second (first score)))
-
-(defun score-height (score) (third (first score)))
-
-(defun score-bg-color (score) (fourth (first score)))
-
-(defun score-elements (score) (second score))
+(defun score-name (score) (extract-item :header :filename score))
+(defun score-width (score) (extract-item :preamble-type-imitation :width score))
+(defun score-height (score) (extract-item :preamble-type-imitation :height score))
+(defun score-bg-color (score) (extract-item :preamble-type-imitation :background score))
+(defun score-elements (score) (extract-category :data score))
 
 ;; probably the only public symbol, in case I decide to isolate type-imitation into a separate package
 (defun create-type-imitation-score (score suffix components glyphs syntax)
+  "Takes a complete score encoding expression (including :header), writes a svg file."
   (let ((stencil-list (parse-setzkasten components glyphs syntax))
         (setter (make-instance 'typesetter
                                :bg-color (score-bg-color score)
@@ -239,9 +236,9 @@
                                :margins *score-margins*
                                :name (format nil "~a-~a" (score-name score) suffix))))
     (mapc (lambda (line)
-            (cond ((eq (first line) 'music)
+            (cond ((eq (first line) :music)
                    (add-music-line setter line stencil-list))
-                  ((eq (first line) 'text)
+                  ((eq (first line) :text)
                    (add-text-line setter line))
                   (t nil)))
           (parse-vicentino-code (score-elements score) glyphs))
@@ -249,5 +246,7 @@
     (write-score setter)
     (format nil "~a-~a" (score-name score) suffix)))
 
+
+;; obsolete, needs to be deleted once hunchentoot is reimplemented
 (defun create-scores (data components glyphs syntax)
   (mapcar (lambda (score) (create-type-imitation-score score components glyphs syntax)) data))
