@@ -1,0 +1,218 @@
+Score (Title "Mano della divisione del tono in quattro diesis enarmonici ascendenti con lo semitono minore.", file "b1-c5-m5-devel", creator "Johannes Keller")
+[Comment "Playground to test score parsing."]:
+  Section S1 ("da A la mi re a B mi" / "per ♮: re-mi-fa-re-mi"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (F NIL NIL 2)
+        Value = MAXIMA
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (A NIL NIL 1)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (A NIL DOT 1)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (A SHARP NIL 1)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (B FLAT DOT 1)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (B NIL NIL 1)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+  Section S2 ("da B mi a C sol fa ut" / "per ♮: mi-fa-re-mi-fa"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (B NIL NIL 1)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (B NIL DOT 1)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (B SHARP NIL 1)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (C FLAT DOT 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (C NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+  Section S3 ("da B fa a C sol fa ut" / ""):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (B FLAT NIL 1)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (B FLAT DOT 1)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (B NATURAL NIL 1)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (B NIL DOT 1)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (C NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+  Section S4 ("da C sol fa ut a D la sol" / ""):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (C NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (C NIL DOT 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (C SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (D FLAT DOT 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (D NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+  Section S5 ("da D la sol re a E la mi" / ""):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (F NIL NIL 2)
+        Value = MAXIMA
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (D NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (D NIL DOT 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (D SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (E FLAT DOT 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (E NIL DOT 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+  Section S6 ("da E la mi a F" / ""):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (E NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (E NIL DOT 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (F NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+  Section S7 ("da F fa ut a G" / ""):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (F NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (F NIL DOT 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (F SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (G FLAT DOT 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (G NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+  Section S8 ("da G sol re ut a A la mi re" / ""):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (G NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (G NIL DOT 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (G SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (A FLAT DOT 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)
+      Musical Object OB0:
+        Pitch = (A NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (F . 7)
+        Key Signature = (NIL NIL)

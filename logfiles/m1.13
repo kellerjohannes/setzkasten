@@ -2,52 +2,52 @@ Score (Title "Descritione Test", file "m1.13", creator "Johannes Keller")
 [Comment "Testdata, for developing purposes only."]:
   Section S1 ("A" / "tono minore"):
     Voice V1 ("Soprano"):
-      Musical Object L22O1:
+      Musical Object OB0:
         Pitch = (D NIL DOT 2)
         Value = SEMIBREVIS
         Clef = (F . 7)
         Key Signature = ((3 6) NIL)
-      Musical Object L22O2:
+      Musical Object OB0:
         Pitch = (E FLAT NIL 2)
         Value = SEMIBREVIS
         Clef = (F . 7)
         Key Signature = ((3 6) NIL)
-      Musical Object L22O3:
+      Musical Object OB0:
         Pitch = (E NIL NIL 2)
         Value = SEMIBREVIS
         Clef = (F . 7)
         Key Signature = ((3 6) NIL)
-      Musical Object L22O4:
+      Musical Object OB0:
         Pitch = (A NIL NIL 2)
         Value = MINIMA
         Clef = (F . 7)
         Key Signature = ((3 6) NIL)
-      Musical Object L22O5:
+      Musical Object OB0:
         Pitch = (C NIL NIL 2)
         Value = SEMIBREVIS
         Clef = (F . 7)
         Key Signature = ((3 6) NIL)
-      Musical Object L22O6:
+      Musical Object OB0:
         Pitch = (D SHARP NIL 2)
         Value = SEMIBREVIS
         Clef = (F . 7)
         Key Signature = ((3 6) NIL)
-      Musical Object L22O7:
+      Musical Object OB0:
         Pitch = (E FLAT NIL 2)
         Value = MINIMA
         Clef = (F . 7)
         Key Signature = ((3 6) NIL)
-      Musical Object L22O8:
+      Musical Object OB0:
         Pitch = (D NIL NIL 2)
         Value = SEMIBREVIS
         Clef = (F . 7)
         Key Signature = ((3 6) NIL)
-      Musical Object L22O9:
+      Musical Object OB0:
         Pitch = (C NIL NIL 2)
         Value = SEMIBREVIS
         Clef = (F . 7)
         Key Signature = ((3 6) NIL)
-      Musical Object L22O10:
+      Musical Object OB0:
         Pitch = (B FLAT NIL 1)
         Value = SEMIBREVIS
         Clef = (F . 7)
@@ -55,12 +55,12 @@ Score (Title "Descritione Test", file "m1.13", creator "Johannes Keller")
     Voice V2 ("Tenore"):
   Section S2 ("B" / "tono maggiore"):
     Voice V1 ("Soprano"):
-      Musical Object L22O11:
+      Musical Object OB0:
         Pitch = (A NIL NIL 2)
         Value = SEMIBREVIS
         Clef = (C . 7)
         Key Signature = (NIL NIL)
-      Musical Object L22O12:
+      Musical Object OB0:
         Pitch = (B NIL NIL 2)
         Value = SEMIBREVIS
         Clef = (C . 7)
@@ -68,23 +68,23 @@ Score (Title "Descritione Test", file "m1.13", creator "Johannes Keller")
     Voice V2 ("Alto"):
   Section S3 ("C" / "terza minima"):
     Voice V1 ("Soprano"):
-      Musical Object L22O13:
+      Musical Object OB0:
         Pitch = (B NIL NIL 2)
         Value = SEMIBREVIS
         Clef = (C . 7)
         Key Signature = (NIL NIL)
-      Musical Object L22O14:
+      Musical Object OB0:
         Pitch = (C NIL NIL 3)
         Value = SEMIBREVIS
         Clef = (C . 7)
         Key Signature = (NIL NIL)
     Voice V2 ("Tenore"):
-      Musical Object L22O15:
+      Musical Object OB0:
         Pitch = (B NIL NIL 1)
         Value = SEMIBREVIS
         Clef = (F . 7)
         Key Signature = (NIL NIL)
-      Musical Object L22O16:
+      Musical Object OB0:
         Pitch = (C NIL NIL 2)
         Value = SEMIBREVIS
         Clef = (F . 7)
