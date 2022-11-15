@@ -89,7 +89,7 @@
           (add-stencil-to-line score (get-stencil element stencil-list)))
         (rest (rest music-data)))
   (push (second music-data) (first (line-container score)))
-  (push 'music (first (line-container score))))
+  (push :music (first (line-container score))))
 
 (defmethod show-data ((score typesetter))
   (format t "~&----line-container:~&~s
@@ -148,8 +148,8 @@
     (mapc (lambda (line line-width)
             ;; TODO restructure case: incf -> case
             (case (first line)
-              (text (incf y-counter (typeset-text-line score line y-counter)))
-              (music (incf y-counter (typeset-music-line score line line-width alignment y-counter)))))
+              (:text (incf y-counter (typeset-text-line score line y-counter)))
+              (:music (incf y-counter (typeset-music-line score line line-width alignment y-counter)))))
           (reverse (line-container score))
           (reverse (line-width-list score)))))
 
@@ -162,7 +162,7 @@
         (+ top-and-bottom-margin
            (reduce #'+ (line-container score)
                    :key (lambda (line)
-                          (if (eq (first line) 'text)
+                          (if (eq (first line) :text)
                               (second line)
                               (glyph-height (third line)))))))))
 
@@ -182,7 +182,7 @@
         (+ left-and-right-margin (width score))
         (+ left-and-right-margin
            (loop for line in (line-container score)
-                 maximize (if (eq (first line) 'text)
+                 maximize (if (eq (first line) :text)
                               (calculate-text-width line)
                               (if (second line)
                                   (second line)
@@ -213,9 +213,10 @@
 (defun parse-vicentino-code (data glyph-definitions)
   (mapcar (lambda (line)
             (if (eq (first line) :music)
-                (mapcar (lambda (item)
-                          (lookup-vicentino-code item glyph-definitions))
-                        line)
+                (remove nil (mapcar (lambda (item)
+                                      (when (atom item)
+                                        (lookup-vicentino-code item glyph-definitions)))
+                                    line))
                 line))
           data))
 

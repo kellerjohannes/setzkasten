@@ -52,7 +52,11 @@
 
 
 
-
+(defparameter *mission2*
+  `(
+    ("b1-c5-m1-devel" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c5-m1-devel" "b" (:idealised) ,*vicentino-types-backend*)
+    ))
 
 
 

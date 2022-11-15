@@ -12,7 +12,7 @@
       id-string))
 
 (defun output-background (color)
-  (format nil "<rect width=\"100%\" height=\"100%\" fill=~s stroke-width=0/>" color))
+  (format nil "<rect width=\"100%\" height=\"100%\" fill=~s stroke-width=\"0\"/>" color))
 
 (defun toplevel-close ()
   (format nil "</svg>"))
