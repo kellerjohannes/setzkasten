@@ -1,3 +1,3 @@
 Auto-generated critical apparatus for file b1-c39-m1-a:
 
-Line 5, glyph 13 (element 0): reading DIPLOMATIC used ("ꝑſet. nat.").
+Line 0, glyph 137 (element 7): reading DIPLOMATIC used ("ꝑſet. nat.").

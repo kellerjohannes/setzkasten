@@ -1,7 +1,16 @@
-`(("b1-c26-m1" nil nil ,*score-bg-color*)
-  ((text 80 58
+`((:header
+   (:filename "b1-c26-m1")
+   (:alt-name "")
+   (:comment "")
+   (:creator "Vicentino21 / Johannes Keller"))
+  (:preamble-type-imitation
+   (:width nil)
+   (:height nil)
+   (:background ,*score-bg-color*))
+  (:data
+   (:text 80 58
          (367 1446 "ᴇſſempio de i gradi,di ᴛerza minore,compoſti & incompoﬆi."))
-   (music 2231
+   (:music 2231
           cclef7 b27 sb1 b27 sb3 b27 bl
           b27 sb2 b27 sb4 b27 bl
           b27 sb7 b27 sb5 b27 bl
@@ -10,7 +19,7 @@
           b27 sb2 b27 sb3 b27 sb4 b27 bl
           b22 sb7 b22 sb6 b27 sb5 bl
           b22 sb8 b22 sb7 b22 sb6 b22 bl)
-   (text 70 58
+   (:text 70 58
          (39 nil "grad.di 3.")
          (301 nil "gra.di 3.")
          (544 nil "gra. di 3.")
@@ -19,7 +28,7 @@
          (1341 nil "ᴛerza min.")
          (1626 nil "ᴛerza min.")
          (1930 nil "ᴛerza min."))
-   (text 70 58
+   (:text 70 58
          (36 nil "min. natu.")
          (296 nil "min. nat.")
          (530 nil "min.natu.")
@@ -28,7 +37,7 @@
          (1305 nil "com. di ſem.")
          (1616 nil "com. di ſem.")
          (1923 nil "comp.di tono"))
-   (text 70 58
+   (:text 70 58
          (34 nil "incomp.")
          (295 nil "incomp.")
          (520 nil "incomp.")

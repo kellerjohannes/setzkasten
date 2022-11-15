@@ -1,4 +1,4 @@
 Auto-generated critical apparatus for file b1-c11-m2-b:
 
-Line 2, glyph 9 (element 3): reading IDEALISED used (SB4).
-Line 2, glyph 19 (element 5): reading IDEALISED used (FL4).
+Line 0, glyph 36 (element 3): reading IDEALISED used (SB4).
+Line 0, glyph 46 (element 5): reading IDEALISED used (FL4).

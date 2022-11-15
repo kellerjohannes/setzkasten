@@ -1,4 +1,4 @@
 Auto-generated critical apparatus for file b1-c38-m1-a:
 
-Line 4, glyph 4 (element 0): reading DIPLOMATIC used ("imper.natur.").
-Line 4, glyph 7 (element 0): reading DIPLOMATIC used ("imper. nat.").
+Line 0, glyph 101 (element 11): reading DIPLOMATIC used ("imper.natur.").
+Line 0, glyph 104 (element 11): reading DIPLOMATIC used ("imper. nat.").

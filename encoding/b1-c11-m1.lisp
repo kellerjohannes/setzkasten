@@ -1,11 +1,20 @@
-`(("b1-c11-m1" nil nil ,*score-bg-color*)
-  ((text 90 58
+`((:header
+   (:filename "b1-c11-m1")
+   (:alt-name "")
+   (:comment "")
+   (:creator "Vicentino21 / Johannes Keller"))
+  (:preamble-type-imitation
+   (:width nil)
+   (:height nil)
+   (:background ,*score-bg-color*))
+  (:data
+   (:text 90 58
          (54 720 "ᴛono diuiſo in 4. parti aſcend.")
          (812 686 "ᴛono diuiſo in 4. par.aſcend."))
-   (music 1498
+   (:music 1498
           cclef7 b38 sb4 b38 sbd4 b38 fl5 b38 sb5 b38 fl5 b38 sbd5 b38 sb5 b38 b38
           cclef7 b22 fl6 b38 sb4 b38 sbd4 b38 fl5 b38 sb5 b38 fl5 b38 sbd5 b38 sb5 bl)
-   (text 70 58
+   (:text 70 58
          (10 nil "ꝑ ♮.")
          (114 nil "ut")
          (204 nil "re")

@@ -1,3 +1,3 @@
 Auto-generated critical apparatus for file b1-c23-m1-a:
 
-Line 5, glyph 7 (element 1): reading DIPLOMATIC used (SB4).
+Line 0, glyph 125 (element 11): reading DIPLOMATIC used (SB4).

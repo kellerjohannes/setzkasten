@@ -1,4 +1,4 @@
 Auto-generated critical apparatus for file b1-c10-m2-a:
 
-Line 1, glyph 27 (element 5): reading DIPLOMATIC used (SB5 B22 SH4 B22 SB4).
-Line 3, glyph 4 (element 0): reading DIPLOMATIC used ("tono cro.").
+Line 0, glyph 45 (element 5): reading DIPLOMATIC used (SB5 B22 SH4 B22 SB4).
+Line 0, glyph 111 (element 13): reading DIPLOMATIC used ("tono cro.").

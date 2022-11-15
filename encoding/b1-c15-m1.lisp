@@ -1,8 +1,17 @@
-`(("b1-c15-m1" nil nil ,*score-bg-color*)
+`((:header
+   (:filename "b1-c15-m1")
+   (:alt-name "")
+   (:comment "")
+   (:creator "Vicentino21 / Johannes Keller"))
+  (:preamble-type-imitation
+   (:width nil)
+   (:height nil)
+   (:background ,*score-bg-color*))
   ;; m1.23
-  ((text 90 58
+  (:data
+   (:text 90 58
          (212 1795 "ᴇſſempio delli gradi,delli ᴅieſis minori ᴇnarmonici, aſcendenti & diſcendenti."))
-   (music 2207
+   (:music 2207
           cclef7 b38 sb4 b27 b38 b27 sbd4 b38 b27 b22 bl
           b38 sb6 b38 sbd6 b22 b22 bl
           b38 sb7 b38 sbd7 b38 bl
@@ -23,7 +32,7 @@
                     (:idealised sbd2)) b38
               (:alt (:diplomatic sbd2)
                     (:idealised sb2)) b38 bl)
-   (text 70 58
+   (:text 70 58
          (46 nil "ᴅieſis minore")
          (412 nil "ᴅi.min.")
          (664 nil "ᴅi.min.")

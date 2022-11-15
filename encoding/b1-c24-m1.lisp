@@ -1,7 +1,16 @@
-`(("b1-c24-m1" nil nil ,*score-bg-color*)
-  ((text 100 58
+`((:header
+   (:filename "b1-c24-m1")
+   (:alt-name "")
+   (:comment "")
+   (:creator "Vicentino21 / Johannes Keller"))
+  (:preamble-type-imitation
+   (:width nil)
+   (:height nil)
+   (:background ,*score-bg-color*))
+  (:data
+   (:text 100 58
          (414 1235 "ᴇſſempio del ᴛono maggiore,compoſto et incompoﬆo."))
-   (music 2209
+   (:music 2209
           cclef7 sb1 b22 sb2 b22 sbd2 bl
           fl2 b22 sb2 b22 sbd4 b22 bl
           sh3 sb3 b22 sb4 fl5 sb5 bl
@@ -11,7 +20,7 @@
           sb7 b13 sb6 sh5 sb5 bl
           fl6 sb6 sh4 sb4 bl
           sb3 sh1 sb1 bl)
-   (text 70 58
+   (:text 70 58
          (38 nil "ton.mag.")
          (275 nil "ton.mag.")
          (525 nil "tono magg.")
@@ -21,7 +30,7 @@
          (1484 nil "ton.mag.")
          (1749 nil "to.mag.")
          (1973 nil "ton.mag."))
-   (text 80 58
+   (:text 80 58
          (50 nil "compo.")
          (284 nil "incomp.")
          (515 nil "compo.")
