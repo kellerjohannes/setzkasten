@@ -23,13 +23,19 @@ dot = {
     \null
     \line {
       \center-column {
+        \null
+        \line {
+          \left-align { "A" }
+        }
+
+        \null
         \line {
           \score {
             <<
               \new Staff \with { instrumentName = ""} {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
-                \tempo "A"
+                \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" a,1 
                 a,1 
@@ -45,18 +51,33 @@ dot = {
             }
           }
         }
+        \null
         \line {
-          \left-align { \small { \lower #3 "per natura: la" } }
+          \left-align { "natürlich: la" }
         }
-      } 
+        \line {
+          \left-align { "weich: mi" }
+        }
+        \line {
+          \left-align { "hart: re" }
+        }
+
+      }
+      \hspace #3 
       \center-column {
+        \null
+        \line {
+          \left-align { "B♭" }
+        }
+
+        \null
         \line {
           \score {
             <<
               \new Staff \with { instrumentName = ""} {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
-                \tempo "B♭"
+                \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" bes,1 
                 b,1 
@@ -71,18 +92,30 @@ dot = {
             }
           }
         }
+        \null
         \line {
-          \left-align { \small { \lower #3 "per ♭: fa" } }
+          \left-align { "weich: fa" }
         }
-      } 
+        \line {
+          \left-align { "hart: mi" }
+        }
+
+      }
+      \hspace #3 
       \center-column {
+        \null
+        \line {
+          \left-align { "C" }
+        }
+
+        \null
         \line {
           \score {
             <<
               \new Staff \with { instrumentName = ""} {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
-                \tempo "C"
+                \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" c1 
                 c1 
@@ -98,18 +131,33 @@ dot = {
             }
           }
         }
+        \null
         \line {
-          \left-align { \small { \lower #3 "per ♭: sol" } }
+          \left-align { "weich: sol" }
         }
-      } 
+        \line {
+          \left-align { "hart: fa" }
+        }
+        \line {
+          \left-align { "natürlich: ut" }
+        }
+
+      }
+      \hspace #3 
       \center-column {
+        \null
+        \line {
+          \left-align { "D" }
+        }
+
+        \null
         \line {
           \score {
             <<
               \new Staff \with { instrumentName = ""} {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
-                \tempo "D"
+                \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" d1 
                 d1 
@@ -125,16 +173,33 @@ dot = {
             }
           }
         }
+        \null
+        \line {
+          \left-align { "weich: la" }
+        }
+        \line {
+          \left-align { "hart: sol" }
+        }
+        \line {
+          \left-align { "natürlich: re" }
+        }
 
-      } 
+      }
+      \hspace #3 
       \center-column {
+        \null
+        \line {
+          \left-align { "E" }
+        }
+
+        \null
         \line {
           \score {
             <<
               \new Staff \with { instrumentName = ""} {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
-                \tempo "E"
+                \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" e1 
                 e1 
@@ -149,16 +214,30 @@ dot = {
             }
           }
         }
+        \null
+        \line {
+          \left-align { "hart: la" }
+        }
+        \line {
+          \left-align { "natürlich: mi" }
+        }
 
-      } 
+      }
+      \hspace #3 
       \center-column {
+        \null
+        \line {
+          \left-align { "F" }
+        }
+
+        \null
         \line {
           \score {
             <<
               \new Staff \with { instrumentName = ""} {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
-                \tempo "F"
+                \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" f1 
                 f1 
@@ -173,16 +252,30 @@ dot = {
             }
           }
         }
+        \null
+        \line {
+          \left-align { "natürlich: fa" }
+        }
+        \line {
+          \left-align { "weich: ut" }
+        }
 
-      } 
+      }
+      \hspace #3 
       \center-column {
+        \null
+        \line {
+          \left-align { "G" }
+        }
+
+        \null
         \line {
           \score {
             <<
               \new Staff \with { instrumentName = ""} {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
-                \tempo "G"
+                \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" g1 
                 g1 
@@ -198,8 +291,19 @@ dot = {
             }
           }
         }
+        \null
+        \line {
+          \left-align { "natürlich: sol" }
+        }
+        \line {
+          \left-align { "weich: re" }
+        }
+        \line {
+          \left-align { "hart: ut" }
+        }
 
-      } 
+      }
+      \hspace #3 
 
     }
   }

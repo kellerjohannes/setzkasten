@@ -1,6 +1,6 @@
 Score (Title "Erklärung der diatonischen Hand", file "b1-c5-m1", creator "Vicentino21 / Johannes Keller")
 [Comment ""]:
-  Section S1 ("A" / "per natura: la"):
+  Section S1 ("A" / "natürlich: la\\weich: mi\\hart: re"):
     Voice V1 (""):
       Musical Object OB0:
         Pitch = (A NIL NIL 1)
@@ -17,7 +17,7 @@ Score (Title "Erklärung der diatonischen Hand", file "b1-c5-m1", creator "Vicen
         Value = SEMIBREVIS
         Clef = (F . 7)
         Key Signature = (NIL NIL)
-  Section S2 ("B♭" / "per ♭: fa"):
+  Section S2 ("B♭" / "weich: fa\\hart: mi"):
     Voice V1 (""):
       Musical Object OB0:
         Pitch = (B FLAT NIL 1)
@@ -29,7 +29,7 @@ Score (Title "Erklärung der diatonischen Hand", file "b1-c5-m1", creator "Vicen
         Value = SEMIBREVIS
         Clef = (F . 7)
         Key Signature = (NIL NIL)
-  Section S3 ("C" / "per ♭: sol"):
+  Section S3 ("C" / "weich: sol\\hart: fa\\natürlich: ut"):
     Voice V1 (""):
       Musical Object OB0:
         Pitch = (C NIL NIL 2)
@@ -46,7 +46,7 @@ Score (Title "Erklärung der diatonischen Hand", file "b1-c5-m1", creator "Vicen
         Value = SEMIBREVIS
         Clef = (F . 7)
         Key Signature = (NIL NIL)
-  Section S4 ("D" / ""):
+  Section S4 ("D" / "weich: la\\hart: sol\\natürlich: re"):
     Voice V1 (""):
       Musical Object OB0:
         Pitch = (D NIL NIL 2)
@@ -63,7 +63,7 @@ Score (Title "Erklärung der diatonischen Hand", file "b1-c5-m1", creator "Vicen
         Value = SEMIBREVIS
         Clef = (F . 7)
         Key Signature = (NIL NIL)
-  Section S5 ("E" / ""):
+  Section S5 ("E" / "hart: la\\natürlich: mi"):
     Voice V1 (""):
       Musical Object OB0:
         Pitch = (E NIL NIL 2)
@@ -75,7 +75,7 @@ Score (Title "Erklärung der diatonischen Hand", file "b1-c5-m1", creator "Vicen
         Value = SEMIBREVIS
         Clef = (F . 7)
         Key Signature = (NIL NIL)
-  Section S6 ("F" / ""):
+  Section S6 ("F" / "natürlich: fa\\weich: ut"):
     Voice V1 (""):
       Musical Object OB0:
         Pitch = (F NIL NIL 2)
@@ -87,7 +87,7 @@ Score (Title "Erklärung der diatonischen Hand", file "b1-c5-m1", creator "Vicen
         Value = SEMIBREVIS
         Clef = (F . 7)
         Key Signature = (NIL NIL)
-  Section S7 ("G" / ""):
+  Section S7 ("G" / "natürlich: sol\\weich: re\\hart: ut"):
     Voice V1 (""):
       Musical Object OB0:
         Pitch = (G NIL NIL 2)

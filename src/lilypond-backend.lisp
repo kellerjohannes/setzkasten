@@ -1,11 +1,10 @@
 (in-package :setzkasten)
 
 ;; for now an empty class, just for the purpose of symmetry to type-imitation-backend
+;; slots of this subclass can be used to globally configure lilypond, for example a
+;; state deciding whether to use modern or old clefs
 (defclass lilypond-backend (setzkasten-backend)
   ())
-
-
-
 
 
 
@@ -155,21 +154,17 @@
 
 
 
-(defmethod generate-voice-ly-code ((voice voice) heading)
-  (let ((clef-state nil)
-        (headingp nil))
+(defmethod generate-voice-ly-code ((voice voice))
+  (let ((clef-state nil))
     (format nil "~
 ~14,0t\\new Staff \\with { instrumentName = \"~a\"} {
 ~16,0t\\override Staff.TimeSignature.stencil = ##f
 ~16,0t\\override Staff.NoteHead.style = #'baroque
-~16,0t~a
+~16,0t\\accidentalStyle Score.forget
 ~16,0t\\cadenzaOn~{~a ~}
 ~16,0t\\cadenzaOff
 ~14,0t}"
             (label voice)
-            (unless headingp
-              (setf headingp t)
-              (format nil "~@[\\tempo ~s~]" heading))
             (mapcar (lambda (mobject)
                       (multiple-value-bind (mobject-string current-clef)
                           (generate-mobject-ly-code mobject clef-state)
@@ -178,10 +173,29 @@
                     (mobjects voice)))))
 
 
+(defun split-string-to-list (text-string split-string)
+  (cond ((null (search split-string text-string)) (list text-string))
+        (t (cons (subseq text-string 0 (search split-string text-string))
+                 (split-string-to-list
+                  (subseq text-string
+                          (+ (length split-string)
+                             (search split-string text-string)))
+                  split-string)))))
+
+(defun generate-multiline-text (text-string)
+  (format nil "~
+~8,0t\\null
+~{~8,0t\\line {
+~10,0t\\left-align { \"~a\" }
+~8,0t}
+~}" (split-string-to-list text-string "\\")))
+
 (defmethod generate-section-ly-code ((section section) shortest-duration)
   "`shortest-duration' in Lilypond note value (1/2 for minima)."
   (format nil "~
 ~6,0t\\center-column {
+~@[~a
+~8,0t\\null~]
 ~8,0t\\line {
 ~10,0t\\score {
 ~12,0t<<
@@ -195,11 +209,19 @@
 ~12,0t}
 ~10,0t}
 ~8,0t}
-~6,0t}"
+~@[~a~]
+~6,0t}
+~6,0t\\hspace #3"
+          (if (string= (heading section) "")
+              nil
+              (generate-multiline-text (heading section)))
           (mapcar (lambda (voice)
-                    (generate-voice-ly-code voice (heading section)))
+                    (generate-voice-ly-code voice))
                   (voices section))
-          shortest-duration))
+          shortest-duration
+          (if (string= (caption section) "")
+              nil
+              (generate-multiline-text (caption section)))))
 
 
 (defmethod generate-score-ly-code ((score score))
@@ -252,6 +274,7 @@ dot = {
 (defun run-lilypond (ly-code &key (ly-file nil ly-file-supplied-p)
                                (output-file nil output-file-supplied-p)
                                (lilypond-path *lilypond-path*))
+  (declare (ignore ly-file-supplied-p))
   (flet ((tmp (pathname)
            (uiop:tmpize-pathname (uiop:merge-pathnames* (uiop:temporary-directory)
                                                         pathname))))
@@ -259,18 +282,23 @@ dot = {
            (output-file (or output-file (tmp "lilypond.pdf"))))
       (unwind-protect
            (progn
-             (alexandria:write-string-into-file ly-code ly-file :if-exists :overwrite)
+             (alexandria:write-string-into-file ly-code ly-file :if-exists :supersede :if-does-not-exist :create)
              (exec-lilypond ly-file
                             :output output-file :lilypond-path lilypond-path))
-        (unless ly-file-supplied-p (uiop:delete-file-if-exists ly-file))
+        ;(unless ly-file-supplied-p (uiop:delete-file-if-exists ly-file))
         (unless output-file-supplied-p (uiop:delete-file-if-exists output-file))))))
 
 (defun create-lilypond-score (score-instance suffix)
   (format t "~&Running Lilypond on ~a-~a" (filename score-instance) suffix)
   (run-lilypond (generate-score-ly-code score-instance)
-                :output-file (merge-pathnames *lilypond-export-path*
+                :ly-file (merge-pathnames *lilypond-export-path*
                                               (pathname
                                                (format nil "~a-~a.ly"
+                                                       (filename score-instance)
+                                                       suffix)))
+                :output-file (merge-pathnames *lilypond-export-path*
+                                              (pathname
+                                               (format nil "~a-~a.svg"
                                                        (filename score-instance)
                                                        suffix))))
   (format nil "~a-~a" (filename score-instance) suffix))

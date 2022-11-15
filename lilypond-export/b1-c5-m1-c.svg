@@ -5,321 +5,394 @@ tspan { white-space: pre; }
 ]]>
 </style>
 <!-- Page: 1/1 -->
-<g transform="translate(24.8501, 6.4989)">
+<g transform="translate(39.8242, 6.4989)">
 <text font-family="serif" font-size="3.4927" text-anchor="start" fill="currentColor">
 <tspan>Dimostratione</tspan>
 </text>
 </g>
-<g transform="translate(51.0686, 6.4989)">
+<g transform="translate(66.0427, 6.4989)">
 <text font-family="serif" font-size="3.4927" text-anchor="start" fill="currentColor">
 <tspan>della</tspan>
 </text>
 </g>
-<g transform="translate(60.6593, 6.4989)">
+<g transform="translate(75.6334, 6.4989)">
 <text font-family="serif" font-size="3.4927" text-anchor="start" fill="currentColor">
 <tspan>mano</tspan>
 </text>
 </g>
-<g transform="translate(71.3767, 6.4989)">
+<g transform="translate(86.3508, 6.4989)">
 <text font-family="serif" font-size="3.4927" text-anchor="start" fill="currentColor">
 <tspan>diatonica</tspan>
 </text>
 </g>
-<g transform="translate(5.6906, 16.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
-</g>
-<g transform="translate(5.6906, 15.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
-</g>
-<g transform="translate(5.6906, 14.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
-</g>
-<g transform="translate(5.6906, 13.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
-</g>
-<g transform="translate(5.6906, 12.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
-</g>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:36:16:17">
-<g transform="translate(17.8146, 15.5516)">
-<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
-c38 -21 72 -53 72 -96z" fill="currentColor"/>
-</g>
-</a>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:35:16:17">
-<g transform="translate(14.6526, 15.5516)">
-<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
-c38 -21 72 -53 72 -96z" fill="currentColor"/>
-</g>
-</a>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:34:29:30">
-<g transform="translate(11.4906, 15.5516)">
-<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
-c38 -21 72 -53 72 -96z" fill="currentColor"/>
-</g>
-</a>
-<g transform="translate(6.4906, 13.0516)">
-<path transform="scale(0.0040, -0.0040)" d="M557 -125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM557 125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM232 263c172 0 293 -88 293 -251c0 -263 -263 -414 -516 -521c-3 -3 -6 -4 -9 -4c-7 0 -13 6 -13 13c0 3 1 6 4 9
-c202 118 412 265 412 493c0 120 -63 235 -171 235c-74 0 -129 -54 -154 -126c11 5 22 8 34 8c55 0 100 -45 100 -100c0 -58 -44 -106 -100 -106c-60 0 -112 47 -112 106c0 133 102 244 232 244z" fill="currentColor"/>
-</g>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:32:16:17">
-<g transform="translate(9.6739, 11.1704)">
-<text font-family="serif" font-weight="bold" font-size="2.2001" text-anchor="start" fill="currentColor">
+<g transform="translate(8.9512, 15.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>Alamire</tspan>
 </text>
 </g>
-</a>
-<g transform="translate(21.5266, 16.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.5083" y2="0"/>
+<g transform="translate(5.7206, 23.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
 </g>
-<g transform="translate(21.5266, 15.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.5083" y2="0"/>
+<g transform="translate(5.7206, 22.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
 </g>
-<g transform="translate(21.5266, 14.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.5083" y2="0"/>
+<g transform="translate(5.7206, 21.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
 </g>
-<g transform="translate(21.5266, 13.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.5083" y2="0"/>
+<g transform="translate(5.7206, 20.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
 </g>
-<g transform="translate(21.5266, 12.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.5083" y2="0"/>
+<g transform="translate(5.7206, 19.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
 </g>
-<g transform="translate(29.8886, 15.0516)">
-<path transform="scale(0.0040, -0.0040)" d="M-8 375c8 4 17 7 26 7s16 -3 24 -7l-2 -183l106 20h3c10 0 18 -7 18 -17l7 -570c-8 -4 -16 -7 -25 -7s-17 3 -25 7l3 183l-106 -20h-3c-10 0 -18 7 -18 17zM131 112l-92 -17l-3 -207l92 17z" fill="currentColor"/>
-</g>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:59:16:17">
-<g transform="translate(30.9228, 15.0516)">
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c5-m1-c.ly:42:16:17">
+<g transform="translate(17.8447, 22.9989)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(26.1766, 15.0516)">
-<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
-c-13 0 -23 11 -23 25z" fill="currentColor"/>
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c5-m1-c.ly:41:16:17">
+<g transform="translate(14.6827, 22.9989)">
+<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
+c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:56:16:17">
-<g transform="translate(25.5099, 11.1704)">
-<text font-family="serif" font-weight="bold" font-size="2.2001" text-anchor="start" fill="currentColor">
+</a>
+<g transform="translate(6.5206, 20.4989)">
+<path transform="scale(0.0040, -0.0040)" d="M557 -125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM557 125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM232 263c172 0 293 -88 293 -251c0 -263 -263 -414 -516 -521c-3 -3 -6 -4 -9 -4c-7 0 -13 6 -13 13c0 3 1 6 4 9
+c202 118 412 265 412 493c0 120 -63 235 -171 235c-74 0 -129 -54 -154 -126c11 5 22 8 34 8c55 0 100 -45 100 -100c0 -58 -44 -106 -100 -106c-60 0 -112 47 -112 106c0 133 102 244 232 244z" fill="currentColor"/>
+</g>
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c5-m1-c.ly:40:29:30">
+<g transform="translate(11.5206, 22.9989)">
+<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
+c38 -21 72 -53 72 -96z" fill="currentColor"/>
+</g>
+</a>
+<g transform="translate(5.6906, 27.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
+<tspan>per natura: la</tspan>
+</text>
+</g>
+<g transform="translate(8.4903, 30.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
+<tspan>per ♭: mi</tspan>
+</text>
+</g>
+<g transform="translate(8.8317, 33.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
+<tspan>per ♮: re</tspan>
+</text>
+</g>
+<g transform="translate(26.8509, 15.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>Bfa♭mi</tspan>
 </text>
 </g>
+<g transform="translate(24.5868, 23.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
+</g>
+<g transform="translate(24.5868, 22.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
+</g>
+<g transform="translate(24.5868, 21.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
+</g>
+<g transform="translate(24.5868, 20.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
+</g>
+<g transform="translate(24.5868, 19.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
+</g>
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c5-m1-c.ly:83:16:17">
+<g transform="translate(33.5488, 22.4989)">
+<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
+c38 -21 72 -53 72 -96z" fill="currentColor"/>
+</g>
 </a>
-<g transform="translate(22.3266, 13.0516)">
+<g transform="translate(29.2368, 22.4989)">
+<path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
+c-13 0 -23 11 -23 25z" fill="currentColor"/>
+</g>
+<g transform="translate(25.3868, 20.4989)">
 <path transform="scale(0.0040, -0.0040)" d="M557 -125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM557 125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM232 263c172 0 293 -88 293 -251c0 -263 -263 -414 -516 -521c-3 -3 -6 -4 -9 -4c-7 0 -13 6 -13 13c0 3 1 6 4 9
 c202 118 412 265 412 493c0 120 -63 235 -171 235c-74 0 -129 -54 -154 -126c11 5 22 8 34 8c55 0 100 -45 100 -100c0 -58 -44 -106 -100 -106c-60 0 -112 47 -112 106c0 133 102 244 232 244z" fill="currentColor"/>
 </g>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:58:29:30">
-<g transform="translate(27.3266, 15.0516)">
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c5-m1-c.ly:82:29:30">
+<g transform="translate(30.3868, 22.4989)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(34.6348, 16.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
+<g transform="translate(26.1168, 27.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
+<tspan>per ♭: fa</tspan>
+</text>
 </g>
-<g transform="translate(34.6348, 15.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
+<g transform="translate(25.8949, 30.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
+<tspan>per ♮: mi</tspan>
+</text>
 </g>
-<g transform="translate(34.6348, 14.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
-</g>
-<g transform="translate(34.6348, 13.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
-</g>
-<g transform="translate(34.6348, 12.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
-</g>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:83:16:17">
-<g transform="translate(46.7588, 14.5516)">
-<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
-c38 -21 72 -53 72 -96z" fill="currentColor"/>
-</g>
-</a>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:82:16:17">
-<g transform="translate(43.5968, 14.5516)">
-<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
-c38 -21 72 -53 72 -96z" fill="currentColor"/>
-</g>
-</a>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:81:29:30">
-<g transform="translate(40.4348, 14.5516)">
-<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
-c38 -21 72 -53 72 -96z" fill="currentColor"/>
-</g>
-</a>
-<g transform="translate(35.4348, 13.0516)">
-<path transform="scale(0.0040, -0.0040)" d="M557 -125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM557 125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM232 263c172 0 293 -88 293 -251c0 -263 -263 -414 -516 -521c-3 -3 -6 -4 -9 -4c-7 0 -13 6 -13 13c0 3 1 6 4 9
-c202 118 412 265 412 493c0 120 -63 235 -171 235c-74 0 -129 -54 -154 -126c11 5 22 8 34 8c55 0 100 -45 100 -100c0 -58 -44 -106 -100 -106c-60 0 -112 47 -112 106c0 133 102 244 232 244z" fill="currentColor"/>
-</g>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:79:16:17">
-<g transform="translate(38.6182, 11.1704)">
-<text font-family="serif" font-weight="bold" font-size="2.2001" text-anchor="start" fill="currentColor">
+<g transform="translate(43.4190, 15.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>Csolfaut</tspan>
 </text>
 </g>
-</a>
-<g transform="translate(50.4708, 16.0516)">
+<g transform="translate(40.4445, 23.4989)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
 </g>
-<g transform="translate(50.4708, 15.0516)">
+<g transform="translate(40.4445, 22.4989)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
 </g>
-<g transform="translate(50.4708, 14.0516)">
+<g transform="translate(40.4445, 21.4989)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
 </g>
-<g transform="translate(50.4708, 13.0516)">
+<g transform="translate(40.4445, 20.4989)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
 </g>
-<g transform="translate(50.4708, 12.0516)">
+<g transform="translate(40.4445, 19.4989)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
 </g>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:107:16:17">
-<g transform="translate(62.5948, 14.0516)">
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c5-m1-c.ly:122:16:17">
+<g transform="translate(52.5685, 21.9989)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:106:16:17">
-<g transform="translate(59.4328, 14.0516)">
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c5-m1-c.ly:121:16:17">
+<g transform="translate(49.4065, 21.9989)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:105:29:30">
-<g transform="translate(56.2708, 14.0516)">
-<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
-c38 -21 72 -53 72 -96z" fill="currentColor"/>
-</g>
-</a>
-<g transform="translate(51.2708, 13.0516)">
+<g transform="translate(41.2445, 20.4989)">
 <path transform="scale(0.0040, -0.0040)" d="M557 -125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM557 125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM232 263c172 0 293 -88 293 -251c0 -263 -263 -414 -516 -521c-3 -3 -6 -4 -9 -4c-7 0 -13 6 -13 13c0 3 1 6 4 9
 c202 118 412 265 412 493c0 120 -63 235 -171 235c-74 0 -129 -54 -154 -126c11 5 22 8 34 8c55 0 100 -45 100 -100c0 -58 -44 -106 -100 -106c-60 0 -112 47 -112 106c0 133 102 244 232 244z" fill="currentColor"/>
 </g>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:103:16:17">
-<g transform="translate(54.4542, 11.1704)">
-<text font-family="serif" font-weight="bold" font-size="2.2001" text-anchor="start" fill="currentColor">
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c5-m1-c.ly:120:29:30">
+<g transform="translate(46.2445, 21.9989)">
+<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
+c38 -21 72 -53 72 -96z" fill="currentColor"/>
+</g>
+</a>
+<g transform="translate(43.0264, 27.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
+<tspan>per ♭: sol</tspan>
+</text>
+</g>
+<g transform="translate(43.6751, 30.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
+<tspan>per ♮: fa</tspan>
+</text>
+</g>
+<g transform="translate(40.2608, 33.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
+<tspan>per natura: ut</tspan>
+</text>
+</g>
+<g transform="translate(62.6225, 15.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>Dlasolre</tspan>
 </text>
 </g>
-</a>
-<g transform="translate(66.3068, 16.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
+<g transform="translate(59.6651, 23.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
 </g>
-<g transform="translate(66.3068, 15.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
+<g transform="translate(59.6651, 22.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
 </g>
-<g transform="translate(66.3068, 14.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
+<g transform="translate(59.6651, 21.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
 </g>
-<g transform="translate(66.3068, 13.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
+<g transform="translate(59.6651, 20.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
 </g>
-<g transform="translate(66.3068, 12.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
+<g transform="translate(59.6651, 19.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
 </g>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:130:16:17">
-<g transform="translate(75.2688, 13.5516)">
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c5-m1-c.ly:164:16:17">
+<g transform="translate(71.7891, 21.4989)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:127:16:17">
-<g transform="translate(70.2902, 11.1704)">
-<text font-family="serif" font-weight="bold" font-size="2.2001" text-anchor="start" fill="currentColor">
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c5-m1-c.ly:163:16:17">
+<g transform="translate(68.6271, 21.4989)">
+<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
+c38 -21 72 -53 72 -96z" fill="currentColor"/>
+</g>
+</a>
+<g transform="translate(60.4651, 20.4989)">
+<path transform="scale(0.0040, -0.0040)" d="M557 -125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM557 125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM232 263c172 0 293 -88 293 -251c0 -263 -263 -414 -516 -521c-3 -3 -6 -4 -9 -4c-7 0 -13 6 -13 13c0 3 1 6 4 9
+c202 118 412 265 412 493c0 120 -63 235 -171 235c-74 0 -129 -54 -154 -126c11 5 22 8 34 8c55 0 100 -45 100 -100c0 -58 -44 -106 -100 -106c-60 0 -112 47 -112 106c0 133 102 244 232 244z" fill="currentColor"/>
+</g>
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c5-m1-c.ly:162:29:30">
+<g transform="translate(65.4651, 21.4989)">
+<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
+c38 -21 72 -53 72 -96z" fill="currentColor"/>
+</g>
+</a>
+<g transform="translate(62.8274, 27.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
+<tspan>per ♭: la</tspan>
+</text>
+</g>
+<g transform="translate(62.3664, 30.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
+<tspan>per ♮: sol</tspan>
+</text>
+</g>
+<g transform="translate(59.4642, 33.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
+<tspan>per natura: re</tspan>
+</text>
+</g>
+<g transform="translate(83.5332, 15.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>Elami</tspan>
 </text>
 </g>
+<g transform="translate(80.7056, 23.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
+</g>
+<g transform="translate(80.7056, 22.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
+</g>
+<g transform="translate(80.7056, 21.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
+</g>
+<g transform="translate(80.7056, 20.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
+</g>
+<g transform="translate(80.7056, 19.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
+</g>
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c5-m1-c.ly:205:16:17">
+<g transform="translate(89.6676, 20.9989)">
+<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
+c38 -21 72 -53 72 -96z" fill="currentColor"/>
+</g>
 </a>
-<g transform="translate(67.1068, 13.0516)">
+<g transform="translate(81.5056, 20.4989)">
 <path transform="scale(0.0040, -0.0040)" d="M557 -125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM557 125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM232 263c172 0 293 -88 293 -251c0 -263 -263 -414 -516 -521c-3 -3 -6 -4 -9 -4c-7 0 -13 6 -13 13c0 3 1 6 4 9
 c202 118 412 265 412 493c0 120 -63 235 -171 235c-74 0 -129 -54 -154 -126c11 5 22 8 34 8c55 0 100 -45 100 -100c0 -58 -44 -106 -100 -106c-60 0 -112 47 -112 106c0 133 102 244 232 244z" fill="currentColor"/>
 </g>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:129:29:30">
-<g transform="translate(72.1068, 13.5516)">
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c5-m1-c.ly:204:29:30">
+<g transform="translate(86.5056, 20.9989)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(78.9808, 16.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
+<g transform="translate(82.4064, 27.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
+<tspan>per ♮: la</tspan>
+</text>
 </g>
-<g transform="translate(78.9808, 15.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
+<g transform="translate(78.7019, 30.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
+<tspan>per natura: mi</tspan>
+</text>
 </g>
-<g transform="translate(78.9808, 14.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
-</g>
-<g transform="translate(78.9808, 13.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
-</g>
-<g transform="translate(78.9808, 12.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
-</g>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:153:16:17">
-<g transform="translate(87.9429, 13.0516)">
-<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
-c38 -21 72 -53 72 -96z" fill="currentColor"/>
-</g>
-</a>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:150:16:17">
-<g transform="translate(82.9642, 11.1704)">
-<text font-family="serif" font-weight="bold" font-size="2.2001" text-anchor="start" fill="currentColor">
+<g transform="translate(103.0952, 15.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>Ffaut</tspan>
 </text>
 </g>
+<g transform="translate(100.0457, 23.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
+</g>
+<g transform="translate(100.0457, 22.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
+</g>
+<g transform="translate(100.0457, 21.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
+</g>
+<g transform="translate(100.0457, 20.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
+</g>
+<g transform="translate(100.0457, 19.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="12.0740" y2="0"/>
+</g>
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c5-m1-c.ly:243:16:17">
+<g transform="translate(109.0077, 20.4989)">
+<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
+c38 -21 72 -53 72 -96z" fill="currentColor"/>
+</g>
 </a>
-<g transform="translate(79.7808, 13.0516)">
+<g transform="translate(100.8457, 20.4989)">
 <path transform="scale(0.0040, -0.0040)" d="M557 -125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM557 125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM232 263c172 0 293 -88 293 -251c0 -263 -263 -414 -516 -521c-3 -3 -6 -4 -9 -4c-7 0 -13 6 -13 13c0 3 1 6 4 9
 c202 118 412 265 412 493c0 120 -63 235 -171 235c-74 0 -129 -54 -154 -126c11 5 22 8 34 8c55 0 100 -45 100 -100c0 -58 -44 -106 -100 -106c-60 0 -112 47 -112 106c0 133 102 244 232 244z" fill="currentColor"/>
 </g>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:152:29:30">
-<g transform="translate(84.7808, 13.0516)">
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c5-m1-c.ly:242:29:30">
+<g transform="translate(105.8457, 20.4989)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(91.6549, 16.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
+<g transform="translate(98.3834, 27.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
+<tspan>per natura: fa</tspan>
+</text>
 </g>
-<g transform="translate(91.6549, 15.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
+<g transform="translate(101.4733, 30.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
+<tspan>per ♭: ut</tspan>
+</text>
 </g>
-<g transform="translate(91.6549, 14.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
-</g>
-<g transform="translate(91.6549, 13.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
-</g>
-<g transform="translate(91.6549, 12.0516)">
-<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
-</g>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:177:16:17">
-<g transform="translate(103.7789, 12.5516)">
-<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
-c38 -21 72 -53 72 -96z" fill="currentColor"/>
-</g>
-</a>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:176:16:17">
-<g transform="translate(100.6169, 12.5516)">
-<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
-c38 -21 72 -53 72 -96z" fill="currentColor"/>
-</g>
-</a>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:175:29:30">
-<g transform="translate(97.4549, 12.5516)">
-<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
-c38 -21 72 -53 72 -96z" fill="currentColor"/>
-</g>
-</a>
-<g transform="translate(92.4549, 13.0516)">
-<path transform="scale(0.0040, -0.0040)" d="M557 -125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM557 125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM232 263c172 0 293 -88 293 -251c0 -263 -263 -414 -516 -521c-3 -3 -6 -4 -9 -4c-7 0 -13 6 -13 13c0 3 1 6 4 9
-c202 118 412 265 412 493c0 120 -63 235 -171 235c-74 0 -129 -54 -154 -126c11 5 22 8 34 8c55 0 100 -45 100 -100c0 -58 -44 -106 -100 -106c-60 0 -112 47 -112 106c0 133 102 244 232 244z" fill="currentColor"/>
-</g>
-<a style="color:inherit;" xlink:href="textedit:///tmp/cl-lilypond-tmpOU81XRV0.ly:173:16:17">
-<g transform="translate(95.6382, 11.1704)">
-<text font-family="serif" font-weight="bold" font-size="2.2001" text-anchor="start" fill="currentColor">
+<g transform="translate(120.8134, 15.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>Gsolreut</tspan>
 </text>
 </g>
+<g transform="translate(117.9925, 23.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
+</g>
+<g transform="translate(117.9925, 22.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
+</g>
+<g transform="translate(117.9925, 21.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
+</g>
+<g transform="translate(117.9925, 20.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
+</g>
+<g transform="translate(117.9925, 19.4989)">
+<line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="15.2360" y2="0"/>
+</g>
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c5-m1-c.ly:282:16:17">
+<g transform="translate(130.1165, 19.9989)">
+<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
+c38 -21 72 -53 72 -96z" fill="currentColor"/>
+</g>
 </a>
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c5-m1-c.ly:281:16:17">
+<g transform="translate(126.9545, 19.9989)">
+<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
+c38 -21 72 -53 72 -96z" fill="currentColor"/>
+</g>
+</a>
+<g transform="translate(118.7925, 20.4989)">
+<path transform="scale(0.0040, -0.0040)" d="M557 -125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM557 125c0 28 23 51 51 51s51 -23 51 -51s-23 -51 -51 -51s-51 23 -51 51zM232 263c172 0 293 -88 293 -251c0 -263 -263 -414 -516 -521c-3 -3 -6 -4 -9 -4c-7 0 -13 6 -13 13c0 3 1 6 4 9
+c202 118 412 265 412 493c0 120 -63 235 -171 235c-74 0 -129 -54 -154 -126c11 5 22 8 34 8c55 0 100 -45 100 -100c0 -58 -44 -106 -100 -106c-60 0 -112 47 -112 106c0 133 102 244 232 244z" fill="currentColor"/>
+</g>
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c5-m1-c.ly:280:29:30">
+<g transform="translate(123.7925, 19.9989)">
+<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
+c38 -21 72 -53 72 -96z" fill="currentColor"/>
+</g>
+</a>
+<g transform="translate(117.3820, 27.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
+<tspan>per natura: sol</tspan>
+</text>
+</g>
+<g transform="translate(120.9841, 30.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
+<tspan>per ♭: re</tspan>
+</text>
+</g>
+<g transform="translate(121.1207, 33.4989)">
+<text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
+<tspan>per ♮: ut</tspan>
+</text>
+</g>
 </svg>
