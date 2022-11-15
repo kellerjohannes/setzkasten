@@ -51,18 +51,6 @@
 
 
 
-
-(defparameter *mission2*
-  `(
-    ("b1-c5-m1-devel" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ("b1-c5-m1-devel" "b" (:idealised) ,*vicentino-types-backend*)
-    ("b1-c5-m1-devel" "c" (:idealised :it) ,*vicentino-types-backend*)
-    ("b1-c5-m1-devel" "d" (:idealised :en) ,*vicentino-types-backend*)
-    ("b1-c5-m1-devel" "e" (:idealised :de) ,*vicentino-types-backend*)
-    ))
-
-
-
 (defparameter *mission*
   `(
     ("b1-c5-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
