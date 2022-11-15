@@ -21,7 +21,7 @@
                 (:idealised sb3)) b22 bl
           b22 (:alt (:diplomatic sb2)
                     (:idealised sbd2)) b38
-          (:als (:diplomatic sbd2)
+          (:alt (:diplomatic sbd2)
                 (:idealised sb2)) b38 bl)
    (text 70 58
          (46 nil "ᴅieſis minore")
