@@ -198,7 +198,7 @@
   (cdr (assoc (first clef) *dict-clef-gamut*)))
 
 (defun glyph->root-pitch (clef staff-position)
-  "Returns "
+  "Returns a note name letter (lettera) as a keyword."
   (nth (- (position (clef->root-pitch clef) *gamut* :test #'equal)
           (- (cdr clef) staff-position))
        *gamut*))
@@ -327,14 +327,15 @@
               (set-voice-label* score (first this-label) (second this-label) (third this-label))))
         (extract-item :header :voice-labels score-data)))
 
-(defun parse-score (data)
+(defun parse-score (data suffix)
   (let ((score (make-instance 'score))
         (parser-state-instance (make-instance 'parser-state)))
-    (format t "state: ~a" (object-id-counter parser-state-instance))
     (process-metadata score parser-state-instance data)
     (process-music score parser-state-instance (extract-category :data data))
     (with-open-file (logfile (merge-pathnames *log-file-path*
-                                              (pathname (filename score)))
+                                              (pathname (format nil "~a-~a.txt"
+                                                                (filename score)
+                                                                suffix)))
                              :direction :output
                              :if-exists :supersede
                              :if-does-not-exist :create)

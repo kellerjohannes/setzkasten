@@ -17,3 +17,7 @@
   (pathname "~/common-lisp/setzkasten/logfiles/"))
 (defparameter *configuration-path*
   (pathname "~/common-lisp/setzkasten/backend-configuration/"))
+(defparameter *lilypond-export-path*
+  (pathname "~/common-lisp/setzkasten/lilypond-export/"))
+(defparameter *lilypond-path*
+  (pathname "/usr/bin/lilypond"))

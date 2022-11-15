@@ -47,8 +47,17 @@
                     "~/common-lisp/setzkasten/backend-configuration/vicentino-types-syntax.lisp"
                     :syntax)
 
+(defparameter *lilypond-backend* (make-instance 'lilypond-backend))
 
 
+(defparameter *mission2*
+  `(
+    ("b1-c5-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c5-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b1-c5-m1" "c" (:idealised :it) ,*lilypond-backend*)
+    ("b1-c5-m1" "d" (:idealised :de) ,*lilypond-backend*)
+    ("b1-c5-m1" "e" (:idealised :en) ,*lilypond-backend*)
+    ))
 
 
 (defparameter *mission*

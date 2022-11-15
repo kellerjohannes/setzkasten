@@ -7,16 +7,25 @@
                (:file "setzkasten")
                (:file "macros")
                (:file "score-class")
-               (:file "score-parser" :depends-on ("score-class"))
+               (:file "score-parser"
+                :depends-on ("score-class"))
                (:file "apparatus")
-               (:file "class-definitions" :depends-on ("macros" "setzkasten"))
-               (:file "casting" :depends-on ("class-definitions"))
-               (:file "typesetter" :depends-on ("casting"))
+               (:file "class-definitions"
+                :depends-on ("macros" "setzkasten"))
+               (:file "casting"
+                :depends-on ("class-definitions"))
+               (:file "typesetter"
+                :depends-on ("casting"))
                (:file "svg-generator")
                (:file "backend-class")
-               (:file "backend-type-imitation" :depends-on ("backend-class" "typesetter"))
-               (:file "dispatcher" :depends-on ("backend-type-imitation" "apparatus" "score-parser"))
-               (:file "webserver-display" :depends-on ("backend-type-imitation")))
+               (:file "backend-type-imitation"
+                :depends-on ("backend-class" "typesetter"))
+               (:file "lilypond-backend"
+                :depends-on ("backend-class" "score-parser"))
+               (:file "dispatcher"
+                :depends-on ("backend-type-imitation" "apparatus" "score-parser"))
+               (:file "webserver-display"
+                :depends-on ("backend-type-imitation")))
   :depends-on (:hunchentoot :cl-who :cl-ppcre)
   :build-pathname "setzkasten-bin"
   :entry-point "setzkasten:main")
