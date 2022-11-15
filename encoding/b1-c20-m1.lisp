@@ -29,7 +29,8 @@
           cclef7 sb9 b22 sh8 b38 sb8 b38 fl8 b38 sbd8 bl
           sbd7 b38 sb7 b38 sbd6 b38 bl
           b38 fl6 b38 sb6 b38 sb5 b38 bl
-          fl5 b38 sb5 b38 sb4 b38 fl4 b38 sb4 b38 sbd4 bl
+          fl5 b38 sb5 b38 sb4 b38 (:alt (:diplomatic fl4 b38 sb4 b38 sbd4)
+                                        (:idealised sbd4 b38 fl4 b38 sb4)) bl
           sb3 b38 sbd2 b38 fl2 b38 sb2 bl
           b38 b38 b38 b38 b38 b38)
    (text 70 58

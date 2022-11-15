@@ -18,8 +18,10 @@
          (1640 nil "più di quinta")
          (1954 nil "più di quin."))
    (text 80 58
-         (81 nil "imper.natur.")
-         (425 nil "imper. nat.")
+         (81 nil (:alt (:diplomatic  "imper.natur.")
+                       (:idealised "imper.accid.")))
+         (425 nil (:alt (:diplomatic "imper. nat.")
+                        (:idealised "imper. acc.")))
          (720 nil "imp. accid.")
          (1040 nil "imper.accid.")
          (1354 nil "imper.acci.")

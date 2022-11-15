@@ -1,4 +1,5 @@
 `(("b1-c5-m5" nil nil ,*score-bg-color*)
+  ;; m1.07
   ((text 70 58 (115 1903 "ᴍano della diuiſione del tono in quattro ᴅieſis ᴇn. aſcendenti con lo ſemitono minore."))
    (text 100 58
          (43 nil "da ᴀlamire à ʙ mi")
@@ -37,7 +38,8 @@
    (text 80 58
          (168 464 "la.& ſol diſcendono")
          (664 243 "la diſcende")
-         (982 527 "per ♭.fa.re.mi.fa.re.")
+         (982 527 (:alt (:diplomatic "per ♭.fa.re.mi.fa.re.")
+                        (:idealised "per ♭.ut.re.mi.fa.re.")))
          (1529 557 "per ♭.re.mi.fa.re.mi."))
    (text 70 58
          (1552 536 "per ♮.ut.re.mi.fa.re."))))

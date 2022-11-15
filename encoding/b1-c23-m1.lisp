@@ -21,7 +21,8 @@
          (1543 nil "comp.")
          (1852 nil "incomp."))
    (music 2202
-          cclef7 b38 sh5 b22 sb5 b22 sb4 b22 sh4 b22 sb4 b38 bl
+          cclef7 b38 sh5 b22 sb5 b22 (:alt (:diplomatic sb4)
+                                           (:idealised sb5)) b22 sh4 b22 sb4 b38 bl
           b38 sh4 b22 sb4 b22 sh3 b22 sb3 b38 bl
           b38 fl5 b22 sb5 b38 fl4 b38 sb4 b38 bl
           b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38)

@@ -4,7 +4,8 @@
           sb2 b22 sh3 b22 sb3 bl
           sb3 b22 fl4 b22 sb4 bl
           sb4 b22 fl5 b22 sb5 bl
-          sb5 b22 sh4 b22 sb4 bl
+          (:alt (:diplomatic sb5 b22 sh4 b22 sb4)
+                (:idealised sh4 b22 sb4 b22 sb5)) bl
           b22 sb7 b22 fl6 b22 sb6 bl
           sb5 b22 sh4 b22 sb4 bl
           sb4 b22 sh3 b22 sb3 bl
@@ -20,7 +21,8 @@
          (1700 nil "ſpet. cro.")
          (1950 nil "ſpet.cro."))
    (text 70 58
-         (44 nil "tono cro.")
+         (44 nil (:alt (:diplomatic "tono cro.")
+                       (:idealised "ſe.tono cro.")))
          (316 nil "to. crom.")
          (550 nil "ſem.cro.")
          (750 nil "ſem. cro.")

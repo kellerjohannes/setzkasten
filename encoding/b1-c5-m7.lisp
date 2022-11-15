@@ -14,6 +14,7 @@
           ;; achtung, siehe Maniates S. 65, ev. Korrekturen nötig
           max7 fclef7 sb2 b22 sbd2 b22 fl3 b22 sb3 b22 fl3 b22 sbd3 b22 sb3 bl
           b22 fl3 b22 sb3 b22 fl3 b22 sbd3 bl
+          ;; diese Zeile soll in Lilypond in zwei Systeme geteilt werden, das untere als ossia in Klammern
           sb3 b22 sbd3 b22 sb4 bl
           sb4 b22 sbd4 b22 fl5 b22 sb5 b22 fl5 b22 sbd5 b22 sb5 bl
           sb5 b22 sbd5 b22 fl6 b22 sb6 b22 fl6 b22 sbd6 b22 sb6 bl)
@@ -41,8 +42,10 @@
          (1412 nil "à ᴀ."))
    (music 2188
           max7 fclef7 b38 sb6 b38 sbd6 b38 sb7 bl
-          sb7 b38 sbd7 b38 fl8 b38 sbd8 b38 fl8 b38 sbd8 b38 sb8 bl
-          sb8 b38 sbd9 b38 fl9 b38 sb9 b38 fl9 b38 sbd9 b38 sb9 bl
+          sb7 b38 sbd7 b38 fl8 b38 (:alt (:diplomatic sbd8)
+                                         (:idealised sb8)) b38 fl8 b38 sbd8 b38 sb8 bl
+          sb8 b38 (:alt (:diplomatic sbd9)
+                        (:idealised sbd8)) sbd9 b38 fl9 b38 sb9 b38 fl9 b38 sbd9 b38 sb9 bl
           b38 b38 b38 b22 b430)
    (text 70 58
          (10 396 "per n. mi. mi. fa.")

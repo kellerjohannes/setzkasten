@@ -6,7 +6,8 @@
           b27 b27 b27 sbd5 b22 bl
           b27 b27 b27 sbdl7 b22 b22 b22 bl
           b22 b22 sbdr4 b22 b22 b22 bl
-          cclef7 b22 fl6 b22 br5 b22 flrev4 bl
+          cclef7 b22 fl6 b22 (:alt (:diplomatic br5)
+                                   (:idealised brd5)) b22 flrev4 bl
           b22 fl4 b22 brd4 b22 bl
           b38 b22 fl3 b22 brd4 b38 bl)
    (text 70 58
