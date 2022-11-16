@@ -16,11 +16,10 @@ dot = {
 
 \markup {
   \center-column {
-    \override #'(line-width . 90)
-    \center-align
-    \fontsize#4
-    \wordwrap-string { "Dimostratione della mano diatonica" }
-    \null
+    \line {
+      \center-align
+      \fontsize#4 { \concat { \normal-text "Dimostratione della mano diatonica"} }
+    }
     \line {
       \center-column {
         \null

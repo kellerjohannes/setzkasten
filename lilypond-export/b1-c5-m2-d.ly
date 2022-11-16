@@ -18,7 +18,7 @@ dot = {
   \center-column {
     \line {
       \center-align
-      \fontsize#4 { \concat { \normal-text "Demonstration of the diatonic hand"} }
+      \fontsize#4 { \concat { \normal-text "Darstellung der aufsteigenden chromatischen Hand mit " \italic "semitoni minori" \normal-text ""} }
     }
     \line {
       \center-column {
@@ -37,8 +37,7 @@ dot = {
                 \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" a,1 
-                a,1 
-                a,1 
+                ais,1 
                 \cadenzaOff
               }
             >>
@@ -52,13 +51,13 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "natural: la" }
+          \left-align {  \normal-text "natürlich: la" }
         }
         \line {
-          \left-align {  \normal-text "soft: mi" }
+          \left-align {  \normal-text "weich: mi" }
         }
         \line {
-          \left-align {  \normal-text "hard: re" }
+          \left-align {  \normal-text "hart: re" }
         }
 
       }
@@ -78,8 +77,8 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "bass" bes,1 
-                b,1 
+                \clef "bass" b,1 
+                bis,1 
                 \cadenzaOff
               }
             >>
@@ -93,10 +92,7 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "soft: fa" }
-        }
-        \line {
-          \left-align {  \normal-text "hard: mi" }
+          \left-align {  \normal-text "hart: mi" }
         }
 
       }
@@ -117,8 +113,7 @@ dot = {
                 \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" c1 
-                c1 
-                c1 
+                cis1 
                 \cadenzaOff
               }
             >>
@@ -132,13 +127,13 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "soft: sol" }
+          \left-align {  \normal-text "natürlich: sol" }
         }
         \line {
-          \left-align {  \normal-text "hard: fa" }
+          \left-align {  \normal-text "weich: fa" }
         }
         \line {
-          \left-align {  \normal-text "natural: ut" }
+          \left-align {  \normal-text "hart: ut" }
         }
 
       }
@@ -159,8 +154,7 @@ dot = {
                 \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" d1 
-                d1 
-                d1 
+                dis1 
                 \cadenzaOff
               }
             >>
@@ -174,13 +168,13 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "soft: la" }
+          \left-align {  \normal-text "weich: la" }
         }
         \line {
-          \left-align {  \normal-text "hard: sol" }
+          \left-align {  \normal-text "hart: sol" }
         }
         \line {
-          \left-align {  \normal-text "natural: re" }
+          \left-align {  \normal-text "natürlich: re" }
         }
 
       }
@@ -201,7 +195,7 @@ dot = {
                 \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" e1 
-                e1 
+                eis1 
                 \cadenzaOff
               }
             >>
@@ -215,10 +209,10 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "hard: la" }
+          \left-align {  \normal-text "hart: la" }
         }
         \line {
-          \left-align {  \normal-text "natural: mi" }
+          \left-align {  \normal-text "natürlich: mi" }
         }
 
       }
@@ -239,7 +233,7 @@ dot = {
                 \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" f1 
-                f1 
+                fis1 
                 \cadenzaOff
               }
             >>
@@ -253,10 +247,10 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "natural: fa" }
+          \left-align {  \normal-text "natürlich: fa" }
         }
         \line {
-          \left-align {  \normal-text "soft: ut" }
+          \left-align {  \normal-text "weich: ut" }
         }
 
       }
@@ -277,8 +271,7 @@ dot = {
                 \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" g1 
-                g1 
-                g1 
+                gis1 
                 \cadenzaOff
               }
             >>
@@ -292,13 +285,13 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "natural: sol" }
+          \left-align {  \normal-text "natürlich: sol" }
         }
         \line {
-          \left-align {  \normal-text "soft: re" }
+          \left-align {  \normal-text "weich: re" }
         }
         \line {
-          \left-align {  \normal-text "hard: ut" }
+          \left-align {  \normal-text "hart: ut" }
         }
 
       }

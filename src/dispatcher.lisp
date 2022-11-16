@@ -57,6 +57,11 @@
     ("b1-c5-m1" "c" (:idealised :it) ,*lilypond-backend*)
     ("b1-c5-m1" "d" (:idealised :de) ,*lilypond-backend*)
     ("b1-c5-m1" "e" (:idealised :en) ,*lilypond-backend*)
+    ("b1-c5-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c5-m2" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b1-c5-m2" "c" (:idealised :it) ,*lilypond-backend*)
+    ("b1-c5-m2" "d" (:idealised :de) ,*lilypond-backend*)
+    ("b1-c5-m2" "e" (:idealised :en) ,*lilypond-backend*)
     ))
 
 

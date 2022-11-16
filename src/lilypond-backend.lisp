@@ -177,7 +177,7 @@
   (let ((result nil))
     (dolist (item format-list result)
       (cond ((eq item :bold) (setf result (concatenate 'string result " \\bold ")))
-            ((eq item :italic) (setf result (concatenate 'string result " \\italic ")))
+            ((eq item :italics) (setf result (concatenate 'string result " \\italic ")))
             ((eq item :normal) (setf result (concatenate 'string result " \\normal-text ")))
             (t (setf result (concatenate 'string result "\"" item "\"")))))))
 
@@ -245,18 +245,19 @@ dot = {
 
 \\markup {
 ~2,0t\\center-column {
-~4,0t\\override #'(line-width . 90)
-~4,0t\\center-align
-~4,0t\\fontsize#4
-~4,0t\\wordwrap-string { ~s }
-~4,0t\\null
+~{~4,0t\\line {
+~6,0t\\center-align
+~6,0t\\fontsize#4 { \\concat {~a} }
+~4,0t}~}
 ~4,0t\\line {
 ~{~a ~&~}
 ~4,0t}
 ~2,0t}
 }"
-          ;; alternative: fill-line instead of line, only works if ly linewidth is set sanely
-          (title score)
+          ;; (generate-formatted-text (split-formatted-string (title score)))
+          (mapcar (lambda (textline)
+                    (generate-formatted-text (split-formatted-string textline)))
+                  (split-string-to-list (title score) "\\"))
           (mapcar (lambda (section)
                     (generate-section-ly-code section (find-shortest-duration score)))
                   (sections score))))
