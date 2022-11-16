@@ -173,14 +173,6 @@
                     (mobjects voice)))))
 
 
-(defun split-string-to-list (text-string split-string)
-  (cond ((null (search split-string text-string)) (list text-string))
-        (t (cons (subseq text-string 0 (search split-string text-string))
-                 (split-string-to-list
-                  (subseq text-string
-                          (+ (length split-string)
-                             (search split-string text-string)))
-                  split-string)))))
 
 (defun generate-multiline-text (text-string)
   (format nil "~

@@ -2,7 +2,10 @@
    (:filename "b1-c5-m2")
    (:alt-name "m1.02")
    (:comment "")
-   (:creator "Vicentino21 / Johannes Keller"))
+   (:creator "Vicentino21 / Johannes Keller")
+   (:title (:alt (:it "Dimostratione della mano cromatica, ascendente, con li semitoni minore, e con l'essempio")
+                 (:de "Darstellung der aufsteigenden chromatischen Hand mit 'semitoni minori'")
+                 (:en "Demonstration of the ascending chromatic hand, with the *Semitoni minori*, and with an example"))))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)

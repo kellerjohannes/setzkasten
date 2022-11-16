@@ -12,6 +12,90 @@
   (values (intern (string-upcase name) "KEYWORD")))
 
 
+;; string processing
+
+(defun split-string-to-list (text-string split-string)
+  (cond ((null (search split-string text-string)) (list text-string))
+        (t (cons (subseq text-string 0 (search split-string text-string))
+                 (split-string-to-list
+                  (subseq text-string
+                          (+ (length split-string)
+                             (search split-string text-string)))
+                  split-string)))))
+
+(defparameter *bold-trigger* "*")
+(defparameter *italics-trigger* "_")
+
+(defun find-next-trigger (text-string trigger-string &optional (scan-start 0))
+  (search trigger-string text-string :start2 scan-start))
+
+(defun split-formatted-string (text-string &optional (result nil))
+  (let ((bold-pos (find-next-trigger text-string *bold-trigger*))
+        (italics-pos (find-next-trigger text-string *italics-trigger*))))
+  (cond ((and (null bold-pos) (null italics-pos))
+         (reverse result))
+        (italics-pos
+         (push (subseq text-string 0 (find-next-trigger text-string *italics-trigger*)) result)
+         (push :italics result)
+         (split-formatted-string (subseq (find-next-)))
+         )))
+
+(defun split-formatted-string (text-string &optional result)
+  (let ((bold-pos (find-next-trigger text-string *bold-trigger*))
+        (italics-pos (find-next-trigger text-string *italics-trigger*)))
+    (format t "~&entering with ~s" text-string)
+    (cond ((and (null bold-pos) (null italics-pos))
+           (format t "~&finish up")
+           (push :normal result)
+           (push text-string result)
+           (reverse result)
+           )
+          ((and (and bold-pos (> bold-pos 0)) (null italics-pos))
+           (format t "~&some bold detected")
+           (push :normal result)
+           (push (subseq text-string 0 bold-pos) result)
+           (split-formatted-string (subseq text-string bold-pos) result))
+          ((and (and italics-pos (> italics-pos 0)) (null bold-pos))
+           (push :normal result)
+           (push (subseq text-string 0 italics-pos) result)
+           (split-formatted-string (subseq text-string italics-pos) result))
+          ((and bold-pos (zerop bold-pos))
+           (format t "~&bold on first detected")
+           (let ((trigger-len (length *bold-trigger*)))
+             (push :bold result)
+             (push (subseq text-string
+                           trigger-len
+                           (find-next-trigger text-string *bold-trigger* trigger-len))
+                   result)
+             (split-formatted-string (subseq text-string (+ trigger-len
+                                                            (find-next-trigger text-string
+                                                                               *bold-trigger*
+                                                                               trigger-len)))
+                                     result)))
+          ((and italics-pos (zerop italics-pos))
+           (let ((trigger-len (length *italics-trigger*)))
+             (push :italics result)
+             (push (subseq text-string trigger-len (find-next-trigger
+                                                    text-string
+                                                    *italics-trigger*
+                                                    trigger-len))
+                   result)
+             (split-formatted-string (subseq text-string (+ trigger-len
+                                                            (find-next-trigger text-string
+                                                                               *italics-trigger*
+                                                                               trigger-len)))
+                                     result)))
+          ((< bold-pos italics-pos)
+           (push :normal result)
+           (push (subseq text-string 0 bold-pos) result)
+           (split-formatted-string (subseq text-string bold-pos) result))
+          ((< italics-pos bold-pos)
+           (push :normal result)
+           (push (subseq text-string 0 italics-pos) result)
+           (split-formatted-string (subseq text-string italics-pos) result))
+          (t (format t "~&Something went wrong when parsing for formatted string.")))))
+
+
 
 ;; to be used on score encoding expressions
 
