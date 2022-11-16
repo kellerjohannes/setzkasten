@@ -18,7 +18,7 @@ dot = {
   \center-column {
     \line {
       \center-align
-      \fontsize#4 { \concat { \normal-text "Dimostratione della mano diatonica"} }
+      \fontsize#3 { \concat { \normal-text "Dimostratione della mano diatonica"} }
     }
     \line {
       \center-column {

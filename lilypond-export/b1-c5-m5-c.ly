@@ -18,13 +18,16 @@ dot = {
   \center-column {
     \line {
       \center-align
-      \fontsize#3 { \concat { \normal-text "Darstellung der aufsteigenden chromatischen Hand mit " \italic "semitoni minori" \normal-text ""} }
+      \fontsize#3 { \concat { \normal-text "Mano della divisione del tono in quattro diesis enarmonici ascendenti"} }
+    }\line {
+      \center-align
+      \fontsize#3 { \concat { \normal-text "con lo semitono minore"} }
     }
     \line {
       \center-column {
         \null
         \line {
-          \left-align {  \normal-text "A" }
+          \left-align {  \normal-text "da Alamire a Bmi" }
         }
 
         \null
@@ -37,7 +40,10 @@ dot = {
                 \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" a,1 
+                \dot a,1-. 
                 ais,1 
+                \dot bes,1-. 
+                b,1 
                 \cadenzaOff
               }
             >>
@@ -51,13 +57,10 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "natürlich: la" }
+          \left-align {  \normal-text "per ♮: re-mi-fa-re-mi" }
         }
         \line {
-          \left-align {  \normal-text "weich: mi" }
-        }
-        \line {
-          \left-align {  \normal-text "hart: re" }
+          \left-align {  \normal-text "per ♭: mi-fa-sol-re-mi" }
         }
 
       }
@@ -65,7 +68,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align {  \normal-text "B♭" }
+          \left-align {  \normal-text "da Bmi a Csolfaut" }
         }
 
         \null
@@ -78,7 +81,10 @@ dot = {
                 \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" b,1 
+                \dot b,1-. 
                 bis,1 
+                \dot ces1-. 
+                c1 
                 \cadenzaOff
               }
             >>
@@ -92,7 +98,7 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "hart: mi" }
+          \left-align {  \normal-text "per ♮: mi-fa-re-mi-fa" }
         }
 
       }
@@ -100,7 +106,45 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align {  \normal-text "C" }
+          \left-align {  \normal-text "da Bfa a Csolfaut" }
+        }
+
+        \null
+        \line {
+          \score {
+            <<
+              \new Staff \with { instrumentName = ""} {
+                \override Staff.TimeSignature.stencil = ##f
+                \override Staff.NoteHead.style = #'baroque
+                \accidentalStyle Score.forget
+                \cadenzaOn
+                \clef "bass" bes,1 
+                \dot bes,1-. 
+                b,1 
+                \dot b,1-. 
+                c1 
+                \cadenzaOff
+              }
+            >>
+            \layout {
+              \context {
+                \Score
+                \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1)
+              }
+            }
+          }
+        }
+        \null
+        \line {
+          \left-align {  \normal-text "per ♭: fa-sol-re-mi-fa" }
+        }
+
+      }
+      \hspace #3 
+      \center-column {
+        \null
+        \line {
+          \left-align {  \normal-text "da Csolfaut a Dlasol" }
         }
 
         \null
@@ -113,7 +157,10 @@ dot = {
                 \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" c1 
+                \dot c1-. 
                 cis1 
+                \dot des1-. 
+                d1 
                 \cadenzaOff
               }
             >>
@@ -127,13 +174,10 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "natürlich: sol" }
+          \left-align {  \normal-text "per nat.: ut-re-mi-fa-re" }
         }
         \line {
-          \left-align {  \normal-text "weich: fa" }
-        }
-        \line {
-          \left-align {  \normal-text "hart: ut" }
+          \left-align {  \normal-text "sol e fa discendono" }
         }
 
       }
@@ -141,7 +185,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align {  \normal-text "D" }
+          \left-align {  \normal-text "da Dlasolre a Elami" }
         }
 
         \null
@@ -154,7 +198,10 @@ dot = {
                 \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" d1 
+                \dot d1-. 
                 dis1 
+                \dot es1-. 
+                \dot e1-. 
                 \cadenzaOff
               }
             >>
@@ -168,13 +215,10 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "weich: la" }
+          \left-align {  \normal-text "per nat.: re-mi-fa-re-mi" }
         }
         \line {
-          \left-align {  \normal-text "hart: sol" }
-        }
-        \line {
-          \left-align {  \normal-text "natürlich: re" }
+          \left-align {  \normal-text "la e sol discendono" }
         }
 
       }
@@ -182,7 +226,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align {  \normal-text "E" }
+          \left-align {  \normal-text "da Elami a F" }
         }
 
         \null
@@ -195,7 +239,8 @@ dot = {
                 \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" e1 
-                eis1 
+                \dot e1-. 
+                f1 
                 \cadenzaOff
               }
             >>
@@ -209,10 +254,10 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "hart: la" }
+          \left-align {  \normal-text "per nat.: mi-mi-fa" }
         }
         \line {
-          \left-align {  \normal-text "natürlich: mi" }
+          \left-align {  \normal-text "la discende" }
         }
 
       }
@@ -220,7 +265,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align {  \normal-text "F" }
+          \left-align {  \normal-text "da Ffaut a G." }
         }
 
         \null
@@ -233,7 +278,10 @@ dot = {
                 \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" f1 
+                \dot f1-. 
                 fis1 
+                \dot ges1-. 
+                g1 
                 \cadenzaOff
               }
             >>
@@ -247,10 +295,10 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "natürlich: fa" }
+          \left-align {  \normal-text "per nat.: fa-re-mi-fa-sol" }
         }
         \line {
-          \left-align {  \normal-text "weich: ut" }
+          \left-align {  \normal-text "per ♭: fa-re-mi-fa-re" }
         }
 
       }
@@ -258,7 +306,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align {  \normal-text "G" }
+          \left-align {  \normal-text "da Gsolreut a Alamire" }
         }
 
         \null
@@ -271,7 +319,10 @@ dot = {
                 \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" g1 
+                \dot g1-. 
                 gis1 
+                \dot as1-. 
+                a1 
                 \cadenzaOff
               }
             >>
@@ -285,13 +336,13 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "natürlich: sol" }
+          \left-align {  \normal-text "per nat.: sol-re-mi-fa-re" }
         }
         \line {
-          \left-align {  \normal-text "weich: re" }
+          \left-align {  \normal-text "per b: re-mi-fa-re-mi" }
         }
         \line {
-          \left-align {  \normal-text "hart: ut" }
+          \left-align {  \normal-text "per ♮: ut-re-mi-fa-re" }
         }
 
       }

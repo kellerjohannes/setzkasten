@@ -18,7 +18,7 @@ dot = {
   \center-column {
     \line {
       \center-align
-      \fontsize#4 { \concat { \normal-text "Erklärung der diatonischen Hand"} }
+      \fontsize#3 { \concat { \normal-text "Erklärung der diatonischen Hand"} }
     }
     \line {
       \center-column {

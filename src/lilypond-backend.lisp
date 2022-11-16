@@ -28,6 +28,7 @@
 (defparameter *dict-ly-notenames* '(((:c nil nil) "c" "" "")
                                     ((:b :sharp nil) "b" "is" "")
                                     ((:c nil :dot) "\\dot c" "" "-.")
+                                    ((:c :flat :dot) "\\dot c" "es" "-.")
                                     ((:d nil nil) "d" "" "")
                                     ((:c :sharp nil) "c" "is" "")
                                     ((:d :flat nil) "d" "es" "")
@@ -60,6 +61,7 @@
                                     ((:b :flat nil) "b" "es" "")
                                     ((:a :sharp nil) "a" "is" "")
                                     ((:b nil :dot) "\\dot b" "" "-.")
+                                    ((:b :natural :dot) "\\dot b" "" "-.")
                                     ((:b :flat :dot) "\\dot b" "es" "-.")
                                     ((:b nil :comma) "b" "" "^\\markup{,}")))
 
@@ -247,7 +249,7 @@ dot = {
 ~2,0t\\center-column {
 ~{~4,0t\\line {
 ~6,0t\\center-align
-~6,0t\\fontsize#4 { \\concat {~a} }
+~6,0t\\fontsize#3 { \\concat {~a} }
 ~4,0t}~}
 ~4,0t\\line {
 ~{~a ~&~}

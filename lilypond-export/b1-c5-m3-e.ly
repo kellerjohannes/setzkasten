@@ -18,13 +18,13 @@ dot = {
   \center-column {
     \line {
       \center-align
-      \fontsize#3 { \concat { \normal-text "Darstellung der aufsteigenden chromatischen Hand mit " \italic "semitoni minori" \normal-text ""} }
+      \fontsize#3 { \concat { \normal-text "Dimostratione della mano cromatica con li semitoni maggiori ascendenti"} }
     }
     \line {
       \center-column {
         \null
         \line {
-          \left-align {  \normal-text "A" }
+          \left-align {  \normal-text "Alamire" }
         }
 
         \null
@@ -37,7 +37,6 @@ dot = {
                 \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" a,1 
-                ais,1 
                 \cadenzaOff
               }
             >>
@@ -51,13 +50,19 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "natürlich: la" }
+          \left-align {  \normal-text "per natura," }
         }
         \line {
-          \left-align {  \normal-text "weich: mi" }
+          \left-align {  \normal-text "per ♭," }
         }
         \line {
-          \left-align {  \normal-text "hart: re" }
+          \left-align {  \normal-text "per ♮:" }
+        }
+        \line {
+          \left-align {  \normal-text "la, mi, re," }
+        }
+        \line {
+          \left-align {  \normal-text "ut, fa, sol" }
         }
 
       }
@@ -65,7 +70,51 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align {  \normal-text "B♭" }
+          \left-align {  \normal-text "Bfa♭mi" }
+        }
+
+        \null
+        \line {
+          \score {
+            <<
+              \new Staff \with { instrumentName = ""} {
+                \override Staff.TimeSignature.stencil = ##f
+                \override Staff.NoteHead.style = #'baroque
+                \accidentalStyle Score.forget
+                \cadenzaOn
+                \clef "bass" bes,1 
+                \dot b,1-. 
+                \cadenzaOff
+              }
+            >>
+            \layout {
+              \context {
+                \Score
+                \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1)
+              }
+            }
+          }
+        }
+        \null
+        \line {
+          \left-align {  \normal-text "per ♭," }
+        }
+        \line {
+          \left-align {  \normal-text "per ♮:" }
+        }
+        \line {
+          \left-align {  \normal-text "fa, mi," }
+        }
+        \line {
+          \left-align {  \normal-text "lo, sol, re, ut" }
+        }
+
+      }
+      \hspace #3 
+      \center-column {
+        \null
+        \line {
+          \left-align {  \normal-text "B et C" }
         }
 
         \null
@@ -78,7 +127,7 @@ dot = {
                 \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" b,1 
-                bis,1 
+                c1 
                 \cadenzaOff
               }
             >>
@@ -92,7 +141,16 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "hart: mi" }
+          \left-align {  \normal-text "per ♮," }
+        }
+        \line {
+          \left-align {  \normal-text "per natura:" }
+        }
+        \line {
+          \left-align {  \normal-text "mi, fa, sol," }
+        }
+        \line {
+          \left-align {  \normal-text "la, re, ut" }
         }
 
       }
@@ -100,7 +158,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align {  \normal-text "C" }
+          \left-align {  \normal-text "Csolfaut" }
         }
 
         \null
@@ -113,7 +171,7 @@ dot = {
                 \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" c1 
-                cis1 
+                des1 
                 \cadenzaOff
               }
             >>
@@ -127,13 +185,16 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "natürlich: sol" }
+          \left-align {  \normal-text "per natura," }
         }
         \line {
-          \left-align {  \normal-text "weich: fa" }
+          \left-align {  \normal-text "per ♭:" }
         }
         \line {
-          \left-align {  \normal-text "hart: ut" }
+          \left-align {  \normal-text "sol, fa, ut," }
+        }
+        \line {
+          \left-align {  \normal-text "re, mi, la" }
         }
 
       }
@@ -141,7 +202,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align {  \normal-text "D" }
+          \left-align {  \normal-text "Dlasolre" }
         }
 
         \null
@@ -154,7 +215,7 @@ dot = {
                 \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" d1 
-                dis1 
+                es1 
                 \cadenzaOff
               }
             >>
@@ -168,13 +229,16 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "weich: la" }
+          \left-align {  \normal-text "per natura," }
         }
         \line {
-          \left-align {  \normal-text "hart: sol" }
+          \left-align {  \normal-text "per ♭:" }
         }
         \line {
-          \left-align {  \normal-text "natürlich: re" }
+          \left-align {  \normal-text "la, sol, re," }
+        }
+        \line {
+          \left-align {  \normal-text "fa, mi, ut" }
         }
 
       }
@@ -182,7 +246,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align {  \normal-text "E" }
+          \left-align {  \normal-text "Elami" }
         }
 
         \null
@@ -195,7 +259,7 @@ dot = {
                 \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" e1 
-                eis1 
+                f1 
                 \cadenzaOff
               }
             >>
@@ -209,10 +273,16 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "hart: la" }
+          \left-align {  \normal-text "per natura," }
         }
         \line {
-          \left-align {  \normal-text "natürlich: mi" }
+          \left-align {  \normal-text "per ♮:" }
+        }
+        \line {
+          \left-align {  \normal-text "la, mi, fa," }
+        }
+        \line {
+          \left-align {  \normal-text "ut, re, sol" }
         }
 
       }
@@ -220,7 +290,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align {  \normal-text "F" }
+          \left-align {  \normal-text "Ffaut" }
         }
 
         \null
@@ -233,7 +303,7 @@ dot = {
                 \accidentalStyle Score.forget
                 \cadenzaOn
                 \clef "bass" f1 
-                fis1 
+                ges1 
                 \cadenzaOff
               }
             >>
@@ -247,51 +317,16 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "natürlich: fa" }
+          \left-align {  \normal-text "per natura," }
         }
         \line {
-          \left-align {  \normal-text "weich: ut" }
-        }
-
-      }
-      \hspace #3 
-      \center-column {
-        \null
-        \line {
-          \left-align {  \normal-text "G" }
-        }
-
-        \null
-        \line {
-          \score {
-            <<
-              \new Staff \with { instrumentName = ""} {
-                \override Staff.TimeSignature.stencil = ##f
-                \override Staff.NoteHead.style = #'baroque
-                \accidentalStyle Score.forget
-                \cadenzaOn
-                \clef "bass" g1 
-                gis1 
-                \cadenzaOff
-              }
-            >>
-            \layout {
-              \context {
-                \Score
-                \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1)
-              }
-            }
-          }
-        }
-        \null
-        \line {
-          \left-align {  \normal-text "natürlich: sol" }
+          \left-align {  \normal-text "per ♭:" }
         }
         \line {
-          \left-align {  \normal-text "weich: re" }
+          \left-align {  \normal-text "fa, ut, re," }
         }
         \line {
-          \left-align {  \normal-text "hart: ut" }
+          \left-align {  \normal-text "mi, sol, la" }
         }
 
       }

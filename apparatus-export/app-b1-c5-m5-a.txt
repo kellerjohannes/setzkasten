@@ -1,3 +1,3 @@
 Auto-generated critical apparatus for file b1-c5-m5-a:
 
-Line 0, glyph 224 (element 15): reading DIPLOMATIC used ("per ♭.fa.re.mi.fa.re.").
+Line 0, glyph 289 (element 15): reading DIPLOMATIC used ("per ♭.fa.re.mi.fa.re.").

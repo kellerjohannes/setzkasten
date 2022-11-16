@@ -18,13 +18,16 @@ dot = {
   \center-column {
     \line {
       \center-align
-      \fontsize#3 { \concat { \normal-text "Darstellung der aufsteigenden chromatischen Hand mit " \italic "semitoni minori" \normal-text ""} }
+      \fontsize#3 { \concat { \normal-text "Dimostratione della mano enarmonica diatonica,"} }
+    }\line {
+      \center-align
+      \fontsize#3 { \concat { \normal-text "ascendente con le sette lettere della mano"} }
     }
     \line {
       \center-column {
         \null
         \line {
-          \left-align {  \normal-text "A" }
+          \left-align {  \normal-text "Alamire" }
         }
 
         \null
@@ -36,8 +39,9 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "bass" a,1 
-                ais,1 
+                \clef "bass" \dot a,1-. 
+                \dot a,1-. 
+                \dot a,1-. 
                 \cadenzaOff
               }
             >>
@@ -51,13 +55,13 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "natürlich: la" }
+          \left-align {  \normal-text "per natura: la" }
         }
         \line {
-          \left-align {  \normal-text "weich: mi" }
+          \left-align {  \normal-text "per ♭: mi" }
         }
         \line {
-          \left-align {  \normal-text "hart: re" }
+          \left-align {  \normal-text "per ♮: re" }
         }
 
       }
@@ -65,7 +69,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align {  \normal-text "B♭" }
+          \left-align {  \normal-text "Bmi" }
         }
 
         \null
@@ -77,8 +81,7 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "bass" b,1 
-                bis,1 
+                \clef "bass" \dot b,1-. 
                 \cadenzaOff
               }
             >>
@@ -92,7 +95,7 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "hart: mi" }
+          \left-align {  \normal-text "per ♮: mi" }
         }
 
       }
@@ -100,7 +103,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align {  \normal-text "C" }
+          \left-align {  \normal-text "Csolfaut" }
         }
 
         \null
@@ -112,8 +115,9 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "bass" c1 
-                cis1 
+                \clef "bass" \dot c1-. 
+                \dot c1-. 
+                \dot c1-. 
                 \cadenzaOff
               }
             >>
@@ -127,13 +131,13 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "natürlich: sol" }
+          \left-align {  \normal-text "per ♭: sol" }
         }
         \line {
-          \left-align {  \normal-text "weich: fa" }
+          \left-align {  \normal-text "per ♮: fa" }
         }
         \line {
-          \left-align {  \normal-text "hart: ut" }
+          \left-align {  \normal-text "per natura: ut" }
         }
 
       }
@@ -141,7 +145,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align {  \normal-text "D" }
+          \left-align {  \normal-text "Dlasolre" }
         }
 
         \null
@@ -153,8 +157,9 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "bass" d1 
-                dis1 
+                \clef "bass" \dot d1-. 
+                \dot d1-. 
+                \dot d1-. 
                 \cadenzaOff
               }
             >>
@@ -168,13 +173,13 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "weich: la" }
+          \left-align {  \normal-text "per ♭: la" }
         }
         \line {
-          \left-align {  \normal-text "hart: sol" }
+          \left-align {  \normal-text "per ♮: sol" }
         }
         \line {
-          \left-align {  \normal-text "natürlich: re" }
+          \left-align {  \normal-text "per natura: re" }
         }
 
       }
@@ -182,7 +187,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align {  \normal-text "E" }
+          \left-align {  \normal-text "Elami" }
         }
 
         \null
@@ -194,8 +199,8 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "bass" e1 
-                eis1 
+                \clef "bass" \dot e1-. 
+                \dot e1-. 
                 \cadenzaOff
               }
             >>
@@ -209,10 +214,10 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "hart: la" }
+          \left-align {  \normal-text "per ♮: la" }
         }
         \line {
-          \left-align {  \normal-text "natürlich: mi" }
+          \left-align {  \normal-text "per natura: mi" }
         }
 
       }
@@ -220,7 +225,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align {  \normal-text "F" }
+          \left-align {  \normal-text "Ffaut" }
         }
 
         \null
@@ -232,8 +237,8 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "bass" f1 
-                fis1 
+                \clef "bass" \dot f1-. 
+                \dot f1-. 
                 \cadenzaOff
               }
             >>
@@ -247,10 +252,10 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "natürlich: fa" }
+          \left-align {  \normal-text "per natura: fa" }
         }
         \line {
-          \left-align {  \normal-text "weich: ut" }
+          \left-align {  \normal-text "per ♭: ut" }
         }
 
       }
@@ -258,7 +263,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align {  \normal-text "G" }
+          \left-align {  \normal-text "Gsolreut" }
         }
 
         \null
@@ -270,8 +275,9 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "bass" g1 
-                gis1 
+                \clef "bass" \dot g1-. 
+                \dot g1-. 
+                \dot g1-. 
                 \cadenzaOff
               }
             >>
@@ -285,13 +291,13 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "natürlich: sol" }
+          \left-align {  \normal-text "per natura: sol" }
         }
         \line {
-          \left-align {  \normal-text "weich: re" }
+          \left-align {  \normal-text "per ♭: re" }
         }
         \line {
-          \left-align {  \normal-text "hart: ut" }
+          \left-align {  \normal-text "per ♮: ut" }
         }
 
       }

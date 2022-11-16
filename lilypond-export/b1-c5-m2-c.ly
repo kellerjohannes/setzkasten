@@ -18,10 +18,10 @@ dot = {
   \center-column {
     \line {
       \center-align
-      \fontsize#4 { \concat { \normal-text "Dimostratione della mano cromatica, ascendente, con li semitoni minore,"} }
+      \fontsize#3 { \concat { \normal-text "Dimostratione della mano cromatica, ascendente, con li semitoni minore,"} }
     }\line {
       \center-align
-      \fontsize#4 { \concat { \normal-text "e con l'essempio"} }
+      \fontsize#3 { \concat { \normal-text "e con l'essempio"} }
     }
     \line {
       \center-column {

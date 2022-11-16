@@ -18,10 +18,10 @@ dot = {
   \center-column {
     \line {
       \center-align
-      \fontsize#4 { \concat { \normal-text "Demonstration of the ascending chromatic hand, with the " \italic "Semitoni minori" \normal-text ","} }
+      \fontsize#3 { \concat { \normal-text "Demonstration of the ascending chromatic hand, with the " \italic "Semitoni minori" \normal-text ","} }
     }\line {
       \center-align
-      \fontsize#4 { \concat { \normal-text " and with an example"} }
+      \fontsize#3 { \concat { \normal-text " and with an example"} }
     }
     \line {
       \center-column {
