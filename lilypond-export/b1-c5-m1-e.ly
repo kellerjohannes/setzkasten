@@ -25,7 +25,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align { "A" }
+          \left-align {  \normal-text "A" }
         }
 
         \null
@@ -53,13 +53,13 @@ dot = {
         }
         \null
         \line {
-          \left-align { "natural: la" }
+          \left-align {  \normal-text "natural: la" }
         }
         \line {
-          \left-align { "soft: mi" }
+          \left-align {  \normal-text "soft: mi" }
         }
         \line {
-          \left-align { "hard: re" }
+          \left-align {  \normal-text "hard: re" }
         }
 
       }
@@ -67,7 +67,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align { "B♭" }
+          \left-align {  \normal-text "B♭" }
         }
 
         \null
@@ -94,10 +94,10 @@ dot = {
         }
         \null
         \line {
-          \left-align { "soft: fa" }
+          \left-align {  \normal-text "soft: fa" }
         }
         \line {
-          \left-align { "hard: mi" }
+          \left-align {  \normal-text "hard: mi" }
         }
 
       }
@@ -105,7 +105,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align { "C" }
+          \left-align {  \normal-text "C" }
         }
 
         \null
@@ -133,13 +133,13 @@ dot = {
         }
         \null
         \line {
-          \left-align { "soft: sol" }
+          \left-align {  \normal-text "soft: sol" }
         }
         \line {
-          \left-align { "hard: fa" }
+          \left-align {  \normal-text "hard: fa" }
         }
         \line {
-          \left-align { "natural: ut" }
+          \left-align {  \normal-text "natural: ut" }
         }
 
       }
@@ -147,7 +147,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align { "D" }
+          \left-align {  \normal-text "D" }
         }
 
         \null
@@ -175,13 +175,13 @@ dot = {
         }
         \null
         \line {
-          \left-align { "soft: la" }
+          \left-align {  \normal-text "soft: la" }
         }
         \line {
-          \left-align { "hard: sol" }
+          \left-align {  \normal-text "hard: sol" }
         }
         \line {
-          \left-align { "natural: re" }
+          \left-align {  \normal-text "natural: re" }
         }
 
       }
@@ -189,7 +189,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align { "E" }
+          \left-align {  \normal-text "E" }
         }
 
         \null
@@ -216,10 +216,10 @@ dot = {
         }
         \null
         \line {
-          \left-align { "hard: la" }
+          \left-align {  \normal-text "hard: la" }
         }
         \line {
-          \left-align { "natural: mi" }
+          \left-align {  \normal-text "natural: mi" }
         }
 
       }
@@ -227,7 +227,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align { "F" }
+          \left-align {  \normal-text "F" }
         }
 
         \null
@@ -254,10 +254,10 @@ dot = {
         }
         \null
         \line {
-          \left-align { "natural: fa" }
+          \left-align {  \normal-text "natural: fa" }
         }
         \line {
-          \left-align { "soft: ut" }
+          \left-align {  \normal-text "soft: ut" }
         }
 
       }
@@ -265,7 +265,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align { "G" }
+          \left-align {  \normal-text "G" }
         }
 
         \null
@@ -293,13 +293,13 @@ dot = {
         }
         \null
         \line {
-          \left-align { "natural: sol" }
+          \left-align {  \normal-text "natural: sol" }
         }
         \line {
-          \left-align { "soft: re" }
+          \left-align {  \normal-text "soft: re" }
         }
         \line {
-          \left-align { "hard: ut" }
+          \left-align {  \normal-text "hard: ut" }
         }
 
       }

@@ -14,15 +14,6 @@
 
 ;; string processing
 
-(defun split-string-to-list (text-string split-string)
-  (cond ((null (search split-string text-string)) (list text-string))
-        (t (cons (subseq text-string 0 (search split-string text-string))
-                 (split-string-to-list
-                  (subseq text-string
-                          (+ (length split-string)
-                             (search split-string text-string)))
-                  split-string)))))
-
 (defparameter *bold-trigger* "*")
 (defparameter *italics-trigger* "_")
 
@@ -43,15 +34,12 @@
 (defun split-formatted-string (text-string &optional result)
   (let ((bold-pos (find-next-trigger text-string *bold-trigger*))
         (italics-pos (find-next-trigger text-string *italics-trigger*)))
-    (format t "~&entering with ~s" text-string)
     (cond ((and (null bold-pos) (null italics-pos))
-           (format t "~&finish up")
            (push :normal result)
            (push text-string result)
            (reverse result)
            )
           ((and (and bold-pos (> bold-pos 0)) (null italics-pos))
-           (format t "~&some bold detected")
            (push :normal result)
            (push (subseq text-string 0 bold-pos) result)
            (split-formatted-string (subseq text-string bold-pos) result))
@@ -60,7 +48,6 @@
            (push (subseq text-string 0 italics-pos) result)
            (split-formatted-string (subseq text-string italics-pos) result))
           ((and bold-pos (zerop bold-pos))
-           (format t "~&bold on first detected")
            (let ((trigger-len (length *bold-trigger*)))
              (push :bold result)
              (push (subseq text-string
@@ -95,6 +82,19 @@
            (split-formatted-string (subseq text-string italics-pos) result))
           (t (format t "~&Something went wrong when parsing for formatted string.")))))
 
+(defun string-split-loop (text-string split-string)
+  (cond ((null (search split-string text-string)) (list text-string))
+        (t (cons (subseq text-string 0 (search split-string text-string))
+                 (split-string-to-list
+                  (subseq text-string
+                          (+ (length split-string)
+                             (search split-string text-string)))
+                  split-string)))))
+
+(defun split-string-to-list (text-string split-string &optional formatting-p)
+  (if formatting-p
+      (string-split-loop (split-formatted-string text-string) split-string)
+      (string-split-loop text-string split-string)))
 
 
 ;; to be used on score encoding expressions

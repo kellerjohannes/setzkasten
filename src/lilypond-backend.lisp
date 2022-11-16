@@ -173,14 +173,23 @@
                     (mobjects voice)))))
 
 
+(defun generate-formatted-text (format-list)
+  (let ((result nil))
+    (dolist (item format-list result)
+      (cond ((eq item :bold) (setf result (concatenate 'string result " \\bold ")))
+            ((eq item :italic) (setf result (concatenate 'string result " \\italic ")))
+            ((eq item :normal) (setf result (concatenate 'string result " \\normal-text ")))
+            (t (setf result (concatenate 'string result "\"" item "\"")))))))
 
 (defun generate-multiline-text (text-string)
   (format nil "~
 ~8,0t\\null
 ~{~8,0t\\line {
-~10,0t\\left-align { \"~a\" }
+~10,0t\\left-align { ~a }
 ~8,0t}
-~}" (split-string-to-list text-string "\\")))
+~}" (mapcar (lambda (textline)
+              (generate-formatted-text (split-formatted-string textline)))
+            (split-string-to-list text-string "\\"))))
 
 (defmethod generate-section-ly-code ((section section) shortest-duration)
   "`shortest-duration' in Lilypond note value (1/2 for minima)."

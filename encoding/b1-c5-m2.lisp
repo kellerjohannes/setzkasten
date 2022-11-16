@@ -4,38 +4,65 @@
    (:comment "")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Dimostratione della mano cromatica, ascendente, con li semitoni minore, e con l'essempio")
-                 (:de "Darstellung der aufsteigenden chromatischen Hand mit 'semitoni minori'")
-                 (:en "Demonstration of the ascending chromatic hand, with the *Semitoni minori*, and with an example"))))
+                 (:de "Darstellung der aufsteigenden chromatischen Hand mit _semitoni minori_")
+                 (:en "Demonstration of the ascending chromatic hand, with the _Semitoni minori_, and with an example")))
+   (:section-headings
+    (s1 "a")
+    (s2 "b")
+    (s3 "c")
+    (s4 "d")
+    (s5 "e")
+    (s6 "f")
+    (s7 "g"))
+   (:section-captions
+    (s1 "a")
+    (s2 "b")
+    (s3 "c")
+    (s4 "d")
+    (s5 "e")
+    (s6 "f")
+    (s7 "g"))
+   (:voice-labels
+    (:all v1 "")
+    (:all v1 "")))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)
    (:background ,*score-bg-color*))
   (:data
    (:text 70 58
-         (90 1974 "ᴅimoſtratione della ᴍano ᴄromatica, aſcendente, con li ꜱemitoni minore, e con l'eſſempio."))
+          (90 1974 "ᴅimoſtratione della ᴍano ᴄromatica, aſcendente, con li ꜱemitoni minore, e con l'eſſempio."))
    (:text 100 58
-         (41 nil "ᴀ lamire")
-         (366 nil "ʙ mi")
-         (680 nil "ᴄ ſolfaut")
-         (1002 nil "ᴅ laſolre")
-         (1301 nil "ᴇ lami")
-         (1613 nil "ꜰ faut")
-         (1919 nil "ɢ ſolreut"))
+          (41 nil "ᴀ lamire")
+          (366 nil "ʙ mi")
+          (680 nil "ᴄ ſolfaut")
+          (1002 nil "ᴅ laſolre")
+          (1301 nil "ᴇ lami")
+          (1613 nil "ꜰ faut")
+          (1919 nil "ɢ ſolreut"))
    (:music 2193
-          b22 max7 fclef7 b22 sb2 sh2 b22 sb2 b22 bl
-          b22 sb3 b22 sh3 b22 sb3 b22 bl
-          b22 sb4 b22 sh4 b22 sb4 b22 bl
-          b22 sb5 b38 sh5 b38 sb5 b22 bl
-          b22 sb6 b38 sh6 b38 sb6 b22 bl
-          b22 sb7 b38 sh7 b38 sb7 b22 bl
-          b22 sb8 b22 sh8 b22 sb8 b22 bl b38)
+           (:voice v1)
+           (:section s1)
+           b22 (:f-clef) max7 fclef7 b22 sb2 sh2 b22 sb2 b22 bl
+           (:section s2)
+           b22 sb3 b22 sh3 b22 sb3 b22 bl
+           (:section s3)
+           b22 sb4 b22 sh4 b22 sb4 b22 bl
+           (:section s4)
+           b22 sb5 b38 sh5 b38 sb5 b22 bl
+           (:section s5)
+           b22 sb6 b38 sh6 b38 sb6 b22 bl
+           (:section s6)
+           b22 sb7 b38 sh7 b38 sb7 b22 bl
+           (:section s7)
+           b22 sb8 b22 sh8 b22 sb8 b22 bl b38)
    (:text 60 58
-         (43 nil "la") (121 nil "mi") (206 nil "re")
-         (345 nil "mi")
-         (653 nil "ſol") (740 nil "fa") (835 nil "ut")
-         (959 nil "la") (1044 nil "ſol") (1141 nil "re")
-         (1279 nil "la") (1363 nil "mi")
-         (1567 nil "fa") (1676 nil "ut")
-         (1902 nil "ſol") (1999 nil "re") (2075 nil "ut"))
+          (43 nil "la") (121 nil "mi") (206 nil "re")
+          (345 nil "mi")
+          (653 nil "ſol") (740 nil "fa") (835 nil "ut")
+          (959 nil "la") (1044 nil "ſol") (1141 nil "re")
+          (1279 nil "la") (1363 nil "mi")
+          (1567 nil "fa") (1676 nil "ut")
+          (1902 nil "ſol") (1999 nil "re") (2075 nil "ut"))
    (:text 100 58
-         (0 2194 "per nat. ꝑ ♭. ꝑ ♭. per ♮. per n. ꝑ ♭. ꝑ ♮ ꝑ ♭. ꝑ ♭. ꝑ n. ꝑ ♮. ꝑ nat. per nat. ꝑ ♭. ꝑ n. ꝑ ♭. ꝑ ♮."))))
+          (0 2194 "per nat. ꝑ ♭. ꝑ ♭. per ♮. per n. ꝑ ♭. ꝑ ♮ ꝑ ♭. ꝑ ♭. ꝑ n. ꝑ ♮. ꝑ nat. per nat. ꝑ ♭. ꝑ n. ꝑ ♭. ꝑ ♮."))))

@@ -25,7 +25,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align { "A" }
+          \left-align {  \normal-text "A" }
         }
 
         \null
@@ -53,13 +53,13 @@ dot = {
         }
         \null
         \line {
-          \left-align { "natürlich: la" }
+          \left-align {  \normal-text "natürlich: la" }
         }
         \line {
-          \left-align { "weich: mi" }
+          \left-align {  \normal-text "weich: mi" }
         }
         \line {
-          \left-align { "hart: re" }
+          \left-align {  \normal-text "hart: re" }
         }
 
       }
@@ -67,7 +67,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align { "B♭" }
+          \left-align {  \normal-text "B♭" }
         }
 
         \null
@@ -94,10 +94,10 @@ dot = {
         }
         \null
         \line {
-          \left-align { "weich: fa" }
+          \left-align {  \normal-text "weich: fa" }
         }
         \line {
-          \left-align { "hart: mi" }
+          \left-align {  \normal-text "hart: mi" }
         }
 
       }
@@ -105,7 +105,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align { "C" }
+          \left-align {  \normal-text "C" }
         }
 
         \null
@@ -133,13 +133,13 @@ dot = {
         }
         \null
         \line {
-          \left-align { "weich: sol" }
+          \left-align {  \normal-text "weich: sol" }
         }
         \line {
-          \left-align { "hart: fa" }
+          \left-align {  \normal-text "hart: fa" }
         }
         \line {
-          \left-align { "natürlich: ut" }
+          \left-align {  \normal-text "natürlich: ut" }
         }
 
       }
@@ -147,7 +147,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align { "D" }
+          \left-align {  \normal-text "D" }
         }
 
         \null
@@ -175,13 +175,13 @@ dot = {
         }
         \null
         \line {
-          \left-align { "weich: la" }
+          \left-align {  \normal-text "weich: la" }
         }
         \line {
-          \left-align { "hart: sol" }
+          \left-align {  \normal-text "hart: sol" }
         }
         \line {
-          \left-align { "natürlich: re" }
+          \left-align {  \normal-text "natürlich: re" }
         }
 
       }
@@ -189,7 +189,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align { "E" }
+          \left-align {  \normal-text "E" }
         }
 
         \null
@@ -216,10 +216,10 @@ dot = {
         }
         \null
         \line {
-          \left-align { "hart: la" }
+          \left-align {  \normal-text "hart: la" }
         }
         \line {
-          \left-align { "natürlich: mi" }
+          \left-align {  \normal-text "natürlich: mi" }
         }
 
       }
@@ -227,7 +227,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align { "F" }
+          \left-align {  \normal-text "F" }
         }
 
         \null
@@ -254,10 +254,10 @@ dot = {
         }
         \null
         \line {
-          \left-align { "natürlich: fa" }
+          \left-align {  \normal-text "natürlich: fa" }
         }
         \line {
-          \left-align { "weich: ut" }
+          \left-align {  \normal-text "weich: ut" }
         }
 
       }
@@ -265,7 +265,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align { "G" }
+          \left-align {  \normal-text "G" }
         }
 
         \null
@@ -293,13 +293,13 @@ dot = {
         }
         \null
         \line {
-          \left-align { "natürlich: sol" }
+          \left-align {  \normal-text "natürlich: sol" }
         }
         \line {
-          \left-align { "weich: re" }
+          \left-align {  \normal-text "weich: re" }
         }
         \line {
-          \left-align { "hart: ut" }
+          \left-align {  \normal-text "hart: ut" }
         }
 
       }

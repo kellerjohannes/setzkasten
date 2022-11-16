@@ -25,7 +25,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align { "Alamire" }
+          \left-align {  \normal-text "Alamire" }
         }
 
         \null
@@ -53,13 +53,13 @@ dot = {
         }
         \null
         \line {
-          \left-align { "per natura: la" }
+          \left-align {  \normal-text "per natura: la" }
         }
         \line {
-          \left-align { "per ♭: mi" }
+          \left-align {  \normal-text "per ♭: mi" }
         }
         \line {
-          \left-align { "per ♮: re" }
+          \left-align {  \normal-text "per ♮: re" }
         }
 
       }
@@ -67,7 +67,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align { "Bfa♭mi" }
+          \left-align {  \normal-text "Bfa♭mi" }
         }
 
         \null
@@ -94,10 +94,10 @@ dot = {
         }
         \null
         \line {
-          \left-align { "per ♭: fa" }
+          \left-align {  \normal-text "per ♭: fa" }
         }
         \line {
-          \left-align { "per ♮: mi" }
+          \left-align {  \normal-text "per ♮: mi" }
         }
 
       }
@@ -105,7 +105,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align { "Csolfaut" }
+          \left-align {  \normal-text "Csolfaut" }
         }
 
         \null
@@ -133,13 +133,13 @@ dot = {
         }
         \null
         \line {
-          \left-align { "per ♭: sol" }
+          \left-align {  \normal-text "per ♭: sol" }
         }
         \line {
-          \left-align { "per ♮: fa" }
+          \left-align {  \normal-text "per ♮: fa" }
         }
         \line {
-          \left-align { "per natura: ut" }
+          \left-align {  \normal-text "per natura: ut" }
         }
 
       }
@@ -147,7 +147,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align { "Dlasolre" }
+          \left-align {  \normal-text "Dlasolre" }
         }
 
         \null
@@ -175,13 +175,13 @@ dot = {
         }
         \null
         \line {
-          \left-align { "per ♭: la" }
+          \left-align {  \normal-text "per ♭: la" }
         }
         \line {
-          \left-align { "per ♮: sol" }
+          \left-align {  \normal-text "per ♮: sol" }
         }
         \line {
-          \left-align { "per natura: re" }
+          \left-align {  \normal-text "per natura: re" }
         }
 
       }
@@ -189,7 +189,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align { "Elami" }
+          \left-align {  \normal-text "Elami" }
         }
 
         \null
@@ -216,10 +216,10 @@ dot = {
         }
         \null
         \line {
-          \left-align { "per ♮: la" }
+          \left-align {  \normal-text "per ♮: la" }
         }
         \line {
-          \left-align { "per natura: mi" }
+          \left-align {  \normal-text "per natura: mi" }
         }
 
       }
@@ -227,7 +227,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align { "Ffaut" }
+          \left-align {  \normal-text "Ffaut" }
         }
 
         \null
@@ -254,10 +254,10 @@ dot = {
         }
         \null
         \line {
-          \left-align { "per natura: fa" }
+          \left-align {  \normal-text "per natura: fa" }
         }
         \line {
-          \left-align { "per ♭: ut" }
+          \left-align {  \normal-text "per ♭: ut" }
         }
 
       }
@@ -265,7 +265,7 @@ dot = {
       \center-column {
         \null
         \line {
-          \left-align { "Gsolreut" }
+          \left-align {  \normal-text "Gsolreut" }
         }
 
         \null
@@ -293,13 +293,13 @@ dot = {
         }
         \null
         \line {
-          \left-align { "per natura: sol" }
+          \left-align {  \normal-text "per natura: sol" }
         }
         \line {
-          \left-align { "per ♭: re" }
+          \left-align {  \normal-text "per ♭: re" }
         }
         \line {
-          \left-align { "per ♮: ut" }
+          \left-align {  \normal-text "per ♮: ut" }
         }
 
       }
