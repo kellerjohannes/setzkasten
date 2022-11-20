@@ -1,3 +1,0 @@
-Auto-generated critical apparatus for file b1-c11-m3-a:
-
-NIL

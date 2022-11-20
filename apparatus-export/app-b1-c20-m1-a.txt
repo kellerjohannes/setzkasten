@@ -1,3 +1,0 @@
-Auto-generated critical apparatus for file b1-c20-m1-a:
-
-Line 0, glyph 158 (element 14): reading DIPLOMATIC used (FL4 B38 SB4 B38 SBD4).

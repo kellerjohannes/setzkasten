@@ -1,4 +1,0 @@
-Auto-generated critical apparatus for file b1-c10-m2-b:
-
-Line 0, glyph 45 (element 5): reading IDEALISED used (SB5 B22 FL6 B22 SB6).
-Line 0, glyph 111 (element 12): reading IDEALISED used ("ſe.tono cro.").

@@ -259,6 +259,7 @@
     (:accidental nat8 :natural 8)
     (:accidental nat9 :natural 9)
     (:accidental nat10 :natura 10)
+    (:accidental flrev4 :flat 4)
     (:clef cclef1 :c 1)
     (:clef cclef3 :c 3)
     (:clef cclef5 :c 5)

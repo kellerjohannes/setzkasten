@@ -1,3 +1,0 @@
-Auto-generated critical apparatus for file b1-c13-m1-a:
-
-Line 0, glyph 66 (element 2): reading DIPLOMATIC used (BR5).

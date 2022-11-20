@@ -51,7 +51,6 @@
               (:de "natürlich: sol\\weich: re\\hart: ut")
               (:en "natural: sol\\soft: re\\hard: ut"))))
    (:voice-labels
-    (:all v1 "")
     (:all v1 "")))
   (:preamble-type-imitation
    (:width nil)

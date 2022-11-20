@@ -9,7 +9,6 @@
    (:section-captions
     (s1 ""))
    (:voice-labels
-    (:all v1 "")
     (:all v1 "")))
   (:preamble-type-imitation
    (:width nil)

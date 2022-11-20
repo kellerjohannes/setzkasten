@@ -21,7 +21,6 @@
     (s6 "per ♮: fa-mi-mi")
     (s7 "per ♮: mi-mi-fa-mi-re\\per ♭: fa-mi-la per discendere"))
    (:voice-labels
-    (:all v1 "")
     (:all v1 "")))
   (:preamble-type-imitation
    (:width nil)

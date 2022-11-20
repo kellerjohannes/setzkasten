@@ -1,3 +1,0 @@
-Auto-generated critical apparatus for file b1-c20-m1-b:
-
-Line 0, glyph 158 (element 14): reading IDEALISED used (SBD4 B38 FL4 B38 SB4).

@@ -5,13 +5,10 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title "")
    (:section-headings
-    (s1 "")
     (s1 ""))
    (:section-captions
-    (s1 "")
     (s1 ""))
    (:voice-labels
-    (:all v1 "")
     (:all v1 "")))
   (:preamble-type-imitation
    (:width nil)
