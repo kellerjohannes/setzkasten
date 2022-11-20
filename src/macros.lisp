@@ -100,12 +100,32 @@
 ;; to be used on score encoding expressions
 
 (defun extract-item (category sub-category data)
-  "Returns the contents of a sub-category of a category in the list describing a score. If it is a single expression, it returns only this expression, if it is several expressions, it returns a list containing these expressions."
-  (let ((result (rest (find sub-category (rest (find category data :key #'first))
-                            :key #'first))))
-    (if (= 1 (length result))
-        (first result)
-        result)))
+  "Returns the contents of a sub-category of a category in the list describing a score. The content is always presented as a list, whether it is a single value or a list of values."
+  (rest (find sub-category (rest (find category data :key #'first)) :key #'first)))
+
+(defparameter *test-data*
+  `((:header
+     (:filename "b1-c10-m1")
+     (:alt-name "")
+     (:comment "")
+     (:creator "Vicentino21 / Johannes Keller")
+     (:title "")
+     (:section-headings
+      (s1 ""))
+     (:section-captions
+      (s1 ""))
+     (:voice-labels
+      (:all v1 "")
+      (:all v1 "")))
+    (:preamble-type-imitation
+     (:width nil)
+     (:height nil)
+     (:background ,*score-bg-color*))
+    (:data
+     (:music nil
+             (:voice v1)
+             (:section s1)
+             (:f-clef) max7 fclef7 b38 sb3 b22 sb4 b38 sh4 b38 sb4 b38 sb6 b22))))
 
 (defun extract-category (category data)
   "Returns the sublist that is labelled with the `category' keyword in score data."
