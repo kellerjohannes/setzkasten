@@ -2,7 +2,21 @@
    (:filename "b1-c26-m1")
    (:alt-name "")
    (:comment "")
-   (:creator "Vicentino21 / Johannes Keller"))
+   (:creator "Vicentino21 / Johannes Keller")
+   (:title "Essempio dei gradi, di terza minore, composti, e incomposti")
+   (:section-headings
+    (s1 ""))
+   (:section-captions
+    (s1 "grado di 3\\minore naturale\\incomposto")
+    (s2 "grado di 3\\minore naturale\\incomposto")
+    (s3 "grado di 3\\minore naturale\\incomposto")
+    (s4 "grado di 3\\minore naturale\\incomposto")
+    (s5 "terza minore\\composto di tono\\e semitono")
+    (s6 "terza minore\\composto di semitono\\e tono")
+    (s7 "terza minore\\composto di semitono\\e tono")
+    (s8 "terza minore\\composto di tono\\e semitono"))
+   (:voice-labels
+    (:all v1 "")))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)
@@ -11,13 +25,22 @@
    (:text 80 58
          (367 1446 "ᴇſſempio de i gradi,di ᴛerza minore,compoſti & incompoﬆi."))
    (:music 2231
+           (:voice v1)
+           (:section s1)
           cclef7 b27 sb1 b27 sb3 b27 bl
+           (:section s2)
           b27 sb2 b27 sb4 b27 bl
+           (:section s3)
           b27 sb7 b27 sb5 b27 bl
+           (:section s4)
           b27 sb8 b27 sb6 b27 bl
+           (:section s5)
           b22 sb1 b22 sb2 b22 sb3 b22 bl
+           (:section s6)
           b27 sb2 b27 sb3 b27 sb4 b27 bl
+           (:section s7)
           b22 sb7 b22 sb6 b27 sb5 bl
+           (:section s8)
           b22 sb8 b22 sb7 b22 sb6 b22 bl)
    (:text 70 58
          (39 nil "grad.di 3.")

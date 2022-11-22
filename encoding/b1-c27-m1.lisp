@@ -2,7 +2,21 @@
    (:filename "b1-c27-m1")
    (:alt-name "")
    (:comment "")
-   (:creator "Vicentino21 / Johannes Keller"))
+   (:creator "Vicentino21 / Johannes Keller")
+   (:title "Essempio dei gradi di terza minore accidentale, composti e incomposti")
+   (:section-headings
+    (s1 "grado di 3 minore\\accidentale incomposto")
+    (s2 "grado di 3 minore\\accidentale composto")
+    (s3 "grado di 3 minore\\accidentale incomposto")
+    (s4 "grado di 3 minore\\accidentale composto")
+    (s5 "grado di 3 minore\\accidentale incomposto")
+    (s6 "grado di 3 minore\\accidentale incomposto")
+    (s7 "grado di 3 minore\\accidentale incomposto")
+    (s8 "grado di 3 minore\\accidentale incomposto"))
+   (:section-captions
+    (s1 ""))
+   (:voice-labels
+    (:all v1 "")))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)
@@ -11,11 +25,18 @@
    (:text 80 58
          (250 1694 "ᴇſſempio de i gradi di ᴛerza minore accidentale,compoﬆi & incompoſti."))
    (:music 2220
+           (:voice v1)
+           (:section s1)
           cclef7 b22 sb0 b38 fl2 b38 sb2 b38 bl
+           (:section s2)
           b38 fl2 b38 sb2 b38 sb3 b38 fl4 sb4 b22 bl
+           (:section s3)
           b38 fl5 b38 sb5 b38 sbd6 b38 bl
+           (:section s4)
           sh8 b22 sb8 b22 sh7 b22 sb7 b22 sh6 b22 sb6 bl
+           (:section s5)
           b38 sb5 b22 sh3 b22 sb3 b38 bl
+           (:section s6)
           b38 fl4 b38 sb4 b22 sbd5 b22 bl)
    (:text 70 58
          (39 nil "gra.di 3.min.")
@@ -32,7 +53,9 @@
          (1552 nil "accid.incomp.")
          (1875 nil "accid. incomp."))
    (:music 2201
+           (:section s7)
           cclef7 b22 sbd5 b22 b22 fl4 b38 sb4 b38 bl
+           (:section s8)
           b38 sh3 b22 sb3 b22 sh1 b38 sb1 b22 bl
           b38 b38 b38 b38 b38 b38 b38 b38 b38 b245 b848)
    (:text 90 58
