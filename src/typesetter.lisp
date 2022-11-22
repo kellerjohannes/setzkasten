@@ -221,10 +221,10 @@
                 line))
           data))
 
-(defun score-name (score) (extract-item :header :filename score))
-(defun score-width (score) (extract-item :preamble-type-imitation :width score))
-(defun score-height (score) (extract-item :preamble-type-imitation :height score))
-(defun score-bg-color (score) (extract-item :preamble-type-imitation :background score))
+(defun score-name (score) (first (extract-item :header :filename score)))
+(defun score-width (score) (first (extract-item :preamble-type-imitation :width score)))
+(defun score-height (score) (first (extract-item :preamble-type-imitation :height score)))
+(defun score-bg-color (score) (first (extract-item :preamble-type-imitation :background score)))
 (defun score-elements (score) (extract-category :data score))
 
 ;; probably the only public symbol, in case I decide to isolate type-imitation into a separate package

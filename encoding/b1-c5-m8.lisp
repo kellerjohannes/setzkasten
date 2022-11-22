@@ -19,7 +19,6 @@
     (s5 "per natura: fa-mi-mi")
     (s6 "per ♭: fa-mi-la\\fa-mi-mi"))
    (:voice-labels
-    (:all v1 "")
     (:all v1 "")))
   (:preamble-type-imitation
    (:width nil)

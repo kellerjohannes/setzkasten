@@ -2,16 +2,31 @@
    (:filename "b1-c17-m1")
    (:alt-name "")
    (:comment "")
-   (:creator "Vicentino21 / Johannes Keller"))
+   (:creator "Vicentino21 / Johannes Keller")
+   (:title "")
+   (:section-headings
+    (s1 ""))
+   (:section-captions
+    (s1 "due diesis in\\un semitono")
+    (s2 "4 diesis in un tono\\ascendente")
+    (s3 "4 diesis in un tono\\ascendente")
+    (s4 "4 diesis in un tono\\discendente"))
+   (:voice-labels
+    (:all v1 "")))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)
    (:background ,*score-bg-color*))
   (:data
    (:music 2214
+           (:voice v1)
+           (:section s1)
           cclef7 b38 sb2 b22 sbd2 b22 sb3 b22 bl
+           (:section s2)
           b22 b27 sb3 b38 sbd3 b38 fl4 b38 sb4 b38 fl4 b38 sbd4 b27 sb4 b27 bl
+           (:section s3)
           b22 sb4 b22 sbd4 b22 sh4 b22 sb4 b22 b22 fl5 b22 sbd5 b22 sb5 b22 bl
+           (:section s4)
           b27 sb8 b22 fl8 b22 sbd8 b22 fl8 b22 sb8 b22 sbd7 b38 sb7 b38 bl)
    (:text 70 58
          (0 325 "due ᴅieſis in.")

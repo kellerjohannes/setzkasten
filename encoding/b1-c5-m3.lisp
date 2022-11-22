@@ -21,7 +21,6 @@
     (s6 "per natura,\\per ♮:\\la, mi, fa,\\ut, re, sol")
     (s7 "per natura,\\per ♭:\\fa, ut, re,\\mi, sol, la"))
    (:voice-labels
-    (:all v1 "")
     (:all v1 "")))
   (:preamble-type-imitation
    (:width nil)

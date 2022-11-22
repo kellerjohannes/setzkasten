@@ -1,4 +1,0 @@
-Auto-generated critical apparatus for file b1-c5-m7-b:
-
-Line 0, glyph 261 (element 13): reading IDEALISED used (SB8).
-Line 0, glyph 273 (element 13): reading IDEALISED used (SBD8).

@@ -23,7 +23,6 @@
     (s7 "per nat.: fa-re-mi-fa-sol\\per ♭: fa-re-mi-fa-re")
     (s8 "per nat.: sol-re-mi-fa-re\\per b: re-mi-fa-re-mi\\per ♮: ut-re-mi-fa-re"))
    (:voice-labels
-    (:all v1 "")
     (:all v1 "")))
   (:preamble-type-imitation
    (:width nil)

@@ -2,7 +2,25 @@
    (:filename "b1-c20-m1")
    (:alt-name "")
    (:comment "")
-   (:creator "Vicentino21 / Johannes Keller"))
+   (:creator "Vicentino21 / Johannes Keller")
+   (:title "Essempio di più semitoni maggiori et minori, ascendenti e discendenti,\\composti et incomposti, naturali e accidentali")
+   (:section-headings
+    (s1 ""))
+   (:section-captions
+    (s1 "semitono maggiore\\naturale composto")
+    (s2 "semitono maggiore\\accidentale composto")
+    (s3 "semitono minore\\accidentale incomposto")
+    (s4 "semitono maggiore\\accidentale incomposto")
+    (s5 "semitono minore\\accidentale composto")
+    (s6 "semitono amaggiore\\naturale composto")
+    (s7 "semitono minore\\accidentale incomposto")
+    (s8 "semitoni maggiori\\accidentali incomposti")
+    (s9 "semitono maggiore\\accidentale composto")
+    (s10 "semitono maggiore\\accidentale incomposto")
+    (s11 "semitono maggiore\\e minore\\accidentale incomposto")
+    (s12 "semitono minore\\e maggiore\\accidentale incomposto"))
+   (:voice-labels
+    (:all v1 "")))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)
@@ -11,12 +29,20 @@
    (:text 90 58
          (0 2234 "ᴇſſempio di più ꜱemitoni mag.et minori,aſcendenti,et diſcendenti, comp.et incomp.nat.et acci"))
    (:music 2220
+           (:voice v1)
+           (:section s1)
           cclef7 b38 sb2 b38 sbd2 b38 sb3 bl
+           (:section s2)
           sh3 b27 sb3 fl4 b27 sbd4 b27 sb4 bl
+           (:section s3)
           sb4 b38 sh4 b38 sb4 bl
+           (:section s4)
           sb5 b38 fl6 b38 sb6 bl
+           (:section s5)
           fl6 b38 sb6 b27 fl6 b38 sbd6 b27 sb6 bl
+           (:section s6)
           sb6 b27 sbd6 b27 sb7 bl
+           (:section s7)
           sb7 b38 sh7 b27 sb7 bl)
    (:text 70 58
          (26 nil "ſemit.mag.")
@@ -35,11 +61,16 @@
          (1650 nil "nat.comp.")
          (1941 nil "acc. incom."))
    (:music 2225
+           (:section s8)
           cclef7 sb9 b22 sh8 b38 sb8 b38 fl8 b38 sbd8 bl
+           (:section s9)
           sbd7 b38 sb7 b38 sbd6 b38 bl
+           (:section s10)
           b38 fl6 b38 sb6 b38 sb5 b38 bl
+           (:section s11)
           fl5 b38 sb5 b38 sb4 b38 (:alt (:diplomatic fl4 b38 sb4 b38 sbd4)
                                         (:idealised sbd4 b38 fl4 b38 sb4)) bl
+           (:section s12)
           sb3 b38 sbd2 b38 fl2 b38 sb2 bl
           b38 b38 b38 b38 b38 b38)
    (:text 70 58

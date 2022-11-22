@@ -2,7 +2,16 @@
    (:filename "b1-c11-m1")
    (:alt-name "")
    (:comment "")
-   (:creator "Vicentino21 / Johannes Keller"))
+   (:creator "Vicentino21 / Johannes Keller")
+   (:title "")
+   (:section-headings
+    (s1 "tono diviso in 4 parti\\ascendenti")
+    (s2 "tono diviso in 4 parti\\ascendenti"))
+   (:section-captions
+    (s1 "per ♮: ut-re-mi-fa-re")
+    (s2 "per ♭: re-mi-fa-re-mi"))
+   (:voice-labels
+    (:all v1 "")))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)
@@ -12,7 +21,10 @@
          (54 720 "ᴛono diuiſo in 4. parti aſcend.")
          (812 686 "ᴛono diuiſo in 4. par.aſcend."))
    (:music 1498
+           (:voice v1)
+           (:section s1)
           cclef7 b38 sb4 b38 sbd4 b38 fl5 b38 sb5 b38 fl5 b38 sbd5 b38 sb5 b38 b38
+           (:section s2)
           cclef7 b22 fl6 b38 sb4 b38 sbd4 b38 fl5 b38 sb5 b38 fl5 b38 sbd5 b38 sb5 bl)
    (:text 70 58
          (10 nil "ꝑ ♮.")

@@ -1,4 +1,0 @@
-Auto-generated critical apparatus for file b1-c38-m1-b:
-
-Line 0, glyph 101 (element 11): reading IDEALISED used ("imper.accid.").
-Line 0, glyph 104 (element 11): reading IDEALISED used ("imper. acc.").
