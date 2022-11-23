@@ -151,10 +151,12 @@
                               ((eq item :sharp) (intern ",SHARP"))
                               (t (format t "~&Unknown accidental in signature."))))))
 
+;; option for old-style key signatures, maybe to be controlled in a backend class slot:
+;;~%~16,0t\\override Staff.KeySignature.flat-positions = #'((-5 . 5))
+;;~%~16,0t\\override Staff.KeyCancellation.flat-positions = #'((-5 . 5))
+
 (defun generate-key-signature (key-signature)
   (format nil "~
-~%~16,0t\\override Staff.KeySignature.flat-positions = #'((-5 . 5))
-~%~16,0t\\override Staff.KeyCancellation.flat-positions = #'((-5 . 5))
 ~%~16,0t\\key c #`~a "
           (convert-key-signature key-signature)))
 
