@@ -318,6 +318,14 @@ dot = {
                                                (format nil "~a-~a.svg"
                                                        (filename score-instance)
                                                        suffix))))
+  (rename-file (merge-pathnames *lilypond-export-path*
+                                (pathname (format nil "~a-~a.cropped.svg"
+                                                  (filename score-instance)
+                                                  suffix)))
+               (merge-pathnames *lilypond-export-path*
+                                 (pathname (format nil "~a-~a.svg"
+                                                   (filename score-instance)
+                                                   suffix))))
   (format nil "~a-~a" (filename score-instance) suffix))
 
 

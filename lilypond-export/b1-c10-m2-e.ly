@@ -187,7 +187,10 @@ dot = {
 
       }
       \hspace #3 
-      \center-column {
+    }
+    \null
+    \null
+    \line {      \center-column {
 
         \line {
           \score {

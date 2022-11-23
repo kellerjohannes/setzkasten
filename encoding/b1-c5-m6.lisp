@@ -40,8 +40,7 @@
           (1960 nil "à ᴅ."))
    (:music 2210
            (:voice v1)
-           (:section s1
-                     )
+           (:section s1)
            (:f-clef) max7 fclef7 b38 sb9 b38 fl9 b38 sbd9 b38 fl9 b38 sb9 b38 sbd8 b38 sb8 bl
            (:section s2)
            sb8 b38 fl8 b38 sbd8 b38 fl8 b38 sb8 b38 sbd7 b38 sb7 bl
@@ -72,6 +71,7 @@
           (1502 nil "à ᴀ."))
    (:music 2210
            (:section s5)
+           (:newline)
            (:f-clef) max7 fclef7 b38 sb5 b38 fl5 b38 sbd5 b38 fl5 b38 sb5 b38 sbd4 b38 sb4 b22 bl
            (:section s6)
            b38 sb4 b38 sbd3 b38 sb3 b38 bl

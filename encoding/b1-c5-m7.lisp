@@ -78,6 +78,7 @@
           (1412 nil "à ᴀ."))
    (:music 2188
            (:section s6)
+           (:newline)
            (:f-clef) max7 fclef7 b38 sb6 b38 sbd6 b38 sb7 bl
            (:section s7)
            sb7 b38 sbd7 b38 fl8 b38 (:alt (:diplomatic sbd8)

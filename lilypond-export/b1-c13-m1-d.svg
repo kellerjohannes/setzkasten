@@ -1,376 +1,375 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="210.00mm" height="297.00mm" viewBox="0 0 119.5016 169.0094">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="405.62mm" height="36.94mm" viewBox="0.0000 -0.0000 230.8181 21.0220">
 <style type="text/css">
 <![CDATA[
 tspan { white-space: pre; }
 ]]>
 </style>
-<!-- Page: 1/1 -->
-<g transform="translate(5.6906, 8.8453)">
+<g transform="translate(0.0000, 5.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1500" y2="0"/>
 </g>
-<g transform="translate(5.6906, 7.8453)">
+<g transform="translate(0.0000, 4.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1500" y2="0"/>
 </g>
-<g transform="translate(5.6906, 6.8453)">
+<g transform="translate(0.0000, 3.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1500" y2="0"/>
 </g>
-<g transform="translate(5.6906, 5.8453)">
+<g transform="translate(0.0000, 2.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1500" y2="0"/>
 </g>
-<g transform="translate(5.6906, 4.8453)">
+<g transform="translate(0.0000, 1.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1500" y2="0"/>
 </g>
-<g transform="translate(6.4906, 5.8453)">
+<g transform="translate(0.8000, 2.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M318 0c0 -33 7 -73 45 -73c29 0 57 31 88 31c123 0 229 -89 229 -208c0 -169 -93 -250 -265 -250c-83 0 -152 61 -152 142c0 42 34 77 76 77s76 -35 76 -77c0 -39 -49 -37 -49 -76c0 -23 24 -38 49 -38c116 0 140 90 140 222c0 106 -12 180 -104 180
 c-72 0 -119 -71 -119 -149c0 -9 -7 -14 -14 -14s-13 5 -13 14c0 76 -31 147 -84 200v-471c0 -6 -4 -10 -10 -10h-21c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h21c6 0 10 -4 10 -10v-471c53 53 84 124 84 200c0 9 6 14 13 14s14 -5 14 -14c0 -78 47 -149 119 -149
 c92 0 104 74 104 180c0 132 -24 222 -140 222c-25 0 -49 -15 -49 -38c0 -39 49 -37 49 -76c0 -42 -34 -77 -76 -77s-76 35 -76 77c0 81 69 142 152 142c172 0 265 -81 265 -250c0 -119 -106 -208 -229 -208c-31 0 -59 31 -88 31c-38 0 -45 -40 -45 -73zM129 -500h-119
 c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h119c6 0 10 -4 10 -10v-980c0 -6 -4 -10 -10 -10z" fill="currentColor"/>
 </g>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c13-m1-d.ly:35:42:43">
-<g transform="translate(12.4906, 6.3453)">
+<g transform="translate(6.8000, 2.5000)">
 <path transform="scale(0.0045, -0.0045)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </g>
 </a>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c13-m1-d.ly:35:35:36">
-<g transform="translate(11.4906, 7.3453)">
+<g transform="translate(5.8000, 3.5000)">
 <path transform="scale(0.0040, -0.0040)" d="M53 -31h394c11 0 20 9 20 20v22c0 11 -9 20 -20 20h-394c-11 0 -20 -9 -20 -20v-22c0 -11 9 -20 20 -20zM447 -138h-394c-17 0 -20 -21 -20 -41c0 -11 -9 -16 -17 -16s-16 5 -16 16v358c0 11 8 16 16 16s17 -5 17 -16c0 -20 3 -41 20 -41h394c17 0 20 21 20 41
 c0 11 9 16 17 16s16 -5 16 -16v-358c0 -11 -8 -16 -16 -16s-17 5 -17 16c0 20 -3 41 -20 41z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(6.2074, 12.8453)">
+<g transform="translate(0.5169, 9.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>per tutta</tspan>
 </text>
 </g>
-<g transform="translate(19.4406, 9.8453)">
+<g transform="translate(13.7500, 6.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>per la parte</tspan>
 </text>
 </g>
-<g transform="translate(21.5233, 12.8453)">
+<g transform="translate(15.8327, 9.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>dinanzi</tspan>
 </text>
 </g>
-<g transform="translate(35.2297, 9.8453)">
+<g transform="translate(29.5392, 6.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>per la parte</tspan>
 </text>
 </g>
-<g transform="translate(38.0124, 12.8453)">
+<g transform="translate(32.3218, 9.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>doppo</tspan>
 </text>
 </g>
-<g transform="translate(51.0189, 8.8453)">
+<g transform="translate(45.3283, 5.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1120" y2="0"/>
 </g>
-<g transform="translate(51.0189, 7.8453)">
+<g transform="translate(45.3283, 4.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1120" y2="0"/>
 </g>
-<g transform="translate(51.0189, 6.8453)">
+<g transform="translate(45.3283, 3.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1120" y2="0"/>
 </g>
-<g transform="translate(51.0189, 5.8453)">
+<g transform="translate(45.3283, 2.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1120" y2="0"/>
 </g>
-<g transform="translate(51.0189, 4.8453)">
+<g transform="translate(45.3283, 1.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1120" y2="0"/>
 </g>
-<g transform="translate(51.8189, 5.8453)">
+<g transform="translate(46.1283, 2.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M318 0c0 -33 7 -73 45 -73c29 0 57 31 88 31c123 0 229 -89 229 -208c0 -169 -93 -250 -265 -250c-83 0 -152 61 -152 142c0 42 34 77 76 77s76 -35 76 -77c0 -39 -49 -37 -49 -76c0 -23 24 -38 49 -38c116 0 140 90 140 222c0 106 -12 180 -104 180
 c-72 0 -119 -71 -119 -149c0 -9 -7 -14 -14 -14s-13 5 -13 14c0 76 -31 147 -84 200v-471c0 -6 -4 -10 -10 -10h-21c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h21c6 0 10 -4 10 -10v-471c53 53 84 124 84 200c0 9 6 14 13 14s14 -5 14 -14c0 -78 47 -149 119 -149
 c92 0 104 74 104 180c0 132 -24 222 -140 222c-25 0 -49 -15 -49 -38c0 -39 49 -37 49 -76c0 -42 -34 -77 -76 -77s-76 35 -76 77c0 81 69 142 152 142c172 0 265 -81 265 -250c0 -119 -106 -208 -229 -208c-31 0 -59 31 -88 31c-38 0 -45 -40 -45 -73zM129 -500h-119
 c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h119c6 0 10 -4 10 -10v-980c0 -6 -4 -10 -10 -10z" fill="currentColor"/>
 </g>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c13-m1-d.ly:126:37:38">
-<g transform="translate(57.7999, 5.3453)">
+<g transform="translate(52.1093, 1.5000)">
 <path transform="scale(0.0045, -0.0045)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </g>
 </a>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c13-m1-d.ly:126:35:36">
-<g transform="translate(56.8189, 6.8453)">
+<g transform="translate(51.1283, 3.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(51.5167, 12.8453)">
+<g transform="translate(45.8262, 9.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>per tutta</tspan>
 </text>
 </g>
-<g transform="translate(64.7309, 9.8453)">
+<g transform="translate(59.0403, 6.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>per la parte</tspan>
 </text>
 </g>
-<g transform="translate(66.8136, 12.8453)">
+<g transform="translate(61.1231, 9.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>dinanzi</tspan>
 </text>
 </g>
-<g transform="translate(80.5200, 9.8453)">
+<g transform="translate(74.8295, 6.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>per la parte</tspan>
 </text>
 </g>
-<g transform="translate(83.3027, 12.8453)">
+<g transform="translate(77.6122, 9.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>doppo</tspan>
 </text>
 </g>
-<g transform="translate(97.1751, 8.8453)">
+<g transform="translate(91.4846, 5.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1500" y2="0"/>
 </g>
-<g transform="translate(97.1751, 7.8453)">
+<g transform="translate(91.4846, 4.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1500" y2="0"/>
 </g>
-<g transform="translate(97.1751, 6.8453)">
+<g transform="translate(91.4846, 3.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1500" y2="0"/>
 </g>
-<g transform="translate(97.1751, 5.8453)">
+<g transform="translate(91.4846, 2.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1500" y2="0"/>
 </g>
-<g transform="translate(97.1751, 4.8453)">
+<g transform="translate(91.4846, 1.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1500" y2="0"/>
 </g>
-<g transform="translate(97.9751, 5.8453)">
+<g transform="translate(92.2846, 2.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M318 0c0 -33 7 -73 45 -73c29 0 57 31 88 31c123 0 229 -89 229 -208c0 -169 -93 -250 -265 -250c-83 0 -152 61 -152 142c0 42 34 77 76 77s76 -35 76 -77c0 -39 -49 -37 -49 -76c0 -23 24 -38 49 -38c116 0 140 90 140 222c0 106 -12 180 -104 180
 c-72 0 -119 -71 -119 -149c0 -9 -7 -14 -14 -14s-13 5 -13 14c0 76 -31 147 -84 200v-471c0 -6 -4 -10 -10 -10h-21c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h21c6 0 10 -4 10 -10v-471c53 53 84 124 84 200c0 9 6 14 13 14s14 -5 14 -14c0 -78 47 -149 119 -149
 c92 0 104 74 104 180c0 132 -24 222 -140 222c-25 0 -49 -15 -49 -38c0 -39 49 -37 49 -76c0 -42 -34 -77 -76 -77s-76 35 -76 77c0 81 69 142 152 142c172 0 265 -81 265 -250c0 -119 -106 -208 -229 -208c-31 0 -59 31 -88 31c-38 0 -45 -40 -45 -73zM129 -500h-119
 c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h119c6 0 10 -4 10 -10v-980c0 -6 -4 -10 -10 -10z" fill="currentColor"/>
 </g>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c13-m1-d.ly:217:42:43">
-<g transform="translate(103.9751, 5.3453)">
+<g transform="translate(98.2846, 1.5000)">
 <path transform="scale(0.0045, -0.0045)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </g>
 </a>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c13-m1-d.ly:217:35:36">
-<g transform="translate(102.9751, 6.8453)">
+<g transform="translate(97.2846, 3.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M53 -50h394c11 0 20 9 20 20v60c0 11 -9 20 -20 20h-394c-11 0 -20 -9 -20 -20v-60c0 -11 9 -20 20 -20zM447 -138h-394c-17 0 -20 -21 -20 -41c0 -11 -9 -16 -17 -16s-16 5 -16 16v358c0 11 8 16 16 16s17 -5 17 -16c0 -20 3 -41 20 -41h394c17 0 20 21 20 41
 c0 11 9 16 17 16s16 -5 16 -16v-358c0 -11 -8 -16 -16 -16s-17 5 -17 16c0 20 -3 41 -20 41z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(96.3092, 12.8453)">
+<g transform="translate(90.6186, 9.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>per la metà</tspan>
 </text>
 </g>
-<g transform="translate(98.9382, 15.8453)">
+<g transform="translate(93.2477, 12.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>doppo</tspan>
 </text>
 </g>
-<g transform="translate(111.7911, 8.8453)">
+<g transform="translate(106.1005, 5.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1500" y2="0"/>
 </g>
-<g transform="translate(111.7911, 7.8453)">
+<g transform="translate(106.1005, 4.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1500" y2="0"/>
 </g>
-<g transform="translate(111.7911, 6.8453)">
+<g transform="translate(106.1005, 3.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1500" y2="0"/>
 </g>
-<g transform="translate(111.7911, 5.8453)">
+<g transform="translate(106.1005, 2.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1500" y2="0"/>
 </g>
-<g transform="translate(111.7911, 4.8453)">
+<g transform="translate(106.1005, 1.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1500" y2="0"/>
 </g>
-<g transform="translate(116.4411, 7.3453)">
+<g transform="translate(110.7505, 3.5000)">
 <path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
 c-13 0 -23 11 -23 25z" fill="currentColor"/>
 </g>
-<g transform="translate(112.5911, 5.8453)">
+<g transform="translate(106.9005, 2.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M318 0c0 -33 7 -73 45 -73c29 0 57 31 88 31c123 0 229 -89 229 -208c0 -169 -93 -250 -265 -250c-83 0 -152 61 -152 142c0 42 34 77 76 77s76 -35 76 -77c0 -39 -49 -37 -49 -76c0 -23 24 -38 49 -38c116 0 140 90 140 222c0 106 -12 180 -104 180
 c-72 0 -119 -71 -119 -149c0 -9 -7 -14 -14 -14s-13 5 -13 14c0 76 -31 147 -84 200v-471c0 -6 -4 -10 -10 -10h-21c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h21c6 0 10 -4 10 -10v-471c53 53 84 124 84 200c0 9 6 14 13 14s14 -5 14 -14c0 -78 47 -149 119 -149
 c92 0 104 74 104 180c0 132 -24 222 -140 222c-25 0 -49 -15 -49 -38c0 -39 49 -37 49 -76c0 -42 -34 -77 -76 -77s-76 35 -76 77c0 81 69 142 152 142c172 0 265 -81 265 -250c0 -119 -106 -208 -229 -208c-31 0 -59 31 -88 31c-38 0 -45 -40 -45 -73zM129 -500h-119
 c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h119c6 0 10 -4 10 -10v-980c0 -6 -4 -10 -10 -10z" fill="currentColor"/>
 </g>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c13-m1-d.ly:249:44:45">
-<g transform="translate(118.5911, 6.3453)">
+<g transform="translate(112.9005, 2.5000)">
 <path transform="scale(0.0045, -0.0045)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </g>
 </a>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c13-m1-d.ly:249:35:36">
-<g transform="translate(117.5911, 7.3453)">
+<g transform="translate(111.9005, 3.5000)">
 <path transform="scale(0.0040, -0.0040)" d="M53 -31h394c11 0 20 9 20 20v22c0 11 -9 20 -20 20h-394c-11 0 -20 -9 -20 -20v-22c0 -11 9 -20 20 -20zM447 -138h-394c-17 0 -20 -21 -20 -41c0 -11 -9 -16 -17 -16s-16 5 -16 16v358c0 11 8 16 16 16s17 -5 17 -16c0 -20 3 -41 20 -41h394c17 0 20 21 20 41
 c0 11 9 16 17 16s16 -5 16 -16v-358c0 -11 -8 -16 -16 -16s-17 5 -17 16c0 20 -3 41 -20 41z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(112.3079, 12.8453)">
+<g transform="translate(106.6174, 9.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>per tutta</tspan>
 </text>
 </g>
-<g transform="translate(130.7091, 8.8453)">
+<g transform="translate(125.0185, 5.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1500" y2="0"/>
 </g>
-<g transform="translate(130.7091, 7.8453)">
+<g transform="translate(125.0185, 4.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1500" y2="0"/>
 </g>
-<g transform="translate(130.7091, 6.8453)">
+<g transform="translate(125.0185, 3.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1500" y2="0"/>
 </g>
-<g transform="translate(130.7091, 5.8453)">
+<g transform="translate(125.0185, 2.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1500" y2="0"/>
 </g>
-<g transform="translate(130.7091, 4.8453)">
+<g transform="translate(125.0185, 1.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1500" y2="0"/>
 </g>
-<g transform="translate(131.5091, 5.8453)">
+<g transform="translate(125.8185, 2.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M318 0c0 -33 7 -73 45 -73c29 0 57 31 88 31c123 0 229 -89 229 -208c0 -169 -93 -250 -265 -250c-83 0 -152 61 -152 142c0 42 34 77 76 77s76 -35 76 -77c0 -39 -49 -37 -49 -76c0 -23 24 -38 49 -38c116 0 140 90 140 222c0 106 -12 180 -104 180
 c-72 0 -119 -71 -119 -149c0 -9 -7 -14 -14 -14s-13 5 -13 14c0 76 -31 147 -84 200v-471c0 -6 -4 -10 -10 -10h-21c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h21c6 0 10 -4 10 -10v-471c53 53 84 124 84 200c0 9 6 14 13 14s14 -5 14 -14c0 -78 47 -149 119 -149
 c92 0 104 74 104 180c0 132 -24 222 -140 222c-25 0 -49 -15 -49 -38c0 -39 49 -37 49 -76c0 -42 -34 -77 -76 -77s-76 35 -76 77c0 81 69 142 152 142c172 0 265 -81 265 -250c0 -119 -106 -208 -229 -208c-31 0 -59 31 -88 31c-38 0 -45 -40 -45 -73zM129 -500h-119
 c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h119c6 0 10 -4 10 -10v-980c0 -6 -4 -10 -10 -10z" fill="currentColor"/>
 </g>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c13-m1-d.ly:278:42:43">
-<g transform="translate(137.5091, 6.3453)">
+<g transform="translate(131.8185, 2.5000)">
 <path transform="scale(0.0045, -0.0045)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </g>
 </a>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c13-m1-d.ly:278:35:36">
-<g transform="translate(136.5091, 7.3453)">
+<g transform="translate(130.8185, 3.5000)">
 <path transform="scale(0.0040, -0.0040)" d="M53 -31h394c11 0 20 9 20 20v22c0 11 -9 20 -20 20h-394c-11 0 -20 -9 -20 -20v-22c0 -11 9 -20 20 -20zM447 -138h-394c-17 0 -20 -21 -20 -41c0 -11 -9 -16 -17 -16s-16 5 -16 16v358c0 11 8 16 16 16s17 -5 17 -16c0 -20 3 -41 20 -41h394c17 0 20 21 20 41
 c0 11 9 16 17 16s16 -5 16 -16v-358c0 -11 -8 -16 -16 -16s-17 5 -17 16c0 20 -3 41 -20 41z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(125.5411, 12.8453)">
+<g transform="translate(119.8505, 9.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>per la metà dinanzi</tspan>
 </text>
 </g>
-<g transform="translate(152.0854, 9.8453)">
+<g transform="translate(146.3948, 6.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>la prima metà</tspan>
 </text>
 </g>
-<g transform="translate(150.9928, 12.8453)">
+<g transform="translate(145.3022, 9.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>enarmonico e la</tspan>
 </text>
 </g>
-<g transform="translate(149.6271, 15.8453)">
+<g transform="translate(143.9365, 12.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>seconda cromatico</tspan>
 </text>
 </g>
-<g transform="translate(176.3051, 8.8453)">
+<g transform="translate(170.6146, 5.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1120" y2="0"/>
 </g>
-<g transform="translate(176.3051, 7.8453)">
+<g transform="translate(170.6146, 4.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1120" y2="0"/>
 </g>
-<g transform="translate(176.3051, 6.8453)">
+<g transform="translate(170.6146, 3.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1120" y2="0"/>
 </g>
-<g transform="translate(176.3051, 5.8453)">
+<g transform="translate(170.6146, 2.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1120" y2="0"/>
 </g>
-<g transform="translate(176.3051, 4.8453)">
+<g transform="translate(170.6146, 1.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="10.1120" y2="0"/>
 </g>
-<g transform="translate(177.1051, 5.8453)">
+<g transform="translate(171.4146, 2.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M318 0c0 -33 7 -73 45 -73c29 0 57 31 88 31c123 0 229 -89 229 -208c0 -169 -93 -250 -265 -250c-83 0 -152 61 -152 142c0 42 34 77 76 77s76 -35 76 -77c0 -39 -49 -37 -49 -76c0 -23 24 -38 49 -38c116 0 140 90 140 222c0 106 -12 180 -104 180
 c-72 0 -119 -71 -119 -149c0 -9 -7 -14 -14 -14s-13 5 -13 14c0 76 -31 147 -84 200v-471c0 -6 -4 -10 -10 -10h-21c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h21c6 0 10 -4 10 -10v-471c53 53 84 124 84 200c0 9 6 14 13 14s14 -5 14 -14c0 -78 47 -149 119 -149
 c92 0 104 74 104 180c0 132 -24 222 -140 222c-25 0 -49 -15 -49 -38c0 -39 49 -37 49 -76c0 -42 -34 -77 -76 -77s-76 35 -76 77c0 81 69 142 152 142c172 0 265 -81 265 -250c0 -119 -106 -208 -229 -208c-31 0 -59 31 -88 31c-38 0 -45 -40 -45 -73zM129 -500h-119
 c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h119c6 0 10 -4 10 -10v-980c0 -6 -4 -10 -10 -10z" fill="currentColor"/>
 </g>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c13-m1-d.ly:341:37:38">
-<g transform="translate(183.0861, 5.3453)">
+<g transform="translate(177.3956, 1.5000)">
 <path transform="scale(0.0045, -0.0045)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </g>
 </a>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c13-m1-d.ly:341:35:36">
-<g transform="translate(182.1051, 6.8453)">
+<g transform="translate(176.4146, 3.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(173.9862, 12.8453)">
+<g transform="translate(168.2956, 9.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>la prima metà</tspan>
 </text>
 </g>
-<g transform="translate(172.8936, 15.8453)">
+<g transform="translate(167.2030, 12.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>enarmonico e la</tspan>
 </text>
 </g>
-<g transform="translate(173.3033, 18.8453)">
+<g transform="translate(167.6128, 15.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>metà seconda è</tspan>
 </text>
 </g>
-<g transform="translate(175.2153, 21.8453)">
+<g transform="translate(169.5248, 18.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>cromatico e</tspan>
 </text>
 </g>
-<g transform="translate(175.0105, 24.8453)">
+<g transform="translate(169.3199, 21.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>enarmonico</tspan>
 </text>
 </g>
-<g transform="translate(193.8231, 8.8453)">
+<g transform="translate(188.1326, 5.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="8.3273" y2="0"/>
 </g>
-<g transform="translate(193.8231, 7.8453)">
+<g transform="translate(188.1326, 4.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="8.3273" y2="0"/>
 </g>
-<g transform="translate(193.8231, 6.8453)">
+<g transform="translate(188.1326, 3.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="8.3273" y2="0"/>
 </g>
-<g transform="translate(193.8231, 5.8453)">
+<g transform="translate(188.1326, 2.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="8.3273" y2="0"/>
 </g>
-<g transform="translate(193.8231, 4.8453)">
+<g transform="translate(188.1326, 1.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="8.3273" y2="0"/>
 </g>
-<g transform="translate(200.9355, 6.8453)">
+<g transform="translate(195.2449, 3.0000)">
 <rect x="-0.0650" y="-3.0000" width="0.1300" height="3.2410" ry="0.0400" fill="currentColor"/>
 </g>
-<g transform="translate(198.4731, 7.3453)">
+<g transform="translate(192.7826, 3.5000)">
 <path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
 c-13 0 -23 11 -23 25z" fill="currentColor"/>
 </g>
-<g transform="translate(194.6231, 5.8453)">
+<g transform="translate(188.9326, 2.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M318 0c0 -33 7 -73 45 -73c29 0 57 31 88 31c123 0 229 -89 229 -208c0 -169 -93 -250 -265 -250c-83 0 -152 61 -152 142c0 42 34 77 76 77s76 -35 76 -77c0 -39 -49 -37 -49 -76c0 -23 24 -38 49 -38c116 0 140 90 140 222c0 106 -12 180 -104 180
 c-72 0 -119 -71 -119 -149c0 -9 -7 -14 -14 -14s-13 5 -13 14c0 76 -31 147 -84 200v-471c0 -6 -4 -10 -10 -10h-21c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h21c6 0 10 -4 10 -10v-471c53 53 84 124 84 200c0 9 6 14 13 14s14 -5 14 -14c0 -78 47 -149 119 -149
 c92 0 104 74 104 180c0 132 -24 222 -140 222c-25 0 -49 -15 -49 -38c0 -39 49 -37 49 -76c0 -42 -34 -77 -76 -77s-76 35 -76 77c0 81 69 142 152 142c172 0 265 -81 265 -250c0 -119 -106 -208 -229 -208c-31 0 -59 31 -88 31c-38 0 -45 -40 -45 -73zM129 -500h-119
 c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h119c6 0 10 -4 10 -10v-980c0 -6 -4 -10 -10 -10z" fill="currentColor"/>
 </g>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c13-m1-d.ly:382:39:40">
-<g transform="translate(200.3118, 6.3453)">
+<g transform="translate(194.6213, 2.5000)">
 <path transform="scale(0.0045, -0.0045)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </g>
 </a>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c13-m1-d.ly:382:35:36">
-<g transform="translate(199.6231, 7.3453)">
+<g transform="translate(193.9326, 3.5000)">
 <path transform="scale(0.0040, -0.0040)" d="M314 65c0 24 -21 41 -42 41c-4 0 -8 0 -12 -1c-31 -9 -78 -40 -115 -64s-84 -53 -104 -78c-7 -8 -10 -18 -10 -28c0 -24 21 -41 42 -41c4 0 8 0 12 1c31 9 77 40 114 64s84 53 104 78c7 8 11 18 11 28zM262 136c46 0 82 -21 82 -71c0 -19 -4 -39 -10 -57
 c-12 -37 -32 -72 -64 -94c-53 -36 -113 -50 -187 -50c-46 0 -83 21 -83 71c0 19 5 39 11 57c12 37 31 72 63 94c53 36 114 50 188 50z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(193.4287, 12.8453)">
+<g transform="translate(187.7381, 9.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>per tutta</tspan>
 </text>
 </g>
-<g transform="translate(206.1449, 9.8453)">
+<g transform="translate(200.4544, 6.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>per la metà</tspan>
 </text>
 </g>
-<g transform="translate(208.0740, 12.8453)">
+<g transform="translate(202.3835, 9.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>dinanzi</tspan>
 </text>
 </g>
-<g transform="translate(221.6268, 9.8453)">
+<g transform="translate(215.9363, 6.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>per la metà</tspan>
 </text>
 </g>
-<g transform="translate(224.2558, 12.8453)">
+<g transform="translate(218.5653, 9.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>doppo</tspan>
 </text>

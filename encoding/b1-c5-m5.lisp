@@ -61,6 +61,7 @@
    (:music 2190
            (:voice v1)
            (:section s5)
+           (:newline)
            (:f-clef) max7 fclef7 b22 sb5 b22 sbd5 b22 sh5 b22 sb5 b22 fl6 b22 sbd6 b22 sbd6 b22 bl
            (:section s6)
            b22 sb6 b22 sbd6 b22 sb7 b22 bl
