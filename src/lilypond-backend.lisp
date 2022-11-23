@@ -143,22 +143,38 @@
           (sections score))
     result))
 
+(defun convert-key-signature (key-signature)
+  (loop for item in key-signature
+        for i from 0
+        collect (cons i (cond ((eq item nil) (intern ",NATURAL"))
+                              ((eq item :flat) (intern ",FLAT"))
+                              ((eq item :sharp) (intern ",SHARP"))
+                              (t (format t "~&Unknown accidental in signature."))))))
 
+(defun generate-key-signature (key-signature)
+  (format nil "~
+~%~16,0t\\override Staff.KeySignature.flat-positions = #'((-5 . 5))
+~%~16,0t\\override Staff.KeyCancellation.flat-positions = #'((-5 . 5))
+~%~16,0t\\key c #`~a "
+          (convert-key-signature key-signature)))
 
-(defmethod generate-mobject-ly-code ((mobject mobject) clef-state)
-  (let ((current-clef (clef->ly-clef (clef mobject) nil)))
-    (values
-     (if (string= current-clef clef-state)
-         (format nil "~%~16,0t~a" (key->ly-pitch (pitch mobject) (value mobject)))
-         (format nil "~%~16,0t\\clef ~s ~a"
-                 current-clef
-                 (key->ly-pitch (pitch mobject) (value mobject))))
-     current-clef)))
-
+(defmethod generate-mobject-ly-code ((mobject mobject) clef-state key-state)
+  (let ((current-clef (clef->ly-clef (clef mobject) nil))
+        (current-key (key-signature mobject))
+        (result nil))
+    (when (string/= current-clef clef-state)
+      (setf result (format nil "~%~16,0t\\clef ~s" current-clef)))
+    (when (and current-key (not (equal current-key key-state)))
+      (setf result (concatenate 'string result (generate-key-signature current-key))))
+    (setf result (concatenate 'string
+                              result
+                              (format nil " ~a" (key->ly-pitch (pitch mobject) (value mobject)))))
+    (values result current-clef current-key)))
 
 
 (defmethod generate-voice-ly-code ((voice voice))
-  (let ((clef-state nil))
+  (let ((clef-state nil)
+        (key-state nil))
     (format nil "~
 ~14,0t\\new Staff \\with { instrumentName = \"~a\"} {
 ~16,0t\\override Staff.TimeSignature.stencil = ##f
@@ -169,9 +185,10 @@
 ~14,0t}"
             (label voice)
             (mapcar (lambda (mobject)
-                      (multiple-value-bind (mobject-string current-clef)
-                          (generate-mobject-ly-code mobject clef-state)
+                      (multiple-value-bind (mobject-string current-clef current-key)
+                          (generate-mobject-ly-code mobject clef-state key-state)
                         (setf clef-state current-clef)
+                        (setf key-state current-key)
                         mobject-string))
                     (mobjects voice)))))
 

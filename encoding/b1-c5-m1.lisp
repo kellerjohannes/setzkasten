@@ -75,8 +75,10 @@
            (:section s2)
            b22 fl3 b38 sb3 b38 nat3 b38 sb3 b22 bl
            (:section s3)
+           (:key-signature nil nil nil nil nil nil :flat)
            b22 sb4 b38 sb4 b38 sb4 b22 bl
            (:section s4)
+           (:key-signature nil nil nil nil nil nil nil)
            b22 sb5 b38 sb5 b38 sb5 b22 bl
            (:section s5)
            b22 sb6 b38 sb6 b22 bl

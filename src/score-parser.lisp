@@ -10,9 +10,9 @@
    (f-clef-flag :initform nil
                 :accessor f-clef-flag
                 :documentation "This slot is T when a maxima glyph is used to express an f-clef.")
-   (key-signature :initform '(nil nil)
+   (key-signature :initform '(nil nil nil nil nil nil nil)
                   :accessor key-signature
-                  :documentation "This carries information about key signatures. It is provided in the form of two nested lists, the `first' is a list of numbers representing the staff positions of flats, the `second' is a list of number representing the staff positions of sharps.")
+                  :documentation "This carries information about key signatures. It is provided in the form of a list of 7 atoms, describing the alterations of a c major scale (see Lilypond key signature syntax), either with nil, :flat or :sharp.")
    (section-id :initform 'a
                :accessor section-id
                :documentation "This symbol carries the current section id, it is used to direct score information into the correct `section' instance.")
@@ -43,9 +43,9 @@
 (defmethod cancel-f-clef-flag ((parser-state parser-state))
   (setf (f-clef-flag parser-state) nil))
 
-(defmethod set-key-signature ((parser-state parser-state) flat-list sharp-list)
+(defmethod set-key-signature ((parser-state parser-state) accidental-list)
   "`flat-list' and `sharp-list' both contain numbers representing the staff-positions, 0-10."
-  (setf (key-signature parser-state) (list flat-list sharp-list)))
+  (setf (key-signature parser-state) accidental-list))
 
 
 
@@ -166,7 +166,7 @@
                 (:f-clef (raise-f-clef-flag parser-state))
                 (:newline (set-newline score (section-id parser-state)))
                 (:key-signature
-                 (set-key-signature parser-state (second candidate) (third candidate))
+                 (set-key-signature parser-state (rest candidate))
                  (cancel-accidental parser-state))))
           ;; here the glyph processing happens
           (when (member candidate *f-clef-triggers*)
