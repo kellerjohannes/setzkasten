@@ -33,6 +33,7 @@
            (:section s4)
           sb4 b22 sh4 b22 sb4 bl
            (:section s5)
+           (:newline)
           sb5 b22 sh5 b22 sb5 bl
            (:section s6)
           sb9 b22 fl8 b22 sb8 bl

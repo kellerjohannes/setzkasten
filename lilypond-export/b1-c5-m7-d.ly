@@ -18,7 +18,10 @@ dot = {
   \center-column {
     \line {
       \center-align
-      \fontsize#3 { \concat { \normal-text "Mano enarmonica ascendente, con i semitoni maggiori, e con il tono diviso in quattro parti, e delle sette lettere della mano, come si hanno da leggere"} }
+      \fontsize#3 { \concat { \normal-text "Mano enarmonica ascendente, con i semitoni maggiori, e con il tono diviso in"} }
+    }\line {
+      \center-align
+      \fontsize#3 { \concat { \normal-text "quattro parti, e delle sette lettere della mano, come si hanno da leggere"} }
     }
     \null
     \line {

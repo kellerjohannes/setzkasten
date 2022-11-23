@@ -3,7 +3,7 @@
    (:alt-name "")
    (:comment "")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Mano enarmonica, con semitoni maggiori discendenti nel principio del tono, con il tono, in quattro parti diviso, per le sette lettere della mano.")
+   (:title "Mano enarmonica, con semitoni maggiori discendenti nel principio del tono,\\con il tono, in quattro parti diviso, per le sette lettere della mano.")
    (:section-headings
     (s1 "da A a G")
     (s2 "da F a E")

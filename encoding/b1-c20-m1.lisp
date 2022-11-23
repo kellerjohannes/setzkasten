@@ -43,6 +43,7 @@
            (:section s6)
           sb6 b27 sbd6 b27 sb7 bl
            (:section s7)
+           (:newline)
           sb7 b38 sh7 b27 sb7 bl)
    (:text 70 58
          (26 nil "ſemit.mag.")

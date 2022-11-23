@@ -156,7 +156,10 @@ dot = {
 
       }
       \hspace #3 
-      \center-column {
+    }
+    \null
+    \null
+    \line {      \center-column {
         \line {
           \left-align {  \normal-text "grado di 3 minore" }
         }
