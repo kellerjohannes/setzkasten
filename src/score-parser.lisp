@@ -164,6 +164,7 @@
                 (:section (setf (section-id parser-state) (second candidate)))
                 (:voice (setf (voice-id parser-state) (second candidate)))
                 (:f-clef (raise-f-clef-flag parser-state))
+                (:newline (set-newline score (section-id parser-state)))
                 (:key-signature
                  (set-key-signature parser-state (second candidate) (third candidate))
                  (cancel-accidental parser-state))))

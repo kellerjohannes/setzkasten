@@ -41,7 +41,10 @@
    (caption :initform ""
             :initarg :caption
             :accessor caption
-            :documentation "This string contains text to be displayed centered below the section."))
+            :documentation "This string contains text to be displayed centered below the section.")
+   (newlinep :initform nil
+             :accessor newlinep
+             :documentation "If T then this section should go on a new line, only relevant for backends such as lilypond."))
   (:documentation "This class contains all information of one section of the score. It acts independently of other sections."))
 
 (defclass voice ()
@@ -129,6 +132,10 @@
 (defmethod add-voice-to-section ((score score) section-id voice-instance)
   "Adds a given instance of `voice' to a `section' referenced by its `id' in a given `score'."
   (add-voice (get-section score section-id) voice-instance))
+
+(defmethod set-newline ((score score) section-id)
+  "Sets the `newlinep' flag to T."
+  (setf (newlinep (get-section score section-id)) t))
 
 (defmethod get-voice-in-section ((score score) section-id voice-id)
   "Returns the instance of `voice', referenced by its `id' and the `id' of a section within the instance of `score'."

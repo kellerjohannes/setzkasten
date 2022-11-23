@@ -296,8 +296,7 @@
     ("b1-c40-m2" "b" (:idealised) ,*vicentino-types-backend*)
     ("b1-c40-m2" "c" (:idealised :it) ,*lilypond-backend*)
     ("b1-c40-m2" "d" (:idealised :de) ,*lilypond-backend*)
-    ("b1-c40-m2" "e" (:idealised :en) ,*lilypond-backend*)
-    ))
+    ("b1-c40-m2" "e" (:idealised :en) ,*lilypond-backend*)))
 
 
 (defparameter *mission*

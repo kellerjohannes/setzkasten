@@ -40,6 +40,7 @@
           (1476 640 "aſcend.per ſemit.mi.comp."))
    (:music 2226
            (:section s4)
+           (:newline)
            cclef7 sh3 b22 sb3 b22 sh4 b22 sb4 b22 sh5 b22 sb5 b22 sh6 b22 sb6 b22 sh7 b22 sb7 bl
            (:section s5)
            fl4 b22 sb4 b22 fl5 b22 sb5 b22 fl6 b22 sb6 b22 sb7 b22 fl8 b22 sb8 bl

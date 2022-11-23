@@ -1,523 +1,523 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="385.86mm" height="38.30mm" viewBox="0.0000 -2.3647 219.5775 21.7927">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="194.56mm" height="70.86mm" viewBox="0.0000 -2.3647 110.7179 40.3208">
 <style type="text/css">
 <![CDATA[
 tspan { white-space: pre; }
 ]]>
 </style>
-<g transform="translate(80.6816, -0.0000)">
+<g transform="translate(26.2518, -0.0000)">
 <text font-family="serif" font-size="3.1115" text-anchor="start" fill="currentColor">
 <tspan>Essempio de gradi di quinte accidentali</tspan>
 </text>
 </g>
-<g transform="translate(2.9016, 8.4000)">
+<g transform="translate(4.1307, 8.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="24.9600" y2="0"/>
 </g>
-<g transform="translate(2.9016, 7.4000)">
+<g transform="translate(4.1307, 7.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="24.9600" y2="0"/>
 </g>
-<g transform="translate(2.9016, 6.4000)">
+<g transform="translate(4.1307, 6.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="24.9600" y2="0"/>
 </g>
-<g transform="translate(2.9016, 5.4000)">
+<g transform="translate(4.1307, 5.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="24.9600" y2="0"/>
 </g>
-<g transform="translate(2.9016, 4.4000)">
+<g transform="translate(4.1307, 4.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="24.9600" y2="0"/>
 </g>
-<g transform="translate(11.2636, 7.9000)">
+<g transform="translate(12.4927, 7.5000)">
 <path transform="scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
 c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
 </g>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:37:16:17">
-<g transform="translate(16.7256, 7.4000)">
+<g transform="translate(17.9547, 7.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(15.2756, 7.4000)">
+<g transform="translate(16.5047, 7.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
 c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
 </g>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:38:16:17">
-<g transform="translate(20.7376, 6.9000)">
+<g transform="translate(21.9667, 6.5000)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(19.2876, 6.9000)">
+<g transform="translate(20.5167, 6.5000)">
 <path transform="scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
 c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
 </g>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:39:16:17">
-<g transform="translate(24.7496, 6.4000)">
+<g transform="translate(25.9787, 6.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(23.2996, 6.4000)">
+<g transform="translate(24.5287, 6.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
 c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
 </g>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:35:30:31">
-<g transform="translate(8.7016, 8.4000)">
+<g transform="translate(9.9307, 8.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(3.7016, 5.4000)">
+<g transform="translate(4.9307, 5.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M318 0c0 -33 7 -73 45 -73c29 0 57 31 88 31c123 0 229 -89 229 -208c0 -169 -93 -250 -265 -250c-83 0 -152 61 -152 142c0 42 34 77 76 77s76 -35 76 -77c0 -39 -49 -37 -49 -76c0 -23 24 -38 49 -38c116 0 140 90 140 222c0 106 -12 180 -104 180
 c-72 0 -119 -71 -119 -149c0 -9 -7 -14 -14 -14s-13 5 -13 14c0 76 -31 147 -84 200v-471c0 -6 -4 -10 -10 -10h-21c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h21c6 0 10 -4 10 -10v-471c53 53 84 124 84 200c0 9 6 14 13 14s14 -5 14 -14c0 -78 47 -149 119 -149
 c92 0 104 74 104 180c0 132 -24 222 -140 222c-25 0 -49 -15 -49 -38c0 -39 49 -37 49 -76c0 -42 -34 -77 -76 -77s-76 35 -76 77c0 81 69 142 152 142c172 0 265 -81 265 -250c0 -119 -106 -208 -229 -208c-31 0 -59 31 -88 31c-38 0 -45 -40 -45 -73zM129 -500h-119
 c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h119c6 0 10 -4 10 -10v-980c0 -6 -4 -10 -10 -10z" fill="currentColor"/>
 </g>
-<g transform="translate(7.2516, 8.4000)">
+<g transform="translate(8.4807, 8.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
 c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
 </g>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:36:16:17">
-<g transform="translate(12.7136, 7.9000)">
+<g transform="translate(13.9427, 7.5000)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(2.5266, 12.9000)">
+<g transform="translate(3.7558, 12.5000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>gradi della prima quinta</tspan>
 </text>
 </g>
-<g transform="translate(2.2022, 15.9000)">
+<g transform="translate(3.4314, 15.5000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>accidentale per semitono</tspan>
 </text>
 </g>
-<g transform="translate(0.0000, 18.9000)">
+<g transform="translate(1.2292, 18.5000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>minore ascendente composto</tspan>
 </text>
 </g>
-<g transform="translate(39.8375, 8.4000)">
+<g transform="translate(41.0667, 8.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="23.5700" y2="0"/>
 </g>
-<g transform="translate(39.8375, 7.4000)">
+<g transform="translate(41.0667, 7.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="23.5700" y2="0"/>
 </g>
-<g transform="translate(39.8375, 6.4000)">
+<g transform="translate(41.0667, 6.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="23.5700" y2="0"/>
 </g>
-<g transform="translate(39.8375, 5.4000)">
+<g transform="translate(41.0667, 5.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="23.5700" y2="0"/>
 </g>
-<g transform="translate(39.8375, 4.4000)">
+<g transform="translate(41.0667, 4.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="23.5700" y2="0"/>
 </g>
-<g transform="translate(48.3196, 7.9000)">
+<g transform="translate(49.5487, 7.5000)">
 <path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
 c-13 0 -23 11 -23 25z" fill="currentColor"/>
 </g>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:76:21:22">
-<g transform="translate(52.6316, 7.9000)">
+<g transform="translate(53.8607, 7.5000)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:76:23:24">
-<g transform="translate(53.6126, 6.9000)">
+<g transform="translate(54.8417, 6.5000)">
 <path transform="scale(0.0045, -0.0045)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </g>
 </a>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:77:16:17">
-<g transform="translate(56.4636, 6.9000)">
+<g transform="translate(57.6927, 6.5000)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(55.3136, 6.9000)">
+<g transform="translate(56.5427, 6.5000)">
 <path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
 c-13 0 -23 11 -23 25z" fill="currentColor"/>
 </g>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:78:16:17">
-<g transform="translate(60.2956, 6.4000)">
+<g transform="translate(61.5247, 6.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(59.1456, 6.4000)">
+<g transform="translate(60.3747, 6.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
 c-13 0 -23 11 -23 25z" fill="currentColor"/>
 </g>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:75:16:17">
-<g transform="translate(49.4696, 7.9000)">
+<g transform="translate(50.6987, 7.5000)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:74:30:31">
-<g transform="translate(45.6375, 8.4000)">
+<g transform="translate(46.8667, 8.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(40.6375, 5.4000)">
+<g transform="translate(41.8667, 5.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M318 0c0 -33 7 -73 45 -73c29 0 57 31 88 31c123 0 229 -89 229 -208c0 -169 -93 -250 -265 -250c-83 0 -152 61 -152 142c0 42 34 77 76 77s76 -35 76 -77c0 -39 -49 -37 -49 -76c0 -23 24 -38 49 -38c116 0 140 90 140 222c0 106 -12 180 -104 180
 c-72 0 -119 -71 -119 -149c0 -9 -7 -14 -14 -14s-13 5 -13 14c0 76 -31 147 -84 200v-471c0 -6 -4 -10 -10 -10h-21c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h21c6 0 10 -4 10 -10v-471c53 53 84 124 84 200c0 9 6 14 13 14s14 -5 14 -14c0 -78 47 -149 119 -149
 c92 0 104 74 104 180c0 132 -24 222 -140 222c-25 0 -49 -15 -49 -38c0 -39 49 -37 49 -76c0 -42 -34 -77 -76 -77s-76 35 -76 77c0 81 69 142 152 142c172 0 265 -81 265 -250c0 -119 -106 -208 -229 -208c-31 0 -59 31 -88 31c-38 0 -45 -40 -45 -73zM129 -500h-119
 c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h119c6 0 10 -4 10 -10v-980c0 -6 -4 -10 -10 -10z" fill="currentColor"/>
 </g>
-<g transform="translate(44.4875, 8.4000)">
+<g transform="translate(45.7167, 8.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
 c-13 0 -23 11 -23 25z" fill="currentColor"/>
 </g>
-<g transform="translate(38.7676, 12.4000)">
+<g transform="translate(39.9968, 12.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>gradi della prima quinta</tspan>
 </text>
 </g>
-<g transform="translate(38.4432, 15.4000)">
+<g transform="translate(39.6724, 15.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>accidentale per semitono</tspan>
 </text>
 </g>
-<g transform="translate(34.3631, 18.4000)">
+<g transform="translate(35.5923, 18.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>maggiore [ascendente] composto</tspan>
 </text>
 </g>
-<g transform="translate(76.3908, 8.4000)">
+<g transform="translate(77.6199, 8.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="24.9600" y2="0"/>
 </g>
-<g transform="translate(76.3908, 7.4000)">
+<g transform="translate(77.6199, 7.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="24.9600" y2="0"/>
 </g>
-<g transform="translate(76.3908, 6.4000)">
+<g transform="translate(77.6199, 6.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="24.9600" y2="0"/>
 </g>
-<g transform="translate(76.3908, 5.4000)">
+<g transform="translate(77.6199, 5.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="24.9600" y2="0"/>
 </g>
-<g transform="translate(76.3908, 4.4000)">
+<g transform="translate(77.6199, 4.0000)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="24.9600" y2="0"/>
 </g>
-<g transform="translate(84.7528, 7.4000)">
+<g transform="translate(85.9819, 7.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
 c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
 </g>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:115:16:17">
-<g transform="translate(90.2148, 6.9000)">
+<g transform="translate(91.4439, 6.5000)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(88.7648, 6.9000)">
+<g transform="translate(89.9939, 6.5000)">
 <path transform="scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
 c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
 </g>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:116:16:17">
-<g transform="translate(94.2268, 6.4000)">
+<g transform="translate(95.4560, 6.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(92.7768, 6.4000)">
+<g transform="translate(94.0060, 6.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
 c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
 </g>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:117:16:17">
-<g transform="translate(98.2388, 5.9000)">
+<g transform="translate(99.4680, 5.5000)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(96.7888, 5.9000)">
+<g transform="translate(98.0180, 5.5000)">
 <path transform="scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
 c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
 </g>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:113:30:31">
-<g transform="translate(82.1908, 7.9000)">
+<g transform="translate(83.4199, 7.5000)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(77.1908, 5.4000)">
+<g transform="translate(78.4199, 5.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M318 0c0 -33 7 -73 45 -73c29 0 57 31 88 31c123 0 229 -89 229 -208c0 -169 -93 -250 -265 -250c-83 0 -152 61 -152 142c0 42 34 77 76 77s76 -35 76 -77c0 -39 -49 -37 -49 -76c0 -23 24 -38 49 -38c116 0 140 90 140 222c0 106 -12 180 -104 180
 c-72 0 -119 -71 -119 -149c0 -9 -7 -14 -14 -14s-13 5 -13 14c0 76 -31 147 -84 200v-471c0 -6 -4 -10 -10 -10h-21c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h21c6 0 10 -4 10 -10v-471c53 53 84 124 84 200c0 9 6 14 13 14s14 -5 14 -14c0 -78 47 -149 119 -149
 c92 0 104 74 104 180c0 132 -24 222 -140 222c-25 0 -49 -15 -49 -38c0 -39 49 -37 49 -76c0 -42 -34 -77 -76 -77s-76 35 -76 77c0 81 69 142 152 142c172 0 265 -81 265 -250c0 -119 -106 -208 -229 -208c-31 0 -59 31 -88 31c-38 0 -45 -40 -45 -73zM129 -500h-119
 c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h119c6 0 10 -4 10 -10v-980c0 -6 -4 -10 -10 -10z" fill="currentColor"/>
 </g>
-<g transform="translate(80.7408, 7.9000)">
+<g transform="translate(81.9699, 7.5000)">
 <path transform="scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
 c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
 </g>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:114:16:17">
-<g transform="translate(86.2028, 7.4000)">
+<g transform="translate(87.4319, 7.0000)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(74.9574, 12.4000)">
+<g transform="translate(76.1866, 12.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>gradi della seconda quinta</tspan>
 </text>
 </g>
-<g transform="translate(76.6987, 15.4000)">
+<g transform="translate(77.9279, 15.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>accidentale ascendente</tspan>
 </text>
 </g>
-<g transform="translate(72.4820, 18.4000)">
+<g transform="translate(73.7112, 18.0000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>per semitono minore composto</tspan>
 </text>
 </g>
-<g transform="translate(112.7684, 8.4000)">
+<g transform="translate(3.9088, 27.4280)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="24.9600" y2="0"/>
 </g>
-<g transform="translate(112.7684, 7.4000)">
+<g transform="translate(3.9088, 26.4280)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="24.9600" y2="0"/>
 </g>
-<g transform="translate(112.7684, 6.4000)">
+<g transform="translate(3.9088, 25.4280)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="24.9600" y2="0"/>
 </g>
-<g transform="translate(112.7684, 5.4000)">
+<g transform="translate(3.9088, 24.4280)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="24.9600" y2="0"/>
 </g>
-<g transform="translate(112.7684, 4.4000)">
+<g transform="translate(3.9088, 23.4280)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="24.9600" y2="0"/>
 </g>
-<g transform="translate(121.1304, 6.9000)">
+<g transform="translate(12.2708, 25.9280)">
 <path transform="scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
 c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
 </g>
-<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:154:16:17">
-<g transform="translate(126.5924, 6.4000)">
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:157:16:17">
+<g transform="translate(17.7328, 25.4280)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(125.1424, 6.4000)">
+<g transform="translate(16.2828, 25.4280)">
 <path transform="scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
 c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
 </g>
-<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:155:16:17">
-<g transform="translate(130.6044, 5.9000)">
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:158:16:17">
+<g transform="translate(21.7448, 24.9280)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(129.1544, 5.9000)">
+<g transform="translate(20.2948, 24.9280)">
+<path transform="scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
+c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
+</g>
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:159:16:17">
+<g transform="translate(25.7568, 24.4280)">
+<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
+c38 -21 72 -53 72 -96z" fill="currentColor"/>
+</g>
+</a>
+<g transform="translate(24.3068, 24.4280)">
+<path transform="scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
+c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
+</g>
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:155:30:31">
+<g transform="translate(9.7088, 26.4280)">
+<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
+c38 -21 72 -53 72 -96z" fill="currentColor"/>
+</g>
+</a>
+<g transform="translate(4.7088, 24.4280)">
+<path transform="scale(0.0040, -0.0040)" d="M318 0c0 -33 7 -73 45 -73c29 0 57 31 88 31c123 0 229 -89 229 -208c0 -169 -93 -250 -265 -250c-83 0 -152 61 -152 142c0 42 34 77 76 77s76 -35 76 -77c0 -39 -49 -37 -49 -76c0 -23 24 -38 49 -38c116 0 140 90 140 222c0 106 -12 180 -104 180
+c-72 0 -119 -71 -119 -149c0 -9 -7 -14 -14 -14s-13 5 -13 14c0 76 -31 147 -84 200v-471c0 -6 -4 -10 -10 -10h-21c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h21c6 0 10 -4 10 -10v-471c53 53 84 124 84 200c0 9 6 14 13 14s14 -5 14 -14c0 -78 47 -149 119 -149
+c92 0 104 74 104 180c0 132 -24 222 -140 222c-25 0 -49 -15 -49 -38c0 -39 49 -37 49 -76c0 -42 -34 -77 -76 -77s-76 35 -76 77c0 81 69 142 152 142c172 0 265 -81 265 -250c0 -119 -106 -208 -229 -208c-31 0 -59 31 -88 31c-38 0 -45 -40 -45 -73zM129 -500h-119
+c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h119c6 0 10 -4 10 -10v-980c0 -6 -4 -10 -10 -10z" fill="currentColor"/>
+</g>
+<g transform="translate(8.2588, 26.4280)">
 <path transform="scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
 c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
 </g>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:156:16:17">
-<g transform="translate(134.6164, 5.4000)">
+<g transform="translate(13.7208, 25.9280)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(133.1664, 5.4000)">
-<path transform="scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
-c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
-</g>
-<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:152:30:31">
-<g transform="translate(118.5684, 7.4000)">
-<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
-c38 -21 72 -53 72 -96z" fill="currentColor"/>
-</g>
-</a>
-<g transform="translate(113.5684, 5.4000)">
-<path transform="scale(0.0040, -0.0040)" d="M318 0c0 -33 7 -73 45 -73c29 0 57 31 88 31c123 0 229 -89 229 -208c0 -169 -93 -250 -265 -250c-83 0 -152 61 -152 142c0 42 34 77 76 77s76 -35 76 -77c0 -39 -49 -37 -49 -76c0 -23 24 -38 49 -38c116 0 140 90 140 222c0 106 -12 180 -104 180
-c-72 0 -119 -71 -119 -149c0 -9 -7 -14 -14 -14s-13 5 -13 14c0 76 -31 147 -84 200v-471c0 -6 -4 -10 -10 -10h-21c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h21c6 0 10 -4 10 -10v-471c53 53 84 124 84 200c0 9 6 14 13 14s14 -5 14 -14c0 -78 47 -149 119 -149
-c92 0 104 74 104 180c0 132 -24 222 -140 222c-25 0 -49 -15 -49 -38c0 -39 49 -37 49 -76c0 -42 -34 -77 -76 -77s-76 35 -76 77c0 81 69 142 152 142c172 0 265 -81 265 -250c0 -119 -106 -208 -229 -208c-31 0 -59 31 -88 31c-38 0 -45 -40 -45 -73zM129 -500h-119
-c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h119c6 0 10 -4 10 -10v-980c0 -6 -4 -10 -10 -10z" fill="currentColor"/>
-</g>
-<g transform="translate(117.1184, 7.4000)">
-<path transform="scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
-c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
-</g>
-<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:153:16:17">
-<g transform="translate(122.5804, 6.9000)">
-<path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
-c38 -21 72 -53 72 -96z" fill="currentColor"/>
-</g>
-</a>
-<g transform="translate(112.9397, 12.4000)">
+<g transform="translate(4.0801, 31.4280)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>gradi della terza quinta</tspan>
 </text>
 </g>
-<g transform="translate(113.0763, 15.4000)">
+<g transform="translate(4.2167, 34.4280)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>accidentale ascendente</tspan>
 </text>
 </g>
-<g transform="translate(108.8596, 18.4000)">
+<g transform="translate(0.0000, 37.4280)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>per semitono minore composto</tspan>
 </text>
 </g>
-<g transform="translate(150.9335, 8.4000)">
+<g transform="translate(42.0739, 27.4280)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="23.5700" y2="0"/>
 </g>
-<g transform="translate(150.9335, 7.4000)">
+<g transform="translate(42.0739, 26.4280)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="23.5700" y2="0"/>
 </g>
-<g transform="translate(150.9335, 6.4000)">
+<g transform="translate(42.0739, 25.4280)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="23.5700" y2="0"/>
 </g>
-<g transform="translate(150.9335, 5.4000)">
+<g transform="translate(42.0739, 24.4280)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="23.5700" y2="0"/>
 </g>
-<g transform="translate(150.9335, 4.4000)">
+<g transform="translate(42.0739, 23.4280)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="23.5700" y2="0"/>
 </g>
-<g transform="translate(159.4155, 6.4000)">
+<g transform="translate(50.5559, 25.4280)">
 <path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
 c-13 0 -23 11 -23 25z" fill="currentColor"/>
 </g>
-<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:193:16:17">
-<g transform="translate(164.3975, 5.9000)">
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:196:16:17">
+<g transform="translate(55.5380, 24.9280)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(163.2475, 5.9000)">
+<g transform="translate(54.3880, 24.9280)">
 <path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
 c-13 0 -23 11 -23 25z" fill="currentColor"/>
 </g>
-<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:194:16:17">
-<g transform="translate(167.5595, 5.4000)">
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:197:16:17">
+<g transform="translate(58.7000, 24.4280)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:195:16:17">
-<g transform="translate(171.3915, 4.9000)">
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:198:16:17">
+<g transform="translate(62.5320, 23.9280)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(170.2415, 4.9000)">
+<g transform="translate(61.3820, 23.9280)">
 <path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
 c-13 0 -23 11 -23 25z" fill="currentColor"/>
 </g>
-<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:191:30:31">
-<g transform="translate(156.7335, 6.9000)">
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:194:30:31">
+<g transform="translate(47.8739, 25.9280)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(151.7335, 5.4000)">
+<g transform="translate(42.8739, 24.4280)">
 <path transform="scale(0.0040, -0.0040)" d="M318 0c0 -33 7 -73 45 -73c29 0 57 31 88 31c123 0 229 -89 229 -208c0 -169 -93 -250 -265 -250c-83 0 -152 61 -152 142c0 42 34 77 76 77s76 -35 76 -77c0 -39 -49 -37 -49 -76c0 -23 24 -38 49 -38c116 0 140 90 140 222c0 106 -12 180 -104 180
 c-72 0 -119 -71 -119 -149c0 -9 -7 -14 -14 -14s-13 5 -13 14c0 76 -31 147 -84 200v-471c0 -6 -4 -10 -10 -10h-21c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h21c6 0 10 -4 10 -10v-471c53 53 84 124 84 200c0 9 6 14 13 14s14 -5 14 -14c0 -78 47 -149 119 -149
 c92 0 104 74 104 180c0 132 -24 222 -140 222c-25 0 -49 -15 -49 -38c0 -39 49 -37 49 -76c0 -42 -34 -77 -76 -77s-76 35 -76 77c0 81 69 142 152 142c172 0 265 -81 265 -250c0 -119 -106 -208 -229 -208c-31 0 -59 31 -88 31c-38 0 -45 -40 -45 -73zM129 -500h-119
 c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h119c6 0 10 -4 10 -10v-980c0 -6 -4 -10 -10 -10z" fill="currentColor"/>
 </g>
-<g transform="translate(155.5835, 6.9000)">
+<g transform="translate(46.7239, 25.9280)">
 <path transform="scale(0.0040, -0.0040)" d="M27 41l-1 -66v-11c0 -22 1 -44 4 -66c45 38 93 80 93 139c0 33 -14 67 -43 67c-31 0 -52 -30 -53 -63zM-15 -138l-12 595c8 5 18 8 27 8s19 -3 27 -8l-7 -345c25 21 58 34 91 34c52 0 89 -48 89 -102c0 -80 -86 -117 -147 -169c-15 -13 -24 -38 -45 -38
 c-13 0 -23 11 -23 25z" fill="currentColor"/>
 </g>
-<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:192:16:17">
-<g transform="translate(160.5655, 6.4000)">
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:195:16:17">
+<g transform="translate(51.7059, 25.4280)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(150.4099, 12.4000)">
+<g transform="translate(41.5503, 31.4280)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>gradi della terza quinta</tspan>
 </text>
 </g>
-<g transform="translate(150.5464, 15.4000)">
+<g transform="translate(41.6869, 34.4280)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>accidentale ascendente</tspan>
 </text>
 </g>
-<g transform="translate(145.2372, 18.4000)">
+<g transform="translate(36.3776, 37.4280)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>per semitono maggiore composto</tspan>
 </text>
 </g>
-<g transform="translate(187.7087, 8.4000)">
+<g transform="translate(78.8491, 27.4280)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="24.9600" y2="0"/>
 </g>
-<g transform="translate(187.7087, 7.4000)">
+<g transform="translate(78.8491, 26.4280)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="24.9600" y2="0"/>
 </g>
-<g transform="translate(187.7087, 6.4000)">
+<g transform="translate(78.8491, 25.4280)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="24.9600" y2="0"/>
 </g>
-<g transform="translate(187.7087, 5.4000)">
+<g transform="translate(78.8491, 24.4280)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="24.9600" y2="0"/>
 </g>
-<g transform="translate(187.7087, 4.4000)">
+<g transform="translate(78.8491, 23.4280)">
 <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1000" stroke="currentColor" x1="0.0500" y1="0" x2="24.9600" y2="0"/>
 </g>
-<g transform="translate(196.0707, 6.4000)">
+<g transform="translate(87.2111, 25.4280)">
 <path transform="scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
 c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
 </g>
-<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:232:16:17">
-<g transform="translate(201.5327, 5.9000)">
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:235:16:17">
+<g transform="translate(92.6731, 24.9280)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(200.0827, 5.9000)">
+<g transform="translate(91.2231, 24.9280)">
 <path transform="scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
 c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
 </g>
-<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:233:16:17">
-<g transform="translate(205.5447, 5.4000)">
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:236:16:17">
+<g transform="translate(96.6851, 24.4280)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(204.0947, 5.4000)">
+<g transform="translate(95.2351, 24.4280)">
 <path transform="scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
 c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
 </g>
-<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:234:16:17">
-<g transform="translate(209.5567, 4.9000)">
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:237:16:17">
+<g transform="translate(100.6971, 23.9280)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(208.1067, 4.9000)">
+<g transform="translate(99.2471, 23.9280)">
 <path transform="scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
 c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
 </g>
-<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:230:30:31">
-<g transform="translate(193.5087, 6.9000)">
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:233:30:31">
+<g transform="translate(84.6491, 25.9280)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(188.5087, 5.4000)">
+<g transform="translate(79.6491, 24.4280)">
 <path transform="scale(0.0040, -0.0040)" d="M318 0c0 -33 7 -73 45 -73c29 0 57 31 88 31c123 0 229 -89 229 -208c0 -169 -93 -250 -265 -250c-83 0 -152 61 -152 142c0 42 34 77 76 77s76 -35 76 -77c0 -39 -49 -37 -49 -76c0 -23 24 -38 49 -38c116 0 140 90 140 222c0 106 -12 180 -104 180
 c-72 0 -119 -71 -119 -149c0 -9 -7 -14 -14 -14s-13 5 -13 14c0 76 -31 147 -84 200v-471c0 -6 -4 -10 -10 -10h-21c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h21c6 0 10 -4 10 -10v-471c53 53 84 124 84 200c0 9 6 14 13 14s14 -5 14 -14c0 -78 47 -149 119 -149
 c92 0 104 74 104 180c0 132 -24 222 -140 222c-25 0 -49 -15 -49 -38c0 -39 49 -37 49 -76c0 -42 -34 -77 -76 -77s-76 35 -76 77c0 81 69 142 152 142c172 0 265 -81 265 -250c0 -119 -106 -208 -229 -208c-31 0 -59 31 -88 31c-38 0 -45 -40 -45 -73zM129 -500h-119
 c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h119c6 0 10 -4 10 -10v-980c0 -6 -4 -10 -10 -10z" fill="currentColor"/>
 </g>
-<g transform="translate(192.0587, 6.9000)">
+<g transform="translate(83.1991, 25.9280)">
 <path transform="scale(0.0040, -0.0040)" d="M216 -312c0 -10 -8 -19 -18 -19s-19 9 -19 19v145l-83 -31v-158c0 -10 -9 -19 -19 -19s-18 9 -18 19v145l-32 -12c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 16 13 19l46 16v160l-32 -11c-2 -1 -5 -1 -7 -1c-11 0 -20 9 -20 20v60c0 8 5 15 13 18l46 17v158
 c0 10 8 19 18 19s19 -9 19 -19v-145l83 31v158c0 10 9 19 19 19s18 -9 18 -19v-145l32 12c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -16 -13 -19l-46 -16v-160l32 11c2 1 5 1 7 1c11 0 20 -9 20 -20v-60c0 -8 -5 -15 -13 -18l-46 -17v-158zM96 65v-160l83 30v160z" fill="currentColor"/>
 </g>
-<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:231:16:17">
-<g transform="translate(197.5207, 6.4000)">
+<a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c40-m2-c.ly:234:16:17">
+<g transform="translate(88.6611, 25.4280)">
 <path transform="scale(0.0040, -0.0040)" d="M213 112c-50 0 -69 -43 -69 -88c0 -77 57 -136 134 -136c50 0 69 43 69 88c0 77 -57 136 -134 136zM491 0c0 -43 -34 -75 -72 -96c-53 -29 -114 -40 -174 -40s-120 11 -173 40c-38 21 -72 53 -72 96s34 75 72 96c53 29 113 40 173 40s121 -11 174 -40
 c38 -21 72 -53 72 -96z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(187.0264, 12.4000)">
+<g transform="translate(78.1669, 31.4280)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>gradi della quarta quinta</tspan>
 </text>
 </g>
-<g transform="translate(188.0166, 15.4000)">
+<g transform="translate(79.1570, 34.4280)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>accidentale ascendente</tspan>
 </text>
 </g>
-<g transform="translate(183.7999, 18.4000)">
+<g transform="translate(74.9403, 37.4280)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>per semitono minore composto</tspan>
 </text>

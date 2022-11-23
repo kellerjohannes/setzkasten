@@ -195,7 +195,7 @@
 
 (defmethod generate-section-ly-code ((section section) shortest-duration)
   "`shortest-duration' in Lilypond note value (1/2 for minima)."
-  (format nil "~
+  (let ((section-code (format nil "~
 ~6,0t\\center-column {
 ~@[~a
 ~8,0t\\null~]
@@ -226,6 +226,14 @@
           (if (string= (caption section) "")
               nil
               (generate-multiline-text (caption section)))))
+        (newline-code (format nil "~
+~4,0t}
+~4,0t\\null
+~4,0t\\null
+~4,0t\\line {")))
+    (if (newlinep section)
+        (concatenate 'string newline-code section-code)
+        section-code)))
 
 
 (defmethod generate-score-ly-code ((score score))
@@ -288,7 +296,10 @@ dot = {
            (output-file (or output-file (tmp "lilypond.pdf"))))
       (unwind-protect
            (progn
-             (alexandria:write-string-into-file ly-code ly-file :if-exists :supersede :if-does-not-exist :create)
+             (alexandria:write-string-into-file ly-code
+                                                ly-file
+                                                :if-exists :supersede
+                                                :if-does-not-exist :create)
              (exec-lilypond ly-file
                             :output output-file :lilypond-path lilypond-path))
         ;(unless ly-file-supplied-p (uiop:delete-file-if-exists ly-file))
