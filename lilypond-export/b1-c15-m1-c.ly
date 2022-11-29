@@ -32,8 +32,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor" g1 
-                \dot g1-. 
+                \clef "tenor"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  g1  \dot g1-. 
                 \cadenzaOff
               }
             >>
@@ -62,8 +64,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor" b1 
-                \dot b1-. 
+                \clef "tenor"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  b1  \dot b1-. 
                 \cadenzaOff
               }
             >>
@@ -92,8 +96,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor" c'1 
-                \dot c'1-. 
+                \clef "tenor"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  c'1  \dot c'1-. 
                 \cadenzaOff
               }
             >>
@@ -122,8 +128,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor" d'1 
-                \dot d'1-. 
+                \clef "tenor"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  d'1  \dot d'1-. 
                 \cadenzaOff
               }
             >>
@@ -152,8 +160,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor" \dot a1-. 
-                a1 
+                \clef "tenor"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  \dot a1-.  a1 
                 \cadenzaOff
               }
             >>
@@ -182,8 +192,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor" \dot g1-. 
-                g1 
+                \clef "tenor"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  \dot g1-.  g1 
                 \cadenzaOff
               }
             >>
@@ -212,8 +224,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor" \dot f1-. 
-                f1 
+                \clef "tenor"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  \dot f1-.  f1 
                 \cadenzaOff
               }
             >>
@@ -242,8 +256,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor" \dot e1-. 
-                e1 
+                \clef "tenor"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  \dot e1-.  e1 
                 \cadenzaOff
               }
             >>

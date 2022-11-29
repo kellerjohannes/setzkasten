@@ -32,11 +32,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor" dis1 
-                eis1 
-                fis1 
-                gis1 
-                ais1 
+                \clef "tenor"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  dis1  eis1  fis1  gis1  ais1 
                 \cadenzaOff
               }
             >>
@@ -71,11 +70,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor" des1 
-                es1 
-                \dot e1-. 
-                ges1 
-                as1 
+                \clef "tenor"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  des1  es1  \dot e1-.  ges1  as1 
                 \cadenzaOff
               }
             >>
@@ -110,11 +108,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor" eis1 
-                fis1 
-                gis1 
-                ais1 
-                bis1 
+                \clef "tenor"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  eis1  fis1  gis1  ais1  bis1 
                 \cadenzaOff
               }
             >>
@@ -152,11 +149,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor" fis1 
-                gis1 
-                ais1 
-                bis1 
-                cis'1 
+                \clef "tenor"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  fis1  gis1  ais1  bis1  cis'1 
                 \cadenzaOff
               }
             >>
@@ -191,11 +187,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor" ges1 
-                as1 
-                bes1 
-                c'1 
-                des'1 
+                \clef "tenor"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  ges1  as1  bes1  c'1  des'1 
                 \cadenzaOff
               }
             >>
@@ -230,11 +225,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor" gis1 
-                ais1 
-                bis1 
-                cis'1 
-                dis'1 
+                \clef "tenor"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  gis1  ais1  bis1  cis'1  dis'1 
                 \cadenzaOff
               }
             >>

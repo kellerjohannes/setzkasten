@@ -39,9 +39,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "bass" \dot a,1-. 
-                \dot a,1-. 
-                \dot a,1-. 
+                \clef "bass"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  \dot a,1-.  \dot a,1-.  \dot a,1-. 
                 \cadenzaOff
               }
             >>
@@ -80,7 +81,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "bass" \dot b,1-. 
+                \clef "bass"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  \dot b,1-. 
                 \cadenzaOff
               }
             >>
@@ -113,9 +117,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "bass" \dot c1-. 
-                \dot c1-. 
-                \dot c1-. 
+                \clef "bass"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  \dot c1-.  \dot c1-.  \dot c1-. 
                 \cadenzaOff
               }
             >>
@@ -154,9 +159,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "bass" \dot d1-. 
-                \dot d1-. 
-                \dot d1-. 
+                \clef "bass"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  \dot d1-.  \dot d1-.  \dot d1-. 
                 \cadenzaOff
               }
             >>
@@ -195,8 +201,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "bass" \dot e1-. 
-                \dot e1-. 
+                \clef "bass"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  \dot e1-.  \dot e1-. 
                 \cadenzaOff
               }
             >>
@@ -232,8 +240,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "bass" \dot f1-. 
-                \dot f1-. 
+                \clef "bass"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  \dot f1-.  \dot f1-. 
                 \cadenzaOff
               }
             >>
@@ -269,9 +279,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "bass" \dot g1-. 
-                \dot g1-. 
-                \dot g1-. 
+                \clef "bass"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  \dot g1-.  \dot g1-.  \dot g1-. 
                 \cadenzaOff
               }
             >>

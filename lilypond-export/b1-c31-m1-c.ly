@@ -32,8 +32,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor" c1
-                \dot e1-.
+                \clef "tenor"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  c1  \dot e1-. 
                 \cadenzaOff
               }
             >>
@@ -57,7 +59,7 @@ dot = {
         }
 
       }
-      \hspace #3
+      \hspace #3 
       \center-column {
 
         \line {
@@ -68,9 +70,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor" f1
-                g1
-                \dot a1-.
+                \clef "tenor"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  f1  g1  \dot a1-. 
                 \cadenzaOff
               }
             >>
@@ -94,7 +97,7 @@ dot = {
         }
 
       }
-      \hspace #3
+      \hspace #3 
       \center-column {
 
         \line {
@@ -105,11 +108,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor" bes1
-                d'1^\markup{\hspace #0.8 ,}
-                as1
-                b1
-                c'1^\markup{\hspace #0.8 ,}
+                \clef "tenor"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  bes1  d'1^\markup{\hspace #0.8 ,}  as1  b1  c'1^\markup{\hspace #0.8 ,} 
                 \cadenzaOff
               }
             >>
@@ -133,7 +135,7 @@ dot = {
         }
 
       }
-      \hspace #3
+      \hspace #3 
       \center-column {
 
         \line {
@@ -144,9 +146,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor" bes1
-                c'1
-                d'1^\markup{\hspace #0.8 ,}
+                \clef "tenor"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  bes1  c'1  d'1^\markup{\hspace #0.8 ,} 
                 \cadenzaOff
               }
             >>
@@ -170,7 +173,7 @@ dot = {
         }
 
       }
-      \hspace #3
+      \hspace #3 
       \center-column {
 
         \line {
@@ -181,8 +184,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor" des'1
-                b1
+                \clef "tenor"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  des'1  b1 
                 \cadenzaOff
               }
             >>
@@ -206,7 +211,7 @@ dot = {
         }
 
       }
-      \hspace #3
+      \hspace #3 
       \center-column {
 
         \line {
@@ -217,10 +222,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor" bes1
-                a1
-                g1
-                fis1
+                \clef "tenor"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  bes1  a1  g1  fis1 
                 \cadenzaOff
               }
             >>
@@ -244,7 +249,7 @@ dot = {
         }
 
       }
-      \hspace #3
+      \hspace #3 
       \center-column {
 
         \line {
@@ -255,8 +260,10 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor" \dot g1-.
-                es1
+                \clef "tenor"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  \dot g1-.  es1 
                 \cadenzaOff
               }
             >>
@@ -280,7 +287,7 @@ dot = {
         }
 
       }
-      \hspace #3
+      \hspace #3 
 
     }
   }
