@@ -32,7 +32,7 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor"
+                \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
                           (6 . ,NATURAL))  c1  \dot e1-. 
@@ -70,7 +70,7 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor"
+                \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
                           (6 . ,NATURAL))  f1  g1  \dot a1-. 
@@ -108,7 +108,7 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor"
+                \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
                           (6 . ,NATURAL))  bes1  d'1^\markup{\hspace #0.8 ,}  as1  b1  c'1^\markup{\hspace #0.8 ,} 
@@ -146,7 +146,7 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor"
+                \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
                           (6 . ,NATURAL))  bes1  c'1  d'1^\markup{\hspace #0.8 ,} 
@@ -184,7 +184,7 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor"
+                \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
                           (6 . ,NATURAL))  des'1  b1 
@@ -222,7 +222,7 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor"
+                \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
                           (6 . ,NATURAL))  bes1  a1  g1  fis1 
@@ -260,7 +260,7 @@ dot = {
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
                 \cadenzaOn
-                \clef "tenor"
+                \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
                           (6 . ,NATURAL))  \dot g1-.  es1 

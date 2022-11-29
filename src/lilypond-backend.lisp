@@ -4,8 +4,13 @@
 ;; slots of this subclass can be used to globally configure lilypond, for example a
 ;; state deciding whether to use modern or old clefs
 (defclass lilypond-backend (setzkasten-backend)
-  ())
+  ((clef-type :initform :modern
+              :initarg :clef-type
+              :accessor clef-type
+              :documentation "Values can be :original or :modern.")))
 
+(defmethod set-clef-type ((backend lilypond-backend) new-clef-type)
+  (setf (clef-type backend) new-clef-type))
 
 
 
@@ -104,10 +109,10 @@
             (value->ly-duration note-value)
             (third notename))))
 
-(defun clef->ly-clef (clef modernp)
+(defmethod clef->ly-clef ((backend lilypond-backend) clef)
   "Clef is '(type . position), `type' is :c, :f or :g, `position' is 0-10. Set `modernp' to T to get modern key equivalents."
   (cdr (assoc (format nil "~a~a" (symbol-name (car clef)) (cdr clef))
-              (if modernp
+              (if (eq (clef-type backend) :modern)
                   *dict-ly-modern-clefs*
                   *dict-ly-clefs*)
               :test #'string=)))
@@ -160,8 +165,8 @@
 ~%~16,0t\\key c #`~a "
           (convert-key-signature key-signature)))
 
-(defmethod generate-mobject-ly-code ((mobject mobject) clef-state key-state)
-  (let ((current-clef (clef->ly-clef (clef mobject) nil))
+(defmethod generate-mobject-ly-code ((mobject mobject) (backend lilypond-backend) clef-state key-state)
+  (let ((current-clef (clef->ly-clef backend (clef mobject)))
         (current-key (key-signature mobject))
         (result nil))
     (when (string/= current-clef clef-state)
@@ -170,11 +175,11 @@
       (setf result (concatenate 'string result (generate-key-signature current-key))))
     (setf result (concatenate 'string
                               result
-                              (format nil " ~a" (key->ly-pitch (pitch mobject) (value mobject)))))
+                              (format nil " ~a" (key->ly-pitch backend (pitch mobject) (value mobject)))))
     (values result current-clef current-key)))
 
 
-(defmethod generate-voice-ly-code ((voice voice))
+(defmethod generate-voice-ly-code ((voice voice) (backend lilypond-backend))
   (let ((clef-state nil)
         (key-state nil))
     (format nil "~
@@ -188,7 +193,7 @@
             (label voice)
             (mapcar (lambda (mobject)
                       (multiple-value-bind (mobject-string current-clef current-key)
-                          (generate-mobject-ly-code mobject clef-state key-state)
+                          (generate-mobject-ly-code mobject backend clef-state key-state)
                         (setf clef-state current-clef)
                         (setf key-state current-key)
                         mobject-string))
@@ -212,7 +217,7 @@
               (generate-formatted-text (split-formatted-string textline)))
             (split-string-to-list text-string "\\"))))
 
-(defmethod generate-section-ly-code ((section section) shortest-duration)
+(defmethod generate-section-ly-code ((section section) (backend lilypond-backend) shortest-duration)
   "`shortest-duration' in Lilypond note value (1/2 for minima)."
   (let ((section-code (format nil "~
 ~6,0t\\center-column {
@@ -239,7 +244,7 @@
               nil
               (generate-multiline-text (heading section)))
           (mapcar (lambda (voice)
-                    (generate-voice-ly-code voice))
+                    (generate-voice-ly-code voice backend))
                   (voices section))
           shortest-duration
           (if (string= (caption section) "")
@@ -255,7 +260,7 @@
         section-code)))
 
 
-(defmethod generate-score-ly-code ((score score))
+(defmethod generate-score-ly-code ((score score) (backend lilypond-backend))
   (format nil "~
 \\version \"2.22.2\"
 
@@ -290,7 +295,7 @@ dot = {
                     (generate-formatted-text (split-formatted-string textline)))
                   (split-string-to-list (title score) "\\"))
           (mapcar (lambda (section)
-                    (generate-section-ly-code section (find-shortest-duration score)))
+                    (generate-section-ly-code section backend (find-shortest-duration score)))
                   (sections score))))
 
 
@@ -324,9 +329,9 @@ dot = {
         ;(unless ly-file-supplied-p (uiop:delete-file-if-exists ly-file))
         (unless output-file-supplied-p (uiop:delete-file-if-exists output-file))))))
 
-(defun create-lilypond-score (score-instance suffix)
+(defun create-lilypond-score (score-instance backend suffix)
   (format t "~&Running Lilypond on ~a-~a" (filename score-instance) suffix)
-  (run-lilypond (generate-score-ly-code score-instance)
+  (run-lilypond (generate-score-ly-code score-instance backend)
                 :ly-file (merge-pathnames *lilypond-export-path*
                                               (pathname
                                                (format nil "~a-~a.ly"
@@ -349,4 +354,4 @@ dot = {
 
 
 (defmethod create-score-file ((backend lilypond-backend) score suffix)
-  (add-output-file backend (create-lilypond-score (parse-score score suffix) suffix)))
+  (add-output-file backend (create-lilypond-score (parse-score score suffix) backend suffix)))
