@@ -38,7 +38,7 @@
            (:section s6)
            b38 br5 flrev4 b38 b38 bl
            (:section s7)
-           b38 cclef7 fl6 b22 nat6 br6 b22 bl
+           b38 cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat) b22 nat6 br6 b22 bl
            (:section s8)
            b38 nat4 br6 b38 bl
            (:section s9)

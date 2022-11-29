@@ -239,7 +239,7 @@ dot = {
                 \clef "tenor"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  b\breve 
+                          (6 . ,FLAT))  b\breve 
                 \cadenzaOff
               }
             >>
@@ -271,7 +271,7 @@ dot = {
                 \clef "tenor"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  b\breve 
+                          (6 . ,FLAT))  b\breve 
                 \cadenzaOff
               }
             >>
@@ -306,7 +306,7 @@ dot = {
                 \clef "tenor"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  b\breve 
+                          (6 . ,FLAT))  b\breve 
                 \cadenzaOff
               }
             >>

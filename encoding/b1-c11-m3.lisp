@@ -22,8 +22,10 @@
            (:section s1)
            cclef7 b38 sb5 b38 fl5 b38 sbd5 b22 sh4 b22 sb4 b38 sbd4 b38 sb4 b38
            (:section s2)
-           cclef7 b38 fl6 b38 sb5 b38 fl5 b38 sbd5 b38 fl5 b38 sb5 b22 sbd4 b38 sb4 b22 bl
+           cclef7 b38 fl6 (:key-signature nil nil nil nil nil nil :flat)
+           b38 sb5 b38 fl5 b38 sbd5 b38 fl5 b38 sb5 b22 sbd4 b38 sb4 b22 bl
            (:section s3)
+           (:key-signature nil nil nil nil nil nil nil)
            b22 sb4 b38 fl4 b38 sbd4 b22 fl4 b22 sb4 b38 sbd3 b38 sb3 b38 sbd2 b22 sb2)
    (:text 70 58
           (120 nil "la")
