@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="172.07mm" height="21.83mm" viewBox="0.0000 -0.0000 97.9161 12.4220">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="172.07mm" height="21.85mm" viewBox="0.0000 -0.0000 97.9161 12.4312">
 <style type="text/css">
 <![CDATA[
 tspan { white-space: pre; }
@@ -50,12 +50,12 @@ c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h119c6 0 10 -4 10 -10v-980c0 -6 -4 -10 -10 
 </g>
 <a style="color:inherit;" xlink:href="textedit:///home/johannes/common-lisp/setzkasten/lilypond-export/b1-c17-m1-c.ly:36:16:17">
 </a>
-<g transform="translate(1.0283, 9.4000)">
+<g transform="translate(0.6016, 9.4000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>due diesis in</tspan>
 </text>
 </g>
-<g transform="translate(1.0625, 12.4000)">
+<g transform="translate(0.7381, 12.4000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>un semitono</tspan>
 </text>
@@ -131,12 +131,12 @@ c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h119c6 0 10 -4 10 -10v-980c0 -6 -4 -10 -10 
 <path transform="scale(0.0045, -0.0045)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(20.6747, 9.4000)">
+<g transform="translate(20.0260, 9.4000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>4 diesis in un tono</tspan>
 </text>
 </g>
-<g transform="translate(24.3792, 12.4000)">
+<g transform="translate(23.9354, 12.4000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>ascendente</tspan>
 </text>
@@ -212,12 +212,12 @@ c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h119c6 0 10 -4 10 -10v-980c0 -6 -4 -10 -10 
 <path transform="scale(0.0045, -0.0045)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(47.2647, 9.4000)">
+<g transform="translate(46.6160, 9.4000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>4 diesis in un tono</tspan>
 </text>
 </g>
-<g transform="translate(50.9693, 12.4000)">
+<g transform="translate(50.5254, 12.4000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>ascendente</tspan>
 </text>
@@ -293,12 +293,12 @@ c-6 0 -10 4 -10 10v980c0 6 4 10 10 10h119c6 0 10 -4 10 -10v-980c0 -6 -4 -10 -10 
 <path transform="scale(0.0045, -0.0045)" d="M-50 0c0 28 22 50 50 50s50 -22 50 -50s-22 -50 -50 -50s-50 22 -50 50z" fill="currentColor"/>
 </g>
 </a>
-<g transform="translate(73.8547, 9.4000)">
+<g transform="translate(73.2060, 9.4000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>4 diesis in un tono</tspan>
 </text>
 </g>
-<g transform="translate(77.1325, 12.4000)">
+<g transform="translate(76.7057, 12.4000)">
 <text font-family="serif" font-size="2.2001" text-anchor="start" fill="currentColor">
 <tspan>discendente</tspan>
 </text>
