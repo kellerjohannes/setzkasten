@@ -175,7 +175,7 @@
       (setf result (concatenate 'string result (generate-key-signature current-key))))
     (setf result (concatenate 'string
                               result
-                              (format nil " ~a" (key->ly-pitch backend (pitch mobject) (value mobject)))))
+                              (format nil " ~a" (key->ly-pitch (pitch mobject) (value mobject)))))
     (values result current-clef current-key)))
 
 
