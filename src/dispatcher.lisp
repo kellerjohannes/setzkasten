@@ -48,7 +48,10 @@
                     :syntax)
 
 (defparameter *lilypond-backend-modern* (make-instance 'lilypond-backend :clef-type :modern))
-(defparameter *lilypond-backend-original* (make-instance 'lilypond-backend :clef-type :original))
+;;(defparameter *lilypond-backend-original* (make-instance 'lilypond-backend :clef-type :original))
+(defparameter *lilypond-backend-original* (make-instance 'lilypond-backend :clef-type :mensural
+                                                                           :rest-type :mensural
+                                                                           :notehead-type :petrucci))
 
 ;; experimental: macro to create missions
 ;; (defun flatten-1 (tree)
@@ -83,11 +86,29 @@
                           *book2-modern*))
     (execute-mission mission)))
 
+(defparameter *working*
+  `(
+    ("b2-c3-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b2-c3-m2" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b2-c3-m2" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b2-c3-m2" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ("b2-c3-m2" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b2-c3-m2" "c-original" (:idealised :it) ,*lilypond-backend-original*)
+    ("b2-c3-m2" "d-original" (:idealised :de) ,*lilypond-backend-original*)
+    ("b2-c3-m2" "e-original" (:idealised :en) ,*lilypond-backend-original*)
+    ))
+
 (defparameter *book2-original*
   `(
     ("b2-c2-m1" "c-original" (:idealised :it) ,*lilypond-backend-original*)
     ("b2-c2-m1" "d-original" (:idealised :de) ,*lilypond-backend-original*)
     ("b2-c2-m1" "e-original" (:idealised :en) ,*lilypond-backend-original*)
+    ("b2-c2-m2" "c-original" (:idealised :it) ,*lilypond-backend-original*)
+    ("b2-c2-m2" "d-original" (:idealised :de) ,*lilypond-backend-original*)
+    ("b2-c2-m2" "e-original" (:idealised :en) ,*lilypond-backend-original*)
+    ("b2-c3-m1" "c-original" (:idealised :it) ,*lilypond-backend-original*)
+    ("b2-c3-m1" "d-original" (:idealised :de) ,*lilypond-backend-original*)
+    ("b2-c3-m1" "e-original" (:idealised :en) ,*lilypond-backend-original*)
     ))
 
 (defparameter *book2-modern*
@@ -97,6 +118,16 @@
     ("b2-c2-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
     ("b2-c2-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
     ("b2-c2-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b2-c2-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b2-c2-m2" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b2-c2-m2" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b2-c2-m2" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ("b2-c2-m2" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b2-c3-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b2-c3-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b2-c3-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b2-c3-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ("b2-c3-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
     ))
 
 (defparameter *book1-original*

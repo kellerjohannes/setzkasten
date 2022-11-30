@@ -7,7 +7,15 @@
   ((clef-type :initform :modern
               :initarg :clef-type
               :accessor clef-type
-              :documentation "Values can be :original or :modern.")))
+              :documentation "Values can be :original, :mensural or :modern.")
+   (rest-type :initform :standard
+              :initarg :rest-type
+              :accessor rest-type
+              :documentation "Values can be :standard or :mensural.")
+   (notehead-type :initform :standard
+                  :initarg :notehead-type
+                  :accessor notehead-type
+                  :documentation "Values can be :standard or :petrucci.")))
 
 (defmethod set-clef-type ((backend lilypond-backend) new-clef-type)
   (setf (clef-type backend) new-clef-type))
@@ -71,6 +79,15 @@
                                     ((:b :flat :dot) "\\dot b" "es" "-.")
                                     ((:b nil :comma) "b" "" "^\\markup{,}")))
 
+(defparameter *dict-ly-mensural-clefs* '(("C7" . "mensural-c4")
+                                         ("C5" . "mensural-c3")
+                                         ("C3" . "mensural-c2")
+                                         ("C1" . "mensural-c1")
+                                         ("F7" . "mensural-f4")
+                                         ("F5" . "mensural-f3")
+                                         ("G3" . "mensural-g2")
+                                         ("G1" . "mensural-g1")))
+
 (defparameter *dict-ly-clefs* '(("C7" . "tenor")
                                 ("C5" . "alto")
                                 ("C3" . "mezzosoprano")
@@ -89,6 +106,18 @@
                                        ("G3" . "treble")
                                        ("G1" . "treble")))
 
+(defparameter *dict-ly-rest-types* '((:standard . "default")
+                                     (:mensural . "mensural")))
+
+(defparameter *dict-ly-notehead-types* '((:standard . "default")
+                                         (:petrucci . "petrucci")))
+
+(defun lookup-notehead-type (notehead-type-keyword)
+  (cdr (assoc notehead-type-keyword *dict-ly-notehead-types*)))
+
+(defun lookup-rest-type (rest-type-keyword)
+  (cdr (assoc rest-type-keyword *dict-ly-rest-types*)))
+
 (defun value->ly-duration (value)
   (cdr (assoc value *dict-ly-duration*)))
 
@@ -100,21 +129,24 @@
               *dict-ly-notenames* :test #'equal)))
 
 (defun key->ly-pitch (key note-value)
-  (let ((notename (key->ly-notename (first key) (second key) (third key))))
-    ;; (format t "~&ly notename: ~s" notename)
-    (format nil "~a~a~a~a~a"
-            (first notename)
-            (second notename)
-            (octave->ly-octave (fourth key))
-            (value->ly-duration note-value)
-            (third notename))))
+  (if key
+      (let ((notename (key->ly-notename (first key) (second key) (third key))))
+        ;; (format t "~&ly notename: ~s" notename)
+        (format nil "~a~a~a~a~a"
+                (first notename)
+                (second notename)
+                (octave->ly-octave (fourth key))
+                (value->ly-duration note-value)
+                (third notename)))
+      (format nil "r~a" (value->ly-duration note-value))))
 
 (defmethod clef->ly-clef ((backend lilypond-backend) clef)
   "Clef is '(type . position), `type' is :c, :f or :g, `position' is 0-10. Set `modernp' to T to get modern key equivalents."
   (cdr (assoc (format nil "~a~a" (symbol-name (car clef)) (cdr clef))
-              (if (eq (clef-type backend) :modern)
-                  *dict-ly-modern-clefs*
-                  *dict-ly-clefs*)
+              (case (clef-type backend)
+                (:modern *dict-ly-modern-clefs*)
+                (:original *dict-ly-clefs*)
+                (:mensural *dict-ly-mensural-clefs*))
               :test #'string=)))
 
 
@@ -187,10 +219,14 @@
 ~16,0t\\override Staff.TimeSignature.stencil = ##f
 ~16,0t\\override Staff.NoteHead.style = #'baroque
 ~16,0t\\accidentalStyle Score.forget
+~16,0t\\override Rest.style = #'~a
+~16,0t\\override NoteHead.style = #'~a
 ~16,0t\\cadenzaOn~{~a ~}
 ~16,0t\\cadenzaOff
 ~14,0t}"
             (label voice)
+            (lookup-rest-type (rest-type backend))
+            (lookup-notehead-type (notehead-type backend))
             (mapcar (lambda (mobject)
                       (multiple-value-bind (mobject-string current-clef current-key)
                           (generate-mobject-ly-code mobject backend clef-state key-state)

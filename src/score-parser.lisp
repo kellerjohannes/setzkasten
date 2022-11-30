@@ -114,6 +114,16 @@
                                      (key-signature parser-state)))))
 
 
+(defmethod add-rest ((score score) (parser-state parser-state) duration dottedp)
+  (add-mobject-to-score score
+                        (section-id parser-state)
+                        (voice-id parser-state)
+                        (make-rest (generate-object-id (object-id-counter parser-state))
+                                   duration
+                                   dottedp
+                                   (clef parser-state)
+                                   (key-signature parser-state))))
+
 (defmacro configure-parser (glyph-list)
   `(defmethod parse-glyph ((score score) (parser-state parser-state) glyph dottedp)
      (case glyph
@@ -125,6 +135,10 @@
                                                              dottedp
                                                              ,(fourth definition)
                                                              ,(fifth definition))))
+                     (:rest `(,(second definition) (add-rest score
+                                                             parser-state
+                                                             ,(third definition)
+                                                             dottedp)))
                      (:accidental `(,(second definition) (set-accidental parser-state
                                                                          ,(third definition)
                                                                          ,(fourth definition))))
@@ -373,6 +387,8 @@
     (:note smd8 :semiminima 8 :dot)
     (:note smd9 :semiminima 9 :dot)
     (:note smd10 :semiminima 10 :dot)
+    (:rest mrest5 :minima)
+    (:rest mrest3 :minima)
     ))
 
 (defparameter *list-of-notes*

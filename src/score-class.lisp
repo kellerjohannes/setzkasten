@@ -166,13 +166,14 @@
                           :clef clef
                           :key-signature key-signature))
 
-(defmethod make-rest (id value dottedp)
+(defmethod make-rest (id value dottedp clef key-signature)
   "Instanciates a `mobject' representing a rest (not a note)."
   (make-instance 'mobject :id id
                           :pitch nil
                           :value value
                           :dottedp dottedp
-                          :clef nil))
+                          :clef clef
+                          :key-signature key-signature))
 
 
 (defmethod print-element ((voice voice) stream)
