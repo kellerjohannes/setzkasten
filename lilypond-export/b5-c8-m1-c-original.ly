@@ -47,7 +47,7 @@ dot = {
                 \override Rest.style = #'mensural
                 \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "mensural-f4"
+                \clef "mensural-f"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
                           (6 . ,NATURAL))  fis1  \dot f1-.  f1  eis1 
@@ -103,7 +103,7 @@ dot = {
                 \override Rest.style = #'mensural
                 \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "mensural-f4"
+                \clef "mensural-f"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
                           (6 . ,NATURAL))  d1 
@@ -150,7 +150,7 @@ dot = {
                 \override Rest.style = #'mensural
                 \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "mensural-f4"
+                \clef "mensural-f"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
                           (6 . ,NATURAL))  cis1  \dot c1-. 
@@ -200,7 +200,7 @@ dot = {
                 \override Rest.style = #'mensural
                 \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "mensural-f4"
+                \clef "mensural-f"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
                           (6 . ,NATURAL))  c1  bis,1 
@@ -250,7 +250,7 @@ dot = {
                 \override Rest.style = #'mensural
                 \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "mensural-f4"
+                \clef "mensural-f"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
                           (6 . ,NATURAL))  a,1 
@@ -297,7 +297,7 @@ dot = {
                 \override Rest.style = #'mensural
                 \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "mensural-f4"
+                \clef "mensural-f"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
                           (6 . ,NATURAL))  a1  a1  a1  a1 
@@ -353,7 +353,7 @@ dot = {
                 \override Rest.style = #'mensural
                 \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "mensural-f4"
+                \clef "mensural-f"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
                           (6 . ,NATURAL))  a1 
@@ -400,7 +400,7 @@ dot = {
                 \override Rest.style = #'mensural
                 \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "mensural-f4"
+                \clef "mensural-f"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
                           (6 . ,NATURAL))  a1  a1  a1  a1 
@@ -456,7 +456,7 @@ dot = {
                 \override Rest.style = #'mensural
                 \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "mensural-f4"
+                \clef "mensural-f"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
                           (6 . ,NATURAL))  a1 
