@@ -35,11 +35,13 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'default
+                \override NoteHead.style = #'default
                 \cadenzaOn
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  d1  a1 
+                          (6 . ,NATURAL))  d1   a1  
                 \cadenzaOff
               }
             >>
@@ -77,11 +79,13 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'default
+                \override NoteHead.style = #'default
                 \cadenzaOn
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  e1  b1 
+                          (6 . ,NATURAL))  e1   b1  
                 \cadenzaOff
               }
             >>
@@ -119,11 +123,13 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'default
+                \override NoteHead.style = #'default
                 \cadenzaOn
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  f1  c'1 
+                          (6 . ,NATURAL))  f1   c'1  
                 \cadenzaOff
               }
             >>
@@ -161,11 +167,13 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'default
+                \override NoteHead.style = #'default
                 \cadenzaOn
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  g1  d'1 
+                          (6 . ,NATURAL))  g1   d'1  
                 \cadenzaOff
               }
             >>
@@ -203,11 +211,13 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'default
+                \override NoteHead.style = #'default
                 \cadenzaOn
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  d'1  g1 
+                          (6 . ,NATURAL))  d'1   g1  
                 \cadenzaOff
               }
             >>
@@ -245,11 +255,13 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'default
+                \override NoteHead.style = #'default
                 \cadenzaOn
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  c'1  f1 
+                          (6 . ,NATURAL))  c'1   f1  
                 \cadenzaOff
               }
             >>
@@ -287,11 +299,13 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'default
+                \override NoteHead.style = #'default
                 \cadenzaOn
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  b1  e1 
+                          (6 . ,NATURAL))  b1   e1  
                 \cadenzaOff
               }
             >>
@@ -329,11 +343,13 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'default
+                \override NoteHead.style = #'default
                 \cadenzaOn
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  d1 
+                          (6 . ,NATURAL))  a1   d1  
                 \cadenzaOff
               }
             >>

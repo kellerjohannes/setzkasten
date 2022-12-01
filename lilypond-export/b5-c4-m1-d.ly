@@ -37,7 +37,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  gis1 
+                          (6 . ,NATURAL))  a1   gis1  
                 \cadenzaOff
               }
             >>
@@ -71,7 +71,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  as1 
+                          (6 . ,NATURAL))  a1   as1  
                 \cadenzaOff
               }
             >>

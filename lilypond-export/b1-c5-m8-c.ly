@@ -38,11 +38,13 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'default
+                \override NoteHead.style = #'default
                 \cadenzaOn
                 \clef "bass"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  \dot as1-.  gis1  \dot g1-.  g1 
+                          (6 . ,NATURAL))  a1   \dot as1-.   gis1   \dot g1-.   g1  
                 \cadenzaOff
               }
             >>
@@ -77,11 +79,13 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'default
+                \override NoteHead.style = #'default
                 \cadenzaOn
                 \clef "bass"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  f1  \dot e1-.  e1 
+                          (6 . ,NATURAL))  f1   \dot e1-.   e1  
                 \cadenzaOff
               }
             >>
@@ -116,11 +120,13 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'default
+                \override NoteHead.style = #'default
                 \cadenzaOn
                 \clef "bass"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  e1  \dot es1-.  dis1  \dot d1-.  d1 
+                          (6 . ,NATURAL))  e1   \dot es1-.   dis1   \dot d1-.   d1  
                 \cadenzaOff
               }
             >>
@@ -158,11 +164,13 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'default
+                \override NoteHead.style = #'default
                 \cadenzaOn
                 \clef "bass"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  d1  \dot des1-.  cis1  \dot c1-.  c1 
+                          (6 . ,NATURAL))  d1   \dot des1-.   cis1   \dot c1-.   c1  
                 \cadenzaOff
               }
             >>
@@ -200,11 +208,13 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'default
+                \override NoteHead.style = #'default
                 \cadenzaOn
                 \clef "bass"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  c1  \dot b,1-.  b,1 
+                          (6 . ,NATURAL))  c1   \dot b,1-.   b,1  
                 \cadenzaOff
               }
             >>
@@ -236,11 +246,13 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'default
+                \override NoteHead.style = #'default
                 \cadenzaOn
                 \clef "bass"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  bes,1  \dot a,1-.  a,1 
+                          (6 . ,NATURAL))  bes,1   \dot a,1-.   a,1  
                 \cadenzaOff
               }
             >>

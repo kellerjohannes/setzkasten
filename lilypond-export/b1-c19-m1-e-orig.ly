@@ -31,11 +31,13 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'mensural
+                \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "tenor"
+                \clef "mensural-c4"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  e1  \dot e1-.  f1 
+                          (6 . ,NATURAL))  e1   \dot e1-.   f1  
                 \cadenzaOff
               }
             >>
@@ -66,11 +68,13 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'mensural
+                \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "tenor"
+                \clef "mensural-c4"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  f1  ges1 
+                          (6 . ,NATURAL))  f1   ges1  
                 \cadenzaOff
               }
             >>
@@ -101,11 +105,13 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'mensural
+                \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "tenor"
+                \clef "mensural-c4"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  g1  \dot g1-.  as1 
+                          (6 . ,NATURAL))  g1   \dot g1-.   as1  
                 \cadenzaOff
               }
             >>
@@ -136,11 +142,13 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'mensural
+                \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "tenor"
+                \clef "mensural-c4"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  bes1 
+                          (6 . ,NATURAL))  a1   bes1  
                 \cadenzaOff
               }
             >>
@@ -174,11 +182,13 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'mensural
+                \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "tenor"
+                \clef "mensural-c4"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  b1  \dot b1-.  c'1 
+                          (6 . ,NATURAL))  b1   \dot b1-.   c'1  
                 \cadenzaOff
               }
             >>
@@ -209,11 +219,13 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'mensural
+                \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "tenor"
+                \clef "mensural-c4"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  c'1  b1 
+                          (6 . ,NATURAL))  c'1   b1  
                 \cadenzaOff
               }
             >>
@@ -244,11 +256,13 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'mensural
+                \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "tenor"
+                \clef "mensural-c4"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  gis1 
+                          (6 . ,NATURAL))  a1   gis1  
                 \cadenzaOff
               }
             >>
@@ -279,11 +293,13 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'mensural
+                \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "tenor"
+                \clef "mensural-c4"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  f1  e1 
+                          (6 . ,NATURAL))  f1   e1  
                 \cadenzaOff
               }
             >>

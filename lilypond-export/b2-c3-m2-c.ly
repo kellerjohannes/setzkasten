@@ -37,7 +37,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  c'1  c'1 
+                          (6 . ,NATURAL))  c'1   c'1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -50,50 +50,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  r2  a1  c'2 
-                \cadenzaOff
-              }
-            >>
-            \layout {
-              \context {
-                \Score
-                \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/2)
-              }
-            }
-          }
-        }
-
-      }
-      \hspace #3 
-      \center-column {
-
-        \line {
-          \score {
-            <<
-              \new Staff \with { instrumentName = ""} {
-                \override Staff.TimeSignature.stencil = ##f
-                \override Staff.NoteHead.style = #'baroque
-                \accidentalStyle Score.forget
-                \override Rest.style = #'default
-                \override NoteHead.style = #'default
-                \cadenzaOn
-                \clef "treble_8"
-                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
-                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  b1  b1 
-                \cadenzaOff
-              }
-              \new Staff \with { instrumentName = ""} {
-                \override Staff.TimeSignature.stencil = ##f
-                \override Staff.NoteHead.style = #'baroque
-                \accidentalStyle Score.forget
-                \override Rest.style = #'default
-                \override NoteHead.style = #'default
-                \cadenzaOn
-                \clef "treble_8"
-                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
-                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  r2  g1  b2 
+                          (6 . ,NATURAL))  r2  a1   c'2  
                 \cadenzaOff
               }
             >>
@@ -123,7 +80,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  c'1  c'1 
+                          (6 . ,NATURAL))  b1   b1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -136,50 +93,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  g1  c'1 
-                \cadenzaOff
-              }
-            >>
-            \layout {
-              \context {
-                \Score
-                \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/2)
-              }
-            }
-          }
-        }
-
-      }
-      \hspace #3 
-      \center-column {
-
-        \line {
-          \score {
-            <<
-              \new Staff \with { instrumentName = ""} {
-                \override Staff.TimeSignature.stencil = ##f
-                \override Staff.NoteHead.style = #'baroque
-                \accidentalStyle Score.forget
-                \override Rest.style = #'default
-                \override NoteHead.style = #'default
-                \cadenzaOn
-                \clef "treble_8"
-                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
-                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  c'1  c'1 
-                \cadenzaOff
-              }
-              \new Staff \with { instrumentName = ""} {
-                \override Staff.TimeSignature.stencil = ##f
-                \override Staff.NoteHead.style = #'baroque
-                \accidentalStyle Score.forget
-                \override Rest.style = #'default
-                \override NoteHead.style = #'default
-                \cadenzaOn
-                \clef "treble_8"
-                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
-                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  f1  c'1 
+                          (6 . ,NATURAL))  r2  g1   b2  
                 \cadenzaOff
               }
             >>
@@ -209,7 +123,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  c'1  cis'1 
+                          (6 . ,NATURAL))  c'1   c'1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -222,7 +136,93 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  g1  cis'1 
+                          (6 . ,NATURAL))  g1   c'1  
+                \cadenzaOff
+              }
+            >>
+            \layout {
+              \context {
+                \Score
+                \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/2)
+              }
+            }
+          }
+        }
+
+      }
+      \hspace #3 
+      \center-column {
+
+        \line {
+          \score {
+            <<
+              \new Staff \with { instrumentName = ""} {
+                \override Staff.TimeSignature.stencil = ##f
+                \override Staff.NoteHead.style = #'baroque
+                \accidentalStyle Score.forget
+                \override Rest.style = #'default
+                \override NoteHead.style = #'default
+                \cadenzaOn
+                \clef "treble_8"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  c'1   c'1  
+                \cadenzaOff
+              }
+              \new Staff \with { instrumentName = ""} {
+                \override Staff.TimeSignature.stencil = ##f
+                \override Staff.NoteHead.style = #'baroque
+                \accidentalStyle Score.forget
+                \override Rest.style = #'default
+                \override NoteHead.style = #'default
+                \cadenzaOn
+                \clef "treble_8"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  f1   c'1  
+                \cadenzaOff
+              }
+            >>
+            \layout {
+              \context {
+                \Score
+                \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/2)
+              }
+            }
+          }
+        }
+
+      }
+      \hspace #3 
+      \center-column {
+
+        \line {
+          \score {
+            <<
+              \new Staff \with { instrumentName = ""} {
+                \override Staff.TimeSignature.stencil = ##f
+                \override Staff.NoteHead.style = #'baroque
+                \accidentalStyle Score.forget
+                \override Rest.style = #'default
+                \override NoteHead.style = #'default
+                \cadenzaOn
+                \clef "treble_8"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  c'1   cis'1  
+                \cadenzaOff
+              }
+              \new Staff \with { instrumentName = ""} {
+                \override Staff.TimeSignature.stencil = ##f
+                \override Staff.NoteHead.style = #'baroque
+                \accidentalStyle Score.forget
+                \override Rest.style = #'default
+                \override NoteHead.style = #'default
+                \cadenzaOn
+                \clef "treble_8"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  g1   cis'1  
                 \cadenzaOff
               }
             >>
@@ -256,7 +256,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  c'1  d'1 
+                          (6 . ,NATURAL))  c'1   d'1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -269,7 +269,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  g1  d'1 
+                          (6 . ,NATURAL))  g1   d'1  
                 \cadenzaOff
               }
             >>
@@ -303,7 +303,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  bes1 
+                          (6 . ,NATURAL))  a1   bes1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -316,7 +316,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  d1  bes1 
+                          (6 . ,NATURAL))  d1   bes1  
                 \cadenzaOff
               }
             >>
@@ -350,7 +350,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  c'1  f1 
+                          (6 . ,NATURAL))  c'1   f1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -363,7 +363,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  g1  f1 
+                          (6 . ,NATURAL))  g1   f1  
                 \cadenzaOff
               }
             >>
@@ -397,7 +397,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  d'1  g1 
+                          (6 . ,NATURAL))  d'1   g1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -410,7 +410,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  d1  g1 
+                          (6 . ,NATURAL))  d1   g1  
                 \cadenzaOff
               }
             >>
@@ -447,7 +447,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  d'1  a1 
+                          (6 . ,NATURAL))  d'1   a1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -460,7 +460,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  d1  a1 
+                          (6 . ,NATURAL))  d1   a1  
                 \cadenzaOff
               }
             >>
@@ -494,7 +494,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  f1 
+                          (6 . ,NATURAL))  a1   f1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -507,7 +507,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  d1  f1 
+                          (6 . ,NATURAL))  d1   f1  
                 \cadenzaOff
               }
             >>
@@ -541,7 +541,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  b1  g1 
+                          (6 . ,NATURAL))  b1   g1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -554,7 +554,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  d1  g1 
+                          (6 . ,NATURAL))  d1   g1  
                 \cadenzaOff
               }
             >>
@@ -588,7 +588,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  e'1  c'1 
+                          (6 . ,NATURAL))  e'1   c'1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -601,7 +601,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  c1  c'1 
+                          (6 . ,NATURAL))  c1   c'1  
                 \cadenzaOff
               }
             >>
@@ -635,7 +635,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  f'1  bes1 
+                          (6 . ,NATURAL))  f'1   bes1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -648,7 +648,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  d1  bes1 
+                          (6 . ,NATURAL))  d1   bes1  
                 \cadenzaOff
               }
             >>
@@ -682,7 +682,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  b1  g1 
+                          (6 . ,NATURAL))  b1   g1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -695,54 +695,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  d1  g1 
-                \cadenzaOff
-              }
-            >>
-            \layout {
-              \context {
-                \Score
-                \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/2)
-              }
-            }
-          }
-        }
-        \null
-        \line {
-          \left-align {  \normal-text "a 8" }
-        }
-
-      }
-      \hspace #3 
-      \center-column {
-
-        \line {
-          \score {
-            <<
-              \new Staff \with { instrumentName = ""} {
-                \override Staff.TimeSignature.stencil = ##f
-                \override Staff.NoteHead.style = #'baroque
-                \accidentalStyle Score.forget
-                \override Rest.style = #'default
-                \override NoteHead.style = #'default
-                \cadenzaOn
-                \clef "treble_8"
-                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
-                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  e'1 
-                \cadenzaOff
-              }
-              \new Staff \with { instrumentName = ""} {
-                \override Staff.TimeSignature.stencil = ##f
-                \override Staff.NoteHead.style = #'baroque
-                \accidentalStyle Score.forget
-                \override Rest.style = #'default
-                \override NoteHead.style = #'default
-                \cadenzaOn
-                \clef "treble_8"
-                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
-                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  d1  d'1 
+                          (6 . ,NATURAL))  d1   g1  
                 \cadenzaOff
               }
             >>
@@ -776,7 +729,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  e'1  e1 
+                          (6 . ,NATURAL))  a1   e'1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -789,7 +742,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  c1  e1 
+                          (6 . ,NATURAL))  d1   d'1  
                 \cadenzaOff
               }
             >>
@@ -823,7 +776,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  f'1  f1 
+                          (6 . ,NATURAL))  e'1   e1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -836,7 +789,54 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  d1  f1 
+                          (6 . ,NATURAL))  c1   e1  
+                \cadenzaOff
+              }
+            >>
+            \layout {
+              \context {
+                \Score
+                \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/2)
+              }
+            }
+          }
+        }
+        \null
+        \line {
+          \left-align {  \normal-text "a 8" }
+        }
+
+      }
+      \hspace #3 
+      \center-column {
+
+        \line {
+          \score {
+            <<
+              \new Staff \with { instrumentName = ""} {
+                \override Staff.TimeSignature.stencil = ##f
+                \override Staff.NoteHead.style = #'baroque
+                \accidentalStyle Score.forget
+                \override Rest.style = #'default
+                \override NoteHead.style = #'default
+                \cadenzaOn
+                \clef "treble_8"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  f'1   f1  
+                \cadenzaOff
+              }
+              \new Staff \with { instrumentName = ""} {
+                \override Staff.TimeSignature.stencil = ##f
+                \override Staff.NoteHead.style = #'baroque
+                \accidentalStyle Score.forget
+                \override Rest.style = #'default
+                \override NoteHead.style = #'default
+                \cadenzaOn
+                \clef "treble_8"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  d1   f1  
                 \cadenzaOff
               }
             >>

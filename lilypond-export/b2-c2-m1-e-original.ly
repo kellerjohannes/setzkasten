@@ -31,65 +31,26 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'mensural
+                \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "tenor"
+                \clef "mensural-c4"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  b1  c'1 
+                          (6 . ,NATURAL))  b1   c'1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'mensural
+                \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "tenor"
+                \clef "mensural-c4"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  b1  a1 
-                \cadenzaOff
-              }
-            >>
-            \layout {
-              \context {
-                \Score
-                \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1)
-              }
-            }
-          }
-        }
-        \null
-        \line {
-          \left-align {  \normal-text "a 2" }
-        }
-
-      }
-      \hspace #3 
-      \center-column {
-
-        \line {
-          \score {
-            <<
-              \new Staff \with { instrumentName = ""} {
-                \override Staff.TimeSignature.stencil = ##f
-                \override Staff.NoteHead.style = #'baroque
-                \accidentalStyle Score.forget
-                \cadenzaOn
-                \clef "tenor"
-                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
-                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  b1 
-                \cadenzaOff
-              }
-              \new Staff \with { instrumentName = ""} {
-                \override Staff.TimeSignature.stencil = ##f
-                \override Staff.NoteHead.style = #'baroque
-                \accidentalStyle Score.forget
-                \cadenzaOn
-                \clef "tenor"
-                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
-                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  g1 
+                          (6 . ,NATURAL))  b1   a1  
                 \cadenzaOff
               }
             >>
@@ -117,65 +78,26 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'mensural
+                \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "tenor"
+                \clef "mensural-c4"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  c'1 
+                          (6 . ,NATURAL))  a1   b1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'mensural
+                \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "tenor"
+                \clef "mensural-c4"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  a1 
-                \cadenzaOff
-              }
-            >>
-            \layout {
-              \context {
-                \Score
-                \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1)
-              }
-            }
-          }
-        }
-        \null
-        \line {
-          \left-align {  \normal-text "a 2" }
-        }
-
-      }
-      \hspace #3 
-      \center-column {
-
-        \line {
-          \score {
-            <<
-              \new Staff \with { instrumentName = ""} {
-                \override Staff.TimeSignature.stencil = ##f
-                \override Staff.NoteHead.style = #'baroque
-                \accidentalStyle Score.forget
-                \cadenzaOn
-                \clef "tenor"
-                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
-                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  g1  b1 
-                \cadenzaOff
-              }
-              \new Staff \with { instrumentName = ""} {
-                \override Staff.TimeSignature.stencil = ##f
-                \override Staff.NoteHead.style = #'baroque
-                \accidentalStyle Score.forget
-                \cadenzaOn
-                \clef "tenor"
-                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
-                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  g1  g1 
+                          (6 . ,NATURAL))  a1   g1  
                 \cadenzaOff
               }
             >>
@@ -203,22 +125,120 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'mensural
+                \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "tenor"
+                \clef "mensural-c4"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  d'1 
+                          (6 . ,NATURAL))  a1   c'1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'mensural
+                \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "tenor"
+                \clef "mensural-c4"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  g1 
+                          (6 . ,NATURAL))  a1   a1  
+                \cadenzaOff
+              }
+            >>
+            \layout {
+              \context {
+                \Score
+                \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1)
+              }
+            }
+          }
+        }
+        \null
+        \line {
+          \left-align {  \normal-text "a 2" }
+        }
+
+      }
+      \hspace #3 
+      \center-column {
+
+        \line {
+          \score {
+            <<
+              \new Staff \with { instrumentName = ""} {
+                \override Staff.TimeSignature.stencil = ##f
+                \override Staff.NoteHead.style = #'baroque
+                \accidentalStyle Score.forget
+                \override Rest.style = #'mensural
+                \override NoteHead.style = #'petrucci
+                \cadenzaOn
+                \clef "mensural-c4"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  g1   b1  
+                \cadenzaOff
+              }
+              \new Staff \with { instrumentName = ""} {
+                \override Staff.TimeSignature.stencil = ##f
+                \override Staff.NoteHead.style = #'baroque
+                \accidentalStyle Score.forget
+                \override Rest.style = #'mensural
+                \override NoteHead.style = #'petrucci
+                \cadenzaOn
+                \clef "mensural-c4"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  g1   g1  
+                \cadenzaOff
+              }
+            >>
+            \layout {
+              \context {
+                \Score
+                \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1)
+              }
+            }
+          }
+        }
+        \null
+        \line {
+          \left-align {  \normal-text "a 2" }
+        }
+
+      }
+      \hspace #3 
+      \center-column {
+
+        \line {
+          \score {
+            <<
+              \new Staff \with { instrumentName = ""} {
+                \override Staff.TimeSignature.stencil = ##f
+                \override Staff.NoteHead.style = #'baroque
+                \accidentalStyle Score.forget
+                \override Rest.style = #'mensural
+                \override NoteHead.style = #'petrucci
+                \cadenzaOn
+                \clef "mensural-c4"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  a1   d'1  
+                \cadenzaOff
+              }
+              \new Staff \with { instrumentName = ""} {
+                \override Staff.TimeSignature.stencil = ##f
+                \override Staff.NoteHead.style = #'baroque
+                \accidentalStyle Score.forget
+                \override Rest.style = #'mensural
+                \override NoteHead.style = #'petrucci
+                \cadenzaOn
+                \clef "mensural-c4"
+                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
+                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
+                          (6 . ,NATURAL))  a1   g1  
                 \cadenzaOff
               }
             >>
@@ -246,22 +266,26 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'mensural
+                \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "tenor"
+                \clef "mensural-c4"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  c'1 
+                          (6 . ,NATURAL))  a1   c'1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'mensural
+                \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "tenor"
+                \clef "mensural-c4"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  e1 
+                          (6 . ,NATURAL))  a1   e1  
                 \cadenzaOff
               }
             >>
@@ -289,22 +313,26 @@ dot = {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'mensural
+                \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "tenor"
+                \clef "mensural-c4"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  d'1 
+                          (6 . ,NATURAL))  a1   d'1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
                 \override Staff.TimeSignature.stencil = ##f
                 \override Staff.NoteHead.style = #'baroque
                 \accidentalStyle Score.forget
+                \override Rest.style = #'mensural
+                \override NoteHead.style = #'petrucci
                 \cadenzaOn
-                \clef "tenor"
+                \clef "mensural-c4"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  d1 
+                          (6 . ,NATURAL))  a1   d1  
                 \cadenzaOff
               }
             >>

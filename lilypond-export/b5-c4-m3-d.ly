@@ -37,7 +37,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  bes1 
+                          (6 . ,NATURAL))  a1   bes1  
                 \cadenzaOff
               }
             >>
@@ -71,7 +71,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  bes1  b1 
+                          (6 . ,NATURAL))  bes1   b1  
                 \cadenzaOff
               }
             >>
@@ -105,7 +105,7 @@ dot = {
                 \clef "treble"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a'1  bes'1 
+                          (6 . ,NATURAL))  a'1   bes'1  
                 \cadenzaOff
               }
             >>
@@ -139,7 +139,7 @@ dot = {
                 \clef "treble"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  bes'1  b'1 
+                          (6 . ,NATURAL))  bes'1   b'1  
                 \cadenzaOff
               }
             >>
