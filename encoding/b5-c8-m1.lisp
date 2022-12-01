@@ -43,7 +43,7 @@
            (:section s5) b22 sb5 b38
            (:section s6) cclef3 sb3 sbd3 sh3 sb3 fl4 sb4 bl
            (:section s7) b38 sb5 b38 bl
-           (:section s8) sb6 b38 sbd6 b22 bl b22 sh6 sb6 fl7 sb7 bl
+           (:section s8) sb6 b38 (:divider :regular) sbd6 b22 bl b22 sh6 sb6 fl7 sb7 bl
            (:section s9) sb8 bl)
    (:text 90 58
           (5 nil "con le ſue propinque.")

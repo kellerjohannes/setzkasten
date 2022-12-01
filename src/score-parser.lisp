@@ -21,7 +21,10 @@
              :documentation "This symbol carries the current voice id, it is used to direct score information into the correct `voice' instance.")
    (object-id-counter :initform 0
                       :accessor object-id-counter
-                      :documentation "This counter can be used to create unique ids for score objects. The car represents the line, the cdr the musical object."))
+                      :documentation "This counter can be used to create unique ids for score objects. The car represents the line, the cdr the musical object.")
+   (divider-flag :initform nil
+                 :accessor divider-flag
+                 :documentation "Registers divider-information in the score encoding data, so that the mobject slot `divider' can be set for the next note accordingly."))
   (:documentation "This class keeps track of various elements during the reading process of score encoding data."))
 
 
@@ -47,6 +50,8 @@
   "`flat-list' and `sharp-list' both contain numbers representing the staff-positions, 0-10."
   (setf (key-signature parser-state) accidental-list))
 
+(defmethod reset-divider-flag ((parser-state parser-state))
+  (setf (divider-flag parser-state) nil))
 
 
 (defparameter *gamut*
@@ -111,7 +116,9 @@
                                      duration
                                      dottedp
                                      (clef parser-state)
-                                     (key-signature parser-state)))))
+                                     (key-signature parser-state)
+                                     (divider-flag parser-state))))
+  (reset-divider-flag parser-state))
 
 
 (defmethod add-rest ((score score) (parser-state parser-state) duration dottedp)
@@ -122,7 +129,9 @@
                                    duration
                                    dottedp
                                    (clef parser-state)
-                                   (key-signature parser-state))))
+                                   (key-signature parser-state)
+                                   (divider-flag parser-state)))
+  (reset-divider-flag parser-state))
 
 (defmacro configure-parser (glyph-list)
   `(defmethod parse-glyph ((score score) (parser-state parser-state) glyph dottedp)
@@ -179,6 +188,7 @@
                 (:voice (setf (voice-id parser-state) (second candidate)))
                 (:f-clef (raise-f-clef-flag parser-state))
                 (:newline (set-newline score (section-id parser-state)))
+                (:divider (setf (divider-flag parser-state) (second candidate)))
                 (:key-signature
                  (set-key-signature parser-state (rest candidate))
                  (cancel-accidental parser-state))))

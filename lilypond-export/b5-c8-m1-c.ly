@@ -37,7 +37,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  a1  a1  a1 
+                          (6 . ,NATURAL))  a1   a1   a1   a1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -50,7 +50,7 @@ dot = {
                 \clef "bass"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  fis1  \dot f1-.  f1  eis1 
+                          (6 . ,NATURAL))  fis1   \dot f1-.   f1   eis1  
                 \cadenzaOff
               }
             >>
@@ -93,7 +93,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1 
+                          (6 . ,NATURAL))  a1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -106,7 +106,7 @@ dot = {
                 \clef "bass"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  d1 
+                          (6 . ,NATURAL))  d1  
                 \cadenzaOff
               }
             >>
@@ -140,7 +140,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  a1 
+                          (6 . ,NATURAL))  a1   a1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -153,7 +153,7 @@ dot = {
                 \clef "bass"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  cis1  \dot c1-. 
+                          (6 . ,NATURAL))  cis1   \dot c1-.  
                 \cadenzaOff
               }
             >>
@@ -190,7 +190,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  a1 
+                          (6 . ,NATURAL))  a1   a1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -203,7 +203,7 @@ dot = {
                 \clef "bass"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  c1  bis,1 
+                          (6 . ,NATURAL))  c1   bis,1  
                 \cadenzaOff
               }
             >>
@@ -240,7 +240,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1 
+                          (6 . ,NATURAL))  a1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -253,7 +253,7 @@ dot = {
                 \clef "bass"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a,1 
+                          (6 . ,NATURAL))  a,1  
                 \cadenzaOff
               }
             >>
@@ -287,7 +287,7 @@ dot = {
                 \clef "treble"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  c'1  \dot c'1-.  cis'1  des'1 
+                          (6 . ,NATURAL))  c'1   \dot c'1-.   cis'1   des'1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -300,7 +300,7 @@ dot = {
                 \clef "bass"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  a1  a1  a1 
+                          (6 . ,NATURAL))  a1   a1   a1   a1  
                 \cadenzaOff
               }
             >>
@@ -343,7 +343,7 @@ dot = {
                 \clef "treble"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  e'1 
+                          (6 . ,NATURAL))  e'1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -356,7 +356,7 @@ dot = {
                 \clef "bass"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1 
+                          (6 . ,NATURAL))  a1  
                 \cadenzaOff
               }
             >>
@@ -390,7 +390,7 @@ dot = {
                 \clef "treble"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  f'1  \dot f'1-.  fis'1  ges'1 
+                          (6 . ,NATURAL))  f'1   \dot f'1-. \bar "|"  fis'1   ges'1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -403,7 +403,7 @@ dot = {
                 \clef "bass"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1  a1  a1  a1 
+                          (6 . ,NATURAL))  a1   a1   a1   a1  
                 \cadenzaOff
               }
             >>
@@ -446,7 +446,7 @@ dot = {
                 \clef "treble"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a'1 
+                          (6 . ,NATURAL))  a'1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -459,7 +459,7 @@ dot = {
                 \clef "bass"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1 
+                          (6 . ,NATURAL))  a1  
                 \cadenzaOff
               }
             >>

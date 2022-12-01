@@ -87,7 +87,10 @@
                   :initarg :key-signature
                   :accessor key-signature
                   :documentation "This slot decribes the key signature context of the mobject. It is not used to determine the actual pitch of the mobject, but to determine if a key change should be rendered for graphical output.")
-   )
+   (divider :initform nil
+            :initarg :divider
+            :accessor divider
+            :documentation "When T, this will trigger the output of an (irregular) barline. Possible values are :dashed, :dotted, :regular and :double."))
   (:documentation "This class contains all information about a rest or note. Pitch encoding and duration are obvious. Also clef and tonality context are stored for each note individually. When rendering the `mobject' clef and tonality changes need to be identified with a state variable in order to trigger clef display correctly."))
 
 
@@ -157,23 +160,25 @@
   (add-mobject (get-voice (get-section score section-id) voice-id)
                mobject-instance))
 
-(defmethod make-note (id lettera chromatic-alteration enharmonic-alteration octave value dottedp clef key-signature)
+(defmethod make-note (id lettera chromatic-alteration enharmonic-alteration octave value dottedp clef key-signature divider)
   "Instanciates a `mobject' representing a note (not a rest). `lettera', `chromatic-alteration' and `enharmonic-alteration' all need to be provided in keyword form."
   (make-instance 'mobject :id id
                           :pitch (list lettera chromatic-alteration enharmonic-alteration octave)
                           :value value
                           :dottedp dottedp
                           :clef clef
-                          :key-signature key-signature))
+                          :key-signature key-signature
+                          :divider divider))
 
-(defmethod make-rest (id value dottedp clef key-signature)
+(defmethod make-rest (id value dottedp clef key-signature divider)
   "Instanciates a `mobject' representing a rest (not a note)."
   (make-instance 'mobject :id id
                           :pitch nil
                           :value value
                           :dottedp dottedp
                           :clef clef
-                          :key-signature key-signature))
+                          :key-signature key-signature
+                          :divider divider))
 
 
 (defmethod print-element ((voice voice) stream)

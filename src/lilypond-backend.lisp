@@ -129,16 +129,21 @@
   (cdr (assoc (list lettera chromatic-alteration enharmonic-alteration)
               *dict-ly-notenames* :test #'equal)))
 
-(defun key->ly-pitch (key note-value)
+(defun key->ly-pitch (key note-value divider)
   (if key
       (let ((notename (key->ly-notename (first key) (second key) (third key))))
         ;; (format t "~&ly notename: ~s" notename)
-        (format nil "~a~a~a~a~a"
+        (format nil "~a~a~a~a~a ~@[~a~]"
                 (first notename)
                 (second notename)
                 (octave->ly-octave (fourth key))
                 (value->ly-duration note-value)
-                (third notename)))
+                (third notename)
+                (case divider
+                  (:regular "\\bar \"|\"")
+                  (:dashed "\\bar \"!\"")
+                  (:dotted "\\bar \";\"")
+                  (:double "\\bar \"||\""))))
       (format nil "r~a" (value->ly-duration note-value))))
 
 (defmethod clef->ly-clef ((backend lilypond-backend) clef)
@@ -208,7 +213,9 @@
       (setf result (concatenate 'string result (generate-key-signature current-key))))
     (setf result (concatenate 'string
                               result
-                              (format nil " ~a" (key->ly-pitch (pitch mobject) (value mobject)))))
+                              (format nil " ~a" (key->ly-pitch (pitch mobject)
+                                                               (value mobject)
+                                                               (divider mobject)))))
     (values result current-clef current-key)))
 
 
