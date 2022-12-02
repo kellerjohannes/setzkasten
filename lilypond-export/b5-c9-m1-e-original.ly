@@ -27,7 +27,7 @@ dot = {
     \line {
       \center-column {
         \line {
-          \left-align {  \normal-text "le quattro terze discendenti" }
+          \left-align {  \normal-text "Le quattro terze discendenti" }
         }
         \line {
           \left-align {  \normal-text "con le sue propinque" }
@@ -81,7 +81,7 @@ dot = {
       \hspace #3 
       \center-column {
         \line {
-          \left-align {  \normal-text "quinta" }
+          \left-align {  \normal-text "Quinta" }
         }
         \line {
           \left-align {  \normal-text " " }
@@ -131,7 +131,7 @@ dot = {
       \hspace #3 
       \center-column {
         \line {
-          \left-align {  \normal-text "le quattro seste" }
+          \left-align {  \normal-text "Le quattro seste" }
         }
         \line {
           \left-align {  \normal-text "con le sue propinque" }
@@ -185,7 +185,7 @@ dot = {
       \hspace #3 
       \center-column {
         \line {
-          \left-align {  \normal-text "ottava" }
+          \left-align {  \normal-text "Ottava" }
         }
         \line {
           \left-align {  \normal-text " " }

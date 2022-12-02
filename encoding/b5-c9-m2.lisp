@@ -1,6 +1,6 @@
 `((:header
    (:filename "b5-c9-m2")
-   (:alt-name "m5.005 [b]")
+   (:alt-name "m5.005b")
    (:comment "q021_s212, origin: line 3 989, line 4 987. This example was split in two separate files for a clearer rendering.")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Del secondo Alamire: tutte le consonanze ascendenti\\con le propinque di Alamire secondo")

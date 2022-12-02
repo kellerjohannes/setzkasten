@@ -7,9 +7,8 @@
    (:section-headings
     (s1 ""))
    (:section-captions
-    (s1 "semitono maggiore")
-    (s2 "semitono minore")
-    (s3 "ambo due d'Alamire"))
+    (s1 "semitono maggiore\\d'Alamire")
+    (s2 "semitono minore\\d'Alamire"))
    (:voice-labels
     (:all v1 "")))
   (:preamble-type-imitation
@@ -23,7 +22,8 @@
            cclef7 b38 sb5 b22 b38 sh4 b38 b22 sb4 b38 b22 bl
            (:section s2)
            b38 b22 sb5 b38 fl5 b38 sb5 b38 bl
-           (:section s3)
+           (:alt (:diplomatic (:section s3))
+                 (:it) (:de) (:en))
            b125 b125 b125 bl)
    (:text 70 58
           (93 nil "ꜱemit.mag.")

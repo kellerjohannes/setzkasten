@@ -80,12 +80,14 @@
 ;;                  "b1-c5-m1"))
 
 (defun execute-all ()
-  (dolist (mission  (list *book1-original*
-                          *book1-modern*
-                          *book2-original*
-                          *book2-modern*
-                          *book5-original*
-                          *book5-modern*))
+  (dolist (mission  (list
+                     *book1-modern*
+                     *book1-original*
+                     *book2-modern*
+                     *book2-original*
+                     *book5-modern*
+                     *book5-original*
+                     ))
     (execute-mission mission)))
 
 (defparameter *working*

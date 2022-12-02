@@ -53,6 +53,9 @@ dot = {
         \line {
           \left-align {  \normal-text "semitono maggiore" }
         }
+        \line {
+          \left-align {  \normal-text "d'Alamire" }
+        }
 
       }
       \hspace #3 
@@ -87,35 +90,8 @@ dot = {
         \line {
           \left-align {  \normal-text "semitono minore" }
         }
-
-      }
-      \hspace #3 
-      \center-column {
-
         \line {
-          \score {
-            <<
-              \new Staff \with { instrumentName = ""} {
-                \override Staff.TimeSignature.stencil = ##f
-                \override Staff.NoteHead.style = #'baroque
-                \accidentalStyle Score.forget
-                \override Rest.style = #'mensural
-                \override NoteHead.style = #'petrucci
-                \cadenzaOn
-                \cadenzaOff
-              }
-            >>
-            \layout {
-              \context {
-                \Score
-                \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1)
-              }
-            }
-          }
-        }
-        \null
-        \line {
-          \left-align {  \normal-text "ambo due d'Alamire" }
+          \left-align {  \normal-text "d'Alamire" }
         }
 
       }

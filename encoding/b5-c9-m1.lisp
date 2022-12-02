@@ -1,14 +1,14 @@
 `((:header
    (:filename "b5-c9-m1")
-   (:alt-name "m5.005")
+   (:alt-name "m5.005a")
    (:comment "q021_s212, origin: line 1 987, line 2 979,")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Del secondo Alamire: tutte le consonanze discendenti\\con le propinque di Alamire secondo")
    (:section-headings
-    (s1 "le quattro terze discendenti\\con le sue propinque")
-    (s2 "quinta\\ ")
-    (s3 "le quattro seste\\con le sue propinque")
-    (s4 "ottava\\ "))
+    (s1 "Le quattro terze discendenti\\con le sue propinque")
+    (s2 "Quinta\\ ")
+    (s3 "Le quattro seste\\con le sue propinque")
+    (s4 "Ottava\\ "))
    (:section-captions
     (s1 "terza minore / terza maggiore")
     (s2 "")
