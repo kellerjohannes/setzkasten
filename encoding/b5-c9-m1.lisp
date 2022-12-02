@@ -10,9 +10,9 @@
     (s3 "Le quattro seste\\con le sue propinque")
     (s4 "Ottava\\ "))
    (:section-captions
-    (s1 "terza minore / terza maggiore")
+    (s1 "Terza minore / Terza maggiore")
     (s2 "")
-    (s3 "sesta minore / sesta maggiore")
+    (s3 "Sesta minore / Sesta maggiore")
     (s4 ""))
    (:voice-labels
     (:all v1 "")
