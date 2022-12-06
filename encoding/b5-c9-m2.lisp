@@ -13,7 +13,8 @@
     (s1 "terza minore / terza maggiore")
     (s2 "")
     (s3 "sesta minore / sesta maggiore")
-    (s4 ""))
+    (s4 "")
+    )
    (:voice-labels
     (:all v1 "")
     (:all v2 "")))
@@ -36,7 +37,8 @@
            (:section s2) b38 b38 sh8 b38 sb8 b38 b38 b38 bl
            (:section s3) b38 b38 sb9 b38 b38 (:divider :regular) sbd9 b38 b38 bl
            b38 b38 sh9 b38 sb9 b38 sb10 b38 b22
-           (:section s4) cclef5 b38 b38 sh9 b38 sb9 b38 bl)
+           (:section s4) cclef5 b38 b38 sh9 b38 sb9 b38 bl
+           )
    (:text 70 58
           (288 nil "con le ſue propinque.")
           (1431 nil "con le ſue propinque."))
@@ -47,7 +49,8 @@
            (:section s2) b38 b38 sh4 b38 sb4 b38 b38 bl
            (:section s3) b38 sh4 b22 sb4 b22 sh4 b38 sb4 b38 bl
            b38 sh4 b22 sb4 b38 sh4 b22 sb4 b38 bl
-           (:section s4) b22 b38 sh4 b38 sb4 b38 b38 bl)
+           (:section s4) b22 b38 sh4 b38 sb4 b38 b38 bl
+           )
    (:text 110 58
           (49 nil "Terza minor.")
           (459 nil "ᴛerza magg.")

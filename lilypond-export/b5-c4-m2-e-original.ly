@@ -21,6 +21,7 @@ dot = {
       \fontsize#3 { \concat { \normal-text ""} }
     }
     \null
+
     \line {
       \center-column {
 

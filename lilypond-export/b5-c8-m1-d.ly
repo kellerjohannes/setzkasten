@@ -18,12 +18,24 @@ dot = {
   \center-column {
     \line {
       \center-align
-      \fontsize#3 { \concat { \normal-text ""} }
+      \fontsize#3 { \concat { \normal-text "[Del primo Alamire]"} }
+    }
+    \null
+    \line {
+      \center-align
+      \fontsize#2 { [Tutte le consonanze discendenti di Alamire primo] }
     }
     \null
     \line {
       \center-column {
+        \line {
+          \left-align {  \normal-text "Le quattro terze con" }
+        }
+        \line {
+          \left-align {  \normal-text "le sue propinque" }
+        }
 
+        \null
         \line {
           \score {
             <<
@@ -37,7 +49,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1   a1   a1   a1  
+                          (6 . ,NATURAL))  a1   a1 \bar "|"  a1   a1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -64,22 +76,20 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "le quattro terze" }
-        }
-        \line {
-          \left-align {  \normal-text "disotto" }
-        }
-        \line {
-          \left-align {  \normal-text "con le sue" }
-        }
-        \line {
-          \left-align {  \normal-text "propinque" }
+          \left-align {  \normal-text "Terza minore / terza maggiore" }
         }
 
       }
       \hspace #3 
       \center-column {
+        \line {
+          \left-align {  \normal-text " " }
+        }
+        \line {
+          \left-align {  \normal-text "Quinta" }
+        }
 
+        \null
         \line {
           \score {
             <<
@@ -118,15 +128,18 @@ dot = {
             }
           }
         }
-        \null
-        \line {
-          \left-align {  \normal-text "quinta" }
-        }
 
       }
       \hspace #3 
       \center-column {
+        \line {
+          \left-align {  \normal-text "Le quattro seste con" }
+        }
+        \line {
+          \left-align {  \normal-text "le sue propinque" }
+        }
 
+        \null
         \line {
           \score {
             <<
@@ -140,7 +153,7 @@ dot = {
                 \clef "treble_8"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1   a1  
+                          (6 . ,NATURAL))  a1   a1 \bar "|"  a1   a1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -153,7 +166,7 @@ dot = {
                 \clef "bass"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  cis1   \dot c1-.  
+                          (6 . ,NATURAL))  cis1   \dot c1-.   c1   bis,1  
                 \cadenzaOff
               }
             >>
@@ -167,66 +180,20 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "sesta minore" }
-        }
-        \line {
-          \left-align {  \normal-text "propinqua" }
+          \left-align {  \normal-text "Sesta minore / sesta maggiore" }
         }
 
       }
       \hspace #3 
       \center-column {
-
         \line {
-          \score {
-            <<
-              \new Staff \with { instrumentName = ""} {
-                \override Staff.TimeSignature.stencil = ##f
-                \override Staff.NoteHead.style = #'baroque
-                \accidentalStyle Score.forget
-                \override Rest.style = #'default
-                \override NoteHead.style = #'default
-                \cadenzaOn
-                \clef "treble_8"
-                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
-                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  a1   a1  
-                \cadenzaOff
-              }
-              \new Staff \with { instrumentName = ""} {
-                \override Staff.TimeSignature.stencil = ##f
-                \override Staff.NoteHead.style = #'baroque
-                \accidentalStyle Score.forget
-                \override Rest.style = #'default
-                \override NoteHead.style = #'default
-                \cadenzaOn
-                \clef "bass"
-                \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
-                          (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  c1   bis,1  
-                \cadenzaOff
-              }
-            >>
-            \layout {
-              \context {
-                \Score
-                \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1)
-              }
-            }
-          }
+          \left-align {  \normal-text " " }
         }
+        \line {
+          \left-align {  \normal-text "Ottava" }
+        }
+
         \null
-        \line {
-          \left-align {  \normal-text "sesta maggiore" }
-        }
-        \line {
-          \left-align {  \normal-text "propinqua" }
-        }
-
-      }
-      \hspace #3 
-      \center-column {
-
         \line {
           \score {
             <<
@@ -265,18 +232,26 @@ dot = {
             }
           }
         }
-        \null
-        \line {
-          \left-align {  \normal-text "ottava" }
-        }
 
       }
       \hspace #3 
     }
     \null
     \null
+    \line {
+      \center-align
+      \fontsize#2 { [Tutte le consonanze ascendenti di Alamire primo] }
+    }
+    \null
     \line {      \center-column {
+        \line {
+          \left-align {  \normal-text "Le quattro terze con" }
+        }
+        \line {
+          \left-align {  \normal-text "le sue propinque" }
+        }
 
+        \null
         \line {
           \score {
             <<
@@ -290,7 +265,7 @@ dot = {
                 \clef "treble"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  c'1   \dot c'1-.   cis'1   des'1  
+                          (6 . ,NATURAL))  c'1   \dot c'1-. \bar "|"  cis'1   des'1  
                 \cadenzaOff
               }
               \new Staff \with { instrumentName = ""} {
@@ -317,22 +292,20 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "le quattro terze" }
-        }
-        \line {
-          \left-align {  \normal-text "disopra" }
-        }
-        \line {
-          \left-align {  \normal-text "con le" }
-        }
-        \line {
-          \left-align {  \normal-text "propinque" }
+          \left-align {  \normal-text "Terza minore / terza maggiore" }
         }
 
       }
       \hspace #3 
       \center-column {
+        \line {
+          \left-align {  \normal-text " " }
+        }
+        \line {
+          \left-align {  \normal-text "Quinta" }
+        }
 
+        \null
         \line {
           \score {
             <<
@@ -371,15 +344,18 @@ dot = {
             }
           }
         }
-        \null
-        \line {
-          \left-align {  \normal-text "quinta" }
-        }
 
       }
       \hspace #3 
       \center-column {
+        \line {
+          \left-align {  \normal-text "Le quattro seste con" }
+        }
+        \line {
+          \left-align {  \normal-text "le sue propinque" }
+        }
 
+        \null
         \line {
           \score {
             <<
@@ -420,22 +396,20 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "le quattro sorti" }
-        }
-        \line {
-          \left-align {  \normal-text "di seste" }
-        }
-        \line {
-          \left-align {  \normal-text "con le sue" }
-        }
-        \line {
-          \left-align {  \normal-text "propinque" }
+          \left-align {  \normal-text "Sesta minore / sesta maggiore" }
         }
 
       }
       \hspace #3 
       \center-column {
+        \line {
+          \left-align {  \normal-text " " }
+        }
+        \line {
+          \left-align {  \normal-text "Ottava" }
+        }
 
+        \null
         \line {
           \score {
             <<
@@ -473,10 +447,6 @@ dot = {
               }
             }
           }
-        }
-        \null
-        \line {
-          \left-align {  \normal-text "ottava" }
         }
 
       }
