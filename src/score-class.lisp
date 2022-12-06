@@ -44,7 +44,11 @@
             :documentation "This string contains text to be displayed centered below the section.")
    (newlinep :initform nil
              :accessor newlinep
-             :documentation "If T then this section should go on a new line, only relevant for backends such as lilypond."))
+             :documentation "If T then this section should go on a new line, only relevant for backends such as lilypond.")
+   (line-heading :initform nil
+                  :initarg :line-heading
+                  :accessor line-heading
+                  :documentation "This strings contains the heading of a new line, only applicaple if `newlinep' is T."))
   (:documentation "This class contains all information of one section of the score. It acts independently of other sections."))
 
 (defclass voice ()
@@ -139,6 +143,10 @@
 (defmethod set-newline ((score score) section-id)
   "Sets the `newlinep' flag to T."
   (setf (newlinep (get-section score section-id)) t))
+
+(defmethod set-line-heading ((score score) section-id heading)
+  "Sets the line heading for a section."
+  (setf (line-heading (get-section score section-id)) heading))
 
 (defmethod get-voice-in-section ((score score) section-id voice-id)
   "Returns the instance of `voice', referenced by its `id' and the `id' of a section within the instance of `score'."

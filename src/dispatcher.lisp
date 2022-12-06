@@ -90,6 +90,11 @@
                      ))
     (execute-mission mission)))
 
+(defparameter *debug*
+  `(
+    ("b5-c8-m1" "debug" (:idealised :it) ,*lilypond-backend-modern*)
+    ))
+
 (defparameter *working*
   `(
     ("b5-c9-m2" "a" (:diplomatic) ,*vicentino-types-backend*)

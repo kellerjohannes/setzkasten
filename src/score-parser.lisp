@@ -13,10 +13,10 @@
    (key-signature :initform '(nil nil nil nil nil nil nil)
                   :accessor key-signature
                   :documentation "This carries information about key signatures. It is provided in the form of a list of 7 atoms, describing the alterations of a c major scale (see Lilypond key signature syntax), either with nil, :flat or :sharp.")
-   (section-id :initform 'a
+   (section-id :initform nil
                :accessor section-id
                :documentation "This symbol carries the current section id, it is used to direct score information into the correct `section' instance.")
-   (voice-id :initform 1
+   (voice-id :initform nil
              :accessor voice-id
              :documentation "This symbol carries the current voice id, it is used to direct score information into the correct `voice' instance.")
    (object-id-counter :initform 0
@@ -24,7 +24,10 @@
                       :documentation "This counter can be used to create unique ids for score objects. The car represents the line, the cdr the musical object.")
    (divider-flag :initform nil
                  :accessor divider-flag
-                 :documentation "Registers divider-information in the score encoding data, so that the mobject slot `divider' can be set for the next note accordingly."))
+                 :documentation "Registers divider-information in the score encoding data, so that the mobject slot `divider' can be set for the next note accordingly.")
+   (line-headings :initform nil
+                  :accessor line-headings
+                  :documentation "Stores a list of strings representing line headings (on the level of subtitles). It will be recursively shortened while parsing the score data."))
   (:documentation "This class keeps track of various elements during the reading process of score encoding data."))
 
 
@@ -53,6 +56,13 @@
 (defmethod reset-divider-flag ((parser-state parser-state))
   (setf (divider-flag parser-state) nil))
 
+(defmethod set-line-headings ((parser-state parser-state) heading-list)
+  (setf (line-headings parser-state) heading-list))
+
+(defmethod pop-line-heading ((parser-state parser-state))
+  (let ((result (first (line-headings parser-state))))
+    (setf (line-headings parser-state) (rest (line-headings parser-state)))
+    result))
 
 (defparameter *gamut*
   '((:c . 1) (:d . 1) (:e . 1) (:f . 1) (:g . 1) (:a . 1) (:b . 1)
@@ -184,10 +194,15 @@
         (let ((candidate (first rest-music)))
           (if (listp candidate)
               (case (first candidate)
-                (:section (setf (section-id parser-state) (second candidate)))
+                (:section
+                 (unless (section-id parser-state)
+                   (set-line-heading score (second candidate) (pop-line-heading parser-state)))
+                 (setf (section-id parser-state) (second candidate)))
                 (:voice (setf (voice-id parser-state) (second candidate)))
                 (:f-clef (raise-f-clef-flag parser-state))
-                (:newline (set-newline score (section-id parser-state)))
+                (:newline
+                 (set-newline score (section-id parser-state))
+                 (set-line-heading score (section-id parser-state) (pop-line-heading parser-state)))
                 (:divider (setf (divider-flag parser-state) (second candidate)))
                 (:key-signature
                  (set-key-signature parser-state (rest candidate))
@@ -209,14 +224,20 @@
   (setf (title score) (first (extract-item :header :title score-data)))
   (setf (comment score) (first (extract-item :header :comment score-data)))
   (setf (creator score) (first (extract-item :header :creator score-data)))
+  ;; TODO insert cond in case metadata entry is not present
   (mapc (lambda (this-heading)
           (when this-heading
             (set-section-heading* score (first this-heading) (second this-heading))))
         (extract-item :header :section-headings score-data))
+  ;; TODO insert cond in case metadata entry is not present
   (mapc (lambda (this-caption)
           (when this-caption
             (set-section-caption* score (first this-caption) (second this-caption))))
         (extract-item :header :section-captions score-data))
+  (let ((headings (extract-item :header :line-headings score-data)))
+    (when headings
+      (set-line-headings parser-state headings)))
+  ;; TODO insert cond in case metadata entry is not present
   (mapc (lambda (this-label)
           (when this-label
             (if (eq (first this-label) :all)

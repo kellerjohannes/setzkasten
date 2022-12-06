@@ -298,7 +298,13 @@
 ~4,0t}
 ~4,0t\\null
 ~4,0t\\null
-~4,0t\\line {")))
+~@[~4,0t\\line {
+~6,0t\\center-align
+~6,0t\\fontsize#2 { ~a }
+~4,0t}
+~4,0t\\null~]
+~4,0t\\line {"
+                              (line-heading section))))
     (if (newlinep section)
         (concatenate 'string newline-code section-code)
         section-code)))
@@ -329,6 +335,11 @@ dot = {
 ~6,0t\\fontsize#3 { \\concat {~a} }
 ~4,0t}~}
 ~4,0t\\null~]
+~@[~4,0t\\line {
+~6,0t\\center-align
+~6,0t\\fontsize#2 { ~a }
+~4,0t}
+~4,0t\\null~]
 ~4,0t\\line {
 ~{~a ~&~}
 ~4,0t}
@@ -338,8 +349,11 @@ dot = {
           (mapcar (lambda (textline)
                     (generate-formatted-text (split-formatted-string textline)))
                   (split-string-to-list (title score) "\\"))
+          (line-heading (first (sections score)))
           (mapcar (lambda (section)
-                    (generate-section-ly-code section backend (find-shortest-duration score)))
+                    (generate-section-ly-code section
+                                              backend
+                                              (find-shortest-duration score)))
                   (sections score))))
 
 

@@ -18,7 +18,10 @@
     (s9 "ottava"))
    (:voice-labels
     (:all v1 "")
-    (:all v2 "")))
+    (:all v2 ""))
+   (:line-headings
+    "Heading 1"
+    "Heading 2"))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)
