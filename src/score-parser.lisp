@@ -27,7 +27,10 @@
                  :documentation "Registers divider-information in the score encoding data, so that the mobject slot `divider' can be set for the next note accordingly.")
    (line-headings :initform nil
                   :accessor line-headings
-                  :documentation "Stores a list of strings representing line headings (on the level of subtitles). It will be recursively shortened while parsing the score data."))
+                  :documentation "Stores a list of strings representing line headings (on the level of subtitles). It will be recursively shortened while parsing the score data.")
+   (bracket-configuration :initform nil
+                          :accessor bracket-configuration
+                          :documentation "Stores dimensions relevant for the lilypond-rendering of bracketed staffs."))
   (:documentation "This class keeps track of various elements during the reading process of score encoding data."))
 
 
@@ -185,6 +188,11 @@
     (when (member item dot-list) (return t))
     (when (member item note-list) (return nil))))
 
+(defmethod dump-bracket-info ((score score) (parser-state parser-state))
+  (set-section-bracket* score (section-id parser-state)
+                        (cdr (assoc (section-id parser-state)
+                                    (bracket-configuration parser-state)))))
+
 (defmethod process-music ((score score) (parser-state parser-state) music-data)
   "Process a :music field in the score encoding data, element by element. Populate the `score' instance."
   (dolist (music-line music-data)
@@ -200,6 +208,7 @@
                  (setf (section-id parser-state) (second candidate)))
                 (:voice (setf (voice-id parser-state) (second candidate)))
                 (:f-clef (raise-f-clef-flag parser-state))
+                (:bracketed (dump-bracket-info score parser-state))
                 (:newline
                  (set-newline score (section-id parser-state))
                  (set-line-heading score (section-id parser-state) (pop-line-heading parser-state)))
@@ -219,38 +228,45 @@
                                       *list-of-notes*))))))))
 
 (defmethod process-metadata ((score score) (parser-state parser-state) score-data)
-  "Process the backend-agnostic :header information in the score encoding data and write it into the `score' instance."
+  "Process the backend-agnostic :header information in the score encoding data and
+   write it into the `score' instance."
   (setf (filename score) (first (extract-item :header :filename score-data)))
   (setf (title score) (first (extract-item :header :title score-data)))
   (setf (comment score) (first (extract-item :header :comment score-data)))
   (setf (creator score) (first (extract-item :header :creator score-data)))
-  ;; TODO insert cond in case metadata entry is not present
-  (mapc (lambda (this-heading)
-          (when this-heading
-            (set-section-heading* score (first this-heading) (second this-heading))))
-        (extract-item :header :section-headings score-data))
-  ;; TODO insert cond in case metadata entry is not present
-  (mapc (lambda (this-caption)
-          (when this-caption
-            (set-section-caption* score (first this-caption) (second this-caption))))
-        (extract-item :header :section-captions score-data))
+  (let ((headings (extract-item :header :section-headings score-data)))
+    (when headings
+      (mapc (lambda (this-heading)
+              (when this-heading
+                (set-section-heading* score (first this-heading) (second this-heading))))
+            headings)))
+  (let ((captions (extract-item :header :section-captions score-data)))
+    (when captions
+      (mapc (lambda (this-caption)
+              (when this-caption
+                (set-section-caption* score (first this-caption) (second this-caption))))
+            captions)))
   (let ((headings (extract-item :header :line-headings score-data)))
     (when headings
       (set-line-headings parser-state headings)))
-  ;; TODO insert cond in case metadata entry is not present
-  (mapc (lambda (this-label)
-          (when this-label
-            (if (eq (first this-label) :all)
-                (dolist (this-section (sections score))
-                  (set-voice-label* score
-                                    (id this-section)
-                                    (second this-label)
-                                    (third this-label)))
-                (set-voice-label* score
-                                  (first this-label)
-                                  (second this-label)
-                                  (third this-label)))))
-        (extract-item :header :voice-labels score-data)))
+  (let ((bracket-configuration (extract-item :preamble-lilypond :brackets score-data)))
+    (when bracket-configuration
+      (setf (bracket-configuration parser-state) bracket-configuration)))
+  (let ((label-list (extract-item :header :voice-labels score-data)))
+    (when label-list
+      (mapc (lambda (this-label)
+              (when this-label
+                (if (eq (first this-label) :all)
+                    (dolist (this-section (sections score))
+                      (set-voice-label* score
+                                        (id this-section)
+                                        (second this-label)
+                                        (third this-label)))
+                    (set-voice-label* score
+                                      (first this-label)
+                                      (second this-label)
+                                      (third this-label)))))
+            label-list))))
 
 (defun parse-score (data suffix)
   (let ((score (make-instance 'score))

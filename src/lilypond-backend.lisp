@@ -261,6 +261,20 @@
               (generate-formatted-text (split-formatted-string textline)))
             (split-string-to-list text-string "\\"))))
 
+(defun generate-l-bracket-string (bracket-data)
+  (format nil "\\path #0.20 #'((moveto ~a ~a) (rlineto -0.5 0) (rlineto 0 ~a) (rlineto 0.5 0))"
+          (first bracket-data)
+          (second bracket-data)
+          (third bracket-data)))
+
+;; "\\path #0.25 #'((moveto 0 12) (rlineto -0.5 0) (rlineto 0 -16) (rlineto 0.5 0))"
+
+(defun generate-r-bracket-string (bracket-data)
+  (format nil "\\path #0.20 #'((moveto ~a ~a) (rlineto 0.5 0) (rlineto 0 ~a) (rlineto -0.5 0))"
+          (fourth bracket-data)
+          (fifth bracket-data)
+          (sixth bracket-data)))
+
 (defmethod generate-section-ly-code ((section section) (backend lilypond-backend) shortest-duration)
   "`shortest-duration' in Lilypond note value (1/2 for minima)."
   (let ((section-code (format nil "~
@@ -268,17 +282,20 @@
 ~@[~a
 ~8,0t\\null~]
 ~8,0t\\line {
+~@[~10,0t~a~]
 ~10,0t\\score {
 ~12,0t<<
 ~{~&~a~}
 ~12,0t>>
 ~12,0t\\layout {
+~@[~14,0tindent = ~a\\cm~]
 ~14,0t\\context {
 ~16,0t\\Score
 ~16,0t\\override SpacingSpanner.common-shortest-duration = #(ly:make-moment ~a)
 ~14,0t}
 ~12,0t}
 ~10,0t}
+~@[~10,0t~a~]
 ~8,0t}
 ~@[~8,0t\\null
 ~a~]
@@ -287,10 +304,15 @@
           (if (string= (heading section) "")
               nil
               (generate-multiline-text (heading section)))
+          (when (bracket section)
+            (generate-l-bracket-string (bracket section)))
           (mapcar (lambda (voice)
                     (generate-voice-ly-code voice backend))
                   (voices section))
+          (when (bracket section) 0)
           shortest-duration
+          (when (bracket section)
+            (generate-r-bracket-string (bracket section)))
           (if (string= (caption section) "")
               nil
               (generate-multiline-text (caption section)))))

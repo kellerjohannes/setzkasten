@@ -48,7 +48,11 @@
    (line-heading :initform nil
                   :initarg :line-heading
                   :accessor line-heading
-                  :documentation "This strings contains the heading of a new line, only applicaple if `newlinep' is T."))
+                  :documentation "This strings contains the heading of a new line, only applicaple if `newlinep' is T.")
+   (bracket :initform nil
+            :initarg :bracket
+            :accessor bracket
+            :documentation "List of six numbers: x and y shift and vertical length for right and left bracket."))
   (:documentation "This class contains all information of one section of the score. It acts independently of other sections."))
 
 (defclass voice ()
@@ -114,6 +118,12 @@
   "Returns the instance of a `section' based on its `id', given a `score' instance."
   (find section-id (sections score) :key #'id :test #'string=))
 
+(defmethod set-section-bracket* ((score score) id data)
+  (let ((candidate (get-section score id)))
+    (if candidate
+        (setf (bracket candidate) data)
+        (add-section score (make-instance 'section :id id :bracket data)))))
+
 (defmethod set-section-heading* ((score score) id new-heading)
   "Sets the `heading' of a section referenced by its `id'. If no `section' instance with this `id' exists in `score', it will will be created."
   (let ((candidate (get-section score id)))
@@ -147,6 +157,7 @@
 (defmethod set-line-heading ((score score) section-id heading)
   "Sets the line heading for a section."
   (setf (line-heading (get-section score section-id)) heading))
+
 
 (defmethod get-voice-in-section ((score score) section-id voice-id)
   "Returns the instance of `voice', referenced by its `id' and the `id' of a section within the instance of `score'."
