@@ -18,7 +18,7 @@ dot = {
   \center-column {
     \line {
       \center-align
-      \fontsize#3 { \concat { \normal-text "Del secondo Alamire: "} }
+      \fontsize#3 { \concat { \normal-text "Del secondo Alamire"} }
     }
     \null
     \line {
@@ -76,7 +76,7 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "Terza minore / Terza maggiore" }
+          \left-align {  \normal-text "Terza minore / terza maggiore" }
         }
 
       }
@@ -180,7 +180,7 @@ dot = {
         }
         \null
         \line {
-          \left-align {  \normal-text "Sesta minore / Sesta maggiore" }
+          \left-align {  \normal-text "Sesta minore / sesta maggiore" }
         }
 
       }
