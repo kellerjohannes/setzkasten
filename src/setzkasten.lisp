@@ -23,3 +23,8 @@
   (pathname "~/common-lisp/setzkasten/lilypond-export/"))
 (defparameter *lilypond-path*
   (pathname "/usr/bin/lilypond"))
+
+
+;; TODO: bracketed sections
+;; \postscript "0 12 rmoveto -0.5 0 rlineto 0 -16 rlineto 0.5 0 rlineto stroke"
+;; indent = 0\cm
