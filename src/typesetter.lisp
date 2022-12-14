@@ -75,18 +75,20 @@
 (defmethod add-stencil-to-line ((score typesetter) (stencil glyph))
   (push stencil (first (line-container score))))
 
+(define-condition stencil-not-found (error)
+  ((id :initarg :id :reader id)))
+
 (defun get-stencil (id stencils)
   (let ((result (find id stencils :test #'string= :key #'id)))
-    (if result
-        result
-        ;; (format t "~&~a not found." id)
-        )))
+    (if result result (error 'stencil-not-found :id id))))
 
 (defmethod add-music-line ((score typesetter) music-data stencil-list)
   (push '() (line-container score))
   (push (second music-data) (line-width-list score))
   (mapc (lambda (element)
-          (add-stencil-to-line score (get-stencil element stencil-list)))
+          (handler-case (add-stencil-to-line score (get-stencil element stencil-list))
+            (stencil-not-found () (format t "~&Stencil with id '~a' not found, skipping."
+                                          element))))
         (rest (rest music-data)))
   (push (second music-data) (first (line-container score)))
   (push :music (first (line-container score))))
