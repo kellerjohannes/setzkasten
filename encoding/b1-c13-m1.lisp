@@ -71,6 +71,7 @@
    (:music 2200
            (:section s10)
            (:key-signature nil nil nil nil nil nil nil)
+           (:newline)
            cclef7 b27 b27 b27 brdl5 b22 flrev4 b27 b27 b27 bl
            (:section s11)
            b27 b27 b27 sbd5 b22 flrev4 b22 b27 b27 bl

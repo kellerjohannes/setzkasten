@@ -7,13 +7,13 @@
    (:section-headings
     (s1 ""))
    (:section-captions
-    (s1 "salto di quinta\\imperfetta naturale\\incomposto")
-    (s2 "salto di quinta\\imperfetta naturale\\incomposto")
-    (s3 "salto di quinta\\imperfetta naturale\\incomposto")
-    (s4 "salto di quinta\\imperfetta naturale\\incomposto")
-    (s5 "salto di quinta\\imperfetta naturale\\incomposto")
-    (s6 "salto di quinta\\imperfetta naturale\\incomposto")
-    (s7 "salto di quinta\\imperfetta naturale\\incomposto"))
+    (s1 "salto di quinta\\imperfetta\\naturale\\incomposto")
+    (s2 "salto di quinta\\imperfetta\\naturale\\incomposto")
+    (s3 "salto di quinta\\imperfetta\\naturale\\incomposto")
+    (s4 "salto di quinta\\imperfetta\\naturale\\incomposto")
+    (s5 "salto di quinta\\imperfetta\\naturale\\incomposto")
+    (s6 "salto di quinta\\imperfetta\\naturale\\incomposto")
+    (s7 "salto di quinta\\imperfetta\\naturale\\incomposto"))
    (:voice-labels
     (:all v1 "")))
   (:preamble-type-imitation

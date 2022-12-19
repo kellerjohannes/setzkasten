@@ -15,17 +15,17 @@
   )
 
 (defparameter *svg-export-path*
-  (pathname "~/common-lisp/setzkasten/svg-export/"))
+  (pathname "~/common-lisp/setzkasten-output/svg/"))
 (defparameter *apparatus-export-path*
-  (pathname "~/common-lisp/setzkasten/apparatus-export/"))
+  (pathname "~/common-lisp/setzkasten-output/apparatus/"))
 (defparameter *encoding-source*
   (pathname "~/common-lisp/setzkasten/encoding/"))
 (defparameter *log-file-path*
-  (pathname "~/common-lisp/setzkasten/logfiles/"))
+  (pathname "~/common-lisp/setzkasten-output/logfiles/"))
 (defparameter *configuration-path*
   (pathname "~/common-lisp/setzkasten/backend-configuration/"))
 (defparameter *lilypond-export-path*
-  (pathname "~/common-lisp/setzkasten/lilypond-export/"))
+  (pathname "~/common-lisp/setzkasten-output/ly/"))
 (defparameter *lilypond-path*
   (pathname "/usr/bin/lilypond"))
 

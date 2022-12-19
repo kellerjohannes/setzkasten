@@ -7,14 +7,14 @@
    (:section-headings
     (s1 ""))
    (:section-captions
-    (s1 "grado di terza\\maggiore naturale")
-    (s2 "grado di terza\\maggiore naturale")
-    (s3 "grado di terza\\maggiore naturale")
-    (s4 "grado di terza\\maggiore naturale")
-    (s5 "terza maggiore\\composta naturale")
-    (s6 "terza maggiore\\composta naturale")
-    (s7 "terza maggiore\\composta naturale")
-    (s8 "terza maggiore\\composta naturale"))
+    (s1 "grado di terza\\maggiore\\naturale")
+    (s2 "grado di terza\\maggiore\\naturale")
+    (s3 "grado di terza\\maggiore\\naturale")
+    (s4 "grado di terza\\maggiore\\naturale")
+    (s5 "terza maggiore\\composta\\naturale")
+    (s6 "terza maggiore\\composta\\naturale")
+    (s7 "terza maggiore\\composta\\naturale")
+    (s8 "terza maggiore\\composta\\naturale"))
    (:voice-labels
     (:all v1 "")))
   (:preamble-type-imitation
