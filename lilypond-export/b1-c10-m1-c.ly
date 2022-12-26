@@ -23,8 +23,8 @@ dot = {
     \null
     \line {
       \center-column {
-
         \line {
+          \postscript "8 4 moveto -0.5 0 rlineto 0 -9 rlineto 0.5 0 rlineto stroke"
           \score {
             <<
               \new Staff \with { instrumentName = ""} {
@@ -37,7 +37,7 @@ dot = {
                 \clef "bass"
                 \key c #`((0 . ,NATURAL) (1 . ,NATURAL) (2 . ,NATURAL)
                           (3 . ,NATURAL) (4 . ,NATURAL) (5 . ,NATURAL)
-                          (6 . ,NATURAL))  b,1   c1   cis1   e1  
+                          (6 . ,NATURAL))  b,1   c1   cis1   e1
                 \cadenzaOff
               }
             >>
@@ -48,10 +48,11 @@ dot = {
               }
             }
           }
+            \postscript "1 4 moveto 0.5 0 rlineto 0 -9 rlineto -0.5 0 rlineto stroke"
         }
 
       }
-      \hspace #3 
+      \hspace #3
 
     }
   }
