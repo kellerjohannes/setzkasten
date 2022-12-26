@@ -42,6 +42,7 @@
                                     ((:b :sharp nil) "b" "is" "")
                                     ((:c nil :dot) "\\dot c" "" "-.")
                                     ((:c :flat :dot) "\\dot c" "es" "-.")
+                                    ((:c :flat nil) "c" "es" "")
                                     ((:c nil :comma) "c" "" "^\\markup{\\hspace #0.8 ,}")
                                     ((:d nil nil) "d" "" "")
                                     ((:c :sharp nil) "c" "is" "")

@@ -7,14 +7,14 @@
    (:section-headings
     (s1 ""))
    (:section-captions
-    (s1 "diesis maggiore")
-    (s2 "diesis maggiore")
-    (s3 "diesis maggiore")
-    (s4 "diesis maggiore")
-    (s5 "diesis maggiore")
-    (s6 "diesis maggiore")
-    (s7 "diesis maggiore")
-    (s8 "diesis maggiore"))
+    (s1 "diesis\\maggiore")
+    (s2 "diesis\\maggiore")
+    (s3 "diesis\\maggiore")
+    (s4 "diesis\\maggiore")
+    (s5 "diesis\\maggiore")
+    (s6 "diesis\\maggiore")
+    (s7 "diesis\\maggiore")
+    (s8 "diesis\\maggiore"))
    (:voice-labels
     (:all v1 "")))
   (:preamble-type-imitation

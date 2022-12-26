@@ -7,14 +7,14 @@
    (:section-headings
     (s1 ""))
    (:section-captions
-    (s1 "grado di 3\\minore naturale\\incomposto")
-    (s2 "grado di 3\\minore naturale\\incomposto")
-    (s3 "grado di 3\\minore naturale\\incomposto")
-    (s4 "grado di 3\\minore naturale\\incomposto")
-    (s5 "terza minore\\composto di tono\\e semitono")
-    (s6 "terza minore\\composto di semitono\\e tono")
-    (s7 "terza minore\\composto di semitono\\e tono")
-    (s8 "terza minore\\composto di tono\\e semitono"))
+    (s1 "grado di 3\\minore\\naturale\\incomposto")
+    (s2 "grado di 3\\minore\\naturale\\incomposto")
+    (s3 "grado di 3\\minore\\naturale\\incomposto")
+    (s4 "grado di 3\\minore\\naturale\\incomposto")
+    (s5 "terza minore\\composto\\di tono\\e semitono")
+    (s6 "terza minore\\composto\\di semitono\\e tono")
+    (s7 "terza minore\\composto\\di semitono\\e tono")
+    (s8 "terza minore\\composto\\di tono\\e semitono"))
    (:voice-labels
     (:all v1 "")))
   (:preamble-type-imitation
