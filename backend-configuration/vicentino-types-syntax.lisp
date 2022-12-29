@@ -74,7 +74,12 @@
    ((id "barline")
     (overhead 0.2)
     (thickness 15)))
-  ;; more to add
+  (component-meter-tempus
+   ((id "tempus")
+    (thickness 2)
+    (opening-angle 160))
+   ((diameter 2)))
+
   (glyph-staff
    ((id "glyph-staff")
     (staff-component :instance)
@@ -194,4 +199,12 @@
     (dot-component :instance)
     (glyph-width 80)
     (glyph-height 1500)
-    (dot-position 5))))
+    (dot-position 5)))
+  (glyph-meter
+   ((id "meter")
+    (staff-component :instance)
+    (tempus-component :instance)
+    (prolatio-component :instance)
+    (diminutio-component :instance)
+    (glyph-width 80)
+    (glyph-height 1500))))

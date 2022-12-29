@@ -83,4 +83,5 @@
   (glyph-c-clef                 cclef7 "c-clef-7" "stave" "c-clef" 66 ,*glyph-height* 7)
   (glyph-rest mrest5 "minima-rest-5" "stave" "minima-rest" 23 ,*glyph-height* 5 :up)
   (glyph-rest mrest3 "minima-rest-3" "stave" "minima-rest" 23 ,*glyph-height* 3 :up)
+  (glyph-meter met-perf-min "meter-perfectum-minor" "stave" "tempus-perfectum" nil nil 68 ,*glyph-height*)
   )

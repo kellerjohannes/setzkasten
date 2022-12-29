@@ -673,7 +673,44 @@
         (svg-data stencil))
   (call-next-method))
 
+(defmethod draw-tempus ((stencil glyph-meter))
+  (let ((y (calculate-absolute-staff-position stencil
+                                              (* 1
+                                                 (number-of-lines (staff-component stencil)))))
+        (r (* 1/2 (distance-between-lines (staff-component stencil))
+              (diameter (tempus-component stencil))))
+        (angle-2 (* 1/2 (opening-angle (tempus-component stencil)))))
+    (if (zerop (opening-angle (tempus-component stencil)))
+        (output-circle (h-center stencil)
+                       y
+                       r
+                       (ink-color stencil)
+                       nil
+                       (thickness (tempus-component stencil)))
+        (output-arc (h-center stencil)
+                    y
+                    r
+                    (+ 90 angle-2)
+                    (- 90 angle-2)
+                    (ink-color stencil)
+                    nil
+                    (thickness (tempus-component stencil))))))
 
+(defmethod draw-prolatio ((stencil glyph-meter)))
+
+(defmethod draw-diminutio ((stencil glyph-meter)))
+
+(defmethod cast ((stencil glyph-meter))
+  "Generates SVG data for a meter signature."
+  (push (draw-tempus stencil)
+        (svg-data stencil))
+  (when (prolatio-component stencil)
+    (push (draw-prolatio stencil)
+          (svg-data stencil)))
+  (when (diminutio-component stencil)
+    (push (draw-diminutio stencil)
+          (svg-data stencil)))
+  (call-next-method))
 
 
 ;;; BOOKMARK: transcoding until here

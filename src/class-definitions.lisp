@@ -58,6 +58,21 @@
   (flag-y-offset nil "Relative to note head width.")
   )
 
+(define-setzkasten-class component-meter-tempus (component)
+  "Parameters for the creation of tempus-signs (circle or semicircle)."
+  (thickness 2 "Line thickness.")
+  (diameter 2 "Diameter of the circle in staff spaces.")
+  (opening-angle 160 "Angle describing the opening. If nil, a circle will be drawn."))
+
+(define-setzkasten-class component-meter-prolatio (component)
+  "Parameters for the creation of prolatio-dots."
+  (diameter 0.2 "Diameter of the circular dot, in distance-between-lines."))
+
+(define-setzkasten-class component-meter-diminutio (component)
+  "Parameters for the creation of vertical lines."
+  (thickness 2 "Line thickness.")
+  (line-length 5.5 "Line length in distance-between-lines."))
+
 (define-setzkasten-class component-rest (component)
   "Parameters for the creation of rests."
   (vertical-length 0.5 "Length of the vertical line, in proportion to the space between staff lines. Negative value for hanging rests, positive value for sitting rests.")
@@ -171,6 +186,12 @@
 (define-setzkasten-class glyph-notehead-flag (glyph-notehead-stem)
   "Specification for the casting of a stem, as a subcomponent of a note stem."
   (flag-component nil "Instance of component-flag. If nil, no flag will be generated."))
+
+(define-setzkasten-class glyph-meter (glyph-staff)
+  "Specification of a type with a meter signature."
+  (tempus-component nil)
+  (prolatio-component nil)
+  (diminutio-component nil))
 
 (define-setzkasten-class glyph-rest (glyph-staff)
   "Specification of a type containing a rest."

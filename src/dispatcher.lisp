@@ -99,15 +99,11 @@
 
 (defparameter *working*
   `(
-    ("b5-c16-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ("b5-c16-m1" "b" (:idealised) ,*vicentino-types-backend*)
-    ("b5-c16-m1" "c-original" (:idealised :it) ,*lilypond-backend-original*)
-    ("b5-c16-m1" "d-original" (:idealised :de) ,*lilypond-backend-original*)
-    ("b5-c16-m1" "e-original" (:idealised :en) ,*lilypond-backend-original*)
-    ("b5-c16-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
-    ("b5-c16-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
-    ("b5-c16-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
-
+    ("b3-c51-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c51-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c51-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b3-c51-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ("b3-c51-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
     ))
 
 (defparameter *book5-original*
@@ -145,6 +141,9 @@
     ("b5-c15-m1" "c-original" (:idealised :it) ,*lilypond-backend-original*)
     ("b5-c15-m1" "d-original" (:idealised :de) ,*lilypond-backend-original*)
     ("b5-c15-m1" "e-original" (:idealised :en) ,*lilypond-backend-original*)
+    ("b5-c16-m1" "c-original" (:idealised :it) ,*lilypond-backend-original*)
+    ("b5-c16-m1" "d-original" (:idealised :de) ,*lilypond-backend-original*)
+    ("b5-c16-m1" "e-original" (:idealised :en) ,*lilypond-backend-original*)
     ))
 
 (defparameter *book5-modern*
@@ -182,6 +181,9 @@
     ("b5-c15-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
     ("b5-c15-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
     ("b5-c15-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b5-c16-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b5-c16-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ("b5-c16-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
     ))
 
 (defparameter *book5-types*
@@ -208,6 +210,8 @@
     ("b5-c14-m1" "b" (:idealised) ,*vicentino-types-backend*)
     ("b5-c15-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b5-c15-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b5-c16-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b5-c16-m1" "b" (:idealised) ,*vicentino-types-backend*)
     ))
 
 

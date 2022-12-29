@@ -16,4 +16,5 @@
   (component-dot         nil "comma"               80 :comma)
   (component-c-clef      nil "c-clef"              5.5 10.5 3.5 0.8 1.2 2.2 1 0.6)
   (component-c-clef      nil "c-clef-short"        5.5 10.5 3.5 0.8 1.2 1.2 1.2 0.6)
-  (component-rest        nil "minima-rest"         0.55 8 0 0))
+  (component-rest        nil "minima-rest"         0.55 8 0 0)
+  (component-meter-tempus nil "tempus-perfectum"   8 290))
