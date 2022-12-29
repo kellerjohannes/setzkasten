@@ -87,9 +87,10 @@
                      *book1-modern*
                      *book2-modern*
                      *book5-modern*
-                     *book1-original*
-                     *book2-original*
-                     *book5-original*))
+                     ;;*book1-original*
+                     ;;*book2-original*
+                     ;;*book5-original*
+                     ))
     (execute-mission mission)))
 
 (defparameter *debug*

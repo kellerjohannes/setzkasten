@@ -26,22 +26,14 @@
           (230 1732 "ᴇſſempio del grado di ᴛerza maggiore naturale, incompoﬆo & compoſto."))
    (:music 2213
            (:voice v1)
-           (:section s1)
-           cclef7 b38 sb0 b38 sb2 b38 bl
-           (:section s2)
-           b38 sb3 b38 sb5 b38 bl
-           (:section s3)
-           b38 sb9 b38 sb7 b38 bl
-           (:section s4)
-           b38 sb6 b38 sb4 b38 bl
-           (:section s5)
-           b27 sb0 b38 sb1 b38 sb2 b22 bl
-           (:section s6)
-           b27 sb3 b22 sb4 b22 sb5 bl
-           (:section s7)
-           b22 sb9 b22 sb8 b22 sb7 b22 bl
-           (:section s8)
-           sb6 b22 sb5 b22 sb4 b22 bl)
+           (:section s1) cclef7 b38 sb0 b38 sb2 b38 bl
+           (:section s2) b38 sb3 b38 sb5 b38 bl
+           (:section s3) b38 sb9 b38 sb7 b38 bl
+           (:section s4) b38 sb6 b38 sb4 b38 bl
+           (:section s5) (:newline) b27 sb0 b38 sb1 b38 sb2 b22 bl
+           (:section s6) b27 sb3 b22 sb4 b22 sb5 bl
+           (:section s7) b22 sb9 b22 sb8 b22 sb7 b22 bl
+           (:section s8) sb6 b22 sb5 b22 sb4 b22 bl)
    (:text 80 58
           (0 nil "grado di 3.")
           (310 nil "gra.di 3.")

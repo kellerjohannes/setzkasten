@@ -24,10 +24,6 @@
     (s17 "")
     (s18 ""))
    (:section-captions
-    (s1 "")
-    (s2 "")
-    (s3 "")
-    (s4 "")
     (s5 "salto dubbioso")
     (s6 "a 5")
     (s7 "salto dubbioso")
@@ -60,7 +56,7 @@
            (:section s4) sb7 b38 sb7 bl
            (:section s5) sb7 b38 sh7 b38 sb7 bl
            (:section s6) sb7 b38 sb8 b22 bl
-           (:section s7) sb5 b38 fl6 b38 sb6 bl
+           (:section s7) (:newline) sb5 b38 fl6 b38 sb6 bl
            (:section s8) sb7 b38 sb3 b22 bl
            (:section s9) b38 sb8 b38 sb4 b22 bl
            (:section s10) b22 sb8 b38 sb5 b22 bl)
@@ -82,8 +78,7 @@
            (:section s7) sb1 b38 fl6 b38 sb6 bl
            (:section s8) sb4 b38 sb3 b22 bl
            (:section s9) b38 sb1 b38 sb4 b22 bl
-           (:section s10) b22 sb1 b22 sb5 b22 bl
-           (:newline))
+           (:section s10) b22 sb1 b22 sb5 b22 bl)
    (:text 80 59
           (0 nil ""))
    (:music 2221
@@ -109,10 +104,9 @@
            (:voice v2)
            (:section s11) cclef7 b38 sb1 b38 sb3 b38 bl
            (:section s12) b38 sb1 b38 sb4 b38 bl
-           (:section s13) b38 sb0 b38 sb7 b38 bl
+           (:section s13) (:newline) b38 sb0 b38 sb7 b38 bl
            (:section s14) b38 sb1 b38 fl6 b38 sb6 b38 bl
            (:section s15) b38 sb1 b38 sb4 b38 bl
            (:section s16) b38 sb1 b38 sb8 b38 bl
            (:section s17) b38 sb0 b38 sb2 b38 bl
-           (:section s18) b38 sb1 b38 sb3 b38 bl b22 b38
-           )))
+           (:section s18) b38 sb1 b38 sb3 b38 bl b22 b38)))

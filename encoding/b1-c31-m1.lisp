@@ -25,20 +25,13 @@
           (284 1607 "ᴇſſempio de i gradi di ᴛerza più di maggiore incompoﬆo & compoſto."))
    (:music 2209
            (:voice v1)
-           (:section s1)
-           cclef7 b22 b22 sb0 b38 sbd2 b38 bl
-           (:section s2)
-           sb3 b22 sb4 b22 sbd5 bl
-           (:section s3)
-           fl6 sb6 b38 sbc8 b22 fl5 sb5 sb6 b22 sbc7 bl
-           (:section s4)
-           fl6 b22 sb6 b22 sb7 b22 sbc8 bl
-           (:section s5)
-           fl8 b22 sb8 b22 sb6 bl
-           (:section s6)
-           fl6 b22 sb6 b22 sb5 b22 sb4 b22 sh3 b22 sb3 bl
-           (:section s7)
-           sbd4 b27 fl2 b22 sb2 bl)
+           (:section s1) cclef7 b22 b22 sb0 b38 sbd2 b38 bl
+           (:section s2) sb3 b22 sb4 b22 sbd5 bl
+           (:section s3) fl6 sb6 b38 sbc8 b22 fl5 sb5 sb6 b22 sbc7 bl
+           (:section s4) fl6 b22 sb6 b22 sb7 b22 sbc8 bl
+           (:section s5) (:newline) fl8 b22 sb8 b22 sb6 bl
+           (:section s6) fl6 b22 sb6 b22 sb5 b22 sb4 b22 sh3 b22 sb3 bl
+           (:section s7) sbd4 b27 fl2 b22 sb2 bl)
    (:text 70 58
           (39 nil "grad.di 3.")
           (307 nil "gra.di 3.")
