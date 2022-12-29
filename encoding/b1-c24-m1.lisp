@@ -27,25 +27,15 @@
           (414 1235 "ᴇſſempio del ᴛono maggiore,compoſto et incompoﬆo."))
    (:music 2209
            (:voice v1)
-           (:section s1)
-           cclef7 sb1 b22 sb2 b22 sbd2 bl
-           (:section s2)
-           fl2 b22 sb2 b22 sbd4 b22 bl
-           (:section s3)
-           sh3 sb3 b22 sb4 fl5 sb5 bl
-           (:section s4)
-           sh4 sb4 fl6 sb6 bl
-           (:section s5)
-           sb6 fl8 sb8 b22 bl
-           (:section s6)
-           (:newline)
-           sbd8 b22 sb8 b22 sb7 bl
-           (:section s7)
-           sb7 b13 sb6 sh5 sb5 bl
-           (:section s8)
-           fl6 sb6 sh4 sb4 bl
-           (:section s9)
-           sb3 sh1 sb1 bl)
+           (:section s1) cclef7 sb1 b22 sb2 b22 sbd2 bl
+           (:section s2) fl2 b22 sb2 b22 sbd3 b22 bl
+           (:section s3) sh3 sb3 b22 sb4 fl5 sb5 bl
+           (:section s4) sh4 sb4 fl6 sb6 bl
+           (:section s5) sb6 fl8 sb8 b22 bl
+           (:section s6) (:newline) sbd8 b22 sb8 b22 sb7 bl
+           (:section s7) sb7 b13 sb6 sh5 sb5 bl
+           (:section s8) fl6 sb6 sh4 sb4 bl
+           (:section s9) sb3 sh1 sb1 bl)
    (:text 70 58
           (38 nil "ton.mag.")
           (275 nil "ton.mag.")

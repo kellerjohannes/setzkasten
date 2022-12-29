@@ -55,12 +55,12 @@
           (1955 nil "ſemit.mino."))
    (:text 120 58
           (24 nil "nat.comp.")
-          (327 nil "accid. compo.")
-          (683 nil "acci.inco.")
-          (939 nil "ac.imcomp.")
-          (1208 nil "accid.comp.")
-          (1650 nil "nat.comp.")
-          (1941 nil "acc. incom."))
+          (337 nil "accid. compo.")
+          (693 nil "acci.inco.")
+          (949 nil "ac.incomp.")
+          (1218 nil "accid.comp.")
+          (1660 nil "nat.comp.")
+          (1951 nil "acc. incom."))
    (:music 2225
            (:section s8)
            cclef7 sb9 b22 sh8 b38 sb8 b38 fl8 b38 sbd8 bl

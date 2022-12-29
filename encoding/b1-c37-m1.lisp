@@ -25,20 +25,13 @@
           (200 1805 "ᴇſſempio del ſalto de Ɋuinta imperfetta,naturale & accidentale,incompoﬆo."))
    (:music 2219
            (:voice v1)
-           (:section s1)
-           (:f-clef) max7 fclef7 b38 sb3 b38 sb7 b38
-           (:section s2)
-           cclef5 b38 sb4 b38 b38 sb8 b38 bl
-           (:section s3)
-           b38 sb0 b38 fl4 b38 sb4 b38
-           (:section s4)
-           cclef5 b38 sb3 fl7 b38 sb7 b38
-           (:section s5)
-           cclef5 b38 fl4 b38 sb4 b38 sbd7 bl
-           (:section s6)
-           sb2 b38 fl6 b38 sb7 b22 bl
-           (:section s7)
-           sb5 b38 sh1 b38 sb1 b38 bl)
+           (:section s1) (:f-clef) max7 fclef7 b38 sb3 b38 sb7 b38
+           (:section s2) cclef5 b38 sb4 b38 b38 sb8 b38 bl
+           (:section s3) b38 sb0 b38 fl4 b38 sb4 b38
+           (:section s4) cclef5 b38 sb3 fl7 b38 sb7 b38
+           (:section s5) cclef5 b38 fl4 b38 sb4 b38 sbd7 bl
+           (:section s6) sb2 b38 fl6 b38 sb6 b22 bl
+           (:section s7) sb5 b38 sh1 b38 sb1 b38 bl)
    (:text 70 58
           (48 nil "ſalto di quinta")
           (419 nil "ſalto di 5.")

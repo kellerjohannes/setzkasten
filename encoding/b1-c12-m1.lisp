@@ -51,7 +51,7 @@
           (913 nil "ꝑ la metà")
           (1155 nil "ꝑ la metà")
           (1484 nil "per tutta")
-          (1729 nil "ꝑla metà")
+          (1729 nil "ꝑ la metà")
           (1968 222 "ꝑ la metà"))
    (:text 70 58
           (271 nil "dinanzi")

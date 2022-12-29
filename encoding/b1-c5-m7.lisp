@@ -43,17 +43,12 @@
    (:music 2202
            ;; achtung, siehe Maniates S. 65, ev. Korrekturen nötig
            (:voice v1)
-           (:section s1)
-           (:f-clef) max7 fclef7 sb2 b22 sbd2 b22 fl3 b22 sb3 b22 fl3 b22 sbd3 b22 sb3 bl
-           (:section s2)
-           b22 fl3 b22 sb3 b22 fl3 b22 sbd3 bl
+           (:section s1) (:f-clef) max7 fclef7 sb2 b22 sbd2 b22 fl3 b22 sb3 b22 fl3 b22 sbd3 b22 sb3 bl
+           (:section s2) b22 fl3 b22 sb3 b22 fl3 b22 sbd3 bl
            ;; diese Zeile soll in Lilypond in zwei Systeme geteilt werden, das untere als ossia in Klammern
-           (:section s3)
-           sb3 b22 sbd3 b22 sb4 bl
-           (:section s4)
-           sb4 b22 sbd4 b22 fl5 b22 sb5 b22 fl5 b22 sbd5 b22 sb5 bl
-           (:section s5)
-           sb5 b22 sbd5 b22 fl6 b22 sb6 b22 fl6 b22 sbd6 b22 sb6 bl)
+           (:section s3) sb3 b22 sbd3 b22 sb4 bl
+           (:section s4) sb4 b22 sbd4 b22 fl5 b22 sb5 b22 fl5 b22 sbd5 b22 sb5 bl
+           (:section s5) sb5 b22 sbd5 b22 fl6 b22 sb6 b22 fl6 b22 sbd6 b22 sb6 bl)
    (:text 70 58
           (0 564 "ꝑ ♭. mi. fa. ſol. re. mi.")
           (616 nil "fa.")
@@ -77,15 +72,11 @@
           (1114 nil "da ɢ.")
           (1412 nil "à ᴀ."))
    (:music 2188
-           (:section s6)
-           (:newline)
-           (:f-clef) max7 fclef7 b38 sb6 b38 sbd6 b38 sb7 bl
-           (:section s7)
-           sb7 b38 sbd7 b38 fl8 b38 (:alt (:diplomatic sbd8)
-                                          (:idealised sb8)) b38 fl8 b38 sbd8 b38 sb8 bl
-           (:section s8)
-           sb8 b38 (:alt (:diplomatic sbd9)
-                         (:idealised sbd8)) sbd9 b38 fl9 b38 sb9 b38 fl9 b38 sbd9 b38 sb9 bl
+           (:section s6) (:newline) (:f-clef) max7 fclef7 b38 sb6 b38 sbd6 b38 sb7 bl
+           (:section s7) sb7 b38 sbd7 b38 fl8 b38 (:alt (:diplomatic sbd8)
+                                                        (:idealised sb8)) b38 fl8 b38 sbd8 b38 sb8 bl
+           (:section s8) sb8 b38 (:alt (:diplomatic sbd9)
+                                       (:idealised sbd8)) b38 fl9 b38 sb9 b38 fl9 b38 sbd9 b38 sb9 bl
            b38 b38 b38 b22 b430)
    (:text 70 58
           (10 396 "per n. mi. mi. fa.")

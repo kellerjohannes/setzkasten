@@ -58,7 +58,7 @@
    (:background ,*score-bg-color*))
   (:data
    (:text 70 58
-          (90 1974 "ᴅimoſtratione della ᴍano ᴄromatica, aſcendente, con li ꜱemitoni minore, e con l'eſſempio."))
+          (90 1974 "ᴅimoſtratione della ᴍano ᴄromatica, aſcendente, con li ꜱemitoni minori, e con l'eſſempio."))
    (:text 100 58
           (41 nil "ᴀ lamire")
           (366 nil "ʙ mi")
@@ -92,4 +92,10 @@
           (1567 nil "fa") (1676 nil "ut")
           (1902 nil "ſol") (1999 nil "re") (2075 nil "ut"))
    (:text 100 58
-          (0 2194 "per nat. ꝑ ♭. ꝑ ♭. per ♮. per n. ꝑ ♭. ꝑ ♮ ꝑ ♭. ꝑ ♭. ꝑ n. ꝑ ♮. ꝑ nat. per nat. ꝑ ♭. ꝑ n. ꝑ ♭. ꝑ ♮."))))
+          (0 nil "per nat.ꝑ ♭.ꝑ ♮.")
+          (431 nil "per ♮.")
+          (569 nil "per n. ꝑ ♭. ꝑ ♮")
+          (959 nil "ꝑ ♭. ꝑ ♮. ꝑ n.")
+          (1309 nil "ꝑ ♮. ꝑ nat.")
+          (1554 nil "per nat.ꝑ ♭.")
+          (1855 nil "ꝑ n. ꝑ ♭. ꝑ ♮."))))
