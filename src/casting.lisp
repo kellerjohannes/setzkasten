@@ -674,12 +674,14 @@
   (call-next-method))
 
 (defmethod draw-tempus ((stencil glyph-meter))
-  (let ((y (calculate-absolute-staff-position stencil
-                                              (* 1
-                                                 (number-of-lines (staff-component stencil)))))
-        (r (* 1/2 (distance-between-lines (staff-component stencil))
-              (diameter (tempus-component stencil))))
-        (angle-2 (* 1/2 (opening-angle (tempus-component stencil)))))
+  (let ((y (calculate-absolute-staff-position
+            stencil
+            (number-of-lines (staff-component stencil))))
+        (r (* 1/2
+              (- (* (distance-between-lines (staff-component stencil))
+                    (diameter (tempus-component stencil)))
+                 (thickness (tempus-component stencil)))))
+        (angle-2 (* 1/2 (- 360 (opening-angle (tempus-component stencil))))))
     (if (zerop (opening-angle (tempus-component stencil)))
         (output-circle (h-center stencil)
                        y
@@ -696,9 +698,32 @@
                     nil
                     (thickness (tempus-component stencil))))))
 
-(defmethod draw-prolatio ((stencil glyph-meter)))
+(defmethod draw-prolatio ((stencil glyph-meter))
+  (output-circle (+ (h-center stencil)
+                    (* (prolatio-horizontal-offset stencil)
+                       (distance-between-lines (staff-component stencil))))
+                 (calculate-absolute-staff-position
+                  stencil
+                  (number-of-lines (staff-component stencil)))
+                 (* (diameter (prolatio-component stencil))
+                    (distance-between-lines (staff-component stencil)))
+                 (ink-color stencil)))
 
-(defmethod draw-diminutio ((stencil glyph-meter)))
+(defmethod draw-diminutio ((stencil glyph-meter))
+  (let* ((x (+ (h-center stencil)
+               (* (diminutio-horizontal-offset stencil)
+                  (distance-between-lines (staff-component stencil)))))
+         (y-top (+ (calculate-absolute-staff-position
+                    stencil
+                    (number-of-lines (staff-component stencil)))
+                   (* 1/2 (line-length (diminutio-component stencil))
+                      (distance-between-lines (staff-component stencil)))
+                   (- (* (diminutio-vertical-offset stencil)
+                         (distance-between-lines (staff-component stencil))))))
+         (y-bottom (- y-top
+                      (* (line-length (diminutio-component stencil))
+                         (distance-between-lines (staff-component stencil))))))
+    (output-line x y-top x y-bottom (thickness (diminutio-component stencil)) "square")))
 
 (defmethod cast ((stencil glyph-meter))
   "Generates SVG data for a meter signature."

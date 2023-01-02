@@ -1,7 +1,7 @@
 `((:header
    (:filename "b3-c51-m1")
    (:alt-name "m3.114")
-   (:comment "q021_s  , rotation: 1.60, origin: 392")
+   (:comment "q021_s133, rotation: 1.60, origin: 392")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "[»Soav'e dolc'ardore«]")
    (:section-headings
@@ -21,7 +21,7 @@
    (:music nil
            (:voice v1)
            (:section s1) cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat)
-           b22 met-perf-min
+           b22 met-perf-min-dim b22 br4 sbd3
            )
    (:text 70 58
           (206 nil "Soau' e dolc' ardore")

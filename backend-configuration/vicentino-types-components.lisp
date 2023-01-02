@@ -17,4 +17,7 @@
   (component-c-clef      nil "c-clef"              5.5 10.5 3.5 0.8 1.2 2.2 1 0.6)
   (component-c-clef      nil "c-clef-short"        5.5 10.5 3.5 0.8 1.2 1.2 1.2 0.6)
   (component-rest        nil "minima-rest"         0.55 8 0 0)
-  (component-meter-tempus nil "tempus-perfectum"   8 290))
+  (component-meter-tempus nil "tempus-imperfectum" 5 110 1.5)
+  (component-meter-tempus nil "tempus-perfectum"   5 0 1.5)
+  (component-meter-prolatio nil "prolatio-major" 0.15 0)
+  (component-meter-diminutio nil "diminutum"       5 4))

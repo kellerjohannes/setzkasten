@@ -77,8 +77,18 @@
   (component-meter-tempus
    ((id "tempus")
     (thickness 2)
-    (opening-angle 160))
-   ((diameter 2)))
+    (opening-angle 160)
+    (diameter 2))
+   ())
+  (component-meter-diminutio
+   ((id "diminutio")
+    (thickness 5)
+    (line-length 4))
+   ())
+  (component-meter-prolatio
+   ((id "prolatio")
+    (diameter 0.2))
+   ())
 
   (glyph-staff
    ((id "glyph-staff")
@@ -207,4 +217,7 @@
     (prolatio-component :instance)
     (diminutio-component :instance)
     (glyph-width 80)
-    (glyph-height 1500))))
+    (glyph-height 1500)
+    (prolatio-horizontal-offset 0)
+    (diminutio-horizontal-offset -0.5)
+    (diminutio-vertical-offset -0.3))))

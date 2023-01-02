@@ -37,15 +37,19 @@
 
 (defparameter *vicentino-types-backend* (make-instance 'type-imitation-backend))
 
-(read-configuration *vicentino-types-backend*
-                    "~/common-lisp/setzkasten/backend-configuration/vicentino-types-components.lisp"
-                    :components)
-(read-configuration *vicentino-types-backend*
-                    "~/common-lisp/setzkasten/backend-configuration/vicentino-types-glyphs.lisp"
-                    :glyphs)
-(read-configuration *vicentino-types-backend*
-                    "~/common-lisp/setzkasten/backend-configuration/vicentino-types-syntax.lisp"
-                    :syntax)
+(progn
+  (read-configuration
+   *vicentino-types-backend*
+   "~/common-lisp/setzkasten/backend-configuration/vicentino-types-components.lisp"
+   :components)
+  (read-configuration
+   *vicentino-types-backend*
+   "~/common-lisp/setzkasten/backend-configuration/vicentino-types-glyphs.lisp"
+   :glyphs)
+  (read-configuration
+   *vicentino-types-backend*
+   "~/common-lisp/setzkasten/backend-configuration/vicentino-types-syntax.lisp"
+   :syntax))
 
 (defparameter *lilypond-backend-modern* (make-instance 'lilypond-backend :clef-type :modern))
 ;;(defparameter *lilypond-backend-original* (make-instance 'lilypond-backend :clef-type :original))

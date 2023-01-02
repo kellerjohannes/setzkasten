@@ -191,7 +191,10 @@
   "Specification of a type with a meter signature."
   (tempus-component nil)
   (prolatio-component nil)
-  (diminutio-component nil))
+  (diminutio-component nil)
+  (prolatio-horizontal-offset 0 "Horizontal offset of the dot, in distance-between-lines.")
+  (diminutio-horizontal-offset 0 "Horizontal offset of the line, in distance-between-lines.")
+  (diminutio-vertical-offset 0 "Vertical offset of the line, in distance-between-lines."))
 
 (define-setzkasten-class glyph-rest (glyph-staff)
   "Specification of a type containing a rest."
