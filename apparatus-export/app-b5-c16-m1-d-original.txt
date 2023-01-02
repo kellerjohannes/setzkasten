@@ -1,0 +1,3 @@
+Auto-generated critical apparatus for file b5-c16-m1-d-original:
+
+Line 0, glyph 174 (element 14): reading IDEALISED used (SH5 B22 SB5).

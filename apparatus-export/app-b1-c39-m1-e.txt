@@ -1,0 +1,3 @@
+Auto-generated critical apparatus for file b1-c39-m1-e:
+
+Line 0, glyph 195 (element 7): reading IDEALISED used ("ꝑfet. nat.").

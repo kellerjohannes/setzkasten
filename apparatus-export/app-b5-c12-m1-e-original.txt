@@ -1,0 +1,4 @@
+Auto-generated critical apparatus for file b5-c12-m1-e-original:
+
+Line 0, glyph 118 (element 1): reading IDEALISED used (SBD5).
+Line 0, glyph 287 (element 10): reading IDEALISED used ("3.mag.").

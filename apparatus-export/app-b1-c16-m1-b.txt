@@ -1,0 +1,3 @@
+Auto-generated critical apparatus for file b1-c16-m1-b:
+
+Line 0, glyph 121 (element 2): reading IDEALISED used (SBD5).

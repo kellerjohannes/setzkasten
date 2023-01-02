@@ -1,0 +1,50 @@
+Score (Title "", file "b5-c4-m3", creator "Vicentino21 / Johannes Keller")
+[Comment "q021_s204, rotate: 0.42, origin: 984"]:
+  Section S1 ("" / "semitono maggiore"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (A NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (B FLAT NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S2 ("" / "semitono minore"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (B FLAT NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (B NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S3 ("" / "semitono maggiore"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (A NIL NIL 3)
+        Value = SEMIBREVIS
+        Clef = (C . 1)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (B FLAT NIL 3)
+        Value = SEMIBREVIS
+        Clef = (C . 1)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S4 ("" / "semitono minore"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (B FLAT NIL 3)
+        Value = SEMIBREVIS
+        Clef = (C . 1)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (B NIL NIL 3)
+        Value = SEMIBREVIS
+        Clef = (C . 1)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)

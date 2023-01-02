@@ -1,0 +1,6 @@
+Auto-generated critical apparatus for file b5-c14-m1-a:
+
+Line 0, glyph 78 (element 0): reading DIPLOMATIC used ("La 4.terze.").
+Line 0, glyph 215 (element 16): reading DIPLOMATIC used (SH6 SB6).
+Line 0, glyph 228 (element 19): reading DIPLOMATIC used (SB3).
+Line 0, glyph 232 (element 21): reading DIPLOMATIC used (B22 SBD2).

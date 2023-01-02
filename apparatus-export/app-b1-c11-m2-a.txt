@@ -1,0 +1,6 @@
+Auto-generated critical apparatus for file b1-c11-m2-a:
+
+Line 0, glyph 56 (element 3): reading DIPLOMATIC used (SBD4).
+Line 0, glyph 67 (element 4): reading DIPLOMATIC used (B38).
+Line 0, glyph 85 (element 7): reading DIPLOMATIC used NIL.
+Line 0, glyph 100 (element 7): reading DIPLOMATIC used NIL.
