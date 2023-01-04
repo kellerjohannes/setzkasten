@@ -101,6 +101,16 @@
   `(
     ))
 
+(defparameter *special*
+  `(
+    ("single-note-a1" "" () ,*vicentino-types-backend*)
+    ("single-note-a2" "" () ,*vicentino-types-backend*)
+    ("single-note-a3" "" () ,*vicentino-types-backend*)
+    ("single-note-a4" "" () ,*vicentino-types-backend*)
+    ("single-note-a5" "" () ,*vicentino-types-backend*)
+    ("single-note-a6" "" () ,*vicentino-types-backend*)
+    ))
+
 (defparameter *working*
   `(
     ("b3-c51-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
