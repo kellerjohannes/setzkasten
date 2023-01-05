@@ -78,7 +78,11 @@
   (glyph-notehead-dot           sbd8   "semibrevis-dot-8" "stave" "notehead-semibrevis" "enharmonic-dot" 53 ,*glyph-height* 8)
   (glyph-notehead-dot           sbd9   "semibrevis-dot-9" "stave" "notehead-semibrevis" "enharmonic-dot" 53 ,*glyph-height* 9)
   (glyph-notehead-dot           sbc2   "semibrevis-comma-2" "stave" "notehead-semibrevis" "comma" 53 ,*glyph-height* 2 t 1 :center nil)
+;; the following was created for special types, not in the source
+  (glyph-notehead-dot           sbc3   "semibrevis-comma-3" "stave" "notehead-semibrevis" "comma" 53 ,*glyph-height* 3 t 1 :center nil)
   (glyph-notehead-dot           sbc5   "semibrevis-comma-5" "stave" "notehead-semibrevis" "comma" 53 ,*glyph-height* 5 t 1 :center nil)
+;; the following was created for special types, not in the source
+  (glyph-notehead-dot           sbc6   "semibrevis-comma-6" "stave" "notehead-semibrevis" "comma" 53 ,*glyph-height* 6 t 1 :center nil)
   (glyph-notehead-dot           sbc7   "semibrevis-comma-7" "stave" "notehead-semibrevis" "comma" 53 ,*glyph-height* 7 t 1 :center nil)
   (glyph-notehead-dot           sbc8   "semibrevis-comma-8" "stave" "notehead-semibrevis" "comma" 53 ,*glyph-height* 8 t 1 :center nil)
   (glyph-notehead-dot           sbc9   "semibrevis-comma-9" "stave" "notehead-semibrevis" "comma" 53 ,*glyph-height* 9 t 1.5 :center nil)

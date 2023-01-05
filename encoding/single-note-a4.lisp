@@ -21,5 +21,5 @@
    (:music nil
            (:voice v1)
            (:section s1)
-           (:f-clef) max7 fclef7 b38 sbd2 b38
+           (:f-clef) max7 fclef7 b38 sbd9 b38
            )))
