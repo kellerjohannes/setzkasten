@@ -3,10 +3,11 @@
 (defun toplevel-open (width height id-string)
   (format nil "<?xml version=\"1.0\" standalone=\"no\"?>
 <!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">
-<svg stroke=\"black\" width=\"~d\" viewBox=\"0 0 ~d ~d\" id=~s version=\"1.1\"
+<svg stroke=\"black\" width=\"~d\" height=\"~d\" viewBox=\"0 0 ~d ~d\" id=~s version=\"1.1\"
     xmlns=\"http://www.w3.org/2000/svg\"
     xmlns:xlink=\"http://www.w3.org/1999/xlink\">"
       (* width 0.5) ; overall scaling
+      (* height 0.5) ; overall scaling
       (* width 1.0) ; x scaling of viewBox
       (* height 1.0) ; y scaling of viewBox
       id-string))

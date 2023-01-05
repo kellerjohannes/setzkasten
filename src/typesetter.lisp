@@ -3,7 +3,7 @@
 (in-package :setzkasten)
 
 (defun parse-setzkasten-instance (instance-definition syntax-definition
-                  &optional list-of-components)
+                                  &optional list-of-components)
   "Takes the definition of one instance and the syntax description of one
    instance and returns a new actual instance with parameters set according
    to the two input arguments."

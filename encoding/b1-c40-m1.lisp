@@ -59,4 +59,8 @@
    (:text 70 58
           (64 nil "incomp.")
           (362 nil "incomp.")
-          (682 nil "incomp."))))
+          (682 nil "incomp.")
+          (986 nil "incomp.")
+          (1288 nil "incomp.")
+          (1598 nil "incomp.")
+          (1895 nil "incomp."))))

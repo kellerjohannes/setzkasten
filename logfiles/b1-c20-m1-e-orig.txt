@@ -1,0 +1,191 @@
+Score (Title "Essempio di più semitoni maggiori et minori, ascendenti e discendenti,\\composti et incomposti, naturali e accidentali", file "b1-c20-m1", creator "Vicentino21 / Johannes Keller")
+[Comment ""]:
+  Section S1 ("" / "semitono maggiore\\naturale composto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (E NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (E NIL DOT 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (F NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S2 ("" / "semitono maggiore\\accidentale composto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (F SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (G FLAT DOT 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (G NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S3 ("" / "semitono minore\\accidentale incomposto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (G NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (G SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S4 ("" / "semitono maggiore\\accidentale incomposto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (A NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (B FLAT NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S5 ("" / "semitono minore\\accidentale composto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (B FLAT NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (B FLAT DOT 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (B NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S6 ("" / "semitono amaggiore\\naturale composto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (B NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (B NIL DOT 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (C NIL NIL 3)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S7 ("" / "semitono minore\\accidentale incomposto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (C NIL NIL 3)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (C SHARP NIL 3)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S8 ("" / "semitoni maggiori\\accidentali incomposti"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (E NIL NIL 3)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (D SHARP NIL 3)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (D FLAT DOT 3)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S9 ("" / "semitono maggiore\\accidentale composto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (C NIL DOT 3)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (C NIL NIL 3)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (B NIL DOT 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S10 ("" / "semitono maggiore\\accidentale incomposto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (B FLAT NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (A NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S11 ("" / "semitono maggiore\\e minore\\accidentale incomposto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (A FLAT NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (G NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (G NIL DOT 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (G FLAT NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S12 ("" / "semitono minore\\e maggiore\\accidentale incomposto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (F NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (E NIL DOT 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (E FLAT NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)

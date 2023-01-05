@@ -13,6 +13,9 @@
    (key-signature :initform '(nil nil nil nil nil nil nil)
                   :accessor key-signature
                   :documentation "This carries information about key signatures. It is provided in the form of a list of 7 atoms, describing the alterations of a c major scale (see Lilypond key signature syntax), either with nil, :flat or :sharp.")
+   (meter :initform nil
+          :accessor meter
+          :documentation "This contains a list with three symbols, the first being :circle or :semicircle, the second being :dot or nil and the third being :cut or nil.")
    (section-id :initform nil
                :accessor section-id
                :documentation "This symbol carries the current section id, it is used to direct score information into the correct `section' instance.")
@@ -449,3 +452,6 @@
 (defparameter *f-clef-triggers*
   '(fclef1 fclef3 fclef5 fclef7 fclef9)
   "This is used to determine when the definition of an compound f-clef is done and normal glyph parsing can be switched back on. All glyphs that complete an f-clef complex should be member of this list.")
+
+(defparameter *meter-signatures*
+  '())

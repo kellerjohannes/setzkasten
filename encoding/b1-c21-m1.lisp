@@ -7,12 +7,12 @@
    (:section-headings
     (s1 ""))
    (:section-captions
-    (s1 "tono minore\\ascendente incomposto")
-    (s2 "tono minore\\ascendente composto")
-    (s3 "tono minore\\ascendente composto")
-    (s4 "tono minore\\ascendente incomposto")
-    (s5 "tono minore\\discendente composto")
-    (s6 "tono minore\\discendente incomposto"))
+    (s1 "tono minore\\ascendente\\incomposto")
+    (s2 "tono minore\\ascendente\\composto")
+    (s3 "tono minore\\ascendente\\composto")
+    (s4 "tono minore\\ascendente\\incomposto")
+    (s5 "tono minore\\discendente\\composto")
+    (s6 "tono minore\\discendente\\incomposto"))
    (:voice-labels
     (:all v1 "")))
   (:preamble-type-imitation

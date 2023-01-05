@@ -1,0 +1,163 @@
+Score (Title "Essempio dall'unisono ad altri gradi e salti", file "b2-c2-m1", creator "Vicentino21 / Johannes Keller")
+[Comment "q021_s054, origin 935"]:
+  Section S1 ("" / "a 2"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (B NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (C NIL NIL 3)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+    Voice V2 (""):
+      Musical Object OB0:
+        Pitch = (B NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (A NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S2 ("" / "a 2"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (A NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (B NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+    Voice V2 (""):
+      Musical Object OB0:
+        Pitch = (A NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (G NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S3 ("" / "a 2"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (A NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (C NIL NIL 3)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+    Voice V2 (""):
+      Musical Object OB0:
+        Pitch = (A NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (A NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S4 ("" / "a 2"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (G NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (B NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+    Voice V2 (""):
+      Musical Object OB0:
+        Pitch = (G NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (G NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S5 ("" / "a 3"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (A NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (D NIL NIL 3)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+    Voice V2 (""):
+      Musical Object OB0:
+        Pitch = (A NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (G NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S6 ("" / "a 5"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (A NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (C NIL NIL 3)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+    Voice V2 (""):
+      Musical Object OB0:
+        Pitch = (A NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (E NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S7 ("" / "a 7 e a più voci"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (A NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (D NIL NIL 3)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+    Voice V2 (""):
+      Musical Object OB0:
+        Pitch = (A NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (D NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)

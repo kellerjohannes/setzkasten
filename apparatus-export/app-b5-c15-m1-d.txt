@@ -1,0 +1,5 @@
+Auto-generated critical apparatus for file b5-c15-m1-d:
+
+Line 0, glyph 167 (element 13): reading IDEALISED used (SH5 B38 B22 SB5 B38 B22
+                                                        B38 B38 SBD5).
+Line 0, glyph 238 (element 14): reading IDEALISED used ("quinta").

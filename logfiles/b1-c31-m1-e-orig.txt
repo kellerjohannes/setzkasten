@@ -1,0 +1,121 @@
+Score (Title "Essempio dei gradi ti terza più di maggiore incomposto e composto", file "b1-c31-m1", creator "Vicentino21 / Johannes Keller")
+[Comment ""]:
+  Section S1 ("" / "grado di terza\\più di maggiore\\incomposto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (C NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (E NIL DOT 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S2 ("" / "grado di terza\\più di maggiore\\composto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (F NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (G NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (A NIL DOT 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S3 ("" / "grado di terza un\\comma più di maggiore\\incomposto e composto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (B FLAT NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (D NIL COMMA 3)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (A FLAT NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (B NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (C NIL COMMA 3)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S4 ("" / "grado di terza\\più di maggiore\\composto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (B FLAT NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (C NIL NIL 3)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (D NIL COMMA 3)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S5 ("" / "grado di terza\\più di maggiore\\incomposto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (D FLAT NIL 3)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (B NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S6 ("" / "grado di terza\\più di maggiore\\composto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (B FLAT NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (A NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (G NIL NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (F SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S7 ("" / "grado di terza\\più di maggiore\\incomposto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (G NIL DOT 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (E FLAT NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)

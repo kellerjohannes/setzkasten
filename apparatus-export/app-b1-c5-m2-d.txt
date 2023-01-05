@@ -1,0 +1,17 @@
+Auto-generated critical apparatus for file b1-c5-m2-d:
+
+Line 0, glyph 10 (element 0): reading DE used ("Darstellung der aufsteigenden chromatischen Hand mit _semitoni minori_").
+Line 0, glyph 13 (element 0): reading DE used ("A").
+Line 0, glyph 15 (element 0): reading DE used ("B♭").
+Line 0, glyph 17 (element 0): reading DE used ("C").
+Line 0, glyph 19 (element 0): reading DE used ("D").
+Line 0, glyph 21 (element 0): reading DE used ("E").
+Line 0, glyph 23 (element 0): reading DE used ("F").
+Line 0, glyph 25 (element 0): reading DE used ("G").
+Line 0, glyph 28 (element 0): reading DE used ("natürlich: la\\weich: mi\\hart: re").
+Line 0, glyph 30 (element 0): reading DE used ("hart: mi").
+Line 0, glyph 32 (element 0): reading DE used ("natürlich: sol\\weich: fa\\hart: ut").
+Line 0, glyph 34 (element 0): reading DE used ("weich: la\\hart: sol\\natürlich: re").
+Line 0, glyph 36 (element 0): reading DE used ("hart: la\\natürlich: mi").
+Line 0, glyph 38 (element 0): reading DE used ("natürlich: fa\\weich: ut").
+Line 0, glyph 40 (element 0): reading DE used ("natürlich: sol\\weich: re\\hart: ut").

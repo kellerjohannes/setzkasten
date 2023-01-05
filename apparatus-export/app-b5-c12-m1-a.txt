@@ -1,0 +1,4 @@
+Auto-generated critical apparatus for file b5-c12-m1-a:
+
+Line 0, glyph 118 (element 1): reading DIPLOMATIC used (SB5).
+Line 0, glyph 287 (element 10): reading DIPLOMATIC used ("3.min.").

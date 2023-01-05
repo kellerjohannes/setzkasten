@@ -1,0 +1,164 @@
+Score (Title "Essempio de gradi di quinte accidentali", file "b1-c40-m2", creator "Vicentino21 / Johannes Keller")
+[Comment ""]:
+  Section S1 ("" / "gradi della prima quinta\\accidentale per semitono\\minore ascendente composto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (D SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (E SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (F SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (G SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (A SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S2 ("" / "gradi della prima quinta\\accidentale per semitono\\maggiore [ascendente] composto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (D FLAT NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (E FLAT NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (E NIL DOT 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (G FLAT NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (A FLAT NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S3 ("" / "gradi della seconda quinta\\accidentale ascendente\\per semitono minore composto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (E SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (F SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (G SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (A SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (B SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S4 ("" / "gradi della terza quinta\\accidentale ascendente\\per semitono minore composto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (F SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (G SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (A SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (B SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (C SHARP NIL 3)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S5 ("" / "gradi della terza quinta\\accidentale ascendente\\per semitono maggiore composto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (G FLAT NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (A FLAT NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (B FLAT NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (C NIL NIL 3)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (D FLAT NIL 3)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+  Section S6 ("" / "gradi della quarta quinta\\accidentale ascendente\\per semitono minore composto"):
+    Voice V1 (""):
+      Musical Object OB0:
+        Pitch = (G SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (A SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (B SHARP NIL 2)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (C SHARP NIL 3)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)
+      Musical Object OB0:
+        Pitch = (D SHARP NIL 3)
+        Value = SEMIBREVIS
+        Clef = (C . 7)
+        Key Signature = (NIL NIL NIL NIL NIL NIL NIL)

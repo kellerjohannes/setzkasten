@@ -69,7 +69,7 @@
            fl6 sb6 (:alt (:diplomatic sh6 sb6) (:idealised sh5 sb5)) bl
            (:section s2) b22 sb4 b22 bl
            (:section s3) sb3 fl3 (:alt (:diplomatic sb3) (:idealised sbd3)) bl
-           fl3 sb3 b22 sbd2 bl
+           fl3 sb3 (:alt (:diplomatic b22 sbd2) (:idealised sh2 sb2)) bl
            (:section s4) b22 sb1 b38
            (:section s5) cclef7 b22 sb4 b22 sb4 bl
            sb4 b22 sb4 bl

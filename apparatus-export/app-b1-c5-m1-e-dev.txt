@@ -1,0 +1,17 @@
+Auto-generated critical apparatus for file b1-c5-m1-e-dev:
+
+Line 0, glyph 10 (element 0): reading EN used ("Demonstration of the diatonic hand").
+Line 0, glyph 13 (element 0): reading EN used ("A").
+Line 0, glyph 15 (element 0): reading EN used ("B♭").
+Line 0, glyph 17 (element 0): reading EN used ("C").
+Line 0, glyph 19 (element 0): reading EN used ("D").
+Line 0, glyph 21 (element 0): reading EN used ("E").
+Line 0, glyph 23 (element 0): reading EN used ("F").
+Line 0, glyph 25 (element 0): reading EN used ("G").
+Line 0, glyph 28 (element 0): reading EN used ("natural: la\\soft: mi\\hard: re").
+Line 0, glyph 30 (element 0): reading EN used ("soft: fa\\hard: mi").
+Line 0, glyph 32 (element 0): reading EN used ("soft: sol\\hard: fa\\natural: ut").
+Line 0, glyph 34 (element 0): reading EN used ("soft: la\\hard: sol\\natural: re").
+Line 0, glyph 36 (element 0): reading EN used ("hard: la\\natural: mi").
+Line 0, glyph 38 (element 0): reading EN used ("natural: fa\\soft: ut").
+Line 0, glyph 40 (element 0): reading EN used ("natural: sol\\soft: re\\hard: ut").

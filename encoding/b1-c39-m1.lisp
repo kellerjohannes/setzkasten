@@ -48,6 +48,7 @@
            (:section s4)
            b38 sb4 b38 b27 sb8 b38 bl
            (:section s5)
+           (:newline)
            b38 sb8 b38 sb4 b38 bl
            (:section s6)
            b38 sb7 b38 sb3 b38 bl
