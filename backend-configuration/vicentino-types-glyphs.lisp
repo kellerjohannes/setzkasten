@@ -84,8 +84,8 @@
 ;; the following was created for special types, not in the source
   (glyph-notehead-dot           sbc6   "semibrevis-comma-6" "stave" "notehead-semibrevis" "comma" 53 ,*glyph-height* 6 t 1 :center nil)
   (glyph-notehead-dot           sbc7   "semibrevis-comma-7" "stave" "notehead-semibrevis" "comma" 53 ,*glyph-height* 7 t 1 :center nil)
-  (glyph-notehead-dot           sbc8   "semibrevis-comma-8" "stave" "notehead-semibrevis" "comma" 53 ,*glyph-height* 8 t 1 :center nil)
-  (glyph-notehead-dot           sbc9   "semibrevis-comma-9" "stave" "notehead-semibrevis" "comma" 53 ,*glyph-height* 9 t 1.5 :center nil)
+  (glyph-notehead-dot           sbc8   "semibrevis-comma-8" "stave" "notehead-semibrevis" "comma" 53 ,*glyph-height* 8 t 0.8 :center nil)
+  (glyph-notehead-dot           sbc9   "semibrevis-comma-9" "stave" "notehead-semibrevis" "comma" 53 ,*glyph-height* 9 t 1 :center nil)
   (glyph-notehead-dot           sbdl7   "semibrevis-dot-left-7" "stave" "notehead-semibrevis" "enharmonic-dot" 76 ,*glyph-height* 7 nil nil :left -2)
   (glyph-notehead-dot           sbdr4   "semibrevis-dot-right-4" "stave" "notehead-semibrevis" "enharmonic-dot" 72 ,*glyph-height* 4 nil nil :right nil)
   (glyph-notehead-stem          md0     "minima-dot-0" "stave" "notehead-semibrevis" "enharmonic-dot" "stem-minima" 55 ,*glyph-height* 0 :up t 0 0 :center)
