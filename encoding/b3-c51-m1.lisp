@@ -27,7 +27,7 @@
            sbd2 b22 md2 fl3 m3 b22 m3 b22 md3 sbd6 fl6 sb6 sb6 bl b56
            )
    (:text 90 58
-          (213 439 "Soau' e dolc' ardore")
+          (213 439 "Soauʼ e dolcʼ ardore")
           (684 nil "ÿ")
           (1080 502 "che fra pianʼ e ſoſpiri")
           (1625 520 "che fra piantʼ e ſoſpiri")
