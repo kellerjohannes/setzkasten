@@ -100,10 +100,6 @@
     (values (car root-pitch)
             (let ((system-accidental (nth (position (car root-pitch) '(:c :d :e :f :g :a :b))
                                           (key-signature parser-state))))
-              ;; (when (member staff-position (first (key-signature parser-state)))
-              ;;   (setf system-accidental :flat))
-              ;; (when (member staff-position (second (key-signature parser-state)))
-              ;;   (setf system-accidental :sharp))
               (if (eq (cdr (accidental parser-state)) staff-position)
                   (let ((local-accidental (car (accidental parser-state))))
                     (cancel-accidental parser-state)
@@ -255,6 +251,14 @@
   (let ((bracket-configuration (extract-item :preamble-lilypond :brackets score-data)))
     (when bracket-configuration
       (setf (bracket-configuration parser-state) bracket-configuration)))
+  (let ((lyrics (extract-item :preamble-lilypond :lyrics score-data)))
+    (when lyrics
+      (dolist (voice-lyrics lyrics)
+        (set-voice-lyrics* score (first voice-lyrics) (second voice-lyrics) (third voice-lyrics)))))
+  (let ((clef-overrides (extract-item :preamble-lilypond :clef-overrides score-data)))
+    (when clef-overrides
+      (dolist (override clef-overrides)
+        (set-clef-override* score (first override) (second override) (third override)))))
   (let ((label-list (extract-item :header :voice-labels score-data)))
     (when label-list
       (mapc (lambda (this-label)

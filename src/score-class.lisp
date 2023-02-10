@@ -66,7 +66,15 @@
    (label :initform ""
           :initarg :label
           :accessor label
-          :documentation "This string will be displayed as instrument labels at the beginning of a stave. If `nil' it will be ignored for graphical output."))
+          :documentation "This string will be displayed as instrument labels at the beginning of a stave. If `nil' it will be ignored for graphical output.")
+   (clef-override :initform nil
+                  :initarg :clef-overrid
+                  :accessor clef-override
+                  :documentation "This contains a lilypond-compatible string the is used to override the conversion from original to modern clefs.")
+   (lyrics :initform nil
+           :initarg :lyrics
+           :accessor lyrics
+           :documentation "Contains a string with lyrics information, following the content of a \\lyricmode block in lilypond."))
   (:documentation "This class contains all the information about a voice within a section of the score. Voices in other sections need to be instanciated independently in the `voices' slot of each section."))
 
 (defclass mobject ()
@@ -177,6 +185,28 @@
       (unless voice-candidate
         (add-voice sec-candidate (make-instance 'voice :id voice-id)))
       (setf (label (get-voice-in-section score section-id voice-id)) voice-label))))
+
+(defmethod set-voice-lyrics* ((score score) section-id voice-id lyrics-string)
+  "Sets the `lyrics' slot of a voice in a `score', referenced by `voice-id'. Creates the `voice' object if necessary."
+  (let ((section-candidate (get-section score section-id)))
+    (unless section-candidate
+      (add-section score (make-instance 'section :id section-id))
+      (setf section-candidate (get-section score section-id)))
+    (let ((voice-candidate (get-voice-in-section score section-id voice-id)))
+      (unless voice-candidate
+        (add-voice section-candidate (make-instance 'voice :id voice-id)))
+      (setf (lyrics (get-voice-in-section score section-id voice-id)) lyrics-string))))
+
+(defmethod set-clef-override* ((score score) section-id voice-id override-string)
+  "Sets the `clef-override' slot of a voice in a `score', referenced by `voice-id'. Creates the `voice' object if necessary."
+  (let ((section-candidate (get-section score section-id)))
+    (unless section-candidate
+      (add-section score (make-instance 'section :id section-id))
+      (setf section-candidate (get-section score section-id)))
+    (let ((voice-candidate (get-voice-in-section score section-id voice-id)))
+      (unless voice-candidate
+        (add-voice section-candidate (make-instance 'voice :id voice-id)))
+      (setf (clef-override (get-voice-in-section score section-id voice-id)) override-string))))
 
 (defmethod add-mobject-to-score ((score score) section-id voice-id mobject-instance)
   "Adds the instance of `mobject' to a voice in a `score', references by the voice's `id' and the section's `id'."

@@ -215,23 +215,11 @@
 ~%~18,0t\\key c #`~a "
           (convert-key-signature key-signature)))
 
-;; to be deleted
-(defun apply-key-signature-to-pitch (pitch signature)
-  (unless (eq (second pitch) :natural)
-    (case (first pitch)
-      (:e (if (eq (nth 2 signature) :flat)
-              (list (first pitch) :♭ (third pitch) (fourth pitch))
-              pitch))
-      (:a (if (eq (nth 5 signature) :flat)
-              (list (first pitch) :♭ (third pitch) (fourth pitch))
-              pitch))
-      (:b (if (eq (nth 6 signature) :flat)
-              (list (first pitch) :flat (third pitch) (fourth pitch))
-              pitch))
-      (t pitch))))
-
-(defmethod generate-mobject-ly-code ((mobject mobject) (backend lilypond-backend) clef-state key-state)
-  (let ((current-clef (clef->ly-clef backend (clef mobject)))
+(defmethod generate-mobject-ly-code ((mobject mobject) (backend lilypond-backend)
+                                     clef-state key-state clef-override)
+  (let ((current-clef (if clef-override
+                          clef-override
+                          (clef->ly-clef backend (clef mobject))))
         (current-key (key-signature mobject))
         (result nil))
     (when (string/= current-clef clef-state)
@@ -246,6 +234,8 @@
                                                                (divider mobject)))))
     (values result current-clef current-key)))
 
+
+;; only a sketch, this should be put in a dictionary to implement different meters based on a keyword: parser implementation missing
 (defun generate-ly-meter (meter-keyword)
   (declare (ignore meter-keyword))
   "\\override Score.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural22\") \\time 4/2")
@@ -268,6 +258,7 @@
 ~{~a ~}
 ~@[~a~]
 ~16,0t}
+~@[~a~]
 ~14,0t}"
             (label voice)
             (lookup-rest-type (rest-type backend))
@@ -282,14 +273,16 @@
 ~18,0t\\override Staff.TimeSignature.stencil = ##f"))
             (mapcar (lambda (mobject)
                       (multiple-value-bind (mobject-string current-clef current-key)
-                          (generate-mobject-ly-code mobject backend clef-state key-state)
+                          (generate-mobject-ly-code mobject backend clef-state key-state
+                                                    (clef-override voice))
                         (setf clef-state current-clef)
                         (setf key-state current-key)
                         mobject-string))
                     (mobjects voice))
             (if (timep backend)
                 "" ;; nothing in case of time signature
-                (format nil "~18,0t\\cadenzaOff")))))
+                (format nil "~18,0t\\cadenzaOff"))
+            (format nil "~16,0t\\addlyrics { ~a }" (lyrics voice)))))
 
 
 (defun generate-formatted-text (format-list)
@@ -332,14 +325,17 @@
 ~8,0t\\line {
 ~@[~10,0t~a~]
 ~10,0t\\score {
+~@[~a~]
 ~12,0t<<
 ~{~&~a~}
 ~12,0t>>
 ~12,0t\\layout {
+%~14,0t#(layout-set-staff-size 15)
 ~@[~14,0tindent = ~a\\cm~]
 ~14,0t\\context {
 ~16,0t\\Score
 ~16,0t\\override SpacingSpanner.common-shortest-duration = #(ly:make-moment ~a)
+~16,0t\\override LyricText.font-size = #'-1.0
 ~14,0t}
 ~12,0t}
 ~10,0t}
@@ -354,6 +350,8 @@
               (generate-multiline-text (heading section)))
           (when (bracket section)
             (generate-l-bracket-string (bracket section)))
+          (when (lyrics (first (voices section)))
+            (format nil "~12,0t\\new ChoirStaff"))
           (mapcar (lambda (voice)
                     (generate-voice-ly-code voice backend))
                   (voices section))

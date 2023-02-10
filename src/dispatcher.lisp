@@ -55,6 +55,7 @@
                                                        :clef-type :modern))
 (defparameter *lilypond-backend-modern-meter* (make-instance 'lilypond-backend
                                                              :clef-type :modern
+                                                             ;;:rest-type :mensural
                                                              :timep t))
 ;;(defparameter *lilypond-backend-original* (make-instance 'lilypond-backend :clef-type :original))
 (defparameter *lilypond-backend-original* (make-instance 'lilypond-backend
