@@ -95,6 +95,10 @@
                   :initarg :key-signature
                   :accessor key-signature
                   :documentation "This slot decribes the key signature context of the mobject. It is not used to determine the actual pitch of the mobject, but to determine if a key change should be rendered for graphical output.")
+   (meter :initform nil
+          :initarg :meter
+          :accessor meter
+          :documentation "Contains a keyword describing the current time context of the mobject. Possible values: `:cut-c'.")
    (divider :initform nil
             :initarg :divider
             :accessor divider

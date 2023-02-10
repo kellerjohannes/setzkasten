@@ -47,4 +47,41 @@
           (803 nil "dore")
           (1009 nil "ÿ")
           (1405 516 "che fra piantʼ e ſoſpiri")
-          (1966 nil "ÿ"))))
+          (1966 nil "ÿ"))
+   (:music 2225
+           (:voice v3)
+           (:section s1) cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat)
+           b22 met-perf-min-dim b22 lrest24 b22 br5 b22 sbd5 dot6 md6 b22 m4 dot4 sm5 m6 b22 m4 b22 brd7 b22 fl5 b22 sb5 b13 sbrest7
+           b22 sbd7 sh7 m7 dot8 sh7 sm7 b13 fl8 b13 m8 b22 fl8 b22 m8 b22 sb8 b22 brd5 b27 mrest5
+           b27 sb4 b22 m6 b22 sbd5 nat6 md6 b38 b38 ;; Achtung Custos implementieren
+           )
+   (:text 90 58
+          (259 nil "Soauʼ")
+          (445 nil "e")
+          (496 nil "dol")
+          (745 nil "cʼ")
+          (807 nil "ardore")
+          (1070 nil "ÿ")
+          (1825 nil "che fra piantʼ e"))
+   (:music 2227
+           cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat)
+           b38 nat6 md6 b22 sb7 b22 fl8 b22 m8 b38 md7 nat6 sbd6 b38 m7 sh7 m7 b38 bl
+           b118 b118 b118 b118 b118 b118 b118 b118 b118 b118 b118)
+   (:text 90 58
+          (160 nil "ſoſpiri")
+          (410 nil "ÿ"))
+   (:music 2232
+           (:voice v4)
+           (:section s1) (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat)
+           b22 met-perf-min-dim b22 lrest46 b22 brrest6 b22 brd5 fl6 sb6 dot6 fl6 b22 m6 b22 sbd4 (:alt (:diplomatic b13) (:idealised dot4)) md4 fl5 sb5 b13 sb3 sbrest3
+           b13 sb2 b13 md2 dot2 sm2 b22 m5 b22 m5 brd5 fl6 sb6 b22 mrest3
+           b22 m3 b22 md5 b22 md5 md1 b22 md1 b22 sb4 b22 sbd2 b22 sbrest3
+           b22 sb2 b22 bl)
+   (:text 90 58
+          (352 nil "Soauʼ")
+          (602 nil "e dolcʼar")
+          (843 nil "dore")
+          (1020 nil "ÿ")
+          (1516 nil "che fra pianti")
+          (1845 nil "e ſoſpiri")
+          (2100 nil "pian⸗"))))

@@ -4,7 +4,11 @@
 ;; slots of this subclass can be used to globally configure lilypond, for example a
 ;; state deciding whether to use modern or old clefs
 (defclass lilypond-backend (setzkasten-backend)
-  ((clef-type :initform :modern
+  ((timep :initform nil
+          :initarg :timep
+          :accessor timep
+          :documentation "If nil, no time signature (meter) will be set, lilypond will use \\cadenzaOn and \\cadenzaOff to implmement free time.")
+   (clef-type :initform :modern
               :initarg :clef-type
               :accessor clef-type
               :documentation "Values can be :original, :mensural or :modern.")
@@ -117,7 +121,7 @@
 (defparameter *dict-ly-rest-types* '((:standard . "default")
                                      (:mensural . "mensural")))
 
-(defparameter *dict-ly-notehead-types* '((:standard . "default")
+(defparameter *dict-ly-notehead-types* '((:standard . "baroque")
                                          (:petrucci . "petrucci")))
 
 (defun lookup-notehead-type (notehead-type-keyword)
@@ -136,16 +140,17 @@
   (cdr (assoc (list lettera chromatic-alteration enharmonic-alteration)
               *dict-ly-notenames* :test #'equal)))
 
-(defun key->ly-pitch (key note-value divider)
+(defun key->ly-pitch (key note-value dottedp divider)
   (if key
       (let ((notename (key->ly-notename (first key) (second key) (third key))))
         ;; (format t "~&ly notename: ~s" notename)
-        (format nil "~a~a~a~a~a ~@[~a~]"
-                (first notename)
-                (second notename)
-                (octave->ly-octave (fourth key))
-                (value->ly-duration note-value)
-                (third notename)
+        (format nil "~a~a~a~a~a~a ~@[~a~]"
+                (first notename) ;; root name (a, b, c, ...)
+                (second notename) ;; alteration suffix (is, es)
+                (octave->ly-octave (fourth key)) ;; (' ,)
+                (value->ly-duration note-value) ;; (\breve, 1, 2, 4, 8)
+                (if dottedp "." "") ;; rhythmic dot
+                (third notename) ;; dot-appendix (-.)
                 (case divider
                   (:regular "\\bar \"|\"")
                   (:dashed "\\bar \"!\"")
@@ -207,48 +212,85 @@
 
 (defun generate-key-signature (key-signature)
   (format nil "~
-~%~16,0t\\key c #`~a "
+~%~18,0t\\key c #`~a "
           (convert-key-signature key-signature)))
+
+(defun apply-key-signature-to-pitch (pitch signature)
+  (unless (eq (second pitch) :natural)
+    (case (first pitch)
+      (:e (if (eq (nth 2 signature) :flat)
+              (list (first pitch) :♭ (third pitch) (fourth pitch))
+              pitch))
+      (:a (if (eq (nth 5 signature) :flat)
+              (list (first pitch) :♭ (third pitch) (fourth pitch))
+              pitch))
+      (:b (if (eq (nth 6 signature) :flat)
+              (list (first pitch) :flat (third pitch) (fourth pitch))
+              pitch))
+      (t pitch))))
 
 (defmethod generate-mobject-ly-code ((mobject mobject) (backend lilypond-backend) clef-state key-state)
   (let ((current-clef (clef->ly-clef backend (clef mobject)))
         (current-key (key-signature mobject))
         (result nil))
     (when (string/= current-clef clef-state)
-      (setf result (format nil "~%~16,0t\\clef ~s" current-clef)))
+      (setf result (format nil "~%~18,0t\\clef ~s" current-clef)))
     (when (and current-key (not (equal current-key key-state)))
       (setf result (concatenate 'string result (generate-key-signature current-key))))
     (setf result (concatenate 'string
                               result
-                              (format nil " ~a" (key->ly-pitch (pitch mobject)
+                              (format nil " ~a" (key->ly-pitch (apply-key-signature-to-pitch
+                                                                (pitch mobject)
+                                                                (key-signature mobject))
                                                                (value mobject)
+                                                               (dottedp mobject)
                                                                (divider mobject)))))
     (values result current-clef current-key)))
 
+(defun generate-ly-meter (meter-keyword)
+  (declare (ignore meter-keyword))
+  "\\override Score.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural22\") \\time 4/2")
 
 (defmethod generate-voice-ly-code ((voice voice) (backend lilypond-backend))
   (let ((clef-state nil)
         (key-state nil))
     (format nil "~
-~14,0t\\new Staff \\with { instrumentName = \"~a\"} {
-~16,0t\\override Staff.TimeSignature.stencil = ##f
-~16,0t\\override Staff.NoteHead.style = #'baroque
-~16,0t\\accidentalStyle Score.forget
-~16,0t\\override Rest.style = #'~a
-~16,0t\\override NoteHead.style = #'~a
-~16,0t\\cadenzaOn~{~a ~}
-~16,0t\\cadenzaOff
+~14,0t\\new Staff \\with { instrumentName = \"~a\"}
+~14,0t{
+~16,0t\\new Voice \\with { \\remove \"Note_heads_engraver\"
+~36,0t\\consists \"Completion_heads_engraver\"
+~36,0t\\remove \"Rest_engraver\"
+~36,0t\\consists \"Completion_rest_engraver\"}
+~16,0t{
+~18,0t\\accidentalStyle Score.forget
+~18,0t\\override Rest.style = #'~a
+~18,0t\\override NoteHead.style = #'~a
+~@[~a~]
+~{~a ~}
+~@[~a~]
+~16,0t}
 ~14,0t}"
             (label voice)
             (lookup-rest-type (rest-type backend))
             (lookup-notehead-type (notehead-type backend))
+            (if (timep backend)
+                (let ((first-mobject (first (mobjects voice))))
+                  (if first-mobject
+                      (format nil "~18,0t~a" (generate-ly-meter (meter (first (mobjects voice)))))
+                      ""))
+                (format nil "~
+~18,0t\\cadenzaOn
+~18,0t\\override Staff.TimeSignature.stencil = ##f"))
             (mapcar (lambda (mobject)
                       (multiple-value-bind (mobject-string current-clef current-key)
                           (generate-mobject-ly-code mobject backend clef-state key-state)
                         (setf clef-state current-clef)
                         (setf key-state current-key)
                         mobject-string))
-                    (mobjects voice)))))
+                    (mobjects voice))
+            (if (timep backend)
+                "" ;; nothing in case of time signature
+                (format nil "~18,0t\\cadenzaOff")))))
 
 
 (defun generate-formatted-text (format-list)
@@ -348,6 +390,11 @@
 \\header {
   tagline = ##f
 }
+
+#(define ((fixed-signature-c-cut glyph) grob)
+~4,0t(grob-interpret-markup grob
+~6,0t(markup #:override '(baseline-skip . 0) #:number
+~8,0t(markup (#:fontsize 0 #:musicglyph glyph)))))
 
 dot = {
 ~2,0t \\once \\override Script.add-stem-support = ##f

@@ -323,7 +323,7 @@
     (:accidental nat7 :natural 7)
     (:accidental nat8 :natural 8)
     (:accidental nat9 :natural 9)
-    (:accidental nat10 :natura 10)
+    (:accidental nat10 :natural 10)
     (:accidental flrev4 :flat 4)
     (:clef cclef1 :c 1)
     (:clef cclef3 :c 3)
@@ -437,12 +437,32 @@
     (:note smd8 :semiminima 8 :dot)
     (:note smd9 :semiminima 9 :dot)
     (:note smd10 :semiminima 10 :dot)
-    (:rest mrest5 :minima)
+    (:rest lrest24 :longa)
+    (:rest lrest46 :longa)
+    (:rest brrest4 :brevis)
+    (:rest brrest6 :brevis)
+    (:rest sbrest3 :semibrevis)
+    (:rest sbrest5 :semibrevis)
+    (:rest sbrest7 :semibrevis)
+    (:rest sbrest9 :semibrevis)
     (:rest mrest3 :minima)
+    (:rest mrest5 :minima)
     ))
 
 (defparameter *list-of-notes*
-  '(sb0 sb1 sb2 sb3 sb4 sb5 sb6 sb7 sb8 sb9 sb10)
+  '(
+    longa1 longa2 longa3 longa4 longa5 longa6 longa7 longa8 longa9 longa10
+    max0 max1 max2 max3 max4 max5 max6 max7 max8 max9 max10
+    br0 br1 br2 br3 br4 br5 br6 br7 br8 br9 br10
+    brd0 brd1 brd2 brd3 brd4 brd5 brd6 brd7 brd8 brd9 brd10
+    sb0 sb1 sb2 sb3 sb4 sb5 sb6 sb7 sb8 sb9 sb10
+    sbd0 sbd1 sbd2 sbd3 sbd4 sbd5 sbd6 sbd7 sbd8 sbd9 sbd10
+    m0 m1 m2 m3 m4 m5 m6 m7 m8 m9 m10 m5d md5d
+    md0 md1 md2 md3 md4 md5 md6 md7 md8 md9 md10
+    smd0 smd1 smd2 smd3 smd4 smd5 smd6 smd7 smd8 smd9 smd10
+    )
+
+
   "This is used in the function to determine whether a note has a dotted duration value. Any glyph that can represent a dotted note should be member of this list.")
 
 (defparameter *list-of-duration-dots*
@@ -453,5 +473,6 @@
   '(fclef1 fclef3 fclef5 fclef7 fclef9)
   "This is used to determine when the definition of an compound f-clef is done and normal glyph parsing can be switched back on. All glyphs that complete an f-clef complex should be member of this list.")
 
+;; not sure if needed
 (defparameter *meter-signatures*
   '())
