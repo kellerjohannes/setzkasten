@@ -215,6 +215,7 @@
 ~%~18,0t\\key c #`~a "
           (convert-key-signature key-signature)))
 
+;; to be deleted
 (defun apply-key-signature-to-pitch (pitch signature)
   (unless (eq (second pitch) :natural)
     (case (first pitch)
@@ -239,9 +240,7 @@
       (setf result (concatenate 'string result (generate-key-signature current-key))))
     (setf result (concatenate 'string
                               result
-                              (format nil " ~a" (key->ly-pitch (apply-key-signature-to-pitch
-                                                                (pitch mobject)
-                                                                (key-signature mobject))
+                              (format nil " ~a" (key->ly-pitch (pitch mobject)
                                                                (value mobject)
                                                                (dottedp mobject)
                                                                (divider mobject)))))

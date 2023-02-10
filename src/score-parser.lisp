@@ -95,15 +95,15 @@
        *gamut*))
 
 (defmethod parse-pitch ((parser-state parser-state) staff-position)
-  "Returns three values based on `parser-state' and `staff-position': the root note name (`lettera'), the chromatic alteration (:sharp, :flat or :natural) and the octave (1-5)."
+  "Returns three values based on `parser-state' and `staff-position': the root note name (`lettera'), the chromatic alteration (:sharp, :flat or :natural) considering the current key signature and the octave (1-5)."
   (let ((root-pitch (glyph->root-pitch (clef parser-state) staff-position)))
     (values (car root-pitch)
-            (let ((system-accidental nil))
-              ;; this is unlispy:
-              (when (member staff-position (first (key-signature parser-state)))
-                (setf system-accidental :flat))
-              (when (member staff-position (second (key-signature parser-state)))
-                (setf system-accidental :sharp))
+            (let ((system-accidental (nth (position (car root-pitch) '(:c :d :e :f :g :a :b))
+                                          (key-signature parser-state))))
+              ;; (when (member staff-position (first (key-signature parser-state)))
+              ;;   (setf system-accidental :flat))
+              ;; (when (member staff-position (second (key-signature parser-state)))
+              ;;   (setf system-accidental :sharp))
               (if (eq (cdr (accidental parser-state)) staff-position)
                   (let ((local-accidental (car (accidental parser-state))))
                     (cancel-accidental parser-state)
