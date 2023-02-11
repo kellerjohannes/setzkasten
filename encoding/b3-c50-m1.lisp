@@ -21,6 +21,10 @@
    (:width nil)
    (:height nil)
    (:background ,*score-bg-color*))
+  (:preamble-lilypond
+   (:clef-overrides
+    (s4 v1 "treble")
+    (s4 v2 "treble_8")))
   (:data
    (:text 70 58
           (667 nil "ᴄadentie à quattro uoci,")
@@ -40,7 +44,7 @@
            (:section s1) cclef5 b38 b22 sb7 b38 sbd7 b38 br7 b38 bl
            (:section s2) b38 mrest7 b38 m8 b38 sbd7 b38 sb8 b38 b22 bl
            (:section s3) b38 mrest5 b38 m5 b38 sbd4 b38 sb5 b38 bl
-           (:section s4) fl3 b22 sb3 sbd2 fl3 b22 sb3 b22 fl3 b22 sbd3 sb3 bl
+           (:section s4) (:duration-override 3/5) fl3 b22 sb3 sbd2 fl3 b22 sb3 b22 fl3 b22 sbd3 sb3 bl (:duration-override nil)
            (:section s5) b38 b22 sb9 b38 b22 sbd9 b38 b22 sb9 b38 b22 b38 bl)
    (:text 70 58
           (657 nil "ᴄadentie à quattro uoci,")
@@ -51,13 +55,13 @@
            (:section s2) (:duration-override 3/5) fl5 sb5 sbd4 fl5 sb5 fl5 sbd5 sb5 bl (:duration-override nil)
            (:section s3) mrest7 b22 m7 b22 fl5 b22 sb5 sb5 bl
            (:section s4) b38 b22 sb3 b38 b22 sbd0 b38 b22 sb3 b38 b22 bl
-           (:section s5) fl9 b22 sb9 sbd8 b22 fl9 b22 sb9 b22 fl9 b38 sbd9 sb9 bl)
+           (:section s5) (:duration-override 3/5) fl9 b22 sb9 sbd8 b22 fl9 b22 sb9 b22 fl9 b38 sbd9 sb9 bl (:duration-override nil))
    (:text 70 58
           (654 nil "ᴄadentie à quattro uoci,")
           (1297 nil "Baſſo."))
    (:music 2217
            (:voice v4)
-           (:section s1) (:f-clef) max7 fclef7 b38 sb2 b38 sbd6 (:alt (:diplomatic br2) (:idealised b22)) br4 b38 bl
+           (:section s1) (:f-clef) max7 fclef7 b38 sb2 b38 sbd6 (:alt (:diplomatic br2 br4) (:idealised br2 b38)) b38 bl
            (:section s2) b38 sb7 b22 b38 sbd4 b38 b22 sb7 b38 bl
            (:section s3) b38 sb2 b22 b38 sbd6 b38 sb2 b22 bl
            (:section s4) (:newline) b38 mrest7 b38 m7 b38 b22 sbd6 b38 b22 sb7 b38 bl
