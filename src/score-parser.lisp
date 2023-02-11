@@ -10,6 +10,9 @@
    (f-clef-flag :initform nil
                 :accessor f-clef-flag
                 :documentation "This slot is T when a maxima glyph is used to express an f-clef.")
+   (duration-override :initform nil
+                      :accessor duration-override
+                      :documentation "If nil, this will be ignored. Any integer or ratio will be used to modify the duration value when typesetting with lilypond. It can be used to create the effect of tuplets.")
    (key-signature :initform '(nil nil nil nil nil nil nil)
                   :accessor key-signature
                   :documentation "This carries information about key signatures. It is provided in the form of a list of 7 atoms, describing the alterations of a c major scale (see Lilypond key signature syntax), either with nil, :flat or :sharp.")
@@ -54,6 +57,9 @@
 
 (defmethod cancel-f-clef-flag ((parser-state parser-state))
   (setf (f-clef-flag parser-state) nil))
+
+(defmethod set-duration-override ((parser-state parser-state) override)
+  (setf (duration-override parser-state) override))
 
 (defmethod set-key-signature ((parser-state parser-state) accidental-list)
   "`flat-list' and `sharp-list' both contain numbers representing the staff-positions, 0-10."
@@ -127,6 +133,7 @@
                                      octave
                                      duration
                                      dottedp
+                                     (duration-override parser-state)
                                      (clef parser-state)
                                      (key-signature parser-state)
                                      (divider-flag parser-state))))
@@ -208,6 +215,7 @@
                 (:voice (setf (voice-id parser-state) (second candidate)))
                 (:f-clef (raise-f-clef-flag parser-state))
                 (:bracketed (dump-bracket-info score parser-state))
+                (:duration-override (set-duration-override parser-state (second candidate)))
                 (:newline
                  (set-newline score (section-id parser-state))
                  (set-line-heading score (section-id parser-state) (pop-line-heading parser-state)))
@@ -451,7 +459,7 @@
     (:rest sbrest9 :semibrevis)
     (:rest mrest3 :minima)
     (:rest mrest5 :minima)
-    ))
+    (:rest mrest7 :minima)))
 
 (defparameter *list-of-notes*
   '(

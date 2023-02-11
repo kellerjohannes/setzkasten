@@ -100,7 +100,7 @@
                      ;;*book1-original*
                      ;;*book2-original*
                      ;;*book5-original*
-                     ;;*special*
+                     *special*
                      ))
     (execute-mission mission)))
 
@@ -111,6 +111,10 @@
 
 (defparameter *working*
   `(
+    ("b3-c50-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c50-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c50-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+
     ("b3-c51-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b3-c51-m1" "b" (:idealised) ,*vicentino-types-backend*)
     ("b3-c51-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)

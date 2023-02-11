@@ -95,6 +95,10 @@
             :initarg :dottedp
             :accessor dottedp
             :documentation "T if the rhythmic value is dotted.")
+   (duration-override :initform nil
+                      :initarg :duration-override
+                      :accessor duration-override
+                      :documentation "Nil will be ignored, any number or ratio will be used to modify the actual score duration of this note, according to lilypond's appendix '*1/2' or similar.")
    (clef :initform nil
          :initarg :clef
          :accessor clef
@@ -128,7 +132,9 @@
 
 (defmethod get-section ((score score) section-id)
   "Returns the instance of a `section' based on its `id', given a `score' instance."
-  (find section-id (sections score) :key #'id :test #'string=))
+  (let ((sec (find section-id (sections score) :key #'id :test #'string=)))
+    (or sec (progn (add-section score (make-instance 'section :id section-id))
+                   (get-section score section-id)))))
 
 (defmethod set-section-bracket* ((score score) id data)
   (let ((candidate (get-section score id)))
@@ -156,7 +162,9 @@
 
 (defmethod get-voice ((section section) voice-id)
   "Returns the instance of a voice with a given `id' in an instance of `section'"
-  (find voice-id (voices section) :key #'id :test #'string=))
+  (let ((voic (find voice-id (voices section) :key #'id :test #'string=)))
+    (or voic (progn (add-voice section (make-instance 'voice :id voice-id))
+                    (get-voice section voice-id)))))
 
 (defmethod add-voice-to-section ((score score) section-id voice-instance)
   "Adds a given instance of `voice' to a `section' referenced by its `id' in a given `score'."
@@ -178,47 +186,28 @@
 
 (defmethod set-voice-label* ((score score) section-id voice-id voice-label)
   "Sets the `label' slot of a voice in a `score', referenced by the `id' of the `voice' and the `id' of the `section'."
-  (let ((sec-candidate (get-section score section-id)))
-    (unless sec-candidate
-      (add-section score (make-instance 'section :id section-id)))
-    (let ((voice-candidate (get-voice-in-section score section-id voice-id)))
-      (unless voice-candidate
-        (add-voice sec-candidate (make-instance 'voice :id voice-id)))
-      (setf (label (get-voice-in-section score section-id voice-id)) voice-label))))
+  (setf (label (get-voice-in-section score section-id voice-id)) voice-label))
 
 (defmethod set-voice-lyrics* ((score score) section-id voice-id lyrics-string)
   "Sets the `lyrics' slot of a voice in a `score', referenced by `voice-id'. Creates the `voice' object if necessary."
-  (let ((section-candidate (get-section score section-id)))
-    (unless section-candidate
-      (add-section score (make-instance 'section :id section-id))
-      (setf section-candidate (get-section score section-id)))
-    (let ((voice-candidate (get-voice-in-section score section-id voice-id)))
-      (unless voice-candidate
-        (add-voice section-candidate (make-instance 'voice :id voice-id)))
-      (setf (lyrics (get-voice-in-section score section-id voice-id)) lyrics-string))))
+  (setf (lyrics (get-voice-in-section score section-id voice-id)) lyrics-string))
 
 (defmethod set-clef-override* ((score score) section-id voice-id override-string)
   "Sets the `clef-override' slot of a voice in a `score', referenced by `voice-id'. Creates the `voice' object if necessary."
-  (let ((section-candidate (get-section score section-id)))
-    (unless section-candidate
-      (add-section score (make-instance 'section :id section-id))
-      (setf section-candidate (get-section score section-id)))
-    (let ((voice-candidate (get-voice-in-section score section-id voice-id)))
-      (unless voice-candidate
-        (add-voice section-candidate (make-instance 'voice :id voice-id)))
-      (setf (clef-override (get-voice-in-section score section-id voice-id)) override-string))))
+  (setf (clef-override (get-voice-in-section score section-id voice-id)) override-string))
 
 (defmethod add-mobject-to-score ((score score) section-id voice-id mobject-instance)
   "Adds the instance of `mobject' to a voice in a `score', references by the voice's `id' and the section's `id'."
   (add-mobject (get-voice (get-section score section-id) voice-id)
                mobject-instance))
 
-(defmethod make-note (id lettera chromatic-alteration enharmonic-alteration octave value dottedp clef key-signature divider)
+(defmethod make-note (id lettera chromatic-alteration enharmonic-alteration octave value dottedp duration-override clef key-signature divider)
   "Instanciates a `mobject' representing a note (not a rest). `lettera', `chromatic-alteration' and `enharmonic-alteration' all need to be provided in keyword form."
   (make-instance 'mobject :id id
                           :pitch (list lettera chromatic-alteration enharmonic-alteration octave)
                           :value value
                           :dottedp dottedp
+                          :duration-override duration-override
                           :clef clef
                           :key-signature key-signature
                           :divider divider))

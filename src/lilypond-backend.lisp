@@ -140,7 +140,7 @@
   (cdr (assoc (list lettera chromatic-alteration enharmonic-alteration)
               *dict-ly-notenames* :test #'equal)))
 
-(defun key->ly-pitch (key note-value dottedp divider)
+(defun key->ly-pitch (key note-value dottedp duration-override divider)
   (if key
       (let ((notename (key->ly-notename (first key) (second key) (third key))))
         ;; (format t "~&ly notename: ~s" notename)
@@ -150,6 +150,7 @@
                 (octave->ly-octave (fourth key)) ;; (' ,)
                 (value->ly-duration note-value) ;; (\breve, 1, 2, 4, 8)
                 (if dottedp "." "") ;; rhythmic dot
+                (if duration-override (format nil "*~a" duration-override) "") ;; for tuplet implementation
                 (third notename) ;; dot-appendix (-.)
                 (case divider
                   (:regular "\\bar \"|\"")
@@ -231,6 +232,7 @@
                               (format nil " ~a" (key->ly-pitch (pitch mobject)
                                                                (value mobject)
                                                                (dottedp mobject)
+                                                               (duration-override mobject)
                                                                (divider mobject)))))
     (values result current-clef current-key)))
 
@@ -282,7 +284,7 @@
             (if (timep backend)
                 "" ;; nothing in case of time signature
                 (format nil "~18,0t\\cadenzaOff"))
-            (format nil "~16,0t\\addlyrics { ~a }" (lyrics voice)))))
+            (when (lyrics voice) (format nil "~16,0t\\addlyrics { ~a }" (lyrics voice))))))
 
 
 (defun generate-formatted-text (format-list)
