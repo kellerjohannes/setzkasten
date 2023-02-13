@@ -23,7 +23,7 @@
    (:lyrics
     (s1 v1 "So -- a -- v'e dolc' ar -- do -- re, [so -- a -- v'e dolc' ar -- do -- re] che fra piant' e so -- spi -- ri, che fra piant' e so -- spi -- _ ri")
     (s1 v2 "So -- a -- v'e dolc' ar -- do -- _ _ re, [so -- a -- v'e dolc' ar -- do -- re] che fra piant' e so -- spi -- _ ri, [che fra piant' e]")
-    (s1 v3 "So -- a -- v'e dol -- _ _ c'ar -- do -- re, [so -- a -- v'e dolc' ar -- do -- re] che fra piant' e so -- spi -- ri, [che fra tant' e]")
+    (s1 v3 "So -- a -- v'e dol -- _ _ c'ar -- do -- re, [so -- a -- v'e dolc' ar -- do -- re] che fra piant' e so -- spi -- ri, [che fra piant' e]")
     (s1 v4 "So -- a -- v'e dolc' ar -- do -- re, [so -- a -- v'e dolc' ar -- do -- re] che fra pian -- ti_e so -- spi -- ri, pian-")))
   (:data
    (:music 2238
@@ -36,8 +36,8 @@
            )
    (:text 90 58
           (213 439 "Soauʼ e dolcʼ ardore")
-          (684 nil "ÿ")
-          (1080 502 "che fra pianʼ e ſoſpiri")
+          (684 nil "ij")
+          (1080 502 "che fra piantʼ e ſoſpiri")
           (1625 520 "che fra piantʼ e ſoſpiri")
           )
    (:music 2225
@@ -53,9 +53,9 @@
           (230 nil "Soauʼ")
           (494 213 "e dolcʼar")
           (803 nil "dore")
-          (1009 nil "ÿ")
+          (1009 nil "ij")
           (1405 516 "che fra piantʼ e ſoſpiri")
-          (1966 nil "ÿ"))
+          (1966 nil "ij"))
    (:music 2225
            (:voice v3)
            (:section s1) cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat)
@@ -69,7 +69,7 @@
           (496 nil "dol")
           (745 nil "cʼ")
           (807 nil "ardore")
-          (1070 nil "ÿ")
+          (1070 nil "ij")
           (1825 nil "che fra piantʼ e"))
    (:music 2227
            cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat)
@@ -77,7 +77,7 @@
            b118 b118 b118 b118 b118 b118 b118 b118 b118 b118 b118)
    (:text 90 58
           (160 nil "ſoſpiri")
-          (410 nil "ÿ"))
+          (410 nil "ij"))
    (:music 2232
            (:voice v4)
            (:section s1) (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat)
@@ -89,7 +89,7 @@
           (352 nil "Soauʼ")
           (602 nil "e dolcʼar")
           (843 nil "dore")
-          (1020 nil "ÿ")
+          (1020 nil "ij")
           (1516 nil "che fra pianti")
           (1845 nil "e ſoſpiri")
           (2100 nil "pian⸗"))))
