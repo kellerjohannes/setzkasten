@@ -93,12 +93,15 @@
   (dolist (mission  (list
                      *book1-types*
                      *book2-types*
+                     *book3-types*
                      *book5-types*
                      *book1-modern*
                      *book2-modern*
+                     *book3-modern*
                      *book5-modern*
                      ;;*book1-original*
                      ;;*book2-original*
+                     ;;*book3-original*
                      ;;*book5-original*
                      *special*
                      ))
@@ -111,15 +114,41 @@
 
 (defparameter *working*
   `(
-    ("b3-c50-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ("b3-c50-m1" "b" (:idealised) ,*vicentino-types-backend*)
-    ("b3-c50-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b3-c46-m3" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c46-m3" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c46-m3" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b3-c46-m3" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ("b3-c46-m3" "e" (:idealised :en) ,*lilypond-backend-modern*)
 
-    ("b3-c51-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ("b3-c51-m1" "b" (:idealised) ,*vicentino-types-backend*)
-    ("b3-c51-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
-    ;("b3-c51-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
-    ;("b3-c51-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
+    ("b3-c46-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c46-m2" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c46-m2" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b3-c46-m2" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ("b3-c46-m2" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
+    ("b3-c46-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c46-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c46-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b3-c46-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ("b3-c46-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
+    ("b3-c45-m3" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c45-m3" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c45-m3" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b3-c45-m3" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ("b3-c45-m3" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
+    ("b3-c45-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c45-m2" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c45-m2" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b3-c45-m2" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ("b3-c45-m2" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
+    ("b3-c45-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c45-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c45-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b3-c45-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ("b3-c45-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
     ))
 
 (defparameter *book5-original*
@@ -230,6 +259,27 @@
     ("b5-c16-m1" "b" (:idealised) ,*vicentino-types-backend*)
     ))
 
+(defparameter *book3-original*
+  `(
+    ))
+
+(defparameter *book3-modern*
+  `(
+    ("b3-c50-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b3-c50-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ("b3-c50-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b3-c51-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
+    ("b3-c51-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
+    ("b3-c51-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
+    ))
+
+(defparameter *book3-types*
+  `(
+    ("b3-c50-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c50-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c51-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c51-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ))
 
 (defparameter *book2-original*
   `(

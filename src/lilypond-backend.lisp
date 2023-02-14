@@ -323,7 +323,7 @@
   (let ((section-code (format nil "~
 ~6,0t\\center-column {
 ~@[~a
-~8,0t\\null~]
+~8,0t\\vspace #0.2~]
 ~8,0t\\line {
 ~@[~10,0t~a~]
 ~10,0t\\score {
@@ -343,7 +343,7 @@
 ~10,0t}
 ~@[~10,0t~a~]
 ~8,0t}
-~@[~8,0t\\null
+~@[~8,0t\\vspace #0.2
 ~a~]
 ~6,0t}
 ~6,0t\\hspace #3"
@@ -408,6 +408,7 @@ dot = {
 ~@[~{~4,0t\\line {
 ~6,0t\\center-align
 ~6,0t\\fontsize#3 { \\concat {~a} }
+~8,0t\\vspace #1
 ~4,0t}~}
 ~4,0t\\null~]
 ~@[~4,0t\\line {
