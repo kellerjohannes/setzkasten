@@ -114,6 +114,12 @@
 
 (defparameter *working*
   `(
+    ("b3-c46-m4" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c46-m4" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c46-m4" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b3-c46-m4" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ("b3-c46-m4" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
     ("b3-c46-m3" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b3-c46-m3" "b" (:idealised) ,*vicentino-types-backend*)
     ("b3-c46-m3" "c" (:idealised :it) ,*lilypond-backend-modern*)

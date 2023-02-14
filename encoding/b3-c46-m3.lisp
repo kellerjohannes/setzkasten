@@ -5,13 +5,13 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title "")
    (:section-headings
-    (s1 "Terza quinta")
-    (s2 "Terza quinta")
-    (s3 "Terza quinta"))
+    (s1 "")
+    (s2 "")
+    (s3 ""))
    (:section-captions
-    (s1 "Diatonica")
-    (s2 "Cromatica")
-    (s3 "Enarmonica"))
+    (s1 "Terza quinta\\diatonica")
+    (s2 "Terza quinta\\cromatica")
+    (s3 "Terza quinta\\enarmonica"))
    (:voice-labels
     (:all v1 "")))
   (:preamble-type-imitation

@@ -5,13 +5,13 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Essempio di tre quinte differenti,di i tre generi musicali,\\della prima spetie delle quinte")
    (:section-headings
-    (s1 "Diatonica")
-    (s2 "Cromatica")
-    (s3 "Enarmonica"))
+    (s1 "")
+    (s2 "")
+    (s3 ""))
    (:section-captions
-    (s1 "Prima quinta")
-    (s2 "Prima quinta")
-    (s3 "Prima quinta"))
+    (s1 "Prima quinta\\diatonica")
+    (s2 "Prima quinta\\cromatica")
+    (s3 "Prima quinta\\enarmonica"))
    (:voice-labels
     (:all v1 "")))
   (:preamble-type-imitation

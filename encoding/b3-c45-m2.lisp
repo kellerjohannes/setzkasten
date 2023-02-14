@@ -5,13 +5,13 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Essempio di tre quarte, differenti de tre generi musicali,\\della seconda spetie delle quarte")
    (:section-headings
-    (s1 "Diatonica")
-    (s2 "Cromatica")
-    (s3 "Enarmonica"))
+    (s1 "")
+    (s2 "")
+    (s3 ""))
    (:section-captions
-    (s1 "Seconda quarta")
-    (s2 "Seconda quarta")
-    (s3 "Seconda quarta"))
+    (s1 "Seconda quarta\\diatonica")
+    (s2 "Seconda quarta\\cromatica")
+    (s3 "Seconda quarta\\enarmonica"))
    (:voice-labels
     (:all v1 "")))
   (:preamble-type-imitation
