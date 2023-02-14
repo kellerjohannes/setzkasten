@@ -21,6 +21,7 @@
   (glyph-flat                   fl7     "flat-7"        "stave" "flat-short" 30 ,*glyph-height* 7 nil nil)
   (glyph-flat                   fl8     "flat-8"        "stave" "flat-short" 30 ,*glyph-height* 8 nil nil)
   (glyph-flat                   fl9     "flat-9"        "stave" "flat-very-short" 30 ,*glyph-height* 9 nil nil)
+  (glyph-flat                   fl10     "flat-10"        "stave" "flat-very-short" 30 ,*glyph-height* 10 nil nil)
   (glyph-flat                   flrev4     "flat-reverse-4"        "stave" "flat-normal" 30 ,*glyph-height* 4 nil t)
   (glyph-bequadro               nat3   "bequadro-3"     "stave" "bequadro" 47 ,*glyph-height* 3)
   (glyph-bequadro               nat4   "bequadro-4"     "stave" "bequadro" 47 ,*glyph-height* 4)
@@ -29,6 +30,7 @@
   (glyph-notehead-stem          max6   "maxima-6"      "stave" "notehead-maxima"     "" "stem-minima" 111 ,*glyph-height* 6 :down nil nil nil)
   (glyph-notehead-stem          longa5   "longa-5"      "stave" "notehead-longa"     "" "stem-minima" 64 ,*glyph-height* 5 :down nil nil nil)
 
+  (glyph-notehead               br1    "brevis-1"  "stave" "notehead-brevis" 45 ,*glyph-height* 1)
   (glyph-notehead               br2    "brevis-2"  "stave" "notehead-brevis" 45 ,*glyph-height* 2)
   (glyph-notehead               br4    "brevis-4"  "stave" "notehead-brevis" 45 ,*glyph-height* 4)
   (glyph-notehead               br5    "brevis-5"  "stave" "notehead-brevis" 45 ,*glyph-height* 5)
@@ -85,6 +87,7 @@
   (glyph-notehead-dot           sbd7   "semibrevis-dot-7" "stave" "notehead-semibrevis" "enharmonic-dot" 53 ,*glyph-height* 7)
   (glyph-notehead-dot           sbd8   "semibrevis-dot-8" "stave" "notehead-semibrevis" "enharmonic-dot" 53 ,*glyph-height* 8)
   (glyph-notehead-dot           sbd9   "semibrevis-dot-9" "stave" "notehead-semibrevis" "enharmonic-dot" 53 ,*glyph-height* 9)
+  (glyph-notehead-dot           sbd10   "semibrevis-dot-10" "stave" "notehead-semibrevis" "enharmonic-dot" 53 ,*glyph-height* 10)
   (glyph-notehead-dot           sbc2   "semibrevis-comma-2" "stave" "notehead-semibrevis" "comma" 53 ,*glyph-height* 2 t 1 :center nil)
 ;; the following was created for special types, not in the source
   (glyph-notehead-dot           sbc3   "semibrevis-comma-3" "stave" "notehead-semibrevis" "comma" 53 ,*glyph-height* 3 t 1 :center nil)
