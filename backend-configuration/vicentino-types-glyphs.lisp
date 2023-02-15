@@ -32,6 +32,7 @@
 
   (glyph-notehead               br1    "brevis-1"  "stave" "notehead-brevis" 45 ,*glyph-height* 1)
   (glyph-notehead               br2    "brevis-2"  "stave" "notehead-brevis" 45 ,*glyph-height* 2)
+  (glyph-notehead               br3    "brevis-3"  "stave" "notehead-brevis" 45 ,*glyph-height* 3)
   (glyph-notehead               br4    "brevis-4"  "stave" "notehead-brevis" 45 ,*glyph-height* 4)
   (glyph-notehead               br5    "brevis-5"  "stave" "notehead-brevis" 45 ,*glyph-height* 5)
   (glyph-notehead               br6    "brevis-6"  "stave" "notehead-brevis" 45 ,*glyph-height* 6)

@@ -9,7 +9,7 @@
    (:height nil)
    (:background ,*score-bg-color*))
   (:data
-   (:text 90 58
+   (:text 100 58
           (518 1091 "Eſſempio del primo modo ᴇnarmonico ſemplice."))
    (:music 2228
            (:voice v1)
