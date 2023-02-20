@@ -114,11 +114,11 @@
 
 (defparameter *working*
   `(
-    ("b3-c52-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ("b3-c52-m1" "b" (:idealised) ,*vicentino-types-backend*)
-    ("b3-c52-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
-    ("b3-c52-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
-    ("b3-c52-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
+    ("b3-c53-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c53-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c53-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
+    ("b3-c53-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
+    ("b3-c53-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
     ))
 
 (defparameter *book5-original*
@@ -302,6 +302,9 @@
     ("b3-c51-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
     ("b3-c51-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
     ("b3-c51-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
+    ("b3-c52-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
+    ("b3-c52-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
+    ("b3-c52-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
     ))
 
 (defparameter *book3-types*
@@ -350,6 +353,8 @@
     ("b3-c50-m1" "b" (:idealised) ,*vicentino-types-backend*)
     ("b3-c51-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b3-c51-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c52-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c52-m1" "b" (:idealised) ,*vicentino-types-backend*)
     ))
 
 (defparameter *book2-original*
