@@ -15,7 +15,10 @@
    (:background ,*score-bg-color*))
   (:preamble-lilypond
    (:lyrics
-    (s1 v1 "Ma -- don -- na_il po -- co dol -- ce")))
+    (s1 v1 "Ma -- don -- na_il po -- co dol -- ce,_il po -- co dol -- ce,
+            Ma -- don -- na_il po -- co dol -- ce_è'il mol -- to_a -- ma -- ro
+            il bre -- ve ri -- so_il bre -- ve ri -- so_il trop -- po lun -- go pian -- to
+            il trop -- po lun -- go pian -- to_il trop-")))
   (:data
    (:text 70 58
           (827 386 "Sᴏᴘʀᴀɴᴏ."))
@@ -30,4 +33,14 @@
           (289 732 "donna il poco dolce il poco dolce")
           (1073 nil "Madonna")
           (1384 663 "il poco dolce èʼil molto amaro")
-          (2136 nil "il"))))
+          (2136 nil "il"))
+   (:music 2236
+           cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat)
+           b38 sm4 b38 sm2 b22 sb6 b22 m5 b38 sm4 b38 sm4 b22 sb3 b22 m3 b22
+           (:ligature-start nil :sharp nil nil) br4 sh2 (:ligature-end)
+           (:ligature-start nil :sharp nil nil) br5 sh3 (:ligature-end)
+           br6 b38
+           (:ligature-start nil :natural nil nil) br7 nat6 (:ligature-end)
+           nat7 sb7 nat7 sb7 b38 sbrest7 b22 mrest5 b38
+           m4 sh4 m4 b38 m4 b22 sbd3 dot4 md4 b22 sb2 dot2 sh2 m2 b22 md3 b22 b38
+           )))
