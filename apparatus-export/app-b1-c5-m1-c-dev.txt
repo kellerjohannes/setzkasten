@@ -1,0 +1,17 @@
+Auto-generated critical apparatus for file b1-c5-m1-c-dev:
+
+Line 0, glyph 10 (element 0): reading IT used ("Dimostratione della mano diatonica").
+Line 0, glyph 13 (element 0): reading IT used ("Alamire").
+Line 0, glyph 15 (element 0): reading IT used ("Bfa♭mi").
+Line 0, glyph 17 (element 0): reading IT used ("Csolfaut").
+Line 0, glyph 19 (element 0): reading IT used ("Dlasolre").
+Line 0, glyph 21 (element 0): reading IT used ("Elami").
+Line 0, glyph 23 (element 0): reading IT used ("Ffaut").
+Line 0, glyph 25 (element 0): reading IT used ("Gsolreut").
+Line 0, glyph 28 (element 0): reading IT used ("per natura: la\\per ♭: mi\\per ♮: re").
+Line 0, glyph 30 (element 0): reading IT used ("per ♭: fa\\per ♮: mi").
+Line 0, glyph 32 (element 0): reading IT used ("per ♭: sol\\per ♮: fa\\per natura: ut").
+Line 0, glyph 34 (element 0): reading IT used ("per ♭: la\\per ♮: sol\\per natura: re").
+Line 0, glyph 36 (element 0): reading IT used ("per ♮: la\\per natura: mi").
+Line 0, glyph 38 (element 0): reading IT used ("per natura: fa\\per ♭: ut").
+Line 0, glyph 40 (element 0): reading IT used ("per natura: sol\\per ♭: re\\per ♮: ut").

@@ -1,0 +1,5 @@
+Auto-generated critical apparatus for file b5-c15-m1-a:
+
+Line 0, glyph 167 (element 13): reading DIPLOMATIC used (SH6 B38 B22 SB6 B38
+                                                         B22 FL6 B38 SBD6).
+Line 0, glyph 238 (element 15): reading DIPLOMATIC used ("quɪnta").

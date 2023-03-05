@@ -1,0 +1,8 @@
+Auto-generated critical apparatus for file b1-c11-m2-c-orig:
+
+Line 0, glyph 56 (element 3): reading IDEALISED used (SB4).
+Line 0, glyph 67 (element 5): reading IDEALISED used (FL6
+                                                      (:KEY-SIGNATURE NIL NIL
+                                                       NIL NIL NIL NIL :FLAT)).
+Line 0, glyph 86 (element 8): reading IDEALISED used ((0 NIL "ꝑ ♮.")).
+Line 0, glyph 102 (element 8): reading IDEALISED used ((700 NIL "ꝑ ♭.")).

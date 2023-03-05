@@ -1,0 +1,6 @@
+Auto-generated critical apparatus for file b5-c14-m1-e:
+
+Line 0, glyph 78 (element 0): reading IDEALISED used ("Le 4.terze.").
+Line 0, glyph 215 (element 16): reading IDEALISED used (SH5 SB5).
+Line 0, glyph 228 (element 18): reading IDEALISED used (SBD3).
+Line 0, glyph 232 (element 19): reading IDEALISED used (SH2 SB2).

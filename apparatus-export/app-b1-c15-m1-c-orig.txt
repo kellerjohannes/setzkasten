@@ -1,0 +1,10 @@
+Auto-generated critical apparatus for file b1-c15-m1-c-orig:
+
+Line 0, glyph 94 (element 3): reading IDEALISED used (SBD5).
+Line 0, glyph 96 (element 3): reading IDEALISED used (SB5).
+Line 0, glyph 103 (element 3): reading IDEALISED used (SBD4).
+Line 0, glyph 105 (element 3): reading IDEALISED used (SB4).
+Line 0, glyph 111 (element 4): reading IDEALISED used (SBD3).
+Line 0, glyph 113 (element 4): reading IDEALISED used (SB3).
+Line 0, glyph 119 (element 5): reading IDEALISED used (SBD2).
+Line 0, glyph 121 (element 5): reading IDEALISED used (SB2).

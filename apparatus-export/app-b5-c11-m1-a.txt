@@ -1,0 +1,4 @@
+Auto-generated critical apparatus for file b5-c11-m1-a:
+
+Line 0, glyph 208 (element 6): reading DIPLOMATIC used (SH8 SB8).
+Line 0, glyph 216 (element 6): reading DIPLOMATIC used (SB5).

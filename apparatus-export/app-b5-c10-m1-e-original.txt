@@ -1,0 +1,6 @@
+Auto-generated critical apparatus for file b5-c10-m1-e-original:
+
+Line 0, glyph 151 (element 1): reading IT used ((:BRACKETED) FL5 SB5).
+Line 0, glyph 193 (element 3): reading IT used ((:BRACKETED) FL8 SB8).
+Line 0, glyph 260 (element 10): reading IT used (FL2 SB2).
+Line 0, glyph 298 (element 11): reading IT used (FL5 SB5).
