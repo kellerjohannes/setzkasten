@@ -83,7 +83,11 @@
           :accessor pitch
           ;; needs to be changed, because the notation is more expressive than the keyboard:
           ;; probably in the form of '(:a :♯ :⋅ 3)
-          :documentation "This list describes the pitch of a note as an organ key: (lettera ordine octave). 'lettera' is one of the seven root note letters, as symbols. 'ordine' is 1-6, referencing the rows of keys. 'octave' is 1-5, where middle-C is 3. If NIL, the object is treated as a rest.")
+          :documentation
+          "This list describes the pitch of a note as an organ key: (lettera ordine octave).
+           'lettera' is one of the seven root note letters, as symbols. 'ordine' is 1-6,
+           referencing the rows of keys. 'octave' is 1-5, where middle-C is 3. If NIL, the object
+           is treated as a rest.")
    (id :initform nil
        :initarg :id
        :accessor id)
@@ -107,6 +111,10 @@
                   :initarg :key-signature
                   :accessor key-signature
                   :documentation "This slot decribes the key signature context of the mobject. It is not used to determine the actual pitch of the mobject, but to determine if a key change should be rendered for graphical output.")
+   (ligature :initform nil
+             :initarg :ligature
+             :accessor ligature
+             :documentation "List representing the information inside a ligature definition, the first and second elements are the chromatic alteration at the beginning or the end of a ligature, the third and fourth elements are the enharmonic alteration.")
    (meter :initform nil
           :initarg :meter
           :accessor meter
@@ -201,7 +209,7 @@
   (add-mobject (get-voice (get-section score section-id) voice-id)
                mobject-instance))
 
-(defmethod make-note (id lettera chromatic-alteration enharmonic-alteration octave value dottedp duration-override clef key-signature divider)
+(defmethod make-note (id lettera chromatic-alteration enharmonic-alteration octave value dottedp duration-override clef key-signature ligature divider)
   "Instanciates a `mobject' representing a note (not a rest). `lettera', `chromatic-alteration' and `enharmonic-alteration' all need to be provided in keyword form."
   (make-instance 'mobject :id id
                           :pitch (list lettera chromatic-alteration enharmonic-alteration octave)
@@ -210,6 +218,7 @@
                           :duration-override duration-override
                           :clef clef
                           :key-signature key-signature
+                          :ligature ligature
                           :divider divider))
 
 (defmethod make-rest (id value dottedp clef key-signature divider)

@@ -33,24 +33,25 @@
            (:section s1)
            cclef7 b22 brd4 b22 b38 bl
            (:section s2)
-           b27 b27 b27 brdl5 b27 b27 b27 bl
+           b27 b27 b27 (:ligature-start nil nil :dot nil) brdl5 (:ligature-end) b27 b27 b27 bl
            (:section s3)
-           b27 b27 b27 brdr5 b22 b22 b22 bl
+           b27 b27 b27 (:ligature-start nil nil nil :dot) brdr5 (:ligature-end) b22 b22 b22 bl
            (:section s4)
            b27 b27 b27 sbd5 b22 bl
            (:section s5)
-           b27 b27 b27 sbdl7 b22 b22 b22 bl
+           b27 b27 b27 (:ligature-start nil nil :dot nil) sbdl7 (:ligature-end) b22 b22 b22 bl
            (:section s6)
-           b22 b22 sbdr4 b22 b22 b22 bl
+           b22 b22 (:ligature-start nil nil nil :dot) sbdr4 (:ligature-end) b22 b22 b22 bl
            (:section s7)
            cclef7 b22 fl6 (:key-signature nil nil nil nil nil nil :flat)
-           b22 (:alt (:diplomatic br5)
-                     (:idealised brd5))
-           b22 flrev4 bl
+           b22 (:alt (:diplomatic br5 b22 flrev4)
+                     (:idealised (:ligature-start nil :flat :dot :dot) brd5 b22 flrev4 (:ligature-end)))
+           bl
            (:section s8)
            b22 fl4 b22 brd4 b22 bl
            (:section s9)
-           b38 b22 fl3 b22 brd4 b38 bl)
+           (:newline)
+           b38 b22 (:ligature-start :flat nil :dot :dot) fl3 b22 brd4 (:ligature-end) b38 bl)
    (:text 70 58
           (43 nil "ꝑ tutta")
           (218 nil "ꝑ la parte")
@@ -71,16 +72,16 @@
    (:music 2200
            (:section s10)
            (:key-signature nil nil nil nil nil nil nil)
-           (:newline)
-           cclef7 b27 b27 b27 brdl5 b22 flrev4 b27 b27 b27 bl
+           cclef7 b27 b27 b27 (:ligature-start nil :flat :dot nil) brdl5 b22 flrev4 (:ligature-end)
+           b27 b27 b27 bl
            (:section s11)
-           b27 b27 b27 sbd5 b22 flrev4 b22 b27 b27 bl
+           b27 b27 b27 (:ligature-start nil :flat :dot :dot) sbd5 b22 flrev4 (:ligature-end) b22 b27 b27 bl
            (:section s12)
            b27 b27 b27 b27 md4 b22 b22 b27 bl
            (:section s13)
-           b27 b27 b27 mdl4 b27 b27 b27 b27 bl
+           b27 b27 b27 (:ligature-start nil nil :dot nil) mdl4 (:ligature-end) b27 b27 b27 b27 bl
            (:section s14)
-           b27 b27 b27 b27 smdr3 b27 b27 b27 bl b677)
+           b27 b27 b27 b27 (:ligature-start nil nil nil :dot) smdr3 (:ligature-end) b27 b27 b27 bl b677)
    (:text 70 58
           (68 nil "la prima me")
           (362 nil "& la metà ſe")

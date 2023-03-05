@@ -40,7 +40,7 @@
            (:ligature-start nil :sharp nil nil) br4 sh2 (:ligature-end)
            (:ligature-start nil :sharp nil nil) br5 sh3 (:ligature-end)
            br6 b38
-           (:ligature-start nil :natural nil nil) br7 nat6 (:ligature-end)
+           (:ligature-start :flat :natural nil nil) br7 nat6 (:ligature-end)
            nat7 sb7 nat7 sb7 b38 sbrest7 b22 mrest5 b38
            m4 sh4 m4 b38 m4 b22 sbd3 dot4 md4 b22 sb2 dot2 sh2 m2 b22 md3 b22 b38
            )))

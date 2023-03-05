@@ -114,6 +114,16 @@
 
 (defparameter *working*
   `(
+    ("b1-c12-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b1-c12-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ("b1-c12-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c13-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b1-c13-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ("b1-c13-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c15-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b1-c15-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ("b1-c15-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
     ("b3-c53-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b3-c53-m1" "b" (:idealised) ,*vicentino-types-backend*)
     ("b3-c53-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)

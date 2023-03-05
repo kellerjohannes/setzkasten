@@ -28,21 +28,21 @@
            (:section s1)
            cclef7 sh6 max6 bl
            (:section s2)
-           b22 sh3 longa5 b38 b38 bl
+           b22 (:ligature-start :sharp nil nil nil) sh3 longa5 (:ligature-end) b38 b38 bl
            (:section s3)
-           b38 b22 br4 sh2 b22 bl
+           b38 b22 (:ligature-start nil :sharp nil nil) br4 sh2 (:ligature-end) b22 bl
            (:section s4)
            b22 fl6 b22 br6 b22 bl
            (:section s5)
-           b38 b22 fl4 br6 b38 bl
+           b38 b22 (:ligature-start :flat nil nil nil) fl4 br6 (:ligature-end) b38 bl
            (:section s6)
-           b38 br5 flrev4 b38 b38 bl
+           b38 (:ligature-start nil :flat nil nil) br5 flrev4 (:ligature-end) b38 b38 bl
            (:section s7)
            b38 cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat) b22 nat6 br6 b22 bl
            (:section s8)
-           b38 nat4 br6 b38 bl
+           b38 (:ligature-start :natural :flat nil nil) nat4 br6 (:ligature-end) b38 bl
            (:section s9)
-           b38 br6 nat4 b22 b38 bl)
+           b38 (:ligature-start :flat :natural nil nil) br6 nat4 (:ligature-end) b22 b38 bl)
    (:text 70 58
           (38 nil "per tutta")
           (263 nil "ꝑ la metà")

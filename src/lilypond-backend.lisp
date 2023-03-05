@@ -170,7 +170,14 @@
 
 
 
+(defparameter *dict-ligature-values* '((:longa . :brevis)
+                                       (:brevis . :semibrevis)
+                                       (:semibrevis . :minima)
+                                       (:minima . :semiminima)
+                                       (:semiminima . :croma)))
 
+(defun ligature-value-override (value)
+  (cdr (assoc value *dict-ligature-values*)))
 
 
 (defparameter *dict-value-number* '((:semibrevis . 1)
@@ -227,13 +234,35 @@
       (setf result (format nil "~%~18,0t\\clef ~s" current-clef)))
     (when (and current-key (not (equal current-key key-state)))
       (setf result (concatenate 'string result (generate-key-signature current-key))))
-    (setf result (concatenate 'string
-                              result
-                              (format nil " ~a" (key->ly-pitch (pitch mobject)
-                                                               (value mobject)
-                                                               (dottedp mobject)
-                                                               (duration-override mobject)
-                                                               (divider mobject)))))
+    ;;(format t "~&~s" (value mobject))
+    (setf result
+          (concatenate 'string
+                       result
+                       (if (ligature mobject)
+                           (let ((old-pitch (pitch mobject)))
+                             (format nil " \\[ ~a( \\melisma ~a) \\] \\melismaEnd"
+                                     (key->ly-pitch (list (first old-pitch)
+                                                          (first (ligature mobject))
+                                                          (third (ligature mobject))
+                                                          (fourth old-pitch))
+                                                    (ligature-value-override (value mobject))
+                                                    (dottedp mobject)
+                                                    (duration-override mobject)
+                                                    (divider mobject))
+                                     (key->ly-pitch (list (first old-pitch)
+                                                          (second (ligature mobject))
+                                                          (fourth (ligature mobject))
+                                                          (fourth old-pitch))
+                                                    (ligature-value-override (value mobject))
+                                                    (dottedp mobject)
+                                                    (duration-override mobject)
+                                                    (divider mobject))))
+                           (format nil " ~a"
+                                   (key->ly-pitch (pitch mobject)
+                                                  (value mobject)
+                                                  (dottedp mobject)
+                                                  (duration-override mobject)
+                                                  (divider mobject))))))
     (values result current-clef current-key)))
 
 
