@@ -1,7 +1,7 @@
 `((:header
    (:filename "b3-c53-m1")
    (:alt-name "m3.116")
-   (:comment "q021_s136, origin: 966")
+   (:comment "q021_s136, origin: 966 et al.; q021_s137, rotation: 1.25, origin: 491")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "[Madonna il poco dolce]")
    (:voice-labels
@@ -26,7 +26,8 @@
             mol -- _ _ t'a -- ma -- ro il bre -- ve ri -- so,_il bre -- ve ri -- so il trop -- po lun --
             _ _ go pian -- to, il trop -- po lun -- _ _ go pian -- to, il trop -- po lun -- go pian -- to m'han -- no ri --
             dot -- to_a tan -- to che'l ppian -- ger sem -- pr'è so -- spi -- rar, che'l pian -- ger sem -- pre è so -- spi -- rar mi_è ca -- ro
-            che'l pian -- ger sem -- pr'e so -- spi -- rar che'l pian -- ger sem -- pr'e so -- spi -- rar mi_è ca -- _ ro.")))
+            che'l pian -- ger sem -- pr'e so -- spi -- rar che'l pian -- ger sem -- pr'e so -- spi -- rar mi_è ca -- _ ro.")
+    (s1 v3 "Ma -- don -- na_il po -- co dol -- ce, [Ma -- don -- na_il po -- co dol -- ce] è_il mol -- to_a -- ma -- ro")))
 
   (:data
    (:text 70 58
@@ -141,4 +142,16 @@
            m9 b22 sb9 dot10 m6 sh8 sb8 b22 fl9 b22 sb9 b22 m9 b38 m9 sh8 m8 b38 sb8 b22 sb6 sh5 m5d b38 br6 b38 blbl b125 b125)
    (:text 90 58
           (125 1615 "cheʼl pianger ſemprʼe ſoſpirar cheʼl pianger ſemprʼe ſoſpirar mi è ca")
-          (1826 nil "ro."))))
+          (1826 nil "ro."))
+   (:music 2232
+           (:voice v3)
+           cclef7 fl7 (:key-signature nil nil nil nil nil nil :flat)
+           b22 b38 met-perf-min-dim b38 (:ligature-start :natural :flat nil nil) nat4 br6 (:ligature-end) b22 brd5 b38 sb7 b22 sb6 b22 sb7 b38 sbd8 b38 sbd8 b38 mrest7 b38
+           m8 b22 fl9 b22 sb9 dot10 fl9 b22 m9 b38 sbd8 b38 sbd8 b38 sb9 b38 sbd8 b38 mrest5
+           b38 m5 b38 m5 b38 m6 b38 sb6 b38 sb5 b38 b38)
+   (:text 90 58
+          (179 nil "Madonna il")
+          (512 nil "poco")
+          (682 nil "dolce")
+          (958 nil "ij")
+          (1766 nil "èʼil molto amaro"))))
