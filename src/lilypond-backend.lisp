@@ -283,6 +283,7 @@
 ~36,0t\\consists \"Completion_rest_engraver\"}
 ~16,0t{
 ~18,0t\\accidentalStyle Score.forget
+%~18,0t\\override Accidental.after-line-breaking = #'()
 ~18,0t\\override Rest.style = #'~a
 ~18,0t\\override NoteHead.style = #'~a
 ~@[~a~]
@@ -411,7 +412,7 @@
 
 (defmethod generate-score-ly-code ((score score) (backend lilypond-backend))
   (format nil "~
-\\version \"2.22.2\"
+\\version \"2.24.1\"
 
 % Auto generated file
 

@@ -576,14 +576,13 @@
     sbd0 sbd1 sbd2 sbd3 sbd4 sbd5 sbd6 sbd7 sbd8 sbd9 sbd10
     m0 m1 m2 m3 m4 m5 m6 m7 m8 m9 m10 m5d md5d
     md0 md1 md2 md3 md4 md5 md6 md7 md8 md9 md10
+    sm0 sm1 sm2 sm3 sm4 sm5 sm6 sm7 sm8 sm9 sm10
     smd0 smd1 smd2 smd3 smd4 smd5 smd6 smd7 smd8 smd9 smd10
     )
-
-
   "This is used in the function to determine whether a note has a dotted duration value. Any glyph that can represent a dotted note should be member of this list.")
 
 (defparameter *list-of-duration-dots*
-  '(dot2 dot4 dot6 dot8)
+  '(dot2 dot4 dot6 dot8 dot10)
   "This is used in the function looking ahead to detect rhythmic dots. All glyphs used to represent rhythmic dots should be member of this list.")
 
 (defparameter *f-clef-triggers*

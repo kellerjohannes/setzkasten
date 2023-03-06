@@ -29,3 +29,13 @@
   :depends-on (:hunchentoot :cl-who :cl-ppcre)
   :build-pathname "setzkasten-bin"
   :entry-point "setzkasten:main")
+
+
+;; development TODOs
+;; - something is wrong with (:divider :double), see b3-c53-m1.lisp
+;; - implement custos
+;; - look after time signature implementation (right now it's rudimentary)
+;; - find a solution for repeated accidentals after ties
+;;   - \override Accidental.after-line-breaking = #'() doen't work, creates spacing issues
+;;     between accidental and preceding barline
+;;   - dot is not repeated, since it's implemented as 'staccato'
