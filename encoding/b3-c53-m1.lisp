@@ -27,7 +27,10 @@
             _ _ go pian -- to, il trop -- po lun -- _ _ go pian -- to, il trop -- po lun -- go pian -- to m'han -- no ri --
             dot -- to_a tan -- to che'l ppian -- ger sem -- pr'è so -- spi -- rar, che'l pian -- ger sem -- pre è so -- spi -- rar mi_è ca -- ro
             che'l pian -- ger sem -- pr'e so -- spi -- rar che'l pian -- ger sem -- pr'e so -- spi -- rar mi_è ca -- _ ro.")
-    (s1 v3 "Ma -- don -- na_il po -- co dol -- ce, [Ma -- don -- na_il po -- co dol -- ce] è_il mol -- to_a -- ma -- ro")))
+    (s1 v3 "Ma -- don -- na_il po -- co dol -- ce, [Ma -- don -- na_il po -- co dol -- ce] è_il mol -- to_a -- ma -- ro
+            il bre -- ve ri -- so, [il bre -- ve ri -- so] il trop -- po lun -- go pian -- to, [il trop -- po lun -- go pian -- to]
+            è'il trop -- po lun -- _ go pian -- to m'han -- no ri -- dot -- to_a tan -- to, [m'han -- no ri -- dot -- to_a tan -- to] che'l pian -- ger sem --
+            pr'e so -- spi -- rar che'l pian -- ger sem -- _ _ pr'e so -- spi -- rar mi_è ca -- ro, che'l pian -- ger sem -- pre_e so -- spi -- rar mi_è ca -- ro, e so -- spi -- rar -- _ _ mi_è __ _ _ ca -- ro.")))
 
   (:data
    (:text 70 58
@@ -154,4 +157,44 @@
           (512 nil "poco")
           (682 nil "dolce")
           (958 nil "ij")
-          (1766 nil "èʼil molto amaro"))))
+          (1766 nil "èʼil molto amaro"))
+   (:music 2216
+           cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat)
+           b22 mrest3 b22 m3 b22 sm4 b22 sm5 b22 m6 b22 sb5 b22 mrest7 b22
+           m7 b22 sm5 b22 sm5 b22 sb7 b22 m7 b22 sbrest7 b22
+           sb5 b22 m4 b22 m4 nat6 m6 nat6 m6 b22 sb5 sh7 sb7 b22 sbrest7
+           b22 sb8 b22 br9 b22 sb5 b22 sb5 dot6 m5 b22 sbd5 b22 sbd5 b22 b38)
+   (:text 90 58
+          (181 nil "il breue")
+          (418 nil "riſo")
+          (638 nil "ij")
+          (1068 513 "il troppo lungo pianto")
+          (1748 nil "ij"))
+   (:music 2224
+           cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat)
+           b22 mrest5 b22 m6 sh3 m3 b22 m4 b22 sbd4 b22 sbd5 b22 sb5 b22 sb8 sb4 b22 mrest7
+           b22 m9 b22 m8 b22 m8 sh7 m7 b22 m7 b22 sb5 b22 md8 b22 md8 nat6 md6 b22 md6 b22 md5 b22 md1 b22 sbd1 b22 sbd1 b22 sb2 b22 m2 b22 m3 b22 m3 b22 b38)
+   (:text 90 58
+          (182 nil "èʼil troppo lun")
+          (564 nil "go pianto")
+          (818 nil "mʼhanno ridotto à tanto")
+          (1456 nil "ij")
+          (1822 nil "cheʼl piāger ſem⸗"))
+   (:music 2213
+           cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat)
+           b38 m4 sh3 m3 sh3 m3 b22 m7 b22 m2 b22 m2 b22 m2 b22 m5 dot6 sm6 b22 m7 b22 m3 b22 m3 b22 m3 b22 m4 b22 m6 b22 sb5 b22 sb4 sbrest3
+           sh3 sb3 b22 fl4 b22 m4 b22 md3 b22 br4 b22 m7 b22 sb8 b22 m8 b22 m9 b38 b38)
+   (:text 90 58
+          (80 nil "prʼe ſoſpirar cheʼl piāger")
+          (822 nil "ſemprʼ e ſoſpirar miʼè caro")
+          (1482 nil "cheʼl pianger ſempre e ſoſpi⸗"))
+   (:music 2211
+           cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat)
+           b22 m9 b22 m9 nat6 m6 b22 mrest5
+           b22 m5 b22 md8 b22 md8 b22 m6 dot6 sm7 b22 m8 b22 m5 dot6 sm4 b22 m3 b22 sb2 b38 (:duration-override 1/2) longa1 (:duration-override 1) b38 blbl
+           b38 b38 b125 b38 b38 b22 b125 b125 b125 b125 b125)
+   (:text 90 58
+          (125 nil "mi è caro")
+          (417 nil "e ſoſpirar")
+          (856 nil "mi è")
+          (1116 nil "caro."))))

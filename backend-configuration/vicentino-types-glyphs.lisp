@@ -31,6 +31,7 @@
   (glyph-bequadro               nat7   "bequadro-7"     "stave" "bequadro" 47 ,*glyph-height* 7)
   (glyph-notehead-stem          max7   "maxima-7"      "stave" "notehead-brevis"     "" "stem-minima" 68 ,*glyph-height* 7 :down nil nil nil)
   (glyph-notehead-stem          max6   "maxima-6"      "stave" "notehead-maxima"     "" "stem-minima" 111 ,*glyph-height* 6 :down nil nil nil)
+  (glyph-notehead-stem          longa1   "longa-1"      "stave" "notehead-longa"     "" "stem-minima" 64 ,*glyph-height* 1 :up nil nil nil)
   (glyph-notehead-stem          longa5   "longa-5"      "stave" "notehead-longa"     "" "stem-minima" 64 ,*glyph-height* 5 :down nil nil nil)
 
   (glyph-notehead               br1    "brevis-1"  "stave" "notehead-brevis" 45 ,*glyph-height* 1)
