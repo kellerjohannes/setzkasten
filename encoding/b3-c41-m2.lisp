@@ -1,0 +1,21 @@
+`((:header
+   (:filename "b3-c41-m2")
+   (:alt-name "")
+   (:comment "q021_s121, origin: 471")
+   (:creator "Vicentino21 / Johannes Keller")
+   (:title "Esempio del sesto modo cromatico"))
+  (:preamble-type-imitation
+   (:width nil)
+   (:height nil)
+   (:background ,*score-bg-color*))
+  (:preamble-lilypond
+   (:clef-overrides
+    (s1 v1 "treble_8")))
+  (:data
+   (:text 110 58
+          (657 880 "Eſſempio del ſeſto modo ᴄromatico."))
+   (:music 2248
+           (:voice v1)
+           (:section s1)
+           cclef7 b22 sb3 b22 fl4 b22 sb4 b22 sb4 b22 fl5 b22 sb5 b22 sb5 b22 sb7 b22 sb3 b22 m0 b22 sb3 b22 m1 b22 fl2 b22 sb2 b22 m0 b22 m7 b22
+           sb5 b22 sh4 b22 m4 b22 sb5 b22 sb2 b38 m3 b38 m0 b38 sb4 b38 m0 b38 m3 b22 sb0 b22 br3 b38 bl)))

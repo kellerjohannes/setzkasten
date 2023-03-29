@@ -3,7 +3,7 @@
    (:alt-name "m3.107")
    (:comment "q021_s131, origin: 436")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Essempio del terzo modo enarmonico semplice"))
+   (:title "Esempio del terzo modo enarmonico semplice"))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)

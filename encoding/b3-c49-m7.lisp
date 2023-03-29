@@ -3,7 +3,7 @@
    (:alt-name "m3.111")
    (:comment "q021_s131, origin: 459")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Essempio del settimo modo enarmonico semplice"))
+   (:title "Esempio del settimo modo enarmonico semplice"))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)

@@ -1,0 +1,21 @@
+`((:header
+   (:filename "b3-c7-m1")
+   (:alt-name "")
+   (:comment "q021_s89, rotation: 0.89, origin: 476")
+   (:creator "Vicentino21 / Johannes Keller")
+   (:title "Esempio del terzo modo diatonico semplice,\\da greci detto frigio"))
+  (:preamble-type-imitation
+   (:width nil)
+   (:height nil)
+   (:background ,*score-bg-color*))
+  (:data
+   (:text 90 58
+          (303 1586 "Eſſempio del terzo modo ᴅiatonico ſemplice: da Greci detto Frigio."))
+   (:music 2210
+           (:voice v1)
+           (:section s1)
+           cclef7 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9
+           sb6 b22 sb7 b22 sb6 b22
+           sb9 b22 sb8 b22 sb7 b22 sb6 b38
+           sb2 b22 b22 sb3 b22 sb4 b22 sb5 b22 b22 sb6
+           sb2 sb6 b22 sb7 b22 sb6 b22 sb5 b22 sb4 sb3 b22 br2 b22 b22 blbl)))

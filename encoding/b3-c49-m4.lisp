@@ -3,7 +3,7 @@
    (:alt-name "m3.108")
    (:comment "q021_s131, origin: 436")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Essempio del quarto modo enarmonico semplice"))
+   (:title "Esempio del quarto modo enarmonico semplice"))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)

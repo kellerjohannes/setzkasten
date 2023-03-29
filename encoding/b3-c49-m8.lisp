@@ -3,7 +3,7 @@
    (:alt-name "m3.112")
    (:comment "q021_s131, origin: 461")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Essempio del ottavo modo enarmonico semplice"))
+   (:title "Esempio del ottavo modo enarmonico semplice"))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)

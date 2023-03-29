@@ -1,0 +1,18 @@
+`((:header
+   (:filename "b3-c39-m2")
+   (:alt-name "")
+   (:comment "q021_s120, origin: 918")
+   (:creator "Vicentino21 / Johannes Keller")
+   (:title "Esempio del secondo modo cromatico"))
+  (:preamble-type-imitation
+   (:width nil)
+   (:height nil)
+   (:background ,*score-bg-color*))
+  (:data
+   (:text 110 58
+          (504 974 "Eſſempio del secondo Modo,ᴄromatico."))
+   (:music 2248
+           (:voice v1)
+           (:section s1)
+           (:f-clef) max7 fclef7 b38 sb2 b22 fl3 b22 sb3 b22 fl5 b22 sb5 b22 sb5 b22 fl6 b22 sb6 b22 fl8 b22 sb8 b22 sb8 b22 fl9 b22 sb9 b22 sb9 fl10 sb10
+           b22 sb9 sh7 m7 b22 sb8 b22 m6 b22 sb7 b22 sb5 b22 sb2 fl3 b22 sb3 b22 sb3 b22 sb5 b22 sb2 b22 longa5 b38 blbl b38)))
