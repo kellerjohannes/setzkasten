@@ -38,5 +38,4 @@
           (835 nil "comp.")
           (1246 nil "incomp.")
           (1564 nil "comp.")
-          (1564 nil "comp.")
           (1984 nil "incomp."))))
