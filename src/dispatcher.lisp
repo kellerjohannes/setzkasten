@@ -188,10 +188,15 @@
     ;; ("b3-c22-m4" "b" (:idealised) ,*vicentino-types-backend*)
     ;; ("b3-c22-m4" "c" (:idealised :it) ,*lilypond-backend-modern*)
 
-    ("b3-c23-m1" "b" (:idealised) ,*vicentino-types-backend*)
-    ("b3-c23-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
-    ("b3-c23-m2" "b" (:idealised) ,*vicentino-types-backend*)
-    ("b3-c23-m2" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b3-c23-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ;; ("b3-c23-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b3-c23-m2" "b" (:idealised) ,*vicentino-types-backend*)
+    ;; ("b3-c23-m2" "c" (:idealised :it) ,*lilypond-backend-modern*)
+
+    ("b3-c2-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c2-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+
+    ("b5-c9-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
 
     ;; ("b3-c5-m1" "b" (:idealised) ,*vicentino-types-backend*)
     ;; ("b3-c6-m1" "b" (:idealised) ,*vicentino-types-backend*)

@@ -147,7 +147,7 @@
   (if key
       (let ((notename (key->ly-notename (first key) (second key) (third key))))
         ;; (format t "~&ly notename: ~s" notename)
-        (format nil "~a~a~a~a~a~a ~@[~a~]"
+        (format nil "~a~a~a~a~a~a~a ~@[~a~]"
                 (first notename) ;; root name (a, b, c, ...)
                 (second notename) ;; alteration suffix (is, es)
                 (octave->ly-octave (fourth key)) ;; (' ,)
