@@ -30,7 +30,11 @@
     (s1 v3 "Ma -- don -- na_il po -- co dol -- ce, [Ma -- don -- na_il po -- co dol -- ce] è_il mol -- to_a -- ma -- ro
             il bre -- ve ri -- so, [il bre -- ve ri -- so] il trop -- po lun -- go pian -- to, [il trop -- po lun -- go pian -- to]
             è'il trop -- po lun -- _ go pian -- to m'han -- no ri -- dot -- to_a tan -- to, [m'han -- no ri -- dot -- to_a tan -- to] che'l pian -- ger sem --
-            pr'e so -- spi -- rar che'l pian -- ger sem -- _ _ pr'e so -- spi -- rar mi_è ca -- ro, che'l pian -- ger sem -- pre_e so -- spi -- rar mi_è ca -- ro, e so -- spi -- rar -- _ _ mi_è __ _ _ ca -- ro.")))
+            pr'e so -- spi -- rar che'l pian -- ger sem -- _ _ pr'e so -- spi -- rar mi_è ca -- ro, che'l pian -- ger sem -- pre_e so -- spi -- rar mi_è ca -- ro, e so -- spi -- rar -- _ _ mi_è __ _ _ ca -- ro.")
+    (s1 v4 "Ma -- don -- na_il po -- co dol -- ce, il po -- co dol -- ce, Ma -- don -- na_il po -- co dolc' è_il molt' a -- ma -- ro il
+            bre -- ve ri -- so, il bre -- ve ri -- so_il trip -- po lun -- go pian -- to, il trop -- po lun -- _ go pian -- to
+            m'han -- no ri -- dot -- to_à tan -- to che'il pian -- ger sem -- pr'e so -- spi -- rar__ _ _ mi_è ca -- ro che'l pian -- _
+            ger sem -- _ pre e so -- spi -- rar mi_è ca -- ro.")))
 
   (:data
    (:text 70 58
@@ -193,8 +197,56 @@
            b22 m9 b22 m9 nat6 m6 b22 mrest5
            b22 m5 b22 md8 b22 md8 b22 m6 dot6 sm7 b22 m8 b22 m5 dot6 sm4 b22 m3 b22 sb2 b38 (:duration-override 1/2) longa1 (:duration-override 1) b38 blbl
            b38 b38 b125 b38 b38 b22 b125 b125 b125 b125 b125)
-   (:text 90 58
+   (:text 110 58
           (125 nil "mi è caro")
           (417 nil "e ſoſpirar")
           (856 nil "mi è")
-          (1116 nil "caro."))))
+          (1116 nil "caro."))
+   (:music 2237
+           (:voice v4)
+           (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat)
+           b38 met-perf-min-dim b38 sb8 b22 sb8 b22 sbd5 b22 sbd7 b22 m4 b22
+           m7 b22 m8 b22 m8 b22 m7 b22 m7 b22 brd5 b22 sb8 b38 sbrest7 b38 sb4 b22 sbd8 dot8 md8 b38 m6 b38 m6 b22 sbd8
+           b22 m6 b22 sb7 b22 m8 b22 sb8 b22 sb7 b22 mrest5 b38 m5 b38 b38)
+   (:text 90 58
+          (256 nil "Madon")
+          (470 655 "na il poco dolce il poco dolce")
+          (1164 885 "Madonna il poco dolcʼè il moltʼamaro")
+          (2111 nil "il"))
+   (:music 2217
+           (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat)
+           sm4 b38 sm7 b38 m8 b22 sb5 b38 mrest5 b38 m4 b38 sm7 b38 sm5d b38 sb4 b22 m2 b22 br5 b22 br6 b22
+           (:ligature-start nil :sharp nil nil) br7 sh5 (:ligature-end) br8 b22 br6 b22 br5 dot6 sbrest3
+           b22 sbd2 b22 sb3 nat3 sb3 b22 sbd4 b22 sbd2 b22 br5 b22 (:ligature-start :flat nil nil nil) fl4 b22 br6 (:ligature-end)
+           b22 sb8 b38 b38)
+   (:text 90 58
+          (154 nil "breue")
+          (354 nil "riſo")
+          (593 nil "il")
+          (654 nil "breue")
+          (832 614 "riſo il troppo pianto")
+          (1517 nil "il troppo lun")
+          (1893 nil "go")
+          (2006 nil "pianto"))
+   (:music 2214
+           (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat)
+           b22 sbrest7 b22 sb5 b22 md5d b38 md5d b22 md1 b38 md1 b22 sbd5 b22 sbd1 b22 brrest4
+           sb2 b22 sb3 nat3 sb3 b22 sb4 b22 sb2 b22 sb7 dot8 m5 b22 m3 dot4 sm2 b22 m1 b22 m1 b22
+           sb5 b22 sb1 b22 sbrest3 b22 sb5 b22 sbd5 b22 fl6 b22 sb6 b22 b38)
+   (:text 90 58
+          (141 374 "mʼhanno ridotto")
+          (545 nil "à")
+          (609 nil "tanto")
+          (783 836 "cheʼil pianger ſemprʼe ſoſpirar mi è")
+          (1663 nil "caro")
+          (1862 265 "cheʼl pian⸗"))
+   (:music 2226
+           (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat)
+           b38 sb6 b22 sb7 b22 sb8 b22 sb6 b22 mrest7 b22 m8 b22 sb5 b22 sbd5 b22 fl6 b22 sb6 b22 br5 b22 sb2 b22
+           (:duration-override 1/2) longa9 (:duration-override 1) b38 bl
+           b22 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38)
+   (:text 90 58
+          (98 nil "ger ſem")
+          (378 nil "pre")
+          (550 nil "e ſoſpirar")
+          (851 nil "mi è caro."))))

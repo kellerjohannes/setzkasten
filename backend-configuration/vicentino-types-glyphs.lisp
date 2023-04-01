@@ -37,6 +37,7 @@
   (glyph-notehead-stem          max6   "maxima-6"      "stave" "notehead-maxima"     "" "stem-minima" 111 ,*glyph-height* 6 :down nil nil nil)
   (glyph-notehead-stem          longa1   "longa-1"      "stave" "notehead-longa"     "" "stem-minima" 64 ,*glyph-height* 1 :up nil nil nil)
   (glyph-notehead-stem          longa5   "longa-5"      "stave" "notehead-longa"     "" "stem-minima" 64 ,*glyph-height* 5 :down nil nil nil)
+  (glyph-notehead-stem          longa9   "longa-9"      "stave" "notehead-longa"     "" "stem-minima" 64 ,*glyph-height* 9 :down nil nil nil)
 
   (glyph-notehead               br0    "brevis-0"  "stave" "notehead-brevis" 45 ,*glyph-height* 0)
   (glyph-notehead               br1    "brevis-1"  "stave" "notehead-brevis" 45 ,*glyph-height* 1)
@@ -46,6 +47,7 @@
   (glyph-notehead               br5    "brevis-5"  "stave" "notehead-brevis" 45 ,*glyph-height* 5)
   (glyph-notehead               br6    "brevis-6"  "stave" "notehead-brevis" 45 ,*glyph-height* 6)
   (glyph-notehead               br7    "brevis-7"  "stave" "notehead-brevis" 45 ,*glyph-height* 7)
+  (glyph-notehead               br8    "brevis-8"  "stave" "notehead-brevis" 45 ,*glyph-height* 8)
   (glyph-notehead               br9    "brevis-9"  "stave" "notehead-brevis" 45 ,*glyph-height* 9)
   (glyph-notehead-dot           brd2   "brevis-dot-2" "stave" "notehead-brevis" "enharmonic-dot" 67 ,*glyph-height* 2)
   (glyph-notehead-dot           brd3   "brevis-dot-3" "stave" "notehead-brevis" "enharmonic-dot" 67 ,*glyph-height* 3)
@@ -129,6 +131,7 @@
   (glyph-notehead-stem          md3     "minima-dot-3" "stave" "notehead-semibrevis" "enharmonic-dot" "stem-minima" 55 ,*glyph-height* 3 :up nil 1 0.8 :center)
   (glyph-notehead-stem          md4     "minima-dot-4" "stave" "notehead-semibrevis" "enharmonic-dot" "stem-minima" 55 ,*glyph-height* 4 :up nil 0 0.4 :center)
   (glyph-notehead-stem          md5     "minima-dot-5" "stave" "notehead-semibrevis" "enharmonic-dot" "stem-minima" 55 ,*glyph-height* 5 :up nil 0 0.4 :center)
+  (glyph-notehead-stem          md5d     "minima-dot-5-down" "stave" "notehead-semibrevis" "enharmonic-dot" "stem-minima" 55 ,*glyph-height* 5 :down nil 0 0.4 :center)
   (glyph-notehead-stem          md6     "minima-dot-6" "stave" "notehead-semibrevis" "enharmonic-dot" "stem-minima" 55 ,*glyph-height* 6 :down nil 0 0.4 :center)
   (glyph-notehead-stem          md7     "minima-dot-7" "stave" "notehead-semibrevis" "enharmonic-dot" "stem-minima" 55 ,*glyph-height* 7 :down nil 0 0.4 :center)
   (glyph-notehead-stem          md8     "minima-dot-8" "stave" "notehead-semibrevis" "enharmonic-dot" "stem-minima" 55 ,*glyph-height* 8 :down nil 0 0.4 :center)
