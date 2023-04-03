@@ -15,10 +15,45 @@
    (:background ,*score-bg-color*))
   (:preamble-lilypond
    (:lyrics
-    (s1 v1 "Mu -- si -- ca pri -- sca ca -- put")
-    (s1 v2 "")
-    (s1 v3 "")
-    (s1 v4 "")))
+    (s1 v1 "Mu -- si -- ca pri -- sca ca -- put, mu -- si -- ca pri -- sca ca -- put
+            te -- ne -- bris mo -- do su -- stu -- lit al -- _ tis,
+            mu -- si -- ca pri -- sca ca -- put te -- ne -- bris mo -- do su -- stu -- lit al -- _ _ _ tis
+            dul -- ci -- bus ut nu -- me -- ris, dul -- ci -- bus -- _ _ ut nu -- me -- ris
+            pri -- scis cer -- tan -- ti -- a fa -- ctis,
+            dul -- ci -- bus ut nu -- me -- ris
+            pri -- scis cer -- tan -- ti -- a fa -- _ ctis
+            fa -- cta tu -- a Hyp -- po -- li -- te, fa -- cta tu -- a Hyp -- po -- li -- te
+            ex -- cel -- sum su -- per ae -- the -- ra mit -- tat,
+            fa -- cta tu -- a Hyp -- po -- li -- te
+            ex -- cel -- sum su -- per ae -- the -- rum mit -- tat.")
+    (s1 v2 "Mu -- si -- ca pri -- sca ca -- put, mu -- si -- ca pri -- sca ca -- put
+            te -- ne -- bris mo -- do su -- stu -- lit al -- tis,
+            mu -- si -- ca pri -- sca ca -- put te -- ne -- bris mo -- do su -- stu -- lit al -- tis,
+            su -- stu -- lit al -- tis
+            dul -- ci -- bus ut nu -- me -- ris, dul -- ci -- bus ut nu -- me -- ris
+            pri -- scis cer -- tan -- ti -- a fa -- ctis,
+            dul -- ci -- bus ut nu -- me -- ris
+            pri -- scis cer -- tan -- ti -- a fa -- ctis
+            fa -- cta tu -- a Hyp -- po -- li -- te, fa -- cta tu -- a Hyp -- po -- li -- te
+            ex -- cel -- sum su -- per ae -- the -- ra mit -- tat,
+            fa -- cta tu -- a Hyp -- po -- li -- te ex -- cel -- sum su -- per ae -- the -- ra mit -- tat. ")
+    (s1 v3 "Mu -- si -- ca pri -- sca ca -- put
+            te -- ne -- bris mo -- do su -- stu -- lit al -- tis, su -- stu -- lit al -- tis,
+            mu -- si -- ca pri -- sca ca -- put te -- ne -- bris mo -- do su -- stu -- lit al -- tis
+            dul -- ci -- bus ut nu -- me -- ris,
+            dul -- ci -- bus ut nu -- me -- ris pri -- scis cer -- tan -- ti -- a fa -- ctis,
+            dul -- ci -- bus ut nu -- me -- ris pri -- scis cer -- tan -- ti -- a fa -- _ _ _ _ ctis
+            fa -- cta tu -- a Hyp -- po -- li -- te, fa -- cta tu -- a Hyp -- po -- li -- te
+            ex -- cel -- sum su -- per ae -- the -- ra mit -- tat,
+            fa -- cta tu -- a Hyp -- po -- li -- te ex -- cel -- sum su -- per ae -- the -- ra mit -- tat.")
+    (s1 v4 "Mu -- si -- ca pri -- sca ca -- put te -- ne -- bris mo -- do su -- stu -- lit al -- tis,
+            mu -- si -- ca pri -- sca ca -- put te -- ne -- bris mo -- do su -- stu -- lit al -- tis
+            dul -- ci -- bus ut nu -- me -- ris, dul -- ci -- bus ut nu -- me -- ris
+            pri -- scis cer -- tan -- ti -- a fa -- ctis,
+            dul -- ci -- bus ut nu -- me -- ris pri -- scis cer -- tan -- ti -- a __ fa -- ctis
+            fa -- cta tu -- a Hyp -- po -- li -- te, fa -- cta tu -- a Hyp -- po -- li -- te
+            ex -- cel -- sum su -- per ae -- the -- ra mit -- tat, fa -- cta tu -- a Hyp -- po -- li -- te
+            ex -- cel -- sum su -- per ae -- the -- ta mit -- tat.")))
   (:data
    ;; soprano
    (:music 2221
@@ -83,6 +118,7 @@
    (:music 2201
            cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat)
            b38 sb8 b38 m8 sh8 sb8 sh8 md8 b22 fl9 sb9 b22 fl9 b22 sb9 b38
+           (:divider :double)
            (:duration-override 1/2) longa9 (:duration-override 1) b38 blbl
            b118 b118 b118 b118 b118 b118 b118 b118 b118 b118 b118)
    (:text 90 58
