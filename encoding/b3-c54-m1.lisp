@@ -16,6 +16,8 @@
   (:preamble-lilypond
    (:alt (:transposition-quarta-discendente (:clef-overrides
                                              (s1 v2 "treble_8"))))
+   (:standalone-title "Musica prisca caput")
+   (:standalone-subtitle (:alt (:transposition-quarta-discendente "Eine Quarte tiefer")))
    (:lyrics
     (s1 v1 "Mu -- si -- ca pri -- sca ca -- put, mu -- si -- ca pri -- sca ca -- put
             te -- ne -- bris mo -- do su -- stu -- lit al -- _ tis,

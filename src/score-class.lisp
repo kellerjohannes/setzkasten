@@ -23,7 +23,16 @@
    (voice-labels :initform nil
                  :initarg :voice-labels
                  :accessor voice-labels
-                 :documentation "This alist contains pairs of voice ids and strings that will be printed as instrument names in front of staves. They can be overridden by local label definitions in voice instances."))
+                 :documentation "This alist contains pairs of voice ids and strings that will be printed as instrument names in front of staves. They can be overridden by local label definitions in voice instances.")
+   (standalone-title :initform ""
+                     :initarg :standalone-title
+                     :accessor standalone-title
+                     :documentation "Alternative title used when exported as standalone PDF (with lilypond backend option :pdf-multipage).")
+   (standalone-subtitle :initform ""
+                        :initarg :standalone-subtitle
+                        :accessor standalone-subtitle
+                        :documentation "Alternative subtitle used when exported as standalone PDF (with lilypond backend option :pdf-multipage).")
+   )
   (:documentation "This class contains a model of the complete score."))
 
 (defclass section ()
@@ -74,7 +83,8 @@
    (lyrics :initform nil
            :initarg :lyrics
            :accessor lyrics
-           :documentation "Contains a string with lyrics information, following the content of a \\lyricmode block in lilypond."))
+           :documentation "Contains a string with lyrics information, following the content of a \\lyricmode block in lilypond.")
+   )
   (:documentation "This class contains all the information about a voice within a section of the score. Voices in other sections need to be instanciated independently in the `voices' slot of each section."))
 
 (defclass mobject ()

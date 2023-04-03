@@ -272,6 +272,12 @@
   (let ((bracket-configuration (extract-item :preamble-lilypond :brackets score-data)))
     (when bracket-configuration
       (setf (bracket-configuration parser-state) bracket-configuration)))
+  (let ((standalone-title (extract-item :preamble-lilypond :standalone-title score-data)))
+    (when standalone-title
+      (setf (standalone-title score) (car standalone-title))))
+  (let ((standalone-subtitle (extract-item :preamble-lilypond :standalone-subtitle score-data)))
+    (when standalone-subtitle
+      (setf (standalone-subtitle score) (car standalone-subtitle))))
   (let ((lyrics (extract-item :preamble-lilypond :lyrics score-data)))
     (when lyrics
       (dolist (voice-lyrics lyrics)

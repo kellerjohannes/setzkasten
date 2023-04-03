@@ -8,6 +8,10 @@
           :initarg :timep
           :accessor timep
           :documentation "If nil, no time signature (meter) will be set, lilypond will use \\cadenzaOn and \\cadenzaOff to implmement free time.")
+   (output-format :initform :svg-cropped
+                  :initarg :output-format
+                  :accessor output-format
+                  :documentation "Value can be :svg-cropped or :pdf-multipage")
    (clef-type :initform :modern
               :initarg :clef-type
               :accessor clef-type
@@ -149,23 +153,23 @@
     ((:b nil :comma) "b^\\markup{,}")))
 
 (defparameter *dict-ly-notenames-double-accidentals-cents*
-  '(((:c nil nil) "c" "" "^\\markup{\\teeny 15.4}")
-    ((:b :sharp nil) "b" "is" "^\\markup{\\teeny 15.4}")
-    ((:c nil :dot) "d" "eses" "^\\markup{\\teeny 15.4}")
-    ((:c :flat :dot) "c" "isis" "^\\markup{\\teeny 15.4}")
-    ((:c :flat nil) "c" "es" "^\\markup{\\teeny 15.4}")
+  '(((:c nil nil) "c" "" "^\\markup{ \\abs-fontsize #4 \\center-align { \\hspace #0.5 15.4 } }")
+    ((:b :sharp nil) "b" "is" "^\\markup{ \\abs-fontsize #4 \\center-align { \\hspace #0.5 15.4 } }")
+    ((:c nil :dot) "d" "eses" "^\\markup{ \\abs-fontsize #4 \\center-align { \\hspace #0.5 15.4 } }")
+    ((:c :flat :dot) "c" "isis" "^\\markup{ \\abs-fontsize #4 \\center-align { \\hspace #0.5 15.4 } }")
+    ((:c :flat nil) "c" "es" "^\\markup{ \\abs-fontsize #4 \\center-align { \\hspace #0.5 15.4 } }")
     ((:c nil :comma) "c" "" "^\\markup{,}")
-    ((:d nil nil) "d" "" "^\\markup{\\teeny 15.4}")
-    ((:c :sharp nil) "c" "is" "^\\markup{\\teeny 15.4}")
-    ((:c :sharp :dot) "d" "es" "^\\markup{\\teeny 15.4}")
-    ((:d :flat nil) "d" "es" "^\\markup{\\teeny 15.4}")
-    ((:d nil :dot) "e" "es" "^\\markup{\\teeny 15.4}")
-    ((:d :flat :dot) "c" "isis" "^\\markup{\\teeny 15.4}")
+    ((:d nil nil) "d" "" "^\\markup{ \\abs-fontsize #4 \\center-align { \\hspace #0.5 15.4 } }")
+    ((:c :sharp nil) "c" "is" "^\\markup{ \\abs-fontsize #4 \\center-align { \\hspace #0.5 15.4 } }")
+    ((:c :sharp :dot) "d" "es" "^\\markup{ \\abs-fontsize #4 \\center-align { \\hspace #0.5 15.4 } }")
+    ((:d :flat nil) "d" "es" "^\\markup{ \\abs-fontsize #4 \\center-align { \\hspace #0.5 15.4 } }")
+    ((:d nil :dot) "e" "es" "^\\markup{ \\abs-fontsize #4 \\center-align { \\hspace #0.5 15.4 } }")
+    ((:d :flat :dot) "c" "isis" "^\\markup{ \\abs-fontsize #4 \\center-align { \\hspace #0.5 15.4 } }")
     ((:d nil :comma) "d" "" "^\\markup{,}")
-    ((:e nil nil) "e" "" "^\\markup{\\teeny 15.4}")
-    ((:e :flat nil) "e" "s" "^\\markup{\\teeny 15.4}")
-    ((:d :sharp nil) "d" "is" "^\\markup{\\teeny 15.4}")
-    ((:d :sharp :dot) "e" "s" "^\\markup{\\teeny 15.4}")
+    ((:e nil nil) "e" "" "^\\markup{ \\abs-fontsize #4 \\center-align { \\hspace #0.5 15.4 } }")
+    ((:e :flat nil) "e" "s" "^\\markup{ \\abs-fontsize #4 \\center-align { \\hspace #0.5 15.4 } }")
+    ((:d :sharp nil) "d" "is" "^\\markup{ \\abs-fontsize #4 \\center-align { \\hspace #0.5 15.4 } }")
+    ((:d :sharp :dot) "e" "s" "^\\markup{ \\abs-fontsize #4 \\center-align { \\hspace #0.5 15.4 } }")
     ((:e nil :dot) "f" "es")
     ((:e :flat :dot) "d" "isis")
     ((:e nil :comma) "e^\\markup{,}")
@@ -316,7 +320,8 @@
   (cdr (assoc (list lettera chromatic-alteration enharmonic-alteration)
               (case convention
                 (:vicentino *dict-ly-notenames*)
-                (:double-accidentals *dict-ly-notenames-double-accidentals-cents*))
+                (:double-accidentals *dict-ly-notenames-double-accidentals*)
+                (:double-accidentals-cents *dict-ly-notenames-double-accidentals-cents*))
               :test #'equal)))
 
 (defun key->ly-pitch (key note-value dottedp duration-override divider convention conversion)
@@ -328,7 +333,12 @@
         (format nil "~a~@[~a~]~a~a~a~a~@[~a~] ~@[~a~]"
                 (first notename) ;; root name (a, b, c, ...)
                 (second notename) ;; alteration suffix (is, es)
-                (octave->ly-octave (fourth new-key)) ;; (' ,)
+                (octave->ly-octave (+ (fourth new-key)
+                                      (if (and (or (eq convention :double-accidentals)
+                                                   (eq convention :double-accidentals-cents))
+                                               (and (string= (first notename) "c")
+                                                    (string= (second notename) "es")))
+                                          1 0))) ;; (' ,)
                 (value->ly-duration note-value) ;; (\breve, 1, 2, 4, 8)
                 (if dottedp "." "") ;; rhythmic dot
                 (if duration-override (format nil "*~a" duration-override) "") ;; for tuplet implementation
@@ -600,7 +610,9 @@
 
 
 (defmethod generate-score-ly-code ((score score) (backend lilypond-backend))
-  (format nil "~
+  (case (output-format backend)
+    (:svg-cropped
+     (format nil "~
 \\version \"2.24.1\"
 
 % Auto generated file
@@ -640,31 +652,84 @@ dot = {
 ~4,0t}
 ~2,0t}
 }"
-          ;; (generate-formatted-text (split-formatted-string (title score)))
-          (mapcar (lambda (textline)
-                    (generate-formatted-text (split-formatted-string textline)))
-                  (split-string-to-list (title score) "\\"))
-          (line-heading (first (sections score)))
-          (mapcar (lambda (section)
-                    (generate-section-ly-code section
-                                              backend
-                                              (find-shortest-duration score)))
-                  (sections score))))
+             ;; (generate-formatted-text (split-formatted-string (title score)))
+             (mapcar (lambda (textline)
+                       (generate-formatted-text (split-formatted-string textline)))
+                     (split-string-to-list (title score) "\\"))
+             (line-heading (first (sections score)))
+             (mapcar (lambda (section)
+                       (generate-section-ly-code section
+                                                 backend
+                                                 (find-shortest-duration score)))
+                     (sections score))))
+    (:pdf-multipage
+     (let ((section (first (sections score))))
+       (format nil "~
+\\version \"2.24.1\"
+
+% Auto generated file
+
+\\header {
+  title = \"~a\"
+  subtitle = \"~a\"
+  copyright = #(string-append \"Vicentino21, generated on \" (strftime \"%d/%m/%Y\" (localtime (current-time))))
+  tagline = ##f
+}
+
+#(define ((fixed-signature-c-cut glyph) grob)
+~4,0t(grob-interpret-markup grob
+~6,0t(markup #:override '(baseline-skip . 0) #:number
+~8,0t(markup (#:fontsize 0 #:musicglyph glyph)))))
+
+dot = {
+~2,0t \\once \\override Script.add-stem-support = ##f
+~2,0t \\once \\override Script.toward-stem-shift = 0
+~2,0t \\once \\override Script.skyline-horizontal-padding = 0
+~2,0t \\once \\override Script.direction = 1
+~2,0t \\once \\override Script.font-size = 1
+}
+
+\\score {
+~@[~a~]
+~2,0t<<
+~{~&~a~}
+~2,0t>>
+~2,0t\\layout {
+~4,0t#(layout-set-staff-size 20)
+~4,0t\\context {
+~6,0t\\Score
+~6,0t\\override LyricText.font-size = #'-1.0
+~4,0t}
+~2,0t}
+}"
+               (standalone-title score)
+               (standalone-subtitle score)
+               (when (lyrics (first (voices section)))
+                 (format nil "~2,0t\\new ChoirStaff"))
+               (mapcar (lambda (voice)
+                         (generate-voice-ly-code voice backend))
+                       (voices section)))))))
 
 
-(defun exec-lilypond (input &key (output "") (lilypond-path *lilypond-path*))
-  (uiop:run-program (list lilypond-path
-                          "-dbackend=svg"
-                          "-dcrop"
-                          "-o"
-                          (uiop:native-namestring
-                           (namestring (make-pathname :type nil :defaults output)))
-                          (uiop:native-namestring input))
-                    :output :interactive :error-output :interactive))
+(defun exec-lilypond (input &key (output "")
+                              (lilypond-path *lilypond-path*)
+                              (output-format :svg-cropped))
+  (case output-format
+    (:svg-cropped
+     (uiop:run-program (list lilypond-path "-dbackend=svg" "-dcrop" "-o"
+                             (uiop:native-namestring
+                              (namestring (make-pathname :type nil :defaults output)))
+                             (uiop:native-namestring input))
+                       :output :interactive :error-output :interactive))
+    (:pdf-multipage (uiop:run-program (list lilypond-path "-o"
+                             (uiop:native-namestring
+                              (namestring (make-pathname :type nil :defaults output)))
+                             (uiop:native-namestring input))
+                       :output :interactive :error-output :interactive))))
 
-(defun run-lilypond (ly-code &key (ly-file nil ly-file-supplied-p)
-                               (output-file nil output-file-supplied-p)
-                               (lilypond-path *lilypond-path*))
+(defun run-lilypond (ly-code output-format &key (ly-file nil ly-file-supplied-p)
+                                             (output-file nil output-file-supplied-p)
+                                             (lilypond-path *lilypond-path*))
   (declare (ignore ly-file-supplied-p))
   (flet ((tmp (pathname)
            (uiop:tmpize-pathname (uiop:merge-pathnames* (uiop:temporary-directory)
@@ -678,31 +743,38 @@ dot = {
                                                 :if-exists :supersede
                                                 :if-does-not-exist :create)
              (exec-lilypond ly-file
-                            :output output-file :lilypond-path lilypond-path))
+                            :output output-file
+                            :lilypond-path lilypond-path
+                            :output-format output-format))
         ;(unless ly-file-supplied-p (uiop:delete-file-if-exists ly-file))
         (unless output-file-supplied-p (uiop:delete-file-if-exists output-file))))))
 
 (defun create-lilypond-score (score-instance backend suffix)
-  (format t "~&Running Lilypond SVG snippet on ~a-~a" (filename score-instance) suffix)
+  (format t "~&Running Lilypond on ~a-~a" (filename score-instance) suffix)
   (run-lilypond (generate-score-ly-code score-instance backend)
+                (output-format backend)
                 :ly-file (merge-pathnames *lilypond-export-path*
                                               (pathname
                                                (format nil "~a-~a.ly"
-                                                       (filename score-instance)
-                                                       suffix)))
+                                                       (filename score-instance) suffix)))
                 :output-file (merge-pathnames *lilypond-export-path*
                                               (pathname
-                                               (format nil "~a-~a.svg"
-                                                       (filename score-instance)
-                                                       suffix))))
-  (rename-file (merge-pathnames *lilypond-export-path*
-                                (pathname (format nil "~a-~a.cropped.svg"
-                                                  (filename score-instance)
-                                                  suffix)))
-               (merge-pathnames *lilypond-export-path*
-                                 (pathname (format nil "~a-~a.svg"
-                                                   (filename score-instance)
-                                                   suffix))))
+                                               (case (output-format backend)
+                                                 (:svg-cropped
+                                                  (format nil "~a-~a.svg"
+                                                          (filename score-instance) suffix))
+                                                 (:pdf-multipage
+                                                  (format nil "~a-~a.pdf"
+                                                          (filename score-instance) suffix))))))
+  (when (eq (output-format backend) :svg-cropped)
+    (rename-file (merge-pathnames *lilypond-export-path*
+                                  (pathname (format nil "~a-~a.cropped.svg"
+                                                    (filename score-instance)
+                                                    suffix)))
+                 (merge-pathnames *lilypond-export-path*
+                                  (pathname (format nil "~a-~a.svg"
+                                                    (filename score-instance)
+                                                    suffix)))))
   (format nil "~a-~a" (filename score-instance) suffix))
 
 
