@@ -51,20 +51,28 @@
    "~/common-lisp/setzkasten/backend-configuration/vicentino-types-syntax.lisp"
    :syntax))
 
-(defparameter *lilypond-backend-modern* (make-instance 'lilypond-backend
-                                                       :clef-type :modern))
-(defparameter *lilypond-backend-modern-double-accidentals* (make-instance 'lilypond-backend
-                                                       :clef-type :modern
-                                                       :notename-convention :double-accidentals))
-(defparameter *lilypond-backend-modern-meter* (make-instance 'lilypond-backend
-                                                             :clef-type :modern
-                                                             ;;:rest-type :mensural
-                                                             :timep t))
-(defparameter *lilypond-backend-modern-meter-double-accidentals* (make-instance 'lilypond-backend
-                                                             :clef-type :modern
-                                                             :notename-convention :double-accidentals
-                                                             ;;:rest-type :mensural
-                                                             :timep t))
+(defparameter *lilypond-backend-modern*
+  (make-instance 'lilypond-backend
+                 :clef-type :modern))
+(defparameter *lilypond-backend-modern-double-accidentals*
+  (make-instance 'lilypond-backend
+                 :clef-type :modern
+                 :notename-convention :double-accidentals))
+(defparameter *lilypond-backend-modern-meter*
+  (make-instance 'lilypond-backend
+                 :clef-type :modern
+                 ;;:rest-type :mensural
+                 :timep t))
+(defparameter *lilypond-backend-modern-meter-quarta-discendente*
+  (make-instance 'lilypond-backend
+                 :clef-type :modern
+                 :pitch-conversion :transposition-quarta-discendente
+                 :timep t))
+(defparameter *lilypond-backend-modern-meter-double-accidentals*
+  (make-instance 'lilypond-backend
+                 :clef-type :modern
+                 :notename-convention :double-accidentals
+                 :timep t))
 
 ;;(defparameter *lilypond-backend-original* (make-instance 'lilypond-backend :clef-type :original))
 (defparameter *lilypond-backend-original* (make-instance 'lilypond-backend
@@ -132,9 +140,10 @@
 
     ;; ("b3-c54-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b3-c54-m1" "b" (:idealised) ,*vicentino-types-backend*)
-    ("b3-c54-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
+    ;;("b3-c54-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
     ;; ("b3-c54-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
     ;; ("b3-c54-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
+    ("b3-c54-m1" "quarta-discendente" (:idealised :it :transposition-quarta-discendente) ,*lilypond-backend-modern-meter-quarta-discendente*)
     ))
 
 (defparameter *book5-original*

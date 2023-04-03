@@ -83,6 +83,7 @@
           :accessor pitch
           ;; needs to be changed, because the notation is more expressive than the keyboard:
           ;; probably in the form of '(:a :♯ :⋅ 3)
+          ;; better: :a :flat :dot 3
           :documentation
           "This list describes the pitch of a note as an organ key: (lettera ordine octave).
            'lettera' is one of the seven root note letters, as symbols. 'ordine' is 1-6,

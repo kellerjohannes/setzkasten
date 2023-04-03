@@ -20,6 +20,10 @@
                         :initarg :notename-convention
                         :accessor notename-convention
                         :documentation "Values can be :vicentino or :double-accidentals")
+   (pitch-conversion :initform :none
+                     :initarg :pitch-conversion
+                     :accessor pitch-conversion
+                     :documentation "Values can be :none, :transposition-quarta-discendente :transposition-tono-discendente")
    (notehead-type :initform :standard
                   :initarg :notehead-type
                   :accessor notehead-type
@@ -193,6 +197,56 @@
     ((:b :flat :dot) "a" "isis")
     ((:b nil :comma) "b^\\markup{,}")))
 
+
+(defparameter *dict-conversion-quarta-discendente*
+  '(((:c nil nil) :g nil nil -1)
+    ((:b :sharp nil) :g :flat :dot 0)
+    ((:c nil :dot) :g nil :dot -1)
+    ((:c :flat :dot) :g :flat :dot -1)
+    ((:c :flat nil) :g :flat nil -1)
+    ((:c nil :comma) :g nil :comma -1)
+    ((:d nil nil) :a nil nil -1)
+    ((:c :sharp nil) :g :sharp nil -1)
+    ((:c :sharp :dot) :a :flat nil -1)
+    ((:d :flat nil) :a :flat nil -1)
+    ((:d nil :dot) :a nil :dot -1)
+    ((:d :flat :dot) :a :flat :dot -1)
+    ((:d nil :comma) :a nil :comma -1)
+    ((:e nil nil) :b nil nil -1)
+    ((:e :flat nil) :b :flat nil -1)
+    ((:d :sharp nil) :a :sharp nil -1)
+    ((:d :sharp :dot) :b :flat nil -1)
+    ((:e nil :dot) :b nil :dot -1)
+    ((:e :flat :dot) :b :flat :dot -1)
+    ((:e nil :comma) :b nil :comma -1)
+    ((:f nil nil) :c nil nil 0)
+    ((:e :sharp nil) :b :sharp nil -1)
+    ((:f nil :dot) :c nil :dot 0)
+    ((:g nil nil) :d nil nil 0)
+    ((:f :sharp nil) :c :sharp nil 0)
+    ((:f :flat nil) :c :flat nil 0)
+    ((:f :sharp :dot) :d :flat nil 0)
+    ((:g :flat nil) :d :flat nil 0)
+    ((:g nil :dot) :d nil :dot 0)
+    ((:g :flat :dot) :d :flat :dot 0)
+    ((:g nil :comma) :d nil :comma 0)
+    ((:a nil nil) :e nil nil 0)
+    ((:g :sharp nil) :d :sharp nil 0)
+    ((:g :sharp :dot) :e :flat nil 0)
+    ((:a :flat nil) :e :flat nil 0)
+    ((:a nil :dot) :e nil :dot 0)
+    ((:a :flat :dot) :e :flat :dot 0)
+    ((:a :sharp :dot) :f nil nil 0)
+    ((:a nil :comma) :e nil :comma 0)
+    ((:b nil nil) :f :sharp nil 0)
+    ((:b :natural nil) :f :sharp nil 0)
+    ((:b :flat nil) :f nil nil 0)
+    ((:a :sharp nil) :e :sharp nil 0)
+    ((:b nil :dot) :g :flat nil 0)
+    ((:b :natural :dot) :g :flat nil 0)
+    ((:b :flat :dot) :f nil :dot 0)
+    ((:b nil :comma) :f :sharp :comma 0)))
+
 (defparameter *dict-ly-mensural-clefs* '(("C7" . "mensural-c4")
                                          ("C5" . "mensural-c3")
                                          ("C3" . "mensural-c2")
@@ -242,6 +296,22 @@
 (defun octave->ly-octave (octave)
   (cdr (assoc octave *dict-ly-octave*)))
 
+(defun convert-pitch (key keyword)
+  (if (eq keyword :none)
+      key
+      (let* ((candidate (list (first key) (second key) (third key)))
+             (result (cdr (assoc candidate
+                                 (case keyword
+                                   (:transposition-quarta-discendente
+                                    *dict-conversion-quarta-discendente*)
+                                   (:transposition-tono-discendente
+                                    *dict-conversion-tono-discendente*))
+                                 :test #'equal))))
+        (list (first result) (second result) (third result) (+ (fourth key)
+                                                               (if (fourth result)
+                                                                   (fourth result)
+                                                                   0))))))
+
 (defun key->ly-notename (lettera chromatic-alteration enharmonic-alteration convention)
   (cdr (assoc (list lettera chromatic-alteration enharmonic-alteration)
               (case convention
@@ -249,14 +319,16 @@
                 (:double-accidentals *dict-ly-notenames-double-accidentals-cents*))
               :test #'equal)))
 
-(defun key->ly-pitch (key note-value dottedp duration-override divider convention)
+(defun key->ly-pitch (key note-value dottedp duration-override divider convention conversion)
   (if key
-      (let ((notename (key->ly-notename (first key) (second key) (third key) convention)))
+      (let* ((new-key (convert-pitch key conversion))
+             (notename (key->ly-notename (first new-key) (second new-key) (third new-key)
+                                         convention)))
         ;; (format t "~&ly notename: ~s" notename)
         (format nil "~a~@[~a~]~a~a~a~a~@[~a~] ~@[~a~]"
                 (first notename) ;; root name (a, b, c, ...)
                 (second notename) ;; alteration suffix (is, es)
-                (octave->ly-octave (fourth key)) ;; (' ,)
+                (octave->ly-octave (fourth new-key)) ;; (' ,)
                 (value->ly-duration note-value) ;; (\breve, 1, 2, 4, 8)
                 (if dottedp "." "") ;; rhythmic dot
                 (if duration-override (format nil "*~a" duration-override) "") ;; for tuplet implementation
@@ -315,10 +387,11 @@
           (sections score))
     result))
 
-(defun convert-key-signature (key-signature)
+(defun convert-key-signature (key-signature conversion)
   (loop for item in key-signature
         for i from 0
-        collect (cons i (cond ((eq item nil) (intern ",NATURAL"))
+        collect (cons i (cond ((not (eq conversion :none)) (intern ",NATURAL"))
+                              ((eq item nil) (intern ",NATURAL"))
                               ((eq item :flat) (intern ",FLAT"))
                               ((eq item :sharp) (intern ",SHARP"))
                               (t (format t "~&Unknown accidental in signature."))))))
@@ -327,10 +400,10 @@
 ;;~%~16,0t\\override Staff.KeySignature.flat-positions = #'((-5 . 5))
 ;;~%~16,0t\\override Staff.KeyCancellation.flat-positions = #'((-5 . 5))
 
-(defun generate-key-signature (key-signature)
+(defun generate-key-signature (key-signature conversion)
   (format nil "~
 ~%~18,0t\\key c #`~a "
-          (convert-key-signature key-signature)))
+          (convert-key-signature key-signature conversion)))
 
 (defmethod generate-mobject-ly-code ((mobject mobject) (backend lilypond-backend)
                                      clef-state key-state clef-override)
@@ -342,7 +415,8 @@
     (when (string/= current-clef clef-state)
       (setf result (format nil "~%~18,0t\\clef ~s" current-clef)))
     (when (and current-key (not (equal current-key key-state)))
-      (setf result (concatenate 'string result (generate-key-signature current-key))))
+      (setf result (concatenate 'string result
+                                (generate-key-signature current-key (pitch-conversion backend)))))
     ;;(format t "~&~s" (value mobject))
     (setf result
           (concatenate 'string
@@ -358,7 +432,8 @@
                                                     (dottedp mobject)
                                                     (duration-override mobject)
                                                     (divider mobject)
-                                                    (notename-convention backend))
+                                                    (notename-convention backend)
+                                                    (pitch-conversion backend))
                                      (key->ly-pitch (list (first old-pitch)
                                                           (second (ligature mobject))
                                                           (fourth (ligature mobject))
@@ -367,14 +442,16 @@
                                                     (dottedp mobject)
                                                     (duration-override mobject)
                                                     (divider mobject)
-                                                    (notename-convention backend))))
+                                                    (notename-convention backend)
+                                                    (pitch-conversion backend))))
                            (format nil " ~a"
                                    (key->ly-pitch (pitch mobject)
                                                   (value mobject)
                                                   (dottedp mobject)
                                                   (duration-override mobject)
                                                   (divider mobject)
-                                                  (notename-convention backend))))))
+                                                  (notename-convention backend)
+                                                  (pitch-conversion backend))))))
     (values result current-clef current-key)))
 
 
@@ -606,7 +683,7 @@ dot = {
         (unless output-file-supplied-p (uiop:delete-file-if-exists output-file))))))
 
 (defun create-lilypond-score (score-instance backend suffix)
-  (format t "~&Running Lilypond on ~a-~a" (filename score-instance) suffix)
+  (format t "~&Running Lilypond SVG snippet on ~a-~a" (filename score-instance) suffix)
   (run-lilypond (generate-score-ly-code score-instance backend)
                 :ly-file (merge-pathnames *lilypond-export-path*
                                               (pathname
