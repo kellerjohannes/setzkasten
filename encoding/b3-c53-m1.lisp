@@ -14,6 +14,10 @@
    (:height nil)
    (:background ,*score-bg-color*))
   (:preamble-lilypond
+   (:standalone-title "»Madonna il poco dolce«")
+   (:standalone-subtitle (:alt (:c-standalone "Libro 3, Capitolo 53, fol. 68v-69r")
+                               (:transposition-quarta-discendente
+                                "Libro 3, Capitolo 53, fol. 68v-69r, eine Quarte tiefer notiert")))
    (:lyrics
     (s1 v1 "Ma -- don -- na_il po -- co dol -- ce,_il po -- co dol -- ce,
             Ma -- don -- na_il po -- co dol -- ce_è'il mol -- to_a -- ma -- ro

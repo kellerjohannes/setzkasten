@@ -17,6 +17,10 @@
    (:clef-overrides
     (s1 v1 "treble")
     (s1 v2 "treble_8"))
+   (:standalone-title "»Dolce mio ben«")
+   (:standalone-subtitle (:alt (:c-standalone "Libro 3, Capitolo 52, fol. 67v-68r")
+                               (:transposition-quarta-discendente
+                                "Libro 3, Capitolo 52, fol. 67v-68r, eine Quarte tiefer notiert")))
    (:lyrics
     (s1 v1 "Dol -- ce mio ben, [dol -- ce mio ben]
             son que -- sti dol -- ci lu -- mi_i dol -- ci lu -- mi,
