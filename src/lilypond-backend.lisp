@@ -672,7 +672,7 @@ dot = {
 \\header {
   title = \"~a\"
   subtitle = \"~a\"
-  copyright = #(string-append \"Vicentino21, generated on \" (strftime \"%d/%m/%Y\" (localtime (current-time))))
+  copyright = \\markup { \\tiny #(string-append \"Vicentino21, generated on \" (strftime \"%d/%m/%Y\" (localtime (current-time)))) }
   tagline = ##f
 }
 

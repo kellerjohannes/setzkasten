@@ -19,6 +19,7 @@
     (s1 v2 "treble_8"))
    (:standalone-title "»Dolce mio ben«")
    (:standalone-subtitle (:alt (:c-standalone "Libro 3, Capitolo 52, fol. 67v-68r")
+                               (:tatti "Libro 3, Capitolo 52, fol. 67v-68r, Export »I Tatti«")
                                (:transposition-quarta-discendente
                                 "Libro 3, Capitolo 52, fol. 67v-68r, eine Quarte tiefer notiert")))
    (:lyrics
@@ -83,7 +84,9 @@
      (709 nil "dolci lumi che tānto dolcemente")
      (1466 732 "che tanto dolcemente mi con⸗"))
    (:music 2209
-           cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat) b22 fl3 b22 sb3 b22 m1 b22 sb1 b22 sb8 nat7 md7 nat7 md7 nat7 md7 b22 m8 b22 m5 b22 mrest5
+           cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat) b22 fl3 b22 sb3 b22 m1 b22 sb1 b22 sb8 nat7
+           ;; idealisierung zu diskutieren
+           (:alt (:diplomatic md7) (:idealised md7) (:tatti m7)) nat7 md7 nat7 md7 b22 m8 b22 m5 b22 mrest5
            b22 m6 sh4 m4 sh4 m4 b22 fl5 b22 m5 b22 fl5 b22 m5 b22 sb5 b22 m5 b22 sb3 b22 m3 sb6 b22 m6 b22 sb6 b22 m6 b22 sb2 b22 (:duration-override 2) brd2 (:duration-override nil) b22 blbl)
    (:text 90 58
      (168 nil "ſumi")
@@ -105,7 +108,8 @@
      (1937 nil "ſon queſti"))
    (:music 2224
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat) b38 md0 b22 md3 sh1 m1 b22 sb1 fl3 m3 b22 sb2 sbd5 b22 m3 b22 m5 b22 m3 sb6 m9 b22 m9 b22 m9 m5d dot6 sm5d fl7 sbd7 fl3 sb3 b22 mrest3
-           b22 m4 b22 md4 b22 m1 b22 md8 b22 md8 b22 sb4 b22 m2 m9 b22 m7 fl7 m7 b38)
+           ;; idealisierung zu diskutieren
+           b22 m4 b22 (:alt (:diplomatic md4) (:idealised m4) (:tatti m4)) b22 m1 b22 md8 b22 md8 b22 sb4 b22 m2 m9 b22 m7 fl7 m7 b38)
    (:text 90 58
      (130 nil "i dolci")
      (321 1852 "lumi i dolci lumi che tāto che tanto dolcemente fanno che dolcemēte che dolce⸗"))
@@ -168,7 +172,7 @@
      (1727 nil "fanno che mi conſu"))
    (:music 2224
            (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat) b22 m4 b22 m4 b22 m2 b22 m2 b22 m5 b22 m5 b22 md5 b22 md5 b22 sb1 b22 sb4 b22 sbrest5
-           b22 sb6 b22 sb2 b22 sb2 b22 sb3 b22 (:duration-override 2) brd3 (:duration-override nil) b38 blbl
+           b22 sb6 b22 sb2 b22 sb2 b22 sb3 b22 (:divider :double) (:duration-override 2) brd3 (:duration-override nil) b38 blbl
            b38 nat3 b22 sb3 nat3 sb3 b38 blbl b38 b38 b118 b118 b118 b118)
    (:text 90 58
      (138 nil "mi che dolcemente mi conſumi")

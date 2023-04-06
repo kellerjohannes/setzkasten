@@ -45,6 +45,7 @@
   (glyph-notehead-stem          max6   "maxima-6"      "stave" "notehead-maxima"     "" "stem-minima" 111 ,*glyph-height* 6 :down nil nil nil)
   (glyph-notehead-stem          longa1   "longa-1"      "stave" "notehead-longa"     "" "stem-minima" 64 ,*glyph-height* 1 :up nil nil nil)
   (glyph-notehead-stem          longa5   "longa-5"      "stave" "notehead-longa"     "" "stem-minima" 64 ,*glyph-height* 5 :down nil nil nil)
+  (glyph-notehead-stem          longa7   "longa-7"      "stave" "notehead-longa"     "" "stem-minima" 64 ,*glyph-height* 7 :down nil nil nil)
   (glyph-notehead-stem          longa8   "longa-8"      "stave" "notehead-longa"     "" "stem-minima" 64 ,*glyph-height* 8 :down nil nil nil)
   (glyph-notehead-stem          longa9   "longa-9"      "stave" "notehead-longa"     "" "stem-minima" 64 ,*glyph-height* 9 :down nil nil nil)
 
@@ -170,6 +171,7 @@
   (glyph-rest mrest3 "minima-rest-3" "stave" "minima-rest" 24 ,*glyph-height* 3 :up)
   (glyph-rest mrest5 "minima-rest-5" "stave" "minima-rest" 24 ,*glyph-height* 5 :up)
   (glyph-rest mrest7 "minima-rest-7" "stave" "minima-rest" 24 ,*glyph-height* 7 :up)
+  (glyph-rest smrest1 "semiminima-rest-1" "stave" "semiminima-rest" 50 ,*glyph-height* 1 :up)
   (glyph-rest smrest3 "semiminima-rest-3" "stave" "semiminima-rest" 50 ,*glyph-height* 3 :up)
   (glyph-rest smrest7 "semiminima-rest-7" "stave" "semiminima-rest" 50 ,*glyph-height* 7 :up)
   (glyph-rest sbrest3 "semibrevis-rest-3" "stave" "minima-rest" 24 ,*glyph-height* 3 :down)
@@ -181,6 +183,7 @@
   (glyph-rest brrest6 "brevis-rest-6" "stave" "brevis-rest" 20 ,*glyph-height* 7 :down)
   (glyph-rest lrest24 "longa-rest-2-4" "stave" "longa-rest" 20 ,*glyph-height* 1 :up)
   (glyph-rest lrest46 "longa-rest-4-6" "stave" "longa-rest" 20 ,*glyph-height* 3 :up)
+  (glyph-rest lrest68 "longa-rest-6-8" "stave" "longa-rest" 20 ,*glyph-height* 5 :up)
   (glyph-meter met-perf-min "meter-perfectum-minor" "stave" "tempus-perfectum" nil nil 68 ,*glyph-height*)
   (glyph-meter met-perf-maj "meter-perfectum-major" "stave" "tempus-perfectum" "prolatio-major" nil 68 ,*glyph-height* 0)
   (glyph-meter met-perf-min-dim "meter-imperfectum-minor-diminutum" "stave" "tempus-imperfectum" nil "diminutum" 68 ,*glyph-height* 0 -0.1 -0.4)

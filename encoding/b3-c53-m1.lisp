@@ -16,6 +16,7 @@
   (:preamble-lilypond
    (:standalone-title "»Madonna il poco dolce«")
    (:standalone-subtitle (:alt (:c-standalone "Libro 3, Capitolo 53, fol. 68v-69r")
+                               (:tatti "Libro 3, Capitolo 53, fol. 68v-69r, Export »I Tatti«")
                                (:transposition-quarta-discendente
                                 "Libro 3, Capitolo 53, fol. 68v-69r, eine Quarte tiefer notiert")))
    (:lyrics
@@ -104,7 +105,12 @@
            (:voice v2)
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat)
            b38 met-perf-min-dim b38 sb6 b22 sb6 b38 sbd6 b38 md5 b38 md5 b38 m7 b38 m8 b38 m6 dot6 sm7 b38 m8 b38 m8 b38 fl9 b22 sb9 b22 fl9 b22 sb9 b38 sbrest9
-           b38 br9 b22 sbd9 dot10 m9 sh9 md9 sh9 m9 b38 sbd9 b38 m9 b38 b38 b38)
+           b38 br9 b22 sbd9 dot10
+           ;; idealisierung zu diskutieren
+           (:alt (:diplomatic m9) (:tatti md9) (:idealised m9))
+           sh9
+           ;; idealisierung zu diskutieren
+           (:alt (:diplomatic md9) (:tatti m9) (:idealised m9)) sh9 m9 b38 sbd9 b38 m9 b38 b38 b38)
    (:text 90 58
           (210 nil "Madonna")
           (479 nil "il poco dolcʼil po")
@@ -247,6 +253,7 @@
    (:music 2226
            (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat)
            b38 sb6 b22 sb7 b22 sb8 b22 sb6 b22 mrest7 b22 m8 b22 sb5 b22 sbd5 b22 fl6 b22 sb6 b22 br5 b22 sb2 b22
+           (:divider :double)
            (:duration-override 1/2) longa9 (:duration-override 1) b38 bl
            b22 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38)
    (:text 90 58
