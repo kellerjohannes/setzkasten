@@ -24,7 +24,9 @@
    (:standalone-subtitle (:alt (:c-standalone "Libro 3, Capitolo 51, fol. 67r")
                                (:tatti "Libro 3, Capitolo 51, fol. 67r, Export »I Tatti«")
                                (:transposition-quarta-discendente
-                                "Libro 3, Capitolo 51, fol. 67r, eine Quarte tiefer notiert")))
+                                "Libro 3, Capitolo 51, fol. 67r, eine Quarte tiefer notiert")
+                               (:transposition-tono-discendente
+                                "Libro 3, Capitolo 51, fol. 67r, einen Ganzton tiefer notiert")))
    (:lyrics
     (s1 v1 "So -- a -- v'e dolc' ar -- do -- re, [so -- a -- v'e dolc' ar -- do -- re] che fra piant' e so -- spi -- ri, che fra piant' e so -- spi -- _ ri")
     (s1 v2 "So -- a -- v'e dolc' ar -- do -- _ _ re, [so -- a -- v'e dolc' ar -- do -- re] che fra piant' e so -- spi -- _ ri, [che fra piant' e]")

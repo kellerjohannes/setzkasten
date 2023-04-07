@@ -20,7 +20,9 @@
    (:standalone-subtitle (:alt (:c-standalone "Libro 3, Capitolo 54, fol. 69v-70r")
                                (:tatti "Libro 3, Capitolo 54, fol. 69v-70r, Export »I Tatti«")
                                (:transposition-quarta-discendente
-                                "Libro 3, Capitolo 54, fol. 69v-70r, eine Quarte tiefer notiert")))
+                                "Libro 3, Capitolo 54, fol. 69v-70r, eine Quarte tiefer notiert")
+                               (:transposition-tono-discendente
+                                "Libro 3, Capitolo 54, fol. 69v-70r, einen Ganzton tiefer notiert")))
    (:lyrics
     (s1 v1 "Mu -- si -- ca pri -- sca ca -- put, mu -- si -- ca pri -- sca ca -- put
             te -- ne -- bris mo -- do su -- stu -- lit al -- _ tis,

@@ -82,6 +82,10 @@
   (let ((result (find id stencils :test #'string= :key #'id)))
     (if result result (error 'stencil-not-found :id id))))
 
+(defmethod add-vspace ((score typesetter) vspace-data)
+  (push vspace-data (line-container score))
+  (push nil (line-width-list score)))
+
 (defmethod add-music-line ((score typesetter) music-data stencil-list)
   (push '() (line-container score))
   (push (second music-data) (line-width-list score))
@@ -148,10 +152,12 @@
 (defmethod typeset ((score typesetter) alignment)
   (let ((y-counter (top-margin score)))
     (mapc (lambda (line line-width)
-            ;; TODO restructure case: incf -> case
-            (case (first line)
-              (:text (incf y-counter (typeset-text-line score line y-counter)))
-              (:music (incf y-counter (typeset-music-line score line line-width alignment y-counter)))))
+            (incf y-counter
+                  (case (first line)
+                    (:text (typeset-text-line score line y-counter))
+                    (:vspace (second line))
+                    (:music (typeset-music-line score line line-width alignment y-counter))
+                    (otherwise 0))))
           (reverse (line-container score))
           (reverse (line-width-list score)))))
 
@@ -164,9 +170,11 @@
         (+ top-and-bottom-margin
            (reduce #'+ (line-container score)
                    :key (lambda (line)
-                          (if (eq (first line) :text)
-                              (second line)
-                              (glyph-height (third line)))))))))
+                          (case (first line)
+                            (:text (second line))
+                            (:music (glyph-height (third line)))
+                            (:vspace (second line))
+                            (otherwise 0))))))))
 
 ;; uncovered case: if a snippet does not have a defined width (nil), the width of the svg will be
 ;; wrong. Not a problem, because music examples without a music line as its defining width are
@@ -184,11 +192,12 @@
         (+ left-and-right-margin (width score))
         (+ left-and-right-margin
            (loop for line in (line-container score)
-                 maximize (if (eq (first line) :text)
-                              (calculate-text-width line)
-                              (if (second line)
-                                  (second line)
-                                  (calculate-glyph-width line))))))))
+                 maximize (case (first line)
+                            (:text (calculate-text-width line))
+                            (:music (if (second line)
+                                        (second line)
+                                        (calculate-glyph-width line)))
+                            (otherwise 0)))))))
 
 (defmethod write-score ((score typesetter))
   (with-open-file (stream (merge-pathnames *svg-export-path*
@@ -245,8 +254,11 @@
     (mapc (lambda (line)
             (cond ((eq (first line) :music)
                    (add-music-line setter line stencil-list))
+                  ((eq (first line) :vspace)
+                   (add-vspace setter line))
                   ((eq (first line) :text)
                    (add-text-line setter line))
+                  ;; TODO implement error condition (or warning?)
                   (t nil)))
           (parse-vicentino-code (score-elements score) glyphs))
     (typeset setter :block)  ; use :block for Blocksatz, use :flushed for Flattersatz

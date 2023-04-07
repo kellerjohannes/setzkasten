@@ -20,6 +20,8 @@
    (:standalone-title "»Hierusalem«")
    (:standalone-subtitle (:alt (:c-standalone "Libro 3, Capitolo 55, fol. 70v-71r")
                                (:tatti "Libro 3, Capitolo 55, fol. 70v-71r, Export »I Tatti«")
+                               (:transposition-tono-discendente
+                                "Libro 3, Capitolo 55, fol. 70v-71r, einen Ganzton tiefer notiert")
                                (:transposition-quarta-discendente
                                 "Libro 3, Capitolo 55, fol. 70v-71r, eine Quarte tiefer notiert")))
    (:lyrics
