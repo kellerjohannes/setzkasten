@@ -30,4 +30,5 @@
   (component-meter-diminutio nil "diminutum"       5 4)
   (component-digit-arc   nil "digit-arc-3"         0.8 5)
   (component-digit-arc   nil "digit-arc-2"         0.6 5)
+  (component-custos      nil "standard-custos" 8 3 12)
   )

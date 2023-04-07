@@ -134,6 +134,11 @@
   (overhead 0.2 "Overhead length above and below staff, in proportion to the space between two staff lines.")
   (thickness 2 "Stroke thickness."))
 
+(define-setzkasten-class component-custos (component)
+  "Parameters for the creation of a custos symbol."
+  (total-width 8 "Width of the whole shape.")
+  (body-height 3 "Height of the wiggly line.")
+  (tail-length 12 "Length of the tail."))
 
 
 
@@ -255,3 +260,8 @@
   (list-of-arc-components nil "List of instances of arc-components.")
   (list-of-arc-positions nil "List of staff line positions.")
   (list-of-directions nil "List of direction flags, :up or :down."))
+
+(define-setzkasten-class glyph-custos (glyph-staff)
+  "Specification of a glyph containing a custos."
+  (custos-component nil "Instance of custos component.")
+  (staff-position 5 "Position of custos."))

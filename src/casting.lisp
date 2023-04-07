@@ -738,7 +738,6 @@
   (call-next-method))
 
 (defmethod draw-arc ((stencil glyph-digit-arc) instance position direction)
-  (format t "~&Drawing arc.")
   (let ((radius (* 0.5 (* (distance-between-lines (staff-component stencil))
                           (outer-diameter instance)))))
     (output-arc (- (h-center stencil) (* 0.8 radius))
@@ -761,6 +760,27 @@
         (list-of-arc-components stencil)
         (list-of-arc-positions stencil)
         (list-of-directions stencil))
+  (call-next-method))
+
+(defmethod draw-custos ((stencil glyph-custos))
+  (let* ((segment-width (/ (total-width (custos-component stencil)) 4))
+         (a (vec:create (- (h-center stencil)
+                           (* 0.5 (total-width (custos-component stencil))))
+                        (- (calculate-absolute-staff-position (staff-position stencil))
+                           (* 0.5 (body-height (custos-component stencil))))))
+         (b (vec:add a (vec:create segment-width (body-height (custos-component stencil)))))
+         (c (vec:add a (vec:create (* 2 segment-width) 0)))
+         (d (vec:add b (vec:create (* 2 segment-width) 0)))
+         (e ;; tail endpoint
+           )))
+  (output-path `("fill" ,color)
+               `((m ,a) (l ,b) (l ,c) (l ,d) (l ,e) (c))))
+
+(defmethod cast ((stencil glyph-custos))
+  "Generates SVG data for a custos glyph."
+  (format t "~&Casting custos")
+  (push (draw-custos stencil)
+        (svg-data stencil))
   (call-next-method))
 
 ;;; BOOKMARK: transcoding until here
