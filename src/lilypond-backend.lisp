@@ -470,7 +470,6 @@
     ((:meter-override "2/2" nil) "\\once \\override Score.TimeSignature.stencil = ##f" "2/2")))
 
 (defun generate-ly-meter (meter-description)
-  (format t "~&generating signature for ~a" meter-description)
   (let ((result (assoc meter-description *dict-ly-meter-signatures* :test #'equalp)))
     (format nil "~a \\time ~a"
             (second result)

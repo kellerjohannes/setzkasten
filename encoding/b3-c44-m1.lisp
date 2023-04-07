@@ -14,6 +14,8 @@
    (:height nil)
    (:background ,*score-bg-color*))
   (:preamble-lilypond
+   (:alt (:transposition-quarta-discendente (:clef-overrides
+                                             (s1 v2 "treble_8"))))
    (:standalone-title "»Alleluia«")
    (:standalone-subtitle
     (:alt (:c-standalone "Libro 3, Capitolo 44 [orig. XLVIIII], fol. 62r-62v")
