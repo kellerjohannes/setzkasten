@@ -129,7 +129,7 @@
    (meter :initform nil
           :initarg :meter
           :accessor meter
-          :documentation "Contains a keyword describing the current time context of the mobject. Possible values: `:cut-c'.")
+          :documentation "Contains a list of keywords describing the current meter. For example '(:circle nil :cut).")
    (divider :initform nil
             :initarg :divider
             :accessor divider
@@ -220,7 +220,8 @@
   (add-mobject (get-voice (get-section score section-id) voice-id)
                mobject-instance))
 
-(defmethod make-note (id lettera chromatic-alteration enharmonic-alteration octave value dottedp duration-override clef key-signature ligature divider)
+(defmethod make-note (id lettera chromatic-alteration enharmonic-alteration octave value dottedp
+                      duration-override clef key-signature ligature divider meter)
   "Instanciates a `mobject' representing a note (not a rest). `lettera', `chromatic-alteration' and `enharmonic-alteration' all need to be provided in keyword form."
   (make-instance 'mobject :id id
                           :pitch (list lettera chromatic-alteration enharmonic-alteration octave)
@@ -228,16 +229,18 @@
                           :dottedp dottedp
                           :duration-override duration-override
                           :clef clef
+                          :meter meter
                           :key-signature key-signature
                           :ligature ligature
                           :divider divider))
 
-(defmethod make-rest (id value dottedp clef key-signature divider)
+(defmethod make-rest (id value dottedp clef key-signature divider meter)
   "Instanciates a `mobject' representing a rest (not a note)."
   (make-instance 'mobject :id id
                           :pitch nil
                           :value value
                           :dottedp dottedp
+                          :meter meter
                           :clef clef
                           :key-signature key-signature
                           :divider divider))

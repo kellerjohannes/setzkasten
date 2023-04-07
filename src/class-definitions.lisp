@@ -138,7 +138,8 @@
   "Parameters for the creation of a custos symbol."
   (total-width 8 "Width of the whole shape.")
   (body-height 3 "Height of the wiggly line.")
-  (tail-length 12 "Length of the tail."))
+  (tail-length 12 "Length of the tail.")
+  (thickness 8 "Stroke width."))
 
 
 

@@ -98,7 +98,8 @@
    ((id "custos")
     (total-width 8)
     (body-height 3)
-    (tail-length 12))
+    (tail-length 12)
+    (thickness 6))
    ())
 
   (glyph-staff

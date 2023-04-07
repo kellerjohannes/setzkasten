@@ -766,21 +766,19 @@
   (let* ((segment-width (/ (total-width (custos-component stencil)) 4))
          (a (vec:create (- (h-center stencil)
                            (* 0.5 (total-width (custos-component stencil))))
-                        (- (calculate-absolute-staff-position (staff-position stencil))
+                        (- (calculate-absolute-staff-position stencil (staff-position stencil))
                            (* 0.5 (body-height (custos-component stencil))))))
          (b (vec:add a (vec:create segment-width (body-height (custos-component stencil)))))
          (c (vec:add a (vec:create (* 2 segment-width) 0)))
          (d (vec:add b (vec:create (* 2 segment-width) 0)))
-         (e ;; tail endpoint
-           )))
-  (output-path `("fill" ,color)
-               `((m ,a) (l ,b) (l ,c) (l ,d) (l ,e) (c))))
+         (e (vec:add d (vec:create segment-width (- (tail-length (custos-component stencil)))))))
+    (output-path `("fill" "none" "stroke-linecap" "round"
+                          "stroke-width" ,(format nil "~a" (thickness (custos-component stencil))))
+                 `((m ,a) (l ,b) (l ,c) (l ,d) (l ,e)))))
 
 (defmethod cast ((stencil glyph-custos))
   "Generates SVG data for a custos glyph."
-  (format t "~&Casting custos")
-  (push (draw-custos stencil)
-        (svg-data stencil))
+  (push (draw-custos stencil) (svg-data stencil))
   (call-next-method))
 
 ;;; BOOKMARK: transcoding until here

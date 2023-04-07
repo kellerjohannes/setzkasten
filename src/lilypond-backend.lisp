@@ -464,8 +464,20 @@
 ~%~18,0t\\key c #`~a "
           (convert-key-signature key-signature conversion)))
 
+(defparameter *dict-ly-meter-signatures*
+  '(((:semicircle nil :cut) "\\override Score.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural22\")" "4/2")
+    ((:circle nil :cut) "\\override Score.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural34\")" "3/1")
+    ((:meter-override "2/2" nil) "\\once \\override Score.TimeSignature.stencil = ##f" "2/2")))
+
+(defun generate-ly-meter (meter-description)
+  (format t "~&generating signature for ~a" meter-description)
+  (let ((result (assoc meter-description *dict-ly-meter-signatures* :test #'equalp)))
+    (format nil "~a \\time ~a"
+            (second result)
+            (third result))))
+
 (defmethod generate-mobject-ly-code ((mobject mobject) (backend lilypond-backend)
-                                     clef-state key-state clef-override)
+                                     clef-state key-state clef-override meter-state)
   (let ((current-clef (if clef-override
                           clef-override
                           (clef->ly-clef backend (clef mobject))))
@@ -476,7 +488,9 @@
     (when (and current-key (not (equal current-key key-state)))
       (setf result (concatenate 'string result
                                 (generate-key-signature current-key (pitch-conversion backend)))))
-    ;;(format t "~&~s" (value mobject))
+    (unless (equal meter-state (meter mobject))
+      (setf result (concatenate 'string result
+                                (generate-ly-meter (meter mobject)))))
     (setf result
           (concatenate 'string
                        result
@@ -514,14 +528,11 @@
     (values result current-clef current-key)))
 
 
-;; only a sketch, this should be put in a dictionary to implement different meters based on a keyword: parser implementation missing
-(defun generate-ly-meter (meter-keyword)
-  (declare (ignore meter-keyword))
-  "\\override Score.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural22\") \\time 4/2")
 
 (defmethod generate-voice-ly-code ((voice voice) (backend lilypond-backend))
   (let ((clef-state nil)
-        (key-state nil))
+        (key-state nil)
+        (meter-state nil))
     (format nil "~
 ~14,0t\\new Staff \\with { instrumentName = \"~a\"}
 ~14,0t{
@@ -543,20 +554,17 @@
             (label voice)
             (lookup-rest-type (rest-type backend))
             (lookup-notehead-type (notehead-type backend))
-            (if (timep backend)
-                (let ((first-mobject (first (mobjects voice))))
-                  (if first-mobject
-                      (format nil "~18,0t~a" (generate-ly-meter (meter (first (mobjects voice)))))
-                      ""))
-                (format nil "~
+            (unless (timep backend)
+              (format nil "~
 ~18,0t\\cadenzaOn
 ~18,0t\\override Staff.TimeSignature.stencil = ##f"))
             (mapcar (lambda (mobject)
                       (multiple-value-bind (mobject-string current-clef current-key)
                           (generate-mobject-ly-code mobject backend clef-state key-state
-                                                    (clef-override voice))
+                                                    (clef-override voice) meter-state)
                         (setf clef-state current-clef)
                         (setf key-state current-key)
+                        (setf meter-state (meter mobject))
                         mobject-string))
                     (mobjects voice))
             (if (timep backend)
