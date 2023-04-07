@@ -18,6 +18,7 @@
 ;; - flat
 ;; - c-clef
 ;; - g-clef
+;; - arc (for 3/2-digits)
 
 (define-setzkasten-class component ()
   "Parent class for all components."
@@ -117,6 +118,11 @@
   (length-long-leg 2.2 "Length of the longest leg, in proportion to the space between staff lines.")
   (length-middle-leg 1 "Length of the top left leg (usually medium length), in proportion to the space between staff lines.")
   (length-short-leg 0.8 "Length of the two short legs, in proportion to the space between staff lines."))
+
+(define-setzkasten-class component-digit-arc (component)
+  "Parameters for the creation of half moon shapes to draw 3 and 2 digits."
+  (outer-diameter 0.8 "Diameter of the outer line of the arc, in proportion to the space between staff lines.")
+  (thickness 4 "Thickness in the center of the arc."))
 
 ;; (define-setzkasten-class component-g-clef ()
 ;;   "Parameters for the creation of g-clefs."
@@ -243,3 +249,9 @@
   "Specification of a glyph containing staff lines and a dot."
   (dot-position 5 "Staff position of dot.")
   (dot-component nil "Instance of `component-dot'."))
+
+(define-setzkasten-class glyph-digit-arc (glyph-staff)
+  "Specification of a glyph containing arc-based digits."
+  (list-of-arc-components nil "List of instances of arc-components.")
+  (list-of-arc-positions nil "List of staff line positions.")
+  (list-of-directions nil "List of direction flags, :up or :down."))

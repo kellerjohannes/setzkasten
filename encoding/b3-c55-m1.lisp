@@ -39,7 +39,7 @@
    (:music 2216
            (:section s1)
            (:voice v1)
-           cclef1 b38 met-perf-min-dim b38 br6 b22 fl7 b22 sb7 b38 sb7 b38 br9 b22 br5 b38
+           cclef1 b38 met-imperf-min-dim b38 br6 b22 fl7 b22 sb7 b38 sb7 b38 br9 b22 br5 b38
            sb5 dot6 m7 b38 br5 b38 lrest24 b22 br3 b38 sb4 sh4 sb4 b38 br5 b38 sbrest5 b22 sb5 b38 sb8 dot8 m8 b38
            sb8 b38 br6 b22 fl7 b22 br7 b22 fl7 b22 sb7 b38 sb5 b22 custos4)
    (:text 90 58
@@ -68,7 +68,7 @@
           (1217 nil "tuum"))
    (:music 2227
            (:voice v2)
-           cclef5 b38 met-perf-min-dim b38 lrest68 b38 br9 b38 sb7 b22 fl7 b22 sb7 b22 br6 b22
+           cclef5 b38 met-imperf-min-dim b38 lrest68 b38 br9 b38 sb7 b22 fl7 b22 sb7 b22 br6 b22
            brrest4 b22 sbrest5 b22 sb6 b22 sb4 b22 fl4 b22 sb4 b38 br3 b22 brrest2 b22 fl4 b22
            sb4 b38 m2 b38 m5 b38 sb5 b22 sbrest7 b22 sb9 b38 sb9 dot10 m9 b38 sb5 b38 sb5 b38 sb8 dot8 m8 b22 custos4)
    (:text 90 58
@@ -90,7 +90,7 @@
           (2011 nil "tuum."))
    (:music 2234
            (:voice v3)
-           cclef7 b38 met-perf-min-dim b38 lrest46 b22 brrest6 b38 br7 b38 sb6 b22 fl6 b22 sb6 b38 br4 b38 sb4 b38 sb4 b38 sb4 b38 sb4 b22 brrest4 b22 br8 b22 sb4 dot4 m4 b38 m2 b38 m2 b22 sb9 dot10 m9 b38 br9 b22 brrest2 b22 sb3 b22 fl6 b22 sb6 dot6 m4 b38 m4 b22 custos9)
+           cclef7 b38 met-imperf-min-dim b38 lrest46 b22 brrest6 b38 br7 b38 sb6 b22 fl6 b22 sb6 b38 br4 b38 sb4 b38 sb4 b38 sb4 b38 sb4 b22 brrest4 b22 br8 b22 sb4 dot4 m4 b38 m2 b38 m2 b22 sb9 dot10 m9 b38 br9 b22 brrest2 b22 sb3 b22 fl6 b22 sb6 dot6 m4 b38 m4 b22 custos9)
    (:text 90 58
           (279 nil "Hieru")
           (549 nil "ſalem")
@@ -112,7 +112,7 @@
           (1770 nil "Quinta ᴘarte ."))
    (:music 2247
            (:voice v4)
-           cclef7 b38 met-perf-min-dim b38 lrest46 b22 lrest46 b38
+           cclef7 b38 met-imperf-min-dim b38 lrest46 b22 lrest46 b38
            br4 b38 sb2 b22 fl2 b22 sb2 b38 br1 b38 br8 sh7 sb7 b22 sb7 b38 br5 b22 sbrest3 b22 br0 br7 b22 sb7 b22 sb7 b38 sbrest7 b22 mrest5 b22 m5 b22 sb8 dot8 m8 b22 sb4 b22 fl6 b22 sb6 b22 fl6 b22 sb6 dot6 m3 b38 custos3)
    (:text 90 58
           (304 nil "Hieru")
@@ -132,7 +132,7 @@
           (1225 nil "tuum ."))
    (:music 2246
            (:voice v5)
-           (:f-clef) max7 fclef7 b38 met-perf-min-dim b38
+           (:f-clef) max7 fclef7 b38 met-imperf-min-dim b38
            lrest46 b22 lrest46 b22 brrest2 b22 br4 b22 sb3 b22 fl3 b22 sb3 b22 br1 b22 brrest4 b22 br5 b22 fl6 b22 sb6 b38 sb6 b38 sb8 b38 brrest6
            b38 br4 b38 sb7 dot8 m7 b22 fl3 b22 sb3 b22 fl3 b22 sb3 b22 fl6 b22 sb6 dot6 fl6 b22 m6 b22 fl3 b22 sb3 b22 custos3)
    (:text 90 58

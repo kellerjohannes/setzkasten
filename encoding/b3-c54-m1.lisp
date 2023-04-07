@@ -24,7 +24,7 @@
                                (:transposition-tono-discendente
                                 "Libro 3, Capitolo 54, fol. 69v-70r, einen Ganzton tiefer notiert")))
    (:lyrics
-    (s1 v1 "Mu -- si -- ca pri -- sca ca -- put, mu -- si -- ca pri -- sca ca -- put
+    (s1 v1 "Mu -- si -- ca pri -- sca ca -- put, [mu -- si -- ca pri -- sca ca -- put]
             te -- ne -- bris mo -- do su -- stu -- lit al -- _ tis,
             mu -- si -- ca pri -- sca ca -- put te -- ne -- bris mo -- do su -- stu -- lit al -- _ _ _ tis
             dul -- ci -- bus ut nu -- me -- ris, dul -- ci -- bus -- _ _ ut nu -- me -- ris
@@ -69,7 +69,7 @@
            (:voice v1)
            (:section s1)
            cclef1 b22 fl7 (:key-signature nil nil nil nil nil nil :flat)
-           b22 met-perf-min-dim b38 sb4 dot4 m4 b22 m5 b22 sb6 b22 m7 b22 sb8 b22 sb8 b22 mrest5 b22 m6 dot6
+           b22 met-imperf-min-dim b38 sb4 dot4 m4 b22 m5 b22 sb6 b22 m7 b22 sb8 b22 sb8 b22 mrest5 b22 m6 dot6
            sm6 b22 m5 b22 m4 b22 m3 b22 sb2 b22 sb2 b22 mrest3 b22 sb5 b22 m5 b22 m5 b22 sb6 b22
            m7 b22 m8 dot8 sm8 b22 m8 b22 sb8 b22 m7 b22 sb8 custos6)
    (:text 90 58
@@ -158,7 +158,7 @@
    (:music 2218
            (:voice v2)
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat)
-           b38 met-perf-min-dim b38 brrest4 b22 sb5 dot6 m6 b22 m7 b22 sb8 b22 m8 b22 sm7 b22 sm6 b22
+           b38 met-imperf-min-dim b38 brrest4 b22 sb5 dot6 m6 b22 m7 b22 sb8 b22 m8 b22 sm7 b22 sm6 b22
            m5d b22 sb6 b22 sbrest5 b22 mrest3 b38 sb4 b22 m4 b22 m3 b22 sb7 b22 m6 b22 m6 dot6 sm5d b22 m5d b22 sb8 b22
            m8 b22 m9 dot10 sm9 b22 m9 b22 sb9 b22 m9 b38 custos8)
    (:text 90 58
@@ -245,7 +245,7 @@
    (:music 2220
            (:voice v3)
            cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat)
-           met-perf-min-dim lrest46 b22 mrest3 b22 sb3 b22 m3 b22 m4 b22 sb5 b22 m6 b22 sb7 b22 sb4 b22
+           met-imperf-min-dim lrest46 b22 mrest3 b22 sb3 b22 m3 b22 m4 b22 sb5 b22 m6 b22 sb7 b22 sb4 b22
            m3 dot4 sm3 b22 m2 b22 sb7 b22 m6 b22 m6 b22 m5d b22 m5d b22 m8 b22 m7 b22
            m10 dot10 sm9 b22 m9 b22 sb8 b22 sb7 b22 mrest7 b22 m7 dot8 sm7 b22 m7 b22 b22 custos7)
    (:text 90 58
@@ -317,7 +317,7 @@
    (:music 2238
            (:voice v4)
            (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat)
-           b22 met-perf-min-dim b22 lrest46 b22 brrest4 b22 mrest7 b22
+           b22 met-imperf-min-dim b22 lrest46 b22 brrest4 b22 mrest7 b22
            sb7 b22 m8 b22 sb9 b22 m10 b22 m10 b22 sb3 b22 sb4 b22 mrest3 b22
            m1 dot2 sm1 b22 m0 b22 m7 b22 m3 b22 m7 dot8 sm7 b22 sb4 b22 sb8 b22 sb4 b22 mrest5
            b22 m7 dot8 sm7 b22 m7 b22 m4 b22 m5 b38 custos4)

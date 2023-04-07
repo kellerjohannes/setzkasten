@@ -65,14 +65,14 @@
     (cons (- center-x (* radius (cos angle-in-radians)))
           (+ center-y (* radius (sin angle-in-radians))))))
 
-(defun output-arc (x y r start-angle end-angle color &optional (filledp t) (thickness 5))
+(defun output-arc (x y r start-angle end-angle color &optional (filledp t) (thickness 5) (linecap nil))
   (let ((start (polar->cartesian x y r end-angle))
         (end (polar->cartesian x y r start-angle))
         (large-arc-flag 1
           ;;(if (<= (- end-angle start-angle) 180) 0 1)
           ))
-    (format nil "<path d=\"M ~a ~a A ~a ~a 0 ~a 0 ~a ~a\" stroke=~s fill=~s~@[ stroke-width=\"~s\"~] />"
-            (car start) (cdr start) r r large-arc-flag (car end) (cdr end) color
+    (format nil "<path d=\"M ~a ~a A ~a ~a 0 ~a 0 ~a ~a\" stroke=~s stroke-linecap=\"~a\" fill=~s~@[ stroke-width=\"~s\"~] />"
+            (car start) (cdr start) r r large-arc-flag (car end) (cdr end) color linecap
             (if filledp color "none")
             thickness)))
 

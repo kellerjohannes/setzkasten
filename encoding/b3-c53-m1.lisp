@@ -49,7 +49,7 @@
    (:music 2234
            (:voice v1)
            (:section s1)
-           cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat) met-perf-min-dim b22 br5 b22 fl5 b22 sb5 sbd4 b22 m5 b22 m6 b22 sb5 b22 sb6 b22 sbd6 dot6 md6 b22 sb7 b22 sb7 b22 mrest7
+           cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat) met-imperf-min-dim b22 br5 b22 fl5 b22 sb5 sbd4 b22 m5 b22 m6 b22 sb5 b22 sb6 b22 sbd6 dot6 md6 b22 sb7 b22 sb7 b22 mrest7
            b22 m8 nat7 sbd7 dot8 nat7 md7 nat7 m7 nat7 m7 nat7 sbd7 b22 m8 b22 sb8 b22 m7 b22 sb5 b22 br6 b22 mrest5
            b22 m5 b38)
    (:text 70 58
@@ -106,7 +106,7 @@
    (:music 2224
            (:voice v2)
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat)
-           b38 met-perf-min-dim b38 sb6 b22 sb6 b38 sbd6 b38 md5 b38 md5 b38 m7 b38 m8 b38 m6 dot6 sm7 b38 m8 b38 m8 b38 fl9 b22 sb9 b22 fl9 b22 sb9 b38 sbrest9
+           b38 met-imperf-min-dim b38 sb6 b22 sb6 b38 sbd6 b38 md5 b38 md5 b38 m7 b38 m8 b38 m6 dot6 sm7 b38 m8 b38 m8 b38 fl9 b22 sb9 b22 fl9 b22 sb9 b38 sbrest9
            b38 br9 b22 sbd9 dot10
            ;; idealisierung zu diskutieren
            (:alt (:diplomatic m9) (:tatti md9) (:idealised m9))
@@ -165,7 +165,7 @@
    (:music 2232
            (:voice v3)
            cclef7 fl7 (:key-signature nil nil nil nil nil nil :flat)
-           b22 b38 met-perf-min-dim b38 (:ligature-start :natural :flat nil nil) nat4 br6 (:ligature-end) b22 brd5 b38 sb7 b22 sb6 b22 sb7 b38 sbd8 b38 sbd8 b38 mrest7 b38
+           b22 b38 met-imperf-min-dim b38 (:ligature-start :natural :flat nil nil) nat4 br6 (:ligature-end) b22 brd5 b38 sb7 b22 sb6 b22 sb7 b38 sbd8 b38 sbd8 b38 mrest7 b38
            m8 b22 fl9 b22 sb9 dot10 fl9 b22 m9 b38 sbd8 b38 sbd8 b38 sb9 b38 sbd8 b38 mrest5
            b38 m5 b38 m5 b38 m6 b38 sb6 b38 sb5 b38 b38)
    (:text 90 58
@@ -217,7 +217,7 @@
    (:music 2237
            (:voice v4)
            (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat)
-           b38 met-perf-min-dim b38 sb8 b22 sb8 b22 sbd5 b22 sbd7 b22 m4 b22
+           b38 met-imperf-min-dim b38 sb8 b22 sb8 b22 sbd5 b22 sbd7 b22 m4 b22
            m7 b22 m8 b22 m8 b22 m7 b22 m7 b22 brd5 b22 sb8 b38 sbrest7 b38 sb4 b22 sbd8 dot8 md8 b38 m6 b38 m6 b22 sbd8
            b22 m6 b22 sb7 b22 m8 b22 sb8 b22 sb7 b22 mrest5 b38 m5 b38 b38)
    (:text 90 58

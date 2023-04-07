@@ -68,7 +68,7 @@
      (661 882 "tonico,& ᴄromatico,& ᴇnarmonico."))
    (:music 2213
            (:voice v1)
-           (:section s1) cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat) b22 met-perf-min-dim b22 sb4 b22 m4 sh4 m4 b22 m5 b22 m5 b22 m1 b22 m8 b22 sb6 b22 mrest5
+           (:section s1) cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat) b22 met-imperf-min-dim b22 sb4 b22 m4 sh4 m4 b22 m5 b22 m5 b22 m1 b22 m8 b22 sb6 b22 mrest5
            b22 m3 b22 m6 b22 m6 sh4 m4 sh4 m4 fl5 m5 fl5 m5 b22 m5 b22 m5 sb2 sb6 sbrest5
            b22 md5 dot6 smd5 m1 b22 m4 sh4 m4 b22 m4 b22 sm3 b38)
    (:text 140 58
@@ -99,7 +99,7 @@
      (1361 782 "cemente mi conſumi mi conſumi."))
    (:music 2229
            (:voice v2)
-           (:section s1) cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat) met-perf-min-dim b22 sbrest5 b22 sb6 nat4 m4 b22 m5 b22 m3 b22 m3 dot4 sm3 b22 m6 b22 m6 b22 m2 b22 m5 sh5 m5 b22 m6 b22 m6 sbd3 b22 sb6 b22 mrest5
+           (:section s1) cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat) met-imperf-min-dim b22 sbrest5 b22 sb6 nat4 m4 b22 m5 b22 m3 b22 m3 dot4 sm3 b22 m6 b22 m6 b22 m2 b22 m5 sh5 m5 b22 m6 b22 m6 sbd3 b22 sb6 b22 mrest5
            b22 m4 b22 m3 b22 m5 sb2 sbd5 m3 b22 m3 b22 m3 b22 m3 b22 m3 b22 m3 b22 b38)
    (:text 100 58
      (216 nil "Dolce mio ben")
@@ -121,7 +121,7 @@
      (91 1851 "mente mi conſumi mi conſumi fanno che dolcemente mi conſumi mi conſum i."))
    (:music 2221
            (:voice v3) (:section s1)
-           cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat) b22 met-perf-min-dim b22 brrest4 b22 sbrest5 b22 sb3 b22 m3 sh3 m3 b22 m4 b22 m2 b22 m2 b22 m5 b22 m5 b22 m5 b22 sbd8 nat6 m6 b22 m6 b22 m3 b22 m3 m7 sb3 b22 m2 b22 md2 b22 md2 b22 m3 b22 m3 b22 m1 sb8 sh7 m7 b22 fl8 b22 m8 b22 b38)
+           cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat) b22 met-imperf-min-dim b22 brrest4 b22 sbrest5 b22 sb3 b22 m3 sh3 m3 b22 m4 b22 m2 b22 m2 b22 m5 b22 m5 b22 m5 b22 sbd8 nat6 m6 b22 m6 b22 m3 b22 m3 m7 sb3 b22 m2 b22 md2 b22 md2 b22 m3 b22 m3 b22 m1 sb8 sh7 m7 b22 fl8 b22 m8 b22 b38)
    (:text 100 58
      (309 1859 "Dolce mio ben ſon queſtʼi dolci  lumi dolce mio bē ſon queſtʼi dolci lumi sō queſtʼi"))
    (:music 2227
@@ -150,7 +150,7 @@
    (:music 2227
            (:voice v4)
            (:section s1)
-           (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat) b22 met-perf-min-dim b22 lrest24 b22 sb5 nat3 m3 b22 m4 b22 sb2 sb5 b22 md5 b22 md5 b22 m1 b22 m1 b22 m3 b22 m3 b22 m0 b22 m0 sb4 b22 sbd4 mrest5
+           (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat) b22 met-imperf-min-dim b22 lrest24 b22 sb5 nat3 m3 b22 m4 b22 sb2 sb5 b22 md5 b22 md5 b22 m1 b22 m1 b22 m3 b22 m3 b22 m0 b22 m0 sb4 b22 sbd4 mrest5
            b22 m5 dot6 sm5 b22 m5 m2 b22 m2 b22 md2 b22 md2 b22 m5 b22 m5 b22 m7 b22 m7 b22 b38)
    (:text 90 58
      (257 nil "Dolce mio ben")

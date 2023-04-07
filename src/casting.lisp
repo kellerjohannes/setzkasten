@@ -737,6 +737,31 @@
           (svg-data stencil)))
   (call-next-method))
 
+(defmethod draw-arc ((stencil glyph-digit-arc) instance position direction)
+  (format t "~&Drawing arc.")
+  (let ((radius (* 0.5 (* (distance-between-lines (staff-component stencil))
+                          (outer-diameter instance)))))
+    (output-arc (- (h-center stencil) (* 0.8 radius))
+                (funcall (if (eq direction :down) #'+ #'-)
+                         (calculate-absolute-staff-position stencil position)
+                         radius)
+                radius
+                (if (eq direction :down) -30 -10)
+                (if (eq direction :down) 190 210)
+                "black"
+                nil
+                (thickness instance)
+                "round")))
+
+(defmethod cast ((stencil glyph-digit-arc))
+  "Generates SVG data for arc based digits."
+  (mapc (lambda (arc-instance staff-position direction-flag)
+          (push (draw-arc stencil arc-instance staff-position direction-flag)
+                (svg-data stencil)))
+        (list-of-arc-components stencil)
+        (list-of-arc-positions stencil)
+        (list-of-directions stencil))
+  (call-next-method))
 
 ;;; BOOKMARK: transcoding until here
 

@@ -89,6 +89,11 @@
    ((id "prolatio")
     (diameter 0.2))
    ())
+  (component-digit-arc
+   ((id "digit-arc")
+    (outer-diameter 0.8)
+    (thickness 4))
+   ())
 
   (glyph-staff
    ((id "glyph-staff")
@@ -220,4 +225,12 @@
     (glyph-height 1500)
     (prolatio-horizontal-offset 0)
     (diminutio-horizontal-offset -0.5)
-    (diminutio-vertical-offset -0.3))))
+    (diminutio-vertical-offset -0.3)))
+  (glyph-digit-arc
+   ((id "digit-arcs")
+    (staff-component :instance)
+    (list-of-arc-components :instance-list)
+    (list-of-arc-positions nil)
+    (list-of-directions nil)
+    (glyph-width 80)
+    (glyph-height 1500))))

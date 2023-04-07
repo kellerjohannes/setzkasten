@@ -29,7 +29,7 @@
    (:music 2206
            (:voice v1)
            (:section s1)
-           cclef1 b22 met-perf-min-dim b38 lrest24 b22 brrest4 b22 mrest5 b38 sb5 b38 m5d b38 m6
+           cclef1 b22 met-imperf-min-dim b38 lrest24 b22 brrest4 b22 mrest5 b38 sb5 b38 m5d b38 m6
            b38 m6 b38 sb7 b38 sb8 b38 sb9 mrest7 m6 dot6 sm6 b38 sb6 b38 m5d b38 m8 dot8 sm8 b38
            sb7 b38 sb6 b38 sb5 mrest5 m6 b38 m7 b38 m7 b38 m8 b38 sb4 b38 custos3)
    (:vspace 70)
@@ -45,7 +45,7 @@
           (658 847 "Eſſempio del ᴄontrʼAlto. Diatonico"))
    (:music 2221
            (:voice v2)
-           cclef5 b22 met-perf-min-dim b22 lrest24 b22 brrest4 b22 sb5 b22 m6 b22 sb9 b22 m8 b22 m9 b22
+           cclef5 b22 met-imperf-min-dim b22 lrest24 b22 brrest4 b22 sb5 b22 m6 b22 sb9 b22 m8 b22 m9 b22
            m9 b22 sb5 b22 m4 b22 sb8 b38 m8 b38 m7 b38 m7 dot8 sm7 b22 m7 b22 sb7 mrest7
            m9 b22 m5 b22 sb6 b22 m7 b38 m8 b22 m1 b22 m2 b22 m9 b22 m5 b22 m6 b22 custos9)
    (:vspace 70)
@@ -62,7 +62,7 @@
           (654 735 "Eſſempio del Tenore ᴅiatonico."))
    (:music 2224
            (:voice v3)
-           cclef7 b22 met-perf-min-dim b22 sb4 b22 m4 b38 m4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b22
+           cclef7 b22 met-imperf-min-dim b22 sb4 b22 m4 b38 m4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b22
            sb6 mrest7 m8 dot8 sm8 b22 m8 b22 m5 dot6 sm5 b38 m4 b22 sb5 b22 sb8 b38 m7
            b38 sb6 b38 sb5 b38 sb4 mrest5 m5 b22 m6 b22 m6 b22 m7 b22 custos8)
    (:vspace 70)
@@ -79,7 +79,7 @@
           (653 731 "Eſſempio del Baſſo Diatonico ."))
    (:music 2217
            (:voice v4)
-           (:f-clef) max7 fclef7 b22 met-perf-min-dim b38 sbrest5 b38 mrest3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 m8 b38
+           (:f-clef) max7 fclef7 b22 met-imperf-min-dim b38 sbrest5 b38 mrest3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 m8 b38
            sb4 b38 sb8 b38 sb5 b38 sb8 b38 sb7 mrest5 m5 dot6 sm5 b38 m5 b38 sb2 b38 sb6 b38 sb2 b38 m6 b38 m6 b38 sb7 b38
            m8 dot8 sm8 b38 custos7)
    (:vspace 70)

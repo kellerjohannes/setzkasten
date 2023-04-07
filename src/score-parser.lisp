@@ -541,7 +541,6 @@
   (:note smd8 :semiminima 8 :dot)
   (:note smd9 :semiminima 9 :dot)
   (:note smd10 :semiminima 10 :dot)
-  (:note smdr0 :semiminima 0 :dot)
   (:note smdr1 :semiminima 1 :dot)
   (:note smdr2 :semiminima 2 :dot)
   (:note smdr3 :semiminima 3 :dot)
@@ -551,7 +550,6 @@
   (:note smdr7 :semiminima 7 :dot)
   (:note smdr8 :semiminima 8 :dot)
   (:note smdr9 :semiminima 9 :dot)
-  (:note smdl0 :semiminima 0 :dot)
   (:note smdl1 :semiminima 1 :dot)
   (:note smdl2 :semiminima 2 :dot)
   (:note smdl3 :semiminima 3 :dot)
@@ -588,6 +586,7 @@
   (:rest mrest7 :minima)
   (:rest smrest1 :semiminima)
   (:rest smrest3 :semiminima)
+  (:rest smrest5 :semiminima)
   (:rest smrest7 :semiminima)
   ))
 

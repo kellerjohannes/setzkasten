@@ -36,7 +36,7 @@
    (:music 2238
            (:voice v1)
            (:section s1) cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat)
-           b22 met-perf-min-dim b22 br4 sbd3 dot4 md3 sb3 sb3 brd4 sb5 sbrest5
+           b22 met-imperf-min-dim b22 br4 sbd3 dot4 md3 sb3 sb3 brd4 sb5 sbrest5
            sbd3 md3 b22 md3 m4 m4 sb2 sbd5 sbrest5
            sbd3 sh4 sb4 md4 fl5 sb5 fl5 m5 sb5 sb2 mrest3
            sbd2 b22 md2 fl3 m3 b22 m3 b22 md3 sbd6 fl6 sb6 sb6 bl b56
@@ -50,7 +50,7 @@
    (:music 2225
            (:voice v2)
            (:section s1) cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat)
-           met-perf-min-dim b22 brrest4
+           met-imperf-min-dim b22 brrest4
            b22 brd5 sh5 sb5 dot6 sh5 m5 sbd6 b22 sbd6 m4 dot4 sm3 b22 sb2 b22 brd2 sbrest9
            b22 sb8 md7 dot8 smd7 m7 m7 sbd3 sb3 mrest5
            sbd6 b22 md6 sb4 b22 m4 b22 m1 fl2 sb2 sbd2 b22 sb2 mrest3
@@ -66,7 +66,7 @@
    (:music 2225
            (:voice v3)
            (:section s1) cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat)
-           b22 met-perf-min-dim b22 lrest24 b22 br5 b22 sbd5 dot6 md6 b22 m4 dot4 sm5 m6 b22 m4 b22 brd7 b22 fl5 b22 sb5 b13 sbrest7
+           b22 met-imperf-min-dim b22 lrest24 b22 br5 b22 sbd5 dot6 md6 b22 m4 dot4 sm5 m6 b22 m4 b22 brd7 b22 fl5 b22 sb5 b13 sbrest7
            b22 sbd7 sh7 m7 dot8 sh7 sm7 b13 fl8 b13 m8 b22 fl8 b22 m8 b22 sb8 b22 brd5 b27 mrest5
            b27 sb4 b22 m6 b22 sbd5 nat6 md6 b38 b38 ;; Achtung Custos implementieren
            )
@@ -88,7 +88,7 @@
    (:music 2232
            (:voice v4)
            (:section s1) (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat)
-           b22 met-perf-min-dim b22 lrest46 b22 brrest6 b22 brd5 fl6 sb6 dot6 fl6 b22 m6 b22 sbd4 (:alt (:diplomatic b13) (:idealised dot4)) md4 fl5 sb5 b13 sb3 sbrest3
+           b22 met-imperf-min-dim b22 lrest46 b22 brrest6 b22 brd5 fl6 sb6 dot6 fl6 b22 m6 b22 sbd4 (:alt (:diplomatic b13) (:idealised dot4)) md4 fl5 sb5 b13 sb3 sbrest3
            b13 sb2 b13 md2 dot2
            ;; idealisierung zu diskutieren
            (:alt (:diplomatic sm2) (:idealised smd2) (:tatti smd2)) b22 m5 b22 m5 brd5 fl6 sb6 b22 mrest3
