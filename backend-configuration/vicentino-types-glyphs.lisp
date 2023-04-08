@@ -176,7 +176,7 @@
   (glyph-notehead-flag           cr3  "croma-3" "stave" "notehead-semibrevis-black" nil "stem-croma" "flag-croma-right" 68 ,*glyph-height* 3 :up)
   (glyph-notehead-flag           cr4  "croma-4" "stave" "notehead-semibrevis-black" nil "stem-croma" "flag-croma-right" 68 ,*glyph-height* 4 :up)
   (glyph-notehead-flag           cr5  "croma-5" "stave" "notehead-semibrevis-black" nil "stem-croma" "flag-croma-right" 68 ,*glyph-height* 5 :up)
-  (glyph-notehead-flag           cr5d  "croma-5" "stave" "notehead-semibrevis-black" nil "stem-croma" "flag-croma-left" 68 ,*glyph-height* 5 :down)
+  (glyph-notehead-flag           cr5d  "croma-5-down" "stave" "notehead-semibrevis-black" nil "stem-croma" "flag-croma-left" 68 ,*glyph-height* 5 :down)
   (glyph-notehead-flag           cr6  "croma-6" "stave" "notehead-semibrevis-black" nil "stem-croma" "flag-croma-left" 68 ,*glyph-height* 6 :down)
   (glyph-notehead-flag           cr7  "croma-7" "stave" "notehead-semibrevis-black" nil "stem-croma" "flag-croma-left" 68 ,*glyph-height* 7 :down)
   (glyph-notehead-flag           cr8  "croma-8" "stave" "notehead-semibrevis-black" nil "stem-croma" "flag-croma-left" 68 ,*glyph-height* 8 :down)
