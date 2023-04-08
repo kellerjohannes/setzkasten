@@ -1,6 +1,6 @@
 `((:header
    (:filename "b3-c2-m1")
-   (:alt-name "m")
+   (:alt-name "m3.001")
    (:comment "q021_s086, rotation: 1.25, origin: 1025")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio delle tre quarte diatoniche, composte ed incomposte")
