@@ -1,6 +1,6 @@
 `((:header
    (:filename "b3-c11-m1")
-   (:alt-name "")
+   (:alt-name "b3.010")
    (:comment "q021_s91, origin: 429")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del settimo modo diatonico semplice,\\da greci detto missolidio"))

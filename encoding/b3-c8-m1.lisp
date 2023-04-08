@@ -1,6 +1,6 @@
 `((:header
    (:filename "b3-c8-m1")
-   (:alt-name "")
+   (:alt-name "m3.007")
    (:comment "q021_s90, origin: 993")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del quarto modo diatonico semplice,\\da greci detto yppofrigio"))

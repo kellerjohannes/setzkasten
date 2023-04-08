@@ -1,6 +1,6 @@
 `((:header
    (:filename "b3-c14-m2")
-   (:alt-name "m")
+   (:alt-name "m3.016")
    (:comment "q021_s086, origin: 446")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio delle quattro quinte diatoniche semplici, scritte con quattro ♭ molli")

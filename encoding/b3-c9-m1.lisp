@@ -1,6 +1,6 @@
 `((:header
    (:filename "b3-c9-m1")
-   (:alt-name "")
+   (:alt-name "m3.008")
    (:comment "q021_s90, origin: 992")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del quinto modo diatonico semplice,\\da greci detto lidio"))

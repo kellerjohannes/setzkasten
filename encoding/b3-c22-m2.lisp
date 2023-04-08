@@ -1,6 +1,6 @@
 `((:header
    (:filename "b3-c22-m2")
-   (:alt-name "")
+   (:alt-name "m3.048")
    (:comment "q021_s100, origin: 973")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio dell'ottavo modo per ♮ incitato,\\con la quinta sotto la sua quarta,\\della musica participata e mista"))

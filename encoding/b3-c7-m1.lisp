@@ -1,6 +1,6 @@
 `((:header
    (:filename "b3-c7-m1")
-   (:alt-name "")
+   (:alt-name "m3.006")
    (:comment "q021_s89, rotation: 0.89, origin: 476")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del terzo modo diatonico semplice,\\da greci detto frigio"))

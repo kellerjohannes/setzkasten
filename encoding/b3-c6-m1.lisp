@@ -1,6 +1,6 @@
 `((:header
    (:filename "b3-c6-m1")
-   (:alt-name "")
+   (:alt-name "m3.005")
    (:comment "q021_s89, rotation: 0.89, origin: 491")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del secondo modo diatonico semplice,\\da greci detto yppodorio"))

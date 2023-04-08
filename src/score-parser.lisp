@@ -601,11 +601,14 @@
   (:note cr3 :croma 3)
   (:note cr4 :croma 4)
   (:note cr5 :croma 5)
+  (:note cr5d :croma 5)
   (:note cr6 :croma 6)
   (:note cr7 :croma 7)
   (:note cr8 :croma 8)
   (:note cr9 :croma 9)
   (:note cr10 :croma 10)
+  (:note scr3 :semicroma 3)
+  (:note scr4 :semicroma 4)
   (:rest lrest24 :longa)
   (:rest lrest46 :longa)
   (:rest lrest68 :longa)
@@ -639,6 +642,8 @@
     md0 md1 md2 md3 md4 md5 md6 md7 md8 md9 md10
     sm0 sm1 sm2 sm3 sm4 sm5 sm6 sm7 sm8 sm9 sm10
     smd0 smd1 smd2 smd3 smd4 smd5 smd6 smd7 smd8 smd9 smd10
+    cr0 cr1 cr2 cr3 cr4 cr5 cr6 cr7 cr8 cr9 cr10
+    scr0 scr1 scr2 scr3 scr4 scr5 scr6 scr7 scr8 scr9 scr10
     )
   "This is used in the function to determine whether a note has a dotted duration value. Any glyph that can represent a dotted note should be member of this list.")
 

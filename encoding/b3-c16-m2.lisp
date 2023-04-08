@@ -1,6 +1,6 @@
 `((:header
    (:filename "b3-c16-m2")
-   (:alt-name "")
+   (:alt-name "m3.023")
    (:comment "q021_s096, rotation: -1.63, origin: 1055")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del secondo modo per ♭ molle\\della musica participata e mista"))

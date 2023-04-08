@@ -14,6 +14,7 @@
   (component-stem        nil "stem-croma"         2.5   2.75    1.3)
   (component-flag        nil "flag-croma-left"           3 3 0.15 0.8 nil 0.8 -0.6)
   (component-flag        nil "flag-croma-right"          3 3 0.15 0.8 nil 0.8 0.6)
+  (component-flag        nil "flag-semicroma-right"      3 3 0.25 0.5 t 0.7 0.5)
   (component-sharp       nil "sharp-large"               2.5 1 t 10)
   (component-sharp       nil "sharp-small"               2.5 0.69 t 7)
   (component-dot         nil "enharmonic-dot"      0.3 :dot)

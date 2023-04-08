@@ -427,7 +427,7 @@
                                     (:minima . 1/2)
                                     (:semiminima . 1/4)
                                     (:croma . 1/8)
-                                    (:biscroma . 1/16)))
+                                    (:semicroma . 1/16)))
 
 (defun value->number (value)
   (cdr (assoc value *dict-value-number*)))

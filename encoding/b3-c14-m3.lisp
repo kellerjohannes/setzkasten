@@ -1,6 +1,6 @@
 `((:header
    (:filename "b3-c14-m3")
-   (:alt-name "m")
+   (:alt-name "m3.017")
    (:comment "q021_s093, origin line 1: 450, line 2: 460, line 3: rotation -0.8, origin: 1062 (q021_s094)")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio delle sette ottave diatoniche\\notate con quattro ♭ molli, semplici")

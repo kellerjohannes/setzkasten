@@ -1,6 +1,6 @@
 `((:header
    (:filename "b3-c14-m1")
-   (:alt-name "m")
+   (:alt-name "m3.015")
    (:comment "q021_s093, origin: 445")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio delle tre quarte diatoniche semplici,\\scritte con quattro ♭ molli")

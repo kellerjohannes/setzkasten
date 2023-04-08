@@ -1,6 +1,6 @@
 `((:header
    (:filename "b3-c4-m1")
-   (:alt-name "m")
+   (:alt-name "m3.003")
    (:comment "q021_s087, rotation: 1.3, origin line 1: 450, line 2: 433, line 3: 433")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio delle sette ottave diatoniche, composte ed incomposte")

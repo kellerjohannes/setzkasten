@@ -1,6 +1,6 @@
 `((:header
    (:filename "b3-c20-m3")
-   (:alt-name "")
+   (:alt-name "m3.041")
    (:comment "q021_s099, origin: 412")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del sesto modo per ♭ molle,\\della musica participata e mista,\\con l'ottava sotto il fine,\\e la quinta sotto il fine della sua quarta"))

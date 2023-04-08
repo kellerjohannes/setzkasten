@@ -1,6 +1,6 @@
 `((:header
    (:filename "b3-c18-m2")
-   (:alt-name "")
+   (:alt-name "m3.031")
    (:comment "q021_s098, origin: 971")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del quarto modo per ♮ incitato\\della musica participata e mista,\\con l'ottava sotto del suo fine"))

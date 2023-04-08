@@ -1,6 +1,6 @@
 `((:header
    (:filename "b3-c10-m1")
-   (:alt-name "")
+   (:alt-name "m3.009")
    (:comment "q021_s90, rotation: -0.47, origin: 988")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del sesto modo diatonico semplice,\\da greci detto yppolidio"))

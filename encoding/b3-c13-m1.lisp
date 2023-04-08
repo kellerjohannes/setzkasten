@@ -1,6 +1,6 @@
 `((:header
    (:filename "b3-c13-m1")
-   (:alt-name "m")
+   (:alt-name "m3.012")
    (:comment "q021_s092, origin: 1038")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio delle tre quarte diatoniche per ♭ molle,\\composte ed incomposte")
