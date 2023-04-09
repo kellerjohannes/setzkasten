@@ -31,10 +31,8 @@
 
 
 
-;; Type print imitation backend
 
 (defparameter *glyph-height* 230)
-
 (defparameter *vicentino-types-backend* (make-instance 'type-imitation-backend))
 
 (progn
@@ -96,55 +94,37 @@
                  :notename-convention :double-accidentals-cents
                  :output-format :pdf-multipage
                  :timep t))
-
-;;(defparameter *lilypond-backend-original* (make-instance 'lilypond-backend :clef-type :original))
 (defparameter *lilypond-backend-original* (make-instance 'lilypond-backend
                                                          :clef-type :mensural
-                                                         :rest-type :mensural
-                                                         :notehead-type :petrucci))
+                                                         :rest-type :mensural))
 
-;; experimental: macro to create missions
-;; (defun flatten-1 (tree)
-;;   (cond ((null tree) nil)
-;;         ((listp (first (first tree))) (append (flatten-1 (first tree))
-;;                                             (flatten-1 (rest tree))))
-;;         (t (cons (first tree) (rest tree)))))
-
-;; (defmacro create-mission (mission-name file-list)
-;;   `(defparameter ,mission-name
-;;      (list ,@(flatten-1
-;;                (mapcar
-;;                 (lambda (score-name)
-;;                   (list '(,score-name "a" '(:diplomatic) *vicentino-types-backend*)
-;;                         '(,score-name "b" '(:idealised) *vicentino-types-backend*)
-;;                         '(,score-name "c-modern" '(:idealised :it) *lilypond-backend-modern*)
-;;                         '(,score-name "c-original" '(:idealised :it) *lilypond-backend-original*)
-;;                         '(,score-name "d-modern" '(:idealised :de) *lilypond-backend-modern*)
-;;                         '(,score-name "d-original" '(:idealised :de) *lilypond-backend-original*)
-;;                         '(,score-name "e-modern" '(:idealised :en) *lilypond-backend-modern*)
-;;                         '(,score-name "e-original" '(:idealised :en) *lilypond-backend-original*)))
-;;                 file-list)))))
-
-;; (create-mission *test-mission*
-;;                 ("b2-c2-m1"
-;;                  "b1-c5-m1"))
 
 (defun execute-all ()
-  (dolist (mission  (list
-                     *book1-types*
-                     *book2-types*
-                     *book3-types*
-                     *book5-types*
-                     *book1-modern*
-                     *book2-modern*
-                     *book3-modern*
-                     *book5-modern*
-                     ;;*book1-original*
-                     ;;*book2-original*
-                     ;;*book3-original*
-                     ;;*book5-original*
-                     *special*
-                     ))
+  (dolist (mission  (list *book1-types*
+                          *book2-types*
+                          *book3-types*
+                          *book5-types*
+                          *book1-modern*
+                          *book2-modern*
+                          *book3-modern*
+                          *book5-modern*
+                          ;;*book1-original*
+                          ;;*book2-original*
+                          ;;*book3-original*
+                          ;;*book5-original*
+                          *standalones*
+                          *renotations*
+                          *transpositions*
+                          *special*
+                          ))
+    (execute-mission mission)))
+
+(defun execute-types ()
+  (dolist (mission (list *book1-types*
+                         *book2-types*
+                         *book3-types*
+                         *book4-types*
+                         *book5-types*))
     (execute-mission mission)))
 
 (defparameter *debug*
@@ -154,216 +134,416 @@
 
 (defparameter *working*
   `(
+    ))
 
-    ;; tatti export
+(defparameter *tatti*
+  `(
+    ;; tatti export, for the mini-residency apr 10-16 2023. all exports defined here are redundant, meaning covered by other exports as well
+    ("b3-c15-m1" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c15-m2" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c15-m3" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c15-m4" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c16-m1" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c16-m2" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c16-m3" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c16-m4" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c17-m1" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c17-m2" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c17-m3" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c17-m4" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c18-m1" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c18-m2" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c18-m3" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c18-m4" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c18-m5" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c19-m1" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c19-m2" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c19-m3" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c19-m4" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c20-m1" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c20-m2" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c20-m3" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c20-m4" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c21-m1" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c21-m2" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c21-m3" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c21-m4" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c22-m1" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c22-m2" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c22-m3" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c22-m4" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c23-m1" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c23-m2" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
 
-    ;; ("b3-c15-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c15-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c15-m3" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c15-m4" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c16-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c16-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c16-m3" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c16-m4" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c17-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c17-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c17-m3" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c17-m4" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c18-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c18-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c18-m3" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c18-m4" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c18-m5" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c19-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c19-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c19-m3" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c19-m4" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c20-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c20-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c20-m3" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c20-m4" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c21-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c21-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c21-m3" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c21-m4" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c22-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c22-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c22-m3" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c22-m4" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c23-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c23-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-
-    ;; ("b3-c5-m1"  "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c6-m1"  "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c7-m1"  "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c8-m1"  "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c9-m1"  "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c10-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c11-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c12-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c39-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c39-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c40-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c40-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c41-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c41-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c42-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c42-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c49-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c49-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c49-m3" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c49-m4" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c49-m5" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c49-m6" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c49-m7" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ;; ("b3-c49-m8" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c5-m1"  "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c6-m1"  "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c7-m1"  "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c8-m1"  "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c9-m1"  "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c10-m1" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c11-m1" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c12-m1" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c39-m1" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c39-m2" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c40-m1" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c40-m2" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c41-m1" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c41-m2" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c42-m1" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c42-m2" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c49-m1" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c49-m2" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c49-m3" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c49-m4" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c49-m5" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c49-m6" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c49-m7" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c49-m8" "double-acc-cents" (:idealised :it)
+                 ,*lilypond-backend-modern-double-accidentals-cents*)
 
     ;; musica diatonica
-    ;; ("b3-c26-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ;; ("b3-c26-m1" "b" (:idealised) ,*vicentino-types-backend*)
-    ;; ("b3-c26-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
-    ;; ("b3-c26-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
-    ;; ("b3-c26-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
-    ;; ("b3-c26-m1" "c-standalone" (:idealised :it :c-standalone)
-    ;;              ,*lilypond-backend-modern-meter-multipage*)
-    ;; ("b3-c26-m1" "quarta-discendente-standalone" (:idealised :it :transposition-quarta-discendente)
-    ;;              ,*lilypond-backend-modern-meter-quarta-discendente-multipage*)
-    ;; ("b3-c26-m1" "tono-discendente-standalone" (:idealised :it :transposition-tono-discendente)
-    ;;              ,*lilypond-backend-modern-meter-tono-discendente-multipage*)
-    ;; ("b3-c26-m1" "double-accidentals-standalone" (:idealised :it :c-standalone)
-    ;;              ,*lilypond-backend-modern-meter-double-accidentals-cents-multipage*)
-    ;; ("b3-c26-m1" "tatti-standalone" (:tatti :idealised :it :c-standalone)
-    ;;              ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c26-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c26-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c26-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
+    ("b3-c26-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
+    ("b3-c26-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
+    ("b3-c26-m1" "c-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c26-m1" "quarta-discendente-standalone" (:idealised :it :transposition-quarta-discendente)
+                 ,*lilypond-backend-modern-meter-quarta-discendente-multipage*)
+    ("b3-c26-m1" "tono-discendente-standalone" (:idealised :it :transposition-tono-discendente)
+                 ,*lilypond-backend-modern-meter-tono-discendente-multipage*)
+    ("b3-c26-m1" "double-accidentals-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-double-accidentals-cents-multipage*)
+    ("b3-c26-m1" "tatti-standalone" (:tatti :idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
 
     ;; alleluia
-    ;; ("b3-c44-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ;; ("b3-c44-m1" "b" (:idealised) ,*vicentino-types-backend*)
-    ;; ("b3-c44-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
-    ;; ("b3-c44-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
-    ;; ("b3-c44-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
-    ;; ("b3-c44-m1" "c-standalone" (:idealised :it :c-standalone)
-    ;;              ,*lilypond-backend-modern-meter-multipage*)
-    ;; ("b3-c44-m1" "quarta-discendente-standalone" (:idealised :it :transposition-quarta-discendente)
-    ;;              ,*lilypond-backend-modern-meter-quarta-discendente-multipage*)
-    ;; ("b3-c44-m1" "tono-discendente-standalone" (:idealised :it :transposition-tono-discendente)
-    ;;              ,*lilypond-backend-modern-meter-tono-discendente-multipage*)
-    ;; ("b3-c44-m1" "double-accidentals-standalone" (:idealised :it :c-standalone)
-    ;;              ,*lilypond-backend-modern-meter-double-accidentals-cents-multipage*)
-    ;; ("b3-c44-m1" "tatti-standalone" (:tatti :idealised :it :c-standalone)
-    ;;              ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c44-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c44-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c44-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
+    ("b3-c44-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
+    ("b3-c44-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
+    ("b3-c44-m1" "c-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c44-m1" "quarta-discendente-standalone" (:idealised :it :transposition-quarta-discendente)
+                 ,*lilypond-backend-modern-meter-quarta-discendente-multipage*)
+    ("b3-c44-m1" "tono-discendente-standalone" (:idealised :it :transposition-tono-discendente)
+                 ,*lilypond-backend-modern-meter-tono-discendente-multipage*)
+    ("b3-c44-m1" "double-accidentals-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-double-accidentals-cents-multipage*)
+    ("b3-c44-m1" "tatti-standalone" (:tatti :idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
 
     ;; soave dolce
-    ;; ("b3-c51-m1" "c-standalone" (:idealised :it :c-standalone)
-    ;;              ,*lilypond-backend-modern-meter-multipage*)
-    ;; ("b3-c51-m1" "quarta-discendente-standalone" (:idealised :it :transposition-quarta-discendente)
-    ;;              ,*lilypond-backend-modern-meter-quarta-discendente-multipage*)
-    ;; ("b3-c51-m1" "tono-discendente-standalone" (:idealised :it :transposition-tono-discendente)
-    ;;              ,*lilypond-backend-modern-meter-tono-discendente-multipage*)
-    ;; ("b3-c51-m1" "double-accidentals-standalone" (:idealised :it :c-standalone)
-    ;;              ,*lilypond-backend-modern-meter-double-accidentals-cents-multipage*)
-    ;; ("b3-c51-m1" "tatti-standalone" (:tatti :idealised :it :c-standalone)
-    ;;              ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c51-m1" "c-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c51-m1" "quarta-discendente-standalone" (:idealised :it :transposition-quarta-discendente)
+                 ,*lilypond-backend-modern-meter-quarta-discendente-multipage*)
+    ("b3-c51-m1" "tono-discendente-standalone" (:idealised :it :transposition-tono-discendente)
+                 ,*lilypond-backend-modern-meter-tono-discendente-multipage*)
+    ("b3-c51-m1" "double-accidentals-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-double-accidentals-cents-multipage*)
+    ("b3-c51-m1" "tatti-standalone" (:tatti :idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
 
     ;; dolce mio ben
-    ;; ("b3-c52-m1" "c-standalone" (:idealised :it :c-standalone)
-    ;;              ,*lilypond-backend-modern-meter-multipage*)
-    ;; ("b3-c52-m1" "quarta-discendente-standalone" (:idealised :it :transposition-quarta-discendente)
-    ;;              ,*lilypond-backend-modern-meter-quarta-discendente-multipage*)
-    ;; ("b3-c52-m1" "tono-discendente-standalone" (:idealised :it :transposition-tono-discendente)
-    ;;              ,*lilypond-backend-modern-meter-tono-discendente-multipage*)
-    ;; ("b3-c52-m1" "double-accidentals-standalone" (:idealised :it)
-    ;;              ,*lilypond-backend-modern-meter-double-accidentals-cents-multipage*)
-    ;; ("b3-c52-m1" "tatti-standalone" (:tatti :idealised :it :c-standalone)
-    ;;              ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c52-m1" "c-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c52-m1" "quarta-discendente-standalone" (:idealised :it :transposition-quarta-discendente)
+                 ,*lilypond-backend-modern-meter-quarta-discendente-multipage*)
+    ("b3-c52-m1" "tono-discendente-standalone" (:idealised :it :transposition-tono-discendente)
+                 ,*lilypond-backend-modern-meter-tono-discendente-multipage*)
+    ("b3-c52-m1" "double-accidentals-standalone" (:idealised :it)
+                 ,*lilypond-backend-modern-meter-double-accidentals-cents-multipage*)
+    ("b3-c52-m1" "tatti-standalone" (:tatti :idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
 
     ;; madonna il poco dolce
-    ;; ("b3-c53-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ;; ("b3-c53-m1" "b" (:idealised) ,*vicentino-types-backend*)
-    ;; ("b3-c53-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
-    ;; ("b3-c53-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
-    ;; ("b3-c53-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
-    ;; ("b3-c53-m1" "c-standalone" (:idealised :it :c-standalone)
-    ;;              ,*lilypond-backend-modern-meter-multipage*)
-    ;; ("b3-c53-m1" "quarta-discendente-standalone" (:idealised :it :transposition-quarta-discendente)
-    ;;              ,*lilypond-backend-modern-meter-quarta-discendente-multipage*)
-    ;; ("b3-c53-m1" "tono-discendente-standalone" (:idealised :it :transposition-tono-discendente)
-    ;;              ,*lilypond-backend-modern-meter-tono-discendente-multipage*)
-    ;; ("b3-c53-m1" "double-accidentals-standalone" (:idealised :it)
-    ;;              ,*lilypond-backend-modern-meter-double-accidentals-cents-multipage*)
-    ;; ("b3-c53-m1" "tatti-standalone" (:tatti :idealised :it :c-standalone)
-    ;;              ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c53-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c53-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c53-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
+    ("b3-c53-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
+    ("b3-c53-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
+    ("b3-c53-m1" "c-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c53-m1" "quarta-discendente-standalone" (:idealised :it :transposition-quarta-discendente)
+                 ,*lilypond-backend-modern-meter-quarta-discendente-multipage*)
+    ("b3-c53-m1" "tono-discendente-standalone" (:idealised :it :transposition-tono-discendente)
+                 ,*lilypond-backend-modern-meter-tono-discendente-multipage*)
+    ("b3-c53-m1" "double-accidentals-standalone" (:idealised :it)
+                 ,*lilypond-backend-modern-meter-double-accidentals-cents-multipage*)
+    ("b3-c53-m1" "tatti-standalone" (:tatti :idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
 
     ;; musica prisca
-    ;; ("b3-c54-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ;; ("b3-c54-m1" "b" (:idealised) ,*vicentino-types-backend*)
-    ;; ("b3-c54-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
-    ;; ("b3-c54-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
-    ;; ("b3-c54-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
-    ;; ("b3-c54-m1" "c-standalone" (:idealised :it :c-standalone)
-    ;;              ,*lilypond-backend-modern-meter-multipage*)
-    ;; ("b3-c54-m1" "quarta-discendente-standalone" (:idealised :it :transposition-quarta-discendente)
-    ;;              ,*lilypond-backend-modern-meter-quarta-discendente-multipage*)
-    ;; ("b3-c54-m1" "tono-discendente-standalone" (:idealised :it :transposition-tono-discendente)
-    ;;              ,*lilypond-backend-modern-meter-tono-discendente-multipage*)
-    ;; ("b3-c54-m1" "double-accidentals-standalone" (:idealised :it)
-    ;;              ,*lilypond-backend-modern-meter-double-accidentals-cents-multipage*)
-    ;; ("b3-c54-m1" "tatti-standalone" (:tatti :idealised :it :c-standalone)
-    ;;              ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c54-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c54-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c54-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
+    ("b3-c54-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
+    ("b3-c54-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
+    ("b3-c54-m1" "c-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c54-m1" "quarta-discendente-standalone" (:idealised :it :transposition-quarta-discendente)
+                 ,*lilypond-backend-modern-meter-quarta-discendente-multipage*)
+    ("b3-c54-m1" "tono-discendente-standalone" (:idealised :it :transposition-tono-discendente)
+                 ,*lilypond-backend-modern-meter-tono-discendente-multipage*)
+    ("b3-c54-m1" "double-accidentals-standalone" (:idealised :it)
+                 ,*lilypond-backend-modern-meter-double-accidentals-cents-multipage*)
+    ("b3-c54-m1" "tatti-standalone" (:tatti :idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
 
     ;; Hierusalem
-    ;; ("b3-c55-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ;; ("b3-c55-m1" "b" (:idealised) ,*vicentino-types-backend*)
-    ;; ("b3-c55-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
-    ;; ("b3-c55-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
-    ;; ("b3-c55-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
-    ;; ("b3-c55-m1" "c-standalone" (:idealised :it :c-standalone)
-    ;;              ,*lilypond-backend-modern-meter-multipage*)
-    ;; ("b3-c55-m1" "quarta-discendente-standalone" (:idealised :it :transposition-quarta-discendente)
-    ;;              ,*lilypond-backend-modern-meter-quarta-discendente-multipage*)
-    ;; ("b3-c55-m1" "tono-discendente-standalone" (:idealised :it :transposition-tono-discendente)
-    ;;              ,*lilypond-backend-modern-meter-tono-discendente-multipage*)
-    ;; ("b3-c55-m1" "double-accidentals-standalone" (:idealised :it)
-    ;;              ,*lilypond-backend-modern-meter-double-accidentals-cents-multipage*)
-    ;; ("b3-c55-m1" "tatti-standalone" (:tatti :idealised :it :c-standalone)
-    ;;              ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c55-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c55-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c55-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
+    ("b3-c55-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
+    ("b3-c55-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
+    ("b3-c55-m1" "c-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c55-m1" "quarta-discendente-standalone" (:idealised :it :transposition-quarta-discendente)
+                 ,*lilypond-backend-modern-meter-quarta-discendente-multipage*)
+    ("b3-c55-m1" "tono-discendente-standalone" (:idealised :it :transposition-tono-discendente)
+                 ,*lilypond-backend-modern-meter-tono-discendente-multipage*)
+    ("b3-c55-m1" "double-accidentals-standalone" (:idealised :it)
+                 ,*lilypond-backend-modern-meter-double-accidentals-cents-multipage*)
+    ("b3-c55-m1" "tatti-standalone" (:tatti :idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+    ))
+
+(defparameter *renotations*
+  `(
+    ;; renotation to alternative accidental conventions
+
+    ("b3-c5-m1"  "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c6-m1"  "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c7-m1"  "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c8-m1"  "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c9-m1"  "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c10-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c11-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c12-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+
+    ("b3-c15-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c15-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c15-m3" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c15-m4" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c16-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c16-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c16-m3" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c16-m4" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c17-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c17-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c17-m3" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c17-m4" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c18-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c18-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c18-m3" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c18-m4" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c18-m5" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c19-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c19-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c19-m3" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c19-m4" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c20-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c20-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c20-m3" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c20-m4" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c21-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c21-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c21-m3" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c21-m4" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c22-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c22-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c22-m3" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c22-m4" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c23-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c23-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+
+    ("b3-c26-m1" "double-accidentals-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-double-accidentals-cents-multipage*)
+
+    ("b3-c39-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c39-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c40-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c40-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c41-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c41-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c42-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c42-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+
+    ("b3-c44-m1" "tatti-standalone" (:tatti :idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+
+    ("b3-c49-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c49-m2" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c49-m3" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c49-m4" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c49-m5" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c49-m6" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c49-m7" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c49-m8" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+
+    ("b3-c51-m1" "double-accidentals-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-double-accidentals-cents-multipage*)
+
+    ("b3-c52-m1" "double-accidentals-standalone" (:idealised :it)
+                 ,*lilypond-backend-modern-meter-double-accidentals-cents-multipage*)
+
+    ("b3-c53-m1" "double-accidentals-standalone" (:idealised :it)
+                 ,*lilypond-backend-modern-meter-double-accidentals-cents-multipage*)
+
+    ("b3-c54-m1" "double-accidentals-standalone" (:idealised :it)
+                 ,*lilypond-backend-modern-meter-double-accidentals-cents-multipage*)
+
+    ("b3-c55-m1" "double-accidentals-standalone" (:idealised :it)
+                 ,*lilypond-backend-modern-meter-double-accidentals-cents-multipage*)
 
 
+    ))
 
-    ;; ("b3-c24-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ;; ("b3-c24-m1" "b" (:idealised) ,*vicentino-types-backend*)
-    ;; ("b3-c24-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
-    ;; ("b3-c24-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
-    ;; ("b3-c24-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+(defparameter *transpositions*
+  `(
+    ("b3-c26-m1" "quarta-discendente-standalone" (:idealised :it :transposition-quarta-discendente)
+                 ,*lilypond-backend-modern-meter-quarta-discendente-multipage*)
+    ("b3-c26-m1" "tono-discendente-standalone" (:idealised :it :transposition-tono-discendente)
+                 ,*lilypond-backend-modern-meter-tono-discendente-multipage*)
 
-    ;; ("b3-c24-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ;; ("b3-c24-m2" "b" (:idealised) ,*vicentino-types-backend*)
-    ;; ("b3-c24-m2" "c" (:idealised :it) ,*lilypond-backend-modern*)
-    ;; ("b3-c24-m2" "d" (:idealised :de) ,*lilypond-backend-modern*)
-    ;; ("b3-c24-m2" "e" (:idealised :en) ,*lilypond-backend-modern*)
 
-    ;; ("b3-c24-m3" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ;; ("b3-c24-m3" "b" (:idealised) ,*vicentino-types-backend*)
-    ;; ("b3-c24-m3" "c" (:idealised :it) ,*lilypond-backend-modern*)
-    ;; ("b3-c24-m3" "d" (:idealised :de) ,*lilypond-backend-modern*)
-    ;; ("b3-c24-m3" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b3-c44-m1" "quarta-discendente-standalone" (:idealised :it :transposition-quarta-discendente)
+                 ,*lilypond-backend-modern-meter-quarta-discendente-multipage*)
+    ("b3-c44-m1" "tono-discendente-standalone" (:idealised :it :transposition-tono-discendente)
+                 ,*lilypond-backend-modern-meter-tono-discendente-multipage*)
 
-    ;; ("b3-c25-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ;; ("b3-c25-m1" "b" (:idealised) ,*vicentino-types-backend*)
-    ;; ("b3-c25-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
-    ;; ("b3-c25-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
-    ;; ("b3-c25-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b3-c51-m1" "quarta-discendente-standalone" (:idealised :it :transposition-quarta-discendente)
+                 ,*lilypond-backend-modern-meter-quarta-discendente-multipage*)
+    ("b3-c51-m1" "tono-discendente-standalone" (:idealised :it :transposition-tono-discendente)
+                 ,*lilypond-backend-modern-meter-tono-discendente-multipage*)
 
-    ;; ("b3-c27-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ;; ("b3-c27-m1" "b" (:idealised) ,*vicentino-types-backend*)
-    ;; ("b3-c27-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
-    ;; ("b3-c27-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
-    ;; ("b3-c27-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b3-c52-m1" "quarta-discendente-standalone" (:idealised :it :transposition-quarta-discendente)
+                 ,*lilypond-backend-modern-meter-quarta-discendente-multipage*)
+    ("b3-c52-m1" "tono-discendente-standalone" (:idealised :it :transposition-tono-discendente)
+                 ,*lilypond-backend-modern-meter-tono-discendente-multipage*)
 
-    ("b3-c28-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ("b3-c28-m1" "b" (:idealised) ,*vicentino-types-backend*)
-    ("b3-c28-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
-    ("b3-c28-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
-    ("b3-c28-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b3-c53-m1" "quarta-discendente-standalone" (:idealised :it :transposition-quarta-discendente)
+                 ,*lilypond-backend-modern-meter-quarta-discendente-multipage*)
+    ("b3-c53-m1" "tono-discendente-standalone" (:idealised :it :transposition-tono-discendente)
+                 ,*lilypond-backend-modern-meter-tono-discendente-multipage*)
+
+    ("b3-c54-m1" "quarta-discendente-standalone" (:idealised :it :transposition-quarta-discendente)
+                 ,*lilypond-backend-modern-meter-quarta-discendente-multipage*)
+    ("b3-c54-m1" "tono-discendente-standalone" (:idealised :it :transposition-tono-discendente)
+                 ,*lilypond-backend-modern-meter-tono-discendente-multipage*)
+
+    ("b3-c55-m1" "quarta-discendente-standalone" (:idealised :it :transposition-quarta-discendente)
+                 ,*lilypond-backend-modern-meter-quarta-discendente-multipage*)
+    ("b3-c55-m1" "tono-discendente-standalone" (:idealised :it :transposition-tono-discendente)
+                 ,*lilypond-backend-modern-meter-tono-discendente-multipage*)
+    ))
+
+(defparameter *standalones*
+  `(
+    ;; only pdf exports of longer pieces, potentially multipage
+
+    ;; musica diatonica
+    ("b3-c26-m1" "c-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c26-m1" "tatti-standalone" (:tatti :idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+
+    ;; alleluia
+    ("b3-c44-m1" "c-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c44-m1" "double-accidentals-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-double-accidentals-cents-multipage*)
+
+    ;; soave dolce
+    ("b3-c51-m1" "c-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c51-m1" "tatti-standalone" (:tatti :idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+
+    ;; dolce mio ben
+    ("b3-c52-m1" "c-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c52-m1" "tatti-standalone" (:tatti :idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+
+    ;; madonna il poco dolce
+    ("b3-c53-m1" "c-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c53-m1" "tatti-standalone" (:tatti :idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+
+    ;; musica prisca
+    ("b3-c54-m1" "c-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c54-m1" "tatti-standalone" (:tatti :idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+
+    ;; Hierusalem
+    ("b3-c55-m1" "c-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c55-m1" "tatti-standalone" (:tatti :idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
     ))
 
 (defparameter *book5-original*
@@ -472,6 +652,21 @@
     ("b5-c15-m1" "b" (:idealised) ,*vicentino-types-backend*)
     ("b5-c16-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b5-c16-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ))
+
+(defparameter *book4-original*
+  `(
+
+    ))
+
+(defparameter *book4-original*
+  `(
+
+    ))
+
+(defparameter *book4-types*
+  `(
+
     ))
 
 (defparameter *book3-original*
@@ -637,6 +832,28 @@
     ("b3-c23-m2" "c" (:idealised :it) ,*lilypond-backend-modern*)
     ("b3-c23-m2" "d" (:idealised :de) ,*lilypond-backend-modern*)
     ("b3-c23-m2" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b3-c24-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b3-c24-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ("b3-c24-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b3-c24-m2" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b3-c24-m2" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ("b3-c24-m2" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b3-c24-m3" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b3-c24-m3" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ("b3-c24-m3" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b3-c25-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b3-c25-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ("b3-c25-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b3-c26-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
+    ("b3-c26-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
+    ("b3-c26-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
+    ("b3-c27-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b3-c27-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ("b3-c27-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b3-c28-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b3-c28-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ("b3-c28-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
     ("b3-c39-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
     ("b3-c39-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
     ("b3-c39-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
@@ -663,6 +880,9 @@
     ("b3-c42-m2" "e" (:idealised :en) ,*lilypond-backend-modern*)
 
 
+    ("b3-c44-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
+    ("b3-c44-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
+    ("b3-c44-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
     ("b3-c45-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
     ("b3-c45-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
     ("b3-c45-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
@@ -732,6 +952,15 @@
     ("b3-c52-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
     ("b3-c52-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
     ("b3-c52-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
+    ("b3-c53-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
+    ("b3-c53-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
+    ("b3-c53-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
+    ("b3-c54-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
+    ("b3-c54-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
+    ("b3-c54-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
+    ("b3-c55-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
+    ("b3-c55-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
+    ("b3-c55-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
     ))
 
 (defparameter *book3-types*
@@ -840,6 +1069,21 @@
     ("b3-c23-m1" "b" (:idealised) ,*vicentino-types-backend*)
     ("b3-c23-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b3-c23-m2" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c24-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c24-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c24-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c24-m2" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c24-m3" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c24-m3" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c25-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c25-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c26-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c26-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c27-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c27-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c28-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c28-m1" "b" (:idealised) ,*vicentino-types-backend*)
+
     ("b3-c39-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b3-c39-m1" "b" (:idealised) ,*vicentino-types-backend*)
     ("b3-c39-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
@@ -857,7 +1101,8 @@
     ("b3-c42-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b3-c42-m2" "b" (:idealised) ,*vicentino-types-backend*)
 
-
+    ("b3-c44-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c44-m1" "b" (:idealised) ,*vicentino-types-backend*)
     ("b3-c45-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b3-c45-m1" "b" (:idealised) ,*vicentino-types-backend*)
     ("b3-c45-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
@@ -904,6 +1149,12 @@
     ("b3-c51-m1" "b" (:idealised) ,*vicentino-types-backend*)
     ("b3-c52-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b3-c52-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c53-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c53-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c54-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c54-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c55-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c55-m1" "b" (:idealised) ,*vicentino-types-backend*)
     ))
 
 (defparameter *book2-original*
