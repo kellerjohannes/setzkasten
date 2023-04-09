@@ -252,6 +252,10 @@
                                           *list-of-duration-dots*
                                           *list-of-notes*)))))))))
 
+;; attention when adding new keywords: the order matters. score source code expects header items
+;; to be parsed first, then lilypond items. This is important for the consistency of the order of
+;; voices in a score.
+
 (defmethod process-metadata ((score score) (parser-state parser-state) score-data)
   "Process the backend-agnostic :header information in the score encoding data and
    write it into the `score' instance."
@@ -274,23 +278,6 @@
   (let ((headings (extract-item :header :line-headings score-data)))
     (when headings
       (set-line-headings parser-state headings)))
-  (let ((bracket-configuration (extract-item :preamble-lilypond :brackets score-data)))
-    (when bracket-configuration
-      (setf (bracket-configuration parser-state) bracket-configuration)))
-  (let ((standalone-title (extract-item :preamble-lilypond :standalone-title score-data)))
-    (when standalone-title
-      (setf (standalone-title score) (car standalone-title))))
-  (let ((standalone-subtitle (extract-item :preamble-lilypond :standalone-subtitle score-data)))
-    (when standalone-subtitle
-      (setf (standalone-subtitle score) (car standalone-subtitle))))
-  (let ((lyrics (extract-item :preamble-lilypond :lyrics score-data)))
-    (when lyrics
-      (dolist (voice-lyrics lyrics)
-        (set-voice-lyrics* score (first voice-lyrics) (second voice-lyrics) (third voice-lyrics)))))
-  (let ((clef-overrides (extract-item :preamble-lilypond :clef-overrides score-data)))
-    (when clef-overrides
-      (dolist (override clef-overrides)
-        (set-clef-override* score (first override) (second override) (third override)))))
   (let ((label-list (extract-item :header :voice-labels score-data)))
     (when label-list
       (mapc (lambda (this-label)
@@ -305,7 +292,24 @@
                                       (first this-label)
                                       (second this-label)
                                       (third this-label)))))
-            label-list))))
+            label-list)))
+  (let ((clef-overrides (extract-item :preamble-lilypond :clef-overrides score-data)))
+    (when clef-overrides
+      (dolist (override clef-overrides)
+        (set-clef-override* score (first override) (second override) (third override)))))
+  (let ((bracket-configuration (extract-item :preamble-lilypond :brackets score-data)))
+    (when bracket-configuration
+      (setf (bracket-configuration parser-state) bracket-configuration)))
+  (let ((standalone-title (extract-item :preamble-lilypond :standalone-title score-data)))
+    (when standalone-title
+      (setf (standalone-title score) (car standalone-title))))
+  (let ((standalone-subtitle (extract-item :preamble-lilypond :standalone-subtitle score-data)))
+    (when standalone-subtitle
+      (setf (standalone-subtitle score) (car standalone-subtitle))))
+  (let ((lyrics (extract-item :preamble-lilypond :lyrics score-data)))
+    (when lyrics
+      (dolist (voice-lyrics lyrics)
+        (set-voice-lyrics* score (first voice-lyrics) (second voice-lyrics) (third voice-lyrics))))))
 
 (defun parse-score (data suffix)
   (let ((score (make-instance 'score))
