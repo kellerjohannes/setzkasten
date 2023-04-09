@@ -174,7 +174,7 @@
      (1727 nil "fanno che mi conſu"))
    (:music 2224
            (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat) b22 m4 b22 m4 b22 m2 b22 m2 b22 m5 b22 m5 b22 md5 b22 md5 b22 sb1 b22 sb4 b22 sbrest5
-           b22 sb6 b22 sb2 b22 sb2 b22 sb3 b22 (:divider :double) (:duration-override 2) brd3 (:duration-override nil) b38 blbl
+           b22 sb5 b22 sb2 b22 sb2 b22 sb3 b22 (:divider :double) (:duration-override 2) brd3 (:duration-override nil) b38 blbl
            b38 nat3 b22 sb3 nat3 sb3 b38 blbl b38 b38 b118 b118 b118 b118)
    (:text 90 58
      (138 nil "mi che dolcemente mi conſumi")

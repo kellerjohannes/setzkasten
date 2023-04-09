@@ -376,7 +376,7 @@
   (:note max7 :maxima 7)
   (:note longa1 :longa 1)
   (:note longa5 :longa 5)
-  (:note longa7 :longa 8)
+  (:note longa7 :longa 7)
   (:note longa8 :longa 8)
   (:note longa9 :longa 9)
   (:note br0 :brevis 0)

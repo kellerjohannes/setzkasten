@@ -584,10 +584,17 @@
   (format nil "~
 ~{~8,0t\\line {
 ~10,0t\\left-align { ~a }
-~8,0t}
-~}" (mapcar (lambda (textline)
-              (generate-formatted-text (split-formatted-string textline)))
-            (split-string-to-list text-string "\\"))))
+~8,0t}~}" (mapcar (lambda (textline)
+                    (generate-formatted-text (split-formatted-string textline)))
+                  (split-string-to-list text-string "\\"))))
+
+(defun generate-multiline-line-heading (text-string)
+  (format nil "~
+~{~6,0t\\line {
+~8,0t\\center-align { \\fontsize#2 ~a }
+~6,0t}~}" (mapcar (lambda (textline)
+                    (generate-formatted-text (split-formatted-string textline)))
+                  (split-string-to-list text-string "\\"))))
 
 (defun generate-l-bracket-string (bracket-data)
   (format nil "\\path #0.20 #'((moveto ~a ~a) (rlineto -0.5 0) (rlineto 0 ~a) (rlineto 0.5 0))"
@@ -653,13 +660,9 @@
 ~4,0t}
 ~4,0t\\null
 ~4,0t\\null
-~@[~4,0t\\line {
-~6,0t\\center-align
-~6,0t\\fontsize#2 { ~a }
-~4,0t}
-~4,0t\\null~]
+~@[~a\\null~]
 ~4,0t\\line {"
-                              (line-heading section))))
+                              (generate-multiline-line-heading (line-heading section)))))
     (if (newlinep section)
         (concatenate 'string newline-code section-code)
         section-code)))

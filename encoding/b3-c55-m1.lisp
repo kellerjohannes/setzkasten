@@ -40,7 +40,7 @@
            (:section s1)
            (:voice v1)
            cclef1 b38 met-imperf-min-dim b38 br6 b22 fl7 b22 sb7 b38 sb7 b38 br9 b22 br5 b38
-           sb5 dot6 m7 b38 br5 b38 lrest24 b22 br3 b38 sb4 sh4 sb4 b38 br5 b38 sbrest5 b22 sb5 b38 sb8 dot8 m8 b38
+           sb5 dot6 m5 b38 br5 b38 lrest24 b22 br3 b38 sb4 sh4 sb4 b38 br5 b38 sbrest5 b22 sb5 b38 sb8 dot8 m8 b38
            sb8 b38 br6 b22 fl7 b22 br7 b22 fl7 b22 sb7 b38 sb5 b22 custos4)
    (:text 90 58
           (182 nil "Hie")
