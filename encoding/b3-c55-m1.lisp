@@ -66,6 +66,7 @@
           (648 nil "ad domi")
           (880 nil "num deum")
           (1217 nil "tuum"))
+   ;; alto
    (:music 2227
            (:voice v2)
            cclef5 b38 met-imperf-min-dim b38 lrest68 b38 br9 b38 sb7 b22 fl7 b22 sb7 b22 br6 b22
@@ -79,7 +80,10 @@
           (1605 nil "ij")
           (2026 nil "ij"))
    (:music 2232
-           cclef5 b38 fl4 b22 sb4 b38 mrest3 b22 m4 b38 sb8 dot8 m8 b38 sb8 b38 mrest7 b38 sb9 b22 m2 dot2 sm2 b38 m2 b38 smrest1 b38 sm2 b22 m9 dot10 sm9 b38 m9 b38 m5 b22 m8 dot8 sm8 b38 m8 sh8 br8 sh8 sb8 sbrest9 sb4 sh8 br8 b38 blbl b22 b22)
+           cclef5 b38 fl4 b22 sb4 b38 mrest3 (:alt (:diplomatic b22) (:idealised fl4))
+           m4 b38 sb8 dot8 m8 b38 sb8 b38 mrest7 b38 sb9 b22 m2 dot2 sm2 b38 m2 b38 smrest1 b38
+           sm2 b22 m9 dot10 sm9 b38 m9 b38 m5 b22 m8 dot8 sm8 b38 m8 sh8 br8 sh8 sb8 sbrest9 sb4
+           sh8 br8 b38 blbl b22 b22)
    (:text 90 58
           (295 nil "ad dominum")
           (717 nil "ad dominum")
