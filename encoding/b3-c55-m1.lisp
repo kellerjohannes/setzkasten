@@ -80,6 +80,7 @@
           (1605 nil "ij")
           (2026 nil "ij"))
    (:music 2232
+           ;; idealisierung zu diskutieren
            cclef5 b38 fl4 b22 sb4 b38 mrest3 (:alt (:diplomatic b22) (:idealised fl4))
            m4 b38 sb8 dot8 m8 b38 sb8 b38 mrest7 b38 sb9 b22 m2 dot2 sm2 b38 m2 b38 smrest1 b38
            sm2 b22 m9 dot10 sm9 b38 m9 b38 m5 b22 m8 dot8 sm8 b38 m8 sh8 br8 sh8 sb8 sbrest9 sb4

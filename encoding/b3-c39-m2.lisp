@@ -8,9 +8,12 @@
    (:width nil)
    (:height nil)
    (:background ,*score-bg-color*))
+(:preamble-lilypond
+   (:alt (:tolgahan (:clef-overrides
+                     (s1 v1 "treble_8")))))
   (:data
    (:text 110 58
-          (504 974 "Eſſempio del secondo Modo,ᴄromatico."))
+     (504 974 "Eſſempio del secondo Modo,ᴄromatico."))
    (:music 2248
            (:voice v1)
            (:section s1)

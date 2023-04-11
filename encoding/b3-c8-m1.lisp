@@ -8,6 +8,9 @@
    (:width nil)
    (:height nil)
    (:background ,*score-bg-color*))
+  (:preamble-lilypond
+   (:alt (:tolgahan (:clef-overrides
+                     (s1 v1 "treble_8")))))
   (:data
    (:text 90 58
           (237 1692 "ᴇſſempio del quarto modo ᴅiatonico ſemplice, da Greci detto Yppofrigio."))
