@@ -184,6 +184,8 @@
   (glyph-notehead-flag           cr8  "croma-8" "stave" "notehead-semibrevis-black" nil "stem-croma" "flag-croma-left" 68 ,*glyph-height* 8 :down)
   (glyph-notehead-flag           scr3  "semicroma-3" "stave" "notehead-semibrevis-black" nil "stem-croma" "flag-semicroma-right" 68 ,*glyph-height* 3 :up)
   (glyph-notehead-flag           scr4  "semicroma-4" "stave" "notehead-semibrevis-black" nil "stem-croma" "flag-semicroma-right" 68 ,*glyph-height* 4 :up)
+  (glyph-notehead-flag           scr6  "semicroma-6" "stave" "notehead-semibrevis-black" nil "stem-croma" "flag-semicroma-right" 68 ,*glyph-height* 6 :down)
+  (glyph-notehead-flag           scr7  "semicroma-7" "stave" "notehead-semibrevis-black" nil "stem-croma" "flag-semicroma-right" 68 ,*glyph-height* 7 :down)
   (glyph-c-clef                 cclef1 "c-clef-1" "stave" "c-clef-short" 66 ,*glyph-height* 1)
   (glyph-c-clef                 cclef3 "c-clef-3" "stave" "c-clef-short" 66 ,*glyph-height* 3)
   (glyph-c-clef                 cclef5 "c-clef-5" "stave" "c-clef" 66 ,*glyph-height* 5)
