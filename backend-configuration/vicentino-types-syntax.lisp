@@ -70,6 +70,10 @@
     (length-long-leg 2.2)
     (length-middle-leg 1)
     (length-short-leg 0.8)))
+  (component-g-clef
+   ((id "g-clef")
+    (font-size 15))
+   ())
   (component-barline
    ((id "barline")
     (overhead 0.2)
@@ -209,6 +213,14 @@
     (glyph-width 120)
     (glyph-height 1500)
     (clef-position 7))
+   ())
+  (glyph-g-clef
+   ((id "g-clef")
+    (staff-component :instance)
+    (clef-component :instance)
+    (glyph-width 120)
+    (glyph-height 1500)
+    (clef-position 3))
    ())
   (glyph-barline
    ((id "barline")

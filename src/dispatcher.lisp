@@ -198,6 +198,12 @@
     ;; ("b3-c32-m4" "c" (:idealised :it) ,*lilypond-backend-modern*)
     ;; ("b3-c32-m4" "d" (:idealised :de) ,*lilypond-backend-modern*)
     ;; ("b3-c32-m4" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
+    ;; ("b3-c32-m5" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c32-m5" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c32-m5" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b3-c32-m5" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ;; ("b3-c32-m5" "e" (:idealised :en) ,*lilypond-backend-modern*)
     ))
 
 (defparameter *tatti*

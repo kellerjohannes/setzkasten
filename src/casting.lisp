@@ -528,6 +528,7 @@
   (call-next-method))
 
 
+;; c-clef
 
 (defmethod cast ((stencil glyph-c-clef))
   (with-accessors ((ta vertical-thickness)
@@ -580,6 +581,22 @@
                 (svg-data stencil))))))
   (call-next-method))
 
+;; g-clef
+;; TODO implement a proper G clef (for now a text replacement is used)
+
+(defmethod cast ((stencil glyph-g-clef))
+  "Generates SVG data for a g-clef."
+  (push (output-text (h-center stencil)
+                     (calculate-absolute-staff-position stencil (clef-position stencil))
+                     "G"
+                     (font-size (clef-component stencil))
+                     nil
+                     "black"
+                     t
+                     t)
+        (svg-data stencil))
+  (call-next-method))
+
 
 ;; barline
 
@@ -591,7 +608,7 @@
            (y-bottom (+ (* (overhead (barline-component stencil)) ul)
                         (calculate-absolute-staff-position stencil 1)))
            (y-top (- (calculate-absolute-staff-position stencil
-                      (1- (* 2 (number-of-lines (staff-component stencil)))))
+                                                        (1- (* 2 (number-of-lines (staff-component stencil)))))
                      (* (overhead (barline-component stencil)) ul))))
       (mapc (lambda (x-position)
               (push (output-line x-position y-bottom x-position y-top
@@ -673,6 +690,9 @@
         (svg-data stencil))
   (call-next-method))
 
+
+;; time signatures
+
 (defmethod draw-tempus ((stencil glyph-meter))
   (let ((y (calculate-absolute-staff-position
             stencil
@@ -737,6 +757,9 @@
           (svg-data stencil)))
   (call-next-method))
 
+
+;; arc-based digits
+
 (defmethod draw-arc ((stencil glyph-digit-arc) instance position direction)
   (let ((radius (* 0.5 (* (distance-between-lines (staff-component stencil))
                           (outer-diameter instance)))))
@@ -762,6 +785,9 @@
         (list-of-directions stencil))
   (call-next-method))
 
+
+;; custos
+
 (defmethod draw-custos ((stencil glyph-custos))
   (let* ((segment-width (/ (total-width (custos-component stencil)) 4))
          (a (vec:create (- (h-center stencil)
@@ -780,12 +806,3 @@
   "Generates SVG data for a custos glyph."
   (push (draw-custos stencil) (svg-data stencil))
   (call-next-method))
-
-;;; BOOKMARK: transcoding until here
-
-;; ;; g-clef
-
-;; (cl-defmethod cast ((type-clef setzkasten/type-clef))
-;;        "Generates SVG data for a c- or g-clef."
-;;        (insert "\nCasting a c- or g-clef not implemented yet.")
-;;        (cl-call-next-method))

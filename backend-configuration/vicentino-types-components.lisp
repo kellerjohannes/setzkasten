@@ -21,6 +21,7 @@
   (component-dot         nil "comma"               80 :comma)
   (component-c-clef      nil "c-clef"              5.5 10.5 3.5 0.8 1.2 2.2 1 0.6)
   (component-c-clef      nil "c-clef-short"        5.5 10.5 3.5 0.8 1.2 1.2 1.2 0.6)
+  (component-g-clef      nil "g-clef"              65)
   (component-rest        nil "semiminima-rest"     0.45 8 0.3 4)
   (component-rest        nil "minima-rest"         0.55 8 0 0)
   (component-rest        nil "brevis-rest"         1 8 0 0)

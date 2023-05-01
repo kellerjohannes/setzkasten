@@ -13,6 +13,14 @@
    (:width nil)
    (:height nil)
    (:background ,*score-bg-color*))
+  (:preamble-lilypond
+   (:clef-overrides
+    (s1 v3 "treble_8")
+    (s2 v3 "treble_8")
+    (s3 v3 "treble_8")
+    (s4 v3 "treble_8")
+    (s5 v3 "treble_8")
+    (s6 v3 "treble_8")))
   (:data
    (:text 70 58
           (184 1859 "Eſſempio di molte cadentie del Ɋuinto Modo,à quattro ᴠoci,della Muſica par⸗"))
@@ -26,7 +34,7 @@
            b22 mrest3 b22 sb2 m1 sb2 b22 bl
            (:section s2) b22 mrest3 b22 sb4 m3 sb4 b22 bl
            (:section s3) mrest5 b22 sb6 m5 sb6 b22 bl
-           (:section s4) mrest7 b22 sb9 m8 sb9 b22 bl
+           (:section s4) (:newline) mrest7 b22 sb9 m8 sb9 b22 bl
            (:section s5) b22 mrest3 b22 sb3 sh2 m2 sb3 b38 bl
            (:section s6) mrest7 sb7 m6 m7 m4 m6 dot6 sm5 sm4 sm3 sb2 m1 br2 b22 bl)
    (:text 110 58
@@ -58,4 +66,4 @@
            (:section s3) mrest5 m2 b22 sb6 b22 sb2 b22 bl
            (:section s4) mrest7 m5 b22 sb9 b22 sb5 bl
            (:section s5) b22 mrest3 b22 m6 b22 sb3 b22 sb6 b22 bl
-           (:section s6) b38 mrest3 m3 b38 sb7 b38 sb3 b38 sb2 b38 sb5 b38 sb2 b22 br5 blbl)))
+           (:section s6) b38 mrest3 b22 m3 b38 sb7 b38 sb3 b38 sb2 b38 sb5 b38 sb2 b22 br5 blbl)))

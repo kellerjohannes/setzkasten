@@ -119,15 +119,15 @@
   (length-middle-leg 1 "Length of the top left leg (usually medium length), in proportion to the space between staff lines.")
   (length-short-leg 0.8 "Length of the two short legs, in proportion to the space between staff lines."))
 
+(define-setzkasten-class component-g-clef (component)
+  "Parameters for the creation of g-clefs."
+  ;; TODO implement this properly, for now this only creates the text letter 'G'
+  (font-size 15 "Size of the letter 'G'. This needs to be changed once a proper implementation of a G clef is available."))
+
 (define-setzkasten-class component-digit-arc (component)
   "Parameters for the creation of half moon shapes to draw 3 and 2 digits."
   (outer-diameter 0.8 "Diameter of the outer line of the arc, in proportion to the space between staff lines.")
   (thickness 4 "Thickness in the center of the arc."))
-
-;; (define-setzkasten-class component-g-clef ()
-;;   "Parameters for the creation of g-clefs."
-;;   ;; TODO
-;;   ())
 
 (define-setzkasten-class component-barline (component)
   "Parameters for the creation of bar lines."
@@ -232,9 +232,14 @@
   (bequadro-component nil "Instance of component-bequadro."))
 
 (define-setzkasten-class glyph-c-clef (glyph-staff)
-  "Specification of a type containing a c- or g-clef."
+  "Specification of a type containing a c-clef."
   (clef-position 5 "Position of the clef.")
   (clef-component nil "Instance of component-c-clef. In nil, an empty staff will be produced."))
+
+(define-setzkasten-class glyph-g-clef (glyph-staff)
+  "Specification of a type containing a g-clef."
+  (clef-position 5 "Position of the clef.")
+  (clef-component nil "Instance of component-g-clef. In nil, an empty staff will be produced."))
 
 (define-setzkasten-class glyph-f-clef-part (glyph-staff)
   "Specification of a type containing the right part of an f-clef double-type."

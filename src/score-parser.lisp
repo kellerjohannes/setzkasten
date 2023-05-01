@@ -376,6 +376,7 @@
   (:clef fclef5 :f 5)
   (:clef fclef7 :f 7)
   (:clef fclef9 :f 9)
+  (:clef gclef3 :g 3)
   (:note max6 :maxima 6)
   (:note max7 :maxima 7)
   (:note longa1 :longa 1)

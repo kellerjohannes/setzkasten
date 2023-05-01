@@ -188,6 +188,7 @@
   (glyph-c-clef                 cclef3 "c-clef-3" "stave" "c-clef-short" 66 ,*glyph-height* 3)
   (glyph-c-clef                 cclef5 "c-clef-5" "stave" "c-clef" 66 ,*glyph-height* 5)
   (glyph-c-clef                 cclef7 "c-clef-7" "stave" "c-clef" 66 ,*glyph-height* 7)
+  (glyph-g-clef                 gclef3 "g-clef-3" "stave" "g-clef" 80 ,*glyph-height* 3)
   (glyph-rest mrest1 "minima-rest-1" "stave" "minima-rest" 24 ,*glyph-height* 1 :up)
   (glyph-rest mrest3 "minima-rest-3" "stave" "minima-rest" 24 ,*glyph-height* 3 :up)
   (glyph-rest mrest5 "minima-rest-5" "stave" "minima-rest" 24 ,*glyph-height* 5 :up)
