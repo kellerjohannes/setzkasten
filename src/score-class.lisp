@@ -272,3 +272,17 @@
           (comment score))
   (dolist (section (sections score))
     (print-element section stream)))
+
+
+(defmethod sort-score ((score score) order-list)
+  (when order-list
+    (let ((new-section-list nil))
+      (dolist (section-item order-list)
+        (push (get-section score (first section-item)) new-section-list))
+      (setf (sections score) (reverse new-section-list))
+      (dolist (section-item order-list)
+        (let ((current-section (get-section score (first section-item)))
+              (new-voice-list nil))
+          (dolist (voice-id (rest section-item))
+            (push (get-voice current-section voice-id) new-voice-list))
+          (setf (voices (get-section score (first section-item))) (reverse new-voice-list)))))))

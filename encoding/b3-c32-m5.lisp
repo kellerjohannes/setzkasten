@@ -8,7 +8,16 @@
     (s1 v1 "Cadentie del soprano")
     (s1 v2 "Cadentie del contr'alto")
     (s1 v3 "Cadentie del tenore")
-    (s1 v4 "Cadentie del basso")))
+    (s1 v4 "Cadentie del basso"))
+   (:voice-order
+    (s1 v1 v2 v3 v4)
+    (s2 v1 v2 v3 v4)
+    (s3 v1 v2 v3 v4)
+    (s4 v1 v2 v3 v4)
+    (s5 v1 v2 v3 v4)
+    (s6 v1 v2 v3 v4)
+    (s7 v1 v2 v3 v4)
+    (s8 v1 v2 v3 v4)))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)

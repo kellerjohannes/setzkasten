@@ -39,7 +39,10 @@
                   :documentation "Stores a list of strings representing line headings (on the level of subtitles). It will be recursively shortened while parsing the score data.")
    (bracket-configuration :initform nil
                           :accessor bracket-configuration
-                          :documentation "Stores dimensions relevant for the lilypond-rendering of bracketed staffs."))
+                          :documentation "Stores dimensions relevant for the lilypond-rendering of bracketed staffs.")
+   (voice-order :initform nil
+                :accessor voice-order
+                :documentation "If nil, voices and sections are ordered by creation time. If T, the score will be ordered after parsing according to this list."))
   (:documentation "This class keeps track of various elements during the reading process of score encoding data."))
 
 
@@ -214,7 +217,7 @@
 
 (defmethod process-music ((score score) (parser-state parser-state) music-data)
   "Process a :music field in the score encoding data, element by element. Populate the `score' instance."
-  (dolist (music-line music-data)
+  (dolist (music-line music-data (sort-score score (voice-order parser-state)))
     (when (eq :music (first music-line))
       (do ((rest-music (rest (rest music-line)) (rest rest-music)))
           ((null rest-music) nil)
@@ -278,6 +281,9 @@
   (let ((headings (extract-item :header :line-headings score-data)))
     (when headings
       (set-line-headings parser-state headings)))
+  (let ((voice-order (extract-item :header :voice-order score-data)))
+    (when voice-order
+      (setf (voice-order parser-state) voice-order)))
   (let ((label-list (extract-item :header :voice-labels score-data)))
     (when label-list
       (mapc (lambda (this-label)

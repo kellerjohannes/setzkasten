@@ -175,11 +175,11 @@
     ;; ("b3-c31-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
     ;; ("b3-c31-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
 
-    ;; ("b3-c32-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ;; ("b3-c32-m1" "b" (:idealised) ,*vicentino-types-backend*)
-    ;; ("b3-c32-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
-    ;; ("b3-c32-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
-    ;; ("b3-c32-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b3-c32-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c32-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c32-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b3-c32-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ("b3-c32-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
 
     ;; ("b3-c32-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
     ;; ("b3-c32-m2" "b" (:idealised) ,*vicentino-types-backend*)
@@ -200,10 +200,22 @@
     ;; ("b3-c32-m4" "e" (:idealised :en) ,*lilypond-backend-modern*)
 
     ;; ("b3-c32-m5" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ("b3-c32-m5" "b" (:idealised) ,*vicentino-types-backend*)
-    ("b3-c32-m5" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b3-c32-m5" "b" (:idealised) ,*vicentino-types-backend*)
+    ;; ("b3-c32-m5" "c" (:idealised :it) ,*lilypond-backend-modern*)
     ;; ("b3-c32-m5" "d" (:idealised :de) ,*lilypond-backend-modern*)
     ;; ("b3-c32-m5" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
+    ;; ("b3-c32-m6" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ;; ("b3-c32-m6" "b" (:idealised) ,*vicentino-types-backend*)
+    ;; ("b3-c32-m6" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b3-c32-m6" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ;; ("b3-c32-m6" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
+    ;; ("b3-c32-m7" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ;; ("b3-c32-m7" "b" (:idealised) ,*vicentino-types-backend*)
+    ;; ("b3-c32-m7" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b3-c32-m7" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ;; ("b3-c32-m7" "e" (:idealised :en) ,*lilypond-backend-modern*)
     ))
 
 (defparameter *tatti*
