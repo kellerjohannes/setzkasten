@@ -1,5 +1,5 @@
 `((:header
-   (:filename "b3-c38-m1.lisp")
+   (:filename "b3-c38-m1")
    (:alt-name "m3.082")
    (:comment "q021_s119, origin: 461")
    (:creator "Vicentino21 / Johannes Keller")
