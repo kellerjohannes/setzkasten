@@ -272,10 +272,16 @@
     ;; ("b3-c36-m4" "e" (:idealised :en) ,*lilypond-backend-modern*)
 
     ;; ("b3-c37-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ("b3-c37-m1" "b" (:idealised) ,*vicentino-types-backend*)
-    ("b3-c37-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b3-c37-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ;; ("b3-c37-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
     ;; ("b3-c37-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
     ;; ("b3-c37-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
+    ;; ("b3-c37-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b3-c37-m2" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b3-c37-m2" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b3-c37-m2" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ;; ("b3-c37-m2" "e" (:idealised :en) ,*lilypond-backend-modern*)
     ))
 
 (defparameter *tatti*

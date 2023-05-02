@@ -806,7 +806,8 @@
 ~4,0t\\null
 ~@[~a\\null~]
 ~4,0t\\line {"
-                              (generate-multiline-line-heading (line-heading section)))))
+                              (when (line-heading section)
+                                (generate-multiline-line-heading (line-heading section))))))
     (if (newlinep section)
         (concatenate 'string newline-code section-code)
         section-code)))
