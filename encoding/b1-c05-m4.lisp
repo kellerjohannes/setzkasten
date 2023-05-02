@@ -1,6 +1,6 @@
 `((:header
    (:filename "b1-c5-m4")
-   (:alt-name "m1.04")
+   (:alt-name "m1.006")
    (:comment "")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Dimostratione della mano enarmonica diatonica,\\ascendente con le sette lettere della mano")

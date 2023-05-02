@@ -1,6 +1,6 @@
 `((:header
    (:filename "b1-c5-m5")
-   (:alt-name "m1.07")
+   (:alt-name "m1.007")
    (:comment "")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Mano della divisione del tono in quattro diesis enarmonici ascendenti\\con lo semitono minore")

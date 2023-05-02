@@ -1,6 +1,6 @@
 `((:header
    (:filename "b1-c5-m1")
-   (:alt-name "m1.03")
+   (:alt-name "m1.003")
    (:comment "")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Dimostratione della mano diatonica")

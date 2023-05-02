@@ -1,48 +1,43 @@
 `((:header
-   (:filename "b3-c38-m1")
-   (:alt-name "m3.059")
-   (:comment "q021_s106, origin: 877")
+   (:filename "b3-c38-m1.lisp")
+   (:alt-name "m3.082")
+   (:comment "q021_s119, origin: 461")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio delle cadentie naturali ed accidentali,\\a due voci, della musica participata e mista,\\lequali fuggano la sua conclusione")
    (:section-headings
-    (s1 "")
-    (s2 "")
-    (s3 "")
-    (s4 "")))
+    (s1 "Prima ottava cromatica")
+    (s2 "Seconda ottava cromatica")
+    (s3 "Terza ottava cromatica")
+    (s4 "Quarta ottava cromatica")
+    (s5 "Quinta ottava cromatica")
+    (s6 "Sesta ottava cromatica")
+    (s7 "Settima ottava cromatica")))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)
    (:background ,*score-bg-color*))
+  (:preamble-lilypond
+   (:clef-overrides
+    (s6 v1 "treble_8")
+    (s7 v1 "treble_8")))
   (:data
-   (:text 70 58
-          (70 2054 "Eſſempio delle ᴄadentie naturali& accidentali,à due uoci,della muſica participata &"))
-   (:text 130 58
-          (636 943 "miſta,lequali fuggano la ſua concluſione."))
-   (:music 2230
-           (:voice v1)
-           (:section s1) cclef7 b22 mrest7 b22 m7 b22 dot8 b22 cr6 b38 cr5 b38 m6 b38 sb9 bl
-           (:section s2) m5 b38 m7 dot8 cr6 b22 cr5 b38 m6 b38 sb2 bl
-           (:section s3) m1 b38 m4 dot4 cr3 b22 cr2 b38 sh3 b38 m3 b38 sb6 bl
-           (:section s4) b22 mrest3 b22 sb4 b38 m3 b38 fl6 b22 sb6 b22 bl)
-   (:vspace 40)
-   (:music 2213
-           (:voice v2)
-           (:section s1) (:f-clef) b38 b38 sb7 b38 b38 sb5 b38 b38 sb4 b38 b38 b22 b22 bl
-           (:section s2) b38 b38 sb7 b38 b38 sb5 b38 b38 sb4 b38 b38 bl
-           (:section s3) b38 b38 b38 sb3 b38 b38 b38 sb2 b38 b38 b38 sb1 b38 b38 b38 bl
-           (:section s4) b38 sb3 b38 b38 sb2 b38 b38 sb1 b38 bl)
-   (:vspace 20)
    (:text 110 58
-          (949 nil "A due uoci."))
-   (:music 2225
+          (113 nil "Prima ottaua ᴄromatica.")
+          (894 nil "Seconda ottaua ᴄromatica.")
+          (1626 nil "Terza ottaua ᴄromatica."))
+   (:music 2243
            (:voice v1)
-           (:section s5) (:newline) cclef7 b22 mrest5 b22 sb5 b38 sh4 b38 m4 b38 sh7 b38 sb7 b38 bl
-           (:section s6) b22 mrest5 b38 sb5 b38 sh4 b38 m4 b38 sb7 b38 bl
-           (:section s7) b38 mrest5 b38 sb5 b38 sh4 b38 m4 b38 sb8 b38 bl
-           (:section s8) b38 mrest5 b38 sb5 b38 sh4 b38 m4 b38 sh8 b38 sb8 b22 b22 bl b38)
-   (:music 2213
-           (:voice v2)
-           (:section s5) (:f-clef) b38 b38 sb4 b38 b38 sb3 b38 b38 sb2 b38 b22 b22 bl
-           (:section s6) b38 b38 sb4 b38 b38 sb3 b38 b38 sb2 b38 b38 bl
-           (:section s7) b38 b38 sb7 b38 b38 sb6 b38 b38 sb5 b22 b22 bl
-           (:section s8) b38 b38 b22 b22 sb2 b22 b22 b22 sb6 b38 b38 b22 sb3 b38 b38 b38 bl b38)))
+           (:section s1) (:f-clef) max7 fclef7 b22 sb2 fl3 sb3 fl5 sb5 b22 sb5 fl6 sb6 fl8 sb8 b38 sb8 fl9 sb9 sb9 b22 bl
+           (:section s2) b22 sb3 sb5 fl6 sb6 sb6 sb8 fl9 sb9 sb9 fl10 sb10 sb10 b22
+           (:section s3) cclef7 b22 sb0 fl1 sb1 b22 sb1 sb3 fl4 sb4 b22 sb4 fl5 sb5 sb5 sb7 b22 bl)
+   (:text 90 58
+          (350 nil "Qurata ottaua ᴄro.")
+          (1357 nil "Quinta ottaua ᴄromatica."))
+   (:music 2237
+           (:section s4) (:newline) cclef7 b38 sb1 b22 fl2 b22 sb2 b22 fl4 b22 sb4 b38 sb4 b22 fl5 b22 sb5 b38 sb5 b22 fl6 b22 sb6 b22 fl8 b22 sb8 b38 sb8 b38 bl
+           (:section s5) b38 sb2 b38 sb4 b22 fl5 b22 sb5 b38 sb5 b22 fl6 b22 sb6 b38 sb6 b38 sb8 b22 fl9 b22 sb9 b38 sb9 b38 bl b38)
+   (:text 90 58
+          (176 nil "Seſta ottaua ᴄromatica.")
+          (1116 nil "Settima ottaua ᴄro."))
+   (:music 2231
+           (:section s6) cclef5 b38 sb1 fl2 sb2 b22 sb2 b22 fl3 b22 sb3 b38  sb3 b38 sb5 b22 fl6 b22 sb6 b38 sb6 b38 sb8 b38
+           (:section s7) (:newline) cclef5 b38 sb2 b38 fl3 b22 sb3 b38 sb3 b38 sb5 b22 fl6 b22 sb6 b38 sb6 b22 fl7 b22 sb7 b22 fl9 b22 sb9 b38 sb9 b22 b22 blbl b118)))

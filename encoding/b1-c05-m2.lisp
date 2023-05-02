@@ -1,6 +1,6 @@
 `((:header
    (:filename "b1-c5-m2")
-   (:alt-name "m1.02")
+   (:alt-name "m1.004")
    (:comment "")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Dimostratione della mano cromatica, ascendente, con li semitoni minore,\\e con l'essempio")
