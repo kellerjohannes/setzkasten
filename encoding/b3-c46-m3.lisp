@@ -1,6 +1,6 @@
 `((:header
    (:filename "b3-c46-m3")
-   (:alt-name "m98")
+   (:alt-name "m3.098")
    (:comment "q021_s126, origin: 980")
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings

@@ -1,6 +1,6 @@
 `((:header
    (:filename "b3-c26-m1")
-   (:alt-name "m3.57")
+   (:alt-name "m3.057")
    (:comment "q021_s103, origin: 500; q021_s104, rotation: 0.94, origin: 878 et al.")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio della musica diatonica")

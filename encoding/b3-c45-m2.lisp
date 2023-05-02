@@ -1,6 +1,6 @@
 `((:header
    (:filename "b3-c45-m2")
-   (:alt-name "m94")
+   (:alt-name "m3.094")
    (:comment "q021_s125, rotation: 0.35, origin: 450")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Essempio di tre quarte, differenti de tre generi musicali,\\della seconda spetie delle quarte")

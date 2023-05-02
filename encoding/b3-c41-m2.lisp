@@ -1,6 +1,6 @@
 `((:header
    (:filename "b3-c41-m2")
-   (:alt-name "")
+   (:alt-name "m3.088")
    (:comment "q021_s121, origin: 471")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del sesto modo cromatico"))

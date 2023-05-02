@@ -1,6 +1,6 @@
 `((:header
    (:filename "b3-c50-m1")
-   (:alt-name "m")
+   (:alt-name "m3.113")
    (:comment "q021_s138, origin: 975")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Cadentie a quattro voci")

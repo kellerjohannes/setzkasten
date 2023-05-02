@@ -1,6 +1,6 @@
 `((:header
    (:filename "b3-c37-m3")
-   (:alt-name "m3.81")
+   (:alt-name "m3.081")
    (:comment "q021_s118, origin: 959")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio delle quattro quinte cromatiche,\\che segueno una dopo l'altra")

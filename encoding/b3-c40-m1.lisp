@@ -1,6 +1,6 @@
 `((:header
    (:filename "b3-c40-m1")
-   (:alt-name "")
+   (:alt-name "m3.085")
    (:comment "q021_s120, origin: 936")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del terzo modo cromatico"))
