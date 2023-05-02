@@ -273,7 +273,6 @@
   (dolist (section (sections score))
     (print-element section stream)))
 
-
 (defmethod sort-score ((score score) order-list)
   (when order-list
     (let ((new-section-list nil))
