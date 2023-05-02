@@ -3,7 +3,6 @@
    (:alt-name "m98")
    (:comment "q021_s126, origin: 980")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "")
    (:section-headings
     (s1 "")
     (s2 "")

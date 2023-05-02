@@ -3,7 +3,6 @@
    (:alt-name "")
    (:comment "")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "")
    (:section-headings
     (s1 "tono diviso in 4 parti\\ascendenti")
     (s2 "tono diviso in 4 parti\\ascendenti"))

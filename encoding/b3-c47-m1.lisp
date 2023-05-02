@@ -3,7 +3,6 @@
    (:alt-name "m3.101")
    (:comment "q021_s127, rotation: 0.89, origin: 498 (first page); origin: 914 (second page)")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "")
    (:section-headings
     (s1 ""))
    (:section-captions

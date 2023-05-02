@@ -3,7 +3,6 @@
    (:alt-name "m3.075")
    (:comment "q021_s117, origin: 1475")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "")
    (:section-headings
     (s1 "Prima quarta\\diatonica")
     (s2 "Prima quarta\\cromatica")))

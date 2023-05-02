@@ -715,11 +715,11 @@
                 (format nil "~18,0t\\cadenzaOff"))
             (when (lyrics voice) (format nil "~16,0t\\addlyrics { ~a }" (lyrics voice))))))
 
-
 (defun generate-formatted-text (format-list)
   (let ((result nil))
     (dolist (item format-list result)
-      (cond ((eq item :bold) (setf result (concatenate 'string result " \\bold ")))
+      (cond ((or (null item) (string= item "")) nil)
+            ((eq item :bold) (setf result (concatenate 'string result " \\bold ")))
             ((eq item :italics) (setf result (concatenate 'string result " \\italic ")))
             ((eq item :normal) (setf result (concatenate 'string result " \\normal-text ")))
             (t (setf result (concatenate 'string result "\"" item "\"")))))))
@@ -783,23 +783,23 @@
 ~a~]
 ~6,0t}
 ~6,0t\\hspace #3"
-          (if (string= (heading section) "")
-              nil
-              (generate-multiline-text (heading section)))
-          (when (bracket section)
-            (generate-l-bracket-string (bracket section)))
-          (when (lyrics (first (voices section)))
-            (format nil "~12,0t\\new ChoirStaff"))
-          (mapcar (lambda (voice)
-                    (generate-voice-ly-code voice backend))
-                  (voices section))
-          (when (bracket section) 0)
-          shortest-duration
-          (when (bracket section)
-            (generate-r-bracket-string (bracket section)))
-          (if (string= (caption section) "")
-              nil
-              (generate-multiline-text (caption section)))))
+                              (if (string= (heading section) "")
+                                  nil
+                                  (generate-multiline-text (heading section)))
+                              (when (bracket section)
+                                (generate-l-bracket-string (bracket section)))
+                              (when (lyrics (first (voices section)))
+                                (format nil "~12,0t\\new ChoirStaff"))
+                              (mapcar (lambda (voice)
+                                        (generate-voice-ly-code voice backend))
+                                      (voices section))
+                              (when (bracket section) 0)
+                              shortest-duration
+                              (when (bracket section)
+                                (generate-r-bracket-string (bracket section)))
+                              (if (string= (caption section) "")
+                                  nil
+                                  (generate-multiline-text (caption section)))))
         (newline-code (format nil "~
 ~4,0t}
 ~4,0t\\null
@@ -856,9 +856,12 @@ dot = {
 ~2,0t}
 }"
              ;; (generate-formatted-text (split-formatted-string (title score)))
-             (mapcar (lambda (textline)
+             (let ((line-list (mapcar (lambda (textline)
                        (generate-formatted-text (split-formatted-string textline)))
-                     (split-string-to-list (title score) "\\"))
+                     (split-string-to-list (title score) "\\"))))
+               (if (null (first line-list))
+                   nil
+                   line-list))
              (line-heading (first (sections score)))
              (mapcar (lambda (section)
                        (generate-section-ly-code section

@@ -3,7 +3,6 @@
    (:alt-name "")
    (:comment "")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "")
    (:section-headings
     (s1 ""))
    (:section-captions

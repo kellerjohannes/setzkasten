@@ -3,7 +3,6 @@
    (:alt-name "m3.074")
    (:comment "q021_s116, rotation: 0, origin: 899")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title  "")
    (:voice-labels
     (s1 v4 "Quinta parte")
     (s2 v4 "Buona")

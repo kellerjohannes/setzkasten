@@ -32,55 +32,56 @@
          )))
 
 (defun split-formatted-string (text-string &optional result)
-  (let ((bold-pos (find-next-trigger text-string *bold-trigger*))
-        (italics-pos (find-next-trigger text-string *italics-trigger*)))
-    (cond ((and (null bold-pos) (null italics-pos))
-           (push :normal result)
-           (push text-string result)
-           (reverse result)
-           )
-          ((and (and bold-pos (> bold-pos 0)) (null italics-pos))
-           (push :normal result)
-           (push (subseq text-string 0 bold-pos) result)
-           (split-formatted-string (subseq text-string bold-pos) result))
-          ((and (and italics-pos (> italics-pos 0)) (null bold-pos))
-           (push :normal result)
-           (push (subseq text-string 0 italics-pos) result)
-           (split-formatted-string (subseq text-string italics-pos) result))
-          ((and bold-pos (zerop bold-pos))
-           (let ((trigger-len (length *bold-trigger*)))
-             (push :bold result)
-             (push (subseq text-string
-                           trigger-len
-                           (find-next-trigger text-string *bold-trigger* trigger-len))
-                   result)
-             (split-formatted-string (subseq text-string (+ trigger-len
-                                                            (find-next-trigger text-string
-                                                                               *bold-trigger*
-                                                                               trigger-len)))
-                                     result)))
-          ((and italics-pos (zerop italics-pos))
-           (let ((trigger-len (length *italics-trigger*)))
-             (push :italics result)
-             (push (subseq text-string trigger-len (find-next-trigger
-                                                    text-string
-                                                    *italics-trigger*
-                                                    trigger-len))
-                   result)
-             (split-formatted-string (subseq text-string (+ trigger-len
-                                                            (find-next-trigger text-string
-                                                                               *italics-trigger*
-                                                                               trigger-len)))
-                                     result)))
-          ((< bold-pos italics-pos)
-           (push :normal result)
-           (push (subseq text-string 0 bold-pos) result)
-           (split-formatted-string (subseq text-string bold-pos) result))
-          ((< italics-pos bold-pos)
-           (push :normal result)
-           (push (subseq text-string 0 italics-pos) result)
-           (split-formatted-string (subseq text-string italics-pos) result))
-          (t (format t "~&Something went wrong when parsing for formatted string.")))))
+  (when text-string
+    (let ((bold-pos (find-next-trigger text-string *bold-trigger*))
+          (italics-pos (find-next-trigger text-string *italics-trigger*)))
+      (cond ((and (null bold-pos) (null italics-pos))
+             (push :normal result)
+             (push text-string result)
+             (reverse result)
+             )
+            ((and (and bold-pos (> bold-pos 0)) (null italics-pos))
+             (push :normal result)
+             (push (subseq text-string 0 bold-pos) result)
+             (split-formatted-string (subseq text-string bold-pos) result))
+            ((and (and italics-pos (> italics-pos 0)) (null bold-pos))
+             (push :normal result)
+             (push (subseq text-string 0 italics-pos) result)
+             (split-formatted-string (subseq text-string italics-pos) result))
+            ((and bold-pos (zerop bold-pos))
+             (let ((trigger-len (length *bold-trigger*)))
+               (push :bold result)
+               (push (subseq text-string
+                             trigger-len
+                             (find-next-trigger text-string *bold-trigger* trigger-len))
+                     result)
+               (split-formatted-string (subseq text-string (+ trigger-len
+                                                              (find-next-trigger text-string
+                                                                                 *bold-trigger*
+                                                                                 trigger-len)))
+                                       result)))
+            ((and italics-pos (zerop italics-pos))
+             (let ((trigger-len (length *italics-trigger*)))
+               (push :italics result)
+               (push (subseq text-string trigger-len (find-next-trigger
+                                                      text-string
+                                                      *italics-trigger*
+                                                      trigger-len))
+                     result)
+               (split-formatted-string (subseq text-string (+ trigger-len
+                                                              (find-next-trigger text-string
+                                                                                 *italics-trigger*
+                                                                                 trigger-len)))
+                                       result)))
+            ((< bold-pos italics-pos)
+             (push :normal result)
+             (push (subseq text-string 0 bold-pos) result)
+             (split-formatted-string (subseq text-string bold-pos) result))
+            ((< italics-pos bold-pos)
+             (push :normal result)
+             (push (subseq text-string 0 italics-pos) result)
+             (split-formatted-string (subseq text-string italics-pos) result))
+            (t (format t "~&Something went wrong when parsing for formatted string."))))))
 
 (defun string-split-loop (text-string split-string)
   (cond ((null (search split-string text-string)) (list text-string))

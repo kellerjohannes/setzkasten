@@ -3,7 +3,6 @@
    (:alt-name "m3.071")
    (:comment "q021_s114, rotation: 0, origin: 927")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "")
    (:voice-labels
     (s1 v1 "Cadentia del soprano")
     (s2 v1 "Cadentia dell'alto")

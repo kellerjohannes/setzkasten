@@ -3,7 +3,6 @@
    (:alt-name "m2.002")
    (:comment "q021_s055")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "")
    (:section-headings
     (s1 "")
     (s2 "")
