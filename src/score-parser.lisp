@@ -620,6 +620,8 @@
   (:note cr10 :croma 10)
   (:note scr3 :semicroma 3)
   (:note scr4 :semicroma 4)
+  (:note scr6 :semicroma 6)
+  (:note scr7 :semicroma 7)
   (:rest lrest24 :longa)
   (:rest lrest46 :longa)
   (:rest lrest68 :longa)
