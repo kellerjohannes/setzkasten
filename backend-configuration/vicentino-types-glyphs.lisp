@@ -149,6 +149,7 @@
   (glyph-notehead-dot           sbc2   "semibrevis-comma-2" "stave" "notehead-semibrevis" "comma" 53 ,*glyph-height* 2 t 1 :center nil)
 ;; the following was created for special types, not in the source
   (glyph-notehead-dot           sbc3   "semibrevis-comma-3" "stave" "notehead-semibrevis" "comma" 53 ,*glyph-height* 3 t 1 :center nil)
+  (glyph-notehead-dot           sbc4   "semibrevis-comma-4" "stave" "notehead-semibrevis" "comma" 53 ,*glyph-height* 4 t 1 :center nil)
   (glyph-notehead-dot           sbc5   "semibrevis-comma-5" "stave" "notehead-semibrevis" "comma" 53 ,*glyph-height* 5 t 1 :center nil)
 ;; the following was created for special types, not in the source
   (glyph-notehead-dot           sbc6   "semibrevis-comma-6" "stave" "notehead-semibrevis" "comma" 53 ,*glyph-height* 6 t 1 :center nil)
