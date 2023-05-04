@@ -24,7 +24,7 @@
    (:background ,*score-bg-color*))
   (:data
    (:text 70 58
-          (181 1832 "Queſte sono tutte le conſonanze di Elami secondo,diſcentendi & aſcendenti."))
+          (181 1832 "Queſte sono tutte le conſonanze di Elami secondo,diſcendenti & aſcendenti."))
    (:text 90 58
           (332 nil "le 6. terze")
           (1095 nil "quinta")

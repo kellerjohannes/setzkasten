@@ -36,8 +36,8 @@
           (95 nil "3.mi.")
           (237 nil "3.mag.")
           (496 nil "5.")
-          (593 nil "5.mi.")
-          (753 nil "5.mag."))
+          (593 nil "6.mi.")
+          (753 nil "6.mag."))
    (:music 2214
            (:voice v1)
            (:section s1) cclef7 b22 sb9 b22 (:divider :regular) sb9 bl
