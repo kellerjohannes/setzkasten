@@ -513,7 +513,7 @@
   (:note sbc5 :semibrevis 5 :comma)
   (:note sbc6 :semibrevis 6 :comma)
   (:note sbc7 :semibrevis 7 :comma)
-  ;; (:note sbc8 :semibrevis 8 :comma)
+  :note sbc8 :semibrevis 8 :comma)
   ;; (:note sbc9 :semibrevis 9 :comma)
   ;; (:note sbc10 :semibrevis 10 :comma)
   (:note m0 :minima 0)
