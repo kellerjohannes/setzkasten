@@ -1,0 +1,81 @@
+`((:header
+   (:filename "b5-c29-m1")
+   (:alt-name "m5.025")
+   (:comment "q021_s229, rotation: 0, origin: 471")
+   (:creator "Vicentino21 / Johannes Keller")
+   (:title "Queste sono tutte le consonanze, con le sue propinque\\e con le propinquissime di Dsolre acuto quarto discendente,\\e quelle di Dsolre quarto ascendenti")
+   (:section-headings
+    (s1 "Le cinque terze\\[discendenti]")
+    (s2 " \\Quinta")
+    (s3 "Le cinque seste\\[discendenti]")
+    (s4 " \\Ottava")
+    (s5 "Le quattro terze\\[ascendenti]")
+    (s6 " \\Quinta")
+    (s7 "Le quattro seste\\[ascendenti]")
+    (s8 " \\Ottava"))
+   (:section-captions
+    (s1 "Terza minore / terza maggiore")
+    (s3 "Sesta minore / sesta maggiore")
+    (s5 "Terza minore / terza maggiore")
+    (s7 "Sesta minore / sesta maggiore")))
+  (:preamble-type-imitation
+   (:width nil)
+   (:height nil)
+   (:background ,*score-bg-color*))
+  (:preamble-lilypond
+   (:clef-overrides
+    (s5 v1 "treble_8")
+    (s6 v1 "treble_8")
+    (s7 v1 "treble_8")
+    (s8 v1 "treble_8")))
+  (:data
+   (:text 70 58
+     (99 2139 "Queſte ſono tutte le conſonanze, con le ſue propinque & con le propinquiſſime di D ſol"))
+   (:text 90 58
+     (5 1734 "re acuto quarto diſcendente, & quelle di D sol re quarto, aſcendenti."))
+   (:text 110 58
+     (109 nil "Le cinque 3.")
+     (522 nil "5.")
+     (668 nil "Le cinque 6.")
+     (1084 nil "8.")
+     (1322 nil "Le 4.3.")
+     (1673 nil "5.")
+     (1857 nil "Le 4.6.")
+     (2156 nil "8."))
+   (:music 2241
+           (:voice v1)
+           (:section s1) cclef7 sbd8 b22 sbd8 b22 (:divider :regular) sbd8 bl
+           b22 sbd8 b38 sbd8 b38 bl
+           (:section s2) b22 sbd8 b22 bl
+           (:section s3) b22 b22 sbd8 b22 (:divider :regular) sbd8 b22 bl
+           sbd8 sbd8 b22 sbd8 bl
+           (:section s4) b22 sbd8 b22
+           (:section s5) (:newline) cclef5 sbd1 sh1 (:divider :regular) sb1 b22 bl
+           fl2 sb2 fl2 sbd2 bl
+           (:section s6) b22 sbd3 bl
+           (:section s7) fl4 sbd4 (:divider :regular) sb4 bl
+           sbd6 sh6 sb6 bl
+           (:section s8) sbd8 bl)
+   (:text 130 58
+          (53 nil "3.mi.prop.")
+          (326 nil "3.mag.pr.")
+          (662 nil "6.mi.pr.")
+          (901 nil "6.mag.pr.")
+          (1196 nil "3.mi.pr.")
+          (1421 nil "3.mag.p.")
+          (1728 nil "6.mi.p.")
+          (1960 nil "6.ma.p."))
+   (:music 2245
+           (:voice v2)
+           (:section s1) cclef7 sbd6 sbc6 sb6 bl
+           fl6 sbd6 fl6 sb6 bl
+           (:section s2) b22 sbd4 b22 bl
+           (:section s3) fl4 sb4 sh3 sb3 bl
+           sbd3 sbc3 sb3 bl
+           (:section s4) sbd1 b22
+           (:section s5) cclef7 sbd1 b22 sbd1 b22 bl
+           b22 sbd1 b22 b22 sbd1 bl
+           (:section s6) b22 sbd1 bl
+           (:section s7) b22 sbd1 b22 sbd1 b22 bl
+           sbd1 b22 sbd1 b22 bl
+           (:section s8) sbd1 bl)))

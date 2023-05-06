@@ -76,6 +76,7 @@
     ((:e :flat :dot) "\\dot e" "s" "-.")
     ((:e nil :comma) "e" "" "^\\markup{\\hspace #0.8 ,}")
     ((:f nil nil) "f" "" "")
+    ((:f nil :comma) "f" "" "^\\markup{\\hspace #0.8 ,}")
     ((:e :sharp nil) "e" "is" "")
     ((:f nil :dot) "\\dot f" "" "-.")
     ((:g nil nil) "g" "" "")
@@ -101,7 +102,7 @@
     ((:b nil :dot) "\\dot b" "" "-.")
     ((:b :natural :dot) "\\dot b" "" "-.")
     ((:b :flat :dot) "\\dot b" "es" "-.")
-    ((:b nil :comma) "b" "" "^\\markup{,}")))
+    ((:b nil :comma) "b" "" "^\\markup{\\hspace #0.8 ,}")))
 
 (defparameter *dict-ly-notenames-double-accidentals*
   '(((:c nil nil) "c")
