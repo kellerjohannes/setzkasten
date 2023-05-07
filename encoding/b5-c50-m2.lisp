@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
     (s1 "Tono cromatico\\accidentale\\[ascendente]")
-    (s2 "Semitono cromatico\\accidentale\\accidentale\\[ascendente]")
+    (s2 "Semitono cromatico\\accidentale\\[ascendente]")
     (s3 "Tono cromatico\\accidentale\\[ascendente]")
     (s4 "Tono cromatico\\accidentale\\[ascendente]")
 
