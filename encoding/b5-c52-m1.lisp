@@ -1,0 +1,212 @@
+`((:header
+   (:filename "b5-c52-m1")
+   (:alt-name "m5.056")
+   (:comment "q021_s254, rotation: 0, origin: 1004")
+   (:creator "Vicentino21 / Johannes Keller")
+   (:section-headings
+    (s1 "Tono cromatico\\accidentale\\[ascendente]")
+    (s2 "Semitono cromatico\\accidentale\\[ascendente]")
+    (s3 "Tono cromatico\\accidentale\\[ascendente]")
+
+    (s4 "Tono cromatico\\accidentale\\[ascendente]")
+    (s5 "Semitono cromatico\\accidentale\\[ascendente]")
+    (s6 "Tono cromatico\\accidentale\\[ascendente]")
+    (s7 "Tono cromatico\\accidentale\\[ascendente]")
+
+    (s8 "Tono cromatico\\accidentale\\[discendente]")
+    (s9 "Tono cromatico\\accidentale\\[discendente]")
+    (s10 "Semitono cromatico\\accidentale\\[discendente]")
+
+    (s11 "Tono cromatico\\accidentale\\[discendente]")
+    (s12 "Tono cromatico\\accidentale\\[discendente]")
+    (s13 "Semitono cromatico\\accidentale\\[discendente]")
+    (s14 "Tono cromatico\\accidentale\\[discendente]")
+    )
+   (:section-captions
+    ;; erste diesis sollte maggiore sein?
+    (s1 "Semitono maggiore:\\diesis maggiore – diesis minore\\Semitono minore:\\diesis minore – diesis minore")
+    (s2 "Semitono minore /\\semitono maggiore:\\diesis minore – diesis minore – diesis minore")
+    (s3 "Semitono maggiore:\\diesis maggiore – diesis minore\\Semitono minore:\\diesis minore – diesis minore")
+
+    (s4 "Semitono maggiore:\\diesis maggiore – diesis minore\\Semitono minore:\\diesis minore – diesis minore")
+    (s5 "Semitono minore /\\semitono maggiore:\\diesis minore – diesis minore – diesis minore")
+    (s6 "Semitono maggiore:\\diesis maggiore – diesis minore\\Semitono minore:\\diesis minore – diesis minore")
+    (s7 "Semitono maggiore:\\diesis maggiore – diesis minore\\Semitono minore:\\diesis minore – diesis minore")
+
+    (s8 "Semitono maggiore:\\diesis maggiore – diesis minore\\Semitono minore:\\diesis minore – diesis minore")
+    (s9 "Semitono maggiore:\\diesis maggiore – diesis minore\\Semitono minore:\\diesis minore – diesis maggiore")
+    (s10 "Semitono minore /\\semitono maggiore:\\diesis minore – diesis minore – diesis minore")
+
+    (s11 "Semitono maggiore:\\diesis maggiore – diesis minore\\Semitono minore:\\diesis minore – diesis minore")
+    (s12 "Semitono minore:\\diesis maggiore – diesis minore\\Semitono maggiore:\\diesis minore – diesis minore")
+    (s13 "Semitono minore /\\semitono maggiore:\\diesis minore – diesis minore – diesis minore")
+    (s14 "Semitono minore:\\diesis minore – diesis maggiore\\Semitono maggiore:\\diesis minore – diesis minore")
+    ))
+  (:preamble-type-imitation
+   (:width nil)
+   (:height nil)
+   (:background ,*score-bg-color*))
+  (:data
+   (:text 90 58
+     (208 nil "Se.")
+     (327 nil "mag.")
+     (533 nil "se.")
+     (640 nil "mi.")
+     (881 nil "se.")
+     (993 nil "mi.")
+     (1129 nil "se.")
+     (1249 nil "ma.")
+     (1586 nil "se.")
+     (1695 nil "mag.")
+     (1865 nil "se.")
+     (1972 nil "mi.")
+     )
+   (:music 2240
+           (:voice v1)
+           (:section s1) (:f-clef) max7 fclef7 b38 b22 fl2 b22 sbd2 b22 sbd2 b22 sh2 b22 sb2 b22 fl3 b22 sb3 b22 fl3 b22 sbd3 b38 b22 bl
+           (:section s2) b38 fl3 b22 sbd3 b22 sb3 b22 sbd3 b22 sh3 b22 sb3 b38 b38 bl
+           (:section s3) b38 b22 sh3 b22 sb3 b22 sbd4 b22 sh4 b22 sb4 b22 fl5 b22 sb5 b22 fl5 b22 sbd5 b38 b22 bl
+           )
+   (:text 70 58
+     (94 nil "ᴅ.ma.")
+     (277 nil "d.mi.")
+     (437 nil "di.mi.")
+     (618 nil "di.m.")
+     (880 nil "d.mi.")
+     (1028 nil "d.mi.")
+     (1175 nil "d.mi..")
+     (1503 nil "d.ma.")
+     (1694 nil "d.mi.")
+     (1880 nil "d.mi.")
+     (2060 nil "d.mi.")
+     )
+   (:text 110 58
+     (180 nil "Tono")
+     (355 nil "ᴄro.")
+     (553 nil "acc.")
+     (898 nil "Se.")
+     (1019 nil "cro.")
+     (1148 nil "acc.")
+     (1600 nil "Tono.")
+     (1787 nil "cro.")
+     (1921 nil "acc.")
+     )
+   (:text 110 58
+     (91 nil "Se.")
+     (210 nil "mag.")
+     (385 nil "se.")
+     (505 nil "mi.")
+     (673 nil "se.")
+     (778 nil "mi.&mag.")
+     (1178 nil "se.")
+     (1294 nil "mag.")
+     (1450 nil "se.")
+     (1559 nil "mi.")
+     (1752 nil "se.")
+     (1862 nil "ma.")
+     (1993 nil "se.")
+     (2109 nil "mi.")
+     )
+   (:music 2236
+           (:section s4) (:f-clef) max7 fclef7 b38 fl5 sbd5 sbd5 sh5 sb5 fl6 sb6 fl6 sbd6 b22 bl
+           (:section s5) (:newline) b22 fl6 b22 sbd6 b22 sb6 b22 sbd6 b22 sh6 b22 sb6 b22 bl
+           (:section s6) b22 sh6 sb6 sbd7 sh7 sb7 fl8 sb8 fl8 sbd8 b22 bl
+           (:section s7) b22 fl8 sbd8 sbd8 b22 sh8 sb8 fl9 sb9 fl9 sbd9 b22 bl
+           )
+   (:text 90 58
+     (5 nil "d.mag.d.mi.d.mi.d.mi.")
+     (646 nil "d.mi.d.mi.d.mi.d.ma.")
+     (1203 nil "d.mi. d.mi. d.mi.")
+     (1657 nil "d. ma. d.mi. d.mi. d.mi.")
+     )
+   (:text 110 58
+     (105 nil "ᴛono")
+     (253 nil "ᴄro.")
+     (403 nil "acc.")
+     (669 nil "se.")
+     (825 nil "ᴄro.")
+     (1018 nil "acc.")
+     (1202 nil "ᴛono")
+     (1362 nil "ᴄro.")
+     (1512 nil "acc.")
+     (1737 nil "ᴛono")
+     (1894 nil "ᴄro.")
+     (2044 nil "acc.")
+     )
+   (:text 110 58
+     (177 nil "Se.")
+     (300 nil "ma.")
+     (472 nil "se.")
+     (581 nil "mi.")
+     (866 nil "se.")
+     (979 nil "ma.")
+     (1154 nil "se.")
+     (1270 nil "mi.")
+     (1586 nil "se.")
+     (1702 nil "mi. & mag.")
+     )
+   (:music 2220
+           (:section s8) (:newline) (:f-clef) max7 fclef7 b38 fl9 b22 sbd9 b22 sh8 b22 sb8 b22 sbd8 b22 sb8 b22 fl8 b22 sbd8 b38 bl
+           (:section s9) b38 fl8 b22 sbd8 b22 sh7 b22 sb7 b22 sbd7 b22 sb7 b22 sh6 b22 sb6 b38 bl
+           (:section s10) b38 sh6 b22 sb6 b22 sbd6 b22 sb6 b22 fl6 b22 sbd6 b22 bl
+           (:section s11) b22 fl6 b22 sbd6 b22 custos5
+           )
+   (:text 100 58
+     (143 nil "d.ma. d.mi.d.mi. d.mi.")
+     (770 nil "d.ma.d.mi.d.mi.d. mi.d.ma.")
+     (1481 nil "d.mi.d.mi.di.mi. di.")
+     (1999 nil "ma.d.mi.")
+     )
+   (:text 120 58
+     (177 nil "Tono")
+     (384 nil "cro.")
+     (558 nil "acc.")
+     (845 nil "ᴛono")
+     (1034 nil "Cro.")
+     (1238 nil "acc.")
+     (1497 nil "se.")
+     (1609 nil "cro.")
+     (1783 nil "acc.")
+     (2017 nil "ᴛono")
+     )
+   (:text 100 58
+     (130 nil "se.")
+     (244 nil "ma.")
+     (499 nil "se.")
+     (606 nil "mi.")
+     (729 nil "se.")
+     (838 nil "mag.")
+     (1119 nil "se.")
+     (1233 nil "mi. & ma.")
+     (1638 nil "se.")
+     (1753 nil "mi.")
+     (1878 nil "se.")
+     (1994 nil "ma.")
+     )
+   (:music 2215
+           (:f-clef) max7 fclef7 b38 sh5 sb5 sbd5 sb5 fl5 sbd5 b38 bl
+           (:section s12) (:newline) b38 fl5 b22 sbd5 b22 sh4 sb4 b22 sbd4 b22 sb4 b22 sh3 sb3 b38 bl
+           (:section s13) b38 sh3 sb3 b22 sbd3 b22 sb3 b22 fl3 b22 sbd3 b38 bl
+           (:section s14) b38 fl3 sbd3 b22 fl3 sb3 b22 sbd2 b22 sb2 fl2 sbd2 b38 bl
+           )
+   (:text 90 58
+     (111 nil "d.mi.")
+     (286 nil "d.mi.")
+     (519 nil "d.mag.d.mi. d.mi. di.mi.")
+     (1145 nil "d.ma.d.mi.d.mi.d.mi.")
+     (1689 nil "d.mi.d.ma.d.mi.d.mi.")
+     )
+   (:text 70 58
+     (99 nil "ᴄro.")
+     (243 nil "acc.")
+     (468 nil "ᴛono")
+     (668 nil "cro.")
+     (840 nil "acc.")
+     (1231 nil "se.")
+     (1334 nil "cro.")
+     (1468 nil "acc.")
+     (1713 nil "Tono")
+     (1911 nil "cro.")
+     (2084 nil "acc.")
+     )
+   ))
