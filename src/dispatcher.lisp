@@ -689,8 +689,8 @@
     ;; ("b5-c55-m5" "e" (:idealised :en) ,*lilypond-backend-modern*)
 
     ;; ("b5-c55-m6" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ;; ("b5-c55-m6" "b" (:idealised) ,*vicentino-types-backend*)
-    ;; ("b5-c55-m6" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ("b5-c55-m6" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b5-c55-m6" "c" (:idealised :it) ,*lilypond-backend-modern*)
     ;; ("b5-c55-m6" "d" (:idealised :de) ,*lilypond-backend-modern*)
     ;; ("b5-c55-m6" "e" (:idealised :en) ,*lilypond-backend-modern*)
 
