@@ -3,7 +3,7 @@
    (:alt-name "m5.61")
    (:comment "q021_s256, rotation: 0.94, origin: 932")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Regola di ritrovare le sette ottave sopra Dsolre primo,\\con i sottoscritti esempi]")
+   (:title "Regola di ritrovare le sette ottave sopra Dsolre primo,\\con i sottoscritti esempi")
    (:section-headings
     (s1 "Prima ottava")
     (s2 "Seconda ottava")
