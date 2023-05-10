@@ -1,0 +1,57 @@
+`((:header
+   (:filename "b5-c57-m2")
+   (:alt-name "m5.085")
+   (:comment "q021_s265, rotation: -0.97, origin: 459")
+   (:creator "Vicentino21 / Johannes Keller")
+   (:title "Regola di ritrovare le sette ottave sopra Bmi quinto,\\con li sottoscritti esempi")
+   (:section-headings
+    (s1 "Prima ottava")
+    (s2 "Seconda ottava")
+    (s3 "Terza ottava")
+    (s4 "Quarta ottava")
+    (s5 "Quinta ottava")
+    (s6 "Sesta ottava")
+    (s7 "Settima ottava")
+    ))
+  (:preamble-type-imitation
+   (:width nil)
+   (:height nil)
+   (:background ,*score-bg-color*))
+  (:data
+   (:text 90 58
+     (153 1903 "Regola da ritrouave le sette ottaue sopra B mi quinto con li sotto ſcritti eſſempi."))
+   (:text 90 58
+          (336 nil "ᴘrima")
+          (566 nil "ottaua")
+          (1389 nil "Seconda")
+          (1664 nil "ottaua")
+          )
+   (:music 2232
+           (:voice v1)
+           (:section s1) (:f-clef) max7 fclef7 b22 fl3 b22 sbd3 b22 sbd4 b22 fl5 sbd5 b22 fl6 b22 sbd6 b22 sbd7 b22 fl8 b22 sbd8 b22 fl9 b22 sbd9 fl10 b22 sbd10 bl
+           (:section s2) fl3 b22 sbd3 b22 sh3 b22 sb3 b22 fl5 b22 sbd5 b22 fl6 b22 sbd6 b22 sh6 b22 sb6 b22 fl8 b22 sbd8 b22 fl9 b22 sbd9 fl10 sbd10 bl
+           )
+   (:text 110 58
+          (178 nil "Terza")
+          (427 nil "ottaua")
+          (1034 nil "Quarta")
+          (1325 nil "ottaua")
+          (1807 nil "Quinta")
+          )
+   (:music 2230
+           (:section s3) (:f-clef) max7 fclef7 b22 fl3 sbd3 b22 sbd4 b22 sbd5 fl6 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 fl10 b22 sbd10 bl
+           (:section s4) fl3 sbd3 b22 sbd4 b22 fl5 sbd5 b22 fl6 sbd6 b22 sbd7 b22 sbd8 b22 fl9 sbd9 b22 fl10 sbd10 bl
+           (:section s5) (:newline) fl3 b22 sbd3 b22 sh3 b22 sb3 b22 fl5 sbd5 b22 fl6 sbd6 custos7
+           )
+   (:text 110 58
+          (177 nil "ottaua")
+          (752 nil "Sesta")
+          (955 nil "ottaua")
+          (1589 nil "Settima")
+          (1861 nil "ᴏttaua")
+          )
+   (:music 2227
+           (:f-clef) max7 fclef7 b22 sbd7 b38 fl8 b22 sbd8 b22 fl9 b22 sbd9 fl10 b22 sbd10 b22 bl
+           (:section s6) b22 fl3 b22 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b22 fl10 sbd10 b22 bl
+           (:section s7) fl3 b22 sbd3 b22 sbd4 b22 sbd5 b22 fl6 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b22 fl10 sbd10 bl
+           )))

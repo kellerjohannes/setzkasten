@@ -689,16 +689,72 @@
     ;; ("b5-c55-m5" "e" (:idealised :en) ,*lilypond-backend-modern*)
 
     ;; ("b5-c55-m6" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ("b5-c55-m6" "b" (:idealised) ,*vicentino-types-backend*)
-    ("b5-c55-m6" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b5-c55-m6" "b" (:idealised) ,*vicentino-types-backend*)
+    ;; ("b5-c55-m6" "c" (:idealised :it) ,*lilypond-backend-modern*)
     ;; ("b5-c55-m6" "d" (:idealised :de) ,*lilypond-backend-modern*)
     ;; ("b5-c55-m6" "e" (:idealised :en) ,*lilypond-backend-modern*)
 
     ;; ("b5-c55-m7" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ("b5-c55-m7" "b" (:idealised) ,*vicentino-types-backend*)
-    ("b5-c55-m7" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b5-c55-m7" "b" (:idealised) ,*vicentino-types-backend*)
+    ;; ("b5-c55-m7" "c" (:idealised :it) ,*lilypond-backend-modern*)
     ;; ("b5-c55-m7" "d" (:idealised :de) ,*lilypond-backend-modern*)
     ;; ("b5-c55-m7" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
+
+    ;; ("b5-c56-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ;; ("b5-c56-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ;; ("b5-c56-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b5-c56-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ;; ("b5-c56-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
+    ;; ("b5-c56-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ;; ("b5-c56-m2" "b" (:idealised) ,*vicentino-types-backend*)
+    ;; ("b5-c56-m2" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b5-c56-m2" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ;; ("b5-c56-m2" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
+    ;; ("b5-c56-m3" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ;; ("b5-c56-m3" "b" (:idealised) ,*vicentino-types-backend*)
+    ;; ("b5-c56-m3" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("B5-c56-m3" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ;; ("b5-c56-m3" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
+    ;; ("b5-c56-m4" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ;; ("b5-c56-m4" "b" (:idealised) ,*vicentino-types-backend*)
+    ;; ("b5-c56-m4" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b5-c56-m4" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ;; ("b5-c56-m4" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
+    ;; ("b5-c56-m5" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ;; ("b5-c56-m5" "b" (:idealised) ,*vicentino-types-backend*)
+    ;; ("b5-c56-m5" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b5-c56-m5" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ;; ("b5-c56-m5" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
+
+    ;; ("b5-c57-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ;; ("b5-c57-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ;; ("b5-c57-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b5-c57-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ;; ("b5-c57-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
+    ;; ("b5-c57-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ;; ("b5-c57-m2" "b" (:idealised) ,*vicentino-types-backend*)
+    ;; ("b5-c57-m2" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b5-c57-m2" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ;; ("b5-c57-m2" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
+    ;; ("b5-c57-m3" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ;; ("b5-c57-m3" "b" (:idealised) ,*vicentino-types-backend*)
+    ;; ("b5-c57-m3" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("B5-c57-m3" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ;; ("b5-c57-m3" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
+    ;; ("b5-c57-m4" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b5-c57-m4" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b5-c57-m4" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b5-c57-m4" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ;; ("b5-c57-m4" "e" (:idealised :en) ,*lilypond-backend-modern*)
 
 
 
