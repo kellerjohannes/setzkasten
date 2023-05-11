@@ -1,7 +1,7 @@
 `((:header
    (:filename "b5-c59-m2")
    (:alt-name "m5.089")
-   (:comment "q021_s271, rotation: 0, origin: 1559")
+   (:comment "q021_s271, rotation: 0, origin: 1559; q021_s272, rotation: 0, origin: 921; q021_s272, rotation: 0.54, origin: 561; q021_s274, rotation: -0.72, origin: 921")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "[Esempi ed ordini che si leggeranno come le diatoniche naturali, e l'esempio naturale]")
    (:section-headings
@@ -67,7 +67,16 @@
     (s53 "[Del quarto ordine diatonico enarmonico]")
     (s54 "Del quinto ordine diatonico enarmonico")
     (s55 "Del sesto ordine diatonico enarmonico")
-    (s56 "Del settimo ordine diatonico enarmonico")))
+    (s56 "Del settimo ordine diatonico enarmonico")
+
+    (s57 "Del primo ordine")
+    (s58 "Del secondo ordine enarmonico")
+    (s59 "Del terzo ordine diatonico enarmonico")
+    (s60 "[Del quarto ordine diatonico enarmonico]")
+    (s61 "Del quinto ordine diatonico enarmonico")
+    (s62 "Del sesto ordine diatonico enarmonico")
+    (s63 "Del settimo ordine diatonico enarmonico")
+    ))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)
@@ -75,237 +84,226 @@
   (:data
    ;; Seite 1, fol. 136v, S. 271
    (:text 110 58
-          ( nil "Diatonico nat. primo"))
-   (:music
+          (285 nil "Diatonico nat. primo"))
+   (:music 1198
            (:voice v1)
-           (:section s1)
-           (:section s2)
+           (:section s1) gclef3 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 b22 sb8 b22 b38 sb9 b38 b22 sb10 b22 b38 bl
            )
    (:text 110 58
-          (325 nil "Del primo ordine.")
-          (1333 nil "ᴅel secondo ordine."))
-   (:music 2227
-           (:section s8) (:newline) (:key-signature nil nil nil nil nil nil nil) cclef1 b22 sb0 b22 sh1 sb1 b22 sb2 b22 sb3 b22 sh4 sb4 b22 sh5 sb5 b22 sb6 b22 sb7 b22 sh8 sb8 b22 sb9 sb10 b38
-           (:section s9) cclef1 b22 sb0 b22 sh1 b22 sb1 b22 sb2 b22 sb3 b22 sh4 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sh8 b22 sb8 b22 sb9 b22 sb10 bl)
+          (365 nil "Primo ordine ᴇnar. nat."))
+   (:music 1210
+           (:section s8) (:newline) gclef3 b38 sbd0 b22 b22 sbd1 b22 b22 sbd2 b22 b22 sbd3 b22 b22 sbd4 b22 b22 sbd5 b22 b22 sbd6 b22 b22 sbd7 b22 sbd8 b22 b22 sbd9 b22 sbd10 b38 bl
+           )
    (:text 110 58
-          (327 nil "Del primo ordine.")
-          (1341 nil "Del secondo ordine."))
-   (:music 2223
-           (:section s15) (:newline) cclef3 b22 fl29 (:key-signature nil nil nil nil nil nil :flat)
-           b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b22 b38
-           (:section s16) cclef3 b22 fl2 (:alt (:diplomatic fl4) (:idealised fl5)) (:key-signature nil nil :flat nil nil nil :flat)
-           b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 bl)
+          (327 nil "Del primo ordine."))
+   (:music 1216
+           (:section s15) (:newline) cclef1 b38 sbd0 b22 fl2 b22 sb2 b22 sbd2 b22 sbd3 b22 fl5 b22 sb5 fl6 b22 sb6 b22 sbd6 b22 sbd7 b22 fl9 b22 sb9 b22 sbd9 b22 sbd10 b38 bl
+           )
    (:text 110 58
-          (339 nil "Del primo ordine.")
-          (1341 nil "ᴅel secondo ordine."))
-   (:music 2225
-           (:section s22) (:newline) (:key-signature nil nil nil nil nil nil nil)
-           cclef5 b22 sb0 b22 sh1 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sh5 b22 sb5 b22 sb6 b38 sb7 b38 sh8 b22 sb8 b22 sb9 b22 sb10 b22
-           (:section s23) cclef5 b22 sb0 b22 sh1 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b38 sb7 b38 sh8 b38 sb8 b22 sb9 sb10 bl)
+          (355 nil "Del primo ordine."))
+   (:music 1216
+           (:section s22) (:newline) cclef3 b22 sbd0 b38 sbd1 b22 fl2 b22 sb2 b38 sbd3 b38 sbd4 b38 sbd5 b38 sbd6 b38 sbd7 b22 b22 sbd8 b22 fl9 b38 sbd9 b38 sbd10 b22 bl
+           )
    (:text 110 58
-          (334 nil "Del primo ordine.")
-          (1320 nil "Del secondo ordine."))
-   (:music 2215
-           (:section s29) (:newline) cclef7 b22 fl29 (:alt (:diplomatic fl5) (:idealised fl6)) (:key-signature nil nil :flat nil nil nil :flat)
-           b22 sb0 b22 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b22 sb10 b22
-           (:section s30) cclef7 fl29 fl5 fl6 (:key-signature nil nil :flat nil nil :flat :flat)
-           b22 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b22 sb5 b22 sb6 b38 sb7 b22 sb8 b22 sb9 b38 sb10 bl)
+          (340 nil "Del primo ordine."))
+   (:music 1226
+           (:section s29) (:newline) cclef5 b38 sbd0 b38 fl2 b22 sb2 b38 sbd2 b38 sbd3 b38 sbd4 b22 fl6 b22 sb6 b38 sbd6 b22 sbd7 b22 fl9 b38 sb9 b22 sbd9 b22 sbd10 b22 bl
+           )
    (:text 110 58
-          (343 nil "Del primo ordine.")
-          (1345 nil "ᴅel secondo ordine."))
-   (:music 2209
-           (:section s36) (:newline) (:f-clef) max5 fclef5 (:key-signature nil nil nil nil nil nil nil)
-           b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sh5 b22 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b22 sb10 b22
-           (:section s37) (:f-clef) max5 fclef5 b22 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b22 sb10 bl)
+          (320 nil "Del primo ordine."))
+   (:music 1189
+           (:section s36) (:newline) cclef7 b38 fl2 fl6 fl9 (:key-signature nil nil :flat nil nil nil :flat) sbd0 b22 sbd1 b38 sbd2 b38 sbd3 b38 sbd4 b38 sbd5 b38 sbd6 b38 sbd7 b38 sbd8 b38 sbd9 b22 sbd10 b22 bl
+           )
    (:text 110 58
-          (329 nil "Del primo ordine.")
-          (1327 nil "ᴅel secondo ordine."))
-   (:music 2204
-           (:section s43) (:newline) (:f-clef) max7 fclef7 b22 fl29 fl3 fl6 (:key-signature nil nil :flat nil nil :flat :flat)
-           b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sb10 b22
-           (:section s44) (:f-clef) max7 fclef7 fl29 fl3 fl5 fl6 (:key-signature nil :flat :flat nil nil :flat :flat)
-           b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b38 sb6 b38 sb7 b22 sb8 b22 sb9 b22 sb10 bl)
+          (266 nil "Del primo ordine."))
+   (:music 1145
+           (:section s43) (:newline) (:f-clef) max5 fclef5 (:key-signature nil nil nil nil nil nil nil) b38 sbd0 b38 sbd1 b38 sbd2 b38 sbd3 b38 sbd4 b22 fl6 b22 sb6 b38 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b22 sbd10 bl
+           )
    (:text 110 58
-          (332 nil "Del primo ordine.")
-          (1309 nil "ᴅel secondo ordine."))
-   (:music 2207
-           (:section s50) (:newline) (:f-clef) max9 fclef9 (:key-signature nil nil nil nil nil nil nil)
-           b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b22 sb8 b22 sb9 b38 sb10 b38
-           (:section s51) (:f-clef) max9 fclef9 b22 fl5 (:key-signature nil nil nil nil nil nil :flat)
-           b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b22 sb7 b22 sb8 b22 sb9 b38 sb10 b38 bl)
+          (253 nil "Del primo ordine."))
+   (:music 1122
+           (:section s50) (:newline) (:f-clef) max7 fclef7 b22 sbd0 sbd1 b22 fl2 b22 sbd2 fl3 b22 sbd3 sbd4 sbd5 fl6 b22 sbd6 b22 sbd7 b22 sbd8 fl9 b22 sbd9 b22 sbd10 b22 bl
+           )
+   (:text 110 58
+          (336 nil "Del primo ordine."))
+   (:music 1188
+           (:section s57) (:newline) (:f-clef) max9 fclef9 b38 sbd0 b38 sbd1 b38 sbd2 b38 sbd3 b38 sbd4 b38 sbd5 b38 sbd6 b38 sbd7 b38 sbd8 b38 sbd9 b38 sbd10 b22 b22 bl)
 
    (:vspace 200)
 
-   ;; Seite 2, fol. 135r, S. 269
+   ;; Seite 2, fol. 136v, S. 272
    (:text 110 58
-          (345 nil "Terzo ordine.")
-          (1332 nil "Quarto ordine."))
-   (:music 2221
-           (:section s3) (:key-signature nil nil nil nil nil nil nil)
-           cclef1 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38 b22 b22
-           (:section s4) cclef7 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38 bl)
+          (172 nil "Secondo ordine nat. Diat.")
+          (1317 nil "Terzo ordine ᴅiat. nat."))
+   (:music 2244
+           (:section s2) (:f-clef) max7 fclef7 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b22 b22 b22
+           (:section s3) cclef1 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38 bl
+           )
    (:text 110 58
-          (347 nil "ᴅel terzo ordine.")
-          (1404 nil "Del quarto ordine."))
-   (:music 2225
-           (:section s10) gclef3 b22 sb0 b22 fl1 b22 sb1 b22 sb2 b22 sb3 b22 fl4 b22 sb4 b22 fl5 b22 sb5 sb6 sb7 b22 fl8 b22 sb8 b22 sb9 b22 sb10 b22
-           (:section s11) gclef3 b22 sb0 b22 sb1 b22 sh2 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sh6 b22 sb6 b22 sb7 b22 sb8 b22 sh9 b22 sb9 b22 sb10 bl)
+          (246 nil "Del secondo ordine diat. ᴇnar.")
+          (1391 nil "ᴅel terzo ordine diat. ᴇnar ."))
+   (:music 2230
+           (:section s9) gclef3 b22 fl5 (:key-signature nil nil nil nil nil nil :flat) b22 sbd0 b22 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 sb5 b22 sbd6 b22 sbd7 b38 sbd8 b38 sbd9 b38 sbd10 b38 b38
+           (:section s10) cclef1 (:key-signature nil nil nil nil nil nil nil) b38 sbd0 b38 sbd1 b38 sbd2 b22 sbd3 b38 sbd4 b38 sbd5 b38 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b38 sbd10 b38 bl)
    (:text 110 58
-          (352 nil "ᴅel terzo ordine.")
-          (1434 nil "ᴅel quarto ordine."))
-   (:music 2223
-           (:section s17) cclef3 b22 b22 sb0 (:alt (:diplomatic sh0) (:idealised sh1)) sb1 sb2 sh3 sb3 sb4 sb5 b22 sh6 sb6 b22 sh7 b22 sb7 b22 sb8 b22 sh9 sb9 b22 sh10 sb10 b38
-           (:section s18) cclef3 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sh6 b22 sb6 b22 sb7 b38 sb8 b22 sb9 b22 sb10 bl)
+          (241 nil "Del secondo ordine diat. ᴇnar.")
+          (1275 nil "ᴅel terzo ordine Enar.diat. ᴄro."))
+   (:music 2241
+           (:section s16) cclef1 b22 sbd0 b22 fl2 b22 sb2 b22 sbd2 b22 sbd3 b22 fl5 b22 sb5 b22 sbd5 b22 sbd6 b22 sbd7 b22 fl9 b22 sb9 b22 sbd9 b22 sbd10 b38
+           (:section s17) gclef3 b22 sbd0 fl1 b22 sbd1 sbd2 b22 sbd3 b22 fl4 b22 sbd4 fl5 b22 sbd5 sbd6 b22 sbd7 b22 fl8 b22 sbd8 b22 sb9 b38 bl)
    (:text 110 58
-          (342 nil "ᴅel terzo ordine.")
-          (1398 nil "ᴅel quarto ordine."))
-   (:music 2209
-           (:section s24) cclef5 b38 fl4 (:key-signature nil nil nil nil nil nil :flat)
-           b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b22
-           (:section s25) cclef5 (:key-signature nil nil nil nil nil nil nil)
-           b22 sb0 b22 sh1 sb1 b22 sh2 sb2 b22 sb3 b22 sb4 sh5 sb5 b22 sh6 sb6 b22 sb7 sh8 sb8 sh9 sb9 sb10 bl)
-   (:text 110 58
-          (335 nil "ᴅel terzo ordine.")
-          (1405 nil "Del quarto ordine."))
-   (:music 2206
-           (:section s31) cclef7 sb0 fl1 sb1 fl2 sb2 b22 sb3 b22 fl4 sb4 b22 fl5 sb5 b22 fl6 sb6 b22 sb7 b22 fl8 sb8 b22 fl9 sb9 b22 sb10 b22
-           (:section s32) cclef1 b22 sb0 b22 sh1 sb1 b22 sh2 b22 sb2 b22 sb3 b22 sh4 sb4 sh5 sb5 sh6 sb6 sb7 sh8 sb8 sh9 sb9 sb10 bl)
-   (:text 110 58
-          (332 nil "Del terzo ordine.")
-          (1394 nil "Del quarto ordine."))
-   (:music 2205
-           (:section s38) (:f-clef) max5 fclef5 b22 fl18 fl4 (:key-signature nil nil :flat nil nil nil :flat)
-           b22 sb0 b22 sb1 b38 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b38 sb9 b22 sb10
-           (:section s39) (:f-clef) max5 fclef5 (:key-signature nil nil nil nil nil nil nil)
-           b22 sb0 sb1 sh2 sb2 b22 sb3 b22 sb4 b22 sh5 sb5 b22 sh6 b22 sb6 b22 sb7 b22 sb8 b22 sh9 b22 sb9 b22 sb10 b22 bl)
-   (:text 110 58
-          (341 nil "ᴅel terzo ordine.")
-          (1393 nil "Del quarto ordine."))
-   (:music 2209
-           (:section s45) (:f-clef) max7 fclef7 b38 sb0 fl1 sb1 b22 fl2 sb2 b22 fl3 sb3 b22 sbd3 b22 fl5 sb5 b22 fl6 sb6 b22 sb7 b22 fl8 sb8 b22 fl9 sb9 fl10 sb10 b38
-           (:section s46) (:f-clef) max7 fclef7 b22 fl310 (:key-signature nil nil nil nil nil nil :flat)
-           b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sb10 bl)
-   (:text 110 58
-          (345 nil "ᴅel terȥo ordine.")
-          (1402 nil "Del quarto ordine."))
-   (:music 2207
-           (:section s52) (:f-clef) max9 fclef9 b22 (:key-signature nil nil nil nil nil nil nil)
-           sb0 b22 fl1 b22 sb1 b22 sb2 b22 sb3 b22 fl4 b22 sb4 b22 fl5 sb5 b22 sb6 b22 sb7 b22 fl8 sb8 b22 sb9 b22 sb10 b38
-           (:section s53) (:f-clef) max9 fclef9 sb0 b22 sb1 b22 sh2 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sh6 sb6 b22 sb7 b22 sb8 b22 sh9 sb9 sb10 bl)
-   (:vspace 110)
-   (:music 2213
-           b125 b125 b125 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b22 b38 b125)
-   (:vspace 110)
-   (:music 2210
-           b125 b125 b125 b125 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b125 b125 b125 b38 b125)
-   (:vspace 200)
-
-
-   ;; Seite 3, fol. 135v, S. 270
-   (:text 110 58
-          (323 nil "Quinto ordine.")
-          (1359 nil "Seſto ordine."))
-   (:music 2237
-           (:section s5) cclef3 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38 b38 b38
-           (:section s6) cclef5 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b22 b22 bl)
-   (:text 110 58
-          (329 nil "Del quinto ordine.")
-          (1341 nil "ᴅel seſto ordine."))
-   (:music 2232
-           (:section s12) gclef3 b22 sb0 b22 sb1 b22 sh2 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sh9 b22 sb9 b22 sb10 b38 b38
-           (:section s13) gclef3 b22 sb0 b22 fl1 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 fl5 b22 sb5 b22 sb6 b22 sb7 b22 fl8 b22 sb8 b22 sb9 b22 sb10 bl)
-   (:text 110 58
-          (335 nil "Del quinto ordine.")
-          (1353 nil "Del seſto ordine."))
+          (259 nil "Del secondo ordine diat. ᴇnar.")
+          (1286 nil "ᴅel terzo ordine Enar.diat.ᴄro."))
    (:music 2234
-           (:section s19) cclef1 b22 fl0 b22 sb0 b22 sb1 b22 sb2 b22 fl3 b22 sb3 b22 sb4 b22 sb5 b22 fl6 b22 sb6 b22 fl7 b22 sb7 b22 sb8 b22 sb9 fl10 sb10 b22
-           (:section s20) cclef1 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sh4 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b38 sb10 b38 bl)
+           (:section s23) cclef3 b22 sbd0 b22 sbd1 b22 fl2 b22 sbd2 b22 sbd3 b22 sbd4 b22 fl5 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b38 fl9 b22 sbd9 b38 sbd10 b38
+           (:section s24) cclef3 b22 sbd0 fl1 b22 sbd1 fl2 sbd2 sbd3 fl4 sbd4 b22 fl5 sbd5 sbd6 sbd7 b22 fl8 b22 sbd8 b22 fl9 sbd9 sbd10 bl
+           )
    (:text 110 58
-          (329 nil "Del quinto ordine.")
-          (1352 nil "ᴅel seſto ordine."))
-   (:music 2232
-           (:section s26) cclef5 b22 sb0 b22 sh1 sb1 b22 sh2 sb2 b22 sb3 b22 sb4 sh5 sb5 b22 sb6 b22 sb7 b22 sh8 b22 sb8 b22 sh9 sb9 b22 sb10 b22
-           (:section s27) cclef1 b22 sb0 b22 fl1 b22 sb1 b22 fl2 sb2 b22 sb3 b22 sb4 b22 fl5 sb5 b22 sb6 b22 sb7 b22 fl8 sb8 b22 fl9 sb9 sb10 bl)
+          (188 nil "Del secondo ordine diat. ᴇnar.")
+          (1368 nil "ᴅel terzo ordine diat. Ena."))
+   (:music 2231
+           (:section s30) cclef5 b22 b22 sbd0 b22 fl2 b22 sb2 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 fl9 sb9 b38 sbd9 b22 sbd10 b38 b22 b22
+           (:section s31) cclef5 b22 fl4 (:key-signature nil nil nil nil nil nil :flat) b22 sbd0 b38 sbd1 b38 sbd2 b38 sbd3 b38 sbd4 b38 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b22 sbd10 bl)
    (:text 110 58
-          (337 nil "Del quinto ordine.")
-          (1350 nil "Del sesto ordine."))
-   (:music 2228
-           (:section s33) cclef7 b38 fl6 (:key-signature nil nil nil nil nil nil :flat)
-           b22 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b38 sb10 b38
-           (:section s34) cclef7 b22 (:key-signature nil nil nil nil nil nil nil)
-           sb0 b22 fl1 sb1 b22 fl2 sb2 b22 sb3 b22 sb4 b22 fl5 b22 sb5 b22 fl6 sb6 b22 sb7 b22 fl8 sb8 b22 fl9 sb9 b22 sb10 bl)
+          (132 nil "ᴅel secondo ordine diat. ᴇnar.")
+          (1264 nil "Del terzo ordine diat. Enar."))
+   (:music 2216
+           (:section s37) cclef7 (:key-signature nil nil nil nil nil nil nil) sbd0 b22 sbd1 b22 fl2 sbd2 b22 sbd3 b22 sbd4 b22 fl5 sbd5 b22 fl6 sbd6 b22 sbd7 b22 sbd8 b22 fl9 sbd9 b22 sbd10 b38
+           (:section s38) cclef7 b22 sbd0 fl1 sbd1 fl2 sbd2 b22 sbd3 fl4 sbd4 b22 fl5 sbd5 fl6 sbd6 sbd7 b22 fl8 b22 sbd8 b22 fl9 sbd9 b22 sbd10 bl
+           )
    (:text 110 58
-          (334 nil "Del quinto ordine.")
-          (1332 nil "ᴅel seſto ordine."))
+          (262 nil "Del secondo ordine diat. Enar.")
+          (1280 nil "ᴅel terzo ordine diat. Enar."))
    (:music 2214
-           (:section s40) (:f-clef) max5 fclef5 b22 sb0 b22 (:alt (:diplomatic sh2) (:idealised sh1)) b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sh5 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sh9 b22 sb9 sb10 b38
-           (:section s41) (:f-clef) max5 fclef5 b22 fl18 (:key-signature nil nil nil nil nil nil :flat)
-           b22 sb0 b22 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sb10 bl)
+           (:section s44) (:f-clef) max5 fclef5 b38 sbd0 b38 sbd1 b38 sbd2 b38 sbd3 b38 sbd4 b22 sbd5 b38 sbd6 b38 sbd7 b38 sbd8 b38 sbd9 b38 sbd10 b22
+           (:section s45) (:f-clef) max5 fclef5 b22 fl18 fl4 (:key-signature nil nil :flat nil nil nil :flat) b22 sbd0 b22 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b22 sbd10 bl)
    (:text 110 58
-          (334 nil "Del quinto ordine.")
-          (1337 nil "ᴅel seſto ordine."))
-   (:music 2207
-           (:section s47) (:f-clef) max7 fclef7 (:key-signature nil nil nil nil nil nil nil)
-           b22 sb0 b22 sb1 b22 sb2 b22 fl3 b22 sb3 b22 sb4 b22 sb5 b22 fl6 sb6 b22 sb7 b22 sb8 b22 sb9 b22 fl10 sb10 b22
-           (:section s48) (:f-clef) max7 fclef7 sb0 b22 fl1 sb1 fl2 sb2 b22 fl3 sb3 b22 sb4 b22 fl5 sb5 b22 fl6 sb6 b22 sb7 b22 fl8 sb8 fl9 sb9 b22 fl10 sb10 bl)
+          (256 nil "Del secondo ordine diat, ᴇnar.")
+          (1279 nil "Del terzo ordine Enar."))
+   (:music 2213
+           (:section s51) (:f-clef) max7 fclef7 (:key-signature nil nil nil nil nil nil nil) b22 sbd0 b22 sbd1 fl2 sbd2 fl3 b22 sbd3 b22 sbd4 fl5 b22 sbd5 fl6 b22 sbd6 sbd7 sbd8 b22 fl9 sbd9 fl10 sb10 b22
+           (:section s52) (:f-clef) max7 fclef7 b22 sbd0 fl1 sbd1 fl2 sbd2 fl3 sbd3 sh3 sb3 fl5 sbd5 fl6 sbd6 sbd7 fl8 sbd8 fl9 sbd9 fl10 sbd10 bl)
    (:text 110 58
-          (330 nil "Del quinto ordine.")
-          (1327 nil "ᴅel seſto ordine."))
-   (:music 2207
-           (:section s54) (:f-clef) max9 fclef9 b38 sb0 b22 sb1 b22 sh2 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b38 sb8 b38 sh9 b22 sb9 b22 sb10 b22
-           (:section s55) (:f-clef) max9 fclef9 b22 sb0 b22 fl1 sb1 b22 sb2 b22 sb3 b22 sb4 b22 fl5 b22 sb5 b22 sb6 b22 sb7 b22 fl8 b22 sb8 b22 sb9 sb10 bl)
-
+          (181 nil "ᴅel secondo ordine ᴇnar.")
+          (1304 nil "Del terzo ordine Enar."))
+   (:music 2214
+           (:section s58) (:f-clef) max9 fclef9 b22 fl5 (:key-signature nil nil nil nil nil nil :flat) b22 sbd0 b22 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 sbd10 b38
+           (:section s59) (:f-clef) max9 fclef9 b22 sbd0 b22 fl1 b22 sbd1 b22 sbd2 b22 sbd3 b22 fl4 b22 sbd4 b22 fl5 b22 sbd5 sbd6 b22 sbd7 b22 fl8 b22 sbd8 sbd9 sbd10 bl)
+   (:vspace 110)
+   (:music 2222
+           b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38)
 
    (:vspace 200)
 
-   ;; Seite 4, fol. 136r, S. 271
-   (:text 110 58
-          (530 nil "Settimo ordine."))
-   (:music 964
-           (:section s7) (:f-clef) max7 fclef7 b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sb10 bl)
-   (:text 110 58
-          (266 nil "Del settimo ordine."))
-   (:music 977
-           (:section s14) gclef3 b38 sb0 sb1 sh2 sb2 sh3 sb3 sb4 sb5 sh6 sb6 sb7 sb8 sh9 sb9 sh10 sb10 b22 bl)
-   (:text 110 58
-          (359 nil "Del settimo ordine."))
-   (:music 1042
-           (:section s21) cclef1 fl07 (:key-signature nil nil nil nil nil nil :flat)
-           b38 b38 sb0 b22 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b22 sb9 (:alt (:diplomatic b38) (:idealised sb10 bl)))
-   (:text 110 58
-          (350 nil "Del settimo ordine."))
-   (:music 1034
-           (:section s28) cclef3 (:key-signature nil nil nil nil nil nil nil)
-           b38 sb0 b22 sb1 b22 sb2 b22 sh3 b22 sb3 b38 sb4 b22 sb5 b22 sh6 sb6 sb7 sb8 sb9 sh10 sb10 b22 b22 (:alt (:idealised bl)))
-   (:text 110 58
-          (359 nil "Del settimo ordine."))
-   (:music 1020
-           (:section s35) cclef5 fl07 b22 fl4 (:key-signature nil nil :flat nil nil nil :flat)
-           sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sb10 b38 b38 (:alt (:idealised bl)))
-   (:text 110 58
-          (350 nil "Del settimo ordine."))
-   (:music 1014
-           (:section s42) cclef7 (:key-signature nil nil nil nil nil nil nil)
-           b22 sb0 b22 sb1 b22 sb2 b22 sh3 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sh10 sb10 b38 (:alt (:idealised bl)))
-   (:text 110 58
-          (342 nil "Del settimo ordine."))
-   (:music 1008
-           (:section s49) (:f-clef) max5 fclef5 b22 sb0 sb1 sh2 sb2 sh3 sb3 sb4 sh5 sb5 sh6 sb6 sb7 sb8 sh9 sb9 sh10 sb10 b22 (:alt (:idealised bl)))
-   (:text 110 58
-          (349 nil "Del settimo ordine."))
-   (:music 1041
-           (:section s56) (:f-clef) max9 fclef9 b22 sb0 sb1 sh2 sb2 sh3 sb3 sb4 sb5 sh6 sb6 sb7 b22 sh8 sb8 b22 sb9 b22 sh10 sb10 b38 (:alt (:idealised bl)))
+   ;; Seite 3, fol. 137r, S. 273
 
-
-   (:vspace 110)
-   (:music 1080
-           b125 b125 b125 b125 b125 b125 b125 b125 b125)
-   (:text 70 58
-          (98 900 "Qui finiſcono tutti glʼordini di tutte le"))
-   (:text 70 58
-          (0 1009 "chiaui ſcritte in tutte le righe di tutte le"))
    (:text 110 58
-          (0 841 "parti della noſtra prattica ᴍuſicale."))
-   (:music 1045
-           b125 b125 b125 b125 b125 b125 b125 b125 b22 b22 b38)
+          (167 nil "Quarto ordine ᴅiat. nat.")
+          (1254 nil "Quinto ordine Diat.nat."))
+   (:music 2225
+           (:section s4) cclef7 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38 b38 b22
+           (:section s5) cclef3 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b22 b22 bl)
+   (:text 110 58
+          (173 nil "Del quarto ordine diat. Enar.")
+          (1368 nil "Del quinto ordine diat. ᴇnar."))
+   (:music 2223
+           (:section s11) gclef3 b38 sbd0 b22 sbd1 b22 fl3 b22 sb3 b22 sbd3 b22 sbd4 b22 sbd5 b22 fl7 b22 sb7 b22 sbd7 b22 sbd8 b22 fl10 b22 sb10 b22 sbd10 b22
+           (:section s12) gclef3 b22 sbd0 b22 sbd1 b22 fl3 b22 sb3 b22 sbd3 b22 sbd4 b22 sbd5 b38 sbd6 b22 sbd7 b38 sbd8 b38 fl10 sb10 b38 sbd10 b22 b22 bl)
+   (:text 110 58
+          (180 nil "ᴅel quarto ordine diat. Enar.")
+          (1314 nil "Del quinto ordine diat. Enar."))
+   (:music 2223
+           (:section s18) cclef1 b22 sbd0 fl2 b22 sb2 fl3 b22 sb3 b22 sbd3 fl5 b22 sb5 fl6 sb6 fl7 sb7 b22 sbd7 fl9 b22 sb9 fl10 sb10 sbd10 b22
+           (:section s19) cclef1 b22 sbd0 fl2 b22 sb2 b22 fl3 b22 sb3 b22 sbd3 b22 fl5 b22 sb5 b22 fl6 sb6 b22 sbd6 b22 sbd7 b22 fl9 sb9 fl10 sb10 sbd10 bl)
+   (:text 110 58
+          (178 nil "ᴅel quarto ordine diat. Enar.")
+          (1303 nil "Del quinto ordine diat ᴇnar."))
+   (:music 2217
+           (:section s25) cclef3 b22 sbd0 b22 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b38 fl7 b22 sb7 b38 sbd7 b38 sbd8 b38 sbd9 b38 sbd10 b22 b22 b38
+           (:section s26) cclef3 b38 sbd0 b38 sbd1 b38 sbd2 b38 sbd3 b38 sbd4 b38 sbd5 b38 sbd6 b22 sbd7 b38 sbd8 b38 sbd9 b38 sbd10 bl)
+   (:text 110 58
+          (182 nil "Del quarto ordine diat. ᴇnar.")
+          (1278 nil "Del quinto ordine diat. Enar."))
+   (:music 2224
+           (:section s32) cclef5 b22 sbd0 b22 fl2 b22 sb2 b22 fl3 b22 sb3 b22 sbd3 b22 sbd4 fl6 b22 sb6 b22 fl7 sb7 b22 sbd7 b22 fl9 b22 sb9 fl10 b22 sb10 b22 sbd10 b22
+           (:section s33) cclef5 b22 sbd0 b22 fl2 sb2 b22 fl3 sb3 b22 sbd3 b22 sbd4 b22 fl6 sb6 sbd6 sbd7 fl9 sb9 fl10 b38 sb10 b22 sbd10 bl)
+   (:text 110 58
+          (1312 nil "Del quinto ordine dia.ᴇnar."))
+   (:music 2214
+           (:section s39) cclef7 b38 sbd0 b38 sbd1 b38 sbd2 b38 sbd3 b38 sbd4 b38 sbd5 b38 sbd6 b38 sbd7 b38 sbd8 b38 sbd9 b22 sbd10 b38 b22
+           (:section s40) cclef7 b22 fl6 (:key-signature nil nil nil nil nil nil :flat) b38 sbd0 b38 sbd1 b38 sbd2 b38 sbd3 b38 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b22 sbd10 b38 bl)
+   (:text 110 58
+          (1239 nil "Del quinto ordine diat. Enar."))
+   (:music 2221
+           (:section s46) (:f-clef) max5 fclef5 (:key-signature nil nil nil nil nil nil nil) b22 sbd0 b22 sbd1 fl3 b22 sb3 b22 sbd3 sbd4 fl6 b22 sb6 fl7 b22 sb7 b22 sbd7 fl9 b22 sb9 b22 fl10 sb10 b22 sbd10 b22
+           (:section s47) (:f-clef) max5 fclef5 b22 sbd0 b22 sbd1 b22 fl3 sb3 b22 sbd3 b22 sbd4 b22 fl6 b22 sb6 b22 sbd6 b22 sbd7 b22 sbd8 b22 fl10 sb10 b22 sbd10 bl)
+   (:text 110 58
+          (1250 nil "Del quinto ordine diat. Enar."))
+   (:music 2210
+           (:section s53) (:f-clef) max7 fclef7 b22 fl3 fl10 (:key-signature nil nil nil nil nil nil :flat) sbd0 b22 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b22 sbd10 b38
+           (:section s54) (:f-clef) max7 fclef7 b22 fl3 fl6 fl10 (:key-signature nil nil :flat nil nil nil :flat) sbd0 b22 sbd1 b38 sbd2 b22 sbd3 b22 sbd4 b38 sbd5 b38 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b38 sbd10 b22 bl)
+   (:text 110 58
+          (1330 nil "Del quinto ordine diat. ᴇnar."))
+   (:music 2204
+           (:section s60) (:f-clef) max9 fclef9 (:key-signature nil nil nil nil nil nil nil) b22 sbd0 b22 sbd1 b22 fl3 b22 sb3 b22 sbd3 b22 sbd4 b22 sbd5 b22 fl7 b22 sb7 b22 sbd7 sbd8 fl10 b22 sb10 b22 sbd10 b38
+           (:section s61) (:f-clef) max9 fclef9 b22 sbd0 b22 sbd1 b22 fl3 b22 sb3 b38 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 fl9 b22 sb10 b22 sbd10 b22 bl)
+
+   (:vspace 200)
+
+   ;; Seite 4, fol. 137v, S. 274
+
+   (:text 110 58
+          (242 nil "Seſto ordine diat. nat.")
+          (1279 nil "Settimo ordine diat. nat."))
+   (:music 2225
+           (:section s6) cclef5 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38 b38
+           (:section s7) (:f-clef) max7 fclef7 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b22 fl10 b22 sb10 bl)
+   (:text 110 58
+          (232 nil "Del seſto ordine diat. ᴇnar.")
+          (1275 nil "ᴅel ſettimo ordine diat. Enar."))
+   (:music 2223
+           (:section s13) gclef3 fl18 fl5 (:key-signature nil nil :flat nil nil nil :flat) b22 sbd0 b22 fl1 b22 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b22 sbd10 b38 b22
+           (:section s14) gclef3 (:key-signature nil nil nil nil nil nil nil) sbd0 b22 sbd1 b22 fl3 sb3 b22 fl4 sb4 b22 sbd4 b22 sbd5 b22 fl7 b22 sb7 b22 sbd7 b22 sbd8 b22 fl10 sb10 b22 sbd10 bl)
+   (:text 110 58
+          (264 nil "Del sesto ordine diat. ᴇnar.")
+          (1238 nil "ᴅel settimo ordine diat. Enar."))
+   (:music 2225
+           (:section s20) cclef1 b38 sbd0 b38 sbd1 b38 sbd2 b38 sbd3 b38 fl5 b38 sb5 b38 sbd6 b38 sbd7 b22 sbd8 b22 sbd9 b22 sbd10 b22
+           (:section s21) cclef1 b22 sbd0 b22 fl2 sb2 b22 fl3 sb3 b22 sb4 b22 fl5 sb5 b22 fl6 b22 sb6 b22 fl7 b22 sb7 sbd7 b22 fl9 b22 sb9 fl10 sb10 b22 sbd10 bl)
+   (:text 110 58
+          (259 nil "Del seſto ordine diat. ᴇnar.")
+          (1282 nil "ᴅel settimo ordine diat. Enar."))
+   (:music 2227
+           (:section s27) cclef3 sbd0 b22 fl1 sbd1 b22 fl2 sbd2 b22 sbd3 b22 sbd4 b22 fl5 sbd5 b22 sbd6 b22 sbd7 b22 fl8 sbd8 b22 fl9 sbd9 b22 sbd10 b22 b22 b22
+           (:section s28) cclef3 b22 sbd0 b22 sbd1 b22 sbd2 b22 fl4 b22 sb4 b22 sbd4 b22 sbd5 b22 fl7 b22 sb7 b22 sbd7 b22 sbd8 b22 sbd9 b22 sbd10 bl)
+   (:text 110 58
+          (266 nil "Del seſto ordine diat. ᴇnar.")
+          (1309 nil "Del settimo ordine diat. Enar."))
+   (:music 2212
+           (:section s34) cclef5 sbd0 b38 b38 sbd1 b38 sbd2 b38 sbd3 b38 sbd4 b38 sbd5 b38 sbd6 b38 sbd7 b38 sbd8 b38 sbd9 b38 sbd10 b38
+           (:section s35) cclef5 b22 sbd0 b22 fl2 sb2 b22 fl3 sb3 b22 fl4 sb4 b22 sbd4 b22 fl6 sb6 b22 fl7 sb7 b22 sbd7 b22 fl9 sb9 fl10 sb10 sbd10 bl)
+   (:text 110 58
+          (259 nil "Del seſto ordine diat. Enar.")
+          (1280 nil "Del settimo ordine diat. Enar."))
+   (:music 2214
+           (:section s41) cclef7 b22 sbd0 b22 fl1 b22 sbd1 b22 fl2 b22 sbd2 b22 sbd3 b22 sbd4 b22 fl5 b22 sbd5 b22 fl6 sb6 b22 sbd7 b22 sbd8 b22 fl9 sbd9 b22 sbd10 b22
+           (:section s42) cclef7 b22 sbd0 b22 sbd1 b22 sbd2 b22 fl4 b22 sb4 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b22 sbd10 b22 bl)
+   (:text 110 58
+          (266 nil "Del seſto ordine diat. Enar.")
+          (1297 nil "ᴅel settimo ordine diat. ᴇnar."))
+   (:music 2207
+           (:section s48) (:f-clef) max5 fclef5 b22 fl18 (:key-signature nil nil nil nil nil nil :flat) b22 sbd0 b22 sbd1 b22 sbd2 b38 sbd3 b38 sbd4 b22 sbd5 b38 sbd6 b38 sbd7 b38 sbd8 b22 sbd9 b22 sbd10 b22
+           (:section s49) (:f-clef) max5 fclef5 (:key-signature nil nil nil nil nil nil nil) b22 sbd0 b22 fl2 sb2 b22 fl3 sb3 fl4 sb4 b22 sbd4 b22 fl6 sb6 b22 fl7 sb7 sbd7 fl9 sb9 fl10 sb10 sbd10 bl)
+   (:text 110 58
+          (247 nil "Del seſto ordine diat. ᴇnar.")
+          (1270 nil "Del settimo ordine diat. Enar."))
+   (:music 2210
+           (:section s55) (:f-clef) max7 fclef7 b22 sbd0 fl1 sbd1 fl2 sbd2 fl3 sbd3 sbd4 fl5 sbd5 fl6 sbd6 sbd7 fl8 sbd8 fl9 sbd9 fl10 sbd10 b38
+           (:section s56) (:f-clef) max7 fclef7 b38 sbd0 b38 sbd1 b38 sbd2 b38 sbd3 b38 sbd4 b38 sbd5 b38 sbd6 b38 sbd7 b22 sbd8 b22 sbd9 fl10 b22 sbd10 bl)
+   (:text 110 58
+          (258 nil "Del seſto ordine diat. ᴇnar.")
+          (1272 nil "Del settimo ordine diat. Enar."))
+   (:music 2210
+           (:section s62) (:f-clef) max9 fclef9 b22 sbd0 fl1 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 fl5 b22 sbd5 b22 sbd6 b22 sbd7 b22 fl8 sbd8 b22 sbd9 b22 sbd10 b22
+           (:section s63) (:f-clef) max9 fclef9 b22 sbd0 b22 fl1 sbd1 b22 fl3 sb3 b22 fl4 sb4 sbd4 b22 sbd5 b22 fl7 sb7 b22 sbd7 b22 sbd8 fl10 b22 sb10 b22 sbd10 bl)
    ))
