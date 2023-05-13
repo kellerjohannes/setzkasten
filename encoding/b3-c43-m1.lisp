@@ -21,7 +21,7 @@
            (:section s1) cclef1 mrest5 m5 dot6 sh4 sm4 sm4 sh4 sm4 sb5 bl
            (:section s2) b38 b38 sb3 b38 sb5 b38 sb3 bl
            (:section s3) fl7 b38 sb7 b22 m6 m9 sb7 bl
-           (:section s4) sb5 mrest5 m6 fl7 m7 m5d bl
+           (:section s4) (:newline) sb5 mrest5 m6 fl7 m7 m5d bl
            (:section s5) b38 mrest5 sb4 m3 sb4 bl
            (:section s6) mrest5 sb6 sh5 m5 m5 sh5 m5 br6 bl)
    (:text 90 58
