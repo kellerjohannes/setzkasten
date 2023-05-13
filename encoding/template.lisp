@@ -1,7 +1,7 @@
 `((:header
    (:filename "b")
    (:alt-name "m")
-   (:comment "q021_s  , origin: ")
+   (:comment "q021_s, rotation: , origin: ")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "")
    (:section-headings
