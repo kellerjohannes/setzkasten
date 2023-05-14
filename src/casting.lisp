@@ -46,6 +46,11 @@
   "Returns the vertical center line of a glyph."
   (* 0.5 (glyph-width stencil)))
 
+;;; blind space
+
+(defmethod cast ((stencil glyph-blind))
+  (push "" (svg-data stencil)))
+
 ;;; staff lines
 
 (defmethod v-center ((stencil glyph))

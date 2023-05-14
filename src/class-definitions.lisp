@@ -172,6 +172,9 @@
   (ink-color "black" "Color used for the production of SVG data.")
   (svg-data nil "Container for the SVG object (created by cl-svg)."))
 
+(define-setzkasten-class glyph-blind (glyph)
+  "Empty glyph, for blind space.")
+
 (define-setzkasten-class glyph-staff (glyph)
   "Specification for the creation of staff lines, either to be used as a blank type, or to be combined with other typographical elements (subclasses of glyph-staff)."
   (staff-component nil "Instance of glyph. If nil, an empty type will be produced."))

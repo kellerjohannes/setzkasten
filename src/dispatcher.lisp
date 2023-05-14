@@ -170,10 +170,17 @@
     ;; ("b2-c04-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
 
     ;; ("b2-c05-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ("b2-c05-m1" "b" (:idealised) ,*vicentino-types-backend*)
-    ("b2-c05-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b2-c05-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ;; ("b2-c05-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
     ;; ("b2-c05-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
     ;; ("b2-c05-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
+    ;; ("b2-c06-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b2-c06-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b2-c06-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b2-c06-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ;; ("b2-c06-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
     ))
 
 (defparameter *book5-original*

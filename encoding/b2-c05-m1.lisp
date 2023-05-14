@@ -1,7 +1,7 @@
 `((:header
    (:filename "b2-c05-m1")
    (:alt-name "m2.007")
-   (:comment "q021_s59, rotation: 0, origin: 448")
+   (:comment "q021_s059, rotation: 0, origin: 448")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio della seconda, et della quarta,\\come si ha da comporre a tre voci al tenore et basso")
    (:section-headings

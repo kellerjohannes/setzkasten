@@ -106,6 +106,11 @@
     (thickness 6))
    ())
 
+  (glyph-blind
+   ((id "blind")
+    (glyph-width 100)
+    (glyph-height 1500))
+   ((ink-color "black")))
   (glyph-staff
    ((id "glyph-staff")
     (staff-component :instance)

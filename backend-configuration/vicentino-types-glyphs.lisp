@@ -1,4 +1,5 @@
-`((glyph-staff                  b13     "blank-13"       "stave" 13 ,*glyph-height*)
+`((glyph-blind                  s1008   "space-1008"     1008 ,*glyph-height*)
+  (glyph-staff                  b13     "blank-13"       "stave" 13 ,*glyph-height*)
   (glyph-staff                  b22     "blank-22"       "stave" 22 ,*glyph-height*)
   (glyph-staff                  b27     "blank-27"       "stave" 27 ,*glyph-height*)
   (glyph-staff                  b38     "blank-38"       "stave" 38 ,*glyph-height*)
