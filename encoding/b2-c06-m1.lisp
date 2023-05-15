@@ -34,7 +34,7 @@
            (:section s1) cclef7 b22 mrest7 m7 dot8 sm6 b22 m6 sb7 bl
            (:section s2) mrest7 b22 sb7 b22 m6 b22 sb7 bl
            (:section s3) mrest5 sb5 sb4 sb3 m2 sb3
-           (:section s4) cclef5 b38 sb5 b38 bl
+           (:section s4) (:newline) cclef5 b38 sb5 b38 bl
            (:section s5) sb6 dot6 m7 sb6 bl
            (:section s6) sb6 dot6 fl7 m7 sb6 bl
            (:section s7) sb7 (:alt (:diplomatic dot6) (:idealised dot8)) m8 sb7 bl

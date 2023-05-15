@@ -19,6 +19,10 @@
    (:width nil)
    (:height nil)
    (:background ,*score-bg-color*))
+  (:preamble-lilypond
+   (:clef-overrides
+    (s2 v2 "treble_8")
+    (s2 v3 "treble_8")))
   (:data
    (:text 70 58
      (0 2227 "Eſſempio ſopra il modo di comporre di 4. in 5. ſincopata,et non ſincop.et di quinta in quarta."))
@@ -37,6 +41,7 @@
           (695 nil "Tenore")
           (1459 nil "Baſſo"))
    (:music 2220
+           ;; hier stimmt etwas überhaupt nicht, ist das die korrekte :section-Zuweisung?
            (:section s2)
            (:voice v1) cclef7 (:key-signature nil nil nil nil nil nil nil) b38 sb7 b38 sb5 b22 bl
            (:voice v2) b38 cclef5 b38 sb1 b38 sb0 b38 bl
