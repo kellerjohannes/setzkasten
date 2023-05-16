@@ -3,7 +3,6 @@
    (:alt-name "m5.089")
    (:comment "q021_s271, rotation: 0, origin: 1559; q021_s272, rotation: 0, origin: 921; q021_s272, rotation: 0.54, origin: 561; q021_s274, rotation: -0.72, origin: 921")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "[Esempi ed ordini che si leggeranno come le diatoniche naturali, e l'esempio naturale]")
    (:section-headings
     (s1 "Diatonico naturale primo")
     (s2 "Secondo ordine naturale diatonico")
