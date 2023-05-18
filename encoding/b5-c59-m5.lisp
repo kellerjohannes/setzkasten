@@ -1,78 +1,78 @@
 `((:header
-   (:filename "b5-c59-m4")
-   (:alt-name "m5.091")
-   (:comment "q021_s278, rotation: -0.86, origin: 2000; q021_s279, rotation: 0.88, origin: 480; q021_s280, rotation: 0, origin: 970; q021_s281, rotation: 0.68, origin: 511")
+   (:filename "b5-c59-m5")
+   (:alt-name "m5.092")
+   (:comment "q021_s282, rotation: 0, origin: 820; q021_s283, rotation: 0.65, origin: 511; q021_s284, rotation: 0, origin: 810; q021_s285, rotation: 1.3, origin: 546")
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
-    (s1 "Primo ordine diatonico naturale")
-    (s2 "Secondo ordine diatonico naturale")
+    (s1 "Primo ordine naturale diatonico")
+    (s2 "Secondo ordine naturale diatonico")
     (s3 "Terzo ordine naturale diatonico")
-    (s4 "Quarto ordine diatonico naturale")
+    (s4 "Quarto ordine naturale diatonico")
     (s5 "Quinto ordine naturale diatonico")
-    (s6 "Sesto ordine diatonico")
-    (s7 "Settimo ordine diatonico")
+    (s6 "Sesto ordine naturale diatonico")
+    (s7 "Settimo ordine diatonico naturale")
 
-    (s8 "Primo ordine cromatico et enarmonico")
-    (s9 "Secondo ordine cromatico")
-    (s10 "Terzo ordine cromatico")
-    (s11 "Quarto ordine cromatico et enarmonico")
-    (s12 "Quinto ordine cromatico et enarmonico")
+    (s8 "Primo ordine cromatico enarmonico")
+    (s9 "Secondo ordine cromatico enarmonico")
+    (s10 "Del terzo ordine cromatico enarmonico")
+    (s11 "Del quarto ordine cromatico enarmonico")
+    (s12 "Quinto ordine cromatico enarmonico")
     (s13 "Sesto ordine cromatico enarmonico")
     (s14 "Settimo ordine cromatico enarmonico")
 
-    (s15 "Primo ordine cromatico")
-    (s16 "Secondo ordine cromatico")
-    (s17 "Terzo ordine cromatico")
-    (s18 "Quarto ordine cromatico")
-    (s19 "Quinto ordine cromatico")
+    (s15 "Primo ordine cromatico enarmonico")
+    (s16 "Secondo ordine cromatico enarmonico")
+    (s17 "Del terzo ordine cromatico enarmonico")
+    (s18 "Del quarto ordine cromatico enarmonico")
+    (s19 "Quinto ordine cromatico enarmonico")
     (s20 "Sesto ordine cromatico enarmonico")
     (s21 "Settimo ordine cromatico enarmonico")
 
-    (s22 "Primo ordine cromatico et enarmonico")
-    (s23 "Secondo ordine cromatico")
-    (s24 "Terzo ordine cromatico")
-    (s25 "Quarto ordine cromatico")
-    (s26 "Quinto ordine cromatico")
+    (s22 "Primo ordine cromatico enarmonico")
+    (s23 "Secondo ordine cromatico enarmonico")
+    (s24 "Del terzo ordine cromatico enarmonico")
+    (s25 "Del quarto ordine cromatico enarmonico")
+    (s26 "Quinto ordine cromatico enarmonico")
     (s27 "Sesto ordine cromatico enarmonico")
     (s28 "Settimo ordine cromatico enarmonico")
 
-    (s29 "Primo ordine cromatico et enarmonico")
-    (s30 "Secondo ordine cromatico")
-    (s31 "Terzo ordine cromatico")
-    (s32 "Quarto ordine cromatico")
-    (s33 "Quinto ordine cromatico")
+    (s29 "Primo ordine cromatico enarmonico")
+    (s30 "Secondo ordine cromatico enarmonico")
+    (s31 "Del terzo ordine cromatico enarmonico")
+    (s32 "Del quarto ordine cromatico enarmonico")
+    (s33 "Quinto ordine cromatico enarmonico")
     (s34 "Sesto ordine cromatico enarmonico")
     (s35 "Settimo ordine cromatico enarmonico")
 
-    (s36 "Primo ordine cromatico et enarmonico")
-    (s37 "Secondo ordine cromatico")
-    (s38 "Terzo ordine cromatico")
-    (s39 "Quarto ordine cromatico")
-    (s40 "Quinto ordine cromatico")
+    (s36 "Primo ordine cromatico enarmonico")
+    (s37 "Secondo ordine cromatico enarmonico")
+    (s38 "Del terzo ordine cromatico enarmonico")
+    (s39 "Del quarto ordine cromatico enarmonico")
+    (s40 "Quinto ordine cromatico enarmonico")
     (s41 "Sesto ordine cromatico enarmonico")
     (s42 "Settimo ordine cromatico enarmonico")
 
-    (s43 "Primo ordine cromatico et enarmonico")
-    (s44 "Secondo ordine cromatico")
-    (s45 "Terzo ordine cromatico")
-    (s46 "Quarto ordine cromatico")
-    (s47 "Quinto ordine cromatico")
+    (s43 "Primo ordine cromatico enarmonico")
+    (s44 "Secondo ordine cromatico enarmonico")
+    (s45 "Del terzo ordine cromatico enarmonico")
+    (s46 "Del quarto ordine cromatico enarmonico")
+    (s47 "Quinto ordine cromatico enarmonico")
     (s48 "Sesto ordine cromatico enarmonico")
     (s49 "Settimo ordine cromatico enarmonico")
 
-    (s50 "Primo ordine cromatico et enarmonico")
-    (s51 "Secondo ordine cromatico")
-    (s52 "Terzo ordine cromatico")
-    (s53 "Quarto ordine cromatico")
-    (s54 "Quinto ordine cromatico")
+    (s50 "Primo ordine cromatico enarmonico")
+    (s51 "Secondo ordine cromatico enarmonico")
+    (s52 "Del terzo ordine cromatico enarmonico")
+    (s53 "Del quarto ordine cromatico enarmonico")
+    (s54 "Quinto ordine cromatico enarmonico")
     (s55 "Sesto ordine cromatico enarmonico")
     (s56 "Settimo ordine cromatico enarmonico")
 
-    (s57 "Primo ordine cromatico et enarmonico")
-    (s58 "Secondo ordine cromatico")
-    (s59 "Terzo ordine cromatico")
-    (s60 "Quarto ordine cromatico")
-    (s61 "Quinto ordine cromatico")
+    (s57 "Primo ordine cromatico enarmonico")
+    (s58 "Secondo ordine cromatico enarmonico")
+    (s59 "Del terzo ordine cromatico enarmonico")
+    (s60 "Del quarto ordine cromatico enarmonico")
+    (s61 "Quinto ordine cromatico enarmonico")
     (s62 "Sesto ordine cromatico enarmonico")
     (s63 "Settimo ordine cromatico enarmonico")
     ))
@@ -81,226 +81,229 @@
    (:height nil)
    (:background ,*score-bg-color*))
   (:data
-   ;; Seite 1, fol. 136v, S. 271
+   ;; S. 1, fol. 141v, S. 282
    (:text 110 58
-     (274 nil "Primo ordine ᴅiat. nat."))
-   (:music 1157
+          (321 nil "Primo ordine nat. Diat.")
+          (1431 nil "Secondo ordine nat.Diat."))
+   (:music 2387
            (:voice v1)
-           (:section s1) gclef3 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38 b22 b38 bl)
+           (:section s1) gclef3 b38 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38 b38
+           (:section s2) cclef1 b38 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 b22 sb9 b38 sb10 b38 b38 bl)
    (:text 110 58
-     (180 nil "Primo ordine ᴄromatico & Enar."))
-   (:music 1195
-           (:section s8) (:newline) gclef3 fl0 sb0 b22 fl1 sb1 b22 sbd1 b22 fl3 sb3 b22 fl4 sb4 b22 fl5 sb5 b22 sbd5 b22 fl7 sb7 b22 fl8 sb8 b22 sbd8 fl10 sb10 b22 bl)
-   (:text 110 58
-     (196 nil "Primo ordine ᴄromatico."))
-   (:music 1181
-           (:section s15) (:newline) cclef1 b22 fl0 b22 sb0 b22 sb1 b22 fl2 b22 sb2 b22 fl3 b22 sb3 b22 sb4 b22 sb5 b22 fl6 sb6 b22 fl7 sb7 sb8 b22 fl9 sb9 fl10 sb10 bl)
-   (:text 110 58
-     (179 nil "Primo ordine Cromatico & ᴇnar."))
-   ;; Achtung, Hilfslinie muss implementiert werden!
-   (:music 1178
-           (:section s22) (:newline) cclef3 b38 fl0 sb0 b22 fl1 sb1 sbd1 sbd2 b22 fl4 sb4 b22 fl5 sb5 b22 sbd5 b22 fl7 sb7 fl8 sb8 b22 sbd8 sbd9 fl10 sb10)
-   (:text 110 58
-     (268 nil "Primo ordine ᴄromatico ᴇnar."))
-   (:music 1157
-           (:section s29) (:newline) cclef5 b38 fl0 sb0 b22 sb1 b22 fl2 b22 sb2 b22 fl3 b22 sb3 b22 fl4 sb4 b22 sb5 b22 fl6 sb6 b22 fl7 sb7 sb8 b22 fl9 sb9 sb10 bl)
-   (:text 110 58
-     (213 nil "Primo ordine ᴄromatico & Enar."))
-   (:music 1168
-           (:section s36) (:newline) cclef7 fl0 b22 sb0 b22 fl1 b22 sb1 b22 sbd1 b22 sbd2 b22 fl4 b22 sb4 b22 fl5 b22 sb5 b22 sbd5 b22 sbd6 b22 fl8 sb8 sbd8 b22 sbd9 bl)
-   (:text 110 58
-     (164 nil "Primo ordine ᴄromatico & Enar."))
-   (:music 1139
-           (:section s43) (:newline) (:f-clef) max5 fclef5 fl0 sb0 b22 fl1 b22 sb1 b22 sbd1 b22 fl3 sb3 b22 fl4 sb4 sb5 b22 fl6 sb6 b22 fl7 sb7 fl8 sb8 sbd8 b22 sb10 bl)
-   (:text 110 58
-     (178 nil "Primo ordine ᴄromatico & Enar."))
-   (:music 1182
-           (:section s50) (:newline) (:f-clef) max7 fclef7 b22 fl0 b22 sb0 b22 fl1 b22 sb1 b22 sbd1 b22 sbd2 b22 sbd3 b22 fl5 b22 sb5 b22 sbd5 sbd6 b22 fl8 sb8 sbd8 b22 sbd9 b22 bl)
-   (:text 110 58
-     (179 nil "Primo ordine Cromatico & Enar."))
-   (:music 1187
-           (:section s57) (:newline) (:f-clef) max9 fclef9 b22 fl0 sb0 b22 fl1 sb1 b22 sbd1 b22 fl3 sb3 b22 fl4 sb4 b22 fl5 sb5 sbd5 b22 fl7 sbd7 fl8 sb8 sbd8 b38 sb10 b22 bl)
-
-
-   (:vspace 200)
-
-   ;; Seite 2, fol. 140r, S. 279
-   (:text 110 58
-     (252 nil "Secondo ordine diat . nat .")
-     (1359 nil "Terzo ordine nat . diat ."))
-   (:music 2207
-           (:section s2) cclef1 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38 b38
-           (:section s3) cclef3 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38 b22 bl)
-   (:text 110 58
-     (324 nil "Secondo ordine ᴄromatico.")
-     (1279 nil "Terzo ordine ᴄromatico."))
-   (:music 2212
-           (:section s9) gclef3 fl0 sb0 sbd0 sbd1 b22 fl3 b22 sb3 b22 sbd3 b22 sbd4 b22 sbd5 b22 fl7 b22 sb7 sbd7 b22 sbd8 fl10 b22 sb10 b22 b38
-           (:section s10) gclef3 fl0 sb0 b22 fl1 sb1 sb2 b22 fl3 b22 sb3 b22 fl4 b22 sb4 b22 fl5 sb5 b22 sbd5 b22 fl7 sb7 b22 fl8 sb8 b22 sb9 sb10 bl)
-   (:text 110 58
-     (321 nil "Secondo ordine ᴄromatico.")
-     (1304 nil "Terzo ordine ᴄromatico."))
-   (:music 2220
-           (:section s16) cclef1 fl0 sb0 b22 sbd0 fl2 sb2 fl3 sb3 b22 sbd3 b22 fl5 sb5 b22 fl6 sb6 b22 fl7 sb7 b22 sbd7 b22 fl9 sb9 b22 sb10 b22
-           (:section s17) cclef1 fl0 b22 sb0 b22 sb1 b22 sb2 b22 fl3 b22 sb3 b22 sb4 b22 sb5 b22 fl6 b22 sb6 b22 fl7 sb7 b22 sb8 b22 sb9 b22 sb10 b22 bl)
-   (:text 110 58
-     (323 nil "Secondo ordine ᴄromatico.")
-     (1285 nil "Terzo ordine ᴄromatico."))
-   (:music 2231
-           (:section s23) cclef3 fl0 b22 sb0 b22 sbd0 b22 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b22 fl7 b22 sb7 b22 sbd7 b22 sbd8 b22 sb9 b22
-           (:section s24) cclef3 fl0 b22 sb0 b22 fl1 sb1 b22 fl2 sb2 b22 sbd2 b22 fl4 sb4 b22 fl5 sb5 b22 sbd5 b22 fl7 sb7 fl8 sb8 fl9 sb9 sbd9 b38 bl)
-   (:text 110 58
-     (332 nil "Secondo ordine ᴄromatico.")
-     (1298 nil "Terzo ordine ᴄromatico."))
-   (:music 2229
-           (:section s30) cclef5 b38 sb0 sbd0 b22 fl2 sb2 b22 fl3 sb3 b22 sbd3 sbd4 b22 fl6 sb6 b22 fl7 sb7 b22 sbd7 b22 fl9 sb9 fl10 sb10 b38
-           (:section s31) cclef5 b38 fl0 sb0 b22 sb1 b22 sb2 b22 fl3 sb3 b22 fl4 sb4 b22 sb5 b22 fl6 sb6 b22 fl7 b22 sb7 b22 sb8 b22 sb9 fl10 sb10 b38 bl)
-   (:text 110 58
-     (329 nil "Secondo ordine ᴄromatico.")
-     (1293 nil "Terzo ordine ᴄromatico."))
-   (:music 2234
-           (:section s37) cclef7 fl0 b22 sb0 b22 sbd0 b22 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b38
-           (:section s38) cclef7 fl0 b22 sb0 b22 fl1 b22 sb1 b22 fl2 sb2 b22 sbd2 b22 fl4 sb4 b22 fl5 sb5 sbd5 sbd6 b22 fl8 sb8 b22 fl9 sb9 fl10 sb10 sbd10 b22 bl)
-   (:text 110 58
-     (335 nil "Secondo ordine ᴄromatico.")
-     (1307 nil "Terzo ordine ᴄromatico."))
-   (:music 2221
-           (:section s44) (:f-clef) max5 fclef5 fl0 b22 sb0 b22 sbd0 b22 sbd1 b22 fl3 sb3 b22 sbd3 b22 sbd4 b22 fl6 b22 sb6 b22 fl7 b22 sb7 sbd7 b22 sbd8 fl10 sb10
-           (:section s45) (:f-clef) max5 fclef5 b22 fl0 b22 sb0 b22 fl1 b22 sb1 sb2 fl3 sb3 fl4 sb4 sb5 fl6 sb6 fl7 sb7 fl8 sb8 sb9 fl10 sb10 b22 bl)
-   (:text 110 58
-     (334 nil "Secondo ordine ᴄromatico.")
-     (1320 nil "Terzo ordine ᴄromatico."))
-   (:music 2209
-           (:section s51) (:f-clef) max7 fclef7 b22 fl0 sb0 b22 sbd0 b22 sbd1 b22 sbd2 b22 fl3 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sb9 b22
-           (:section s52) (:f-clef) max7 fclef7 b22 fl0 sb0 b22 fl1 sb1 b22 fl2 sb2 b22 sbd2 sbd3 b22 fl5 sb5 b22 sbd5 b22 sbd6 b22 fl8 sb8 b22 fl9 sb9 sbd9 b22 bl)
-   (:text 110 58
-     (341 nil "Secondo ordine ᴄromatico.")
-     (1302 nil "Terzo ordine ᴄromatico."))
-   (:music 2225
-           (:section s58) (:f-clef) max9 fclef9 b22 fl0 sb0 b22 sbd0 b22 sbd1 b22 fl3 sb3 b22 sbd3 b22 sbd4 b22 sbd5 b22 fl7 sb7 sbd7 b22 sbd8 fl10 sb10 b22 bl
-           (:section s59) (:f-clef) b22 max7 fclef9 b22 fl0 sb0 b22 fl1 sb1 sb2 b22 fl3 sb3 b22 fl4 sb4 fl5 sb5 sbd5 fl7 sb7 fl8 sb8 b22 sb9 fl10 sb10 b22 bl)
-   (:vspace 110)
-   (:music 2232
-           b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b22 b38 b38 b38)
-
-
-   (:vspace 200)
-
-   ;; S. 3, fol. 140v, S. 280
-   (:text 110 58
-     (258 nil "Quarto ordine diat .nat.")
-     (1349 nil "Quinto ordine nat . diat."))
-   (:music 2240
-           (:section s4) cclef5 b22 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38 b38 b38
-           (:section s5) cclef7 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38 bl)
-   (:text 110 58
-     (163 nil "Quarto ordine ᴄromatico & En.")
-     (1270 nil "Quinto ordine ᴄromatico & ᴇn."))
-   (:music 2236
-           (:section s11) gclef3 fl0 sb0 sbd0 sbd1 fl3 sb3 fl4 b22 sb4 b22 sbd4 b22 sbd5 b22 fl7 b22 sbd7 b22 fl9 sb9 fl10 sb10 b38
-           (:section s12) gclef3 fl0 sb0 b22 fl1 sb1 sb2 b22 fl3 b22 sb3 b22 fl4 b22 sb4 b22 fl5 sb5 b22 sb6 b22 fl7 sb7 b22 fl8 sb8 b22 sb9 fl10 sb10 bl)
-   (:text 110 58
-     (168 nil "Quarto ordine ᴄromatico.")
-     (1296 nil "Quinto ordine ᴄromatico."))
-   (:music 2238
-           (:section s18) cclef1 fl0 b22 sb0 b22 sbd0 fl2 b22 sb2 b22 fl3 sb3 b22 sb4 b22 fl5 sb5 b22 sb6 b22 fl7 sb7 b22 sbd7 b22 fl9 sb9 fl10 sb10 b22
-           (:section s19) cclef1 fl0 b22 sb0 b22 sb1 b22 sb2 b22 fl3 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 fl7 sb7 b22 sb8 b22 sb9 fl10 sb10 b22 b22 bl)
-   (:text 110 58
-     (161 nil "Quarto ordine ᴄromatico.")
-     (1286 nil "Quinto ordine ᴄromatico."))
-   (:music 2219
-           (:section s25) cclef3 fl0 b22 sb0 b22 sbd0 b22 sbd1 b22 sbd2 b22 fl4 b22 sb4 b22 sbd4 b22 sb5 b22 fl7 b22 sb7 b22 sbd7 b22 sbd8 b22 sbd9 b22
-           (:section s26) cclef3 fl0 b22 sb0 b22 fl1 sb1 b22 fl2 sb2 b22 sbd2 fl4 sb4 b22 fl5 sb5 b22 sb6 b22 fl7 sb7 fl8 sb8 fl9 sb9 sbd9 bl)
-   (:text 110 58
-     (173 nil "Quarto ordine ᴄromatico.")
-     (1292 nil "Quinto ordine ᴄromatico."))
-   (:music 2228
-           (:section s32) cclef5 fl0 sb0 sbd0 b22 fl2 sb2 b22 fl3 sb3 fl4 b22 sb4 b22 sbd4 b22 fl6 sb6 b22 fl7 sb7 b22 sbd7 b22 fl9 sb9 fl10 sb10 b38
-           (:section s33) cclef5 b38 fl0 sb0 b22 sb1 b22 sb2 b22 fl3 sb3 b22 fl4 sb4 b22 sb5 b22 sb6 b22 fl7 b22 sb7 b22 sb8 b22 sb9 fl10 sb10 b22 bl)
-   (:text 110 58
-     (168 nil "Quarto ordine ᴄromatico.")
-     (1293 nil "Quinto ordine ᴄromatico."))
-   (:music 2225
-           (:section s39) cclef7 fl0 b22 sb0 b22 sbd0 b22 sbd1 b22 sbd2 b22 fl4 sb4 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b22
-           (:section s40) cclef7 fl0 b22 sb0 b22 fl1 b22 sb1 b22 fl2 b22 sb2 b22 sbd2 b22 fl4 sb4 b22 fl5 sb5 fl6 sb6 sbd6 fl8 sb8 b22 fl9 sb9 b38 sbd9 b22 bl)
-   (:text 110 58
-     (166 nil "Quarto ordine ᴄromatico.")
-     (1289 nil "Quinto ordine ᴄromatico."))
-   (:music 2219
-           (:section s46) (:f-clef) max5 fclef5 fl0 b22 sb0 b22 sbd0 b22 sbd1 b22 fl3 sb3 b22 fl4 b22 sb4 b22 sbd4 fl6 sb6 b22 fl7 sb7 b22 sbd7 b22 sbd8 fl10 sb10 b22
-           (:section s47) (:f-clef) max5 fclef5 b22 fl0 b22 sb0 b22 fl1 b22 sb1 sb2 fl3 sb3 fl4 sb4 sb5 sb6 fl7 sb7 fl8 sb8 sb9 fl10 sb10 b38 bl)
-   (:text 110 58
-     (156 nil "Quarto ordine ᴄromatico.")
-     (1290 nil "Quinto ordine ᴄromatico."))
-   (:music 2221
-           (:section s53) (:f-clef) max7 fclef7 b22 fl0 sb0 b22 sbd0 b22 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b38
-           (:section s54) (:f-clef) max7 fclef7 b22 fl0 sb0 b22 fl1 sb1 b22 fl2 sb2 b22 sbd2 sbd3 b22 fl5 sb5 b22 fl6 sb6 b22 sbd6 b22 fl8 sb8 b22 fl9 sb9 sbd9 bl)
-   (:text 110 58
-     (165 nil "Quarto ordine ᴄromatico.")
-     (1281 nil "Quinto ordine ᴄromatico."))
-   (:music 2225
-           (:section s60) (:f-clef) max9 fclef9 b22 fl0 sb0 b22 sbd0 b22 sbd1 b22 fl3 sb3 b22 fl4 sb4 sbd4 b22 sbd5 b22 fl7 sb7 sbd7 fl8 sbd8 fl10 sb10 b22 bl
-           (:section s61) (:f-clef) b22 max9 fclef9 b22 fl0 sb0 b22 fl1 sb1 sb2 b22 fl3 sb3 b22 fl4 sb4 fl5 sb5 sb6 fl7 sb7 fl8 sb8 b22 sb9 fl10 sb10 bl)
-   (:vspace 110)
-   (:music 2240
-           b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b22 b38 b38 b38)
-
-
-   (:vspace 200)
-
-   ;; S. 4, fol. 141r, S. 281
-
-   (:text 110 58
-     (269 nil "Seſto ordine ᴅiatonico.")
-     (1483 nil "Settimo ordine ᴅiatonico."))
-   (:music 2384
-           (:section s6) (:f-clef) max5 fclef5 b38 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38 b22
-           (:section s7) (:f-clef) max7 fclef7 b38 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 fl10 sb10 b38 b22 bl)
-   (:text 110 58
-     (252 nil "Seſto ordine Cromatico Enar.")
-     (1350 nil "Settimo ordine ᴄromatico ᴇnar."))
-   (:music 2389
-           (:section s13) gclef3 b38 fl0 b38 sb0 b38 fl1 b38 sb1 b38 sbd1 b38 fl3 sb3 fl4 sb4 sbd4 sbd5 fl7 sb7 fl8 sb8 sbd8 fl10 sb10 b38
-           (:section s14) gclef3 b22 fl0 b22 sb0 b22 fl1 sb1 b22 sb2 b22 sb3 b22 fl4 sb4 b22 fl5 sb5 b22 sb6 b22 fl7 b22 sb7 b22 fl8 sb8 b22 sb9 fl10 sb10 b38 bl)
-   (:text 110 58
-     (270 nil "Seſto ordine ᴄromatico Enar.")
-     (1313 nil "Settimo ordine ᴄromatico Enar."))
-   (:music 2381
-           (:section s20) cclef1 b22 fl0 sb0 b22 sb1 b22 fl2 b22 sb2 b22 fl3 b22 sb3 b22 sb4 b22 fl5 b22 sb5 b22 fl6 b22 sb6 b22 fl7 b22 sb7 b22 sb8 b22 fl9 b22 sb9 fl10 sb10 b22
-           (:section s21) cclef1 b22 fl0 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 fl7 b22 sb7 b22 sb8 b22 sb9 fl10 sb10 b22 bl)
-   (:text 110 58
-     (264 nil "Seſto ordine ᴄromatico ᴇnar.")
-     (1436 nil "Settimo ordine ᴄromatico Enar."))
+          (165 nil "Primo ordine ᴄromatico ᴇnar.")
+          (1411 nil "Secondo ordine ᴄromatico ᴇnar."))
    (:music 2385
-           (:section s27) cclef3 b22 fl0 sb0 b22 fl1 b22 sb1 b22 sbd1 b22 sbd2 b22 fl4 b22 sb4 b22 sbd4 b22 sbd5 b22 fl7 b22 sb7 b22 fl8 sb8 b22 sbd8 b22 sbd9 b22
-           (:section s28) cclef3 b22 fl0 sb0 b22 fl1 sb1 b22 fl2 sb2 sb3 b22 fl4 sb4 b22 fl5 sb5 sb6 b22 fl7 sb7 b22 fl8 sb8 fl9 sb9 sbd9 b38 bl)
+           (:section s8) gclef3 b22 fl0 sbd0 fl1 sbd1 sh1 sb1 fl3 sbd3 fl4 sbd4 b22 fl5 sbd5 sh5 sb5 fl7 sbd7 fl8 sbd8 sh8 fl10 sbd10 b22
+           (:section s9) gclef3 b22 fl0 sbd0 sh0 sb0 sh1 sb1 fl3 sbd3 sh3 sb3 sj4 sb4 sh5 sb5 fl7 sbd7 sh7 sb7 sh8 sb8 fl10 sbd10 b22 bl)
    (:text 110 58
-     (265 nil "Seſto ordine ᴄromatico ᴇnar.")
-     (1311 nil "Settimo ordine ᴄromatico Enar."))
-   (:music 2385
-           (:section s34) cclef5 b22 fl0 b22 sb0 b22 sb1 b22 fl2 b22 sb2 b22 fl3 b22 sb3 b22 fl4 b22 sb4 b22 sbd4 b22 fl6 b22 sb6 b22 fl7 b22 sb7 b22 sb8 b22 fl9 sb9 fl10 sb10 b22
-           (:section s35) cclef5 b22 fl0 b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 fl4 b22 sb4 b22 sb5 b22 sb6 b22 fl7 sb7 sb8 sb9 fl10 sb10 b38 bl)
-   (:text 110 58
-     (251 nil "seſto ordine ᴄromatico ᴇnar.")
-     (1460 nil "Settimo ordine ᴄromatico ᴇnar."))
+          (162 nil "Primo ordine ᴄromatico ᴇnar.")
+          (1379 nil "Secondo ordine ᴄromatico ᴇnar."))
    (:music 2384
-           (:section s41) cclef7 b22 fl0 b22 sb0 b22 fl1 b22 sb1 b22 sbd1 b22 sbd2 b22 fl4 b22 sb4 b22 sbd4 b22 sbd5 b22 sbd6 b22 fl8 b22 sb8 b22 sbd8 b22 sbd9 b22
-           (:section s42) cclef7 fl0 sb0 b22 fl1 b22 sb1 b22 fl2 sb2 b22 sb3 b22 fl4 sb4 b22 fl5 sb5 b22 fl6 sb6 sbd6 b22 fl8 sb8 fl9 sb9 sbd9 b22 bl)
+           (:section s15) cclef1 b38 fl0 b22 sbd0 b22 sbd1 b22 fl2 b22 sbd2 b22 fl3 b22 sbd3 b22 sbd4 b22 sbd5 b22 fl6 b22 sbd6 b22 fl7 sbd7 b22 sb8 b22 fl9 b22 sbd9 fl10 sbd10
+           (:section s16) cclef1 fl0 sbd0 sh0 sb0 fl2 sbd2 fl3 sbd3 sh3 sb3 fl5 sbd5 fl6 sbd6 fl7 sbd7 sh7 sb7 fl9 sbd9 fl10 sbd10 bl)
    (:text 110 58
-     (261 nil "seſto ordine ᴄromatico Enar.")
-     (1368 nil "Settimo ordine ᴄromatico ᴇnar."))
-   (:music 2379
-           (:section s48) (:f-clef) max5 fclef5 fl0 sb0 b22 fl1 sb1 b22 sbd1 b22 fl3 sb3 b22 fl4 sb4 b22 sbd4 b22 fl6 sb6 b22 fl7 sb7 b22 fl8 sb8 b22 sbd8 fl10 sb10 b22
-           (:section s49) (:f-clef) max5 fclef5 b22 fl0 sb0 b22 fl1 sb1 b22 sb2 b22 sb3 b22 fl4 sb4 b22 sb5 b22 sb6 b22 fl7 sb7 b22 fl8 sb8 sb9 fl10 sb10 b38 bl)
+          (282 nil "Primo ordine ᴄromatico ᴇnar.")
+          (1525 nil "secondo ordine ᴄromatico Enar."))
+   (:music 2386
+           (:section s22) cclef3 fl0 (:alt (:diplomatic sh0) (:idealised b38)) sbd0 fl1 sbd1 sh1 sb1 sh2 sb2 fl4 sbd4 fl5 sbd5 sh5 sb5 fl7 sbd7 fl8 sbd8 sh8 sb8 sh9 sb9
+           (:section s23) cclef3 b38 fl0 sbd0 sh0 sb0 sh1 sb1 sh2 sb2 sh3 sb3 sh4 b22 sb4 fh5 sb5 b22 fl7 sbd7 sh7 sb7 sh8 sb8 b38 sbd10 bl)
    (:text 110 58
-     (271 nil "Seſto ordine ᴄromatico Enar.")
-     (1394 nil "settimo ordine ᴄromatico Enar."))
+          (171 nil "Primo ordine Cromatico ᴇnar.")
+          (1338 nil "Secondo ordine ᴄromatico Enar."))
+   (:music 2363
+           (:section s29) cclef5 fl0 sbd0 b22 sbd1 b22 fl2 sbd2 b22 fl3 sbd3 b22 fl4 sbd4 b22 sbd5 b22 fl6 sb6 b22 fl7 sbd7 b22 sbd8 b22 fl9 sbd9 fl10 sbd10 b22
+           (:section s30) cclef5 b22 fl0 sbd0 b22 sh0 sb0 b22 fl2 sbd2 fl3 sbd3 sh3 sb3 sh4 sb4 fl6 sbd6 fl7 sbd7 sh7 sb7 fl9 sbd9 fl10 sbd10 b22 bl)
+   (:text 110 58
+          (255 nil "Primo ordine ᴄromatico ᴇnar.")
+          (1368 nil "Secondo ordine ᴄromatico Enar."))
    (:music 2373
-           (:section s55) (:f-clef) max7 fclef7 b22 fl0 b22 sb1 b22 fl1 b22 sb1 b22 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 fl8 sb8 sbd8 fl10 sb10
-           (:section s56) (:f-clef) max7 fclef7 b38 fl0 sb0 b22 fl1 sb1 b22 fl2 sb2 b22 fl3 sb3 b22 sbd3 b22 fl5 sb5 b22 fl6 sb6 b22 sbd6 b22 fl8 b22 sb8 fl9 sb9 sbd9 b38 bl)
+           (:section s36) cclef7 b22 sb0 b22 sbd1 b22 fl2 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b22 fl6 b22 sbd6 b22 sbd7 b22 sbd8 b22 fl9 b22 sbd9 b22 sbd10 b22
+           (:section s37) cclef7 b22 sbd0 b22 fl1 sbd1 b22 fl2 b22 sbd2 b22 sbd3 b22 fl4 sbd4 b22 fl5 sbd5 fl6 sbd6 fl7 sbd7 fl8 sbd8 b22 fl9 sbd9 b22 sbd10 b22 b22 bl)
    (:text 110 58
-     (257 nil "Seſto ordine ᴄromatico Enar.")
-     (1353 nil "settimo ordine ᴄromatico Enar."))
+          (212 nil "Primo ordine ᴄromatico Enar.")
+          (1433 nil "Secondo ordine ᴄromatico Enar."))
+   (:music 2367
+           (:section s43) (:f-clef) max5 fclef5 fl0 sbd0 fl1 sbd1 sh1 sb1 fl3 sbd3 fl4 sbd4 sbd5 fl6 sbd6 fl7 sbd7 fl8 sbd8 sh8 sb8 fl10 sbd10 b22
+           (:section s44) (:f-clef) max5 fclef5 b22 fl0 sbd03 b22 sh0 sb0 b22 sh1 sb1 fl3 sbd3 sh3 sb3 sh4 sb4 fl6 sbd6 b22 fl7 sbd7 sh7 sb7 sh8 sb8 fl10 sbd10 b22 bl)
+   (:text 110 58
+          (159 nil "Primo ordine ᴄromatico Enar.")
+          (1325 nil "Secondo ordine ᴄromatico Enar."))
+   (:music 2359
+           (:section s50) (:f-clef) max7 fclef7 b22 sbd0 b22 sbd1 b22 fl2 b22 sbd2 b22 fl3 sbd3 b22 sbd4 b22 sbd5 b22 fl6 sbd6 b22 sbd7 b22 sbd8 b22 fl9 sbd9 fl10 sb10 b38
+           (:section s51) (:f-clef) max7 fclef7 b22 sbd0 fl1 b22 sbd1 fl2 sbd2 b22 fl3 sbd3 sh3 sb3 b22 fl5 sbd5 fl6 sbd6 sbd7 fl8 sbd8 fl9 sbd9 fl10 sbd10 b38 bl)
+   (:text 110 58
+          (286 nil "Primo ordine ᴄromatico Enar.")
+          (1498 nil "Secondo ordine ᴄromatico ᴇnar."))
+   (:music 2363
+           (:section s57) (:f-clef) max9 fclef9 b22 fl0 sbd0 fl1 sbd1 sh1 sb1 fl3 sbd3 fl4 sbd4 fl5 sbd5 sh5 sb5 fl7 sbd7 fl8 sbd8 sh8 fl10 sbd10 b22
+           (:section s58) (:f-clef) max9 fclef9 fl0 sbd0 sh0 sb0 sh1 sb1 fl3 sbd3 sh3 sb3 sh4 sb4 sh5 sb5 fl7 sbd7 sh7 sb7 (:alt (:diplomatic sh7) (:idealised sh8)) sb8 fl10 sbd10 bl)
+
+   (:vspace 200)
+
+
+   ;; S. 2, fol. 142r, S. 283
+   (:text 110 58
+          (236 nil "Terzo ordine nat.Diatonico.")
+          (1331 nil "Quarto ordine nat.ᴅiatonico."))
+   (:music 2381
+           (:section s3) cclef3 b22 b22 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38
+           (:section s4) cclef5 b38 sb0 b22 b38 sb1 b38 b2 sb2 b38 b22 sb3 b38 b22 sb4 b38 b22 sb5 b38 b22 sb6 b38 b22 sb7 b22 b38 sb8 b38 b22 sb9 b38 sb10 b38 bl)
+   (:text 110 58
+          (218 nil "Del terzo ordine ᴄro. ᴇnar.")
+          (1436 nil "Del quarto ordine ᴄro.Enar."))
+   (:music 2387
+           (:section s10) gclef3 b22 fl0 sbd0 b22 fl1 sbd1 sbd2 b22 fl3 sbd3 b22 fl4 sbd4 fl5 sbd5 sh5 sb5 fl7 sbd7 b22 fl8 sbd8 b22 sbd9 fl10 sbd10 b22
+           (:section s11) gclef3 fl0 sbd0 b22 sh0 sb0 sh1 sb1 fl3 sbd3 b22 fl4 sbd4 sh4 sb4 sh5 sb5 fl7 sbd7 sh7 sb7 sh8 sb8 fl10 sbd10 b22 bl)
+   (:text 110 58
+          (212 nil "Del terzo ordine ᴄro.Enar.")
+          (1444 nil "ᴅel quarto ordine ᴄro.Enar."))
+   (:music 2381
+           (:section s17) cclef1 b22 fl0 b22 sbd0 b22 sbd1 b22 sbd2 b22 fl3 b22 sbd3 b22 sbd4 b22 sbd5 b22 fl6 b22 sbd6 b22 fl7 b22 sbd7 b22 sbd8 b22 sbd9 fl10 sbd10 b22
+           (:section s18) cclef1 b38 fl0 sbd0 sh0 sb0 fl2 sbd2 fl3 sbd3 sbd4 b22 fl5 sbd5 b22 fl6 sb6 b22 fl7 sbd7 sh7 sb7 fl9 sbd9 fl10 sbd10 b22 bl)
+   (:text 110 58
+          (228 nil "Del terzo ordine ᴄro.ᴇnar.")
+          (1446 nil "Del quarto ordine ᴄro. Enar."))
+   (:music 2389
+           (:section s24) cclef3 fl0 sbd0 fl1 sbd1 fl2 sbd2 sh2 sb2 fl4 sbd4 b22 fl5 sbd5 sh5 sb5 b22 fl7 sbd7 fl8 sbd8 fl9 sbd9 fh9 sb9 b22
+           (:section s25) cclef3 b22 fl0 sbd0 sh0 sb0 sh1 sb1 sh2 sb2 fl4 sbd4 sh4 sb4 sh5 sb5 fl7 sbd7 sh7 sb7 sh8 sb8 sh9 sb9 bl)
+   (:text 110 58
+          (221 nil "Del terzo ordine ᴄro. Enar.")
+          (1394 nil "ᴅel quarto ordine ᴄro. Enar."))
+   (:music 2388
+           (:section s31) cclef5 b38 fl0 sbd0 sbd1 b22 sbd2 b22 fl3 b22 sbd3 b22 fl4 b22 sbd4 b22 sbd5 b22 fl6 b22 sbd6 b22 fl7 b22 sbd7 b22 sbd8 b22 sbd9 fl10 sbd10 b22
+           (:section s32) cclef5 b22 fl0 sbd0 sh0 sb0 fl2 sbd2 fl3 sbd3 fl4 sbd4 sh4 sb4 fl6 sbd6 fl7 sbd7 sh7 sb7 fl9 sbd9 fl10 sbd10 b22 bl)
+   (:text 110 58
+          (209 nil "Del terzo ordine ᴄro. ᴇnar.")
+          (1392 nil "ᴅel quarto ordine ᴄro. Enar."))
+   (:music 2385
+           (:section s38) cclef7 b38 sbd0 b38 sbd1 b38 sbd2 b38 sbd3 b38 sbd4 b38 sbd5 b22 fl6 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b22 sbd10 b22
+           (:section s39) cclef7 b38 sbd0 b22 fl1 b22 sbd1 b22 fl2 b22 sbd2 b22 sbd3 b22 sbd4 b22 fl5 b22 sbd5 b22 fl6 b22 sbd6 b22 sbd7 b22 fl8 b22 sbd8 fl9 sbd9 fl10 sbd10 bl)
+   (:text 110 58
+          (220 nil "Del terzo ordine ᴄro.Enar.")
+          (1437 nil "ᴅel quarto ordine ᴄro.Enar."))
+   (:music 2368
+           (:section s45) (:f-clef) max5 fclef5 b22 fl0 sbd0 b22 fl1 sbd1 b22 sbd2 b22 fl3 sbd3 b22 fl4 sbd4 b22 sbd5 fl6 sbd6 fl7 sbd7 fl8 sbd8 sbd9 fl10 sbd10
+           (:section s46) (:f-clef) max5 fclef5 b22 fl0 b22 sbd0 sh0 sb0 sh1 sb1 fl3 sbd3 fl4 sbd4 sh4 sb4 fl6 sbd6 fl7 sb7 sh7 sb7 sh8 sb8 fl10 sbd10 bl)
+   (:text 110 58
+          (212 nil "Del terzo ordine ᴄrom.ᴇnar.")
+          (1470 nil "ᴅel quarto ordine ᴄro.Enar."))
    (:music 2369
-           (:section s62) (:f-clef) max9 fclef9 b22 fl0 sb0 b22 fl1 sb1 b22 sbd1 b22 fl3 sb3 b22 fl4 sb4 b22 sbd4 b22 sbd5 b22 fl7 sb7 b22 fl8 sb8 b22 sbd8 sb10 sb10 b22
-           (:section s63) (:f-clef) max9 fclef9 b22 fl0 sb0 b22 fl1 sb1 b22 sb2 b22 sb3 b22 fl4 sb4 b22 fl5 sb5 sb6 b22 fl7 sb7 b22 fl8 sb8 sb9 fl10 sb10 b22 bl)))
+           (:section s52) (:f-clef) max7 fclef7 b22 sbd0 b22 sbd1 b22 sbd2 b22 fl3 b22 sbd3 b22 sbd4 b22 sbd5 b22 fl6 sbd6 b22 sbd7 b22 sdb8 b22 sbd9 fl10 sbd10 b22
+           (:section s53) (:f-clef) max7 fclef7 b22 sbd0 b22 fl1 sbd1 b22 fl2 sbd2 b22 fl3 sbd3 b22 sbd4 b22 fl5 sbd5 b22 fl6 sbd6 b22 sbd7 b22 fl8 sbd8 b22 fl9 sbd9 fl10 sbd10 b22 bl)
+   (:text 110 58
+          (218 nil "Del terzo ordine ᴄro.Enar.")
+          (1454 nil "Del quarto ordine ᴄro. ᴇnar."))
+   (:music 2370
+           (:section s59) (:f-clef) max9 fclef9 b22 fl0 sbd0 fl1 sbd1 sbd2 b22 fl3 sbd3 fl4 sbd4 fl5 sbd5 sh5 sb5 fl7 sbd7 fl8 sbd8 fl9 sbd9 fl10 sbd10 b22
+           (:section s60) (:f-clef) max9 fclef9 fl0 sbd0 b22 sh0 sb0 sh1 sb1 fl3 sbd3 b22 fl4 sbd4 sh4 sb4 sh5 sb5 fl7 sbd7 sh7 sb7 b22 sh8 sb8 fl10 sbd10 bl)
+
+   (:vspace 110)
+   (:music 2358
+           b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b38 b38 b125)
+
+
+   (:vspace 200)
+
+
+   ;; S. 3, fol. 142v, S. 284
+
+   (:text 110 58
+          (176 nil "Quinto ordine nat.Diatonico.")
+          (1393 nil "Seſto ordine nat.ᴅiatonico."))
+   (:music 2389
+           (:section s5) cclef7 b22 b22 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb4 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38
+           (:section s6) (:f-clef) max5 fclef5 b38 sb0 b22 b38 sb1 b38 b22 sb2 b38 b22 sb3 b38 b22 sb4 b38 b22 sb5 b22 b38 sb6 b22 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38 bl)
+   (:text 110 58
+          (211 nil "Quinto ordine ᴄro. ᴇnar.")
+          (1396 nil "Seſto ordine ᴄro.Enar."))
+   (:music 2388
+           (:section s12) gclef3 b22 fl0 sbd0 b22 fl1 sbd1 sbd2 b22 fl3 sbd3 b22 fl4 sbd4 fl5 sbd5 sbd4 fl7 sbd7 b22 fl8 sbd8 b22 sbd9 fl10 sbd10 b22
+           (:section s13) gclef3 b22 fl0 sbd0 fl1 sbd1 sh1 sb1 fl3 sbd3 b22 fl4 sbd4 b22 sh4 sb4 b22 sh5 sb5 fl7 sbd7 fl8 sbd8 sh8 sb8 fl10 sbd10 b22 bl)
+   (:text 110 58
+          (208 nil "Quinto ordine ᴄro.Enar.")
+          (1415 nil "Seſto ordine ᴄro.Enar."))
+   (:music 2382
+           (:section s19) cclef1 b22 b22 fl0 b22 sbd0 b22 sbd1 b22 sbd2 b22 fl3 b22 sbd3 b38 sbd4 b38 sbd5 b22 sbd6 b22 fl7 b22 sbd7 b22 sbd8 b22 sbd9 fl10 sbd10 b38
+           (:section s20) cclef1 b38 fl0 b22 sbd0 b22 sbd1 b22 fl2 sbd2 fl3 sbd3 sbd4 b22 fl5 sbd5 b22 fl6 sbd6 b22 fl7 sbd7 sbd8 fl9 sbd9 fl10 sbd10 b22 bl)
+   (:text 110 58
+          (200 nil "Quinto ordine ᴄro. ᴇnar.")
+          (1391 nil "Seſto ordine ᴄro.Enar."))
+   (:music 2377
+           (:section s26) cclef3 b22 fl0 sbd0 fl1 sbd1 fl2 sbd2 sh2 sb2 fl4 sbd4 b22 fl5 sbd5 b22 sbd6 b22 fl7 sbd7 fl8 sbd8 fl9 sbd9 sh9 sb9 b22
+           (:section s27) cclef3 b38 fl0 sbd0 fl1 sbd1 sh1 sb1 sh2 sb2 fl4 sbd4 sh4 sb4 sh5 sb5 fl7 b22 sbd7 b22 fl8 sbd8 sh8 sb8 b22 sb10 bl)
+   (:text 110 58
+          (207 nil "Quinto ordine ᴄro.Enar.")
+          (1378 nil "Seſto ordine ᴄro. Enar."))
+   (:music 2371
+           (:section s33) cclef5 b38 fl0 b22 sbd0 b22 sbd1 b22 sbd2 b22 fl3 b22 sbd3 b22 fl4 b22 sbd4 b22 sbd5 b22 sbd6 b22 fl7 b22 sbd7 b22 sbd8 b22 sbd9 fl10 sbd10 b38
+           (:section s34) cclef5 b22 fl0 sb0 b22 sbd1 b22 fl2 sbd2 b22 fl3 sbd3 b22 fl4 sbd4 sh4 sb4 fl6 sbd6 fl7 sbd7 sbd8 sh8 sb8 fl10 sbd10 b22 bl)
+   (:text 110 58
+          (211 nil "Quinto ordine ᴄro.ᴇnar.")
+          (1370 nil "Seſto ordine ᴄro.Enar."))
+   (:music 2373
+           (:section s40) cclef7 b22 fl1 sbd1 b22 fl2 b22 sbd2 b22 sbd3 b22 fl4 b22 sbd4 b22 fl5 b22 sbd5 b22 sbd6 b22 fl7 sbd7 b22 fl8 sbd8 fl9 sbd9 sbd10 b22
+           (:section s41) cclef7 b38 sbd0 b22 sbd1 b22 fl2 sbd2 b22 sbd3 b22 sbd4 b22 fl5 b22 sbd5 b22 fl6 b22 sbd6 b22 sbd7 b22 sbd8 b22 fl9 b22 sbd9 b22 sdb10 b22 bl)
+   (:text 110 58
+          (211 nil "Quinto ordine ᴄro.Enar.")
+          (1388 nil "Seſto ordine ᴄro.Enar."))
+   (:music 2366
+           (:section s47) (:f-clef) max5 fclef5 b22 fl0 b22 sbd0 b22 fl1 sbd1 b22 sbd2 b22 fl3 sbd3 b22 fl4 sbd4 b22 sbd5 b22 sbd6 fl7 sbd7 fl8 sbd8 sbd9 fl10 sbd10 b38
+           (:section s48) (:f-clef) max5 fclef5 b22 fl0 sbd0 fl1 sbd1 sh1 sb1 fl3 sbd3 fl4 sbd4 sh4 sb4 fl6 sbd6 fl7 sbd7 fl8 sbd8 sh8 sb8 fl10 sbd10 bl)
+   (:text 110 58
+          (219 nil "Quinto ordine ᴄrom.ᴇnar.")
+          (1433 nil "Seſto ordine ᴄro.Enar."))
+   (:music 2373
+           (:section s54) (:f-clef) max7 fclef7 b22 b22 sbd0 b22 sbd1 b22 sbd2 b22 fl3 b22 sbd3 b22 sbd4 b22 sdb5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 fl10 sbd10 b38
+           (:section s55) (:f-clef) max7 fclef7 b22 sbd0 b22 sbd1 b22 fl2 b22 sbd2 b22 fl3 b22 sbd3 b22 sbd4 b22 fl5 b22 sbd5 b22 fl6 sbd6 b22 sbd7 b22 sbd8 b22 fl9 sbd9 fl10 sbd10b22 bl)
+   (:text 110 58
+          (215 nil "Quinto ordine ᴄro. Enar.")
+          (1391 nil "Seſto ordine ᴄro.ᴇnar."))
+   (:music 2370
+           (:section s61) (:f-clef) max9 fclef9 b22 fl0 sbd0 b22 fl1 sbd1 sbd2 sbd3 b22 fl4 sbd4 b22 fl5 sbd5 fl6 sbd6 fl7 sbd7 fl8 sbd8 fl9 sbd9 fl10 sbd1' b38
+           (:section s62) (:f-clef) max9 fclef9 fl0 sbd0 b22 fl1 sbd1 sh1 sb1 fl3 sbd3 b22 fl4 sbd4 sh4 sb4 sh5 sb5 fl7 sbd7 b22 fl8 sbd8 sh8 sb8 fl10 sbd10 bl)
+   (:vspace 110)
+   (:music 2359
+           b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b38 b38 b125)
+
+
+   (:vspace 200)
+
+
+   ;; S. 4, fol. 143r, S. 285
+
+   (:text 110 58
+          (185 nil "Settimo ordine Diatonico naturale."))
+   (:music 1248
+           (:section s7) (:f-clef) max7 fclef7 b38 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 fl10 sb10 b38 b38 b22 bl)
+   (:text 110 58
+          (214 nil "Settimo ordine ᴄromatico Enar."))
+   (:music 1249
+           (:section s14) gclef3 b22 fl0 b22 sbd0 b22 fl1 b22 sbd1 b22 sbd2 b22 sbd3 b22 fl4 sbd4 b22 fl5 sbd5 sbd6 b22 fl7 sbd7 b22 fl8 sbd8 b22 sbd9 fl10 sb10 b22 bl)
+   (:text 110 58
+          (218 nil "Settimo ordine ᴄromatico Enar."))
+   (:music 1242
+           (:section s19) cclef1 b22 fl0 b22 sbd0 b38 sbd1 b38 sbd2 b38 sbd3 b38 sbd4 b38 sbd5 b38 sbd6 b22 fl7 sbd7 b38 sbd8 b38 sbd9 fl10 sbd1' b38 bl)
+   (:text 110 58
+          (218 nil "Settimo ordine ᴄromatico Enar."))
+   (:music 1239
+           (:section s26) cclef3 b22 fl0 b22 sbd0 b22 fl1 b22 sbd1 b22 fl2 sbd2 sbd3 b22 fl4 sbd4 fl5 sbd5 sbd6 b22 fl7 sbd7 fl8 sbd8 fl9 sbd9 sh9 sb9 b22 bl)
+   (:text 110 58
+          (211 nil "Settimo ordine ᴄromatico Enar."))
+   (:music 1229
+           (:section s33) cclef5 b38 fl0 b38 sbd0 b38 sbd1 b22 sbd2 b22 sbd3 b22 fl4 b22 sbd4j b22 sbd5 b22 sbd6 b22 fl7 b22 sbd7 b22 sbd8 b22 sbd9 fl10 sbd10 b38 bl)
+   (:text 110 58
+          (211 nil "Settimo ordine ᴄromatico Enar."))
+   (:music 1237
+           (:section s40) cclef7 b22 fl0 b22 sbd0 b22 fl1 b22 sbd1 fl2 sbd2 sbd3 fl4 sbd4 fl5 sbd5 b22 fl6 sbd6 sh6 sb6 fl8 sb8 fl9 sb9 sh9 sb9 b38 bl)
+   (:text 110 58
+          (210 nil "Settimo ordine ᴄromatico Enar."))
+   (:music 1243
+           (:section s47) (:f-clef) max5 fclef5 b38 fl0 b22 sbd0 b22 fl1 b22 sbd1 b22 sbd2 b22 sbd3 b22 fl4 sbd4 sbd5 sbd6 b22 fl7 sbdu b22 fl8 sbd8 sbd9 fl10 sbd10 b22 bl)
+   (:text 110 58
+          (187 nil "Settimo ordine ᴄromatico Enar."))
+   (:music 1231
+           (:section s54) (:f-clef) max7 fclef7 b22 fl1 b22 sbd1 b22 fl2 sbd2 b22 fl3 sbd3 b22 sbd4 b22 fl5 sbd5 b22 fl6 sbd6 sbd7 b22 fl8 sbd8 b22 fl9 sbd9 fl10 sbd10 b22 bl)
+   (:text 110 58
+          (222 nil "Settimo ordine ᴄromatico Enar."))
+   (:music 1228
+           (:section s61) (:f-clef) max9 fclef9 b22 fl0 b22 sbd0 b22 fl1 b22 sbd1 b22 sbd2 sbd3 b22 fl4 sbd4 b22 fl5 sbd5 sbd6 b22 fl7 sbd7 b22 fl8 sbd8 sbd9 fl10 sb10 b22 bl)))
