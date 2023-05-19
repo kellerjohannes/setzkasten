@@ -741,8 +741,8 @@
   (format nil "~
 ~{~6,0t\\line {
 ~8,0t\\center-align { \\fontsize#2 ~a }
-~6,0t}~}" (mapcar (lambda (textline)
-                    (format t "~&line: ~a" textline)
+~6,0t}
+~}" (mapcar (lambda (textline)
                     (generate-formatted-text (split-formatted-string textline)))
                   (split-string-to-list text-string "\\"))))
 
@@ -852,10 +852,7 @@ dot = {
 ~8,0t\\vspace #1
 ~4,0t}~}
 ~4,0t\\null~]
-~@[~4,0t\\line {
-~6,0t\\center-align
-~6,0t\\fontsize#2 { ~a }
-~4,0t}
+~@[~a
 ~4,0t\\null~]
 ~4,0t\\line {
 ~{~a ~&~}
@@ -869,7 +866,8 @@ dot = {
                (if (null (first line-list))
                    nil
                    line-list))
-             (line-heading (first (sections score)))
+             (when (line-heading (first (sections score)))
+               (generate-multiline-line-heading (line-heading (first (sections score)))))
              (mapcar (lambda (section)
                        (generate-section-ly-code section
                                                  backend
