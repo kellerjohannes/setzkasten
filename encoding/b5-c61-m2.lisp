@@ -1,0 +1,52 @@
+`((:header
+   (:filename "b5-c61-m2")
+   (:alt-name "m5.097")
+   (:comment "q021_s287, rotation: 0.53, origin: 471")
+   (:creator "Vicentino21 / Johannes Keller")
+   (:title "Questi sono toni minori accidentali composti di due semitoni minori,\\o di uno semitono maggiore, & di uno diesis minore\\che sono di proportione sesquiduodecima,\\come sono da 12 a 13")
+   (:section-captions
+    (s1 "Tono\\minore\\accidentale")
+    (s2 "Tono\\minore\\accidentale")
+    (s3 "Tono\\minore\\accidentale")
+    (s4 "Tono\\minore\\accidentale")
+    (s5 "Tono\\minore\\accidentale")
+    (s6 "Tono\\minore\\accidentale")
+    (s7 "Tono\\minore\\accidentale")
+    (s8 "Tono\\minore\\accidentale")))
+  (:preamble-type-imitation
+   (:width nil)
+   (:height nil)
+   (:background ,*score-bg-color*))
+  (:data
+   (:text 70 58
+          (97 2104 "Queſti ſono toni minori accidentali cōpoſti di due ſemitoni minore,ò di uno ſemitono mag"))
+   (:text 90 58
+          (0 2152 "giore,& di uno ᴅieſis mi.che ſono di proportione ſeſquiduodecima,come ſono da 12. à 13."))
+   (:text 90 58
+          (64 nil "Tono min.")
+          (437 nil "to.min.")
+          (687 nil "to.min.")
+          (943 nil "to.min.")
+          (1200 nil "to.min.")
+          (1450 nil "to.min.")
+          (1706 nil "to.min.")
+          (1953 nil "to.min."))
+   (:music 2192
+           (:voice v1)
+           (:section s1) cclef7 b22 fl5 sb5 sh5 sb5 b22 bl
+           (:section s2) b22 fl8 b22 sb8 sh8 sb8 b22 bl
+           (:section s3) b22 sh6 sb6 fl8 sb8 b22 bl
+           (:section s4) b22 sb4 b22 (:alt (:diplomatic fl4) (:idealised fl5)) b22 sbd5 b22 bl
+           (:section s5) b22 sb5 b22 b22 sbd4 b22 b22 bl
+           (:section s6) b22 fl5 sbd5 fl6 sb6 b22 bl
+           (:section s7) b22 sh4 sb4 sbd5 b22 bl
+           (:section s8) b22 sh4 sb4 fl4 sb4 b22 bl)
+   (:text 70 58
+          (143 nil "accid.")
+          (416 nil "accid.")
+          (684 nil "accid.")
+          (947 nil "accid.")
+          (1215 nil "accid.")
+          (1471 nil "accid.")
+          (1731 nil "accid.")
+          (1998 nil "accid."))))
