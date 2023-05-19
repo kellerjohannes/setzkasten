@@ -485,6 +485,9 @@
   (:note sbd9 :semibrevis 9 :dot)
   (:note sbd10 :semibrevis 10 :dot)
 
+  (:note sbdc5 :semibrevis 5 :dot-comma)
+  (:note sbdc6 :semibrevis 6 :dot-comma)
+
   ;; (:note sbdr0 :semibrevis 0 :dot)
   ;; (:note sbdr1 :semibrevis 1 :dot)
   ;; (:note sbdr2 :semibrevis 2 :dot)

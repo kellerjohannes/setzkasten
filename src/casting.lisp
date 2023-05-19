@@ -255,15 +255,29 @@
     (let* ((center-x (calculate-x-pos stencil))
            (center-y (calculate-y-position stencil))
            (width (* (size (dot-component stencil))
-                     (distance-between-lines (staff-component stencil)))))
-      (push (if (eq (shape (dot-component stencil)) :dot)
-                (draw-dot center-x center-y width (ink-color stencil))
-                (draw-comma center-x center-y
+                     (distance-between-lines (staff-component stencil))))
+           (shape (shape (dot-component stencil))))
+      (when (eq shape :dot)
+        (push (draw-dot center-x center-y width (ink-color stencil)) (svg-data stencil)))
+      (when (eq shape :comma)
+        (push (draw-comma center-x center-y
                             (size (dot-component stencil))
-                            (ink-color stencil)))
-            (svg-data stencil))))
+                            (ink-color stencil))
+              (svg-data stencil)))))
   (call-next-method))
 
+
+(defmethod cast ((stencil glyph-notehead-dot-comma))
+  "Generates SVG data for an enharmonic dot above a notehead."
+  (when (dot-component stencil)
+    (push (draw-comma (calculate-x-pos stencil)
+                      (- (calculate-absolute-staff-position stencil 10)
+                         (* (distance-between-lines (staff-component stencil))
+                            (comma-offset stencil)))
+                      (size (comma-component stencil))
+                      (ink-color stencil))
+          (svg-data stencil)))
+  (call-next-method))
 
 
 ;;; stem

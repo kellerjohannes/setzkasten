@@ -192,6 +192,11 @@
   (dot-component nil "Instance of component-dot. If nil, no dot will be generated.")
   (dot-staff-position-correction nil "nil if standard behaviour is requested, otherwise vertical correction of staffposition."))
 
+(define-setzkasten-class glyph-notehead-dot-comma (glyph-notehead-dot)
+  "Specification for the casting of an enharmonic dot and a comma, as a subcomponent of a notehead."
+  (comma-component nil "Instance of component-comma.")
+  (comma-offset 1 "Vertical offset of comma above the staff."))
+
 (define-setzkasten-class glyph-notehead-stem (glyph-notehead-dot)
   "Specification for the casting of a note stem, as a subcomponent of a notehead with an optional enharmonic dot."
   (stem-component nil "Instance of component-stem. If nil, no stem will be generated.")
