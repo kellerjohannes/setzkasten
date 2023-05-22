@@ -216,6 +216,7 @@
   (glyph-rest brrest2 "brevis-rest-2" "stave" "brevis-rest" 20 ,*glyph-height* 3 :down)
   (glyph-rest brrest4 "brevis-rest-4" "stave" "brevis-rest" 20 ,*glyph-height* 5 :down)
   (glyph-rest brrest6 "brevis-rest-6" "stave" "brevis-rest" 20 ,*glyph-height* 7 :down)
+  (glyph-rest brrest8 "brevis-rest-8" "stave" "brevis-rest" 20 ,*glyph-height* 9 :down)
   (glyph-rest lrest24 "longa-rest-2-4" "stave" "longa-rest" 20 ,*glyph-height* 1 :up)
   (glyph-rest lrest46 "longa-rest-4-6" "stave" "longa-rest" 20 ,*glyph-height* 3 :up)
   (glyph-rest lrest68 "longa-rest-6-8" "stave" "longa-rest" 20 ,*glyph-height* 5 :up)
