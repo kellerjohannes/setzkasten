@@ -623,8 +623,10 @@
 (defparameter *dict-ly-meter-signatures*
   '(((:semicircle nil :cut) "\\override Score.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural22\")" "4/2")
     ((:semicircle nil nil) "\\override Score.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural44\")" "4/2")
+    ((:semicircle :dot nil) "\\override Score.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural64\")" "9/2")
     ((:circle nil :cut) "\\override Score.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural32\")" "3/1")
     ((:circle nil nil) "\\override Score.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural32\")" "6/1")
+    ((:circle :dot nil) "\\override Score.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural94\")" "9/1")
     ((:meter-override "2/2" nil) "\\once \\override Score.TimeSignature.stencil = ##f" "2/2")))
 
 (defun generate-ly-meter (meter-description)

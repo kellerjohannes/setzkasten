@@ -223,6 +223,7 @@
   (glyph-meter met-perf-min "meter-perfectum-minor" "stave" "tempus-perfectum" nil nil 68 ,*glyph-height*)
   (glyph-meter met-perf-maj "meter-perfectum-major" "stave" "tempus-perfectum" "prolatio-major" nil 68 ,*glyph-height* 0)
   (glyph-meter met-perf-min-dim "meter-perfectum-minor-diminutum" "stave" "tempus-perfectum" nil "diminutum" 68 ,*glyph-height* 0 -0.1 -0.4)
+  (glyph-meter met-imperf-maj "meter-imperfectum-major" "stave" "tempus-imperfectum" "prolatio-major" nil 68 ,*glyph-height* 0 -0.1 -0.4)
   (glyph-meter met-imperf-min "meter-imperfectum-minor-diminutum" "stave" "tempus-imperfectum" nil nil 68 ,*glyph-height* 0 -0.1 -0.4)
   (glyph-meter met-imperf-min-dim "meter-imperfectum-minor-diminutum" "stave" "tempus-imperfectum" nil "diminutum" 68 ,*glyph-height* 0 -0.1 -0.4)
   (glyph-digit-arc met-3-2 "meter-digits-3-2" "stave" ("digit-arc-3" "digit-arc-3" "digit-arc-2") (5 5 1) (:up :down :up) 41 ,*glyph-height*)

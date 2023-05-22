@@ -677,5 +677,7 @@
 (defparameter *meter-signatures*
   '((met-perf-min-dim :circle nil :cut)
     (met-perf-min :circle nil nil)
+    (met-perf-maj :circle :dot nil)
+    (met-imperf-maj :semicircle :dot nil)
     (met-imperf-min-dim :semicircle nil :cut)
     (met-imperf-min :semicircle nil nil)))
