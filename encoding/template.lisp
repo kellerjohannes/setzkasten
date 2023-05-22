@@ -19,12 +19,12 @@
    (:background ,*score-bg-color*))
   (:data
    (:text 70 58
-     (0 nil "")
-     )
+          (0 nil "")
+          )
    (:music nil
            (:voice v1)
            (:section s1)
            )
    (:text 70 58
-     (0 nil "")
-     )))
+          (0 nil "")
+          )))

@@ -162,6 +162,7 @@
                         (make-rest (generate-object-id (object-id-counter parser-state))
                                    duration
                                    dottedp
+                                   (duration-override parser-state)
                                    (clef parser-state)
                                    (key-signature parser-state)
                                    (divider-flag parser-state)
@@ -386,6 +387,7 @@
   (:note max6 :maxima 6)
   (:note max7 :maxima 7)
   (:note longa1 :longa 1)
+  (:note longa4 :longa 4)
   (:note longa5 :longa 5)
   (:note longa7 :longa 7)
   (:note longa8 :longa 8)
@@ -625,6 +627,7 @@
   (:note scr4 :semicroma 4)
   (:note scr6 :semicroma 6)
   (:note scr7 :semicroma 7)
+  (:rest maxrest246 :maxima)
   (:rest lrest24 :longa)
   (:rest lrest46 :longa)
   (:rest lrest68 :longa)
@@ -673,4 +676,6 @@
 
 (defparameter *meter-signatures*
   '((met-perf-min-dim :circle nil :cut)
-    (met-imperf-min-dim :semicircle nil :cut)))
+    (met-perf-min :circle nil nil)
+    (met-imperf-min-dim :semicircle nil :cut)
+    (met-imperf-min :semicircle nil nil)))

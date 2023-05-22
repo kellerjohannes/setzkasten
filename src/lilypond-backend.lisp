@@ -551,7 +551,9 @@
                   (:dashed "\\bar \"!\"")
                   (:dotted "\\bar \";\"")
                   (:double "\\bar \"||\""))))
-      (format nil "r~a" (value->ly-duration note-value))))
+      (format nil "r~a~@[~a~]"
+              (value->ly-duration note-value)
+              (if duration-override (format nil "*~a" duration-override)))))
 
 (defmethod clef->ly-clef ((backend lilypond-backend) clef)
   "Clef is '(type . position), `type' is :c, :f or :g, `position' is 0-10. Set `modernp' to T to get modern key equivalents."
@@ -620,7 +622,9 @@
 
 (defparameter *dict-ly-meter-signatures*
   '(((:semicircle nil :cut) "\\override Score.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural22\")" "4/2")
-    ((:circle nil :cut) "\\override Score.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural34\")" "3/1")
+    ((:semicircle nil nil) "\\override Score.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural44\")" "4/2")
+    ((:circle nil :cut) "\\override Score.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural32\")" "3/1")
+    ((:circle nil nil) "\\override Score.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural32\")" "6/1")
     ((:meter-override "2/2" nil) "\\once \\override Score.TimeSignature.stencil = ##f" "2/2")))
 
 (defun generate-ly-meter (meter-description)

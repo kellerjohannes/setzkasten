@@ -234,12 +234,13 @@
                           :ligature ligature
                           :divider divider))
 
-(defmethod make-rest (id value dottedp clef key-signature divider meter)
+(defmethod make-rest (id value dottedp duration-override clef key-signature divider meter)
   "Instanciates a `mobject' representing a rest (not a note)."
   (make-instance 'mobject :id id
                           :pitch nil
                           :value value
                           :dottedp dottedp
+                          :duration-override duration-override
                           :meter meter
                           :clef clef
                           :key-signature key-signature
