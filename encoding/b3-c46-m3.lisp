@@ -22,7 +22,7 @@
           (115 nil "terza Ɋuinta")
           (707 nil "terza Quinta")
           (1475 nil "terza Ɋuinta"))
-   (:music nil
+   (:music 2204
            (:voice v1)
            (:section s1) cclef7 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 bl
            (:section s2) b38 sb3 b38 fl4 b22 sb4 b22 sb4 b38 fl5 b38 sb5 b38 sb5 b38 sb7 b38 bl

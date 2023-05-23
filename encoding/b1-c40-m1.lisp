@@ -4,8 +4,6 @@
    (:comment "")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Essempio de salti de quinte accidentali incomposti")
-   (:section-headings
-    (s1 ""))
    (:section-captions
     (s1 "salto di quinta\\accidentale\\incomposto")
     (s2 "salto di quinta\\accidentale\\incomposto")
@@ -13,9 +11,7 @@
     (s4 "salto di quinta\\accidentale\\incomposto")
     (s5 "salto di quinta\\accidentale\\incomposto")
     (s6 "salto di quinta\\accidentale\\incomposto")
-    (s7 "salto di quinta\\accidentale\\incomposto"))
-   (:voice-labels
-    (:all v1 "")))
+    (s7 "salto di quinta\\accidentale\\incomposto")))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)
@@ -23,8 +19,7 @@
   (:data
    (:text 120 58
           (465 1267 "ᴇſſempio de ꜱalti de Ɋuinte accidentali, incompoſti."))
-   (:music nil
-           ;; width needed?
+   (:music 2220
            (:voice v1)
            (:section s1)
            cclef7 sh1 b27 sb1 b22 sh5 b27 sb5 bl

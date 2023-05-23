@@ -14,7 +14,7 @@
    (:height nil)
    (:background ,*score-bg-color*))
   (:data
-   (:music nil
+   (:music 731
            (:voice v1)
            (:section s1)
            (:f-clef) max7 fclef7 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb5 b22 sb4 b22 sb3 b38 bl)))

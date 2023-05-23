@@ -77,7 +77,7 @@
           (829 nil "Ɋuinta.")
           (1109 nil "Le quattro seſte.")
           (1915 nil "ᴏttaua."))
-   (:music nil
+   (:music 2237
            (:voice v1)
            (:section s5) (:newline) cclef7 b38 b38 sb6 b38 b38 (:divider :regular) sbd6 b38 b38 bl
            b38 sh6 b38 sb6 b38 sb7 b38 bl
@@ -88,7 +88,7 @@
    (:text 70 58
           (288 nil "con le ſue propinque.")
           (1431 nil "con le ſue propinque."))
-   (:music nil
+   (:music 2234
            (:voice v2)
            (:section s5) cclef7 b38 sh4 b22 sb4 b38 sh4 sb4 b38 bl
            b22 sh4 b22 sb4 b22 sh4 b22 sb4 b22 bl

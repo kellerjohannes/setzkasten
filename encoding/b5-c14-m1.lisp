@@ -44,7 +44,7 @@
           (1524 nil "Ɋuīta.")
           (1733 nil "Le 4.seſte.")
           (2100 nil "8."))
-   (:music nil
+   (:music 2233
            (:voice v1)
            (:section s1) cclef7 b22 sb4 b22 (:divider :regular) sb4 b22 b22 bl
            b22 sb4 b22 sb4 b22 bl
