@@ -550,7 +550,8 @@
                   (:regular "\\bar \"|\"")
                   (:dashed "\\bar \"!\"")
                   (:dotted "\\bar \";\"")
-                  (:double "\\bar \"||\""))))
+                  (:double "\\bar \"||\"")
+                  (:repeat "\\bar \":|.|:\""))))
       (format nil "r~a~@[~a~]"
               (value->ly-duration note-value)
               (if duration-override (format nil "*~a" duration-override)))))

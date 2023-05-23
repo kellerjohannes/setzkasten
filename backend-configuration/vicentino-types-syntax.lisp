@@ -176,9 +176,9 @@
     (glyph-width 50)
     (glyph-height 1500)
     (notehead-position 5)
-    (stem-direction :up))
-   ((dot-above-staff nil)
-    (dot-above-staff-offset 0)
+    (stem-direction :up)
+    (dot-above-staff nil))
+   ((dot-above-staff-offset 0)
     (dot-above-stem-offset 0)
     (dot-alignment :center)))
   (glyph-rest
