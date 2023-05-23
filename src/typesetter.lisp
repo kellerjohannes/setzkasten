@@ -150,7 +150,8 @@
                              (+ y-counter (third text-data))
                              (third text-element)
                              *font-height*
-                             (second text-element))
+                             (second text-element)
+                             :rotation (if (eq (fourth text-element) :upside-down) 180 0))
                 (svg-use-container score)))
         (rest (rest (rest text-data))))
   (second text-data))

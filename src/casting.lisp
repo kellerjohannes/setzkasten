@@ -256,7 +256,7 @@
                    `((m ,a) (l ,b) (l ,c) (l ,d) (c))))))
 
 (defun draw-comma (center-x center-y size color)
-  (output-text center-x center-y "," size nil color t))
+  (output-text center-x center-y "," size nil :color color :h-center t))
 
 (defmethod cast ((stencil glyph-notehead-dot))
   "Generates SVG data for an enharmonic dot above a notehead."
@@ -619,9 +619,9 @@
                      "G"
                      (font-size (clef-component stencil))
                      nil
-                     "black"
-                     t
-                     t)
+                     :color "black"
+                     :h-center t
+                     :v-center t)
         (svg-data stencil))
   (call-next-method))
 

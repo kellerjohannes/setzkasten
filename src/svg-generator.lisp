@@ -82,11 +82,12 @@
 
 ;; TODO extract attributes to function
 (defun output-text (x y text-string font-size text-length
-                    &optional (color "black") (h-center nil) (v-center nil))
+                    &key (color "black") (h-center nil) (v-center nil) (rotation 0))
   "`text-length' can be nil, then the argument will be ommited."
-  (format nil "<text x=\"~a\" y=\"~a\" font-size=\"~a\" text-anchor=\"~a\" alignment-baseline=\"~a\"~@[ textLength=\"~a\" ~] font-weight=\"normal\" font-family=\"Times, serif\" font-style=\"normal\" stroke=\"~a\" fill=\"~a\">~a</text>"
+  (format nil "<text transform=\"translate(~a,~a) rotate(~a)\" font-size=\"~a\" text-anchor=\"~a\" alignment-baseline=\"~a\"~@[ textLength=\"~a\" ~] font-weight=\"normal\" font-family=\"Times, serif\" font-style=\"normal\" stroke=\"~a\" fill=\"~a\">~a</text>"
       x
       y
+      rotation
       font-size
       (if h-center "middle" "left")
       (if v-center "middle" "baseline")
