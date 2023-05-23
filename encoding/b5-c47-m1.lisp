@@ -140,7 +140,7 @@
            (:section s23) b38 sbd8 b38 b22 sbd7 b38 b22 bl
            (:section s24) b38 sbd7 b38 b22 sbd6 b38 bl
            (:section s25) b38 b22 sbd6 b22 b38 sbd5 b38 bl
-           (:section s26) b38 d5 b38 b22 sbd4 b38 b22 bl
+           (:section s26) b38 sbd5 b38 b22 sbd4 b38 b22 bl
            (:section s27) b38 sbd4 b22 b38 sbd3 b22 b22 bl
            (:section s28) b38 b22 sbd3 b22 b38 sbd2 b22 b22 bl
            )
