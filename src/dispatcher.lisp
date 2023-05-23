@@ -524,10 +524,16 @@
 
     ;; Hier ist der rotierte Text in der Normalisierung noch nicht geklärt
     ;; ("b4-c37-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ("b4-c37-m1" "b" (:idealised) ,*vicentino-types-backend*)
-    ("b4-c37-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
+    ;; ("b4-c37-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ;; ("b4-c37-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
     ;; ("b4-c37-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
     ;; ("b4-c37-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
+
+    ;; ("b4-c38-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b4-c38-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b4-c38-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
+    ;; ("b4-c38-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
+    ;; ("b4-c38-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
    ))
 
 (defparameter *book5-original*

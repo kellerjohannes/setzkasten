@@ -122,7 +122,8 @@
 
 (defmethod left-margin ((score typesetter)) (fourth (margins score)))
 
-(defmethod typeset-music-line ((score typesetter) line line-width alignment y-counter)
+(defmethod typeset-music-line ((score typesetter) line line-width alignment y-counter
+                               &key (y-offset 0))
   (let ((x-counter (left-margin score))
         (padding (if (eq alignment :block)
                      (/ (if line-width
@@ -134,12 +135,12 @@
             (unless (svg-data stencil)
               (cast stencil)
               (push (svg-data stencil) (svg-symbol-container score)))
-            (push (output-use (id stencil) :x x-counter :y y-counter)
+            (push (output-use (id stencil) :x x-counter :y (+ y-offset y-counter))
                   (svg-use-container score))
             ;;(format t "~&x: ~a" x-counter)
             (incf x-counter (+ padding (glyph-width stencil))))
           (reverse (rest (rest line)))))
-  (glyph-height (third line)))
+  (+ (glyph-height (third line)) y-offset))
 
 (defparameter *font-height* 0 "Needs to be set when defining scores.")
 
@@ -158,13 +159,16 @@
 
 (defmethod typeset ((score typesetter) alignment)
   (let ((y-counter (top-margin score)))
-    (mapc (lambda (line line-width)
-            (incf y-counter
-                  (case (first line)
-                    (:text (typeset-text-line score line y-counter))
-                    (:vspace (second line))
-                    (:music (typeset-music-line score line line-width alignment y-counter))
-                    (otherwise 0))))
+    (mapc (lambda (line width-and-offset)
+            (let ((line-width (if (listp width-and-offset) (first width-and-offset) width-and-offset))
+                  (y-offset (if (listp width-and-offset) (second width-and-offset) 0)))
+              (incf y-counter
+                    (case (first line)
+                      (:text (typeset-text-line score line y-counter))
+                      (:vspace (second line))
+                      (:music (typeset-music-line score line line-width alignment y-counter
+                                                  :y-offset y-offset))
+                      (otherwise 0)))))
           (reverse (line-container score))
           (reverse (line-width-list score)))))
 
@@ -179,7 +183,10 @@
                    :key (lambda (line)
                           (case (first line)
                             (:text (second line))
-                            (:music (glyph-height (third line)))
+                            (:music (+ (glyph-height (third line))
+                                       (if (listp (second line))
+                                           (second (second line))
+                                           0)))
                             (:vspace (second line))
                             (otherwise 0))))))))
 
@@ -201,9 +208,12 @@
            (loop for line in (line-container score)
                  maximize (case (first line)
                             (:text (calculate-text-width line))
-                            (:music (if (second line)
-                                        (second line)
-                                        (calculate-glyph-width line)))
+                            (:music (let ((line-width (if (listp (second line))
+                                                          (first (second line))
+                                                          (second line))))
+                                      (if line-width
+                                          line-width
+                                          (calculate-glyph-width line))))
                             (otherwise 0)))))))
 
 (defmethod write-score ((score typesetter))
