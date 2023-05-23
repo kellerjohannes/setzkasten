@@ -66,7 +66,7 @@
   (setf (f-clef-flag parser-state) nil))
 
 (defmethod set-duration-override ((parser-state parser-state) override)
-  (setf (duration-override parser-state) override))
+  (setf (duration-override parser-state) (if (= override 1) nil override)))
 
 (defmethod set-ligature-flag ((parser-state parser-state) data)
   (setf (ligature-flag parser-state) data))
