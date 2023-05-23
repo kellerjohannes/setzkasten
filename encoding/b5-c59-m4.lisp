@@ -97,9 +97,8 @@
            (:section s15) (:newline) cclef1 b22 fl0 b22 sb0 b22 sb1 b22 fl2 b22 sb2 b22 fl3 b22 sb3 b22 sb4 b22 sb5 b22 fl6 sb6 b22 fl7 sb7 sb8 b22 fl9 sb9 fl10 sb10 bl)
    (:text 110 58
      (179 nil "Primo ordine Cromatico & ᴇnar."))
-   ;; Achtung, Hilfslinie muss implementiert werden!
    (:music 1178
-           (:section s22) (:newline) cclef3 b38 fl0 sb0 b22 fl1 sb1 sbd1 sbd2 b22 fl4 sb4 b22 fl5 sb5 b22 sbd5 b22 fl7 sb7 fl8 sb8 b22 sbd8 sbd9 fl10 sb10)
+           (:section s22) (:newline) cclef3 b38 fl0 sb0 b22 fl1 sb1 sbd1 sbd2 b22 fl4 sb4 b22 fl5 sb5 b22 sbd5 b22 fl7 sb7 fl8 sb8 b22 sbd8 sbd9 fl11 sb11 bl)
    (:text 110 58
      (268 nil "Primo ordine ᴄromatico ᴇnar."))
    (:music 1157

@@ -19,8 +19,8 @@
    (meter :initform nil
           :accessor meter
           :documentation "This contains a list with three symbols, the first being :circle or :semicircle, the second being :dot or nil and the third being :cut or nil.")
-   (section-id :initform nil
-               :accessor section-id
+   (section-ids :initform nil
+               :accessor section-ids
                :documentation "This symbol carries the current section id, it is used to direct score information into the correct `section' instance.")
    (voice-id :initform nil
              :accessor voice-id
@@ -31,6 +31,9 @@
    (divider-flag :initform nil
                  :accessor divider-flag
                  :documentation "Registers divider-information in the score encoding data, so that the mobject slot `divider' can be set for the next note accordingly.")
+   (segno-flag :initform nil
+               :accessor segno-flag
+               :documentation "Registers a 'segno'-sign belonging to a note, will be transferred into the `mobject'.")
    (ligature-flag :initform nil
                   :accessor ligature-flag
                   :documentation "List representing the information inside a ligature definition, the first and second elements are the chromatic alteration at the beginning or the end of a ligature, the third and fourth elements are the enharmonic alteration.")
@@ -80,6 +83,12 @@
 
 (defmethod reset-divider-flag ((parser-state parser-state))
   (setf (divider-flag parser-state) nil))
+
+(defmethod reset-segno-flag ((parser-state parser-state))
+  (setf (segno-flag parser-state) nil))
+
+(defmethod set-segno-flag ((parser-state parser-state))
+  (setf (segno-flag parser-state) t))
 
 (defmethod set-line-headings ((parser-state parser-state) heading-list)
   (setf (line-headings parser-state) heading-list))
@@ -134,39 +143,46 @@
 
 (defmethod add-note ((score score) (parser-state parser-state) duration dottedp staff-position enharmonic-dot)
   "Create an instance of `mobject' and add it to the `score'. `duration' as keywords (:brevis, :semibrevis, etc.), `dottedp' is T if there is a rhythmic dot ahead, `enharmonic-dot' can be nil, :dot or :comma."
-  (add-mobject-to-score score
-                        (section-id parser-state)
-                        (voice-id parser-state)
-                        (multiple-value-bind (lettera chromatic-accidental octave)
-                            (parse-pitch parser-state staff-position)
-                          (make-note (generate-object-id (object-id-counter parser-state))
-                                     lettera
-                                     chromatic-accidental
-                                     enharmonic-dot
-                                     octave
-                                     duration
-                                     dottedp
-                                     (duration-override parser-state)
-                                     (clef parser-state)
-                                     (key-signature parser-state)
-                                     (ligature-flag parser-state)
-                                     (divider-flag parser-state)
-                                     (meter parser-state))))
-  (reset-divider-flag parser-state))
+  (mapc (lambda (section-id)
+          (add-mobject-to-score score
+                                section-id
+                                (voice-id parser-state)
+                                (multiple-value-bind (lettera chromatic-accidental octave)
+                                    (parse-pitch parser-state staff-position)
+                                  (make-note (generate-object-id (object-id-counter parser-state))
+                                             lettera
+                                             chromatic-accidental
+                                             enharmonic-dot
+                                             octave
+                                             duration
+                                             dottedp
+                                             (duration-override parser-state)
+                                             (clef parser-state)
+                                             (key-signature parser-state)
+                                             (ligature-flag parser-state)
+                                             (divider-flag parser-state)
+                                             (segno-flag parser-state)
+                                             (meter parser-state)))))
+        (section-ids parser-state))
+
+  (reset-divider-flag parser-state)
+  (reset-segno-flag parser-state))
 
 
 (defmethod add-rest ((score score) (parser-state parser-state) duration dottedp)
-  (add-mobject-to-score score
-                        (section-id parser-state)
-                        (voice-id parser-state)
-                        (make-rest (generate-object-id (object-id-counter parser-state))
-                                   duration
-                                   dottedp
-                                   (duration-override parser-state)
-                                   (clef parser-state)
-                                   (key-signature parser-state)
-                                   (divider-flag parser-state)
-                                   (meter parser-state)))
+  (mapc (lambda (section-id)
+          (add-mobject-to-score score
+                                section-id
+                                (voice-id parser-state)
+                                (make-rest (generate-object-id (object-id-counter parser-state))
+                                           duration
+                                           dottedp
+                                           (duration-override parser-state)
+                                           (clef parser-state)
+                                           (key-signature parser-state)
+                                           (divider-flag parser-state)
+                                           (meter parser-state))))
+        (section-ids parser-state))
   (reset-divider-flag parser-state))
 
 (defmacro configure-parser (glyph-list)
@@ -212,9 +228,10 @@
     (when (member item note-list) (return nil))))
 
 (defmethod dump-bracket-info ((score score) (parser-state parser-state))
-  (set-section-bracket* score (section-id parser-state)
-                        (cdr (assoc (section-id parser-state)
-                                    (bracket-configuration parser-state)))))
+  (mapc (lambda (section-id)
+          (set-section-bracket* score section-id
+                                (cdr (assoc section-id (bracket-configuration parser-state)))))
+        (section-ids parser-state)))
 
 (defmethod process-music ((score score) (parser-state parser-state) music-data)
   "Process a :music field in the score encoding data, element by element. Populate the `score' instance."
@@ -226,9 +243,9 @@
           (if (listp candidate)
               (case (first candidate)
                 (:section
-                 (unless (section-id parser-state)
+                 (unless (section-ids parser-state)
                    (set-line-heading score (second candidate) (pop-line-heading parser-state)))
-                 (setf (section-id parser-state) (second candidate)))
+                 (setf (section-ids parser-state) (rest candidate)))
                 (:voice (setf (voice-id parser-state) (second candidate)))
                 (:f-clef (raise-f-clef-flag parser-state))
                 (:bracketed (dump-bracket-info score parser-state))
@@ -237,9 +254,13 @@
                 (:ligature-start (set-ligature-flag parser-state (rest candidate)))
                 (:ligature-end (deactivate-ligature-flag parser-state))
                 (:newline
-                 (set-newline score (section-id parser-state))
-                 (set-line-heading score (section-id parser-state) (pop-line-heading parser-state)))
+                 (mapc (lambda (section-id) (set-newline score section-id))
+                       (section-ids parser-state))
+                 (mapc (lambda (section-id) (set-line-heading score section-id
+                                                              (pop-line-heading parser-state)))
+                       (section-ids parser-state)))
                 (:divider (setf (divider-flag parser-state) (second candidate)))
+                (:segno (set-segno-flag parser-state))
                 (:key-signature
                  (set-key-signature parser-state (rest candidate))
                  (cancel-accidental parser-state))))
@@ -465,6 +486,7 @@
   (:note sb8 :semibrevis 8)
   (:note sb9 :semibrevis 9)
   (:note sb10 :semibrevis 10)
+  (:note sb11 :semibrevis 11)
 
   (:note sbbl0 :semibrevis 0)
   (:note sbbl1 :semibrevis 1)
@@ -524,6 +546,7 @@
   (:note sbc8 :semibrevis 8 :comma)
   (:note sbc9 :semibrevis 9 :comma)
   (:note sbc10 :semibrevis 10 :comma)
+  (:note m-1 :minima -1)
   (:note m0 :minima 0)
   (:note m1 :minima 1)
   (:note m2 :minima 2)

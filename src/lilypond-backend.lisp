@@ -526,13 +526,13 @@
                 (:double-accidentals-cents-e *dict-ly-notenames-double-accidentals-cents-e*))
               :test #'equal)))
 
-(defun key->ly-pitch (key note-value dottedp duration-override divider convention conversion)
+(defun key->ly-pitch (key note-value dottedp duration-override divider segno convention conversion)
   (if key
       (let* ((new-key (convert-pitch key conversion))
              (notename (key->ly-notename (first new-key) (second new-key) (third new-key)
                                          convention)))
         ;; (format t "~&ly notename: ~s" notename)
-        (format nil "~a~@[~a~]~a~a~a~a~@[~a~] ~@[~a~]"
+        (format nil "~a~@[~a~]~a~a~a~a~@[~a~]~@[~a~] ~@[~a~]"
                 (first notename) ;; root name (a, b, c, ...)
                 (second notename) ;; alteration suffix (is, es)
                 (octave->ly-octave (+ (fourth new-key)
@@ -546,6 +546,7 @@
                 (if dottedp "." "") ;; rhythmic dot
                 (if duration-override (format nil "*~a" duration-override) "") ;; for tuplet implementation
                 (third notename) ;; dot-appendix (-.)
+                (when segno "^\\markup { \\center-column { \\segno } }")
                 (case divider
                   (:regular "\\bar \"|\"")
                   (:dashed "\\bar \"!\"")
@@ -665,6 +666,7 @@
                                                     (dottedp mobject)
                                                     (duration-override mobject)
                                                     (divider mobject)
+                                                    (segno mobject)
                                                     (notename-convention backend)
                                                     (pitch-conversion backend))
                                      (key->ly-pitch (list (first old-pitch)
@@ -675,6 +677,7 @@
                                                     (dottedp mobject)
                                                     (duration-override mobject)
                                                     (divider mobject)
+                                                    (segno mobject)
                                                     (notename-convention backend)
                                                     (pitch-conversion backend))))
                            (format nil " ~a"
@@ -683,6 +686,7 @@
                                                   (dottedp mobject)
                                                   (duration-override mobject)
                                                   (divider mobject)
+                                                  (segno mobject)
                                                   (notename-convention backend)
                                                   (pitch-conversion backend))))))
     (values result current-clef current-key)))

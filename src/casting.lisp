@@ -169,6 +169,10 @@
       component
     (+ unit-length (* 2 overhead unit-length))))
 
+(defun draw-ledger-line (x-center y line-length)
+  (let ((h-line-length (* 0.5 line-length)))
+    (output-line (- x-center h-line-length) y (+ x-center h-line-length) y 5 "round")))
+
 (defmethod cast ((stencil glyph-notehead))
   "Generates SVG data for a notehead."
   (with-accessors ((oblique-p oblique-p)
@@ -179,15 +183,20 @@
            (h (calculate-notehead-height (notehead-component stencil)
                                          (distance-between-lines (staff-component stencil))))
            (w (* width h)))
-      (if oblique-p (push (draw-notehead-diamond (notehead-component stencil)
-                                                 x y w h
-                                                 (ink-color stencil))
-                          (svg-data stencil))
+      (if oblique-p
+          (push (draw-notehead-diamond (notehead-component stencil)
+                                       x y w h
+                                       (ink-color stencil))
+                (svg-data stencil))
           (push (draw-notehead-square (notehead-component stencil)
                                       x y w h
                                       (distance-between-lines (staff-component stencil))
                                       (ink-color stencil))
-                (svg-data stencil)))))
+                (svg-data stencil)))
+      (when (or (= (notehead-position stencil) -1)
+                (= (notehead-position stencil) 11))
+        (push (draw-ledger-line x y (* h 1.2))
+              (svg-data stencil)))))
   (call-next-method))
 
 
