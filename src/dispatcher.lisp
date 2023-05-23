@@ -404,10 +404,34 @@
     ;; ("b4-c11-m2" "e" (:idealised :en) ,*lilypond-backend-modern*)
 
     ;; ("b4-c12-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ("b4-c12-m1" "b" (:idealised) ,*vicentino-types-backend*)
-    ("b4-c12-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b4-c12-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ;; ("b4-c12-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
     ;; ("b4-c12-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
     ;; ("b4-c12-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
+    ;; ("b4-c13-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ;; ("b4-c13-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ;; ("b4-c13-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b4-c13-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ;; ("b4-c13-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
+    ;; ("b4-c17-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ;; ("b4-c17-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ;; ("b4-c17-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b4-c17-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ;; ("b4-c17-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
+    ;; ("b4-c18-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ;; ("b4-c18-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ;; ("b4-c18-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b4-c18-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ;; ("b4-c18-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+
+    ;; ("b4-c19-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b4-c19-m1" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b4-c19-m1" "c" (:idealised :it) ,*lilypond-backend-modern*)
+    ;; ("b4-c19-m1" "d" (:idealised :de) ,*lilypond-backend-modern*)
+    ;; ("b4-c19-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
     ))
 
 (defparameter *book5-original*

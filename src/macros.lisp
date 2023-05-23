@@ -32,7 +32,7 @@
          )))
 
 (defun split-formatted-string (text-string &optional result)
-  (when text-string
+  (when (or text-string (not (string= text-string "")))
     (let ((bold-pos (find-next-trigger text-string *bold-trigger*))
           (italics-pos (find-next-trigger text-string *italics-trigger*)))
       (cond ((and (null bold-pos) (null italics-pos))
