@@ -88,10 +88,12 @@
    (:music 2232
            (:voice v4)
            (:section s1) (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat)
-           b22 met-imperf-min-dim b22 lrest46 b22 brrest6 b22 brd5 fl6 sb6 dot6 fl6 b22 m6 b22 sbd4 (:alt (:diplomatic b13) (:idealised dot4)) md4 fl5 sb5 b13 sb3 sbrest3
+           b22 met-imperf-min-dim b22 lrest46 b22 brrest6 b22 brd5 fl6 sb6 dot6 fl6 b22 m6 b22 sbd4
+           ;; Rhythmische Idealisierung, sehr empfohlen
+           (:alt (:diplomatic b13) (:idealised dot4)) md4 fl5 sb5 b13 sb3 sbrest3
            b13 sb2 b13 md2 dot2
-           ;; idealisierung zu diskutieren
-           (:alt (:diplomatic sm2) (:idealised smd2) (:tatti smd2)) b22 m5 b22 m5 brd5 fl6 sb6 b22 mrest3
+           ;; Idealisierung zu diskutieren
+           (:alt (:diplomatic sm2) (:idealised sm2) (:tatti smd2)) b22 m5 b22 m5 brd5 fl6 sb6 b22 mrest3
            b22 m3 b22 md5 b22 md5 md1 b22 md1 b22 sb4 b22 sbd2 b22 sbrest3
            b22 sb2 b22 bl)
    (:text 90 58
