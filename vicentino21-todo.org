@@ -5,10 +5,12 @@
 *** Breite der Typen optimieren
 *** Anne: ♯ auf Linien zu klein
 *** Alle Textplatzierungen im libro primo überarbeiten
-** Fake-Simile
+** Normalisierung (Lilypond)
 *** Implementierung Sesquialtera und color
 - inkl. der Markierung mit eckigen Klammerfragmenten
 *** Optimierung der Zeilenbreiten, sodass eine einheitliche Obergrenze funktioniert
+*** Neuarrangement der Skalen in b5-c59
+*** Implementierung verschiedener Textgrössen in den Unterschriften für b5-c48 - b5-c52
 * Bearbeitung Anne Round 1
 ** b1-c5-m7
 - Stern-Fussnote: muss besprochen werden
@@ -24,3 +26,149 @@
 ** b1-c18-m1
 - Sehr gut, ich habe daraus eine Idealisierung gemacht: Statt E-D♭
   steht D-D♭.
+** b1-c20-m1
+- Vorschlag zur Idealisierung eingepflegt, siehe auch Diskussion in
+  Bibelgruppe, ist in der Bibelgruppe zu bestätigen.
+** b1-c23-m1
+- Paris ist nicht so, es handelt sich um eine Idealisierung, da die
+  originale Tonhöhenfolge nicht sinnvoll ist (G liegt nicht zwischen
+  A♯ und G♯). Akzeptable Idealisierung?
+** b1-c38-m1
+- Naturale scheint falsch, da enh. Punkte involviert sind. Es sei
+  denn, man betrachte diese als besondere Form von 'naturale', siehe
+  z.B. fol.136r, 4. Musikzeile, rechte Spalte, "Primo ordine
+  enarmonico naturale". Im Moment habe ich allerdings die
+  Idealisierung 'accidentale' eingepflegt.
+** Allgemein
+- ♯: Sie sind tatsächlich verschieden, je nach dem ob sie auf der
+  Notenlinie oder im Zwischenraum stehen. Allerdings im Moment
+  übertrieben und mit schlecht gewählter Typenbreite. Wird noch
+  korrigiert/optimiert, und ist dann automatisch global einheitlich.
+- Relative Grösse der Musikbeispiele: das ist ein technisches Problem
+  der PDF-Darstellung, wird in Zukunft gelöst sein. Für die
+  Bildschirmdarstellung haben wir noch keine saubere Implementierung
+  gefunden, ich bin mit Rolf diesbezüglich in Kontakt. Es ist mir
+  wichtig, dass die Rastralgrösse sowohl für die fake-similes wie auch
+  für die normalisierte Darstellung stets konstant ist.
+- Abstände / Textpositionierung in der normalisierten Notation: Das
+  wird ebenfalls global angepasst und muss dann im Gesamten nochmals
+  sorgfältig bewertet werden.
+* Arbeitsstand
+** Notizen aus Bibelgruppe zu Notenbeispielen
+*** DONE Libro 1
+CLOSED: [2023-05-26 Fri 11:23]
+*** DONE Libro 2
+CLOSED: [2023-05-26 Fri 11:50]
+*** TODO Libro 3
+*** TODO Libro 4
+*** TODO Libro 5
+** Anne Round 1
+*** DONE Libro 1
+CLOSED: [2023-05-26 Fri 11:22]
+*** DONE Libro 2
+CLOSED: [2023-05-26 Fri 11:22]
+*** TODO Libro 3
+*** TODO Libro 4
+*** TODO Libro 5
+** Globale Korrekturen
+*** DONE Sämtliche ÿ durch ij ersetzt.
+CLOSED: [2023-05-26 Fri 11:50]
+* Zu liefern
+** TODO Anne
+Wenn du die Datei, die du mir geschickt hast öffnest (hier nochmals
+angehängt), wirst du merken, dass die Beispiele auf S. 126 (b3-c32-m5)
+und 127 (b3-c38-m1) nur mit ihren Namen dort stehen, anstatt mit
+Noten. Kannst du sie mir eventuell nachreichen?
+* Einzupflegende Korrespondenz
+** Johannes/Anne
+*** DONE b2-c7
+CLOSED: [2023-05-26 Fri 11:22]
+JK
+
+Die erste zweifelhafte Stelle, zu der ich keine Notiz aus der
+Bibelgruppe bei mir gemacht habe: Libro 2, Capitolo 7, Notenbeispiel
+1: die zweite Zeile ist mir nicht klar. Die erste Zeile funktioniert
+als dreistimmiger Satz. Die zweite Zeile fände ich grafisch sinnvoll
+in zwei dreistimmige Sätze aufzuteilen, mit TAA und TTT, aber das
+ergibt Nonsense. Man kann sonst natürlich übers Kreuz Kombinationen
+herstellen. Hast du ein Vorschlag, was besonders naheliegend sein
+könnte?
+
+AS
+
+ich war neugierig und habe es sofort angeschaut. Ich glaube es gibt
+keine 3-stimmige Lösungen, sondern nur 2-stimmigen. Er schreibt gerade
+vor dem Beispiel, dass wenn man von der Quarte zur Quinta geht, hat
+man einen Semitono entweder im oberen oder in der unteren Stimme, wie
+man es im Beispiel steht. Dann müsste paarweise gegliedert sein,
+Tenore-Alt mit dem Halbton unten, Alt-Tenor, mit dem Halbton oben, und
+dann die nicht bezeichneten, wo der Semitono in der unteren
+Stimme. Die Klangfolgen finde ich merkwürdig, aber vielleicht sind sie
+gedacht in einem grösseren Satz verborgen zu sein.
+*** mehrstimmige Stücke b3
+**** TODO AS
+Und ich habe auch jetzt Alleluia und das diatonische Stück
+angeschaut und habe keine musikalische Fehler gefunden. Bei der
+Alleluia würde ich ein paar Zeichen einfügen, um die schwarze Notation
+mit den üblichen Klammern anzuzeigen: "⌐"
+
+**** TODO AS
+ich habe noch einen weiteren Fehler gefunden, diesmal anscheinend auch
+im Druck:
+
+- Hierusalem, T. 17, Alt: das Minima h sollte ein b sein.
+- Hierusalem, T. 5, Sopran: das minima h sollte g sein.
+- Hierusalem, T. 25, Sopran: h anstatt c
+- Dolce mio ben, T. 23, Bass: die erste Note d anstatt e.
+
+Und ich habe hinzugefügt in welcher Stimme sie seien.
+
+**** TODO AS
+Hierusalem: siehe Annes eigene Transkription mit Idealisierungen, PDF.
+
+*** TODO Ende b5
+AS
+
+Übrigens gibt es auch ein tiefes E im Bass mit Hilfslinie, was du
+fälschlicher Weise als F transkribiert hast. Also 2 Noten mit
+Hilfslinien.😁
+*** TODO b5-c60
+JK
+
+ich nährere mich nun auch dem Ende: eine kleine Frage zum ersten
+Notenbeispiel in 5.60. Das ♭ nach dem C-Schlüssel in der Mitte der Zeile
+ist ja eine 'per bemolle'-Signatur. Soll diese auch für die nächsten
+zwei Takte gelten? Normalerweise würde zur "Auflösung" ein neuer
+Schlüssel stehen, hier aber nicht. Es verändert die Noten in diesem Fall
+ja nicht, ich muss es nur für die Normalisierung entscheiden.
+
+AS
+
+ich weiss die Antwort nicht. Er muss im 4. Takt ein b im Schlüssel
+haben, da er sonst keinen Grund hätte, das Auflösungszeichen zu
+schreiben. Man schreibt das Auflösungszeichen, wo es nötig ist, nicht
+als generelle Bezeichnung. Nachher spielt dies keine Rolle. Aber was
+Vicentino hat haben wollen mit den weiteren Beispielen weiss ich
+nicht. Ich finde beides ist möglich. Aber vielleicht doch mit dem b
+molle vorgezeichnet, da man in der normalen Musik nie ein As finden
+würde ohne B.
+* TODO Offene Fragen an die Gruppe (alle Idealisierungen herausschreiben!)
+** Allgemein
+*** TODO Vertikale Platzierung von Additionspunkten
+Ist diese zu idealisieren und wenn ja, nach welchem Prinzip. Im Moment
+sind sie generell idealisiert, das ist aber nochmals gesamthaft zu prüfen.
+*** TODO Normalisierung aller Textbausteine
+Diese ist im Moment nicht einheitlich. Wird das Luigi nochmals
+systematisch durchgehen und selbständig korrigieren?
+** TODO b1-c05
+- [[file:encoding/b1-c05-m5.lisp::;; Hier kommt ein Ċ♭ vor, das nicht existiert]]
+- [[file:encoding/b1-c05-m5.lisp::;; Zu bestätigen]]
+- [[file:encoding/b2-c09-m1.lisp::;; akut zu diskutieren]]
+** TODO b2-c20
+- [[file:encoding/b2-c20-m1.lisp::;; warum gibt es ein C4-Schlüssel im
+  zweiten Takt? Zur Markierung der]]
+  - siehe dazu auch: [[file:~/org/zettelkasten/20220205200109-literatur_vicentino_l_antica_musica.org::*Annes Vorschläge][Annes Vorschläge]]
+- [[file:encoding/b2-c20-m1.lisp::;; hier gibt es keine Sexte! Soll hier etwas idealisiert werden?]]
+* Bemerkungen für die Aufnahme
+** b3-c15-m1
+Eine Oktave höher?

@@ -6,7 +6,7 @@
    (:section-captions
     (s1 "A quattro voci"))
    (:line-headings
-    "La prima volte il soprano fara due pause, & l'altra volta le tre parti,\\faranno le due pause del soprano,\\& quello cantera senza pause.")
+    "La prima volte il soprano fara due pause, et l'altra volta le tre parti,\\faranno le due pause del soprano,\\et quello cantera senza pause.")
    (:voice-labels
     (s1 v1 "Soprano")
     (s1 v2 "Alto")

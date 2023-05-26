@@ -3,7 +3,7 @@
    (:alt-name "m2.008")
    (:comment "q021_s060, rotation: 0, origin: 990")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio della quarta sincopata a due voci,\\& non sincopata a tre voci, & con il punto:\\come s'ha da comporre a molte voci, & con la sincopa tutta cattiva")
+   (:title "Esempio della quarta sincopata a due voci,\\et non sincopata a tre voci, et con il punto:\\come s'ha da comporre a molte voci, et con la sincopa tutta cattiva")
    (:section-headings
     (s1 "Buona")
     (s2 "Megliore")

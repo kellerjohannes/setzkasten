@@ -26,6 +26,11 @@
      (1484 nil "4.eſſem.")
      (1943 nil "5. eſſempio"))
    (:music 2214
+           ;; Bibelgruppe:
+           ;; die komplette erste Zeile ist im C1-Schlüssel zu lesen.
+
+           ;; Johannes: diese Aussage ist nicht sinnvoll, deshalb wurde nichts idealisiert,
+           ;; ist aber sicherheitshalber nochmals zu bestätigen.
            (:section s1)
            (:voice v1) cclef3 b38 sb5 b22 bl
            (:voice v2) b22 sb3 b22 bl

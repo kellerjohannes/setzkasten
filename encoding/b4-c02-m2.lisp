@@ -3,7 +3,7 @@
    (:alt-name "m2.002")
    (:comment "q021_s145, rotation: 1.8, origin: 529; q021_s146, rotation: -1.2, origin: 859")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Dimostratione delle chiavi dei soprani, che insegnano a leggere\\tutte l'altre sorti di chiavi per ♭ incitato & per ♭ molle,\\& per musica finta")
+   (:title "Dimostratione delle chiavi dei soprani, che insegnano a leggere\\tutte l'altre sorti di chiavi per ♭ incitato et per ♭ molle,\\et per musica finta")
    (:line-headings
     "Primo ordine"
     "Secondo ordine"

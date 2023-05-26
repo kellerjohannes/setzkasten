@@ -8,7 +8,7 @@
    (:title "")
    ;; Setzung der Überschriften fragwürdig, zu diskutieren. In dieser Form sicherlich nicht überzeugend.
    (:line-headings
-    "Decima maggiore all'ottava nei fini & nel basso, ne gl'alti"
+    "Decima maggiore all'ottava nei fini et nel basso, ne gl'alti"
     "Quinta imperfetta")
    (:section-captions
     (s1 "Buona")

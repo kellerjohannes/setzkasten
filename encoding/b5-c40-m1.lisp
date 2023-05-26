@@ -3,7 +3,7 @@
    (:alt-name "m5.038")
    (:comment "q021_s238, origin: 1007; q021_s239, origin: 462")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "I semitoni delli diesis ascendenti sono minore,\\e discendenti maggiore, ed il simile del ♮")
+   (:title "I semitoni delli diesis ascendenti sono minore,\\e discendenti maggiore, et il simile del ♮")
    (:section-captions
     (s1 "Semitono\\minore")
     (s2 "Semitono\\minore")

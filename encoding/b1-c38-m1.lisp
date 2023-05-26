@@ -7,8 +7,9 @@
    (:section-headings
     (s1 ""))
    (:section-captions
-    (s1 "più di quinta\\imperfetta\\naturale\\composto")
-    (s2 "più di quinta\\imperfetta\\naturale\\incomposto")
+    ;; Für s1 und s2 wurde 'accidentale' als Idealisierung übernommen
+    (s1 "più di quinta\\imperfetta\\accidentale\\composto")
+    (s2 "più di quinta\\imperfetta\\accidentale\\incomposto")
     (s3 "più di quinta\\imperfetta\\accidentale\\incomposto")
     (s4 "più di quinta\\imperfetta\\accidentale\\composto")
     (s5 "più di quinta\\imperfetta\\accidentale\\incomposto")
@@ -48,6 +49,9 @@
           (1640 nil "più di quinta")
           (1954 nil "più di quin."))
    (:text 80 58
+          ;; Naturale scheint falsch, da enh. Punkte involviert sind. Es sei denn, man betrachte
+          ;; diese als besondere Form von 'naturale', siehe z.B. fol.136r, 4. Musikzeile,
+          ;; rechte Spalte, "Primo ordine enarmonico naturale". Zu diskutieren.
           (81 nil (:alt (:diplomatic  "imper.natur.")
                         (:idealised "imper.accid.")))
           (425 nil (:alt (:diplomatic "imper. nat.")

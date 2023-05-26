@@ -3,7 +3,7 @@
    (:alt-name "m5.033")
    (:comment "q021_s235, rotation: 0, origin: 475")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "[Queste sono tutte le consonanze di Bfabmi acuto quarto\\con le sue propinque discendenti,\\ed il simile di Bmi quarto ascendente]")
+   (:title "[Queste sono tutte le consonanze di Bfabmi acuto quarto\\con le sue propinque discendenti,\\et il simile di Bmi quarto ascendente]")
    (:section-headings
     (s1 "Le cinque terze\\[discendenti]")
     (s2 " \\Quinta")

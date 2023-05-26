@@ -9,7 +9,7 @@
     (s3 "Ne del tutto immobili,\\genere cromatico"))
    (:line-headings
     ""
-    "Serveno a ambedue i generi al diatonico ed al cromatico:"))
+    "Serveno a ambedue i generi al diatonico et al cromatico:"))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)

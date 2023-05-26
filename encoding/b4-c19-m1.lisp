@@ -3,10 +3,10 @@
    (:alt-name "m4.017")
    (:comment "q021_s161, rotation: 0, origin: 441")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio a due voci, delle quinte antecedenti,\\& sussequenti, con il buono & megliore procedere\\di ♮ & di ♭ & del diesis cromatico")
+   (:title "Esempio a due voci, delle quinte antecedenti,\\et sussequenti, con il buono et megliore procedere\\di ♮ et di ♭ et del diesis cromatico")
    (:section-headings
     (s1 " \\Quinta antecedente")
-    (s2 "Quinta antecedente\\& sussequente")
+    (s2 "Quinta antecedente\\et sussequente")
     (s3 " \\buono procedere")
     (s4 " \\megliore")
     (s5 " \\buono procedere")

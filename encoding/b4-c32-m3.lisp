@@ -3,7 +3,7 @@
    (:alt-name "m4.025")
    (:comment "q021_s177, rotation: 0, origin: 414")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Fuga alla seconda, & alla riverscia, con i semitoni & i toni contrari"))
+   (:title "Fuga alla seconda, et alla riverscia, con i semitoni et i toni contrari"))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)

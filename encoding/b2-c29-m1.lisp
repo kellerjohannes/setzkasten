@@ -3,11 +3,11 @@
    (:alt-name "m2.032")
    (:comment "q021_s081, rotation: 0.90, origin: 462")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Molti esempi di vari salti, sopra et sotto i gradi, insieme ascendenti & discendenti")
+   (:title "Molti esempi di vari salti, sopra et sotto i gradi, insieme ascendenti et discendenti")
    (:line-headings
-    "Salti & gradi"
+    "Salti et gradi"
     nil
-    "Gradi & salti")
+    "Gradi et salti")
    (:section-captions
     (s1 "A quattro")
     (s2 "A cinque")

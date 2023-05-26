@@ -3,7 +3,7 @@
    (:alt-name "m4.006")
    (:comment "q021_s151, rotation: , origin: 425")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio delle pause notate nel tempo perfetto,\\& nel imperfetto")
+   (:title "Esempio delle pause notate nel tempo perfetto,\\et nel imperfetto")
    (:section-captions
     ;; Setzung der captions gemäss Bibelgruppe
     ;; Positionierung der Überschriften in der idealisierten Fassung ev. anzupassen und zu ergänzen?

@@ -8,7 +8,7 @@
     "Quinte immobili"
     "Quarte immobili"
     "Voci mobili in tutti tre i generi"
-    "Voci immobili in diatonico ed in cromatico"
+    "Voci immobili in diatonico et in cromatico"
     "Voci mobili nel genere enarmonico"))
   (:preamble-type-imitation
    (:width nil)

@@ -7,7 +7,7 @@
     "Molti esempi di due parti, che insieme saltano"
     nil
     nil
-    "Molti esempti in due parti scritti, tenore con il basso\\soprani con il basso, & tenore con il basso")
+    "Molti esempti in due parti scritti, tenore con il basso\\soprani con il basso, et tenore con il basso")
    (:section-captions
     (s1 "A due")
     (s2 "A due")

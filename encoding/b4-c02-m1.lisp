@@ -3,7 +3,7 @@
    (:alt-name "m4.001")
    (:comment "q021_s, rotation: 1.77, origin: 516. Für dieses Beispiel wird keine normalisierte Version angeboten.")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio delle chiavi dei soprani, & dei contralti, dei tenori, & dei bassi")
+   (:title "Esempio delle chiavi dei soprani, et dei contralti, dei tenori, et dei bassi")
    (:section-captions
     (s1 "Chiave di Gsolreut")
     (s2 "Chiavi di Csolfaut")

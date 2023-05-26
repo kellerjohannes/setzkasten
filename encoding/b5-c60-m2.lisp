@@ -3,7 +3,7 @@
    (:alt-name "m5.095")
    (:comment "q021_s286, rotation: 0, origin: 945")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Da 20 a 21 è la proportione del semitono minore, & del diesis maggiore,\\& da 13 a 14 è la proportione del semitono maggiore")
+   (:title "Da 20 a 21 è la proportione del semitono minore, et del diesis maggiore,\\& da 13 a 14 è la proportione del semitono maggiore")
    (:section-captions
     (s1 "Semitono\\minore /\\diesis\\maggiore")
     (s2 "Semitono\\minore")

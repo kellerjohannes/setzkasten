@@ -3,7 +3,7 @@
    (:alt-name "m5.098")
    (:comment "q021_s287, rotation: 0.53, origin: 478")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Questi sono toni maggiori accidentali composti di due semitoni maggiori,\\di uno tono naturale, & uno diesis minore,\\& sono di proportione quasi sesquisettima, come sono da 7 a 8\\con qualche poca di differenza")
+   (:title "Questi sono toni maggiori accidentali composti di due semitoni maggiori,\\di uno tono naturale, et uno diesis minore,\\et sono di proportione quasi sesquisettima, come sono da 7 a 8\\con qualche poca di differenza")
    (:section-captions
     (s1 "Tono\\maggiore\\accidentale")
     (s2 "Tono\\maggiore\\accidentale")

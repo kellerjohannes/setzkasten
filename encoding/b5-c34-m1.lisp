@@ -3,7 +3,7 @@
    (:alt-name "m5.030")
    (:comment "q021_s232, rotation: 0, origin: 1000; q021_s233, rotation: 0, origin: 500")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Queste sono tutte le consonanze di Bfabmi primo acuto\\con le sue propinque discendenti,\\ed il simile di Bmi primo ascendente")
+   (:title "Queste sono tutte le consonanze di Bfabmi primo acuto\\con le sue propinque discendenti,\\et il simile di Bmi primo ascendente")
    (:section-headings
     (s1 "Le quattro terze\\[discendenti]")
     (s2 " \\Quinta")

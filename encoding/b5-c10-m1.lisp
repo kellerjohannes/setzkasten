@@ -3,7 +3,7 @@
    (:alt-name "m5.006")
    (:comment "q021_s213, origin: 509")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Di Alamire terzo, le consonanze discendenti & ascendenti.")
+   (:title "Di Alamire terzo, le consonanze discendenti et ascendenti.")
    ;; Sollen die Oktaven ergänzt werden?
    (:section-headings
     (s1 "Le quattro terze discendenti\\con le sue propinque")

@@ -54,8 +54,11 @@
           (1852 nil "incomp."))
    (:music 2202
            (:section s7)
+           ;; Idealisierung, weil die originale Teilung A♯-G-G♯ keine sinnvolle Tonhöhenreihenfolge
+           ;; ergibt.
            cclef7 b38 sh5 b22 sb5 b22 (:alt (:diplomatic sb4)
-                                            (:idealised sb5)) b22 sh4 b22 sb4 b38 bl
+                                            (:idealised sb5))
+           b22 sh4 b22 sb4 b38 bl
            (:section s8)
            b38 sh4 b22 sb4 b22 sh3 b22 sb3 b38 bl
            (:section s9)

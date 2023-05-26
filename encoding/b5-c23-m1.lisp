@@ -3,7 +3,7 @@
    (:alt-name "m5.019")
    (:comment "q021_s224, rotation: 0.70, origin: 959")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Queste sono tutte le consonanze di Elami terzo,\\discendenti ed ascendenti")
+   (:title "Queste sono tutte le consonanze di Elami terzo,\\discendenti et ascendenti")
    (:section-headings
     (s1 "Le quattro terze\\[discendenti]")
     (s2 " \\Quinta")

@@ -3,7 +3,7 @@
    (:alt-name "m3.014")
    (:comment "q021_s092, origin line 1: 1020, line 2: 1019, line 3: 1018")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio delle sette ottave diatoniche per ♭ molle, composte ed incomposte")
+   (:title "Esempio delle sette ottave diatoniche per ♭ molle, composte et incomposte")
    (:section-headings
     (s1 "Prima ottava")
     (s2 "Seconda ottava")
@@ -63,7 +63,7 @@
            b38 sb2 b38 sb9 b22 bl)
    (:text 110 58
           (87 nil "5. ᴏttaua")
-          (364 nil "comp..")
+          (364 nil "comp.")
           (578 nil "incomp.")
           (845 nil "6. Ottaua")
           (1141 nil "comp.")

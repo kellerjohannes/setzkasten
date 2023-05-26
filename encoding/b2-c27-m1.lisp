@@ -3,7 +3,7 @@
    (:alt-name "m2.029")
    (:comment "q021_s078, rotation: -0.92, origin: 966")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio della quintadecima, & della vigesima seconda,\\a tre voci, & a quattro")
+   (:title "Esempio della quintadecima, et della vigesima seconda,\\a tre voci, et a quattro")
    (:section-headings
     (s1 "Quintadecima con\\ottava in mezzo\\ ")
     (s2 "Vigesima seconda\\con due ottave\\in mezzo"))
@@ -38,6 +38,8 @@
            b38 b38 b38 b38
            (:section s2)
            (:voice v1) gclef3 b22 sb9 b38 b22 bl
+           ;; Bibelgruppe:
+           ;; Fehler im zweiten Alt, der Schlüssel sollte C1 sein. Scheint gesichert.
            (:voice v2) b38 b38 (:alt (:diplomatic cclef3) (:idealised cclef1)) b38 sb4 b38 bl
            (:voice v3) b38 b38 cclef7 b38 sb3 b38 bl
            (:voice v4) b38 b38 (:f-clef) max7 fclef7 b38 b38 sb0 b38 bl)

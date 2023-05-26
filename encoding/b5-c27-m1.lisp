@@ -3,7 +3,7 @@
    (:alt-name "m5.023")
    (:comment "q021_s227, rotation: 1.19, origin: 432")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Queste sono tutte le consonanze, e le propinque & propinquissime\\di Dlasolre secondo acuto e discendente,\\e similmente quelle di Dsolre secondo ascendente.")
+   (:title "Queste sono tutte le consonanze, e le propinque et propinquissime\\di Dlasolre secondo acuto e discendente,\\e similmente quelle di Dsolre secondo ascendente.")
    (:section-headings
     (s1 "Le quattro terze\\[discendenti]")
     (s2 " \\Quinta")

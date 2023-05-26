@@ -3,7 +3,7 @@
    (:alt-name "m3.012")
    (:comment "q021_s092, origin: 1038")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio delle tre quarte diatoniche per ♭ molle,\\composte ed incomposte")
+   (:title "Esempio delle tre quarte diatoniche per ♭ molle,\\composte et incomposte")
    (:section-headings
     (s1 "Prima quarta")
     (s2 "Seconda quarta")

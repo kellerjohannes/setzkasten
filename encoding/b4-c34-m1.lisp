@@ -11,7 +11,7 @@
     (s4 "A due voci, con un sospiro, per terza sopra")
     (s5 "A tre voci alla decima sopra")
     (s6 "A tre voci per ottava")
-    (s7 "A due voci tenore & tenore")
+    (s7 "A due voci tenore et tenore")
     (s8 "Parte ch'era di sopra"))
    (:voice-order
     (s1 v1 v2)
@@ -23,7 +23,7 @@
     (s7 v1 v2)
     (s8 v1 v2))
    (:section-captions
-    (s2 "Il medesimo procedere, & i gradi medesimi")
+    (s2 "Il medesimo procedere, et i gradi medesimi")
     (s6 "Il tenore et il soprano\\paiono due ottave et non sono")
     (s8 "Parte ch'era di sotto")))
   (:preamble-type-imitation

@@ -63,6 +63,7 @@
           (454 nil "5.")
           (542 nil "6.ma.")
           (710 nil "6.mi.")
+          ;; Diese und die analoge Idealisierung sind zu bestätigen, scheinen aber plausibel.
           (1001 nil (:alt (:diplomatic "5.") (:idealised "8.")))
           (1269 nil "3.mag.")
           (1510 nil "3.mi.")

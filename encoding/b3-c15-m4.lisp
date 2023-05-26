@@ -3,7 +3,7 @@
    (:alt-name "m3.021")
    (:comment "q021_s096, rotation: -1.63, origin: 1058")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del primo modo detto da prattici musica finta\\ed è musica participata e mista"))
+   (:title "Esempio del primo modo detto da prattici musica finta\\et è musica participata e mista"))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)

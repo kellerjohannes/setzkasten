@@ -4,9 +4,9 @@
    (:comment "q021_s079, rotation: 0, origin: 468")
    (:creator "Vicentino21 / Johannes Keller")
    (:line-headings
-    "Molte annotationi sotto & sopra le due note mi & re\\A due & a più voci si possono comporre"
+    "Molte annotationi sotto et sopra le due note mi et re\\A due et a più voci si possono comporre"
     nil
-    "Molte annotationi sotto & sopra le due note re & mi\\A due & a più voci si possono comporre"
+    "Molte annotationi sotto et sopra le due note re et mi\\A due et a più voci si possono comporre"
     nil)
    (:section-captions
     (s10 "A tre")

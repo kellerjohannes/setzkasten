@@ -51,6 +51,11 @@
      (2030 nil "à 5 uoci."))
    (:music 2227
            (:voice v2)
+           ;; Bibelgruppe:
+           ;; Vermuteter Fehler im ersten Takt, Korrekturvorschlag Luigi: F-Schlüssel
+           ;; statt C-Schlüssel im zweiten System, und im ersten System f statt e als
+           ;; dritte Note.
+           ;; Kommentar Johannes: diesen Fehler kann ich nicht mehr nachvollziehen!
            (:section s1) cclef7 sb5 br7 sb6 sb7 bl
            (:section s2) b22 m4 dot4 sm3 m2 sb5 sh4 b22 m4 b22 sb5 bl
            (:section s3) mrest5 m1 sm2 b22 m4 sh3 sm3 sb4 bl

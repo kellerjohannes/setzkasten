@@ -4,10 +4,10 @@
    (:comment "q021_s079, rotation: 0, origin: 478; q021_080, rotation: 0, origin: 980")
    (:creator "Vicentino21 / Johannes Keller")
    (:line-headings
-    "Molte annotationi sotto et sopra le due note fa & sol\\A due & a più voci si possono comporre"
+    "Molte annotationi sotto et sopra le due note fa et sol\\A due et a più voci si possono comporre"
     nil
     nil
-    "Molte annotationi sotto et sopra le due note sol & fa\\A due & a più voci si possono comporre"
+    "Molte annotationi sotto et sopra le due note sol et fa\\A due et a più voci si possono comporre"
     )
    (:section-captions
     (s40 "A otto"))

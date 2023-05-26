@@ -8,7 +8,7 @@
    (:line-headings
     "Modo di entrare nella proportione di equalità, tre contra tre, a due voci"
     "Proportione sesqualtera, due contra tre, a due voci. Emiolia maggiore"
-    "Proportione sesqualtera, buona nel battere & nel levare, a due voci"
+    "Proportione sesqualtera, buona nel battere et nel levare, a due voci"
     "Emiolia minore")
    (:voice-labels
     (s1 v1 "Tenore")

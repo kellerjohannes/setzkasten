@@ -3,7 +3,7 @@
    (:alt-name "m3.003")
    (:comment "q021_s087, rotation: 1.3, origin line 1: 450, line 2: 433, line 3: 433")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio delle sette ottave diatoniche, composte ed incomposte")
+   (:title "Esempio delle sette ottave diatoniche, composte et incomposte")
    (:section-headings
     (s1 "Prima ottava")
     (s2 "Seconda ottava")

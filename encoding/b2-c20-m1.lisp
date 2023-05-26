@@ -88,9 +88,18 @@
    (:music 2232
            (:voice v1)
            (:section s14) (:newline) cclef7 b38 sb3 b22 fl6 b38 sb6 b38 sb5 b38 bl
+           ;; Bibelgruppe:
+           ;; warum gibt es ein C4-Schlüssel im zweiten Takt? Zur Markierung der
+           ;; dreistimmigen Beispiele? Zur 'Auflösung' des bemolle im Takt davor?
+
+           ;; Johannes: Interpretation: ab hier kommen Beispiele, die im dreistimmigen Kontext
+           ;; funktionieren, es sind aber nur zwei Stimmen abgedruckt. Wird in der Normalisierung
+           ;; entsprechend markiert (siehe Überschriften). Zu einer dreistimmigen Vervollständigung
+           ;; liegen Vorschläge von Anne vor.
            (:section s15) cclef7 b38 b38 sb6 b38 sb7 b38 b38 bl
            (:section s16) b38 b38 sb5 b38 sb6 b38 b38 bl
            (:section s17) b38 b38 sb7 b38 sb6 b38 b38 bl
+           ;; hier gibt es keine Sexte! Soll hier etwas idealisiert werden?
            (:section s18) b38 m10 b38 m7 b38 sb9 b38 bl
            (:section s19) m10 b38 m8 b38 sb9 b38 bl b22 b38)
    (:vspace 30)

@@ -41,6 +41,18 @@
      (1704 nil "tre")
      (1863 nil "uoci"))
    (:music 2216
+           ;; Bibelgruppe:
+           ;; Frage nach der Lesart. Linear, oder wild gemischt?
+           ;; - Alto + Alto: ok
+           ;; - Alto + Alto: ok
+           ;; - Alto + Tenore + Tenore: Probleme mit dem zweiten Tenor
+           ;; - Tenore + Basso + Basso: seltsam, aber ok.
+
+           ;; Entweder ist die Lesart zu ändern (wie Maniates), oder der
+           ;; problematische Tenor ist (stark) zu korrigieren.
+
+           ;; Diese Frage ist offen, im Moment wird nichts idealisiert, das ist
+           ;; akut zu diskutieren
            (:section s1)
            (:voice v1) cclef5 b22 sb9 b22 sb8 b22 sb7 b22
            (:voice v2) cclef5 b22 mrest3 b22 m2 b38 m3 b38 m4 b38 sb5 b22

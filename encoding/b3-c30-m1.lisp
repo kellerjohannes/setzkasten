@@ -3,7 +3,7 @@
    (:alt-name "m3.061")
    (:comment "q021_s108, origin: 1007")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempi delle cadentie che fuggano la conclusione,\\per salti naturali all'in giù, ed all'in sù"))
+   (:title "Esempi delle cadentie che fuggano la conclusione,\\per salti naturali all'in giù, et all'in sù"))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)

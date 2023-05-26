@@ -3,7 +3,7 @@
    (:alt-name "m2.027")
    (:comment "q021_s076, rotation: -1.04, origin: 1013")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio delle decime maggiori & minori,\\& come in vari modi si possono comporre")
+   (:title "Esempio delle decime maggiori et minori,\\et come in vari modi si possono comporre")
    (:section-captions
     (s6 "Dubbio di\\sustentatione"))
    (:voice-order

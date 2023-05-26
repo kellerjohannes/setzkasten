@@ -47,7 +47,7 @@
    (:background ,*score-bg-color*))
   (:data
    (:text 90 58
-          (375 1443 "Eſſempio dʼandare allʼVniſono con uarÿ ſalti, naturali et accid."))
+          (375 1443 "Eſſempio dʼandare allʼVniſono con uarij ſalti, naturali et accid."))
    (:music 2220
            (:voice v1)
            (:section s1) cclef7 b22 sb7 b38 sb7 b22 bl
@@ -88,7 +88,7 @@
            (:section s13) b38 sb9 b38 sb7 b38 bl
            (:section s14) b38 sb10 b38 fl6 b38 sb6 b38 bl
            (:section s15) b38 sb6 b38 sb4 b38 bl
-           (:section s16) b38 sb5 b38 sb9 b38 bl
+           (:section s16) b38 sb5 b38 sb8 b38 bl
            (:section s17) b38 sb9 b38 sb2 b38 bl
            (:section s18) b38 sb10 b38 sb3 b38 bl b38 b38)
    (:text 80 58

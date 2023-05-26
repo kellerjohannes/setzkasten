@@ -3,7 +3,7 @@
    (:alt-name "m5.096")
    (:comment "q021_s287, rotation: 0.53, origin: 480")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Questi sono tutti toni giusti naturali & accidentali\\di proportione da 8 a 9 & da 9 a 10\\di sesquiottava, & di sesquinona")
+   (:title "Questi sono tutti toni giusti naturali et accidentali\\di proportione da 8 a 9 et da 9 a 10\\di sesquiottava, et di sesquinona")
    (:section-captions
     (s1 "Toni\\naturali")
     (s2 "Tono\\accidentale")

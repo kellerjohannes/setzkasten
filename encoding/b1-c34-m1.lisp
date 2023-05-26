@@ -9,7 +9,8 @@
    (:section-captions
     (s1 "salto di più\\di quarta\\accidentale\\incomposto")
     (s2 "gradi di più\\di quarta\\accidentale\\composto")
-    (s3 "salto di più\\di quarta\\accidentale\\incomposto")
+    ;; Original: 'salto', wurde korrigiert, da zwei Quarten gezeigt werden.
+    (s3 "salti di più\\di quarta\\accidentale\\incomposto")
     (s4 "gradi di più\\di quarta\\accidentale\\composto")
     (s5 "salto di più\\di quarta\\accidentale\\incomposto")
     (s6 "gradi di più\\di quarta\\accidentale\\incomposto")

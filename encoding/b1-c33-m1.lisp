@@ -7,13 +7,13 @@
    (:section-headings
     (s1 ""))
    (:section-captions
-    (s1 "salto di quarta\\acidentale\\incomposta")
-    (s2 "gradi di quarta\\acidentale\\composta")
-    (s3 "gradi di quarta\\acidentale\\composta")
-    (s4 "salto di quarta\\acidentale\\incomposta")
-    ;; one "accidentale" is ignored here
-    (s5 "gradi di quarta\\acidentale\\composta")
-    (s6 "salto di quarta\\acidentale\\incomposta"))
+    (s1 "salto di quarta\\accidentale\\incomposta")
+    (s2 "gradi di quarta\\accidentale\\composta")
+    (s3 "gradi di quarta\\accidentale\\composta")
+    (s4 "salto di quarta\\accidentale\\incomposta")
+    ;; one "accidentale" is ignored here:
+    (s5 "gradi di quarta\\accidentale\\composta")
+    (s6 "salto di quarta\\accidentale\\incomposta"))
    (:voice-labels
     (:all v1 "")))
   (:preamble-type-imitation
@@ -43,7 +43,7 @@
           (750 nil "gradi di 4.")
           (1062 nil "ſalto di 4.")
           (1375 nil "gradi di quarta acci.")
-          (1882 nil "ſalti di 4."))
+          (1882 nil "ſalto di 4."))
    (:text 70 58
           (51 nil "accidentale")
           (353 nil "accidentale")

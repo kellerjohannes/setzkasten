@@ -3,7 +3,7 @@
    (:alt-name "m5.102")
    (:comment "q021_s290, rotation: -1.2, origin: 1055")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Salti di quinte naturali & accidentali, che si cantano,\\come si fanno le naturali")
+   (:title "Salti di quinte naturali et accidentali, che si cantano,\\come si fanno le naturali")
    (:section-captions
     (s1 "Naturale")
     (s2 "Accidentale")

@@ -3,7 +3,7 @@
    (:alt-name "m3.013")
    (:comment "q021_s092, origin: 1026")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio delle quattro quinte diatoniche per ♭ molle,\\composte ed incomposte")
+   (:title "Esempio delle quattro quinte diatoniche per ♭ molle,\\composte et incomposte")
    (:section-headings
     (s1 "Prima quinta")
     (s2 "Seconda quinta")

@@ -49,7 +49,7 @@
            b38 sb0 b38 sb7 b22 b38 bl
            (:section s2) sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 (:divider :regular) sb8 bl
            b38 sb1 b38 sb8 b38 b38 bl)
-
+   (:vspace 30)
    (:text 110 58
           (261 nil "Terza Ottaua compoſta")
           (887 nil "incomp.")
@@ -63,7 +63,7 @@
            (:section s4) (:newline) cclef5 fl4 b22 fl3 b22 fl07 b22 (:key-signature nil nil :flat nil nil :flat :flat)
            sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 bl
            b38 sb1 b38 sb8 b38 bl)
-
+   (:vspace 30)
    (:text 110 58
           (165 nil "5. Ottaua comp.")
           (586 nil "incom.")

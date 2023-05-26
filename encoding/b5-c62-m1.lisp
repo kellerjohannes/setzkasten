@@ -3,7 +3,7 @@
    (:alt-name "m5.099")
    (:comment "q021_s288, rotation: -0.78, origin: 1027")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio delle terze minori naturali & accidentali, con le loro proportioni")
+   (:title "Esempio delle terze minori naturali et accidentali, con le loro proportioni")
    (:section-captions
     (s1 "Terza\\naturale")
     (s2 "Terza\\naturale")

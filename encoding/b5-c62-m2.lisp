@@ -3,13 +3,13 @@
    (:alt-name "m5.100")
    (:comment "q021_s289, rotation: 1.22, origin: 432")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "[Esempio delle terze maggiori naturali & accidentali, con le loro proportioni]")
+   (:title "[Esempio delle terze maggiori naturali et accidentali, con le loro proportioni]")
    (:line-headings
-    "La proportione della terza maggiore si domanda sesquiquarta come è da 4 a 5.\\La proportione della terza maggiore con la propinqua è in proportione più di sesquiterza,\\come sono da 3 e mezzo a 4 e mezzo.\\Questa è inrationale, come è anchora la propinquissima.\\ \\Queste sono tutte terze maggiori naturali & accidentali"
+    "La proportione della terza maggiore si domanda sesquiquarta come è da 4 a 5.\\La proportione della terza maggiore con la propinqua è in proportione più di sesquiterza,\\come sono da 3 e mezzo a 4 e mezzo.\\Questa è inrationale, come è anchora la propinquissima.\\ \\Queste sono tutte terze maggiori naturali et accidentali"
     " "
     "Queste sottoscritte sono tutte terze magiori, con le sue propinque,\\naturali & accidentali"
     " "
-    "Queste sottoscritte sono tutte terze maggiori, con le loro propinquissime\\naturali & accidentali")
+    "Queste sottoscritte sono tutte terze maggiori, con le loro propinquissime\\naturali et accidentali")
    (:section-captions
     (s1 "naturale")
     (s2 "naturale")
@@ -20,7 +20,7 @@
 
     (s7 "accidentale")
     (s8 "accidentale")
-    (s9 "naturale &\\accidentale")
+    (s9 "naturale et\\accidentale")
     (s10 "accidentale")
     (s11 "accidentale")
 

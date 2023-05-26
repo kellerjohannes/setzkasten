@@ -21,6 +21,12 @@
           (754 650 "To.diuiſo in 4. parti aſcen."))
    (:music 1400
            (:voice v1)
+           ;; Aus der Bibelgruppe:
+           ;; Hier befindet sich ein sehr seltenes Zeichen, Kreuz in Kombination mit
+           ;; Punkt. Streng genommen referenziert das keine Taste. Wahrscheinlich
+           ;; ein Fehler, da das Kreuz ohne Punkt inhaltlich sinnvoller
+           ;; scheint.
+           ;; -> Idealisierung: kein Punkt auf der dritten Note
            (:section s1)
            cclef7 b38 sb4 b38 sbd4 b22 sh4 b22 (:alt (:diplomatic sbd4)
                                                      (:idealised sb4))

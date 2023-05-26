@@ -3,7 +3,7 @@
    (:alt-name "m4.007")
    (:comment "q021_s151, rotation: 0, origin: 430")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio de salti cattivi con le pause,\\& i sospiri notati nei luoghi dei salti giusti")
+   (:title "Esempio de salti cattivi con le pause,\\et i sospiri notati nei luoghi dei salti giusti")
    (:section-headings
     ;; Positionierung der Überschriften in der idealisierten Fassung ev. anzupassen und zu ergänzen?
     (s1 "[Buono]")

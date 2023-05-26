@@ -3,7 +3,7 @@
    (:alt-name "m5.097")
    (:comment "q021_s287, rotation: 0.53, origin: 471")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Questi sono toni minori accidentali composti di due semitoni minori,\\o di uno semitono maggiore, & di uno diesis minore\\che sono di proportione sesquiduodecima,\\come sono da 12 a 13")
+   (:title "Questi sono toni minori accidentali composti di due semitoni minori,\\o di uno semitono maggiore, et di uno diesis minore\\che sono di proportione sesquiduodecima,\\come sono da 12 a 13")
    (:section-captions
     (s1 "Tono\\minore\\accidentale")
     (s2 "Tono\\minore\\accidentale")

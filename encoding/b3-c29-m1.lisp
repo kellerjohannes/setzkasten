@@ -8,7 +8,7 @@
     "Il soprano con il tenore in vari modi, a due voci"
     ""
     ""
-    "L'atto che faceva il soprano di sopra, hora il tenore lo farà di sotto, con il contr'alto,\\ed in alcuni luoghi si ritroverà la sincopa tutta buona, a due voci"
+    "L'atto che faceva il soprano di sopra, hora il tenore lo farà di sotto, con il contr'alto,\\et in alcuni luoghi si ritroverà la sincopa tutta buona, a due voci"
     "Cadentie che fuggano la sua conclusione"
     "")
    (:section-captions
@@ -60,7 +60,7 @@
    (:background ,*score-bg-color*))
   (:data
    (:text 110 58
-          (122 1960 "Eſſempio delle cadentie à due uoci, Il soprano con il Tenore in uarÿ modi,à due uoci."))
+          (122 1960 "Eſſempio delle cadentie à due uoci, Il soprano con il Tenore in uarij modi,à due uoci."))
    (:music 2214
            (:voice v1)
            (:section s1) cclef1 b22 m1 b22 sb4 b22 m3 b22 sb4 bl

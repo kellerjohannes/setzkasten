@@ -3,7 +3,7 @@
    (:alt-name "m3.072")
    (:comment "q021_s114, rotation: 0, origin: 929")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title  "Esempio delle cadentie maggiori non moderne,\\con il punto & senza, & con la sincopa\\tutta cattiva a quattro voci")
+   (:title  "Esempio delle cadentie maggiori non moderne,\\con il punto et senza, et con la sincopa\\tutta cattiva a quattro voci")
    (:voice-labels
     (s1 v1 "[Soprano]")
     (s1 v2 "Contr'alto")

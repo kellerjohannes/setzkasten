@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
     ;; Positionierung dieser Überschrift ist zu lösen, in dieser Form ist sie nicht nachvollziehbar
-    (s1 "Principio & fine")))
+    (s1 "Principio et fine")))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)

@@ -3,7 +3,7 @@
    (:alt-name "m3.059")
    (:comment "q021_s106, origin: 877")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio delle cadentie naturali ed accidentali,\\a due voci, della musica participata e mista,\\lequali fuggano la sua conclusione"))
+   (:title "Esempio delle cadentie naturali et accidentali,\\a due voci, della musica participata e mista,\\lequali fuggano la sua conclusione"))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)

@@ -3,7 +3,7 @@
    (:alt-name "m5.021")
    (:comment "q021_s226, rotation: 0, origin: 970")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Queste sono tutte le consonanze di Elami acuto [quinto] discendente\\con le sue propinque ed anchora di\\Elami grave [quinto] ascendente")
+   (:title "Queste sono tutte le consonanze di Elami acuto [quinto] discendente\\con le sue propinque et anchora di\\Elami grave [quinto] ascendente")
    (:section-headings
     (s1 "Le cinque terze\\[discendenti]")
     (s2 " \\Quinta")

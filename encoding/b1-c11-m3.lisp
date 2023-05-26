@@ -20,6 +20,12 @@
            (:voice v1)
            (:section s1)
            cclef7 b38 sb5 b38 fl5 b38 sbd5 b22 sh4 b22 sb4 b38 sbd4 b38 sb4 b38
+           ;; Bibelgruppe:
+           ;; Im mittleren Takt stellt sich die Frage nach der Solmisation, die
+           ;; Maniates hier von "la sol fa mi re" (gedruckt) nach "la sol fa la sol"
+           ;; korrigiert. Möglicherweise beruht die Korrektur auf einem Vergleich
+           ;; mit den enharmonischen 'mani'.
+           ;; Das braucht weitere Diskussion.
            (:section s2)
            cclef7 b38 fl6 (:key-signature nil nil nil nil nil nil :flat)
            b38 sb5 b38 fl5 b38 sbd5 b38 fl5 b38 sb5 b22 sbd4 b38 sb4 b22 bl

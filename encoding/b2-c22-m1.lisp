@@ -3,7 +3,7 @@
    (:alt-name "m2.025")
    (:comment "q021_s073, rotation: 0, origin: 424")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio dell'ottava, con i due tenori,\\il primo esempio sarà con l'altro primo\\& così d'uno in altro")
+   (:title "Esempio dell'ottava, con i due tenori,\\il primo esempio sarà con l'altro primo\\et così d'uno in altro")
    (:section-headings
     (s1 "Primo")
     (s2 "Secondo")

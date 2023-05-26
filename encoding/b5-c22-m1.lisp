@@ -3,7 +3,7 @@
    (:alt-name "m5.018")
    (:comment "q021_s223, rotation: 0, origin: 523")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Queste sono tutte le consonanze di Elami secondo,\\discendenti ed ascendenti")
+   (:title "Queste sono tutte le consonanze di Elami secondo,\\discendenti et ascendenti")
    (:section-headings
     (s1 "Le sei terze\\[discendenti]")
     (s2 " \\Quinta")
