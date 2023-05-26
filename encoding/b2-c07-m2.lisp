@@ -1,5 +1,5 @@
 `((:header
-   (:filename "b2-c07-m2")
+   (:filename "b2-c7-m2")
    (:alt-name "m2.010")
    (:comment "q021_s062, rotation: -0.75, origin: 937")
    (:creator "Vicentino21 / Johannes Keller")

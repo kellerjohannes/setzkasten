@@ -39,6 +39,7 @@
            (:voice v1)
            (:section s1)
            (:f-clef) max7 fclef7 sb2 b22 sbd2 b22 sh2 b22 sb2 b22 fl3 b22 sbd3 b22 sb3 bl
+           ;; Hier kommt ein Ċ♭ vor, das nicht existiert
            (:section s2)
            sb3 b22 sbd3 b22 sh3 b22 sb3 b22 fl4 b22 sbd4 b22 sb4 bl
            (:section s3)
@@ -62,7 +63,7 @@
            (:voice v1)
            (:section s5)
            (:newline)
-           (:f-clef) max7 fclef7 b22 sb5 b22 sbd5 b22 sh5 b22 sb5 b22 fl6 b22 sbd6 b22 sbd6 b22 bl
+           (:f-clef) max7 fclef7 b22 sb5 b22 sbd5 b22 sh5 b22 sb5 b22 fl6 b22 sbd6 b22 sb6 b22 bl
            (:section s6)
            b22 sb6 b22 sbd6 b22 sb7 b22 bl
            (:section s7)

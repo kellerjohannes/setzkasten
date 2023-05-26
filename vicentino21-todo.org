@@ -1,0 +1,26 @@
+#+title: Vicentino21: TODOs for the transcription of all musical examples
+
+* Allgemein
+** Typenimitation
+*** Breite der Typen optimieren
+*** Anne: ♯ auf Linien zu klein
+*** Alle Textplatzierungen im libro primo überarbeiten
+** Fake-Simile
+*** Implementierung Sesquialtera und color
+- inkl. der Markierung mit eckigen Klammerfragmenten
+*** Optimierung der Zeilenbreiten, sodass eine einheitliche Obergrenze funktioniert
+* Bearbeitung Anne Round 1
+** b1-c5-m7
+- Stern-Fussnote: muss besprochen werden
+- Letzter Takt: was heisst 'corrected version'? Entspricht nach meinem
+  Verständis der Pariser Version.
+** b1-c10-m2
+- Die Korrektur sollte einen Takt später stehen, dort habe ich eine
+  Idealisierung vorgenommen, da die Pariser Quelle eine Redundanz zum
+  übernächsten Takt beinhaltet. Ich würde diese Idealisierung so beibehalten.
+** b1-c11-m3
+- Ja, kann ich nachvollziehen, würde ich aber nicht tun, weil die
+  horizontalen Abstände sehr treu gehandhabt werden sollen im fake-simile.
+** b1-c18-m1
+- Sehr gut, ich habe daraus eine Idealisierung gemacht: Statt E-D♭
+  steht D-D♭.

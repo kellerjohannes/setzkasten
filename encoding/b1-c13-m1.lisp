@@ -93,4 +93,4 @@
           (957 nil "dinanzi")
           (1227 nil "doppò"))
    (:text 70 58
-          (70 nil "conda c."))))
+          (70 nil "conda C."))))

@@ -33,6 +33,7 @@
            (:section s4)
            sb4 b22 fl5 b22 sb5 bl
            (:section s5)
+           ;; Idealisierung, weil sonst eine Redundanz zum übernächsten Takt entsteht
            (:alt (:diplomatic sb5 b22 sh4 b22 sb4)
                  (:idealised sb5 b22 fl6 b22 sb6)) bl
            (:section s6)

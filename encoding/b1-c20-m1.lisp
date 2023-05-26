@@ -70,8 +70,21 @@
            (:section s10)
            b38 fl6 b38 sb6 b38 sb5 b38 bl
            (:section s11)
-           fl5 b38 sb5 b38 sb4 b38 (:alt (:diplomatic fl4 b38 sb4 b38 sbd4)
-                                         (:idealised sbd4 b38 fl4 b38 sb4)) bl
+
+           ;; Aus der Bibelgruppe:
+
+           ;; zweitletzter Takt im Notenbeispiel S. 38 (f. 19v), letzte Note (G punkt)
+           ;; scheint überflüssig.
+
+           ;; Zwei Interpretationen:
+
+           ;; 1. die letzte Note stellt eine Alternative für die zweite Note dar, eine
+           ;; symmetrische aber strukturell gleichbedeutende Teilung des Ganztons
+           ;; A♭-G♭ in einen semitono minore und einen semitono maggiore
+           ;; 2. ist ein Fehler, soll ignoriert werden
+           fl5 b38 sb5 b38 (:alt (:diplomatic sb4 b38 fl4 b38 sb4 b38 sbd4)
+                                 (:idealised sbd4 b38 sb4 b38 fl4 b38 sb4))
+           bl
            (:section s12)
            sb3 b38 sbd2 b38 fl2 b38 sb2 bl
            b38 b38 b38 b38 b38 b38)

@@ -63,7 +63,7 @@
    (:text 70 58
           (43 nil "ut fa ſol")
           (295 nil "la ſol re ut")
-          (635 nil "la reut")
+          (635 nil "la re ut")
           (883 nil "re mi la")
           (1195 nil "fa mi ut")
           (1542 nil "ut re ſol")

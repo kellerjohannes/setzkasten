@@ -74,9 +74,11 @@
    (:music 2188
            (:section s6) (:newline) (:f-clef) max7 fclef7 b38 sb6 b38 sbd6 b38 sb7 bl
            (:section s7) sb7 b38 sbd7 b38 fl8 b38 (:alt (:diplomatic sbd8)
-                                                        (:idealised sb8)) b38 fl8 b38 sbd8 b38 sb8 bl
+                                                        (:idealised sb8))
+           b38 fl8 b38 sbd8 b38 sb8 bl
            (:section s8) sb8 b38 (:alt (:diplomatic sbd9)
-                                       (:idealised sbd8)) b38 fl9 b38 sb9 b38 fl9 b38 sbd9 b38 sb9 bl
+                                       (:idealised sbd8))
+           b38 fl9 b38 sb9 b38 fl9 b38 sbd9 b38 sb9 bl
            b38 b38 b38 b22 b430)
    (:text 70 58
           (10 396 "per n. mi. mi. fa.")

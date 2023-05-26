@@ -36,7 +36,7 @@
            (:newline)
           sb5 b22 sh5 b22 sb5 bl
            (:section s6)
-          sb9 b22 fl8 b22 sb8 bl
+          (:alt (:diplomatic sb9) (:idealised sb8)) b22 fl8 b22 sb8 bl
            (:section s7)
           sb7 b22 sbd6 bl
            (:section s8)
