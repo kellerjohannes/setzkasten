@@ -59,6 +59,21 @@
 - Achtung, hier wurde ein Korrekturvorschlag von Anne aus der
   Bibelgruppe noch nicht implementiert, betrifft Tenor, T. 17, in der
   Quelle die dritte Tenor-Zeile zu Beginn.
+** b5-c4-m3
+- Ja, einverstanden, bin nicht sicher, ob ich das gut lösen
+  kann. Nicht nur aus technischen Gründen, auch ästhetisch, weil
+  gerade in diesem Fall es nicht einfach ist, eine einheitliche Höher
+  der Textzeile festzulegen, sie würde entweder für die ersten beiden
+  Beispiele zu nahe an den '8' des Schlüssels zu liegen kommen, oder
+  zu tief unten liegen für die letzten beiden Beispiele. Ich werde
+  solche Fälle weiterhin im Auge behalten.
+** b5-c8-m1 bis b5-c16-m1
+- Alle diese Beispiele werde ich erst nach systematischer Analyse und
+  Diskussion aller Tonhöhen idealisieren können, d.h. im Moment gilt
+  es nur zu prüfen, ob die diplomatische Übertragung der Quelle
+  entspricht (die diplomatische Übertragung hattest du bisher noch
+  nicht). Darauf müssen wir also später zurückkommen, und ich
+  ignoriere deine Korrekturen.
 ** Allgemein
 - ♯: Sie sind tatsächlich verschieden, je nach dem ob sie auf der
   Notenlinie oder im Zwischenraum stehen. Allerdings im Moment
@@ -86,12 +101,14 @@ CLOSED: [2023-05-26 Fri 16:26]
 ** Anne Round 1
 *** DONE Libro 1
 CLOSED: [2023-05-26 Fri 11:22]
-*** DONE Libro 2
+*** DONE Libro 2 (unvollständig)
 CLOSED: [2023-05-26 Fri 11:22]
-*** DONE Libro 3
+*** DONE Libro 3 (unvollständig)
 CLOSED: [2023-05-26 Fri 16:26]
-*** TODO Libro 4
-*** TODO Libro 5
+*** DONE Libro 4 (ohne Korrekturen)
+CLOSED: [2023-05-26 Fri 16:55]
+*** DONE Libro 5 (unvollständig)
+CLOSED: [2023-05-26 Fri 16:55]
 ** Globale Korrekturen
 *** DONE Sämtliche ÿ durch ij ersetzt.
 CLOSED: [2023-05-26 Fri 11:50]
@@ -155,7 +172,8 @@ Und ich habe hinzugefügt in welcher Stimme sie seien.
 **** DONE AS
 CLOSED: [2023-05-26 Fri 16:42]
 Hierusalem: siehe Annes eigene Transkription mit Idealisierungen, PDF.
-*** TODO Ende b5
+*** DONE Ende b3?
+CLOSED: [2023-05-26 Fri 16:55]
 AS
 
 Übrigens gibt es auch ein tiefes E im Bass mit Hilfslinie, was du
