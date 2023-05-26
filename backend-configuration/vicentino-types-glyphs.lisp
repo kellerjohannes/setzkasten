@@ -3,6 +3,7 @@
   (glyph-blind                  s1080   "space-1080"     1080 ,*glyph-height*)
   (glyph-blind                  s720   "space-720"     720 ,*glyph-height*)
   (glyph-blind                  s41   "space-41"     41 ,*glyph-height*)
+  (glyph-blind                  s0   "space-0"     1 ,*glyph-height*)
   (glyph-staff                  b13     "blank-13"       "stave" 13 ,*glyph-height*)
   (glyph-staff                  b22     "blank-22"       "stave" 22 ,*glyph-height*)
   (glyph-staff                  b27     "blank-27"       "stave" 27 ,*glyph-height*)

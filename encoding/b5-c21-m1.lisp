@@ -45,7 +45,7 @@
            (:section s2) b22 sb9 b22 bl
            (:section s3) sb9 b22 (:divider :regular) sb9 bl
            sb9 b22 sb9 b22
-           (:section s4) (:alt (:it (:bracketed) sb9))
+           (:section s4) (:alt (:diplomatic s0) (:idealised s0) (:it (:bracketed) sb9))
            (:voice v2)
            (:section s1) cclef7 b22 sh7 b22 sb7 b22 (:divider :regular) sbd7 bl
            b22 sb7 b22 sh6 b22 sb6 b22 bl
@@ -67,7 +67,7 @@
            (:section s6) b22 sb6 b22 bl
            (:section s7) b22 sb7 b22 sbd7 b22 bl
            b22 sh7 b22 sb7 b22 fl8 b22 (:divider :regular) sb8 b22 b22
-           (:section s8) (:alt (:it (:bracketed) sb9))
+           (:section s8) (:alt (:diplomatic s0) (:idealised s0) (:it (:bracketed) sb9))
            (:voice v2)
            (:section s5) cclef7 b22 sb2 b22 (:divider :regular) sb2 bl
            sb2 b22 sb2 bl
