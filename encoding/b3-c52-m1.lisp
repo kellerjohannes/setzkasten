@@ -14,6 +14,10 @@
    (:height nil)
    (:background ,*score-bg-color*))
   (:preamble-lilypond
+   ;; Bibelgruppe:
+   ;; Es ist zu entscheiden, ob alle fünf Varianten dieses Stück ausnotiert angeboten werden sollen.
+   ;; Technisch könnte dies innerhalb dieser Quellcodedatei möglich sein, würde aber zu zahlreichen
+   ;; und unübersichtlichen `:alt'-Elementen führen. Ist zu diskutieren.
    (:clef-overrides
     (s1 v1 "treble")
     (s1 v2 "treble_8"))
@@ -66,6 +70,7 @@
      (425 1365 "Enarmonico;& poi ᴅiatonico ,& ᴄromatico ;& poi ᴅia⸗"))
    (:text 70 58
      (661 882 "tonico,& ᴄromatico,& ᴇnarmonico."))
+   ;; Musikzeile 1 (Sopran 1)
    (:music 2213
            (:voice v1)
            (:section s1) cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat) b22 met-imperf-min-dim b22 sb4 b22 m4 sh4 m4 b22 m5 b22 m5 b22 m1 b22 m8 b22 sb6 b22 mrest5
@@ -76,6 +81,7 @@
      (590 nil "ij")
      (845 775 "ſon queſti dolci lumi i dolci lumi")
      (1658 548 "dolce mio bē ſon queſti"))
+   ;; Musikzeile 2 (Sopran 2)
    (:music 2196
            cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat) b22 m3 b22 sm3 b22 md6 b22 md3 b22 mrest3
            b22 m4 b22 sm1 b22 sm1 sb4 b22 m3 fl3 md3 b22 md3 b22 m4 b22 m4 b22 sm4 b22 m4 b22 sm4 sb2 b22 sb2 b22 mrest1 b22 m1 b22 md1 dot2 smd1 fl2 m2 fl2 m2 fl2 sb2 b22 sb2 b22 md2 b22 md2 b38)
@@ -85,6 +91,7 @@
      (441 nil "ſon queſtʼi")
      (709 nil "dolci lumi che tānto dolcemente")
      (1466 732 "che tanto dolcemente mi con⸗"))
+   ;; Musikzeile 3 (Sopran 3)
    (:music 2209
            cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat) b22 fl3 b22 sb3 b22 m1 b22 sb1 b22 sb8 nat7
            ;; idealisierung zu diskutieren
@@ -97,6 +104,7 @@
      (941 nil "fanno che")
      (1220 nil "dol")
      (1361 782 "cemente mi conſumi mi conſumi."))
+   ;; Musikzeile 4 (Alt 1)
    (:music 2229
            (:voice v2)
            (:section s1) cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat) met-imperf-min-dim b22 sbrest5 b22 sb6 nat4 m4 b22 m5 b22 m3 b22 m3 dot4 sm3 b22 m6 b22 m6 b22 m2 b22 m5 sh5 m5 b22 m6 b22 m6 sbd3 b22 sb6 b22 mrest5
@@ -108,22 +116,29 @@
      (1414 nil "dolce mio bē")
      (1735 nil "ij")
      (1937 nil "ſon queſti"))
+   ;; Musikzeile 5 (Alt 2)
    (:music 2224
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat) b38 md0 b22 md3 sh1 m1 b22 sb1 fl3 m3 b22 sb2 sbd5 b22 m3 b22 m5 b22 m3 sb6 m9 b22 m9 b22 m9 m5d dot6 sm5d fl7 sbd7 fl3 sb3 b22 mrest3
            ;; idealisierung zu diskutieren
-           b22 m4 b22 (:alt (:diplomatic md4) (:idealised m4) (:tatti m4)) b22 m1 b22 md8 b22 md8 b22 sb4 b22 m2 m9 b22 m7 fl7 m7 b38)
+           b22 m4 b22 (:alt (:diplomatic md4) (:idealised md4) (:tatti m4)) b22 m1 b22 md8 b22 md8 b22 sb4 b22 m2 m9 b22 m7 fl7 m7 b38)
    (:text 90 58
      (130 nil "i dolci")
      (321 1852 "lumi i dolci lumi che tāto che tanto dolcemente fanno che dolcemēte che dolce⸗"))
+   ;; Musikzeile 6 (Alt 3)
    (:music 2223
-           cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat) b22 m6 b22 m9 b22 md6 b22 md6 b22 m9 b22 sb7 b22 m7 sb3 b22 sbd6 nat4 (:alt (:diplomatic sb4) (:idealised m4)) b22 m4 b22 m2 b22 m9 b22 m9 b22 m9 sh8 m8 b22 m8 b22 m7 b22 m7 b22 m7 b22 m8 b22 m8 b22 m8 b22 brd4 b22 brd4 b22 blbl b38 b38 b125)
+           cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat) b22 m6 b22 m9 b22 md6 b22 md6 b22 m9 b22 sb7 b22 m7 sb3 b22 sbd6 nat4
+           ;; Notwendige Idealisierung, um die rhythmische Synchronisation der Stimmen
+           ;; zu gewährleisen
+           (:alt (:diplomatic sb4) (:idealised m4)) b22 m4 b22 m2 b22 m9 b22 m9 b22 m9 sh8 m8 b22 m8 b22 m7 b22 m7 b22 m7 b22 m8 b22 m8 b22 m8 b22 brd4 b22 brd4 b22 blbl b38 b38 b125)
    (:text 100 58
      (91 1851 "mente mi conſumi mi conſumi fanno che dolcemente mi conſumi mi conſum i."))
+   ;; Musikzeile 7 (Tenor 1)
    (:music 2221
            (:voice v3) (:section s1)
            cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat) b22 met-imperf-min-dim b22 brrest4 b22 sbrest5 b22 sb3 b22 m3 sh3 m3 b22 m4 b22 m2 b22 m2 b22 m5 b22 m5 b22 m5 b22 sbd8 nat6 m6 b22 m6 b22 m3 b22 m3 m7 sb3 b22 m2 b22 md2 b22 md2 b22 m3 b22 m3 b22 m1 sb8 sh7 m7 b22 fl8 b22 m8 b22 b38)
    (:text 100 58
      (309 1859 "Dolce mio ben ſon queſtʼi dolci  lumi dolce mio bē ſon queſtʼi dolci lumi sō queſtʼi"))
+   ;; Musikzeile 8 (Tenor 2)
    (:music 2227
            cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat) b22 fl8 b22 m8 b22 m8 b22 sb5 b22 m7 b22 m7 b22 m7 b22 sbd4 b22 m7 b22 m5d b22 m7 b22 m3 b22 m3 b22 m6 nat6 m6 b22 m6 b22 fl2 b22 sb2 fl5 b22 md5 b22 fl5 b22 md5 b22 m3 b22 m3 b22 sb3 b22 m3 b22 mrest3
            b22 md6 b22 md6 b22 b38)
@@ -134,8 +149,33 @@
      (1072 nil "dolcemente")
      (1486 nil "che tanto dolcemente")
      (2019 nil "mi con"))
+   ;; Musikzeile 9 (Tenor 3)
    (:music 2228
-           cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat) b22 sb6 b22 br4 b22 brrest2
+           cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat) b22
+           ;; Bibelgruppe:
+           ;; Abklärung, welcher Eingriff hier genau gemacht wurde. Ätzen? Gekratzt?
+           ;; Anne hat eine Lösung gefunden: mi con-su-mi. B♭ wird ersatzlos
+           ;; gestrichen. "su" als G brevis (wie vom Custos angezeigt), "mi" als
+           ;; tiefes C semibrevis, wie in den Quellen ausradiert. Danach weiter wie
+           ;; gedruckt, mit brevis-Pause.
+           ;; Cordes:
+           ;; #+begin_quote
+           ;; Ein größerer Eingriff war nötig in Takt 17 (Tenor): die im Original angegebenen
+           ;; Töne b und g führen zu Einklängen mit dem Alt. Da in jedem Fall in Takt 18 ein
+           ;; Fundamentton c erforderlich ist, um die Quarte des Soprans und die Vorbereitung
+           ;; des anschließenden Vorhalts ‘abzudecken’, wurden die beiden Töne in vorliegender
+           ;; Form korrigiert. Der Ton es in Takt 17 (Bass) muss selbstverständlich bleiben
+           ;; (wegen des Quartsprungs B-es), und zwar für die Dauer des ganzen Takts, um
+           ;; keinen chromatischen Halbton entstehen zu lassen. In Takt 18 (Alt wurde
+           ;; ebenfalls es’ gesetzt, um einen Querstand (chromatischen Halbtonschritt verteilt
+           ;; auf zwei Stimmen) zu vermeiden.
+           ;; #+end_quote
+           ;; David hat eine alternative Korrektur, die einen kleineren Eingriff
+           ;; erfordert. Nach einer Diskussion in der Bibelgruppe besteht ein
+           ;; Konses, mit Annes Fassung weiterzugehen.
+
+           ;; Die aktuelle Idealisierung beinhaltet Annes Vorschlag.
+           (:alt (:diplomatic sb6 b22 br4) (:idealised br4 b22 sb0)) b22 brrest2
            b22 m2 b22 sb7 sh7 m7 b22 m8 b22 m8 b22 md5 b22 md5 b22 mrest7
            b22 m8 b22 fl9 b22 m9 b22 sb7 b22 m7 b22 mrest5
            b22 m5d b22 m7 sh7 sb7 b22 m7 b22 m3 b22 m1 b22 brd3 b22 brd3 b22 blbl b118 b118)
@@ -147,6 +187,7 @@
      (1040 nil "conſumi")
      (1313 nil "dolce")
      (1479 nil "mente mi conſumi."))
+   ;; Musikzeile 10 (Bass 1)
    (:music 2227
            (:voice v4)
            (:section s1)
@@ -161,6 +202,7 @@
      (1640 nil "ben")
      (1774 nil "ij")
      (1904 nil "ſon queſtʼi"))
+   ;; Musikzeile 11 (Bass 2)
    (:music 2227
            (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat) b22 m4 b22 m4 b22 sbd4 sb0 mrest3
            b22 m3 b22 m3 b22 m1 b22 m1 b22 m1 b22 fl2 b22 sb2 b22 fl2 b22 md2 fl2 md2 b22 fl5 b22 m5 b22 fl5 b22 m5 b22 fl5 m5 m3 b22 sb3 b22 sbd3 fl6 b22 sb6 b22 m6 b22 m6 b22 sb8 dot8 m8 b22 sbd8 b38)
@@ -172,6 +214,7 @@
      (1046 nil "te")
      (1205 nil "ij")
      (1727 nil "fanno che mi conſu"))
+   ;; Musikzeile 12 (Bass 3)
    (:music 2224
            (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat) b22 m4 b22 m4 b22 m2 b22 m2 b22 m5 b22 m5 b22 md5 b22 md5 b22 sb1 b22 sb4 b22 sbrest5
            b22 sb5 b22 sb2 b22 sb2 b22 sb3 b22 (:divider :double) (:duration-override 2) brd3 (:duration-override nil) b38 blbl

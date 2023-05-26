@@ -47,5 +47,25 @@
    (:text 90 58
           (327 nil "ſettima ottaua Enarmonica"))
    (:music 2214
+           ;; Bibelgruppe:
+           ;; - Generell ist die Konsequenz zu überprüfen, mit der die bereits
+           ;;   eingeführten "quarte" und "quinte" in die "ottave" integriert
+           ;;   werden. Inkonsequenzen sind kein Problem, denn hier handelt es sich
+           ;;   um ein 'Konstruktionsprinzip' (von Vicentino "via" genannt), und
+           ;;   nicht um ein System zur Legitimierung oder Analyse von
+           ;;   Musik. Prinzipiell geht es nur um die Qualitäten der beteiligten
+           ;;   Schritte von "corto" und "lungo", die genaue Verteilung der "corto
+           ;;   del corto" und "lungo del corto" bleibt laut Vicentino dem
+           ;;   Komponisten überlassen, ist also strukturell irrelevant. Es ist nur
+           ;;   zu beachten, dass die Summe aller "gradi" stets zu einer Oktave
+           ;;   führen.
+           ;; - Die "sesta ottava enarmonica" ist jedoch auch vor diesem Hintergrund
+           ;;   fragwürdig, denn sie hat keinen Ton an der Position der Quarte oder
+           ;;   der Quinte. D.h. das Konstruktionsprinzip der Kombination von
+           ;;   "quarte" und "quinte" lässt sich hier nicht nachvollziehen.
+
+           ;; Eine Idealisierung würde hier eine komplette Neustrukturierung bedeuten, was
+           ;; der Absicht der Edition widerspricht. Ev. müsste dies separat kommentiert werden
+           ;; und eine neu strukturierte 'settima ottava' vorgeschlagen werden.
            (:section s7) cclef5 b38 sb2 b38 sbd2 b38 fl3 b38 b22 sb3 b38 sb5 b38 sbd5 b38 fl6 b38 sb6 b38 sb8 b38 sbd8 b38 fl9 b38 b38 sb9 b38 fl9 b38 sbd9 b38 sb9 b22 b22 bl
            b118 b118 b118 b118 b118 b118)))

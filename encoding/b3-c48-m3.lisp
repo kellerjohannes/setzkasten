@@ -3,7 +3,7 @@
    (:alt-name "m3.104")
    (:comment "q021_s130, origin: 1005")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Essempio della prima quinta delle spetie de i tre generi [commisti], discendenti"))
+   (:title "Essempio della prima quinta delle spetie de i tre generi [commisti,] discendenti"))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)

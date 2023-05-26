@@ -14,8 +14,7 @@
    (:height nil)
    (:background ,*score-bg-color*))
   (:preamble-lilypond
-   (:alt (:transposition-quarta-discendente (:clef-overrides
-                                             (s1 v2 "treble_8"))))
+   (:alt (:transposition-quarta-discendente (:clef-overrides (s1 v2 "treble_8"))))
    (:standalone-title "»Alleluia«")
    (:standalone-subtitle
     (:alt (:c-standalone "Libro 3, Capitolo 44 [orig. XLVIIII], fol. 62r-62v")
@@ -169,7 +168,7 @@
            (:ligature-end) b22 fl6 b22 sb6 b22 br7 b22 sb7 b22 sh7 b22 sb7 br8 brbl6 b22 sbrest7
            b22 sb7 sb4 sb8 brbl8 sbbl4 b22 sbbl7 brbl5 br8 custos4)
    (:text 90 58
-          (194 870 "nus excultemus et letemur exultemus")
+          (194 870 "nus exultemus et letemur exultemus")
           (1105 nil "et")
           (1227 nil "le")
           (1296 nil "temur")
@@ -209,4 +208,17 @@
            (:f-clef) max7 fclef7 b38 br5 b38 sb5 b38 br1 b38 sb4 b38 br0 b38 fl3 b38 sb3 b38 br0
            b38 sb0 b38 sbbl2 b38 brbl5 b38 br1 sbrest3 br4 b38 sb1 b38 br1 b38 sb4 b38 sbbl0
            b38 brbl5 b38 (:divider :double) br1 b38 blbl
-           b38 b22 custos4 b22 b38 b38 b38 b38 b38 b38 b38)))
+           b38 b22 custos4 b22 b38 b38 b38 b38 b38 b38 b38)
+   (:text 70 58
+          (164 nil "ex ul")
+          (325 nil "te")
+          (398 nil "mus")
+          (522 nil "et")
+          (650 nil "le")
+          (722 nil "temur")
+          (900 nil "in")
+          (1013 nil "ea")
+          (1147 nil "& le")
+          (1331 nil "te mur in")
+          (1597 nil "ea")
+          (1736 nil "alleluia"))))

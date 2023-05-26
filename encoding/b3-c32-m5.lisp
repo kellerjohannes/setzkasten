@@ -42,6 +42,8 @@
            (:section s1) gclef3 fl5 (:key-signature nil nil nil nil nil nil :flat)
            b22 mrest3 b22 sb2 m1 sb2 b22 bl
            (:section s2) b22 mrest3 b22 sb4 m3 sb4 b22 bl
+           ;; Hier könnte man eine Ficta (♮ vor m5) diskutieren. Wurde in der Bibelgruppe als offene
+           ;; Frage festgehalten.
            (:section s3) mrest5 b22 sb6 m5 sb6 b22 bl
            (:section s4) (:newline) mrest7 b22 sb9 m8 sb9 b22 bl
            (:section s5) b22 mrest3 b22 sb3 sh2 m2 sb3 b38 bl

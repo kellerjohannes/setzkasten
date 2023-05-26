@@ -3,7 +3,18 @@
    (:alt-name "m3.059")
    (:comment "q021_s106, origin: 877")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio delle cadentie naturali et accidentali,\\a due voci, della musica participata e mista,\\lequali fuggano la sua conclusione"))
+   (:title "Esempio delle cadentie naturali et accidentali,\\a due voci, della musica participata e mista,\\lequali fuggano la sua conclusione")
+   ;; Diese headings sind sinngemäss ergänzt, in der Quelle steht 'a due voci' jedoch nur ein
+   ;; einziges Mal. Sollen sie in [] gesetzt werden?
+   (:section-headings
+    (s1 "A due voci")
+    (s2 "A due voci")
+    (s3 "A due voci")
+    (s4 "A due voci")
+    (s5 "A due voci")
+    (s6 "A due voci")
+    (s7 "A due voci")
+    (s8 "A due voci")))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)

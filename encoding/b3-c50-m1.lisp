@@ -26,6 +26,19 @@
     (s4 v1 "treble")
     (s4 v2 "treble_8")))
   (:data
+   ;; Bibelgruppe:
+   ;; - im zweiten, vierten und fünften Beispiel befinden sich Takte mit
+   ;;   fünf Semibreven: Disskusionsbedarf
+   ;;   - Notationsfehler (Notenwerte müssten dann korrigiert werden)
+   ;;   - rhythmische Freiheit bzw. Unproportioniertheit (könnte sich
+   ;;     auf die Tonhöhen-Unproportioniertheit enharmonischer
+   ;;     Intervalle beziehen, als rhythmische Analogie)
+   ;;   - Quintolen, Referenzmaterial könnten Traktate von Ganassi
+   ;;     etc. sein, die im Rahmen von Diminutionsschulen ähnliche
+   ;;     Situationen explizit beschreiben.
+
+   ;; Im Moment wird hier keine Idealisierung vorgenommen, was der Absicht der Edition entspricht,
+   ;; möglichst nur offensichtliche Fehler, aber keine interpretierende Lesarten anzubieten.
    (:text 70 58
           (667 nil "ᴄadentie à quattro uoci,")
           (1313 nil "Soprano."))
@@ -53,15 +66,17 @@
            (:voice v3)
            (:section s1) cclef7 b22 sb7 b22 sbd6 b22 sb7 sh7 sb7 bl
            (:section s2) (:duration-override 3/5) fl5 sb5 sbd4 fl5 sb5 fl5 sbd5 sb5 bl (:duration-override nil)
-           (:section s3) mrest7 b22 m7 b22 fl5 b22 sb5 sb5 bl
-           (:section s4) b38 b22 sb3 b38 b22 sbd0 b38 b22 sb3 b38 b22 bl
+           (:section s3) mrest7 b38 m7 b22 fl5 b22 sb5 sb5 bl
+           (:section s4) b38 b38 sb3 b38 b38 sbd0 b38 b38 sb3 b38 b22 bl
            (:section s5) (:duration-override 3/5) fl9 b22 sb9 sbd8 b22 fl9 b22 sb9 b22 fl9 b38 sbd9 sb9 bl (:duration-override nil))
    (:text 70 58
           (654 nil "ᴄadentie à quattro uoci,")
           (1297 nil "Baſſo."))
    (:music 2217
            (:voice v4)
-           (:section s1) (:f-clef) max7 fclef7 b38 sb2 b38 sbd6 (:alt (:diplomatic br2 br4) (:idealised br2 b38)) b38 bl
+           (:section s1) (:f-clef) max7 fclef7 b38 sb2 b38 sbd6
+           ;; Idealisierung eines offensichtlichen Druckfehlers.
+           (:alt (:diplomatic br2 br4) (:idealised br2 b38)) b38 bl
            (:section s2) b38 sb7 b22 b38 sbd4 b38 b22 sb7 b38 bl
            (:section s3) b38 sb2 b22 b38 sbd6 b38 sb2 b22 bl
            (:section s4) (:newline) b38 mrest7 b38 m7 b38 b22 sbd6 b38 b22 sb7 b38 bl

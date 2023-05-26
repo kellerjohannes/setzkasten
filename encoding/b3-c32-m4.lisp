@@ -32,7 +32,8 @@
            (:section s3) (:newline) b22 m3 b22 sb1 b22 m0 b22 bl
            (:section s4) b22 mrest5 b22 sb5 sh4 m4 b22 sb5 b22 bl
            (:section s5) b22 mrest5 b22 sb6 b38 m5 (:alt (:diplomatic dot4) (:idealised dot6))
-           ;; idealisierung zu diskutieren
+           ;; idealisierung zu diskutieren, sie wurde von Johannes vorgeschlagen, damit die vier
+           ;; Stimmen gleich lang sind. Anne hat sie in ihrer Korrekturrunde kritisiert.
            sm4 sb3 b38 m2 b38 (:alt (:diplomatic br3) (:idealised br3 b22 br3)) b38 blbl)
    (:text 110 58
           (664 597 "Cadentie del ᴄontrʼᴀlto."))
@@ -60,4 +61,6 @@
            (:section s2) sb6 b22 sb2 b22 m6 dot6 sm5 b22 m4 b22 m5 b22 sb6 b22 sb2 b22 bl
            (:section s3) b38 b22 sb2 b38 sb1 b38 b22 bl
            (:section s4) b38 sb4 b38 sb5 b38 sb1 b38 bl
-           (:section s5) mrest7 m5 m2 m3 b22 m4 dot4 sm2 sb5 m4 b22 sb2 m1 br0 blbl)))
+           (:section s5) mrest7 m5 m2 m3 b22 m4 dot4 sm2 sb5 m4 b22 sb2 m1 br-1 blbl)
+   ;; nötig, um der Hilfslinie genügen vertiaklen Raum zu geben.
+   (:vspace 30)))

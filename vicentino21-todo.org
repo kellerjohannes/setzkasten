@@ -2,15 +2,15 @@
 
 * Allgemein
 ** Typenimitation
-*** Breite der Typen optimieren
-*** Anne: ♯ auf Linien zu klein
-*** Alle Textplatzierungen im libro primo überarbeiten
+*** TODO Breite der Typen optimieren
+*** TODO Anne: ♯ auf Linien zu klein
+*** TODO Alle Textplatzierungen im libro primo überarbeiten
 ** Normalisierung (Lilypond)
-*** Implementierung Sesquialtera und color
+*** TODO Implementierung Sesquialtera und color
 - inkl. der Markierung mit eckigen Klammerfragmenten
-*** Optimierung der Zeilenbreiten, sodass eine einheitliche Obergrenze funktioniert
-*** Neuarrangement der Skalen in b5-c59
-*** Implementierung verschiedener Textgrössen in den Unterschriften für b5-c48 - b5-c52
+*** TODO Optimierung der Zeilenbreiten, sodass eine einheitliche Obergrenze funktioniert
+*** TODO Neuarrangement der Skalen in b5-c59
+*** TODO Implementierung verschiedener Textgrössen in den Unterschriften für b5-c48 - b5-c52
 * Bearbeitung Anne Round 1
 ** b1-c5-m7
 - Stern-Fussnote: muss besprochen werden
@@ -39,6 +39,26 @@
   z.B. fol.136r, 4. Musikzeile, rechte Spalte, "Primo ordine
   enarmonico naturale". Im Moment habe ich allerdings die
   Idealisierung 'accidentale' eingepflegt.
+** b3-c32-m2
+- Sopran, letzter Takt, erste Minima: Tippfehler, soll natürlich eine
+  Minima-Pause sein.
+- Tenor, letzter Takt, erste Minima: warum hast du das eingekreist?
+  Wegen der Kollision mit dem Sopran? Falls ja, alles klar. Falls es
+  vom Tippfehler im Sopran unabhängig ein Problem mit dem Tenor gibt,
+  müssen wir das nochmals anschauen.
+** b3-c32-m4
+- Sopran, letzte Note: das ist eine Idealisierung von mir, damit das
+  Notenbeispiel aufgeht. Alternativ könnte man aus der Brevis auch
+  eine Longa machen. Oder man lässt es wie es ist, das verstösst aber
+  gegen unser Prinzip, in der idealisierten Fassung stets die
+  Mehrstimmigkeit rhythmisch so zu korrigieren, dass sie stets aufgeht.
+** b3-c44-m1 (Alleluia)
+- Schwarze Notation ist im Moment noch nicht implementiert, dafür
+  brauche ich etwas mehr Zeit, ist aber vorgemerkt!
+** b3-c52-m1 (Dolce mio ben)
+- Achtung, hier wurde ein Korrekturvorschlag von Anne aus der
+  Bibelgruppe noch nicht implementiert, betrifft Tenor, T. 17, in der
+  Quelle die dritte Tenor-Zeile zu Beginn.
 ** Allgemein
 - ♯: Sie sind tatsächlich verschieden, je nach dem ob sie auf der
   Notenlinie oder im Zwischenraum stehen. Allerdings im Moment
@@ -59,7 +79,8 @@
 CLOSED: [2023-05-26 Fri 11:23]
 *** DONE Libro 2
 CLOSED: [2023-05-26 Fri 11:50]
-*** TODO Libro 3
+*** DONE Libro 3
+CLOSED: [2023-05-26 Fri 16:26]
 *** TODO Libro 4
 *** TODO Libro 5
 ** Anne Round 1
@@ -67,18 +88,23 @@ CLOSED: [2023-05-26 Fri 11:50]
 CLOSED: [2023-05-26 Fri 11:22]
 *** DONE Libro 2
 CLOSED: [2023-05-26 Fri 11:22]
-*** TODO Libro 3
+*** DONE Libro 3
+CLOSED: [2023-05-26 Fri 16:26]
 *** TODO Libro 4
 *** TODO Libro 5
 ** Globale Korrekturen
 *** DONE Sämtliche ÿ durch ij ersetzt.
 CLOSED: [2023-05-26 Fri 11:50]
+*** DONE Alle '&' durch 'et' in den normalisierten Textbausteinen ersetzt
+CLOSED: [2023-05-26 Fri 16:26]
 * Zu liefern
 ** TODO Anne
 Wenn du die Datei, die du mir geschickt hast öffnest (hier nochmals
 angehängt), wirst du merken, dass die Beispiele auf S. 126 (b3-c32-m5)
 und 127 (b3-c38-m1) nur mit ihren Namen dort stehen, anstatt mit
 Noten. Kannst du sie mir eventuell nachreichen?
+*** TODO b3-c32-m5
+*** TODO b3-c38-m1
 * Einzupflegende Korrespondenz
 ** Johannes/Anne
 *** DONE b2-c7
@@ -105,14 +131,17 @@ Tenore-Alt mit dem Halbton unten, Alt-Tenor, mit dem Halbton oben, und
 dann die nicht bezeichneten, wo der Semitono in der unteren
 Stimme. Die Klangfolgen finde ich merkwürdig, aber vielleicht sind sie
 gedacht in einem grösseren Satz verborgen zu sein.
-*** mehrstimmige Stücke b3
-**** TODO AS
+*** DONE mehrstimmige Stücke b3
+CLOSED: [2023-05-26 Fri 16:42]
+**** DONE AS
+CLOSED: [2023-05-26 Fri 14:58]
 Und ich habe auch jetzt Alleluia und das diatonische Stück
 angeschaut und habe keine musikalische Fehler gefunden. Bei der
 Alleluia würde ich ein paar Zeichen einfügen, um die schwarze Notation
 mit den üblichen Klammern anzuzeigen: "⌐"
 
-**** TODO AS
+**** DONE AS
+CLOSED: [2023-05-26 Fri 16:29]
 ich habe noch einen weiteren Fehler gefunden, diesmal anscheinend auch
 im Druck:
 
@@ -123,9 +152,9 @@ im Druck:
 
 Und ich habe hinzugefügt in welcher Stimme sie seien.
 
-**** TODO AS
+**** DONE AS
+CLOSED: [2023-05-26 Fri 16:42]
 Hierusalem: siehe Annes eigene Transkription mit Idealisierungen, PDF.
-
 *** TODO Ende b5
 AS
 
@@ -152,7 +181,7 @@ Vicentino hat haben wollen mit den weiteren Beispielen weiss ich
 nicht. Ich finde beides ist möglich. Aber vielleicht doch mit dem b
 molle vorgezeichnet, da man in der normalen Musik nie ein As finden
 würde ohne B.
-* TODO Offene Fragen an die Gruppe (alle Idealisierungen herausschreiben!)
+* TODO Offene Fragen an die Gruppe
 ** Allgemein
 *** TODO Vertikale Platzierung von Additionspunkten
 Ist diese zu idealisieren und wenn ja, nach welchem Prinzip. Im Moment
@@ -160,6 +189,24 @@ sind sie generell idealisiert, das ist aber nochmals gesamthaft zu prüfen.
 *** TODO Normalisierung aller Textbausteine
 Diese ist im Moment nicht einheitlich. Wird das Luigi nochmals
 systematisch durchgehen und selbständig korrigieren?
+
+'&' wurde in der Normalisierung generell mit 'et' übertragen,
+allerdings nicht konsequent. Alte Anpassungen als 'ed' wurden
+konsequent in 'et' verändert.
+*** TODO Idealisierung der vertikalen Platzierung von ♯ und ♭
+Manchmal sind sie um eine Position verruscht, ohne dass sie eine
+chromatische Ligatur anzeigen. Im Moment sind sie alle konsequent
+idealisiert, d.h. auf die gleiche Position wie der Notenkopf gesetzt.
+*** TODO Ausnahmsweises Beibehalten der originalen Schlüsselung
+Gewisse Beispiele verlieren ihre Aussagekraft, wenn die Schlüssel
+durch moderne G- und F-Schlüssel ersetzt werden:
+- b3-c15-m1 - b3-c23-m1 (Modus-Beispiele der musica mista e paricipata)
+*** TODO Custos-Setzung in der Normalisierung
+Ist es wünschenswert, die Custodien in der Normalisierung zu haben,
+wenn damit eine nicht gedruckte Fortsetzung eines Stücks suggeriert
+wird? Z.B. in »Madonna«.
+** TODO Alle :idealised-Elemente suchen und mit ;; ergänzen
+** TODO Alle ;;-Elemente suchen und hierher verlinken
 ** TODO b1-c05
 - [[file:encoding/b1-c05-m5.lisp::;; Hier kommt ein Ċ♭ vor, das nicht existiert]]
 - [[file:encoding/b1-c05-m5.lisp::;; Zu bestätigen]]
@@ -169,6 +216,13 @@ systematisch durchgehen und selbständig korrigieren?
   zweiten Takt? Zur Markierung der]]
   - siehe dazu auch: [[file:~/org/zettelkasten/20220205200109-literatur_vicentino_l_antica_musica.org::*Annes Vorschläge][Annes Vorschläge]]
 - [[file:encoding/b2-c20-m1.lisp::;; hier gibt es keine Sexte! Soll hier etwas idealisiert werden?]]
+* Im Auge zu behalten für Neu-Implementierungen
+** Schwarze Notation
+*** TODO Liste vervollständigen
+*** b3-c44-m1
+** 'polymeter'-Option (siehe lilypond-backend)
+Wenn aktiv, wird »Alleluia« ([[file:encoding/b3-c44-m1.lisp::`((:header]])
+nicht korrekt gesetzt.
 * Bemerkungen für die Aufnahme
 ** b3-c15-m1
 Eine Oktave höher?

@@ -22,6 +22,8 @@
            (:voice v1)
            (:section s1) cclef1 mrest5 sb5 sh4 m4 sb5 b22 bl
            (:section s2) mrest7 sb8 m7 b22 bl
+           ;; Hier könnte man als Ficta ein sh8 vor der m8 einfügen. Wurde ev. nicht getan aus
+           ;; typografischen Platzgründen. In der Bibelgruppe nicht abschliessend entschieden.
            (:section s3) b22 m8 sb6 sb9 m8 sb9 bl
            (:section s4) (:newline) b22 b22 mrest1 b22 sb2 b22 sh1 m1 b22 b38 bl
            (:section s5) b22 m2 sb4 m3 b22 bl
@@ -34,6 +36,15 @@
            (:section s1) cclef5 b38 sb6 b22 sb6 b22 sb6 bl
            (:section s2) mrest7 m9 b22 sb9 bl
            (:section s3) m9 sb8 sb10 b22 m10 b22 sb10 bl
+           ;; Bibelgruppe:
+           ;; Alt: b♭ zur Vermeidung des Querstandes zum Bass?
+           ;; Überlegung Johannes: der Querstand ist als positiv zu berwerten in
+           ;; Vicentinos eigenen Prinzipien, da in beiden Stimmen ein 'grado
+           ;; della terza minore discendente' geschieht, was dem Prinzip einer
+           ;; 'bell'aria' mehr entspricht als wenn der Querstand durch ein ♭ im
+           ;; Alt vermieden würde.
+
+           ;; Das beträfe die m4, vor die ein fl4 gesetzt werde müsste. Zu diskutieren.
            (:section s4) b38 b22 m6 b22 b22 m4 b22 b22 sb3 b22 b22 bl
            (:section s5) b22 sb3 b38 sb5 b22 bl
            (:section s6) b38 b22 sb5 b38 sb7 b22 b22 bl

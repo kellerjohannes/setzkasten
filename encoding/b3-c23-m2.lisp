@@ -3,7 +3,7 @@
    (:alt-name "m3.052")
    (:comment "q021_s100, origin: 446")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del modo misto della quinta del settimo modo,\\e della terza quarta del quinto modo"))
+   (:title "Esempio del modo misto della quinta, del settimo modo,\\e della terza quarta del quinto modo"))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)

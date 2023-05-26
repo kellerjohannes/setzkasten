@@ -3,7 +3,7 @@
    (:alt-name "m3.026")
    (:comment "q021_s097, rotation: 0.96, origin: 550")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del terzo modo per ♮ incitato\\della musica participata e mista"))
+   (:title "Esempio del terzo modo per ♮ incitato,\\della musica participata et mista"))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)

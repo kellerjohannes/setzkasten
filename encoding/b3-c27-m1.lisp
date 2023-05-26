@@ -24,6 +24,10 @@
            (:section s1) cclef7 b38 b22 m5 b38 sb7 b38 m6 b38 sb7 b22 bl
            (:section s2) b38 m5 b22 m7 dot8 cr6 b22 cr5d b22 m6 b22 sb7 b22 bl
            (:section s3) b22 mrest5 m7 dot8 sm6 b22 sm6 b22 cr5d b22 cr6 b22 sb7 bl
+           ;; Bibelgruppe
+           ;; vierter Takt, soll wirklich zuerst ein G und dann ein G♯ gesungen werden?
+
+           ;; Im Moment keine Idealisierung vorgeschlagen.
            (:section s4) m2 b22 m5 dot6 cr4 b22 sh3 b22 cr3 b22 sh4 b22 m4 b22 sb5 bl)
    (:text 90 58
           (178 nil "buona")
@@ -35,8 +39,12 @@
            (:section s1) (:f-clef) max7 fclef7 b22 m7 dot8 sm6 b38 sb5 b38 sb4 bl
            (:section s2) b38 b22 m7 b22 b22 m6 b38 b38 sb5 b38 b22 sb4 b38 bl
            (:section s3) b38 b38 b22 sb7 b38 b38 sb5 b38 b38 sb4 b38 b38 b38 bl
-           ;; idealisierung zu diskutieren
            (:section s4) b38 b38 sb4 b38 b38 sb3 b38 b38 b22
+           ;; Bibelgruppe:
+           ;; Verdacht auf Druckfehler: vierter Takt, zweite Stimme, letzte Note, soll
+           ;; ein A, nicht B♮ sein.
+
+           ;; Idealisierung zu diskutieren.
            (:alt (:diplomatic sb3) (:idealised sb2)) b38 b38 b38 b38 bl)
    (:vspace 20)
    (:music 2189

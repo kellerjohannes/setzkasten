@@ -3,7 +3,7 @@
    (:alt-name "m3.065")
    (:comment "q021_s110, origin: 945")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio di molte cadentie del terzo modo\\della musica participata e mista per ♮ quadro")
+   (:title "Esempio di molte cadentie del terzo modo\\della musica participata, e mista, per ♮ quadro")
    (:voice-labels
     (s1 v1 "Cadentie del soprano")
     (s1 v2 "Cadentie del contr'alto")

@@ -8,7 +8,7 @@
     "Il soprano con il tenore in vari modi, a due voci"
     ""
     ""
-    "L'atto che faceva il soprano di sopra, hora il tenore lo farà di sotto, con il contr'alto,\\et in alcuni luoghi si ritroverà la sincopa tutta buona, a due voci"
+    "L'atto che faceva il soprano di sopra; hora il tenore lo farà di sotto, con il contr'alto;\\et in alcuni luoghi si ritroverà la sincopa tutta buona, a due voci"
     "Cadentie che fuggano la sua conclusione"
     "")
    (:section-captions

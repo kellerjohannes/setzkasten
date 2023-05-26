@@ -115,17 +115,18 @@
    (:music 2210
            cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat)
            b38 nat7 md7 b22 sb8 b22 sbd5 b22 sbd5 dot6 md5d b22 sb6 b22
-           ;; idealisierung zu diskutieren
+           ;; Idealisierung zu diskutieren
            (:alt (:diplomatic md6) (:idealised md6) (:tatti m6))
            b22 md9
+           ;; Rhythmische Idealisierung, notwendig für die Mehrstimmigkeit.
            (:alt (:diplomatic) (:idealised dot10)) b22 smd9 b22 md9
-           ;; idealisierung zu diskutieren
+           ;; Idealisierung zu diskutieren
            (:alt (:diplomatic sh8 sb8) (:idealised sh8 sb8) (:tatti fl9 sb9))
            b22
-           ;; idealisierung zu diskutieren
+           ;; Idealisierung zu diskutieren
            (:alt (:diplomatic sbd9) (:idealised sbd9) (:tatti sb9))
            b22 mrest7 b22 sb8 b22 m8 b22 brd6 b38
-           ;; idealisierung zu diskutieren
+           ;; Idealisierung zu diskutieren
            (:alt (:diplomatic sbd7) (:idealised sbd7) (:tatti sb7))
            dot8 md7 nat7 m7 dot8 nat7 sm7
            nat7 sbd7 nat7 sbd7 nat7 md7 nat7 md7 b38 custos8)
@@ -139,11 +140,11 @@
    (:music 2201
            cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat)
            b38 sb8 b38
-           ;; idealisierung zu diskutieren
+           ;; Idealisierung zu diskutieren
            (:alt (:diplomatic m8) (:idealised m8) (:tatti md8))
            sh8 sb8 sh8
-           ;;idealisierung zu diskutieren
-           (:alt (:diplomatic md8) (:idealised m8) (:tatti m8))
+           ;; Idealisierung zu diskutieren, wahrscheinlich unvermeidlich.
+           (:alt (:diplomatic md8) (:idealised md8) (:tatti m8))
            b22 fl9 sb9 b22 fl9 b22 sb9 b38
            (:divider :double)
            (:duration-override 1/2) longa9 (:duration-override 1) b38 blbl
@@ -212,10 +213,10 @@
    (:music 2231
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat)
            b22 sb6 b22 sbd9 dot10 md9 b22
-           ;; idealisierung zu diskutieren
+           ;; Idealisierung zu diskutieren
            (:alt (:diplomatic sbd7) (:idealised sbd7) (:tatti sb7))
            b22
-           ;; idealisierung zu diskutieren
+           ;; Idealisierung zu diskutieren
            (:alt (:diplomatic sb7) (:idealised sb7) (:tatti sbd7))
            b38 brd7 b22 m8 b38 m5d b38 m8 b22 fl9 b22 m9 dot10
            fl9 b38 sm9 b38 md8 b22 sbd7 sh8 sb8 b38 mrest7 b22 sb8 b38 m8 b22
@@ -230,8 +231,8 @@
    (:music 2235
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat)
            b38 sbd9 b38 sbd9 b38 sbd9 b38 sb7 b38 md7 b38 m7 dot8 sm10 b38 m10 b38
-           ;; idealisierung zu diskutieren
-           (:alt (:diplomatic br10) (:idealised brd10) (:tatti brd10))
+           ;; Idealisierung zu diskutieren, wahrscheinlich unvermeidlich.
+           (:alt (:diplomatic br10) (:idealised br10) (:tatti brd10))
            sh8
            (:duration-override 1/2) longa8 (:duration-override 1) b38 blbl
            b22 b22 b22 b118 b118 b118 b118 b118 b118 b118 b118 b118)
@@ -301,12 +302,12 @@
    (:music 2248
            cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat)
            sbd7 b22 sbd7 dot8 md7 b22 sb7 m5d b22 md5d dot6 smd5d b22 md5d b22 sbd5 b22
-           ;; idealisierung zu diskutieren
-           (:alt (:diplomatic sbd5) (:idealised sbd6) (:tatti sb5)) mrest5
+           ;; Idealisierung zu diskutieren
+           (:alt (:diplomatic sbd5) (:idealised sbd5) (:tatti sb5)) mrest5
            sb5 b22 m5d b22 sbd5 md8 b22 md8 b22 sb8 b22 m8 b22 md8 b22 sbrest9
            b22
-           ;; idealisierung zu diskutieren
-           (:alt (:diplomatic sb8) (:idealised sbd8) (:tatti sbd8))
+           ;; Idealisierung zu diskutieren, wahrscheinlich unvermeidlich
+           (:alt (:diplomatic sb8) (:idealised sb8) (:tatti sbd8))
            b22 sbd8 dot8 md4 b22 sb4 b22 md5 mrest7 m9 dot10 sm9 b22 sbd9 b22 sbd9
            (:duration-override 1/2) longa5 (:duration-override 1) blbl)
    (:text 90 58
@@ -332,7 +333,9 @@
           (2044 nil "priſca"))
    (:music 2228
            (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat)
-           b22 sb4 b22 m3 b22 m3 dot4 sm3 b22 m3 b22 m0 b22 m4 b22 m7 (:alt (:diplomatic dot6) (:idealised dot8))
+           b22 sb4 b22 m3 b22 m3 dot4 sm3 b22 m3 b22 m0 b22 m4 b22 m7
+           ;; Offensichtliche Idealisierung, allgemein zu diskutieren und einheitlich handzuhaben.
+           (:alt (:diplomatic dot6) (:idealised dot8))
            sm7 b22 sb7 b22 sb4 b22 sb7 b22 sbrest7 b22 m8 dot8 sm8 b22 sb4 b22 sb4 b22 m7 dot8 sm7 b22
            m5 b22 sb5 b22 m5 b22 m1 b22 m8 b22 sb8 b22 sb4 b22 sb7 custos5)
    (:text 90 58

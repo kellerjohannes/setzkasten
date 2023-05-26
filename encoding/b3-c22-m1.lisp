@@ -3,7 +3,7 @@
    (:alt-name "m3.047")
    (:comment "q021_s100, origin: 981")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio dell'ottavo modo per ♮ incitato,\\della musica participata e mista"))
+   (:title "Esempio dell'ottavo modo per ♮ incitato\\della musica participata et mista"))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)

@@ -3,7 +3,7 @@
    (:alt-name "m3.083")
    (:comment "q021_s120, origin: 909")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del primo modo cromatico"))
+   (:title "Esempio del primo modo, cromatico"))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)

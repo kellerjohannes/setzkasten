@@ -3,7 +3,7 @@
    (:alt-name "m3.064")
    (:comment "q021_s110, origin: 955")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio di molte cadentie del secondo modo, a quattro voci,\\della musica participata e mista per ♮ quadro")
+   (:title "Esempio di molte cadentie del secondo modo, a quattro voci\\della musica participata, e mista, per ♮ quadro")
    (:voice-labels
     (s1 v1 "Cadentie del soprano")
     (s1 v2 "Cadentie del contr'alto")
@@ -22,6 +22,7 @@
           (654 547 "Cadentie del ꜱoprano ."))
    (:music 2238
            (:voice v1)
+           ;; Kosmetische Idealisierung
            (:section s1) cclef3 b22 mrest1 sb1 (:alt (:diplomatic sh1) (:idealised sh0)) m0 sb1 bl
            (:section s2) b22 mrest3 b22 sb3 m2 sb3 b22 bl
            (:section s3) b22 mrest3 b22 sb4 sh3 m3 sb4 b22 bl

@@ -27,6 +27,8 @@
           (1173 nil "ᴇnarmonica"))
    (:music 2198
            (:voice v1)
+           ;; Die Longa des Bassschlüssels ist in der Quelle seitenverkehrt. Das wird im
+           ;; types-backend stillschweigend idealisiert, auch in :diplomatic.
            (:section s1) (:f-clef) max7 fclef7 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 bl
            (:section s2) b38 sb2 b38 fl3 b38 sb3 b38 fl5 b38 sb5 b38 sb5 b38 bl
            (:section s3) b38 sb2 b38 sbd2 b38 fl5 b38 sb5 b38 sb5 b38 b38 bl

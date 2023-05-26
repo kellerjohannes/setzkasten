@@ -17,7 +17,7 @@
     (s5 v1 "treble_8")))
   (:data
    (:text 110 58
-          (181 1853 "Eſſempio delle cadentie minori si ſemibreue,& di minima,diminuite & non."))
+          (181 1853 "Eſſempio delle cadentie minori di ſemibreue,& di minima,diminuite & non."))
    (:music 2224
            (:voice v1)
            (:section s1) cclef5 b22 m2 sb5 b22 m4 b22 sb5 bl

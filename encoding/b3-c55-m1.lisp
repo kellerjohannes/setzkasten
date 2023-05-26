@@ -5,11 +5,11 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del genere cromatico, e delle sue spetie a cinque voci")
    (:voice-labels
-    (:all v1 "[Soprano]")
-    (:all v2 "[Alto]")
-    (:all v3 "[Tenore]")
-    (:all v4 "Quinta parte")
-    (:all v5 "[Basso]")))
+    (s1 v1 "[Soprano]")
+    (s1 v2 "[Alto]")
+    (s1 v3 "[Tenore]")
+    (s1 v4 "Quinta parte")
+    (s1 v5 "[Basso]")))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)
@@ -151,7 +151,9 @@
    (:music 2243
            (:f-clef) max7 fclef7 b38 fl3 b22 br3 b38 br1 b38 sb1 b38 sb4 b38 mrest3 b38 m4 b38
            sb7 dot8 m7 b38 sb5 b38 sb5 b38 sb3 b38 br6 b38 (:divider :double) br3 b38 blbl
-           b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38)
+           b38 b38 b38 b38 b38 b38 b38 b38
+           ;; Kosmetischer Eingriff
+           (:alt (:diplomatic mrest7) (:idealised b38)) b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38)
    (:text 90 58
           (213 nil "ad dominum")
           (638 nil "ad domin um")

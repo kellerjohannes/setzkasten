@@ -416,6 +416,8 @@
   (:note longa7 :longa 7)
   (:note longa8 :longa 8)
   (:note longa9 :longa 9)
+
+  (:note br-1 :brevis -1)
   (:note br0 :brevis 0)
   (:note br1 :brevis 1)
   (:note br2 :brevis 2)

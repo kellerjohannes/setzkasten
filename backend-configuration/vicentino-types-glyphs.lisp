@@ -62,6 +62,7 @@
   (glyph-notehead-stem          longa8   "longa-8"      "stave" "notehead-longa"     "" "stem-minima" 64 ,*glyph-height* 8 :down nil nil nil)
   (glyph-notehead-stem          longa9   "longa-9"      "stave" "notehead-longa"     "" "stem-minima" 64 ,*glyph-height* 9 :down nil nil nil)
 
+  (glyph-notehead               br-1    "brevis--1"  "stave" "notehead-brevis" 45 ,*glyph-height* -1)
   (glyph-notehead               br0    "brevis-0"  "stave" "notehead-brevis" 45 ,*glyph-height* 0)
   (glyph-notehead               br1    "brevis-1"  "stave" "notehead-brevis" 45 ,*glyph-height* 1)
   (glyph-notehead               br2    "brevis-2"  "stave" "notehead-brevis" 45 ,*glyph-height* 2)

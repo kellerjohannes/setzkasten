@@ -34,6 +34,7 @@
     (s8 v3 "Cadentia del tenore")
     (s9 v3 "Cadentia del tenore")
 
+    ;; Hier könnte "Cadentia del basso" für alle übrigen sections ergänzt werden. Zu diskutieren.
     (s4 v4 "Cadentia del soprano")))
   (:preamble-type-imitation
    (:width nil)
@@ -52,6 +53,13 @@
           (1946 nil "ca.del ſop."))
    (:music 2237
            (:voice v1)
+           ;; Bibelgruppe: Offene Frage nach Ficta: sh4 vor m4?
+           ;; - Argument für f: es ist der einzige und deshalb gewollte Unterschied
+           ;;   zum fünften Takt, um keine Redundanz zu erzeugen.
+           ;; - Argument für f: es gab kein Platz für das ♯-Symbol in der Zeile
+           ;; - Argument für fis: es geht hier nicht um eine Gegenüberstellung von
+           ;;   diatonischem und chromatischem Material, deshalb ist es naheliegend,
+           ;;   hier ein fis zu ergänzen
            (:section s1) cclef1 mrest5 sb5 m4 sb5 bl
            (:section s2) sb2 b22 sb2 b22 sb2 bl
            (:section s3) sb9 sb9 sb7 bl
