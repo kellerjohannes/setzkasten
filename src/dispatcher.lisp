@@ -144,6 +144,20 @@
                           ))
     (execute-mission mission)))
 
+(defun execute-vicentino21 ()
+  (dolist (mission (list
+                    *book1-types*
+                    *book2-types*
+                    *book3-types*
+                    *book4-types*
+                    *book5-types*
+                    *book1-modern*
+                    *book2-modern*
+                    *book3-modern*
+                    *book4-modern*
+                    *book5-modern*))
+    (execute-mission mission)))
+
 (defun execute-types ()
   (dolist (mission (list *book1-types*
                          *book2-types*
@@ -1513,6 +1527,50 @@
     ("b3-c55-m1" "b" (:idealised) ,*vicentino-types-backend*)
     ("b3-c56-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
     ("b3-c56-m1" "b" (:idealised) ,*vicentino-types-backend*)
+
+    ;; standalones, as part of the Vicentino21-edition
+
+    ;; musica diatonica
+    ("b3-c26-m1" "a-standalone" (:diplomatic :it :a-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c26-m1" "c-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+
+    ;; alleluia
+    ("b3-c44-m1" "a-standalone" (:diplomatic :it :a-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c44-m1" "c-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+
+    ;; soave dolce
+    ("b3-c51-m1" "a-standalone" (:diplomatic :it :a-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c51-m1" "c-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+
+    ;; dolce mio ben
+    ("b3-c52-m1" "a-standalone" (:diplomatic :it :a-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c52-m1" "c-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+
+    ;; madonna il poco dolce
+    ("b3-c53-m1" "a-standalone" (:diplomatic :it :a-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c53-m1" "c-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+
+    ;; musica prisca
+    ("b3-c54-m1" "a-standalone" (:diplomatic :it :a-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c54-m1" "c-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+
+    ;; Hierusalem
+    ("b3-c55-m1" "a-standalone" (:diplomatic :it :a-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
+    ("b3-c55-m1" "c-standalone" (:idealised :it :c-standalone)
+                 ,*lilypond-backend-modern-meter-multipage*)
     ))
 
 (defparameter *book2-original*
@@ -2357,11 +2415,11 @@
   `(
     ;; renotation to alternative accidental conventions
 
-    ("b3-c5-m1"  "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ("b3-c6-m1"  "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ("b3-c7-m1"  "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ("b3-c8-m1"  "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
-    ("b3-c9-m1"  "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c05-m1"  "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c06-m1"  "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c07-m1"  "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c08-m1"  "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
+    ("b3-c09-m1"  "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
     ("b3-c10-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
     ("b3-c11-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
     ("b3-c12-m1" "double-acc-cents" (:idealised :it) ,*lilypond-backend-modern-double-accidentals-cents*)
