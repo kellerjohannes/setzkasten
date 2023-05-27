@@ -19,7 +19,8 @@
 ** b1-c10-m2
 - Die Korrektur sollte einen Takt später stehen, dort habe ich eine
   Idealisierung vorgenommen, da die Pariser Quelle eine Redundanz zum
-  übernächsten Takt beinhaltet. Ich würde diese Idealisierung so beibehalten.
+  übernächsten Takt beinhaltet. Ich würde diese Idealisierung so
+  beibehalten.
 ** b1-c11-m3
 - Ja, kann ich nachvollziehen, würde ich aber nicht tun, weil die
   horizontalen Abstände sehr treu gehandhabt werden sollen im fake-simile.
@@ -219,10 +220,14 @@ idealisiert, d.h. auf die gleiche Position wie der Notenkopf gesetzt.
 Gewisse Beispiele verlieren ihre Aussagekraft, wenn die Schlüssel
 durch moderne G- und F-Schlüssel ersetzt werden:
 - b3-c15-m1 - b3-c23-m1 (Modus-Beispiele der musica mista e paricipata)
+- b4-c02-m2, Einführung der Schlüssel
 *** TODO Custos-Setzung in der Normalisierung
 Ist es wünschenswert, die Custodien in der Normalisierung zu haben,
 wenn damit eine nicht gedruckte Fortsetzung eines Stücks suggeriert
 wird? Z.B. in »Madonna«.
+*** TODO Normalisierung: Vorzeichensetzung bei Haltebögen
+Sollen Versetzungszeichen (inkl. Punkte) bei über Taktstriche
+gebundenen Noten wiederholt werden?
 ** TODO Alle :idealised-Elemente suchen und mit ;; ergänzen
 ** TODO Alle ;;-Elemente suchen und hierher verlinken
 ** TODO b1-c05

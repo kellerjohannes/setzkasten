@@ -18,8 +18,12 @@
           (1290 829 "Prolatione perfetta in tempo imper."))
    (:music 2211
            (:voice v1)
+           ;; Taktsignatur: Punkte sind von Hand ergänzt, werden hier aber schon in :diplomatic
+           ;; übernommen. Zu kommentieren?
            (:section s1) cclef7 b38 met-perf-maj b38 (:duration-override 3/2) sb8 b38 (:duration-override 1) m5 b38 m5 b38 m5 b38 b38 bl
            (:section s2) b38 b38 (:duration-override 3/2) br8 b38 (:duration-override 1) sb5 b38 sb5 b38 sb5 b38 b38 b125
+           ;; Taktsignatur: Punkte sind von Hand ergänzt, werden hier aber schon in :diplomatic
+           ;; übernommen. Zu kommentieren?
            (:section s3) (:newline) cclef7 b38 met-imperf-maj b38 (:duration-override 3/2) sb8 b38 (:duration-override 1) m6 b38 m6 b38 m6 b38 b38 bl
            (:section s4) b38 b38 br4 b38 sb6 b38 sb6 b38 bl b22 b22)
    (:text 90 58

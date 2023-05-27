@@ -1,8 +1,5 @@
 (in-package :setzkasten)
 
-;; for now an empty class, just for the purpose of symmetry to type-imitation-backend
-;; slots of this subclass can be used to globally configure lilypond, for example a
-;; state deciding whether to use modern or old clefs
 (defclass lilypond-backend (setzkasten-backend)
   ((timep :initform nil
           :initarg :timep
@@ -53,7 +50,6 @@
                                  (4 . "''")
                                  (5 . "'''")))
 
-;; TODO add more possible key lists, mainly the ones with :natural
 (defparameter *dict-ly-notenames*
   '(((:c nil nil) "c" "" "")
     ((:b :sharp nil) "b" "is" "")

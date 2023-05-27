@@ -50,6 +50,9 @@
    (:width nil)
    (:height nil)
    (:background ,*score-bg-color*))
+  ;; Hier stellt sich die Frage, ob eine Normalisierung mit modernen Schlüsseln sinnvoll ist.
+  ;; Ev. sollten hier die originalen Schlüssel verwendet werden, da es explizit um das Phänomen
+  ;; der Schlüsselung geht.
   (:data
    (:text 70 58
           (10 2144 "Dimoſtratione delle chiaui de i Soprani , che inſegnano à leggere tutte lʼaltre ſorti di chiaui"))
@@ -79,7 +82,12 @@
    (:vspace 90)
    (:music 2218
            (:section s9) cclef3 b22 fl29 (:key-signature nil nil nil nil nil nil :flat) b22 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b22 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38
-           (:section s10) cclef3 b22 (:alt (:diplomatic fl6) (:idealised fl2)) b22 fl18 b22 fl5 (:key-signature nil nil :flat nil nil :flat :flat) b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b38 sb8 b22 sb9 b38 sb10 bl)
+           (:section s10) cclef3 b22
+           ;; Bibelgruppe
+           ;; - > Korrektur! Der Fehler liegt in der ♭-Vorzeichnung, die nur as
+           ;; B♭ und E♭ bestehen soll. Dann funktioniert der Schlüssel auf C2-Position,
+           ;; die erste Note der Skala ist damit ein D.
+           (:alt (:diplomatic fl6) (:idealised fl2)) b22 fl18 b22 fl5 (:key-signature nil nil :flat nil nil :flat :flat) b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b38 sb8 b22 sb9 b38 sb10 bl)
    (:vspace 90)
    (:music 2223
            (:section s11) (:f-clef) max9 fclef9 (:key-signature nil nil nil nil nil nil nil) b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38
