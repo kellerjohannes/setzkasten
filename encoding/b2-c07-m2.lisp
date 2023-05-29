@@ -19,7 +19,7 @@
     (s1 v2 "treble_8")))
   (:data
    (:text 70 58
-     (264 1708 "Eſſempio di comporre molte Seſte,& molte Terze,da molti detto ᴍodo di comporre il Faulx Bordon à tre uoci."))
+     (264 1715 "Eſſempio di comporre molte Seſte,& molte Terze,da molti detto ᴍodo di"))
    (:text 90 58
      (651 874 "comporre il Faulx Bordon à tre uoci."))
    (:music 2218
