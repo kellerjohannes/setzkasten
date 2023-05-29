@@ -22,19 +22,19 @@
                 :depends-on ("backend-class" "typesetter"))
                (:file "lilypond-backend"
                 :depends-on ("backend-class" "score-parser"))
+               (:file "visual-score-backend"
+                :depends-on ("backend-class" "score-parser"))
                (:file "dispatcher"
                 :depends-on ("backend-type-imitation" "apparatus" "score-parser"))
                (:file "webserver-display"
                 :depends-on ("backend-type-imitation")))
-  :depends-on (:hunchentoot :cl-who :cl-ppcre)
+  :depends-on (:hunchentoot :cl-who :cl-ppcre :cl-svg)
   :build-pathname "setzkasten-bin"
   :entry-point "setzkasten:main")
 
 
 ;; development TODOs
 ;; - something is wrong with (:divider :double), see b3-c53-m1.lisp
-;; - implement custos
-;; - look after time signature implementation (right now it's rudimentary)
 ;; - find a solution for repeated accidentals after ties
 ;;   - \override Accidental.after-line-breaking = #'() doen't work, creates spacing issues
 ;;     between accidental and preceding barline

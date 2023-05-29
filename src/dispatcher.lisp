@@ -121,6 +121,9 @@
                                                          :clef-type :mensural
                                                          :rest-type :mensural))
 
+(defparameter *visual-score-backend* (make-instance 'visual-score-backend))
+
+
 
 (defun execute-all ()
   (dolist (mission  (list *book1-types*
@@ -168,11 +171,7 @@
 
 (defparameter *debug*
   `(
-    ("b3-c55-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ("b3-c55-m1" "b" (:idealised) ,*vicentino-types-backend*)
-    ("b3-c55-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
-    ("b3-c55-m1" "d" (:idealised :de) ,*lilypond-backend-modern-meter*)
-    ("b3-c55-m1" "e" (:idealised :en) ,*lilypond-backend-modern-meter*)
+    ("b3-c51-m1" "v" (:idealised) ,*visual-score-backend*)
     ))
 
 (defparameter *working*

@@ -28,6 +28,8 @@
   (pathname "~/common-lisp/setzkasten-output/ly/"))
 (defparameter *lilypond-path*
   (pathname "/usr/bin/lilypond"))
+(defparameter *visual-score-export-path*
+  (pathname "~/common-lisp/setzkasten-output/visual-score/"))
 
 
 ;; TODO: bracketed sections
