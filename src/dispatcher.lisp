@@ -22,6 +22,12 @@
                   filename suffix apparatus-string))
         (create-score-file backend-instance simplified-score suffix)))))
 
+(defun get-parsed-score (filename extraction-arguments)
+  (with-open-file (encoding-stream (merge-pathnames *encoding-source*
+                                                    (pathname (format nil "~a.lisp" filename)))
+                                   :direction :input)
+    (parse-score (extract-apparatus (eval (read encoding-stream)) extraction-arguments))))
+
 ;; looping over mission, entry point to everything
 (defun execute-mission (mission-list)
   (reset-file-list *vicentino-types-backend*)

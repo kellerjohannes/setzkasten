@@ -41,7 +41,7 @@
                 *dict-pitch-y*
                 :key #'first)))
 
-(defparameter *y-scale* 50)
+(defparameter *y-scale* 80)
 
 (defmethod calculate-y-position ((mobject mobject))
   (with-accessors ((pitch pitch))
@@ -57,23 +57,36 @@
 (defmethod calculate-delta-x ((mobject mobject))
   (* *x-scale* (lookup-duration (value mobject) (dottedp mobject))))
 
-(defparameter *lower-limit* 900)
+(defparameter *lower-limit* 1150)
 
 (defun draw-voice (scene voice)
   (let ((x-position 0)
-        (last-position nil))
+        (last-position nil)
+        (silentp t))
     (dolist (mobject (mobjects voice))
       (let ((y-position (or (calculate-y-position mobject)
                             (cdr last-position)
-                            0)))
-        (svg:draw scene (:circle :cx x-position
-                                 :cy (- *lower-limit* y-position)
-                                 :r *notehead-radius*)
-                  :fill (if (pitch mobject) "black" "white"))
+                            0))
+            (first-in-voice nil))
+        (when (and silentp y-position (not (zerop y-position)))
+          (setf silentp nil)
+          (setf first-in-voice t))
+        (unless silentp
+          (svg:draw scene (:circle :cx x-position
+                                   :cy (- *lower-limit* y-position)
+                                   :r *notehead-radius*)
+                    :fill (if (pitch mobject) "black" "lightgray")
+                    :stroke (if (pitch mobject) "black" "lightgray"))
+          (svg:draw scene (:line :x1 x-position :y1 (- *lower-limit* y-position)
+                                 :x2 (+ x-position (calculate-delta-x mobject))
+                                 :y2 (- *lower-limit* y-position))
+                    :stroke-width 6
+                    :stroke (if (pitch mobject) "black" "lightgray")))
         ;; (svg:text scene (:x x-position :y (- *lower-limit* y-position 15))
         ;;   (format nil "~a" (pitch mobject)))
-        (format t "~&~a | ~a" (pitch mobject) (value mobject))
-        (when last-position
+
+        ;; (format t "~&~a | ~a" (pitch mobject) (value mobject))
+        (when (and last-position (not first-in-voice))
           (svg:draw scene (:line :x1 (car last-position) :y1 (- *lower-limit* (cdr last-position))
                                  :x2 x-position :y2 (- *lower-limit* y-position))))
         (setf last-position (cons x-position y-position))
@@ -86,7 +99,7 @@
 (defun create-visual-score (score-instance backend suffix)
   (declare (ignore backend))
   (format t "~&Generating visual score of ~a-~a" (filename score-instance) suffix)
-  (cl-svg:with-svg-to-file (scene 'svg:svg-1.2-toplevel :width 4000 :height 1000 :stroke "black")
+  (cl-svg:with-svg-to-file (scene 'svg:svg-1.2-toplevel :width 2900 :height 1000 :stroke "black")
       ((merge-pathnames *visual-score-export-path*
                         (pathname (format nil "~a-~a.svg" (filename score-instance) suffix)))
        :if-exists :supersede)

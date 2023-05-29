@@ -342,7 +342,7 @@
       (dolist (voice-lyrics lyrics)
         (set-voice-lyrics* score (first voice-lyrics) (second voice-lyrics) (third voice-lyrics))))))
 
-(defun parse-score (data suffix)
+(defun parse-score (data &optional (suffix "x"))
   (let ((score (make-instance 'score))
         (parser-state-instance (make-instance 'parser-state)))
     (process-metadata score parser-state-instance data)
