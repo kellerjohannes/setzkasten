@@ -9,10 +9,7 @@
     (s2 "Seconda quinta\\cromatica")
     (s3 "Terza quinta\\cromatica")
     (s4 "Quarta quinta\\cromatica")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
           (191 1767 "Eſſempio delle quattro quinte ᴄromatiche : che ſegueno una doppo lʼaltra."))

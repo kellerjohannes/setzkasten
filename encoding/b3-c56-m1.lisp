@@ -10,10 +10,7 @@
     "Voci mobili in tutti tre i generi"
     "Voci immobili in diatonico et in cromatico"
     "Voci mobili nel genere enarmonico"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (109 802 "Voci immobili in tutti tre Generi.")

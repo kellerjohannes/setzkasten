@@ -17,10 +17,7 @@
    (:voice-labels
     (:all v1 "")
     (:all v2 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (506 1049 "Eſſempio dallʼVniſono ad altri gradi et ſalti."))

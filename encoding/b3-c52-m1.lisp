@@ -9,10 +9,7 @@
     (:all v2 "[Alto]")
     (:all v3 "[Tenore]")
     (:all v4 "[Basso]")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    ;; Bibelgruppe:
    ;; Es ist zu entscheiden, ob alle fünf Varianten dieses Stück ausnotiert angeboten werden sollen.

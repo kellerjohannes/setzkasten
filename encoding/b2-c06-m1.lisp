@@ -20,10 +20,7 @@
     (s2 "2.")
     (s3 "3.")
     ))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
      (75 2090 "Eſſempio della quarta ſincopata à due uoci,& non ſincop. à tre uoci,& con il punto : come"))

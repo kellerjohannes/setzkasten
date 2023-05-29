@@ -16,10 +16,7 @@
     (s7 "grado di terza\\minima\\incomposta"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (0 2201 "ᴇſſempio del grado ò ſalto della ᴛerza manco di minore, ouero minima compoſto & incompoſto."))

@@ -11,10 +11,7 @@
     (s4 "simili\\maggiori")
     (s5 "differenti\\maggiori\\et minori")
     (s6 "differenti\\minori\\et maggiori")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
      (440 1051 "Eſſempio delle terze ſimili et delle differenti."))

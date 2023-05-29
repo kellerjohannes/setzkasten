@@ -4,10 +4,7 @@
    (:comment "q021_s120, origin: 918")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del secondo modo cromatico"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
 (:preamble-lilypond
    (:alt (:tolgahan (:clef-overrides
                      (s1 v1 "treble_8")))))

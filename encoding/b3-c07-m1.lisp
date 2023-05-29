@@ -4,10 +4,7 @@
    (:comment "q021_s89, rotation: 0.89, origin: 476")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del terzo modo diatonico semplice,\\da greci detto frigio"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (303 1586 "Eſſempio del terzo modo ᴅiatonico ſemplice: da Greci detto Frigio."))

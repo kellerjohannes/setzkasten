@@ -8,10 +8,7 @@
     (s2 "Del modo maggiore\\imperfetto")
     (s3 "Del minor\\perfetto")
     (s4 "Del minor\\imperfetto")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (90 912 "Eſſempio del modo maggiore perfetto,")

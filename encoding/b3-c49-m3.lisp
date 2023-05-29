@@ -4,10 +4,7 @@
    (:comment "q021_s131, origin: 436")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del terzo modo enarmonico semplice"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (512 1108 "Eſſempio del terzo modo Enarmonico ſemplice."))

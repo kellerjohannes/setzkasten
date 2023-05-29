@@ -12,10 +12,7 @@
     (s5 "salto di quinta\\accidentale\\incomposto")
     (s6 "salto di quinta\\accidentale\\incomposto")
     (s7 "salto di quinta\\accidentale\\incomposto")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 120 58
           (465 1267 "ᴇſſempio de ꜱalti de Ɋuinte accidentali, incompoſti."))

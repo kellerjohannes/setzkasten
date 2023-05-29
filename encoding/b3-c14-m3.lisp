@@ -20,10 +20,7 @@
     (s5 "Composta / incomposta")
     (s6 "Composta / incomposta")
     (s7 "Composta / incomposta")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:clef-overrides
     (s4 v1 "treble_8")

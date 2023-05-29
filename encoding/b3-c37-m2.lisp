@@ -10,10 +10,7 @@
     (s4 "Terza quinta\\cromatica")
     (s5 "Quarta quinta\\diatonica")
     (s6 "Quarta quinta\\cromatica")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
           (0 nil "Seconda quinta.")

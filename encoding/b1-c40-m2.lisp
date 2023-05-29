@@ -15,10 +15,7 @@
     (s6 "gradi della quarta quinta\\accidentale ascendente\\per semitono minore composto"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 80 58
           (580 1020 "ᴇſſempio de ɢradi,di Ɋuinte accidentali."))

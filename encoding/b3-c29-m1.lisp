@@ -54,10 +54,7 @@
     (s17 v1 "Contr'alto") (s17 v2 "Basso")
     (s26 v1 "Contr'alto") (s26 v2 "Tenore")
     ))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
           (122 1960 "Eſſempio delle cadentie à due uoci, Il soprano con il Tenore in uarij modi,à due uoci."))

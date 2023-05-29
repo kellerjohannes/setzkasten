@@ -61,10 +61,7 @@
     (s47 v1 v2)
     (s48 v1 v2)
     (s49 v1 v2)))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (452 1275 "Molte annotationi ſotto et ſopra le due note fa. & ſol."))

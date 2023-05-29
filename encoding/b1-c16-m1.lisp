@@ -17,10 +17,7 @@
     (s8 "diesis\\maggiore"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   ;; m1.24
   (:data
    (:text 90 58

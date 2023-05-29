@@ -22,10 +22,7 @@
     (s7 "per natura,\\per ♭:\\fa, ut, re,\\mi, sol, la"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58 (231 1648 "ᴅimoſtratione della ᴍano ᴄromatica con li ſemitoni maggiori aſcendenti."))
    (:text 100 58

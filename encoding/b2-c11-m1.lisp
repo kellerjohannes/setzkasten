@@ -9,10 +9,7 @@
     (s2 "Per tono\\con l'unisono")
     (s3 "Per tono\\con la settima")
     (s4 "Per semitono\\con l'ottava")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
      (144 1946 "Eſſempio di comporre la settima che fa parere due Ottaue, et non ſono , et così due"))

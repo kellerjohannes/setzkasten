@@ -49,10 +49,7 @@
     (s33 v1 v2)
     (s34 v1 v2)
     (s35 v1 v2)))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (425 1325 "Molte annotationi ſotto & ſopra le due note mi. & re."))

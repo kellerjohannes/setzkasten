@@ -16,10 +16,7 @@
     (s8 "semitono maggiore\\naturale incomposto"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:music 2205
            (:voice v1)

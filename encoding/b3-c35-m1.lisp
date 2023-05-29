@@ -20,10 +20,7 @@
     (s7 v1 v2 v3 v4 v5)
     (s8 v1 v2 v3 v4 v5)
     (s9 v1 v2 v3 v4 v5)))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:music 2305
            (:voice v1)

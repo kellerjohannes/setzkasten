@@ -17,10 +17,7 @@
     (s8 "semitono minore\\enarmonico incomposto"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:music 2206
            (:voice v1)

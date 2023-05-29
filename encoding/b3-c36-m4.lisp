@@ -8,10 +8,7 @@
     (s1 "Prima quarta")
     (s2 "Seconda quarta")
     (s3 "Terza quarta")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
      (446 978 "Eſſempio delle tre quarte ᴄromatiche."))

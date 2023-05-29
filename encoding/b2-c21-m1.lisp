@@ -14,10 +14,7 @@
     (s2 "Simili\\minori")
     (s3 "Differenti\\ ")
     (s4 "Simili\\maggiori")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
           (756 631 "Eſſempio delle seſte ſimili."))

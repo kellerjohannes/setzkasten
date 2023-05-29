@@ -10,10 +10,7 @@
     (s3 "Chiavi di Csolfaut")
     (s4 "Chiavi di Csolfaut")
     (s5 "Chiavi di Ffaut")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (40 1541 "Eſſempio delle chiaui de i Soprani,& de i Contralti,de i Tenori,")

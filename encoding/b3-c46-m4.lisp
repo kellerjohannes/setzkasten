@@ -13,10 +13,7 @@
     (s3 "Quarta quinta\\enarmonica"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (132 nil "quarta Quinta")

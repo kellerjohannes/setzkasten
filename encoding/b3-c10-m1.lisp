@@ -4,10 +4,7 @@
    (:comment "q021_s90, rotation: -0.47, origin: 988")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del sesto modo diatonico semplice,\\da greci detto yppolidio"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (172 1671 "Eſſempio del seſto Modo Diatonico ſemplice,da Greci detto Yppolidio."))

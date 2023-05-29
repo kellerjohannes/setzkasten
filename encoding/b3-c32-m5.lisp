@@ -18,10 +18,7 @@
     (s6 v1 v2 v3 v4)
     (s7 v1 v2 v3 v4)
     (s8 v1 v2 v3 v4)))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:clef-overrides
     (s1 v3 "treble_8")

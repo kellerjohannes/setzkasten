@@ -4,10 +4,7 @@
    (:comment "q021_s102, rotation: -0.81, origin: 960")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio delle cadentie minime, di minima e di semiminima\\deminuita e non, con il punto e senza"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")

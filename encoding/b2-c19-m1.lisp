@@ -17,10 +17,7 @@
     (s2 v1 v2 v3)
     (s3 v2 v1)
     (s4 v1 v2)))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
           (353 1487 "Eſſempio della Seſta minore,come in uarij modi ſi può comporre."))

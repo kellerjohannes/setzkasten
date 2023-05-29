@@ -4,10 +4,7 @@
    (:comment "q021_s096, rotation: -1.63, origin: 1062")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del secondo modo per ♮ incitato,\\della musica participata et mista"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 130 58
           (75 2113 "Eſſempio del secondo Modo per ♮.incitato, della Muſica participata & mista."))

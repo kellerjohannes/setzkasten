@@ -15,10 +15,7 @@
     (s2 v2 "Alto")
     (s2 v3 "Tenore")
     (s2 v4 "Basso")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
      (149 1932 "Eſſempio della Quinta decima,& della Vigeſima ſeconda,à tre uoci,& à quattro."))

@@ -17,10 +17,7 @@
     (s1 ""))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 80 58
           (250 1694 "ᴇſſempio de i gradi di ᴛerza minore accidentale,compoﬆi & incompoſti."))

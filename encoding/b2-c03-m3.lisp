@@ -13,10 +13,7 @@
     (s6 "Buono")
     (s7 "Buono")
     (s8 "Buono")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
      (243 nil "Eſſempio dʼandare allʼvniſono con uarij ſalti,et con la Sincopa tutta buona."))

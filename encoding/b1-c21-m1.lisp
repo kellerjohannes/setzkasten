@@ -15,10 +15,7 @@
     (s6 "tono minore\\discendente\\incomposto"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
          (372 1464 "ᴇſſempio del ɢrado del tono minore compoſto et non compoſto."))

@@ -11,10 +11,7 @@
     (s5 "Quinta ottava cromatica")
     (s6 "Sesta ottava cromatica")
     (s7 "Settima ottava cromatica")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:clef-overrides
     (s6 v1 "treble_8")

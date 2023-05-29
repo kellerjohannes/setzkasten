@@ -24,10 +24,7 @@
     (s8 "per natura: sol-re-mi-fa-re\\per ♭: re-mi-fa-re-mi\\per ♮: ut-re-mi-fa-re"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58 (0 2212 "ᴍano ᴇnarmonica aſcendente , con i ſemitomi maggiori, & con il tono diuiſo in quattro parti,&"))
    (:text 90 58 (10 1262 "delle ſette lettere della ᴍano : come ſi hanno da leggere."))

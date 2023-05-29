@@ -4,10 +4,7 @@
    (:comment "q021_s129, rotation: 1.14, origin: 459")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Prima quarta commista de i tre generi, e variate sorti,\\delle sue spetie ascendenti e discendenti"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (0 2186 "Prima Quarta commiſta de i tre generi,e uariate ſorti,delle ſue ſpetie aſcend. et diſcendenti."))

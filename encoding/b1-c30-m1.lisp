@@ -16,10 +16,7 @@
     (s7 "composti"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (217 1780 "ᴇſſempio de i gradi,di ᴛerza maggiore accidentale,incompoſti & compoﬆi."))

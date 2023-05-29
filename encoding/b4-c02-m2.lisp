@@ -46,10 +46,7 @@
     (s23 v1)
     (s24 v1)
     (s25 v1)))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   ;; Hier stellt sich die Frage, ob eine Normalisierung mit modernen Schlüsseln sinnvoll ist.
   ;; Ev. sollten hier die originalen Schlüssel verwendet werden, da es explizit um das Phänomen
   ;; der Schlüsselung geht.

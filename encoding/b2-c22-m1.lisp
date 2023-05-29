@@ -14,10 +14,7 @@
     (s2 "Buona à quattro")
     (s3 "Buona")
     (s4 "Buona à cinque")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (181 1872 "Eſſempio dellʼ ottaua,con i due Tenori,il primo eſſempio ſarà con lʼaltro primo"))

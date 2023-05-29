@@ -16,10 +16,7 @@
    (:voice-order
     (s1 v1 v2)
     (s2 v2 v1 v3)))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
      (263 nil "Eſſempio di comporre la diſſonanza detta Settima,ſincopata con la Seſta."))

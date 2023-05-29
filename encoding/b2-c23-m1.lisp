@@ -18,10 +18,7 @@
     (s8 "Terza\\minore")
     (s9 "Quinta\\ ")
     (s10 "Ottava\\ ")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
      (659 766 "Eſſempi dʼalcune Ottaue doppie."))

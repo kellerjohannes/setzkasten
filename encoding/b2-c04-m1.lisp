@@ -16,10 +16,7 @@
     (s1 "Sincopa maggiore")
     (s1 "Sincopa minore")
     (s1 "Sincopa minima")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
      (416 nil "Eſſempio della Sincopa ᴍaggiore,et ᴍinore , et minima."))

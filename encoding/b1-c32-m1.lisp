@@ -20,10 +20,7 @@
     (s6 "quarta composta\\de gradi"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 140 58
           (172 1866 "ᴇſſempio del ꜱalto della Ɋuarta naturale,e du ſuoi gradi incompoſto et compoſto."))

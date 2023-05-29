@@ -52,10 +52,6 @@
               (:en "natural: sol\\soft: re\\hard: ut"))))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
   (:data
    (:text 70 58
           (90 1974 "ᴅimoſtratione della ᴍano ᴄromatica, aſcendente, con li ꜱemitoni minori, e con l'eſſempio."))

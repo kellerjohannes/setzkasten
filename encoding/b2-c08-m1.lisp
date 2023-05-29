@@ -13,10 +13,7 @@
     (s2 v1 "Alto")
     (s2 v2 "Tenore")
     (s2 v3 "Basso")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
      (538 986 "Eſſempio del modo di comporre il Tritono."))

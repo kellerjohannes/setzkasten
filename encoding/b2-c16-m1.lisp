@@ -15,10 +15,7 @@
     (s3 v2 "[Tenore]")
     (s4 v1 "[Alto]")
     (s4 v2 "[Tenore]")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
      (663 nil "Eſſempio delle Quinte."))

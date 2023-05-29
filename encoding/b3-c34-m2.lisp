@@ -9,10 +9,7 @@
     (s1 v2 "Contr'alto")
     (s1 v3 "Tenore")
     (s1 v4 "Basso")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
      (179 769 "Eſſempio delle ᴄadentie minori.")

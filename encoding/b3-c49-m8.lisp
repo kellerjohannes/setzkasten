@@ -4,10 +4,7 @@
    (:comment "q021_s131, origin: 461")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del ottavo modo enarmonico semplice"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (517 1114 "Eſſempio del ottauo modo ᴇnarmonico ſemplice."))

@@ -9,10 +9,7 @@
     (:all v2 "[Contr'alto]")
     (:all v3 "[Tenore]")
     (:all v4 "[Basso]")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:alt (:transposition-quarta-discendente (:clef-overrides (s1 v2 "treble_8"))))
    (:standalone-title "»Alleluia«")

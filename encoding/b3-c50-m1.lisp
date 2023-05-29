@@ -17,10 +17,7 @@
     (s1 v2 "Alto")
     (s1 v3 "Tenore")
     (s1 v4 "Basso")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:clef-overrides
     (s4 v1 "treble")

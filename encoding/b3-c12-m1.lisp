@@ -4,10 +4,7 @@
    (:comment "q021_s91, origin: 438")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio dell'ottavo modo diatonico semplice,\\da Tolomeo detto yppermissolidio"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (133 1954 "Eſſempio dellʼottauo Modo, Diatonico ſemplice, da ᴛolomeo detto Yppermiſſolidio."))

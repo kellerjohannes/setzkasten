@@ -52,10 +52,6 @@
               (:en "natural: sol\\soft: re\\hard: ut"))))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
   (:preamble-lilypond
    (:width 1500))
   (:data

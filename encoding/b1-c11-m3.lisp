@@ -11,10 +11,7 @@
     (s3 "per natura:\\sol-fa-la-sol-fa-mi-mi"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:music 2200
            (:voice v1)

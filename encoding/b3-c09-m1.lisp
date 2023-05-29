@@ -4,10 +4,7 @@
    (:comment "q021_s90, origin: 992")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del quinto modo diatonico semplice,\\da greci detto lidio"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")))

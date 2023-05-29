@@ -15,10 +15,7 @@
     (s6 "tritono composto\\accidentale"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (432 1372 "ᴇſſempio del ᴛritono accidentale,incompoſto & compoſto."))

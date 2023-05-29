@@ -14,10 +14,7 @@
     (s3 "Terza quarta\\enarmonica"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (93 2061 "Eſſempio di tre quarte differenti de i tre generi Muſicali,della terza ſpetie delle quarte."))

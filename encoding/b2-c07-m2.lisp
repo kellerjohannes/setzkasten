@@ -10,10 +10,7 @@
     (s1 v3 "Soprano"))
    (:voice-order
     (s1 v3 v2 v1)))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:clef-overrides
     (s1 v2 "treble_8")))

@@ -58,10 +58,7 @@
     (s44 "A cinque")
     (s45 "A quattro")
     (s46 "A sette")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:clef-overrides
     (s13 v2 "treble_8")

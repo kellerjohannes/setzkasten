@@ -4,10 +4,7 @@
    (:comment "q021_s098, origin: 951")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del quinto modo per ♮ incitato\\della musica participata e mista"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
           (210 1759 "Eſſempio del quinto ᴍodo per ♮. incitato della muſica participata & miſta."))

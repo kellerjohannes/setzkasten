@@ -4,10 +4,7 @@
    (:comment "q021_s121, origin: 480")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio dell'ottavo modo cromatico"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
           (586 883 "Eſſempio dellʼottauo modo ᴄromatico."))

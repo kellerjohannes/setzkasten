@@ -14,10 +14,7 @@
     (s3 "Seconda quarta\\enarmonica"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (64 2085 "Eſſempio di tre quarte,differenti de tre generi muſicali,della ſeconda ſpetie delle quarte."))

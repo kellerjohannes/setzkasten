@@ -4,10 +4,7 @@
    (:comment "q021_s069, rotation: 0, origin: 472")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio della sesta minore in vari modi composta con due tenori"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
      (338 1552 "Eſſempio della Seſta minore in uarij modi compoſta con due tenori."))

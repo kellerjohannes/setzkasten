@@ -4,10 +4,7 @@
    (:comment "q021_s096, rotation: -1.63, origin: 1051")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del primo modo per ♮ incitato in ottaua più basso\\dell'ordinario, della musica participata e mista"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (171 1846 "Eſſempio del del ᴘrimo Modo per ♮. incitato in Ottaua piu ʙaſso dellʼordinario,"))

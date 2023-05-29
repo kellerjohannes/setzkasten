@@ -20,10 +20,7 @@
     (s6 "per ♭: fa-mi-la\\fa-mi-mi"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58 (10 2198 "ᴍano ᴇnarmonica , con ſemitoni maggiori diſcendenti nel principio del tono,con il tono, in quattro"))
    (:text 70 58 (10 976 "parti diuiſo , per leſette lettere della ᴍano."))

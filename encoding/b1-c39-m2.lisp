@@ -13,10 +13,7 @@
     (s4 "ordine 4 de gradi\\della quarta quinta\\composta"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (595 984 "ᴇſſempio de i gradi delle Ɋuinte naturali."))

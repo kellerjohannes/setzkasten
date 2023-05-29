@@ -4,10 +4,7 @@
    (:comment "q021_s097, rotation: 0.96, origin: 552")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del terzo modo per ♭ molle,\\della musica participata e mista"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
           (207 1718 "Eſſempio del terzo ᴍodo per ♭. molle, della Muſica participata & miſta."))

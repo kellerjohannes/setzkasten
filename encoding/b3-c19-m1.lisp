@@ -4,10 +4,7 @@
    (:comment "q021_s098, origin: 954")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del quinto modo per ♮ incitato\\della musica participata e mista"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")))

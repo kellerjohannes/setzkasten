@@ -4,10 +4,7 @@
    (:comment "q021_s108, origin: 1007")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempi delle cadentie che fuggano la conclusione,\\per salti naturali all'in giù, et all'in sù"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
           (58 2121 "Eſſempi delle cadentie che fuggano la concluſione,per ſalti naturali allʼin giù,& allʼin sù."))

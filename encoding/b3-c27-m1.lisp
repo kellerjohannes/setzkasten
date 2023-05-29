@@ -12,10 +12,7 @@
     (s5 "dubbiosa")
     (s6 "buona")
     (s7 "buona")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 120 58
           (167 1865 "Eſſempio delle cadentie à due uoci intiere, & diminuite,& ſenza concluſione."))

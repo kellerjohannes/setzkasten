@@ -16,10 +16,7 @@
     (s7 "Quarta quinta\\[enarmonica]"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
           (343 1454 "Eſſempio delle tre Ɋuarte, & quattro Quinte ᴇnarmoniche."))

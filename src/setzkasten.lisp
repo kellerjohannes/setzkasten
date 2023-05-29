@@ -2,7 +2,10 @@
   (:import-from :cl-ppcre :regex-replace-all)
   (:import-from :hunchentoot :define-easy-handler)
   (:import-from :cl-who :fmt :htm :with-html-output-to-string)
-  (:use :cl))
+  (:use :cl)
+  (:export "get-parsed-score"
+           "process-score"
+           "execute-mission"))
 
 (in-package :setzkasten)
 
@@ -30,8 +33,3 @@
   (pathname "/usr/bin/lilypond"))
 (defparameter *visual-score-export-path*
   (pathname "~/common-lisp/setzkasten-output/visual-score/"))
-
-
-;; TODO: bracketed sections
-;; \postscript "0 12 rmoveto -0.5 0 rlineto 0 -16 rlineto 0.5 0 rlineto stroke"
-;; indent = 0\cm

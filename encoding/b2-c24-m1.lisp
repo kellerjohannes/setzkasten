@@ -18,10 +18,7 @@
     (s9 v1 v2)
     (s10 v1 v2)
     (s11 v1 v2)))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
      (90 2031 "Eſſempio delle Decime maggiori & minori,& come in uarij modi ſi poſſono comporre."))

@@ -4,10 +4,7 @@
    (:comment "q021_s102, rotation: -0.81, origin: 974")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio delle cadentie minori di semibreve,\\e di minima, diminuite e non"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")

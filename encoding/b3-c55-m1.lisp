@@ -10,10 +10,7 @@
     (s1 v3 "[Tenore]")
     (s1 v4 "Quinta parte")
     (s1 v5 "[Basso]")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:clef-overrides
     (s1 v2 "treble_8"))

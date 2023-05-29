@@ -4,10 +4,7 @@
    (:comment "q021_s120, origin: 936")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del terzo modo, cromatico"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
           (504 974 "Eßempio del ᴛerzo modo ᴄromatico."))

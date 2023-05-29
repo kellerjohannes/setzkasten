@@ -24,10 +24,7 @@
     (s8 "salto di quinta\\perfetta naturale\\incomposto"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 140 58
           (595 952 "ᴇſſempio della Quinta naturale incomp."))

@@ -4,10 +4,7 @@
    (:comment "q021_s120, origin: 909")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del primo modo, cromatico"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (504 974 "Eſſempio del Primo Modo , ᴄromatico."))

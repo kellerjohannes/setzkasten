@@ -4,10 +4,7 @@
    (:comment "q021_s130, origin: 1005")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Essempio della prima quinta delle spetie de i tre generi [commisti,] discendenti"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (239 1598 "Eſſempio della prima Ɋuinta delle ſpetie de i tre generi diſcendenti."))

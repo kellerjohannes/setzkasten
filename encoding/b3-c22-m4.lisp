@@ -4,10 +4,7 @@
    (:comment "q021_s100, origin: 973")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio dell'ottavo modo per musica finta,\\della musica participata e mista"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
           (163 1849 "Eſſempio dellʼottauo ᴍodo per ᴍuſica finta,della Muſica participata & mista."))

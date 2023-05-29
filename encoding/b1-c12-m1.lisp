@@ -17,10 +17,7 @@
     (s9 "per la metà\\doppo"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:music 2168
            (:voice v1)

@@ -4,10 +4,7 @@
    (:comment "q021_s096, rotation: -1.63, origin: 1046")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del primo modo per ♮ incitato nel suo luogo ordinario\\della musica participata e mista"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (215 1817 "Eſſempio del del primo ᴍodo per ♮. incitato nel ſuo luogo ordinario della ᴍuſica"))

@@ -16,10 +16,7 @@
     (s6 "salto di quarta\\accidentale\\incomposta"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 150 58
           (137 1893 "ᴇſſempio del ſalto,& de i gradi de Ɋuarta accidentale,incompoſta & compoſta."))

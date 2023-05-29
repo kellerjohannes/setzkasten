@@ -4,10 +4,7 @@
    (:comment "q021_s098, origin: 971")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del quarto modo per ♮ incitato\\della musica participata e mista,\\con l'ottava sotto del suo fine"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (212 1797 "Eſſempio del quarto Modo per ♮.incitato della ᴍuſica participata & miſta,"))

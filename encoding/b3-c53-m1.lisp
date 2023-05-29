@@ -9,10 +9,7 @@
     (:all v2 "[Alto]")
     (:all v3 "[Tenore]")
     (:all v4 "[Basso]")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:standalone-title "»Madonna il poco dolce«")
    (:standalone-subtitle (:alt (:c-standalone "Libro 3, Capitolo 53, fol. 68v-69r")

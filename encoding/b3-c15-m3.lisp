@@ -4,10 +4,7 @@
    (:comment "q021_s096, rotation: -1.63, origin: 1050")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del primo modo per ♭ molle\\della musica participata e mista"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")))

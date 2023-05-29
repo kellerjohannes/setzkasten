@@ -4,10 +4,7 @@
    (:comment "q021_s100, origin: 981")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio dell'ottavo modo per ♮ incitato\\della musica participata et mista"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
           (209 1791 "Eſſempio dellʼottauo ᴍodo per ♮. incitato della ᴍuſica participata & mista."))

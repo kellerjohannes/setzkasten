@@ -11,10 +11,7 @@
     (s2 "per ♭: re-mi-fa-re-mi"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (54 720 "ᴛono diuiſo in 4. parti aſcend.")

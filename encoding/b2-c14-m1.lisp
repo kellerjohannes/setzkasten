@@ -13,10 +13,7 @@
     (s6 "[Grado] incitato\\e molle")
     (s7 "[Gradi] incitati\\ ")
     (s8 "[Grado] molle\\et incitato")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
      (330 1555 "Eſſempio de i molti modi,che ſi può accompagnare la Terza minore."))

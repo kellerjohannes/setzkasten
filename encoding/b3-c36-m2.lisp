@@ -6,10 +6,7 @@
    (:section-headings
     (s1 "Seconda quarta\\diatonica")
     (s2 "Seconda quarta\\cromatica")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
      (176 nil "Seconda quarta.")

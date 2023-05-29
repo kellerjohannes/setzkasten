@@ -18,10 +18,7 @@
     (s9 "tono accidentale\\incomposto"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 100 58
           (525 1098 "ᴇſſempio dʼalcuni ᴛoni,et ſemitoni accidentali."))

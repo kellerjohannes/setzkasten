@@ -4,10 +4,7 @@
    (:comment "q021_s102, rotation: -0.81, origin: 974")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempi delle cadentie maggiori di breve senza punto,\\e con il punto dimiuite."))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
           (169 1882 "Eſſempi delle cadentie maggiori di breue ſenza punto,et con il punto diminuite."))

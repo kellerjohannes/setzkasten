@@ -18,10 +18,7 @@
     (s9 "tono maggiore\\incomposto"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 100 58
           (414 1235 "ᴇſſempio del ᴛono maggiore,compoſto et incompoﬆo."))

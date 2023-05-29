@@ -4,10 +4,7 @@
    (:comment "q021_s099, origin: 414")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del sesto modo per ♮ incitato,\\della musica participata e mista"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
           (257 1743 "Eſſempio del ſeſto Modo per ♮. incitato,della muſica participata & miſta."))

@@ -4,10 +4,7 @@
    (:comment "q021_s098, origin: 962")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del quarto modo, detto per musica finta"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
           (562 1152 "Eſſempio del quarto Modo,detto per muſica finta."))

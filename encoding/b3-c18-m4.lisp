@@ -4,10 +4,7 @@
    (:comment "q021_s098, origin: 961")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del quarto modo con tre ♭ molli,\\con la sua quinta giusta,\\della musica participata et mista"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (266 1702 "Eſſempio del quarto ᴍodo con tre ♭. molli,con la ſua quinta giuſta, della"))

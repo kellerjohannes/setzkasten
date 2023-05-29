@@ -16,10 +16,7 @@
     (s4 v1 "Tenore")
     (s4 v2 "Tenore")
     (s4 v3 "Basso")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (292 1605 "Eſſempio delle cadentie à tre uoci,della muſica participata & miſta."))

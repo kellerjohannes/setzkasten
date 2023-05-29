@@ -10,10 +10,7 @@
     (s3 "Moderno")
     (s4 "Non troppo moderne")
     (s5 "Non moderne")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:clef-overrides
     (s5 v1 "treble_8")))

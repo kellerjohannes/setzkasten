@@ -14,10 +14,7 @@
     (s3 "Prima quarta\\enarmonica"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (49 2092 "Eſſempio di tre Ɋuarte differenti delli tre generi muſicali, della prima ſpetie delle quarte."))

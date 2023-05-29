@@ -4,10 +4,7 @@
    (:comment "q021_s100, origin: 917")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio dell'ottavo modo per ♭ molle,\\della musica participata e mista"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
           (217 1743 "Eſſempio dellʼottauo ᴍodo per ♭.molle,della ᴍuſica participata & mista."))

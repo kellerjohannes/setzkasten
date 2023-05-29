@@ -17,10 +17,7 @@
     (s8 "terza maggiore\\composta\\naturale"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (230 1732 "ᴇſſempio del grado di ᴛerza maggiore naturale, incompoﬆo & compoſto."))

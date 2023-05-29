@@ -17,10 +17,7 @@
     (s8 "diesis minore"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (212 1795 "ᴇſſempio delli gradi,delli ᴅieſis minori ᴇnarmonici, aſcendenti & diſcendenti."))

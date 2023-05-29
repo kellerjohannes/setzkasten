@@ -4,10 +4,7 @@
    (:comment "q021_s098, origin: 968")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del quarto modo per ♭ molle, senza la sua quinta giusta,\\della musica mista e participata"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
           (0 2216 "Eſſempio del quarto Modo per ♭.molle,ſenza la ſua quinta giuſta,della muſica miſta , & par."))

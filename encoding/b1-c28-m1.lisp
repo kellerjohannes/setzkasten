@@ -16,10 +16,7 @@
     (s8 "grado di terza\\più di minore\\composto"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (327 1549 "ᴇſſempio de i gradi di ᴛerza più di minore compoﬆo & incompoſto."))

@@ -15,10 +15,7 @@
     (s6 "A due voci")
     (s7 "A due voci")
     (s8 "A due voci")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (70 2054 "Eſſempio delle ᴄadentie naturali& accidentali,à due uoci,della muſica participata &"))

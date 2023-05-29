@@ -12,10 +12,7 @@
     (s1 "Composta / incomposta")
     (s2 "Composta / incomposta")
     (s3 "Composta / incomposta")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 130 58
           (196 1749 "Eſſempio delle tre Quarte Diatoniche ſemplici,ſcritte con quattro ♭. molli."))

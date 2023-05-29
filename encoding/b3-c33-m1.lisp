@@ -36,10 +36,7 @@
 
     ;; Hier könnte "Cadentia del basso" für alle übrigen sections ergänzt werden. Zu diskutieren.
     (s4 v4 "Cadentia del soprano")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (0 nil "ᴄad.del ſop.")

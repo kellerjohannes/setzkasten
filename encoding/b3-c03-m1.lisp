@@ -14,10 +14,7 @@
     (s2 "Composta / incomposta")
     (s3 "Composta / incomposta")
     (s4 "Composta / incomposta")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 130 58
           (335 1554 "Eſſempio delle quattro Ɋuinte ᴅiatoniche,compoſte&incompoſte."))

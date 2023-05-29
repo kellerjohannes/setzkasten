@@ -26,10 +26,7 @@
     (s17 "A tre voci")
     (s18 "A tre voci")
     (s19 "A tre voci")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (311 1596 "Eſſempio della seſta maggiore come in molti modi, ſi può comporre."))

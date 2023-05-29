@@ -9,10 +9,7 @@
     (s1 v2 "Cadentie del contr'alto")
     (s1 v3 "Cadentie del tenore")
     (s1 v4 "Cadentie del basso")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (421 1382 "Eſſempio di molte cadentie del ᴛerzo Modo della Muſica"))

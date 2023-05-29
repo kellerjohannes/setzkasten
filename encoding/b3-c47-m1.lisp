@@ -15,10 +15,7 @@
     (s7 "Settima ottava enarmonica"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:clef-overrides
     (s5 v1 "treble_8")

@@ -4,10 +4,7 @@
    (:comment "q021_s103, origin: 516")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Cadentie diatoniche del soprano, del contr'alto,\\del tenore e del basso"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:voice-labels
     (s1 v1 "Soprano")

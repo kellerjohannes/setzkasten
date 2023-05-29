@@ -6,10 +6,7 @@
    (:line-headings
     "Esempio del tempo perfetto"
     "Esempio del tempo imperfetto"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (186 nil "Eſſempio del tempo perfetto.")

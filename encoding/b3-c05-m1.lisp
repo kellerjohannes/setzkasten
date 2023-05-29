@@ -4,10 +4,7 @@
    (:comment "q021_s88, rotation: -1.49, origin: 1097")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del primo modo diatonico semplice,\\da greci detto dorio"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (303 1557 "Eſſempio del primo Modo Diatonico ſemplice da,Greci detto Dorio."))

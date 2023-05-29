@@ -4,10 +4,7 @@
    (:comment "q021_s131, origin: 448")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del quinto modo enarmonico semplice"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")))

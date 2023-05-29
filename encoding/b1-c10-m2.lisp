@@ -17,10 +17,7 @@
     (s9 "spetie cromatica\\tono cromatico"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:music 2214
            (:voice v1)

@@ -4,10 +4,7 @@
    (:comment "q021_s099, origin: 416")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del quinto modo per musica finta,\\della musica participata e mista"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
           (216 1796 "Eſſempio del quinto ᴍodo per muſica finta,della muſica participata & miſta."))

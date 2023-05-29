@@ -14,10 +14,7 @@
     (s3 "Prima quinta\\enarmonica"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (93 2031 "Eſſempio di tre quinte differenti,di i tre generi muſicali,della prima ſpetie delle quinte."))

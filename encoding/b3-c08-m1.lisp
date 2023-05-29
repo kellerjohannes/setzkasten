@@ -4,10 +4,7 @@
    (:comment "q021_s90, origin: 993")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del quarto modo diatonico semplice,\\da greci detto yppofrigio"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:alt (:tolgahan (:clef-overrides
                      (s1 v1 "treble_8")))))

@@ -44,10 +44,7 @@
     (s31 "A quattro")
     (s32 "A due")
     (s33 "A due")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:clef-overrides
     (s33 v1 "treble_8")))

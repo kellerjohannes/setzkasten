@@ -4,10 +4,7 @@
    (:comment "q021_s131, origin: 436")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del primo modo enarmonico semplice"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 100 58
           (518 1091 "Eſſempio del primo modo ᴇnarmonico ſemplice."))

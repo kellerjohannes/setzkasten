@@ -24,10 +24,7 @@
     (s8 "per nat.: sol-re-mi-fa-re\\per b: re-mi-fa-re-mi\\per ♮: ut-re-mi-fa-re"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58 (115 1903 "ᴍano della diuiſione del tono in quattro ᴅieſis ᴇn. aſcendenti con lo ſemitono minore."))
    (:text 100 58

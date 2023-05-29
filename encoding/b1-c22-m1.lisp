@@ -17,10 +17,7 @@
     (s1 ""))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
          (429 991 "ᴇſſempio delli ᴛoni, & ꜱemitoni naturali."))

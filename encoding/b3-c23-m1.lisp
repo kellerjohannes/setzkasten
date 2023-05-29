@@ -4,10 +4,7 @@
    (:comment "q021_s100, origin: 445")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio del modo misto della prima quinta del primo modo,\\e della seconda quarta del terzo modo"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (93 2044 "Eſſempio del ᴍodo miſto della prima Quinta,del primo Modo;et della ſeconda Ɋuarta,"))

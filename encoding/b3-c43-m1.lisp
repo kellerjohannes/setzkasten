@@ -9,10 +9,7 @@
     (s1 v3 "Cadentie cromatiche")
     (s1 v4 "Cadentie cromatiche")
     ))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
      (799 nil "ᴄadentie ᴄromatiche."))
