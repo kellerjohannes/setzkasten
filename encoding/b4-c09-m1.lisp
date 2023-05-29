@@ -4,6 +4,11 @@
    (:comment "q021_s152, rotation: 0.79, origin: 961")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio dell'ordine di procedere con le note, una dopo l'altra")
+   ;; Bibelgruppe:
+   ;; Die Bewertungen ('non buono' etc.) beziehen sich immer auf den Notentext
+   ;; darunter.
+
+   ;; Die aktuelle Normalisierung wurde nach diesem Prinzip vorgenommen.
    (:section-headings
     (s1 "[Buono]")
     (s2 "Non buono procedere")

@@ -51,7 +51,10 @@
           (111 nil "Proportione ſeſqualtera,due contra tre.")
           (1303 nil "Emiolia maggiore."))
    (:music 2211
-           (:voice v2) (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat) b22 met-perf-min-dim b22 met-3-2 b22 sb1 sb4 sb3 m1 m8 dot8 sm7 sb5 m6 sb7 sb5 sh4 m4 m5 br1
+           ;; Bibelgruppe:
+           ;; Anfang erste Zeile: Tenorschlüssel statt Bassschlüssel
+           (:voice v2) (:alt (:diplomatic (:f-clef) max7 fclef7 fl6) (:idealised cclef7 b38 fl6 b38 b38))
+           (:key-signature nil nil nil nil nil nil :flat) b22 met-perf-min-dim b22 met-3-2 b22 sb1 sb4 sb3 m1 m8 dot8 sm7 sb5 m6 sb7 sb5 sh4 m4 m5 br1
            (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat) sbbl4 dot4 sm3 sbbl2 sbbl1 dot2 sm2 sbbl3 dot4 sm1 sbbl4 sbbl3 sbbl2 brbl7 sbbl5 sbbl6 sm7 sm5d brbl8 sh7 sbbl7 brbl8)
 
 

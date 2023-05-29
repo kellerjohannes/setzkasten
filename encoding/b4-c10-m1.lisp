@@ -1,11 +1,33 @@
-;; Auflösung der schwarzen Notation in der Normalisierung noch nicht geklärt (inhaltlich unklar)
-;; zu diskutieren: Wie ist die schwarze Notation in Lilypond darzustellen?
-
 `((:header
    (:filename "b4-c10-m1")
    (:alt-name "m4.010")
    (:comment "q021_s153, rotation: 1.16, origin: 464")
    (:creator "Vicentino21 / Johannes Keller")
+   ;; Bibelgruppe:
+   ;; * 1 Cantus Firmus (erstes Beispiel)
+   ;;     kann man diese Melodie identifizieren? - > Martin / Kelly: nicht
+   ;;     identifizierbar
+   ;; * 2 'colorite' im 'tempo perfetto'
+   ;;     Schwarze Noten sind binär in ternärem Kontext
+   ;; * 3 'colorite' im 'tempo imperfetto'
+   ;;     Schwarze Noten erhalten den halbierten Wert
+   ;; * 4 'colorite' als 'emiolia maggiore'
+   ;;     Schwarze Noten erhalten den halbierten Wert
+   ;; * 5 'colorite' als 'emiolia minore'
+   ;;     könnte auch 'weiss' notiert sein ohne Unterschied
+   ;; * 6 schwarze Notation
+   ;;     Keine Unterscheidung zu alternativer Notation, nur schwarze Notenwerte
+   ;;     werden verwendet für die Notation ('note nere' als rein deskriptive Form)
+
+   ;; Auflösung der schwarzen Notation in der Normalisierung noch nicht geklärt (inhaltlich unklar)
+   ;; zu diskutieren: Wie ist die schwarze Notation in Lilypond darzustellen?
+   ;; Anne: mit eckigen Klammerfragmenten (nicht identisch mit der Klammer, die für chromatisch
+   ;; und enharmonische Ligaturen verwendet wird).
+
+   ;; Zu s3: Federico sieht entweder eine triolisierende Interpretation, oder (eher wahrscheinlich)
+   ;; nach Willi Apel eine punktierte Interpretation, d.h. der erste Color entspricht der
+   ;; rhythmischen Figur zu Beginn der Phrase.
+
    (:section-headings
     (s1 "Esempio delle note colorite nel canto fermo")
     (s2 "Colorite nel tempo perfetto")

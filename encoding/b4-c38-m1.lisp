@@ -4,6 +4,13 @@
    (:comment "q021_s184, rotation: 0, origin: 962")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Compositione a quattro voci,\\soprano mutabile per ottava di sotto")
+   ;; Bibelgruppe:
+   ;; Dieses und das nächste Kapitel konnten bisher nicht befriedigend interpretiert werden. Das
+   ;; betrifft auch die Musikbeispiele. Es liegt dazu eine Korrespondenz mit Elam Rotem, Laurie
+   ;; Stras, Vicente Parilla, Johannes Menke, David Mesquita und Lisandro Abadie vor, ohne
+   ;; eindeutigen Befund. Wie sich das auf die Normalisierung der Notenbeispiele (dieses und
+   ;; b4-c39-m1) auswirkt ist zu diskutieren.
+   ;; Es liegen Skizzen zu hypothetischen Beispielen von Anne vor.
    (:section-headings
     (s2 "Soprano convertito in tenore,\\all'ottava sotto"))
    (:voice-order

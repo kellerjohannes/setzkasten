@@ -22,7 +22,11 @@
            (:voice v1) cclef1 b38 met-imperf-min-dim b38 m5d dot6 sm6 b38 sm7 b38 sm8 b38 sm9 b38 sm7 b38 m8 dot8 sm7 b22 m6 b22 m5d b22 sm1 b38 sm2 b38 sm3 b38 sm4 b38 m5d b38 m5d b22 m1 b22 sb8 b22 m7 dot8 sm8 b38 m9 b22 sm2 b22 sm3 sh4 sm4 custos3)
    (:vspace 50)
    (:music 2219
-           cclef1 b38 m5 b38 sm3 b38 m5d b38 sm6 b38 m8 b38 sm7 b38 m3 b38 sb8 b38 sb5 b38 m6 b38 smrest3 b38 sm2 b38 sm3 b38 m5 b38 m1 b38 sm8 b38 m8 dot8 cr7 b38 cr6 b38 m7 b38 sb8 b38 bl b22 b125 b125)
+           cclef1 b38 m5 b38 sm3 b38 m5d b38 sm6 b38 m8 b38 sm7 b38 m3 b38 sb8 b38 sb5 b38
+           ;; Bibelgruppe:
+           ;; Korrektur: zweite Zeile, 10. Note, soll eine Semibrevis, keine Minima
+           ;; sein. (Sagt Luigi).
+           (:alt (:diplomatic m6) (:idealised sb6)) b38 smrest3 b38 sm2 b38 sm3 b38 m5 b38 m1 b38 sm8 b38 m8 dot8 cr7 b38 cr6 b38 m7 b38 sb8 b38 bl b22 b125 b125)
    (:text 70 58
           (656 nil "Alto."))
    (:music 2224

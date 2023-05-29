@@ -3,10 +3,20 @@
    (:alt-name "m4.028")
    (:comment "q021_s181, rotation: 1.05, origin: 443; q021_s181, rotation: 0, origin: 995")
    (:creator "Vicentino21 / Johannes Keller")
+   ;; Bibelgruppe:
+   ;; Das erste Beispiel ist in der gedruckten Gestalt zu übertragen, aber
+   ;; auch aufgelöst im Sinne eines ergänzenden Kommentars. Luigi: es gibt
+   ;; vier mögliche Lösungen. Anne: ist mit Maniates einverstanden.
+   ;; Das zweite Beispiel ist in zweistimmiger Partitur gesetzt. Es gibt
+   ;; keine alternativen Fassungen davon zu rekonstruieren.
+   ;; Verlangt nach einer vertieften Betrachtung.
+
+   ;; Im Moment gibt es keine ergänzenden Elemente, nur das musikalische Material in direkter
+   ;; Übertragung, das auch in der Quelle vorliegt.
    (:section-captions
     (s1 "A quattro voci"))
    (:line-headings
-    "La prima volte il soprano fara due pause, et l'altra volta le tre parti,\\faranno le due pause del soprano,\\et quello cantera senza pause.")
+    "La prima volta il soprano fara due pause, et l'altra volta le tre parti,\\faranno le due pause del soprano,\\et quello cantera senza pause.")
    (:voice-labels
     (s1 v1 "Soprano")
     (s1 v2 "Alto")

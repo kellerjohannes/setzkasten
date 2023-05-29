@@ -3,6 +3,7 @@
    (:alt-name "m4.034")
    (:comment "q021_s185, rotation: 1.45, origin: 474")
    (:creator "Vicentino21 / Johannes Keller")
+   ;; Achtung Unklarheiten, siehe Kommentar von b4-c38-m1.
    (:section-headings
     (s2 "Tenore convertito in soprano\\per ottava più alto"))
    (:voice-order

@@ -5,8 +5,12 @@
    (:alt-name "m4.018")
    (:comment "q021_s167, rotation: 1.14, origin: 514. Kapitel im Original falsch nummeriert: XXIII, korrekt wäre XXIIII")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "")
-   ;; Setzung der Überschriften fragwürdig, zu diskutieren. In dieser Form sicherlich nicht überzeugend.
+   ;; Setzung der Überschriften fragwürdig, zu diskutieren. In dieser Form sicherlich nicht
+   ;; überzeugend.
+
+   ;; Bibelgruppe:
+   ;; Nicht klar, ob es sich um 4 oder 5 Sektionen handelt. Ev. gehören die
+   ;; ersten zwei zusammen. Zu diskutieren.
    (:line-headings
     "Decima maggiore all'ottava nei fini et nel basso, ne gl'alti"
     "Quinta imperfetta")

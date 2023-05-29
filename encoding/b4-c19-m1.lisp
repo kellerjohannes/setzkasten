@@ -11,6 +11,13 @@
     (s4 " \\megliore")
     (s5 " \\buono procedere")
     (s6 " \\megliore")
+    ;; Bibelgruppe:
+    ;; Achtung: letztes Beispiel ('modo di procedere con una parte.') ist
+    ;; einstimmig zu lesen, im Gegensatz zu allen anderen hier.
+
+    ;; Im Moment wird es trotzdem zweistimmig gesetzt, was bis auf die erste Note der oberen Stimme
+    ;; grundsätzlich funktioniert. Entweder wird diese Note korrigiert, und s7 auf zwei Einheiten
+    ;; (s7 und s8) verteilt, jeweils einstimmig. Zu diskutieren.
     (s7 "modo di procedere\\con una parte")))
   (:preamble-type-imitation
    (:width nil)

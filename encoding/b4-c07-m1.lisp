@@ -7,6 +7,8 @@
    (:section-captions
     ;; Setzung der captions gemäss Bibelgruppe
     ;; Positionierung der Überschriften in der idealisierten Fassung ev. anzupassen und zu ergänzen?
+
+    ;; Die aktuelle Normalisierung entspricht dem Konses aus der Bibelgruppe.
     (s1 "[Buono]")
     (s2 "[Buono]")
     (s3 "Non buono")
