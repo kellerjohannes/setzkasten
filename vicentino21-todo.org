@@ -12,15 +12,22 @@
 *** TODO Neuarrangement der Skalen in b5-c59
 *** TODO Implementierung verschiedener Textgrössen in den Unterschriften für b5-c48 - b5-c52
 * Bearbeitung Anne Round 1
+Annes Antworten sind unten eingearbeitet.
 ** b1-c5-m7
 - Stern-Fussnote: muss besprochen werden
+  - Kein Problem. Der Mangel an Logik liegt bei Vicentino, und als ich
+    es jetzt anschaute, musste ich wieder ziemlich überlegen.
 - Letzter Takt: was heisst 'corrected version'? Entspricht nach meinem
   Verständis der Pariser Version.
+  - Die eingekreiste Note ist auf der A-Linie in Paris, nicht der
+    G-Linie. Da ich nicht wusste, ob die Fassung total diplomatisch
+    oder "korrigiert", habe ich die Note eingekreist.
 ** b1-c10-m2
 - Die Korrektur sollte einen Takt später stehen, dort habe ich eine
   Idealisierung vorgenommen, da die Pariser Quelle eine Redundanz zum
   übernächsten Takt beinhaltet. Ich würde diese Idealisierung so
   beibehalten.
+  - Falsch gezählt meinerseits - und die Korrektur finde ich gut.
 ** b1-c11-m3
 - Ja, kann ich nachvollziehen, würde ich aber nicht tun, weil die
   horizontalen Abstände sehr treu gehandhabt werden sollen im fake-simile.
@@ -34,6 +41,7 @@
 - Paris ist nicht so, es handelt sich um eine Idealisierung, da die
   originale Tonhöhenfolge nicht sinnvoll ist (G liegt nicht zwischen
   A♯ und G♯). Akzeptable Idealisierung?
+  - Ja, auf jeden Fall.
 ** b1-c38-m1
 - Naturale scheint falsch, da enh. Punkte involviert sind. Es sei
   denn, man betrachte diese als besondere Form von 'naturale', siehe
@@ -53,6 +61,11 @@
   eine Longa machen. Oder man lässt es wie es ist, das verstösst aber
   gegen unser Prinzip, in der idealisierten Fassung stets die
   Mehrstimmigkeit rhythmisch so zu korrigieren, dass sie stets aufgeht.
+  - Dann würde ich eine Longa daraus machen, da es die Regel der Zeit
+    war. Aber für die damalige Zeit war es auch die Regel, dass man
+    die letzte Note aushält so lange bis alle Stimmen fertig
+    sind. Darum gibt es ein Konflikt zwischen modern und neu. Also
+    keine zweite Note, aber eine längere fände ich bessser.
 ** b3-c44-m1 (Alleluia)
 - Schwarze Notation ist im Moment noch nicht implementiert, dafür
   brauche ich etwas mehr Zeit, ist aber vorgemerkt!
@@ -97,8 +110,11 @@ CLOSED: [2023-05-26 Fri 11:23]
 CLOSED: [2023-05-26 Fri 11:50]
 *** DONE Libro 3
 CLOSED: [2023-05-26 Fri 16:26]
-*** TODO Libro 4
+*** DONE Libro 4
+CLOSED: [2023-05-29 Mon 12:39]
 *** TODO Libro 5
+Bibelgruppe noch nicht abgeschlossen. Ausserdem werden hier zahlreiche
+Korrektur- und Idealisierungstechniken angewendet jenseits der Bibelgruppe.
 ** Anne Round 1
 *** DONE Libro 1
 CLOSED: [2023-05-26 Fri 11:22]
@@ -116,13 +132,14 @@ CLOSED: [2023-05-26 Fri 11:50]
 *** DONE Alle '&' durch 'et' in den normalisierten Textbausteinen ersetzt
 CLOSED: [2023-05-26 Fri 16:26]
 * Zu liefern
-** TODO Anne
+** DONE Anne
+CLOSED: [2023-05-29 Mon 12:40]
 Wenn du die Datei, die du mir geschickt hast öffnest (hier nochmals
 angehängt), wirst du merken, dass die Beispiele auf S. 126 (b3-c32-m5)
 und 127 (b3-c38-m1) nur mit ihren Namen dort stehen, anstatt mit
 Noten. Kannst du sie mir eventuell nachreichen?
-*** TODO b3-c32-m5
-*** TODO b3-c38-m1
+
+-> Wird im Zusammenhang mit einem neuen Release geschickt.
 * Einzupflegende Korrespondenz
 ** Johannes/Anne
 *** DONE b2-c7
@@ -180,7 +197,8 @@ AS
 Übrigens gibt es auch ein tiefes E im Bass mit Hilfslinie, was du
 fälschlicher Weise als F transkribiert hast. Also 2 Noten mit
 Hilfslinien.😁
-*** TODO b5-c60
+*** DONE b5-c60
+CLOSED: [2023-05-29 Mon 12:41]
 JK
 
 ich nährere mich nun auch dem Ende: eine kleine Frage zum ersten

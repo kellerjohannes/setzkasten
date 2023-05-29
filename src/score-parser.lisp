@@ -411,6 +411,7 @@
   (:note max6 :maxima 6)
   (:note max7 :maxima 7)
   (:note longa1 :longa 1)
+  (:note longa3 :longa 1)
   (:note longa4 :longa 4)
   (:note longa5 :longa 5)
   (:note longa7 :longa 7)

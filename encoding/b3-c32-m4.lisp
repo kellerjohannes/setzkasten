@@ -33,8 +33,18 @@
            (:section s4) b22 mrest5 b22 sb5 sh4 m4 b22 sb5 b22 bl
            (:section s5) b22 mrest5 b22 sb6 b38 m5 (:alt (:diplomatic dot4) (:idealised dot6))
            ;; idealisierung zu diskutieren, sie wurde von Johannes vorgeschlagen, damit die vier
-           ;; Stimmen gleich lang sind. Anne hat sie in ihrer Korrekturrunde kritisiert.
-           sm4 sb3 b38 m2 b38 (:alt (:diplomatic br3) (:idealised br3 b22 br3)) b38 blbl)
+           ;; Stimmen gleich lang sind. Anne hat sie in ihrer Korrekturrunde kritisiert und
+           ;; schlägt vor:
+           ;; - Dann würde ich eine Longa daraus machen, da es die Regel der Zeit
+           ;;   war. Aber für die damalige Zeit war es auch die Regel, dass man
+           ;;   die letzte Note aushält so lange bis alle Stimmen fertig
+           ;;   sind. Darum gibt es ein Konflikt zwischen modern und neu. Also
+           ;;   keine zweite Note, aber eine längere fände ich bessser.
+
+           ;; Dieser Eingriff (Verlängerund der br3 zu longa3) ist die aktuelle Lösung.
+           ;; Nebenbemerkung: eine longa3 musste dafür angelegt werden, diese Type wird sonst
+           ;; nirgends verwendet.
+           sm4 sb3 b38 m2 b38 (:alt (:diplomatic br3) (:idealised longa3)) b38 blbl)
    (:text 110 58
           (664 597 "Cadentie del ᴄontrʼᴀlto."))
    (:music 2230

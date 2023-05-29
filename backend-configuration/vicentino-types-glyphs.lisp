@@ -56,6 +56,8 @@
   (glyph-notehead-stem          max5   "maxima-5"      "stave" "notehead-brevis"     "" "stem-minima" 68 ,*glyph-height* 5 :down nil nil nil)
   (glyph-notehead-stem          max6   "maxima-6"      "stave" "notehead-maxima"     "" "stem-minima" 111 ,*glyph-height* 6 :down nil nil nil)
   (glyph-notehead-stem          longa1   "longa-1"      "stave" "notehead-longa"     "" "stem-minima" 64 ,*glyph-height* 1 :up nil nil nil)
+  ;; longa3 ist nur für eine Idealisierung in b3-c32-m4 notwendig
+  (glyph-notehead-stem          longa3   "longa-3"      "stave" "notehead-longa"     "" "stem-minima" 64 ,*glyph-height* 3 :up nil nil nil)
   (glyph-notehead-stem          longa4   "longa-4"      "stave" "notehead-longa"     "" "stem-minima" 64 ,*glyph-height* 4 :up nil nil nil)
   (glyph-notehead-stem          longa5   "longa-5"      "stave" "notehead-longa"     "" "stem-minima" 64 ,*glyph-height* 5 :down nil nil nil)
   (glyph-notehead-stem          longa7   "longa-7"      "stave" "notehead-longa"     "" "stem-minima" 64 ,*glyph-height* 7 :down nil nil nil)
