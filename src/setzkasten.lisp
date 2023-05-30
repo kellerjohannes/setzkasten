@@ -5,7 +5,9 @@
   (:use :cl)
   (:export "get-parsed-score"
            "process-score"
-           "execute-mission"))
+           "execute-mission"
+           "get-mobjects-in-voice"
+           "get-pitch"))
 
 (in-package :setzkasten)
 

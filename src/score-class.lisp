@@ -140,6 +140,8 @@
           :documentation "When T, this will trigger the output of a 'segno'-sign above this mobject."))
   (:documentation "This class contains all information about a rest or note. Pitch encoding and duration are obvious. Also clef and tonality context are stored for each note individually. When rendering the `mobject' clef and tonality changes need to be identified with a state variable in order to trigger clef display correctly."))
 
+(defmethod get-pitch ((mobject mobject))
+  (pitch mobject))
 
 (defmethod add-mobject ((voice voice) mobject-instance)
   "Adds an instance of `mobject' to an instance of `voice'."
@@ -148,6 +150,10 @@
 (defmethod get-mobject ((voice voice) mobject-id)
   "Returns the instance of a `mobject' based on its `id' slot, given a `voice' instance."
   (find mobject-id (mobjects voice) :key #'id :test #'string=))
+
+(defmethod get-mobjects ((voice voice))
+  (mobjects voice))
+
 
 (defmethod add-section ((score score) section-instance)
   "Adds an instance of `section' to a given instance of `score'."
@@ -206,6 +212,9 @@
   "Returns the instance of `voice', referenced by its `id' and the `id' of a section within the instance of `score'."
   (let ((sec (get-section score section-id)))
     (when sec (get-voice sec voice-id))))
+
+(defmethod get-mobjects-in-voice ((score score) section-id voice-id)
+  (mobjects (get-voice-in-section score section-id voice-id)))
 
 (defmethod set-voice-label* ((score score) section-id voice-id voice-label)
   "Sets the `label' slot of a voice in a `score', referenced by the `id' of the `voice' and the `id' of the `section'."
