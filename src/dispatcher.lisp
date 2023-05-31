@@ -26,7 +26,9 @@
   (with-open-file (encoding-stream (merge-pathnames *encoding-source*
                                                     (pathname (format nil "~a.lisp" filename)))
                                    :direction :input)
-    (parse-score (extract-apparatus (eval (read encoding-stream)) extraction-arguments))))
+    (let ((score-expression (eval (with-standard-io-syntax
+                                    (read encoding-stream)))))
+      (parse-score (extract-apparatus score-expression extraction-arguments)))))
 
 ;; looping over mission, entry point to everything
 (defun execute-mission (mission-list)
