@@ -18,10 +18,7 @@
     (s10 "Buono")
     (s11 "Megliore")
     (s12 "Buono procedere")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (147 1911 "Eſſempio de ſalti cattiui con le pauſe,& i ſoſpiri notati ne i luoghi de i ſalti giuſti."))

@@ -36,10 +36,7 @@
     (s27 "Semitono\\naturale")
     (s28 "Tono\\naturale")
     ))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
      (151 1939 "Queſti sono li toni & semitoni ᴄromatici,in secondo,& terzo, & quarto ordine,"))

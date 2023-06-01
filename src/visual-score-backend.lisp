@@ -37,19 +37,22 @@
     (:b nil nil 16/9)))
 
 (defun lookup-pitch (pitch)
-  (fourth (find (first pitch)
-                *dict-pitch-y*
-                :key #'first)))
+  (vicentino-tunings::setzkasten-pitch :tuning1 pitch)
+  ;; (fourth (find (first pitch)
+  ;;               *dict-pitch-y*
+  ;;               :key #'first))
+  )
 
-(defparameter *y-scale* 80)
+(defparameter *y-scale* 20)
 
 (defmethod calculate-y-position ((mobject mobject))
   (with-accessors ((pitch pitch))
       mobject
     (when pitch
-      (* *y-scale*
-         (lookup-pitch pitch)
-         (expt 2 (fourth pitch))))))
+      (- (* *y-scale*
+          (/ (log (lookup-pitch pitch) (expt 2 (fourth pitch)))
+             (log 81/80)))
+         3000))))
 
 (defparameter *x-scale* 100)
 (defparameter *notehead-radius* 10)
@@ -60,7 +63,7 @@
 (defparameter *lower-limit* 1150)
 
 (defun draw-voice (scene voice)
-  (let ((x-position 0)
+  (let ((x-position 50)
         (last-position nil)
         (silentp t))
     (dolist (mobject (mobjects voice))
@@ -99,7 +102,7 @@
 (defun create-visual-score (score-instance backend suffix)
   (declare (ignore backend))
   (format t "~&Generating visual score of ~a-~a" (filename score-instance) suffix)
-  (cl-svg:with-svg-to-file (scene 'svg:svg-1.2-toplevel :width 2900 :height 1000 :stroke "black")
+  (cl-svg:with-svg-to-file (scene 'svg:svg-1.2-toplevel :width 3000 :height 3000 :stroke "black")
       ((merge-pathnames *visual-score-export-path*
                         (pathname (format nil "~a-~a.svg" (filename score-instance) suffix)))
        :if-exists :supersede)

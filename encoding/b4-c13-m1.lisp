@@ -5,6 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:line-headings
     "Punto in sincopa a due voci"
+    nil
     "Punti dubbiosi di pigliar fiato")
    (:section-headings
     (s1 "Esempio del punto di quinta e di seconda")
@@ -14,10 +15,7 @@
     (s5 "Punto che salva due ottave")
     (s6 "[Punto che] salva due quinte")
     (s7 "Punto d'affanno")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (10 773 "Eſſempio del punto di 5.& di 2.")
@@ -28,7 +26,7 @@
            (:voice v1)
            (:section s1) cclef7 b38 m7 dot8 sm6 b38 m5 b38 m4 dot4 sm3 b38 sb3 b38 m2 b38 sb3 b38 bl
            (:section s2) b38 sb3 dot4 m2 b38 bl
-           (:section s3) mrest7 b38 m7 dot8 cr6 b38 cr5d b38 m6 b38 sb7 b38 bl
+           (:section s3) (:newline) mrest7 b38 m7 dot8 cr6 b38 cr5d b38 m6 b38 sb7 b38 bl
            (:section s4) mrest7 b38 m10 dot10 cr9 b38 cr8 b38 m9 b38 sb10 b38 bl)
    (:text 90 58
           (87 nil "Punto in ſincopa à due uoci."))

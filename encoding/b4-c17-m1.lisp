@@ -8,10 +8,7 @@
     (s2 "Termini del contr'alto")
     (s3 "Termini del tenore")
     (s4 "Termini del basso")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:clef-overrides
     (s2 v1 "treble_8")))

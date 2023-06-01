@@ -24,10 +24,7 @@
    (:line-headings
     "Tutte le consonanze d'Alamire quinto discendenti"
     "Tutte le consonanze d'Alamire quinto ascendenti"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
           (60 979 "Tutte le conſonanze dʼA la mi re 5.diſcē.")

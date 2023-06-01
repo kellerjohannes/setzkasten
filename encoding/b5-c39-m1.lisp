@@ -6,10 +6,7 @@
    (:section-headings
     (s1 "Immobili ascendenti")
     (s2 "Immobili discendenti")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
      (342 nil "Immobili aſcendenti.")

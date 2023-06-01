@@ -51,10 +51,7 @@
     (s33 "accidentale")
     (s34 "accidentale")
     (s35 "accidentale")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (88 1457 "Queſte ſono tutte terze maggiori naturali & accidentali."))

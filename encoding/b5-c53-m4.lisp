@@ -13,10 +13,7 @@
     (s6 "Sesta ottava")
     (s7 "Settima ottava")
     ))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
      (102 1927 "Regola di ritrouare le sette ottaue ſopra ᴅ sol re primo, con li sottoſcritti eſſempi."))
@@ -31,7 +28,7 @@
            (:section s1) cclef7 b38 sb1 sb2 sb3 sb4 sb5 fl6 sb6 sb7 sb8 b38 bl
            (:section s2) b38 sb1 fl2 sb2 sb3 sb4 fl5 sb5 fl6 sb6 sb7 sb8 b38 bl
            (:section s3) b38 sb1 sb2 sh3 sb3 sb4 sb5 sb6 sh7 sb7 sb8 b38 bl
-           (:section s4) b38 sb1 sb2 sb3 sb4 sb5 b22 custos6
+           (:section s4) (:newline) b38 sb1 sb2 sb3 sb4 sb5 b22 custos6
            )
    (:text 70 58
      (79 nil "ottaua.")
@@ -41,7 +38,7 @@
      )
    (:music 2200
            cclef7 b38 sb6 sb7 sb8 b38 bl
-           (:section s5) (:newline) b38 sb1 b22 fl2 b22 sb2 sb3 sb4 sb5 b22 fl6 b22 sb6 sb7 sb8 b38 bl
+           (:section s5) b38 sb1 b22 fl2 b22 sb2 sb3 sb4 sb5 b22 fl6 b22 sb6 sb7 sb8 b38 bl
            (:section s6) b38 sb1 sb2 sh3 sb3 sh4 sb4 sb5 sb6 sh7 sb7 sb8 b22 bl
-           (:section s7) b38 sb1 sb2 sh3 sb3 sb4 sb5 sb6 sb7 sb8 b22 bl
+           (:section s7) (:newline) b38 sb1 sb2 sh3 sb3 sb4 sb5 sb6 sb7 sb8 b22 bl
            )))

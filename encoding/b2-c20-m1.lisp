@@ -49,7 +49,7 @@
            (:section s4) b38 m5 b38 m6 b38 sb4 b38 bl
            (:section s5) b38 sb5 b38 sb4 b38 bl
            (:section s6) b22 fl6 b38 sb6 b22 sb5 b38 bl
-           (:section s7) b22 mrest3 b22 m5 dot6 b22 sm4 b22 m2 b22 bl b38 custos9)
+           (:section s7) (:newline) b22 mrest3 b22 m5 dot6 b22 sm4 b22 m2 b22 bl b38 custos9)
    (:vspace 30)
    (:music 2222
            (:voice v2)
@@ -63,11 +63,11 @@
    (:vspace 50)
    (:music 2218
            (:voice v1)
-           (:section s8) (:newline) cclef7 b22 mrest7 b22 m9 dot10 sm8 b22 sm7 b22 sm6 bl
+           (:section s8) cclef7 b22 mrest7 b22 m9 dot10 sm8 b22 sm7 b22 sm6 bl
            (:section s9) b22 mrest7 b22 sb9 b22 m8 b22 sb7 b22 bl
            (:section s10) b38 sb9 b22 b38 sb8 b38 bl
            (:section s11) b38 sb9 b38 sb8 b38 b38 bl
-           (:section s12) b38 sb8 b38 sb9 b38 sb8 b22
+           (:section s12) (:newline) b38 sb8 b38 sb9 b38 sb8 b22
            (:section s13) cclef5 mrest7 m9 dot10 sm8 b22 sm7 b22 sm6 b22 sb5 bl b22 custos3)
    (:vspace 30)
    (:music 2230
@@ -84,7 +84,7 @@
           (1420 nil "uoci"))
    (:music 2232
            (:voice v1)
-           (:section s14) (:newline) cclef7 b38 sb3 b22 fl6 b38 sb6 b38 sb5 b38 bl
+           (:section s14) cclef7 b38 sb3 b22 fl6 b38 sb6 b38 sb5 b38 bl
            ;; Bibelgruppe:
            ;; warum gibt es ein C4-Schlüssel im zweiten Takt? Zur Markierung der
            ;; dreistimmigen Beispiele? Zur 'Auflösung' des bemolle im Takt davor?
@@ -95,7 +95,7 @@
            ;; liegen Vorschläge von Anne vor.
            (:section s15) cclef7 b38 b38 sb6 b38 sb7 b38 b38 bl
            (:section s16) b38 b38 sb5 b38 sb6 b38 b38 bl
-           (:section s17) b38 b38 sb7 b38 sb6 b38 b38 bl
+           (:section s17) (:newline) b38 b38 sb7 b38 sb6 b38 b38 bl
            ;; hier gibt es keine Sexte! Soll hier etwas idealisiert werden?
            (:section s18) b38 m10 b38 m7 b38 sb9 b38 bl
            (:section s19) m10 b38 m8 b38 sb9 b38 bl b22 b38)

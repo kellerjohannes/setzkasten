@@ -24,10 +24,7 @@
    (:line-headings
     "[Tutte le consonanze di Gsolreut terzo ascendenti]"
     "[Tutte le consonanze di Gsolreut terzo discendenti]"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (132 nil "le quattro terze")

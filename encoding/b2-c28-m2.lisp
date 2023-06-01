@@ -7,6 +7,7 @@
     "Molte annotationi sotto et sopra le due note fa et sol\\A due et a più voci si possono comporre"
     nil
     nil
+    nil
     "Molte annotationi sotto et sopra le due note sol et fa\\A due et a più voci si possono comporre"
     )
    (:section-captions
@@ -78,7 +79,7 @@
            (:section s5) b22 sb3 b22 sb4 b22 bl
            (:section s6) b22 sb3 b22 b22 sb4 b22 bl
            (:section s7) b38 sb3 b38 sb4 b22 bl
-           (:section s8) b38 sb7 b38 b22 sb8 b38 bl
+           (:section s8) (:newline) b38 sb7 b38 b22 sb8 b38 bl
            (:section s9) b22 sb7 b22 sb8 b22 bl)
    (:vspace 90)
    (:music 2213
@@ -100,12 +101,12 @@
           (1424 nil "ſi poſſono comporre"))
    (:music 2241
            (:voice v1)
-           (:section s10) (:newline) cclef7 b22 fl6 (:key-signature nil nil nil nil nil nil :flat) b22 sb6 b22 sb4 b22 bl
+           (:section s10) cclef7 b22 fl6 (:key-signature nil nil nil nil nil nil :flat) b22 sb6 b22 sb4 b22 bl
            (:section s11) b38 sb3 b38 sb2 b38 bl
            (:section s12) b38 sb8 b38 sb4 b38 bl
            (:section s13) b22 mrest3 b22 sb3 b38 m2 b38 bl
            (:section s14) b38 sb8 b38 sb7 b38 bl
-           (:section s15) b38 sb3 b38 sb5 b38 bl
+           (:section s15) (:newline) b38 sb3 b38 sb5 b38 bl
            (:section s16) b38 sb4 b38 sb5 b38 bl
            (:section s17) b22 sb4 b22 fl5 b22 sb5 b22 bl b38 custos6)
    (:vspace 90)
@@ -122,11 +123,11 @@
    (:vspace 90)
    (:music 2241
            (:voice v1)
-           (:section s18) (:newline) cclef7 fl8 (:key-signature nil nil nil nil nil nil :flat) mrest5 b22 m6 b22 m5 b22 m4 b22 bl
+           (:section s18) cclef7 fl8 (:key-signature nil nil nil nil nil nil :flat) mrest5 b22 m6 b22 m5 b22 m4 b22 bl
            (:section s19) mrest5 m6 fl2 m2 b22 m2 b38 bl
            (:section s20) b22 sb1 fl2 b38 sb2 b22 bl
            (:section s21) b22 sb3 b38 sb7 b38 bl
-           (:section s22) b22 sb10 b22 sb7 b38 b38 bl
+           (:section s22) (:newline) b22 sb10 b22 sb7 b38 b38 bl
            (:section s23) b38 b38 sb4 b38 b38 sb3 b38 bl
            (:section s24) b22 b38 sb4 b38 b22 sb3 b38 b38 bl b38 custos4)
    (:vspace 90)
@@ -154,7 +155,7 @@
            (:section s29) b22 sb4 b38 sb3 b38 bl
            (:section s30) b22 sb4 b22 sb3 b38 bl
            (:section s31) b22 sb4 b38 sb3 b22 bl
-           (:section s32) b22 sb8 b22 sb7 b22 bl
+           (:section s32) (:newline) b22 sb8 b22 sb7 b22 bl
            (:section s33) b22 sb8 b38 sb7 b38 bl b22 custos8)
    (:vspace 90)
    (:music 2216
@@ -171,12 +172,12 @@
    (:vspace 90)
    (:music 2214
            (:voice v1)
-           (:section s34) (:newline) cclef7 (:key-signature nil nil nil nil nil nil nil) b38 sb8 b38 sb7 b38 bl
+           (:section s34) cclef7 (:key-signature nil nil nil nil nil nil nil) b38 sb8 b38 sb7 b38 bl
            (:section s35) b38 sb8 b38 sb7 b38 bl
            (:section s36) b38 sb8 b38 sb7 b38
            (:section s37) cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat) fl9 sb9 b22 sb8 b22 bl
            (:section s38) b38 sb7 b38 sb3 b38 bl
-           (:section s39) b38 sb7 b38 sb8 b38 bl
+           (:section s39) (:newline) b38 sb7 b38 sb8 b38 bl
            (:section s40) b38 fl9 sb9 b38 sb6 b38 bl
            (:section s41) b22 m4 b22 m5 b22 sb6 bl b38 custos2)
    (:text 90 58
@@ -199,10 +200,10 @@
           (1334 nil "ſi poſſono comporre"))
    (:music 2217
            (:voice v1)
-           (:section s42) (:newline) cclef7 fl6 fl5 (:key-signature nil nil :flat nil nil nil :flat) fl2 m2 m5 sb4 b22 bl
+           (:section s42) cclef7 fl6 fl5 (:key-signature nil nil :flat nil nil nil :flat) fl2 m2 m5 sb4 b22 bl
            (:section s43) b38 sb9 b38 sb10 b22 bl
            (:section s44) b38 sb4 b38 sb1 b38 bl
-           (:section s45) b38 sb2 b38 sb1 b38 bl
+           (:section s45) (:newline) b38 sb2 b38 sb1 b38 bl
            (:section s46) b38 sb7 b38 sb4 b38 bl
            (:section s47) b22 mrest3 b22 sb4 b22 m3 b38 bl
            (:section s48) b22 mrest1 b22 fl2 sb2 m1 b22 bl

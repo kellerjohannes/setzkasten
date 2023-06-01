@@ -33,10 +33,7 @@
     (s23 "Terza\\accidentale\\propinquissima"))
    (:line-headings
     "La proportione della terza minore si dimanda sesquiquinta come è da 5 a 6.\\La proportione della terza minore con la sua propinqua, è come da 4 e mezzo a 5 e mezzo.\\Questa è inrationale."))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (157 1826 "Eſſempio delle ᴛerze minori naturali & accidentali , con le loro proportioni."))

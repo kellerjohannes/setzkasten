@@ -10,10 +10,7 @@
     (s1 v1 v2 v4 v3)
     (s2 v1))
    )
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:lyrics
     (s1 v1 "O voi be -- a -- ta se si lar -- ghi do -- ni.")

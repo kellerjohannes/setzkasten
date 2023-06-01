@@ -11,10 +11,7 @@
     (s4 "Semitono\\minore /\\diesis\\maggiore")
     (s5 "Semitono\\minore")
     (s6 "Semitono\\minore /\\diesis\\maggiore")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (85 nil "Se. minore.")

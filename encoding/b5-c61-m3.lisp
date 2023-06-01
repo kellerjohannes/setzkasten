@@ -12,10 +12,7 @@
     (s5 "Tono\\maggiore\\accidentale")
     (s6 "Tono\\maggiore\\accidentale")
     (s7 "Tono\\maggiore\\accidentale")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (89 2097 "Queſti ſono toni maggiori accidentali composti di due ſemitoni maggiori, di uno tono natu⸗"))

@@ -18,10 +18,7 @@
     (s3 "Sesta minore / sesta maggiore")
     (s5 "Terza minore / terza maggiore")
     (s7 "Sesta minore / sesta maggiore")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
      (21 2199 "Queſte sono tutte le conſonanze di B fa. ♭ mi primo acuto , con le ſue propinque diſcendenti,"))

@@ -6,8 +6,10 @@
    (:line-headings
     "Molte annotationi sotto et sopra le due note mi et re\\A due et a più voci si possono comporre"
     nil
+    nil
+    nil
     "Molte annotationi sotto et sopra le due note re et mi\\A due et a più voci si possono comporre"
-    nil)
+    )
    (:section-captions
     (s10 "A tre")
     (s11 "A otto")
@@ -49,7 +51,10 @@
     (s33 v1 v2)
     (s34 v1 v2)
     (s35 v1 v2)))
-
+  (:preamble-type-imitation
+   (:width nil)
+   (:height nil)
+   (:background ,*score-bg-color*))
   (:data
    (:text 90 58
           (425 1325 "Molte annotationi ſotto & ſopra le due note mi. & re."))
@@ -65,7 +70,7 @@
            (:section s4) b22 sb6 b38 sb5 b22 bl
            (:section s5) b22 sb6 b38 sb5 b22 bl
            (:section s6) sb6 b38 sb5 b22 bl
-           (:section s7) sb2 b38 sb1 b22 bl
+           (:section s7) (:newline) sb2 b38 sb1 b22 bl
            (:section s8) sb2 b38 sb1 bl
            (:section s9) b22 sb2 b38 sb1 b22 bl
            (:section s10) sb2 b38 sb1 b38 bl)
@@ -82,7 +87,7 @@
            (:section s6) sb4 b38 sb3 b22 bl
            (:section s7) m7 b22 m6 sb8 bl
            (:section s8) sb6 b38 sb8 bl
-           (:section s9) (:newline) m6 sh7 m7 sb8 bl
+           (:section s9) m6 sh7 m7 sb8 bl
            (:section s10) m6 m7 sb5 bl)
    (:text 90 58
           (386 nil "A")
@@ -93,12 +98,12 @@
            (:voice v1)
            (:section s11) cclef7 b38 sb2 b22 sb1 b22 bl
            (:section s12) b38 sb2 b38 b38 sb1 b38 bl
-           (:section s13) b38 b38 sb2 b38 b38 sb1 b38 b38 bl
+           (:section s13) (:newline) b38 b38 sb2 b38 b38 sb1 b38 b38 bl
            (:section s14) b38 b38 sb2 b38 sb1 b38 bl
            (:section s15) b22 sb2 b22 sb1 b22 bl
            (:section s16) sb2 b22 sb1 b22 bl
            b38 b38 b38
-           (:section s17) (:newline) cclef7 b38 sb1 b38 sb2 b38 bl
+           (:section s17) cclef7 b38 sb1 b38 sb2 b38 bl
            (:section s18) sb1 b22 sb2 b22 bl)
    (:text 70 58
           (89 nil "à otto")
@@ -115,7 +120,7 @@
            (:section s16) sb5 b22 sb4 b22 bl
            b38 b38 b38
            (:section s17) cclef7 b22 mrest5 m5d m7 m6 bl
-           (:section s18) sb5 b38 sb4 bl)
+           (:section s18) (:newline) sb5 b38 sb4 bl)
    (:text 90 58
           (403 nil "A due")
           (803 nil "& à più uoci")

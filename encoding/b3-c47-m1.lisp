@@ -33,7 +33,7 @@
           (256 nil "terza ottaua Enarmonica")
           (1241 nil "quarta ottaua Enarmonica"))
    (:music 2207
-           (:section s3) cclef7 b22 sb0 b22 sbd0 fl1 b22 sb1 sb3 b22 sbd3 fl4 b22 sb4 b22 fl4 b22 sbd4 b22 sb4 b22 sbd4 fl5 b22 sb5 b22 sb7 bl
+           (:section s3) (:newline) cclef7 b22 sb0 b22 sbd0 fl1 b22 sb1 sb3 b22 sbd3 fl4 b22 sb4 b22 fl4 b22 sbd4 b22 sb4 b22 sbd4 fl5 b22 sb5 b22 sb7 bl
            (:section s4) sb1 b22 sbd1 fl4 b22 sb4 b22 fl4 b22 sbd4 b22 sb4 b22 sbd4 b22 sbd6 b22 sb7 b22 sbd7 fl8 b22 sb8 b38 fl8 b22 sbd8 b38 sb8 bl)
    (:text 90 58
           (250 nil "quinta ottaua Enarmonica")
@@ -64,5 +64,5 @@
            ;; Eine Idealisierung würde hier eine komplette Neustrukturierung bedeuten, was
            ;; der Absicht der Edition widerspricht. Ev. müsste dies separat kommentiert werden
            ;; und eine neu strukturierte 'settima ottava' vorgeschlagen werden.
-           (:section s7) cclef5 b38 sb2 b38 sbd2 b38 fl3 b38 b22 sb3 b38 sb5 b38 sbd5 b38 fl6 b38 sb6 b38 sb8 b38 sbd8 b38 fl9 b38 b38 sb9 b38 fl9 b38 sbd9 b38 sb9 b22 b22 bl
+           (:section s7) (:newline) cclef5 b38 sb2 b38 sbd2 b38 fl3 b38 b22 sb3 b38 sb5 b38 sbd5 b38 fl6 b38 sb6 b38 sb8 b38 sbd8 b38 fl9 b38 b38 sb9 b38 fl9 b38 sbd9 b38 sb9 b22 b22 bl
            b118 b118 b118 b118 b118 b118)))

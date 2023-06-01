@@ -4,10 +4,7 @@
    (:comment "q021_s154, rotation: 0, origin: 898")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio della nota imaginativa sussequente a quella nota da chi se parte il salto"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (180 1866 "Eſſempio della nota imaginatiua ſuſſequente à quella nota da chi ſe parte il ſalto."))

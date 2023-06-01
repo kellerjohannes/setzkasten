@@ -7,12 +7,12 @@
    (:section-headings
     (s1 ""))
    (:section-captions
-    (s1 "tritono incomposto\\accidentale")
-    (s2 "tritono incomposto\\accidentale")
-    (s3 "tritono incomposto\\accidentale")
-    (s4 "tritono incomposto\\accidentale")
-    (s5 "tritono composto\\accidentale")
-    (s6 "tritono composto\\accidentale"))
+    (s1 "tritono\\incomposto\\accidentale")
+    (s2 "tritono\\incomposto\\accidentale")
+    (s3 "tritono\\incomposto\\accidentale")
+    (s4 "tritono\\incomposto\\accidentale")
+    (s5 "tritono\\composto\\accidentale")
+    (s6 "tritono\\composto\\accidentale"))
    (:voice-labels
     (:all v1 "")))
 

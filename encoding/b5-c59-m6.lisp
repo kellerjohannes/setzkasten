@@ -10,10 +10,7 @@
     (s3 "Terzo Diesis")
     (s4 "Quarto Diesis")
     (s5 "Quinto Diesis")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (113 nil "To")

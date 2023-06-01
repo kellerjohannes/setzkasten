@@ -11,10 +11,7 @@
     (s4 "Accidentale\\et naturale")
     (s5 "Accidentale\\et naturale")
     (s6 "Accidentale")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (105 2047 "Eſſempio delli salti dellʼottaue,chʼoccorreno nelle compoſitioni sopra il noſtro ſtromento."))

@@ -10,10 +10,7 @@
    (:line-headings
     ""
     "Serveno a ambedue i generi al diatonico et al cromatico:"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
      (176 nil "Immobili aſcendenti.")

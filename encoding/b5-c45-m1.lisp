@@ -37,10 +37,7 @@
     (s27 "Semitono\\naturale")
     (s28 "Tono\\naturale")
     ))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
      (163 1907 "Questi ſono li toni & semitoni ᴄromatici , con li ᴅieſis ᴄromatici, aſcendenti"))

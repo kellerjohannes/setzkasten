@@ -18,10 +18,7 @@
     (s3 "Seste minori / seste maggiori")
     (s5 "Terze minori / terze maggiori")
     (s7 "Seste minori / seste maggiori")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
      (18 2213 "Queſte ſono tutte le conſonanze, & le propinque & propinquiſſime di D la ſol re ſecondo"))

@@ -21,10 +21,7 @@
     (s1 v2 "Alto")
     (s1 v3 "[Tenore]")
     (s1 v4 "[Basso]")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:lyrics
     (s1 v1 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- vo.")

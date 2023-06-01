@@ -13,10 +13,7 @@
     (s6 "Sesta ottava")
     (s7 "Settima ottava")
     ))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (330 nil "ᴘrima")
@@ -38,8 +35,8 @@
           )
    (:music 2209
            (:section s3) cclef7 fl1 sbd1 b22 fl2 sbd2 b22 sbd3 fl4 sbd4 fl5 sbd5 fl6 sbd6 sbd7 fl8 sbd8 bl
-           (:section s4) fl1 sbd1 fl2 sbd2 sh2 sb2 b22 fl4 sbd4 b22 fl5 sbd5 b22 fl6 sbd6 b22 sh6 sb6 b22 fl8 sbd8 bl
-           (:section s5) (:newline) fl1 sbd1 b22 sh1 sb1 b22 sh2 sb2 b22 fl4 sbd4 custos5
+           (:section s4) (:newline) fl1 sbd1 fl2 sbd2 sh2 sb2 b22 fl4 sbd4 b22 fl5 sbd5 b22 fl6 sbd6 b22 sh6 sb6 b22 fl8 sbd8 bl
+           (:section s5) fl1 sbd1 b22 sh1 sb1 b22 sh2 sb2 b22 fl4 sbd4 custos5
            )
    (:text 110 58
           (170 nil "ottaua")
@@ -51,5 +48,5 @@
    (:music 2215
            cclef7 b22 fl5 sbd5 b22 sh5 sb5 b22 sh6 sb6 b22 fl8 sbd8 bl
            (:section s6) fl1 sbd1 b22 fl2 sbd2 sbd3 sbd4 b22 fl5 sbd5 b22 fl6 sbd6 sbd7 b22 fl8 sbd8 bl
-           (:section s7)fl1 sbd1 b22 fl2 sbd2 b22 sbd3 b22 fl4 sbd4 b22 fl5 sbd5 fl6 sbd6 sh6 sb6 fl8 sbd8 bl
+           (:section s7) (:newline) fl1 sbd1 b22 fl2 sbd2 b22 sbd3 b22 fl4 sbd4 b22 fl5 sbd5 fl6 sbd6 sh6 sb6 fl8 sbd8 bl
            )))

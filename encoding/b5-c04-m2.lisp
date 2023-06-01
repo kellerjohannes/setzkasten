@@ -10,10 +10,7 @@
     (s2 "semitono maggiore\\di Alamire"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:music 966
            (:voice v1)

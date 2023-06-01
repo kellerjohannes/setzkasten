@@ -9,10 +9,7 @@
    (:section-captions
     (s1 "Soprano riversciato in tenore alla quinta sotto al canto fermo")
     ))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (184 460 "Tenore à due ᴠoci.")

@@ -68,10 +68,7 @@
     (s54 "Del quinto ordine")
     (s55 "Del sesto ordine")
     (s56 "Del settimo ordine")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    ;; Seite 1, fol. 134v, S. 268
    (:text 110 58

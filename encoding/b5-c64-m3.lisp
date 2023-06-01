@@ -14,10 +14,7 @@
     (s7 "[Accidentale]")
     (s8 "[Accidentale]")
     (s9 "[Accidentale]")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:clef-overrides
     (s7 v1 "treble_8")

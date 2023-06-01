@@ -21,10 +21,7 @@
    (:line-headings
     "[Tutte le consonanze di Elami primo ascendenti]"
     "[Tutte le consonanze di Elami primo discendenti]"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:brackets
     (s4 0 12 -16 0 12 -16)

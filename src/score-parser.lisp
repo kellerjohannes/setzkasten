@@ -146,7 +146,7 @@
 
 (defmethod add-note ((score score) (parser-state parser-state) duration dottedp staff-position enharmonic-dot)
   "Create an instance of `mobject' and add it to the `score'. `duration' as keywords (:brevis, :semibrevis, etc.), `dottedp' is T if there is a rhythmic dot ahead, `enharmonic-dot' can be nil, :dot or :comma."
-  (format t "~&adding ~a" staff-position)
+  ;; (format t "~&adding ~a" staff-position)
   (mapc (lambda (section-id)
           (add-mobject-to-score score
                                 section-id
@@ -368,7 +368,7 @@
 
 
 (defmethod parse-glyph ((score score) (parser-state parser-state) glyph dottedp)
-  (format t "~&parsing ~a" glyph)
+  ;; (format t "~&parsing ~a" glyph)
   (let ((keyword-glyph (if (atom glyph)
                            (make-keyword glyph)
                            nil)))

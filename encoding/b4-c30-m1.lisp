@@ -13,10 +13,7 @@
     (s1 v1)
     (s2 v1)
     (s3 v1)))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:lyrics
     (s1 v1 "Gau -- de -- a -- _ _ _ _ mus om -- _ _ nes in do -- _ _ _ _ mi -- no di -- em fe -- _ _ stum")

@@ -4,10 +4,7 @@
    (:comment "q021_s177, rotation: 0, origin: 414")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Fuga alla seconda, et alla riverscia, con i semitoni et i toni contrari"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (227 1645 "Fuga alla ſeconda,& alla riuerſcia,con i ſemitoni & i toni contrarij."))

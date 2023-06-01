@@ -41,10 +41,7 @@
     (s13 "Semitono minore /\\semitono maggiore:\\diesis minore – diesis minore – diesis minore")
     (s14 "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
     ))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
      (181 nil "se.mi")
@@ -62,7 +59,7 @@
            (:section s1) (:f-clef) max7 fclef7 b38 sbd2 sh2 sb2 fl3 sb3 b22 fl3 sbd3 sbd3 b22 bl
            (:section s2) b38 sbd3 b22 b22 sh3 b38 sb3 b22 b22 sb4 b22 b22 sbd4 b38 bl
            (:section s3) b38 sbd4 sh4 sb4 fl5 sb5 fl5 sbd5 sbd5 b38 bl
-           (:section s4) b38 sbd5 sh5 sb5 b22 fl6 sb6 fl6 sbd6 sbd6 b38 bl
+           (:section s4) (:newline) b38 sbd5 sh5 sb5 b22 fl6 sb6 fl6 sbd6 sbd6 b38 bl
            )
    (:text 70 58
      (55 nil "d.mi.d.mi.d.mi.d.ma.")
@@ -95,9 +92,9 @@
      (2007 nil "mag.")
      )
    (:music 2250
-           (:section s5) (:newline) (:f-clef) max7 fclef7 b38 b22 sbd6 b38 b22 sh6 b22 sb6 b38 b22 sb7 b38 sbd7 b38 b22 bl
+           (:section s5) (:f-clef) max7 fclef7 b38 b22 sbd6 b38 b22 sh6 b22 sb6 b38 b22 sb7 b38 sbd7 b38 b22 bl
            (:section s6) b38 sbd7 b38 sh7 b22 sb7 b38 fl8 b22 sb8 b38 fl8 b22 sbd8 b38 sbd8 b38 bl
-           (:section s7) b38 sbd8 b38 sh8 b38 sb8 b38 fl9 b22 sb9 b22 fl9 b22 sbd9 b38 sbd9 b22 b22 bl
+           (:section s7) (:newline) b38 sbd8 b38 sh8 b38 sb8 b38 fl9 b22 sb9 b22 fl9 b22 sbd9 b38 sbd9 b22 b22 bl
            )
    (:text 90 58
      (100 nil "di.mi.di.mi.di.mi.di.mi.")
@@ -132,9 +129,9 @@
      (2075 nil "ma.")
      )
    (:music 2224
-           (:section s8) (:newline) (:f-clef) max7 fclef7 b22 sbd9 b22 sb9 fl9 sbd9 sh8 b22 sb8 b22 sbd8 b22 bl
+           (:section s8) (:f-clef) max7 fclef7 b22 sbd9 b22 sb9 fl9 sbd9 sh8 b22 sb8 b22 sbd8 b22 bl
            (:section s9) b22 sbd8 b22 sb8 b22 fl8 sbd8 b22 sh7 sb7 b22 sbd7 b22 bl
-           (:section s10) b22 sbd7 b22 sb7 b22 sh6 b22 sb6 b22 b22 sbd6 b22 b22 bl
+           (:section s10) (:newline) b22 sbd7 b22 sb7 b22 sh6 b22 sb6 b22 b22 sbd6 b22 b22 bl
            (:section s11) b22 sbd6 b22 sb6 fl6 sbd6 b22 sh5 b22 sb5 b22 sbd5 b22 bl
            )
    (:text 100 58
@@ -170,8 +167,8 @@
      (1941 nil "mag.")
      )
    (:music 2227
-           (:section s12) (:newline) (:f-clef) max7 fclef7 b38 b22 sbd5 b38 sb5 b38 fl5 b38 sbd5 b38 sh4 b38 sb4 b38 b22 sbd4 b38 b22 bl
-           (:section s13) b38 b22 sbd4 b38 sb4 b38 sh3 b38 sb3 b38 sbd3 b38 b38 bl
+           (:section s12) (:f-clef) max7 fclef7 b38 b22 sbd5 b38 sb5 b38 fl5 b38 sbd5 b38 sh4 b38 sb4 b38 b22 sbd4 b38 b22 bl
+           (:section s13) (:newline) b38 b22 sbd4 b38 sb4 b38 sh3 b38 sb3 b38 sbd3 b38 b38 bl
            (:section s14) b38 b38 sbd3 b38 sb3 b38 fl3 b38 sbd3 b38 sh2 b38 sb2 b38 sbd2 b38 b38 bl
            )
    (:text 90 58

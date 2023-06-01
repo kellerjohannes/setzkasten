@@ -8,10 +8,7 @@
     (s1 "Soprano a due voci alla quinta sopra del tenore"))
    (:section-captions
     (s1 "Tenore riversciato in soprano")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (184 1155 "Soprano à due uoci alla quinta ſopra del ᴛenore.")

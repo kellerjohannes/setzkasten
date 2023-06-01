@@ -8,10 +8,7 @@
     (s2 "Alla breve")
     (s3 "Alla semibreve")
     (s4 "Di proportione sesqualtera")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (184 nil "Eſſempio di batter alla breue")

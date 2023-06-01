@@ -13,10 +13,7 @@
     (s6 "Sesta ottava")
     (s7 "Settima ottava")
     ))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")
@@ -41,7 +38,7 @@
            (:section s1) cclef5 b22 sbd2 sbd3 fl4 sbd4 sbd5 sbd6 fl7 sbd7 sbd8 sbd9 bl
            (:section s2) b22 sbd2 b22 fl3 sbd3 b22 fl4 sbd4 sbd5 fl6 sbd6 fl7 sbd7 sbd8 sbd9 b22 bl
            (:section s3) b22 sbd2 sbd3 sbd4 sbd5 sbd6 sbd7 fl9 sb9 sbd9 b22 bl
-           (:section s4) b38 sbd2 sbd3 fl4 sbd4 sbd5 custos6
+           (:section s4) (:newline) b38 sbd2 sbd3 fl4 sbd4 sbd5 custos6
            )
    (:text 70 58
      (87 nil "ᴏttaua.")
@@ -51,7 +48,7 @@
      )
    (:music 2223
            cclef5 b38 sbd6 sbd7 sbd8 sbd9 b22 bl
-           (:section s5) (:newline) b22 sbd2 b22 fl3 b22 sbd3 b22 fl4 sbd4 sbd5 b22 sbd6 b22 fl7 sbd7 sbd8 sbd9 bl
+           (:section s5) b22 sbd2 b22 fl3 b22 sbd3 b22 fl4 sbd4 sbd5 b22 sbd6 b22 fl7 sbd7 sbd8 sbd9 bl
            (:section s6) b22 sbd2 b22 sbd3 sbd4 b22 fl6 sb6 sbd6 sbd7 b22 fl9 b22 sb9 sbd9 b22 bl
-           (:section s7) b22 sbd2 sbd3 sbd4 sbd5 sbd6 sbd7 sbd8 sbd9 bl
+           (:section s7) (:newline) b22 sbd2 sbd3 sbd4 sbd5 sbd6 sbd7 sbd8 sbd9 bl
            )))

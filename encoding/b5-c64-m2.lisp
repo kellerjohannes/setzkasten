@@ -13,10 +13,7 @@
     (s6 "Accidentale")
     (s7 "Accidentale")
     (s8 "Accidentale")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (136 2064 "Eſſempio delli salti delle seſte minore, che occorreno à ſcriuere ſopra il nostro ſtromento."))

@@ -4,10 +4,7 @@
    (:comment "q021_s177, rotation: 0, origin: 429")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Fuga il contralto per quinta, il tenore per ottava,\\et il basso per duodecima"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (195 1820 "Fuga il Contralto per quinta,il Tenore per ottaua,& il Baſſo per duodecima."))

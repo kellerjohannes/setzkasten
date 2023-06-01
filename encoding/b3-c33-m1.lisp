@@ -59,13 +59,13 @@
            ;;   hier ein fis zu ergänzen
            (:section s1) cclef1 mrest5 sb5 m4 sb5 bl
            (:section s2) sb2 b22 sb2 b22 sb2 bl
-           (:section s3) sb9 sb9 sb7 bl
-           (:section s4) (:newline) sb7 sb6 sb5 bl
-           (:section s5) mrest5 sb5 sh4 m4 sb5 bl
+           (:section s3) (:newline) sb9 sb9 sb7 bl
+           (:section s4) sb7 sb6 sb5 bl
+           (:section s5) (:newline) mrest5 sb5 sh4 m4 sb5 bl
            (:section s6) mrest5 sb5 sh4 m4 sb5 bl
            (:section s7) (:newline) mrest5 sb5 sh4 m4 sb5 bl
            (:section s8) mrest5 sb5 sh4 m4 sb5 bl
-           (:section s9) mrest5 sb5 sh4 m4 sb5 bl)
+           (:section s9) (:newline) mrest5 sb5 sh4 m4 sb5 bl)
    (:text 110 58
           (49 nil "ca.dellʼᴀl.")
           (315 nil "ca.del sop.")

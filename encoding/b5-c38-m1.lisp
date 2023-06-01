@@ -18,10 +18,7 @@
     (s3 "Seste minori / seste maggiori")
     (s5 "Terze minori / terze maggiori")
     (s7 "Seste minori / seste maggiori")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
      (0 2217 "Queſte ſono tutte le conſonanze di ʙ fa.♭ mi quinto diſcendenti con le ſue propinque &"))

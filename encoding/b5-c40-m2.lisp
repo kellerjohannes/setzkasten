@@ -19,10 +19,7 @@
     (s12 "Semitono\\minore")
     (s13 "Semitono\\minore")
     (s14 "Semitono\\minore")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 140 58
      (0 2223 "Li semitoni delli ♭.molli aſcendenti ſono magg. et diſcendenti dalle corde mobili ſono minori."))

@@ -20,10 +20,7 @@
     (s3 "Buona")
     (s4 "Buona")
     (s5 "Buona")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (181 nil "Buona.")

@@ -18,10 +18,7 @@
     (s3 "Sesta minore / sesta maggiore")
     (s5 "Terza minore / terza maggiore")
     (s7 "Sesta minore / sesta maggiore")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
      (88 2141 "Queſte sono tutte le conſonanze,con le ſue propinque & propinquiſſime di ᴄ ſol fa ut acu"))

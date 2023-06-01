@@ -12,10 +12,7 @@
     (s4 "semitono minore"))
    (:voice-labels
     (:all v1 "")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:music 2241
            (:voice v1)

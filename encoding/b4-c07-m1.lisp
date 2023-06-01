@@ -15,10 +15,7 @@
     (s4 "[Non buono]")
     (s5 "Non buono")
     (s6 "[Non buono]")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (351 1548 "Eſſempio delle pauſe nel tempo perfetto,& nel imperfetto."))

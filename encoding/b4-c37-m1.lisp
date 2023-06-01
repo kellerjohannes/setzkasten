@@ -20,10 +20,7 @@
    ;; werden sollen.
    (:section-headings
     (s1 "Principio et fine")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")))

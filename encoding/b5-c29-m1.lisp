@@ -18,10 +18,7 @@
     (s3 "Sesta minore / sesta maggiore")
     (s5 "Terza minore / terza maggiore")
     (s7 "Sesta minore / sesta maggiore")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:clef-overrides
     (s5 v1 "treble_8")

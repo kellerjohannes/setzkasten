@@ -76,10 +76,7 @@
     (s62 "Sesto ordine cromatico enarmonico")
     (s63 "Settimo ordine cromatico enarmonico")
     ))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    ;; S. 1, fol. 141v, S. 282
    (:text 110 58

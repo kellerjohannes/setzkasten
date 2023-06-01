@@ -11,10 +11,7 @@
     (s5 "Tono diviso in\\quattro parti")
     (s6 "Tono diviso in\\quattro parti")
     (s7 "Tono diviso in\\quattro parti")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
      (0 nil "Semit.di.in.2.parti.")

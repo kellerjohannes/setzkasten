@@ -24,10 +24,7 @@
    (:line-headings
     "[Tutte le consonanze discendenti di Alamire primo]"
     "[Tutte le consonanze ascendenti di Alamire primo]"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (12 nil "Le 4.3.di ſotto.")

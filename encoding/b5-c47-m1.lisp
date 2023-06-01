@@ -42,10 +42,7 @@
     (s28 (:alt (:diplomatic "Semitono\\naturale et\\accidentale")
                (:idealised  "Tono\\naturale et\\accidentale")))
     ))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
      (127 1933 "Queſti ſono i toni & ſemitoni Enarmonici ᴄromatici,in quinto & in terzo ordine."))

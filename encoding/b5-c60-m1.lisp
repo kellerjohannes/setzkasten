@@ -11,10 +11,7 @@
     (s4 "semitono\\maggiore")
     (s5 "semitono\\maggiore")
     (s6 "semitono\\maggiore")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:music 2211
            (:voice v1)

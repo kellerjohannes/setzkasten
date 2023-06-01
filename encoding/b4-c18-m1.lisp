@@ -8,10 +8,7 @@
     (s1 "")
     (s2 "Il procedere non è buono\\per cagion del tritono")
     (s3 "Questo procedere è buono\\perche fugge il tritono con il ♭")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (538 831 "Eſſempio del primo Modo perfetto."))

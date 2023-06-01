@@ -4,8 +4,6 @@
    (:comment "")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Essempio di più di quinta imperfetta accidentale, composto e incomposto")
-   (:section-headings
-    (s1 ""))
    (:section-captions
     ;; Für s1 und s2 wurde 'accidentale' als Idealisierung übernommen
     (s1 "più di quinta\\imperfetta\\accidentale\\composto")
@@ -14,9 +12,16 @@
     (s4 "più di quinta\\imperfetta\\accidentale\\composto")
     (s5 "più di quinta\\imperfetta\\accidentale\\incomposto")
     (s6 "più di quinta\\imperfetta\\accidentale\\composto")
-    (s7 "più di quinta\\imperfetta\\accidentale\\incomposto"))
-   (:voice-labels
-    (:all v1 "")))
+    (s7 "più di quinta\\imperfetta\\accidentale\\incomposto")))
+  (:preamble-lilypond
+   (:clef-overrides
+    (s2 v1 "treble_8")
+    (s3 v1 "treble_8")
+    (s4 v1 "treble_8")
+    (s5 v1 "treble_8")
+    (s6 v1 "treble_8")
+    (s7 v1 "treble_8")
+    (s8 v1 "treble_8")))
 
   (:data
    (:text 90 58

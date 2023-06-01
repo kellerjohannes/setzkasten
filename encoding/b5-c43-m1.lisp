@@ -19,10 +19,7 @@
     (s13 (:alt (:diplomatic "Semitono\\naturale") (:idealised "Tono\\naturale")))
     (s14 (:alt (:diplomatic "Tono\\naturale") (:idealised "Semitono\\naturale")))
     ))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
      (171 nil "se.")

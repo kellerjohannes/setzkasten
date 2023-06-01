@@ -7,6 +7,8 @@
    (:line-headings
     "Salti et gradi"
     nil
+    nil
+    nil
     "Gradi et salti")
    (:section-captions
     (s1 "A quattro")
@@ -61,10 +63,10 @@
            (:section s4) sb6 b22 sb9 bl
            (:section s5) sb5 b22 sb7 bl
            (:section s6) sb4 b22 sb6 b38
-           (:section s7) cclef5 sb9 b22 sb6 b38
+           (:section s7) (:newline) cclef5 sb9 b22 sb6 b38
            (:section s8) cclef7 sb4 b22 sb1 bl
            (:section s9) sb7 b22 sb5 bl
-           (:section s10) (:newline) sb7 b22 sb5 bl
+           (:section s10) sb7 b22 sb5 bl
            (:section s11) sb10 b22 sb7 bl
            (:section s12) sb3 b22 sb0 bl)
    (:text 90 58
@@ -97,16 +99,16 @@
           (911 nil "Salti & Gradi."))
    (:music 2208
            (:voice v1)
-           (:section s13) cclef7 b22 sb9 b38 sb6 bl
+           (:section s13) (:newline) cclef7 b22 sb9 b38 sb6 bl
            (:section s14) sb9 b22 sb2 bl
            (:section s15) b22 sb10 b22 sb7 b22 bl
            (:section s16) b22 sb7 b22 sb3 b38 bl
            (:section s17) sb9 b22 sb10 bl
-           (:section s18) m7 b22 m5d b22 fl6 b22 sb6 bl
+           (:section s18) (:newline) m7 b22 m5d b22 fl6 b22 sb6 bl
            (:section s19) sb7 b22 sb8 b38
-           (:section s20) (:newline) cclef7 b22 sb7 b22 sb8 bl
+           (:section s20) cclef7 b22 sb7 b22 sb8 bl
            (:section s21) sb6 b22 sb7 bl
-           (:section s22) sb2 b22 sb3 bl
+           (:section s22) (:newline) sb2 b22 sb3 bl
            (:section s23) sb7 b22 sb8 bl)
    (:text 90 58
           (118 nil "à 2.")

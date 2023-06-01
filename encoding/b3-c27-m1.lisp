@@ -25,7 +25,7 @@
            ;; vierter Takt, soll wirklich zuerst ein G und dann ein G♯ gesungen werden?
 
            ;; Im Moment keine Idealisierung vorgeschlagen.
-           (:section s4) m2 b22 m5 dot6 cr4 b22 sh3 b22 cr3 b22 sh4 b22 m4 b22 sb5 bl)
+           (:section s4) (:newline) m2 b22 m5 dot6 cr4 b22 sh3 b22 cr3 b22 sh4 b22 m4 b22 sb5 bl)
    (:text 90 58
           (178 nil "buona")
           (646 nil "buona")
@@ -46,9 +46,9 @@
    (:vspace 20)
    (:music 2189
            (:voice v1)
-           (:section s5) (:newline) cclef7 b38 m2 b38 sb5 b38 m4 b38 sb5 b38 bl
+           (:section s5) cclef7 b38 m2 b38 sb5 b38 m4 b38 sb5 b38 bl
            (:section s6) b38 m2 b38 m5 dot6 cr4 b38 cr3 b38 m4 b38 m3 b38 m2 bl
-           (:section s7) b38 m2 b38 m5 dot6 cr4 b38 cr3 b38 m4 b38 sb0 b38 bl
+           (:section s7) (:newline) b38 m2 b38 m5 dot6 cr4 b38 cr3 b38 m4 b38 sb0 b38 bl
            b118 b118 b38 b38 b38 b118)
    (:text 110 58
           (160 nil "dubbioſa")

@@ -4,10 +4,7 @@
    (:comment "q021_s177, rotation: 0, origin: 418")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Fuga mista due sopra uno, sopra due parti, a quattro voci"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (400 1343 "Fuga miſta due ſopra uno,ſopra due parti,à quattro uoci.")

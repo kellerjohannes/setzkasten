@@ -16,10 +16,7 @@
     (s9  "Semitono\\naturale\\minore")
     (s10 "Semitono\\accidentale\\minore")
     ))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
      (245 1727 "Li semitoni maggiori & minori diſcendenti dal quarto ordine naturale , "))

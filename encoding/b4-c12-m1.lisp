@@ -11,10 +11,7 @@
     (s4 "Punti di ritorno")
     (s5 "Punti di qugumentatione di voce")
     (s6 "Segno del comma.")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (0 1063 "Eſſempio del pūto di augumen.della metà piu")

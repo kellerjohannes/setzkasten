@@ -24,10 +24,7 @@
    (:line-headings
     "Tutte le consonanze discendenti di Gsolreut primo"
     "Tutte le consonanze ascendenti di Gsolreut primo"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (99 884 "Tutte le conſonanze diſcendenti di")

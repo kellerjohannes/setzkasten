@@ -6,11 +6,11 @@
    (:title "Esempio delle cadentie a due voci")
    (:line-headings
     "Il soprano con il tenore in vari modi, a due voci"
-    ""
-    ""
+    nil
+    nil
+    nil
     "L'atto che faceva il soprano di sopra; hora il tenore lo farà di sotto, con il contr'alto;\\et in alcuni luoghi si ritroverà la sincopa tutta buona, a due voci"
-    "Cadentie che fuggano la sua conclusione"
-    "")
+    "Cadentie che fuggano la sua conclusione")
    (:section-captions
     ;; line 1
     (s1 "buona")
@@ -64,8 +64,8 @@
            (:section s2) m2 b22 sb4 b22 m3 b22 sb4 bl
            (:section s3) m6 b22 sb4 b22 m3 b22 sb4 bl
            (:section s4) b22 mrest1 b22 sb1 b22 m0 b22 sb1 bl
-           (:section s5) b22 mrest1 b22 sb1 b22 m0 b22 sb1 bl
-           (:section s6) (:newline) mrest1 b22 sb1 b22 m0 b22 sb1 bl
+           (:section s5) (:newline) b22 mrest1 b22 sb1 b22 m0 b22 sb1 bl
+           (:section s6) mrest1 b22 sb1 b22 m0 b22 sb1 bl
            (:section s7) mrest1 b22 sb1 b22 m0 b22 sb1 bl)
    (:text 110 58
           (125 nil "buona")
@@ -89,11 +89,11 @@
    (:music 2215
            (:voice v1)
            (:section s8) cclef1 b22 mrest1 b38 sb1 b22 m0 b22 sb1 b38 bl
-           (:section s9) b22 mrest1 b22 sb1 b22 m0 b22 sb1 bl
-           (:section s10) (:newline) m5d b22 sb8 b22 m7 b22 sb8 bl
+           (:section s9) (:newline) b22 mrest1 b22 sb1 b22 m0 b22 sb1 bl
+           (:section s10) m5d b22 sb8 b22 m7 b22 sb8 bl
            (:section s11) b38 mrest1 b22 sb1 b38 m0 b38 sb1 b38 bl
            (:section s12) b38 b38 mrest3 b38 sb4 b38 m3 b38 sb4 b38 b38 bl
-           (:section s13) b22 mrest1 b22 sb1 b22 m0 b38 sb1 bl)
+           (:section s13) (:newline) b22 mrest1 b22 sb1 b22 m0 b38 sb1 bl)
    (:text 110 58
           (136 nil "buona")
           (441 nil "nō troppo b.")
@@ -140,11 +140,11 @@
    (:music 2214
            (:voice v1)
            (:section s20) cclef5 b38 mrest5 sb5 b38 m4 b38 sb3 bl
-           (:section s21) mrest5 b22 sb5 b22 m4 b22 sb3 bl
-           (:section s22) (:newline) mrest5 sb5 b22 fl4 b22 m4 b22 sb3 bl
+           (:section s21) (:newline) mrest5 b22 sb5 b22 m4 b22 sb3 bl
+           (:section s22) mrest5 sb5 b22 fl4 b22 m4 b22 sb3 bl
            (:section s23) mrest5 sb5 b22 m4 b22 sb3 bl
            (:section s24) b38 mrest5 b38 sb5 b38 m4 b38 sb3 b38 b22
-           (:section s25) cclef5 b22 fl4 (:key-signature nil nil nil nil nil nil :flat) b22 sb5 b38 sb5 b38 m4 b38 m3 bl)
+           (:section s25) (:newline) cclef5 b22 fl4 (:key-signature nil nil nil nil nil nil :flat) b22 sb5 b38 sb5 b38 m4 b38 m3 bl)
    (:text 110 58
           (90 nil "tutta buona")
           (507 nil "buona")
@@ -164,10 +164,10 @@
           (835 558 "Contrʼᴀlto con ᴛenore."))
    (:music 2207
            (:voice v1)
-           (:section s26) (:newline) cclef5 b38 sb7 b38 m6 dot6 sm7 b38 m8 b38 m7 bl
+           (:section s26) cclef5 b38 sb7 b38 m6 dot6 sm7 b38 m8 b38 m7 bl
            (:section s27) b38 sb5 b38 m6 dot6 sm7 b38 m8 b38 m7 b38 bl
            (:section s28) b38 sb9 b38 sb9 b38 sb8 b38 b38 bl
-           (:section s29) b22 b22 sb9 b38 sb8 b38 sb7 b38 bl
+           (:section s29) (:newline) b22 b22 sb9 b38 sb8 b38 sb7 b38 bl
            (:section s30) b38 m9 b38 m7 b38 sb8 b38 sb7 b38 bl)
    (:text 110 58
           (169 nil "buona")

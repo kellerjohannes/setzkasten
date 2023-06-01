@@ -42,10 +42,7 @@
     (s13 "Semitono minore /\\semitono maggiore:\\diesis minore – diesis minore – diesis minore")
     (s14 "Semitono minore:\\diesis minore – diesis maggiore\\Semitono maggiore:\\diesis minore – diesis minore")
     ))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
      (208 nil "Se.")
@@ -108,10 +105,10 @@
      (2109 nil "mi.")
      )
    (:music 2236
-           (:section s4) (:f-clef) max7 fclef7 b38 fl5 sbd5 sbd5 sh5 sb5 fl6 sb6 fl6 sbd6 b22 bl
-           (:section s5) (:newline) b22 fl6 b22 sbd6 b22 sb6 b22 sbd6 b22 sh6 b22 sb6 b22 bl
+           (:section s4) (:newline) (:f-clef) max7 fclef7 b38 fl5 sbd5 sbd5 sh5 sb5 fl6 sb6 fl6 sbd6 b22 bl
+           (:section s5) b22 fl6 b22 sbd6 b22 sb6 b22 sbd6 b22 sh6 b22 sb6 b22 bl
            (:section s6) b22 sh6 sb6 sbd7 sh7 sb7 fl8 sb8 fl8 sbd8 b22 bl
-           (:section s7) b22 fl8 sbd8 sbd8 b22 sh8 sb8 fl9 sb9 fl9 sbd9 b22 bl
+           (:section s7) (:newline) b22 fl8 sbd8 sbd8 b22 sh8 sb8 fl9 sb9 fl9 sbd9 b22 bl
            )
    (:text 90 58
      (5 nil "d.mag.d.mi.d.mi.d.mi.")
@@ -146,9 +143,9 @@
      (1702 nil "mi. & mag.")
      )
    (:music 2220
-           (:section s8) (:newline) (:f-clef) max7 fclef7 b38 fl9 b22 sbd9 b22 sh8 b22 sb8 b22 sbd8 b22 sb8 b22 fl8 b22 sbd8 b38 bl
+           (:section s8) (:f-clef) max7 fclef7 b38 fl9 b22 sbd9 b22 sh8 b22 sb8 b22 sbd8 b22 sb8 b22 fl8 b22 sbd8 b38 bl
            (:section s9) b38 fl8 b22 sbd8 b22 sh7 b22 sb7 b22 sbd7 b22 sb7 b22 sh6 b22 sb6 b38 bl
-           (:section s10) b38 sh6 b22 sb6 b22 sbd6 b22 sb6 b22 fl6 b22 sbd6 b22 bl
+           (:section s10) (:newline) b38 sh6 b22 sb6 b22 sbd6 b22 sb6 b22 fl6 b22 sbd6 b22 bl
            (:section s11) b22 fl6 b22 sbd6 b22 custos5
            )
    (:text 100 58
@@ -185,8 +182,8 @@
      )
    (:music 2215
            (:f-clef) max7 fclef7 b38 sh5 sb5 sbd5 sb5 fl5 sbd5 b38 bl
-           (:section s12) (:newline) b38 fl5 b22 sbd5 b22 sh4 sb4 b22 sbd4 b22 sb4 b22 sh3 sb3 b38 bl
-           (:section s13) b38 sh3 sb3 b22 sbd3 b22 sb3 b22 fl3 b22 sbd3 b38 bl
+           (:section s12) b38 fl5 b22 sbd5 b22 sh4 sb4 b22 sbd4 b22 sb4 b22 sh3 sb3 b38 bl
+           (:section s13) (:newline) b38 sh3 sb3 b22 sbd3 b22 sb3 b22 fl3 b22 sbd3 b38 bl
            (:section s14) b38 fl3 sbd3 b22 fl3 sb3 b22 sbd2 b22 sb2 fl2 sbd2 b38 bl
            )
    (:text 90 58

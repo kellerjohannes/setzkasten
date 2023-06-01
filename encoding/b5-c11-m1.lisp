@@ -28,10 +28,7 @@
    (:line-headings
     "Tutte le consonanze d'Alamire quarto discendenti"
     "Tutte le consonanze d'Alamire quarto ascendenti"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
           (74 1011 "Tutte le conſonanze dʼᴀ la mi re 4.diſcen.")

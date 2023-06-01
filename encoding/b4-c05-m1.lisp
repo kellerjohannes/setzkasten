@@ -8,10 +8,7 @@
     "Prolatione perfetta in tempo imperfetto"
     "Esempio della prolatione imperfetta in tempo perfetto"
     "Prolatione imperfetto in tempo imperfetto"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (0 1115 "Eſſempio della Prolatione perfet. in tēpo perfet.")

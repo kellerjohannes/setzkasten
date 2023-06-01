@@ -15,10 +15,7 @@
     (s8 "Tono\\accidentale")
     (s9 "Tono\\accidentale")
     (s10 "Tono\\accidentale")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
      (92 2091 "Questi sono tutti toni giuſti naturali & accidentali di proportione da 8. à 9. & da 9."))

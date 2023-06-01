@@ -26,10 +26,7 @@
     (s2 "Il medesimo procedere, et i gradi medesimi")
     (s6 "Il tenore et il soprano\\paiono due ottave et non sono")
     (s8 "Parte ch'era di sotto")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (500 970 "A due uoci ſopra il canto fermo per ottaua."))

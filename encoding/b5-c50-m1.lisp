@@ -40,10 +40,7 @@
     (s13 "Semitono minore /\\semitono maggiore:\\diesis minore – diesis minore – diesis minore")
     (s14 "Semitono maggiore:\\diesis maggiore – diesis minore\\Semitono minore:\\diesis minore – diesis minore")
     ))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
      (134 nil "se.mag.")
@@ -59,7 +56,7 @@
            (:section s1) (:f-clef) max7 fclef7 b22 fl2 b22 sb2 b22 fl2 b22 sbd2 b22 sbd2 b22 sh2 b22 sb2 fl3 b22 sb3 bl
            (:section s2) fl3 b22 sb3 b22 fl3 b22 sbd3 b22 sb3 b22 sbd3 bl
            (:section s3) sbd3 b22 sh3 b22 sb3 sbd4 b22 sh4 b22 sb4 b22 fl5 sb5 bl
-           (:section s4) b22 fl5 sb5 fl5 sbd5 sbd5 sh5 sb5 fl6 sb6 bl
+           (:section s4) (:newline) b22 fl5 sb5 fl5 sbd5 sbd5 sh5 sb5 fl6 sb6 bl
            )
    (:text 70 58
      (75 nil "di.mi. di.ma.d.mi. d.mi.")
@@ -82,10 +79,10 @@
      (1973 nil "se.min.")
      )
    (:music 2222
-           (:section s5) (:newline) (:f-clef) max7 fclef7 b22 fl6 b22 sb6 fl6 b22 sbd6 b22 sb6 sbd6 bl
+           (:section s5) (:f-clef) max7 fclef7 b22 fl6 b22 sb6 fl6 b22 sbd6 b22 sb6 sbd6 bl
            (:section s6) sbd6 b22 sh6 b22 sb6 sbd7 sh7 sb7 fl8 sb8 bl
-           (:section s7) fl8 b22 sb8 b22 fl8 b22 sbd8 b22 sbd8 b22 sh8 b22 sb8 fl9 b22 sb9 bl
-           (:section s8) (:newline) fl9 sb9 b22 sbd8 b22 sb8 b22 fl8 b22 sbd8 b22 fl8 b22 sb8 bl
+           (:section s7) (:newline) fl8 b22 sb8 b22 fl8 b22 sbd8 b22 sbd8 b22 sh8 b22 sb8 fl9 b22 sb9 bl
+           (:section s8) fl9 sb9 b22 sbd8 b22 sb8 b22 fl8 b22 sbd8 b22 fl8 b22 sb8 bl
            )
    (:text 90 58
      ;; eine diesis streichen?
@@ -111,9 +108,9 @@
      )
    (:music 2225
            (:section s9) (:f-clef) max7 fclef7 b22 fl8 b22 sb8 b22 sbd7 b22 sb7 b22 sh6 b22 sb6 b22 sbd6 bl
-           (:section s10) sbd6 b22 sb6 b22 fl6 b22 sbd6 b22 fl6 b22 sb6 bl
+           (:section s10) (:newline) sbd6 b22 sb6 b22 fl6 b22 sbd6 b22 fl6 b22 sb6 bl
            (:section s11) fl6 b22 sb6 b22 sbd5 b22 sb5 b22 fl5 b22 sb5 b22 fl5 b22 sb5 bl
-           (:section s12) (:newline) fl5 b22 sb5 b22 sbd4 b22 sb4 b22 sh3 b22 sb3 sbd3 bl
+           (:section s12) fl5 b22 sb5 b22 sbd4 b22 sb4 b22 sh3 b22 sb3 sbd3 bl
            )
    (:text 100 58
      (75 nil "di.ma. di.mi.d.mi. d. mi.")
@@ -134,7 +131,7 @@
      (1066 nil "se.min.")
      )
    (:music 1223
-           (:section s13) (:f-clef) max7 fclef7 b22 sbd3 b22 sb3 b22 fl3 b22 sbd3 b22 fl3 b22 sb3 b38 bl
+           (:section s13) (:newline) (:f-clef) max7 fclef7 b22 sbd3 b22 sb3 b22 fl3 b22 sbd3 b22 fl3 b22 sb3 b38 bl
            (:section s14) b38 fl3 b22 sb3 sbd2 b22 sb2 b22 fl2 b22 sbd2 b22 fl2 b22 sb2 b22 b22 bl
            )
    (:text 90 58

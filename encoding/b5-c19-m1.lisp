@@ -21,10 +21,7 @@
    (:line-headings
     "[Tutte le consonanze di Ffaut primo ascendenti]"
     "[Tutte le consonanze di Ffaut primo discendenti]"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 130 58
           (249 1684 "Queſte sono tutte le conſonanze di F fa ut. diſcendenti & aſcendenti."))

@@ -19,10 +19,7 @@
     (s13 "Semitono\\naturale")
     (s14 "Tono\\naturale")
     ))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
      (170 nil "tono")

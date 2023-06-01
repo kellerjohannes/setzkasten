@@ -24,10 +24,7 @@
    (:line-headings
     "[Tutte le consonanze di Ffaut secondo ascendenti]"
     "[Tutte le consonanze di Ffaut secondo discendenti]"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (82 2027 "Queſte ſono tutte le conſonanzeʼ di F faut ſecondo graue, diſcentendi & aſcendenti."))

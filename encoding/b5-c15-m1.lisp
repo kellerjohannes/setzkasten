@@ -24,10 +24,7 @@
    (:line-headings
     "Tutte le consonanze di Gsolreut secondo ascendenti"
     "Tutte le consonanze di Gsolreut secondo discendenti"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 100 58
           (104 2024 "Tutte le conſonanze di ɢſolreut ſecondo aſcend. at diſcendenti, sono qui ſotto notate."))

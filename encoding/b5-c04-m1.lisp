@@ -6,10 +6,7 @@
    (:section-captions
     (s1 "semitono maggiore\\d'Alamire")
     (s2 "semitono minore\\d'Alamire")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:music 1244
            (:voice v1)

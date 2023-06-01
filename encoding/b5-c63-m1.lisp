@@ -12,10 +12,7 @@
     (s6 "Quarta\\accidentale")
     (s7 "Quarta\\accidentale")
     (s8 "Quarta\\accidentale")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")

@@ -13,10 +13,7 @@
     (s6 "Tono\\minore\\accidentale")
     (s7 "Tono\\minore\\accidentale")
     (s8 "Tono\\minore\\accidentale")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (97 2104 "Queſti ſono toni minori accidentali cōpoſti di due ſemitoni minore,ò di uno ſemitono mag"))

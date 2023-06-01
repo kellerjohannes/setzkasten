@@ -28,10 +28,7 @@
    (:line-headings
     "Tutte le consonanze discendenti con le propinque di Alamire secondo"
     "Tutte le consonanze ascendenti con le propinque di Alamire secondo"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 110 58
           (660 573 "ᴅel ſecondo ᴀla mi. re."))

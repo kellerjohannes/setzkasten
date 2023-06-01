@@ -7,6 +7,8 @@
     "Molti esempi di due parti, che insieme saltano"
     nil
     nil
+    nil
+    nil
     "Molti esempti in due parti scritti, tenore con il basso\\soprani con il basso, et tenore con il basso")
    (:section-captions
     (s1 "A due")
@@ -86,7 +88,7 @@
            (:section s6) sb6 b38 sb4 bl
            (:section s7) sb7 b22 sb5 bl
            (:section s8) sb6 b22 sb4 bl
-           (:section s9) sb10 b22 sb8 bl
+           (:section s9) (:newline) sb10 b22 sb8 bl
            (:section s10) sb10 b22 sb7 b38
            ;; Durch die neue Schlüsselung wird hier der Beginn eines neuen inhaltlichen Abschnitts suggeriert, dieser ist aber nicht klar und in der Normalisierung auch nicht dargestellt
            (:section s11) cclef5 b38 sb10 b22 sb8 bl
@@ -122,11 +124,11 @@
           (494 1091 "Molti eſſempi di due parti, che inſieme ſaltano."))
    (:music 2205
            (:voice v1)
-           (:section s13) (:newline) cclef7 b22 sb9 b38 sb5 bl
+           (:section s13) cclef7 b22 sb9 b38 sb5 bl
            (:section s14) sb3 b38 sb7 bl
            (:section s15) sb8 b38 sb4 bl
            (:section s16) sb5 b38 sb7 bl
-           (:section s17) sb7 b38 sb4 bl
+           (:section s17) (:newline) sb7 b38 sb4 bl
            (:section s18) sb7 b38 sb5 bl
            (:section s19) sb8 b38 sb5 bl
            (:section s20) sb7 b38 sb4 bl
@@ -173,7 +175,7 @@
            (:section s30) b38 sb8 b38 b38 sb1 b38 bl
            (:section s31) b38 sb8 b22 sb10 b22 bl
            (:section s32) sb7 sb9 bl
-           (:section s33) sb10 sb7 bl
+           (:section s33) (:newline) sb10 sb7 bl
            (:section s34) sb9 sb5 bl
            (:section s35) sb8 sb4 b22
            ;; markiert diese neue Schlüsselung eine neue inhaltliche Einheit?
@@ -216,7 +218,7 @@
            (:section s39) sb9 b38 sb7 bl
            (:section s40) sb9 b38 sb5 b38
            (:section s41) gclef3 sb7 b38 sb4 b22
-           (:section s42) cclef1 b22 sb3 b38 sb6 b22
+           (:section s42) (:newline) cclef1 b22 sb3 b38 sb6 b22
            (:section s43) cclef7 b22 sb4 b22 sb7 bl
            (:section s44) sb10 b38 sb8 bl
            (:section s45) sb7 b38 sb9 b38

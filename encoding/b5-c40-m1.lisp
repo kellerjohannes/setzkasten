@@ -22,10 +22,7 @@
     (s15 "Semitono\\maggiore")
     (s16 "Semitono\\maggiore")
     (s17 "Semitono\\maggiore")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 100 58
      (50 nil "Semitono.")

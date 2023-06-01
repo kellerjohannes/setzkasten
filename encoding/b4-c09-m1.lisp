@@ -22,10 +22,7 @@
     (s10 "Megliore")
     (s11 "Buono")
     (s12 "Buono con sincopa")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (327 1489 "Eſſempio dellʼordine di procedere con le note,una doppò lʼaltra."))

@@ -9,10 +9,7 @@
     (s1 v2 "Alto")
     (s1 v3 "Tenore")
     (s1 v4 "Basso")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (333 nil "Soprano.")

@@ -4,10 +4,7 @@
    (:comment "q021_s154, rotation: 0, origin: 898")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Esempio della nota dimostrativa antecedente a quella nota da chi principia il salto"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (132 1916 "Eſſempio della nota dimoſtratiua antecedente à quella nota da chi principia il ſalto.")

@@ -11,10 +11,7 @@
     (s1 v4 "Tenore con le consonanze false"))
    (:voice-order
     (s1 v2 v1 v4 v3)))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 90 58
           (227 1768 "Eſſempio del ſopra detto Don Vincentio,come hà posto le conſonanze falſe."))

@@ -76,10 +76,7 @@
     (s62 "Del sesto ordine diatonico enarmonico")
     (s63 "Del settimo ordine diatonico enarmonico")
     ))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    ;; Seite 1, fol. 136v, S. 271
    (:text 110 58

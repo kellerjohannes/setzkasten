@@ -19,10 +19,7 @@
     ;; grundsätzlich funktioniert. Entweder wird diese Note korrigiert, und s7 auf zwei Einheiten
     ;; (s7 und s8) verteilt, jeweils einstimmig. Zu diskutieren.
     (s7 "modo di procedere\\con una parte")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (234 1766 "Eſſempio à due uoci,delle quinte antecedenti,& ſuſſequenti,con il buono &"))

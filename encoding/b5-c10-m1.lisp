@@ -29,10 +29,7 @@
    (:line-headings
     "Tutte le consonanze discendenti di Alamire terzo"
     "Tutte le consonanze ascendenti di Alamire terzo"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:preamble-lilypond
    (:brackets
     (s4 0 12 -16 0 12 -16)

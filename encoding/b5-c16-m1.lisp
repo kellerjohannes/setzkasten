@@ -24,10 +24,7 @@
    (:line-headings
     "Tutte le consonanze di Gsolreut terzo ascendenti"
     "Tutte le consonanze di Gsolreut terzo discendenti"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (145 1950 "Tutte le conſonanze di ɢſolreut terzo aſcend. et diſcendenti,sono qui ſotto notate."))

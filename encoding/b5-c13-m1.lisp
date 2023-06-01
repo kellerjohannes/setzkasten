@@ -23,10 +23,7 @@
    (:line-headings
     "Alamire sesto discendente con le consonanze di più e di meno una comma"
     "Alamire sesto ascendente con le consonanze di più e di meno di uno comma"))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (54 nil "La terza piu")

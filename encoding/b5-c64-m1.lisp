@@ -15,10 +15,7 @@
     (s8 "Accidentale")
     (s9 "Accidentale")
     (s10 "Accidentale")))
-  (:preamble-type-imitation
-   (:width nil)
-   (:height nil)
-   (:background ,*score-bg-color*))
+
   (:data
    (:text 70 58
           (83 1848 "Salti di quinte naturali & accidentali,che ſi cantano, come ſi fanno le naturali."))

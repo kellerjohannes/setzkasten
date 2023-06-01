@@ -4,16 +4,18 @@
    (:comment "")
    (:creator "Vicentino21 / Johannes Keller")
    (:title "Essempio de gradi di alcune quinte imperfette naturali e accidentali")
-   (:section-headings
-    (s1 ""))
    (:section-captions
     (s1 "gradi di quinta\\imperfetta composta\\naturale")
     (s2 "gradi di quinta\\imperfetta composta\\naturale")
     (s3 "gradi di quinta\\imperfetta composta\\accidentale")
     (s4 "gradi di quinta\\imperfetta composta\\accidentale")
-    (s5 "gradi di quinta\\imperfetta composta\\accidentale"))
-   (:voice-labels
-    (:all v1 "")))
+    (s5 "gradi di quinta\\imperfetta composta\\accidentale")))
+  (:preamble-lilypond
+   (:clef-overrides
+    (s2 v1 "treble_8")
+    (s3 v1 "treble_8")
+    (s4 v1 "treble_8")
+    (s5 v1 "treble_8")))
 
   (:data
    (:text 90 58
