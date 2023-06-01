@@ -3,6 +3,7 @@
   :version "0.1"
   :author "Johannes Keller <johannkell@gmail.com>"
   :licence "Public Domain"
+  :depends-on (:hunchentoot :cl-who :cl-ppcre :cl-svg :vicentino-tunings)
   :components ((:file "vector-package")
                (:file "setzkasten")
                (:file "macros")
@@ -28,7 +29,6 @@
                 :depends-on ("backend-type-imitation" "apparatus" "score-parser"))
                (:file "webserver-display"
                 :depends-on ("backend-type-imitation")))
-  :depends-on (:hunchentoot :cl-who :cl-ppcre :cl-svg)
   :build-pathname "setzkasten-bin"
   :entry-point "setzkasten:main")
 

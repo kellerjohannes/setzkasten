@@ -179,7 +179,13 @@
 
 (defparameter *debug*
   `(
-    ("b3-c51-m1" "v" (:idealised) ,*visual-score-backend*)
+    ;; ("b3-c26-m1" "v" (:idealised) ,*visual-score-backend*)
+    ("b3-c44-m1" "v" (:idealised) ,*visual-score-backend*)
+    ;; ("b3-c51-m1" "v" (:idealised) ,*visual-score-backend*)
+    ;; ("b3-c52-m1" "v" (:idealised) ,*visual-score-backend*)
+    ;; ("b3-c53-m1" "v" (:idealised) ,*visual-score-backend*)
+    ;; ("b3-c54-m1" "v" (:idealised) ,*visual-score-backend*)
+    ;; ("b3-c55-m1" "v" (:idealised) ,*visual-score-backend*)
     ))
 
 (defparameter *working*

@@ -27,32 +27,20 @@
                :key (lambda (item) (list (first item) (second item)))
                :test #'equal)))
 
-(defparameter *dict-pitch-y*
-  '((:c nil nil 1/1)
-    (:d nil nil 9/8)
-    (:e nil nil 5/4)
-    (:f nil nil 4/3)
-    (:g nil nil 3/2)
-    (:a nil nil 5/3)
-    (:b nil nil 16/9)))
-
 (defun lookup-pitch (pitch)
-  (vicentino-tunings::setzkasten-pitch :tuning1 pitch)
-  ;; (fourth (find (first pitch)
-  ;;               *dict-pitch-y*
-  ;;               :key #'first))
-  )
+  (when pitch
+    (setzkasten-pitch :tuning1 pitch)))
 
-(defparameter *y-scale* 20)
+(defparameter *y-scale* 12)
 
 (defmethod calculate-y-position ((mobject mobject))
   (with-accessors ((pitch pitch))
       mobject
     (when pitch
       (- (* *y-scale*
-          (/ (log (lookup-pitch pitch) (expt 2 (fourth pitch)))
+          (/ (log (lookup-pitch pitch))
              (log 81/80)))
-         3000))))
+         1700))))
 
 (defparameter *x-scale* 100)
 (defparameter *notehead-radius* 10)
@@ -71,6 +59,7 @@
                             (cdr last-position)
                             0))
             (first-in-voice nil))
+        ;; (format t "~&Drawing ~a: ~a" (pitch mobject) (lookup-pitch (pitch mobject)))
         (when (and silentp y-position (not (zerop y-position)))
           (setf silentp nil)
           (setf first-in-voice t))
@@ -92,20 +81,26 @@
         (when (and last-position (not first-in-voice))
           (svg:draw scene (:line :x1 (car last-position) :y1 (- *lower-limit* (cdr last-position))
                                  :x2 x-position :y2 (- *lower-limit* y-position))))
-        (setf last-position (cons x-position y-position))
+        (unless (zerop y-position)
+          (setf last-position (cons x-position y-position)))
         (incf x-position (calculate-delta-x mobject))))))
 
 (defun draw-section (scene section)
   (dolist (voice (voices section))
-    (draw-voice scene voice)))
+    (draw-voice scene voice))
+  ;; (draw-voice scene (fourth (voices section)))
+  )
 
 (defun create-visual-score (score-instance backend suffix)
   (declare (ignore backend))
   (format t "~&Generating visual score of ~a-~a" (filename score-instance) suffix)
-  (cl-svg:with-svg-to-file (scene 'svg:svg-1.2-toplevel :width 3000 :height 3000 :stroke "black")
+  (cl-svg:with-svg-to-file (scene 'svg:svg-1.2-toplevel :width 9200 :height 2000 :stroke "black")
       ((merge-pathnames *visual-score-export-path*
                         (pathname (format nil "~a-~a.svg" (filename score-instance) suffix)))
        :if-exists :supersede)
+    (cl-svg:draw scene (:rect :x 0 :y 0 :width "100%" :height "100%")
+                 :fill "white"
+                 :stroke "white")
     (dolist (section (sections score-instance))
       (draw-section scene section)))
   (format nil "~a-~a" (filename score-instance) suffix))
