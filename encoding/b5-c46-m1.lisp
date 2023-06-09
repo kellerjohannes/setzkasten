@@ -19,6 +19,7 @@
     (s11 "Tono\\naturale et\\accidentale")
     (s12 "Tono\\naturale et\\accidentale")
     (s13 "Semitono\\naturale et\\accidentale")
+    ;; Von der Bibelgruppe bestätigt
     (s14 (:alt (:diplomatic "Semitono\\naturale et\\accidentale")
                (:idealised "Tono\\naturale et\\accidentale")))
 
@@ -75,7 +76,8 @@
      (1063 nil "to.nat.")
      (1370 nil "to.nat.")
      (1659 nil "se.nat.")
-     (1968 nil "to.nat."))
+     ;; Dieser Idealisierung wurde von der Bibelgruppe bestätigt
+     (:alt (:diplomatic (1968 nil "se.nat.")) (:idealised (1968 nil "to.nat."))))
    (:music 2213
            (:section s8) (:newline) (:f-clef) max7 fclef7 b38 sbd9 b22 b38 sbd8 b22 b22 bl
            (:section s9) b38 sbd8 b38 b22 sbd7 b22 b22 bl

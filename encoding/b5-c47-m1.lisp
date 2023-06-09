@@ -81,7 +81,9 @@
      (1686 nil "se.acc.")
      (1986 nil "to.acc."))
    (:music 2255
-           (:section s8) (:newline) (:f-clef) max7 fclef7 b22 fl9 b22 sb9 b22 fl8 b22 sbd8 bl
+           (:section s8) (:newline) (:f-clef) max7 fclef7 b22 fl9 b22
+           ;; Diese Idealisierung wurde von der Bibelgruppe bestätigt
+           (:alt (:diplomatic sb9) (:idealised sbd9)) b22 fl8 b22 sbd8 bl
            (:section s9) fl8 b22 sbd8 b22 sh6 b22 sb6 bl
            (:section s10) sh6 b22 sb6 b22 fl6 b22 sbd6 bl
            (:section s11) fl6 b22 sbd6 b22 fl5 b22 sbd5 bl
@@ -131,7 +133,9 @@
      (1064 nil "to.nat.")
      (1366 nil "to.nat.")
      (1657 nil "se.nat.")
-     (1973 nil "to.nat."))
+     ;; Diese Idealisierung wurde von der Bibelgruppe bestätigt, ist aber noch nicht im
+     ;; Release «a» integriert.
+     (:alt (:diplomatic (1973 nil "se.nat.")) (:idealised (1973 nil "to.nat."))))
    (:music 2244
            (:section s22) (:newline) (:f-clef) max7 fclef7 b38 sbd9 b22 b38 sbd8 b22 b22 bl
            (:section s23) b38 sbd8 b38 b22 sbd7 b38 b22 bl

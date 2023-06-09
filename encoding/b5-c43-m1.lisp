@@ -16,6 +16,7 @@
     (s10 "Semitono\\naturale")
     (s11 "Tono\\naturale")
     (s12 "Tono\\naturale")
+    ;; Siehe Kommentar unten, offensichtlicher Fall.
     (s13 (:alt (:diplomatic "Semitono\\naturale") (:idealised "Tono\\naturale")))
     (s14 (:alt (:diplomatic "Tono\\naturale") (:idealised "Semitono\\naturale")))
     ))
@@ -34,6 +35,7 @@
      (1544 nil "se.")
      (1691 nil "to.")
      (1844 nil "to.")
+     ;; Offensichtliche Idealisierung, um die Intervalle korrekt zu benennen.
      (1966 nil (:alt (:diplomatic "se.") (:idealised "to.")))
      (2118 nil (:alt (:diplomatic "to.") (:idealised "se.")))
      )

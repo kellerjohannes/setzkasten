@@ -3,7 +3,8 @@
    (:alt-name "m5.045")
    (:comment "q021_s244, rotation: 1.26, origin: 1002")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Questi sono i toni e semitoni cromatici\\con i diesis cromatici, ascendenti e discendenti,\\in terzo e quarto ordine")
+   ;; Original: "... in terzo e quarto ordine"
+   (:title "Questi sono i toni e semitoni cromatici\\con i diesis cromatici, ascendenti e discendenti,\\in secondo e terzo ordine")
    (:section-captions
     (s1 "Tono\\accidentale")
     (s2 "Semitono\\accidentale")
@@ -42,7 +43,8 @@
    (:text 70 58
      (163 1907 "Questi ſono li toni & semitoni ᴄromatici , con li ᴅieſis ᴄromatici, aſcendenti"))
    (:text 130 58
-     (589 1032 "& diſcendenti, in terzo & quarto ordine."))
+          ;; Der Eingriff wurde von der Bibelgruppe bestätigt
+          (:alt (:diplomatic (589 1032 "& diſcendenti, in terzo & quarto ordine.")) (:idealised (589 1032 "& diſcendenti, in secondo & terzo ordine."))))
    (:text 100 58
      (164 nil "to.")
      (548 nil "se.")
