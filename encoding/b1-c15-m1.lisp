@@ -32,10 +32,13 @@
            (:section s4)
            b38 sb8 b38 sbd8 b38 bl
            (:section s5)
+           ;; Hier und im Folgenden wurden die Punkte umgedreht, gemäss Bibelgruppe, ist aber mit
+           ;; frischem Blick nochmals zu beurteilen
            b38 (:alt (:diplomatic sb5)
                      (:idealised sbd5))
            b38 (:alt (:diplomatic sbd5)
-                     (:idealised sb5)) b38 bl
+                     (:idealised sb5))
+           b38 bl
            (:section s6)
            b38 b22 (:alt (:diplomatic sb4)
                          (:idealised sbd4)) b38

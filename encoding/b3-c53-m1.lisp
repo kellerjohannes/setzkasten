@@ -159,7 +159,9 @@
           (1826 nil "ro."))
    (:music 2232
            (:voice v3)
-           cclef7 (:alt (:diplomatic fl7) (:idealised fl6)) (:key-signature nil nil nil nil nil nil :flat)
+           cclef7
+           ;; Offensichtliche kosmetische Korrektur, Platzierung ♭
+           (:alt (:diplomatic fl7) (:idealised fl6)) (:key-signature nil nil nil nil nil nil :flat)
            b22 b38 met-imperf-min-dim b38 (:ligature-start :natural :flat nil nil) nat4 br6 (:ligature-end) b22 brd5 b38 sb7 b22 sb6 b22 sb7 b38 sbd8 b38 sbd8 b38 mrest7 b38
            m8 b22 fl9 b22 sb9 dot10 fl9 b22 m9 b38 sbd8 b38 sbd8 b38 sb9 b38 sbd8 b38 mrest5
            b38 m5 b38 m5 b38 m6 b38 sb6 b38 sb5 b38 b38)

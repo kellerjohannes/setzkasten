@@ -48,9 +48,12 @@
           (1831 nil "ottaua.")
           )
    (:music 2223
+           ;; Offensichtlicher Schlüsselfehler, zu bestätigen
            (:alt (:diplomatic cclef5) (:idealised cclef7)) sh5 sb5 sh6 sb6 fl8 sbd8 fl9 sbd9 sh9 sb9 bl
            (:section s4) (:newline) sh2 sb2 fl4 sbd4 sh4 sb4 sh5 sb5 sh6 sb6 fl8 sbd8 sh8 sb8 sh9 sb9 bl
-           (:section s5) sh2 sb2 sh3 sb3 sh4 sb4 (:alt (:diplomatic sh3) (:idealised sh5)) sb5 sh6 sb6 sh7 sb7 sh8 sb8 sh9 sb9 b22
+           (:section s5) sh2 sb2 sh3 sb3 sh4 sb4
+           ;; kosmetische Korrektur der vertikalen Platzierung des ♯
+           (:alt (:diplomatic sh3) (:idealised sh5)) sb5 sh6 sb6 sh7 sb7 sh8 sb8 sh9 sb9 b22
            )
    (:text 70 58
           (377 nil "Seſta")

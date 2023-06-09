@@ -44,7 +44,10 @@
            fl5 sbd5 fl5 sbd5 bl
            (:section s2) fl5 sbd5 bl
            ;; ev. ist der folgende Eingriff keine Variante, sondern schon in der Quelle so. Auf Luigi warten
-           (:section s3) fl5 (:alt (:diplomatic sb5) (:idealised sbd5)) fl5 (:divider :regular) sbd5 bl
+           (:section s3) fl5
+           ;; zu diskutieren
+           (:alt (:diplomatic sb5) (:idealised sbd5))
+           fl5 (:divider :regular) sbd5 bl
            fl5 sbd5 fl5 sbd5 bl
            (:section s4) fl5 sbd5
            (:section s5) (:newline) cclef3 sh2 sb2 (:divider :regular) sb3 bl
@@ -78,6 +81,7 @@
           (565 nil "6.min.")
           (752 nil "6.mag.")
           (1097 nil "ᴛerze mi.")
+          ;; offensichtliche Textkorrektur, mit Luigi abzugleichen
           (1367 nil (:alt (:diplomatic "3.min.") (:idealised "3.mag.")))
           (1658 nil "6.min.")
           (1881 nil "6.mag."))))

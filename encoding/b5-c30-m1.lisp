@@ -49,7 +49,9 @@
            (:section s3) fl8 sbd8 fl8 sbd8 fl8 (:divider :regular) sbd8 bl
            fl8 sbd8 fl8 sbd8 bl
            (:section s4) fl8 sbd8 b22
-           (:section s5) (:newline) cclef5 b22 (:alt (:diplomatic sh1) (:idealised sh0)) sb0 b22 (:divider :regular) sb1 bl
+           (:section s5) (:newline) cclef5 b22
+           ;; Kosmetische Anpassung, vertikale Positionierung ♯
+           (:alt (:diplomatic sh1) (:idealised sh0)) sb0 b22 (:divider :regular) sb1 bl
            b22 sbd1 sh1 sb1 bl
            (:section s6) fl3 sbd3 bl
            (:section s7) sh3 sb3 fl4 (:divider :regular) sb4 bl

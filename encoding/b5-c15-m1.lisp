@@ -48,8 +48,10 @@
           (1632 nil "6.mag."))
    (:music 2238
            (:voice v2)
-           (:section s1) (:f-clef) max7 fclef7 b38 (:alt (:diplomatic sh6 b38 b22 sb6 b38 b22 fl6 b38 sbd6)
-                                                         (:idealised sh5 b38 b22 sb5 b38 b22 b38 b38 sbd5))
+           (:section s1) (:f-clef) max7 fclef7 b38
+           ;; zu bestätigen
+           (:alt (:diplomatic sh6 b38 b22 sb6 b38 b22 fl6 b38 sbd6)
+                 (:idealised sh5 b38 b22 sb5 b38 b22 b38 b38 sbd5))
            b38 bl
            b38 sb5 b38 fl5 b38 sbd5 b38 b22 bl
            (:section s2) b38 b38 sb3 b38 b22 b22 bl
@@ -58,6 +60,7 @@
            (:section s4) b22 sh0 b22 sb0 b22 b22 b22 b22 bl)
    (:text 140 120
           (215 nil "le quattro terze")
+          ;; Kosmetische Texttypographische Korrektur
           (914 nil (:alt (:diplomatic "quɪnta") (:idealised "quinta")))
           (1282 nil "le quattro seste")
           (1991 nil "ottaua"))

@@ -43,8 +43,14 @@
            (:voice v1)
            (:section s1) cclef5 b38 fl7 b22 sbd7 b22 fl7 b22 sbd7 b22 fl7 b22 (:divider :regular) sbd7 bl
            b38 fl7 b38 sbd7 b22 fl7 b38 sbd7 b38 bl
-           (:section s2) b38 (:alt (:diplomatic fl6) (:idealised fl7)) b38 sbd7 b38 bl
-           (:section s3) b38 (:alt (:diplomatic fl6) (:idealised fl7)) b38 sbd7 b38 fl7 b38 (:divider :regular) sbd7 b38 bl
+           (:section s2) b38
+           ;; Kosmetische Anpassung, vertikale Position des ♭
+           (:alt (:diplomatic fl6) (:idealised fl7))
+           b38 sbd7 b38 bl
+           (:section s3) b38
+           ;; Kosmetische Anpassung, vertikale Position des ♭
+           (:alt (:diplomatic fl6) (:idealised fl7))
+           b38 sbd7 b38 fl7 b38 (:divider :regular) sbd7 b38 bl
            b38 fl7 b38 sbd7 b38 fl7 b38 sbd7 (:alt (:it fl7 sbd7)) bl
            (:section s4) b38 fl7 b38 sbd7 b38 bl)
    (:text 90 58

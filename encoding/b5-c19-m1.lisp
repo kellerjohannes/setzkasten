@@ -45,7 +45,10 @@
            (:section s5) (:newline) cclef5 b22 fl3 sb3 fl3 (:divider :regular) sbd3 bl
            sb3 sbd3 bl
            (:section s6) sb5 bl
-           (:section s7) fl6 sb6 (:alt (:diplomatic fl7) (:idealised fl6)) (:divider :regular) sbd6 bl
+           (:section s7) fl6 sb6
+           ;; zu bestätigen
+           (:alt (:diplomatic fl7) (:idealised fl6))
+           (:divider :regular) sbd6 bl
            sb6 b22 sbd6 bl
            (:section s8) sb8 bl)
    (:text 110 58

@@ -245,7 +245,9 @@
      (1395 nil "seſto ordine ᴄromatico & Enar."))
    (:music 2347
            (:section s54) (:f-clef) max7 fclef7 b22 sh0 sb0 sh1 sb1 sh2 sb2 b22 sb3 sh4 sb4 sh5 sb5 sh6 sb6 sh7 sb7 sh8 sb8 sh9 sb9 b22 sb10 b22
-           (:section s55) (:f-clef) max7 fclef7 (:alt (:diplomatic sh1) (:idealised sh0)) sb0 sh1 sb1 sb2 sh3 sb3 fl5 sbd5 sh5 sb5 sh6 sb6 fl8 sbd8 fl9 sbd9 sh9 sb9 sh10 sb10 bl)
+           (:section s55) (:f-clef) max7 fclef7
+           ;; Kosmetische Korrektur der vertikalen Position des ♯
+           (:alt (:diplomatic sh1) (:idealised sh0)) sb0 sh1 sb1 sb2 sh3 sb3 fl5 sbd5 sh5 sb5 sh6 sb6 fl8 sbd8 fl9 sbd9 sh9 sb9 sh10 sb10 bl)
    (:text 110 58
      (184 nil "quinto ordine ᴄromatico & ᴇnar.")
      (1425 nil "seſto ordine ᴄromatico & Enar."))
@@ -263,11 +265,17 @@
    (:text 110 58
      (90 nil "Del settimo ordine naturale Diatonico."))
    (:music 1157
-           (:section s7) (:f-clef) max7 fclef7 (:alt (:diplomatic sh1) (:idealised sh0)) sb0 sh1 sb1 sh2 sb2 sh3 sb3 sh4 sb4 sh5 sb5 sh6 sb6 (:alt (:diplomatic sh5) (:idealised sh7)) sb7 sh8 sb8 sh9 sb9 fl10 sb10)
+           (:section s7) (:f-clef) max7 fclef7
+           ;; Kosmetische Korrektur der vertikalen Position des ♯
+           (:alt (:diplomatic sh1) (:idealised sh0)) sb0 sh1 sb1 sh2 sb2 sh3 sb3 sh4 sb4 sh5 sb5 sh6 sb6
+           ;; Kosmetische Korrektur der vertikalen Position des ♯
+           (:alt (:diplomatic sh5) (:idealised sh7)) sb7 sh8 sb8 sh9 sb9 fl10 sb10)
    (:text 110 58
      (232 nil "Settimo ordine ᴄromatico Enar."))
    (:music 1183
-           (:section s14) gclef3 b38 sh0 sb0 sh1 sb1 b22 fl3 sbd3 b22 fl4 sbd4 sh4 sb4 sh5 sb5 sh6 (:alt (:diplomatic ) (:idealised sb6)) fl7 sbd7 sh7 sb7 sh8 sb8 fl10 sbd10 sh10 sb10)
+           (:section s14) gclef3 b38 sh0 sb0 sh1 sb1 b22 fl3 sbd3 b22 fl4 sbd4 sh4 sb4 sh5 sb5 sh6
+           ;; Ergänzung einer fehlenden Note, zu disktutieren
+           (:alt (:diplomatic ) (:idealised sb6)) fl7 sbd7 sh7 sb7 sh8 sb8 fl10 sbd10 sh10 sb10)
    (:text 110 58
      (239 nil "settimo ordine ᴄromatico Enar."))
    (:music 1158

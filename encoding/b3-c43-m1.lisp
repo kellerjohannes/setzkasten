@@ -30,7 +30,9 @@
            (:section s3) b22 mrest7 b22 sb9 b22 sh8 b22 m8 b22 sb9 b22 bl
            (:section s4) sb6 b22 sb3 b22 m6 b22 m4 b38 bl
            (:section s5) b38 sb5 b38 sb5 b22 sb3 bl
-           (:section s6) br7 b22 sb7 sh5 (:alt (:diplomatic mrest3) (:idealised b22)) br5 b22 bl)
+           (:section s6) br7 b22 sb7 sh5
+           ;; Rhythmischer Eingriff, zu bestätigen, aber ziemlich offensichtlich
+           (:alt (:diplomatic mrest3) (:idealised b22)) br5 b22 bl)
    (:text 90 58
      (811 nil "ᴄadentie ᴄromatiche."))
    (:music 2241

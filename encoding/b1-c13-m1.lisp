@@ -40,6 +40,7 @@
            b22 b22 (:ligature-start nil nil nil :dot) sbdr4 (:ligature-end) b22 b22 b22 bl
            (:section s7)
            cclef7 b22 fl6 (:key-signature nil nil nil nil nil nil :flat)
+           ;; nochmals genau anzuschauen
            b22 (:alt (:diplomatic br5 b22 flrev4)
                      (:idealised (:ligature-start nil :flat :dot :dot) brd5 b22 flrev4 (:ligature-end)))
            bl

@@ -13,4 +13,6 @@
           (507 1149 "Eſſempio del ſettimo modo ᴇnarmonico ſemplice."))
    (:music 2228
            (:voice v1)
-           (:section s1) cclef5 b22 sb2 b22 sbd2 b22 fl3 b22 sb3 sb5 b22 sbd5 b22 fl6 b22 sb6 b22 fl6 b22 sbd6 b22 sb6 b22 sbd6 b22 fl9 b22 sb9 b22 (:alt (:diplomatic fl8) (:idealised fl9)) b22 sbd9 b22 sb9 b22 sb6 b22 sbd6 b22 fl7 b22 sb7 b22 fl7 b22 sbd7 b22 sb7 b22 sb5 b22 sbd4 b22 sb5 b22 sb2 b38 sb6 br2 bl)))
+           (:section s1) cclef5 b22 sb2 b22 sbd2 b22 fl3 b22 sb3 sb5 b22 sbd5 b22 fl6 b22 sb6 b22 fl6 b22 sbd6 b22 sb6 b22 sbd6 b22 fl9 b22 sb9 b22
+           ;; Kosmetischer Eingriff, Platzierung ♭
+           (:alt (:diplomatic fl8) (:idealised fl9)) b22 sbd9 b22 sb9 b22 sb6 b22 sbd6 b22 fl7 b22 sb7 b22 fl7 b22 sbd7 b22 sb7 b22 sb5 b22 sbd4 b22 sb5 b22 sb2 b38 sb6 br2 bl)))

@@ -27,7 +27,9 @@
           (1422 nil "ſeconda ottaua ᴇnarmonica"))
    (:music 2202
            (:voice v1)
-           (:section s1) (:f-key) max7 fclef7 sb2 b22 sbd2 fl5 b22 sb5 sb5 b22 sbd5 (:alt (:diplomatic fl6) (:idealised fl8)) sb8 b22 fl8 b22 sbd8 b38 sb8 b22 sbd8 fl9 b22 sb9 fl9 b22 sbd9 b22 sb9 bl
+           (:section s1) (:f-key) max7 fclef7 sb2 b22 sbd2 fl5 b22 sb5 sb5 b22 sbd5
+           ;; Kosmetischer Eingriff, vertikale Platzierung ♭
+           (:alt (:diplomatic fl6) (:idealised fl8)) sb8 b22 fl8 b22 sbd8 b38 sb8 b22 sbd8 fl9 b22 sb9 fl9 b22 sbd9 b22 sb9 bl
            (:section s2) sb3 sh5 b22 sb5 fl6 b22 sbd6 b22 sb6 sh8 b22 sb8 fl9 b22 sbd9 sb9 sbd9 fl10 sb10 fl10 sbd10 b22 sb10 bl)
    (:text 90 58
           (256 nil "terza ottaua Enarmonica")

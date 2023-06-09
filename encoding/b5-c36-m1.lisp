@@ -58,7 +58,9 @@
      (1973 nil "Ottaua."))
    (:music 2245
            (:voice v1)
-           (:section s5) (:newline) cclef7 b38 b22 (:alt (:diplomatic sh2) (:idealised sh0)) b38 sb0 b22 fl1 b38 (:divider :regular) sb1 b38 b22 bl
+           (:section s5) (:newline) cclef7 b38 b22
+           ;; Kosmetische Korrektur, vertikale Positionierung ♯
+           (:alt (:diplomatic sh2) (:idealised sh0)) b38 sb0 b22 fl1 b38 (:divider :regular) sb1 b38 b22 bl
            b38 b22 fl1 b38 sbd1 b38 sb1 b38 b22 bl
            (:section s6) b38 sh2 b38 sb2 b38 b22 bl
            (:section s7) b38 sh4 b38 sb4 b38 fl5 b38 (:divider :regular) sb5 b38 b22 bl

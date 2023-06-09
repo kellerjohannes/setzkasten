@@ -66,6 +66,7 @@
           (107 nil "ꝑfet. nat.")
           (368 nil "ꝑfet. nat.")
           (652 nil "perfet.nat.")
+          ;; offensichtlicher Druckfehler, an Luigi zu kommunizieren
           (955 nil (:alt (:diplomatic "ꝑſet. nat.")
                          (:idealised "ꝑfet. nat.")))
           (1228 nil "ꝑfet.na.")

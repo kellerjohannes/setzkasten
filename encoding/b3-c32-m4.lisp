@@ -28,7 +28,9 @@
            (:section s2) b22 mrest5 sb7 b22 m6 b22 sb7 b22 m8 b22 sb6 sh5 m5 b22 sb6 b22 bl
            (:section s3) (:newline) b22 m3 b22 sb1 b22 m0 b22 bl
            (:section s4) b22 mrest5 b22 sb5 sh4 m4 b22 sb5 b22 bl
-           (:section s5) b22 mrest5 b22 sb6 b38 m5 (:alt (:diplomatic dot4) (:idealised dot6))
+           (:section s5) b22 mrest5 b22 sb6 b38 m5
+           ;; Kosmetische Idealisierung, vertikale Positionierung Punkt
+           (:alt (:diplomatic dot4) (:idealised dot6))
            ;; idealisierung zu diskutieren, sie wurde von Johannes vorgeschlagen, damit die vier
            ;; Stimmen gleich lang sind. Anne hat sie in ihrer Korrekturrunde kritisiert und
            ;; schlägt vor:

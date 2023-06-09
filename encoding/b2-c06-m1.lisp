@@ -34,6 +34,7 @@
            (:section s4) (:newline) cclef5 b38 sb5 b38 bl
            (:section s5) sb6 dot6 m7 sb6 bl
            (:section s6) sb6 dot6 fl7 m7 sb6 bl
+           ;; scheint offensichtlich zu sein, trotzdem zu bestätigen
            (:section s7) sb7 (:alt (:diplomatic dot6) (:idealised dot8)) m8 sb7 bl
            (:section s8) m7 sb8 m7 sb8 bl)
    (:text 90 58

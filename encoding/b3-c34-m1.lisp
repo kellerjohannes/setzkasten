@@ -21,7 +21,9 @@
            (:section s2) sb3 sb5 dot6 sm4 b22 sm3 sh4 sb4 b22 br5 b22 bl
            (:section s3) (:newline) b22 sb8 dot8 sb6 b22 sm5 b22 sm4 sh5 sb5 b22 br6 bl
            (:section s4) sb6 sb8 m7 sb6 sh5 m5 br6 bl
-           (:section s5) (:alt (:diplomatic mrest5) (:idealised mrest1)) m2 b22 sm3 b22 m4 b22 sm3 sb4 bl)
+           (:section s5)
+           ;; Kosmetische Idealisierung: Pausenplatzierung
+           (:alt (:diplomatic mrest5) (:idealised mrest1)) m2 b22 sm3 b22 m4 b22 sm3 sb4 bl)
    (:text 110 58
           (900 nil "ᴄontrʼᴀlto."))
    (:music 2226
@@ -39,7 +41,9 @@
            (:section s2) b22 b38 sb4 fl6 sb6 b38 b22 br5 b22 b38 br4 b38 bl
            (:section s3) b22 b38 sb5 b22 b22 sb7 b22 b22 br6 b22 b22 br5 b38 b22 bl
            (:section s4) sb7 sb5 m6 b22 m7 b38 sb6 br5 bl
-           (:section s5) (:alt (:diplomatic mrest7) (:idealised mrest3)) m3 b22 sm4 b22 sm5 b22 m4 sb3 bl)
+           (:section s5)
+           ;; Kosmetische Idealisierung: Pausenplatzierung
+           (:alt (:diplomatic mrest7) (:idealised mrest3)) m3 b22 sm4 b22 sm5 b22 m4 sb3 bl)
    (:text 110 58
           (1074 nil "Baſſo."))
    (:music 2226

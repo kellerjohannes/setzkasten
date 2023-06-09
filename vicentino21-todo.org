@@ -223,6 +223,14 @@ würde ohne B.
 *** TODO Vertikale Platzierung von Additionspunkten
 Ist diese zu idealisieren und wenn ja, nach welchem Prinzip. Im Moment
 sind sie generell idealisiert, das ist aber nochmals gesamthaft zu prüfen.
+*** TODO Vertikale Platzierung von Pausen
+Wenn sie nicht gemäss Vicentinos eigenen Empfehlungen sinnvoll
+vertikal platziert sind: sollen solche Fälle idealisiert werden?
+- [[file:encoding/b3-c32-m2.lisp::;; Kosmetische Idealisierung (Platzierung Pause), allgemein zu besprechen]]
+*** TODO Idealisierung der vertikalen Platzierung von ♯ und ♭
+Manchmal sind sie um eine Position verruscht, ohne dass sie eine
+chromatische Ligatur anzeigen. Im Moment sind sie alle konsequent
+idealisiert, d.h. auf die gleiche Position wie der Notenkopf gesetzt.
 *** TODO Normalisierung aller Textbausteine
 Diese ist im Moment nicht einheitlich. Wird das Luigi nochmals
 systematisch durchgehen und selbständig korrigieren?
@@ -230,10 +238,6 @@ systematisch durchgehen und selbständig korrigieren?
 '&' wurde in der Normalisierung generell mit 'et' übertragen,
 allerdings nicht konsequent. Alte Anpassungen als 'ed' wurden
 konsequent in 'et' verändert.
-*** TODO Idealisierung der vertikalen Platzierung von ♯ und ♭
-Manchmal sind sie um eine Position verruscht, ohne dass sie eine
-chromatische Ligatur anzeigen. Im Moment sind sie alle konsequent
-idealisiert, d.h. auf die gleiche Position wie der Notenkopf gesetzt.
 *** TODO Ausnahmsweises Beibehalten der originalen Schlüsselung
 Gewisse Beispiele verlieren ihre Aussagekraft, wenn die Schlüssel
 durch moderne G- und F-Schlüssel ersetzt werden:

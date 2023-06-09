@@ -65,7 +65,9 @@
            (:section s1) cclef5 b38 sb4 b22 sb3 b22 sb2 bl
            (:section s2) mrest5 m7 sb6 sb5 bl
            (:section s3) mrest7 m8 b22 sb7 sb6 bl
-           (:section s4) (:alt (:diplomatic mrest3) (:idealised mrest5)) m6 b22 sb6 b22 sb6 bl
+           (:section s4)
+           ;; Kosmetische Idealisierung, Pausenplatzierung
+           (:alt (:diplomatic mrest3) (:idealised mrest5)) m6 b22 sb6 b22 sb6 bl
            (:section s5) mrest5 m6 b22 sb4 b22 bl
            (:section s6) b22 sb5 b38 sb6 b38 sb6 b22 bl
            (:section s7) sb6 b38 m2 b38 m9 b38 m8 b38 m6 b22 bl

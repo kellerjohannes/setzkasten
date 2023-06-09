@@ -40,8 +40,8 @@
           (1059 nil "8.")
           (1252 nil "le quattro 3.")
           (1616 nil "5.")
-          (1762 nil (:alt (:diplomatic "la quattro 6.")
-                          (:idealised "le quattro 6.")) )
+          ;; Orthographische Textkorrektur
+          (1762 nil (:alt (:diplomatic "la quattro 6.") (:idealised "le quattro 6.")) )
           (2123 nil "8."))
    (:music 2230
            (:voice v1)
@@ -64,10 +64,9 @@
           (880 nil "6.mag.")
           (1239 nil "3.mi.")
           (1423 nil "3.mag.")
-          (1702 nil (:alt (:diplomatic "3.min.")
-                          (:idealised "6.min.")))
-          (1919 nil (:alt (:diplomatic "3.mag.")
-                          (:idealised "6.mag."))))
+          ;; Offensichtliche inhaltliche Korrektur, an Luigi zu kommunizieren
+          (1702 nil (:alt (:diplomatic "3.min.") (:idealised "6.min.")))
+          (1919 nil (:alt (:diplomatic "3.mag.") (:idealised "6.mag."))))
    (:music 2223
            (:voice v2)
            (:section s1) cclef7 b22 fl8 sb8 sh7 sb7 bl

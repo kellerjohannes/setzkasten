@@ -16,7 +16,9 @@
      (1118 615 "ᴇt delle cadentie minime."))
    (:music 2233
            (:voice v1)
-           (:section s1) cclef1 b38 (:alt (:diplomatic mrest7) (:idealised mrest5)) sb5 b22 m4 b22 sb5 b38 bl
+           (:section s1) cclef1 b38
+           ;; Kosmetische Idealisierung: Pausenplatzierung
+           (:alt (:diplomatic mrest7) (:idealised mrest5)) sb5 b22 m4 b22 sb5 b38 bl
            (:section s2) m8 b22 m6 dot6 cr5d b22 cr6 sh5 m5d b22 sb6 bl
            (:section s3) (:newline) b38 m5d b22 sm6 b22 m8 cr7 cr6 m7 sb8 bl
            (:section s4) b22 b22 sm5d b22 m8 b22 b22 sm7 b22 sb8 b22 b22 bl
@@ -36,7 +38,9 @@
            (:voice v3)
            (:section s1) cclef7 b38 sb6 b38 sb5 b38 sb4 b38 b22 bl
            (:section s2) b22 b38 m5 b38 m7 b38 sb6 b38 sb5 b22 b22 bl
-           (:section s3) b38 (:alt (:diplomatic mrest7) (:idealised smrest7)) m7 b38 sm9 b38 sb8 b38 sb7 b38 b22 bl
+           (:section s3) b38
+           ;; Kosmetische Idealisierung: Pausenplatzierung
+           (:alt (:diplomatic mrest7) (:idealised smrest7)) m7 b38 sm9 b38 sb8 b38 sb7 b38 b22 bl
            (:section s4) b22 b38 m4 b38 b22 m8 b38 b22 sb4 b22 b22 bl
            (:section s5) b22 sm7 b38 sm9 b38 m8 b38 sb7 b38 bl)
    (:text 110 58

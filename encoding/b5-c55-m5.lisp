@@ -46,7 +46,9 @@
    (:music 2236
            cclef7 b38 sh6 b22 sb6 b22 sh7 b22 sb7 b22 sh8 b22 sb8 b38 bl
            (:section s5) b38 sh1 b22 sb1 b22 sb2 b22 sb3 b22 sh4 b22 sb4 b22 sh5 b22 sb5 b22 sb6 b22 sh7 b22 sb7 b22 sh8 b22 sb8 b38 bl
-           (:section s6) b22 sh1 b22 sb1 b22 sh2 (:alt (:diplomatic mrest1) (:idealised b22)) sb2 fl4 b22 sbd4 b22 fl5 b22 sbd5 custos5
+           (:section s6) b22 sh1 b22 sb1 b22 sh2
+           ;; offensichtlicher Druckfehler, ohne musikalische Bedeutung, mit Luigi abzustimmen
+           (:alt (:diplomatic mrest1) (:idealised b22)) sb2 fl4 b22 sbd4 b22 fl5 b22 sbd5 custos5
            )
    (:text 90 58
           (209 nil "ottaua.")

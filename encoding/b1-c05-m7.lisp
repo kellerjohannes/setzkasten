@@ -74,6 +74,7 @@
            (:section s7) sb7 b38 sbd7 b38 fl8 b38 (:alt (:diplomatic sbd8)
                                                         (:idealised sb8))
            b38 fl8 b38 sbd8 b38 sb8 bl
+           ;; zu bestätigen
            (:section s8) sb8 b38 (:alt (:diplomatic sbd9)
                                        (:idealised sbd8))
            b38 fl9 b38 sb9 b38 fl9 b38 sbd9 b38 sb9 bl

@@ -25,7 +25,9 @@
      )
    (:music 2219
            (:voice v1)
-           (:section s1) (:f-clef) max7 fclef7 b22 sbd2 sbd3 sbd4 sb5 sbd6 sbd7 sbd8 (:alt (:diplomatic sb9) (:idealised sbd9)) b22 bl
+           (:section s1) (:f-clef) max7 fclef7 b22 sbd2 sbd3 sbd4 sb5 sbd6 sbd7 sbd8
+           ;; zu bestätigen
+           (:alt (:diplomatic sb9) (:idealised sbd9)) b22 bl
            (:section s2) b22 sbd2 b22 fl3 b22 sbd3 sbd4 sbd5 b22 fl6 b22 sbd6 sbd7 sbd8 sbd9 b22 bl
            (:section s3) b22 sbd2 sbd3 fl5 sb5 sbd5 sbd6 fl8 sb8 fl9 sb9 sbd9 b22 bl
            (:section s4) (:newline) b22 sbd2 sbd3 sbd4 sbd5 b22 custos6

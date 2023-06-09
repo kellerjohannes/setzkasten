@@ -43,6 +43,8 @@
      (1509 nil "Settima ottaua.")
      )
    (:music 2220
-           (:section s6) (:f-clef) max7 fclef7 b38 sh1 sb1 b22 sh2 b22 sb2 sh3 sb3 b22 fl5 b22 sbd5 b22 (:alt (:diplomatic sh6) (:idealised sh5)) b22 sb5 sh6 sb6 b22 fl8 b22 sbd8 b22 sh8 b22 sb8 b38 bl
+           (:section s6) (:f-clef) max7 fclef7 b38 sh1 sb1 b22 sh2 b22 sb2 sh3 sb3 b22 fl5 b22 sbd5 b22
+           ;; kosmetische Korrektur, vertikale Positionierung des ♯
+           (:alt (:diplomatic sh6) (:idealised sh5)) b22 sb5 sh6 sb6 b22 fl8 b22 sbd8 b22 sh8 b22 sb8 b38 bl
            (:section s7) (:newline) b22 sh1 sb1 b22 sh2 b22 sb2 sh3 sb3 b22 sh4 b22 sb4 sh5 sb5 sh6 sb6 sh7 sb7 sh8 sb8 b22 bl
            )))

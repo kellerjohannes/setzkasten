@@ -125,7 +125,9 @@
            (:section s25) b38 sb3 b38 sbc5 b38 bl
            (:section s26) b38 fl2 b38 sb2 b38 sbc4 b38 bl
            (:section s27) b38 sb5 b38 sh7 b38 sbc7 b38 b38
-           (:section s28) (:alt (:diplomatic cclef5) (:idealised cclef7)) fl6 (:key-signature nil nil nil nil nil nil :flat) b38 sb4 b38 nat6 b38 sbc6 b38 b38 bl
+           (:section s28)
+           ;; Offensichtlicher Schlüsselfehler, zu diskutieren
+           (:alt (:diplomatic cclef5) (:idealised cclef7)) fl6 (:key-signature nil nil nil nil nil nil :flat) b38 sb4 b38 nat6 b38 sbc6 b38 b38 bl
            (:section s29) b38 b38 fl5 b38 sb5 b38 sbc7 b38 b38 bl)
    (:text 110 58
           (168 nil "accid.")

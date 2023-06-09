@@ -14,6 +14,7 @@
   (:data
    (:text 70 58
           (157 1898
+               ;; Inhaltliche Korrektur, gemäss Bibelgruppe, aber nochmals zu prüfen
                (:alt (:diplomatic "Eſsempio di molte cadentie del Quarto modo,à quattro uoci , della muſica parti⸗")
                      (:idealised "Eſsempio di molte cadentie del Primo modo,à quattro uoci , della muſica parti⸗"))
 ))

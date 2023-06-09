@@ -65,6 +65,7 @@
           (1269 nil "3.mag.")
           (1510 nil "3.mi.")
           (1825 nil "5.")
+          ;; siehe oben
           (2059 nil (:alt (:diplomatic "5.") (:idealised "8."))))
    (:music 2235
            (:voice v3)

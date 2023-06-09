@@ -29,10 +29,12 @@
                                                      (:idealised sb4))
            b38 fl5 b38 sbd5 b38 sb5 b38
            (:section s2)
+           ;; Ergänzte key signature zu bestätigen
            cclef7 (:alt (:diplomatic b38)
                         (:idealised fl6 (:key-signature nil nil nil nil nil nil :flat)))
            sb4 b38 sbd4 b38 sh4 b22 sb4 b38 fl5 b38 sbd5 b38 sb5 bl)
    (:text 90 58
+          ;; zu bestätigen
           (:alt (:diplomatic)
                 (:idealised (0 nil "ꝑ ♮.")))
           (113 nil "ut")
@@ -40,6 +42,7 @@
           (344 nil "mi")
           (517 nil "fa")
           (604 nil "re")
+          ;; zu bestätigen
           (:alt (:diplomatic)
                 (:idealised (700 nil "ꝑ ♭.")))
           (801 nil "re")

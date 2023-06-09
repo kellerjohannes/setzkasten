@@ -102,7 +102,9 @@
           (282 nil "Primo ordine ᴄromatico ᴇnar.")
           (1525 nil "secondo ordine ᴄromatico Enar."))
    (:music 2386
-           (:section s22) (:newline) cclef3 fl0 (:alt (:diplomatic sh0) (:idealised b38)) sbd0 fl1 sbd1 sh1 sb1 sh2 sb2 fl4 sbd4 fl5 sbd5 sh5 sb5 fl7 sbd7 fl8 sbd8 sh8 sb8 sh9 sb9
+           (:section s22) (:newline) cclef3 fl0
+           ;; ♯ entfernt, zu diskutieren
+           (:alt (:diplomatic sh0) (:idealised b38)) sbd0 fl1 sbd1 sh1 sb1 sh2 sb2 fl4 sbd4 fl5 sbd5 sh5 sb5 fl7 sbd7 fl8 sbd8 sh8 sb8 sh9 sb9
            (:section s23) cclef3 b38 fl0 sbd0 sh0 sb0 sh1 sb1 sh2 sb2 sh3 sb3 sh4 b22 sb4 fl5 sb5 b22 fl7 sbd7 sh7 sb7 sh8 sb8 b38 sbd10 bl)
    (:text 110 58
           (171 nil "Primo ordine Cromatico ᴇnar.")
@@ -133,7 +135,9 @@
           (1498 nil "Secondo ordine ᴄromatico ᴇnar."))
    (:music 2363
            (:section s57) (:newline) (:f-clef) max9 fclef9 b22 fl0 sbd0 fl1 sbd1 sh1 sb1 fl3 sbd3 fl4 sbd4 fl5 sbd5 sh5 sb5 fl7 sbd7 fl8 sbd8 sh8 fl10 sbd10 b22
-           (:section s58) (:f-clef) max9 fclef9 fl0 sbd0 sh0 sb0 sh1 sb1 fl3 sbd3 sh3 sb3 sh4 sb4 sh5 sb5 fl7 sbd7 sh7 sb7 (:alt (:diplomatic sh7) (:idealised sh8)) sb8 fl10 sbd10 bl)
+           (:section s58) (:f-clef) max9 fclef9 fl0 sbd0 sh0 sb0 sh1 sb1 fl3 sbd3 sh3 sb3 sh4 sb4 sh5 sb5 fl7 sbd7 sh7 sb7
+           ;; Kosmetische Korrektur der vertikalen ♯-Position
+           (:alt (:diplomatic sh7) (:idealised sh8)) sb8 fl10 sbd10 bl)
 
    (:vspace 200)
 

@@ -43,7 +43,9 @@
            (:section s2) b38 sb6 b22 sb5 b22 sb4 b38 bl
            (:section s3) b38 sb4 b22 sb7 b38 sb8 b38 sb4 b22 bl
            (:section s4) mrest7 m8 b22 sb6 b22 sb5 b22 bl
-           (:section s5) m5d (:alt (:diplomatic dot4) (:idealised dot6)) sm6 m7 b22 sm8 sm6 sm9 m8 sm8 sb8 bl
+           (:section s5) m5d
+           ;; Kosmetische Idealisierung, vertikale Ausrichtung Additionspunkt
+           (:alt (:diplomatic dot4) (:idealised dot6)) sm6 m7 b22 sm8 sm6 sm9 m8 sm8 sb8 bl
            (:section s6) b22 sb6 sb6 sb6 b22 bl)
    (:text 110 58
           (661 509 "Cadentie del Baſſo ."))

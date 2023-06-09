@@ -6,6 +6,7 @@
    (:title "Questi sono i toni e semitoni cromatici enarmonici in quinto et in terzo ordine")
    (:section-captions
     (s1 "Tono\\accidentale\\enarmonico")
+    ;; Von der Bibelgruppe bestätigt
     (s2 (:alt (:diplomatic "Tono\\accidentale\\enarmonico")
               (:idealised "Semitono\\accidentale\\enarmonico")))
     (s3 (:alt (:diplomatic "Semitono\\accidentale\\enarmonico")
@@ -39,6 +40,7 @@
     (s25 "Tono\\naturale et\\accidentale")
     (s26 "Tono\\naturale et\\accidentale")
     (s27 "Semitono\\naturale et\\accidentale")
+    ;; Von der Bibelgruppe bestätigt
     (s28 (:alt (:diplomatic "Semitono\\naturale et\\accidentale")
                (:idealised  "Tono\\naturale et\\accidentale")))
     ))
@@ -48,9 +50,11 @@
      (127 1933 "Queſti ſono i toni & ſemitoni Enarmonici ᴄromatici,in quinto & in terzo ordine."))
    (:text 100 58
      (166 nil "to.acc.")
+     ;; von der Bibelgruppe bestätigt
      (454 nil (:alt (:diplomatic "to.acc.") (:idealised "se.acc.")))
      (752 nil (:alt (:diplomatic "se.acc.") (:idealised "to.acc.")))
      (1062 nil "to.acc.")
+     ;; von der Bibelgruppe bestätigt
      (1357 nil (:alt (:diplomatic "to.acc.") (:idealised "se.acc.")))
      (1638 nil (:alt (:diplomatic "se.acc.") (:idealised "to.acc.")))
      (1930 nil "to.acc."))

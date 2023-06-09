@@ -56,8 +56,8 @@
            (:section s4) b38 sh1 b38 sb1 b38 bl)
    (:text 90 58
           (163 nil "le 4. terze")
-          (932 nil (:alt (:diplomatic "quinte")
-                         (:idealised "quinta")))
+          ;; Orthographische Textkorrektur
+          (932 nil (:alt (:diplomatic "quinte") (:idealised "quinta")))
           (1322 nil "le 4. seſte")
           (1982 nil "ottaua"))
    (:music 2225

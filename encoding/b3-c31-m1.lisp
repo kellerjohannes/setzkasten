@@ -49,7 +49,9 @@
            (:voice v3)
            (:section s1) cclef7 (:key-signature nil nil nil nil nil nil) b38
            sb7 b38 sb6 b38 sb5 b22 b38 sb4 b38 b38 bl
-           (:section s2) b22 mrest3 b38 m3 (:alt (:diplomatic dot6) (:idealised dot4)) cr2 b38 cr1 b38 m2 b38 sb3 bl
+           (:section s2) b22 mrest3 b38 m3
+           ;; typographische Verschönerung, allgemien zu entscheiden
+           (:alt (:diplomatic dot6) (:idealised dot4)) cr2 b38 cr1 b38 m2 b38 sb3 bl
            (:section s3) b38 b38 sb1 b38 b38 sb0 b38 b38 sb7 b38 b38 b38
            (:section s4) cclef7 b38 fl6 (:key-signature nil nil nil nil nil nil :flat)
            b38 m4 b38 sb3 b38 m2 b38 sb3 b38 b22 blbl b38)))

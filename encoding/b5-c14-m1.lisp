@@ -33,6 +33,7 @@
           (161 466 "ɢ ſol re ut primo.")
           (1304 458 "ɢ ſol re ut primo."))
    (:text 120 58
+          ;; Offensichtliche Textkorrektur, mit Luigi abzugleichen
           (0 nil (:alt (:diplomatic "La 4.terze.") (:idealised "Le 4.terze.")))
           (547 nil "5.")
           (684 nil "Le 4.seſte.")
@@ -63,7 +64,9 @@
    (:music 2232
            (:voice v2)
            (:section s1) (:f-clef) max7 fclef7 sb6 fl6 sbd6 bl
-           fl6 sb6 (:alt (:diplomatic sh6 sb6) (:idealised sh5 sb5)) bl
+           fl6 sb6
+           ;; zu bestätigen
+           (:alt (:diplomatic sh6 sb6) (:idealised sh5 sb5)) bl
            (:section s2) b22 sb4 b22 bl
            (:section s3) sb3 fl3 (:alt (:diplomatic sb3) (:idealised sbd3)) bl
            fl3 sb3 (:alt (:diplomatic b22 sbd2) (:idealised sh2 sb2)) bl

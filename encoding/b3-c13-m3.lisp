@@ -76,5 +76,6 @@
            (:section s6) cclef3 b22 fl2 (:key-signature nil nil nil nil nil nil :flat)
            sb2 sb3 sb4 sb5 sb6 sb7 sb8 (:divider :regular) sb9 bl
            b22 sb2 b22 sb9 b22 bl
+           ;; naheliegende Korrektur, aber zu bestätigen
            (:section s7) (:newline) sb3 sb4 sb5 sb6 sb7 sb8 (:alt (:diplomatic sb8) (:idealised)) sb9 (:divider :regular) sb10 bl
            b38 sb3 b38 sb10 bl)))

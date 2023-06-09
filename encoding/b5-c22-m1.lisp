@@ -29,7 +29,9 @@
           (2023 nil "ottaua"))
    (:music 2230
            (:voice v1)
-           (:section s1) cclef7 b38 fl9 b38 sb9 b38 fl9 b38 sb9 b38 fl9 b22 (:divider :regular) sb9 b38 (:alt (:diplomatic fl9 bl) (:idealised bl fl9))
+           (:section s1) cclef7 b38 fl9 b38 sb9 b38 fl9 b38 sb9 b38 fl9 b22 (:divider :regular) sb9 b38
+           ;; Typographischer Eingriff
+           (:alt (:diplomatic fl9 bl) (:idealised bl fl9))
            sb9 b38 fl9 b38 sb9 b22 fl9 b22 sb9 bl
            (:section s2) b22 fl9 b38 sb9 b38 bl
            (:section s3) fl9 b22 sb9 b22 fl9 b22 sb9 b22 fl9 b22 (:divider :regular) sb9 bl

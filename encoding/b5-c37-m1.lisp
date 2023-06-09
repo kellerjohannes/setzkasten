@@ -40,7 +40,9 @@
            sbd6 sbd6 sbd6 bl
            (:section s4) sbd6
            (:section s5) (:newline) cclef7 sbd1 sh1 (:divider :regular) sb1 bl
-           fl2 sb2 (:alt (:diplomatic fl3) (:idealised fl2)) sbd2 bl
+           fl2 sb2
+           ;; Kosmetische Korrektur, vertikale Positionierung ♭
+           (:alt (:diplomatic fl3) (:idealised fl2)) sbd2 bl
            (:section s6) fl4 sb4 bl
            (:section s7) sbd4 sh4 (:divider :regular) sb4 bl
            fl5 sb5 fl5 sbd5 bl

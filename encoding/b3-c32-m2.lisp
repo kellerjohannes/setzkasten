@@ -26,6 +26,7 @@
            (:section s4) (:newline) mrest5 sb6 m5d sb6 b22 bl
            (:section s5) mrest5 sb5 m4 m5 sb7 sh6 m6 sb7 b22 bl
            (:section s6) mrest7 sb8 sh7 m7 sb8 bl
+           ;; Kosmetische Idealisierung (Platzierung Pause), allgemein zu besprechen
            (:section s7) (:alt (:diplomatic mrest7) (:idealised mrest3)) sb4 sh3 m3 br4 b22 blbl)
    (:text 110 58
           (671 630 "Cadentie del ᴄontrʼAlto."))

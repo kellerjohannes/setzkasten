@@ -93,7 +93,9 @@
    (:music 2223
            (:section s15) (:newline) cclef3 b22 fl29 (:key-signature nil nil nil nil nil nil :flat)
            b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b22 b38
-           (:section s16) cclef3 b22 fl2 (:alt (:diplomatic fl4) (:idealised fl5)) (:key-signature nil nil :flat nil nil nil :flat)
+           (:section s16) cclef3 b22 fl2
+           ;; Offensichtliche Korrektur der key signature, zu bestätigen
+           (:alt (:diplomatic fl4) (:idealised fl5)) (:key-signature nil nil :flat nil nil nil :flat)
            b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 bl)
    (:text 110 58
           (339 nil "Del primo ordine.")
@@ -106,7 +108,9 @@
           (334 nil "Del primo ordine.")
           (1320 nil "Del secondo ordine."))
    (:music 2215
-           (:section s29) (:newline) cclef7 b22 fl29 (:alt (:diplomatic fl5) (:idealised fl6)) (:key-signature nil nil :flat nil nil nil :flat)
+           (:section s29) (:newline) cclef7 b22 fl29
+           ;; offensichtliche Korrektur der key signature, zu bestätigen
+           (:alt (:diplomatic fl5) (:idealised fl6)) (:key-signature nil nil :flat nil nil nil :flat)
            b22 sb0 b22 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b22 sb10 b22
            (:section s30) cclef7 fl29 fl5 fl6 (:key-signature nil nil :flat nil nil :flat :flat)
            b22 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b22 sb5 b22 sb6 b38 sb7 b22 sb8 b22 sb9 b38 sb10 bl)
@@ -154,7 +158,9 @@
           (352 nil "ᴅel terzo ordine.")
           (1434 nil "ᴅel quarto ordine."))
    (:music 2223
-           (:section s17) cclef3 b22 b22 sb0 (:alt (:diplomatic sh0) (:idealised sh1)) sb1 sb2 sh3 sb3 sb4 sb5 b22 sh6 sb6 b22 sh7 b22 sb7 b22 sb8 b22 sh9 sb9 b22 sh10 sb10 b38
+           (:section s17) cclef3 b22 b22 sb0
+           ;; Kosmetische Korrektur der vertikalen Position der ♯
+           (:alt (:diplomatic sh0) (:idealised sh1)) sb1 sb2 sh3 sb3 sb4 sb5 b22 sh6 sb6 b22 sh7 b22 sb7 b22 sb8 b22 sh9 sb9 b22 sh10 sb10 b38
            (:section s18) cclef3 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sh6 b22 sb6 b22 sb7 b38 sb8 b22 sb9 b22 sb10 bl)
    (:text 110 58
           (342 nil "ᴅel terzo ordine.")
@@ -238,7 +244,9 @@
           (334 nil "Del quinto ordine.")
           (1332 nil "ᴅel seſto ordine."))
    (:music 2214
-           (:section s40) (:f-clef) max5 fclef5 b22 sb0 b22 (:alt (:diplomatic sh2) (:idealised sh1)) b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sh5 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sh9 b22 sb9 sb10 b38
+           (:section s40) (:f-clef) max5 fclef5 b22 sb0 b22
+           ;; Kosmetische Korrektur der vertikalen Position des ♯
+           (:alt (:diplomatic sh2) (:idealised sh1)) b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sh5 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sh9 b22 sb9 sb10 b38
            (:section s41) (:f-clef) max5 fclef5 b22 fl18 (:key-signature nil nil nil nil nil nil :flat)
            b22 sb0 b22 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sb10 bl)
    (:text 110 58
@@ -271,7 +279,9 @@
           (359 nil "Del settimo ordine."))
    (:music 1042
            (:section s21) cclef1 fl07 (:key-signature nil nil nil nil nil nil :flat)
-           b38 b38 sb0 b22 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b22 sb9 (:alt (:diplomatic b38) (:idealised sb10 bl)))
+           b38 b38 sb0 b22 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b22 sb9
+           ;; Fehlende Note ergänzt, zu diskutieren
+           (:alt (:diplomatic b38) (:idealised sb10 bl)))
    (:text 110 58
           (350 nil "Del settimo ordine."))
    (:music 1034

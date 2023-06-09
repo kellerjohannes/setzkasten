@@ -53,6 +53,7 @@
           (1700 nil "ſpet. cro.")
           (1950 nil "ſpet.cro."))
    (:text 70 58
+          ;; Zu bestätigen
           (44 nil (:alt (:diplomatic "tono cro.")
                         (:idealised "ſe.tono cro.")))
           (316 nil "to. crom.")

@@ -29,8 +29,9 @@
    (:text 70 58
      (70 2055 "Queſte sono tutte le conſonanze, et le propinque et propinquiſſime di D la ſol re primo"))
    (:text 70 58
-     (271 1628 (:alt (:diplomatic "acuto,et diſcendente,et diſ D ol re primo medeſimamente aſcendenti.")
-                     (:idealised  "acuto,et diſcendente,et di D ſol re primo medeſimamente aſcendenti."))))
+          ;; Typographische Korrektur, mit Luigi abzugleichen
+          (271 1628 (:alt (:diplomatic "acuto,et diſcendente,et diſ D ol re primo medeſimamente aſcendenti.")
+                          (:idealised  "acuto,et diſcendente,et di D ſol re primo medeſimamente aſcendenti."))))
    (:text 110 58
      (71 nil "3.mi.")
      (229 nil "3.mag.")
