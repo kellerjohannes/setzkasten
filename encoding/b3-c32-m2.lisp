@@ -19,7 +19,7 @@
           (654 547 "Cadentie del ꜱoprano ."))
    (:music 2238
            (:voice v1)
-           ;; Kosmetische Idealisierung
+           ;; Kosmetische Idealisierung, Positionierung ♯
            (:section s1) cclef3 b22 mrest1 sb1 (:alt (:diplomatic sh1) (:idealised sh0)) m0 sb1 bl
            (:section s2) b22 mrest3 b22 sb3 m2 sb3 b22 bl
            (:section s3) b22 mrest3 b22 sb4 sh3 m3 sb4 b22 bl
@@ -39,6 +39,7 @@
            (:section s5) b22 m6 b22 sb7 m5 sb6 b22 sb8 b22 sb8 bl
            (:section s6) mrest7 m7 b22 sb6 b22 sb5 bl
            ;; mögliche Idealisierung hier
+           ;; [Bemerkung ist nicht klar, neu zu betrachten]
            (:section s7) b22 fl6 mrest7 m6 sb5 b22 br5 b22 blbl)
    (:text 110 58
           (652 536 "Cadentie del Tenore."))

@@ -21,5 +21,5 @@
            (:section s2) m2 b22 m5 dot6 cr4 b22 cr3 b22 m4 b22 sb5 bl
            (:section s3) m2 b22 sm3 m5 b22 cr4 b22 cr3 b22 m4 b22 sb5 bl
            (:section s4) (:newline) m2 m5 dot6 sm4 b22 sm4 b22 cr3 b22 cr4 b22 sb5 bl
-           ;; idealisierung zu diskutieren
+           ;; Rhythmische Anpassung, zu diskutieren
            (:section s5) m2 b38 m5 dot6 (:alt (:diplomatic cr4) (:idealised sm4)) m4 sb5 bl)))

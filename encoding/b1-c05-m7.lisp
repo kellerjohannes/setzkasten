@@ -70,11 +70,11 @@
           (1412 nil "à ᴀ."))
    (:music 2188
            (:section s6) (:newline) (:f-clef) max7 fclef7 b38 sb6 b38 sbd6 b38 sb7 bl
-           ;; Zu bestätigen
+           ;; Zu bestätigen, enharmonischer Punkt ergänzt
            (:section s7) sb7 b38 sbd7 b38 fl8 b38 (:alt (:diplomatic sbd8)
                                                         (:idealised sb8))
            b38 fl8 b38 sbd8 b38 sb8 bl
-           ;; zu bestätigen
+           ;; zu bestätigen, Note verschoben
            (:section s8) sb8 b38 (:alt (:diplomatic sbd9)
                                        (:idealised sbd8))
            b38 fl9 b38 sb9 b38 fl9 b38 sbd9 b38 sb9 bl

@@ -31,7 +31,7 @@
            (:section s5) b22 mrest5 b22 sb6 b38 m5
            ;; Kosmetische Idealisierung, vertikale Positionierung Punkt
            (:alt (:diplomatic dot4) (:idealised dot6))
-           ;; idealisierung zu diskutieren, sie wurde von Johannes vorgeschlagen, damit die vier
+           ;; Idealisierung zu diskutieren, sie wurde von Johannes vorgeschlagen, damit die vier
            ;; Stimmen gleich lang sind. Anne hat sie in ihrer Korrekturrunde kritisiert und
            ;; schlägt vor:
            ;; - Dann würde ich eine Longa daraus machen, da es die Regel der Zeit

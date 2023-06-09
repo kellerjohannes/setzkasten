@@ -46,7 +46,7 @@
            sb3 sbd3 bl
            (:section s6) sb5 bl
            (:section s7) fl6 sb6
-           ;; zu bestätigen
+           ;; Kosmetische Korrektur Positionierung ♭
            (:alt (:diplomatic fl7) (:idealised fl6))
            (:divider :regular) sbd6 bl
            sb6 b22 sbd6 bl

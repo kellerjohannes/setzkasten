@@ -64,11 +64,11 @@
    (:music 2239
            (:voice v2)
            (:section s1) (:f-clef) max7 fclef7 fl8 sb8
-           ;; Zu diskutieren
+           ;; Eingriff Notentext, zu diskutieren
            (:alt (:diplomatic sh8 sb8) (:idealised sh7 sb7))
            bl sbd7 sb7 bl
            (:section s2)
-           ;; zu diskutieren
+           ;; Enh. Punkt, zu diskutieren
            (:alt (:diplomatic sb5) (:idealised sbd5)) bl
            (:section s3) fl5 sb5 sh4 sb4 bl
            sbd4 b22 sb4 bl

@@ -201,7 +201,7 @@
            (:section s28) sb1 sb5 b22
            (:section s29) cclef7 b22 sb8 sb1 b22
            (:section s30) (:f-clef) max7 fclef7 b22 sb5 fl3 b22 sb3 bl
-           ;; offensichtlicher Druckfehler, trotzdem zu bestätigen
+           ;; Kosmetische Korrektur der vertikalen Position des ♭
            (:section s31) fl3 b22 sb3 (:alt (:diplomatic fl9) (:idealised fl10)) sb10 bl
            (:section s32) sb2 sb9 bl
            (:section s33) sb0 sb4 bl

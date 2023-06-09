@@ -54,6 +54,9 @@
           ;; Naturale scheint falsch, da enh. Punkte involviert sind. Es sei denn, man betrachte
           ;; diese als besondere Form von 'naturale', siehe z.B. fol.136r, 4. Musikzeile,
           ;; rechte Spalte, "Primo ordine enarmonico naturale". Zu diskutieren.
+
+          ;; In Anbetracht von 5.43ff. ist es sinnvoll, hier /naturale/ zu belassen, d.h. die
+          ;; Idealisierung muss aufgehoben werden. Zu diskutieren.
           (81 nil (:alt (:diplomatic  "imper.natur.")
                         (:idealised "imper.accid.")))
           (425 nil (:alt (:diplomatic "imper. nat.")

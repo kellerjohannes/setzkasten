@@ -78,7 +78,7 @@
      (140 nil "se.mag")
      (493 nil "se.mag.")
      (747 nil "se.minore")
-     ;; zu bestätigen
+     ;; Texteingriff, zu bestätigen
      (1154 nil (:alt (:diplomatic "se. mag. se. mag.") (:idealised "se. mag. se. min.")))
      (1729 nil "se.mag. se.min.")
      )

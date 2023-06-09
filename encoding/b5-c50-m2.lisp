@@ -85,7 +85,7 @@
            (:section s6) sbd6 b22 sb7 b22 sbd7 b22 sh7 b22 sb7 b22 fl8 sb8 bl
            (:section s7) (:newline) fl8 b22 sb8 b22 fl8 b22 sbd8 b22 sbd8 b22 sh8 b22 sb8 b22 fl9 b22 sb9 bl
            (:section s8) b22
-           ;; zu bestätigen
+           ;; Kosmetische Korrektur Position ♭
            (:alt (:diplomatic fl8) (:idealised fl9)) sb9 sh8 sb8 sbd8 fl8 sbd8 fl8 sb8 bl
            )
    (:text 90 58

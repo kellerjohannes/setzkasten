@@ -14,7 +14,7 @@
            (:voice v1)
            (:section s1)
            (:f-clef) max7 fclef7 b22 fl6 b22 fl3 b22 (:key-signature nil nil :flat nil nil nil :flat)
-           ;; Vorschlag zur Idealisierung von Anne, sollte noch kollektiv bestätigt werden.
+           ;; Vorschlag zur Idealisierung von Anne (rhythmische Anpassung), sollte noch kollektiv bestätigt werden.
            (:alt (:diplomatic sb2) (:idealised sb4))
            dot2 sm3 b22 m4 b22 m5 b22 m2 b22 sb5 b22 m4 b22 m5 dot6 sm6 b22 sm7 b22 sm8 b22 m9 b22
            ;; Vorschlag von Anne: 'Lacking a minima; otherwise cadence formula doesn't work'.

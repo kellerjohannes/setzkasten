@@ -75,7 +75,7 @@
    (:text 80 58
           (168 464 "la.& ſol diſcendono")
           (664 243 "la diſcende")
-          ;; Zu bestätigen
+          ;; Zu bestätigen, Korrektur der Solmisation
           (982 527 (:alt (:diplomatic "per ♭.fa.re.mi.fa.re.")
                          (:idealised "per ♭.ut.re.mi.fa.re.")))
           (1529 557 "per ♭.re.mi.fa.re.mi."))

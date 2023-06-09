@@ -30,7 +30,7 @@
            (:section s4)
            sb4 b22 fl5 b22 sb5 bl
            (:section s5)
-           ;; Idealisierung, weil sonst eine Redundanz zum übernächsten Takt entsteht
+           ;; Idealisierung Notentext, weil sonst eine Redundanz zum übernächsten Takt entsteht
            (:alt (:diplomatic sb5 b22 sh4 b22 sb4)
                  (:idealised sb5 b22 fl6 b22 sb6)) bl
            (:section s6)
@@ -53,7 +53,7 @@
           (1700 nil "ſpet. cro.")
           (1950 nil "ſpet.cro."))
    (:text 70 58
-          ;; Zu bestätigen
+          ;; Eingriff Text, zu bestätigen, Achtung: Normalisierung prüfen, siehe oben!
           (44 nil (:alt (:diplomatic "tono cro.")
                         (:idealised "ſe.tono cro.")))
           (316 nil "to. crom.")

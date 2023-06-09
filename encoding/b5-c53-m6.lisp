@@ -38,7 +38,7 @@
            (:section s1) cclef5 b38 sb1 sb2 fl3 sb3 fl4 sb4 sb5 fl6 sb6 fl7 sb7 sb8 b22 bl
            (:section s2) b22 sb1 fl2 sb2 fl3 sb3 fl4 sb4 sbd4 fl6 sb6 fl7 sb7 sb8 b22 bl
            (:section s3) b22 sb1 sb2 sb3 fl4 sb4 sb5 sb6 sb7
-           ;; zu bestätigen
+           ;; Offensichtlicher Eingriff Notentext, zu bestätigen
            (:alt (:diplomatic sb2) (:idealised sb8)) b22 bl
            (:section s4) (:newline) b22 sb1 sb2 fl3 sb3 fl4 sb4 custos5
            )

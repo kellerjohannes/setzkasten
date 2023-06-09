@@ -89,7 +89,7 @@
            ;; Rhythmische Idealisierung, sehr empfohlen
            (:alt (:diplomatic b13) (:idealised dot4)) md4 fl5 sb5 b13 sb3 sbrest3
            b13 sb2 b13 md2 dot2
-           ;; Idealisierung zu diskutieren
+           ;; Enh. Punkt, Idealisierung zu diskutieren
            (:alt (:diplomatic sm2) (:idealised sm2) (:tatti smd2)) b22 m5 b22 m5 brd5 fl6 sb6 b22 mrest3
            b22 m3 b22 md5 b22 md5 md1 b22 md1 b22 sb4 b22 sbd2 b22 sbrest3
            b22 sb2 b22 bl)

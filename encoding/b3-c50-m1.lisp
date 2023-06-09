@@ -72,7 +72,7 @@
    (:music 2217
            (:voice v4)
            (:section s1) (:f-clef) max7 fclef7 b38 sb2 b38 sbd6
-           ;; Idealisierung eines offensichtlichen Druckfehlers.
+           ;; Rhythmische Idealisierung eines offensichtlichen Druckfehlers.
            (:alt (:diplomatic br2 br4) (:idealised br2 b38)) b38 bl
            (:section s2) b38 sb7 b22 b38 sbd4 b38 b22 sb7 b38 bl
            (:section s3) b38 sb2 b22 b38 sbd6 b38 sb2 b22 bl

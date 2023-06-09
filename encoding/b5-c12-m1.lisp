@@ -45,7 +45,7 @@
            (:section s2) fl5 sbd5 bl
            ;; ev. ist der folgende Eingriff keine Variante, sondern schon in der Quelle so. Auf Luigi warten
            (:section s3) fl5
-           ;; zu diskutieren
+           ;; Enh. Punkt, zu diskutieren
            (:alt (:diplomatic sb5) (:idealised sbd5))
            fl5 (:divider :regular) sbd5 bl
            fl5 sbd5 fl5 sbd5 bl

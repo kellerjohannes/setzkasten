@@ -42,7 +42,7 @@
           (344 nil "mi")
           (517 nil "fa")
           (604 nil "re")
-          ;; zu bestätigen
+          ;; zu bestätigen, Texteingriff
           (:alt (:diplomatic)
                 (:idealised (700 nil "ꝑ ♭.")))
           (801 nil "re")

@@ -16,7 +16,7 @@
     (s10 "Semitono\\naturale")
     (s11 "Tono\\naturale")
     (s12 "Tono\\naturale")
-    ;; Siehe Kommentar unten, offensichtlicher Fall.
+    ;; Textkorrektur, siehe Kommentar unten, offensichtlicher Fall.
     (s13 (:alt (:diplomatic "Semitono\\naturale") (:idealised "Tono\\naturale")))
     (s14 (:alt (:diplomatic "Tono\\naturale") (:idealised "Semitono\\naturale")))
     ))

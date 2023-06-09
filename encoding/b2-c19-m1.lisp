@@ -40,6 +40,6 @@
            (:voice v1) (:f-clef) max7 fclef7 b38 sb6 sb2 b38
            (:voice v2) cclef7 b22 mrest7 sb7 b38 m9 b38
            (:section s4)
-           ;; korrektur zu diskutieren!
+           ;; Rhythmischer Eingriff, Korrektur zu diskutieren!
            (:voice v1) cclef7 b38 sb3 sb2 (:alt (:diplomatic) (:idealised dot2)) bl
            (:voice v2) mrest7 m7 dot8 sm6 sb9 bl)))
