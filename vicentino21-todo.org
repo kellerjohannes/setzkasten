@@ -269,6 +269,8 @@ idealisiert, d.h. auf die gleiche Position wie der Notenkopf gesetzt.
 - [[file:encoding/b5-c61-m2.lisp::;; Kosmetische Korrektur der ♭-Position]]
 *** TODO Umgang mit Punkt-♯
 - [[file:encoding/b1-c11-m2.lisp::;; Hier befindet sich ein sehr seltenes Zeichen, Kreuz in Kombination mit]]
+- [[file:encoding/b5-c49-m1.lisp::;; Ergänzung eines offensichtlich fehlenden Notenkopfs]]
+- [[file:encoding/b5-c49-m2.lisp::;; Enh. Punkt, zu bestätigen]]
 - [[file:encoding/b3-c52-m1.lisp::;; idealisierung zu diskutieren]]
 - [[file:encoding/b3-c54-m1.lisp::;; Idealisierung zu diskutieren]]
 *** TODO Normalisierung aller Textbausteine
@@ -426,9 +428,16 @@ CLOSED: [2023-06-09 Fri 12:01]
 CLOSED: [2023-06-09 Fri 12:03]
 - [[file:encoding/b5-c47-m1.lisp::;; Diese Idealisierung wurde von der Bibelgruppe bestätigt, ist aber noch nicht im]]
 **** TODO [#B] b5-c48
+- [[file:encoding/b5-c48-m2.lisp::;; Diskussionsbedarf: Soll hier die Diesis-Abfolge so korrigiert werden, dass die Noten]]
+- [[file:encoding/b5-c48-m2.lisp::;; Diskussionsbedarf: Soll hier die Diesis-Abfolge so korrigiert werden, dass die Noten]]
 - [[file:encoding/b5-c48-m1.lisp::;; Texteingriff, zu bestätigen]]
-**** TODO [#B] b5-c49
+- [[file:encoding/b5-c48-m2.lisp::;; Hier ist die mittlere Note zu diskutieren, da sie eine möglicherweise ungewollte]]
+- [[file:encoding/b5-c48-m2.lisp::;; Hier ist die mittlere Note zu diskutieren, da sie eine möglicherweise ungewollte]]
+**** DONE [#B] b5-c49
+CLOSED: [2023-06-13 Tue 11:36]
+- [[file:encoding/b5-c49-m1.lisp::;; Ergänzung eines offensichtlich fehlenden Notenkopfs]]
 - [[file:encoding/b5-c49-m2.lisp::;; Enh. Punkt, zu bestätigen]]
+- [[file:encoding/b5-c49-m2.lisp::;; Ergänzter Notenkopf, offensichtliche Idealisierung]]
 **** TODO [#B] b5-c54
 - [[file:encoding/b5-c54-m1.lisp::;; Enh. Punkt, zu bestätigen]]
 **** TODO [#B] b5-c59

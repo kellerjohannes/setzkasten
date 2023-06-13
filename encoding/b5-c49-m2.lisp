@@ -58,7 +58,11 @@
            (:section s1) (:f-clef) max7 fclef7 b22 sh1 b22 sb1 fl2 b22 sb2 b22 fl2 b22 sbd2 b22 sbd2 b22 sh2 b22 sb2 bl
            (:section s2) sh2 b22 sb2 fl3 b22 sbd3 b22 sb3 bl
            (:section s3) sb3 b22 sbd3 b22 sh3 b22 sb3 sbd3 b22 sh4 b22 sb4 bl
-           (:section s4) (:newline) sh4 b22 sb4 fl5 b22 sb5 b22 fl5 b22 sbd5 b22 sh5 b22 sb5 b38 bl
+           (:section s4) (:newline) sh4 b22 sb4 fl5 b22 sb5 b22 fl5 b22 sbd5 b22
+           ;; Ergänzter Notenkopf, offensichtliche Idealisierung
+           ;; Maniates ergänzt ebenfalls ein D hier
+           ;; -> Von Bibelgruppe bestätigt
+           (:alt (:diplomatic) (:idealised sb5 b22)) sh5 b22 sb5 b38 bl
            )
    (:text 70 58
      (124 nil "di.mi. di.mi.di.ma.di.mi.")
@@ -129,6 +133,7 @@
    (:music 2247
            (:section s12) (:f-clef) max7 fclef7 b38 sh4 b38 sb4 b22 b38 sbd4 b38 sb4 b22 b22 sh3 b38
            ;; Enh. Punkt, zu bestätigen
+           ;; -> von der Bibelgruppe bestätigt
            (:alt (:diplomatic sbd3) (:idealised sb3)) b38 sb3 bl
            (:section s13) (:newline) b22 sb3 b38 b22 fl3 b22 b38 sbd3 b22 fl3 b38 sb3 b38 sh2 b38 sb2 b22 bl
            (:section s14) b38 sh2 b38 sb2 b38 sbd2 b38 sb2 b38 fl2 b38 sbd2 b38 sh1 b38 sb1 b38 bl

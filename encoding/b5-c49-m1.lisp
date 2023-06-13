@@ -122,7 +122,10 @@
      (1510 nil "sem. mag.")
      (1800 nil "sem. min."))
    (:music 2219
-           (:section s12) (:f-clef) max7 fclef7 b38 sh4 b38 sb4 b22 b38 sbd4 b38 b22 sh3 (:alt (:idealised sb3)) b38 b22 sbd3 b38 b22 sb3 b38 bl
+           (:section s12) (:f-clef) max7 fclef7 b38 sh4 b38 sb4 b22 b38 sbd4 b38 b22 sh3
+           ;; Ergänzung eines offensichtlich fehlenden Notenkopfs
+           ;; -> Von der Bibelgruppe bestätigt
+           (:alt (:diplomatic) (:idealised sb3)) b38 b22 sbd3 b38 b22 sb3 b38 bl
            (:section s13) (:newline) b22 sb3 b38 b22 fl3 b22 b38 sbd3 b22 b38 sh2 b22 b22 sb2 b22 bl
            (:section s14) b22 b38 sh2 b38 sb2 b38 sbd2 b38 fl2 b38 sbd2 b38 fl2 b38 sb2 b38 sh1 b38 sb1 b38 bl
            )
