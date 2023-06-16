@@ -480,6 +480,7 @@ CLOSED: [2023-06-13 Tue 11:36]
 - [[file:encoding/b5-c55-m6.lisp::;; Offensichtlicher Schlüsselfehler, zu bestätigen]]
 **** TODO [#C] b5-c62
 - [[file:encoding/b5-c62-m2.lisp::;; Offensichtlicher Schlüsselfehler, zu diskutieren]]
+- [[file:encoding/b5-c62-m2.lisp::;; Dieses Intervall ist falsch (CJW), Idealisierung mit Luigi zu besprechen.]]
 
 ** DONE Alle :idealised-Elemente suchen und mit ;; ergänzen
 CLOSED: [2023-06-09 Fri 10:52]

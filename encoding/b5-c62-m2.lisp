@@ -6,9 +6,9 @@
    (:title "[Esempio delle terze maggiori naturali et accidentali, con le loro proportioni]")
    (:line-headings
     "La proportione della terza maggiore si domanda sesquiquarta come è da 4 a 5.\\La proportione della terza maggiore con la propinqua è in proportione più di sesquiterza,\\come sono da 3 e mezzo a 4 e mezzo.\\Questa è inrationale, come è anchora la propinquissima.\\ \\Queste sono tutte terze maggiori naturali et accidentali"
-    " "
+    nil
     "Queste sottoscritte sono tutte terze magiori, con le sue propinque,\\naturali & accidentali"
-    " "
+    nil
     "Queste sottoscritte sono tutte terze maggiori, con le loro propinquissime\\naturali et accidentali")
    (:section-captions
     (s1 "naturale")
@@ -80,6 +80,7 @@
            (:section s7) (:newline) cclef7 (:key-signature nil nil nil nil nil nil nil) b22 fl4 sb4 b22 fl6 b22 sb6 b38 bl
            (:section s8) b22 sh4 b22 sb4 b22 sh6 b22 sb6 b22 bl
            (:section s9) b38 sb4 b38 sb6 b38 bl
+           ;; Dieses Intervall ist falsch (CJW), Idealisierung mit Luigi zu besprechen.
            (:section s10) b38 sh4 b22 sbd4 b22 fl6 b22 sbd6 b38 b38 bl
            (:section s11) b22 b22 sh2 b22 sb2 b22 fl5 b22 sbd5 b38 b22 bl
            b22 b125 b125 b125)
