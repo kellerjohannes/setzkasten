@@ -50,7 +50,9 @@
            met-imperf-min-dim b22 brrest4
            b22 brd5 sh5 sb5 dot6 sh5 m5 sbd6 b22 sbd6 m4 dot4 sm3 b22 sb2 b22 brd2 sbrest9
            b22 sb8 md7 dot8 smd7 m7 m7 sbd3 sb3 mrest5
-           sbd6 b22 md6 sb4 b22 m4 b22 m1 fl2 sb2 sbd2 b22 sb2 mrest3
+           sbd6 b22 md6 sb4 b22 m4 b22 m1
+           ;; Soll nur im Kommentar erscheinen, korrekte Lesart ist :diplomatic.
+           (:alt (:diplomatic fl2 sb2) (:alt-diplomatic sbd1) (:idealised fl2 sb2)) sbd2 b22 sb2 mrest3
            sbd0 b22 md0 b22 m0 m7 bl
            )
    (:text 90 58
@@ -87,9 +89,11 @@
            (:section s1) (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat)
            b22 met-imperf-min-dim b22 lrest46 b22 brrest6 b22 brd5 fl6 sb6 dot6 fl6 b22 m6 b22 sbd4
            ;; Rhythmische Idealisierung, sehr empfohlen
+           ;; Von Bibelgruppe akzeptiert
            (:alt (:diplomatic b13) (:idealised dot4)) md4 fl5 sb5 b13 sb3 sbrest3
            b13 sb2 b13 md2 dot2
            ;; Enh. Punkt, Idealisierung zu diskutieren
+           ;; Als Idealisierung von der Bibelgruppe akzeptiert
            (:alt (:diplomatic sm2) (:idealised sm2) (:tatti smd2)) b22 m5 b22 m5 brd5 fl6 sb6 b22 mrest3
            b22 m3 b22 md5 b22 md5 md1 b22 md1 b22 sb4 b22 sbd2 b22 sbrest3
            b22 sb2 b22 bl)

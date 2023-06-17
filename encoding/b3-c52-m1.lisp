@@ -92,6 +92,9 @@
    (:music 2209
            cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat) b22 fl3 b22 sb3 b22 m1 b22 sb1 b22 sb8 nat7
            ;; Enh. Punkt, Idealisierung zu diskutieren
+           ;; Argumente für beide Varianten liegen vor. David: blockweise Behandlung von
+           ;; enharmonic shifts, Johannes: 'crossfade' zwischen 'naturale' und 'enarmonico'.
+           ;; Soll in Proben ausprobiert werden.
            (:alt (:diplomatic md7) (:idealised md7) (:tatti m7)) nat7 md7 nat7 md7 b22 m8 b22 m5 b22 mrest5
            b22 m6 sh4 m4 sh4 m4 b22 fl5 b22 m5 b22 fl5 b22 m5 b22 sb5 b22 m5 b22 sb3 b22 m3 sb6 b22 m6 b22 sb6 b22 m6 b22 sb2 b22 (:duration-override 2) brd2 (:duration-override nil) b22 blbl)
    (:text 90 58
@@ -117,7 +120,8 @@
    (:music 2224
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat) b38 md0 b22 md3 sh1 m1 b22 sb1 fl3 m3 b22 sb2 sbd5 b22 m3 b22 m5 b22 m3 sb6 m9 b22 m9 b22 m9 m5d dot6 sm5d fl7 sbd7 fl3 sb3 b22 mrest3
            ;; Enh. Punkt, Idealisierung zu diskutieren
-           b22 m4 b22 (:alt (:diplomatic md4) (:idealised md4) (:tatti m4)) b22 m1 b22 md8 b22 md8 b22 sb4 b22 m2 m9 b22 m7 fl7 m7 b38)
+           ;; Soll entfernt werden, von Bibelgruppe bestätigt
+           b22 m4 b22 (:alt (:diplomatic md4) (:idealised m4) (:tatti m4)) b22 m1 b22 md8 b22 md8 b22 sb4 b22 m2 m9 b22 m7 fl7 m7 b38)
    (:text 90 58
      (130 nil "i dolci")
      (321 1852 "lumi i dolci lumi che tāto che tanto dolcemente fanno che dolcemēte che dolce⸗"))
@@ -125,7 +129,7 @@
    (:music 2223
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat) b22 m6 b22 m9 b22 md6 b22 md6 b22 m9 b22 sb7 b22 m7 sb3 b22 sbd6 nat4
            ;; Notwendige Idealisierung, um die rhythmische Synchronisation der Stimmen
-           ;; zu gewährleisen
+           ;; zu gewährleisen -> bestätigt
            (:alt (:diplomatic sb4) (:idealised m4)) b22 m4 b22 m2 b22 m9 b22 m9 b22 m9 sh8 m8 b22 m8 b22 m7 b22 m7 b22 m7 b22 m8 b22 m8 b22 m8 b22 brd4 b22 brd4 b22 blbl b38 b38 b125)
    (:text 100 58
      (91 1851 "mente mi conſumi mi conſumi fanno che dolcemente mi conſumi mi conſum i."))
@@ -171,7 +175,7 @@
            ;; erfordert. Nach einer Diskussion in der Bibelgruppe besteht ein
            ;; Konses, mit Annes Fassung weiterzugehen.
 
-           ;; Die aktuelle Idealisierung beinhaltet Annes Vorschlag.
+           ;; Die aktuelle Idealisierung beinhaltet Annes Vorschlag. -> Von Bibelgruppe bestätigt.
            (:alt (:diplomatic sb6 b22 br4) (:idealised br4 b22 sb0)) b22 brrest2
            b22 m2 b22 sb7 sh7 m7 b22 m8 b22 m8 b22 md5 b22 md5 b22 mrest7
            b22 m8 b22 fl9 b22 m9 b22 sb7 b22 m7 b22 mrest5

@@ -295,6 +295,11 @@ Sollen Versetzungszeichen (inkl. Punkte) bei über Taktstriche
 gebundenen Noten wiederholt werden?
 ** Beobachtungen, erfordert keine Eingriffe
 - [[file:encoding/b2-c23-m1.lisp::;; interessante Verwendung von 'nat']]
+- [[file:encoding/b3-c51-m1.lisp::;; Soll nur im Kommentar erscheinen, korrekte Lesart ist :diplomatic.]]
+- [[file:encoding/b3-c54-m1.lisp::;; Schlüssel in der Quelle auf dem
+  Kopf stehend]]
+  Dieser Fall muss im Kommentar erscheinen, ist aber kein Eingriff,
+  d.h. wird nicht automatisch erstellt. Braucht ev. manuelle Nacharbeit
 ** Einzelfälle
 *** Priorität A
 **** TODO [#A] b1-c10
@@ -312,18 +317,22 @@ gebundenen Noten wiederholt werden?
   zweiten Takt? Zur Markierung der]]
   - siehe dazu auch: [[file:~/org/zettelkasten/20220205200109-literatur_vicentino_l_antica_musica.org::*Annes Vorschläge][Annes Vorschläge]]
 - [[file:encoding/b2-c20-m1.lisp::;; hier gibt es keine Sexte! Soll hier etwas idealisiert werden?]]
-**** TODO [#A] b3-c51, Soave
+**** DONE [#A] b3-c51, Soave
+CLOSED: [2023-06-17 Sat 09:49]
 - [[file:encoding/b3-c51-m1.lisp::;; Rhythmische Idealisierung, sehr empfohlen]]
 - [[file:encoding/b3-c51-m1.lisp::;; Enh. Punkt, Idealisierung zu diskutieren]]
-**** TODO [#A] b3-c52, Dolce
+**** DONE [#A] b3-c52, Dolce
+CLOSED: [2023-06-17 Sat 11:14]
 - [[file:encoding/b3-c52-m1.lisp::;; Enh. Punkt, Idealisierung zu diskutieren]]
 - [[file:encoding/b3-c52-m1.lisp::;; Enh. Punkt, Idealisierung zu diskutieren]]
 - [[file:encoding/b3-c52-m1.lisp::;; Notwendige Idealisierung, um die rhythmische Synchronisation der Stimmen]]
 - [[file:encoding/b3-c52-m1.lisp::;; Die aktuelle Idealisierung beinhaltet Annes Vorschlag.]]
-**** TODO [#A] b3-c53, Madonna
+**** DONE [#A] b3-c53, Madonna
+CLOSED: [2023-06-17 Sat 11:14]
 - [[file:encoding/b3-c53-m1.lisp::;; idealisierung zu diskutieren, die Verschiebung dieses Punktes scheint naheliegend,]]
 - [[file:encoding/b3-c53-m1.lisp::;; Offensichtliche kosmetische Korrektur, Platzierung ♭]]
-**** TODO [#A] b3-c54, Musica
+**** DONE [#A] b3-c54, Musica
+CLOSED: [2023-06-17 Sat 11:14]
 - [[file:encoding/b3-c54-m1.lisp::;; Enh. Punkt, Idealisierung zu diskutieren]]
 - [[file:encoding/b3-c54-m1.lisp::;; Rhythmische Idealisierung, notwendig für die Mehrstimmigkeit.]]
 - [[file:encoding/b3-c54-m1.lisp::;; Punkt-Kreuz-Situation, Idealisierung zu diskutieren]]
@@ -336,7 +345,8 @@ gebundenen Noten wiederholt werden?
 - [[file:encoding/b3-c54-m1.lisp::;; Enh. Punkt, Idealisierung zu diskutieren, wahrscheinlich unvermeidlich.]]
 - [[file:encoding/b3-c54-m1.lisp::;; Enh. Punkt, Idealisierung zu diskutieren]]
 - [[file:encoding/b3-c54-m1.lisp::;; Enh. Punkt, Idealisierung zu diskutieren, wahrscheinlich unvermeidlich]]
-**** TODO [#A] b3-c55, Hierusalem
+**** DONE [#A] b3-c55, Hierusalem
+CLOSED: [2023-06-17 Sat 11:13]
 - [[file:encoding/b3-c55-m1.lisp::;; Ergänzung ♭, Idealisierung zu diskutieren]]
 - [[file:encoding/b3-c55-m1.lisp::;; Kosmetischer Eingriff, keine musikalische Bedeutung]]
 *** Priorität B

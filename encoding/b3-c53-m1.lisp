@@ -20,7 +20,7 @@
                                 "Libro 3, Capitolo 53, fol. 68v-69r, Ganzton tiefer notiert")))
    (:lyrics
     (s1 v1 "Ma -- don -- na_il po -- co dol -- ce,_il po -- co dol -- ce,
-            Ma -- don -- na_il po -- co dol -- ce_è'il mol -- to_a -- ma -- ro
+            Ma -- don -- na_il po -- co dol -- ce_e'il mol -- to_a -- ma -- ro
             il bre -- ve ri -- so_il bre -- ve ri -- so_il trop -- po lun -- go pian -- to
             il trop -- po lun -- go pian -- to_il trop --
             po lun -- go pian -- to m'han -- no ri -- dot -- to_a tan -- to che'l pian -- ger sem -- pr'è so -- spi -- rar che'l pian --
@@ -29,7 +29,7 @@
     (s1 v2 "Ma -- don -- na_il po -- co dolc' il po -- _ _ co dol -- ce Ma -- don -- na_il po -- co dolc' il
             mol -- _ _ t'a -- ma -- ro il bre -- ve ri -- so,_il bre -- ve ri -- so il trop -- po lun --
             _ _ go pian -- to, il trop -- po lun -- _ _ go pian -- to, il trop -- po lun -- go pian -- to m'han -- no ri --
-            dot -- to_a tan -- to che'l ppian -- ger sem -- pr'è so -- spi -- rar, che'l pian -- ger sem -- pre è so -- spi -- rar mi_è ca -- ro
+            dot -- to_a tan -- to che'l pian -- ger sem -- pr'è so -- spi -- rar, che'l pian -- ger sem -- pre è so -- spi -- rar mi_è ca -- ro
             che'l pian -- ger sem -- pr'e so -- spi -- rar che'l pian -- ger sem -- pr'e so -- spi -- rar mi_è ca -- _ ro.")
     (s1 v3 "Ma -- don -- na_il po -- co dol -- ce, [Ma -- don -- na_il po -- co dol -- ce] è_il mol -- to_a -- ma -- ro
             il bre -- ve ri -- so, [il bre -- ve ri -- so] il trop -- po lun -- go pian -- to, [il trop -- po lun -- go pian -- to]
@@ -107,7 +107,8 @@
            b38 br9 b22 sbd9 dot10
            ;; idealisierung zu diskutieren, die Verschiebung dieses Punktes scheint naheliegend,
            ;; insbesondere weil dadurch eine ♯-⋅-Notation aufgehoben wird.
-           (:alt (:diplomatic m9) (:tatti md9) (:idealised m9)) sh9 (:alt (:diplomatic md9) (:tatti m9) (:idealised md9)) sh9 m9 b38 sbd9 b38 m9 b38 b38 b38)
+           ;; Wird idealisiert, von Bibelgruppe bestätigt
+           (:alt (:diplomatic m9) (:tatti md9) (:idealised md9)) sh9 (:alt (:diplomatic md9) (:tatti m9) (:idealised m9)) sh9 m9 b38 sbd9 b38 m9 b38 b38 b38)
    (:text 90 58
           (210 nil "Madonna")
           (479 nil "il poco dolcʼil po")
