@@ -491,6 +491,8 @@ CLOSED: [2023-06-13 Tue 11:36]
 **** TODO [#C] b5-c62
 - [[file:encoding/b5-c62-m2.lisp::;; Offensichtlicher Schlüsselfehler, zu diskutieren]]
 - [[file:encoding/b5-c62-m2.lisp::;; Dieses Intervall ist falsch (CJW), Idealisierung mit Luigi zu besprechen.]]
+**** TODO [#C] b5-c64
+- [[file:encoding/b5-c64-m1.lisp::;; Das ist keine Quinte, soll aber die manualverbindende Quinte abwärts sein, d.h.]]
 
 ** DONE Alle :idealised-Elemente suchen und mit ;; ergänzen
 CLOSED: [2023-06-09 Fri 10:52]
