@@ -713,6 +713,7 @@
 ~@[~a~]
 ~14,0t}"
             (label voice)
+            ;; disable for non-numbered sections
             (format nil "~18,0t\\sectionLabel \\markup { \\ellipse \\fontsize #-8 \"~a\" }"
                     (extract-number (id section)))
             (lookup-rest-type (rest-type backend))
