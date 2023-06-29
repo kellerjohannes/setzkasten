@@ -11,7 +11,9 @@
                                    :direction :input)
     (let ((score (eval (read encoding-stream))))
       (multiple-value-bind (simplified-score apparatus-string)
-          (extract-apparatus score extraction-arguments)
+          ;; this is legacy, should be removed after testing the new apparatus funcionality
+          ;; (extract-apparatus score extraction-arguments)
+          (extract-reading score extraction-arguments :diplomatic)
         (with-open-file (apparatus-stream (merge-pathnames *apparatus-export-path*
                                                            (pathname (format nil "app-~a-~a.txt"
                                                                              filename suffix)))
@@ -22,13 +24,18 @@
                   filename suffix apparatus-string))
         (create-score-file backend-instance simplified-score suffix)))))
 
+;; for external use, in case other programs want to operate on a score object
 (defun get-parsed-score (filename extraction-arguments)
   (with-open-file (encoding-stream (merge-pathnames *encoding-source*
                                                     (pathname (format nil "~a.lisp" filename)))
                                    :direction :input)
     (let ((score-expression (eval (with-standard-io-syntax
                                     (read encoding-stream)))))
-      (parse-score (extract-apparatus score-expression extraction-arguments)))))
+      (parse-score
+       ;; this is legacy, should be deleted after testing the new apparatus functionality
+       ;; (extract-apparatus score-expression extraction-arguments)
+       (extract-reading score-expression extraction-arguments :diplomatic)
+       ))))
 
 ;; looping over mission, entry point to everything
 (defun execute-mission (mission-list)
