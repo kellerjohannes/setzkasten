@@ -57,7 +57,9 @@
    (:music 2234
            (:voice v1)
            (:section s1) (:f-clef) max7 fclef7 b38 sbd2 b22 fl3 b22 sb3 b22 fl3 b22 sbd3 b22 sb3 b22 sbd3 b22 bl
-           (:section s2) b22 sbd3 b22 sh3 b22 sb3 b22 sb3 b22 sbd4 b22 bl
+           (:section s2) b22 sbd3 b22 sh3 b22 sb3 b22
+           ;; Von Bibelgruppe bestätigt
+           (:alt (:diplomatic sb3) (:idealised sb4)) b22 sbd4 b22 bl
            (:section s3) b22 sbd4 b22 fl5 b22 sb5 b22 fl5 b22 sbd5 b22 sb5 b22 sbd5 b22 bl
            (:section s4) (:newline) sbd5 b22 fl6 b38 sb6 b22 fl6 b22 sbd6 b22 sb6 b22 sbd6 bl
            )
@@ -86,7 +88,8 @@
            (:section s7) (:newline) b38 sbd8 b38 b22 fl9 b22 b38 sb9 b38 fl9 b22 sbd9 b38 sb9 b38 sbd9 b22 b22 bl
            )
    (:text 90 58
-     (59 nil "di.mi.dimi. di.mi.di.mi.")
+     ;; Von Bibelgruppe bestätigt
+     (:alt (:diplomatic (59 nil "di.mi.dimi. di.mi.di.mi.")) (:idealised (59 nil "di.mi.dimi. di.mi.")))
      (661 nil "di. ma. di. mi. d.imi. di. mi.")
      (1504 nil "di. ma. di. mi. di.mi. d.mi.")
      )

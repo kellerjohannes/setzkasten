@@ -63,7 +63,8 @@
            )
    (:text 70 58
      (55 nil "d.mi.d.mi.d.mi.d.ma.")
-     (593 nil "di.mi.di.mi.di.mi.di.mi.")
+     ;; Von Bibelgruppe bestätigt
+     (:alt (:diplomatic (593 nil "di.mi.di.mi.di.mi.di.mi.")) (:idealised (593 nil "di.mi.di.mi.di.mi.")))
      (1166 nil "d.mi.d.mi.d.mi.d.mi.")
      (1675 nil "d.mi.d.mi.di.mi.d.ma.")
      )
@@ -97,7 +98,8 @@
            (:section s7) (:newline) b38 sbd8 b38 sh8 b38 sb8 b38 fl9 b22 sb9 b22 fl9 b22 sbd9 b38 sbd9 b22 b22 bl
            )
    (:text 90 58
-     (100 nil "di.mi.di.mi.di.mi.di.mi.")
+     ;; Von Bibelgruppe bestätigt
+     (:alt (:diplomatic (100 nil "di.mi.di.mi.di.mi.di.mi.")) (:idealised (100 nil "di.mi.di.mi.di.mi.")))
      (791 nil "di.mi. di.mi. di.mi. di.ma.")
      (1566 nil "di.mi. di.mi. di.mi. di.ma.")
      )
@@ -137,14 +139,17 @@
    (:text 100 58
      (0 nil "d.mi.d.mi.d.ma.d. mi.")
      (559 nil "di.mi.d.mi.di.ma.d.mi.")
-     (1112 nil "d.mi.d.mi. d.mi.di.mi.")
-     (1653 nil "d.mi.di.mi.di.d.ma.d.mi.")
+     ;; Von Bibelgruppe bestätigt
+     (:alt (:diplomatic (1112 nil "d.mi.d.mi. d.mi.di.mi.")) (:idealised (1112 nil "d.mi.d.mi. d.mi.")))
+     ;; Von Bibelgruppe bestätigt
+     (:alt (:diplomatic (1653 nil "d.mi.di.mi.di.d.ma.d.mi.")) (:idealised (1653 nil "d.mi.di.mi.d.ma.d.mi.")))
      )
    (:text 120 58
      (91 nil "tono")
      (252 nil "ᴄro.")
      (412 nil "accid.")
-     (641 nil "sem.")
+     ;; Von Bibelgruppe bestätigt
+     (:alt (:diplomatic (641 nil "sem.")) (:idealised (641 nil "tono")))
      (809 nil "ᴄro.")
      (964 nil "acc.")
      (1125 nil "se.")
@@ -173,7 +178,8 @@
            )
    (:text 90 58
      (175 nil "d.mi. d.mi. d.mag. d.mi.")
-     (937 nil "d.mi. d.mi.d.mi.d.mi.")
+     ;; Von Bibelgruppe bestätigt
+     (:alt (:diplomatic (937 nil "d.mi. d.mi.d.mi.d.mi.")) (:idealised (937 nil "d.mi. d.mi.d.mi.")))
      (1521 nil "d.mi. d.mi. d.ma. d.mi.")
      )
    (:text 70 58

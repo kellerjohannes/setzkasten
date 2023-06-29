@@ -117,7 +117,8 @@
            )
    (:text 100 58
      (54 nil "d.mi.d.mi.d.mi.d.ma.")
-     (570 nil "d.mi.d.mi.d.mi.d.mi.")
+     ;; Von der Bibelgruppe bestätigt.
+     (:alt (:diplomatic (570 nil "d.mi.d.mi.d.mi.d.mi.")) (:idealised (570 nil "d.mi.d.mi.d.mi.")))
      (1050 nil "di.mi.di.mi.di.ma.d.mi.")
      (1659 nil "di.mi.d.mi.di.ma.d.mi.")
      )
@@ -137,7 +138,8 @@
            (:section s14) fl3 b22 sb3 b22 sh2 b22 sb2 b22 sbd2 b22 fl2 b22 sbd2 b22 fl2 b22 sb2 bl
            )
    (:text 90 58
-     (50 nil "d.mi.d.mi.d.mi.d.mi.")
+     ;; Von der Bibelgruppe bestätigt
+     (:alt (:diplomatic (50 nil "d.mi.d.mi.d.mi.d.mi.")) (:idealised (50 nil "d.mi.d.mi.d.mi.")))
      (596 nil "di.mi. di.mi. di.ma. di.mi.")
      )
    (:text 70 58

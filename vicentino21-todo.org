@@ -1,4 +1,5 @@
 #+title: Vicentino21: TODOs for the transcription of all musical examples
+#+startup: overview
 
 * Allgemein
 ** Typenimitation
@@ -293,6 +294,7 @@ wird? Z.B. in »Madonna«.
 *** TODO Normalisierung: Vorzeichensetzung bei Haltebögen
 Sollen Versetzungszeichen (inkl. Punkte) bei über Taktstriche
 gebundenen Noten wiederholt werden?
+*** TODO Korrekturen von Unregelmässigkeiten
 ** Beobachtungen, erfordert keine Eingriffe
 - [[file:encoding/b2-c23-m1.lisp::;; interessante Verwendung von 'nat']]
 - [[file:encoding/b3-c51-m1.lisp::;; Soll nur im Kommentar erscheinen, korrekte Lesart ist :diplomatic.]]
@@ -448,6 +450,8 @@ CLOSED: [2023-06-13 Tue 11:36]
 - [[file:encoding/b5-c49-m1.lisp::;; Ergänzung eines offensichtlich fehlenden Notenkopfs]]
 - [[file:encoding/b5-c49-m2.lisp::;; Enh. Punkt, zu bestätigen]]
 - [[file:encoding/b5-c49-m2.lisp::;; Ergänzter Notenkopf, offensichtliche Idealisierung]]
+**** TODO [#B] b5-c53
+- [[file:encoding/b5-c53-m2.lisp::;; Korrekturrunde JK, von Bibelgruppe zu bestätigen]]
 **** TODO [#B] b5-c54
 - [[file:encoding/b5-c54-m1.lisp::;; Enh. Punkt, zu bestätigen]]
 **** TODO [#B] b5-c59

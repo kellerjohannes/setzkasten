@@ -81,12 +81,17 @@
    (:music 2222
            (:section s5) (:f-clef) max7 fclef7 b22 fl6 b22 sb6 fl6 b22 sbd6 b22 sb6 sbd6 bl
            (:section s6) sbd6 b22 sh6 b22 sb6 sbd7 sh7 sb7 fl8 sb8 bl
-           (:section s7) (:newline) fl8 b22 sb8 b22 fl8 b22 sbd8 b22 sbd8 b22 sh8 b22 sb8 fl9 b22 sb9 bl
+           (:section s7) (:newline) fl8 b22 sb8 b22 fl8 b22 sbd8 b22 sbd8 b22 sh8 b22
+           ;; In gewissen Quellen gibt es hier einen enh. Punkt, was aber als Druckfehler
+           ;; behandelt wird und nicht in die Transkriptionen übernommen werden soll.
+           ;; Trotzdem ist ein Eintrag im krit. Bericht erwünscht.
+           (:alt (:diplomatic sb8) (:idealised sb8)) fl9 b22 sb9 bl
            (:section s8) fl9 sb9 b22 sbd8 b22 sb8 b22 fl8 b22 sbd8 b22 fl8 b22 sb8 bl
            )
    (:text 90 58
      ;; eine diesis streichen?
-     (0 nil "d.mi.d.mi.d.mi.d.mi.")
+     ;; Ja, von Bibelgruppe bestätigt.
+     (:alt (:diplomatic (0 nil "d.mi.d.mi.d.mi.d.mi.")) (:idealised (0 nil "d.mi.d.mi.d.mi.")))
      (521 nil "d.mi.d.ma.d.mi.d.mi.")
      (1045 nil "di.mi.di.ma.di.mi. di.mi.")
      (1680 nil "d.ma.di.mi.di.mi.d.mi.")
@@ -115,7 +120,8 @@
    (:text 100 58
      (75 nil "di.ma. di.mi.d.mi. d. mi.")
      ;; eine diese streichen?
-     (673 nil "di.mi.d.mi.d.mi.d.mi.")
+     ;; Ja, von Bibelgruppe bestätigt
+     (:alt (:diplomatic (673 nil "di.mi.d.mi.d.mi.d.mi.")) (:idealised (673 nil "di.mi.d.mi.d.mi.")))
      (1180 nil "d.ma.di.mi.d.mi.d.mi.")
      (1709 nil "d.ma.di.mi.di.mi.d.mi.")
      )
