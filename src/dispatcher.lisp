@@ -180,7 +180,7 @@
 (defparameter *debug*
   `(
     ;; ("b3-c26-m1" "v" (:idealised) ,*visual-score-backend*)
-    ("b3-c44-m1" "v" (:idealised) ,*visual-score-backend*)
+    ;; ("b3-c44-m1" "v" (:idealised) ,*visual-score-backend*)
     ;; ("b3-c51-m1" "v" (:idealised) ,*visual-score-backend*)
     ;; ("b3-c52-m1" "v" (:idealised) ,*visual-score-backend*)
     ;; ("b3-c53-m1" "v" (:idealised) ,*visual-score-backend*)
@@ -190,6 +190,7 @@
 
 (defparameter *working*
   `(
+    ("b5-c53-m2" "c" (:idealised :it) ,*lilypond-backend-modern*)
    ))
 
 (defparameter *book5-original*

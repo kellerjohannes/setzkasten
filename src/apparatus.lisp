@@ -58,3 +58,19 @@
         (*glyph-counter* 0)
         (*musical-element-counter* 0))
     (values (loop-data score extraction-arguments) *apparatus-string*)))
+
+'(:type-imitation-line 1
+  :type-imitation-glyph 15
+  :type-imitation-musical-element 7
+  :score-section s3
+  :score-voice v2
+  :score-mobject 7
+  :original (sh5 sb5)
+  :replacement (b38 b38)
+  :comment "")
+
+'(:type-imitation-line 2
+  :type-imitation-text-field 1
+  :score-text-element (:section-headings s2)
+  :
+  )
