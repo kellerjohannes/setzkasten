@@ -1015,6 +1015,14 @@
 ;;   (:rest smrest7 :semiminima)
 ;;   ))
 
+(defparameter *list-of-rests*
+  '(
+    lrest24 lrest46 lrest68
+    brrest2 brrest4 brrest6 brrest8
+    sbrest3 sbrest5 sbrest7 sbrest9
+    mrest1 mrest3 mrest5 mrest7
+    smrest1 smrest3 smrest5 smrest7
+    ))
 
 (defparameter *list-of-notes*
   '(
@@ -1036,6 +1044,11 @@
 (defparameter *list-of-duration-dots*
   '(dot0 dot2 dot4 dot6 dot8 dot10)
   "This is used in the function looking ahead to detect rhythmic dots. All glyphs used to represent rhythmic dots should be member of this list.")
+
+(defparameter *list-of-clefs*
+  '(cclef1 cclef3 cclef5 cclef7
+    fclef1 fclef3 fclef5 fclef7 fclef9
+    gclef3))
 
 (defparameter *f-clef-triggers*
   '(fclef1 fclef3 fclef5 fclef7 fclef9)

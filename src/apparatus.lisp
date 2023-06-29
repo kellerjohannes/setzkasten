@@ -1,9 +1,174 @@
 (in-package :setzkasten)
 
-;; TODO: to be completed and placed somewhere else, maybe together with glyph definitions
-(defparameter *musical-elements*
-  '(max7 fclef7 cclef7 sb3 sb4 sh4 sb6))
+(defclass apparatus-state ()
+  ((data :initform nil :accessor data)
+   (filename :initform nil :accessor filename)
+   (alternative-numbering :initform nil :accessor alternative-numbering)
+   (meta-comment :initform nil :accessor meta-comment)
+   (filter :initform nil :initarg :filter :accessor filter)
+   (reference-reading :initform nil :initarg :reference-reading :accessor reference-reading)
+   (in-header-p :initform nil :accessor in-header-p)
+   (line-counter :initform 0 :accessor line-counter)
+   (glyph-counter :initform 0 :accessor glyph-counter)
+   (musical-element-counter :initform 0 :accessor musical-element-counter)
+   (current-section :initform nil :accessor current-section)
+   (current-voice :initform nil :accessor current-voice)
+   (critical-comment :initform nil :accessor critical-comment)
+   (flag :initform nil :accessor flag)
+   (reference-content :initform nil :accessor reference-content)))
 
+(defun musical-element-p (item)
+  (or (member item *list-of-notes*)
+      (member item *list-of-rests*)
+      (member item *meter-signatures*)
+      (member item *list-of-clefs*)))
+
+(defmethod count-resolved-elements (expression (state apparatus-state))
+  (dolist (item expression expression)
+    (incf (glyph-counter state))
+    (when (musical-element-p) (incf (musical-element-counter state)))))
+
+
+(defmethod output-apparatus-entry (reading reading-tag state)
+  (list :music
+        :type-imitation-line (line-counter state)
+        :type-imitation-glyph (glyph-counter state)
+        :musical-element (musical-element-counter state)
+        :score-section (current-section state)
+        :score-voice (current-voice state)
+        :original (reference-content state)
+        :replacement (rest reading)
+        :reading reading-tag
+        :comment (critical-comment state)
+        :flag (flag state)))
+
+(defmethod loop-alt-expression (expression filter (state apparatus-state))
+  (unless (null filter)
+    (let ((candidate (find (first filter) expression :key #'first)))
+      (cond (candidate
+             (push (output-apparatus-entry candidate (first filter) state) (data state))
+             (reset-reading-state state)
+             (rest candidate))
+            (t (loop-alt-expression expression (rest filter) state))))))
+
+(defmethod find-reference-reading (expression (state apparatus-state))
+  (let ((reference (find (reference-reading state) (rest expression) :key #'first)))
+    (when reference
+      (setf (reference-content state) (rest reference)))))
+
+(defmethod find-comment (expression (state apparatus-state))
+  (let ((comment (find :comment (rest expression) :key #'first)))
+    (when comment
+      (setf (critical-comment state) (second comment)))))
+
+(defmethod find-flag (expression (state apparatus-state))
+  (let ((flag (find :flag (rest expression) :key #'first)))
+    (when flag
+      (setf (flag state) (second flag)))))
+
+(defmethod resolve-reading (expression (state apparatus-state))
+  (when (eq (first expression) :alt)
+    (find-comment expression state)
+    (find-reference-reading expression state)
+    (find-flag expression state)
+    (count-resolved-elements (loop-alt-expression (rest expression) (filter state) state) state)))
+
+(defmethod reset-reading-state ((state apparatus-state))
+  (setf (critical-comment state) nil)
+  (setf (flag state) nil)
+  (setf (reference-content state) nil))
+
+(defmethod reset-in-line-counters ((state apparatus-state))
+  (setf (glyph-counter state) 0
+        (musical-element-counter state) 0))
+
+(defmethod loop-score (rest-score (state apparatus-state))
+  (cond ((null rest-score) nil)
+        ((atom (first rest-score))
+         (incf (glyph-counter state))
+         (let ((item (first rest-score)))
+           (cond ((eq item :header) (setf (in-header-p state) t))
+                 ((eq item :data) (setf (in-header-p state) nil))
+                 ((eq item :filename) (setf (filename state) (second rest-score)))
+                 ((eq item :alt-name) (setf (alternative-numbering state) (second rest-score)))
+                 ((and (eq item :comment) (in-header-p state))
+                  (setf (meta-comment state) (second rest-score)))
+                 ((or (eq item :music) (eq item :text))
+                  (incf (line-counter state))
+                  (reset-in-line-counters state))
+                 ((eq item :section) (setf (current-section state) (second rest-score)))
+                 ((eq item :voice) (setf (current-voice state) (second rest-score)))
+                 ((musical-element-p item) (incf (musical-element-counter state))))
+           (cons item (loop-score (rest rest-score) state))))
+        ((eq (first (first rest-score)) :alt)
+         (append (resolve-reading (first rest-score) state)
+                 (loop-score (rest rest-score) state)))
+        (t (cons (loop-score (first rest-score) state)
+                 (loop-score (rest rest-score) state)))))
+
+(defmethod output-meta-data ((state apparatus-state))
+  (list (list :metadata
+              :filename (filename state)
+              :alternative-numbering (alternative-numbering state)
+              :comment (meta-comment state)
+              :reference-reading (reference-reading state))))
+
+(defmethod dump-apparatus-data ((state apparatus-state))
+  (append (output-meta-data state)
+          (data state)))
+
+(defun extract-reading (score extraction-arguments reference-reading)
+  (let ((state (make-instance 'apparatus-state
+                              :reference-reading reference-reading
+                              :filter extraction-arguments)))
+    (values (loop-score score state) (dump-apparatus-data state))))
+
+
+;; example for meta data
+'(:metadata
+  :filename "b5-c53-m2"
+  :alternative-numbering "m5.058"
+  :comment "q021_s256, rotation: 0.94, origin: 932"
+  :reference-reading :diplomatic)
+
+;; example for a note idealisation
+'(:music
+  :type-imitation-line 1
+  :type-imitation-glyph 15
+  :musical-element 7
+  :score-section s3
+  :score-voice v2
+  :original (sh5 sb5)
+  :replacement (b38 b38)
+  :reading :idealised
+  :comment "C♯ ist hier fragwürdig, wird entfernt."
+  :flag :suggestion-jk)
+
+;; example for a original text idealisation
+'(:type-imitation-text
+  :type-imitation-line 2
+  :type-imitation-text-field 1
+  :original "tono"
+  :replacement "sem.tono"
+  :reading :idealised
+  :comment "\"sem.\" ergänzt."
+  :flag :suggestion-jk)
+
+;; example for a normalised text idealisation (comment only)
+'(:normalised-text
+  :score-text-element (:section-headings s2)
+  :comment "Im Original fehlt hier \"semitono minore\"."
+  :flag :suggestion-jk)
+
+
+
+
+
+
+
+
+
+;; all these parameters are obsolete (see `apparatus-state')
 (defparameter *apparatus-string* nil)
 (defparameter *glyph-counter* nil)
 (defparameter *musical-element-counter* nil)
@@ -60,60 +225,6 @@
         (t (cons (loop-data (first restdata) filter)
                  (loop-data (rest restdata) filter)))))
 
-
-
-
-(defclass apparatus-state ()
-  ((data :initform nil :accessor data)
-   (filter :initform nil :initarg :filter :accessor filter)
-   (reference-reading :initform nil :initarg :reference-reading :accessor reference-reading)
-   (in-header-p :initform nil :accessor in-header-p)
-   (line-counter :initform 0 :accessor line-counter)
-   (glyph-counter :initform 0 :accessor glyph-counter)
-   (musical-element-counter :initform 0 :accessor musical-element-counter)
-   (current-section :initform nil :accessor current-section)
-   (current-voice :initform nil :accessor current-voice)
-   (mobject-counter :initform 0 :accessor mobject-counter)))
-
-(defmethod count-resolved-elements (expression (state apparatus-state))
-  (dolist (item expression expression)
-    (incf (glyph-counter state))
-    (when (member item *musical-elements*) (incf (musical-element-counter state)))))
-
-(defmethod loop-alt-expression (expression filter (state apparatus-state))
-  (unless (null filter)
-    (let ((candidate (find (first filter) expression :key #'first)))
-      (cond (candidate
-           ;; generate an apparatus entry here
-             (rest candidate))
-            (t (loop-alt-expression expression (rest filter) state))))))
-
-(defmethod resolve-reading (expression (state apparatus-state))
-  (when (eq (first expression) :alt)
-    (count-resolved-elements (loop-alt-expression (rest expression) (filter state) state) state)))
-
-(defmethod loop-score (rest-score (state apparatus-state))
-  (cond ((null rest-score) nil)
-        ((atom (first rest-score))
-         (let ((item (first rest-score)))
-           ;; all kinds of counter updates
-           (cons item (loop-score (rest rest-score) state))))
-        ((eq (first (first rest-score)) :alt)
-         (append (resolve-reading (first rest-score) state)
-                 (loop-score (rest rest-score) state)))
-        (t (cons (loop-score (first rest-score) state)
-                 (loop-score (rest rest-score) state)))))
-
-(defun extract-reading (score extraction-arguments reference-reading)
-  (let ((state (make-instance 'apparatus-state
-                              :reference-reading reference-reading
-                              :filter extraction-arguments)))
-    (values (loop-score score state) (data state))))
-
-
-
-
-
 ;; obsolete, only here for temporary legacy
 (defun extract-apparatus (score extraction-arguments)
   (let ((*apparatus-string* nil)
@@ -121,40 +232,3 @@
         (*glyph-counter* 0)
         (*musical-element-counter* 0))
     (values (loop-data score extraction-arguments) *apparatus-string*)))
-
-
-
-;; example for meta data
-'(:metadata
-  :filename "b5-c53-m2"
-  :alternative-numbering "m5.058"
-  :comment "q021_s256, rotation: 0.94, origin: 932")
-
-;; example for a note idealisation
-'(:music
-  :type-imitation-line 1
-  :type-imitation-glyph 15
-  :type-imitation-musical-element 7
-  :score-section s3
-  :score-voice v2
-  :original (sh5 sb5)
-  :replacement (b38 b38)
-  :reading :idealised
-  :comment "C♯ ist hier fragwürdig, wird entfernt."
-  :flag :suggestion-jk)
-
-;; example for a original text idealisation
-'(:type-imitation-text
-  :type-imitation-line 2
-  :type-imitation-text-field 1
-  :original "tono"
-  :replacement "sem.tono"
-  :reading :idealised
-  :comment "\"sem.\" ergänzt."
-  :flag :suggestion-jk)
-
-;; example for a normalised text idealisation (comment only)
-'(:normalised-text
-  :score-text-element (:section-headings s2)
-  :comment "Im Original fehlt hier \"semitono minore\"."
-  :flag :suggestion-jk)

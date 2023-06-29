@@ -20,7 +20,7 @@
                                           :direction :output
                                           :if-exists :supersede
                                           :if-does-not-exist :create)
-          (format apparatus-stream "Auto-generated critical apparatus for file ~a-~a:~%~%~a"
+          (format apparatus-stream "Auto-generated critical apparatus for file ~a-~a:~%~%~s"
                   filename suffix apparatus-string))
         (create-score-file backend-instance simplified-score suffix)))))
 
