@@ -689,7 +689,7 @@
 
 
 
-(defmethod generate-voice-ly-code ((voice voice) (backend lilypond-backend))
+(defmethod generate-voice-ly-code ((section section) (voice voice) (backend lilypond-backend))
   (let ((clef-state nil)
         (key-state nil)
         (meter-state nil))
@@ -701,6 +701,7 @@
 ~36,0t\\remove \"Rest_engraver\"
 ~36,0t\\consists \"Completion_rest_engraver\"}
 ~16,0t{
+~@[~a~]
 ~18,0t\\accidentalStyle Score.forget
 %~18,0t\\override Accidental.after-line-breaking = #'()
 ~18,0t\\override Rest.style = #'~a
@@ -712,6 +713,8 @@
 ~@[~a~]
 ~14,0t}"
             (label voice)
+            (format nil "~18,0t\\sectionLabel \\markup { \\ellipse \\fontsize #-8 \"~a\" }"
+                    (extract-number (id section)))
             (lookup-rest-type (rest-type backend))
             (lookup-notehead-type (notehead-type backend))
             (unless (timep backend)
@@ -824,7 +827,7 @@
                               (when (lyrics (first (voices section)))
                                 (format nil "~12,0t\\new ChoirStaff"))
                               (mapcar (lambda (voice)
-                                        (generate-voice-ly-code voice backend))
+                                        (generate-voice-ly-code section voice backend))
                                       (voices section))
                               (when (bracket section) 0)
                               shortest-duration
@@ -945,7 +948,7 @@ dot = {
                (when (lyrics (first (voices section)))
                  (format nil "~2,0t\\new ChoirStaff"))
                (mapcar (lambda (voice)
-                         (generate-voice-ly-code voice backend))
+                         (generate-voice-ly-code section voice backend))
                        (voices section)))))))
 
 

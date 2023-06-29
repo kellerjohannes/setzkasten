@@ -11,6 +11,8 @@
 (defun make-keyword (name)
   (values (intern (string-upcase name) "KEYWORD")))
 
+(defun extract-number (symbol)
+  (parse-integer (remove-if-not #'digit-char-p (symbol-name symbol)) :junk-allowed t))
 
 ;; string processing
 
