@@ -13,6 +13,12 @@
    (musical-element-counter :initform 0 :accessor musical-element-counter)
    (current-section :initform nil :accessor current-section)
    (current-voice :initform nil :accessor current-voice)
+   (text-field :initform 0 :accessor text-field)
+   (in-text-line-p :initform nil :accessor in-text-line-p)
+   (score-text-type :initform nil :accessor score-text-type)
+   (score-text-section :initform nil :accessor score-text-section)
+   (score-text-voice :initform nil :accessor score-text-voice)
+   (score-line-heading-counter :initform nil :accessor score-line-heading-counter)
    (critical-comment :initform nil :accessor critical-comment)
    (flag :initform nil :accessor flag)
    (reference-content :initform nil :accessor reference-content)))
@@ -80,7 +86,14 @@
 
 (defmethod reset-in-line-counters ((state apparatus-state))
   (setf (glyph-counter state) 0
-        (musical-element-counter state) 0))
+        (musical-element-counter state) 0
+        (text-field state) 0))
+
+(defmethod reset-text-type-data ((state apparatus-state))
+  (setf (score-text-type state) nil
+        (score-text-section state) nil
+        (score-text-voice state) nil
+        (score-line-heading-counter state) 0))
 
 (defmethod loop-score (rest-score (state apparatus-state))
   (cond ((null rest-score) nil)
@@ -88,14 +101,39 @@
          (incf (glyph-counter state))
          (let ((item (first rest-score)))
            (cond ((eq item :header) (setf (in-header-p state) t))
+                 ((in-header-p state)
+                  (case item
+                    (:title (setf (score-text-type state) :title))
+                    (:line-headings
+                     (reset-text-type-data state)
+                     (setf (score-text-type state) :line-heading))
+                    (:section-headings
+                     (reset-text-type-data state)
+                     (setf (score-text-type state) :section-heading))
+                    (:section-captions
+                     (reset-text-type-data state)
+                     (setf (score-text-type state) :section-caption))
+                    (:voice-labels
+                     (reset-text-type-data state)
+                     (setf (score-text-type state) :voice-label))
+                    (:lyrics
+                     (reset-text-type-data state)
+                     (setf (score-text-type state) :lyrics))))
                  ((eq item :data) (setf (in-header-p state) nil))
                  ((eq item :filename) (setf (filename state) (second rest-score)))
                  ((eq item :alt-name) (setf (alternative-numbering state) (second rest-score)))
                  ((and (eq item :comment) (in-header-p state))
                   (setf (meta-comment state) (second rest-score)))
-                 ((or (eq item :music) (eq item :text))
+                 ((eq item :music)
                   (incf (line-counter state))
-                  (reset-in-line-counters state))
+                  (reset-in-line-counters state)
+                  (setf (in-text-line-p state) nil))
+                 ((eq item :text)
+                  (incf (line-counter state))
+                  (reset-in-line-counters state)
+                  (setf (in-text-line-p state) t))
+                 ((in-text-line-p state)
+                  (incf (text-field state)))
                  ((eq item :section) (setf (current-section state) (second rest-score)))
                  ((eq item :voice) (setf (current-voice state) (second rest-score)))
                  ((musical-element-p item) (incf (musical-element-counter state))))
@@ -156,7 +194,7 @@
 
 ;; example for a normalised text idealisation (comment only)
 '(:normalised-text
-  :score-text-element (:section-headings s2)
+  :score-text-type (:section-headings s2)
   :comment "Im Original fehlt hier \"semitono minore\"."
   :flag :suggestion-jk)
 
