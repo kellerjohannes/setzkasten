@@ -3,8 +3,9 @@
    (:alt-name "m3.085")
    (:comment "q021_s120, origin: 936")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del terzo modo, cromatico"))
-
+   (:title (:alt (:it "Esempio del terzo modo, cromatico")
+                 (:de "")
+                 (:en ""))))
   (:data
    (:text 110 58
           (504 974 "Eßempio del ᴛerzo modo ᴄromatico."))

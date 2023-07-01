@@ -3,12 +3,19 @@
    (:alt-name "m3.078")
    (:comment "q021_s118, origin: 935")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio delle tre quarte cromatiche")
+   (:title (:alt (:it "Esempio delle tre quarte cromatiche")
+                 (:de "")
+                 (:en "")))
    (:section-captions
-    (s1 "Prima quarta")
-    (s2 "Seconda quarta")
-    (s3 "Terza quarta")))
-
+    (s1 (:alt (:it "Prima quarta")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "Seconda quarta")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "Terza quarta")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 70 58
      (446 978 "Eſſempio delle tre quarte ᴄromatiche."))

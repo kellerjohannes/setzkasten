@@ -3,8 +3,9 @@
    (:alt-name "m3.089")
    (:comment "q021_s121, origin: 467")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del settimo modo cromatico"))
-
+   (:title (:alt (:it "Esempio del settimo modo cromatico")
+                 (:de "")
+                 (:en ""))))
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")))

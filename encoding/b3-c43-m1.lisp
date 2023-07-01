@@ -4,12 +4,18 @@
    (:comment "q021_s122, rotation: 0, origin: 962")
    (:creator "Vicentino21 / Johannes Keller")
    (:voice-labels
-    (s1 v1 "Cadentie cromatiche")
-    (s1 v2 "Cadentie cromatiche")
-    (s1 v3 "Cadentie cromatiche")
-    (s1 v4 "Cadentie cromatiche")
-    ))
-
+    (s1 v1 (:alt (:it "Cadentie cromatiche")
+                 (:de "")
+                 (:en "")))
+    (s1 v2 (:alt (:it "Cadentie cromatiche")
+                 (:de "")
+                 (:en "")))
+    (s1 v3 (:alt (:it "Cadentie cromatiche")
+                 (:de "")
+                 (:en "")))
+    (s1 v4 (:alt (:it "Cadentie cromatiche")
+                 (:de "")
+                 (:en "")))))
   (:data
    (:text 90 58
      (799 nil "ᴄadentie ᴄromatiche."))
@@ -31,8 +37,10 @@
            (:section s4) sb6 b22 sb3 b22 m6 b22 m4 b38 bl
            (:section s5) b38 sb5 b38 sb5 b22 sb3 bl
            (:section s6) br7 b22 sb7 sh5
-           ;; Rhythmischer Eingriff, zu bestätigen, aber ziemlich offensichtlich
-           (:alt (:diplomatic mrest3) (:idealised b22)) br5 b22 bl)
+           (:alt (:diplomatic mrest3) (:idealised b22)
+                 (:comment "Original: Minima-Pause zwischen ♯-Zeichen und Brevis-Notenkopf.")
+                 (:flag :draft) (:id 1))
+           br5 b22 bl)
    (:text 90 58
      (811 nil "ᴄadentie ᴄromatiche."))
    (:music 2241

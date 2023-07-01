@@ -3,13 +3,22 @@
    (:alt-name "m3.081")
    (:comment "q021_s118, origin: 959")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio delle quattro quinte cromatiche,\\che segueno una dopo l'altra")
+   (:title (:alt (:it "Esempio delle quattro quinte cromatiche,\\che segueno una dopo l'altra")
+                 (:de "")
+                 (:en "")))
    (:section-captions
-    (s1 "Prima quinta\\cromatica")
-    (s2 "Seconda quinta\\cromatica")
-    (s3 "Terza quinta\\cromatica")
-    (s4 "Quarta quinta\\cromatica")))
-
+    (s1 (:alt (:it "Prima quinta\\cromatica")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "Seconda quinta\\cromatica")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "Terza quinta\\cromatica")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "Quarta quinta\\cromatica")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 110 58
           (191 1767 "Eſſempio delle quattro quinte ᴄromatiche : che ſegueno una doppo lʼaltra."))

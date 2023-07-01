@@ -4,9 +4,12 @@
    (:comment "q021_s118, origin: 1689")
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
-    (s1 "Prima quinta\\diatonica")
-    (s2 "Prima quinta\\cromatica")))
-
+    (s1 (:alt (:it "Prima quinta\\diatonica")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "Prima quinta\\cromatica")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 70 58
      (102 nil "Prima quinta ᴅiatonica.")

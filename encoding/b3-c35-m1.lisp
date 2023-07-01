@@ -4,12 +4,24 @@
    (:comment "q021_s116, rotation: 0, origin: 899")
    (:creator "Vicentino21 / Johannes Keller")
    (:voice-labels
-    (s1 v4 "Quinta parte")
-    (s2 v4 "Buona")
-    (s3 v1 "Dubbiosa")
-    (s3 v4 "Non buona")
-    (s4 v4 "Ottava falsa col soprano")
-    (s7 v3 "Dubbiosa col soprano"))
+    (s1 v4 (:alt (:it "Quinta parte")
+                 (:de "")
+                 (:en "")))
+    (s2 v4 (:alt (:it "Buona")
+                 (:de "")
+                 (:en "")))
+    (s3 v1 (:alt (:it "Dubbiosa")
+                 (:de "")
+                 (:en "")))
+    (s3 v4 (:alt (:it "Non buona")
+                 (:de "")
+                 (:en "")))
+    (s4 v4 (:alt (:it "Ottava falsa col soprano")
+                 (:de "")
+                 (:en "")))
+    (s7 v3 (:alt (:it "Dubbiosa col soprano")
+                 (:de "")
+                 (:en ""))))
    (:voice-order
     (s1 v1 v2 v3 v4 v5)
     (s2 v1 v2 v3 v4 v5)
@@ -20,7 +32,6 @@
     (s7 v1 v2 v3 v4 v5)
     (s8 v1 v2 v3 v4 v5)
     (s9 v1 v2 v3 v4 v5)))
-
   (:data
    (:music 2305
            (:voice v1)

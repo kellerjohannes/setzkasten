@@ -3,13 +3,22 @@
    (:alt-name "m3.073")
    (:comment "q021_s115, rotation: 0, origin: 455")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title  "Esempio delle cadentie minori, e delle cadentie minime")
+   (:title  (:alt (:it "Esempio delle cadentie minori, e delle cadentie minime")
+                  (:de "")
+                  (:en "")))
    (:voice-labels
-    (s1 v1 "[Soprano]")
-    (s1 v2 "Contr'alto")
-    (s1 v3 "Tenore")
-    (s1 v4 "Basso")))
-
+    (s1 v1 (:alt (:it "[Soprano]")
+                 (:de "")
+                 (:en "")))
+    (s1 v2 (:alt (:it "Contr'alto")
+                 (:de "")
+                 (:en "")))
+    (s1 v3 (:alt (:it "Tenore")
+                 (:de "")
+                 (:en "")))
+    (s1 v4 (:alt (:it "Basso")
+                 (:de "")
+                 (:en "")))))
   (:data
    (:text 90 58
      (179 769 "Eſſempio delle ᴄadentie minori.")
@@ -17,8 +26,10 @@
    (:music 2233
            (:voice v1)
            (:section s1) cclef1 b38
-           ;; Kosmetische Idealisierung: Pausenplatzierung
-           (:alt (:diplomatic mrest7) (:idealised mrest5)) sb5 b22 m4 b22 sb5 b38 bl
+           (:alt (:diplomatic mrest7) (:idealised mrest5)
+                 (:comment "Original: Minima-Pause steht eine Position höher.")
+                 (:flag :draft) (:id 1))
+           sb5 b22 m4 b22 sb5 b38 bl
            (:section s2) m8 b22 m6 dot6 cr5d b22 cr6 sh5 m5d b22 sb6 bl
            (:section s3) (:newline) b38 m5d b22 sm6 b22 m8 cr7 cr6 m7 sb8 bl
            (:section s4) b22 b22 sm5d b22 m8 b22 b22 sm7 b22 sb8 b22 b22 bl
@@ -39,8 +50,10 @@
            (:section s1) cclef7 b38 sb6 b38 sb5 b38 sb4 b38 b22 bl
            (:section s2) b22 b38 m5 b38 m7 b38 sb6 b38 sb5 b22 b22 bl
            (:section s3) b38
-           ;; Kosmetische Idealisierung: Pausenplatzierung
-           (:alt (:diplomatic mrest7) (:idealised smrest7)) m7 b38 sm9 b38 sb8 b38 sb7 b38 b22 bl
+           (:alt (:diplomatic mrest7) (:idealised smrest7)
+                 (:comment "Original: Die Pause hat den Wert einer Minima.")
+                 (:flag :draft) (:id 2))
+           m7 b38 sm9 b38 sb8 b38 sb7 b38 b22 bl
            (:section s4) b22 b38 m4 b38 b22 m8 b38 b22 sb4 b22 b22 bl
            (:section s5) b22 sm7 b38 sm9 b38 m8 b38 sb7 b38 bl)
    (:text 110 58

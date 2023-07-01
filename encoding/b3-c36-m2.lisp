@@ -4,9 +4,12 @@
    (:comment "q021_s117, origin: 1509")
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
-    (s1 "Seconda quarta\\diatonica")
-    (s2 "Seconda quarta\\cromatica")))
-
+    (s1 (:alt (:it "Seconda quarta\\diatonica")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "Seconda quarta\\cromatica")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 70 58
      (176 nil "Seconda quarta.")
