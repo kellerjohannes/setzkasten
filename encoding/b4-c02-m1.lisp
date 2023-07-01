@@ -1,5 +1,5 @@
 `((:header
-   (:filename "b4-c2-m1")
+   (:filename "b4-c02-m1")
    (:alt-name "m4.001")
    (:comment "q021_s, rotation: 1.77, origin: 516. Für dieses Beispiel wird keine normalisierte Version angeboten.")
    (:creator "Vicentino21 / Johannes Keller")

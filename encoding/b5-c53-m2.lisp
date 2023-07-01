@@ -7,7 +7,7 @@
                  (:de "Regel ...")
                  (:en "Rule ...")
                  (:comment "Eingriff im Titel, betrifft alle Sprachen.")
-                 (:flag :testing)))
+                 (:flag :testing) (:id 3)))
    (:section-headings
     (s1 "Prima ottava")
     (s2 "Seconda ottava")
@@ -16,7 +16,7 @@
               (:de "Vierte /ottava/")
               (:en "Fourth /ottava/")
               (:comment "Eingriff in der Überschrift des vierten Beispiels.")
-              (:flag :testing)))
+              (:flag :testing) (:id 4)))
     (s5 "Quinta ottava")
     (s6 (:alt (:it "Sesta ottava")
               (:de "Sechste /ottava/")
@@ -40,13 +40,16 @@
            )
    (:text 70 58
      (223 nil "ottaua.")
-     (761 nil (:alt (:diplomatic "Ɋuarta ottaua.") (:idealised "[testing]") (:comment "Originaler Text wird ersetzt.") (:flag :testing)))
+     (761 nil (:alt (:diplomatic "Ɋuarta ottaua.") (:idealised "[testing]") (:comment "Originaler Text wird ersetzt.") (:flag :testing) (:id 5)))
      (1623 nil "Quinta ottaua.")
      )
    (:music 2227
            (:f-clef) max7 fclef7 b38 sh7 sb7 sh8 sb8 sh9 sb9
            ;; Korrekturrunde JK, von Bibelgruppe zu bestätigen
-           (:alt (:diplomatic sh10) (:idealised b38) (:comment "Notwendiger Eingriff, um dieser /ottava/ eine konsistente Form zu geben.") (:flag :suggestion-jk)) b22 sb10 b22 bl
+           (:alt (:diplomatic sh10) (:idealised b38)
+                 (:comment "Notwendiger Eingriff, um dieser _ottava_ eine konsistente Form zu geben.")
+                 (:flag :suggestion) (:id 1))
+           b22 sb10 b22 bl
            (:section s4) (:newline) b22 sb3 b22 sh4 b22 sb4 b22 sb5 b22 sb6 b22 sh7 b22 sb7 b22 sh8 b22 sb8 b22 sb9 b22 sb10 b22 bl
            (:section s5) b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sh7 b22 sb7 b22 sb8 b22 sb9 b22 sb10 b22 bl
            )
@@ -55,6 +58,10 @@
      (1522 nil "Settima ottaua.")
      )
    (:music 2232
-           (:section s6) (:f-clef) max7 fclef7 (:alt (:diplomatic b38) (:idealised b22 sb3 sh4) (:comment "Notwendiger Eingriff, um dieser /ottava/ eine konsistente Form zu geben.") (:flag :suggestion-jk)) sb4 b22 sh5 b22 sb5 b22 sh6 b22 sb6 b22 sh7 b22 sb7 b22 sh8 b22 sb8 b22 sh9 b22 sb9 b22 sb10 b38 bl
+           (:section s6) (:f-clef) max7 fclef7
+           (:alt (:diplomatic b38) (:idealised b22 sb3 sh4)
+                 (:comment "Notwendiger Eingriff, um dieser _ottava_ eine konsistente Form zu geben.")
+                 (:flag :suggestion) (:id 2))
+           sb4 b22 sh5 b22 sb5 b22 sh6 b22 sb6 b22 sh7 b22 sb7 b22 sh8 b22 sb8 b22 sh9 b22 sb9 b22 sb10 b38 bl
            (:section s7) (:newline) b38 sb3 b22 sh4 b22 sb4 b22 sh5 b22 sb5 b22 sb6 b22 sh7 b22 sb7 b22 sh8 b22 sb8 b22 sb9 b22 sb10 b38 bl b38 b125)
    ))

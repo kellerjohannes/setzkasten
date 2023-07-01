@@ -32,7 +32,10 @@
            (:section s5)
            ;; Idealisierung Notentext, weil sonst eine Redundanz zum übernächsten Takt entsteht
            (:alt (:diplomatic sb5 b22 sh4 b22 sb4)
-                 (:idealised sb5 b22 fl6 b22 sb6)) bl
+                 (:idealised sb5 b22 fl6 b22 sb6)
+                 (:comment "Vermeidung von Redundanz zum übernächsten Notenbeispiel.")
+                 (:flag :confirmed))
+           bl
            (:section s6)
            (:newline)
            b22 sb7 b22 fl6 b22 sb6 bl
@@ -55,7 +58,9 @@
    (:text 70 58
           ;; Eingriff Text, zu bestätigen, Achtung: Normalisierung prüfen, siehe oben!
           (44 nil (:alt (:diplomatic "tono cro.")
-                        (:idealised "ſe.tono cro.")))
+                        (:idealised "ſe.tono cro.")
+                        (:comment "Falscher Intervallname im Original.")
+                        (:flag :tbc)))
           (316 nil "to. crom.")
           (550 nil "ſem.cro.")
           (750 nil "ſem. cro.")
