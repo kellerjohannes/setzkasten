@@ -10,7 +10,10 @@
                (:file "score-class")
                (:file "score-parser"
                 :depends-on ("score-class"))
-               (:file "apparatus")
+               (:file "apparatus"
+                :depends-on ("score-parser"))
+               (:file "apparatus-tex-backend"
+                :depends-on ("apparatus"))
                (:file "class-definitions"
                 :depends-on ("macros" "setzkasten"))
                (:file "casting"

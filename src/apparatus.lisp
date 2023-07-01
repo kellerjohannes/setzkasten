@@ -13,6 +13,7 @@
    (musical-element-counter :initform 0 :accessor musical-element-counter)
    (current-section :initform nil :accessor current-section)
    (current-voice :initform nil :accessor current-voice)
+   (current-id :initform nil :accessor current-id)
    (text-field :initform 1 :accessor text-field)
    (in-text-line-p :initform nil :accessor in-text-line-p)
    (score-text-type :initform nil :accessor score-text-type)
@@ -32,10 +33,11 @@
 (defmethod count-resolved-elements (expression (state apparatus-state))
   (dolist (item expression expression)
     (incf (glyph-counter state))
-    (when (musical-element-p) (incf (musical-element-counter state)))))
+    (when (musical-element-p expression) (incf (musical-element-counter state)))))
 
 (defmethod output-music-entry (reading reading-tag (state apparatus-state))
   (list :music
+        :id (current-id state)
         :type-imitation-line (line-counter state)
         :type-imitation-glyph (glyph-counter state)
         :musical-element (musical-element-counter state)
@@ -49,6 +51,7 @@
 
 (defmethod output-text-entry (reading reading-tag (state apparatus-state))
   (list :type-imitation-text
+        :id (current-id state)
         :type-imitation-line (line-counter state)
         :type-imitation-text-field (text-field state)
         :original (reference-content state)
@@ -59,6 +62,7 @@
 
 (defmethod output-score-text-entry (reading reading-tag (state apparatus-state))
   (list :normalised-text
+        :id (current-id state)
         :score-text-location (list (score-text-type state)
                                    (unless (eq (score-text-type state) :title)
                                      (score-text-section state))
@@ -69,11 +73,13 @@
         :flag (flag state)))
 
 (defmethod output-apparatus-entry (reading reading-tag (state apparatus-state))
-  (if (in-header-p state)
-      (output-score-text-entry reading reading-tag state)
-      (if (in-text-line-p state)
-          (output-text-entry reading reading-tag state)
-          (output-music-entry reading reading-tag state))))
+  (prog1
+      (if (in-header-p state)
+          (output-score-text-entry reading reading-tag state)
+          (if (in-text-line-p state)
+              (output-text-entry reading reading-tag state)
+              (output-music-entry reading reading-tag state)))
+    (setf (current-id state) nil)))
 
 (defmethod loop-alt-expression (expression filter (state apparatus-state))
   (unless (null filter)
@@ -95,6 +101,11 @@
     (when comment
       (setf (critical-comment state) (second comment)))))
 
+(defmethod find-id (expression (state apparatus-state))
+  (let ((id (find :id (rest expression) :key #'first)))
+    (when id
+      (setf (current-id state) (second id)))))
+
 (defmethod find-flag (expression (state apparatus-state))
   (let ((flag (find :flag (rest expression) :key #'first)))
     (when flag
@@ -103,6 +114,7 @@
 (defmethod resolve-reading (expression (state apparatus-state))
   (when (eq (first expression) :alt)
     (find-comment expression state)
+    (find-id expression state)
     (find-reference-reading expression state)
     (find-flag expression state)
     (count-resolved-elements (loop-alt-expression (rest expression) (filter state) state) state)))

@@ -28,7 +28,11 @@
    (notehead-type :initform :standard
                   :initarg :notehead-type
                   :accessor notehead-type
-                  :documentation "Values can be :standard or :petrucci.")))
+                  :documentation "Values can be :standard or :petrucci.")
+   (section-numbering :initform :multiple-sections-only
+                        :initarg :section-numbering
+                        :accessor section-numbering
+                      :documentation "Sets the condition for section numbering (as \\sectionLabel). nil suppresses numbering, `:multiples-only' activates numbering in case there are more than 1 sections in a score, `:always' numbers in any case.")))
 
 (defmethod set-clef-type ((backend lilypond-backend) new-clef-type)
   (setf (clef-type backend) new-clef-type))
@@ -689,7 +693,7 @@
 
 
 
-(defmethod generate-voice-ly-code ((section section) (voice voice) (backend lilypond-backend))
+(defmethod generate-voice-ly-code ((score score) (section section) (voice voice) (backend lilypond-backend))
   (let ((clef-state nil)
         (key-state nil)
         (meter-state nil))
@@ -713,9 +717,11 @@
 ~@[~a~]
 ~14,0t}"
             (label voice)
-            ;; disable for non-numbered sections
-            (format nil "~18,0t\\sectionLabel \\markup { \\ellipse \\fontsize #-8 \"~a\" }"
-                    (extract-number (id section)))
+            (when (section-numbering backend)
+              (unless (and (eq (section-numbering backend) :multiple-sections-only)
+                           (= (length (sections score)) 1))
+                (format nil "~18,0t\\sectionLabel \\markup { \\ellipse \\fontsize #-8 \"~a\" }"
+                        (extract-number (id section)))))
             (lookup-rest-type (rest-type backend))
             (lookup-notehead-type (notehead-type backend))
             (unless (timep backend)
@@ -790,7 +796,7 @@
           (fifth bracket-data)
           (sixth bracket-data)))
 
-(defmethod generate-section-ly-code ((section section) (backend lilypond-backend) shortest-duration)
+(defmethod generate-section-ly-code ((score score) (section section) (backend lilypond-backend) shortest-duration)
   "`shortest-duration' in Lilypond note value (1/2 for minima)."
   (let ((section-code (format nil "~
 ~6,0t\\center-column {
@@ -828,7 +834,7 @@
                               (when (lyrics (first (voices section)))
                                 (format nil "~12,0t\\new ChoirStaff"))
                               (mapcar (lambda (voice)
-                                        (generate-voice-ly-code section voice backend))
+                                        (generate-voice-ly-code score section voice backend))
                                       (voices section))
                               (when (bracket section) 0)
                               shortest-duration
@@ -900,7 +906,8 @@ dot = {
              (when (line-heading (first (sections score)))
                (generate-multiline-line-heading (line-heading (first (sections score)))))
              (mapcar (lambda (section)
-                       (generate-section-ly-code section
+                       (generate-section-ly-code score
+                                                 section
                                                  backend
                                                  (find-shortest-duration score)))
                      (sections score))))
@@ -949,7 +956,7 @@ dot = {
                (when (lyrics (first (voices section)))
                  (format nil "~2,0t\\new ChoirStaff"))
                (mapcar (lambda (voice)
-                         (generate-voice-ly-code section voice backend))
+                         (generate-voice-ly-code score section voice backend))
                        (voices section)))))))
 
 

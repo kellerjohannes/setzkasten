@@ -22,8 +22,10 @@
 
 (defparameter *svg-export-path*
   (pathname "~/common-lisp/setzkasten-output/svg/"))
-(defparameter *apparatus-export-path*
-  (pathname "~/common-lisp/setzkasten-output/apparatus/"))
+(defparameter *apparatus-export-path-raw*
+  (pathname "~/common-lisp/setzkasten-output/apparatus/raw/"))
+(defparameter *apparatus-export-path-tex*
+  (pathname "~/common-lisp/setzkasten-output/apparatus/tex/"))
 (defparameter *encoding-source*
   (pathname "~/common-lisp/setzkasten/encoding/"))
 (defparameter *log-file-path*

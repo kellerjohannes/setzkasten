@@ -14,7 +14,13 @@
 (defun extract-number (symbol)
   (parse-integer (remove-if-not #'digit-char-p (symbol-name symbol)) :junk-allowed t))
 
-;; string processing
+(defun eq-last-char-in-string (str cha)
+  (char= cha (aref str (1- (length str)))))
+
+(defun prettify-keyword (keyword)
+  (string-downcase (format nil "~s" keyword)))
+
+;; string processing in lilypond context
 
 (defparameter *bold-trigger* "*")
 (defparameter *italics-trigger* "_")
@@ -99,9 +105,59 @@
       (string-split-loop (split-formatted-string text-string) split-string)
       (string-split-loop text-string split-string)))
 
+;; string processing in latex context
+
+(defparameter *latex-text-replacements*
+  '(("&" . "\\&")
+    ("_" . "\\_")))
+
+(defun replace-substring (new old source &optional (start-position 0))
+  (let ((occurrence (search old source :start2 start-position)))
+    (if occurrence
+        (replace-substring new old (concatenate 'string
+                                                (subseq source 0 occurrence)
+                                                new
+                                                (subseq source (+ occurrence (length old))))
+                           (+ occurrence (length new)))
+        source)))
+
+(defun make-string-latex-friendly (str)
+  (let ((result str))
+    (dolist (candidate *latex-text-replacements* result)
+      (setf result (replace-substring (cdr candidate) (car candidate) result)))))
+
+(defparameter *latex-format-triggers*
+  '(("_" . "\\emph{")
+    ("*" . "\\textbf{")))
+
+;; TODO: this is not ideal, because it only replaces the triggers literally, without checking
+;; whether they are attached to words or within words.
+(defun replace-formatting (str trigger command &optional (start-position 0))
+  (let ((occurrence-1 (search trigger str :start2 start-position)))
+    (if occurrence-1
+        (let ((occurrence-2 (search trigger str :start2 (1+ occurrence-1))))
+          (if occurrence-2
+              (replace-italics
+               (concatenate 'string
+                            (subseq str 0 occurrence-1)
+                            command
+                            (subseq str (+ occurrence-1 (length *italics-trigger*)) occurrence-2)
+                            "}"
+                            (subseq str (+ occurrence-2 (length *italics-trigger*))))
+               trigger command occurrence-2)
+              str))
+        str)))
+
+(defun generate-latex-formatting (str)
+  (let ((result str))
+    (dolist (candidate *latex-format-triggers* result)
+      (setf result (replace-formatting result (car candidate) (cdr candidate))))))
+
+(defun print-naked-list (lst)
+  (let ((str (string-downcase (format nil "~a" lst))))
+    (subseq str 1 (1- (length str)))))
 
 ;; to be used on score encoding expressions
-
 (defun extract-item (category sub-category data)
   "Returns the contents of a sub-category of a category in the list describing a score. The content is always presented as a list, whether it is a single value or a list of values."
   (rest (find sub-category (rest (find category data :key #'first)) :key #'first)))
