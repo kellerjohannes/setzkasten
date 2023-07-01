@@ -1,17 +1,22 @@
 `((:header
    (:filename "b1-c11-m1")
    (:alt-name "m1.018")
-   (:comment "")
+   (:comment "q021_s031, origin: 1161")
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
-    (s1 "tono diviso in 4 parti\\ascendenti")
-    (s2 "tono diviso in 4 parti\\ascendenti"))
+    (s1 (:alt (:it "tono diviso in 4 parti\\ascendenti")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "tono diviso in 4 parti\\ascendenti")
+              (:de "")
+              (:en ""))))
    (:section-captions
-    (s1 "per ♮: ut-re-mi-fa-re")
-    (s2 "per ♭: re-mi-fa-re-mi"))
-   (:voice-labels
-    (:all v1 "")))
-
+    (s1 (:alt (:it "per ♮: ut-re-mi-fa-re")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "per ♭: re-mi-fa-re-mi")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 90 58
           (54 720 "ᴛono diuiſo in 4. parti aſcend.")

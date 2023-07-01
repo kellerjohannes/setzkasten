@@ -1,24 +1,36 @@
 `((:header
    (:filename "b1-c16-m1")
    (:alt-name "m1.024")
-   (:comment "")
+   (:comment "q021_s035, origin: 403")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Essempio delli gradi, delli diesis maggiori enarmonici, ascendenti e discendenti")
-   (:section-headings
-    (s1 ""))
+   (:title (:alt (:it "Essempio delli gradi, delli diesis maggiori enarmonici, ascendenti e discendenti")
+                 (:de "")
+                 (:en "")))
    (:section-captions
-    (s1 "diesis\\maggiore")
-    (s2 "diesis\\maggiore")
-    (s3 "diesis\\maggiore")
-    (s4 "diesis\\maggiore")
-    (s5 "diesis\\maggiore")
-    (s6 "diesis\\maggiore")
-    (s7 "diesis\\maggiore")
-    (s8 "diesis\\maggiore"))
-   (:voice-labels
-    (:all v1 "")))
-
-  ;; m1.24
+    (s1 (:alt (:it "diesis\\maggiore")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "diesis\\maggiore")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "diesis\\maggiore")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "diesis\\maggiore")
+              (:de "")
+              (:en "")))
+    (s5 (:alt (:it "diesis\\maggiore")
+              (:de "")
+              (:en "")))
+    (s6 (:alt (:it "diesis\\maggiore")
+              (:de "")
+              (:en "")))
+    (s7 (:alt (:it "diesis\\maggiore")
+              (:de "")
+              (:en "")))
+    (s8 (:alt (:it "diesis\\maggiore")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 90 58
          (166 1861 "ᴇſſempio delli gradi,delli ᴅieſis maggiori ᴇnarmonici,aſcendenti & diſcendenti."))
@@ -38,10 +50,13 @@
           b38 fl8 b38 sb8 b27 sbd7 bl
            (:section s7)
           b27 sb7 b27 sbd6 bl
-          ;; Kommentar nötig, könnte auch anders idealisiert werden, indem der Punkt über der ersten Note gelöscht wird
            (:section s8)
-          sbd5 b38 fl5 b27 (:alt (:diplomatic sb5)
-                                 (:idealised sbd5)) bl)
+          sbd5 b38 fl5 b27
+           (:alt (:diplomatic sb5)
+                 (:idealised sbd5)
+                 (:comment "Original: Ȧ--A♭. Könnte alternativ auch in A--A♭ korrigiert werden.")
+                 (:flag :suggestion) (:id 1))
+           bl)
    (:text 70 58
          (0 nil "ᴅieſis mag.")
          (290 nil "ᴅies.mag.")

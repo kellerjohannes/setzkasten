@@ -22,7 +22,13 @@
 \\newunicodechar{♯}{$\\sharp$}
 \\newunicodechar{➚}{$\\nearrow$}
 \\newunicodechar{➘}{$\\searrow$}
+\\newunicodechar{Ȧ}{\\.A}
+\\newunicodechar{Ḃ}{\\.B}
+\\newunicodechar{Ċ}{\\.C}
+\\newunicodechar{Ḋ}{\\.D}
+\\newunicodechar{Ė}{\\.E}
 \\newunicodechar{Ḟ}{\\.F}
+\\newunicodechar{Ġ}{\\.G}
 \\newunicodechar{Ɋ}{\\caps{Q}}
 
 \\title{Kritischer Bericht (intern)}
@@ -203,7 +209,9 @@
       (let ((data (read in-file)))
         (concatenate 'string
                      (generate-latex-title (extract-meta-data data))
-                     (generate-latex-table data))))))
+                     (if (> (length data) 1)
+                         (generate-latex-table data)
+                         ""))))))
 
 (defun generate-latex-entries (filename-list)
   (let ((result ""))

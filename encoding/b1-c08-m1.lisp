@@ -1,15 +1,8 @@
 `((:header
    (:filename "b1-c08-m1")
    (:alt-name "m1.013")
-   (:comment "")
-   (:creator "Vicentino21 / Johannes Keller")
-   (:section-headings
-    (s1 ""))
-   (:section-captions
-    (s1 ""))
-   (:voice-labels
-    (:all v1 "")))
-
+   (:comment "q021_s029, origin: 1401")
+   (:creator "Vicentino21 / Johannes Keller"))
   (:data
    (:music 545
            (:voice v1)
