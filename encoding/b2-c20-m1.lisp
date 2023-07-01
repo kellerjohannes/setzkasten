@@ -3,30 +3,71 @@
    (:alt-name "m2.023")
    (:comment "q021_s071, rotation: 0, origin: 362")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio della sesta maggiore come in molti modi, si può comporre")
+   (:title (:alt (:it "Esempio della sesta maggiore come in molti modi, si può comporre")
+                 (:de "")
+                 (:en "")))
    (:section-headings
-    (s1 "A due voci")
-    (s2 "A due voci")
-    (s3 "A due voci")
-    (s4 "A due voci")
-    (s5 "A due voci")
-    (s6 "A due voci")
-    (s7 "A due voci")
+    (s1 (:alt (:it "A due voci")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "A due voci")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "A due voci")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "A due voci")
+              (:de "")
+              (:en "")))
+    (s5 (:alt (:it "A due voci")
+              (:de "")
+              (:en "")))
+    (s6 (:alt (:it "A due voci")
+              (:de "")
+              (:en "")))
+    (s7 (:alt (:it "A due voci")
+              (:de "")
+              (:en "")))
 
-    (s8 "[A due voci]")
-    (s9 "[A due voci]")
-    (s10 "[A due voci]")
-    (s11 "[A due voci]")
-    (s12 "[A due voci]")
-    (s13 "[A due voci]")
+    (s8 (:alt (:it "[A due voci]")
+              (:de "")
+              (:en "")))
+    (s9 (:alt (:it "[A due voci]")
+              (:de "")
+              (:en "")))
+    (s10 (:alt (:it "[A due voci]")
+               (:de "")
+               (:en "")))
+    (s11 (:alt (:it "[A due voci]")
+               (:de "")
+               (:en "")))
+    (s12 (:alt (:it "[A due voci]")
+               (:de "")
+               (:en "")))
+    (s13 (:alt (:it "[A due voci]")
+               (:de "")
+               (:en "")
+               (:comment "Der C4-Schlüssel in Section 15 wird als Beginn der dreistimmigen Beispiele gelesen, deshalb wird dieses noch als zweistimmig verstanden.")
+               (:flag :suggestion) (:id 1)))
 
-    (s14 "[A due voci]")
-    (s15 "A tre voci")
-    (s16 "A tre voci")
-    (s17 "A tre voci")
-    (s18 "A tre voci")
-    (s19 "A tre voci")))
-
+    (s14 (:alt (:it "[A due voci]")
+               (:de "")
+               (:en "")))
+    (s15 (:alt (:it "A tre voci")
+               (:de "")
+               (:en "")))
+    (s16 (:alt (:it "A tre voci")
+               (:de "")
+               (:en "")))
+    (s17 (:alt (:it "A tre voci")
+               (:de "")
+               (:en "")))
+    (s18 (:alt (:it "A tre voci")
+               (:de "")
+               (:en "")))
+    (s19 (:alt (:it "A tre voci")
+               (:de "")
+               (:en "")))))
   (:data
    (:text 90 58
           (311 1596 "Eſſempio della seſta maggiore come in molti modi, ſi può comporre."))
@@ -85,19 +126,15 @@
    (:music 2232
            (:voice v1)
            (:section s14) cclef7 b38 sb3 b22 fl6 b38 sb6 b38 sb5 b38 bl
-           ;; Bibelgruppe:
-           ;; warum gibt es ein C4-Schlüssel im zweiten Takt? Zur Markierung der
-           ;; dreistimmigen Beispiele? Zur 'Auflösung' des bemolle im Takt davor?
-
-           ;; Johannes: Interpretation: ab hier kommen Beispiele, die im dreistimmigen Kontext
-           ;; funktionieren, es sind aber nur zwei Stimmen abgedruckt. Wird in der Normalisierung
-           ;; entsprechend markiert (siehe Überschriften). Zu einer dreistimmigen Vervollständigung
-           ;; liegen Vorschläge von Anne vor.
            (:section s15) cclef7 b38 b38 sb6 b38 sb7 b38 b38 bl
            (:section s16) b38 b38 sb5 b38 sb6 b38 b38 bl
            (:section s17) (:newline) b38 b38 sb7 b38 sb6 b38 b38 bl
-           ;; hier gibt es keine Sexte! Soll hier etwas idealisiert werden?
-           (:section s18) b38 m10 b38 m7 b38 sb9 b38 bl
+           (:section s18) b38
+           (:alt (:diplomatic m10 b38 m7 b38 sb9)
+                 (:idealised m10 b38 m7 b38 sb9)
+                 (:comment "In diesem Beispiel kommt keine Sexte vor. Eine Idealisierung könnte in Betracht gezogen werden. Zur Zeit besteht kein Vorschlag.")
+                 (:flag :observe) (:id 2))
+           b38 bl
            (:section s19) m10 b38 m8 b38 sb9 b38 bl b22 b38)
    (:vspace 30)
    (:music 2214

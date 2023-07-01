@@ -3,13 +3,22 @@
    (:alt-name "m2.014")
    (:comment "q021_s064, rotation: -0.48, origin: 1045")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio di comporre la settima che fa parere due ottave,\\et non sono, et così due unisoni,\\et non sono, con due tenore, uno dopo l'altro")
+   (:title (:alt (:it "Esempio di comporre la settima che fa parere due ottave,\\et non sono, et così due unisoni,\\et non sono, con due tenore, uno dopo l'altro")
+                 (:de "")
+                 (:en "")))
    (:section-captions
-    (s1 "Per semitono\\con l'unisono")
-    (s2 "Per tono\\con l'unisono")
-    (s3 "Per tono\\con la settima")
-    (s4 "Per semitono\\con l'ottava")))
-
+    (s1 (:alt (:it "Per semitono\\con l'unisono")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "Per tono\\con l'unisono")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "Per tono\\con la settima")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "Per semitono\\con l'ottava")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 70 58
      (144 1946 "Eſſempio di comporre la settima che fa parere due Ottaue, et non ſono , et così due"))

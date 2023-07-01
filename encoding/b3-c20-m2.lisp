@@ -3,8 +3,9 @@
    (:alt-name "m3.040")
    (:comment "q021_s099, origin: 415")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del sesto modo per ♭ molle,\\della musica participata e mista"))
-
+   (:title (:alt (:it "Esempio del sesto modo per ♭ molle,\\della musica participata e mista")
+                 (:de "")
+                 (:en ""))))
   (:data
    (:text 110 58
           (280 1694 "Eſſempio del ſesto Modo per ♭. molle,della muſica participata & miſta."))

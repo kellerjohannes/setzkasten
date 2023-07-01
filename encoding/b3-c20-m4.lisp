@@ -3,8 +3,9 @@
    (:alt-name "m3.042")
    (:comment "q021_s099, origin: 429")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del sesto modo, detto per musica finta,\\della musica participata e mista"))
-
+   (:title (:alt (:it "Esempio del sesto modo, detto per musica finta,\\della musica participata e mista")
+                 (:de "")
+                 (:en ""))))
   (:data
    (:text 110 58
           (150 1915 "Eſſempio del ſeſto Modo,detto per muſica finta,della muſica participata et mista."))

@@ -4,17 +4,25 @@
    (:comment "q021_s079, rotation: 0, origin: 468")
    (:creator "Vicentino21 / Johannes Keller")
    (:line-headings
-    "Molte annotationi sotto et sopra le due note mi et re\\A due et a più voci si possono comporre"
+    (:alt (:it "Molte annotationi sotto et sopra le due note mi et re\\A due et a più voci si possono comporre")
+          (:de "")
+          (:en ""))
     nil
     nil
     nil
-    "Molte annotationi sotto et sopra le due note re et mi\\A due et a più voci si possono comporre"
-    )
+    (:alt (:it "Molte annotationi sotto et sopra le due note re et mi\\A due et a più voci si possono comporre")
+          (:de "")
+          (:en "")))
    (:section-captions
-    (s10 "A tre")
-    (s11 "A otto")
-    (s28 "A quattro")
-    )
+    (s10 (:alt (:it "A tre")
+               (:de "")
+               (:en "")))
+    (s11 (:alt (:it "A otto")
+               (:de "")
+               (:en "")))
+    (s28 (:alt (:it "A quattro")
+               (:de "")
+               (:en ""))))
    (:voice-order
     (s1 v1 v2)
     (s2 v1 v2)

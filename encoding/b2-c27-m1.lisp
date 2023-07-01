@@ -3,19 +3,38 @@
    (:alt-name "m2.029")
    (:comment "q021_s078, rotation: -0.92, origin: 966")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio della quintadecima, et della vigesima seconda,\\a tre voci, et a quattro")
+   (:title (:alt (:it "Esempio della quintadecima, et della vigesima seconda,\\a tre voci, et a quattro")
+                 (:de "")
+                 (:en "")))
    (:section-headings
-    (s1 "Quintadecima con\\ottava in mezzo\\ ")
-    (s2 "Vigesima seconda\\con due ottave\\in mezzo"))
+    (s1 (:alt (:it "Quintadecima con\\ottava in mezzo\\ ")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "Vigesima seconda\\con due ottave\\in mezzo")
+              (:de "")
+              (:en ""))))
    (:voice-labels
-    (s1 v1 "Soprano")
-    (s1 v2 "Alto")
-    (s1 v3 "Tenore")
-    (s2 v1 "Soprano")
-    (s2 v2 "Alto")
-    (s2 v3 "Tenore")
-    (s2 v4 "Basso")))
-
+    (s1 v1 (:alt (:it "Soprano")
+                 (:de "")
+                 (:en "")))
+    (s1 v2 (:alt (:it "Alto")
+                 (:de "")
+                 (:en "")))
+    (s1 v3 (:alt (:it "Tenore")
+                 (:de "")
+                 (:en "")))
+    (s2 v1 (:alt (:it "Soprano")
+                 (:de "")
+                 (:en "")))
+    (s2 v2 (:alt (:it "Alto")
+                 (:de "")
+                 (:en "")))
+    (s2 v3 (:alt (:it "Tenore")
+                 (:de "")
+                 (:en "")))
+    (s2 v4 (:alt (:it "Basso")
+                 (:de "")
+                 (:en "")))))
   (:data
    (:text 110 58
      (149 1932 "Eſſempio della Quinta decima,& della Vigeſima ſeconda,à tre uoci,& à quattro."))
@@ -35,9 +54,10 @@
            b38 b38 b38 b38
            (:section s2)
            (:voice v1) gclef3 b22 sb9 b38 b22 bl
-           ;; Bibelgruppe:
-           ;; Fehler im zweiten Alt, der Schlüssel sollte C1 sein. Scheint gesichert.
-           (:voice v2) b38 b38 (:alt (:diplomatic cclef3) (:idealised cclef1)) b38 sb4 b38 bl
+           (:voice v2) b38 b38
+           (:alt (:diplomatic cclef3) (:idealised cclef1)
+                 (:comment "Original: C2-Schlüssel.") (:flag :draft) (:id 1))
+           b38 sb4 b38 bl
            (:voice v3) b38 b38 cclef7 b38 sb3 b38 bl
            (:voice v4) b38 b38 (:f-clef) max7 fclef7 b38 b38 sb0 b38 bl)
    (:text 70 58

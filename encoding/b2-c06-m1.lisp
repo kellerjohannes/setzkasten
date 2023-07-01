@@ -3,24 +3,47 @@
    (:alt-name "m2.008")
    (:comment "q021_s060, rotation: 0, origin: 990")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio della quarta sincopata a due voci,\\et non sincopata a tre voci, et con il punto:\\come s'ha da comporre a molte voci, et con la sincopa tutta cattiva")
+   (:title (:alt (:it "Esempio della quarta sincopata a due voci,\\et non sincopata a tre voci, et con il punto:\\come s'ha da comporre a molte voci, et con la sincopa tutta cattiva")
+                 (:de "")
+                 (:en "")))
    (:section-headings
-    (s1 "Buona")
-    (s2 "Megliore")
-    (s3 "Buone")
-    (s4 "Semplice")
-    (s5 "Sciolta")
-    (s6 "A tre voci")
-    (s7 "Sciolta")
-    (s8 "All'antica")
-    )
-   ;; unklar, was mit den Ziffern 1., 2. und 3. getan werden soll
+    (s1 (:alt (:it "Buona")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "Megliore")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "Buone")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "Semplice")
+              (:de "")
+              (:en "")))
+    (s5 (:alt (:it "Sciolta")
+              (:de "")
+              (:en "")))
+    (s6 (:alt (:it "A tre voci")
+              (:de "")
+              (:en "")))
+    (s7 (:alt (:it "Sciolta")
+              (:de "")
+              (:en "")))
+    (s8 (:alt (:it "All'antica")
+              (:de "")
+              (:en ""))))
    (:section-captions
-    (s1 "1.")
-    (s2 "2.")
-    (s3 "3.")
-    ))
-
+    (s1 (:alt (:it "1.")
+              (:de "")
+              (:en "")
+              (:comment "Bedeutung dieser Ziffer unklar.") (:flag :observe) (:id 1)))
+    (s2 (:alt (:it "2.")
+              (:de "")
+              (:en "")
+              (:comment "Bedeutung dieser Ziffer unklar.") (:flag :observe) (:id 2)))
+    (s3 (:alt (:it "3.")
+              (:de "")
+              (:en "")
+              (:comment "Bedeutung dieser Ziffer unklar.") (:flag :observe) (:id 3)))))
   (:data
    (:text 70 58
      (75 2090 "Eſſempio della quarta ſincopata à due uoci,& non ſincop. à tre uoci,& con il punto : come"))
@@ -34,8 +57,11 @@
            (:section s4) (:newline) cclef5 b38 sb5 b38 bl
            (:section s5) sb6 dot6 m7 sb6 bl
            (:section s6) sb6 dot6 fl7 m7 sb6 bl
-           ;; scheint offensichtlich zu sein, trotzdem zu bestätigen
-           (:section s7) sb7 (:alt (:diplomatic dot6) (:idealised dot8)) m8 sb7 bl
+           (:section s7) sb7
+           (:alt (:diplomatic dot6) (:idealised dot8)
+                 (:comment "Original: Punktierung steht im dritten Zwischenraum.")
+                 (:flag :draft) (:id 4))
+           m8 sb7 bl
            (:section s8) m7 sb8 m7 sb8 bl)
    (:text 90 58
      (86 nil "buoa")
@@ -68,7 +94,4 @@
            (:section s5) b22 sb8 b22 sb8 b22 sb8 bl
            (:section s6) b22 sb8 b38 sb8 b38 sb8 b22 bl
            (:section s7) sb4 sb4 sb4 b22 bl
-           (:section s8) b38 br4 b38 sb7 b22 bl)
-
-
-   ))
+           (:section s8) b38 br4 b38 sb7 b22 bl)))

@@ -3,8 +3,9 @@
    (:alt-name "m3.035")
    (:comment "q021_s098, origin: 954")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del quinto modo per ♮ incitato\\della musica participata e mista"))
-
+   (:title (:alt (:it "Esempio del quinto modo per ♮ incitato\\della musica participata e mista")
+                 (:de "")
+                 (:en ""))))
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")))

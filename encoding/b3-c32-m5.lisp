@@ -3,12 +3,22 @@
    (:alt-name "m3.067")
    (:comment "q021_s111, rotation: 0.68, origin: 482")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio di molte cadentie del quinto modo, a quattro voci\\della musica participata e mista per ♭ molle")
+   (:title (:alt (:it "Esempio di molte cadentie del quinto modo, a quattro voci\\della musica participata e mista per ♭ molle")
+                 (:de "")
+                 (:en "")))
    (:voice-labels
-    (s1 v1 "Cadentie del soprano")
-    (s1 v2 "Cadentie del contr'alto")
-    (s1 v3 "Cadentie del tenore")
-    (s1 v4 "Cadentie del basso"))
+    (s1 v1 (:alt (:it "Cadentie del soprano")
+                 (:de "")
+                 (:en "")))
+    (s1 v2 (:alt (:it "Cadentie del contr'alto")
+                 (:de "")
+                 (:en "")))
+    (s1 v3 (:alt (:it "Cadentie del tenore")
+                 (:de "")
+                 (:en "")))
+    (s1 v4 (:alt (:it "Cadentie del basso")
+                 (:de "")
+                 (:en ""))))
    (:voice-order
     (s1 v1 v2 v3 v4)
     (s2 v1 v2 v3 v4)
@@ -18,7 +28,6 @@
     (s6 v1 v2 v3 v4)
     (s7 v1 v2 v3 v4)
     (s8 v1 v2 v3 v4)))
-
   (:preamble-lilypond
    (:clef-overrides
     (s1 v3 "treble_8")
@@ -39,9 +48,12 @@
            (:section s1) gclef3 fl5 (:key-signature nil nil nil nil nil nil :flat)
            b22 mrest3 b22 sb2 m1 sb2 b22 bl
            (:section s2) b22 mrest3 b22 sb4 m3 sb4 b22 bl
-           ;; Hier könnte man eine Ficta (♮ vor m5) diskutieren. Wurde in der Bibelgruppe als offene
-           ;; Frage festgehalten.
-           (:section s3) mrest5 b22 sb6 m5 sb6 b22 bl
+           (:section s3) mrest5 b22 sb6
+           (:alt (:diplomatic)
+                 (:idealised nat5)
+                 (:comment "Offene Frage, ob diese Idealisierung vorgenommen werden soll oder nicht.")
+                 (:flag :suggestion) (:id 1))
+           m5 sb6 b22 bl
            (:section s4) (:newline) mrest7 b22 sb9 m8 sb9 b22 bl
            (:section s5) b22 mrest3 b22 sb3 sh2 m2 sb3 b38 bl
            (:section s6) mrest7 sb7 m6 m7 m4 m6 dot6 sm5 sm4 sm3 sb2 m1 br2 b22 bl)

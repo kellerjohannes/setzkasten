@@ -4,17 +4,34 @@
    (:comment "q021_s077, rotation: 0.80, origin: 460. Kapiel falsch nummeriert in der Quelle.")
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
-    (s1 "Primo esempio")
-    (s2 "Secondo esempio")
-    (s3 "Terzo esempio")
-    (s4 "Quarto esempio")
-    (s5 "Quinto esempio"))
+    (s1 (:alt (:it "Primo esempio")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "Secondo esempio")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "Terzo esempio")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "Quarto esempio")
+              (:de "")
+              (:en "")))
+    (s5 (:alt (:it "Quinto esempio")
+              (:de "")
+              (:en ""))))
    (:voice-labels
-    (s1 v1 "Soprano")
-    (s1 v2 "Alto")
-    (s1 v3 "Tenore")
-    (s1 v4 "Basso")))
-
+    (s1 v1 (:alt (:it "Soprano")
+                 (:de "")
+                 (:en "")))
+    (s1 v2 (:alt (:it "Alto")
+                 (:de "")
+                 (:en "")))
+    (s1 v3 (:alt (:it "Tenore")
+                 (:de "")
+                 (:en "")))
+    (s1 v4 (:alt (:it "Basso")
+                 (:de "")
+                 (:en "")))))
   (:data
    (:text 90 58
      (53 nil "Primo eſſempio")
@@ -23,13 +40,13 @@
      (1484 nil "4.eſſem.")
      (1943 nil "5. eſſempio"))
    (:music 2214
-           ;; Bibelgruppe:
-           ;; die komplette erste Zeile ist im C1-Schlüssel zu lesen.
-
-           ;; Johannes: diese Aussage ist nicht sinnvoll, deshalb wurde nichts idealisiert,
-           ;; ist aber sicherheitshalber nochmals zu bestätigen.
            (:section s1)
-           (:voice v1) cclef3 b38 sb5 b22 bl
+           (:voice v1)
+           (:alt (:diplomatic cclef3)
+                 (:idealised cclef3)
+                 (:comment "Bibelgruppe: Verdacht auf Schlüsselfehler. Scheint aber korrekt zu sein, deshalb soll hier keine Idealisierung stattfinden.")
+                 (:flag :observe) (:id 1))
+           b38 sb5 b22 bl
            (:voice v2) b22 sb3 b22 bl
            b22 b38 b38 b38 bl
            (:section s2)

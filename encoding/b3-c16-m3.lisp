@@ -3,8 +3,9 @@
    (:alt-name "m3.024")
    (:comment "q021_s097, rotation: 0.96, origin: 547")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del secondo modo per ♭ molle,\\per haver più varietà che darà la quinta,\\sotto il suo procedere di voci, che sarà il Dsolre"))
-
+   (:title (:alt (:it "Esempio del secondo modo per ♭ molle,\\per haver più varietà che darà la quinta,\\sotto il suo procedere di voci, che sarà il Dsolre")
+                 (:de "")
+                 (:en ""))))
   (:data
    (:text 70 58
           (128 2008 "Eſſempio del ſecondo Modo per ♭.molle,per hauer più uarietà che darà quinta, ſotto"))

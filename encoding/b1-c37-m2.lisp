@@ -1,22 +1,33 @@
 `((:header
    (:filename "b1-c37-m2")
    (:alt-name "m1.046")
-   (:comment "")
+   (:comment "q021_s047, origin: 372")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Essempio de gradi di alcune quinte imperfette naturali e accidentali")
+   (:title (:alt (:it "Essempio de gradi di alcune quinte imperfette naturali e accidentali")
+                 (:de "")
+                 (:en "")))
    (:section-captions
-    (s1 "gradi di quinta\\imperfetta composta\\naturale")
-    (s2 "gradi di quinta\\imperfetta composta\\naturale")
-    (s3 "gradi di quinta\\imperfetta composta\\accidentale")
-    (s4 "gradi di quinta\\imperfetta composta\\accidentale")
-    (s5 "gradi di quinta\\imperfetta composta\\accidentale")))
+    (s1 (:alt (:it "gradi di quinta\\imperfetta composta\\naturale")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "gradi di quinta\\imperfetta composta\\naturale")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "gradi di quinta\\imperfetta composta\\accidentale")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "gradi di quinta\\imperfetta composta\\accidentale")
+              (:de "")
+              (:en "")))
+    (s5 (:alt (:it "gradi di quinta\\imperfetta composta\\accidentale")
+              (:de "")
+              (:en "")))))
   (:preamble-lilypond
    (:clef-overrides
     (s2 v1 "treble_8")
     (s3 v1 "treble_8")
     (s4 v1 "treble_8")
     (s5 v1 "treble_8")))
-
   (:data
    (:text 90 58
           (254 1691 "ᴇſſempio de gradi di alcune Ɋuinte imperfette,naturali & accidentali."))

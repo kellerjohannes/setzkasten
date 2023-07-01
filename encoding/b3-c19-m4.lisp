@@ -3,8 +3,9 @@
    (:alt-name "m3.038")
    (:comment "q021_s099, origin: 416")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del quinto modo per musica finta,\\della musica participata e mista"))
-
+   (:title (:alt (:it "Esempio del quinto modo per musica finta,\\della musica participata e mista")
+                 (:de "")
+                 (:en ""))))
   (:data
    (:text 110 58
           (216 1796 "Eſſempio del quinto ᴍodo per muſica finta,della muſica participata & miſta."))

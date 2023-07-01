@@ -3,8 +3,9 @@
    (:alt-name "m3.022")
    (:comment "q021_s096, rotation: -1.63, origin: 1062")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del secondo modo per ♮ incitato,\\della musica participata et mista"))
-
+   (:title (:alt (:it "Esempio del secondo modo per ♮ incitato,\\della musica participata et mista")
+                 (:de "")
+                 (:en ""))))
   (:data
    (:text 130 58
           (75 2113 "Eſſempio del secondo Modo per ♮.incitato, della Muſica participata & mista."))

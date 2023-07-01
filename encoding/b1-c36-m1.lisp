@@ -1,21 +1,30 @@
 `((:header
    (:filename "b1-c36-m1")
    (:alt-name "m1.044")
-   (:comment "")
+   (:comment "q021_s047, origin: 363")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Essempio del tritono accidentale, incomposto e composto")
-   (:section-headings
-    (s1 ""))
+   (:title (:alt (:it "Essempio del tritono accidentale, incomposto e composto")
+                 (:de "")
+                 (:en "")))
    (:section-captions
-    (s1 "tritono\\incomposto\\accidentale")
-    (s2 "tritono\\incomposto\\accidentale")
-    (s3 "tritono\\incomposto\\accidentale")
-    (s4 "tritono\\incomposto\\accidentale")
-    (s5 "tritono\\composto\\accidentale")
-    (s6 "tritono\\composto\\accidentale"))
-   (:voice-labels
-    (:all v1 "")))
-
+    (s1 (:alt (:it "tritono\\incomposto\\accidentale")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "tritono\\incomposto\\accidentale")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "tritono\\incomposto\\accidentale")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "tritono\\incomposto\\accidentale")
+              (:de "")
+              (:en "")))
+    (s5 (:alt (:it "tritono\\composto\\accidentale")
+              (:de "")
+              (:en "")))
+    (s6 (:alt (:it "tritono\\composto\\accidentale")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 70 58
           (432 1372 "ᴇſſempio del ᴛritono accidentale,incompoſto & compoſto."))

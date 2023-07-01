@@ -1,21 +1,30 @@
 `((:header
    (:filename "b1-c21-m1")
    (:alt-name "m1.029")
-   (:comment "")
+   (:comment "q021_s038, origin: 909")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Essempio del grado del tono minore composto e non composto")
-   (:section-headings
-    (s1 ""))
+   (:title (:alt (:it "Essempio del grado del tono minore composto e non composto")
+                 (:de "")
+                 (:en "")))
    (:section-captions
-    (s1 "tono minore\\ascendente\\incomposto")
-    (s2 "tono minore\\ascendente\\composto")
-    (s3 "tono minore\\ascendente\\composto")
-    (s4 "tono minore\\ascendente\\incomposto")
-    (s5 "tono minore\\discendente\\composto")
-    (s6 "tono minore\\discendente\\incomposto"))
-   (:voice-labels
-    (:all v1 "")))
-
+    (s1 (:alt (:it "tono minore\\ascendente\\incomposto")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "tono minore\\ascendente\\composto")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "tono minore\\ascendente\\composto")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "tono minore\\ascendente\\incomposto")
+              (:de "")
+              (:en "")))
+    (s5 (:alt (:it "tono minore\\discendente\\composto")
+              (:de "")
+              (:en "")))
+    (s6 (:alt (:it "tono minore\\discendente\\incomposto")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 110 58
          (372 1464 "ᴇſſempio del ɢrado del tono minore compoſto et non compoſto."))

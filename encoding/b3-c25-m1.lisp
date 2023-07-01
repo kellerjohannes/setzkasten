@@ -3,14 +3,22 @@
    (:alt-name "m3.056")
    (:comment "q021_s103, origin: 516")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Cadentie diatoniche del soprano, del contr'alto,\\del tenore e del basso"))
-
-  (:preamble-lilypond
+   (:title (:alt (:it "Cadentie diatoniche del soprano, del contr'alto,\\del tenore e del basso")
+                 (:de "")
+                 (:en "")))
    (:voice-labels
-    (s1 v1 "Soprano")
-    (s1 v2 "Contr'alto")
-    (s1 v3 "Tenore")
-    (s1 v4 "Basso")))
+    (s1 v1 (:alt (:it "Soprano")
+                 (:de "")
+                 (:en "")))
+    (s1 v2 (:alt (:it "Contr'alto")
+                 (:de "")
+                 (:en "")))
+    (s1 v3 (:alt (:it "Tenore")
+                 (:de "")
+                 (:en "")))
+    (s1 v4 (:alt (:it "Basso")
+                 (:de "")
+                 (:en "")))))
   (:data
    (:text 130 58
           (517 1156 "Cadentie Diatoniche del Soprano,à quattro uoci."))

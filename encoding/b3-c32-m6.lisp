@@ -3,13 +3,22 @@
    (:alt-name "m3.068")
    (:comment "q021_s112, rotation: 0, origin: 904")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio di molte cadentie del sesto modo, a quattro voci\\della musica participata e mista per ♭ molle")
+   (:title (:alt (:it "Esempio di molte cadentie del sesto modo, a quattro voci\\della musica participata e mista per ♭ molle")
+                 (:de "")
+                 (:en "")))
    (:voice-labels
-    (s1 v1 "Cadentie del soprano")
-    (s1 v2 "Cadentie del contr'alto")
-    (s1 v3 "Cadentie del tenore")
-    (s1 v4 "Cadentie del basso")))
-
+    (s1 v1 (:alt (:it "Cadentie del soprano")
+                 (:de "")
+                 (:en "")))
+    (s1 v2 (:alt (:it "Cadentie del contr'alto")
+                 (:de "")
+                 (:en "")))
+    (s1 v3 (:alt (:it "Cadentie del tenore")
+                 (:de "")
+                 (:en "")))
+    (s1 v4 (:alt (:it "Cadentie del basso")
+                 (:de "")
+                 (:en "")))))
   (:data
    (:text 70 58
           (268 1708 "Eſſempio di molte cadentie del seſto Modo,à quattro uoci della Muſica"))

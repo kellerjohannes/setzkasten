@@ -3,21 +3,31 @@
    (:alt-name "m3.063")
    (:comment "q021_s109, rotation: 1.61, origin: 421")
    (:creator "Vicentino21 / Johannes Keller")
-   ;; Darstellung des Eingriffs im Titel klären
-   (:title "Esempio di molte cadentie del quarto [primo] modo, a quattro voci,\\della musica participata e mista per ♮ quadro")
+   (:title (:alt (:it "Esempio di molte cadentie del primo modo, a quattro voci,\\della musica participata e mista per ♮ quadro")
+                 (:de "")
+                 (:en "")
+                 (:comment "Original: »... del quarto modo, ...«.")
+                 (:flag :suggestion) (:id 1)))
    (:voice-labels
-    (s1 v1 "Cadentie del soprano")
-    (s1 v2 "Cadentie del contr'alto")
-    (s1 v3 "Cadentie del tenore")
-    (s1 v4 "Cadentie del basso")))
-
+    (s1 v1 (:alt (:it "Cadentie del soprano")
+                 (:de "")
+                 (:en "")))
+    (s1 v2 (:alt (:it "Cadentie del contr'alto")
+                 (:de "")
+                 (:en "")))
+    (s1 v3 (:alt (:it "Cadentie del tenore")
+                 (:de "")
+                 (:en "")))
+    (s1 v4 (:alt (:it "Cadentie del basso")
+                 (:de "")
+                 (:en "")))))
   (:data
    (:text 70 58
           (157 1898
-               ;; Inhaltliche Textkorrektur, gemäss Bibelgruppe, aber nochmals zu prüfen
                (:alt (:diplomatic "Eſsempio di molte cadentie del Quarto modo,à quattro uoci , della muſica parti⸗")
-                     (:idealised "Eſsempio di molte cadentie del Primo modo,à quattro uoci , della muſica parti⸗"))
-))
+                     (:idealised "Eſsempio di molte cadentie del Primo modo,à quattro uoci , della muſica parti⸗")
+                     (:comment "Original: »... Quarto modo,...«.")
+                     (:flag :suggestion) (:id 2))))
    (:text 130 58
           (725 752 "cipata & miſta per ♮. quadro."))
    (:text 90 58

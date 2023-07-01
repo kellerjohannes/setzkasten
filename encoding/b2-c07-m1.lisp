@@ -3,19 +3,39 @@
    (:alt-name "m2.009")
    (:comment "q021_s061, rotation: 0, origin: 491")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio sopra il modo di comporre di quarta in quinta\\sincopata et non sincopata, et di quinta in quarta\\A tre voci")
-   ;; Reihenfolge der Stimmen zu überlegen, insbesondere in s2 und s3 -> siehe Kommentar unten
+   (:title (:alt (:it "Esempio sopra il modo di comporre di quarta in quinta\\sincopata et non sincopata, et di quinta in quarta\\A tre voci")
+                 (:de "")
+                 (:en "")))
    (:voice-labels
-    (s1 v1 "Soprano")
-    (s1 v2 "Tenore")
-    (s1 v3 "Basso")
-    (s2 v1 "Tenore")
-    (s2 v2 "Alto")
-    (s3 v1 "Alto")
-    (s3 v2 "Tenore")
-    (s4 v1 "[Tenore]")
-    (s4 v2 "[Tenore]")))
-
+    (s1 v1 (:alt (:it "Soprano")
+                 (:de "")
+                 (:en "")))
+    (s1 v2 (:alt (:it "Tenore")
+                 (:de "")
+                 (:en "")))
+    (s1 v3 (:alt (:it "Basso")
+                 (:de "")
+                 (:en "")))
+    (s2 v2 (:alt (:it "Alto")
+                 (:de "")
+                 (:en "")
+                 (:comment "Die Reihenfolge der Stimmen und die Verteilung auf Sections ist zu disktutieren. Ev. braucht es hier einen Kommentar, dass diese Konstellationen eher in vielstimmigen Sätzen plausibel sind.")
+                 (:flag :observe) (:id 1)))
+    (s2 v1 (:alt (:it "Tenore")
+                 (:de "")
+                 (:en "")))
+    (s3 v1 (:alt (:it "Alto")
+                 (:de "")
+                 (:en "")))
+    (s3 v2 (:alt (:it "Tenore")
+                 (:de "")
+                 (:en "")))
+    (s4 v2 (:alt (:it "[Tenore]")
+                 (:de "")
+                 (:en "")))
+    (s4 v1 (:alt (:it "[Tenore]")
+                 (:de "")
+                 (:en "")))))
   (:preamble-lilypond
    (:clef-overrides
     (s2 v2 "treble_8")
@@ -38,21 +58,6 @@
           (695 nil "Tenore")
           (1459 nil "Baſſo"))
    (:music 2220
-           ;; hier stimmt etwas überhaupt nicht, ist das die korrekte :section-Zuweisung?
-
-           ;; Frage nach der Partiturgliederung, Befund Anne:
-           ;; Ich glaube es gibt
-           ;; keine 3-stimmige Lösungen, sondern nur 2-stimmigen. Er schreibt gerade
-           ;; vor dem Beispiel, dass wenn man von der Quarte zur Quinta geht, hat
-           ;; man einen Semitono entweder im oberen oder in der unteren Stimme, wie
-           ;; man es im Beispiel steht. Dann müsste paarweise gegliedert sein,
-           ;; Tenore-Alt mit dem Halbton unten, Alt-Tenor, mit dem Halbton oben, und
-           ;; dann die nicht bezeichneten, wo der Semitono in der unteren
-           ;; Stimme. Die Klangfolgen finde ich merkwürdig, aber vielleicht sind sie
-           ;; gedacht in einem grösseren Satz verborgen zu sein.
-
-           ;; Johannes: die Normalisierung habe ich entsprechend eingerichtet, ist aber noch
-           ;; zu diskutieren.
            (:section s2)
            (:voice v1) cclef7 (:key-signature nil nil nil nil nil nil nil) b38 sb7 b38 sb5 b22 bl
            (:voice v2) b38 cclef5 b38 sb1 b38 sb0 b38 bl

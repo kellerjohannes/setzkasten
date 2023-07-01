@@ -3,13 +3,22 @@
    (:alt-name "m3.065")
    (:comment "q021_s110, origin: 945")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio di molte cadentie del terzo modo\\della musica participata, e mista, per ♮ quadro")
+   (:title (:alt (:it "Esempio di molte cadentie del terzo modo\\della musica participata, e mista, per ♮ quadro")
+                 (:de "")
+                 (:en "")))
    (:voice-labels
-    (s1 v1 "Cadentie del soprano")
-    (s1 v2 "Cadentie del contr'alto")
-    (s1 v3 "Cadentie del tenore")
-    (s1 v4 "Cadentie del basso")))
-
+    (s1 v1 (:alt (:it "Cadentie del soprano")
+                 (:de "")
+                 (:en "")))
+    (s1 v2 (:alt (:it "Cadentie del contr'alto")
+                 (:de "")
+                 (:en "")))
+    (s1 v3 (:alt (:it "Cadentie del tenore")
+                 (:de "")
+                 (:en "")))
+    (s1 v4 (:alt (:it "Cadentie del basso")
+                 (:de "")
+                 (:en "")))))
   (:data
    (:text 70 58
           (421 1382 "Eſſempio di molte cadentie del ᴛerzo Modo della Muſica"))
@@ -45,7 +54,10 @@
            (:section s4) mrest7 m8 b22 sb6 b22 sb5 b22 bl
            (:section s5) m5d
            ;; Kosmetische Idealisierung, vertikale Ausrichtung Additionspunkt
-           (:alt (:diplomatic dot4) (:idealised dot6)) sm6 m7 b22 sm8 sm6 sm9 m8 sm8 sb8 bl
+           (:alt (:diplomatic dot4) (:idealised dot6)
+                 (:comment "Original: Punktierung steht eine Position tiefer.")
+                 (:flag :draft) (:id 1))
+           sm6 m7 b22 sm8 sm6 sm9 m8 sm8 sb8 bl
            (:section s6) b22 sb6 sb6 sb6 b22 bl)
    (:text 110 58
           (661 509 "Cadentie del Baſſo ."))

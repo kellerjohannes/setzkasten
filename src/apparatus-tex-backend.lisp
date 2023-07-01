@@ -3,7 +3,6 @@
 (defparameter *latex-header*
   "\\documentclass[10pt,DIV=19,landscape,a3paper]{scrartcl}
 \\usepackage[utf8]{inputenc}
-\\usepackage[T1]{fontenc}
 \\usepackage{graphicx}
 \\usepackage{longtable}
 \\usepackage{booktabs}
@@ -15,6 +14,11 @@
 \\usepackage{amssymb}
 \\usepackage{capt-of}
 \\usepackage{soul}
+\\usepackage{fontspec}
+\\usepackage{lmodern}
+\\usepackage{stackengine}
+\\newcommand\\textdot[1]{\\stackon[1pt]{#1}{.}}
+\\newcommand\\per{\\lower5pt\\hbox{--}\\kern-6pt p}
 
 \\usepackage{newunicodechar}
 \\newunicodechar{♮}{$\\natural$}
@@ -30,6 +34,10 @@
 \\newunicodechar{Ḟ}{\\.F}
 \\newunicodechar{Ġ}{\\.G}
 \\newunicodechar{Ɋ}{\\caps{Q}}
+\\newunicodechar{ꝑ}{{\\per}}
+\\newunicodechar{ſ}{{\\fontencoding{TS1}\\selectfont\\char115}}
+\\newunicodechar{«}{\\frqq{}}
+\\newunicodechar{»}{\\flqq{}}
 
 \\title{Kritischer Bericht (intern)}
 \\subtitle{Dokumentation der Eingriffe in Musik und Text-Elemente\\\\sämtlicher Notenbeispiele der Vicentino21-Edition}
@@ -71,7 +79,7 @@
 (defparameter *latex-table-header*
    "
 \\renewcommand{\\arraystretch}{1.2}
-\\begin{longtable}{p{2cm}p{2.5cm}p{5mm}p{5mm}p{2.5cm}p{5mm}p{5mm}p{3cm}p{3cm}p{1.5cm}p{1.5cm}p{12cm}}
+\\begin{longtable}{p{2cm}p{2.5cm}p{5mm}p{5mm}p{2.5cm}p{5mm}p{5mm}p{4cm}p{4cm}p{1.5cm}p{1.5cm}p{10cm}}
   \\toprule
   ID &
   Kategorie &
@@ -105,8 +113,8 @@
   ~a &
   ~a &
   ~a &
-  ~a &
-  ~a &
+  \\textsf{~a} &
+  \\textsf{~a} &
   \\textsf{~a} &
   \\textsf{~a} &
   ~a\\\\

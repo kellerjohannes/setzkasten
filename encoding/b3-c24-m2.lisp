@@ -3,8 +3,9 @@
    (:alt-name "m3.054")
    (:comment "q021_s102, rotation: -0.81, origin: 974")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio delle cadentie minori di semibreve,\\e di minima, diminuite e non"))
-
+   (:title (:alt (:it "Esempio delle cadentie minori di semibreve,\\e di minima, diminuite e non")
+                 (:de "")
+                 (:en ""))))
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")
@@ -21,5 +22,8 @@
            (:section s2) m2 b22 m5 dot6 cr4 b22 cr3 b22 m4 b22 sb5 bl
            (:section s3) m2 b22 sm3 m5 b22 cr4 b22 cr3 b22 m4 b22 sb5 bl
            (:section s4) (:newline) m2 m5 dot6 sm4 b22 sm4 b22 cr3 b22 cr4 b22 sb5 bl
-           ;; Rhythmische Anpassung, zu diskutieren
-           (:section s5) m2 b38 m5 dot6 (:alt (:diplomatic cr4) (:idealised sm4)) m4 sb5 bl)))
+           (:section s5) m2 b38 m5 dot6
+           (:alt (:diplomatic cr4) (:idealised sm4)
+                 (:comment "Rhythmische Korrektur, um die Länge der gesamten Melodie plausibel erscheinen zu lassen.")
+                 (:flag :draft) (:id 1))
+           m4 sb5 bl)))

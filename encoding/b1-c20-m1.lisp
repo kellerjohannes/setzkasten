@@ -1,27 +1,48 @@
 `((:header
    (:filename "b1-c20-m1")
    (:alt-name "m1.028")
-   (:comment "")
+   (:comment "q021_s038, origin: 939")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Essempio di più semitoni maggiori et minori, ascendenti e discendenti,\\composti et incomposti, naturali e accidentali")
-   (:section-headings
-    (s1 ""))
+   (:title (:alt (:it "Essempio di più semitoni maggiori et minori, ascendenti e discendenti,\\composti et incomposti, naturali e accidentali")
+                 (:de "")
+                 (:en "")))
    (:section-captions
-    (s1 "semitono maggiore\\naturale composto")
-    (s2 "semitono maggiore\\accidentale composto")
-    (s3 "semitono minore\\accidentale incomposto")
-    (s4 "semitono maggiore\\accidentale incomposto")
-    (s5 "semitono minore\\accidentale composto")
-    (s6 "semitono amaggiore\\naturale composto")
-    (s7 "semitono minore\\accidentale incomposto")
-    (s8 "semitoni maggiori\\accidentali incomposti")
-    (s9 "semitono maggiore\\accidentale composto")
-    (s10 "semitono maggiore\\accidentale incomposto")
-    (s11 "semitono maggiore\\e minore\\accidentale incomposto")
-    (s12 "semitono minore\\e maggiore\\accidentale incomposto"))
-   (:voice-labels
-    (:all v1 "")))
-
+    (s1 (:alt (:it "semitono maggiore\\naturale composto")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "semitono maggiore\\accidentale composto")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "semitono minore\\accidentale incomposto")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "semitono maggiore\\accidentale incomposto")
+              (:de "")
+              (:en "")))
+    (s5 (:alt (:it "semitono minore\\accidentale composto")
+              (:de "")
+              (:en "")))
+    (s6 (:alt (:it "semitono amaggiore\\naturale composto")
+              (:de "")
+              (:en "")))
+    (s7 (:alt (:it "semitono minore\\accidentale incomposto")
+              (:de "")
+              (:en "")))
+    (s8 (:alt (:it "semitoni maggiori\\accidentali incomposti")
+              (:de "")
+              (:en "")))
+    (s9 (:alt (:it "semitono maggiore\\accidentale composto")
+              (:de "")
+              (:en "")))
+    (s10 (:alt (:it "semitono maggiore\\accidentale incomposto")
+               (:de "")
+               (:en "")))
+    (s11 (:alt (:it "semitono maggiore\\e minore\\accidentale incomposto")
+               (:de "")
+               (:en "")))
+    (s12 (:alt (:it "semitono minore\\e maggiore\\accidentale incomposto")
+               (:de "")
+               (:en "")))))
   (:data
    (:text 90 58
           (0 2234 "ᴇſſempio di più ꜱemitoni mag.et minori,aſcendenti,et diſcendenti, comp.et incomp.nat.et acci"))
@@ -67,20 +88,11 @@
            (:section s10)
            b38 fl6 b38 sb6 b38 sb5 b38 bl
            (:section s11)
-
-           ;; Aus der Bibelgruppe:
-
-           ;; zweitletzter Takt im Notenbeispiel S. 38 (f. 19v), letzte Note (G punkt)
-           ;; scheint überflüssig.
-
-           ;; Zwei Interpretationen:
-
-           ;; 1. die letzte Note stellt eine Alternative für die zweite Note dar, eine
-           ;; symmetrische aber strukturell gleichbedeutende Teilung des Ganztons
-           ;; A♭-G♭ in einen semitono minore und einen semitono maggiore
-           ;; 2. ist ein Fehler, soll ignoriert werden
-           fl5 b38 sb5 b38 (:alt (:diplomatic sb4 b38 fl4 b38 sb4 b38 sbd4)
-                                 (:idealised sbd4 b38 sb4 b38 fl4 b38 sb4))
+           fl5 b38 sb5 b38
+           (:alt (:diplomatic sb4 b38 fl4 b38 sb4 b38 sbd4)
+                 (:idealised sbd4 b38 sb4 b38 fl4 b38 sb4)
+                 (:comment "Original: A♭--G--G♭--Ġ. Dieses Beispiel zeigt zwei alternative Teilungen des _tono_: A♭--Ġ--G♭ und A♭--G--G♭.")
+                 (:flag :suggestion) (:id 1))
            bl
            (:section s12)
            sb3 b38 sbd2 b38 fl2 b38 sb2 bl

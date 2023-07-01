@@ -3,13 +3,22 @@
    (:alt-name "m3.070")
    (:comment "q021_s113, rotation: 1.31, origin: 513")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio di molte cadentie dell'ottavo modo della musica participata e mista")
+   (:title (:alt (:it "Esempio di molte cadentie dell'ottavo modo della musica participata e mista")
+                 (:de "")
+                 (:en "")))
    (:voice-labels
-    (s1 v1 "Cadentie del soprano")
-    (s1 v2 "Cadentie del contr'alto")
-    (s1 v3 "Cadentie del tenore")
-    (s1 v4 "Cadentie del basso")))
-
+    (s1 v1 (:alt (:it "Cadentie del soprano")
+                 (:de "")
+                 (:en "")))
+    (s1 v2 (:alt (:it "Cadentie del contr'alto")
+                 (:de "")
+                 (:en "")))
+    (s1 v3 (:alt (:it "Cadentie del tenore")
+                 (:de "")
+                 (:en "")))
+    (s1 v4 (:alt (:it "Cadentie del basso")
+                 (:de "")
+                 (:en "")))))
   (:data
    (:text 70 58
           (161 1891 "Eſsempio di molte ᴄadentie dellʼᴏttauo modo della muſica participata & miſta."))
@@ -19,9 +28,12 @@
            (:voice v1)
            (:section s1) cclef1 mrest5 sb5 sh4 m4 sb5 b22 bl
            (:section s2) mrest7 sb8 m7 b22 bl
-           ;; Hier könnte man als Ficta ein sh8 vor der m8 einfügen. Wurde ev. nicht getan aus
-           ;; typografischen Platzgründen. In der Bibelgruppe nicht abschliessend entschieden.
-           (:section s3) b22 m8 sb6 sb9 m8 sb9 bl
+           (:section s3) b22 m8 sb6 sb9
+           (:alt (:diplomatic)
+                 (:idealised sh8)
+                 (:comment "Diskutable Ergänzung. Im Original möglicherweise aus Platzgründen weggelassen. Bibelgruppe unschlüssig.")
+                 (:flag :suggestion) (:id 1))
+           m8 sb9 bl
            (:section s4) (:newline) b22 b22 mrest1 b22 sb2 b22 sh1 m1 b22 b38 bl
            (:section s5) b22 m2 sb4 m3 b22 bl
            (:section s6) b22 m4 b22 sb6 sh5 m5 b22 bl
@@ -42,7 +54,12 @@
            ;; Alt vermieden würde.
 
            ;; Das beträfe die m4, vor die ein fl4 gesetzt werde müsste. Zu diskutieren.
-           (:section s4) b38 b22 m6 b22 b22 m4 b22 b22 sb3 b22 b22 bl
+           (:section s4) b38 b22 m6 b22 b22
+           (:alt (:diplomatic  )
+                 (:idealised  )
+                 (:comment "Möglichkeit der Ergänzung eines ♭ (fl4) zur Vermeidung des Querstands zwischen Alt und Bass. Soll eher nicht implementiert werden.")
+                 (:flag :observe) (:id 2))
+           m4 b22 b22 sb3 b22 b22 bl
            (:section s5) b22 sb3 b38 sb5 b22 bl
            (:section s6) b38 b22 sb5 b38 sb7 b22 b22 bl
            (:section s7) m7 sb9 m9 b22 m9 m6 sb6 b22 br6 b38 bl)

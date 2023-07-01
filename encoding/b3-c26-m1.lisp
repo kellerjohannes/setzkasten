@@ -3,13 +3,22 @@
    (:alt-name "m3.057")
    (:comment "q021_s103, origin: 500; q021_s104, rotation: 0.94, origin: 878 et al.")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio della musica diatonica")
+   (:title (:alt (:it "Esempio della musica diatonica")
+                 (:de "")
+                 (:en "")))
    (:voice-labels
-    (:all v1 "Soprano diatonico")
-    (:all v2 "Contr'alto diatonico")
-    (:all v3 "Tenore diatonico")
-    (:all v4 "Basso diatonico")))
-
+    (:all v1 (:alt (:it "Soprano diatonico")
+                   (:de "")
+                   (:en "")))
+    (:all v2 (:alt (:it "Contr'alto diatonico")
+                   (:de "")
+                   (:en "")))
+    (:all v3 (:alt (:it "Tenore diatonico")
+                   (:de "")
+                   (:en "")))
+    (:all v4 (:alt (:it "Basso diatonico")
+                   (:de "")
+                   (:en "")))))
   (:preamble-lilypond
    (:alt (:transposition-quarta-discendente (:clef-overrides
                                              (s1 v2 "treble_8"))))

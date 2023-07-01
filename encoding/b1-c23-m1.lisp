@@ -1,24 +1,39 @@
 `((:header
    (:filename "b1-c23-m1")
    (:alt-name "m1.031")
-   (:comment "")
+   (:comment "q021_s039, origin: 429")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Essempio d'alcuni toni e semitoni accidentali")
-   (:section-headings
-    (s1 ""))
+   (:title (:alt (:it "Essempio d'alcuni toni e semitoni accidentali")
+                 (:de "")
+                 (:en "")))
    (:section-captions
-    (s1 "tono accidentale\\composto")
-    (s2 "tono accidentale\\incomposto")
-    (s3 "tono accidentale\\composto")
-    (s4 "tono accidentale\\incomposto")
-    (s5 "tono accidentale\\composto")
-    (s6 "tono accidentale\\incomposto")
-    (s7 "tono accidentale\\composto")
-    (s8 "tono accidentale\\incomposto")
-    (s9 "tono accidentale\\incomposto"))
-   (:voice-labels
-    (:all v1 "")))
-
+    (s1 (:alt (:it "tono accidentale\\composto")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "tono accidentale\\incomposto")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "tono accidentale\\composto")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "tono accidentale\\incomposto")
+              (:de "")
+              (:en "")))
+    (s5 (:alt (:it "tono accidentale\\composto")
+              (:de "")
+              (:en "")))
+    (s6 (:alt (:it "tono accidentale\\incomposto")
+              (:de "")
+              (:en "")))
+    (s7 (:alt (:it "tono accidentale\\composto")
+              (:de "")
+              (:en "")))
+    (s8 (:alt (:it "tono accidentale\\incomposto")
+              (:de "")
+              (:en "")))
+    (s9 (:alt (:it "tono accidentale\\incomposto")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 100 58
           (525 1098 "ᴇſſempio dʼalcuni ᴛoni,et ſemitoni accidentali."))
@@ -51,10 +66,11 @@
           (1852 nil "incomp."))
    (:music 2202
            (:section s7)
-           ;; Idealisierung, weil die originale Teilung A♯-G-G♯ keine sinnvolle Tonhöhenreihenfolge
-           ;; ergibt.
-           cclef7 b38 sh5 b22 sb5 b22 (:alt (:diplomatic sb4)
-                                            (:idealised sb5))
+           cclef7 b38 sh5 b22 sb5 b22
+           (:alt (:diplomatic sb4)
+                 (:idealised sb5)
+                 (:comment "Original: A♯--G--G♯. Umstellung, um eine sinnvolle Tonhöhenabfolge herzustellen.")
+                 (:flag :draft) (:id 1))
            b22 sh4 b22 sb4 b38 bl
            (:section s8)
            b38 sh4 b22 sb4 b22 sh3 b22 sb3 b38 bl

@@ -137,7 +137,7 @@
     (if occurrence-1
         (let ((occurrence-2 (search trigger str :start2 (1+ occurrence-1))))
           (if occurrence-2
-              (replace-italics
+              (replace-formatting
                (concatenate 'string
                             (subseq str 0 occurrence-1)
                             command

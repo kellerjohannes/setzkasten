@@ -3,8 +3,9 @@
    (:alt-name "m3.023")
    (:comment "q021_s096, rotation: -1.63, origin: 1055")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del secondo modo per ♭ molle\\della musica participata e mista"))
-
+   (:title (:alt (:it "Esempio del secondo modo per ♭ molle\\della musica participata e mista")
+                 (:de "")
+                 (:en ""))))
   (:data
    (:text 130 58
           (196 1804 "Eßempio del ſecondo Modo per ♭.molle della Muſica participata & miſta."))

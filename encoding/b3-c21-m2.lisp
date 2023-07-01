@@ -3,8 +3,9 @@
    (:alt-name "m3.044")
    (:comment "q021_s100, origin: 992")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del settimo modo per ♮ incitato\\della musica participata et mista"))
-
+   (:title (:alt (:it "Esempio del settimo modo per ♮ incitato\\della musica participata et mista")
+                 (:de "")
+                 (:en ""))))
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")))

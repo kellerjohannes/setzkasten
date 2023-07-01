@@ -3,20 +3,41 @@
    (:alt-name "m2.006")
    (:comment "q021_s58, rotation: -0.92, origin: 1038")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio della sincopa maggiore, et minore, et minima")
+   (:title (:alt (:it "Esempio della sincopa maggiore, et minore, et minima")
+                 (:de "")
+                 (:en "")))
    (:section-headings
-    (s1 "A due voci")
-    (s2 "A due voci")
-    (s3 "A due voci")
-    (s4 "A tre voci")
-    (s5 "A tre voci")
-    (s6 "A cinque voci")
-    (s7 "A cinque voci"))
+    (s1 (:alt (:it "A due voci")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "A due voci")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "A due voci")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "A tre voci")
+              (:de "")
+              (:en "")))
+    (s5 (:alt (:it "A tre voci")
+              (:de "")
+              (:en "")))
+    (s6 (:alt (:it "A cinque voci")
+              (:de "")
+              (:en "")))
+    (s7 (:alt (:it "A cinque voci")
+              (:de "")
+              (:en ""))))
    (:section-captions
-    (s1 "Sincopa maggiore")
-    (s1 "Sincopa minore")
-    (s1 "Sincopa minima")))
-
+    (s1 (:alt (:it "Sincopa maggiore")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "Sincopa minore")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "Sincopa minima")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 90 58
      (416 nil "Eſſempio della Sincopa ᴍaggiore,et ᴍinore , et minima."))
@@ -48,12 +69,12 @@
      (2030 nil "à 5 uoci."))
    (:music 2227
            (:voice v2)
-           ;; Bibelgruppe:
-           ;; Vermuteter Fehler im ersten Takt, Korrekturvorschlag Luigi: F-Schlüssel
-           ;; statt C-Schlüssel im zweiten System, und im ersten System f statt e als
-           ;; dritte Note.
-           ;; Kommentar Johannes: diesen Fehler kann ich nicht mehr nachvollziehen!
-           (:section s1) cclef7 sb5 br7 sb6 sb7 bl
+           (:section s1)
+           (:alt (:diplomatic cclef7)
+                 (:idealised cclef7)
+                 (:comment "Korrekturvorschlag von Luigi: C-Schlüssel mit einem F-Schlüssel austauschen. Es scheint jedoch kein Fehler vorzuliegen.")
+                 (:flag :observe) (:id 1))
+           sb5 br7 sb6 sb7 bl
            (:section s2) b22 m4 dot4 sm3 m2 sb5 sh4 b22 m4 b22 sb5 bl
            (:section s3) mrest5 m1 sm2 b22 m4 sh3 sm3 sb4 bl
            (:section s4) sb9 b22 m8 b22 sb7 b22 m6 b22 b22 sb7 b38 bl

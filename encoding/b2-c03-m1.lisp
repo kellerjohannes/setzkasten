@@ -3,22 +3,9 @@
    (:alt-name "m2.003")
    (:comment "q021_s056, origin: 993")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Essempio d'andare all'unisono con vari gradi e salti")
-   (:section-headings
-    (s1 "")
-    (s2 "")
-    (s3 "")
-    (s4 "")
-    (s5 "")
-    (s6 "")
-    (s7 "")
-    (s8 ""))
-   (:section-captions
-    (s1 ""))
-   (:voice-labels
-    (:all v1 "")
-    (:all v2 "")))
-
+   (:title (:alt (:it "Essempio d'andare all'unisono con vari gradi e salti")
+                 (:de "")
+                 (:en ""))))
   (:data
    (:text 90 58
           (493 1277 "Eſſempio dʼandare allʼᴠniſono con uarij gradi & ſalti."))

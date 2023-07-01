@@ -3,13 +3,22 @@
    (:alt-name "m3.066")
    (:comment "q021_s111, rotation: 0.68, origin: 484")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio di molte cadentie del quarto modo, a quattro voci\\della musica participata e mista per ♮ quadro")
+   (:title (:alt (:it "Esempio di molte cadentie del quarto modo, a quattro voci\\della musica participata e mista per ♮ quadro")
+                 (:de "")
+                 (:en "")))
    (:voice-labels
-    (s1 v1 "Cadentie del soprano")
-    (s1 v2 "Cadentie del contr'alto")
-    (s1 v3 "Cadentie del tenore")
-    (s1 v4 "Cadentie del basso")))
-
+    (s1 v1 (:alt (:it "Cadentie del soprano")
+                 (:de "")
+                 (:en "")))
+    (s1 v2 (:alt (:it "Cadentie del contr'alto")
+                 (:de "")
+                 (:en "")))
+    (s1 v3 (:alt (:it "Cadentie del tenore")
+                 (:de "")
+                 (:en "")))
+    (s1 v4 (:alt (:it "Cadentie del basso")
+                 (:de "")
+                 (:en "")))))
   (:preamble-lilypond
    (:clef-overrides
     (s1 v2 "treble_8")
@@ -29,21 +38,14 @@
            (:section s3) (:newline) b22 m3 b22 sb1 b22 m0 b22 bl
            (:section s4) b22 mrest5 b22 sb5 sh4 m4 b22 sb5 b22 bl
            (:section s5) b22 mrest5 b22 sb6 b38 m5
-           ;; Kosmetische Idealisierung, vertikale Positionierung Punkt
-           (:alt (:diplomatic dot4) (:idealised dot6))
-           ;; Idealisierung zu diskutieren, sie wurde von Johannes vorgeschlagen, damit die vier
-           ;; Stimmen gleich lang sind. Anne hat sie in ihrer Korrekturrunde kritisiert und
-           ;; schlägt vor:
-           ;; - Dann würde ich eine Longa daraus machen, da es die Regel der Zeit
-           ;;   war. Aber für die damalige Zeit war es auch die Regel, dass man
-           ;;   die letzte Note aushält so lange bis alle Stimmen fertig
-           ;;   sind. Darum gibt es ein Konflikt zwischen modern und neu. Also
-           ;;   keine zweite Note, aber eine längere fände ich bessser.
-
-           ;; Dieser Eingriff (Verlängerund der br3 zu longa3) ist die aktuelle Lösung.
-           ;; Nebenbemerkung: eine longa3 musste dafür angelegt werden, diese Type wird sonst
-           ;; nirgends verwendet.
-           sm4 sb3 b38 m2 b38 (:alt (:diplomatic br3) (:idealised longa3)) b38 blbl)
+           (:alt (:diplomatic dot4) (:idealised dot6)
+                 (:comment "Original: Punktierung steht eine Position tiefer.")
+                 (:flag :draft) (:id 1))
+           sm4 sb3 b38 m2 b38
+           (:alt (:diplomatic br3) (:idealised longa3)
+                 (:comment "Diskutable Verlängerung der letzten Note im Sopran, um alle Stimmen gleich lang erscheinen zu lassen. Diese Type (longa3) wird sonst im Traktat nie verwendet.")
+                 (:flag :suggestion) (:id 2))
+           b38 blbl)
    (:text 110 58
           (664 597 "Cadentie del ᴄontrʼᴀlto."))
    (:music 2230
@@ -71,5 +73,5 @@
            (:section s3) b38 b22 sb2 b38 sb1 b38 b22 bl
            (:section s4) b38 sb4 b38 sb5 b38 sb1 b38 bl
            (:section s5) mrest7 m5 m2 m3 b22 m4 dot4 sm2 sb5 m4 b22 sb2 m1 br-1 blbl)
-   ;; nötig, um der Hilfslinie genügen vertiaklen Raum zu geben.
+   ;; nötig, um der Hilfslinie genügend vertiaklen Raum zu geben.
    (:vspace 30)))

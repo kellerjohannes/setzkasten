@@ -1,22 +1,32 @@
 `((:header
    (:filename "b1-c33-m1")
    (:alt-name "m1.041")
-   (:comment "")
+   (:comment "q021_s045, origin: 494")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Essempio del salto e dei gradi de quarta accidentale, incomposta e composta")
-   (:section-headings
-    (s1 ""))
+   (:title (:alt (:it "Essempio del salto e dei gradi de quarta accidentale, incomposta e composta")
+                 (:de "")
+                 (:en "")))
    (:section-captions
-    (s1 "salto di quarta\\accidentale\\incomposta")
-    (s2 "gradi di quarta\\accidentale\\composta")
-    (s3 "gradi di quarta\\accidentale\\composta")
-    (s4 "salto di quarta\\accidentale\\incomposta")
-    ;; one "accidentale" is ignored here:
-    (s5 "gradi di quarta\\accidentale\\composta")
-    (s6 "salto di quarta\\accidentale\\incomposta"))
-   (:voice-labels
-    (:all v1 "")))
-
+    (s1 (:alt (:it "salto di quarta\\accidentale\\incomposta")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "gradi di quarta\\accidentale\\composta")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "gradi di quarta\\accidentale\\composta")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "salto di quarta\\accidentale\\incomposta")
+              (:de "")
+              (:en "")))
+    (s5 (:alt (:it "gradi di quarta\\accidentale\\composta")
+              (:de "")
+              (:en "")
+              (:comment "Original: »... acci. accidentale ...«.")
+              (:flag :draft) (:id 1)))
+    (s6 (:alt (:it "salto di quarta\\accidentale\\incomposta")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 150 58
           (137 1893 "ᴇſſempio del ſalto,& de i gradi de Ɋuarta accidentale,incompoſta & compoſta."))

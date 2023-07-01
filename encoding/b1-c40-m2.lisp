@@ -1,21 +1,30 @@
 `((:header
    (:filename "b1-c40-m2")
    (:alt-name "m1.051")
-   (:comment "")
+   (:comment "q021_s050, origin: 1006")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Essempio de gradi di quinte accidentali")
-   (:section-headings
-    (s1 ""))
+   (:title (:alt (:it "Essempio de gradi di quinte accidentali")
+                 (:de "")
+                 (:en "")))
    (:section-captions
-    (s1 "gradi della prima quinta\\accidentale per semitono\\minore ascendente composto")
-    (s2 "gradi della prima quinta\\accidentale per semitono\\maggiore [ascendente] composto")
-    (s3 "gradi della seconda quinta\\accidentale ascendente\\per semitono minore composto")
-    (s4 "gradi della terza quinta\\accidentale ascendente\\per semitono minore composto")
-    (s5 "gradi della terza quinta\\accidentale ascendente\\per semitono maggiore composto")
-    (s6 "gradi della quarta quinta\\accidentale ascendente\\per semitono minore composto"))
-   (:voice-labels
-    (:all v1 "")))
-
+    (s1 (:alt (:it "gradi della prima quinta\\accidentale per semitono\\minore ascendente composto")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "gradi della prima quinta\\accidentale per semitono\\maggiore [ascendente] composto")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "gradi della seconda quinta\\accidentale ascendente\\per semitono minore composto")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "gradi della terza quinta\\accidentale ascendente\\per semitono minore composto")
+              (:de "")
+              (:en "")))
+    (s5 (:alt (:it "gradi della terza quinta\\accidentale ascendente\\per semitono maggiore composto")
+              (:de "")
+              (:en "")))
+    (s6 (:alt (:it "gradi della quarta quinta\\accidentale ascendente\\per semitono minore composto")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 80 58
           (580 1020 "ᴇſſempio de ɢradi,di Ɋuinte accidentali."))

@@ -3,8 +3,9 @@
    (:alt-name "m3.025")
    (:comment "q021_s097, rotation: 0.96, origin: 544")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del secondo modo per musica finta,\\et è simile alla participata et mista"))
-
+   (:title (:alt (:it "Esempio del secondo modo per musica finta,\\et è simile alla participata et mista")
+                 (:de "")
+                 (:en ""))))
   (:data
    (:text 90 58
           (151 1939 "Eſſempio del ſecondo Modo per muſica finta, & è ſimile alla participata & miſta."))

@@ -1,19 +1,24 @@
 `((:header
    (:filename "b1-c39-m2")
    (:alt-name "m1.049")
-   (:comment "")
+   (:comment "q021_s049, origin: 406")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Essempio dei gradi delle quinte naturali")
-   (:section-headings
-    (s1 ""))
+   (:title (:alt (:it "Essempio dei gradi delle quinte naturali")
+                 (:de "")
+                 (:en "")))
    (:section-captions
-    (s1 "ordine 1 de gradi\\della prima quinta\\composta")
-    (s2 "ordine 2 de gradi\\della seconda quinta\\composta")
-    (s3 "ordine 3 de gradi\\della terza quinta\\composta")
-    (s4 "ordine 4 de gradi\\della quarta quinta\\composta"))
-   (:voice-labels
-    (:all v1 "")))
-
+    (s1 (:alt (:it "ordine 1 de gradi\\della prima quinta\\composta")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "ordine 2 de gradi\\della seconda quinta\\composta")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "ordine 3 de gradi\\della terza quinta\\composta")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "ordine 4 de gradi\\della quarta quinta\\composta")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 90 58
           (595 984 "ᴇſſempio de i gradi delle Ɋuinte naturali."))

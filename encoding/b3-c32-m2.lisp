@@ -3,13 +3,22 @@
    (:alt-name "m3.064")
    (:comment "q021_s110, origin: 955")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio di molte cadentie del secondo modo, a quattro voci\\della musica participata, e mista, per ♮ quadro")
+   (:title (:alt (:it "Esempio di molte cadentie del secondo modo, a quattro voci\\della musica participata, e mista, per ♮ quadro")
+                 (:de "")
+                 (:en "")))
    (:voice-labels
-    (s1 v1 "Cadentie del soprano")
-    (s1 v2 "Cadentie del contr'alto")
-    (s1 v3 "Cadentie del tenore")
-    (s1 v4 "Cadentie del basso")))
-
+    (s1 v1 (:alt (:it "Cadentie del soprano")
+                 (:de "")
+                 (:en "")))
+    (s1 v2 (:alt (:it "Cadentie del contr'alto")
+                 (:de "")
+                 (:en "")))
+    (s1 v3 (:alt (:it "Cadentie del tenore")
+                 (:de "")
+                 (:en "")))
+    (s1 v4 (:alt (:it "Cadentie del basso")
+                 (:de "")
+                 (:en "")))))
   (:data
    (:text 70 58
           (263 1768 "Eſſempio di molte cadentie del ꜱecondo Modo,à quattro uoci della Muſica"))
@@ -19,15 +28,21 @@
           (654 547 "Cadentie del ꜱoprano ."))
    (:music 2238
            (:voice v1)
-           ;; Kosmetische Idealisierung, Positionierung ♯
-           (:section s1) cclef3 b22 mrest1 sb1 (:alt (:diplomatic sh1) (:idealised sh0)) m0 sb1 bl
+           (:section s1) cclef3 b22 mrest1 sb1
+           (:alt (:diplomatic sh1) (:idealised sh0)
+                 (:comment "Original: ♯ steht eine Position höher.")
+                 (:flag :draft) (:id 1))
+           m0 sb1 bl
            (:section s2) b22 mrest3 b22 sb3 m2 sb3 b22 bl
            (:section s3) b22 mrest3 b22 sb4 sh3 m3 sb4 b22 bl
            (:section s4) (:newline) mrest5 sb6 m5d sb6 b22 bl
            (:section s5) mrest5 sb5 m4 m5 sb7 sh6 m6 sb7 b22 bl
            (:section s6) mrest7 sb8 sh7 m7 sb8 bl
-           ;; Kosmetische Idealisierung (Platzierung Pause), allgemein zu besprechen
-           (:section s7) (:alt (:diplomatic mrest7) (:idealised mrest3)) sb4 sh3 m3 br4 b22 blbl)
+           (:section s7)
+           (:alt (:diplomatic mrest7) (:idealised mrest3)
+                 (:comment "Original: Minima-Pause steht eine Position höher.")
+                 (:flag :draft) (:id 2))
+           sb4 sh3 m3 br4 b22 blbl)
    (:text 110 58
           (671 630 "Cadentie del ᴄontrʼAlto."))
    (:music 2250

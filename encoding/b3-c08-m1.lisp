@@ -3,8 +3,9 @@
    (:alt-name "m3.007")
    (:comment "q021_s90, origin: 993")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del quarto modo diatonico semplice,\\da greci detto yppofrigio"))
-
+   (:title (:alt (:it "Esempio del quarto modo diatonico semplice,\\da greci detto yppofrigio")
+                 (:de "")
+                 (:en ""))))
   (:preamble-lilypond
    (:alt (:tolgahan (:clef-overrides
                      (s1 v1 "treble_8")))))

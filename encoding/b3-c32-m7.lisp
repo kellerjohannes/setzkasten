@@ -3,12 +3,22 @@
    (:alt-name "m3.069")
    (:comment "q021_s112, rotation: 0, origin: 912")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio di molte cadentie del settimo modo della musica participata\\e mista per ♮ quadro")
+   (:title (:alt (:it "Esempio di molte cadentie del settimo modo della musica participata\\e mista per ♮ quadro")
+                 (:de "")
+                 (:en "")))
    (:voice-labels
-    (s1 v1 "Cadentie del soprano")
-    (s1 v2 "Cadentie del contr'alto")
-    (s1 v3 "Cadentie del tenore")
-    (s1 v4 "Cadentie del basso"))
+    (s1 v1 (:alt (:it "Cadentie del soprano")
+                 (:de "")
+                 (:en "")))
+    (s1 v2 (:alt (:it "Cadentie del contr'alto")
+                 (:de "")
+                 (:en "")))
+    (s1 v3 (:alt (:it "Cadentie del tenore")
+                 (:de "")
+                 (:en "")))
+    (s1 v4 (:alt (:it "Cadentie del basso")
+                 (:de "")
+                 (:en ""))))
    (:voice-order
     (s1 v1 v2 v3 v4)
     (s2 v1 v2 v3 v4)
@@ -18,7 +28,6 @@
     (s6 v1 v2 v3 v4)
     (s7 v1 v2 v3 v4)
     (s8 v1 v2 v3 v4)))
-
   (:preamble-lilypond
    (:clef-overrides
     (s1 v3 "treble_8")
@@ -67,7 +76,10 @@
            (:section s3) mrest7 m8 b22 sb7 sb6 bl
            (:section s4)
            ;; Kosmetische Idealisierung, Pausenplatzierung
-           (:alt (:diplomatic mrest3) (:idealised mrest5)) m6 b22 sb6 b22 sb6 bl
+           (:alt (:diplomatic mrest3) (:idealised mrest5)
+                 (:comment "Original: Minima-Pause steht eine Position tiefer.")
+                 (:flag :draft) (:id 1))
+           m6 b22 sb6 b22 sb6 bl
            (:section s5) mrest5 m6 b22 sb4 b22 bl
            (:section s6) b22 sb5 b38 sb6 b38 sb6 b22 bl
            (:section s7) sb6 b38 m2 b38 m9 b38 m8 b38 m6 b22 bl

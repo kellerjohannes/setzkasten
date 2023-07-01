@@ -1,21 +1,30 @@
 `((:header
    (:filename "b1-c35-m1")
    (:alt-name "m1.043")
-   (:comment "")
+   (:comment "q021_s046, origin: 925")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Essempio del tritono naturale, incomposto e composto")
-   (:section-headings
-    (s1 ""))
+   (:title (:alt (:it "Essempio del tritono naturale, incomposto e composto")
+                 (:de "")
+                 (:en "")))
    (:section-captions
-    (s1 "salto di tritono\\incomposto")
-    (s2 "salto di tritono\\incomposto")
-    (s3 "salto di tritono\\incomposto")
-    (s4 "salto di tritono\\incomposto")
-    (s5 "gradi di tritono\\composto")
-    (s6 "gradi di tritono\\composto"))
-   (:voice-labels
-    (:all v1 "")))
-
+    (s1 (:alt (:it "salto di tritono\\incomposto")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "salto di tritono\\incomposto")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "salto di tritono\\incomposto")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "salto di tritono\\incomposto")
+              (:de "")
+              (:en "")))
+    (s5 (:alt (:it "gradi di tritono\\composto")
+              (:de "")
+              (:en "")))
+    (s6 (:alt (:it "gradi di tritono\\composto")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 125 58
           (459 1239 "ᴇſſempio del ᴛritono naturale,incompoſto et compoſto."))

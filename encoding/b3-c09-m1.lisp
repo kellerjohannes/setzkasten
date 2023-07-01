@@ -3,8 +3,9 @@
    (:alt-name "m3.008")
    (:comment "q021_s90, origin: 992")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del quinto modo diatonico semplice,\\da greci detto lidio"))
-
+   (:title (:alt (:it "Esempio del quinto modo diatonico semplice,\\da greci detto lidio")
+                 (:de "")
+                 (:en ""))))
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")))

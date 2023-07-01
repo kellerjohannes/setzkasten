@@ -3,8 +3,9 @@
    (:alt-name "m3.020")
    (:comment "q021_s096, rotation: -1.63, origin: 1050")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del primo modo per ♭ molle\\della musica participata e mista"))
-
+   (:title (:alt (:it "Esempio del primo modo per ♭ molle\\della musica participata e mista")
+                 (:de "")
+                 (:en ""))))
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")))
@@ -17,8 +18,8 @@
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat)
            sb2 m6 dot6 sm6 fl7 m7 b22 m5 b22 m6 b22 sm2 b22 m9 b22 cr6 b22 cr7 b22 m8 b22 m4 dot4
            sm3 b22 sm2 b22 sm1 b22 m2 b22 sb6 mrest5 m6
-           ;; Vorschlag von Anne, die Positionierung von Additionspunkten ist generell zu diskutieren
-           (:alt (:diplomatic dot8) (:idealised dot6))
+           (:alt (:diplomatic dot8) (:idealised dot6)
+                 (:comment "Original: Punktierung der zweiten Minima steht eine Position tiefer.")
+                 (:flag :draft) (:id 1))
            sm7 b22 sm8 b22 sm6 b22 m9 b22
-           m2 dot2 sm3 b22 sm4 b22 sm2 sb6 b22 br1 b22 bl
-           )))
+           m2 dot2 sm3 b22 sm4 b22 sm2 sb6 b22 br1 b22 bl)))

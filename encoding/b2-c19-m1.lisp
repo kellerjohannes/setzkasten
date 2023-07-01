@@ -3,21 +3,31 @@
    (:alt-name "m2.022")
    (:comment "q021_s070, rotation: -0.61, origin: 973")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio della sesta minore, come in vari modi si può comporre")
+   (:title (:alt (:it "Esempio della sesta minore, come in vari modi si può comporre")
+                 (:de "")
+                 (:en "")))
    (:section-headings
-    (s1 "A due voci")
-    (s2 "A tre voci")
-    (s3 "[A due voci]")
-    (s4 "A due voci"))
+    (s1 (:alt (:it "A due voci")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "A tre voci")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "[A due voci]")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "A due voci")
+              (:de "")
+              (:en ""))))
    (:section-captions
-    (s2 "De salti")
-    )
+    (s2 (:alt (:it "De salti")
+              (:de "")
+              (:en ""))))
    (:voice-order
     (s1 v1 v2)
     (s2 v1 v2 v3)
     (s3 v2 v1)
     (s4 v1 v2)))
-
   (:data
    (:text 110 58
           (353 1487 "Eſſempio della Seſta minore,come in uarij modi ſi può comporre."))
@@ -41,5 +51,9 @@
            (:voice v2) cclef7 b22 mrest7 sb7 b38 m9 b38
            (:section s4)
            ;; Rhythmischer Eingriff, Korrektur zu diskutieren!
-           (:voice v1) cclef7 b38 sb3 sb2 (:alt (:diplomatic) (:idealised dot2)) bl
+           (:voice v1) cclef7 b38 sb3 sb2
+           (:alt (:diplomatic) (:idealised dot2)
+                 (:comment "Punktierung des E wurde ergänzt.")
+                 (:flag :suggestion) (:id 1))
+           bl
            (:voice v2) mrest7 m7 dot8 sm6 sb9 bl)))
