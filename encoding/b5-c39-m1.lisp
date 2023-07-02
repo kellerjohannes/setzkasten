@@ -4,9 +4,12 @@
    (:comment "q021_s237, origin: 470")
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
-    (s1 "Immobili ascendenti")
-    (s2 "Immobili discendenti")))
-
+    (s1 (:alt (:it "Immobili ascendenti")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "Immobili discendenti")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 90 58
      (342 nil "Immobili aſcendenti.")

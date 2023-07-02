@@ -3,25 +3,31 @@
    (:alt-name "m4.033")
    (:comment "q021_s184, rotation: 0, origin: 962")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Compositione a quattro voci,\\soprano mutabile per ottava di sotto")
-   ;; Bibelgruppe:
-   ;; Dieses und das nächste Kapitel konnten bisher nicht befriedigend interpretiert werden. Das
-   ;; betrifft auch die Musikbeispiele. Es liegt dazu eine Korrespondenz mit Elam Rotem, Laurie
-   ;; Stras, Vicente Parilla, Johannes Menke, David Mesquita und Lisandro Abadie vor, ohne
-   ;; eindeutigen Befund. Wie sich das auf die Normalisierung der Notenbeispiele (dieses und
-   ;; b4-c39-m1) auswirkt ist zu diskutieren.
-   ;; Es liegen Skizzen zu hypothetischen Beispielen von Anne vor.
+   (:title (:alt (:it "Compositione a quattro voci,\\soprano mutabile per ottava di sotto")
+                 (:de "")
+                 (:en "")))
    (:section-headings
-    (s2 "Soprano convertito in tenore,\\all'ottava sotto"))
+    (s2 (:alt (:it "Soprano convertito in tenore,\\all'ottava sotto")
+              (:de "")
+              (:en "")
+              (:comment "Es ist zu diskutieren, ob anstelle dieser Sopranstimme ein entsprechender vierstimmiger Satz angeboten werden soll.")
+              (:flag :observe) (:id 1))))
+   (:voice-labels
+    (s1 v1 (:alt (:it "Soprano")
+                 (:de "")
+                 (:en "")))
+    (s1 v2 (:alt (:it "Alto")
+                 (:de "")
+                 (:en "")))
+    (s1 v4 (:alt (:it "[Tenore]")
+                 (:de "")
+                 (:en "")))
+    (s1 v3 (:alt (:it "[Basso]")
+                 (:de "")
+                 (:en ""))))
    (:voice-order
     (s1 v1 v2 v4 v3)
-    (s2 v1))
-   (:voice-labels
-    (s1 v1 "Soprano")
-    (s1 v2 "Alto")
-    (s1 v3 "[Tenore]")
-    (s1 v4 "[Basso]")))
-
+    (s2 v1)))
   (:preamble-lilypond
    (:lyrics
     (s1 v1 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- vo.")

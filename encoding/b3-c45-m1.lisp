@@ -3,18 +3,19 @@
    (:alt-name "m3.093")
    (:comment "q021_s124, origin: 977")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Essempio di tre quarte differenti delli tre generi\\musicali, della prima spetie delle quarte")
-   (:section-headings
-    (s1 "")
-    (s2 "")
-    (s3 ""))
+   (:title (:alt (:it "Essempio di tre quarte differenti delli tre generi\\musicali, della prima spetie delle quarte")
+                 (:de "")
+                 (:en "")))
    (:section-captions
-    (s1 "Prima quarta\\diatonica")
-    (s2 "Prima quarta\\cromatica")
-    (s3 "Prima quarta\\enarmonica"))
-   (:voice-labels
-    (:all v1 "")))
-
+    (s1 (:alt (:it "Prima quarta\\diatonica")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "Prima quarta\\cromatica")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "Prima quarta\\enarmonica")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 70 58
           (49 2092 "Eſſempio di tre Ɋuarte differenti delli tre generi muſicali, della prima ſpetie delle quarte."))
@@ -24,9 +25,12 @@
           (1173 nil "ᴇnarmonica"))
    (:music 2198
            (:voice v1)
-           ;; Die Longa des Bassschlüssels ist in der Quelle seitenverkehrt. Das wird im
-           ;; types-backend stillschweigend idealisiert, auch in :diplomatic.
-           (:section s1) (:f-clef) max7 fclef7 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 bl
+           (:section s1) (:f-clef)
+           (:alt (:diplomatic max7)
+                 (:idealised max7)
+                 (:comment "Original: die Longa im Bassschlüssel ist seitenverkehrt gedruckt.")
+                 (:flag :draft) (:id 1))
+           fclef7 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 bl
            (:section s2) b38 sb2 b38 fl3 b38 sb3 b38 fl5 b38 sb5 b38 sb5 b38 bl
            (:section s3) b38 sb2 b38 sbd2 b38 fl5 b38 sb5 b38 sb5 b38 b38 bl
            b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38)

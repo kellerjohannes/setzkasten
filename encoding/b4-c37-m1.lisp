@@ -3,24 +3,12 @@
    (:alt-name "m4.032")
    (:comment "q021_s183, rotation: 0.87, origin: 461")
    (:creator "Vicentino21 / Johannes Keller")
-   ;; Bibelgruppe:
-   ;; Frage nach dem Grund für das kopfüber gedruckte Fragment "Principio &
-   ;; fine.". Sollen im Kommentar verschiedene Interpretationen dieses
-   ;; Beispiels wiedergegeben und diskutiert werden?
-   ;; Laut [[cite:&collinsFugueCanonDouble1993]] ist genau dieses Beispiel bei
-   ;; Tigrini wiedergegeben. ([[cite:&tigriniCompendioMusica1588]], S. 111). Bei
-   ;; Trigrini steht hingegen ein vierstimmiges Beispiel als
-   ;; Krebs-Inversions-Kanon.
-
-   ;; Im Moment wird keine Auflösung geboten, nur eine direkte Übertragung der Quelle.
-   ;; Die Positionierung dieser Überschrift in der Normalisierung ist zu lösen,
-   ;; in dieser Form ist sie nicht nachvollziehbar.
-
-   ;; Es ist zu überlegen, ob aufgelöste Fassungen als Zusatz zur Normalisierung hergestellt
-   ;; werden sollen.
    (:section-headings
-    (s1 "Principio et fine")))
-
+    (s1 (:alt (:it "Principio et fine")
+              (:de "")
+              (:en "")
+              (:comment "Es ist zu diskutieren, wie dieses Textelement in der Normalisierung dargestellt werden soll. Ausserdem sind verschiedene Auflösungen denkbar, die in separaten Musikbeispielen ausgeführt werden könnten. Siehe dazu auch Tigrini, _Compendio Musica_ (1588), der ein sehr ähnliches Beispiel abdruckt, allerdings mit vierstimmiger Auflösung.")
+              (:flag :observe) (:id 1)))))
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")))

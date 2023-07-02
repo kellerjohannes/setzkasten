@@ -1,19 +1,26 @@
-;; s2 und s3 werden zur Zeit mit Taktsignatur dargestellt, sollte das vermieden werden, muss ein
-;; Signatur-Unterdrücker implementiert werden.
 `((:header
    (:filename "b4-c30-m1")
    (:alt-name "m4.021")
    (:comment "q021_s173, rotation: 1.01, origin: 471")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Regola universale di porre le parole sotto alle note")
+   (:title (:alt (:it "Regola universale di porre le parole sotto alle note")
+                 (:de "")
+                 (:en "")))
    (:section-headings
-    (s2 " \\Non buona pronuntia")
-    (s3 "Si pronuntia la sillaba\\sotto la nera per bisogno"))
+    (s2 (:alt (:it " \\Non buona pronuntia")
+              (:de "")
+              (:en "")
+              (:comment "Nach aktuellem Stand ist es nicht möglich, hier die Taktsignatur zu unterdrücken. Soll dies getan werden, oder ist die ergänzte Taktsignatur sinnvoll?")
+              (:flag :observe) (:id 1)))
+    (s3 (:alt (:it "Si pronuntia la sillaba\\sotto la nera per bisogno")
+              (:de "")
+              (:en "")
+              (:comment "Nach aktuellem Stand ist es nicht möglich, hier die Taktsignatur zu unterdrücken. Soll dies getan werden, oder ist die ergänzte Taktsignatur sinnvoll?")
+              (:flag :observe) (:id 2))))
    (:voice-order
     (s1 v1)
     (s2 v1)
     (s3 v1)))
-
   (:preamble-lilypond
    (:lyrics
     (s1 v1 "Gau -- de -- a -- _ _ _ _ mus om -- _ _ nes in do -- _ _ _ _ mi -- no di -- em fe -- _ _ stum")

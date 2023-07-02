@@ -3,14 +3,13 @@
    (:alt-name "m5.002")
    (:comment "q021_s203, origin: 482")
    (:creator "Vicentino21 / Johannes Keller")
-   (:section-headings
-    (s1 ""))
    (:section-captions
-    (s1 "semitono minore\\di Alamire")
-    (s2 "semitono maggiore\\di Alamire"))
-   (:voice-labels
-    (:all v1 "")))
-
+    (s1 (:alt (:it "semitono minore\\di Alamire")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "semitono maggiore\\di Alamire")
+              (:de "")
+              (:en "")))))
   (:data
    (:music 966
            (:voice v1)

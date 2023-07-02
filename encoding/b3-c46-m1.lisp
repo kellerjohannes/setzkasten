@@ -3,18 +3,19 @@
    (:alt-name "m3.096")
    (:comment "q021_s125, rotation: 0.35, origin: 473")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Essempio di tre quinte differenti,di i tre generi musicali,\\della prima spetie delle quinte")
-   (:section-headings
-    (s1 "")
-    (s2 "")
-    (s3 ""))
+   (:title (:alt (:it "Essempio di tre quinte differenti,di i tre generi musicali,\\della prima spetie delle quinte")
+                 (:de "")
+                 (:en "")))
    (:section-captions
-    (s1 "Prima quinta\\diatonica")
-    (s2 "Prima quinta\\cromatica")
-    (s3 "Prima quinta\\enarmonica"))
-   (:voice-labels
-    (:all v1 "")))
-
+    (s1 (:alt (:it "Prima quinta\\diatonica")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "Prima quinta\\cromatica")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "Prima quinta\\enarmonica")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 70 58
           (93 2031 "Eſſempio di tre quinte differenti,di i tre generi muſicali,della prima ſpetie delle quinte."))

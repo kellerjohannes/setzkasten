@@ -3,19 +3,28 @@
    (:alt-name "m3.101")
    (:comment "q021_s127, rotation: 0.89, origin: 498 (first page); origin: 914 (second page)")
    (:creator "Vicentino21 / Johannes Keller")
-   (:section-headings
-    (s1 ""))
    (:section-captions
-    (s1 "Prima ottava enarmonica")
-    (s2 "Seconda ottava enarmonica")
-    (s3 "Terza ottava enarmonica")
-    (s4 "Quarta ottava enarmonica")
-    (s5 "Quinta ottava enarmonica")
-    (s6 "Sesta ottava enarmonica")
-    (s7 "Settima ottava enarmonica"))
-   (:voice-labels
-    (:all v1 "")))
-
+    (s1 (:alt (:it "Prima ottava enarmonica")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "Seconda ottava enarmonica")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "Terza ottava enarmonica")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "Quarta ottava enarmonica")
+              (:de "")
+              (:en "")))
+    (s5 (:alt (:it "Quinta ottava enarmonica")
+              (:de "")
+              (:en "")))
+    (s6 (:alt (:it "Sesta ottava enarmonica")
+              (:de "")
+              (:en "")))
+    (s7 (:alt (:it "Settima ottava enarmonica")
+              (:de "")
+              (:en "")))))
   (:preamble-lilypond
    (:clef-overrides
     (s5 v1 "treble_8")
@@ -27,9 +36,11 @@
           (1422 nil "ſeconda ottaua ᴇnarmonica"))
    (:music 2202
            (:voice v1)
-           (:section s1) (:f-key) max7 fclef7 sb2 b22 sbd2 fl5 b22 sb5 sb5 b22 sbd5
-           ;; Kosmetischer Eingriff, vertikale Platzierung ♭
-           (:alt (:diplomatic fl6) (:idealised fl8)) sb8 b22 fl8 b22 sbd8 b38 sb8 b22 sbd8 fl9 b22 sb9 fl9 b22 sbd9 b22 sb9 bl
+           (:section s1) (:f-clef) max7 fclef7 sb2 b22 sbd2 fl5 b22 sb5 sb5 b22 sbd5
+           (:alt (:diplomatic fl6) (:idealised fl8)
+                 (:comment "Original: Das zweite ♭ steht eine Position tiefer.")
+                 (:flag :draft) (:id 1))
+           sb8 b22 fl8 b22 sbd8 b38 sb8 b22 sbd8 fl9 b22 sb9 fl9 b22 sbd9 b22 sb9 bl
            (:section s2) sb3 sh5 b22 sb5 fl6 b22 sbd6 b22 sb6 sh8 b22 sb8 fl9 b22 sbd9 sb9 sbd9 fl10 sb10 fl10 sbd10 b22 sb10 bl)
    (:text 90 58
           (256 nil "terza ottaua Enarmonica")
@@ -66,5 +77,10 @@
            ;; Eine Idealisierung würde hier eine komplette Neustrukturierung bedeuten, was
            ;; der Absicht der Edition widerspricht. Ev. müsste dies separat kommentiert werden
            ;; und eine neu strukturierte 'settima ottava' vorgeschlagen werden.
-           (:section s7) (:newline) cclef5 b38 sb2 b38 sbd2 b38 fl3 b38 b22 sb3 b38 sb5 b38 sbd5 b38 fl6 b38 sb6 b38 sb8 b38 sbd8 b38 fl9 b38 b38 sb9 b38 fl9 b38 sbd9 b38 sb9 b22 b22 bl
+           (:section s7) (:newline)
+           (:alt (:diplomatic  )
+                 (:idealised  )
+                 (:comment "Die _settima ottava enarmonica_ hat eine fragwürdige Struktur, da es keine Note auf der Tonhöhe der Quarte und Quinte gibt, d.h. die Zusammensetzung aus einer _quarta enarmonica_ und einer _quinta enarmonica_ lässt sich hier nicht nachvollziehen. Eine Korrektur würde starke Eingriffe erfordern. Ein Kommentar soll auf jeden Fall eingefügt werden.")
+                 (:flag :observe) (:id 1))
+           cclef5 b38 sb2 b38 sbd2 b38 fl3 b38 b22 sb3 b38 sb5 b38 sbd5 b38 fl6 b38 sb6 b38 sb8 b38 sbd8 b38 fl9 b38 b38 sb9 b38 fl9 b38 sbd9 b38 sb9 b22 b22 bl
            b118 b118 b118 b118 b118 b118)))

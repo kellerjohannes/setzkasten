@@ -3,13 +3,22 @@
    (:alt-name "m3.117")
    (:comment "q021_s138, origin: 950 et al.; q021_s139, rotation: 1.87, origin: 461 et al.; q021_s140, rotation: 0.54, origin: 977 et al.")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "[Musica prisca caput]")
+   (:title (:alt (:it "[Musica prisca caput]")
+                 (:de "")
+                 (:en "")))
    (:voice-labels
-    (:all v1 "[Soprano]")
-    (:all v2 "[Alto]")
-    (:all v3 "[Tenore]")
-    (:all v4 "[Basso]")))
-
+    (s1 v1 (:alt (:it "[Soprano]")
+                 (:de "")
+                 (:en "")))
+    (s1 v2 (:alt (:it "[Alto]")
+                 (:de "")
+                 (:en "")))
+    (s1 v3 (:alt (:it "[Tenore]")
+                 (:de "")
+                 (:en "")))
+    (s1 v4 (:alt (:it "[Basso]")
+                 (:de "")
+                 (:en "")))))
   (:preamble-lilypond
    (:alt (:transposition-quarta-discendente (:clef-overrides
                                              (s1 v2 "treble_8"))))
@@ -32,8 +41,8 @@
             ex -- cel -- sum su -- per ae -- the -- ra mit -- tat,
             fa -- cta tu -- a Hyp -- po -- li -- te
             ex -- cel -- sum su -- per ae -- the -- rum mit -- tat.")
-    (s1 v2 "Mu -- si -- ca pri -- sca ca -- put, mu -- si -- ca pri -- sca ca -- put
-            te -- ne -- bris mo -- do su -- stu -- lit al -- tis,
+    (s1 v2 "Mu -- si -- ca pri -- sca ca -- _ _ _ put,
+            te -- ne -- bris mo -- do su -- stu -- lit al -- tis, su -- stu -- lit al -- tis,
             mu -- si -- ca pri -- sca ca -- put te -- ne -- bris mo -- do su -- stu -- lit al -- tis,
             su -- stu -- lit al -- tis
             dul -- ci -- bus ut nu -- me -- ris, dul -- ci -- bus ut nu -- me -- ris
@@ -112,25 +121,25 @@
    (:music 2210
            cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat)
            b38 nat7 md7 b22 sb8 b22 sbd5 b22 sbd5 dot6 md5d b22 sb6 b22
-           ;; Enh. Punkt, Idealisierung zu diskutieren
-           ;; David: könnte eine Verschiebung des Punkts sein, denn es fehlt gleich danach ein
-           ;; Additionspunkt.
-           (:alt (:diplomatic md6) (:idealised m6) (:tatti m6))
+           (:alt (:diplomatic md6) (:idealised m6) (:tatti m6)
+                 (:comment "Original: Sopran, T. 38, die zweite Note hat einen enharmonischen Punkt. Es könnte sich um eine Verschiebung des fehlenden rhythmischen Punkts der nächsten Note handeln.")
+                 (:flag :draft) (:id 1))
            b22 md9
-           ;; Rhythmische Idealisierung, notwendig für die Mehrstimmigkeit.
-           (:alt (:diplomatic) (:idealised dot10)) b22 smd9 b22 md9
-           ;; Punkt-Kreuz-Situation, Idealisierung zu diskutieren
-           ;; Soll ausprobiert werden, als angeschärfte subtonale Kadenzklausel
-           (:alt (:diplomatic sh8 sb8) (:idealised sh8 sb8) (:tatti fl9 sb9))
+           (:alt (:diplomatic) (:idealised dot10)
+                 (:comment "Original: Sopran, T. 38, die letzte Note ist nicht rhythmisch punktiert.")
+                 (:flag :draft) (:id 2))
+           b22 smd9 b22 md9
+           (:alt (:diplomatic sh8 sb8) (:idealised sh8 sb8) (:tatti fl9 sb9)
+                 (:comment "Sopran, T. 39, C♯: unkoventioneller Zusammenklang. Es kann disktiert werden, hier einen enharmonischen Punkt zu ergänzen, was allerdings nicht plausibel ist, das Punkte über mit einem ♯ modifizierten Noten generell nicht notiert werden (falls diese Tonhöhe intendiert war, würde sie als D♭ notiert).")
+                 (:flag :draft) (:id 3))
            b22
-           ;; Enh. Punkt, Idealisierung zu diskutieren
-           ;; Soll ausprobiert werden, entweder der komplette Klang ohne Punkte, oder Bass/Tenor/Sopran
-           ;; mit Punkt und Alt ohne
-           (:alt (:diplomatic sbd9) (:idealised sbd9) (:tatti sb9))
+           (:alt (:diplomatic sbd9) (:idealised sbd9) (:tatti sb9)
+                 (:comment "Sopran, T. 40, dieser Klang besteht im Original aus folgenden Noten (BTAS): D, Ȧ, F♯, Ḋ. Es sind drei Idealisierungen denkbar: 1. der komplette Klang wird mit Punkten erhöht, wodurch ein fragwürdiges Ḟ♯ entsteht. 2. der komplette Klang wird ohne Punkte verstanden, wodurch die Punkte in Sopran und Tenor entfernt werden müssen. 3. Im Bass wird ein Punkt ergänzt, wodurch eine ungewöhnliche _terza manca di minore_ zwischen Bass und Alt entsteht. Die dritte Variante wird bevorzugt.")
+                 (:flag :draft) (:id 4))
            b22 mrest7 b22 sb8 b22 m8 b22 brd6 b38
-           ;; Enh. Punkt, Idealisierung zu diskutieren
-           ;; Soll ohne dot klingen
-           (:alt (:diplomatic sbd7) (:idealised sb7) (:tatti sb7))
+           (:alt (:diplomatic sbd7) (:idealised sb7) (:tatti sb7)
+                 (:comment "Original: Sopran, T. 42, Taktmitte, die Note hat ein enharmonischen Punkt.")
+                 (:flag :draft) (:id 5))
            dot8 md7 nat7 m7 dot8 nat7 sm7
            nat7 sbd7 nat7 sbd7 nat7 md7 nat7 md7 b38 custos8)
    (:text 90 58
@@ -143,14 +152,13 @@
    (:music 2201
            cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat)
            b38 sb8 b38
-           ;; Enh. Punkt, Idealisierung zu diskutieren
-           ;; Typographische Erklärung: der Punkt wurde auf der anderen Seite dieser symmetrischen
-           ;; Figur platziert, also hier mit Punkt ...
-           (:alt (:diplomatic m8) (:idealised md8) (:tatti md8))
+           (:alt (:diplomatic m8) (:idealised md8) (:tatti md8)
+                 (:comment "Original: Sopran, T. 46, die erste Note hat keinen enharmonischen Punkt. Der Punkt wurde vom Setzer möglicherweise fälschlicherweise an das andere Ende der symmetrischen Notenfolge in diesem Takt gesetzt.")
+                 (:flag :draft) (:id 6))
            sh8 sb8 sh8
-           ;; Enh. Punkt, Idealisierung zu diskutieren, wahrscheinlich unvermeidlich.
-           ;; ... und hier ohne
-           (:alt (:diplomatic md8) (:idealised m8) (:tatti m8))
+           (:alt (:diplomatic md8) (:idealised m8) (:tatti m8)
+                 (:comment "Original: Sopran, T. 46, die letzte Note hat einen enharmonischen Punkt.")
+                 (:flag :draft) (:id 7))
            b22 fl9 sb9 b22 fl9 b22 sb9 b38
            (:divider :double)
            (:duration-override 1/2) longa9 (:duration-override 1) b38 blbl
@@ -219,12 +227,13 @@
    (:music 2231
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat)
            b22 sb6 b22 sbd9 dot10 md9 b22
-           ;; Enh. Punkt, Idealisierung zu diskutieren
-           ;; Verschiebung des Punkts, typographische Erklärung
-           (:alt (:diplomatic sbd7) (:idealised sb7) (:tatti sb7))
+           (:alt (:diplomatic sbd7) (:idealised sb7) (:tatti sb7)
+                 (:comment "Original: Alt, T. 36, die erste Note hat einen enharmonischen Punkt. Er wurde vom Setzer möglicherweise fälschlicherweise mit der kommenden Note verwechselt.")
+                 (:flag :draft) (:id 8))
            b22
-           ;; Enh. Punkt, Idealisierung zu diskutieren
-           (:alt (:diplomatic sb7) (:idealised sbd7) (:tatti sbd7))
+           (:alt (:diplomatic sb7) (:idealised sbd7) (:tatti sbd7)
+                 (:comment "Original: Alt, T. 36, die zweite Note hat keinen enharmonischen Punkt.")
+                 (:flag :draft) (:id 9))
            b38 brd7 b22 m8 b38 m5d b38 m8 b22 fl9 b22 m9 dot10
            fl9 b38 sm9 b38 md8 b22 sbd7 sh8 sb8 b38 mrest7 b22 sb8 b38 m8 b22
            sbd5 fl9 b22 sb9 b22 mrest7 b22 m8 b38 m8 b22 md9 b38 sb6 b38 custos9)
@@ -238,10 +247,9 @@
    (:music 2235
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat)
            b38 sbd9 b38 sbd9 b38 sbd9 b38 sb7 b38 md7 b38 m7 dot8 sm10 b38 m10 b38
-           ;; Enh. Punkt, Idealisierung zu diskutieren, wahrscheinlich unvermeidlich.
-           ;; David: dieser Punkt ist in gewissen Quellen enthalten, deshalb soll er hier
-           ;; idealisiert werden
-           (:alt (:diplomatic br10) (:idealised brd10) (:tatti brd10))
+           (:alt (:diplomatic br10) (:idealised brd10) (:tatti brd10)
+                 (:comment "Original: Alt, T. 47, die Note hat keinen enharmonischen Punkt. In gewissen Quellen ist ein Punkt zu erkennen.")
+                 (:flag :draft) (:id 10))
            sh8
            (:duration-override 1/2) longa8 (:duration-override 1) b38 blbl
            b22 b22 b22 b118 b118 b118 b118 b118 b118 b118 b118 b118)
@@ -276,9 +284,11 @@
           (1774 nil "dulcibus")
           (2028 nil "ut nu⸗"))
    (:music 2239
-           ;; Offensichtliche Korrektur, ♭ eine Position zu hoch gedruckt
-           ;; Von Bibelgruppe bestätigt
-           cclef7 (:alt (:diplomatic fl7) (:idealised fl6)) (:key-signature nil nil nil nil nil nil :flat)
+           cclef7
+           (:alt (:diplomatic fl7) (:idealised fl6)
+                 (:comment "Original: das ♭ in der Vorzeichnung steht eine Position höher.")
+                 (:flag :draft) (:id 11))
+           (:key-signature nil nil nil nil nil nil :flat)
            b22 m9 b22 m10 m3 dot4 sm3 sh3 m3 sh3 m3 dot4 sh3 sm3 b22 m4 b22 sb8 b22 m8 b22 sbrest7 mrest5 smrest3
            fl5 b22 m5 b22 fl5 b22 sm5 b22 fl5 b22 m5 b22 fl5 b22 m5 b22 smrest3 b22
            m2 b22 sm2 b22 m5 b22 mrest3 b22 sb3 b22 m3 mrest7 nat6 m6 b22 custos6)
@@ -313,15 +323,14 @@
    (:music 2248
            cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat)
            sbd7 b22 sbd7 dot8 md7 b22 sb7 m5d b22 md5d dot6 smd5d b22 md5d b22 sbd5 b22
-           ;; Enh. Punkt, Idealisierung zu diskutieren
-           ;; Hängt mit der Idealisierung der anderen Stimme an dieser Stelle zusammen, muss
-           ;; in den Proben entschieden werden.
-           (:alt (:diplomatic sbd5) (:idealised sbd5) (:tatti sb5)) mrest5
-           sb5 b22 m5d b22 sbd5 md8 b22 md8 b22 sb8 b22 m8 b22 md8 b22 sbrest9
-           b22
-           ;; Enh. Punkt, Idealisierung zu diskutieren, wahrscheinlich unvermeidlich
-           ;; Punkt soll ergänzt werden, von der Bibelgruppe bestätigt.
-           (:alt (:diplomatic sb8) (:idealised sbd8) (:tatti sbd8))
+           (:alt (:diplomatic sbd5) (:idealised sbd5) (:tatti sb5)
+                 (:comment "Tenor, T. 40, die erste Note soll nicht idealisiert werden, stattdessen wird an dieser Stelle die Note im Bass mit einem Punkt ergänzt.")
+                 (:flag :draft) (:id 12))
+           mrest5
+           sb5 b22 m5d b22 sbd5 md8 b22 md8 b22 sb8 b22 m8 b22 md8 b22 sbrest9 b22
+           (:alt (:diplomatic sb8) (:idealised sbd8) (:tatti sbd8)
+                 (:comment "Original: Tenor, T. 44, die erste Note hat keinen enharmonischen Punkt.")
+                 (:flag :draft) (:id 13))
            b22 sbd8 dot8 md4 b22 sb4 b22 md5 mrest7 m9 dot10 sm9 b22 sbd9 b22 sbd9
            (:duration-override 1/2) longa5 (:duration-override 1) blbl)
    (:text 90 58
@@ -349,7 +358,9 @@
            (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat)
            b22 sb4 b22 m3 b22 m3 dot4 sm3 b22 m3 b22 m0 b22 m4 b22 m7
            ;; Kosmetische Korrektur der vertikalen Position eines rhythmischen Punktes
-           (:alt (:diplomatic dot6) (:idealised dot8))
+           (:alt (:diplomatic dot6) (:idealised dot8)
+                 (:comment "Original: Bass, T. 14, die rhythmische Punktierung der ersten Note steht eine Position tiefer.")
+                 (:flag :draft) (:id 14))
            sm7 b22 sb7 b22 sb4 b22 sb7 b22 sbrest7 b22 m8 dot8 sm8 b22 sb4 b22 sb4 b22 m7 dot8 sm7 b22
            m5 b22 sb5 b22 m5 b22 m1 b22 m8 b22 sb8 b22 sb4 b22 sb7 custos5)
    (:text 90 58
@@ -388,8 +399,10 @@
    (:music 2222
            (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat)
            b22 sbd2 b22
-           ;; Zu diskutieren in den Proben, ev. soll hier ein Punkt ergänzt werden
-           (:alt (:diplomatic sb5) (:idealised sb5)) b22 mrest5 b22 sb7 b22 m7 b22 sbd7 b22 sbd5 b22 m1 b22 sb3 b22 md1 b22 sb1 b22 sbd1 b22 sbd8 dot8 md8 b22 sb4 b22
+           (:alt (:diplomatic sb5) (:idealised sb5)
+                 (:comment "Original: Bass, T. 40, die erste Note hat keinen enharmonischen Punkt. Siehe auch die Anmerkungen zu diesem Takt in den anderen Stimmen.")
+                 (:flag :draft) (:id 15))
+           b22 mrest5 b22 sb7 b22 m7 b22 sbd7 b22 sbd5 b22 m1 b22 sb3 b22 md1 b22 sb1 b22 sbd1 b22 sbd8 dot8 md8 b22 sb4 b22
            md2 b22 m9 dot10 sm9 b22 m9 b22 brd2 b22
            (:duration-override 1/2) longa5 (:duration-override 1) b38 blbl
            b22 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38)

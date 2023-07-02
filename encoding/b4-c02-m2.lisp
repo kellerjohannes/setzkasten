@@ -1,18 +1,34 @@
 `((:header
    (:filename "b4-c02-m2")
    (:alt-name "m2.002")
-   (:comment "q021_s145, rotation: 1.8, origin: 529; q021_s146, rotation: -1.2, origin: 859")
+   (:comment "q021_s145, rotation: 1.8, origin: 529; q021_s146, rotation: -1.2, origin: 859. Für dieses Beispiel wird keine normalisierte Version angeboten. Alternativ könnte eine Normalisierung in originalen Schlüsseln hergestellt werden.")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Dimostratione delle chiavi dei soprani, che insegnano a leggere\\tutte l'altre sorti di chiavi per ♭ incitato et per ♭ molle,\\et per musica finta")
+   (:title (:alt (:it "Dimostratione delle chiavi dei soprani, che insegnano a leggere\\tutte l'altre sorti di chiavi per ♭ incitato et per ♭ molle,\\et per musica finta")
+                 (:de "")
+                 (:en "")))
    (:line-headings
-    "Primo ordine"
-    "Secondo ordine"
-    "Terzo ordine"
-    "Quarto ordine"
+    (:alt (:it "Primo ordine")
+          (:de "")
+          (:en ""))
+    (:alt (:it "Secondo ordine")
+          (:de "")
+          (:en ""))
+    (:alt (:it "Terzo ordine")
+          (:de "")
+          (:en ""))
+    (:alt (:it "Quarto ordine")
+          (:de "")
+          (:en ""))
     nil
-    "Quinto ordine"
-    "Sesto ordine"
-    "Settimo ordine")
+    (:alt (:it "Quinto ordine")
+          (:de "")
+          (:en ""))
+    (:alt (:it "Sesto ordine")
+          (:de "")
+          (:en ""))
+    (:alt (:it "Settimo ordine")
+          (:de "")
+          (:en "")))
    (:voice-order
     ;; primo
     (s1 v1)
@@ -46,10 +62,6 @@
     (s23 v1)
     (s24 v1)
     (s25 v1)))
-
-  ;; Hier stellt sich die Frage, ob eine Normalisierung mit modernen Schlüsseln sinnvoll ist.
-  ;; Ev. sollten hier die originalen Schlüssel verwendet werden, da es explizit um das Phänomen
-  ;; der Schlüsselung geht.
   (:data
    (:text 70 58
           (10 2144 "Dimoſtratione delle chiaui de i Soprani , che inſegnano à leggere tutte lʼaltre ſorti di chiaui"))
@@ -80,11 +92,10 @@
    (:music 2218
            (:section s9) cclef3 b22 fl29 (:key-signature nil nil nil nil nil nil :flat) b22 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b22 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38
            (:section s10) cclef3 b22
-           ;; Bibelgruppe
-           ;; - > Korrektur! Der Fehler liegt in der ♭-Vorzeichnung, die nur as
-           ;; B♭ und E♭ bestehen soll. Dann funktioniert der Schlüssel auf C2-Position,
-           ;; die erste Note der Skala ist damit ein D.
-           (:alt (:diplomatic fl6) (:idealised fl2)) b22 fl18 b22 fl5 (:key-signature nil nil :flat nil nil :flat :flat) b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b38 sb8 b22 sb9 b38 sb10 bl)
+           (:alt (:diplomatic fl6 b22 fl18) (:idealised b22 fl29 b22)
+                 (:comment "Original: Die Vorzeichnung besteht aus F♭, A♭ und E♭.")
+                 (:flag :draft) (:id 1))
+            b22 fl5 (:key-signature nil nil :flat nil nil :flat :flat) b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b38 sb8 b22 sb9 b38 sb10 bl)
    (:vspace 90)
    (:music 2223
            (:section s11) (:f-clef) max9 fclef9 (:key-signature nil nil nil nil nil nil nil) b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38

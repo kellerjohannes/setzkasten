@@ -3,22 +3,31 @@
    (:alt-name "m4.017")
    (:comment "q021_s161, rotation: 0, origin: 441")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio a due voci, delle quinte antecedenti,\\et sussequenti, con il buono et megliore procedere\\di ♮ et di ♭ et del diesis cromatico")
+   (:title (:alt (:it "Esempio a due voci, delle quinte antecedenti,\\et sussequenti, con il buono et megliore procedere\\di ♮ et di ♭ et del diesis cromatico")
+                 (:de "")
+                 (:en "")))
    (:section-headings
-    (s1 " \\Quinta antecedente")
-    (s2 "Quinta antecedente\\et sussequente")
-    (s3 " \\buono procedere")
-    (s4 " \\megliore")
-    (s5 " \\buono procedere")
-    (s6 " \\megliore")
-    ;; Bibelgruppe:
-    ;; Achtung: letztes Beispiel ('modo di procedere con una parte.') ist
-    ;; einstimmig zu lesen, im Gegensatz zu allen anderen hier.
-
-    ;; Im Moment wird es trotzdem zweistimmig gesetzt, was bis auf die erste Note der oberen Stimme
-    ;; grundsätzlich funktioniert. Entweder wird diese Note korrigiert, und s7 auf zwei Einheiten
-    ;; (s7 und s8) verteilt, jeweils einstimmig. Zu diskutieren.
-    (s7 "modo di procedere\\con una parte")))
+    (s1 (:alt (:it " \\Quinta antecedente")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "Quinta antecedente\\et sussequente")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it " \\buono procedere")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it " \\megliore")
+              (:de "")
+              (:en "")))
+    (s5 (:alt (:it " \\buono procedere")
+              (:de "")
+              (:en "")))
+    (s6 (:alt (:it " \\megliore")
+              (:de "")
+              (:en "")))
+    (s7 (:alt (:it "modo di procedere\\con una parte")
+              (:de "")
+              (:en "")))))
 
   (:data
    (:text 70 58
@@ -47,7 +56,12 @@
            (:voice v1)
            (:section s5) (:newline) cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat) b38 sh3 m3 b38 m5 b22 nat6 b22 sb6 b38 sb7 b38 bl
            (:section s6) b38 b22 m5 dot6 sm7 b22 nat6 b22 sb6 b38 sb7 b38 b38 bl
-           (:section s7) b38 b22 cclef7 (:key-signature nil nil nil nil nil nil nil) b38 b22 mrest7 b38 sb7 b38 m5 b22 fl6 b22 m6 b38 sb4 b38 m5 b38 b38 b38 bl b38 b125)
+           (:section s7) b38 b22 cclef7 (:key-signature nil nil nil nil nil nil nil) b38 b22 mrest7 b38
+           (:alt (:diplomatic sb7)
+                 (:idealised sb8)
+                 (:comment "Original: Die erste Note der oberen Stimme ist ein C. Alternativ könnte dieses Beispiel als zwei separate einstimmige Beispiele gelesen werden, wie es die Überschrift suggeriert.")
+                 (:flag :suggestion) (:id 1))
+           b38 m5 b22 fl6 b22 m6 b38 sb4 b38 m5 b38 b38 b38 bl b38 b125)
    (:text 90 58
           (167 nil "buono procedere.")
           (828 nil "megliore,")

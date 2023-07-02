@@ -3,15 +3,24 @@
    (:alt-name "m4.040")
    (:comment "q021_s195, rotation: 0, origin: 466")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del sopra detto Don Vincentio,\\come ha posto le consonanze false")
+   (:title (:alt (:it "Esempio del sopra detto Don Vincentio,\\come ha posto le consonanze false")
+                 (:de "")
+                 (:en "")))
    (:voice-labels
-    (s1 v1 "Alto con la quinta falsa")
-    (s1 v2 "Soprano con la decima falsa")
-    (s1 v3 "Basso")
-    (s1 v4 "Tenore con le consonanze false"))
+    (s1 v1 (:alt (:it "Alto con la quinta falsa")
+                 (:de "")
+                 (:en "")))
+    (s1 v2 (:alt (:it "Soprano con la decima falsa")
+                 (:de "")
+                 (:en "")))
+    (s1 v3 (:alt (:it "Basso")
+                 (:de "")
+                 (:en "")))
+    (s1 v4 (:alt (:it "Tenore con le consonanze false")
+                 (:de "")
+                 (:en ""))))
    (:voice-order
     (s1 v2 v1 v4 v3)))
-
   (:data
    (:text 90 58
           (227 1768 "Eſſempio del ſopra detto Don Vincentio,come hà posto le conſonanze falſe."))

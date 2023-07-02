@@ -3,8 +3,9 @@
    (:alt-name "m3.110")
    (:comment "q021_s131, origin: 452")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del sesto modo enarmonico semplice"))
-
+   (:title (:alt (:it "Esempio del sesto modo enarmonico semplice")
+                 (:de "")
+                 (:en ""))))
   (:data
    (:text 90 58
           (527 1071 "Eſſempio del ſeſto modo ᴇnarmonico ſemplice."))

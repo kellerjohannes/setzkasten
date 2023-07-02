@@ -3,12 +3,17 @@
    (:alt-name "m4.016")
    (:comment "q021_s160, rotation: 0, origin: 898")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del primo modo perfetto")
+   (:title (:alt (:it "Esempio del primo modo perfetto")
+                 (:de "")
+                 (:en "")))
    (:section-headings
     (s1 "")
-    (s2 "Il procedere non è buono\\per cagion del tritono")
-    (s3 "Questo procedere è buono\\perche fugge il tritono con il ♭")))
-
+    (s2 (:alt (:it "Il procedere non è buono\\per cagion del tritono")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "Questo procedere è buono\\perche fugge il tritono con il ♭")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 90 58
           (538 831 "Eſſempio del primo Modo perfetto."))

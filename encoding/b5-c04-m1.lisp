@@ -4,9 +4,12 @@
    (:comment "q021_s203, origin: 471")
    (:creator "Vicentino21 / Johannes Keller")
    (:section-captions
-    (s1 "semitono maggiore\\d'Alamire")
-    (s2 "semitono minore\\d'Alamire")))
-
+    (s1 (:alt (:it "semitono maggiore\\d'Alamire")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "semitono minore\\d'Alamire")
+              (:de "")
+              (:en "")))))
   (:data
    (:music 1244
            (:voice v1)

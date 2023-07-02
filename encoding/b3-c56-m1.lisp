@@ -4,13 +4,24 @@
    (:comment "q021_s143, rotation: 1.02, origin: 448")
    (:creator "Vicentino21 / Johannes Keller")
    (:line-headings
-    "Voci immobili in tutti tre generi"
-    "Quinte immobili"
-    "Quarte immobili"
-    "Voci mobili in tutti tre i generi"
-    "Voci immobili in diatonico et in cromatico"
-    "Voci mobili nel genere enarmonico"))
-
+    (:alt (:it "Voci immobili in tutti tre generi")
+          (:de "")
+          (:en ""))
+    (:alt (:it "Quinte immobili")
+          (:de "")
+          (:en ""))
+    (:alt (:it "Quarte immobili")
+          (:de "")
+          (:en ""))
+    (:alt (:it "Voci mobili in tutti tre i generi")
+          (:de "")
+          (:en ""))
+    (:alt (:it "Voci immobili in diatonico et in cromatico")
+          (:de "")
+          (:en ""))
+    (:alt (:it "Voci mobili nel genere enarmonico")
+          (:de "")
+          (:en ""))))
   (:data
    (:text 90 58
           (109 802 "Voci immobili in tutti tre Generi.")

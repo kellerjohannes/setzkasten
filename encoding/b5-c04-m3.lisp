@@ -3,16 +3,19 @@
    (:alt-name "m5.003")
    (:comment "q021_s204, rotate: 0.42, origin: 984")
    (:creator "Vicentino21 / Johannes Keller")
-   (:section-headings
-    (s1 ""))
    (:section-captions
-    (s1 "semitono maggiore")
-    (s2 "semitono minore")
-    (s3 "semitono maggiore")
-    (s4 "semitono minore"))
-   (:voice-labels
-    (:all v1 "")))
-
+    (s1 (:alt (:it "semitono maggiore")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "semitono minore")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "semitono maggiore")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "semitono minore")
+              (:de "")
+              (:en "")))))
   (:data
    (:music 2241
            (:voice v1)

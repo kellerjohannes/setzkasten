@@ -4,13 +4,20 @@
    (:comment "q021_s237, origin: 470")
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
-    (s1 " \\Immobili ascendenti")
-    (s2 " \\Ne del tutto mobili")
-    (s3 "Ne del tutto immobili,\\genere cromatico"))
+    (s1 (:alt (:it " \\Immobili ascendenti")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it " \\Ne del tutto mobili")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "Ne del tutto immobili,\\genere cromatico")
+              (:de "")
+              (:en ""))))
    (:line-headings
     ""
-    "Serveno a ambedue i generi al diatonico et al cromatico:"))
-
+    (:alt (:it "Serveno a ambedue i generi al diatonico et al cromatico:")
+          (:de "")
+          (:en ""))))
   (:data
    (:text 90 58
      (176 nil "Immobili aſcendenti.")

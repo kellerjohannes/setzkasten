@@ -3,8 +3,9 @@
    (:alt-name "m3.106")
    (:comment "q021_s131, origin: 436")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del secondo modo enarmonico semplice"))
-
+   (:title (:alt (:it "Esempio del secondo modo enarmonico semplice")
+                 (:de "")
+                 (:en ""))))
   (:preamble-lilypond
    (:alt (:tolgahan (:clef-overrides
                      (s1 v1 "treble_8")))))

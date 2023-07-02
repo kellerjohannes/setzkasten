@@ -3,14 +3,25 @@
    (:alt-name "m3.118")
    (:comment "q021_s140, origin: 959; q021_s141, rotation 1.04, origin 470 et al.")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del genere cromatico, e delle sue spetie a cinque voci")
+   (:title (:alt (:it "Esempio del genere cromatico, e delle sue spetie a cinque voci")
+                 (:de "")
+                 (:en "")))
    (:voice-labels
-    (s1 v1 "[Soprano]")
-    (s1 v2 "[Alto]")
-    (s1 v3 "[Tenore]")
-    (s1 v4 "Quinta parte")
-    (s1 v5 "[Basso]")))
-
+    (s1 v1 (:alt (:it "[Soprano]")
+                 (:de "")
+                 (:en "")))
+    (s1 v2 (:alt (:it "[Alto]")
+                 (:de "")
+                 (:en "")))
+    (s1 v3 (:alt (:it "[Tenore]")
+                 (:de "")
+                 (:en "")))
+    (s1 v4 (:alt (:it "Quinta parte")
+                 (:de "")
+                 (:en "")))
+    (s1 v5 (:alt (:it "[Basso]")
+                 (:de "")
+                 (:en "")))))
   (:preamble-lilypond
    (:clef-overrides
     (s1 v2 "treble_8"))
@@ -78,9 +89,9 @@
           (2026 nil "ij"))
    (:music 2232
            cclef5 b38 fl4 b22 sb4 b38 mrest3
-           ;; Ergänzung ♭, Idealisierung zu diskutieren
-           ;; Soll ergänzt werden, von Bibelgruppe bestätigt
-           (:alt (:diplomatic b22) (:idealised fl4))
+           (:alt (:diplomatic b22) (:idealised fl4)
+                 (:comment "Original: Alt, T. 17, kein ♭.")
+                 (:flag :draft) (:id 1))
            m4 b38 sb8 dot8 m8 b38 sb8 b38 mrest7 b38 sb9 b22 m2 dot2 sm2 b38 m2 b38 smrest1 b38
            sm2 b22 m9 dot10 sm9 b38 m9 b38 m5 b22 m8 dot8 sm8 b38 m8 sh8 br8 sh8 sb8 sbrest9 sb4
            sh8 br8 b38 blbl b22 b22)
@@ -151,8 +162,10 @@
            (:f-clef) max7 fclef7 b38 fl3 b22 br3 b38 br1 b38 sb1 b38 sb4 b38 mrest3 b38 m4 b38
            sb7 dot8 m7 b38 sb5 b38 sb5 b38 sb3 b38 br6 b38 (:divider :double) br3 b38 blbl
            b38 b38 b38 b38 b38 b38 b38 b38
-           ;; Kosmetischer Eingriff, keine musikalische Bedeutung
-           (:alt (:diplomatic mrest7) (:idealised b38)) b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38)
+           (:alt (:diplomatic mrest7) (:idealised b38)
+                 (:comment "Original: Im leeren Abschnitt der Notenzeile nach dem Doppelstrich steht eine bedeutungslose Minima-Pause.")
+                 (:flag :draft) (:id 2))
+           b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38)
    (:text 90 58
           (213 nil "ad dominum")
           (638 nil "ad domin um")

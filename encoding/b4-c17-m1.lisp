@@ -4,11 +4,18 @@
    (:comment "q021_s159, rotation: 0.89, origin: 468")
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
-    (s1 "Esempi dei termini del soprano")
-    (s2 "Termini del contr'alto")
-    (s3 "Termini del tenore")
-    (s4 "Termini del basso")))
-
+    (s1 (:alt (:it "Esempi dei termini del soprano")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "Termini del contr'alto")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "Termini del tenore")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "Termini del basso")
+              (:de "")
+              (:en "")))))
   (:preamble-lilypond
    (:clef-overrides
     (s2 v1 "treble_8")))

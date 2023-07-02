@@ -3,8 +3,9 @@
    (:alt-name "m3.109")
    (:comment "q021_s131, origin: 448")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del quinto modo enarmonico semplice"))
-
+   (:title (:alt (:it "Esempio del quinto modo enarmonico semplice")
+                 (:de "")
+                 (:en ""))))
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")))

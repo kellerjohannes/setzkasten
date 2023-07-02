@@ -3,14 +3,28 @@
    (:alt-name "m4.034")
    (:comment "q021_s185, rotation: 1.45, origin: 474")
    (:creator "Vicentino21 / Johannes Keller")
-   ;; Achtung Unklarheiten, siehe Kommentar von b4-c38-m1.
    (:section-headings
-    (s2 "Tenore convertito in soprano\\per ottava più alto"))
+    (s2 (:alt (:it "Tenore convertito in soprano\\per ottava più alto")
+              (:de "")
+              (:en "")
+              (:comment "Es ist zu diskutieren, ob anstelle dieser Tenorstimme ein entsprechender vierstimmiger Satz angeboten werden soll.")
+              (:flag :observe) (:id 1))))
+   (:voice-labels
+    (s1 v1 (:alt (:it "[Soprano]")
+                 (:de "")
+                 (:en "")))
+    (s1 v2 (:alt (:it "[Alto]")
+                 (:de "")
+                 (:en "")))
+    (s1 v4 (:alt (:it "[Tenore]")
+                 (:de "")
+                 (:en "")))
+    (s1 v3 (:alt (:it "[Basso]")
+                 (:de "")
+                 (:en ""))))
    (:voice-order
     (s1 v1 v2 v4 v3)
-    (s2 v1))
-   )
-
+    (s2 v1)))
   (:preamble-lilypond
    (:lyrics
     (s1 v1 "O voi be -- a -- ta se si lar -- ghi do -- ni.")

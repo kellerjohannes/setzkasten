@@ -1,14 +1,21 @@
 `((:header
    (:filename "b4-c03-m1")
    (:alt-name "m4.003")
-   (:comment "q021_s147, rotation: -1.13, origin: 393")
+   (:comment "q021_s147, rotation: -1.13, origin: 393. Für dieses Beispiel wird keine normalisierte Version angeboten.")
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
-    (s1 "Esempio del modo\\maggiore perfetto")
-    (s2 "Del modo maggiore\\imperfetto")
-    (s3 "Del minor\\perfetto")
-    (s4 "Del minor\\imperfetto")))
-
+    (s1 (:alt (:it "Esempio del modo\\maggiore perfetto")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "Del modo maggiore\\imperfetto")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "Del minor\\perfetto")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "Del minor\\imperfetto")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 90 58
           (90 912 "Eſſempio del modo maggiore perfetto,")

@@ -14,15 +14,28 @@
    ;; Im Moment gibt es keine ergänzenden Elemente, nur das musikalische Material in direkter
    ;; Übertragung, das auch in der Quelle vorliegt.
    (:section-captions
-    (s1 "A quattro voci"))
+    (s1 (:alt (:it "A quattro voci")
+              (:de "")
+              (:en ""))))
    (:line-headings
-    "La prima volta il soprano fara due pause, et l'altra volta le tre parti,\\faranno le due pause del soprano,\\et quello cantera senza pause.")
+    (:alt (:it "La prima volta il soprano fara due pause, et l'altra volta le tre parti,\\faranno le due pause del soprano,\\et quello cantera senza pause.")
+          (:de "")
+          (:en "")
+          (:comment "Es ist zu diskutieren, ob für dieses Beispiel eine Auflösung angeboten werden soll.")
+          (:flag :observe) (:id 1)))
    (:voice-labels
-    (s1 v1 "Soprano")
-    (s1 v2 "Alto")
-    (s1 v3 "Tenore")
-    (s1 v4 "Basso")))
-
+    (s1 v1 (:alt (:it "Soprano")
+                 (:de "")
+                 (:en "")))
+    (s1 v2 (:alt (:it "Alto")
+                 (:de "")
+                 (:en "")))
+    (s1 v3 (:alt (:it "Tenore")
+                 (:de "")
+                 (:en "")))
+    (s1 v4 (:alt (:it "Basso")
+                 (:de "")
+                 (:en "")))))
   (:data
    (:text 90 58
           (95 nil "Soprano à. 4 uoci.")

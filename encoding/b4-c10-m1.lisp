@@ -1,7 +1,7 @@
 `((:header
    (:filename "b4-c10-m1")
    (:alt-name "m4.010")
-   (:comment "q021_s153, rotation: 1.16, origin: 464")
+   (:comment "q021_s153, rotation: 1.16, origin: 464. Von diesem Beispiel ist die Implementierung der Normalisierung noch nicht gemacht.")
    (:creator "Vicentino21 / Johannes Keller")
    ;; Bibelgruppe:
    ;; * 1 Cantus Firmus (erstes Beispiel)
@@ -29,13 +29,24 @@
    ;; rhythmischen Figur zu Beginn der Phrase.
 
    (:section-headings
-    (s1 "Esempio delle note colorite nel canto fermo")
-    (s2 "Colorite nel tempo perfetto")
-    (s3 "Colorite nel tempo imperfetto")
-    (s4 "Colorite nell'emiolia maggiore")
-    (s5 "Colorite nell'emiolia minore")
-    (s6 "Cantar alla breve detto da prattici")))
-
+    (s1 (:alt (:it "Esempio delle note colorite nel canto fermo")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "Colorite nel tempo perfetto")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "Colorite nel tempo imperfetto")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "Colorite nell'emiolia maggiore")
+              (:de "")
+              (:en "")))
+    (s5 (:alt (:it "Colorite nell'emiolia minore")
+              (:de "")
+              (:en "")))
+    (s6 (:alt (:it "Cantar alla breve detto da prattici")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 90 58
           (163 1037 "Eſſempio delle note colorite nel canto fermo")
@@ -45,16 +56,23 @@
            (:section s1) (:f-clef) max5 fclef5 b22 brbl3 b22 brbl5 b22 brbl4 b22 brbl3 b22 brbl7 b22 brbl5 b22 brbl6 b22 brbl7 b22 brbl9 b22 brbl8 b22 brbl7 b22 brbl10 b22 brbl9 brbl8 b22 brbl7 brbl6 brbl7 b22 brbl3 b22 brbl6 b22 brbl5 b22 brbl4 b22 brbl3 b22
            (:section s2) cclef7 b22
            ;; Notwendige Anpassung der Taktsignatur, zu bestätigen
-           (:alt (:diplomatic met-imperf-min-dim) (:idealised met-perf-min-dim)) met-3-2 b22 br0 sb1 brbl3 b22 brbl2 b22 brbl4 bl)
+           (:alt (:diplomatic met-imperf-min-dim) (:idealised met-perf-min-dim)
+                 (:comment "Original: Taktsignatur ist ein gestrichenes C.")
+                 (:flag :suggestion) (:id 1))
+           met-3-2 b22 br0 sb1 brbl3 b22 brbl2 b22 brbl4 bl)
    (:text 90 58
           (168 691 "ᴄolorite nel tempo imperfetto")
           (1618 593 "ᴄolorite nellʼEmiolia mag."))
    (:music 2214
            (:section s3) cclef7 b22 met-imperf-min-dim b22 m1 dot2 sm2 b22 m3 b22 sb4 b22 m5 b22
-           ;; Muss genau betrachtet werden
-           (:alt (:diplomatic sbbl7) (:idealised sbbl7) (:it m7 dot8)) b22 sm6 b22 m5 b22 m4 b22 sb5 b22
-           ;; Muss genau betrachtet werden
-           (:alt (:diplomatic brbl3 b22 sbbl2) (:idealised brbl3 b22 sbbl2) (:it sb3 dot4 m2)) b22 m1 b22 b22 sb8 b22 m7 b38 br8 b38 bl
+           (:alt (:diplomatic sbbl7) (:idealised sbbl7) (:it m7 dot8)
+                 (:comment "Hier ist ausnahmsweise eine Abweichung zwischen Idealisierung und Normalisierung beabsichtigt, denn die schwarze Notation wird hier als punktierte Figur (siehe erste zwei Noten dieser Phrase) gelesen.")
+                 (:flag :suggestion) (:id 2))
+           b22 sm6 b22 m5 b22 m4 b22 sb5 b22
+           (:alt (:diplomatic brbl3 b22 sbbl2) (:idealised brbl3 b22 sbbl2) (:it sb3 dot4 m2)
+                 (:comment "Hier ist ausnahmsweise eine Abweichung zwischen Idealisierung und Normalisierung beabsichtigt, denn die schwarze Notation wird hier als punktierte Figur (siehe erste zwei Noten dieser Phrase) gelesen.")
+                 (:flag :suggestion) (:id 3))
+           b22 m1 b22 b22 sb8 b22 m7 b38 br8 b38 bl
            (:section s4) (:newline) b38 brbl1 b22 sbbl2 b22 sbbl3 b22 sbbl4 b22 sbbl5 b22 brbl1 b22 brbl8 b22 brbl7 b22 br8 b38 bl)
    (:text 90 58
           (259 661 "ᴄolorite nellʼᴇmiolia minore")

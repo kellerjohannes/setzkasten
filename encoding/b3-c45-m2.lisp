@@ -3,18 +3,19 @@
    (:alt-name "m3.094")
    (:comment "q021_s125, rotation: 0.35, origin: 450")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Essempio di tre quarte, differenti de tre generi musicali,\\della seconda spetie delle quarte")
-   (:section-headings
-    (s1 "")
-    (s2 "")
-    (s3 ""))
+   (:title (:alt (:it "Essempio di tre quarte, differenti de tre generi musicali,\\della seconda spetie delle quarte")
+                 (:de "")
+                 (:en "")))
    (:section-captions
-    (s1 "Seconda quarta\\diatonica")
-    (s2 "Seconda quarta\\cromatica")
-    (s3 "Seconda quarta\\enarmonica"))
-   (:voice-labels
-    (:all v1 "")))
-
+    (s1 (:alt (:it "Seconda quarta\\diatonica")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "Seconda quarta\\cromatica")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "Seconda quarta\\enarmonica")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 70 58
           (64 2085 "Eſſempio di tre quarte,differenti de tre generi muſicali,della ſeconda ſpetie delle quarte."))

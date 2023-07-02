@@ -3,13 +3,14 @@
    (:alt-name "m4.030")
    (:comment "q021_s182, rotation: 0, origin: 987")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "")
    (:section-headings
-    (s1 "Tenore a due voci"))
+    (s1 (:alt (:it "Tenore a due voci")
+              (:de "")
+              (:en ""))))
    (:section-captions
-    (s1 "Soprano riversciato in tenore alla quinta sotto al canto fermo")
-    ))
-
+    (s1 (:alt (:it "Soprano riversciato in tenore alla quinta sotto al canto fermo")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 90 58
           (184 460 "Tenore à due ᴠoci.")

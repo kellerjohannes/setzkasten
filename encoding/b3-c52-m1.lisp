@@ -3,18 +3,25 @@
    (:alt-name "m3.115")
    (:comment "q021_s134, origin: 996; q021_s135, rotation: 1.9, origin: 441")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Essempio della prima parte di uno madrigale a quattro voci,\\che si può cantare à cinque modi, cioè,\\diatonico e poi\\cromatico e poi\\cromatico e enarmonico e poi\\diatonico e cromatico e poi\\diatonico e cromatico e enarmonico")
+   (:title (:alt (:it "Essempio della prima parte di uno madrigale a quattro voci,\\che si può cantare à cinque modi, cioè,\\diatonico e poi\\cromatico e poi\\cromatico e enarmonico e poi\\diatonico e cromatico e poi\\diatonico e cromatico e enarmonico")
+                 (:de "")
+                 (:en "")
+                 (:comment "Ein Kommentar ist notwendig, um auf die verschiedenen Aufführungsvarianten dieses Stücks einzugehen. Es ist zu entscheiden, ob diese ausnotiert werden sollen.")
+                 (:flag :observe) (:id 1)))
    (:voice-labels
-    (:all v1 "[Soprano]")
-    (:all v2 "[Alto]")
-    (:all v3 "[Tenore]")
-    (:all v4 "[Basso]")))
-
+    (s1 v1 (:alt (:it "[Soprano]")
+                   (:de "")
+                   (:en "")))
+    (s1 v2 (:alt (:it "[Alto]")
+                   (:de "")
+                   (:en "")))
+    (s1 v3 (:alt (:it "[Tenore]")
+                   (:de "")
+                   (:en "")))
+    (s1 v4 (:alt (:it "[Basso]")
+                   (:de "")
+                   (:en "")))))
   (:preamble-lilypond
-   ;; Bibelgruppe:
-   ;; Es ist zu entscheiden, ob alle fünf Varianten dieses Stück ausnotiert angeboten werden sollen.
-   ;; Technisch könnte dies innerhalb dieser Quellcodedatei möglich sein, würde aber zu zahlreichen
-   ;; und unübersichtlichen `:alt'-Elementen führen. Ist zu diskutieren.
    (:clef-overrides
     (s1 v1 "treble")
     (s1 v2 "treble_8"))
@@ -91,11 +98,10 @@
    ;; Musikzeile 3 (Sopran 3)
    (:music 2209
            cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat) b22 fl3 b22 sb3 b22 m1 b22 sb1 b22 sb8 nat7
-           ;; Enh. Punkt, Idealisierung zu diskutieren
-           ;; Argumente für beide Varianten liegen vor. David: blockweise Behandlung von
-           ;; enharmonic shifts, Johannes: 'crossfade' zwischen 'naturale' und 'enarmonico'.
-           ;; Soll in Proben ausprobiert werden.
-           (:alt (:diplomatic md7) (:idealised md7) (:tatti m7)) nat7 md7 nat7 md7 b22 m8 b22 m5 b22 mrest5
+           (:alt (:diplomatic md7) (:idealised md7) (:tatti m7)
+                 (:comment "Zu diskutieren, ob im Sopran bei der letzten Note in T. 18 der enharmonische Punkt entfernt werden soll.")
+                 (:flag :observe) (:id 2))
+           nat7 md7 nat7 md7 b22 m8 b22 m5 b22 mrest5
            b22 m6 sh4 m4 sh4 m4 b22 fl5 b22 m5 b22 fl5 b22 m5 b22 sb5 b22 m5 b22 sb3 b22 m3 sb6 b22 m6 b22 sb6 b22 m6 b22 sb2 b22 (:duration-override 2) brd2 (:duration-override nil) b22 blbl)
    (:text 90 58
      (168 nil "ſumi")
@@ -119,18 +125,21 @@
    ;; Musikzeile 5 (Alt 2)
    (:music 2224
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat) b38 md0 b22 md3 sh1 m1 b22 sb1 fl3 m3 b22 sb2 sbd5 b22 m3 b22 m5 b22 m3 sb6 m9 b22 m9 b22 m9 m5d dot6 sm5d fl7 sbd7 fl3 sb3 b22 mrest3
-           ;; Enh. Punkt, Idealisierung zu diskutieren
-           ;; Soll entfernt werden, von Bibelgruppe bestätigt
-           b22 m4 b22 (:alt (:diplomatic md4) (:idealised m4) (:tatti m4)) b22 m1 b22 md8 b22 md8 b22 sb4 b22 m2 m9 b22 m7 fl7 m7 b38)
+           b22 m4 b22
+           (:alt (:diplomatic md4) (:idealised m4) (:tatti m4)
+                 (:comment "Original: Alt, T. 16 erste Minima hat einen enharmonischen Punkt.")
+                 (:flag :draft) (:id 3))
+           b22 m1 b22 md8 b22 md8 b22 sb4 b22 m2 m9 b22 m7 fl7 m7 b38)
    (:text 90 58
      (130 nil "i dolci")
      (321 1852 "lumi i dolci lumi che tāto che tanto dolcemente fanno che dolcemēte che dolce⸗"))
    ;; Musikzeile 6 (Alt 3)
    (:music 2223
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat) b22 m6 b22 m9 b22 md6 b22 md6 b22 m9 b22 sb7 b22 m7 sb3 b22 sbd6 nat4
-           ;; Notwendige Idealisierung, um die rhythmische Synchronisation der Stimmen
-           ;; zu gewährleisen -> bestätigt
-           (:alt (:diplomatic sb4) (:idealised m4)) b22 m4 b22 m2 b22 m9 b22 m9 b22 m9 sh8 m8 b22 m8 b22 m7 b22 m7 b22 m7 b22 m8 b22 m8 b22 m8 b22 brd4 b22 brd4 b22 blbl b38 b38 b125)
+           (:alt (:diplomatic sb4) (:idealised m4)
+                 (:comment "Original: Alt, T. 21, zweite Note hat den Wert einer Semibrevis.")
+                 (:flag :draft) (:id 4))
+           b22 m4 b22 m2 b22 m9 b22 m9 b22 m9 sh8 m8 b22 m8 b22 m7 b22 m7 b22 m7 b22 m8 b22 m8 b22 m8 b22 brd4 b22 brd4 b22 blbl b38 b38 b125)
    (:text 100 58
      (91 1851 "mente mi conſumi mi conſumi fanno che dolcemente mi conſumi mi conſum i."))
    ;; Musikzeile 7 (Tenor 1)
@@ -153,30 +162,10 @@
    ;; Musikzeile 9 (Tenor 3)
    (:music 2228
            cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat) b22
-           ;; Bibelgruppe:
-           ;; Abklärung, welcher Eingriff hier genau gemacht wurde. Ätzen? Gekratzt?
-           ;; Anne hat eine Lösung gefunden: mi con-su-mi. B♭ wird ersatzlos
-           ;; gestrichen. "su" als G brevis (wie vom Custos angezeigt), "mi" als
-           ;; tiefes C semibrevis, wie in den Quellen ausradiert. Danach weiter wie
-           ;; gedruckt, mit brevis-Pause.
-           ;; Cordes:
-           ;; #+begin_quote
-           ;; Ein größerer Eingriff war nötig in Takt 17 (Tenor): die im Original angegebenen
-           ;; Töne b und g führen zu Einklängen mit dem Alt. Da in jedem Fall in Takt 18 ein
-           ;; Fundamentton c erforderlich ist, um die Quarte des Soprans und die Vorbereitung
-           ;; des anschließenden Vorhalts ‘abzudecken’, wurden die beiden Töne in vorliegender
-           ;; Form korrigiert. Der Ton es in Takt 17 (Bass) muss selbstverständlich bleiben
-           ;; (wegen des Quartsprungs B-es), und zwar für die Dauer des ganzen Takts, um
-           ;; keinen chromatischen Halbton entstehen zu lassen. In Takt 18 (Alt wurde
-           ;; ebenfalls es’ gesetzt, um einen Querstand (chromatischen Halbtonschritt verteilt
-           ;; auf zwei Stimmen) zu vermeiden.
-           ;; #+end_quote
-           ;; David hat eine alternative Korrektur, die einen kleineren Eingriff
-           ;; erfordert. Nach einer Diskussion in der Bibelgruppe besteht ein
-           ;; Konses, mit Annes Fassung weiterzugehen.
-
-           ;; Die aktuelle Idealisierung beinhaltet Annes Vorschlag. -> Von Bibelgruppe bestätigt.
-           (:alt (:diplomatic sb6 b22 br4) (:idealised br4 b22 sb0)) b22 brrest2
+           (:alt (:diplomatic sb6 b22 br4) (:idealised br4 b22 sb0)
+                 (:comment "Original: Tenor, T. 17-18, anstelle der Brevis auf G steht eine Semibrevis auf B♭, gefolgt von einer Brevis auf G. Cordes und Gallagher haben andere Lösungen.")
+                 (:flag :draf) (:id 5))
+           b22 brrest2
            b22 m2 b22 sb7 sh7 m7 b22 m8 b22 m8 b22 md5 b22 md5 b22 mrest7
            b22 m8 b22 fl9 b22 m9 b22 sb7 b22 m7 b22 mrest5
            b22 m5d b22 m7 sh7 sb7 b22 m7 b22 m3 b22 m1 b22 brd3 b22 brd3 b22 blbl b118 b118)

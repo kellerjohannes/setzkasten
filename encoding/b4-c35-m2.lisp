@@ -3,12 +3,14 @@
    (:alt-name "m4.029")
    (:comment "q021_s182, rotation: 0, origin: 995")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "")
    (:section-headings
-    (s1 "Soprano a due voci alla quinta sopra del tenore"))
+    (s1 (:alt (:it "Soprano a due voci alla quinta sopra del tenore")
+              (:de "")
+              (:en ""))))
    (:section-captions
-    (s1 "Tenore riversciato in soprano")))
-
+    (s1 (:alt (:it "Tenore riversciato in soprano")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 90 58
           (184 1155 "Soprano à due uoci alla quinta ſopra del ᴛenore.")

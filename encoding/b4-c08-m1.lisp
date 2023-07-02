@@ -4,23 +4,30 @@
    (:comment "q021_s151, rotation: 0, origin: 414")
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
-    (s1 "Esempio di batter alla breve")
-    (s2 "Alla breve")
-    (s3 "Alla semibreve")
-    (s4 "Di proportione sesqualtera")))
-
+    (s1 (:alt (:it "Esempio di batter alla breve")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "Alla breve")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "Alla semibreve")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "Di proportione sesqualtera")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 90 58
           (184 nil "Eſſempio di batter alla breue")
           (1516 nil "Alla breue"))
    (:music 2215
-           ;; Bibelgruppe:
-           ;; - könnte ternär verstanden werden, wie auch im Text erwähnt, 'à
-           ;;   imitatione del numero ternario' - > sicher nicht, verstösst gegen
-           ;;   jede Konvention
-           ;; - nicht geklärt, muss weiter verglichen werden.
            (:voice v1)
-           (:section s1) cclef7 b38 b22 met-imperf-min-dim b38 b22 br4 b38 b22 br5 b38 b22 br6 b38 b22 br7 b38 b22 sb6 b22 b38 sb5 b22 b38 br4 b22 b22 bl
+           (:section s1) cclef7 b38 b22
+           (:alt (:diplomatic met-imperf-min-dim)
+                 (:idealised met-imperf-min-dim)
+                 (:comment "Es muss diskutiert werden, ob diese Signatur auch ternär verstanden werden könnte, siehe im Text »à imitatione del numero ternario«.")
+                 (:flag :observe) (:id 1))
+           b38 b22 br4 b38 b22 br5 b38 b22 br6 b38 b22 br7 b38 b22 sb6 b22 b38 sb5 b22 b38 br4 b22 b22 bl
            (:section s2) b38 b38 cclef7 b38 met-imperf-min b38 sb4 b38 b22 m2 b38 b22 m3 b38 b22 sm1 b38 b22 sm3 b38 b22 sm4 b38 b22 sm5 b22 b22 br5 b38 bl)
    (:text 90 58
           (263 nil "Alla ſemibreue")

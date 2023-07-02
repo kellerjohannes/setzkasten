@@ -3,17 +3,16 @@
    (:alt-name "m3.098")
    (:comment "q021_s126, origin: 980")
    (:creator "Vicentino21 / Johannes Keller")
-   (:section-headings
-    (s1 "")
-    (s2 "")
-    (s3 ""))
    (:section-captions
-    (s1 "Terza quinta\\diatonica")
-    (s2 "Terza quinta\\cromatica")
-    (s3 "Terza quinta\\enarmonica"))
-   (:voice-labels
-    (:all v1 "")))
-
+    (s1 (:alt (:it "Terza quinta\\diatonica")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "Terza quinta\\cromatica")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "Terza quinta\\enarmonica")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 70 58
           (115 nil "terza Ɋuinta")

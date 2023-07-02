@@ -1,26 +1,40 @@
 `((:header
    (:filename "b4-c07-m1")
    (:alt-name "m4.006")
-   (:comment "q021_s151, rotation: , origin: 425")
+   (:comment "q021_s151, rotation: , origin: 425. Für dieses Beispiel wird keine normalisierte Version angeboten.")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio delle pause notate nel tempo perfetto,\\et nel imperfetto")
+   (:title (:alt (:it "Esempio delle pause notate nel tempo perfetto,\\et nel imperfetto")
+                 (:de "")
+                 (:en "")))
    (:section-captions
-    ;; Setzung der captions gemäss Bibelgruppe
-    ;; Positionierung der Überschriften in der idealisierten Fassung ev. anzupassen und zu ergänzen?
-
-    ;; Die aktuelle Normalisierung entspricht dem Konses aus der Bibelgruppe.
-    (s1 "[Buono]")
-    (s2 "[Buono]")
-    (s3 "Non buono")
-    (s4 "[Non buono]")
-    (s5 "Non buono")
-    (s6 "[Non buono]")))
-
+    (s1 (:alt (:it "[Buono]")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "[Buono]")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "Non buono")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "[Non buono]")
+              (:de "")
+              (:en "")))
+    (s5 (:alt (:it "Non buono")
+              (:de "")
+              (:en "")))
+    (s6 (:alt (:it "[Non buono]")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 70 58
           (351 1548 "Eſſempio delle pauſe nel tempo perfetto,& nel imperfetto."))
    (:text 90 58
-          (1809 nil "non"))
+          (1809 nil
+                (:alt (:diplomatic "non")
+                      (:idealised "non")
+                      (:comment "Die Positionierung aller Überschriften (»non buono«) ist mehrdeutig. Die Interpretation lautet: Sections 1 und 2 sind implizit »buono«, alle anderen »non buono«. Es ist zu diskutieren, ob der Text bzw. die Textpositionierung idealisiert werden soll.")
+                      (:flag :observe) (:id 1))
+                ))
    (:music 2222
            (:voice v1)
            (:section s1) cclef7 b38 met-perf-min b38 lrest24 b22 lrest24 b22 lrest46 b22 brrest8 b22 brrest6 b22 brrest4 b22 sbrest3 b22 sbrest3 b38 bl

@@ -4,18 +4,35 @@
    (:comment "q021_s156, rotation: 2.75, origin: 1080")
    (:creator "Vicentino21 / Johannes Keller")
    (:line-headings
-    "Punto in sincopa a due voci"
-    nil
-    "Punti dubbiosi di pigliar fiato")
+    (:alt (:it "Punto in sincopa a due voci")
+          (:de "")
+          (:en ""))
+          nil
+    (:alt (:it "Punti dubbiosi di pigliar fiato")
+          (:de "")
+          (:en "")))
    (:section-headings
-    (s1 "Esempio del punto di quinta e di seconda")
-    (s2 "Punto di quarta")
-    (s3 "Punto di settima")
-    (s4 "[Punto] di undecima")
-    (s5 "Punto che salva due ottave")
-    (s6 "[Punto che] salva due quinte")
-    (s7 "Punto d'affanno")))
-
+    (s1 (:alt (:it "Esempio del punto di quinta e di seconda")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "Punto di quarta")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "Punto di settima")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "[Punto] di undecima")
+              (:de "")
+              (:en "")))
+    (s5 (:alt (:it "Punto che salva due ottave")
+              (:de "")
+              (:en "")))
+    (s6 (:alt (:it "[Punto che] salva due quinte")
+              (:de "")
+              (:en "")))
+    (s7 (:alt (:it "Punto d'affanno")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 90 58
           (10 773 "Eſſempio del punto di 5.& di 2.")

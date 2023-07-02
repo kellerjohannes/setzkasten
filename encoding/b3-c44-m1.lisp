@@ -3,13 +3,22 @@
    (:alt-name "m3.092")
    (:comment "q021_s123, rotation: 1.26, origin: 501 et al.; q021_s124, origin: 958 et al.")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "[Alleluia]")
+   (:title (:alt (:it "[Alleluia]")
+                 (:de "")
+                 (:en "")))
    (:voice-labels
-    (:all v1 "[Soprano]")
-    (:all v2 "[Contr'alto]")
-    (:all v3 "[Tenore]")
-    (:all v4 "[Basso]")))
-
+    (:all v1 (:alt (:it "[Soprano]")
+                   (:de "")
+                   (:en "")))
+    (:all v2 (:alt (:it "[Contr'alto]")
+                   (:de "")
+                   (:en "")))
+    (:all v3 (:alt (:it "[Tenore]")
+                   (:de "")
+                   (:en "")))
+    (:all v4 (:alt (:it "[Basso]")
+                   (:de "")
+                   (:en "")))))
   (:preamble-lilypond
    (:alt (:transposition-quarta-discendente (:clef-overrides (s1 v2 "treble_8"))))
    (:standalone-title "»Alleluia«")
@@ -190,8 +199,9 @@
    (:music 2215
            (:f-clef) max7 fclef7 b38 m1 b38 sb4 b38 m0 b38 sb7 b38 m6 b38 sb7 b38 sb5 b38 sb8 b22
            sb4 b22 sbrest7 b22 sb8 b22 sb4 dot4 m0 b22 (:meter-override "2/2" nil) m4
-           ;; Kosmetischer Eingriff, Punkt-Platzierung
-           (:alt (:diplomatic dot6) (:idealised dot4))
+           (:alt (:diplomatic dot6) (:idealised dot4)
+                 (:comment "Original: Punkt steht eine Position höher.")
+                 (:flag :draft) (:id 1))
            sm4 b38 met-perf-min-dim b22 met-3-2 b22 br0 sbrest5 b22 br4 b22 sb4 b22 br1 b22 sb1
            b22 br4 b22 sb4 b22 br8 b22 sb8 custos5)
    (:text 90 58

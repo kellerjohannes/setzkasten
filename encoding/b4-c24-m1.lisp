@@ -1,26 +1,33 @@
-;; Bibelgruppe: ev. sollten s1 und s2 als eine 'section' verstanden werden. Zu diskutieren.
-
 `((:header
    (:filename "b4-c24-m1")
    (:alt-name "m4.018")
    (:comment "q021_s167, rotation: 1.14, origin: 514. Kapitel im Original falsch nummeriert: XXIII, korrekt wäre XXIIII")
    (:creator "Vicentino21 / Johannes Keller")
-   ;; Setzung der Überschriften fragwürdig, zu diskutieren. In dieser Form sicherlich nicht
-   ;; überzeugend.
-
-   ;; Bibelgruppe:
-   ;; Nicht klar, ob es sich um 4 oder 5 Sektionen handelt. Ev. gehören die
-   ;; ersten zwei zusammen. Zu diskutieren.
    (:line-headings
-    "Decima maggiore all'ottava nei fini et nel basso, ne gl'alti"
-    "Quinta imperfetta")
+    (:alt (:it "Decima maggiore all'ottava nei fini et nel basso, ne gl'alti")
+          (:de "")
+          (:en "")
+          (:comment "Es ist zu diskutieren, ob Sections 1 und 2 als eine zusammengehörende Section dargestellt werden soll. In dieser Form ist die Aufteilung in Bezug auf die Überschrift nicht schlüssig.")
+          (:draft :observer) (:id 1))
+    (:alt (:it "Quinta imperfetta")
+          (:de "")
+          (:en "")))
    (:section-captions
-    (s1 "Buona")
-    (s2 "Buona")
-    (s3 "Buona")
-    (s4 "Buona")
-    (s5 "Buona")))
-
+    (s1 (:alt (:it "Buona")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "Buona")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "Buona")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "Buona")
+              (:de "")
+              (:en "")))
+    (s5 (:alt (:it "Buona")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 90 58
           (181 nil "Buona.")

@@ -3,8 +3,9 @@
    (:alt-name "m3.105")
    (:comment "q021_s131, origin: 436")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempio del primo modo enarmonico semplice"))
-
+   (:title (:alt (:it "Esempio del primo modo enarmonico semplice")
+                 (:de "")
+                 (:en ""))))
   (:data
    (:text 100 58
           (518 1091 "Eſſempio del primo modo ᴇnarmonico ſemplice."))

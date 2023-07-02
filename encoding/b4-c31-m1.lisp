@@ -3,24 +3,46 @@
 `((:header
    (:filename "b4-c31-m1")
    (:alt-name "m4.022")
-   (:comment "q021_s175, rotation: 0, origin: 441; q021_s176, rotation: 1.02, origin: 998")
+   (:comment "q021_s175, rotation: 0, origin: 441; q021_s176, rotation: 1.02, origin: 998. Von diesem Beispiel ist die Normalisierung noch nicht implementiert.")
    (:creator "Vicentino21 / Johannes Keller")
    (:line-headings
-    "Modo di entrare nella proportione di equalità, tre contra tre, a due voci"
-    "Proportione sesqualtera, due contra tre, a due voci. Emiolia maggiore"
-    "Proportione sesqualtera, buona nel battere et nel levare, a due voci"
-    "Emiolia minore")
+    (:alt (:it "Modo di entrare nella proportione di equalità, tre contra tre, a due voci")
+          (:de "")
+          (:en ""))
+    (:alt (:it "Proportione sesqualtera, due contra tre, a due voci. Emiolia maggiore")
+          (:de "")
+          (:en ""))
+    (:alt (:it "Proportione sesqualtera, buona nel battere et nel levare, a due voci")
+          (:de "")
+          (:en ""))
+    (:alt (:it "Emiolia minore")
+          (:de "")
+          (:en "")))
    (:voice-labels
-    (s1 v1 "Tenore")
-    (s1 v2 "Basso")
-    (s2 v1 "Tenore")
-    (s2 v2 "Basso")
-    (s3 v1 "Tenore")
-    (s3 v2 "Basso")
-    (s4 v1 "Tenore")
-    (s4 v2 "Basso")
-    ))
-
+    (s1 v1 (:alt (:it "Tenore")
+                 (:de "")
+                 (:en "")))
+    (s1 v2 (:alt (:it "Basso")
+                 (:de "")
+                 (:en "")))
+    (s2 v1 (:alt (:it "Tenore")
+                 (:de "")
+                 (:en "")))
+    (s2 v2 (:alt (:it "Basso")
+                 (:de "")
+                 (:en "")))
+    (s3 v1 (:alt (:it "Tenore")
+                 (:de "")
+                 (:en "")))
+    (s3 v2 (:alt (:it "Basso")
+                 (:de "")
+                 (:en "")))
+    (s4 v1 (:alt (:it "Tenore")
+                 (:de "")
+                 (:en "")))
+    (s4 v2 (:alt (:it "Basso")
+                 (:de "")
+                 (:en "")))))
   (:data
    (:text 90 58
           (207 1809 "ᴍodo di entrare nella proportione di equalità,à due uoci. Tenore & Baſſo."))
@@ -29,7 +51,11 @@
            (:section s1) cclef7 b22 fl6 (:key-signature nil nil nil nil nil nil :flat) b22 met-imperf-min-dim b38 sb1 b22 m3 dot4 sm4 b22 sm5 b22 sm1 b22 sb8 b22 sh7 b22 m7 b22
            ;; Der custos am Ende dieser Zeile ist merkwürdig, er hat keinen Anschluss
            met-perf-min-dim b22 met-3-2 b22 br8 b22 sbrest9 sb4 dot4 m7 b22 m6 b22 m4 b22 fl9 b22 br9 b22 sb8 b22 sb7 sb6 sb5 br4 b22 sh3 b22 sb3 b22
-           met-imperf-min-dim b22 sb4 b22 custos6)
+           met-imperf-min-dim b22 sb4 b22
+           (:alt (:diplomatic custos6)
+                 (:idealised custos6)
+                 (:comment "Dieser Custos hat keinen Anschluss. Es ist zu diskutieren, ob er beibehalten werden soll.")
+                 (:flag :observe) (:id 1)))
    (:text 90 58
           (1086 nil "ᴘroportione di equalità tre contra tre."))
    (:music 2241
@@ -50,7 +76,10 @@
    (:music 2211
            ;; Bibelgruppe:
            ;; Anfang erste Zeile: Tenorschlüssel statt Bassschlüssel
-           (:voice v2) (:alt (:diplomatic (:f-clef) max7 fclef7 fl6) (:idealised cclef7 b38 fl6 b38 b38))
+           (:voice v2)
+           (:alt (:diplomatic (:f-clef) max7 fclef7 fl6) (:idealised cclef7 b38 fl6 b38)
+                 (:comment "Original: F4-Schlüssel.")
+                 (:flag :draft) (:id 2))
            (:key-signature nil nil nil nil nil nil :flat) b22 met-perf-min-dim b22 met-3-2 b22 sb1 sb4 sb3 m1 m8 dot8 sm7 sb5 m6 sb7 sb5 sh4 m4 m5 br1
            (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat) sbbl4 dot4 sm3 sbbl2 sbbl1 dot2 sm2 sbbl3 dot4 sm1 sbbl4 sbbl3 sbbl2 brbl7 sbbl5 sbbl6 sm7 sm5d brbl8 sh7 sbbl7 brbl8)
 
@@ -60,7 +89,12 @@
           (1688 nil "Tenore"))
    (:music 2221
            (:voice v1)
-           (:section s3) (:newline) (:f-clef) max7 fclef7 b38 fl6 (:key-signature nil nil nil nil nil nil :flat) b38 met-perf-min-dim b22 met-3-2 b38 sb4 b38 m1 b38 sb8 b38 m8 b38 fl9 b38 m9 b38 m8 b38 m7 b38 m4 b22 sb7 b22 m5d b22 m6 b22 m5d b22 m3 b38 m4 b38 m5 b38 m6 b38 m7 b38 m8 b38 m5d b38 m6 b22 m7 b22 custos6)
+           (:section s3) (:newline) (:f-clef) max7 fclef7 b38
+           (:alt (:diplomatic fl6)
+                 (:idealised fl3)
+                 (:comment "Original: ♭-Signatur im dritten Zwischenraum.")
+                 (:flag :draft) (:id 3))
+           (:key-signature nil nil nil nil nil nil :flat) b38 met-perf-min-dim b22 met-3-2 b38 sb4 b38 m1 b38 sb8 b38 m8 b38 fl9 b38 m9 b38 m8 b38 m7 b38 m4 b22 sb7 b22 m5d b22 m6 b22 m5d b22 m3 b38 m4 b38 m5 b38 m6 b38 m7 b38 m8 b38 m5d b38 m6 b22 m7 b22 custos6)
    (:text 90 58
           (330 nil "ᴀ due uoci,")
           (1086 nil "Baſſo."))

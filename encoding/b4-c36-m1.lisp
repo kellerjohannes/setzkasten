@@ -3,13 +3,22 @@
    (:alt-name "m4.031")
    (:comment "q021_s182, rotation: 0, origin: 996; q021_s183, rotation: 0.87, origin: 493")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Compositione a quattro voci")
+   (:title (:alt (:it "Compositione a quattro voci")
+                 (:de "")
+                 (:en "")))
    (:voice-labels
-    (s1 v1 "Soprano")
-    (s1 v2 "Alto")
-    (s1 v3 "Tenore")
-    (s1 v4 "Basso")))
-
+    (s1 v1 (:alt (:it "Soprano")
+                 (:de "")
+                 (:en "")))
+    (s1 v2 (:alt (:it "Alto")
+                 (:de "")
+                 (:en "")))
+    (s1 v3 (:alt (:it "Tenore")
+                 (:de "")
+                 (:en "")))
+    (s1 v4 (:alt (:it "Basso")
+                 (:de "")
+                 (:en "")))))
   (:data
    (:text 90 58
           (333 nil "Soprano.")
@@ -20,10 +29,10 @@
    (:vspace 50)
    (:music 2219
            cclef1 b38 m5 b38 sm3 b38 m5d b38 sm6 b38 m8 b38 sm7 b38 m3 b38 sb8 b38 sb5 b38
-           ;; Bibelgruppe:
-           ;; Korrektur: zweite Zeile, 10. Note, soll eine Semibrevis, keine Minima
-           ;; sein. (Sagt Luigi).
-           (:alt (:diplomatic m6) (:idealised sb6)) b38 smrest3 b38 sm2 b38 sm3 b38 m5 b38 m1 b38 sm8 b38 m8 dot8 cr7 b38 cr6 b38 m7 b38 sb8 b38 bl b22 b125 b125)
+           (:alt (:diplomatic m6) (:idealised sb6)
+                 (:comment "Original: Sopran, T. 8, die Note A hat den Wert einer Minima.")
+                 (:flag :draft) (:id 1))
+           b38 smrest3 b38 sm2 b38 sm3 b38 m5 b38 m1 b38 sm8 b38 m8 dot8 cr7 b38 cr6 b38 m7 b38 sb8 b38 bl b22 b125 b125)
    (:text 70 58
           (656 nil "Alto."))
    (:music 2224

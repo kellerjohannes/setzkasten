@@ -3,8 +3,9 @@
    (:alt-name "m4.020")
    (:comment "q021_s170, rotation: 0.57, origin: 955")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "Esempi dei due bassi, che s'accorderanno,\\quando si canterà a due chori"))
-
+   (:title (:alt (:it "Esempi dei due bassi, che s'accorderanno,\\quando si canterà a due chori")
+                 (:de "")
+                 (:en ""))))
   (:data
    (:text 90 58
           (231 1728 "Eſſempi de i due Baſſi, che sʼaccorderanno,quando ſi canterà a due ᴄhori."))

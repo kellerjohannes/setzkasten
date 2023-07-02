@@ -3,12 +3,14 @@
    (:alt-name "m3.116")
    (:comment "q021_s136, origin: 966 et al.; q021_s137, rotation: 1.25, origin: 491")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "[Madonna il poco dolce]")
+   (:title (:alt (:it "[Madonna il poco dolce]")
+                 (:de "")
+                 (:en "")))
    (:voice-labels
-    (:all v1 "Soprano")
-    (:all v2 "[Alto]")
-    (:all v3 "[Tenore]")
-    (:all v4 "[Basso]")))
+    (s1 v1 "Soprano")
+    (s1 v2 "[Alto]")
+    (s1 v3 "[Tenore]")
+    (s1 v4 "[Basso]")))
 
   (:preamble-lilypond
    (:standalone-title "»Madonna il poco dolce«")
@@ -20,26 +22,25 @@
                                 "Libro 3, Capitolo 53, fol. 68v-69r, Ganzton tiefer notiert")))
    (:lyrics
     (s1 v1 "Ma -- don -- na_il po -- co dol -- ce,_il po -- co dol -- ce,
-            Ma -- don -- na_il po -- co dol -- ce_e'il mol -- to_a -- ma -- ro
+            Ma -- don -- na_il po -- co dol -- ce_e_il mol -- to_a -- ma -- ro
             il bre -- ve ri -- so_il bre -- ve ri -- so_il trop -- po lun -- go pian -- to
             il trop -- po lun -- go pian -- to_il trop --
-            po lun -- go pian -- to m'han -- no ri -- dot -- to_a tan -- to che'l pian -- ger sem -- pr'è so -- spi -- rar che'l pian --
-            ger sem -- _ _ pr'e so -- spi -- rar __ _ _ mi_è ca -- ro che'l pian -- ger sem -- _ _ pr'è so -- spi --
+            po lun -- go pian -- to m'han -- no ri -- dot -- to_a tan -- to che'l pian -- ger sem -- pr'e so -- spi -- rar che'l pian --
+            ger sem -- _ _ pr'e so -- spi -- rar __ _ _ mi_è ca -- ro che'l pian -- ger sem -- _ _ pr'e so -- spi --
             rar mi_è ca -- ro.")
     (s1 v2 "Ma -- don -- na_il po -- co dolc' il po -- _ _ co dol -- ce Ma -- don -- na_il po -- co dolc' il
             mol -- _ _ t'a -- ma -- ro il bre -- ve ri -- so,_il bre -- ve ri -- so il trop -- po lun --
             _ _ go pian -- to, il trop -- po lun -- _ _ go pian -- to, il trop -- po lun -- go pian -- to m'han -- no ri --
-            dot -- to_a tan -- to che'l pian -- ger sem -- pr'è so -- spi -- rar, che'l pian -- ger sem -- pre è so -- spi -- rar mi_è ca -- ro
+            dot -- to_a tan -- to che'l pian -- ger sem -- pr'e so -- spi -- rar, che'l pian -- ger sem -- pre e so -- spi -- rar mi_è ca -- ro
             che'l pian -- ger sem -- pr'e so -- spi -- rar che'l pian -- ger sem -- pr'e so -- spi -- rar mi_è ca -- _ ro.")
-    (s1 v3 "Ma -- don -- na_il po -- co dol -- ce, [Ma -- don -- na_il po -- co dol -- ce] è_il mol -- to_a -- ma -- ro
+    (s1 v3 "Ma -- don -- na_il po -- co dol -- ce, [Ma -- don -- na_il po -- co dol -- ce] e_il mol -- to_a -- ma -- ro
             il bre -- ve ri -- so, [il bre -- ve ri -- so] il trop -- po lun -- go pian -- to, [il trop -- po lun -- go pian -- to]
-            è'il trop -- po lun -- _ go pian -- to m'han -- no ri -- dot -- to_a tan -- to, [m'han -- no ri -- dot -- to_a tan -- to] che'l pian -- ger sem --
+            e'il trop -- po lun -- _ go pian -- to m'han -- no ri -- dot -- to_a tan -- to, [m'han -- no ri -- dot -- to_a tan -- to] che'l pian -- ger sem --
             pr'e so -- spi -- rar che'l pian -- ger sem -- _ _ pr'e so -- spi -- rar mi_è ca -- ro, che'l pian -- ger sem -- pre_e so -- spi -- rar mi_è ca -- ro, e so -- spi -- rar -- _ _ mi_è __ _ _ ca -- ro.")
-    (s1 v4 "Ma -- don -- na_il po -- co dol -- ce, il po -- co dol -- ce, Ma -- don -- na_il po -- co dolc' è_il molt' a -- ma -- ro il
+    (s1 v4 "Ma -- don -- na_il po -- co dol -- ce, il po -- co dol -- ce, Ma -- don -- na_il po -- co dolc' e_il molt' a -- ma -- ro il
             bre -- ve ri -- so, il bre -- ve ri -- so_il trip -- po lun -- go pian -- to, il trop -- po lun -- _ go pian -- to
-            m'han -- no ri -- dot -- to_à tan -- to che'il pian -- ger sem -- pr'e so -- spi -- rar__ _ _ mi_è ca -- ro che'l pian -- _
+            m'han -- no ri -- dot -- to_a tan -- to che'il pian -- ger sem -- pr'e so -- spi -- rar__ _ _ mi_è ca -- ro che'l pian -- _
             ger sem -- _ pre e so -- spi -- rar mi_è ca -- ro.")))
-
   (:data
    (:text 70 58
           (827 386 "Sᴏᴘʀᴀɴᴏ."))
@@ -95,7 +96,7 @@
           (1901 nil "prʼe ſoſpi⸗"))
    (:music 2220
            cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat)
-           b38 sb7 dot8 m6 b38 br6 sh4 (:divider :regular) br4  b38 blbl b38 fl5 b38 br5 b38 b38 b22
+           b38 sb7 dot8 m6 b38 br6 sh4 (:divider :regular) br4 b38 blbl b38 fl5 b38 br5 b38 b38 b22
            b118 b118 b118 b118 b118 b118 b118 b118 b118 b118 b118 b118)
    (:text 90 58
           (126 nil "rar")
@@ -108,7 +109,14 @@
            ;; idealisierung zu diskutieren, die Verschiebung dieses Punktes scheint naheliegend,
            ;; insbesondere weil dadurch eine ♯-⋅-Notation aufgehoben wird.
            ;; Wird idealisiert, von Bibelgruppe bestätigt
-           (:alt (:diplomatic m9) (:tatti md9) (:idealised md9)) sh9 (:alt (:diplomatic md9) (:tatti m9) (:idealised m9)) sh9 m9 b38 sbd9 b38 m9 b38 b38 b38)
+           (:alt (:diplomatic m9) (:tatti md9) (:idealised md9)
+                 (:comment "Original: Alt, T. 7, zweite Note hat keinen enharmonischen Punkt.")
+                 (:flag :draft) (:id 1))
+           sh9
+           (:alt (:diplomatic md9) (:tatti m9) (:idealised m9)
+                 (:comment "Original: Alt, T. 8, erste Note hat einen enharmonischen Punkt.")
+                 (:flag :draft) (:id 2))
+           sh9 m9 b38 sbd9 b38 m9 b38 b38 b38)
    (:text 90 58
           (210 nil "Madonna")
           (479 nil "il poco dolcʼil po")
@@ -161,8 +169,10 @@
    (:music 2232
            (:voice v3)
            cclef7
-           ;; Offensichtliche kosmetische Korrektur, Platzierung ♭
-           (:alt (:diplomatic fl7) (:idealised fl6)) (:key-signature nil nil nil nil nil nil :flat)
+           (:alt (:diplomatic fl7) (:idealised fl6)
+                 (:comment "Original: Tenor, T. 1, ♭ in der Vorzeichnung steht eine Position höher.")
+                 (:flag :draft) (:id 3))
+           (:key-signature nil nil nil nil nil nil :flat)
            b22 b38 met-imperf-min-dim b38 (:ligature-start :natural :flat nil nil) nat4 br6 (:ligature-end) b22 brd5 b38 sb7 b22 sb6 b22 sb7 b38 sbd8 b38 sbd8 b38 mrest7 b38
            m8 b22 fl9 b22 sb9 dot10 fl9 b22 m9 b38 sbd8 b38 sbd8 b38 sb9 b38 sbd8 b38 mrest5
            b38 m5 b38 m5 b38 m6 b38 sb6 b38 sb5 b38 b38)
