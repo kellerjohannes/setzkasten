@@ -4,45 +4,46 @@
    (:comment "q021_s256, rotation: 0.94, origin: 932")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Regola di ritrovare le sette ottave sopra Bmi primo,\\con li sottoscritti esempi")
-                 (:de "Regel ...")
-                 (:en "Rule ...")
-                 (:comment "Eingriff im Titel, betrifft alle Sprachen.")
-                 (:flag :testing) (:id 3)))
+                 (:de "")
+                 (:en "")))
    (:section-headings
-    (s1 "Prima ottava")
-    (s2 "Seconda ottava")
-    (s3 "Terza ottava")
+    (s1 (:alt (:it "Prima ottava")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "Seconda ottava")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "Terza ottava")
+              (:de "")
+              (:en "")))
     (s4 (:alt (:it "Quarta ottava")
-              (:de "Vierte /ottava/")
-              (:en "Fourth /ottava/")
-              (:comment "Eingriff in der Überschrift des vierten Beispiels.")
-              (:flag :testing) (:id 4)))
-    (s5 "Quinta ottava")
+              (:de "")
+              (:en "")))
+    (s5 (:alt (:it "Quinta ottava")
+              (:de "")
+              (:en "")))
     (s6 (:alt (:it "Sesta ottava")
-              (:de "Sechste /ottava/")
-              (:en "Sixth /ottava/")))
-    (s7 "Settima ottava")
-    ))
-
+              (:de "")
+              (:en "")))
+    (s7 (:alt (:it "Settima ottava")
+              (:de "")
+              (:en "")))))
   (:data
    (:text 90 58
      (166 1877 "Regola di ritrouare le sette ottaue sopra B mi primo,con li sottoſcritti eßempi."))
    (:text 90 58
      (349 nil "Prima ottaua.")
      (1127 nil "Seconda ottaua.")
-     (1845 nil "Terza")
-     )
+     (1845 nil "Terza"))
    (:music 2222
            (:voice v1)
            (:section s1) (:f-clef) max7 fclef7 b38 b38 sb3 b22 sh4 b22 sb4 b22 sb5 b22 sb6 b22 sh7 b22 sb7 b22 sb8 b22 sb9 b22 sb10 b38 bl
            (:section s2) b38 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sb10 b38 bl
-           (:section s3) b22 b38 sb3 b22 sh4 b22 sb4 b22 sh5 b22 sb5 b22 sb6 b38 custos7
-           )
+           (:section s3) b22 b38 sb3 b22 sh4 b22 sb4 b22 sh5 b22 sb5 b22 sb6 b38 custos7)
    (:text 70 58
      (223 nil "ottaua.")
-     (761 nil (:alt (:diplomatic "Ɋuarta ottaua.") (:idealised "[testing]") (:comment "Originaler Text wird ersetzt.") (:flag :testing) (:id 5)))
-     (1623 nil "Quinta ottaua.")
-     )
+     (761 nil "Ɋuarta ottaua.")
+     (1623 nil "Quinta ottaua."))
    (:music 2227
            (:f-clef) max7 fclef7 b38 sh7 sb7 sh8 sb8 sh9 sb9
            ;; Korrekturrunde JK, von Bibelgruppe zu bestätigen
@@ -51,17 +52,14 @@
                  (:flag :suggestion) (:id 1))
            b22 sb10 b22 bl
            (:section s4) (:newline) b22 sb3 b22 sh4 b22 sb4 b22 sb5 b22 sb6 b22 sh7 b22 sb7 b22 sh8 b22 sb8 b22 sb9 b22 sb10 b22 bl
-           (:section s5) b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sh7 b22 sb7 b22 sb8 b22 sb9 b22 sb10 b22 bl
-           )
+           (:section s5) b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sh7 b22 sb7 b22 sb8 b22 sb9 b22 sb10 b22 bl)
    (:text 70 58
      (456 nil "Seſta ottaua.")
-     (1522 nil "Settima ottaua.")
-     )
+     (1522 nil "Settima ottaua."))
    (:music 2232
            (:section s6) (:f-clef) max7 fclef7
            (:alt (:diplomatic b38) (:idealised b22 sb3 sh4)
                  (:comment "Notwendiger Eingriff, um dieser _ottava_ eine konsistente Form zu geben.")
                  (:flag :suggestion) (:id 2))
            sb4 b22 sh5 b22 sb5 b22 sh6 b22 sb6 b22 sh7 b22 sb7 b22 sh8 b22 sb8 b22 sh9 b22 sb9 b22 sb10 b38 bl
-           (:section s7) (:newline) b38 sb3 b22 sh4 b22 sb4 b22 sh5 b22 sb5 b22 sb6 b22 sh7 b22 sb7 b22 sh8 b22 sb8 b22 sb9 b22 sb10 b38 bl b38 b125)
-   ))
+           (:section s7) (:newline) b38 sb3 b22 sh4 b22 sb4 b22 sh5 b22 sb5 b22 sb6 b22 sh7 b22 sb7 b22 sh8 b22 sb8 b22 sb9 b22 sb10 b38 bl b38 b125)))
