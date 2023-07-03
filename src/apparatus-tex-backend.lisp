@@ -39,19 +39,7 @@
 \\newunicodechar{«}{\\frqq{}}
 \\newunicodechar{»}{\\flqq{}}
 
-\\title{Kritischer Bericht (intern)}
-\\subtitle{Dokumentation der Eingriffe in Musik und Text-Elemente\\\\sämtlicher Notenbeispiele der Vicentino21-Edition}
-\\date{Stand: \\today, Arbeitsfassung}
-\\author{Martin Kirnbauer\\\\Luigi Collarile\\\\Johannes Keller\\\\Anne Smith}
-
-
 \\begin{document}
-
-\\maketitle
-\\thispagestyle{empty}
-
-\\pagebreak
-
 ")
 
 (defparameter *latex-footer*
@@ -212,7 +200,8 @@
   (rest (find :metadata data :key #'first)))
 
 (defun generate-latex-entry (filename)
-  (with-open-file (in-file (merge-pathnames *apparatus-export-path-raw* filename))
+  (with-open-file (in-file (merge-pathnames *apparatus-export-path-raw*
+                                            (pathname (format nil "app-~a.lisp" filename))))
     (with-standard-io-syntax
       (let ((data (read in-file)))
         (concatenate 'string
@@ -221,20 +210,23 @@
                          (generate-latex-table data)
                          ""))))))
 
-(defun generate-latex-entries (filename-list)
-  (let ((result ""))
-    (dolist (filename filename-list result)
-      (setf result (concatenate 'string result (generate-latex-entry filename))))))
+(defun generate-latex-apparatus-import-fragments (filename)
+  (with-open-file (latex-stream (merge-pathnames *apparatus-export-path-tex-imports*
+                                                 (pathname (format nil "app-~a.tex" filename)))
+                                :direction :output
+                                :if-does-not-exist :create
+                                :if-exists :supersede)
+    (format latex-stream "~a"
+            (generate-latex-entry filename))))
 
-(defun generate-latex-apparatus (filename-list)
-  (format t "~&~a" filename-list)
-  (with-open-file (latex-stream (merge-pathnames *apparatus-export-path-tex*
-                                                 (pathname "vicentino21-apparatus.tex"))
+(defun generate-latex-apparatus-standalone (filename)
+  (with-open-file (latex-stream (merge-pathnames *apparatus-export-path-tex-standalones*
+                                                 (pathname (format nil "app-~a.tex" filename)))
                                 :direction :output
                                 :if-does-not-exist :create
                                 :if-exists :supersede)
     (format latex-stream "~a"
             (concatenate 'string
                          *latex-header*
-                         (generate-latex-entries filename-list)
+                         (generate-latex-entry filename)
                          *latex-footer*))))

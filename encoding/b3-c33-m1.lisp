@@ -89,7 +89,9 @@
                  (:en "")))
 
     ;; Hier könnte "Cadentia del basso" für alle übrigen sections ergänzt werden. Zu diskutieren.
-    (s4 v4 "Cadentia del soprano")))
+    (s4 v4 (:alt (:it "Cadentia del soprano")
+                 (:de "")
+                 (:en "")))))
 
   (:data
    (:text 90 58

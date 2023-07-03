@@ -48,6 +48,7 @@
   (glyph-bequadro               nat2   "bequadro-2"     "stave" "bequadro" 47 ,*glyph-height* 2)
   (glyph-bequadro               nat3   "bequadro-3"     "stave" "bequadro" 47 ,*glyph-height* 3)
   (glyph-bequadro               nat4   "bequadro-4"     "stave" "bequadro" 47 ,*glyph-height* 4)
+  (glyph-bequadro               nat5   "bequadro-5"     "stave" "bequadro" 47 ,*glyph-height* 5)
   (glyph-bequadro               nat6   "bequadro-6"     "stave" "bequadro" 47 ,*glyph-height* 6)
   (glyph-bequadro               nat7   "bequadro-7"     "stave" "bequadro" 47 ,*glyph-height* 7)
   (glyph-bequadro               nat9   "bequadro-9"     "stave" "bequadro" 47 ,*glyph-height* 9)

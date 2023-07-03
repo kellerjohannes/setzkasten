@@ -30,7 +30,9 @@
                                           :if-exists :supersede
                                           :if-does-not-exist :create)
           (print apparatus-data apparatus-stream))
-        ;; write tex apparatus here ...
+        ;; write tex apparatus here, tex standalone and tex import-fragment, serve filename with suffix
+        (generate-latex-apparatus-standalone (format nil "~a-~a" filename suffix))
+        (generate-latex-apparatus-import-fragments (format nil "~a-~a" filename suffix))
         (create-score-file backend-instance simplified-score suffix)))))
 
 ;; for external use, in case other programs want to operate on a score object
@@ -46,24 +48,12 @@
        (extract-reading score-expression extraction-arguments :diplomatic)
        ))))
 
-;; doesn't work properly, should be deleted
-(defun curate-file-list-for-apparatus (file-list)
-  (mapcar (lambda (filename)
-            (format nil "app-~a.lisp" filename))
-          (reverse (remove-if-not (lambda (filename)
-                                    (eq-last-char-in-string filename #\c))
-                                  file-list))))
-
-
 ;; looping over mission, entry point to everything
 (defun execute-mission (mission-list)
   (reset-file-list *vicentino-types-backend*)
   (reset-file-list *lilypond-backend-modern*)
   (dolist (item mission-list)
     (process-score (first item) (second item) (third item) (fourth item)))
-  ;; should be deleted,
-  (generate-latex-apparatus (curate-file-list-for-apparatus
-                             (output-file-list *lilypond-backend-modern*)))
   'done)
 
 
