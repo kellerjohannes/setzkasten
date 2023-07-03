@@ -20,6 +20,8 @@
   ;; "white"
   )
 
+(defparameter *score-processing* t)
+
 (defparameter *svg-export-path*
   (pathname "~/common-lisp/setzkasten-output/svg/"))
 (defparameter *apparatus-export-path-raw*

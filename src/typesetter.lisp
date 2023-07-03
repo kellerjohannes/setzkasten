@@ -258,28 +258,29 @@
 ;; probably the only public symbol, in case I decide to isolate type-imitation into a separate package
 (defun create-type-imitation-score (score suffix components glyphs syntax)
   "Takes a complete score encoding expression (including :header), writes a svg file. Returns a string with the filename of the generated file."
-  (format t "~&Crafting SVG type imitation for ~a-~a" (score-name score) suffix)
-  (let ((stencil-list (parse-setzkasten components glyphs syntax))
-        (setter (make-instance 'typesetter
-                               :bg-color (if *global-bg-color*
-                                             *global-bg-color*
-                                             (score-bg-color score))
-                               :width (score-width score)
-                               :height (score-height score)
-                               :margins *score-margins*
-                               :name (format nil "~a-~a" (score-name score) suffix))))
-    (mapc (lambda (line)
-            (cond ((eq (first line) :music)
-                   (add-music-line setter line stencil-list))
-                  ((eq (first line) :vspace)
-                   (add-vspace setter line))
-                  ((eq (first line) :text)
-                   (add-text-line setter line))
-                  ;; TODO implement error condition (or warning?)
-                  (t nil)))
-          (parse-vicentino-code (score-elements score) glyphs))
-    (typeset setter :block)  ; use :block for Blocksatz, use :flushed for Flattersatz
-    (write-score setter)
+  (when *score-processing*
+    (format t "~&Crafting SVG type imitation for ~a-~a" (score-name score) suffix)
+    (let ((stencil-list (parse-setzkasten components glyphs syntax))
+          (setter (make-instance 'typesetter
+                                 :bg-color (if *global-bg-color*
+                                               *global-bg-color*
+                                               (score-bg-color score))
+                                 :width (score-width score)
+                                 :height (score-height score)
+                                 :margins *score-margins*
+                                 :name (format nil "~a-~a" (score-name score) suffix))))
+      (mapc (lambda (line)
+              (cond ((eq (first line) :music)
+                     (add-music-line setter line stencil-list))
+                    ((eq (first line) :vspace)
+                     (add-vspace setter line))
+                    ((eq (first line) :text)
+                     (add-text-line setter line))
+                    ;; TODO implement error condition (or warning?)
+                    (t nil)))
+            (parse-vicentino-code (score-elements score) glyphs))
+      (typeset setter :block)  ; use :block for Blocksatz, use :flushed for Flattersatz
+      (write-score setter))
     (format nil "~a-~a" (score-name score) suffix)))
 
 

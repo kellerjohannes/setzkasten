@@ -93,16 +93,17 @@
 
 (defun create-visual-score (score-instance backend suffix)
   (declare (ignore backend))
-  (format t "~&Generating visual score of ~a-~a" (filename score-instance) suffix)
-  (cl-svg:with-svg-to-file (scene 'svg:svg-1.2-toplevel :width 9200 :height 2000 :stroke "black")
-      ((merge-pathnames *visual-score-export-path*
-                        (pathname (format nil "~a-~a.svg" (filename score-instance) suffix)))
-       :if-exists :supersede)
-    (cl-svg:draw scene (:rect :x 0 :y 0 :width "100%" :height "100%")
-                 :fill "white"
-                 :stroke "white")
-    (dolist (section (sections score-instance))
-      (draw-section scene section)))
+  (when *score-processing*
+    (format t "~&Generating visual score of ~a-~a" (filename score-instance) suffix)
+    (cl-svg:with-svg-to-file (scene 'svg:svg-1.2-toplevel :width 9200 :height 2000 :stroke "black")
+        ((merge-pathnames *visual-score-export-path*
+                          (pathname (format nil "~a-~a.svg" (filename score-instance) suffix)))
+         :if-exists :supersede)
+      (cl-svg:draw scene (:rect :x 0 :y 0 :width "100%" :height "100%")
+                   :fill "white"
+                   :stroke "white")
+      (dolist (section (sections score-instance))
+        (draw-section scene section))))
   (format nil "~a-~a" (filename score-instance) suffix))
 
 (defmethod create-score-file ((backend visual-score-backend) score suffix)

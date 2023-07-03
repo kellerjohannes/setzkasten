@@ -122,7 +122,7 @@
         source)))
 
 (defun make-string-latex-friendly (str)
-  (let ((result str))
+  (let ((result (format nil "~a" str)))
     (dolist (candidate *latex-text-replacements* result)
       (setf result (replace-substring (cdr candidate) (car candidate) result)))))
 

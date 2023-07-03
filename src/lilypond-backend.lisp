@@ -999,31 +999,32 @@ dot = {
         (unless output-file-supplied-p (uiop:delete-file-if-exists output-file))))))
 
 (defun create-lilypond-score (score-instance backend suffix)
-  (format t "~&Running Lilypond on ~a-~a" (filename score-instance) suffix)
-  (run-lilypond (generate-score-ly-code score-instance backend)
-                (output-format backend)
-                :ly-file (merge-pathnames *lilypond-export-path*
-                                              (pathname
-                                               (format nil "~a-~a.ly"
-                                                       (filename score-instance) suffix)))
-                :output-file (merge-pathnames *lilypond-export-path*
-                                              (pathname
-                                               (case (output-format backend)
-                                                 (:svg-cropped
-                                                  (format nil "~a-~a.svg"
-                                                          (filename score-instance) suffix))
-                                                 (:pdf-multipage
-                                                  (format nil "~a-~a.pdf"
-                                                          (filename score-instance) suffix))))))
-  (when (eq (output-format backend) :svg-cropped)
-    (rename-file (merge-pathnames *lilypond-export-path*
-                                  (pathname (format nil "~a-~a.cropped.svg"
-                                                    (filename score-instance)
-                                                    suffix)))
-                 (merge-pathnames *lilypond-export-path*
-                                  (pathname (format nil "~a-~a.svg"
-                                                    (filename score-instance)
-                                                    suffix)))))
+  (when *score-processing*
+    (format t "~&Running Lilypond on ~a-~a" (filename score-instance) suffix)
+    (run-lilypond (generate-score-ly-code score-instance backend)
+                  (output-format backend)
+                  :ly-file (merge-pathnames *lilypond-export-path*
+                                            (pathname
+                                             (format nil "~a-~a.ly"
+                                                     (filename score-instance) suffix)))
+                  :output-file (merge-pathnames *lilypond-export-path*
+                                                (pathname
+                                                 (case (output-format backend)
+                                                   (:svg-cropped
+                                                    (format nil "~a-~a.svg"
+                                                            (filename score-instance) suffix))
+                                                   (:pdf-multipage
+                                                    (format nil "~a-~a.pdf"
+                                                            (filename score-instance) suffix))))))
+    (when (eq (output-format backend) :svg-cropped)
+      (rename-file (merge-pathnames *lilypond-export-path*
+                                    (pathname (format nil "~a-~a.cropped.svg"
+                                                      (filename score-instance)
+                                                      suffix)))
+                   (merge-pathnames *lilypond-export-path*
+                                    (pathname (format nil "~a-~a.svg"
+                                                      (filename score-instance)
+                                                      suffix))))))
   (format nil "~a-~a" (filename score-instance) suffix))
 
 

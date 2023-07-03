@@ -30,6 +30,7 @@
                                           :if-exists :supersede
                                           :if-does-not-exist :create)
           (print apparatus-data apparatus-stream))
+        ;; write tex apparatus here ...
         (create-score-file backend-instance simplified-score suffix)))))
 
 ;; for external use, in case other programs want to operate on a score object
@@ -45,6 +46,7 @@
        (extract-reading score-expression extraction-arguments :diplomatic)
        ))))
 
+;; doesn't work properly, should be deleted
 (defun curate-file-list-for-apparatus (file-list)
   (mapcar (lambda (filename)
             (format nil "app-~a.lisp" filename))
@@ -52,12 +54,14 @@
                                     (eq-last-char-in-string filename #\c))
                                   file-list))))
 
+
 ;; looping over mission, entry point to everything
 (defun execute-mission (mission-list)
   (reset-file-list *vicentino-types-backend*)
   (reset-file-list *lilypond-backend-modern*)
   (dolist (item mission-list)
     (process-score (first item) (second item) (third item) (fourth item)))
+  ;; should be deleted,
   (generate-latex-apparatus (curate-file-list-for-apparatus
                              (output-file-list *lilypond-backend-modern*)))
   'done)
@@ -182,18 +186,16 @@
     (execute-mission mission)))
 
 (defun execute-vicentino21 ()
-  (dolist (mission (list
-                    *book1-types*
-                    *book2-types*
-                    *book3-types*
-                    *book4-types*
-                    *book5-types*
-                    *book1-modern*
-                    *book2-modern*
-                    *book3-modern*
-                    *book4-modern*
-                    *book5-modern*))
-    (execute-mission mission)))
+  (execute-mission (reduce #'append (list *book1-types*
+                                          *book2-types*
+                                          *book3-types*
+                                          *book4-types*
+                                          *book5-types*
+                                          *book1-modern*
+                                          *book2-modern*
+                                          *book3-modern*
+                                          *book4-modern*
+                                          *book5-modern*))))
 
 (defun execute-types ()
   (dolist (mission (list *book1-types*

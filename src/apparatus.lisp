@@ -160,8 +160,11 @@
                  ((eq item :voice) (setf (current-voice state) (second rest-score)))
                  ((in-header-p state)
                   (incf (score-line-heading-counter state))
-                  (setf (score-text-section state) item)
-                  (setf (score-text-voice state) (second rest-score))
+                  (when (stringp (second rest-score))
+                    (setf (score-text-section state) item))
+                  (when (stringp (third rest-score))
+                    (setf (score-text-section state) item)
+                    (setf (score-text-voice state) (second rest-score)))
                   (case item
                     (:title (setf (score-text-type state) :title))
                     (:line-headings
