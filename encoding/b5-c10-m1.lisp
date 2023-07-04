@@ -16,19 +16,13 @@
     (s3 (:alt (:it "Le quattro seste discendenti\\[con le sue] propinque")
               (:de "")
               (:en "")))
-    (s4 (:alt (:it " \\[Ottava]")
+    (s4 (:alt (:it "Le quattro terze ascendenti\\con le [sue] propinque")
               (:de "")
               (:en "")))
-    (s5 (:alt (:it "Le quattro terze ascendenti\\con le [sue] propinque")
+    (s5 (:alt (:it " \\Quinta")
               (:de "")
               (:en "")))
-    (s6 (:alt (:it " \\Quinta")
-              (:de "")
-              (:en "")))
-    (s7 (:alt (:it "Le quattro seste ascendenti\\con le sue propinque")
-              (:de "")
-              (:en "")))
-    (s8 (:alt (:it " \\[Ottava]")
+    (s6 (:alt (:it "Le quattro seste ascendenti\\con le sue propinque")
               (:de "")
               (:en ""))))
    (:section-captions
@@ -39,15 +33,13 @@
     (s3 (:alt (:it "Sesta minore / sesta maggiore")
               (:de "")
               (:en "")))
-    (s4 "")
-    (s5 (:alt (:it "Terza minore / terza maggiore")
+    (s4 (:alt (:it "Terza minore / terza maggiore")
               (:de "")
               (:en "")))
-    (s6 "")
-    (s7 (:alt (:it "Sesta minore / sesta maggiore")
+    (s5 "")
+    (s6 (:alt (:it "Sesta minore / sesta maggiore")
               (:de "")
-              (:en "")))
-    (s8 ""))
+              (:en ""))))
    (:line-headings
     (:alt (:it "Tutte le consonanze discendenti di Alamire terzo")
           (:de "")
@@ -55,10 +47,6 @@
     (:alt (:it "Tutte le consonanze ascendenti di Alamire terzo")
           (:de "")
           (:en ""))))
-  (:preamble-lilypond
-   (:brackets
-    (s4 0 12 -16 0 12 -16)
-    (s8 0 12 -16 0 12 -16)))
   (:data
    (:text 110 58
           (349 1473 "Di ᴀla mi re terzo, le conſonanze diſcententi & aſcendenti."))
@@ -77,13 +65,11 @@
            (:section s2) b22 fl5 b22 sb5 b22 bl
            (:section s3) fl5 sb5 fl5 (:divider :regular) sb5 bl
            b22 fl5 sb5 fl5 sb5 b22
-           (:section s4) (:alt (:it (:bracketed) fl5 sb5))
-           (:section s5) (:newline) cclef3 b22 sbd2 sh2 (:divider :regular) sb2 b22 bl
+           (:section s4) (:newline) cclef3 b22 sbd2 sh2 (:divider :regular) sb2 b22 bl
            sb3 sbd3 bl
-           (:section s6) b22 fl5 b22 sb5 b22 bl
-           (:section s7) b22 sbd5 sh5 (:divider :regular) sb5 bl
-           b22 sb6 sbd6 b22 bl
-           (:section s8) (:alt (:it (:bracketed) fl8 sb8)))
+           (:section s5) b22 fl5 b22 sb5 b22 bl
+           (:section s6) b22 sbd5 sh5 (:divider :regular) sb5 bl
+           b22 sb6 sbd6 b22 bl)
    (:text 110 58
           (4 nil "con le ſue propinque .")
           (552 nil "propinq.")
@@ -97,13 +83,11 @@
            (:section s2) b22 fl5 sb5 b22 bl
            (:section s3) b22 sb4 sh3 (:divider :regular) sb3 b22 bl
            b22 sbd3 b22 sb3 b22
-           (:section s4) (:alt (:it fl2 sb2))
-           (:section s5) cclef7 fl5 sb5 fl5 (:divider :regular) sb5 bl
+           (:section s4) cclef7 fl5 sb5 fl5 (:divider :regular) sb5 bl
            fl5 sb5 fl5 sb5 bl
-           (:section s6) fl5 sb5 bl
-           (:section s7) fl5 sb5 fl5 (:divider :regular) sb5 bl
-           fl5 sb5 fl5 sb5 bl
-           (:section s8) (:alt (:it fl5 sb5)))
+           (:section s5) fl5 sb5 bl
+           (:section s6) fl5 sb5 fl5 (:divider :regular) sb5 bl
+           fl5 sb5 fl5 sb5 bl)
    (:text 110 58
           (95 nil "3.min.")
           (353 nil "3.magg.")

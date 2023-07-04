@@ -33,15 +33,15 @@
     (s1 v1 "Mu -- si -- ca pri -- sca ca -- put, [mu -- si -- ca pri -- sca ca -- put]
             te -- ne -- bris mo -- do su -- stu -- lit al -- _ tis,
             mu -- si -- ca pri -- sca ca -- put te -- ne -- bris mo -- do su -- stu -- lit al -- _ _ _ tis
-            dul -- ci -- bus ut nu -- me -- ris, dul -- ci -- bus -- _ _ ut nu -- me -- ris
+            dul -- ci -- bus ut nu -- me -- ris, dul -- ci -- bus_ _ _ ut nu -- me -- ris
             pri -- scis cer -- tan -- ti -- a fa -- ctis,
             dul -- ci -- bus ut nu -- me -- ris
             pri -- scis cer -- tan -- ti -- a fa -- _ ctis
             fa -- cta tu -- a Hyp -- po -- li -- te, fa -- cta tu -- a Hyp -- po -- li -- te
             ex -- cel -- sum su -- per ae -- the -- ra mit -- tat,
             fa -- cta tu -- a Hyp -- po -- li -- te
-            ex -- cel -- sum su -- per ae -- the -- rum mit -- tat.")
-    (s1 v2 "Mu -- si -- ca pri -- sca ca -- _ _ _ put,
+            ex -- cel -- sum su -- per ae -- the -- ra mit -- tat.")
+    (s1 v2 "Mu -- si -- ca pri -- sca ca -- _ _ put,
             te -- ne -- bris mo -- do su -- stu -- lit al -- tis, su -- stu -- lit al -- tis,
             mu -- si -- ca pri -- sca ca -- put te -- ne -- bris mo -- do su -- stu -- lit al -- tis,
             su -- stu -- lit al -- tis
@@ -68,7 +68,7 @@
             dul -- ci -- bus ut nu -- me -- ris pri -- scis cer -- tan -- ti -- a __ fa -- ctis
             fa -- cta tu -- a Hyp -- po -- li -- te, fa -- cta tu -- a Hyp -- po -- li -- te
             ex -- cel -- sum su -- per ae -- the -- ra mit -- tat, fa -- cta tu -- a Hyp -- po -- li -- te
-            ex -- cel -- sum su -- per ae -- the -- ta mit -- tat.")))
+            ex -- cel -- sum su -- per ae -- the -- ra mit -- tat.")))
   (:data
    ;; soprano
    (:music 2221

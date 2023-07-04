@@ -71,8 +71,7 @@
            (:section s2) b38 b22 sh4 b38 sb4 b38 b22 bl
            (:section s3) b38 sh4 sb4 b22 sh4 b22 (:divider :regular) sb4 b38 bl
            b38 sh4 b22 sb4 b22 sh4 b22 sb4 b38 bl
-           (:section s4) b38 sh4 b38 sb4 b38 b22 bl b38
-           )
+           (:section s4) b38 sh4 b38 sb4 b38 b22 bl b38)
    (:text 70 58
           (304 nil "con le ſue propinque.")
           (1450 nil "con le ſue propinque."))
@@ -82,9 +81,13 @@
            b38 sb6 b38 fl6 b38 sbd6 b38 b38 bl
            (:section s2) b38 b38 sh4 b38 sb4 b38 b38 bl
            (:section s3) b38 b38 sh3 b38 sb3 b38 sbd3 b38 bl
-           b38 sb3 b38 fl3 b38 sbd3 b22 b38 bl
-           (:section s4) b38 b38 sh1 b38 sb1 b38 b38 bl
-           )
+           b38 sb3 b38 fl3 b38
+           (:alt (:diplomatic sbd3)
+                 (:idealised sbd3)
+                 (:comment "In gewissen Quellen (oder nur im Faksimile) fehlt bei der dritten Note dieser Section ein enharmonischer Punkt.")
+                 (:flag :observe) (:id 1))
+           b22 b38 bl
+           (:section s4) b38 b38 sh1 b38 sb1 b38 b38 bl)
    (:text 110 58
           (96 nil "ᴛerza minor.")
           (476 nil "ᴛerza magg.")
