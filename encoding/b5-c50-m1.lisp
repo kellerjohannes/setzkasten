@@ -53,15 +53,17 @@
     (s1 (:alt (:it "Semitono maggiore:\\diesis minore – diesis maggiore\\Semitono minore:\\diesis minore – diesis minore")
               (:de "")
               (:en "")))
-    (s2 (:alt (:it "Semitono minore /\\semitono maggiore:\\diesis maggiore – diesis minore – diesis minore")
+    (s2 (:alt (:it "Semitono minore /\\semitono maggiore:\\diesis minore – diesis minore – diesis minore")
               (:de "")
               (:en "")))
     (s3 (:alt (:it "Semitono maggiore:\\diesis minore – diesis maggiore\\Semitono minore:\\diesis minore – diesis minore")
               (:de "")
               (:en "")))
-    (s4 (:alt (:it "Semitono minore:\\diesis minore – diesis maggiore\\Semitono maggiore:\\diesis minore – diesis minore")
+    (s4 (:alt (:it "Semitono maggiore:\\diesis minore – diesis maggiore\\Semitono minore:\\diesis minore – diesis minore")
               (:de "")
-              (:en "")))
+              (:en "")
+              (:comment "Original: »Semitono minore / semitono maggiore«.")
+              (:flag :draft) (:id 1)))
 
     (s5 (:alt (:it "Semitono minore /\\semitono maggiore:\\diesis minore – diesis minore – diesis minore")
               (:de "")
@@ -82,7 +84,7 @@
     (s10 (:alt (:it "Semitono minore /\\semitono maggiore:\\diesis minore – diesis minore – diesis minore")
                (:de "")
                (:en "")))
-    (s11 (:alt (:it "Semitono maggiore:\\diesis minore – diesis maggiore\\Semitono minore:\\diesis minore – diesis minore")
+    (s11 (:alt (:it "Semitono maggiore:\\diesis maggiore – diesis minore\\Semitono minore:\\diesis minore – diesis minore")
                (:de "")
                (:en "")))
     (s12 (:alt (:it "Semitono maggiore:\\diesis maggiore – diesis minore\\Semitono minore:\\diesis minore – diesis minore")
@@ -130,15 +132,15 @@
            (:section s5) (:f-clef) max7 fclef7 b22 fl6 b22 sb6 fl6 b22 sbd6 b22 sb6 sbd6 bl
            (:section s6) sbd6 b22 sh6 b22 sb6 sbd7 sh7 sb7 fl8 sb8 bl
            (:section s7) (:newline) fl8 b22 sb8 b22 fl8 b22 sbd8 b22 sbd8 b22 sh8 b22
-           ;; In gewissen Quellen gibt es hier einen enh. Punkt, was aber als Druckfehler
-           ;; behandelt wird und nicht in die Transkriptionen übernommen werden soll.
-           ;; Trotzdem ist ein Eintrag im krit. Bericht erwünscht.
-           (:alt (:diplomatic sb8) (:idealised sb8)) fl9 b22 sb9 bl
+           (:alt (:diplomatic sb8) (:idealised sb8)
+                 (:comment "In gewissen Quellen steht über der vierten Note (G♯) ein enharmonischer Punkt.")
+                 (:flag :draft) (:id 2))
+           fl9 b22 sb9 bl
            (:section s8) fl9 sb9 b22 sbd8 b22 sb8 b22 fl8 b22 sbd8 b22 fl8 b22 sb8 bl)
    (:text 90 58
-     ;; eine diesis streichen?
-     ;; Ja, von Bibelgruppe bestätigt.
-     (:alt (:diplomatic (0 nil "d.mi.d.mi.d.mi.d.mi.")) (:idealised (0 nil "d.mi.d.mi.d.mi.")))
+     (:alt (:diplomatic (0 nil "d.mi.d.mi.d.mi.d.mi.")) (:idealised (0 nil "d.mi.d.mi.d.mi."))
+           (:comment "Original: »d.mi.d.mi.d.mi.d.mi.«")
+           (:flag :draft) (:id 3))
      (521 nil "d.mi.d.ma.d.mi.d.mi.")
      (1045 nil "di.mi.di.ma.di.mi. di.mi.")
      (1680 nil "d.ma.di.mi.di.mi.d.mi."))
@@ -158,13 +160,14 @@
    (:music 2225
            (:section s9) (:f-clef) max7 fclef7 b22 fl8 b22 sb8 b22 sbd7 b22 sb7 b22 sh6 b22 sb6 b22 sbd6 bl
            (:section s10) (:newline) sbd6 b22 sb6 b22 fl6 b22 sbd6 b22 fl6 b22 sb6 bl
-           (:section s11) fl6 b22 sb6 b22 sbd5 b22 sb5 b22 fl5 b22 sb5 b22 fl5 b22 sb5 bl
+           (:section s11) fl6 b22 sb6 b22 sbd5 b22 sb5 b22 fl5 b22 sbd5 b22 fl5 b22 sb5 bl
            (:section s12) fl5 b22 sb5 b22 sbd4 b22 sb4 b22 sh3 b22 sb3 sbd3 bl)
    (:text 100 58
      (75 nil "di.ma. di.mi.d.mi. d. mi.")
-     ;; eine diese streichen?
-     ;; Ja, von Bibelgruppe bestätigt
-     (:alt (:diplomatic (673 nil "di.mi.d.mi.d.mi.d.mi.")) (:idealised (673 nil "di.mi.d.mi.d.mi.")))
+     (:alt (:diplomatic (673 nil "di.mi.d.mi.d.mi.d.mi."))
+           (:idealised (673 nil "di.mi.d.mi.d.mi."))
+           (:comment "Original: »di.mi.d.mi.d.mi.d.mi.«")
+           (:flag :draft) (:id 4))
      (1180 nil "d.ma.di.mi.d.mi.d.mi.")
      (1709 nil "d.ma.di.mi.di.mi.d.mi."))
    (:text 120 58

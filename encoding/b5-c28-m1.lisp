@@ -75,7 +75,12 @@
      (1561 nil "6. mag. prop."))
    (:music 2229
            (:voice v2)
-           (:section s1) cclef7 b38 fl6 b38 sb6 b38 sh6 b38 sb6 bl
+           (:section s1) cclef7 b38 fl6 b38 sb6 b38
+           (:alt (:diplomatic sh6 b38 sb6)
+                 (:idealised sh5 b38 sb5)
+                 (:comment "Original: Die zweite Note in der unteren Stimme ist ein B♯.")
+                 (:flag :draft) (:id 1))
+           bl
            b38 b38 sbd5 b38 b22 sbc5 b38 b38 sb5 b38 b38 bl
            (:section s2) b38 fl4 b38 sb4 b38 bl
            (:section s3) b38 sb3 b38 b22 sh2 b38 b22 sb2 b22 b22 bl

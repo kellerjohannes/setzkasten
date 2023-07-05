@@ -38,7 +38,12 @@
      (1934 nil "Quarta"))
    (:music 2225
            (:voice v1)
-           (:section s1) cclef7 b22 sbd2 fl4 sbd4 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 sbd8 sbd9 b22 bl
+           (:section s1) cclef7 b22 sbd2 fl4
+           (:alt (:diplomatic sbd4)
+                 (:idealised sb4)
+                 (:comment "Original: Die zweite Note ist ein Ġ♭.")
+                 (:flag :draft) (:id 1))
+           b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 sbd8 sbd9 b22 bl
            (:section s2) b22 sbd2 sbd3 sbd4 sbd5 fl6 sbd6 sbd7 sbd8 sbd9 bl
            (:section s3) sbd2 fl4 sb4 fl5 sb5 sbd5 sbd6 fl8 sb8 fl9 sb9 sbd9 bl
            (:section s4) (:newline) b22 sbd2 fl4 sb4 b22 sbd4 b22 sbd5 sbd6 custos8)
@@ -51,4 +56,4 @@
            cclef7 b22 fl8 sb8 sbd8 sbd9 b22 bl
            (:section s5) sbd2 sbd3 sbd4 sbd5 sbd6 sbd7 sbd8 sbd9 bl
            (:section s6) b22 sbd2 b22 fl4 b22 sb4 b22 fl5 b22 sb5 fl6 b22 sb6 sbd6 fl8 sb8 fl9 sb9 sbd9 b22 bl
-           (:section s7) (:newline) b22 sbd2 fl4 sbd4 fl5 sb5 sbd5 sbd6 fl8 sb8 sbd8 sbd9 b22 bl)))
+           (:section s7) (:newline) b22 sbd2 fl4 sb4 fl5 sb5 sbd5 sbd6 fl8 sb8 sbd8 sbd9 b22 bl)))

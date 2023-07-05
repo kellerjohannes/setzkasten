@@ -85,7 +85,12 @@
    (:music 2224
            (:voice v2)
            (:section s1) cclef7 sb5 fl5 sbd5 bl
-           fl4 sb4 sh4 sb4 b22 bl
+
+           (:alt (:diplomatic fl4 sb4)
+                 (:idealised fl5 sb5)
+                 (:comment "Original: Die dritte Note in der unteren Stimme ist ein G♭.")
+                 (:flag :draft) (:id 1))
+           sh4 sb4 b22 bl
            (:section s2) b22 sb3 b22 bl
            (:section s3) sb2 fl2 sbd2 bl
            fl2 sb2 sh1 sb1 bl

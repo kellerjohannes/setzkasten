@@ -66,12 +66,19 @@
            (:section s4) sbd6
            (:section s5) (:newline) cclef7 sbd1 sh1 (:divider :regular) sb1 bl
            fl2 sb2
-           ;; Kosmetische Korrektur, vertikale Positionierung ♭
-           (:alt (:diplomatic fl3) (:idealised fl2)) sbd2 bl
+           (:alt (:diplomatic fl3) (:idealised fl2)
+                 (:comment "Original: Das zweite ♭ steht eine Position höher.")
+                 (:flag :draft) (:id 1))
+           sbd2 bl
            (:section s6) fl4 sb4 bl
            (:section s7) sbd4 sh4 (:divider :regular) sb4 bl
            fl5 sb5 fl5 sbd5 bl
-           (:section s8) sb6 bl)
+           (:section s8)
+           (:alt (:diplomatic sb6)
+                 (:idealised sbd6)
+                 (:comment "Original: Die Note in der oberen Stimme ist ein B♮.")
+                 (:flag :draft) (:id 3))
+           bl)
    (:text 130 58
      (48 nil "3.mi.prop.")
      (323 nil "3.ma.pro.")
@@ -83,7 +90,12 @@
      (1913 nil "6.ma.pr."))
    (:music 2233
            (:voice v2)
-           (:section s1) (:f-clef) max7 fclef7 fl8 sb8 sh8 sb8 bl
+           (:section s1) (:f-clef) max7 fclef7
+           (:alt (:diplomatic fl8 sb8)
+                 (:idealised fl9 sb9)
+                 (:comment "Original: Die erste Note in der unteren Stimme ist ein G♭.")
+                 (:flag :draft) (:id 2))
+           sh8 sb8 bl
            sbd8 sbc8 sb8 bl
            (:section s2) sbd6 bl
            (:section s3) fl6 sb6 sh5 sb5 bl

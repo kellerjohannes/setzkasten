@@ -50,8 +50,9 @@
    (:text 100 58
      (0 1682 "propinquiſſime,& il ſimile di ʙ mi quinto aſcendente per una ᴏttaua."))
    (:text 100 58
-          ;; Orthographische Korrektur, mit Luigi abgleichen
-          (219 nil (:alt (:diplomatic "La quattro terze.") (:idealised "Le quattro terze.")))
+          (219 nil (:alt (:diplomatic "La quattro terze.") (:idealised "Le quattro terze.")
+                         (:comment "Original: »La quattro terze.«")
+                         (:flag :draft) (:id 1)))
           (859 nil "Quinta.")
           (1385 nil "Le quattro seſte.")
           (2126 nil "8."))
@@ -68,8 +69,9 @@
      (462 nil "3.mag.propinq.")
      (1048 nil "seſta")
      (1337 nil "propinq.")
-     ;; Typographische Korrektur, mit Luigi abgleichen
-     (1582 nil (:alt (:diplomatic "seſta mag,prop.") (:idealised "seſta mag.prop."))))
+     (1582 nil (:alt (:diplomatic "seſta mag,prop.") (:idealised "seſta mag.prop.")
+                     (:comment "Original: »seſta mag,prop.«")
+                     (:flag :draft) (:id 2))))
    (:text 140 58
      (179 nil "Le quattro terze.")
      (841 nil "Quinta.")

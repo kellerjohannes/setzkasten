@@ -38,7 +38,7 @@
    (:music 2222
            (:voice v1)
            (:section s1) cclef7 b38 sh0 sb0 sh1 sb1 b22 sb2 sh3 sb3 sh4 sb4 sb5 sb6 sh7 sb7 b38 bl
-           (:section s2) b38 sh0 sb1 sb2 sh3 sb3 sb4 sb5 sb6 sh7 sb7 b38 bl
+           (:section s2) b38 sh0 sb0 sb1 sb2 sh3 sb3 sb4 sb5 sb6 sh7 sb7 b38 bl
            (:section s3) b38 sh0 sb0 sh1 sb1 sh2 sb2 sh3 sb3 sh4 sb4 sh5 sb5 b38 custos6)
    (:vspace 20)
    (:text 70 58

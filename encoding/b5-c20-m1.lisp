@@ -78,12 +78,18 @@
            b38 b22 sh6 b38 sb6 b38 sbd6 b38 b22 bl
            (:section s2) b38 sh4 b22 b22 sb4 b38 bl
            (:section s3) b22 fl4 b38 sbd4 b38 fl4 b38 (:divider :regular) sb4 b38 bl
-           b22 sh3 b38 sb3 b38 fl3 b22 sbd3 b38 bl
+           b22 sh3 b38 sb3 b38
+           (:alt (:diplomatic fl3 b22 sbd3)
+                 (:idealised b38 b22 sbd3)
+                 (:comment "Original: Die vierte Note in der unteren Stimme ist ein Ġ♭.")
+                 (:flag :draft) (:id 1))
+           b38 bl
            (:section s4) b38 sh1 b38 sb1 b38 bl)
    (:text 90 58
           (163 nil "le 4. terze")
-          ;; Orthographische Textkorrektur
-          (932 nil (:alt (:diplomatic "quinte") (:idealised "quinta")))
+          (932 nil (:alt (:diplomatic "quinte") (:idealised "quinta")
+                         (:comment "Original: »quinte«")
+                         (:flag :draft) (:id 2)))
           (1322 nil "le 4. seſte")
           (1982 nil "ottaua"))
    (:music 2225
@@ -92,7 +98,17 @@
            b22 b38 b22 fl3 b38 b22 sbd3 b38 sb3 b38 b22 bl
            (:section s6) b38 sh4 b38 sb4 b38 bl
            (:section s7) b38 sh5 b38 sb5 b38 fl6 b38 (:divider :regular) sb6 b38 bl
-           b38 sbd6 b38 sh6 b38 sb6 b38 b22 bl
+
+           (:alt (:diplomatic b38 sbd6)
+                 (:idealised fl6 sbd6)
+                 (:comment "Original: Die dritte Note in der oberen Stimme ist ein Ḋ.")
+                 (:flag :draft) (:id 2))
+           b38
+           (:alt (:diplomatic sh6 b38 sb6)
+                 (:idealised b38 b38 sb6)
+                 (:comment "Original: Die vierte Note in der oberen Stimme ist ein D♯.")
+                 (:flag :draft) (:id 3))
+           b38 b22 bl
            (:section s8) b38 sh7 b38 sb7 b38 bl)
    (:text 110 78
           (163 nil "3. min.")

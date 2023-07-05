@@ -119,7 +119,11 @@
            (:section s4) (:newline) b22 fl5 sbd5 b22 sb5 b22 sbd5 sh5 sb5 fl6 sbd6 bl)
    (:text 70 58
      (48 nil "ᴅ.mi.d.mi.di.mi.d.ma.")
-     (593 nil "d.mi.d.mi.d.mi.d.mi.")
+
+     (:alt (:diplomatic (593 nil "d.mi.d.mi.d.mi.d.mi."))
+           (:idealised (593 nil "d.mi.d.mi.d.mi."))
+           (:comment "Original: »d.mi.d.mi.d.mi.d.mi.«")
+           (:flag :draft) (:id 7))
      (1118 nil "d.mi. d.mi. d.mi. d.ma.")
      (1704 nil "d.mi.d.mi.d.mi.d.ma."))
    (:text 110 58
@@ -186,7 +190,10 @@
    (:text 100 58
      (145 nil "ᴅ.mi. d.mi. d.mi. d.ma.")
      (811 nil "d.mi.d.mi. d.mi. d.ma.")
-     (1397 nil "d.mi.d.mi.d.mi.d.ma.")
+     (:alt (:diplomatic (1397 nil "d.mi.d.mi.d.mi.d.ma."))
+           (:idealised (1397 nil "d.mi.d.mi.d.ma."))
+           (:comment "Original: »d.mi.d.mi.d.mi.d.ma.«")
+           (:flag :draft) (:id 8))
      (1973 nil "d.mi.d.mi."))
    (:text 120 58
      (182 nil "Tono")
@@ -215,12 +222,44 @@
    (:music 2232
            (:f-clef) max7 fclef7 b22 sh5 sb5 sbd5 fl5 sbd5 b22 bl
            (:section s12) b22 fl5 b22 sbd5 b22 fl5 b22 sb5 b22 sh4 sb4 sbd4 fl4 sbd4 b22 bl
-           (:section s13) (:newline) b38 fl4 b22 sbd4 b22 fl4 b22 sb4 b22 sh3 b22 sb3 b22 sbd3 b38 b38 bl
-           (:section s14) b22 sbd3 b22 sb3 b22 fl3 sbd3 sh2 sb2 fl2 sbd2 b38 bl)
+           (:section s13) (:newline) b38
+           (:alt (:diplomatic fl4 b22 sbd4)
+                 (:idealised b38 b22 sbd4)
+                 (:comment "Original: Die erste Note ist ein Ċ♭.")
+                 (:flag :draft) (:id 1))
+           b22
+           (:alt (:diplomatic fl4 b22 sb4)
+                 (:idealised b38 b22 sb4)
+                 (:comment "Original: Die zweite Note ist ein C.")
+                 (:flag :draft) (:id 2))
+           b22 sh3 b22 sb3 b22 sbd3 b38 b38 bl
+           (:section s14) b22
+           (:alt (:diplomatic sbd3)
+                 (:idealised fl3 sbd3)
+                 (:comment "Original: Die erste Note ist ein Ḃ♮")
+                 (:flag :draft) (:id 3))
+           b22
+           (:alt (:diplomatic sb3)
+                 (:idealised fl3 sb3)
+                 (:comment "Original: Die zweite Note ist ein B♮.")
+                 (:flag :draft) (:id 4))
+           b22
+           (:alt (:diplomatic fl3 sbd3)
+                 (:idealised sh2 sb2)
+                 (:comment "Original: Die dritte Note ist ein Ḃ♭.")
+                 (:flag :draft) (:id 5))
+           (:alt (:diplomatic sh2 sb2)
+                 (:idealised sbd2)
+                 (:comment "Original: Die vierte Note ist ein A♯.")
+                 (:flag :draft) (:id 6))
+           fl2 sbd2 b38 bl)
    (:text 90 58
      (98 nil "di. mi. di.ma.")
      (466 nil "d.mi. d.mi. d.mi.d.ma.")
-     (1086 nil "d.mi. d.mi. di.mi. d.ma.")
+     (:alt (:diplomatic (1086 nil "d.mi. d.mi. di.mi. d.ma."))
+           (:idealised (1086 nil "d.mi. d.mi. di.mi."))
+           (:comment "Original: »d.mi. d.mi. di.mi. d.ma.«")
+           (:flag :draft) (:id 9))
      (1720 nil "d.mi.d.mi.d.mi.d.ma."))
    (:text 70 58
      (94 nil "ᴄro.")

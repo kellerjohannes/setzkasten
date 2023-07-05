@@ -81,8 +81,23 @@
      (925 nil "6.ma.pr."))
    (:music 2223
            (:voice v2)
-           (:section s1) cclef7 b22 sbd5 b22 sbc5 b22 sbd5 bl
-           fl4 sbd4 fl4 sb4 bl
+           (:section s1) cclef7 b22 sbd5 b22 sbc5 b22
+           (:alt (:diplomatic sbd5)
+                 (:idealised sb5)
+                 (:comment "Original: Die dritte Note in der unteren Stimme ist ein Ȧ.")
+                 (:flag :draft) (:id 1))
+           bl
+
+           (:alt (:diplomatic fl4 sbd4)
+                 (:idealised fl5 sbd5)
+                 (:comment "Original: Die vierte Note in der unteren Stimme ist ein Ġ♭.")
+                 (:flag :draft) (:id 2))
+
+           (:alt (:diplomatic fl4 sb4)
+                 (:idealised fl5 sb5)
+                 (:comment "Original: Die fünfte Note in der unteren Stimme ist ein G♭.")
+                 (:flag :draft) (:id 3))
+           bl
            (:section s2) b22 sbd3 b22 bl
            (:section s3) b22 sbd2 b22 sbc2 b22 sb2 bl
            fl2 sbd2 fl2 sb2 bl

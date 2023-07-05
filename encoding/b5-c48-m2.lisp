@@ -89,9 +89,11 @@
     (s12 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
                (:de "")
                (:en "")))
-    (s13 (:alt (:it "Semitono minore:\\diesis maggiore – diesis minore – diesis minore")
+    (s13 (:alt (:it "Semitono minore:\\diesis minore – diesis minore – diesis minore")
                (:de "")
-               (:en "")))
+               (:en "")
+               (:comment "Original: »diesis maggiore - diesis minore - diesis maggiore«.")
+               (:flag :draft) (:id 1)))
     (s14 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
                (:de "")
                (:en "")))))
@@ -155,15 +157,17 @@
      (1779 nil "sem. mag."))
    (:music 2230
            (:section s9) (:f-clef) max7 fclef7 b38 sb8 b38 fl8 b38 b22 sbd8 b38 fl8 b38 b22 sb8 b38 b22 sbd7 b38 b22 sb7 b38 b22 bl
-           ;; Diskussionsbedarf: Soll hier die Diesis-Abfolge so korrigiert werden, dass die Noten
-           ;; der Tonhöhe entlang sortiert sind, oder so lassen? In jedem Fall ist die Beschriftung
-           ;; zu korrigieren, sie ist unabhängig davon problematisch. Siehe auch s13.
-           (:section s10) (:newline) b38 b22 sb7 b38 sbd6 b38 sh6 b38 b22 sb6 b38 sb6 b38 b22 bl
+           (:section s10) (:newline) b38 b22 sb7 b38
+           (:alt (:diplomatic sbd6 b38 sh6 b38 b22 sb6)
+                 (:idealised sh6 b38 b22 sb6 b38 sbd6)
+                 (:comment "Original: Die mittleren beiden Noten sind vertauscht.")
+                 (:flag :draft) (:id 2))
+           b38 sb6 b38 b22 bl
            (:section s11) b22 b38 sb6 b38 fl6 b38 sbd6 b38
-           ;; Hier ist die mittlere Note zu diskutieren, da sie eine möglicherweise ungewollte
-           ;; Redundanz zu b5-c48-m1 erzeugt. Siehe auch s14.
-           (:alt (:diplomatic sh5 b38 sb5) (:idealised fl5 b38 sb6)) b38 sbd5 b22 b22 sb5 b22 b22 bl
-           )
+           (:alt (:diplomatic sh5 b38 sb5) (:idealised fl6 b38 sb6)
+                 (:comment "Original: Die mittlere Note ist D♯.")
+                 (:flag :draft) (:id 3))
+           b38 sbd5 b22 b22 sb5 b22 b22 bl)
    (:text 100 58
      (45 nil "di. mi. di. mi.")
      (405 nil "di. ma. di. mi.")
@@ -183,14 +187,17 @@
      (1800 nil "sem.mag."))
    (:music 2221
            (:section s12) (:f-clef) max7 fclef7 b38 sb5 b38 fl5 b38 sbd5 b38 fl5 b38 sb5 b38 b22 sbd4 b38 sb4 b38 b22 bl
-           ;; Diskussionsbedarf: Soll hier die Diesis-Abfolge so korrigiert werden, dass die Noten
-           ;; der Tonhöhe entlang sortiert sind, oder so lassen? In jedem Fall ist die Beschriftung
-           ;; zu korrigieren, sie ist unabhängig davon problematisch. Siehe auch s9.
-           (:section s13) (:newline) b22 b38 sb4 b38 b22 sbd3 b38 sh3 b38 sb3 b38 sb3 b38 b22 bl
+           (:section s13) (:newline) b22 b38 sb4 b38 b22
+           (:alt (:diplomatic sbd3 b38 sh3 b38 sb3)
+                 (:idealised sh3 b38 sb3 b38 sbd3)
+                 (:comment "Original: Die mittleren beiden Noten sind vertauscht.")
+                 (:flag :draft) (:id 4))
+           b38 sb3 b38 b22 bl
            (:section s14) b22 b38 sb3 b38 b22 fl3 b38 sbd3 b38 b22
-           ;; Hier ist die mittlere Note zu diskutieren, da sie eine möglicherweise ungewollte
-           ;; Redundanz zu b5-c48-m1 erzeugt. Siehe auch s11.
-           (:alt (:diplomatic sh2 b22 b22 sb2) (:idealised fl3 b38 sb3)) b38 sbd2 b38 b22 sb2 b38 b22 bl)
+           (:alt (:diplomatic sh2 b22 b22 sb2) (:idealised fl3 b38 sb3)
+                 (:comment "Original: Die mittlere Note ist ein A♯.")
+                 (:flag :draft) (:id 5))
+           b38 sbd2 b38 b22 sb2 b38 b22 bl)
    (:text 90 58
      (57 nil "di. mi. di mi.")
      (400 nil "di. ma. di. mi.")

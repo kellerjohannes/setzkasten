@@ -65,7 +65,12 @@
    (:music 2225
            (:voice v2)
            (:section s1) (:f-clef) max7 fclef7 b38 b38 sb8 b38 fl8 b38 sbd8 b38 bl
-           b38 fl8 b38 sb8 b38 sh8 b38 sb8 b38 b22 bl
+           b38 fl8 b38 sb8 b38
+           (:alt (:diplomatic sh8 b38 sb8)
+                 (:idealised sh7 b38 sb7)
+                 (:comment "Original: Die vierte Note in der unteren Stimme ist ein G♯.")
+                 (:flag :draft) (:id 1))
+           b38 b22 bl
            (:section s2) b38 fl6 b38 sb6 b38 b22 bl
            (:section s3) b38 b38 sb5 b38 fl5 b38 b22 sbd5 b38 b38 bl
            b38 fl5 b22 sb5 sh4 b38 sb4 b38 bl

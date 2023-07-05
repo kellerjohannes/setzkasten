@@ -66,12 +66,16 @@
     (s5 (:alt (:it "Semitono minore /\\semitono maggiore:\\diesis minore – diesis minore – diesis minore")
               (:de "")
               (:en "")))
-    (s6 (:alt (:it "Semitono maggiore:\\diesis maggiore – diesis minore\\Semitono minore:\\diesis minore – diesis minore")
+    (s6 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
               (:de "")
-              (:en "")))
-    (s7 (:alt (:it "Semitono maggiore:\\diesis minore – diesis maggiore\\Semitono minore:\\diesis minore – diesis minore")
+              (:en "")
+              (:comment "Original: »Semitono maggiore: diesis maggiore – diesis minore\\Semitono minore:\\diesis minore – diesis minore«")
+              (:flag :draft) (:id 7)))
+    (s7 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
               (:de "")
-              (:en "")))
+              (:en "")
+              (:comment "Original: »Semitono maggiore:\\diesis minore – diesis maggiore\\Semitono minore:\\diesis minore – diesis minore«")
+              (:flag :draft) (:id 8)))
     (s8 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
               (:de "")
               (:en "")))
@@ -86,7 +90,7 @@
                (:de "")
                (:en "")))
 
-    (s12 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis minore – diesis maggiore")
+    (s12 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
                (:de "")
                (:en "")))
     (s13 (:alt (:it "Semitono minore /\\semitono maggiore:\\diesis minore – diesis minore – diesis minore")
@@ -130,11 +134,38 @@
      (1975 nil "se. ma."))
    (:music 2223
            (:section s5) (:f-clef) max7 fclef7 b22 fl6 b22 sb6 b22 fl6 sbd6 b22 sb6 b22 sbd6 bl
-           (:section s6) sbd6 b22 sb7 b22 sbd7 b22 sh7 b22 sb7 b22 fl8 sb8 bl
-           (:section s7) (:newline) fl8 b22 sb8 b22 fl8 b22 sbd8 b22 sbd8 b22 sh8 b22 sb8 b22 fl9 b22 sb9 bl
+           (:section s6) sbd6 b22
+           (:alt (:diplomatic sb7)
+                 (:idealised sh6 sb6)
+                 (:comment "Original: Die zweite Note ist ein F.")
+                 (:flag :draft) (:id 1))
+           b22
+           (:alt (:diplomatic sbd7)
+                 (:idealised sb7)
+                 (:comment "Original: Die dritte Note ist ein Ḟ.")
+                 (:flag :draft) (:id 2))
+           b22
+           (:alt (:diplomatic sh7 b22 sb7)
+                 (:idealised b38 b22 sbd7)
+                 (:comment "Original: Die vierte Note ist ein F♯.")
+                 (:flag :draft) (:id 3))
+           b22 fl8 sb8 bl
+           (:section s7) (:newline) fl8 b22 sb8 b22 fl8 b22 sbd8 b22
+           (:alt (:diplomatic sbd8)
+                 (:idealised sb8)
+                 (:comment "Original: Die dritte Note ist ein Ġ.")
+                 (:flag :draft) (:id 4))
+           b22
+           (:alt (:diplomatic sh8 b22 sb8)
+                 (:idealised b38 b22 sbd8)
+                 (:comment "Original: Die vierte Note ist ein G♯.")
+                 (:flag :draft) (:id 5))
+           b22 fl9 b22 sb9 bl
            (:section s8) b22
-           ;; Kosmetische Korrektur Position ♭
-           (:alt (:diplomatic fl8) (:idealised fl9)) sb9 sh8 sb8 sbd8 fl8 sbd8 fl8 sb8 bl)
+           (:alt (:diplomatic fl8) (:idealised fl9)
+                 (:comment "Original: Das erste ♭ steht eine Position tiefer.")
+                 (:flag :draft) (:id 6))
+           sb9 sh8 sb8 sbd8 fl8 sbd8 fl8 sb8 bl)
    (:text 90 58
      (63 nil "di. mi. di mi. di. mi.")
      (552 nil "di. ma.di.mi.d.mi.d.mi.")

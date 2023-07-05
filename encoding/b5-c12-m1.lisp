@@ -69,15 +69,20 @@
            (:section s1) cclef7 fl5 sbd5 fl5 (:divider :regular) sbd5 bl
            fl5 sbd5 fl5 sbd5 bl
            (:section s2) fl5 sbd5 bl
-           ;; ev. ist der folgende Eingriff keine Variante, sondern schon in der Quelle so. Auf Luigi warten
            (:section s3) fl5
-           ;; Enh. Punkt, zu diskutieren
-           (:alt (:diplomatic sb5) (:idealised sbd5))
+           (:alt (:diplomatic sb5) (:idealised sbd5)
+                 (:comment "Original: Die erste Note in der oberen Stimme hat keinen enharmonischen Punkt.")
+                 (:flag :draft) (:id 1))
            fl5 (:divider :regular) sbd5 bl
            fl5 sbd5 fl5 sbd5 bl
            (:section s4) fl5 sbd5
            (:section s5) (:newline) cclef3 sh2 sb2 (:divider :regular) sb3 bl
-           sbd3 fl4 sb4 b22 bl
+           sbd3
+           (:alt (:diplomatic fl4 sb4)
+                 (:idealised sh3 sb3)
+                 (:comment "Original: Die vierte Note in der oberen Stimme ist ein D♭.")
+                 (:flag :draft) (:id 2))
+           b22 bl
            (:section s6) b22 fl5 sbd5 bl
            (:section s7) sh5 sb5 (:divider :regular) sb6 bl
            sbd6 sh6 sb6 bl
@@ -90,10 +95,25 @@
    (:music 2239
            (:voice v2)
            (:section s1) (:f-clef) max7 fclef7 sbd7 (:divider :regular) sb7 bl
-           sh7 sb7 sbd6 bl
+
+           (:alt (:diplomatic sh7 sb7)
+                 (:idealised sh6 sb6)
+                 (:comment "Original: Die dritte Note in der unteren Stimme ist ein F♯.")
+                 (:flag :draft) (:id 3))
+           sbd6 bl
            (:section s2) fl5 sbd5 bl
            (:section s3) b22 sbd4 b22 (:divider :regular) sb4 b22 bl
-           b22 sbd3 sb3 b22 bl
+           b22
+           (:alt (:diplomatic sbd3)
+                 (:idealised sh3 sb3)
+                 (:comment "Original: Die dritte Note in der unteren Stimme ist ein Ḃ♮.")
+                 (:flag :draft) (:id 4))
+
+           (:alt (:diplomatic sb3)
+                 (:idealised sbd3)
+                 (:comment "Original: die vierte Note in der unteren Stimme ist ein B♮.")
+                 (:flag :draft) (:id 5))
+           b22 bl
            (:section s4) fl2 sbd2
            (:section s5) cclef7 fl5 sbd5 fl5 (:divider :regular) sbd5 bl
            fl5 sbd5 fl5 sbd5 bl
@@ -107,7 +127,8 @@
           (565 nil "6.min.")
           (752 nil "6.mag.")
           (1097 nil "ᴛerze mi.")
-          ;; offensichtliche Textkorrektur, mit Luigi abzugleichen
-          (1367 nil (:alt (:diplomatic "3.min.") (:idealised "3.mag.")))
+          (1367 nil (:alt (:diplomatic "3.min.") (:idealised "3.mag.")
+                          (:comment "Original: »3.min.«")
+                          (:flag :draft) (:id 6)))
           (1658 nil "6.min.")
           (1881 nil "6.mag."))))

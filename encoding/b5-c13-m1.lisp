@@ -79,7 +79,12 @@
            (:section s7) (:newline) cclef3 b22 sbd3 b38 bl
            (:section s8) b38 fl4 b22 sbd4 b38 bl
            (:section s9) b38 sbd5 b22 b22 bl
-           (:section s10) b38 sbd5 b38 bl
+           (:section s10) b38
+           (:alt (:diplomatic sbd5)
+                 (:idealised sbd6)
+                 (:comment "Original: Note in der oberen Stimme ist ein Ė.")
+                 (:flag :draft) (:id 1))
+           b38 bl
            (:section s11) b38 fl7 b22 sb7 b38 bl
            (:section s12) b38 sbc8 b22 b22 bl)
    (:text 90 58

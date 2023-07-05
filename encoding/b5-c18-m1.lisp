@@ -59,7 +59,12 @@
           (2023 nil "ottaua"))
    (:music 2223
            (:voice v1)
-           (:section s1) cclef7 b38 fl4 b38 sb4 b38 fl4 b38 (:divider :regular) sbd4 b38 bl
+           (:section s1) cclef7 b38 fl4 b38
+           (:alt (:diplomatic sb4)
+                 (:idealised sbd4)
+                 (:comment "Original: Die erste Note in der oberen Stimme ist ein G♭.")
+                 (:flag :draft) (:id 1))
+           b38 fl4 b38 (:divider :regular) sbd4 b38 bl
            b38 fl4 b38 sbd4 b38 fl4 b38 sbd4 b38 bl
            (:section s2) b38 b38 fl4 b38 sbd4 b38 b38 bl
            (:section s3) b38 fl4 b38 sbd4 b38 fl4 b38 (:divider :regular) sbd4 b38 bl
@@ -75,7 +80,17 @@
            (:section s1) (:f-clef) max7 fclef7 b22 fl6 b22 sbd6 b38 fl6 b38 (:divider :regular) sb6 bl
            b38 b22 sh5 b38 b22 sb5 b38 sbd5 b22 b38 bl
            (:section s2) b38 b38 sh3 b38 sb3 b38 bl
-           (:section s3) b22 fl2 b38 sbd2 b38 fl2 b38 (:divider :regular) sb2 b22 bl
+           (:section s3) b22
+           (:alt (:diplomatic fl2 b38 sbd2)
+                 (:idealised fl3 b38 sbd3)
+                 (:comment "Original: Die erste Note in der unteren Stimme ist ein Ȧ♭.")
+                 (:flag :draft) (:id 2))
+           b38 (:divider :regular)
+           (:alt (:diplomatic fl2 b38 sb2)
+                 (:idealised b38 b38 sb3)
+                 (:comment "Original: Die zweite Note in der unteren Stimme ist ein A♭.")
+                 (:flag :draft) (:id 3))
+           b22 bl
            b38 b22 sh2 b38 sb2 b38 sbd2 b38 b22 bl
            (:section s4) b38 fl1 b38 sbd1 b38 b38 bl)
    (:text 90 58
@@ -85,11 +100,26 @@
           (2041 nil "ottaua"))
    (:music 2239
            (:voice v1)
-           (:section s5) (:newline) cclef3 b38 sh2 b38 sb2 b38 fl2 b38 (:divider :regular) sb2 b38 b38 bl
+           (:section s5) (:newline) cclef3 b38
+           (:alt (:diplomatic sh2 b38 sb2)
+                 (:idealised sh1 b38 sb1)
+                 (:comment "Original: Die erste Note in der unteren Stimme ist ein B♯.")
+                 (:flag :draft) (:id 4))
+           b38 fl2 b38 (:divider :regular) sb2 b38 b38 bl
            b22 b38 fl2 b38 sbd2 b38 sb2 b38 bl
            (:section s6) b38 fl4 b38 b22 sbd4 b38 b22 bl
            (:section s7) b38 sh4 b38 sb4 b38 fl5 b38 (:divider :regular) sb5 b38 b22 bl
-           b22 b38 sbd5 b38 sh5 b38 sb5 b38 b22 bl
+           b22 b38
+           (:alt (:diplomatic sbd5)
+                 (:idealised fl5 sbd5)
+                 (:comment "Original: Die dritte Note in der oberen Stimme ist ein Ė.")
+                 (:flag :draft) (:id 5))
+           b38
+           (:alt (:diplomatic sh5 b38 sb5)
+                 (:idealised b38 b38 sb5)
+                 (:comment "Original: Die vierte Note in der oberen Stimme ist ein E♯.")
+                 (:flag :draft) (:id 6))
+           b38 b22 bl
            (:section s8) b38 b22 fl7 b38 sbd7 b22 bl)
    (:text 110 78
           (134 nil "3.min.")

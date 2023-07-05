@@ -74,8 +74,12 @@
            (:section s2) b22 sh3 b38 sb3 b22 bl
            (:section s3) b22 b22 sh2 b38 sb2 b38 sbd2 b38 b22 bl
            b38 b22 sb2 b22 b38 fl2 b38 b22 sbd2 b38 b38 bl
-           ;; Notenkopf ist unterhalb der Zeile gedruckt, die Zeile wurde aufgefüllt
-           (:section s4) b38 b22 sh0 b22 sb0 b38 b38 bl)
+           (:section s4) b38 b22
+           (:alt (:diplomatic sh0 b22 sb0)
+                 (:idealised sh0 b22 sb0)
+                 (:comment "Der Notenkopf der unteren Stimme steht unüblich tief.")
+                 (:flag :observe) (:id 1))
+           b38 b38 bl)
    (:vspace 50)
    (:text 130 58
      (159 nil "le cinque terze")

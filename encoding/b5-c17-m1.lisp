@@ -1,17 +1,3 @@
-;; Kommentar Luigi
-;; 5.14
-
-;; (110r)
-
-;; 2. Linie, 6. Und 7. Note: Sib-punkt und Sib, statt Lab-punkt und Lab.
-
-;; (110v)
-
-;; 1. Linie, 1. Note: La# statt Si#
-
-;; 1.
-;; Linie, 8. Note: Mi[b]-punkt statt Mi-punkt ?
-
 `((:header
    (:filename "b5-c17-m1")
    (:alt-name "m5.013")

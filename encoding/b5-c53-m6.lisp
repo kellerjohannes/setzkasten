@@ -50,8 +50,10 @@
            (:section s1) cclef5 b38 sb1 sb2 fl3 sb3 fl4 sb4 sb5 fl6 sb6 fl7 sb7 sb8 b22 bl
            (:section s2) b22 sb1 fl2 sb2 fl3 sb3 fl4 sb4 sbd4 fl6 sb6 fl7 sb7 sb8 b22 bl
            (:section s3) b22 sb1 sb2 sb3 fl4 sb4 sb5 sb6 sb7
-           ;; Offensichtlicher Eingriff Notentext, zu bestätigen
-           (:alt (:diplomatic sb2) (:idealised sb8)) b22 bl
+           (:alt (:diplomatic sb2) (:idealised sb8)
+                 (:comment "Original: Die letzte Note ist ein G (verdrehte Type).")
+                 (:flag :draft) (:id 1))
+           b22 bl
            (:section s4) (:newline) b22 sb1 sb2 fl3 sb3 fl4 sb4 custos5)
    (:text 70 58
      (163 nil "ottaua.")
@@ -59,7 +61,12 @@
      (1184 nil "Seſta ottaua.")
      (1713 nil "Settima ottaua."))
    (:music 2221
-           cclef5 b38 sb5 fl6 sb6 fl7 sb7 sb8 b22 bl
+           cclef5 b38 sb5
+           (:alt (:diplomatic fl6)
+                 (:idealised b38)
+                 (:comment "Original: Die sechste Note ist ein D♭.")
+                 (:flag :draft) (:id 2))
+           sb6 fl7 sb7 sb8 b22 bl
            (:section s5) b22 sb1 fl2 b22 sb2 b22 fl3 sb3 fl4 sb4 sb5 fl6 sb6 fl7 sb7 sb8 b22 bl
            (:section s6) b22 sb1 sb2 sb3 sb4 sb5 sb6 sb7 sb8 b22 bl
            (:section s7) (:newline) b22 sb1 sb2 sb3 fl4 b22 sb4 sb5 sb6 fl7 sb7 sb8 b38 bl)))

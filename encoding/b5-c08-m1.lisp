@@ -77,7 +77,6 @@
           (550 nil "propinq.")
           (784 nil "propinq.")
           (1163 nil "cō le propinque.")
-          ;; handschriftliche Notizen?
           (1674 nil "con le ſue propinque."))
    (:music 2236
            (:voice v2)

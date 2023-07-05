@@ -53,7 +53,7 @@
     (s1 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis minore – diesis maggiore")
               (:de "")
               (:en "")))
-    (s2 (:alt (:it "Semitono minore /\\semitono maggiore:\\diesis maggiore – diesis minore – diesis minore")
+    (s2 (:alt (:it "Semitono minore /\\semitono maggiore:\\diesis minore – diesis minore – diesis minore")
               (:de "")
               (:en "")))
     (s3 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\[diesis minore –] diesis maggiore")
@@ -114,8 +114,10 @@
            (:section s4) (:newline) b38 sbd5 sh5 sb5 b22 fl6 sb6 fl6 sbd6 sbd6 b38 bl)
    (:text 70 58
      (55 nil "d.mi.d.mi.d.mi.d.ma.")
-     ;; Von Bibelgruppe bestätigt
-     (:alt (:diplomatic (593 nil "di.mi.di.mi.di.mi.di.mi.")) (:idealised (593 nil "di.mi.di.mi.di.mi.")))
+     (:alt (:diplomatic (593 nil "di.mi.di.mi.di.mi.di.mi."))
+           (:idealised (593 nil "di.mi.di.mi.di.mi."))
+           (:comment "Original: »di.mi.di.mi.di.mi.di.mi.«")
+           (:flag :draft) (:id 1))
      (1166 nil "d.mi.d.mi.d.mi.d.mi.")
      (1675 nil "d.mi.d.mi.di.mi.d.ma."))
    (:text 110 58
@@ -145,8 +147,10 @@
            (:section s6) b38 sbd7 b38 sh7 b22 sb7 b38 fl8 b22 sb8 b38 fl8 b22 sbd8 b38 sbd8 b38 bl
            (:section s7) (:newline) b38 sbd8 b38 sh8 b38 sb8 b38 fl9 b22 sb9 b22 fl9 b22 sbd9 b38 sbd9 b22 b22 bl)
    (:text 90 58
-     ;; Von Bibelgruppe bestätigt
-     (:alt (:diplomatic (100 nil "di.mi.di.mi.di.mi.di.mi.")) (:idealised (100 nil "di.mi.di.mi.di.mi.")))
+     (:alt (:diplomatic (100 nil "di.mi.di.mi.di.mi.di.mi."))
+           (:idealised (100 nil "di.mi.di.mi.di.mi."))
+           (:comment "Original: »di.mi.di.mi.di.mi.di.mi.«")
+           (:flag :draft) (:id 2))
      (791 nil "di.mi. di.mi. di.mi. di.ma.")
      (1566 nil "di.mi. di.mi. di.mi. di.ma."))
    (:text 110 58
@@ -182,16 +186,22 @@
    (:text 100 58
      (0 nil "d.mi.d.mi.d.ma.d. mi.")
      (559 nil "di.mi.d.mi.di.ma.d.mi.")
-     ;; Von Bibelgruppe bestätigt
-     (:alt (:diplomatic (1112 nil "d.mi.d.mi. d.mi.di.mi.")) (:idealised (1112 nil "d.mi.d.mi. d.mi.")))
-     ;; Von Bibelgruppe bestätigt
-     (:alt (:diplomatic (1653 nil "d.mi.di.mi.di.d.ma.d.mi.")) (:idealised (1653 nil "d.mi.di.mi.d.ma.d.mi."))))
+     (:alt (:diplomatic (1112 nil "d.mi.d.mi. d.mi.di.mi."))
+           (:idealised (1112 nil "d.mi.d.mi. d.mi."))
+           (:comment "Original: »d.mi.d.mi. d.mi.di.mi.«")
+           (:flag :draft) (:id 3))
+     (:alt (:diplomatic (1653 nil "d.mi.di.mi.di.d.ma.d.mi."))
+           (:idealised (1653 nil "d.mi.di.mi.d.ma.d.mi."))
+           (:comment "Original: »d.mi.di.mi.di.d.ma.d.mi.«")
+           (:flag :draft) (:id 4)))
    (:text 120 58
      (91 nil "tono")
      (252 nil "ᴄro.")
      (412 nil "accid.")
-     ;; Von Bibelgruppe bestätigt
-     (:alt (:diplomatic (641 nil "sem.")) (:idealised (641 nil "tono")))
+     (:alt (:diplomatic (641 nil "sem."))
+           (:idealised (641 nil "tono"))
+           (:comment "Original: »sem.«")
+           (:flag :draft) (:id 5))
      (809 nil "ᴄro.")
      (964 nil "acc.")
      (1125 nil "se.")
@@ -218,7 +228,10 @@
    (:text 90 58
      (175 nil "d.mi. d.mi. d.mag. d.mi.")
      ;; Von Bibelgruppe bestätigt
-     (:alt (:diplomatic (937 nil "d.mi. d.mi.d.mi.d.mi.")) (:idealised (937 nil "d.mi. d.mi.d.mi.")))
+     (:alt (:diplomatic (937 nil "d.mi. d.mi.d.mi.d.mi."))
+           (:idealised (937 nil "d.mi. d.mi.d.mi."))
+           (:comment "Original: »d.mi. d.mi.d.mi.d.mi.«")
+           (:flag :draft) (:id 6))
      (1521 nil "d.mi. d.mi. d.ma. d.mi."))
    (:text 70 58
      (252 nil "tono")

@@ -76,8 +76,23 @@
            fl2 sb2 fl2 sbd2 bl
            (:section s6) b22 sbd3 bl
            (:section s7) fl4 sbd4 (:divider :regular) sb4 bl
-           sbd6 sh6 sb6 bl
-           (:section s8) sbd8 bl)
+
+           (:alt (:diplomatic sbd6)
+                 (:idealised sbd4)
+                 (:comment "Original: Die dritte Note in der oberen Stimme ist ein Ḋ.")
+                 (:flag :draft) (:id 1))
+
+           (:alt (:diplomatic sh6 sb6)
+                 (:idealised sh4 sb4)
+                 (:comment "Original: Die vierte Note in der oberen Stimme ist ein D♯.")
+                 (:flag :draft) (:id 2))
+           bl
+           (:section s8)
+           (:alt (:diplomatic sbd8)
+                 (:idealised sbd6)
+                 (:comment "Original: Die Note in der oberen Stimme ist ein Ḟ.")
+                 (:flag :draft) (:id 3))
+           bl)
    (:text 130 58
           (53 nil "3.mi.prop.")
           (326 nil "3.mag.pr.")

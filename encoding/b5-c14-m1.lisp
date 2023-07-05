@@ -91,15 +91,21 @@
            (:voice v2)
            (:section s1) (:f-clef) max7 fclef7 sb6 fl6 sbd6 bl
            fl6 sb6
-           ;; Eingriff Notentext, zu bestätigen
-           (:alt (:diplomatic sh6 sb6) (:idealised sh5 sb5)) bl
+           (:alt (:diplomatic sh6 sb6) (:idealised sh5 sb5)
+                 (:comment "Original: Die vierte Note in der unteren Stimme ist ein E♯.")
+                 (:flag :draft) (:id 1))
+           bl
            (:section s2) b22 sb4 b22 bl
            (:section s3) sb3 fl3
-           ;; Enh. Punkt, zu bestätigen
-           (:alt (:diplomatic sb3) (:idealised sbd3)) bl
+           (:alt (:diplomatic sb3) (:idealised sbd3)
+                 (:comment "Original: Die zweite Note in der unteren Stimme hat keinen enharmonischen Punkt.")
+                 (:flag :draft) (:id 2))
+           bl
            fl3 sb3
-           ;; Eingriff Notentext, zu bestätigen
-           (:alt (:diplomatic b22 sbd2) (:idealised sh2 sb2)) bl
+           (:alt (:diplomatic b22 sbd2) (:idealised sh2 sb2)
+                 (:comment "Original: Die vierte Note in der unteren Stimme ist ein Ȧ.")
+                 (:flag :draft) (:id 3))
+           bl
            (:section s4) b22 sb1 b38
            (:section s5) cclef7 b22 sb4 b22 sb4 bl
            sb4 b22 sb4 bl

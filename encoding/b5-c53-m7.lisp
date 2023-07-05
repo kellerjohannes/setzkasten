@@ -57,7 +57,12 @@
      (1220 nil "Seſta ottaua.")
      (1729 nil "Settima ottaua."))
    (:music 2209
-           cclef5 sb6 fl7 sb7 b38 sb8 b38 sb9 b38 bl
+           cclef5 sb6
+           (:alt (:diplomatic fl7)
+                 (:idealised b38)
+                 (:comment "Original: Die sechste Note ist ein E♭.")
+                 (:flag :draft) (:id 1))
+           sb7 b38 sb8 b38 sb9 b38 bl
            (:section s5) sb2 b22 fl3 b22 sb3 fl4 b22 sb4 sb5 sb6 fl7 sb7 sb8 sb9 b38 bl
            (:section s6) b38 sb2 sb3 sb4 sh5 sb5 sb6 sb7 sh8 sb8 sb9 b38 bl
            (:section s7) (:newline) b38 sb2 sb3 sb4 sb5 sb6 sb7 sb8 sb9 b38 bl)))

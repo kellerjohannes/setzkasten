@@ -16,19 +16,13 @@
     (s3 (:alt (:it "[Le quattro seste\\discendenti]")
               (:de "")
               (:en "")))
-    (s4 (:alt (:it " \\[Ottava]")
+    (s4 (:alt (:it "[Le cinque terze\\ascendenti]")
               (:de "")
               (:en "")))
-    (s5 (:alt (:it "[Le cinque terze\\ascendenti]")
+    (s5 (:alt (:it " \\[Quinta]")
               (:de "")
               (:en "")))
-    (s6 (:alt (:it " \\[Quinta]")
-              (:de "")
-              (:en "")))
-    (s7 (:alt (:it "[Le cinque seste\\ascendenti]")
-              (:de "")
-              (:en "")))
-    (s8 (:alt (:it " \\[Ottava]")
+    (s6 (:alt (:it "[Le cinque seste\\ascendenti]")
               (:de "")
               (:en ""))))
    (:section-captions
@@ -38,10 +32,10 @@
     (s3 (:alt (:it "Sesta minore / sesta maggiore")
               (:de "")
               (:en "")))
-    (s5 (:alt (:it "Terza minore / terza maggiore")
+    (s4 (:alt (:it "Terza minore / terza maggiore")
               (:de "")
               (:en "")))
-    (s7 (:alt (:it "Sesta minore / sesta maggiore")
+    (s6 (:alt (:it "Sesta minore / sesta maggiore")
               (:de "")
               (:en ""))))
    (:line-headings
@@ -51,10 +45,6 @@
     (:alt (:it "[Tutte le consonanze di Elami primo discendenti]")
           (:de "")
           (:en ""))))
-  (:preamble-lilypond
-   (:brackets
-    (s4 0 12 -16 0 12 -16)
-    (s8 0 12 -16 0 12 -16)))
   (:data
    (:text 110 58
           (177 1816 "queſte ſono tutte le conſonanze di E la mi primo diſcentendi & aſcendenti."))
@@ -71,15 +61,12 @@
            (:section s2) b22 sb9 b22 bl
            (:section s3) sb9 b22 (:divider :regular) sb9 bl
            sb9 b22 sb9 b22
-           ;; Ergänzung der Oktave, nur in Normalisierung!
-           (:section s4) (:alt (:diplomatic s0) (:idealised s0) (:it (:bracketed) sb9))
            (:voice v2)
            (:section s1) cclef7 b22 sh7 b22 sb7 b22 (:divider :regular) sbd7 bl
            b22 sb7 b22 sh6 b22 sb6 b22 bl
            (:section s2) b22 sb5 bl
            (:section s3) b22 sh4 b22 sb4 b22 (:divider :regular) sbd4 b22 bl
-           b22 sb4 b22 fl4 b22 sbd4 bl
-           (:section s4) (:alt (:it sb2)))
+           b22 sb4 b22 fl4 b22 sbd4 bl)
    (:vspace 200)
    (:text 110 58
           (104 nil "3.min.")
@@ -89,17 +76,14 @@
           (1083 nil "6.mag."))
    (:music 2238
            (:voice v1)
-           (:section s5) (:newline) cclef7 b38 sb4 b22 (:divider :regular) sbd4 b22 bl
+           (:section s4) (:newline) cclef7 b38 sb4 b22 (:divider :regular) sbd4 b22 bl
            b22 sh4 b22 sb4 b22 fl5 b22 sb5 b22 bl
-           (:section s6) b22 sb6 b22 bl
-           (:section s7) b22 sb7 b22 sbd7 b22 bl
+           (:section s5) b22 sb6 b22 bl
+           (:section s6) b22 sb7 b22 sbd7 b22 bl
            b22 sh7 b22 sb7 b22 fl8 b22 (:divider :regular) sb8 b22 b22
-           ;; Oktave, nur in Normalisierung!
-           (:section s8) (:alt (:diplomatic s0) (:idealised s0) (:it (:bracketed) sb9))
            (:voice v2)
-           (:section s5) cclef7 b22 sb2 b22 (:divider :regular) sb2 bl
+           (:section s4) cclef7 b22 sb2 b22 (:divider :regular) sb2 bl
            sb2 b22 sb2 bl
-           (:section s6) b22 sb2 bl
-           (:section s7) b22 sb2 b22 (:divider :regular) sb2 b22 bl
-           b22 sb2 b22 sb2 b22 bl
-           (:section s8) (:alt (:it sb2)))))
+           (:section s5) b22 sb2 bl
+           (:section s6) b22 sb2 b22 (:divider :regular) sb2 b22 bl
+           b22 sb2 b22 sb2 b22 bl)))

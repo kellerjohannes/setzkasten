@@ -27,9 +27,6 @@
               (:en "")))
     (s7 (:alt (:it "Le quattro seste\\[ascendenti]")
               (:de "")
-              (:en "")))
-    (s8 (:alt (:it " \\Ottava")
-              (:de "")
               (:en ""))))
    (:section-captions
     (s1 (:alt (:it "Terza minore / terza maggiore")
@@ -45,14 +42,10 @@
               (:de "")
               (:en "")))))
   (:preamble-lilypond
-   (:brackets
-    (s4 0 12 -16 0 12 -16)
-    (s8 0 12 -16 0 12 -16))
    (:clef-overrides
     (s5 v1 "treble_8")
     (s6 v1 "treble_8")
-    (s7 v1 "treble_8")
-    (s8 v1 "treble_8")))
+    (s7 v1 "treble_8")))
   (:data
    (:text 70 58
      (81 2164 "Queſte sono tutte le conſonanze,con le ſue propinque & propinquiſſime di ᴅ la sol re"))
@@ -75,13 +68,14 @@
            fl8 sbd8 fl8 sbd8 bl
            (:section s4) fl8 sbd8 b22
            (:section s5) (:newline) cclef5 b22
-           ;; Kosmetische Anpassung, vertikale Positionierung ♯
-           (:alt (:diplomatic sh1) (:idealised sh0)) sb0 b22 (:divider :regular) sb1 bl
+           (:alt (:diplomatic sh1) (:idealised sh0)
+                 (:comment "Original: Das erste ♯ steht eine Position höher.")
+                 (:flag :draft) (:id 1))
+           sb0 b22 (:divider :regular) sb1 bl
            b22 sbd1 sh1 sb1 bl
            (:section s6) fl3 sbd3 bl
            (:section s7) sh3 sb3 fl4 (:divider :regular) sb4 bl
-           fl4 sbd4 sb4
-           (:section s8) (:alt (:it (:bracketed) fl6 sbd6)))
+           fl4 sbd4 sb4)
    (:text 130 58
           (0 nil "3.mi.prop.")
           (290 nil "3.ma.pr.")
@@ -103,5 +97,4 @@
            fl1 sbd1 fl1 sbd1 bl
            (:section s6) fl1 sbd1 bl
            (:section s7) b22 fl1 b22 sbd1 (:alt (:it fl1 sbd1)) bl
-           fl1 sbd1 fl1 sbd1 bl
-           (:section s8) (:alt (:it fl1 sbd1)))))
+           fl1 sbd1 fl1 sbd1 bl)))

@@ -54,9 +54,10 @@
    (:text 70 58
      (70 2055 "Queſte sono tutte le conſonanze, et le propinque et propinquiſſime di D la ſol re primo"))
    (:text 70 58
-          ;; Typographische Korrektur, mit Luigi abzugleichen
           (271 1628 (:alt (:diplomatic "acuto,et diſcendente,et diſ D ol re primo medeſimamente aſcendenti.")
-                          (:idealised  "acuto,et diſcendente,et di D ſol re primo medeſimamente aſcendenti."))))
+                          (:idealised  "acuto,et diſcendente,et di D ſol re primo medeſimamente aſcendenti.")
+                          (:comment "Original: »... et diſ D ol re ...")
+                          (:flag :draft) (:id 1))))
    (:text 110 58
      (71 nil "3.mi.")
      (229 nil "3.mag.")
@@ -79,10 +80,12 @@
            (:section s3) sh3 b22 sb3 b22 sbd3 bl
            sb3 sh2 sb2 bl
            (:section s4) sb1 b22 bl)
-   ;; dieser Text ist zu kommentieren, da er als Reklamante ausnahmsweise aufgenommen wurde, denn
-   ;; fehlt auf der kommenden Seite
    (:text 70 58
-     (1909 nil "le cinque"))
+     (1909 nil
+           (:alt (:diplomatic "le cinque")
+                 (:idealised "le cinque")
+                 (:comment "Diese Reklamante wurde ausnahmsweise in die Transkription übernommen, da sie einen Hinweis auf einen nicht gedruckten Text (»le cinque terze«) gibt.")
+                 (:flag :draft) (:id 2))))
    (:vspace 200)
    (:text 110 58
      (97 nil "3 min.")
