@@ -419,16 +419,29 @@
    (:music 1041
            (:section s56) (:f-clef) max9 fclef9 b22 sb0 sb1 sh2 sb2 sh3 sb3 sb4 sb5 sh6 sb6 sb7 b22 sh8 sb8 b22 sb9 b22 sh10 sb10 b38 (:alt (:idealised bl)))
 
-
-   (:vspace 110)
-   (:music 1080
-           b125 b125 b125 b125 b125 b125 b125 b125 b125)
-   (:text 70 58
-          (98 900 "Qui finiſcono tutti glʼordini di tutte le"))
-   (:text 70 58
-          (0 1009 "chiaui ſcritte in tutte le righe di tutte le"))
-   (:text 110 58
-          (0 841 "parti della noſtra prattica ᴍuſicale."))
-   (:music 1045
-           b125 b125 b125 b125 b125 b125 b125 b125 b22 b22 b38)
-   ))
+   (:alt (:diplomatic
+          (:vspace 110)
+          (:music 1080
+                  b125 b125 b125 b125 b125 b125 b125 b125 b125)
+          (:text 70 58
+            (98 900 "Qui finiſcono tutti glʼordini di tutte le"))
+          (:text 70 58
+            (0 1009 "chiaui ſcritte in tutte le righe di tutte le"))
+          (:text 110 58
+            (0 841 "parti della noſtra prattica ᴍuſicale."))
+          (:music 1045
+                  b125 b125 b125 b125 b125 b125 b125 b125 b22 b22 b38))
+         (:idealised
+          (:vspace 110)
+          (:music 1080
+                  b125 b125 b125 b125 b125 b125 b125 b125 b125)
+          (:text 70 58
+            (98 900 "Qui finiſcono tutti glʼordini di tutte le"))
+          (:text 70 58
+            (0 1009 "chiaui ſcritte in tutte le righe di tutte le"))
+          (:text 110 58
+            (0 841 "parti della noſtra prattica ᴍuſicale."))
+          (:music 1045
+                  b125 b125 b125 b125 b125 b125 b125 b125 b22 b22 b38))
+         (:comment "Dieser Text (»Qui finiscono ...«) kann entweder im Notenbeispiel oder im Haupttext erscheinen. Ist zu diskutieren. Im Moment steht er in der diplomatischen und idealisierten Transkription, nicht aber in der normalisierten.")
+         (:flag :observe) (:id 1))))
