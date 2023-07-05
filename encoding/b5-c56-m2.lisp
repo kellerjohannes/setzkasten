@@ -39,7 +39,12 @@
           (2032 nil "Terza"))
    (:music 2230
            (:voice v1)
-           (:section s1) (:f-clef) max7 fclef7 b38 fl3 b22 sb3 b22 sb4 b22 fl5 b22 sb5 b22 sb6 b22 sb7 b22 fl8 b22 sb8 b22 fl9 b22 sb9 fl10 sb10 b38 bl
+           (:section s1) (:f-clef) max7 fclef7 b38 fl3 b22 sb3 b22 sb4 b22 fl5 b22 sb5 b22
+           (:alt (:diplomatic sb6)
+                 (:idealised fl6 sb6)
+                 (:comment "Original: Die vierte Note ist ein E.")
+                 (:flag :draft) (:id 1))
+           b22 sb7 b22 fl8 b22 sb8 b22 fl9 b22 sb9 fl10 sb10 b38 bl
            (:section s2) b38 fl3 b22 sb3 b22 sbd3 b22 fl5 b22 sb5 b22 fl6 sb6 b22 sbd6 b22 fl8 sb8 b22 fl9 sb9 fl10 sb10 b22 bl
            (:section s3) b22 fl3 sb3 b22 sb4 b22 sb5 custos6)
    (:text 110 58
@@ -52,8 +57,9 @@
            (:f-clef) max7 fclef7 b38 b22 fl6 b22 sb6 b22 sb7 sb8 sb9 fl10 sb10 b38 bl
            (:section s4) (:newline) b38 b22 fl3 b22 sb3 b22 sb4 b22 fl5 b22 sb5 b22 fl6 sb6 sb7 sb8 fl9 sb9 fl10 sb10 b38 b22 bl
            (:section s5) b38 b22 fl3 sb3 sbd3 fl5 sb5 fl6 sb6 sb7 fl8 sb8
-           ;; Kosmetische Korrektur der vertikalen Positionierung des ♭
-           (:alt (:diplomatic fl8) (:idealised fl9)) sb9 fl10 sb10 b38 bl)
+           (:alt (:diplomatic fl8) (:idealised fl9)
+                 (:comment "Original: Das zweitletzte ♭ steht eine Position tiefer."))
+           sb9 fl10 sb10 b38 bl)
    (:text 90 58
           (343 nil "Seſta")
           (572 nil "ottaua.")
