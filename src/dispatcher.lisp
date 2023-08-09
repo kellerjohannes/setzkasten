@@ -208,7 +208,11 @@
 
 (defparameter *working*
   `(
-    ("b5-c59-m1" "c" (:idealised :it :alternative-layout) ,*lilypond-backend-modern*)
+    ;; ("b5-c59-m1" "c" (:idealised :it :alternative-layout) ,*lilypond-backend-modern*)
+    ;; ("b5-c59-m2" "c" (:idealised :it :alternative-layout) ,*lilypond-backend-modern*)
+    ("b5-c59-m3" "c" (:idealised :it :alternative-layout) ,*lilypond-backend-modern*)
+    ;; ("b5-c59-m4" "c" (:idealised :it :alternative-layout) ,*lilypond-backend-modern*)
+    ;; ("b5-c59-m5" "c" (:idealised :it :alternative-layout) ,*lilypond-backend-modern*)
     ))
 
 (defparameter *book5-original*

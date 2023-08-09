@@ -182,6 +182,16 @@
     (s56 (:alt (:it "Del settimo ordine")
                (:de "")
                (:en "")))))
+  (:preamble-lilypond
+   (:clef-overrides
+    (s6 v1 "treble_8")
+    (s22 v1 "treble_8")
+    (s23 v1 "treble_8")
+    (s24 v1 "treble_8")
+    (s25 v1 "treble_8")
+    (s26 v1 "treble_8")
+    (s35 v1 "treble_8")))
+
   (:data
    ;; Seite 1, fol. 134v, S. 268
    (:text 110 58
@@ -267,7 +277,7 @@
            (:section s4)
            (:alt (:original-layout)
                  (:alternative-layout (:newline))
-                 (:flag :layout) (:id 0))
+                 (:flag :layout) (:id 4))
            cclef7 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38 bl)
 
    (:text 110 58
@@ -278,21 +288,27 @@
            (:section s11)
            (:alt (:original-layout)
                  (:alternative-layout (:newline))
-                 (:flag :layout) (:id 0))
+                 (:flag :layout) (:id 5))
            gclef3 b22 sb0 b22 sb1 b22 sh2 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sh6 b22 sb6 b22 sb7 b22 sb8 b22 sh9 b22 sb9 b22 sb10 bl)
    (:text 110 58
           (352 nil "ᴅel terzo ordine.")
           (1434 nil "ᴅel quarto ordine."))
    (:music 2223
-           (:section s17) cclef3 b22 b22 sb0
-           (:alt (:diplomatic sh0) (:idealised sh1)
-                 (:comment "Original: Das erste ♯ steht eine Position tiefer.")
-                 (:flag :draft) (:id 4))
-           sb1 sb2 sh3 sb3 sb4 sb5 b22 sh6 sb6 b22 sh7 b22 sb7 b22 sb8 b22 sh9 sb9 b22 sh10 sb10 b38
+           (:section s17) cclef3 b22 b22
+           (:alt (:diplomatic sb0 sh0)
+                 (:idealised sh0 sb0)
+                 (:comment "Original: Das erste ♯ steht nach der ersten Note.")
+                 (:flag :draft) (:id 6))
+           sb1 sb2 sh3 sb3 sb4 sb5 b22 sh6 sb6 b22 sh7 b22 sb7 b22 sb8 b22
+           (:alt (:diplomatic sh9 sb9)
+                 (:idealised b38 sb9)
+                 (:comment "Original: Vor der zweitletzten Note steht ein ♯.")
+                 (:flag :draft) (:id 6))
+           b22 sh10 sb10 b38
            (:section s18)
            (:alt (:original-layout)
                  (:alternative-layout (:newline))
-                 (:flag :layout) (:id 0))
+                 (:flag :layout) (:id 7))
            cclef3 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sh6 b22 sb6 b22 sb7 b38 sb8 b22 sb9 b22 sb10 bl)
    (:text 110 58
           (342 nil "ᴅel terzo ordine.")
@@ -303,7 +319,7 @@
            (:section s25)
            (:alt (:original-layout)
                  (:alternative-layout (:newline))
-                 (:flag :layout) (:id 0))
+                 (:flag :layout) (:id 8))
            cclef5 (:key-signature nil nil nil nil nil nil nil)
            b22 sb0 b22 sh1 sb1 b22 sh2 sb2 b22 sb3 b22 sb4 sh5 sb5 b22 sh6 sb6 b22 sb7 sh8 sb8 sh9 sb9 sb10 bl)
    (:text 110 58
@@ -325,7 +341,7 @@
            (:section s39)
            (:alt (:original-layout)
                  (:alternative-layout (:newline))
-                 (:flag :layout) (:id 0))
+                 (:flag :layout) (:id 9))
            (:f-clef) max5 fclef5 (:key-signature nil nil nil nil nil nil nil)
            b22 sb0 sb1 sh2 sb2 b22 sb3 b22 sb4 b22 sh5 sb5 b22 sh6 b22 sb6 b22 sb7 b22 sb8 b22 sh9 b22 sb9 b22 sb10 b22 bl)
    (:text 110 58
@@ -336,7 +352,7 @@
            (:section s46)
            (:alt (:original-layout)
                  (:alternative-layout (:newline))
-                 (:flag :layout) (:id 0))
+                 (:flag :layout) (:id 10))
            (:f-clef) max7 fclef7 b22 fl310 (:key-signature nil nil nil nil nil nil :flat)
            b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sb10 bl)
    (:text 110 58
@@ -348,7 +364,7 @@
            (:section s53)
            (:alt (:original-layout)
                  (:alternative-layout (:newline))
-                 (:flag :layout) (:id 0))
+                 (:flag :layout) (:id 11))
            (:f-clef) max9 fclef9 sb0 b22 sb1 b22 sh2 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sh6 sb6 b22 sb7 b22 sb8 b22 sh9 sb9 sb10 bl)
    (:vspace 110)
    (:music 2213
@@ -383,7 +399,12 @@
           (1352 nil "ᴅel seſto ordine."))
    (:music 2232
            (:section s26) cclef5 b22 sb0 b22 sh1 sb1 b22 sh2 sb2 b22 sb3 b22 sb4 sh5 sb5 b22 sb6 b22 sb7 b22 sh8 b22 sb8 b22 sh9 sb9 b22 sb10 b22
-           (:section s27) cclef1 b22 sb0 b22 fl1 b22 sb1 b22 fl2 sb2 b22 sb3 b22 sb4 b22 fl5 sb5 b22 sb6 b22 sb7 b22 fl8 sb8 b22 fl9 sb9 sb10 bl)
+           (:section s27)
+           (:alt (:diplomatic cclef1)
+                 (:idealised cclef3)
+                 (:comment "Original: Der Schlüssel liegt auf der untersten Linie.")
+                 (:flag :draft) (:id 0))
+           b22 sb0 b22 fl1 b22 sb1 b22 fl2 sb2 b22 sb3 b22 sb4 b22 fl5 sb5 b22 sb6 b22 sb7 b22 fl8 sb8 b22 fl9 sb9 sb10 bl)
    (:text 110 58
           (337 nil "Del quinto ordine.")
           (1350 nil "Del sesto ordine."))
@@ -397,10 +418,11 @@
           (1332 nil "ᴅel seſto ordine."))
    (:music 2214
            (:section s40) (:f-clef) max5 fclef5 b22 sb0 b22
-           (:alt (:diplomatic sh2) (:idealised sh1)
-                 (:comment "Original: Das erste ♯ steht eine Position tiefer.")
-                 (:flag :draft) (:id 5))
-           b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sh5 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sh9 b22 sb9 sb10 b38
+           (:alt (:diplomatic sh2 b22 sb1 b22 sb2)
+                 (:idealised b22 sb1 sh2 b22 sb2)
+                 (:comment "Original: Das erste ♯ steht vor der zweiten Note, ebenfalls im untersten Zwischenraum.")
+                 (:flag :draft) (:id 12))
+           b22 sb3 b22 sb4 b22 sh5 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sh9 b22 sb9 sb10 b38
            (:section s41) (:f-clef) max5 fclef5 b22 fl18 (:key-signature nil nil nil nil nil nil :flat)
            b22 sb0 b22 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sb10 bl)
    (:text 110 58
@@ -427,7 +449,7 @@
            (:section s7)
            (:alt (:original-layout)
                  (:alternative-layout (:newline))
-                 (:flag :layout) (:id 0))
+                 (:flag :layout) (:id 13))
            (:f-clef) max7 fclef7 b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sb10 bl)
    (:text 110 58
           (266 nil "Del settimo ordine."))
@@ -435,7 +457,7 @@
            (:section s14)
            (:alt (:original-layout)
                  (:alternative-layout (:newline))
-                 (:flag :layout) (:id 0))
+                 (:flag :layout) (:id 14))
            gclef3 b38 sb0 sb1 sh2 sb2 sh3 sb3 sb4 sb5 sh6 sb6 sb7 sb8 sh9 sb9 sh10 sb10 b22 bl)
    (:text 110 58
           (359 nil "Del settimo ordine."))
@@ -443,19 +465,19 @@
            (:section s21)
            (:alt (:original-layout)
                  (:alternative-layout (:newline))
-                 (:flag :layout) (:id 0))
+                 (:flag :layout) (:id 15))
            cclef1 fl07 (:key-signature nil nil nil nil nil nil :flat)
            b38 b38 sb0 b22 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b22 sb9
            (:alt (:diplomatic b38) (:idealised sb10 bl)
                  (:comment "Original: Letzte Note fehlt.")
-                 (:flag :draft) (:id 6)))
+                 (:flag :draft) (:id 16)))
    (:text 110 58
           (350 nil "Del settimo ordine."))
    (:music 1034
            (:section s28)
            (:alt (:original-layout)
                  (:alternative-layout (:newline))
-                 (:flag :layout) (:id 0))
+                 (:flag :layout) (:id 17))
            cclef3 (:key-signature nil nil nil nil nil nil nil)
            b38 sb0 b22 sb1 b22 sb2 b22 sh3 b22 sb3 b38 sb4 b22 sb5 b22 sh6 sb6 sb7 sb8 sb9 sh10 sb10 b22 b22 (:alt (:idealised bl)))
    (:text 110 58
@@ -464,7 +486,7 @@
            (:section s35)
            (:alt (:original-layout)
                  (:alternative-layout (:newline))
-                 (:flag :layout) (:id 0))
+                 (:flag :layout) (:id 18))
            cclef5 fl07 b22 fl4 (:key-signature nil nil :flat nil nil nil :flat)
            sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sb10 b38 b38 (:alt (:idealised bl)))
    (:text 110 58
@@ -473,7 +495,7 @@
            (:section s42)
            (:alt (:original-layout)
                  (:alternative-layout (:newline))
-                 (:flag :layout) (:id 0))
+                 (:flag :layout) (:id 19))
            cclef7 (:key-signature nil nil nil nil nil nil nil)
            b22 sb0 b22 sb1 b22 sb2 b22 sh3 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sh10 sb10 b38 (:alt (:idealised bl)))
    (:text 110 58
@@ -482,7 +504,7 @@
            (:section s49)
            (:alt (:original-layout)
                  (:alternative-layout (:newline))
-                 (:flag :layout) (:id 0))
+                 (:flag :layout) (:id 20))
            (:f-clef) max5 fclef5 b22 sb0 sb1 sh2 sb2 sh3 sb3 sb4 sh5 sb5 sh6 sb6 sb7 sb8 sh9 sb9 sh10 sb10 b22 (:alt (:idealised bl)))
    (:text 110 58
           (349 nil "Del settimo ordine."))
@@ -490,8 +512,13 @@
            (:section s56)
            (:alt (:original-layout)
                  (:alternative-layout (:newline))
-                 (:flag :layout) (:id 0))
-           (:f-clef) max9 fclef9 b22 sb0 sb1 sh2 sb2 sh3 sb3 sb4 sb5 sh6 sb6 sb7 b22 sh8 sb8 b22 sb9 b22 sh10 sb10 b38 (:alt (:idealised bl)))
+                 (:flag :layout) (:id 21))
+           (:f-clef) max9 fclef9 b22 sb0 sb1 sh2 sb2 sh3 sb3 sb4 sb5 sh6 sb6 sb7 b22
+           (:alt (:diplomatic sh8 sb8 b22 sb9)
+                 (:idealised sb8 sh9 b22 sb9)
+                 (:comment "Original: Das zweitletzt ♯ steht vor der drittletzten Note auf dem obersten Zwischenraum.")
+                 (:flag :draft) (:id 22))
+           b22 sh10 sb10 b38 (:alt (:idealised bl)))
 
    (:alt (:diplomatic
           (:vspace 110)
