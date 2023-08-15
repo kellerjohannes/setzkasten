@@ -7,6 +7,7 @@
                  (:de "")
                  (:en "")))
    (:section-captions
+    ;; Zu prüfen: eine kritische Bemerkung zu »salti« fehlt
     (s1 (:alt (:it "salto di più\\di quarta\\accidentale\\incomposto")
               (:de "")
               (:en "")))
