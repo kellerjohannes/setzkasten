@@ -3,16 +3,7 @@
    (:alt-name "")
    (:comment "For demonstration purposes")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title "")
-   (:section-headings
-    (s1 "")
-    )
-   (:section-captions
-    (s1 "")
-    )
-   (:voice-labels
-    (:all v1 "")
-    ))
+   )
 
   (:data
    (:music nil

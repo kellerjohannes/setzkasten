@@ -11,7 +11,7 @@
     (s1 "")
     )
    (:voice-labels
-    (:all v1 "")
+    (s1 v1 "")
     ))
 
   (:data
