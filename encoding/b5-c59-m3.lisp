@@ -232,13 +232,21 @@
      (343 nil "Del primo ordine Cro. & ᴇnar.")
      (1404 nil "Del secondo ordine ᴄro."))
    (:music 2350
-           (:section s15) (:newline) cclef1 sh0 sb1 fl2 sbd2 sh2 sb2 sh3 sb3 fl5 sbd5 fl6 sbd6 sh6 sb6 sh7 sb7 fl9 sb9 sh9 sbd9 sh10 sb10 b22
+           (:section s15) (:newline) cclef1 sh0 sb0 fl2 sbd2 sh2 sb2 sh3 sb3 fl5 sbd5 fl6 sbd6 sh6 sb6 sh7 sb7 fl9
+           (:alt (:diplomatic sb9)
+                 (:idealised sbd9)
+                 (:comment "Original: Die drittletzte Note hat keinen enharmonischen Punkt.") (:flag :draft) (:id 0))
+
+           (:alt (:diplomatic sh9 sbd9)
+                 (:idealised sh9 sb9)
+                 (:comment "Original: Die zweitletzte Note hat einen enharmonischen Punkt.") (:flag :draft) (:id 0))
+           sh10 sb10 b22
            (:section s16) cclef1 sh0 sb0 sh1 sb1 sh2 sb2 sh3 sb3 sh4 sb4 sh5 sb5 sh6 sb6 sh7 sb7 sh8 sb8 sh9 sb9 sh10 sb10)
    (:text 110 58
      (350 nil "Del primo ordine Cro.")
      (1391 nil "ᴅel secondo ordine ᴄro."))
    (:music 2332
-           (:section s22) (:newline) cclef3 b22 sh0 sb1 sh1 sb2 sb2 sh3 sb3 sh4 sb4 sh5 sb5 sh6 sb6 b22 sh7 sb7 b22 sh8 sb8 sb9 b22 sh10 sb10 b38
+           (:section s22) (:newline) cclef3 b22 sh0 sb0 sh1 sb1 sb2 sh3 sb3 sh4 sb4 sh5 sb5 sh6 sb6 b22 sh7 sb7 b22 sh8 sb8 sb9 b22 sh10 sb10 b38
            (:section s23) cclef3 b22 sh0 sb0 b22 sb1 b22 sb2 sh3 b22 sb3 b22 sb4 b22 sb5 b22 sh6 b22 sb6 b22 sh7 sb7 b22 sb8 sb9 sh10 sb10 bl)
    (:text 110 58
      (345 nil "Del primo ordine Cro. & ᴇnar.")
@@ -365,7 +373,7 @@
            (:alt (:original-layout)
                  (:alternative-layout (:newline))
                  (:flag :layout) (:id 0))
-           (:f-clef) max9 fclef9 b22 sh0 sb0 sb1 sh2 sb2 sh3 sb3 sh4 sb4 sb5 sh6 sb6 sh7 sb7 sb8 sh9 sb9 sh10 sb10 bl)
+           (:f-clef) max9 fclef9 b22 sh0 sb0 sh1 sb1 sh2 sb2 sh3 sb3 sh4 sb4 sh5 sb5 sh6 sb6 sh7 sb7 sh8 sb8 sh9 sb9 sh10 sb10 bl)
    (:vspace 110)
    (:music 2323
            b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b22 b22 b125)
