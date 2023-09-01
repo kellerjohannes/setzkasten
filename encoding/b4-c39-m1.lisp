@@ -10,33 +10,52 @@
               (:comment "Es ist zu diskutieren, ob anstelle dieser Tenorstimme ein entsprechender vierstimmiger Satz angeboten werden soll.")
               (:flag :observe) (:id 1))))
    (:voice-labels
-    (s1 v1 (:alt (:it "[Soprano]")
-                 (:de "")
-                 (:en "")))
     (s1 v2 (:alt (:it "[Alto]")
                  (:de "")
                  (:en "")))
-    (s1 v4 (:alt (:it "[Tenore]")
+    (s1 v3 (:alt (:it "[Tenore]")
                  (:de "")
                  (:en "")))
-    (s1 v3 (:alt (:it "[Basso]")
+    (s1 v3q (:alt (:it "[Tenore]")
                  (:de "")
-                 (:en ""))))
+                 (:en "")))
+    (s1 v4 (:alt (:it "[Basso]")
+                 (:de "")
+                 (:en "")))
+    (s2 v1 (:alt (:it "[Soprano]")
+                 (:de "")
+                 (:en "")))
+    (s2 v2 (:alt (:it "[Alto]")
+                 (:de "")
+                 (:en "")))
+    (s2 v3 (:alt (:it "[Tenore]")
+                 (:de "")
+                 (:en "")))
+    (s2 v4 (:alt (:it "[Basso]")
+                 (:de "")
+                 (:en "")))
+    )
    (:voice-order
-    (s1 v1 v2 v4 v3)
-    (s2 v1)))
+    (s1 v2 v3 v3q v4)
+    (s2 v1 v2 v3 v4)))
   (:preamble-lilypond
    (:lyrics
-    (s1 v1 "O voi be -- a -- ta se si lar -- ghi do -- ni.")
     (s1 v2 "O voi be -- a -- ta se si lar -- ghi do -- ni.")
     (s1 v3 "O voi be -- a -- ta se si lar -- ghi do -- ni.")
+    (s1 v3q "O voi be -- a -- ta se si lar -- ghi do -- ni.")
     (s1 v4 "O voi be -- a -- ta se si lar -- ghi do -- ni.")
-    (s2 v1 "O voi be -- a -- ta se si lar -- ghi do -- ni.")))
+    (s2 v1 "O voi be -- a -- ta se si lar -- ghi do -- ni.")
+    (s2 v2 "O voi be -- a -- ta se si lar -- ghi do -- ni.")
+    (s2 v3 "O voi be -- a -- ta se si lar -- ghi do -- ni.")
+    (s2 v4 "O voi be -- a -- ta se si lar -- ghi do -- ni.")))
   (:data
    (:music 2229
-           (:section s1)
-           (:voice v1) cclef5 b38 met-imperf-min-dim b38 sb7 b22 m7 b22 m7 sh9 sb9 b22 m10 b22 sb10 b22 m10 b22 sb8 b22 fl7 b22 m7 b22 sb6 sh5 sb5 b38 b38
-           (:voice v2) cclef7 b22 sb7 sh7 m7 sh7 m7 b22 sb9 b22 m9 b22 sb9 b22 m10 b22 sb7 b22 m7 b22 sb5 b22 sb5 b22 bl b38)
+           (:section s1 s2)
+           ;; alto
+           (:voice v2) cclef5 b38 met-imperf-min-dim b38 sb7 b22 m7 b22 m7 sh9 sb9 b22 m10 b22 sb10 b22 m10 b22 sb8 b22 fl7 b22 m7 b22 sb6 sh5 sb5 b38 b38
+           (:section s1 s2)
+           ;; tenore I
+           (:voice v3) cclef7 b22 sb7 sh7 m7 sh7 m7 b22 sb9 b22 m9 b22 sb9 b22 m10 b22 sb7 b22 m7 b22 sb5 b22 sb5 b22 bl b38)
    (:text 110 58
           (200 nil "O uoi be")
           (470 nil "a ta se ſi")
@@ -51,8 +70,12 @@
           (1782 nil "ſi larghi")
           (2008 nil "doni."))
    (:music 2228
-           (:voice v3) (:f-clef) max7 fclef7 b38 met-imperf-min-dim b38 sb4 b22 m2 b22 m2 b22 sb6 b22 m9 b22 sb9 b22 m5 b22 sb7 b22 m4 b22 sb5 b22 sb2 b38 b38
-           (:voice v4) cclef1 b38 met-imperf-min-dim b38 sb3 b22 m3 b22 m6 b22 sb7 b22 m8 b22 sh8 b22 sb8 b22 m9 b22 sb6 b22 m5 b22 sb4 b22 sb3 b22 bl)
+           (:section s1 s2)
+           ;; basso
+           (:voice v4) (:f-clef) max7 fclef7 b38 met-imperf-min-dim b38 sb4 b22 m2 b22 m2 b22 sb6 b22 m9 b22 sb9 b22 m5 b22 sb7 b22 m4 b22 sb5 b22 sb2 b38 b38
+           (:section s2)
+           ;; soprano convertito
+           (:voice v1) (:newline) cclef1 b38 met-imperf-min-dim b38 sb3 b22 m3 b22 m6 b22 sb7 b22 m8 b22 sh8 b22 sb8 b22 m9 b22 sb6 b22 m5 b22 sb4 b22 sb3 b22 bl)
    (:text 90 58
           (245 nil "O")
           (343 nil "uoi")
@@ -66,8 +89,9 @@
    (:text 70 58
           (1418 nil "ᴏttaua piu alto."))
    (:music (1371 -150)
-           (:section s2)
-           (:voice v1) (:newline) cclef7 b38 met-imperf-min-dim b38 sb2 b38 m2 b38 m5 b38 sb6 b38 m7 b22 sh7 b22 sb7 b38 m8 b38 sb5 b38 m4 b38 sb3 b38 sb2 b38 bl b125)
+           (:section s1)
+           ;; tenore II ('quinto')
+           (:voice v3q) cclef7 b38 met-imperf-min-dim b38 sb2 b38 m2 b38 m5 b38 sb6 b38 m7 b22 sh7 b22 sb7 b38 m8 b38 sb5 b38 m4 b38 sb3 b38 sb2 b38 bl b125)
    (:text 70 58
           (201 nil "O uoi be")
           (465 nil "a")
