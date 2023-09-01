@@ -147,11 +147,7 @@
 (defmethod add-note ((score score) (parser-state parser-state) duration dottedp staff-position enharmonic-dot)
   "Create an instance of `mobject' and add it to the `score'. `duration' as keywords (:brevis, :semibrevis, etc.), `dottedp' is T if there is a rhythmic dot ahead, `enharmonic-dot' can be nil, :dot or :comma."
   ;; (format t "~&adding ~a" staff-position)
-  (mapc (lambda (section-id)
-          (add-mobject-to-score score
-                                section-id
-                                (voice-id parser-state)
-                                (multiple-value-bind (lettera chromatic-accidental octave)
+  (let ((note-instance (multiple-value-bind (lettera chromatic-accidental octave)
                                     (parse-pitch parser-state staff-position)
                                   (make-note (generate-object-id (object-id-counter parser-state))
                                              lettera
@@ -167,18 +163,19 @@
                                              (divider-flag parser-state)
                                              (segno-flag parser-state)
                                              (meter parser-state)))))
-        (section-ids parser-state))
+    (mapc (lambda (section-id)
+            (add-mobject-to-score score
+                                  section-id
+                                  (voice-id parser-state)
+                                  note-instance))
+          (section-ids parser-state)))
 
   (reset-divider-flag parser-state)
   (reset-segno-flag parser-state))
 
 
 (defmethod add-rest ((score score) (parser-state parser-state) duration dottedp)
-  (mapc (lambda (section-id)
-          (add-mobject-to-score score
-                                section-id
-                                (voice-id parser-state)
-                                (make-rest (generate-object-id (object-id-counter parser-state))
+  (let ((rest-instance (make-rest (generate-object-id (object-id-counter parser-state))
                                            duration
                                            dottedp
                                            (duration-override parser-state)
@@ -186,7 +183,12 @@
                                            (key-signature parser-state)
                                            (divider-flag parser-state)
                                            (meter parser-state))))
-        (section-ids parser-state))
+    (mapc (lambda (section-id)
+            (add-mobject-to-score score
+                                  section-id
+                                  (voice-id parser-state)
+                                  rest-instance))
+          (section-ids parser-state)))
   (reset-divider-flag parser-state))
 
 ;; (defmacro configure-parser (glyph-list)
