@@ -99,7 +99,7 @@
    (:music 2209
            cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat) b22 fl3 b22 sb3 b22 m1 b22 sb1 b22 sb8 nat7
            (:alt (:diplomatic md7) (:idealised md7) (:tatti m7)
-                 (:comment "Zu diskutieren, ob im Sopran bei der letzten Note in T. 18 der enharmonische Punkt entfernt werden soll.")
+                 (:comment "Sopran, T. 18, letzte Note: Dieses Ḃ♮ passt nicht zum Bass (G) und zum Alt (G), denn es entsteht eine _terza più di maggiore_. Es wurde entschieden, diesen Zusammenklang zu akzeptieren, weil er als melodische Vorausnahme des ersten Klangs in T. 19 verstanden werden kann.")
                  (:flag :observe) (:id 2))
            nat7 md7 nat7 md7 b22 m8 b22 m5 b22 mrest5
            b22 m6 sh4 m4 sh4 m4 b22 fl5 b22 m5 b22 fl5 b22 m5 b22 sb5 b22 m5 b22 sb3 b22 m3 sb6 b22 m6 b22 sb6 b22 m6 b22 sb2 b22 (:duration-override 2) brd2 (:duration-override nil) b22 blbl)

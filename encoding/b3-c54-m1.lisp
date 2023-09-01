@@ -134,7 +134,7 @@
                  (:flag :draft) (:id 3))
            b22
            (:alt (:diplomatic sbd9) (:idealised sbd9) (:tatti sb9)
-                 (:comment "Sopran, T. 40, dieser Klang besteht im Original aus folgenden Noten (BTAS): D, Ȧ, F♯, Ḋ. Es sind drei Idealisierungen denkbar: 1. der komplette Klang wird mit Punkten erhöht, wodurch ein fragwürdiges Ḟ♯ entsteht. 2. der komplette Klang wird ohne Punkte verstanden, wodurch die Punkte in Sopran und Tenor entfernt werden müssen. 3. Im Bass wird ein Punkt ergänzt, wodurch eine ungewöhnliche _terza manca di minore_ zwischen Bass und Alt entsteht. Die dritte Variante wird bevorzugt.")
+                 (:comment "Sopran, T. 40, dieser Klang besteht im Original aus folgenden Noten (BTAS): D, Ȧ, F♯, Ḋ. Es sind drei Idealisierungen denkbar: 1. der komplette Klang wird mit Punkten erhöht, wodurch ein fragwürdiges Ḟ♯ entsteht, das gemäss Vicentinos Notationskonvention als G♭ notiert werden sollte, was wiederum ein grosser Eingriff in den originalen Notentext ist. 2. der komplette Klang wird ohne Punkte verstanden, wodurch die Punkte in Sopran und Tenor entfernt werden müssen. 3. Im Bass wird ein Punkt ergänzt, wodurch eine ungewöhnliche _terza manca di minore_ zwischen Bass und Alt entsteht. In den Vorbereitungen zur Aufnahme wurde Variante 1. bevorzugt, da sie eine interessante Symmetrie zur letzten Kadenz des Stücks bildet, und da eine Finalis in T. 40 ohne Punkte notorisch problematisch war zu intonieren. Es scheint naheliegender zu sein, an dieser Stelle die Finalis auf dem mit Punkten erhöhten Tonhöhenniveau zu belassen.")
                  (:flag :draft) (:id 4))
            b22 mrest7 b22 sb8 b22 m8 b22 brd6 b38
            (:alt (:diplomatic sbd7) (:idealised sb7) (:tatti sb7)
@@ -199,8 +199,11 @@
           (1475 nil "ſustulit")
           (1691 485 "altis dulcibus ut nu⸗"))
    (:music 2220
-           ;; Schlüssel in der Quelle auf dem Kopf stehend
-           cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat)
+
+           (:alt (:diplomatic cclef5)
+                 (:idealised cclef5)
+                 (:comment "Original: Dieser Schlüssel steht auf dem Kopf.") (:flag :draft) (:id 0))
+           fl4 (:key-signature nil nil nil nil nil nil :flat)
            b22 m9 b22 sb5 b22 mrest5 b22 sb6 m3 sb6 b22 m9 b22 sb9 b22 m9 b22 m5 b22 m5 dot6 sm5 b22 m3 b22 m3 dot4
            sm3 sb6 b22 mrest7 sb9 sh8 m8 b22 mrest7 b22 fl7 b22 m7 dot8 fl7 b22 sm7 b22
            fl7 b22 m7 b22 fl7 b22 m7 b22 m5d b22 custos5)
@@ -235,7 +238,11 @@
                  (:comment "Original: Alt, T. 36, die zweite Note hat keinen enharmonischen Punkt.")
                  (:flag :draft) (:id 9))
            b38 brd7 b22 m8 b38 m5d b38 m8 b22 fl9 b22 m9 dot10
-           fl9 b38 sm9 b38 md8 b22 sbd7 sh8 sb8 b38 mrest7 b22 sb8 b38 m8 b22
+           fl9 b38 sm9 b38 md8 b22 sbd7
+           (:alt (:diplomatic sh8 sb8)
+                 (:idealised fl9 sb9)
+                 (:comment "Original: Alt, T. 40, F♯. Dieser Klang besteht im Original aus Bass D, Tenor Ȧ, Alt F♯ und Sopran Ḋ. Im Rahmen der Aufnahmen wurde entschieden, im Bass einen Punkt zu ergänzen, um einen »salto più di quinta« zum Tenor zu vermeiden. Es schien nicht plausibel, im Alt eine »terza più di minore« als Konsonanz anzustreben, weshalb diese Note als konventionelle konsonante Terz in den Klang eingefügt wurde. Das könnte als Ḟ♯ notiert werden, was aber Vicentinos Konvention widerspricht, in solchen Situationen stets G♭ zu notieren.") (:flag :draft) (:id 0))
+           b38 mrest7 b22 sb8 b38 m8 b22
            sbd5 fl9 b22 sb9 b22 mrest7 b22 m8 b38 m8 b22 md9 b38 sb6 b38 custos9)
    (:text 90 58
           (90 nil "ʜyppolite")
@@ -357,7 +364,6 @@
    (:music 2228
            (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat)
            b22 sb4 b22 m3 b22 m3 dot4 sm3 b22 m3 b22 m0 b22 m4 b22 m7
-           ;; Kosmetische Korrektur der vertikalen Position eines rhythmischen Punktes
            (:alt (:diplomatic dot6) (:idealised dot8)
                  (:comment "Original: Bass, T. 14, die rhythmische Punktierung der ersten Note steht eine Position tiefer.")
                  (:flag :draft) (:id 14))
@@ -399,7 +405,7 @@
    (:music 2222
            (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat)
            b22 sbd2 b22
-           (:alt (:diplomatic sb5) (:idealised sb5)
+           (:alt (:diplomatic sb5) (:idealised sbd5)
                  (:comment "Original: Bass, T. 40, die erste Note hat keinen enharmonischen Punkt. Siehe auch die Anmerkungen zu diesem Takt in den anderen Stimmen.")
                  (:flag :draft) (:id 15))
            b22 mrest5 b22 sb7 b22 m7 b22 sbd7 b22 sbd5 b22 m1 b22 sb3 b22 md1 b22 sb1 b22 sbd1 b22 sbd8 dot8 md8 b22 sb4 b22

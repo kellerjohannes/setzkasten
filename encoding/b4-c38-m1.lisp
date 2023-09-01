@@ -10,7 +10,7 @@
     (s2 (:alt (:it "Soprano convertito in tenore,\\all'ottava sotto")
               (:de "")
               (:en "")
-              (:comment "Es ist zu diskutieren, ob anstelle dieser Sopranstimme ein entsprechender vierstimmiger Satz angeboten werden soll.")
+              (:comment "Diese Partitur wurde ergänzt, im Original steht nur die umgewandelte Tenor-Stimme.")
               (:flag :observe) (:id 1))))
    (:voice-labels
     (s1 v1 (:alt (:it "Soprano")
@@ -19,22 +19,38 @@
     (s1 v2 (:alt (:it "Alto")
                  (:de "")
                  (:en "")))
-    (s1 v4 (:alt (:it "[Tenore]")
+    (s1 v3 (:alt (:it "[Tenore]")
                  (:de "")
                  (:en "")))
-    (s1 v3 (:alt (:it "[Basso]")
+    (s1 v4 (:alt (:it "[Basso]")
                  (:de "")
-                 (:en ""))))
+                 (:en "")))
+    (s2 v2 (:alt (:it "Alto")
+                 (:de "")
+                 (:en "")))
+    (s2 v3 (:alt (:it "[Tenore]")
+                 (:de "")
+                 (:en "")))
+    (s2 v3q (:alt (:it "[Tenore]")
+                 (:de "")
+                 (:en "")))
+    (s2 v4 (:alt (:it "[Basso]")
+                 (:de "")
+                 (:en "")))
+    )
    (:voice-order
-    (s1 v1 v2 v4 v3)
-    (s2 v1)))
+    (s1 v1 v2 v3 v4)
+    (s2 v2 v3 v3q v4)))
   (:preamble-lilypond
    (:lyrics
     (s1 v1 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- vo.")
     (s1 v2 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- vo.")
     (s1 v3 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- vo.")
     (s1 v4 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- vo.")
-    (s2 v1 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- vo.")
+    (s2 v2 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- vo.")
+    (s2 v3 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- vo.")
+    (s2 v3q "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- vo.")
+    (s2 v4 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- vo.")
     ))
   (:data
    (:text 90 58
@@ -42,8 +58,12 @@
           (644 nil "Soprano mutabile ꝑ ottaua di ſotto.")
           (1728 nil "Alto."))
    (:music 2231
+           (:section s1)
+           ;; soprano
            (:voice v1)
-           (:section s1) cclef1 b38 met-imperf-min-dim b38 m7 b38 sm7 b38 m8 b38 sm8 b38 sm6 b38 m6 b38 sm6 b38 m5 b38 sm5 b38 m3 sh2 sm2 b22 b22
+           cclef1 b38 met-imperf-min-dim b38 m7 b38 sm7 b38 m8 b38 sm8 b38 sm6 b38 m6 b38 sm6 b38 m5 b38 sm5 b38 m3 sh2 sm2 b22 b22
+           (:section s1 s2)
+           ;; alto
            (:voice v2) cclef5 b38 met-imperf-min-dim b38 m9 b22 sm9 b22 m7 b22 sm7 b22 sm8 b22 m8 b22 sm8 b22 m6 b22 sm6 b22 m5 b22 sm4 b22 bl)
    (:text 90 58
           (165 nil "Come")
@@ -53,8 +73,12 @@
           (1067 nil "uo.")
           (1316 846 "Come dʼogni mio ben rimaſi priuo."))
    (:music 2223
-           (:voice v3) (:f-clef) max7 fclef7 b22 met-imperf-min-dim b38 m1 b38 sm1 b38 m4 b38 sm4 b38 sm5 b38 m7 b38 sm5d b38 m1 b38 sm1 b38 m2 b38 sm3 b38
-           (:voice v4) cclef7 b22 met-imperf-min-dim b22 m8 b22 sm8 b22 m4 b22 sm4 b22 sm8 b22 m7 b22 sm8 b22 m6 b22 sm6 b22 m5 sh3 sm3 b22 bl)
+           (:section s1 s2)
+           ;; basso
+           (:voice v4) (:f-clef) max7 fclef7 b22 met-imperf-min-dim b38 m1 b38 sm1 b38 m4 b38 sm4 b38 sm5 b38 m7 b38 sm5d b38 m1 b38 sm1 b38 m2 b38 sm3 b38
+           (:section s1 s2)
+           ;; tenore
+           (:voice v3) cclef7 b22 met-imperf-min-dim b22 m8 b22 sm8 b22 m4 b22 sm4 b22 sm8 b22 m7 b22 sm8 b22 m6 b22 sm6 b22 m5 sh3 sm3 b22 bl)
    (:text 90 58
           (215 nil "Come")
           (400 nil "dʼogni mio ben rima")
@@ -68,7 +92,9 @@
    (:text 90 58
           (90 460 "nore,allʼottaua ſotto."))
    (:music (2222 -200)
-           (:section s2) (:voice v1) (:newline) s720 cclef7 b38 met-imperf-min-dim b38 b22 m6 b38 b22 sm6 b22 b38 m7 b38 b22 sm7 b38 b22 sm5 b38 b22 m5 b38 b22 sm5 b38 b22 m4 b38 b22 sm4 b38 b22 m2 b22 sh1 b22 sm1 b22 b22 bl)
+           (:section s2)
+           ;; tenore II ('quinto')
+           (:voice v3q) (:newline) s720 cclef7 b38 met-imperf-min-dim b38 b22 m6 b38 b22 sm6 b22 b38 m7 b38 b22 sm7 b38 b22 sm5 b38 b22 m5 b38 b22 sm5 b38 b22 m4 b38 b22 sm4 b38 b22 m2 b22 sh1 b22 sm1 b22 b22 bl)
    (:text 70 58
           (929 nil "Come")
           (1160 nil "dʼogni")

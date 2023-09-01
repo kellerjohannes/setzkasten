@@ -27,7 +27,7 @@
             il trop -- po lun -- go pian -- to_il trop --
             po lun -- go pian -- to m'han -- no ri -- dot -- to_a tan -- to che'l pian -- ger sem -- pr'e so -- spi -- rar che'l pian --
             ger sem -- _ _ pr'e so -- spi -- rar __ _ _ mi_è ca -- ro che'l pian -- ger sem -- _ _ pr'e so -- spi --
-            rar mi_è ca -- ro.")
+            rar mi_è ca -- ro. [Deh]")
     (s1 v2 "Ma -- don -- na_il po -- co dolc' il po -- _ _ co dol -- ce Ma -- don -- na_il po -- co dolc' il
             mol -- _ _ t'a -- ma -- ro il bre -- ve ri -- so,_il bre -- ve ri -- so il trop -- po lun --
             _ _ go pian -- to, il trop -- po lun -- _ _ go pian -- to, il trop -- po lun -- go pian -- to m'han -- no ri --
@@ -38,7 +38,7 @@
             e'il trop -- po lun -- _ go pian -- to m'han -- no ri -- dot -- to_a tan -- to, [m'han -- no ri -- dot -- to_a tan -- to] che'l pian -- ger sem --
             pr'e so -- spi -- rar che'l pian -- ger sem -- _ _ pr'e so -- spi -- rar mi_è ca -- ro, che'l pian -- ger sem -- pre_e so -- spi -- rar mi_è ca -- ro, e so -- spi -- rar -- _ _ mi_è __ _ _ ca -- ro.")
     (s1 v4 "Ma -- don -- na_il po -- co dol -- ce, il po -- co dol -- ce, Ma -- don -- na_il po -- co dolc' e_il molt' a -- ma -- ro il
-            bre -- ve ri -- so, il bre -- ve ri -- so_il trip -- po lun -- go pian -- to, il trop -- po lun -- _ go pian -- to
+            bre -- ve ri -- so, il bre -- ve ri -- so_il trop -- po lun -- go pian -- to, il trop -- po lun -- _ go pian -- to
             m'han -- no ri -- dot -- to_a tan -- to che'il pian -- ger sem -- pr'e so -- spi -- rar__ _ _ mi_è ca -- ro che'l pian -- _
             ger sem -- _ pre e so -- spi -- rar mi_è ca -- ro.")))
   (:data
@@ -96,7 +96,12 @@
           (1901 nil "prʼe ſoſpi⸗"))
    (:music 2220
            cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat)
-           b38 sb7 dot8 m6 b38 br6 sh4 (:divider :regular) br4 b38 blbl b38 fl5 b38 br5 b38 b38 b22
+           b38 sb7 dot8 m6 b38 br6 sh4 (:divider :regular) br4 b38 blbl b38 fl5 b38
+           (:alt (:diplomatic br5)
+                 (:idealised br5)
+                 (:comment "Textunterlegung: Dieses G♭ im Sopran wird als Andeutung einer Fortsetzung dieses Madrigals mit einem zweiten Teil interpretiert. Für die Aufnahme wurde eine Silbe benötigt, deshalb wird hier ein hypothetisches »Deh« ergänzt.")
+                 (:flag :draft) (:id 0))
+           b38 b38 b22
            b118 b118 b118 b118 b118 b118 b118 b118 b118 b118 b118 b118)
    (:text 90 58
           (126 nil "rar")
@@ -106,9 +111,6 @@
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat)
            b38 met-imperf-min-dim b38 sb6 b22 sb6 b38 sbd6 b38 md5 b38 md5 b38 m7 b38 m8 b38 m6 dot6 sm7 b38 m8 b38 m8 b38 fl9 b22 sb9 b22 fl9 b22 sb9 b38 sbrest9
            b38 br9 b22 sbd9 dot10
-           ;; idealisierung zu diskutieren, die Verschiebung dieses Punktes scheint naheliegend,
-           ;; insbesondere weil dadurch eine ♯-⋅-Notation aufgehoben wird.
-           ;; Wird idealisiert, von Bibelgruppe bestätigt
            (:alt (:diplomatic m9) (:tatti md9) (:idealised md9)
                  (:comment "Original: Alt, T. 7, zweite Note hat keinen enharmonischen Punkt.")
                  (:flag :draft) (:id 1))

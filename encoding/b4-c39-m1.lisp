@@ -7,7 +7,7 @@
     (s2 (:alt (:it "Tenore convertito in soprano\\per ottava più alto")
               (:de "")
               (:en "")
-              (:comment "Es ist zu diskutieren, ob anstelle dieser Tenorstimme ein entsprechender vierstimmiger Satz angeboten werden soll.")
+              (:comment "Diese Partitur wurde ergänzt, im Original steht nur die umgewandelte Sopran-Stimme.")
               (:flag :observe) (:id 1))))
    (:voice-labels
     (s1 v2 (:alt (:it "[Alto]")
