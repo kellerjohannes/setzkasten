@@ -10,7 +10,7 @@
     (s1 (:alt (:it "Tono cromatico\\accidentale\\[ascendente]")
               (:de "")
               (:en "")))
-    (s2 (:alt (:it "Semitono cromatico\\accidentale\\accidentale\\[ascendente]")
+    (s2 (:alt (:it "Semitono cromatico\\accidentale\\[ascendente]")
               (:de "")
               (:en "")))
     (s3 (:alt (:it "Tono cromatico\\accidentale\\[ascendente]")
@@ -113,7 +113,11 @@
            (:voice v1)
            (:section s1) (:f-clef) max7 fclef7 b22 sh1 b22 sb1 fl2 b22 sb2 b22 fl2 b22 sbd2 b22 sbd2 b22 sh2 b22 sb2 bl
            (:section s2) sh2 b22 sb2 fl3 b22 sbd3 b22 sb3 bl
-           (:section s3) sb3 b22 sbd3 b22 sh3 b22 sb3 sbd3 b22 sh4 b22 sb4 bl
+           (:section s3) sb3 b22 sbd3
+           (:alt (:diplomatic b22 sb4 b22)
+                 (:idealised sh3 b22 sb3)
+                 (:comment "Original: C.") (:flag :draft) (:id 0))
+           sbd4 b22 sh4 b22 sb4 bl
            (:section s4) (:newline) sh4 b22 sb4 fl5 b22 sb5 b22 fl5 b22 sbd5 b22
            (:alt (:diplomatic) (:idealised sbd5 b22)
                  (:comment "Original: Die zweitletzte Note fehlt")

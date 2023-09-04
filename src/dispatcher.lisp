@@ -208,9 +208,9 @@
 
 (defparameter *working*
   `(
-    ("b3-c52-m1" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ("b3-c52-m1" "b" (:idealised) ,*vicentino-types-backend*)
-    ("b3-c52-m1" "c" (:idealised :it) ,*lilypond-backend-modern-meter*)
+    ("b5-c59-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b5-c59-m2" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b5-c59-m2" "c" (:idealised :it :alternative-layout) ,*lilypond-backend-modern*)
     ))
 
 (defparameter *book5-original*
