@@ -33,6 +33,7 @@
         ;; write tex apparatus here, tex standalone and tex import-fragment, serve filename with suffix
         (generate-latex-apparatus-standalone (format nil "~a-~a" filename suffix))
         (generate-latex-apparatus-import-fragments (format nil "~a-~a" filename suffix))
+        (generate-latex-apparatus-import-compact-fragments (format nil "~a-~a" filename suffix))
         (create-score-file backend-instance simplified-score suffix)))))
 
 ;; for external use, in case other programs want to operate on a score object
@@ -208,9 +209,13 @@
 
 (defparameter *working*
   `(
-    ("b5-c59-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
-    ("b5-c59-m2" "b" (:idealised) ,*vicentino-types-backend*)
-    ("b5-c59-m2" "c" (:idealised :it :alternative-layout) ,*lilypond-backend-modern*)
+    ;; ("b5-c59-m2" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ;; ("b5-c59-m2" "b" (:idealised) ,*vicentino-types-backend*)
+    ;; ("b5-c59-m2" "c" (:idealised :it :alternative-layout) ,*lilypond-backend-modern*)
+
+    ("b1-c05-m5" "a" (:diplomatic) ,*vicentino-types-backend*)
+    ("b1-c05-m5" "b" (:idealised) ,*vicentino-types-backend*)
+    ("b1-c05-m5" "c" (:idealised :it) ,*lilypond-backend-modern*)
     ))
 
 (defparameter *book5-original*

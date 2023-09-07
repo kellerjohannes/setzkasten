@@ -20,6 +20,8 @@
    (score-text-section :initform nil :accessor score-text-section)
    (score-text-voice :initform nil :accessor score-text-voice)
    (score-line-heading-counter :initform 0 :accessor score-line-heading-counter)
+   (coordinate-a-b :initform nil :accessor coordinate-a-b)
+   (coordinate-c :initform nil :accessor coordinate-c)
    (critical-comment :initform nil :accessor critical-comment)
    (flag :initform nil :accessor flag)
    (reference-content :initform nil :accessor reference-content)))
@@ -46,6 +48,8 @@
         :original (reference-content state)
         :replacement (rest reading)
         :reading reading-tag
+        :coordinate-a-b (coordinate-a-b state)
+        :coordinate-c (coordinate-c state)
         :comment (critical-comment state)
         :flag (flag state)))
 
@@ -57,6 +61,8 @@
         :original (reference-content state)
         :replacement (rest reading)
         :reading reading-tag
+        :coordinate-a-b (coordinate-a-b state)
+        :coordinate-c (coordinate-c state)
         :comment (critical-comment state)
         :flag (flag state)))
 
@@ -69,6 +75,8 @@
                                    (when (or (eq (score-text-type state) :voice-label)
                                              (eq (score-text-type state) :lyrics))
                                      (score-text-voice state)))
+        :coordinate-a-b (coordinate-a-b state)
+        :coordinate-c (coordinate-c state)
         :comment (critical-comment state)
         :flag (flag state)))
 
@@ -101,6 +109,16 @@
     (when comment
       (setf (critical-comment state) (second comment)))))
 
+(defmethod find-coordinate-a-b (expression (state apparatus-state))
+  (let ((coordinate (find :coordinate-a-b (rest expression) :key #'first)))
+    (when coordinate
+      (setf (coordinate-a-b state) (second coordinate)))))
+
+(defmethod find-coordinate-c (expression (state apparatus-state))
+  (let ((coordinate (find :coordinate-c (rest expression) :key #'first)))
+    (when coordinate
+      (setf (coordinate-c state) (second coordinate)))))
+
 (defmethod find-id (expression (state apparatus-state))
   (let ((id (find :id (rest expression) :key #'first)))
     (when id
@@ -114,6 +132,8 @@
 (defmethod resolve-reading (expression (state apparatus-state))
   (when (eq (first expression) :alt)
     (find-comment expression state)
+    (find-coordinate-a-b expression state)
+    (find-coordinate-c expression state)
     (find-id expression state)
     (find-reference-reading expression state)
     (find-flag expression state)
@@ -121,6 +141,8 @@
 
 (defmethod reset-reading-state ((state apparatus-state))
   (setf (critical-comment state) nil)
+  (setf (coordinate-a-b state) nil)
+  (setf (coordinate-c state) nil)
   (setf (flag state) nil)
   (setf (reference-content state) nil))
 
@@ -225,6 +247,8 @@
   :original (sh5 sb5)
   :replacement (b38 b38)
   :reading :idealised
+  :coordinate-a-b "2. Zeile, 3. Note"
+  :coordinate-c "Section 3, 2. Note"
   :comment "C♯ ist hier fragwürdig, wird entfernt."
   :flag :suggestion-jk)
 

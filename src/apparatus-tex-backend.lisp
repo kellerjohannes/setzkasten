@@ -64,6 +64,20 @@
           (make-string-latex-friendly (getf meta-data-plist :comment))
           (prettify-keyword (getf meta-data-plist :reference-reading))))
 
+(defun generate-latex-title-compact (meta-data-plist)
+  (format nil "
+\\begin{center}
+  {\\Large\\fbox{~a}}
+  \\vspace{3mm}
+
+  Alternative Nummerierung: \\textsf{~a}\\\\
+  Bemerkung: \\textsf{~a}\\\\
+
+\\end{center}"
+          (getf meta-data-plist :filename)
+          (getf meta-data-plist :alternative-numbering)
+          (make-string-latex-friendly (getf meta-data-plist :comment))))
+
 (defparameter *latex-table-header*
    "
 \\renewcommand{\\arraystretch}{1.2}
@@ -84,6 +98,20 @@
   \\midrule
 
 ")
+
+(defparameter *latex-table-header-compact*
+   "
+\\renewcommand{\\arraystretch}{1.2}
+\\begin{longtable}{p{5mm}p{4cm}p{4cm}p{7cm}}
+  \\toprule
+  ID &
+  Koord. Quelle &
+  Koord. Normalisierung &
+  Kommentar \\\\
+  \\midrule
+
+")
+
 
 (defparameter *latex-table-footer*
   "
@@ -120,6 +148,20 @@
           (prettify-keyword (getf data :reading))
           (prettify-keyword (getf data :flag))
           (make-string-latex-friendly (generate-latex-formatting (getf data :comment)))))
+
+(defun generate-latex-table-generic-line-compact (data)
+  (format nil "
+  ~a &
+  ~a &
+  ~a &
+  ~a\\\\
+
+"
+          (getf data :id)
+          (getf data :coordinate-a-b)
+          (getf data :coordinate-c)
+          (make-string-latex-friendly (generate-latex-formatting (getf data :comment)))
+          ))
 
 (defun generate-latex-table-type-text-line (data id-prefix)
   (format nil "
@@ -187,6 +229,18 @@
                             (generate-latex-table-modern-text-line (rest entry) id-prefix))
                            (otherwise "")))))))
 
+(defun coordinates-exist-p (entry)
+  (or (getf entry :coordinate-c) (getf entry :coordinate-a-b)))
+
+(defun generate-latex-table-line-compact (data)
+  (let ((result ""))
+    (dolist (entry data result)
+      (when (coordinates-exist-p (rest entry))
+        (setf result
+              (concatenate 'string
+                           result
+                           (generate-latex-table-generic-line-compact (rest entry))))))))
+
 (defun generate-latex-table (data)
   (concatenate 'string
                *latex-table-header*
@@ -194,6 +248,15 @@
                                                                 (let ((id (getf (rest entry) :id)))
                                                                   (if id id 0))))
                                           (getf (extract-meta-data data) :filename))
+               *latex-table-footer*))
+
+(defun generate-latex-table-compact (data)
+  (concatenate 'string
+               *latex-table-header-compact*
+               (generate-latex-table-line-compact
+                (sort data #'< :key (lambda (entry)
+                                      (let ((id (getf (rest entry) :id)))
+                                        (if id id 0)))))
                *latex-table-footer*))
 
 (defun extract-meta-data (data)
@@ -209,6 +272,27 @@
                      (if (> (length data) 1)
                          (generate-latex-table data)
                          ""))))))
+
+(defun generate-latex-entry-compact (filename)
+  (with-open-file (in-file (merge-pathnames *apparatus-export-path-raw*
+                                            (pathname (format nil "app-~a.lisp" filename))))
+    (with-standard-io-syntax
+      (let ((data (read in-file)))
+        (concatenate 'string
+                     (generate-latex-title-compact (extract-meta-data data))
+                     (if (> (length data) 1)
+                         (generate-latex-table-compact data)
+                         ""))))))
+
+(defun generate-latex-apparatus-import-compact-fragments (filename)
+  (with-open-file (latex-stream
+                   (merge-pathnames *apparatus-export-path-tex-imports*
+                                    (pathname (format nil "app-~a-compact.tex" filename)))
+                   :direction :output
+                   :if-does-not-exist :create
+                   :if-exists :supersede)
+    (format latex-stream "~a"
+            (generate-latex-entry-compact filename))))
 
 (defun generate-latex-apparatus-import-fragments (filename)
   (with-open-file (latex-stream (merge-pathnames *apparatus-export-path-tex-imports*

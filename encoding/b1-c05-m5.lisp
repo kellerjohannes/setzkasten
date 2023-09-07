@@ -54,7 +54,7 @@
               (:de "")
               (:en "")
               (:comment "Original: »per ♭: fa-re-mi-fa-re«. Von Anne zu bestätigen.")
-              (:flag :suggestion) (:id 1)))
+              (:flag :redundant) (:id 3)))
     (s8 (:alt (:it "per nat.: sol-re-mi-fa-re\\per b: re-mi-fa-re-mi\\per ♮: ut-re-mi-fa-re")
               (:de "")
               (:en "")))))
@@ -73,8 +73,10 @@
            sb3 b22 sbd3 b22 sh3 b22 sb3 b22
            (:alt (:diplomatic fl4 b22 sbd4)
                  (:idealised fl4 b22 sbd4)
-                 (:comment "Die vierte Note ist ein Ċ♭. Soll so stehen gelassen werden. Ein reguläres Synonym wäre B♯.")
-                 (:flag :observe) (:id 2))
+                 (:coordinate-a-b "1. MZ, 9. N")
+                 (:coordinate-c "S2, 4. N")
+                 (:comment "Dieses Ċ♭ wird von Vicentino nicht kommentiert, kommt aber beispielsweise in b5-c52-m2-s12 vor, wo es eindeutig als klanglich austauschbar mit B♯ (_Csolfaut secondo in terzo ordine_) in Erscheinung tritt.")
+                 (:flag :ready) (:id 1))
            b22 sb4 bl
            (:section s3)
            fl3 b22 sb3 b22 fl3 b22 sbd3 b22 nat3 b22 sb3 b22 sbd3 b22 sb4 bl
@@ -112,10 +114,13 @@
    (:text 80 58
           (168 464 "la.& ſol diſcendono")
           (664 243 "la diſcende")
-          (982 527 (:alt (:diplomatic "per ♭.fa.re.mi.fa.re.")
-                         (:idealised "per ♭.ut.re.mi.fa.re.")
-                         (:comment "Korrektur der Solmisation, muss von Anne bestätigt werden.")
-                         (:flag :suggestion) (:id 3)))
+          (982 527
+               (:alt (:diplomatic "per ♭.fa.re.mi.fa.re.")
+                     (:idealised "per ♭.ut.re.mi.fa.re.")
+                     (:coordinate-a-b "2. TZ unter 2. MZ, 3. TE")
+                     (:coordinate-c "S7, US, 2. Z")
+                     (:comment "Original: »per ♭.fa.re.mi.fa.re.«.")
+                     (:flag :ready) (:id 2)))
           (1529 557 "per ♭.re.mi.fa.re.mi."))
    (:text 70 58
           (1552 536 "per ♮.ut.re.mi.fa.re."))))
