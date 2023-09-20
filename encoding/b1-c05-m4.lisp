@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Dimostratione della mano enarmonica diatonica,\\ascendente con le sette lettere della mano")
                  (:de "")
-                 (:en "Illustration of the diatonic enharmonic hand\\ascending with the seven letters of the hand.")))
+                 (:en "Illustration of the diatonic enharmonic hand\\ascending with the seven letters of the hand")))
    (:section-headings
     (s1 (:alt (:it "Alamire")
               (:de "")
