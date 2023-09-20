@@ -6,15 +6,15 @@
    (:section-captions
     (s1 (:alt (:it "per ♮ incitato:\\la-sol-fa-la-sol")
               (:de "")
-              (:en "")))
+              (:en "per ♮ incitato:\\la-sol-fa-la-sol")))
     (s2 (:alt (:it "per ♭ molle:\\la-sol-fa-mi-re")
               (:de "")
-              (:en "")
+              (:en "per ♭ molle:\\la-sol-fa-mi-re")
               (:comment "Maniates: korrigiert zu »la sol fa la sol«, möglicherweise auf der Basis der _mani enarmonici_. Es soll hier keine Korrektur vorgenommen werden.")
               (:flag :observe) (:id 1)))
     (s3 (:alt (:it "per natura:\\sol-fa-la-sol-fa-mi-mi")
               (:de "")
-              (:en "")))))
+              (:en "per natura:\\sol-fa-la-sol-fa-mi-mi")))))
   (:data
    (:music 2200
            (:voice v1)
