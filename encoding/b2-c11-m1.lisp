@@ -9,7 +9,7 @@
    (:section-captions
     (s1 (:alt (:it "Per semitono\\con l'unisono")
               (:de "")
-              (:en "")))
+              (:en "_semitono_")))
     (s2 (:alt (:it "Per tono\\con l'unisono")
               (:de "")
               (:en "")))
