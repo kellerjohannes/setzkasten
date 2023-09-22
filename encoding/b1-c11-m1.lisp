@@ -6,17 +6,17 @@
    (:section-headings
     (s1 (:alt (:it "tono diviso in 4 parti\\ascendenti")
               (:de "")
-              (:en "")))
+              (:en "tono divided in 4\\ascending parts")))
     (s2 (:alt (:it "tono diviso in 4 parti\\ascendenti")
               (:de "")
-              (:en ""))))
+              (:en "tone divided in 4\\ascending parts"))))
    (:section-captions
     (s1 (:alt (:it "per ♮: ut-re-mi-fa-re")
               (:de "")
-              (:en "")))
+              (:en "per ♮: ut-re-mi-fa-re")))
     (s2 (:alt (:it "per ♭: re-mi-fa-re-mi")
               (:de "")
-              (:en "")))))
+              (:en "per ♭: re-mi-fa-re-mi")))))
   (:data
    (:text 90 58
           (54 720 "ᴛono diuiſo in 4. parti aſcend.")
