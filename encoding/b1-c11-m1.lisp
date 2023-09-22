@@ -9,7 +9,7 @@
               (:en "tono divided in 4\\ascending parts")))
     (s2 (:alt (:it "tono diviso in 4 parti\\ascendenti")
               (:de "")
-              (:en "tone divided in 4\\ascending parts"))))
+              (:en "tono divided in 4\\ascending parts"))))
    (:section-captions
     (s1 (:alt (:it "per ♮: ut-re-mi-fa-re")
               (:de "")
