@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Dimostratione della mano cromatica, ascendente, con li semitoni minore,\\e con l'essempio")
                  (:de "")
-                 (:en "Illustration of the ascending chromatic hand, with the _semitoni minori_, and with an example")))
+                 (:en "Illustration of the ascending chromatic hand, with the semitoni minori, and with an example")))
    (:section-headings
     (s1 (:alt (:it "Alamire")
               (:de "Alamire")
