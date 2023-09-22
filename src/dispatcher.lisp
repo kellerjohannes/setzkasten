@@ -233,6 +233,34 @@
 
     ))
 
+(defparameter *anne*
+  `(
+    ("b1-c05-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c05-m2" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c05-m3" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c05-m4" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c05-m5" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c05-m6" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c05-m7" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c05-m8" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c06-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c07-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c08-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c08-m2" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c09-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c10-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c10-m2" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c11-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c11-m2" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c11-m3" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c12-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c13-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c15-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c16-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c17-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ("b1-c18-m1" "e" (:idealised :en) ,*lilypond-backend-modern*)
+    ))
+
 (defparameter *book5-original*
   `(
     ("b5-c59-m1" "c-orig" (:idealised :it) ,*lilypond-backend-original*)

@@ -6,7 +6,7 @@
    (:section-captions
     (s1 (:alt (:it "due diesis in\\un semitono")
               (:de "")
-              (:en "two _diesis- in\\one _semitono_")))
+              (:en "two _diesis_ in\\one _semitono_")))
     (s2 (:alt (:it "4 diesis in un tono\\ascendente")
               (:de "")
               (:en "4 _diesis_ in one\\ascending _tono_")))
