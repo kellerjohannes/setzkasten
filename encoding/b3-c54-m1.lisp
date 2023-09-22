@@ -122,24 +122,34 @@
            cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat)
            b38 nat7 md7 b22 sb8 b22 sbd5 b22 sbd5 dot6 md5d b22 sb6 b22
            (:alt (:diplomatic md6) (:idealised m6) (:tatti m6)
-                 (:comment "Original: Sopran, T. 38, die zweite Note hat einen enharmonischen Punkt. Es könnte sich um eine Verschiebung des fehlenden rhythmischen Punkts der nächsten Note handeln.")
-                 (:flag :draft) (:id 1))
+                 (:coordinate-a-b "5. MZ, 7. N")
+                 (:coordinate-c "ST1, T38, 2. N")
+                 (:comment "Original: Ȧ. Es könnte sich hier um eine Verschiebung des fehlenden rhythmischen Punkts der nächsten Note handeln.")
+                 (:flag :ready) (:id 1))
            b22 md9
            (:alt (:diplomatic) (:idealised dot10)
-                 (:comment "Original: Sopran, T. 38, die letzte Note ist nicht rhythmisch punktiert.")
-                 (:flag :draft) (:id 2))
+                 (:coordinate-a-b "5. MZ, 8. N")
+                 (:coordinate-c "ST1, T38, 3. N")
+                 (:comment "Original: Das Ḋ ist nicht rhythmisch punktiert.")
+                 (:flag :ready) (:id 2))
            b22 smd9 b22 md9
            (:alt (:diplomatic sh8 sb8) (:idealised sh8 sb8) (:tatti fl9 sb9)
-                 (:comment "Sopran, T. 39, C♯: unkoventioneller Zusammenklang. Es kann disktiert werden, hier einen enharmonischen Punkt zu ergänzen, was allerdings nicht plausibel ist, das Punkte über mit einem ♯ modifizierten Noten generell nicht notiert werden (falls diese Tonhöhe intendiert war, würde sie als D♭ notiert).")
-                 (:flag :draft) (:id 3))
+                 (:coordinate-a-b "5. MZ, 11. N")
+                 (:coordinate-c "ST1, T39, 3. N")
+                 (:comment "Unkoventioneller Zusammenklang. Die Ergänzung eines enharmonischen Punktes würde diese Note konsonant in den Gesamtklang integrieren, allerdings ist die Konstruktion Ċ♯ nicht Teil von Vicentinos Notenschrift. Eine solche Tonhöhe würde als D♭ notiert.")
+                 (:flag :ready) (:id 3))
            b22
            (:alt (:diplomatic sbd9) (:idealised sbd9) (:tatti sb9)
-                 (:comment "Sopran, T. 40, dieser Klang besteht im Original aus folgenden Noten (BTAS): D, Ȧ, F♯, Ḋ. Es sind drei Idealisierungen denkbar: 1. der komplette Klang wird mit Punkten erhöht, wodurch ein fragwürdiges Ḟ♯ entsteht, das gemäss Vicentinos Notationskonvention als G♭ notiert werden sollte, was wiederum ein grosser Eingriff in den originalen Notentext ist. 2. der komplette Klang wird ohne Punkte verstanden, wodurch die Punkte in Sopran und Tenor entfernt werden müssen. 3. Im Bass wird ein Punkt ergänzt, wodurch eine ungewöhnliche _terza manca di minore_ zwischen Bass und Alt entsteht. In den Vorbereitungen zur Aufnahme wurde Variante 1. bevorzugt, da sie eine interessante Symmetrie zur letzten Kadenz des Stücks bildet, und da eine Finalis in T. 40 ohne Punkte notorisch problematisch war zu intonieren. Es scheint naheliegender zu sein, an dieser Stelle die Finalis auf dem mit Punkten erhöhten Tonhöhenniveau zu belassen.")
+                 (:coordinate-a-b "5. MZ, 12. N")
+                 (:coordinate-c "ST1, T40, 1. N")
+                 (:comment "Dieser Klang besteht im Original aus folgenden Noten (BTAS): D, Ȧ, F♯, Ḋ. Es sind drei Idealisierungen denkbar: 1. Der komplette Klang wird mit Punkten erhöht, wodurch ein fragwürdiges Ḟ♯ entsteht, das gemäss Vicentinos Notenschrift als G♭ notiert werden sollte, was wiederum ein grosser Eingriff in den originalen Notentext ist. 2. Der komplette Klang wird ohne Punkte verstanden, wodurch die Punkte in Sopran und Tenor entfernt werden müssen. 3. Im Bass wird ein Punkt ergänzt, wodurch eine ungewöhnliche _terza manca di minore_ zwischen Bass und Alt entsteht. Für die Aufnahme wurde Variante 1. bevorzugt, da sie eine interessante Symmetrie zur letzten Kadenz des Stücks bildet und da eine Finalis in T. 40 ohne Punkte notorisch problematisch zu intonieren war.")
                  (:flag :draft) (:id 4))
            b22 mrest7 b22 sb8 b22 m8 b22 brd6 b38
            (:alt (:diplomatic sbd7) (:idealised sb7) (:tatti sb7)
-                 (:comment "Original: Sopran, T. 42, Taktmitte, die Note hat ein enharmonischen Punkt.")
-                 (:flag :draft) (:id 5))
+                 (:coordinate-a-b "5. MZ, 16. N")
+                 (:coordinate-c "ST1, Mitte T42")
+                 (:comment "Original: Ḃ♭.")
+                 (:flag :ready) (:id 5))
            dot8 md7 nat7 m7 dot8 nat7 sm7
            nat7 sbd7 nat7 sbd7 nat7 md7 nat7 md7 b38 custos8)
    (:text 90 58
@@ -153,12 +163,16 @@
            cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat)
            b38 sb8 b38
            (:alt (:diplomatic m8) (:idealised md8) (:tatti md8)
-                 (:comment "Original: Sopran, T. 46, die erste Note hat keinen enharmonischen Punkt. Der Punkt wurde vom Setzer möglicherweise fälschlicherweise an das andere Ende der symmetrischen Notenfolge in diesem Takt gesetzt.")
-                 (:flag :draft) (:id 6))
+                 (:coordinate-a-b "6. MZ, 2. N")
+                 (:coordinate-c "ST1, T46, 1. N")
+                 (:comment "Original: C. Der Punkt wurde vom Setzer möglicherweise fälschlicherweise an das andere Ende der symmetrischen Notenfolge in diesem Takt gesetzt.")
+                 (:flag :ready) (:id 6))
            sh8 sb8 sh8
            (:alt (:diplomatic md8) (:idealised m8) (:tatti m8)
-                 (:comment "Original: Sopran, T. 46, die letzte Note hat einen enharmonischen Punkt.")
-                 (:flag :draft) (:id 7))
+                 (:coordinate-a-b "6. MZ, 4. N")
+                 (:coordinate-c "ST1, T46, 3. N")
+                 (:comment "Original: Ċ♯. Siehe Annotation 6.")
+                 (:flag :ready) (:id 7))
            b22 fl9 sb9 b22 fl9 b22 sb9 b38
            (:divider :double)
            (:duration-override 1/2) longa9 (:duration-override 1) b38 blbl
@@ -202,7 +216,10 @@
 
            (:alt (:diplomatic cclef5)
                  (:idealised cclef5)
-                 (:comment "Original: Dieser Schlüssel steht auf dem Kopf.") (:flag :draft) (:id 0))
+                 (:coordinate-a-b "9. MZ, Beginn")
+                 (:coordinate-c "ST2")
+                 (:comment "Original: Dieser Schlüssel steht auf dem Kopf.")
+                 (:flag :ready) (:id 8))
            fl4 (:key-signature nil nil nil nil nil nil :flat)
            b22 m9 b22 sb5 b22 mrest5 b22 sb6 m3 sb6 b22 m9 b22 sb9 b22 m9 b22 m5 b22 m5 dot6 sm5 b22 m3 b22 m3 dot4
            sm3 sb6 b22 mrest7 sb9 sh8 m8 b22 mrest7 b22 fl7 b22 m7 dot8 fl7 b22 sm7 b22
@@ -231,17 +248,24 @@
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat)
            b22 sb6 b22 sbd9 dot10 md9 b22
            (:alt (:diplomatic sbd7) (:idealised sb7) (:tatti sb7)
-                 (:comment "Original: Alt, T. 36, die erste Note hat einen enharmonischen Punkt. Er wurde vom Setzer möglicherweise fälschlicherweise mit der kommenden Note verwechselt.")
-                 (:flag :draft) (:id 8))
+                 (:coordinate-a-b "11. MZ, 4. N")
+                 (:coordinate-c "ST2, T36, 1. N")
+                 (:comment "Original: Ė. Bei der Platzierung des enharmonischen Punkts wurde vom Setzer möglicherweise diese Note mit der kommenden Note verwechselt.")
+                 (:flag :ready) (:id 9))
            b22
            (:alt (:diplomatic sb7) (:idealised sbd7) (:tatti sbd7)
-                 (:comment "Original: Alt, T. 36, die zweite Note hat keinen enharmonischen Punkt.")
-                 (:flag :draft) (:id 9))
+                 (:coordinate-a-b "11. MZ, 5. N")
+                 (:coordinate-c "ST2, T36, 2. N")
+                 (:comment "Original: E. Siehe Annotation 9.")
+                 (:flag :draft) (:id 10))
            b38 brd7 b22 m8 b38 m5d b38 m8 b22 fl9 b22 m9 dot10
            fl9 b38 sm9 b38 md8 b22 sbd7
            (:alt (:diplomatic sh8 sb8)
                  (:idealised fl9 sb9)
-                 (:comment "Original: Alt, T. 40, F♯. Dieser Klang besteht im Original aus Bass D, Tenor Ȧ, Alt F♯ und Sopran Ḋ. Im Rahmen der Aufnahmen wurde entschieden, im Bass einen Punkt zu ergänzen, um einen »salto più di quinta« zum Tenor zu vermeiden. Es schien nicht plausibel, im Alt eine »terza più di minore« als Konsonanz anzustreben, weshalb diese Note als konventionelle konsonante Terz in den Klang eingefügt wurde. Das könnte als Ḟ♯ notiert werden, was aber Vicentinos Konvention widerspricht, in solchen Situationen stets G♭ zu notieren.") (:flag :draft) (:id 0))
+                 (:coordinate-a-b "11. MZ, 14. N")
+                 (:coordinate-c "ST2, T40, 1. N")
+                 (:comment "Original: F♯. Siehe Annotation 4.")
+                 (:flag :ready) (:id 11))
            b38 mrest7 b22 sb8 b38 m8 b22
            sbd5 fl9 b22 sb9 b22 mrest7 b22 m8 b38 m8 b22 md9 b38 sb6 b38 custos9)
    (:text 90 58
@@ -255,8 +279,10 @@
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat)
            b38 sbd9 b38 sbd9 b38 sbd9 b38 sb7 b38 md7 b38 m7 dot8 sm10 b38 m10 b38
            (:alt (:diplomatic br10) (:idealised brd10) (:tatti brd10)
-                 (:comment "Original: Alt, T. 47, die Note hat keinen enharmonischen Punkt. In gewissen Quellen ist ein Punkt zu erkennen.")
-                 (:flag :draft) (:id 10))
+                 (:coordinate-a-b "12. MZ, 9. N")
+                 (:coordinate-c "ST2, T47")
+                 (:comment "Original: A. In gewissen Quellen ist ein enharmonischer Punkt zu erkennen.")
+                 (:flag :observe) (:id 12))
            sh8
            (:duration-override 1/2) longa8 (:duration-override 1) b38 blbl
            b22 b22 b22 b118 b118 b118 b118 b118 b118 b118 b118 b118)
@@ -293,8 +319,10 @@
    (:music 2239
            cclef7
            (:alt (:diplomatic fl7) (:idealised fl6)
-                 (:comment "Original: das ♭ in der Vorzeichnung steht eine Position höher.")
-                 (:flag :draft) (:id 11))
+                 (:coordinate-a-b "15. MZ")
+                 (:coordinate-c "ST3")
+                 (:comment "Original: Das ♭ in der Vorzeichnung direkt nach dem Schlüssel steht eine Position höher.")
+                 (:flag :ready) (:id 13))
            (:key-signature nil nil nil nil nil nil :flat)
            b22 m9 b22 m10 m3 dot4 sm3 sh3 m3 sh3 m3 dot4 sh3 sm3 b22 m4 b22 sb8 b22 m8 b22 sbrest7 mrest5 smrest3
            fl5 b22 m5 b22 fl5 b22 sm5 b22 fl5 b22 m5 b22 fl5 b22 m5 b22 smrest3 b22
@@ -331,13 +359,18 @@
            cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat)
            sbd7 b22 sbd7 dot8 md7 b22 sb7 m5d b22 md5d dot6 smd5d b22 md5d b22 sbd5 b22
            (:alt (:diplomatic sbd5) (:idealised sbd5) (:tatti sb5)
-                 (:comment "Tenor, T. 40, die erste Note soll nicht idealisiert werden, stattdessen wird an dieser Stelle die Note im Bass mit einem Punkt ergänzt.")
-                 (:flag :draft) (:id 12))
+                 ;; Kein Eingriff nötig
+                 ;; (:coordinate-a-b "17. MZ, 10. N")
+                 ;; (:coordinate-c "ST3, T40, 1. N")
+                 (:comment "Tenor, T. 40, die erste Note soll nicht idealisiert werden, stattdessen wird an dieser Stelle die Note im Bass mit einem Punkt ergänzt. Siehe Annotation 4.")
+                 (:flag :draft) (:id 17))
            mrest5
            sb5 b22 m5d b22 sbd5 md8 b22 md8 b22 sb8 b22 m8 b22 md8 b22 sbrest9 b22
            (:alt (:diplomatic sb8) (:idealised sbd8) (:tatti sbd8)
-                 (:comment "Original: Tenor, T. 44, die erste Note hat keinen enharmonischen Punkt.")
-                 (:flag :draft) (:id 13))
+                 (:coordinate-a-b "17. MZ, 19. N")
+                 (:coordinate-c "ST3, T44, 1. N")
+                 (:comment "Original: D.")
+                 (:flag :ready) (:id 14))
            b22 sbd8 dot8 md4 b22 sb4 b22 md5 mrest7 m9 dot10 sm9 b22 sbd9 b22 sbd9
            (:duration-override 1/2) longa5 (:duration-override 1) blbl)
    (:text 90 58
@@ -365,8 +398,10 @@
            (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat)
            b22 sb4 b22 m3 b22 m3 dot4 sm3 b22 m3 b22 m0 b22 m4 b22 m7
            (:alt (:diplomatic dot6) (:idealised dot8)
-                 (:comment "Original: Bass, T. 14, die rhythmische Punktierung der ersten Note steht eine Position tiefer.")
-                 (:flag :draft) (:id 14))
+                 (:coordinate-a-b "19. NZ, nach 8. N")
+                 (:coordinate-c "ST4, T8, 3. N")
+                 (:comment "Original: Die rhythmische Punktierung der ersten Note steht eine Position tiefer.")
+                 (:flag :ready) (:id 15))
            sm7 b22 sb7 b22 sb4 b22 sb7 b22 sbrest7 b22 m8 dot8 sm8 b22 sb4 b22 sb4 b22 m7 dot8 sm7 b22
            m5 b22 sb5 b22 m5 b22 m1 b22 m8 b22 sb8 b22 sb4 b22 sb7 custos5)
    (:text 90 58
@@ -406,8 +441,10 @@
            (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat)
            b22 sbd2 b22
            (:alt (:diplomatic sb5) (:idealised sbd5)
-                 (:comment "Original: Bass, T. 40, die erste Note hat keinen enharmonischen Punkt. Siehe auch die Anmerkungen zu diesem Takt in den anderen Stimmen.")
-                 (:flag :draft) (:id 15))
+                 (:coordinate-a-b "22. MZ, 2. N")
+                 (:coordinate-c "ST4, T40")
+                 (:comment "Original: D. Siehe Annotation 4.")
+                 (:flag :draft) (:id 16))
            b22 mrest5 b22 sb7 b22 m7 b22 sbd7 b22 sbd5 b22 m1 b22 sb3 b22 md1 b22 sb1 b22 sbd1 b22 sbd8 dot8 md8 b22 sb4 b22
            md2 b22 m9 dot10 sm9 b22 m9 b22 brd2 b22
            (:duration-override 1/2) longa5 (:duration-override 1) b38 blbl
