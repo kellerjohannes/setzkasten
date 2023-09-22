@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Mano enarmonica discendente con i semitoni minori, nel principio del tono per\\le sette lettere della mano, con il tono diviso in quattro parti: e come si ha da leggere")
                  (:de "")
-                 (:en "Descending enharmonic hand with semitoni minori in the beginning of the tono through\\the seven letters of the hand, with the _tono_ divided into four parts: as they are to be read")))
+                 (:en "Descending enharmonic hand with semitoni minori in the beginning of the tono through\\the seven letters of the hand, with the tono divided into four parts: as they are to be read")))
    (:section-headings
     (s1 (:alt (:it "da A a G")
               (:de "")
@@ -31,7 +31,7 @@
    (:section-captions
     (s1 (:alt (:it "per natura: la-sol-fa-la-sol\\mi e re ascendino")
               (:de "")
-              (:en "per natura: la-sol-fa-la-sol\\mi a re in ascent")))
+              (:en "per natura: la-sol-fa-la-sol\\mi and re in ascent")))
     (s2 (:alt (:it "per natura: sol-fa-la-sol-fa\\re e ut ascendeno")
               (:de "")
               (:en "per natura: sol-fa-la-sol-fa\\re and ut in ascent")))
