@@ -31,7 +31,7 @@
    (:section-captions
     (s1 (:alt (:it "per natura: la\\per ♭: mi\\per ♮: re")
               (:de "")
-              (:en "")))
+              (:en "per natura: la\\per ♭: mi\\per ♮: re")))
     (s2 (:alt (:it "per ♮: mi")
               (:de "")
               (:en "per natura: la\\per ♭: mi\\per ♮: re")))
