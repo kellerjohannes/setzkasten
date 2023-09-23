@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio delli gradi, delli diesis maggiori enarmonici, ascendenti e discendenti")
                  (:de "")
-                 (:en "Example of the gradi, of the diesis maggiori enarmonici, ascending and descending")))
+                 (:en "Example of the steps of the diesis maggiori enarmonici, ascending and descending")))
    (:section-captions
     (s1 (:alt (:it "diesis\\maggiore")
               (:de "")
