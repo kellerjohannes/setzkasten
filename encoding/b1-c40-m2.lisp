@@ -8,11 +8,13 @@
                  (:en "Example of the steps of the quinte accidentali")))
    (:section-captions
     (s1 (:alt (:it "gradi della prima quinta\\accidentale per semitono\\minore ascendente composto")
+    ;; Kommentar Anne: there is no "ascendente" in this caption in the original.
               (:de "")
               (:en "steps of the first quinta\\accidentale per semitono\\minore composto in ascent")))
     (s2 (:alt (:it "gradi della prima quinta\\accidentale per semitono\\maggiore [ascendente] composto")
+    ;; Kommentar Anne: ascendente is in this caption, but not in the previous one.
               (:de "")
-              (:en "steps of the first quinta\\accidentale per semitono\\maggiore composto [in ascent]")))
+              (:en "steps of the first quinta\\accidentale per semitono\\maggiore composto in ascent")))
     (s3 (:alt (:it "gradi della seconda quinta\\accidentale ascendente\\per semitono minore composto")
               (:de "")
               (:en "steps of the second quinta\\accidentale in ascent\\per semitono minore composto")))
