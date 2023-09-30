@@ -6,7 +6,7 @@
    (:title (:alt (:it "Essempio del salto più che di quarta e de suoi gradi incomposto e composto")
                  ;;Kommentar Anne: soll "incomposto e composto" in "incomposti e composti" korrigiert werden?
                  (:de "")
-                 (:en "Example of the leap più che di quarta and of its incomposti and composti steps")))
+                 (:en "Example of the leap più di quarta and of its incomposti and composti steps")))
    (:section-captions
     ;; Zu prüfen: eine kritische Bemerkung zu »salti« fehlt
     (s1 (:alt (:it "salto di più\\di quarta\\accidentale\\incomposto")
