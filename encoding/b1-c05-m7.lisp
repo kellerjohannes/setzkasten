@@ -13,8 +13,9 @@
     (s2 (:alt (:it "da ♭faBmi ...")
               (:de "")
               (:en "from ♭faBmi ...")
-              (:comment "Darstellung unbefriedigend, ist zu diskutieren.") (:flag :observe) (:id 1)))
+              (:comment "Darstellung unbefriedigend, ist zu diskutieren.") (:flag :observe) (:id 1)))               
     (s3 (:alt (:it "... a C")
+              ;; Kommentar Anne: auch hier würde ich die Silben direkt unter den Noten und unter einander setzen.
               (:de "")
               (:en "... to C")))
     (s4 (:alt (:it "da C a D")
