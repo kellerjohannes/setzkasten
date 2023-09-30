@@ -24,7 +24,7 @@
               (:en "descending\\tono minore\\composto")))
     (s6 (:alt (:it "tono minore\\discendente\\incomposto")
               (:de "")
-              (:en "descending\\tono minore\\composto")))))
+              (:en "descending\\tono minore\\incomposto")))))
   (:data
    (:text 110 58
          (372 1464 "ᴇſſempio del ɢrado del tono minore compoſto et non compoſto."))
