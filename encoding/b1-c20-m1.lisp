@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio di più semitoni maggiori et minori, ascendenti e discendenti,\\composti et incomposti, naturali e accidentali")
                  (:de "")
-                 (:en "Example of more semitoni maggiori and minori, ascending and descending\\composti and incomposti, naturali and accidentali")))
+                 (:en "Example of more semitoni maggiori and minori, ascending and descending,\\composti and incomposti, naturali and accidentali")))
    (:section-captions
     (s1 (:alt (:it "semitono maggiore\\naturale composto")
               (:de "")
@@ -29,6 +29,7 @@
               (:de "")
               (:en "semitono minore\\accidentale incomposto")))
     (s8 (:alt (:it "semitoni maggiori\\accidentali incomposti")
+              ;; Kommentar Anne: Is the step from d-sharp to d-flat dot really maggiore? If the Italian gets corrected, then the English must be corrected too.
               (:de "")
               (:en "semitoni maggiori\\accidentali incomposti")))
     (s9 (:alt (:it "semitono maggiore\\accidentale composto")
