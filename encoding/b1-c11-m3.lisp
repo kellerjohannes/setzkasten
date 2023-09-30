@@ -5,6 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:section-captions
     (s1 (:alt (:it "per ♮ incitato:\\la-sol-fa-la-sol")
+              ;; Kommentar Anne: Die Silben sollen als Text unter den Noten gelegt werden, "per incitato" in der zweiten Zeile, bei allen drei und in allen Sprachen.
               (:de "")
               (:en "per ♮ incitato:\\la-sol-fa-la-sol")))
     (s2 (:alt (:it "per ♭ molle:\\la-sol-fa-mi-re")
