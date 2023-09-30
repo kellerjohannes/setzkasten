@@ -33,7 +33,7 @@
               (:flag :observe) (:id 3)))
     (s7 (:alt (:it "più di quinta\\imperfetta\\accidentale\\incomposto")
               (:de "")
-              (:en "")
+              (:en "più di quinta\\imperfetta\\accidentale\\incomposto")
               (:comment "»accidentale« könnte hier in »naturale« korrigiert werden, abhängig davon, ob man den _quarto ordine_ bzw. die Mischung aus _primo_ und _quarto ordine_ als _naturale_ oder _accidentale_ betrachtet. Siehe 5.43f.")
               (:flag :observe) (:id 4)))))
   (:preamble-lilypond
