@@ -5,17 +5,17 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio di comporre molte seste, et molte terze, da molti detto\\modo di comporre il Faulx Bordon a tre voci")
                  (:de "")
-                 (:en "")))
+                 (:en "Example of the composition of many seste, and many terze, called by many\\the method of composing faulx bordon in three voci")))
    (:voice-labels
     (s1 v1 (:alt (:it "Tenore")
                  (:de "")
-                 (:en "")))
+                 (:en "Tenor")))
     (s1 v2 (:alt (:it "Alto")
                  (:de "")
-                 (:en "")))
+                 (:en "Alto")))
     (s1 v3 (:alt (:it "Soprano")
                  (:de "")
-                 (:en ""))))
+                 (:en "Soprano"))))
    (:voice-order
     (s1 v3 v2 v1)))
   (:preamble-lilypond
