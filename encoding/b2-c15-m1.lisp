@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio della terza maggiore, et come in vari modi\\si può accompagnare")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the terza maggiore, and how it can be\\accompanied in various ways"))))
   (:data
    (:text 110 58
      (221 1740 "Eſſempio della Terza maggiore,et come in uarij modi ſi può accòmpagnare."))
