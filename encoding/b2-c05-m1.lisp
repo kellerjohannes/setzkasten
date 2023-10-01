@@ -6,7 +6,7 @@
    (:title (:alt (:it "Esempio della seconda, et della quarta,\\come si ha da comporre a tre voci al tenore et basso")
                 ;; Kommentar Anne: Ich glaube, dass es "alto, tenore et basso" heissen muss, da im Original es "Al.Ten.et Basso" ist.
                  (:de "")
-                 (:en "Example of the seconda and the quarta,\\and how one must compose in three voci, alto, tenor, and bass")))
+                 (:en "Example of the seconda and the quarta,\\and how they are to be composed in three voci, alto, tenor, and bass")))
    (:section-headings
     (s1 (:alt (:it "Buona")
               (:de "")
