@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio d'andare all'unisono con vari gradi e salti")
                  (:de "")
-                 (:en "Example of going to the unison with various steps and leaps"))))
+                 (:en "Example of going to the unisono with various steps and leaps"))))
   (:data
    (:text 90 58
           (493 1277 "Eſſempio dʼandare allʼᴠniſono con uarij gradi & ſalti."))
