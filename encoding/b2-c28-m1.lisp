@@ -6,23 +6,23 @@
    (:line-headings
     (:alt (:it "Molte annotationi sotto et sopra le due note mi et re\\A due et a più voci si possono comporre")
           (:de "")
-          (:en ""))
+          (:en "Many annotations below and above the two notes mi and re\\which may be composed for two or more voci"))
     nil
     nil
     nil
     (:alt (:it "Molte annotationi sotto et sopra le due note re et mi\\A due et a più voci si possono comporre")
           (:de "")
-          (:en "")))
+          (:en "Many annotation below and above the two notes re and mi\\which may be composed for two or more voci")))
    (:section-captions
     (s10 (:alt (:it "A tre")
                (:de "")
-               (:en "")))
+               (:en "for three")))
     (s11 (:alt (:it "A otto")
-               (:de "")
+               (:de "for eight")
                (:en "")))
     (s28 (:alt (:it "A quattro")
                (:de "")
-               (:en ""))))
+               (:en "for four"))))
    (:voice-order
     (s1 v1 v2)
     (s2 v1 v2)
