@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio della sesta minore in vari modi composta con due tenori")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the sesta minore in composed in various ways for two tenors"))))
   (:data
    (:text 90 58
      (338 1552 "Eſſempio della Seſta minore in uarij modi compoſta con due tenori."))
