@@ -11,7 +11,7 @@
                                    :direction :input)
     (let ((score (eval (read encoding-stream))))
       (multiple-value-bind (simplified-score apparatus-data)
-          (extract-reading score extraction-arguments :diplomatic)
+          (extract-reading score extraction-arguments)
         (with-open-file (apparatus-stream (merge-pathnames *apparatus-export-path-raw*
                                                            (pathname (format nil "app-~a-~a.lisp"
                                                                              filename suffix)))
@@ -20,10 +20,16 @@
                                           :if-does-not-exist :create)
           (print apparatus-data apparatus-stream))
         ;; write tex apparatus here, tex standalone and tex import-fragment, serve filename with suffix
-        (generate-latex-apparatus-standalone (format nil "~a-~a" filename suffix))
-        (generate-latex-apparatus-import-fragments (format nil "~a-~a" filename suffix))
-        (generate-latex-apparatus-import-compact-fragments (format nil "~a-~a" filename suffix))
         (create-score-file backend-instance simplified-score suffix)))))
+
+(defun process-apparatus (filename apparatus-condition)
+  (generate-latex-apparatus-standalone (format nil "~a-~a" filename suffix)
+                                       apparatus-condition)
+  (generate-latex-apparatus-import-fragments (format nil "~a-~a" filename suffix)
+                                             apparatus-condition)
+  (generate-latex-apparatus-import-compact-fragments (format nil "~a-~a" filename suffix)
+                                                     apparatus-condition))
+
 
 ;; for external use, in case other programs want to operate on a score object
 (defun get-parsed-score (filename extraction-arguments)
@@ -35,15 +41,18 @@
       (parse-score
        ;; this is legacy, should be deleted after testing the new apparatus functionality
        ;; (extract-apparatus score-expression extraction-arguments)
-       (extract-reading score-expression extraction-arguments :diplomatic)
+       (extract-reading score-expression extraction-arguments)
        ))))
 
 ;; looping over mission, entry point to everything
+;; filename-stem suffix reading-list backend-instance &optional filter-apparatus
 (defun execute-mission (mission-list)
   (reset-file-list *vicentino-types-backend*)
   (reset-file-list *lilypond-backend-modern*)
   (dolist (item mission-list)
     (process-score (first item) (second item) (third item) (fourth item)))
+  (when (fifth mission-list)
+    (process-apparatus (first item) (fifth item)))
   'done)
 
 
@@ -198,8 +207,8 @@
 
 (defparameter *working*
   `(
-    ("b1-c05-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend*)
-    ("b1-c05-m1" "crit" (:critical :barre :diplomatic) ,*vicentino-types-backend*)
+    ("b1-c05-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* :barre)
+    ("b1-c05-m1" "crit" (:critical :barre :diplomatic) ,*vicentino-types-backend* :critical)
     ("b1-c05-m1" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-modern*)
     ("b1-c05-m1" "norm-en" (:en :critical :barre :diplomatic) ,*lilypond-backend-modern*)
     ("b1-c05-m1" "norm-de" (:de :critical :barre :diplomatic) ,*lilypond-backend-modern*)

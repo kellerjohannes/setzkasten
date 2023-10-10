@@ -62,7 +62,7 @@
           (getf meta-data-plist :filename)
           (getf meta-data-plist :alternative-numbering)
           (make-string-latex-friendly (getf meta-data-plist :comment))
-          (prettify-keyword (getf meta-data-plist :reference-reading))))
+          (prettify-keyword (getf meta-data-plist :filter))))
 
 (defun generate-latex-title-compact (meta-data-plist)
   (format nil "
@@ -71,13 +71,13 @@
   \\vspace{3mm}
 
   Alternative Nummerierung: »\\textsf{~a}«\\\\
-  Hierarchie der Lesarten: »\\textsf{~a}«\\\\
+  Hierarchie der Lesarten: \\textsf{~a}\\\\
   Bemerkung: »\\textsf{~a}«\\\\
 
 \\end{center}"
           (getf meta-data-plist :filename)
           (getf meta-data-plist :alternative-numbering)
-          ":barre"
+          (prettify-keyword (getf meta-data-plist :filter))
           (make-string-latex-friendly (getf meta-data-plist :comment))))
 
 (defparameter *latex-table-header*
@@ -237,11 +237,10 @@
 (defun generate-latex-table-line-compact (data)
   (let ((result ""))
     (dolist (entry data result)
-      (when (coordinates-exist-p (rest entry))
-        (setf result
-              (concatenate 'string
-                           result
-                           (generate-latex-table-generic-line-compact (rest entry))))))))
+      (setf result
+            (concatenate 'string
+                         result
+                         (generate-latex-table-generic-line-compact (rest entry)))))))
 
 (defun generate-latex-table (data)
   (concatenate 'string
@@ -275,6 +274,8 @@
                          (generate-latex-table data)
                          ""))))))
 
+(defparameter *apparatus-item-types* '(:music :type-imitation-text :normalised-text))
+
 (defun generate-latex-entry-compact (filename)
   (with-open-file (in-file (merge-pathnames *apparatus-export-path-raw*
                                             (pathname (format nil "app-~a.lisp" filename))))
@@ -282,9 +283,11 @@
       (let ((data (read in-file)))
         (concatenate 'string
                      (generate-latex-title-compact (extract-meta-data data))
-                     (if (> (length data) 1)
-                         (generate-latex-table-compact data)
-                         ""))))))
+                     (generate-latex-table-compact (remove-if-not
+                                                    (lambda (item)
+                                                      (member item *apparatus-item-types*))
+                                                    data
+                                                    :key #'first)))))))
 
 (defun generate-latex-apparatus-import-compact-fragments (filename)
   (with-open-file (latex-stream

@@ -6,7 +6,6 @@
    (alternative-numbering :initform nil :accessor alternative-numbering)
    (meta-comment :initform nil :accessor meta-comment)
    (filter :initform nil :initarg :filter :accessor filter)
-   (reference-reading :initform nil :initarg :reference-reading :accessor reference-reading)
    (in-header-p :initform nil :accessor in-header-p)
    (line-counter :initform 0 :accessor line-counter)
    (glyph-counter :initform 0 :accessor glyph-counter)
@@ -20,8 +19,8 @@
    (score-text-section :initform nil :accessor score-text-section)
    (score-text-voice :initform nil :accessor score-text-voice)
    (score-line-heading-counter :initform 0 :accessor score-line-heading-counter)
-   (coordinate-a-b :initform nil :accessor coordinate-a-b)
-   (coordinate-c :initform nil :accessor coordinate-c)
+   (coordinate-barre :initform nil :accessor coordinate-barre)
+   (coordinate-norm :initform nil :accessor coordinate-norm)
    (critical-comment :initform nil :accessor critical-comment)
    (flag :initform nil :accessor flag)
    (reference-content :initform nil :accessor reference-content)))
@@ -48,8 +47,8 @@
         :original (reference-content state)
         :replacement (rest reading)
         :reading reading-tag
-        :coord-barre (coordinate-a-b state)
-        :coord-norm (coordinate-c state)
+        :coord-barre (coordinate-barre state)
+        :coord-norm (coordinate-norm state)
         :comment (critical-comment state)
         :flag (flag state)))
 
@@ -61,8 +60,8 @@
         :original (reference-content state)
         :replacement (rest reading)
         :reading reading-tag
-        :coord-barre (coordinate-a-b state)
-        :coord-norm (coordinate-c state)
+        :coord-barre (coordinate-barre state)
+        :coord-norm (coordinate-norm state)
         :comment (critical-comment state)
         :flag (flag state)))
 
@@ -75,8 +74,8 @@
                                    (when (or (eq (score-text-type state) :voice-label)
                                              (eq (score-text-type state) :lyrics))
                                      (score-text-voice state)))
-        :coord-barre (coordinate-a-b state)
-        :coord-norm (coordinate-c state)
+        :coord-barre (coordinate-barre state)
+        :coord-norm (coordinate-norm state)
         :comment (critical-comment state)
         :flag (flag state)))
 
@@ -99,25 +98,20 @@
              (rest candidate))
             (t (loop-alt-expression expression (rest filter) state))))))
 
-(defmethod find-reference-reading (expression (state apparatus-state))
-  (let ((reference (find (reference-reading state) (rest expression) :key #'first)))
-    (when reference
-      (setf (reference-content state) (rest reference)))))
-
 (defmethod find-comment (expression (state apparatus-state))
   (let ((comment (find :comment (rest expression) :key #'first)))
     (when comment
       (setf (critical-comment state) (second comment)))))
 
-(defmethod find-coordinate-a-b (expression (state apparatus-state))
+(defmethod find-coordinate-barre (expression (state apparatus-state))
   (let ((coordinate (find :coord-barre (rest expression) :key #'first)))
     (when coordinate
-      (setf (coordinate-a-b state) (second coordinate)))))
+      (setf (coordinate-barre state) (second coordinate)))))
 
-(defmethod find-coordinate-c (expression (state apparatus-state))
+(defmethod find-coordinate-norm (expression (state apparatus-state))
   (let ((coordinate (find :coord-norm (rest expression) :key #'first)))
     (when coordinate
-      (setf (coordinate-c state) (second coordinate)))))
+      (setf (coordinate-norm state) (second coordinate)))))
 
 (defmethod find-id (expression (state apparatus-state))
   (let ((id (find :id (rest expression) :key #'first)))
@@ -132,17 +126,16 @@
 (defmethod resolve-reading (expression (state apparatus-state))
   (when (eq (first expression) :alt)
     (find-comment expression state)
-    (find-coordinate-a-b expression state)
-    (find-coordinate-c expression state)
+    (find-coordinate-barre expression state)
+    (find-coordinate-norm expression state)
     (find-id expression state)
-    (find-reference-reading expression state)
     (find-flag expression state)
     (count-resolved-elements (loop-alt-expression (rest expression) (filter state) state) state)))
 
 (defmethod reset-reading-state ((state apparatus-state))
   (setf (critical-comment state) nil)
-  (setf (coordinate-a-b state) nil)
-  (setf (coordinate-c state) nil)
+  (setf (coordinate-barre state) nil)
+  (setf (coordinate-norm state) nil)
   (setf (flag state) nil)
   (setf (reference-content state) nil))
 
@@ -217,15 +210,14 @@
               :filename (filename state)
               :alternative-numbering (alternative-numbering state)
               :comment (meta-comment state)
-              :reference-reading (reference-reading state))))
+              :filter (filter state))))
 
 (defmethod dump-apparatus-data ((state apparatus-state))
   (append (output-meta-data state)
           (data state)))
 
-(defun extract-reading (score extraction-arguments reference-reading)
+(defun extract-reading (score extraction-arguments)
   (let ((state (make-instance 'apparatus-state
-                              :reference-reading reference-reading
                               :filter extraction-arguments)))
     (values (loop-score score state) (dump-apparatus-data state))))
 
@@ -234,8 +226,7 @@
 '(:metadata
   :filename "b5-c53-m2"
   :alternative-numbering "m5.058"
-  :comment "q021_s256, rotation: 0.94, origin: 932"
-  :reference-reading :diplomatic)
+  :comment "q021_s256, rotation: 0.94, origin: 932")
 
 ;; example for a note idealisation
 '(:music
@@ -246,7 +237,7 @@
   :score-voice v2
   :original (sh5 sb5)
   :replacement (b38 b38)
-  :reading :critical
+  :filter :critical
   :coord-barre "2. Zeile, 3. Note"
   :coord-norm "Section 3, 2. Note"
   :comment "C♯ ist hier fragwürdig, wird entfernt."
@@ -258,7 +249,7 @@
   :type-imitation-text-field 1
   :original "tono"
   :replacement "sem.tono"
-  :reading :critical
+  :filter :critical
   :comment "\"sem.\" ergänzt."
   :flag :suggestion-jk)
 
@@ -267,76 +258,3 @@
   :score-text-location (:section-headings s2)
   :comment "Im Original fehlt hier \"semitono minore\"."
   :flag :suggestion-jk)
-
-
-
-
-
-
-
-
-
-;; all these parameters are obsolete (see `apparatus-state')
-(defparameter *apparatus-string* nil)
-(defparameter *glyph-counter* nil)
-(defparameter *musical-element-counter* nil)
-(defparameter *line-counter* nil)
-
-;; obsolete, only here for temporary legacy
-(defun count-elements (expression)
-  (dolist (item expression expression)
-    (incf *glyph-counter*)
-    (when (member item *musical-elements*) (incf *musical-element-counter*))))
-
-;; obsolete, only here for temporary legacy
-(defun append-apparatus-line (line)
-  (setf *apparatus-string* (concatenate 'string *apparatus-string* line)))
-
-;; obsolete, only here for temporary legacy
-(defun generate-apparatus-item (line glyph element reading content)
-  (format nil "Line ~a, glyph ~a (element ~a): reading ~a used ~s.~%"
-          line glyph element reading content))
-
-;; obsolete, only here for temporary legacy
-(defun loop-alt (alt-list filter)
-  (unless (null filter)
-    (let ((candidate (find (first filter) alt-list :key #'first)))
-      (cond (candidate
-             (append-apparatus-line
-              (generate-apparatus-item *line-counter* *glyph-counter* *musical-element-counter*
-                                       (first filter)
-                                       (rest candidate)))
-             (rest candidate))
-            (t (loop-alt alt-list (rest filter)))))))
-
-
-;; obsolete, only here for temporary legacy
-(defun resolve-alt (expression filter)
-  (cond ((eq (first expression) :alt)
-         (count-elements (loop-alt (rest expression) filter)))
-        (t (format t "~&Error in apparatus: no :alt-expression."))))
-
-
-;; obsolete, only here for temporary legacy
-(defun loop-data (restdata filter)
-  (cond ((null restdata) nil)
-        ((atom (first restdata))
-         (let ((item (first restdata)))
-           (incf *glyph-counter*)
-           (when (member item *musical-elements*) (incf *musical-element-counter*))
-           (when (or (eq item 'music) (eq item 'text))
-             (setf *glyph-counter* 0 *musical-element-counter* 0)
-             (incf *line-counter*))
-           (cons item (loop-data (rest restdata) filter))))
-        ((eq (first (first restdata)) :alt) (append (resolve-alt (first restdata) filter)
-                                                    (loop-data (rest restdata) filter)))
-        (t (cons (loop-data (first restdata) filter)
-                 (loop-data (rest restdata) filter)))))
-
-;; obsolete, only here for temporary legacy
-(defun extract-apparatus (score extraction-arguments)
-  (let ((*apparatus-string* nil)
-        (*line-counter* 0)
-        (*glyph-counter* 0)
-        (*musical-element-counter* 0))
-    (values (loop-data score extraction-arguments) *apparatus-string*)))
