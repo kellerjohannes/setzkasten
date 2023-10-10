@@ -11,18 +11,7 @@
                                    :direction :input)
     (let ((score (eval (read encoding-stream))))
       (multiple-value-bind (simplified-score apparatus-data)
-          ;; this is legacy, should be removed after testing the new apparatus functionality
-          ;; (extract-apparatus score extraction-arguments)
           (extract-reading score extraction-arguments :diplomatic)
-        ;; this is legacy, should be removed after testing the new apparatus system
-        ;; (with-open-file (apparatus-stream (merge-pathnames *apparatus-export-path*
-        ;;                                                    (pathname (format nil "app-~a-~a.txt"
-        ;;                                                                      filename suffix)))
-        ;;                                   :direction :output
-        ;;                                   :if-exists :supersede
-        ;;                                   :if-does-not-exist :create)
-        ;;   (format apparatus-stream "Auto-generated critical apparatus for file ~a-~a:~%~%~s"
-        ;;           filename suffix apparatus-string))
         (with-open-file (apparatus-stream (merge-pathnames *apparatus-export-path-raw*
                                                            (pathname (format nil "app-~a-~a.lisp"
                                                                              filename suffix)))

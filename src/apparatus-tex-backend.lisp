@@ -70,12 +70,14 @@
   {\\Large\\fbox{~a}}
   \\vspace{3mm}
 
-  Alternative Nummerierung: \\textsf{~a}\\\\
-  Bemerkung: \\textsf{~a}\\\\
+  Alternative Nummerierung: »\\textsf{~a}«\\\\
+  Hierarchie der Lesarten: »\\textsf{~a}«\\\\
+  Bemerkung: »\\textsf{~a}«\\\\
 
 \\end{center}"
           (getf meta-data-plist :filename)
           (getf meta-data-plist :alternative-numbering)
+          ":barre"
           (make-string-latex-friendly (getf meta-data-plist :comment))))
 
 (defparameter *latex-table-header*
@@ -105,7 +107,7 @@
 \\begin{longtable}{p{5mm}p{4cm}p{4cm}p{7cm}}
   \\toprule
   ID &
-  Koord. Quelle &
+  Koord. Barré &
   Koord. Normalisierung &
   Kommentar \\\\
   \\midrule
@@ -230,7 +232,7 @@
                            (otherwise "")))))))
 
 (defun coordinates-exist-p (entry)
-  (or (getf entry :coordinate-c) (getf entry :coord-barre)))
+  (or (getf entry :coord-norm) (getf entry :coord-barre)))
 
 (defun generate-latex-table-line-compact (data)
   (let ((result ""))
