@@ -13,7 +13,7 @@
            (:voice v1)
            (:section s1)
            cclef7 b22 sb4 b38 m3 b38 m1 b38 m4
-           (:alt (:diplomatic dot6) (:idealised dot4)
+           (:alt (:diplomatic dot6) (:critical dot4)
                  (:comment "Original: Die erste Punktierung steht eine Position höher.")
                  (:flag :draft) (:id 1))
            sm5 sm6 sm7

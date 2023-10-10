@@ -26,7 +26,7 @@
    (:music 2233
            (:voice v1)
            (:section s1) cclef1 b38
-           (:alt (:diplomatic mrest7) (:idealised mrest5)
+           (:alt (:diplomatic mrest7) (:critical mrest5)
                  (:comment "Original: Minima-Pause steht eine Position höher.")
                  (:flag :draft) (:id 1))
            sb5 b22 m4 b22 sb5 b38 bl
@@ -50,7 +50,7 @@
            (:section s1) cclef7 b38 sb6 b38 sb5 b38 sb4 b38 b22 bl
            (:section s2) b22 b38 m5 b38 m7 b38 sb6 b38 sb5 b22 b22 bl
            (:section s3) b38
-           (:alt (:diplomatic mrest7) (:idealised smrest7)
+           (:alt (:diplomatic mrest7) (:critical smrest7)
                  (:comment "Original: Die Pause hat den Wert einer Minima.")
                  (:flag :draft) (:id 2))
            m7 b38 sm9 b38 sb8 b38 sb7 b38 b22 bl

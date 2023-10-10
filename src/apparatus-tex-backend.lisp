@@ -158,8 +158,8 @@
 
 "
           (getf data :id)
-          (getf data :coordinate-a-b)
-          (getf data :coordinate-c)
+          (getf data :coord-barre)
+          (getf data :coord-norm)
           (make-string-latex-friendly (generate-latex-formatting (getf data :comment)))
           ))
 
@@ -230,7 +230,7 @@
                            (otherwise "")))))))
 
 (defun coordinates-exist-p (entry)
-  (or (getf entry :coordinate-c) (getf entry :coordinate-a-b)))
+  (or (getf entry :coordinate-c) (getf entry :coord-barre)))
 
 (defun generate-latex-table-line-compact (data)
   (let ((result ""))

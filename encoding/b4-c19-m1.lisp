@@ -58,7 +58,7 @@
            (:section s6) b38 b22 m5 dot6 sm7 b22 nat6 b22 sb6 b38 sb7 b38 b38 bl
            (:section s7) b38 b22 cclef7 (:key-signature nil nil nil nil nil nil nil) b38 b22 mrest7 b38
            (:alt (:diplomatic sb7)
-                 (:idealised sb8)
+                 (:critical sb8)
                  (:comment "Original: Die erste Note der oberen Stimme ist ein C. Alternativ könnte dieses Beispiel als zwei separate einstimmige Beispiele gelesen werden, wie es die Überschrift suggeriert.")
                  (:flag :suggestion) (:id 1))
            b38 m5 b22 fl6 b22 m6 b38 sb4 b38 m5 b38 b38 b38 bl b38 b125)

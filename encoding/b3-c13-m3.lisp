@@ -106,7 +106,7 @@
            sb2 sb3 sb4 sb5 sb6 sb7 sb8 (:divider :regular) sb9 bl
            b22 sb2 b22 sb9 b22 bl
            (:section s7) (:newline) sb3 sb4 sb5 sb6 sb7 sb8
-           (:alt (:diplomatic sb8) (:idealised)
+           (:alt (:diplomatic sb8) (:critical)
                  (:comment "Original: A verdoppelt.") (:flag :draft) (:id 1))
            sb9 (:divider :regular) sb10 bl
            b38 sb3 b38 sb10 bl)))

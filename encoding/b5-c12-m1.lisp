@@ -70,7 +70,7 @@
            fl5 sbd5 fl5 sbd5 bl
            (:section s2) fl5 sbd5 bl
            (:section s3) fl5
-           (:alt (:diplomatic sb5) (:idealised sbd5)
+           (:alt (:diplomatic sb5) (:critical sbd5)
                  (:comment "Original: Die erste Note in der oberen Stimme hat keinen enharmonischen Punkt.")
                  (:flag :draft) (:id 1))
            fl5 (:divider :regular) sbd5 bl
@@ -79,7 +79,7 @@
            (:section s5) (:newline) cclef3 sh2 sb2 (:divider :regular) sb3 bl
            sbd3
            (:alt (:diplomatic fl4 sb4)
-                 (:idealised sh3 sb3)
+                 (:critical sh3 sb3)
                  (:comment "Original: Die vierte Note in der oberen Stimme ist ein D♭.")
                  (:flag :draft) (:id 2))
            b22 bl
@@ -97,7 +97,7 @@
            (:section s1) (:f-clef) max7 fclef7 sbd7 (:divider :regular) sb7 bl
 
            (:alt (:diplomatic sh7 sb7)
-                 (:idealised sh6 sb6)
+                 (:critical sh6 sb6)
                  (:comment "Original: Die dritte Note in der unteren Stimme ist ein F♯.")
                  (:flag :draft) (:id 3))
            sbd6 bl
@@ -105,12 +105,12 @@
            (:section s3) b22 sbd4 b22 (:divider :regular) sb4 b22 bl
            b22
            (:alt (:diplomatic sbd3)
-                 (:idealised sh3 sb3)
+                 (:critical sh3 sb3)
                  (:comment "Original: Die dritte Note in der unteren Stimme ist ein Ḃ♮.")
                  (:flag :draft) (:id 4))
 
            (:alt (:diplomatic sb3)
-                 (:idealised sbd3)
+                 (:critical sbd3)
                  (:comment "Original: die vierte Note in der unteren Stimme ist ein B♮.")
                  (:flag :draft) (:id 5))
            b22 bl
@@ -127,7 +127,7 @@
           (565 nil "6.min.")
           (752 nil "6.mag.")
           (1097 nil "ᴛerze mi.")
-          (1367 nil (:alt (:diplomatic "3.min.") (:idealised "3.mag.")
+          (1367 nil (:alt (:diplomatic "3.min.") (:critical "3.mag.")
                           (:comment "Original: »3.min.«")
                           (:flag :draft) (:id 6)))
           (1658 nil "6.min.")

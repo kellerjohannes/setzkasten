@@ -136,33 +136,33 @@
            (:section s5) (:f-clef) max7 fclef7 b22 fl6 b22 sb6 b22 fl6 sbd6 b22 sb6 b22 sbd6 bl
            (:section s6) sbd6 b22
            (:alt (:diplomatic sb7)
-                 (:idealised sh6 sb6)
+                 (:critical sh6 sb6)
                  (:comment "Original: Die zweite Note ist ein F.")
                  (:flag :draft) (:id 1))
            b22
            (:alt (:diplomatic sbd7)
-                 (:idealised sb7)
+                 (:critical sb7)
                  (:comment "Original: Die dritte Note ist ein Ḟ.")
                  (:flag :draft) (:id 2))
            b22
            (:alt (:diplomatic sh7 b22 sb7)
-                 (:idealised b38 b22 sbd7)
+                 (:critical b38 b22 sbd7)
                  (:comment "Original: Die vierte Note ist ein F♯.")
                  (:flag :draft) (:id 3))
            b22 fl8 sb8 bl
            (:section s7) (:newline) fl8 b22 sb8 b22 fl8 b22 sbd8 b22
            (:alt (:diplomatic sbd8)
-                 (:idealised sb8)
+                 (:critical sb8)
                  (:comment "Original: Die dritte Note ist ein Ġ.")
                  (:flag :draft) (:id 4))
            b22
            (:alt (:diplomatic sh8 b22 sb8)
-                 (:idealised b38 b22 sbd8)
+                 (:critical b38 b22 sbd8)
                  (:comment "Original: Die vierte Note ist ein G♯.")
                  (:flag :draft) (:id 5))
            b22 fl9 b22 sb9 bl
            (:section s8) b22
-           (:alt (:diplomatic fl8) (:idealised fl9)
+           (:alt (:diplomatic fl8) (:critical fl9)
                  (:comment "Original: Das erste ♭ steht eine Position tiefer.")
                  (:flag :draft) (:id 6))
            sb9 sh8 sb8 sbd8 fl8 sbd8 fl8 sb8 bl)
@@ -192,7 +192,7 @@
    (:text 100 58
      (54 nil "d.mi.d.mi.d.mi.d.ma.")
      ;; Von der Bibelgruppe bestätigt.
-     (:alt (:diplomatic (570 nil "d.mi.d.mi.d.mi.d.mi.")) (:idealised (570 nil "d.mi.d.mi.d.mi.")))
+     (:alt (:diplomatic (570 nil "d.mi.d.mi.d.mi.d.mi.")) (:critical (570 nil "d.mi.d.mi.d.mi.")))
      (1050 nil "di.mi.di.mi.di.ma.d.mi.")
      (1659 nil "di.mi.d.mi.di.ma.d.mi."))
    (:text 120 58
@@ -209,7 +209,7 @@
            (:section s14) fl3 b22 sb3 b22 sh2 b22 sb2 b22 sbd2 b22 fl2 b22 sbd2 b22 fl2 b22 sb2 bl)
    (:text 90 58
      ;; Von der Bibelgruppe bestätigt
-     (:alt (:diplomatic (50 nil "d.mi.d.mi.d.mi.d.mi.")) (:idealised (50 nil "d.mi.d.mi.d.mi.")))
+     (:alt (:diplomatic (50 nil "d.mi.d.mi.d.mi.d.mi.")) (:critical (50 nil "d.mi.d.mi.d.mi.")))
      (596 nil "di.mi. di.mi. di.ma. di.mi."))
    (:text 70 58
      (93 nil "sem. ᴄro. acc.")

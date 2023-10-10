@@ -115,7 +115,7 @@
            ;;   hier ein fis zu ergänzen
            (:section s1) cclef1 mrest5 sb5
            (:alt (:diplomatic  )
-                 (:idealised  )
+                 (:critical  )
                  (:comment "Hier kann die Ergänzung eines ♯ diskutiert werden.")
                  (:flag :observe) (:id 1))
            m4 sb5 bl

@@ -73,9 +73,9 @@
            (:section s2)
            sb3 b22 sbd3 b22 sh3 b22 sb3 b22
            (:alt (:diplomatic fl4 b22 sbd4)
-                 (:idealised fl4 b22 sbd4)
-                 (:coordinate-a-b "1. MZ, 9. N")
-                 (:coordinate-c "S2, 4. N")
+                 (:critical fl4 b22 sbd4)
+                 (:coord-barre "1. MZ, 9. N")
+                 (:coord-norm "S2, 4. N")
                  (:comment "Dieses Ċ♭ wird von Vicentino nicht kommentiert, kommt aber beispielsweise in b5-c52-m2-s12 vor, wo es eindeutig als klanglich austauschbar mit B♯ (_Csolfaut secondo in terzo ordine_) in Erscheinung tritt.")
                  (:flag :ready) (:id 1))
            b22 sb4 bl
@@ -117,9 +117,9 @@
           (664 243 "la diſcende")
           (982 527
                (:alt (:diplomatic "per ♭.fa.re.mi.fa.re.")
-                     (:idealised "per ♭.ut.re.mi.fa.re.")
-                     (:coordinate-a-b "2. TZ unter 2. MZ, 3. TE")
-                     (:coordinate-c "S7, US, 2. Z")
+                     (:critical "per ♭.ut.re.mi.fa.re.")
+                     (:coord-barre "2. TZ unter 2. MZ, 3. TE")
+                     (:coord-norm "S7, US, 2. Z")
                      (:comment "Original: »per ♭.fa.re.mi.fa.re.«.")
                      (:flag :ready) (:id 2)))
           (1529 557 "per ♭.re.mi.fa.re.mi."))

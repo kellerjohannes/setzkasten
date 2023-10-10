@@ -62,6 +62,6 @@
            (:section s8) cclef3 (:key-signature nil nil nil nil nil nil nil) sbd2 fl7
            ;; Das ist keine Quinte, soll aber die manualverbindende Quinte abwärts sein, d.h.
            ;; diese Idealisierung ist dringend empfohlen. Mit Luigi abzugleichen.
-           (:alt (:diplomatic sbd7) (:idealised sb7)) bl
+           (:alt (:diplomatic sbd7) (:critical sb7)) bl
            (:section s9) sh2 sb2 fl7 sbd7 bl
            (:section s10) sb2 sh6 sb6 bl)))

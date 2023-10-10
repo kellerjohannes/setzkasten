@@ -50,7 +50,7 @@
            (:section s2) b22 mrest3 b22 sb4 m3 sb4 b22 bl
            (:section s3) mrest5 b22 sb6
            (:alt (:diplomatic)
-                 (:idealised nat5)
+                 (:critical nat5)
                  (:comment "Offene Frage, ob diese Idealisierung vorgenommen werden soll oder nicht.")
                  (:flag :suggestion) (:id 1))
            m5 sb6 b22 bl

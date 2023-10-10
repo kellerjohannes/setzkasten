@@ -71,12 +71,12 @@
            (:voice v2)
            (:section s1) (:f-clef) max7 fclef7 b22
            (:alt (:diplomatic fl8 b22 sbd8)
-                 (:idealised fl9 b22 sbd9)
+                 (:critical fl9 b22 sbd9)
                  (:comment "Original: Die erste Note der unteren Stimme ist ein  Ġ♭.")
                  (:flag :draft) (:id 1))
            b22
            (:alt (:diplomatic fl8 b22 sb8)
-                 (:idealised fl9 b22 sb9)
+                 (:critical fl9 b22 sb9)
                  (:comment "Original: Die zweite Note der unteren Stimme ist ein G♭.")
                  (:flag :draft) (:id 2))
            b22 bl
@@ -98,18 +98,18 @@
            (:section s6) b38 b22 fl4 b22 sbd4 b38 b38 b22 bl
            (:section s7) b38 b38 sh4 b38 sb4 b38 (:divider :regular)
            (:alt (:diplomatic fl4 b22 sb4)
-                 (:idealised fl5 b22 sb5)
+                 (:critical fl5 b22 sb5)
                  (:comment "Original: Die zweite Note in der oberen Stimme ist ein G♭.")
                  (:flag :draft) (:id 3))
            b38 b38 bl
            b38
            (:alt (:diplomatic fl4 b38 sbd4)
-                 (:idealised fl5 b38 sbd5)
+                 (:critical fl5 b38 sbd5)
                  (:comment "Original: Die dritte Note in der oberen Stimme ist ein Ġ♭.")
                  (:flag :draft) (:id 4))
            b38
            (:alt (:diplomatic sb4)
-                 (:idealised sb5)
+                 (:critical sb5)
                  (:comment "Original: Die vierte Note in der oberen Stimme ist ein A.")
                  (:flag :draft) (:id 5))
            b38 b22 bl

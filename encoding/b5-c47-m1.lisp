@@ -111,14 +111,14 @@
      (127 1933 "Queſti ſono i toni & ſemitoni Enarmonici ᴄromatici,in quinto & in terzo ordine."))
    (:text 100 58
      (166 nil "to.acc.")
-     (454 nil (:alt (:diplomatic "to.acc.") (:idealised "se.acc.")
+     (454 nil (:alt (:diplomatic "to.acc.") (:critical "se.acc.")
                     (:comment "Original: »to.acc«") (:flag :draft) (:id 6)))
-     (752 nil (:alt (:diplomatic "se.acc.") (:idealised "to.acc.")
+     (752 nil (:alt (:diplomatic "se.acc.") (:critical "to.acc.")
                     (:comment "Original: »se.acc.") (:flag :draft) (:id 7)))
      (1062 nil "to.acc.")
-     (1357 nil (:alt (:diplomatic "to.acc.") (:idealised "se.acc.")
+     (1357 nil (:alt (:diplomatic "to.acc.") (:critical "se.acc.")
                      (:comment "Original: »to.acc.«") (:flag :draft) (:id 8)))
-     (1638 nil (:alt (:diplomatic "se.acc.") (:idealised "to.acc.")
+     (1638 nil (:alt (:diplomatic "se.acc.") (:critical "to.acc.")
                      (:comment "Original: »se.acc.«") (:flag :draft) (:id 9)))
      (1930 nil "to.acc."))
    (:music 2183
@@ -150,7 +150,7 @@
    (:music 2255
            (:section s8) (:newline) (:f-clef) max7 fclef7 b22 fl9 b22
            ;; Diese Idealisierung wurde von der Bibelgruppe bestätigt
-           (:alt (:diplomatic sb9) (:idealised sbd9)
+           (:alt (:diplomatic sb9) (:critical sbd9)
                  (:comment "Original: Die Erste Note hat keinen Punkt.")
                  (:flag :draft) (:id 10))
            b22 fl8 b22 sbd8 bl
@@ -199,7 +199,7 @@
      (1064 nil "to.nat.")
      (1366 nil "to.nat.")
      (1657 nil "se.nat.")
-     (:alt (:diplomatic (1973 nil "se.nat.")) (:idealised (1973 nil "to.nat."))
+     (:alt (:diplomatic (1973 nil "se.nat.")) (:critical (1973 nil "to.nat."))
            (:comment "Original: »se.nat.«") (:flag :draft) (:id 11)))
    (:music 2244
            (:section s22) (:newline) (:f-clef) max7 fclef7 b38 sbd9 b22 b38 sbd8 b22 b22 bl

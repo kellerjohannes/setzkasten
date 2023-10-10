@@ -40,13 +40,13 @@
            (:section s1) (:f-clef) max7 fclef7 b22 sh3 sb3 fl5 sbd5 sh5 sb5 sh6 sb6 fl8 sbd8 sh8 sb8 sh9 sb9 sh10 sb10 b22 bl
            (:section s2) b22 sh3 sb3 sh4 sb4 sh5 sb5 sh6 sb6 sh7 sb7 sh8 sb8
            (:alt (:diplomatic)
-                 (:idealised sh9 sb9)
+                 (:critical sh9 sb9)
                  (:comment "Original: Die zweitletzte Note fehlt.")
                  (:flag :draft) (:id 1))
            sh10 sb10 b22 bl
            (:section s3)
            (:alt (:diplomatic b22)
-                 (:idealised sh3 sb3)
+                 (:critical sh3 sb3)
                  (:comment "Original: Die erste Note fehlt.")
                  (:flag :draft) (:id 2))
            sh3 fl5 sbd5 fl6 sbd6 sh6 sb6 b22 custos8)
@@ -57,7 +57,7 @@
    (:music 2213
            (:f-clef) max7 fclef7 fl8 sbd8 fl9 sbd9 fl10
            (:alt (:diplomatic sb10)
-                 (:idealised sbd10)
+                 (:critical sbd10)
                  (:comment "Original: Die zweitletzte Note ist ein B♭.")
                  (:flag :draft) (:id 3))
            sh10 sb10 b22 bl
@@ -69,12 +69,12 @@
    (:music 2215
            (:section s6) (:f-clef) max7 fclef7 b38 sh3 sb3 b22 fl5 b22 sbd5 b22 fl6 b22 sbd6 b22 sbd7 b22 fl8 b22 sbd8 b22
            (:alt (:diplomatic fl9 b22 sb9)
-                 (:idealised fl9 b22 sbd9)
+                 (:critical fl9 b22 sbd9)
                  (:comment "Original: Die drittletzte Note ist ein A♭.")
                  (:flag :draft) (:id 4))
 
            (:alt (:diplomatic fl10 sb10)
-                 (:idealised fl10 sbd10)
+                 (:critical fl10 sbd10)
                  (:comment "Original: Die zweitletzte Note ist ein B♭.")
                  (:flag :draft) (:id 5))
            b22 sh10 b22 sb10 b38 bl

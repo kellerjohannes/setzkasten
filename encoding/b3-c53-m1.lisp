@@ -98,7 +98,7 @@
            cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat)
            b38 sb7 dot8 m6 b38 br6 sh4 (:divider :regular) br4 b38 blbl b38 fl5 b38
            (:alt (:diplomatic br5)
-                 (:idealised br5)
+                 (:critical br5)
                  (:comment "Textunterlegung: Dieses G♭ im Sopran wird als Andeutung einer Fortsetzung dieses Madrigals mit einem zweiten Teil interpretiert. Für die Aufnahme wurde eine Silbe benötigt, deshalb wird hier ein hypothetisches »Deh« ergänzt.")
                  (:flag :draft) (:id 0))
            b38 b38 b22
@@ -111,11 +111,11 @@
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat)
            b38 met-imperf-min-dim b38 sb6 b22 sb6 b38 sbd6 b38 md5 b38 md5 b38 m7 b38 m8 b38 m6 dot6 sm7 b38 m8 b38 m8 b38 fl9 b22 sb9 b22 fl9 b22 sb9 b38 sbrest9
            b38 br9 b22 sbd9 dot10
-           (:alt (:diplomatic m9) (:tatti md9) (:idealised md9)
+           (:alt (:diplomatic m9) (:tatti md9) (:critical md9)
                  (:comment "Original: Alt, T. 7, zweite Note hat keinen enharmonischen Punkt.")
                  (:flag :draft) (:id 1))
            sh9
-           (:alt (:diplomatic md9) (:tatti m9) (:idealised m9)
+           (:alt (:diplomatic md9) (:tatti m9) (:critical m9)
                  (:comment "Original: Alt, T. 8, erste Note hat einen enharmonischen Punkt.")
                  (:flag :draft) (:id 2))
            sh9 m9 b38 sbd9 b38 m9 b38 b38 b38)
@@ -171,7 +171,7 @@
    (:music 2232
            (:voice v3)
            cclef7
-           (:alt (:diplomatic fl7) (:idealised fl6)
+           (:alt (:diplomatic fl7) (:critical fl6)
                  (:comment "Original: Tenor, T. 1, ♭ in der Vorzeichnung steht eine Position höher.")
                  (:flag :draft) (:id 3))
            (:key-signature nil nil nil nil nil nil :flat)

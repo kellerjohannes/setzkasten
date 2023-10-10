@@ -45,7 +45,7 @@
            sb4 b22 fl5 b22 sb5 bl
            (:section s5)
            (:alt (:diplomatic sb5 b22 sh4 b22 sb4)
-                 (:idealised sb5 b22 fl6 b22 sb6)
+                 (:critical sb5 b22 fl6 b22 sb6)
                  (:comment "Original A--G♯. Redundanz zu Section 7.")
                  (:flag :draft) (:id 1))
            bl
@@ -70,7 +70,7 @@
           (1950 nil "ſpet.cro."))
    (:text 70 58
           (44 nil (:alt (:diplomatic "tono cro.")
-                        (:idealised "ſe.tono cro.")
+                        (:critical "ſe.tono cro.")
                         (:comment "Text wird dem Notentext angepasst.")
                         (:flag :suggestion) (:id 2)))
           (316 nil "to. crom.")

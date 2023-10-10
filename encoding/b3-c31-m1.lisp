@@ -65,7 +65,7 @@
            (:section s1) cclef7 (:key-signature nil nil nil nil nil nil) b38
            sb7 b38 sb6 b38 sb5 b22 b38 sb4 b38 b38 bl
            (:section s2) b22 mrest3 b38 m3
-           (:alt (:diplomatic dot6) (:idealised dot4)
+           (:alt (:diplomatic dot6) (:critical dot4)
                  (:comment "Original: Punktierung steht eine Position höher.")
                  (:flag :draft) (:id 1))
            cr2 b38 cr1 b38 m2 b38 sb3 bl

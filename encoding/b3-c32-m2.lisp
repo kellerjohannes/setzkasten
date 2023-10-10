@@ -29,7 +29,7 @@
    (:music 2238
            (:voice v1)
            (:section s1) cclef3 b22 mrest1 sb1
-           (:alt (:diplomatic sh1) (:idealised sh0)
+           (:alt (:diplomatic sh1) (:critical sh0)
                  (:comment "Original: ♯ steht eine Position höher.")
                  (:flag :draft) (:id 1))
            m0 sb1 bl
@@ -39,7 +39,7 @@
            (:section s5) mrest5 sb5 m4 m5 sb7 sh6 m6 sb7 b22 bl
            (:section s6) mrest7 sb8 sh7 m7 sb8 bl
            (:section s7)
-           (:alt (:diplomatic mrest7) (:idealised mrest3)
+           (:alt (:diplomatic mrest7) (:critical mrest3)
                  (:comment "Original: Minima-Pause steht eine Position höher.")
                  (:flag :draft) (:id 2))
            sb4 sh3 m3 br4 b22 blbl)

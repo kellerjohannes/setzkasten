@@ -64,7 +64,7 @@
           (1059 nil "8.")
           (1252 nil "le quattro 3.")
           (1616 nil "5.")
-          (1762 nil (:alt (:diplomatic "la quattro 6.") (:idealised "le quattro 6.")
+          (1762 nil (:alt (:diplomatic "la quattro 6.") (:critical "le quattro 6.")
                           (:comment "Original: »la quattro 6.«")
                           (:flag :draft) (:id 1)))
           (2123 nil "8."))
@@ -89,10 +89,10 @@
           (880 nil "6.mag.")
           (1239 nil "3.mi.")
           (1423 nil "3.mag.")
-          (1702 nil (:alt (:diplomatic "3.min.") (:idealised "6.min.")
+          (1702 nil (:alt (:diplomatic "3.min.") (:critical "6.min.")
                           (:comment "Original: »3.min.«")
                           (:flag :draft) (:id 2)))
-          (1919 nil (:alt (:diplomatic "3.mag.") (:idealised "6.mag.")
+          (1919 nil (:alt (:diplomatic "3.mag.") (:critical "6.mag.")
                           (:comment "Original: »3.mag.«")
                           (:flag :draft) (:id 3))))
    (:music 2223
@@ -102,7 +102,7 @@
            (:section s2) sbd5 bl
            (:section s3)
            (:alt (:diplomatic fl4 sb4)
-                 (:idealised fl5 sb5)
+                 (:critical fl5 sb5)
                  (:comment "Original: Die erste Note in der unteren Stimme ist ein G♭.")
                  (:flag :draft) (:id 4))
            sh4 sb4 bl

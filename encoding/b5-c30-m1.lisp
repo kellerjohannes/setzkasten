@@ -68,7 +68,7 @@
            fl8 sbd8 fl8 sbd8 bl
            (:section s4) fl8 sbd8 b22
            (:section s5) (:newline) cclef5 b22
-           (:alt (:diplomatic sh1) (:idealised sh0)
+           (:alt (:diplomatic sh1) (:critical sh0)
                  (:comment "Original: Das erste ♯ steht eine Position höher.")
                  (:flag :draft) (:id 1))
            sb0 b22 (:divider :regular) sb1 bl

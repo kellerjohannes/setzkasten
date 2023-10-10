@@ -34,12 +34,12 @@
            ;; sollen hier Punkte im Zentrum der Signaturen ergänzt werden?
            (:section s3) cclef7 b22
            (:alt (:diplomatic met-perf-min)
-                 (:idealised met-perf-maj)
+                 (:critical met-perf-maj)
                  (:comment "Original: Kein Punkt in der Taktsignatur.")
                  (:flag :draft) (:id 1))
            b22
            (:alt (:diplomatic met-imperf-min)
-                 (:idealised met-imperf-maj)
+                 (:critical met-imperf-maj)
                  (:comment "Original: Kein Punkt in der Taktsignatur.")
                  (:flag :draft) (:id 2))
            b22 sb1 b22 m2 b22 sb3 b22 sb4 b22 m5 bl)

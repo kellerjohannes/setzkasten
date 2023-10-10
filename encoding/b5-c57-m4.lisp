@@ -55,7 +55,7 @@
            (:section s3) cclef5 fl2 sbd2 fl3 sbd3 fl4 sbd4 sh4 sb4 fl6 sbd6 fl7 sbd7 sbd8 fl9 sbd9 bl
            (:section s4) (:newline) fl2 sbd2 fl3 sbd3 sh3 sb3 sh4 sb4 fl6 sbd6
            (:alt (:diplomatic sh6 sb6)
-                 (:idealised fl7 sbd7)
+                 (:critical fl7 sbd7)
                  (:comment "Original: Die drittletzte Note ist ein D♯.")
                  (:flag :draft) (:id 1))
            sh7 sb7 fl9 sbd9 bl

@@ -53,7 +53,7 @@
            met-perf-min-dim b22 met-3-2 b22 br8 b22 sbrest9 sb4 dot4 m7 b22 m6 b22 m4 b22 fl9 b22 br9 b22 sb8 b22 sb7 sb6 sb5 br4 b22 sh3 b22 sb3 b22
            met-imperf-min-dim b22 sb4 b22
            (:alt (:diplomatic custos6)
-                 (:idealised custos6)
+                 (:critical custos6)
                  (:comment "Dieser Custos hat keinen Anschluss. Es ist zu diskutieren, ob er beibehalten werden soll.")
                  (:flag :observe) (:id 1)))
    (:text 90 58
@@ -77,7 +77,7 @@
            ;; Bibelgruppe:
            ;; Anfang erste Zeile: Tenorschlüssel statt Bassschlüssel
            (:voice v2)
-           (:alt (:diplomatic (:f-clef) max7 fclef7 fl6) (:idealised cclef7 b38 fl6 b38)
+           (:alt (:diplomatic (:f-clef) max7 fclef7 fl6) (:critical cclef7 b38 fl6 b38)
                  (:comment "Original: F4-Schlüssel.")
                  (:flag :draft) (:id 2))
            (:key-signature nil nil nil nil nil nil :flat) b22 met-perf-min-dim b22 met-3-2 b22 sb1 sb4 sb3 m1 m8 dot8 sm7 sb5 m6 sb7 sb5 sh4 m4 m5 br1
@@ -91,7 +91,7 @@
            (:voice v1)
            (:section s3) (:newline) (:f-clef) max7 fclef7 b38
            (:alt (:diplomatic fl6)
-                 (:idealised fl3)
+                 (:critical fl3)
                  (:comment "Original: ♭-Signatur im dritten Zwischenraum.")
                  (:flag :draft) (:id 3))
            (:key-signature nil nil nil nil nil nil :flat) b38 met-perf-min-dim b22 met-3-2 b38 sb4 b38 m1 b38 sb8 b38 m8 b38 fl9 b38 m9 b38 m8 b38 m7 b38 m4 b22 sb7 b22 m5d b22 m6 b22 m5d b22 m3 b38 m4 b38 m5 b38 m6 b38 m7 b38 m8 b38 m5d b38 m6 b22 m7 b22 custos6)

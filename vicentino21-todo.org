@@ -498,7 +498,7 @@ CLOSED: [2023-06-13 Tue 11:36]
 **** TODO [#C] b5-c64
 - [[file:encoding/b5-c64-m1.lisp::;; Das ist keine Quinte, soll aber die manualverbindende Quinte abwärts sein, d.h.]]
 
-** DONE Alle :idealised-Elemente suchen und mit ;; ergänzen
+** DONE Alle :critical-Elemente suchen und mit ;; ergänzen
 CLOSED: [2023-06-09 Fri 10:52]
 ** DONE Alle ;;-Elemente suchen und hierher verlinken
 CLOSED: [2023-06-09 Fri 12:10]

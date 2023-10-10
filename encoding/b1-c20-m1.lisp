@@ -91,7 +91,7 @@
            (:section s11)
            fl5 b38 sb5 b38
            (:alt (:diplomatic sb4 b38 fl4 b38 sb4 b38 sbd4)
-                 (:idealised sbd4 b38 sb4 b38 fl4 b38 sb4)
+                 (:critical sbd4 b38 sb4 b38 fl4 b38 sb4)
                  (:comment "Original: A♭--G--G♭--Ġ. Dieses Beispiel zeigt zwei alternative Teilungen des _tono_: A♭--Ġ--G♭ und A♭--G--G♭.")
                  (:flag :draft) (:id 1))
            bl

@@ -39,7 +39,7 @@
    (:music 2219
            (:voice v1)
            (:section s1) (:f-clef) max7 fclef7 b22 sbd2 sbd3 sbd4 sbd5 sbd6 sbd7 sbd8
-           (:alt (:diplomatic sb9) (:idealised sbd9)
+           (:alt (:diplomatic sb9) (:critical sbd9)
                  (:comment "Original: Die letzt Note hat keinen enharmonischen Punkt.")
                  (:flag :draft) (:id 1))
            b22 bl

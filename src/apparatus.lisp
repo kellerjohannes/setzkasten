@@ -48,8 +48,8 @@
         :original (reference-content state)
         :replacement (rest reading)
         :reading reading-tag
-        :coordinate-a-b (coordinate-a-b state)
-        :coordinate-c (coordinate-c state)
+        :coord-barre (coordinate-a-b state)
+        :coord-norm (coordinate-c state)
         :comment (critical-comment state)
         :flag (flag state)))
 
@@ -61,8 +61,8 @@
         :original (reference-content state)
         :replacement (rest reading)
         :reading reading-tag
-        :coordinate-a-b (coordinate-a-b state)
-        :coordinate-c (coordinate-c state)
+        :coord-barre (coordinate-a-b state)
+        :coord-norm (coordinate-c state)
         :comment (critical-comment state)
         :flag (flag state)))
 
@@ -75,8 +75,8 @@
                                    (when (or (eq (score-text-type state) :voice-label)
                                              (eq (score-text-type state) :lyrics))
                                      (score-text-voice state)))
-        :coordinate-a-b (coordinate-a-b state)
-        :coordinate-c (coordinate-c state)
+        :coord-barre (coordinate-a-b state)
+        :coord-norm (coordinate-c state)
         :comment (critical-comment state)
         :flag (flag state)))
 
@@ -110,12 +110,12 @@
       (setf (critical-comment state) (second comment)))))
 
 (defmethod find-coordinate-a-b (expression (state apparatus-state))
-  (let ((coordinate (find :coordinate-a-b (rest expression) :key #'first)))
+  (let ((coordinate (find :coord-barre (rest expression) :key #'first)))
     (when coordinate
       (setf (coordinate-a-b state) (second coordinate)))))
 
 (defmethod find-coordinate-c (expression (state apparatus-state))
-  (let ((coordinate (find :coordinate-c (rest expression) :key #'first)))
+  (let ((coordinate (find :coord-norm (rest expression) :key #'first)))
     (when coordinate
       (setf (coordinate-c state) (second coordinate)))))
 
@@ -246,9 +246,9 @@
   :score-voice v2
   :original (sh5 sb5)
   :replacement (b38 b38)
-  :reading :idealised
-  :coordinate-a-b "2. Zeile, 3. Note"
-  :coordinate-c "Section 3, 2. Note"
+  :reading :critical
+  :coord-barre "2. Zeile, 3. Note"
+  :coord-norm "Section 3, 2. Note"
   :comment "C♯ ist hier fragwürdig, wird entfernt."
   :flag :suggestion-jk)
 
@@ -258,7 +258,7 @@
   :type-imitation-text-field 1
   :original "tono"
   :replacement "sem.tono"
-  :reading :idealised
+  :reading :critical
   :comment "\"sem.\" ergänzt."
   :flag :suggestion-jk)
 

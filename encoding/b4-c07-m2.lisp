@@ -59,7 +59,7 @@
    (:text 90 58
           (527 nil
                (:alt (:diplomatic "buono")
-                     (:idealised "buono")
+                     (:critical "buono")
                      (:comment "Es ist zu diskutieren, ob eine Ergänzung von »buono«-Überschriften in den restlichen Sections sinnvoll ist. Sie sind implizit alle »buono«.")
                      (:flag :observe) (:id 2)))
           (950 nil "megliore")

@@ -75,7 +75,7 @@
            sb3 sbd3 bl
            (:section s6) sb5 bl
            (:section s7) fl6 sb6
-           (:alt (:diplomatic fl7) (:idealised fl6)
+           (:alt (:diplomatic fl7) (:critical fl6)
                  (:comment "Original: Das zweite ♭ steht eine Position höher.")
                  (:flag :draft) (:id 1))
            (:divider :regular) sbd6 bl
@@ -95,7 +95,7 @@
            (:section s1) (:f-clef) max7 fclef7 b22 sb5 fl5 (:divider :regular) sbd5 bl
 
            (:alt (:diplomatic fl4 sb4)
-                 (:idealised fl5 sb5)
+                 (:critical fl5 sb5)
                  (:comment "Original: Die dritte Note in der unteren Stimme ist ein C♭.")
                  (:flag :draft) (:id 2))
            sh4 sb4 bl
@@ -103,7 +103,7 @@
            (:section s3) sb2 fl2 (:divider :regular) sbd2 b22 bl
            fl2 sb2
            (:alt (:diplomatic sh2 sb2)
-                 (:idealised sh1 sb1)
+                 (:critical sh1 sb1)
                  (:comment "Original: Die vierte Note in der unteren Stimme ist ein A♯.")
                  (:flag :draft) (:id 3))
            b22 bl

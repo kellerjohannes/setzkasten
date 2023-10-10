@@ -63,7 +63,15 @@
    (:music 2200
            (:voice v1)
            (:section s1)
-           b22 (:f-clef) max7 fclef7 b38 sb2 b38 sb2 b38 sb2 b22 bl
+           b22 (:f-clef) max7 fclef7 b38
+           (:alt (:diplomatic sb2)
+                 (:barre sb10)
+                 (:comment "TEST: Erste Note, Barré-Fassung.") (:flag :app) (:id 1))
+           b38
+           (:alt (:diplomatic sb2)
+                 (:critical sb10)
+                 (:comment "TEST: Zweite Note, kritische Fassung.") (:flag :app) (:id 2))
+           b38 sb2 b22 bl
            (:section s2)
            b22 fl3 (:key-signature nil nil nil nil nil nil :flat) b38 sb3 b38 nat3 b38 sb3 b22 bl
            (:section s3)

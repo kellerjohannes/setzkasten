@@ -60,7 +60,7 @@
           (1304 458 "ɢ ſol re ut primo."))
    (:text 120 58
           ;; Offensichtliche Textkorrektur, mit Luigi abzugleichen
-          (0 nil (:alt (:diplomatic "La 4.terze.") (:idealised "Le 4.terze.")))
+          (0 nil (:alt (:diplomatic "La 4.terze.") (:critical "Le 4.terze.")))
           (547 nil "5.")
           (684 nil "Le 4.seſte.")
           (1061 nil "8.")
@@ -91,18 +91,18 @@
            (:voice v2)
            (:section s1) (:f-clef) max7 fclef7 sb6 fl6 sbd6 bl
            fl6 sb6
-           (:alt (:diplomatic sh6 sb6) (:idealised sh5 sb5)
+           (:alt (:diplomatic sh6 sb6) (:critical sh5 sb5)
                  (:comment "Original: Die vierte Note in der unteren Stimme ist ein E♯.")
                  (:flag :draft) (:id 1))
            bl
            (:section s2) b22 sb4 b22 bl
            (:section s3) sb3 fl3
-           (:alt (:diplomatic sb3) (:idealised sbd3)
+           (:alt (:diplomatic sb3) (:critical sbd3)
                  (:comment "Original: Die zweite Note in der unteren Stimme hat keinen enharmonischen Punkt.")
                  (:flag :draft) (:id 2))
            bl
            fl3 sb3
-           (:alt (:diplomatic b22 sbd2) (:idealised sh2 sb2)
+           (:alt (:diplomatic b22 sbd2) (:critical sh2 sb2)
                  (:comment "Original: Die vierte Note in der unteren Stimme ist ein Ȧ.")
                  (:flag :draft) (:id 3))
            bl

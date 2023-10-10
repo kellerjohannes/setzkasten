@@ -46,7 +46,7 @@
      (1623 nil "Quinta ottaua."))
    (:music 2227
            (:f-clef) max7 fclef7 b38 sh7 sb7 sh8 sb8 sh9 sb9
-           (:alt (:diplomatic sh10) (:idealised b38)
+           (:alt (:diplomatic sh10) (:critical b38)
                  (:comment "Original: Siebte Note ist ein A♯.")
                  (:flag :suggestion) (:id 1))
            b22 sb10 b22 bl
@@ -57,7 +57,7 @@
      (1522 nil "Settima ottaua."))
    (:music 2232
            (:section s6) (:f-clef) max7 fclef7
-           (:alt (:diplomatic b38) (:idealised b22 sb3 sh4)
+           (:alt (:diplomatic b38) (:critical b22 sb3 sh4)
                  (:comment "Original: Die erste Note fehlt und die zweite hat kein ♯.")
                  (:flag :suggestion) (:id 2))
            sb4 b22 sh5 b22 sb5 b22 sh6 b22 sb6 b22 sh7 b22 sb7 b22 sh8 b22 sb8 b22 sh9 b22 sb9 b22 sb10 b38 bl

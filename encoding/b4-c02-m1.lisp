@@ -38,7 +38,7 @@
    (:text 70 58
           (15 nil
               (:alt (:diplomatic "Chiaui di")
-                    (:idealised "Chiaue di")
+                    (:critical "Chiaue di")
                     (:comment "Original: »Chiaui«, angepasst, weil nur ein einziger G-Schlüssel gezeigt wird.")
                     (:flag :draft) (:id 1)))
           (314 nil "Gſolreut et di ᴄſolfaut")

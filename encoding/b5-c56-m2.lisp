@@ -41,7 +41,7 @@
            (:voice v1)
            (:section s1) (:f-clef) max7 fclef7 b38 fl3 b22 sb3 b22 sb4 b22 fl5 b22 sb5 b22
            (:alt (:diplomatic sb6)
-                 (:idealised fl6 sb6)
+                 (:critical fl6 sb6)
                  (:comment "Original: Die vierte Note ist ein E.")
                  (:flag :draft) (:id 1))
            b22 sb7 b22 fl8 b22 sb8 b22 fl9 b22 sb9 fl10 sb10 b38 bl
@@ -57,7 +57,7 @@
            (:f-clef) max7 fclef7 b38 b22 fl6 b22 sb6 b22 sb7 sb8 sb9 fl10 sb10 b38 bl
            (:section s4) (:newline) b38 b22 fl3 b22 sb3 b22 sb4 b22 fl5 b22 sb5 b22 fl6 sb6 sb7 sb8 fl9 sb9 fl10 sb10 b38 b22 bl
            (:section s5) b38 b22 fl3 sb3 sbd3 fl5 sb5 fl6 sb6 sb7 fl8 sb8
-           (:alt (:diplomatic fl8) (:idealised fl9)
+           (:alt (:diplomatic fl8) (:critical fl9)
                  (:comment "Original: Das zweitletzte ♭ steht eine Position tiefer."))
            sb9 fl10 sb10 b38 bl)
    (:text 90 58

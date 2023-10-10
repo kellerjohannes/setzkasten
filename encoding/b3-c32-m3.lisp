@@ -54,7 +54,7 @@
            (:section s4) mrest7 m8 b22 sb6 b22 sb5 b22 bl
            (:section s5) m5d
            ;; Kosmetische Idealisierung, vertikale Ausrichtung Additionspunkt
-           (:alt (:diplomatic dot4) (:idealised dot6)
+           (:alt (:diplomatic dot4) (:critical dot6)
                  (:comment "Original: Punktierung steht eine Position tiefer.")
                  (:flag :draft) (:id 1))
            sm6 m7 b22 sm8 sm6 sm9 m8 sm8 sb8 bl

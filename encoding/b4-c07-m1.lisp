@@ -31,7 +31,7 @@
    (:text 90 58
           (1809 nil
                 (:alt (:diplomatic "non")
-                      (:idealised "non")
+                      (:critical "non")
                       (:comment "Die Positionierung aller Überschriften (»non buono«) ist mehrdeutig. Die Interpretation lautet: Sections 1 und 2 sind implizit »buono«, alle anderen »non buono«. Es ist zu diskutieren, ob der Text bzw. die Textpositionierung idealisiert werden soll.")
                       (:flag :observe) (:id 1))
                 ))

@@ -14,7 +14,7 @@
            (:voice v1)
            (:section s1) cclef7 b22 met-imperf-min-dim b22 brrest4 b22 sb7 b22 m6 b22 m7 b22 m5d dot6 sm6 b22 m7 b22 m8 dot8 sm7 b22 sb7 b22 m6 b22 sb7 b22
            (:voice v2) (:f-clef) max7 fclef7 b22 met-imperf-min-dim b22 m4
-           (:alt (:diplomatic dot6) (:idealised dot4)
+           (:alt (:diplomatic dot6) (:critical dot4)
                  (:comment "Original: Der erste Punkt liegt eine Position höher.")
                  (:flag :draft) (:id 1))
            sm5 m6 m7 dot8 sm8 b22 m9 m8 b22 m6 b22 sb7 dot8 m5d m6 m7 sb5 (:segno) sb4 b22 bl)))

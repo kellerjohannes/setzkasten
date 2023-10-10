@@ -53,7 +53,7 @@
            (:section s8)
           sbd5 b38 fl5 b27
            (:alt (:diplomatic sb5)
-                 (:idealised sbd5)
+                 (:critical sbd5)
                  (:comment "Original: Ȧ--A♭. Könnte alternativ auch in A--A♭ korrigiert werden.")
                  (:flag :suggestion) (:id 1))
            bl)

@@ -75,7 +75,7 @@
    (:music 2236
            (:voice v2)
            (:section s1) (:f-clef) max7 fclef7 b22 fl6 sb6 b38
-           (:alt (:diplomatic sh6 b22 sb6) (:idealised sh5 b22 sb5)
+           (:alt (:diplomatic sh6 b22 sb6) (:critical sh5 b22 sb5)
                  (:comment "Original: Die zweite Note in der unteren Stimme ist ein E♯.")
                  (:flag :draft) (:id 1))
            b22 bl

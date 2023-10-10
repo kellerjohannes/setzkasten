@@ -69,12 +69,12 @@
            (:section s1) cclef5 b38 fl7 b22 sbd7 b22 fl7 b22 sbd7 b22 fl7 b22 (:divider :regular) sbd7 bl
            b38 fl7 b38 sbd7 b22 fl7 b38 sbd7 b38 bl
            (:section s2) b38
-           (:alt (:diplomatic fl6) (:idealised fl7)
+           (:alt (:diplomatic fl6) (:critical fl7)
                  (:comment "Original: Das ♭ in der oberen Stimme steht eine Position tiefer.")
                  (:flag :draft) (:id 1))
            b38 sbd7 b38 bl
            (:section s3) b38
-           (:alt (:diplomatic fl6) (:idealised fl7)
+           (:alt (:diplomatic fl6) (:critical fl7)
                  (:comment "Original: Das erste ♭ in der oberen Stimme steht eine Position tiefer.")
                  (:flag :draft) (:id 2))
            b38 sbd7 b38 fl7 b38 (:divider :regular) sbd7 b38 bl

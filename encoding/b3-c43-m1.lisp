@@ -37,7 +37,7 @@
            (:section s4) sb6 b22 sb3 b22 m6 b22 m4 b38 bl
            (:section s5) b38 sb5 b38 sb5 b22 sb3 bl
            (:section s6) br7 b22 sb7 sh5
-           (:alt (:diplomatic mrest3) (:idealised b22)
+           (:alt (:diplomatic mrest3) (:critical b22)
                  (:comment "Original: Minima-Pause zwischen ♯-Zeichen und Brevis-Notenkopf.")
                  (:flag :draft) (:id 1))
            br5 b22 bl)

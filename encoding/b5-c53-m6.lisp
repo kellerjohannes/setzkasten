@@ -50,7 +50,7 @@
            (:section s1) cclef5 b38 sb1 sb2 fl3 sb3 fl4 sb4 sb5 fl6 sb6 fl7 sb7 sb8 b22 bl
            (:section s2) b22 sb1 fl2 sb2 fl3 sb3 fl4 sb4 sbd4 fl6 sb6 fl7 sb7 sb8 b22 bl
            (:section s3) b22 sb1 sb2 sb3 fl4 sb4 sb5 sb6 sb7
-           (:alt (:diplomatic sb2) (:idealised sb8)
+           (:alt (:diplomatic sb2) (:critical sb8)
                  (:comment "Original: Die letzte Note ist ein G (verdrehte Type).")
                  (:flag :draft) (:id 1))
            b22 bl
@@ -63,7 +63,7 @@
    (:music 2221
            cclef5 b38 sb5
            (:alt (:diplomatic fl6)
-                 (:idealised b38)
+                 (:critical b38)
                  (:comment "Original: Die sechste Note ist ein D♭.")
                  (:flag :draft) (:id 2))
            sb6 fl7 sb7 sb8 b22 bl

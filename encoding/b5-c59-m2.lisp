@@ -229,7 +229,7 @@
    (:music 1210
            (:section s2)
            (:alt (:diplomatic (:newline))
-                 (:idealised))
+                 (:critical))
            gclef3 b38 sbd0 b22 b22 sbd1 b22 b22 sbd2 b22 b22 sbd3 b22 b22 sbd4 b22 b22 sbd5 b22 b22 sbd6 b22 b22 sbd7 b22 sbd8 b22 b22 sbd9 b22 sbd10 b38 bl
            )
    (:text 110 58
@@ -237,7 +237,7 @@
    (:music 1216
            (:section s3)
            (:alt (:diplomatic (:newline))
-                 (:idealised))
+                 (:critical))
            cclef1 b38 sbd0 b22 fl2 b22 sb2 b22 sbd2 b22 sbd3 b22 fl5 b22 sb5 fl6 b22 sb6 b22 sbd6 b22 sbd7 b22 fl9 b22 sb9 b22 sbd9 b22 sbd10 b38 bl
            )
    (:text 110 58
@@ -247,7 +247,7 @@
            (:newline)
            cclef3 b22 sbd0 b38 sbd1 b22 fl2 b22
            (:alt (:diplomatic sb2)
-                 (:idealised sbd2)
+                 (:critical sbd2)
                  (:comment "Original: Die dritte Note hat keinen enharmonischen Punkt.")
                  (:flag :draft) (:id 1))
            b38 sbd3 b38 sbd4 b38 sbd5 b38 sbd6 b38 sbd7 b22 b22 sbd8 b22 fl9 b38 sbd9 b38 sbd10 b22 bl
@@ -257,7 +257,7 @@
    (:music 1226
            (:section s5)
            (:alt (:diplomatic (:newline))
-                 (:idealised))
+                 (:critical))
            cclef5 b38 sbd0 b38 fl2 b22 sb2 b38 sbd2 b38 sbd3 b38 sbd4 b22 fl6 b22 sb6 b38 sbd6 b22 sbd7 b22 fl9 b38 sb9 b22 sbd9 b22 sbd10 b22 bl
            )
    (:text 110 58
@@ -265,7 +265,7 @@
    (:music 1189
            (:section s6)
            (:alt (:diplomatic (:newline))
-                 (:idealised))
+                 (:critical))
            cclef7 b38 fl2 fl6 fl9 (:key-signature nil nil :flat nil nil nil :flat) sbd0 b22 sbd1 b38 sbd2 b38 sbd3 b38 sbd4 b38 sbd5 b38 sbd6 b38 sbd7 b38 sbd8 b38 sbd9 b22 sbd10 b22 bl
            )
    (:text 110 58
@@ -280,10 +280,10 @@
    (:music 1122
            (:section s8)
            (:alt (:diplomatic (:newline))
-                 (:idealised))
+                 (:critical))
            (:f-clef) max7 fclef7 b22 sbd0 sbd1 b22 fl2 b22 sbd2 fl3 b22 sbd3 sbd4 sbd5 fl6 b22 sbd6 b22 sbd7 b22 sbd8 fl9 b22 sbd9
            (:alt (:diplomatic b22)
-                 (:idealised fl10)
+                 (:critical fl10)
                  (:comment "Original: Die letzte Note hat kein ♭.")
                  (:flag :draft) (:id 2))
            sbd10 b22 bl
@@ -293,7 +293,7 @@
    (:music 1188
            (:section s9)
            (:alt (:diplomatic (:newline))
-                 (:idealised))
+                 (:critical))
            (:f-clef) max9 fclef9 b38 sbd0 b38 sbd1 b38 sbd2 b38 sbd3 b38 sbd4 b38 sbd5 b38 sbd6 b38 sbd7 b38 sbd8 b38 sbd9 b38 sbd10 b22 b22 bl)
 
    (:vspace 200)
@@ -306,11 +306,11 @@
    (:music 2244
            (:section s10)
            (:alt (:diplomatic)
-                 (:idealised (:newline)))
+                 (:critical (:newline)))
            (:f-clef) max5 fclef5 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b22 b22 b22
            (:section s19)
            (:alt (:diplomatic)
-                 (:idealised (:newline)))
+                 (:critical (:newline)))
            cclef1 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38 bl
            )
    (:text 110 58
@@ -326,12 +326,12 @@
            (:section s12) cclef1 b22 sbd0 b22 fl2 b22 sb2 b22 sbd2 b22 sbd3 b22 fl5 b22 sb5 b22 sbd5 b22 sbd6 b22 sbd7 b22 fl9 b22 sb9 b22 sbd9 b22 sbd10 b38
            (:section s21) gclef3 b22 sbd0 fl1 b22 sbd1 sbd2 b22 sbd3 b22 fl4 b22 sbd4 fl5 b22 sbd5 sbd6 b22 sbd7 b22 fl8 b22 sbd8 b22
            (:alt (:diplomatic sb9)
-                 (:idealised sbd9)
+                 (:critical sbd9)
                  (:comment "Original: Die zweitletzte Note hat keinen enharmonischen Punkt.")
                  (:flag :draft) (:id 0))
 
            (:alt (:diplomatic b38)
-                 (:idealised sbd10)
+                 (:critical sbd10)
                  (:comment "Original: Die letzte Note existiert nicht.") (:flag :draft) (:id 0))
            bl)
    (:text 110 58
@@ -340,11 +340,11 @@
    (:music 2234
            (:section s13)
            (:alt (:diplomatic)
-                 (:idealised (:newline)))
+                 (:critical (:newline)))
            cclef3 b22 sbd0 b22 sbd1 b22 fl2 b22 sbd2 b22 sbd3 b22 sbd4 b22 fl5 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b38 fl9 b22 sbd9 b38 sbd10 b38
            (:section s22)
            (:alt (:diplomatic)
-                 (:idealised (:newline)))
+                 (:critical (:newline)))
            cclef3 b22 sbd0 fl1 b22 sbd1 fl2 sbd2 sbd3 fl4 sbd4 b22 fl5 sbd5 sbd6 sbd7 b22 fl8 b22 sbd8 b22 fl9 sbd9 sbd10 bl
            )
    (:text 110 58
@@ -366,11 +366,11 @@
    (:music 2214
            (:section s16)
            (:alt (:diplomatic)
-                 (:idealised (:newline)))
+                 (:critical (:newline)))
            (:f-clef) max5 fclef5 b38 sbd0 b38 sbd1 b38 sbd2 b38 sbd3 b38 sbd4 b22 sbd5 b38 sbd6 b38 sbd7 b38 sbd8 b38 sbd9 b38 sbd10 b22
            (:section s25)
            (:alt (:diplomatic)
-                 (:idealised (:newline)))
+                 (:critical (:newline)))
            (:f-clef) max5 fclef5 b22 fl18 fl4 (:key-signature nil nil :flat nil nil nil :flat) b22 sbd0 b22 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b22 sbd10 bl)
    (:text 110 58
      (256 nil "Del secondo ordine diat, ᴇnar.")
@@ -378,7 +378,7 @@
    (:music 2213
            (:section s17) (:f-clef) max7 fclef7 (:key-signature nil nil nil nil nil nil nil) b22 sbd0 b22 sbd1 fl2 sbd2 fl3 b22 sbd3 b22 sbd4 fl5 b22 sbd5 fl6 b22 sbd6 sbd7 sbd8 b22 fl9 sbd9 fl10
            (:alt (:diplomatic sb10)
-                 (:idealised sbd10)
+                 (:critical sbd10)
                  (:comment "Original: Die letzte Note hat keinen enharmonischen Punkt.")
                  (:flag :draft) (:id 3))
            b22
@@ -403,12 +403,12 @@
    (:music 2225
            (:section s28)
            (:alt (:diplomatic)
-                 (:idealised (:newline)))
+                 (:critical (:newline)))
            cclef7 (:key-signature nil nil nil nil nil nil nil)
            b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38 b38 b22
            (:section s37)
            (:alt (:diplomatic)
-                 (:idealised (:newline)))
+                 (:critical (:newline)))
            cclef3 (:key-signature nil nil nil nil nil nil nil)
            b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b22 b22 bl)
    (:text 110 58
@@ -432,11 +432,11 @@
    (:music 2217
            (:section s31)
            (:alt (:diplomatic)
-                 (:idealised (:newline)))
+                 (:critical (:newline)))
            cclef3 b22 sbd0 b22 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b38 fl7 b22 sb7 b38 sbd7 b38 sbd8 b38 sbd9 b38 sbd10 b22 b22 b38
            (:section s40)
            (:alt (:diplomatic)
-                 (:idealised (:newline)))
+                 (:critical (:newline)))
            cclef3 b38 sbd0 b38 sbd1 b38 sbd2 b38 sbd3 b38 sbd4 b38 sbd5 b38 sbd6 b22 sbd7 b38 sbd8 b38 sbd9 b38 sbd10 bl)
    (:text 110 58
      (182 nil "Del quarto ordine diat. ᴇnar.")
@@ -457,11 +457,11 @@
    (:music 2221
            (:section s34)
            (:alt (:diplomatic)
-                 (:idealised (:newline)))
+                 (:critical (:newline)))
            (:f-clef) max5 fclef5 (:key-signature nil nil nil nil nil nil nil) b22 sbd0 b22 sbd1 fl3 b22 sb3 b22 sbd3 sbd4 fl6 b22 sb6 fl7 b22 sb7 b22 sbd7 fl9 b22 sb9 b22 fl10 sb10 b22 sbd10 b22
            (:section s43)
            (:alt (:diplomatic)
-                 (:idealised (:newline)))
+                 (:critical (:newline)))
            (:f-clef) max5 fclef5 b22 sbd0 b22 sbd1 b22 fl3 sb3 b22 sbd3 b22 sbd4 b22 fl6 b22 sb6 b22 sbd6 b22 sbd7 b22 sbd8 b22 fl10 sb10 b22 sbd10 bl)
    (:text 110 58
      (1250 nil "Del quinto ordine diat. Enar."))
@@ -486,14 +486,14 @@
    (:music 2225
            (:section s46)
            (:alt (:diplomatic)
-                 (:idealised (:newline)))
+                 (:critical (:newline)))
            cclef5 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38 b38
            (:section s55)
            (:alt (:diplomatic)
-                 (:idealised (:newline)))
+                 (:critical (:newline)))
            (:f-clef) max7 fclef7 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b22
            (:alt (:diplomatic fl10)
-                 (:idealised fl10)
+                 (:critical fl10)
                  (:comment "Das letzte ♭ ist unregelmässig, aber musikalisch interessant.") (:flag :observe) (:id 0))
            b22 sb10 bl)
    (:text 110 58
@@ -504,7 +504,7 @@
            (:section s56)
            gclef3 (:key-signature nil nil nil nil nil nil nil) sbd0 b22 sbd1 b22 fl3 sb3 b22 fl4 sb4 b22 sbd4 b22 sbd5 b22 fl7 b22 sb7 b22 sbd7 b22 sbd8 b22 fl10 sb10 b22
            (:alt (:diplomatic sbd10)
-                 (:idealised sbd10)
+                 (:critical sbd10)
                  (:comment "Die letzte Note ist unregelmässig und sollte A♭ lauten. Ġ entspricht der Unregelmässigkeit in s7.") (:flag :observe) (:id 0))
            bl)
    (:text 110 58
@@ -513,13 +513,13 @@
    (:music 2225
            (:section s48) cclef1 b38 sbd0 b38 sbd1 b38 sbd2 b38 sbd3 b38 fl5 b38 sb5
            (:alt (:diplomatic)
-                 (:idealised b38 sbd5)
+                 (:critical b38 sbd5)
                  (:comment "Original: Die sechste Note existiert nicht.") (:flag :draft) (:id 0))
            b38 sbd6 b38 sbd7 b22 sbd8 b22 sbd9 b22 sbd10 b22
            (:section s57)
            cclef1 b22 sbd0 b22 fl2 sb2 b22 fl3 sb3 b22 sb4 b22 fl5 sb5 b22 fl6 b22 sb6 b22 fl7 b22 sb7 sbd7 b22 fl9 b22 sb9 fl10 sb10 b22
            (:alt (:diplomatic sbd10)
-                 (:idealised sbd10)
+                 (:critical sbd10)
                  (:comment "Die letzte Note ist unregelmässig und sollte eigentlich F lauten. Ė entspricht der Unregelmässigkeit in s7.") (:flag :observe) (:id 0))
            bl)
    (:text 110 58
@@ -528,14 +528,14 @@
    (:music 2227
            (:section s49)
            (:alt (:diplomatic)
-                 (:idealised (:newline)))
+                 (:critical (:newline)))
            cclef3 sbd0 b22 fl1 sbd1 b22 fl2 sbd2 b22 sbd3 b22 sbd4 b22 fl5 sbd5 b22 sbd6 b22 sbd7 b22 fl8 sbd8 b22 fl9 sbd9 b22 sbd10 b22 b22 b22
            (:section s58)
            (:alt (:diplomatic)
-                 (:idealised (:newline)))
+                 (:critical (:newline)))
            cclef3 b22 sbd0 b22 sbd1 b22 sbd2 b22 fl4 b22 sb4 b22 sbd4 b22 sbd5 b22 fl7 b22 sb7 b22 sbd7 b22 sbd8 b22 sbd9 b22
            (:alt (:diplomatic sbd10)
-                 (:idealised sbd10)
+                 (:critical sbd10)
                  (:comment "Die letzte Note ist unregelmässig und sollte eigentlich D♭ lauten. Ḋ entspricht der Unregelmässigkeit in s7.") (:flag :observe) (:id 0))
            bl)
    (:text 110 58
@@ -546,7 +546,7 @@
            (:section s59)
            cclef5 b22 sbd0 b22 fl2 sb2 b22 fl3 sb3 b22 fl4 sb4 b22 sbd4 b22 fl6 sb6 b22 fl7 sb7 b22 sbd7 b22 fl9 sb9 fl10 sb10
            (:alt (:diplomatic sbd10)
-                 (:idealised sbd10)
+                 (:critical sbd10)
                  (:comment "Die letzte Note ist unregelmässig und sollte eigentlich B♭ lauten. Ȧ entspricht der Unregelmässigkeit in s7.") (:flag :observe) (:id 0))
            bl)
    (:text 110 58
@@ -555,17 +555,17 @@
    (:music 2214
            (:section s51) cclef7 b22 sbd0 b22 fl1 b22 sbd1 b22 fl2 b22 sbd2 b22 sbd3 b22 sbd4 b22 fl5 b22 sbd5 b22 fl6
            (:alt (:diplomatic sb6)
-                 (:idealised sbd6)
+                 (:critical sbd6)
                  (:comment "Original: Die fünftletzte Note hat keinen enharmonischen Punkt.") (:flag :draft) (:id 0))
            b22 sbd7
            (:alt (:diplomatic b22)
-                 (:idealised fl8)
+                 (:critical fl8)
                  (:comment "Original: Die drittletzte Note hat kein ♭.") (:flag :draft) (:id 0))
            sbd8 b22 fl9 sbd9 b22 sbd10 b22
            (:section s60)
            cclef7 b22 sbd0 b22 sbd1 b22 sbd2 b22 fl4 b22 sb4 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b22
            (:alt (:diplomatic sbd10)
-                 (:idealised sbd10)
+                 (:critical sbd10)
                  (:comment "Die letzte Note ist unregelmässig und sollte eigentlich G♭ lauten. Ḟ entspricht der Unregelmässigkeit in s7.") (:flag :observe) (:id 0))
            b22 bl)
    (:text 110 58
@@ -574,14 +574,14 @@
    (:music 2207
            (:section s52)
            (:alt (:diplomatic)
-                 (:idealised (:newline)))
+                 (:critical (:newline)))
            (:f-clef) max5 fclef5 b22 fl18 (:key-signature nil nil nil nil nil nil :flat) b22 sbd0 b22 sbd1 b22 sbd2 b38 sbd3 b38 sbd4 b22 sbd5 b38 sbd6 b38 sbd7 b38 sbd8 b22 sbd9 b22 sbd10 b22
            (:section s61)
            (:alt (:diplomatic)
-                 (:idealised (:newline)))
+                 (:critical (:newline)))
            (:f-clef) max5 fclef5 (:key-signature nil nil nil nil nil nil nil) b22 sbd0 b22 fl2 sb2 b22 fl3 sb3 fl4 sb4 b22 sbd4 b22 fl6 sb6 b22 fl7 sb7 sbd7 fl9 sb9 fl10 sb10
            (:alt (:diplomatic sbd10)
-                 (:idealised sbd10)
+                 (:critical sbd10)
                  (:comment "Die letzte Note ist unregelmässig und sollte eigentlich E♭ lauten. Ḋ entspricht der Unregelmässigkeit in s7.") (:flag :observe) (:id 0))
            bl)
    (:text 110 58
@@ -592,7 +592,7 @@
            (:section s62)
            (:f-clef) max7 fclef7 b38 sbd0 b38 sbd1 b38 sbd2 b38 sbd3 b38 sbd4 b38 sbd5 b38 sbd6 b38 sbd7 b22 sbd8 b22 sbd9
            (:alt (:diplomatic fl10 b22 sbd10)
-                 (:idealised fl10 b22 sbd10)
+                 (:critical fl10 b22 sbd10)
                  (:comment "Die letzte Note ist unregelmässig und sollte eigentlich C♭ (Ḃ♮) lauten. Ḃ♭ entspricht der Unregelmässigkeit in s7.") (:flag :observe) (:id 0))
            bl)
    (:text 110 58
@@ -603,11 +603,11 @@
            (:section s63)
            (:f-clef) max9 fclef9 b22 sbd0 b22
            (:alt (:diplomatic fl1)
-                 (:idealised b38)
+                 (:critical b38)
                  (:comment "Original: Die zweite Note hat ein ♭.") (:flag :draft) (:id 0))
            sbd1 b22 fl3 sb3 b22 fl4 sb4 sbd4 b22 sbd5 b22 fl7 sb7 b22 sbd7 b22 sbd8 fl10 b22 sb10 b22
            (:alt (:diplomatic sbd10)
-                 (:idealised sbd10)
+                 (:critical sbd10)
                  (:comment "Die letzte Note ist unregelmässig und sollte eigentlich A♭ lauten. Ġ entspricht der Unregelmässigkeit in s7.") (:flag :observe) (:id 0))
            bl)
    ))

@@ -27,7 +27,7 @@
            (:voice v1)
            (:section s1) (:f-clef)
            (:alt (:diplomatic max7)
-                 (:idealised max7)
+                 (:critical max7)
                  (:comment "Original: die Longa im Bassschlüssel ist seitenverkehrt gedruckt.")
                  (:flag :draft) (:id 1))
            fclef7 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 bl

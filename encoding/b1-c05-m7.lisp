@@ -13,7 +13,7 @@
     (s2 (:alt (:it "da ♭faBmi ...")
               (:de "")
               (:en "from ♭faBmi ...")
-              (:comment "Darstellung unbefriedigend, ist zu diskutieren.") (:flag :observe) (:id 1)))               
+              (:comment "Darstellung unbefriedigend, ist zu diskutieren.") (:flag :observe) (:id 1)))
     (s3 (:alt (:it "... a C")
               ;; Kommentar Anne: auch hier würde ich die Silben direkt unter den Noten und unter einander setzen.
               (:de "")
@@ -105,12 +105,12 @@
            (:section s6) (:newline) (:f-clef) max7 fclef7 b38 sb6 b38 sbd6 b38 sb7 bl
            (:section s7) sb7 b38 sbd7 b38 fl8 b38
            (:alt (:diplomatic sbd8)
-                 (:idealised sb8)
+                 (:critical sb8)
                  (:comment "Original: Ġ♭.") (:flag :draft) (:id 2))
            b38 fl8 b38 sbd8 b38 sb8 bl
            (:section s8) sb8 b38
            (:alt (:diplomatic sbd9)
-                 (:idealised sbd8)
+                 (:critical sbd8)
                  (:comment "Original: Ȧ.")
                  (:flag :draft) (:id 3))
            b38 fl9 b38 sb9 b38 fl9 b38 sbd9 b38 sb9 bl

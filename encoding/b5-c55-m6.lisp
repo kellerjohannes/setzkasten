@@ -58,13 +58,13 @@
           (1541 nil "Quinta")
           (1831 nil "ottaua."))
    (:music 2223
-           (:alt (:diplomatic cclef5) (:idealised cclef7)
+           (:alt (:diplomatic cclef5) (:critical cclef7)
                  (:comment "Original: Diese Zeile steht im C3-Schlüssel.")
                  (:flag :draft) (:id 1))
            sh5 sb5 sh6 sb6 fl8 sbd8 fl9 sbd9 sh9 sb9 bl
            (:section s4) (:newline) sh2 sb2 fl4 sbd4 sh4 sb4 sh5 sb5 sh6 sb6 fl8 sbd8 sh8 sb8 sh9 sb9 bl
            (:section s5) sh2 sb2 sh3 sb3 sh4 sb4
-           (:alt (:diplomatic sh3) (:idealised sh5)
+           (:alt (:diplomatic sh3) (:critical sh5)
                  (:comment "Original: Das vierte ♯ steht zwei Positionen zu tief.")
                  (:flag :draft) (:id 2))
            sb5 sh6 sb6 sh7 sb7 sh8 sb8 sh9 sb9 b22)

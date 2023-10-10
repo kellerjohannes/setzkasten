@@ -101,7 +101,7 @@
      (163 1907 "Questi ſono li toni & semitoni ᴄromatici , con li ᴅieſis ᴄromatici, aſcendenti"))
    (:text 130 58
           (:alt (:diplomatic (589 1032 "& diſcendenti, in terzo & quarto ordine."))
-                (:idealised (589 1032 "& diſcendenti, in secondo & terzo ordine."))
+                (:critical (589 1032 "& diſcendenti, in secondo & terzo ordine."))
                 (:comment "Original: »in terzo & quarto ordine.«") (:flag :draft) (:id 2)))
    (:text 100 58
      (164 nil "to.")

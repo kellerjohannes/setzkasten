@@ -238,7 +238,7 @@
    (:music 1157
            (:section s29) (:newline) cclef5 b38 fl0 sb0 b22 sb1 b22 fl2 b22 sb2 b22 fl3 b22 sb3 b22 fl4 sb4 b22 sb5 b22 fl6 sb6 b22 fl7 sb7 sb8 b22 fl9 sb9
            (:alt (:diplomatic sb10)
-                 (:idealised sb10)
+                 (:critical sb10)
                  (:comment "Die letzte Note ist unregelmässig erniedrigt, aber plausibel. Die regelmässige Variante ist A♭.") (:flag :draft) (:id 0))
            bl)
    (:text 110 58
@@ -250,7 +250,7 @@
    (:music 1139
            (:section s43) (:newline) (:f-clef) max5 fclef5 fl0 sb0 b22 fl1 b22 sb1 b22 sbd1 b22 fl3 sb3 b22 fl4 sb4 sb5 b22 fl6 sb6 b22 fl7 sb7 fl8 sb8 sbd8 b22
            (:alt (:diplomatic sb10)
-                 (:idealised sb10)
+                 (:critical sb10)
                  (:comment "Die letzte Note ist unregelmässig erniedrigt, aber plausibel. Die regelmässige Variante ist D♭.")
                  (:flag :draft) (:id 0))
            bl)
@@ -263,12 +263,12 @@
    (:music 1187
            (:section s57) (:newline) (:f-clef) max9 fclef9 b22 fl0 sb0 b22 fl1 sb1 b22 sbd1 b22 fl3 sb3 b22 fl4 sb4 b22 fl5 sb5 sbd5 b22 fl7
            (:alt (:diplomatic sbd7)
-                 (:idealised sb7)
+                 (:critical sb7)
                  (:comment "Original: Die viertletzte Note ist ein Ḋ♭.")
                  (:flag :draft) (:id 0))
            fl8 sb8 sbd8 b38
            (:alt (:diplomatic sb10)
-                 (:idealised sb10)
+                 (:critical sb10)
                  (:comment "Die letzte Note ist unregelmässig erniedrigt, aber plausibel. Die regelmässige Variante ist G♭.")
                  (:flag :draft) (:id 0))
            b22 bl)
@@ -291,7 +291,7 @@
            (:section s9) gclef3 fl0 sb0 sbd0 sbd1 b22 fl3 b22 sb3 b22 sbd3 b22 sbd4 b22 sbd5 b22 fl7 b22 sb7 sbd7 b22 sbd8 fl10 b22 sb10 b22 b38
            (:section s10) gclef3 fl0 sb0 b22 fl1 sb1 sb2 b22 fl3 b22 sb3 b22 fl4 b22 sb4 b22 fl5 sb5 b22 sbd5 b22 fl7 sb7 b22 fl8 sb8 b22 sb9
            (:alt (:diplomatic sb10)
-                 (:idealised sb10)
+                 (:critical sb10)
                  (:comment "Die letzte Note ist unregelmässig erniedrigt, aber plausibel. Die regelmässige Variante ist G♭.")
                  (:flag :draft) (:id 0))
            bl)
@@ -301,13 +301,13 @@
    (:music 2220
            (:section s16) cclef1 fl0 sb0 b22 sbd0 fl2 sb2 fl3 sb3 b22 sbd3 b22 fl5 sb5 b22 fl6 sb6 b22 fl7 sb7 b22 sbd7 b22 fl9 sb9
            (:alt (:diplomatic b22 sb10)
-                 (:idealised fl10 sb10)
+                 (:critical fl10 sb10)
                  (:comment "Original: Die letzte Note hat kein ♭.")
                  (:flag :draft) (:id 0))
            b22
            (:section s17) cclef1 fl0 b22 sb0 b22 sb1 b22 sb2 b22 fl3 b22 sb3 b22 sb4 b22 sb5 b22 fl6 b22 sb6 b22 fl7 sb7 b22 sb8 b22 sb9
            (:alt (:diplomatic b22 sb10)
-                 (:idealised fl10 sb10)
+                 (:critical fl10 sb10)
                  (:comment "Original: Die letzte Note hat kein ♭.")
                  (:flag :draft) (:id 0))
            b22 bl)
@@ -317,7 +317,7 @@
    (:music 2231
            (:section s23) cclef3 fl0 b22 sb0 b22 sbd0 b22 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b22 fl7 b22 sb7 b22 sbd7 b22 sbd8 b22
            (:alt (:diplomatic sb9)
-                 (:idealised sbd9)
+                 (:critical sbd9)
                  (:comment "Original: Die letzte Note kein keinen enharmonischen Punkt.")
                  (:flag :draft) (:id 0))
            b22
@@ -328,7 +328,7 @@
    (:music 2229
            (:section s30) cclef5
            (:alt (:diplomatic b38)
-                 (:idealised fl0)
+                 (:critical fl0)
                  (:comment "Original: Die erste Note hat kein ♭.")
                  (:flag :draft) (:id 0))
            sb0 sbd0 b22 fl2 sb2 b22 fl3 sb3 b22 sbd3 sbd4 b22 fl6 sb6 b22 fl7 sb7 b22 sbd7 b22 fl9 sb9 fl10 sb10 b38
@@ -340,7 +340,7 @@
            (:section s37) cclef7 fl0 b22 sb0 b22 sbd0 b22 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b38
            (:section s38) cclef7 fl0 b22 sb0 b22 fl1 b22 sb1 b22 fl2 sb2 b22 sbd2 b22 fl4 sb4 b22 fl5 sb5 sbd5 sbd6 b22 fl8 sb8 b22 fl9 sb9 fl10 sb10
            (:alt (:diplomatic sbd10)
-                 (:idealised)
+                 (:critical)
                  (:comment "Original: Nach der letzten Note steht ein Ḟ.")
                  (:flag :draft) (:id 0))
            b22 bl)
@@ -356,7 +356,7 @@
    (:music 2209
            (:section s51) (:f-clef) max7 fclef7 b22 fl0 sb0 b22 sbd0 b22 sbd1 b22 sbd2 b22 fl3 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22
            (:alt (:diplomatic sb9)
-                 (:idealised sbd9)
+                 (:critical sbd9)
                  (:comment "Original: Die letzte Note hat keinen enharmonischen Punkt.")
                  (:flag :draft) (:id 0))
            b22
@@ -406,7 +406,7 @@
                  (:flag :layout) (:id 0))
            cclef1 fl0 b22 sb0 b22 sbd0 fl2 b22 sb2 b22 fl3 sb3 b22 sb4 b22 fl5 sb5
            (:alt (:diplomatic b22 sb6)
-                 (:idealised fl6 sb6)
+                 (:critical fl6 sb6)
                  (:comment "Original: Die fünftletzte Note hat kein ♭.")
                  (:flag :draft) (:id 0))
            b22 fl7 sb7 b22 sbd7 b22 fl9 sb9 fl10 sb10 b22
@@ -471,7 +471,7 @@
                  (:flag :layout) (:id 0))
            (:f-clef) max9 fclef9 b22 fl0 sb0 b22 sbd0 b22 sbd1 b22 fl3 sb3 b22 fl4 sb4 sbd4 b22 sbd5 b22 fl7 sb7 sbd7
            (:alt (:diplomatic fl8)
-                 (:idealised b22)
+                 (:critical b22)
                  (:comment "Original: Die zweitletzte Note hat ein ♭.") (:flag :draft) (:id 0))
            sbd8 fl10 sb10 b22 bl
            (:section s61) (:f-clef) b22 max9 fclef9 b22 fl0 sb0 b22 fl1 sb1 sb2 b22 fl3 sb3 b22 fl4 sb4 fl5 sb5 sb6 fl7 sb7 fl8 sb8 b22 sb9 fl10 sb10 bl)
@@ -495,7 +495,7 @@
                  (:flag :layout) (:id 0))
            (:f-clef) max7 fclef7 b38 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9
            (:alt (:diplomatic fl10 sb10)
-                 (:idealised fl10 sb10)
+                 (:critical fl10 sb10)
                  (:comment "Die letzte Note ist unregelmässig erniedrigt, aber plausibel. Die regelmässige Variante ist B♮.")
                  (:flag :draft) (:id 0))
            b38 b22 bl)
@@ -510,7 +510,7 @@
                  (:flag :layout) (:id 0))
            gclef3 b22 fl0 b22 sb0 b22 fl1 sb1 b22 sb2 b22 sb3 b22 fl4 sb4 b22 fl5 sb5 b22 sb6 b22 fl7 b22 sb7 b22 fl8 sb8 b22 sb9
            (:alt (:diplomatic fl10 sb10)
-                 (:idealised fl10 sb10)
+                 (:critical fl10 sb10)
                  (:comment "Die letzte Note ist unregelmässig erniedrigt, aber plausibel. Die regelmässige Variante ist G.")
                  (:flag :draft) (:id 0))
            b38 bl)
@@ -525,7 +525,7 @@
                  (:flag :layout) (:id 0))
            cclef1 b22 fl0 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 fl7 b22 sb7 b22 sb8 b22 sb9
            (:alt (:diplomatic fl10 sb10)
-                 (:idealised fl10 sb10)
+                 (:critical fl10 sb10)
                  (:comment "Die letzte Note ist unregelmässig erniedrigt, aber plausibel. Die regelmässige Variante ist E.")
                  (:flag :draft) (:id 0))
            b22 bl)
@@ -540,7 +540,7 @@
                  (:flag :layout) (:id 0))
            cclef3 b22 fl0 sb0 b22 fl1 sb1 b22 fl2 sb2 sb3 b22 fl4 sb4 b22 fl5 sb5 sb6 b22 fl7 sb7 b22 fl8 sb8 fl9 sb9
            (:alt (:diplomatic sbd9)
-                 (:idealised sbd9)
+                 (:critical sbd9)
                  (:comment "Die letzte Note ist unregelmässig erniedrigt, aber plausibel. Die regelmässige Variante ist C.")
                  (:flag :draft) (:id 0))
            b38 bl)
@@ -555,7 +555,7 @@
                  (:flag :layout) (:id 0))
            cclef5 b22 fl0 b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 fl4 b22 sb4 b22 sb5 b22 sb6 b22 fl7 sb7 sb8 sb9
            (:alt (:diplomatic fl10 sb10)
-                 (:idealised fl10 sb10)
+                 (:critical fl10 sb10)
                  (:comment "Die letzte Note ist unregelmässig erniedrigt, aber plausibel. Die regelmässige Variante ist A.")
                  (:flag :draft) (:id 0))
            b38 bl)
@@ -570,7 +570,7 @@
                  (:flag :layout) (:id 0))
            cclef7 fl0 sb0 b22 fl1 b22 sb1 b22 fl2 sb2 b22 sb3 b22 fl4 sb4 b22 fl5 sb5 b22 fl6 sb6 sbd6 b22 fl8 sb8 fl9 sb9
            (:alt (:diplomatic sbd9)
-                 (:idealised sbd9)
+                 (:critical sbd9)
                  (:comment "Die letzte Note ist unregelmässig erniedrigt, aber plausibel. Die regelmässige Variante ist F.")
                  (:flag :draft) (:id 0))
            b22 bl)
@@ -585,7 +585,7 @@
                  (:flag :layout) (:id 0))
            (:f-clef) max5 fclef5 b22 fl0 sb0 b22 fl1 sb1 b22 sb2 b22 sb3 b22 fl4 sb4 b22 sb5 b22 sb6 b22 fl7 sb7 b22 fl8 sb8 sb9
            (:alt (:diplomatic fl10 sb10)
-                 (:idealised fl10 sb10)
+                 (:critical fl10 sb10)
                  (:comment "Die letzte Note ist unregelmässig erniedrigt, aber plausibel. Die regelmässige Variante ist D.")
                  (:flag :draft) (:id 0))
            b38 bl)
@@ -595,7 +595,7 @@
    (:music 2373
            (:section s55) (:f-clef) max7 fclef7 b22 fl0 b22 sb0 b22 fl1 b22 sb1 b22 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 fl8 sb8 sbd8
            (:alt (:diplomatic fl10 sb10)
-                 (:idealised b22 sbd9)
+                 (:critical b22 sbd9)
                  (:comment "Original: Die letzte Note ist ein Ḃ♭.")
                  (:flag :draft) (:id 0))
 
@@ -605,7 +605,7 @@
                  (:flag :layout) (:id 0))
            (:f-clef) max7 fclef7 b38 fl0 sb0 b22 fl1 sb1 b22 fl2 sb2 b22 fl3 sb3 b22 sbd3 b22 fl5 sb5 b22 fl6 sb6 b22 sbd6 b22 fl8 b22 sb8 fl9 sb9
            (:alt (:diplomatic sbd9)
-                 (:idealised sbd9)
+                 (:critical sbd9)
                  (:comment "Die letzte Note ist unregelmässig erniedrigt, aber plausibel. Die regelmässige Variante ist B♭.")
                  (:flag :draft) (:id 0))
            b38 bl)
@@ -620,7 +620,7 @@
                  (:flag :layout) (:id 0))
            (:f-clef) max9 fclef9 b22 fl0 sb0 b22 fl1 sb1 b22 sb2 b22 sb3 b22 fl4 sb4 b22 fl5 sb5 sb6 b22 fl7 sb7 b22 fl8 sb8 sb9
            (:alt (:diplomatic fl10 sb10)
-                 (:idealised fl10 sb10)
+                 (:critical fl10 sb10)
                  (:comment "Die letzte Note ist unregelmässig erniedrigt, aber plausibel. Die regelmässige Variante ist G.")
                  (:flag :draft) (:id 0))
            b22 bl)))

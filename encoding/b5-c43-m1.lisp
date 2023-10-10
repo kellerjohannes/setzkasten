@@ -64,9 +64,9 @@
      (1544 nil "se.")
      (1691 nil "to.")
      (1844 nil "to.")
-     (1966 nil (:alt (:diplomatic "se.") (:idealised "to.")
+     (1966 nil (:alt (:diplomatic "se.") (:critical "to.")
                      (:comment "Original: »se.«") (:flag :draft) (:id 3)))
-     (2118 nil (:alt (:diplomatic "to.") (:idealised "se.")
+     (2118 nil (:alt (:diplomatic "to.") (:critical "se.")
                      (:comment "Original: »to.«") (:flag :draft) (:id 4))))
    (:music 2231
            (:voice v1)

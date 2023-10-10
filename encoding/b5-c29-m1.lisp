@@ -78,18 +78,18 @@
            (:section s7) fl4 sbd4 (:divider :regular) sb4 bl
 
            (:alt (:diplomatic sbd6)
-                 (:idealised sbd4)
+                 (:critical sbd4)
                  (:comment "Original: Die dritte Note in der oberen Stimme ist ein Ḋ.")
                  (:flag :draft) (:id 1))
 
            (:alt (:diplomatic sh6 sb6)
-                 (:idealised sh4 sb4)
+                 (:critical sh4 sb4)
                  (:comment "Original: Die vierte Note in der oberen Stimme ist ein D♯.")
                  (:flag :draft) (:id 2))
            bl
            (:section s8)
            (:alt (:diplomatic sbd8)
-                 (:idealised sbd6)
+                 (:critical sbd6)
                  (:comment "Original: Die Note in der oberen Stimme ist ein Ḟ.")
                  (:flag :draft) (:id 3))
            bl)

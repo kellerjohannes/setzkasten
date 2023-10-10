@@ -89,7 +89,7 @@
           (2026 nil "ij"))
    (:music 2232
            cclef5 b38 fl4 b22 sb4 b38 mrest3
-           (:alt (:diplomatic b22) (:idealised fl4)
+           (:alt (:diplomatic b22) (:critical fl4)
                  (:comment "Original: Alt, T. 17, kein ♭.")
                  (:flag :draft) (:id 1))
            m4 b38 sb8 dot8 m8 b38 sb8 b38 mrest7 b38 sb9 b22 m2 dot2 sm2 b38 m2 b38 smrest1 b38
@@ -162,7 +162,7 @@
            (:f-clef) max7 fclef7 b38 fl3 b22 br3 b38 br1 b38 sb1 b38 sb4 b38 mrest3 b38 m4 b38
            sb7 dot8 m7 b38 sb5 b38 sb5 b38 sb3 b38 br6 b38 (:divider :double) br3 b38 blbl
            b38 b38 b38 b38 b38 b38 b38 b38
-           (:alt (:diplomatic mrest7) (:idealised b38)
+           (:alt (:diplomatic mrest7) (:critical b38)
                  (:comment "Original: Im leeren Abschnitt der Notenzeile nach dem Doppelstrich steht eine bedeutungslose Minima-Pause.")
                  (:flag :draft) (:id 2))
            b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38)

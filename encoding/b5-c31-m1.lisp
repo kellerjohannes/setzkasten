@@ -87,7 +87,7 @@
            (:section s1) cclef7 sb5 fl5 sbd5 bl
 
            (:alt (:diplomatic fl4 sb4)
-                 (:idealised fl5 sb5)
+                 (:critical fl5 sb5)
                  (:comment "Original: Die dritte Note in der unteren Stimme ist ein G♭.")
                  (:flag :draft) (:id 1))
            sh4 sb4 b22 bl

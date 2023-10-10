@@ -29,7 +29,7 @@
    (:vspace 50)
    (:music 2219
            cclef1 b38 m5 b38 sm3 b38 m5d b38 sm6 b38 m8 b38 sm7 b38 m3 b38 sb8 b38 sb5 b38
-           (:alt (:diplomatic m6) (:idealised sb6)
+           (:alt (:diplomatic m6) (:critical sb6)
                  (:comment "Original: Sopran, T. 8, die Note A hat den Wert einer Minima.")
                  (:flag :draft) (:id 1))
            b38 smrest3 b38 sm2 b38 sm3 b38 m5 b38 m1 b38 sm8 b38 m8 dot8 cr7 b38 cr6 b38 m7 b38 sb8 b38 bl b22 b125 b125)

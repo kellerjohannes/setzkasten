@@ -59,7 +59,7 @@
    (:music 2209
            cclef5 sb6
            (:alt (:diplomatic fl7)
-                 (:idealised b38)
+                 (:critical b38)
                  (:comment "Original: Die sechste Note ist ein E♭.")
                  (:flag :draft) (:id 1))
            sb7 b38 sb8 b38 sb9 b38 bl

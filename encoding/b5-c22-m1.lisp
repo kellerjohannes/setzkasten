@@ -55,7 +55,7 @@
    (:music 2230
            (:voice v1)
            (:section s1) cclef7 b38 fl9 b38 sb9 b38 fl9 b38 sb9 b38 fl9 b22 (:divider :regular) sb9 b38
-           (:alt (:diplomatic fl9 bl) (:idealised bl fl9)
+           (:alt (:diplomatic fl9 bl) (:critical bl fl9)
                  (:comment "Original: Das vierte ♭ steht unmittelbar vor dem Taktstrich.")
                  (:flag :draft) (:id 1))
            sb9 b38 fl9 b38 sb9 b22 fl9 b22 sb9 bl
@@ -101,7 +101,7 @@
            (:section s6) b38 fl2 b38 sb2 b38 bl
            (:section s7) b38 fl2 b38 sb2 b38 fl2 b38 sb2 b38 bl
            b38 fl2 b38 sb2 b38 fl2 b38 sb2
-           (:alt (:diplomatic) (:idealised) (:it fl2 sb2)
+           (:alt (:diplomatic) (:critical) (:it fl2 sb2)
                  (:comment "Original: In dieser Section fehlt ein E♭.")
                  (:flag :draft) (:id 2))
            b38 bl

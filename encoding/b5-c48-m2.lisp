@@ -159,12 +159,12 @@
            (:section s9) (:f-clef) max7 fclef7 b38 sb8 b38 fl8 b38 b22 sbd8 b38 fl8 b38 b22 sb8 b38 b22 sbd7 b38 b22 sb7 b38 b22 bl
            (:section s10) (:newline) b38 b22 sb7 b38
            (:alt (:diplomatic sbd6 b38 sh6 b38 b22 sb6)
-                 (:idealised sh6 b38 b22 sb6 b38 sbd6)
+                 (:critical sh6 b38 b22 sb6 b38 sbd6)
                  (:comment "Original: Die mittleren beiden Noten sind vertauscht.")
                  (:flag :draft) (:id 2))
            b38 sb6 b38 b22 bl
            (:section s11) b22 b38 sb6 b38 fl6 b38 sbd6 b38
-           (:alt (:diplomatic sh5 b38 sb5) (:idealised fl6 b38 sb6)
+           (:alt (:diplomatic sh5 b38 sb5) (:critical fl6 b38 sb6)
                  (:comment "Original: Die mittlere Note ist D♯.")
                  (:flag :draft) (:id 3))
            b38 sbd5 b22 b22 sb5 b22 b22 bl)
@@ -189,12 +189,12 @@
            (:section s12) (:f-clef) max7 fclef7 b38 sb5 b38 fl5 b38 sbd5 b38 fl5 b38 sb5 b38 b22 sbd4 b38 sb4 b38 b22 bl
            (:section s13) (:newline) b22 b38 sb4 b38 b22
            (:alt (:diplomatic sbd3 b38 sh3 b38 sb3)
-                 (:idealised sh3 b38 sb3 b38 sbd3)
+                 (:critical sh3 b38 sb3 b38 sbd3)
                  (:comment "Original: Die mittleren beiden Noten sind vertauscht.")
                  (:flag :draft) (:id 4))
            b38 sb3 b38 b22 bl
            (:section s14) b22 b38 sb3 b38 b22 fl3 b38 sbd3 b38 b22
-           (:alt (:diplomatic sh2 b22 b22 sb2) (:idealised fl3 b38 sb3)
+           (:alt (:diplomatic sh2 b22 b22 sb2) (:critical fl3 b38 sb3)
                  (:comment "Original: Die mittlere Note ist ein A♯.")
                  (:flag :draft) (:id 5))
            b38 sbd2 b38 b22 sb2 b38 b22 bl)

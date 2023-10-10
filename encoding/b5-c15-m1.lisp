@@ -77,12 +77,12 @@
            (:section s1) (:f-clef) max7 fclef7 b38
 
            (:alt (:diplomatic sh6 b38 b22 sb6)
-                 (:idealised sh5 b38 b22 sb5)
+                 (:critical sh5 b38 b22 sb5)
                  (:comment "Original: Die erste Note in der unteren Stimme ist ein E♯.")
                  (:flag :draft) (:id 1))
            b38 b22
            (:alt (:diplomatic fl6 b38 sbd6)
-                 (:idealised b38 b38 sbd5)
+                 (:critical b38 b38 sbd5)
                  (:comment "Original: Die zweite Note in der unteren Stimme ist ein Ė♭.")
                  (:flag :draft) (:id 2))
            b38 bl
@@ -93,7 +93,7 @@
            (:section s4) b22 sh0 b22 sb0 b22 b22 b22 b22 bl)
    (:text 140 120
           (215 nil "le quattro terze")
-          (914 nil (:alt (:diplomatic "quɪnta") (:idealised "quinta")
+          (914 nil (:alt (:diplomatic "quɪnta") (:critical "quinta")
                          (:comment "Original: »quɪnta«")
                          (:flag :draft) (:id 3)))
           (1282 nil "le quattro seste")

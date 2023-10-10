@@ -38,11 +38,11 @@
            (:section s3) (:newline) b22 m3 b22 sb1 b22 m0 b22 bl
            (:section s4) b22 mrest5 b22 sb5 sh4 m4 b22 sb5 b22 bl
            (:section s5) b22 mrest5 b22 sb6 b38 m5
-           (:alt (:diplomatic dot4) (:idealised dot6)
+           (:alt (:diplomatic dot4) (:critical dot6)
                  (:comment "Original: Punktierung steht eine Position tiefer.")
                  (:flag :draft) (:id 1))
            sm4 sb3 b38 m2 b38
-           (:alt (:diplomatic br3) (:idealised longa3)
+           (:alt (:diplomatic br3) (:critical longa3)
                  (:comment "Diskutable Verlängerung der letzten Note im Sopran, um alle Stimmen gleich lang erscheinen zu lassen. Diese Type (longa3) wird sonst im Traktat nie verwendet.")
                  (:flag :suggestion) (:id 2))
            b38 blbl)

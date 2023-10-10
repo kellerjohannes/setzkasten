@@ -51,13 +51,13 @@
            cclef7 b22 sbd5 b22 fl6 b22 sbd6 b22 sbd7 b22 bl
            (:section s5) b22 sbd0 fl1 sbd1 fl2 sbd2 sbd3 sbd4 fl5
            (:alt (:diplomatic sb5)
-                 (:idealised sbd5)
+                 (:critical sbd5)
                  (:comment "Original: Die sechste Note ist ein A♭.")
                  (:flag :draft) (:id 1))
            fl6 sbd6 sbd7 b22 bl
            (:section s6) b22 sbd0 b22 sbd1 sbd2 fl4 b22 sb4
            (:alt (:diplomatic )
-                 (:idealised sbd4 )
+                 (:critical sbd4 )
                  (:comment "Original: Die fünfte Note fehlt.")
                  (:flag :draft) (:id 2))
            sbd5 sbd6 sbd7 b22 bl

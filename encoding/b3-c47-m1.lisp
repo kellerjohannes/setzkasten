@@ -37,7 +37,7 @@
    (:music 2202
            (:voice v1)
            (:section s1) (:f-clef) max7 fclef7 sb2 b22 sbd2 fl5 b22 sb5 sb5 b22 sbd5
-           (:alt (:diplomatic fl6) (:idealised fl8)
+           (:alt (:diplomatic fl6) (:critical fl8)
                  (:comment "Original: Das zweite ♭ steht eine Position tiefer.")
                  (:flag :draft) (:id 1))
            sb8 b22 fl8 b22 sbd8 b38 sb8 b22 sbd8 fl9 b22 sb9 fl9 b22 sbd9 b22 sb9 bl
@@ -79,7 +79,7 @@
            ;; und eine neu strukturierte 'settima ottava' vorgeschlagen werden.
            (:section s7) (:newline)
            (:alt (:diplomatic  )
-                 (:idealised  )
+                 (:critical  )
                  (:comment "Die _settima ottava enarmonica_ hat eine fragwürdige Struktur, da es keine Note auf der Tonhöhe der Quarte und Quinte gibt, d.h. die Zusammensetzung aus einer _quarta enarmonica_ und einer _quinta enarmonica_ lässt sich hier nicht nachvollziehen. Eine Korrektur würde starke Eingriffe erfordern. Ein Kommentar soll auf jeden Fall eingefügt werden.")
                  (:flag :observe) (:id 1))
            cclef5 b38 sb2 b38 sbd2 b38 fl3 b38 b22 sb3 b38 sb5 b38 sbd5 b38 fl6 b38 sb6 b38 sb8 b38 sbd8 b38 fl9 b38 b38 sb9 b38 fl9 b38 sbd9 b38 sb9 b22 b22 bl

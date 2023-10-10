@@ -115,11 +115,11 @@
            (:section s2) sh2 b22 sb2 fl3 b22 sbd3 b22 sb3 bl
            (:section s3) sb3 b22 sbd3
            (:alt (:diplomatic b22 sb4 b22)
-                 (:idealised sh3 b22 sb3)
+                 (:critical sh3 b22 sb3)
                  (:comment "Original: C.") (:flag :draft) (:id 0))
            sbd4 b22 sh4 b22 sb4 bl
            (:section s4) (:newline) sh4 b22 sb4 fl5 b22 sb5 b22 fl5 b22 sbd5 b22
-           (:alt (:diplomatic) (:idealised sbd5 b22)
+           (:alt (:diplomatic) (:critical sbd5 b22)
                  (:comment "Original: Die zweitletzte Note fehlt")
                  (:flag :draft) (:id 1))
            sh5 b22 sb5 b38 bl)
@@ -181,7 +181,7 @@
      (1841 nil "sem.min."))
    (:music 2247
            (:section s12) (:f-clef) max7 fclef7 b38 sh4 b38 sb4 b22 b38 sbd4 b38 sb4 b22 b22 sh3 b38
-           (:alt (:diplomatic sbd3) (:idealised sb3)
+           (:alt (:diplomatic sbd3) (:critical sb3)
                  (:comment "Original: Die vierte Note hat keinen enharmonischen Punkt.")
                  (:flag :draft) (:id 2))
            b38 sb3 bl

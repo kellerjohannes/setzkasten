@@ -52,7 +52,7 @@
            (:section s4)
            ;; Rhythmischer Eingriff, Korrektur zu diskutieren!
            (:voice v1) cclef7 b38 sb3 sb2
-           (:alt (:diplomatic) (:idealised dot2)
+           (:alt (:diplomatic) (:critical dot2)
                  (:comment "Punktierung des E wurde ergänzt.")
                  (:flag :suggestion) (:id 1))
            bl

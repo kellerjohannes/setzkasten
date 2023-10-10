@@ -40,7 +40,7 @@
            (:voice v1)
            (:section s1) cclef7 b22 sbd2 fl4
            (:alt (:diplomatic sbd4)
-                 (:idealised sb4)
+                 (:critical sb4)
                  (:comment "Original: Die zweite Note ist ein Ġ♭.")
                  (:flag :draft) (:id 1))
            b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 sbd8 sbd9 b22 bl

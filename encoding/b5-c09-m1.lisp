@@ -83,7 +83,7 @@
            (:section s3) b38 b38 sh3 b38 sb3 b38 sbd3 b38 bl
            b38 sb3 b38 fl3 b38
            (:alt (:diplomatic sbd3)
-                 (:idealised sbd3)
+                 (:critical sbd3)
                  (:comment "In gewissen Quellen (oder nur im Faksimile) fehlt bei der dritten Note dieser Section ein enharmonischer Punkt.")
                  (:flag :observe) (:id 1))
            b22 b38 bl

@@ -121,7 +121,7 @@
      (48 nil "ᴅ.mi.d.mi.di.mi.d.ma.")
 
      (:alt (:diplomatic (593 nil "d.mi.d.mi.d.mi.d.mi."))
-           (:idealised (593 nil "d.mi.d.mi.d.mi."))
+           (:critical (593 nil "d.mi.d.mi.d.mi."))
            (:comment "Original: »d.mi.d.mi.d.mi.d.mi.«")
            (:flag :draft) (:id 7))
      (1118 nil "d.mi. d.mi. d.mi. d.ma.")
@@ -186,7 +186,7 @@
            (:section s8) (:f-clef) max7 fclef7 b38 fl9 b22 sbd9 b22 fl9 sb9 b22 sh8 sb8 b22 sbd8 b22 fl8 b22 sbd8 b22 bl
            (:section s9) b22 fl8 b22 sbd8 b22 fl8 b22 sb8 b22
            (:alt (:diplomatic sh8 sb8)
-                 (:idealised sh7 sb7)
+                 (:critical sh7 sb7)
                  (:comment "Original: G♯.") (:flag :draft) (:id 0))
            b22 sbd7 b22 sh6 sb6 b22 bl
            (:section s10) (:newline) b22 sh6 sb6 b22 sbd6 b22 sb6 b22 fl6 b22 sbd6 b22 bl
@@ -195,7 +195,7 @@
      (145 nil "ᴅ.mi. d.mi. d.mi. d.ma.")
      (811 nil "d.mi.d.mi. d.mi. d.ma.")
      (:alt (:diplomatic (1397 nil "d.mi.d.mi.d.mi.d.ma."))
-           (:idealised (1397 nil "d.mi.d.mi.d.ma."))
+           (:critical (1397 nil "d.mi.d.mi.d.ma."))
            (:comment "Original: »d.mi.d.mi.d.mi.d.ma.«")
            (:flag :draft) (:id 8))
      (1973 nil "d.mi.d.mi."))
@@ -227,37 +227,37 @@
            (:f-clef) max7 fclef7 b22 sh5 sb5 sbd5 fl5 sbd5 b22 bl
            (:section s12) b22 fl5 b22 sbd5 b22 fl5 b22 sb5 b22 sh4 sb4 sbd4
            (:alt (:diplomatic fl4 sbd4)
-                 (:idealised fl4 sbd4)
+                 (:critical fl4 sbd4)
                  (:comment "Sehr seltene Verwendung von Ċ♭. Als Ganzton unter Ḋ♭ ist diese Notation sinnvoll, aber von Vicentino nicht explizit eingeführt oder auf der Klaviatur lokalisiert. Sie ist klanglich identisch mit B♯ (/Csolfaut secondo in terzo ordine/).") (:flag :draft) (:id 0))
            b22 bl
            (:section s13) (:newline) b38
            (:alt (:diplomatic fl4 b22 sbd4)
-                 (:idealised b38 b22 sbd4)
+                 (:critical b38 b22 sbd4)
                  (:comment "Original: Die erste Note ist ein Ċ♭.")
                  (:flag :draft) (:id 1))
            b22
            (:alt (:diplomatic fl4 b22 sb4)
-                 (:idealised b38 b22 sb4)
+                 (:critical b38 b22 sb4)
                  (:comment "Original: Die zweite Note ist ein C.")
                  (:flag :draft) (:id 2))
            b22 sh3 b22 sb3 b22 sbd3 b38 b38 bl
            (:section s14) b22
            (:alt (:diplomatic sbd3)
-                 (:idealised fl3 sbd3)
+                 (:critical fl3 sbd3)
                  (:comment "Original: Die erste Note ist ein Ḃ♮")
                  (:flag :draft) (:id 3))
            b22
            (:alt (:diplomatic sb3)
-                 (:idealised fl3 sb3)
+                 (:critical fl3 sb3)
                  (:comment "Original: Die zweite Note ist ein B♮.")
                  (:flag :draft) (:id 4))
            b22
            (:alt (:diplomatic fl3 sbd3)
-                 (:idealised sh2 sb2)
+                 (:critical sh2 sb2)
                  (:comment "Original: Die dritte Note ist ein Ḃ♭.")
                  (:flag :draft) (:id 5))
            (:alt (:diplomatic sh2 sb2)
-                 (:idealised sbd2)
+                 (:critical sbd2)
                  (:comment "Original: Die vierte Note ist ein A♯.")
                  (:flag :draft) (:id 6))
            fl2 sbd2 b38 bl)
@@ -265,7 +265,7 @@
      (98 nil "di. mi. di.ma.")
      (466 nil "d.mi. d.mi. d.mi.d.ma.")
      (:alt (:diplomatic (1086 nil "d.mi. d.mi. di.mi. d.ma."))
-           (:idealised (1086 nil "d.mi. d.mi. di.mi."))
+           (:critical (1086 nil "d.mi. d.mi. di.mi."))
            (:comment "Original: »d.mi. d.mi. di.mi. d.ma.«")
            (:flag :draft) (:id 9))
      (1720 nil "d.mi.d.mi.d.mi.d.ma."))

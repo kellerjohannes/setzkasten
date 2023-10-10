@@ -165,7 +165,7 @@
      (1800 nil "sem. min."))
    (:music 2219
            (:section s12) (:f-clef) max7 fclef7 b38 sh4 b38 sb4 b22 b38 sbd4 b38 b22 sh3
-           (:alt (:diplomatic) (:idealised sb3)
+           (:alt (:diplomatic) (:critical sb3)
                  (:comment "Original: Der Notenkopf nach dem zweiten ♯ fehlt.")
                  (:flag :draft) (:id 1))
            b38 b22 sbd3 b38 b22 sb3 b38 bl

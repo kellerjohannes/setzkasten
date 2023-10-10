@@ -56,12 +56,12 @@
            cclef7 b38 sh6 b22 sb6 b22 sh7 b22 sb7 b22 sh8 b22 sb8 b38 bl
            (:section s5) b38 sh1 b22 sb1 b22 sb2 b22
            (:alt (:diplomatic sb3)
-                 (:idealised sh3 sb3)
+                 (:critical sh3 sb3)
                  (:comment "Original: Die dritte Note ist ein F.")
                  (:flag :draft) (:id 1))
            b22 sh4 b22 sb4 b22 sh5 b22 sb5 b22 sb6 b22 sh7 b22 sb7 b22 sh8 b22 sb8 b38 bl
            (:section s6) b22 sh1 b22 sb1 b22 sh2
-           (:alt (:diplomatic mrest1) (:idealised b22)
+           (:alt (:diplomatic mrest1) (:critical b22)
                  (:comment "Original: Zwischen dem zweiten ♯ und dem darauffolgenden Notenkopf steht eine Minima-Pause.")
                  (:flag :draft) (:id 2))
            sb2 fl4 b22 sbd4 b22 fl5 b22 sbd5 custos5)

@@ -47,7 +47,7 @@
    (:music 2222
            (:f-clef) max7 fclef7 b38 sh6 b22 sb6
            (:alt (:diplomatic sh7 sb7)
-                 (:idealised fl8 sbd8)
+                 (:critical fl8 sbd8)
                  (:comment "Original: Die zweitletzte Note ist ein F♯.")
                  (:flag :draft) (:id 1))
            b22 sh8 b22 sb8 b38 bl
@@ -58,7 +58,7 @@
      (1509 nil "Settima ottaua."))
    (:music 2220
            (:section s6) (:f-clef) max7 fclef7 b38 sh1 sb1 b22 sh2 b22 sb2 sh3 sb3 b22 fl5 b22 sbd5 b22
-           (:alt (:diplomatic sh6) (:idealised sh5)
+           (:alt (:diplomatic sh6) (:critical sh5)
                  (:comment "Original: das vierte ♯ steht eine Position höher.")
                  (:flag :draft) (:id 2))
            b22 sb5 sh6 sb6 b22 fl8 b22 sbd8 b22 sh8 b22 sb8 b38 bl

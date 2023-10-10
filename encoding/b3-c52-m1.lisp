@@ -98,7 +98,7 @@
    ;; Musikzeile 3 (Sopran 3)
    (:music 2209
            cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat) b22 fl3 b22 sb3 b22 m1 b22 sb1 b22 sb8 nat7
-           (:alt (:diplomatic md7) (:idealised md7) (:tatti m7)
+           (:alt (:diplomatic md7) (:critical md7) (:tatti m7)
                  (:comment "Sopran, T. 18, letzte Note: Dieses Ḃ♮ passt nicht zum Bass (G) und zum Alt (G), denn es entsteht eine _terza più di maggiore_. Es wurde entschieden, diesen Zusammenklang zu akzeptieren, weil er als melodische Vorausnahme des ersten Klangs in T. 19 verstanden werden kann.")
                  (:flag :observe) (:id 2))
            nat7 md7 nat7 md7 b22 m8 b22 m5 b22 mrest5
@@ -126,7 +126,7 @@
    (:music 2224
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat) b38 md0 b22 md3 sh1 m1 b22 sb1 fl3 m3 b22 sb2 sbd5 b22 m3 b22 m5 b22 m3 sb6 m9 b22 m9 b22 m9 m5d dot6 sm5d fl7 sbd7 fl3 sb3 b22 mrest3
            b22 m4 b22
-           (:alt (:diplomatic md4) (:idealised m4) (:tatti m4)
+           (:alt (:diplomatic md4) (:critical m4) (:tatti m4)
                  (:comment "Original: Alt, T. 16 erste Minima hat einen enharmonischen Punkt.")
                  (:flag :draft) (:id 3))
            b22 m1 b22 md8 b22 md8 b22 sb4 b22 m2 m9 b22 m7 fl7 m7 b38)
@@ -136,7 +136,7 @@
    ;; Musikzeile 6 (Alt 3)
    (:music 2223
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat) b22 m6 b22 m9 b22 md6 b22 md6 b22 m9 b22 sb7 b22 m7 sb3 b22 sbd6 nat4
-           (:alt (:diplomatic sb4) (:idealised m4)
+           (:alt (:diplomatic sb4) (:critical m4)
                  (:comment "Original: Alt, T. 21, zweite Note hat den Wert einer Semibrevis.")
                  (:flag :draft) (:id 4))
            b22 m4 b22 m2 b22 m9 b22 m9 b22 m9 sh8 m8 b22 m8 b22 m7 b22 m7 b22 m7 b22 m8 b22 m8 b22 m8 b22 brd4 b22 brd4 b22 blbl b38 b38 b125)
@@ -162,7 +162,7 @@
    ;; Musikzeile 9 (Tenor 3)
    (:music 2228
            cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat) b22
-           (:alt (:diplomatic sb6 b22 br4) (:idealised br4 b22 sb0)
+           (:alt (:diplomatic sb6 b22 br4) (:critical br4 b22 sb0)
                  (:comment "Original: Tenor, T. 17-18, anstelle der Brevis auf G steht eine Semibrevis auf B♭, gefolgt von einer Brevis auf G. Cordes und Gallagher haben andere Lösungen.")
                  (:flag :draf) (:id 5))
            b22 brrest2

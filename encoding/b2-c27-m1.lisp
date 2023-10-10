@@ -56,7 +56,7 @@
            (:section s2)
            (:voice v1) gclef3 b22 sb9 b38 b22 bl
            (:voice v2) b38 b38
-           (:alt (:diplomatic cclef3) (:idealised cclef1)
+           (:alt (:diplomatic cclef3) (:critical cclef1)
                  (:comment "Original: C2-Schlüssel.") (:flag :draft) (:id 1))
            b38 sb4 b38 bl
            (:voice v3) b38 b38 cclef7 b38 sb3 b38 bl

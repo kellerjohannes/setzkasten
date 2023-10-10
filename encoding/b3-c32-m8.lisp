@@ -30,7 +30,7 @@
            (:section s2) mrest7 sb8 m7 b22 bl
            (:section s3) b22 m8 sb6 sb9
            (:alt (:diplomatic)
-                 (:idealised sh8)
+                 (:critical sh8)
                  (:comment "Diskutable Ergänzung. Im Original möglicherweise aus Platzgründen weggelassen. Bibelgruppe unschlüssig.")
                  (:flag :suggestion) (:id 1))
            m8 sb9 bl
@@ -56,7 +56,7 @@
            ;; Das beträfe die m4, vor die ein fl4 gesetzt werde müsste. Zu diskutieren.
            (:section s4) b38 b22 m6 b22 b22
            (:alt (:diplomatic  )
-                 (:idealised  )
+                 (:critical  )
                  (:comment "Möglichkeit der Ergänzung eines ♭ (fl4) zur Vermeidung des Querstands zwischen Alt und Bass. Soll eher nicht implementiert werden.")
                  (:flag :observe) (:id 2))
            m4 b22 b22 sb3 b22 b22 bl

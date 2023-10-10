@@ -67,7 +67,7 @@
            (:section s1) (:f-clef) max7 fclef7 b38 b38 sb8 b38 fl8 b38 sbd8 b38 bl
            b38 fl8 b38 sb8 b38
            (:alt (:diplomatic sh8 b38 sb8)
-                 (:idealised sh7 b38 sb7)
+                 (:critical sh7 b38 sb7)
                  (:comment "Original: Die vierte Note in der unteren Stimme ist ein G♯.")
                  (:flag :draft) (:id 1))
            b38 b22 bl

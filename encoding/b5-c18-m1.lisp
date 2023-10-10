@@ -61,9 +61,9 @@
            (:voice v1)
            (:section s1) cclef7 b38 fl4 b38
            (:alt (:diplomatic sb4)
-                 (:idealised sbd4)
-                 (:coordinate-a-b "1. MZ, 1. N")
-                 (:coordinate-c "S1, ST1, 1. N")
+                 (:critical sbd4)
+                 (:coord-barre "1. MZ, 1. N")
+                 (:coord-norm "S1, ST1, 1. N")
                  (:comment "Original: G♭.")
                  (:flag :ready) (:id 1))
            b38 fl4 b38 (:divider :regular) sbd4 b38 bl
@@ -84,16 +84,16 @@
            (:section s2) b38 b38 sh3 b38 sb3 b38 bl
            (:section s3) b22
            (:alt (:diplomatic fl2 b38 sbd2)
-                 (:idealised fl3 b38 sbd3)
-                 (:coordinate-a-b "2. MZ, 6. N")
-                 (:coordinate-c "S3, ST2, 1. N")
+                 (:critical fl3 b38 sbd3)
+                 (:coord-barre "2. MZ, 6. N")
+                 (:coord-norm "S3, ST2, 1. N")
                  (:comment "Original: Ȧ♭.")
                  (:flag :ready) (:id 2))
            b38 (:divider :regular)
            (:alt (:diplomatic fl2 b38 sb2)
-                 (:idealised b38 b38 sb3)
-                 (:coordinate-a-b "2. MZ, 7. N")
-                 (:coordinate-c "S3, ST2, 2. N")
+                 (:critical b38 b38 sb3)
+                 (:coord-barre "2. MZ, 7. N")
+                 (:coord-norm "S3, ST2, 2. N")
                  (:comment "Original: A♭.")
                  (:flag :ready) (:id 3))
            b22 bl
@@ -108,9 +108,9 @@
            (:voice v1)
            (:section s5) (:newline) cclef3 b38
            (:alt (:diplomatic sh2 b38 sb2)
-                 (:idealised sh1 b38 sb1)
-                 (:coordinate-a-b "3. MZ, 1. N")
-                 (:coordinate-c "S5, ST1, 1. N")
+                 (:critical sh1 b38 sb1)
+                 (:coord-barre "3. MZ, 1. N")
+                 (:coord-norm "S5, ST1, 1. N")
                  (:comment "Original: B♯.")
                  (:flag :ready) (:id 4))
            b38 fl2 b38 (:divider :regular) sb2 b38 b38 bl
@@ -119,16 +119,16 @@
            (:section s7) b38 sh4 b38 sb4 b38 fl5 b38 (:divider :regular) sb5 b38 b22 bl
            b22 b38
            (:alt (:diplomatic sbd5)
-                 (:idealised fl5 sbd5)
-                 (:coordinate-a-b "3. MZ, 8. N")
-                 (:coordinate-c "S7, 3. N")
+                 (:critical fl5 sbd5)
+                 (:coord-barre "3. MZ, 8. N")
+                 (:coord-norm "S7, 3. N")
                  (:comment "Original: Ė.")
                  (:flag :ready) (:id 5))
            b38
            (:alt (:diplomatic sh5 b38 sb5)
-                 (:idealised b38 b38 sb5)
-                 (:coordinate-a-b "3. MZ, 9. N")
-                 (:coordinate-c "S7, 4. N")
+                 (:critical b38 b38 sb5)
+                 (:coord-barre "3. MZ, 9. N")
+                 (:coord-norm "S7, 4. N")
                  (:comment "Original: E♯.")
                  (:flag :ready) (:id 6))
            b38 b22 bl

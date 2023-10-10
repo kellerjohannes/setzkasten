@@ -98,7 +98,7 @@
           (368 nil "ꝑfet. nat.")
           (652 nil "perfet.nat.")
           (955 nil (:alt (:diplomatic "ꝑſet. nat.")
-                         (:idealised "ꝑfet. nat.")
+                         (:critical "ꝑfet. nat.")
                          (:comment "") (:flag :draft) (:id 1)))
           (1228 nil "ꝑfet.na.")
           (1446 nil "ꝑfet.nat.")

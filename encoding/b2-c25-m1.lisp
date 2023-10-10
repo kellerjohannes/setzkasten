@@ -43,7 +43,7 @@
            (:section s1)
            (:voice v1)
            (:alt (:diplomatic cclef3)
-                 (:idealised cclef3)
+                 (:critical cclef3)
                  (:comment "Bibelgruppe: Verdacht auf Schlüsselfehler. Scheint aber korrekt zu sein, deshalb soll hier keine Idealisierung stattfinden.")
                  (:flag :observe) (:id 1))
            b38 sb5 b22 bl

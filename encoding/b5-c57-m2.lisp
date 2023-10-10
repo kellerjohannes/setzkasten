@@ -61,7 +61,7 @@
            (:section s6) b22 fl3 b22 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b22 fl10 sbd10 b22 bl
            (:section s7) (:newline) fl3 b22 sbd3 b22 sbd4 b22 sbd5 b22 fl6 sbd6 b22 sbd7 b22 sbd8 b22
            (:alt (:diplomatic sbd9)
-                 (:idealised fl9 sbd9)
+                 (:critical fl9 sbd9)
                  (:comment "Original: Die zweitletzte Note ist ein Ȧ.")
                  (:flag :draft) (:id 1))
            b22 fl10 sbd10 bl)))

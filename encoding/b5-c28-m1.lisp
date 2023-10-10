@@ -77,7 +77,7 @@
            (:voice v2)
            (:section s1) cclef7 b38 fl6 b38 sb6 b38
            (:alt (:diplomatic sh6 b38 sb6)
-                 (:idealised sh5 b38 sb5)
+                 (:critical sh5 b38 sb5)
                  (:comment "Original: Die zweite Note in der unteren Stimme ist ein B♯.")
                  (:flag :draft) (:id 1))
            bl

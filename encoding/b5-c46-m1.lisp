@@ -132,7 +132,7 @@
      (1063 nil "to.nat.")
      (1370 nil "to.nat.")
      (1659 nil "se.nat.")
-     (:alt (:diplomatic (1968 nil "se.nat.")) (:idealised (1968 nil "to.nat."))
+     (:alt (:diplomatic (1968 nil "se.nat.")) (:critical (1968 nil "to.nat."))
            (:comment "Original: »se.nat.«") (:flag :draft) (:id 2)))
    (:music 2213
            (:section s8) (:newline) (:f-clef) max7 fclef7 b38 sbd9 b22 b38 sbd8 b22 b22 bl

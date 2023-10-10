@@ -45,7 +45,7 @@
            (:section s6)
            ;; Vorschlag zur Idealisierung, da sonst kein 'semitono minore' entsteht. Alternativ
            ;; könnte man die Unterschrift dieses Taktes anpassen, wäre aber weniger plausibel.
-           (:alt (:diplomatic sb9) (:idealised sb8)
+           (:alt (:diplomatic sb9) (:critical sb8)
                  (:comment "Original: E.") (:flag :draft) (:id 1))
            b22 fl8 b22 sb8 bl
            (:section s7)

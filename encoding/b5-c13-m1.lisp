@@ -81,7 +81,7 @@
            (:section s9) b38 sbd5 b22 b22 bl
            (:section s10) b38
            (:alt (:diplomatic sbd5)
-                 (:idealised sbd6)
+                 (:critical sbd6)
                  (:comment "Original: Note in der oberen Stimme ist ein Ė.")
                  (:flag :draft) (:id 1))
            b38 bl

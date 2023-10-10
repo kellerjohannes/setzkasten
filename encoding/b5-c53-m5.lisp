@@ -53,7 +53,7 @@
            (:section s6) b22 sb2 sh3 sb3 sh4 sb4 sh5 sb5 sb6 sh7 sb7 sh8 sb8 sb9 bl
            (:section s7) (:newline) b22 sb2 sh3 sb3 sh4 sb4
            (:alt (:diplomatic sh5)
-                 (:idealised b38)
+                 (:critical b38)
                  (:comment "Original: Die vierte Note ist ein A♯.")
                  (:flag :draft) (:id 1))
            sb5 sb6 sh7 sb7 sb8 sb9 bl)))

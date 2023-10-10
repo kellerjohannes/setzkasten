@@ -74,12 +74,12 @@
            (:section s2) b38 sh5 b22 sb5 b38 bl
            (:section s3) b38
            (:alt (:diplomatic fl4 b22 b22 sbd4)
-                 (:idealised fl5 b22 b22 sbd5)
+                 (:critical fl5 b22 b22 sbd5)
                  (:comment "Original: Die erste Note in der unteren Stimme ist ein Ċ♭.")
                  (:flag :draft) (:id 1))
            b22
            (:alt (:diplomatic fl4 b22 sb4)
-                 (:idealised fl5 b22 sb5)
+                 (:critical fl5 b22 sb5)
                  (:comment "Original: Die zweite Note in der unteren Stimme ist ein C♭.")
                  (:flag :draft) (:id 2))
            b38 bl
@@ -94,7 +94,7 @@
    (:music 2245
            (:voice v1)
            (:section s5) (:newline) cclef7 b38 b22
-           (:alt (:diplomatic sh2) (:idealised sh0)
+           (:alt (:diplomatic sh2) (:critical sh0)
                  (:comment "Original: Das erste ♯ in der oberen Stimme steht zwei Positionen höher.")
                  (:flag :draft) (:id 3))
            b38 sb0 b22 fl1 b38 (:divider :regular) sb1 b38 b22 bl
@@ -102,28 +102,28 @@
            (:section s6) b38 sh2 b38 sb2 b38 b22 bl
            (:section s7) b38
            (:alt (:diplomatic sh4 b38 sb4)
-                 (:idealised sh3 b38 sb3)
+                 (:critical sh3 b38 sb3)
                  (:comment "Original: Die erste Note in der oberen Stimme ist ein G♯.")
                  (:flag :draft) (:id 4))
            b38 (:divider :regular)
            (:alt (:diplomatic fl5 b38 sb5)
-                 (:idealised fl4 b38 sb4)
+                 (:critical fl4 b38 sb4)
                  (:comment "Original: Die zweite Note in der oberen Stimme ist ein A♭.")
                  (:flag :draft) (:id 5))
            b38 b22 bl
            b22
            (:alt (:diplomatic fl5 b22 sbd5)
-                 (:idealised fl4 b22 sbd4)
+                 (:critical fl4 b22 sbd4)
                  (:comment "Original: Die dritte Note in der oberen Stimme ist ein Ȧ♭.")
                  (:flag :draft) (:id 6))
            b22
            (:alt (:diplomatic sbc5)
-                 (:idealised sbc4)
+                 (:critical sbc4)
                  (:comment "Original: Die vierte Note in der oberen Stimme ist ein A,.")
                  (:flag :draft) (:id 7))
            b22
            (:alt (:diplomatic sbd5)
-                 (:idealised sb4)
+                 (:critical sb4)
                  (:comment "Original: Die fünfte Note in der oberen Stimme ist ein Ȧ.")
                  (:flag :draft) (:id 8))
            b22 bl

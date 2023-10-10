@@ -25,7 +25,7 @@
    (:text 70 58
           (157 1898
                (:alt (:diplomatic "Eſsempio di molte cadentie del Quarto modo,à quattro uoci , della muſica parti⸗")
-                     (:idealised "Eſsempio di molte cadentie del Primo modo,à quattro uoci , della muſica parti⸗")
+                     (:critical "Eſsempio di molte cadentie del Primo modo,à quattro uoci , della muſica parti⸗")
                      (:comment "Original: »... Quarto modo,...«.")
                      (:flag :suggestion) (:id 2))))
    (:text 130 58

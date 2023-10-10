@@ -51,7 +51,7 @@
    (:music 2218
            (:f-clef) max7 fclef7 b38 fl6 sb6 b22 sb7 b22
            (:alt (:diplomatic fl8)
-                 (:idealised b38)
+                 (:critical b38)
                  (:comment "Original: Die zweitletzte Note ist ein G♭.")
                  (:flag :draft) (:id 1))
            sb8 b22 fl9 sb9 b22 bl
@@ -66,7 +66,7 @@
            (:section s6) (:f-clef) max7 fclef7 b38 b22 fl2 b22 sb2 b22 fl3 b22 sb3 b22 sb4 b22 sb5 b22 fl6 b22 sb6 b22 sb7 b22 sb8 b22 fl9 b22 sb9 b22 b38 bl
            (:section s7) (:newline) b22 b38 fl2 b22 sb2 b22 fl3 b22 sb3 b22
            (:alt (:diplomatic sbd3)
-                 (:idealised sb4)
+                 (:critical sb4)
                  (:comment "Original: Die dritte Note ist ein Ḃ♮.")
                  (:flag :draft) (:id 2))
            b22 fl5 b22 sb5 b22 fl6 b22 sb6 b22 sb7 b22 fl8 b22 sb8 b22 fl9 b22 sb9 b38 b38 bl)))

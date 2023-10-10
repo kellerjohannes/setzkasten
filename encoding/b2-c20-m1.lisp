@@ -131,7 +131,7 @@
            (:section s17) (:newline) b38 b38 sb7 b38 sb6 b38 b38 bl
            (:section s18) b38
            (:alt (:diplomatic m10 b38 m7 b38 sb9)
-                 (:idealised m10 b38 m7 b38 sb9)
+                 (:critical m10 b38 m7 b38 sb9)
                  (:comment "In diesem Beispiel kommt keine Sexte vor. Eine Idealisierung könnte in Betracht gezogen werden. Zur Zeit besteht kein Vorschlag.")
                  (:flag :observe) (:id 2))
            b38 bl

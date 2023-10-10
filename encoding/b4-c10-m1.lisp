@@ -56,7 +56,7 @@
            (:section s1) (:f-clef) max5 fclef5 b22 brbl3 b22 brbl5 b22 brbl4 b22 brbl3 b22 brbl7 b22 brbl5 b22 brbl6 b22 brbl7 b22 brbl9 b22 brbl8 b22 brbl7 b22 brbl10 b22 brbl9 brbl8 b22 brbl7 brbl6 brbl7 b22 brbl3 b22 brbl6 b22 brbl5 b22 brbl4 b22 brbl3 b22
            (:section s2) cclef7 b22
            ;; Notwendige Anpassung der Taktsignatur, zu bestätigen
-           (:alt (:diplomatic met-imperf-min-dim) (:idealised met-perf-min-dim)
+           (:alt (:diplomatic met-imperf-min-dim) (:critical met-perf-min-dim)
                  (:comment "Original: Taktsignatur ist ein gestrichenes C.")
                  (:flag :suggestion) (:id 1))
            met-3-2 b22 br0 sb1 brbl3 b22 brbl2 b22 brbl4 bl)
@@ -65,11 +65,11 @@
           (1618 593 "ᴄolorite nellʼEmiolia mag."))
    (:music 2214
            (:section s3) cclef7 b22 met-imperf-min-dim b22 m1 dot2 sm2 b22 m3 b22 sb4 b22 m5 b22
-           (:alt (:diplomatic sbbl7) (:idealised sbbl7) (:it m7 dot8)
+           (:alt (:diplomatic sbbl7) (:critical sbbl7) (:it m7 dot8)
                  (:comment "Hier ist ausnahmsweise eine Abweichung zwischen Idealisierung und Normalisierung beabsichtigt, denn die schwarze Notation wird hier als punktierte Figur (siehe erste zwei Noten dieser Phrase) gelesen.")
                  (:flag :suggestion) (:id 2))
            b22 sm6 b22 m5 b22 m4 b22 sb5 b22
-           (:alt (:diplomatic brbl3 b22 sbbl2) (:idealised brbl3 b22 sbbl2) (:it sb3 dot4 m2)
+           (:alt (:diplomatic brbl3 b22 sbbl2) (:critical brbl3 b22 sbbl2) (:it sb3 dot4 m2)
                  (:comment "Hier ist ausnahmsweise eine Abweichung zwischen Idealisierung und Normalisierung beabsichtigt, denn die schwarze Notation wird hier als punktierte Figur (siehe erste zwei Noten dieser Phrase) gelesen.")
                  (:flag :suggestion) (:id 3))
            b22 m1 b22 b22 sb8 b22 m7 b38 br8 b38 bl

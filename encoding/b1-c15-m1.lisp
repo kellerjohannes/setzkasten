@@ -47,28 +47,28 @@
            (:section s5)
            b38
            (:alt (:diplomatic sb5 b38 sbd5)
-                 (:idealised sbd5 b38 sb5)
+                 (:critical sbd5 b38 sb5)
                  (:comment "Original: A--Ȧ.")
                  (:flag :draft) (:id 1))
            b38 bl
            (:section s6)
            b38 b22
            (:alt (:diplomatic sb4 b38 sbd4)
-                 (:idealised sbd4 b38 sb4)
+                 (:critical sbd4 b38 sb4)
                  (:comment "Original: G--Ġ.")
                  (:flag :draft) (:id 2))
            b38 bl
            (:section s7)
            b38
            (:alt (:diplomatic sb3 b38 sbd3)
-                 (:idealised sbd3 b38 sb3)
+                 (:critical sbd3 b38 sb3)
                  (:comment "Original: F--Ḟ.")
                  (:flag :draft) (:id 3))
            b22 bl
            (:section s8)
            b22
            (:alt (:diplomatic sb2 b38 sbd2)
-                 (:idealised sbd2 b38 sb2)
+                 (:critical sbd2 b38 sb2)
                  (:comment "Original: E--Ė.")
                  (:flag :draft) (:id 4))
            b38 bl)

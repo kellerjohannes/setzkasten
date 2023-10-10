@@ -59,7 +59,7 @@
            (:section s5) sb6 dot6 m7 sb6 bl
            (:section s6) sb6 dot6 fl7 m7 sb6 bl
            (:section s7) sb7
-           (:alt (:diplomatic dot6) (:idealised dot8)
+           (:alt (:diplomatic dot6) (:critical dot8)
                  (:comment "Original: Punktierung steht im dritten Zwischenraum.")
                  (:flag :draft) (:id 4))
            m8 sb7 bl

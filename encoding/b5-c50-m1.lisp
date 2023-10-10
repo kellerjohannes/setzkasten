@@ -132,13 +132,13 @@
            (:section s5) (:f-clef) max7 fclef7 b22 fl6 b22 sb6 fl6 b22 sbd6 b22 sb6 sbd6 bl
            (:section s6) sbd6 b22 sh6 b22 sb6 sbd7 sh7 sb7 fl8 sb8 bl
            (:section s7) (:newline) fl8 b22 sb8 b22 fl8 b22 sbd8 b22 sbd8 b22 sh8 b22
-           (:alt (:diplomatic sb8) (:idealised sb8)
+           (:alt (:diplomatic sb8) (:critical sb8)
                  (:comment "In gewissen Quellen steht über der vierten Note (G♯) ein enharmonischer Punkt.")
                  (:flag :draft) (:id 2))
            fl9 b22 sb9 bl
            (:section s8) fl9 sb9 b22 sbd8 b22 sb8 b22 fl8 b22 sbd8 b22 fl8 b22 sb8 bl)
    (:text 90 58
-     (:alt (:diplomatic (0 nil "d.mi.d.mi.d.mi.d.mi.")) (:idealised (0 nil "d.mi.d.mi.d.mi."))
+     (:alt (:diplomatic (0 nil "d.mi.d.mi.d.mi.d.mi.")) (:critical (0 nil "d.mi.d.mi.d.mi."))
            (:comment "Original: »d.mi.d.mi.d.mi.d.mi.«")
            (:flag :draft) (:id 3))
      (521 nil "d.mi.d.ma.d.mi.d.mi.")
@@ -165,7 +165,7 @@
    (:text 100 58
      (75 nil "di.ma. di.mi.d.mi. d. mi.")
      (:alt (:diplomatic (673 nil "di.mi.d.mi.d.mi.d.mi."))
-           (:idealised (673 nil "di.mi.d.mi.d.mi."))
+           (:critical (673 nil "di.mi.d.mi.d.mi."))
            (:comment "Original: »di.mi.d.mi.d.mi.d.mi.«")
            (:flag :draft) (:id 4))
      (1180 nil "d.ma.di.mi.d.mi.d.mi.")
