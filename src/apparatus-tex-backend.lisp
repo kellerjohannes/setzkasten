@@ -71,7 +71,7 @@
   \\vspace{3mm}
 
   Alternative Nummerierung: »\\textsf{~a}«\\\\
-  Hierarchie der Lesarten: \\textsf{~a}\\\\
+  Hierarchie der Lesarten: \\texttt{~a}\\\\
   Bemerkung: »\\textsf{~a}«\\\\
 
 \\end{center}"
@@ -104,9 +104,10 @@
 (defparameter *latex-table-header-compact*
    "
 \\renewcommand{\\arraystretch}{1.2}
-\\begin{longtable}{p{5mm}p{4cm}p{4cm}p{7cm}}
+\\begin{longtable}{p{3mm}p{1cm}p{3.5cm}p{3.5cm}p{7cm}}
   \\toprule
   ID &
+  Kategorie &
   Koord. Barré &
   Koord. Normalisierung &
   Kommentar \\\\
@@ -154,12 +155,14 @@
 (defun generate-latex-table-generic-line-compact (data)
   (format nil "
   ~a &
+  \\texttt{~a} &
   ~a &
   ~a &
   ~a\\\\
 
 "
           (getf data :id)
+          (prettify-keyword (getf data :reading))
           (getf data :coord-barre)
           (getf data :coord-norm)
           (make-string-latex-friendly (generate-latex-formatting (getf data :comment)))

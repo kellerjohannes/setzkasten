@@ -74,7 +74,8 @@
                  (:critical sb10)
                  (:coord-barre "Erste Notenzeile, zweite Note")
                  (:coord-norm "Section 1, zweite Note")
-                 (:comment "TEST: Eingriff, um die Intervallfolge plausibel zu machen.") (:flag :app) (:id 2))
+                 (:comment "TEST: Eingriff, um die Intervallfolge plausibel zu machen.")
+                 (:flag :app) (:id 2))
            b38 sb2 b22 bl
            (:section s2)
            b22 fl3 (:key-signature nil nil nil nil nil nil :flat) b38 sb3 b38 nat3 b38 sb3 b22 bl

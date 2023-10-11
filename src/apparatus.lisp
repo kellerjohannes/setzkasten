@@ -89,6 +89,16 @@
     (setf (current-id state) nil)))
 
 (defmethod loop-alt-expression (expression filter (state apparatus-state))
+  "This recursive function takes an expression representing various different readings in the form
+
+'(:alt (:diplomatic sb2)
+       (:critical sb10)
+       (:normalised sb3)
+       (:comment \"Korrektur.\") (:id 2))
+
+and a list (`filter') representing the intended readings, for example '(:normalised
+:diplomatic). Pushes an apparatus entry to the `apparatus-state' and returns the isolated content
+replacing the `expression'."
   (unless (null filter)
     (let ((candidate (find (first filter) expression :key #'first)))
       (cond (candidate
