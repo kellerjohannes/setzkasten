@@ -263,33 +263,33 @@
 (defun extract-meta-data (data)
   (rest (find :metadata data :key #'first)))
 
-(defun generate-latex-entry (filename)
+(defun strip-table-data (data selectors)
+  (remove-if-not (lambda (item)
+                   (and (member (first item) *apparatus-item-types*)
+                        (member (getf (rest item) :reading) selectors)))
+                 data))
+
+(defun generate-latex-entry (filename selectors)
   (with-open-file (in-file (merge-pathnames *apparatus-export-path-raw*
                                             (pathname (format nil "app-~a.lisp" filename))))
     (with-standard-io-syntax
       (let ((data (read in-file)))
         (concatenate 'string
                      (generate-latex-title (extract-meta-data data))
-                     (if (> (length data) 1)
-                         (generate-latex-table data)
-                         ""))))))
+                     (generate-latex-table (strip-table-data data selectors)))))))
 
 (defparameter *apparatus-item-types* '(:music :type-imitation-text :normalised-text))
 
-(defun generate-latex-entry-compact (filename)
+(defun generate-latex-entry-compact (filename selectors)
   (with-open-file (in-file (merge-pathnames *apparatus-export-path-raw*
                                             (pathname (format nil "app-~a.lisp" filename))))
     (with-standard-io-syntax
       (let ((data (read in-file)))
         (concatenate 'string
                      (generate-latex-title-compact (extract-meta-data data))
-                     (generate-latex-table-compact (remove-if-not
-                                                    (lambda (item)
-                                                      (member item *apparatus-item-types*))
-                                                    data
-                                                    :key #'first)))))))
+                     (generate-latex-table-compact (strip-table-data data selectors)))))))
 
-(defun generate-latex-apparatus-import-compact-fragments (filename)
+(defun generate-latex-apparatus-import-compact-fragments (filename selectors)
   (with-open-file (latex-stream
                    (merge-pathnames *apparatus-export-path-tex-imports*
                                     (pathname (format nil "app-~a-compact.tex" filename)))
@@ -297,18 +297,18 @@
                    :if-does-not-exist :create
                    :if-exists :supersede)
     (format latex-stream "~a"
-            (generate-latex-entry-compact filename))))
+            (generate-latex-entry-compact filename selectors))))
 
-(defun generate-latex-apparatus-import-fragments (filename)
+(defun generate-latex-apparatus-import-fragments (filename selectors)
   (with-open-file (latex-stream (merge-pathnames *apparatus-export-path-tex-imports*
                                                  (pathname (format nil "app-~a.tex" filename)))
                                 :direction :output
                                 :if-does-not-exist :create
                                 :if-exists :supersede)
     (format latex-stream "~a"
-            (generate-latex-entry filename))))
+            (generate-latex-entry filename selectors))))
 
-(defun generate-latex-apparatus-standalone (filename)
+(defun generate-latex-apparatus-standalone (filename selectors)
   (with-open-file (latex-stream (merge-pathnames *apparatus-export-path-tex-standalones*
                                                  (pathname (format nil "app-~a.tex" filename)))
                                 :direction :output
@@ -317,5 +317,5 @@
     (format latex-stream "~a"
             (concatenate 'string
                          *latex-header*
-                         (generate-latex-entry filename)
+                         (generate-latex-entry filename selectors)
                          *latex-footer*))))

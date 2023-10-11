@@ -22,13 +22,13 @@
         ;; write tex apparatus here, tex standalone and tex import-fragment, serve filename with suffix
         (create-score-file backend-instance simplified-score suffix)))))
 
-(defun process-apparatus (filename apparatus-condition)
+(defun process-apparatus (filename suffix apparatus-selectors)
   (generate-latex-apparatus-standalone (format nil "~a-~a" filename suffix)
-                                       apparatus-condition)
+                                       apparatus-selectors)
   (generate-latex-apparatus-import-fragments (format nil "~a-~a" filename suffix)
-                                             apparatus-condition)
+                                             apparatus-selectors)
   (generate-latex-apparatus-import-compact-fragments (format nil "~a-~a" filename suffix)
-                                                     apparatus-condition))
+                                                     apparatus-selectors))
 
 
 ;; for external use, in case other programs want to operate on a score object
@@ -39,10 +39,7 @@
     (let ((score-expression (eval (with-standard-io-syntax
                                     (read encoding-stream)))))
       (parse-score
-       ;; this is legacy, should be deleted after testing the new apparatus functionality
-       ;; (extract-apparatus score-expression extraction-arguments)
-       (extract-reading score-expression extraction-arguments)
-       ))))
+       (extract-reading score-expression extraction-arguments)))))
 
 ;; looping over mission, entry point to everything
 ;; filename-stem suffix reading-list backend-instance &optional filter-apparatus
@@ -50,9 +47,10 @@
   (reset-file-list *vicentino-types-backend*)
   (reset-file-list *lilypond-backend-modern*)
   (dolist (item mission-list)
-    (process-score (first item) (second item) (third item) (fourth item)))
-  (when (fifth mission-list)
-    (process-apparatus (first item) (fifth item)))
+    (process-score (first item) (second item) (third item) (fourth item))
+    (when (fifth mission-list)
+      (process-apparatus (first item) (second item) (fifth item))))
+
   'done)
 
 
@@ -207,8 +205,8 @@
 
 (defparameter *working*
   `(
-    ("b1-c05-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* :barre)
-    ("b1-c05-m1" "crit" (:critical :barre :diplomatic) ,*vicentino-types-backend* :critical)
+    ("b1-c05-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c05-m1" "crit" (:critical :barre :diplomatic) ,*vicentino-types-backend* (:critical :barre))
     ("b1-c05-m1" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-modern*)
     ("b1-c05-m1" "norm-en" (:en :critical :barre :diplomatic) ,*lilypond-backend-modern*)
     ("b1-c05-m1" "norm-de" (:de :critical :barre :diplomatic) ,*lilypond-backend-modern*)

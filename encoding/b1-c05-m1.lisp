@@ -66,15 +66,15 @@
            b22 (:f-clef) max7 fclef7 b38
            (:alt (:diplomatic sb2)
                  (:barre sb10)
-                 (:coord-barre "Erste Note")
-                 (:coord-norm "Erste Note")
-                 (:comment "TEST: Barré-Fassung.") (:flag :app) (:id 1))
+                 (:coord-barre "Erste Notenzeile, erste Note")
+                 (:coord-norm "Section 1, erste Note")
+                 (:comment "TEST: In-House-Korrektur, alle Exemplare.") (:flag :app) (:id 1))
            b38
            (:alt (:diplomatic sb2)
                  (:critical sb10)
-                 (:coord-barre "Zweite Note")
-                 (:coord-norm "Zweite Note")
-                 (:comment "TEST: Kritische Fassung.") (:flag :app) (:id 2))
+                 (:coord-barre "Erste Notenzeile, zweite Note")
+                 (:coord-norm "Section 1, zweite Note")
+                 (:comment "TEST: Eingriff, um die Intervallfolge plausibel zu machen.") (:flag :app) (:id 2))
            b38 sb2 b22 bl
            (:section s2)
            b22 fl3 (:key-signature nil nil nil nil nil nil :flat) b38 sb3 b38 nat3 b38 sb3 b22 bl
