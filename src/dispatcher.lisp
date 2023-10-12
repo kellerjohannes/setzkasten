@@ -4,12 +4,12 @@
 ;; * soave dolce von unten hochkopieren
 ;; * rest von unten kontrollieren
 ;; * convert anpassen
-;; tex testen
-;; historische schlüssel implementieren
-;; nur historische schlüssel gruppieren, separat exportieren
-;; historische schlüssel im gesamt-tex ergänzen und testen
-;; repository ausmisten, alles neu generieren (timing)
-;; summary-files ausmisten, anpassen, testen
+;; * tex testen
+;; * historische schlüssel implementieren
+;; * nur historische schlüssel gruppieren, separat exportieren
+;; * historische schlüssel im gesamt-tex ergänzen und testen
+;; * repository ausmisten, alles neu generieren (timing)
+;; * summary-files ausmisten, anpassen, testen
 ;; tag erstellen
 ;; restliche korrekturen einpflegen
 ;; kommentare anne einpflegen
@@ -175,46 +175,18 @@
 
 
 (defun execute-all ()
+  (execute-book1)
+  (execute-book2)
+  (execute-book3)
+  (execute-book4)
+  (execute-book5)
+
   (dolist (mission  (list
-                     *book1-barre*
-                     *book1-crit*
-                     *book1-norm-it*
-                     *book1-norm-en*
-                     *book1-norm-de*
-
-                     *book2-barre*
-                     *book2-crit*
-                     *book2-norm-it*
-                     *book2-norm-en*
-                     *book2-norm-de*
-
-                     *book3-barre*
-                     *book3-crit*
-                     *book3-norm-it*
-                     *book3-norm-en*
-                     *book3-norm-de*
-
-                     *book3-standalones*
-
-                     *book4-barre*
-                     *book4-crit*
-                     *book4-norm-it*
-                     *book4-norm-en*
-                     *book4-norm-de*
-
-                     *book5-barre*
-                     *book5-crit*
-                     *book5-norm-it*
-                     *book5-norm-en*
-                     *book5-norm-de*
-
                      *special*
                      *tatti*
 
                      ;; zu prüfen
-                     *standalones*
                      *renotations*
-                     *transpositions*
                      ))
     (execute-mission mission)))
 
@@ -283,55 +255,55 @@
 
 (defparameter *book1-barre*
   `(
-    ("b1-c40-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c40-m2" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c39-m2" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c39-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c38-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c37-m2" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c37-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c36-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c35-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c34-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c33-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c32-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c31-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c30-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c29-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c28-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c27-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c26-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c25-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c24-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c23-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c22-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c21-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c20-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c19-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c18-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c17-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c16-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c15-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c13-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c12-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c11-m3" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c11-m2" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c11-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c10-m2" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c10-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c09-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c08-m2" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c08-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c07-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c06-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c05-m8" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c05-m7" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c05-m6" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c05-m5" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c05-m4" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c05-m3" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c05-m2" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
-    ("b1-c05-m1" "barre" (:critical :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c40-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c40-m2" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c39-m2" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c39-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c38-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c37-m2" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c37-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c36-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c35-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c34-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c33-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c32-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c31-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c30-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c29-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c28-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c27-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c26-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c25-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c24-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c23-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c22-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c21-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c20-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c19-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c18-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c17-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c16-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c15-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c13-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c12-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c11-m3" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c11-m2" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c11-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c10-m2" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c10-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c09-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c08-m2" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c08-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c07-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c06-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c05-m8" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c05-m7" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c05-m6" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c05-m5" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c05-m4" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c05-m3" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c05-m2" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b1-c05-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
     ))
 
 (defparameter *book1-crit*
