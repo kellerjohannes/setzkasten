@@ -397,6 +397,7 @@
       (:fl8 (set-accidental parser-state :flat 8))
       (:fl9 (set-accidental parser-state :flat 9))
       (:fl10 (set-accidental parser-state :flat 10))
+      (:fl11 (set-accidental parser-state :flat 11))
       (:nat0 (set-accidental parser-state :natural 0))
       (:nat1 (set-accidental parser-state :natural 1))
       (:nat2 (set-accidental parser-state :natural 2))

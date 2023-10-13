@@ -118,4 +118,8 @@
            (:section s6) b38 fl2 b38 sbd2 b38 bl
            (:section s7) b22 fl2 b38 sbd2 b38 fl2 b22 sbd2 bl
            b38 fl2 b38 sbd2 b38 b22 fl2 b22 b22 sbd2 b38 b22 b38 bl
-           (:section s8) b38 sbd2 b38 bl)))
+           (:section s8)
+           (:alt (:diplomatic b38 sbd2)
+                 (:critical fl2 sbd2)
+                 (:comment "Original: Ė.") (:flag :draft) (:id 0))
+           b38 bl)))

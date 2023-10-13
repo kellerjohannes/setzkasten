@@ -15,10 +15,7 @@
            (:voice v1)
            (:section s1)
            (:f-clef) max7 fclef7 b22 fl6 b22 fl3 b22 (:key-signature nil nil :flat nil nil nil :flat)
-           (:alt (:diplomatic sb2) (:critical sb4)
-                 (:comment "Rhythmische Anpassung, um der gesamten Melodie eine plausible Länge zu geben.")
-                 (:flag :suggestion) (:id 1))
-           dot2 sm3 b22 m4 b22 m5 b22 m2 b22 sb5 b22 m4 b22 m5 dot6 sm6 b22 sm7 b22 sm8 b22 m9 b22
+           sb2 dot2 sm3 b22 m4 b22 m5 b22 m2 b22 sb5 b22 m4 b22 m5 dot6 sm6 b22 sm7 b22 sm8 b22 m9 b22
            (:alt (:diplomatic m2) (:critical sb2)
                  (:comment "Rhythmische Anpassung, um die Kadenz-Situation plausibel erscheinen zu lassen.")
                  (:flag :suggestion) (:id 2))

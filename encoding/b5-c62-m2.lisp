@@ -156,9 +156,8 @@
    (:music 2232
            (:section s7) (:newline) cclef7 (:key-signature nil nil nil nil nil nil nil) b22 fl4 sb4 b22 fl6 b22 sb6 b38 bl
            (:section s8) b22 sh4 b22 sb4 b22 sh6 b22 sb6 b22 bl
-           (:section s9) b38 sb4 b38 sb6 b38 bl
-           ;; Dieses Intervall ist falsch (CJW), Idealisierung mit Luigi zu besprechen.
-           (:section s10) b38 sh4 b22 sbd4 b22 fl6 b22 sbd6 b38 b38 bl
+           (:section s9) b38 sbd4 b38 sbd6 b38 bl
+           (:section s10) b38 fl4 b22 sbd4 b22 fl6 b22 sbd6 b38 b38 bl
            (:section s11) b22 b22 sh2 b22 sb2 b22 fl5 b22 sbd5 b38 b22 bl
            b22 b125 b125 b125)
    (:text 110 58
@@ -170,7 +169,7 @@
           (1514 nil "accid.")
           (1908 nil "accid."))
    (:music 2224
-           (:section s12) (:newline) cclef7 b38 b22 sb4 b38 sb6 b38 b38 bl
+           (:section s12) (:newline) cclef7 b38 b22 sb4 b38 sbd6 b38 b38 bl
            (:section s13) b22 b38 sb3 b38 sbd5 b38 b22 bl
            (:section s14) b38 fl2 b38 sb2 b38 sbd4 b38 bl
            (:section s15) b38 sb5 b38 fl8 b38 sb8 b38 b38
@@ -186,7 +185,11 @@
    (:music 2228
            (:section s18) (:newline) cclef7 (:key-signature nil nil nil nil nil nil nil) b22 b38 fl4 b38 sb4 b38 fl6 b38 sbd6 b38 bl
            (:section s19) b38 sh4 b38 sb4 b38 sb7 b38 bl
-           (:section s20) b38 sbd4 b38 sh7 b38 sb7 b38 bl
+           (:section s20) b38 sbd4 b38
+           (:alt (:diplomatic sh7 b38 sb7)
+                 (:critical sh6 b38 sb6)
+                 (:comment "Original: Zweite Note C♯.") (:flag :draft) (:id 0))
+           b38 bl
            (:section s21) b38 fl4 b38 sbd4 b38 sb7 b38 bl
            (:section s22) b38 sbd2 b38 fl5 b38 sbd5 b38 bl
            (:section s23) b38 sh2 b38 sb2 b38 sb5 b38 b22 bl)
@@ -204,8 +207,9 @@
            (:section s26) b38 fl2 b38 sb2 b38 sbc4 b38 bl
            (:section s27) b38 sb5 b38 sh7 b38 sbc7 b38 b38
            (:section s28)
-           ;; Offensichtlicher Schlüsselfehler, zu diskutieren
-           (:alt (:diplomatic cclef5) (:critical cclef7)) fl6 (:key-signature nil nil nil nil nil nil :flat) b38 sb4 b38 nat6 b38 sbc6 b38 b38 bl
+           (:alt (:diplomatic cclef5)
+                 (:critical cclef7))
+           fl6 (:key-signature nil nil nil nil nil nil :flat) b38 sb4 b38 nat6 b38 sbc6 b38 b38 bl
            (:section s29) b38 b38 fl5 b38 sb5 b38 sbc7 b38 b38 bl)
    (:text 110 58
           (168 nil "accid.")

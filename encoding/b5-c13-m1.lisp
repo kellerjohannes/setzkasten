@@ -16,7 +16,7 @@
     (s3 (:alt (:it " \\Quinta")
               (:de "")
               (:en "")))
-    (s4 (:alt (:it "Sesta più\\di maggiore")
+    (s4 (:alt (:it "Sesta più\\di minore")
               (:de "")
               (:en "")))
     (s5 (:alt (:it "Sesta più\\di maggiore")

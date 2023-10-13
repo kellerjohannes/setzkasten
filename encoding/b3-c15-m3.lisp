@@ -22,4 +22,4 @@
                  (:comment "Original: Punktierung der zweiten Minima steht eine Position tiefer.")
                  (:flag :draft) (:id 1))
            sm7 b22 sm8 b22 sm6 b22 m9 b22
-           m2 dot2 sm3 b22 sm4 b22 sm2 sb6 b22 br1 b22 bl)))
+           m2 dot2 sm3 b22 sm4 b22 sm2 sb6 b22 br2 b22 bl)))

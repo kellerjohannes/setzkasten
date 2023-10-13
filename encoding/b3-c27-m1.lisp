@@ -36,12 +36,7 @@
            (:section s1) cclef7 b38 b22 m5 b38 sb7 b38 m6 b38 sb7 b22 bl
            (:section s2) b38 m5 b22 m7 dot8 cr6 b22 cr5d b22 m6 b22 sb7 b22 bl
            (:section s3) b22 mrest5 m7 dot8 sm6 b22 sm6 b22 cr5d b22 cr6 b22 sb7 bl
-           (:section s4) (:newline) m2 b22 m5 dot6
-           (:alt (:diplomatic)
-                 (:critical sh4)
-                 (:comment "Original: G--F♯--G♯.")
-                 (:flag :suggestion) (:id 1))
-           cr4 b22 sh3 b22 cr3 b22 sh4 b22 m4 b22 sb5 bl)
+           (:section s4) (:newline) m2 b22 m5 dot6 cr4 b22 sh3 b22 cr3 b22 sh4 b22 m4 b22 sb5 bl)
    (:text 90 58
           (178 nil "buona")
           (646 nil "buona")

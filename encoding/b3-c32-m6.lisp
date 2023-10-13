@@ -28,7 +28,7 @@
           (668 nil "Cadentie del soprano."))
    (:music 2261
            (:voice v1)
-           (:section s1) cclef1 fl07 b22 sb4 b22 m5 b22 sb7 b22 m6 b22 sb7 b22 bl
+           (:section s1) cclef1 fl07 (:key-signature nil nil nil nil nil nil :flat) b22 sb4 b22 m5 b22 sb7 b22 m6 b22 sb7 b22 bl
            (:section s2) b22 m4 m7 dot8 sm6 sb6 m5d b22 bl
            (:section s3) b22 m6 sb8 nat7 m7 sb8 b22 bl
            (:section s4) (:newline) mrest5 sb4 b22 m3 b22 bl

@@ -359,10 +359,9 @@
            cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat)
            sbd7 b22 sbd7 dot8 md7 b22 sb7 m5d b22 md5d dot6 smd5d b22 md5d b22 sbd5 b22
            (:alt (:diplomatic sbd5) (:critical sbd5) (:tatti sb5)
-                 ;; Kein Eingriff nötig
-                 ;; (:coord-barre "17. MZ, 10. N")
-                 ;; (:coord-norm "ST3, T40, 1. N")
-                 (:comment "Tenor, T. 40, die erste Note soll nicht idealisiert werden, stattdessen wird an dieser Stelle die Note im Bass mit einem Punkt ergänzt. Siehe Annotation 4.")
+                 (:coord-barre "17. MZ, 10. N")
+                 (:coord-norm "ST3, T40, 1. N")
+                 (:comment "Soll nicht idealisiert werden, stattdessen wird an dieser Stelle die Note im Bass mit einem Punkt ergänzt. Siehe Annotation 4.")
                  (:flag :draft) (:id 17))
            mrest5
            sb5 b22 m5d b22 sbd5 md8 b22 md8 b22 sb8 b22 m8 b22 md8 b22 sbrest9 b22

@@ -88,7 +88,7 @@
            (:section s6) b38 fl6 b38 sb6 b38 bl
            (:section s7) b38 b22 sbd6 b38 sh6 b38 sb6 (:divider :regular) b38 b22 bl
            b38 b22 sb7 b38 sbd7 b38 sbc7 b38 b22 bl
-           (:section s8) b38 fl0 b38 sb0 b38 bl)
+           (:section s8) b38 fl9 b38 sb9 b38 bl)
    (:text 110 78
           (169 nil "3. minore")
           (530 nil "3. maggiore")

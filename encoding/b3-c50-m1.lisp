@@ -18,7 +18,9 @@
                  (:en "")))
     (s1 v4 (:alt (:it "Basso")
                  (:de "")
-                 (:en "")))))
+                 (:en ""))))
+   (:voice-order
+    (s1 v1 v2 v3 v4) (s2 v1 v2 v3 v4) (s3 v1 v2 v3 v4) (s4 v1 v2 v3 v4) (s5 v1 v2 v3 v4)))
   (:preamble-lilypond
    (:clef-overrides
     (s4 v1 "treble")

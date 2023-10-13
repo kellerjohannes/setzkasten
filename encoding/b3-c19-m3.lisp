@@ -15,8 +15,4 @@
            (:f-clef) max7 fclef7 b22 fl3 b22 (:key-signature nil nil nil nil nil nil :flat)
            m3 dot4 sm4 sm5 b22 sm3 b22 m7 dot8 sm8 b22 sm9 b22 m10 b22 sm9 b22 m10 b22
            m3 b22 m2 b22 m3 b22 m5 b22 sb4 b22 m3 sb7 b22 m3 b22 m5 b22 m7 dot8
-           sm6 b22 m5 b22
-           (:alt (:diplomatic m4) (:critical sb4)
-                 (:comment "Rhythmische Anpassung, um die Länge der gesamten Melodie plausibel erscheinen zu lassen.")
-                 (:flag :suggestion) (:id 1))
-           b22 sb7 b22 m5 b22 sb7 br3 b22 blbl)))
+           sm6 b22 m5 b22 m4 b22 sb7 b22 m5 b22 sb7 br3 b22 blbl)))

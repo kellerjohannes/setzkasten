@@ -104,7 +104,7 @@
 (defparameter *latex-table-header-compact*
    "
 \\renewcommand{\\arraystretch}{1.2}
-\\begin{longtable}{p{3mm}p{1cm}p{3.5cm}p{3.5cm}p{7cm}}
+\\begin{longtable}{p{2mm}p{1.2cm}p{2.5cm}p{2.5cm}p{9cm}}
   \\toprule
   ID &
   Kategorie &

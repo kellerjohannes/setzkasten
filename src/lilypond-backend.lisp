@@ -965,7 +965,7 @@ dot = {
                               (output-format :svg-cropped))
   (case output-format
     (:svg-cropped
-     (uiop:run-program (list lilypond-path "-dbackend=svg" "-dcrop" "-o"
+     (uiop:run-program (list lilypond-path "-dbackend=svg" "-dno-point-and-click" "-dcrop" "-o"
                              (uiop:native-namestring
                               (namestring (make-pathname :type nil :defaults output)))
                              (uiop:native-namestring input))

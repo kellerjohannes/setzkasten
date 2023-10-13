@@ -28,6 +28,10 @@
     (s7 (:alt (:it "salto di quinta\\imperfetta\\accidentale\\incomposto")
               (:de "")
               (:en "leap of a quinta\\imperfetta\\accidentale\\incomposto")))))
+  (:preamble-lilypond
+   (:clef-overrides
+    (s3 v1 "treble_8")
+    (s7 v1 "treble_8")))
   (:data
    (:text 80 58
           (200 1805 "ᴇſſempio del ſalto de Ɋuinta imperfetta,naturale & accidentale,incompoﬆo."))

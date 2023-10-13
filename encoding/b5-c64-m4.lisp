@@ -42,5 +42,8 @@
            (:section s3) b38 sh1 b22 sb1 b22 sh8 b38 sb8 b38
            (:section s4) (:newline) cclef3 b38 fl29 (:key-signature nil nil nil nil nil nil :flat) b38 nat2 b38 sb2 b38 nat9 b38 sb9 b38 bl
            (:section s5) b38 sbd2 b38 b22 sbd9 b38 b22 bl
-           ;; eindeutiger Druckfehler, zu korrigieren
-           (:section s6) b38 fl1 b38 sbd1 b38 fl9 b38 sbd9 b22 bl)))
+           (:section s6) b38 fl1 b38 sbd1 b38
+           (:alt (:diplomatic fl9 b38 sbd9)
+                 (:critical fl8 b38 sbd8)
+                 (:comment "Zweite Note: Original: Ḃ♭.") (:flag :draft) (:id 0))
+           b22 bl)))

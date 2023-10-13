@@ -3,7 +3,7 @@
    (:alt-name "m3.096")
    (:comment "q021_s125, rotation: 0.35, origin: 473")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio di tre quinte differenti,di i tre generi musicali,\\della prima spetie delle quinte")
+   (:title (:alt (:it "Essempio di tre quinte differenti, di i tre generi musicali,\\della prima spetie delle quinte")
                  (:de "")
                  (:en "")))
    (:section-captions

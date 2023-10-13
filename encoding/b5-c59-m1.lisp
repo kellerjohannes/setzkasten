@@ -205,8 +205,9 @@
            (:voice v1)
            (:section s1) gclef3 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38 b38
            (:section s9)
-           (:alt (:diplomatic)
-                 (:critical (:newline)))
+           (:alt (:original-layout)
+                 (:alternative-layout (:newline))
+                 (:flag :layout) (:id 0))
            gclef3 b22 fl5 (:key-signature nil nil nil nil nil nil :flat)
            sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b22 bl)
    (:text 110 58
@@ -214,8 +215,6 @@
           (1333 nil "ᴅel secondo ordine."))
    (:music 2227
            (:section s2)
-           (:alt (:diplomatic (:newline))
-                 (:alternative-layout))
            (:key-signature nil nil nil nil nil nil nil) cclef1 b22 sb0 b22 sh1 sb1 b22 sb2 b22 sb3 b22 sh4 sb4 b22 sh5 sb5 b22 sb6 b22 sb7 b22 sh8 sb8 b22 sb9 sb10 b38
            (:section s10) cclef1 b22 sb0 b22 sh1 b22 sb1 b22 sb2 b22 sb3 b22 sh4 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sh8 b22 sb8 b22 sb9 b22 sb10 bl)
    (:text 110 58
@@ -223,8 +222,9 @@
           (1341 nil "Del secondo ordine."))
    (:music 2223
            (:section s3)
-           (:alt (:diplomatic (:newline))
-                 (:critical))
+           (:alt (:original-layout (:newline))
+                 (:alternative-layout)
+                 (:flag :layout) (:id 0))
            cclef3 b22 fl29 (:key-signature nil nil nil nil nil nil :flat)
            b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b22 b38
            (:section s11) cclef3 b22 fl2
@@ -238,20 +238,25 @@
           (1341 nil "ᴅel secondo ordine."))
    (:music 2225
            (:section s4)
-           (:newline)
+           (:alt (:original-layout (:newline))
+                 (:alternative-layout (:newline))
+                 (:flag :layout) (:id 0))
+
            (:key-signature nil nil nil nil nil nil nil)
            cclef5 b22 sb0 b22 sh1 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sh5 b22 sb5 b22 sb6 b38 sb7 b38 sh8 b22 sb8 b22 sb9 b22 sb10 b22
            (:section s12)
-           (:alt (:diplomatic)
-                 (:critical (:newline)))
+           (:alt (:original-layout)
+                 (:alternative-layout (:newline))
+                 (:flag :layout) (:id 0))
            cclef5 b22 sb0 b22 sh1 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b38 sb7 b38 sh8 b38 sb8 b22 sb9 sb10 bl)
    (:text 110 58
           (334 nil "Del primo ordine.")
           (1320 nil "Del secondo ordine."))
    (:music 2215
            (:section s5)
-           (:alt (:diplomatic (:newline))
-                 (:critical))
+           (:alt (:original-layout (:newline))
+                 (:alternative-layout)
+                 (:flag :layout) (:id 0))
            cclef7 b22 fl29
            (:alt (:diplomatic fl5) (:critical fl6)
                  (:comment "Original: Das ♭ in der Signatur steht eine Position tiefer.")
@@ -265,8 +270,9 @@
           (1345 nil "ᴅel secondo ordine."))
    (:music 2209
            (:section s6)
-           (:alt (:diplomatic (:newline))
-                 (:critical))
+           (:alt (:original-layout (:newline))
+                 (:alternative-layout)
+                 (:flag :layout) (:id 0))
            (:f-clef) max5 fclef5 (:key-signature nil nil nil nil nil nil nil)
            b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sh5 b22 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b22 sb10 b22
            (:section s14) (:f-clef) max5 fclef5 b22 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b22 sb10 bl)
@@ -275,12 +281,15 @@
           (1327 nil "ᴅel secondo ordine."))
    (:music 2204
            (:section s7)
-           (:newline)
+           (:alt (:original-layout (:newline))
+                 (:alternative-layout (:newline))
+                 (:flag :layout) (:id 0))
            (:f-clef) max7 fclef7 b22 fl29 fl3 fl6 (:key-signature nil nil :flat nil nil :flat :flat)
            b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sb10 b22
            (:section s15)
-           (:alt (:diplomatic)
-                 (:critical (:newline)))
+           (:alt (:original-layout)
+                 (:alternative-layout (:newline))
+                 (:flag :layout) (:id 0))
            (:f-clef) max7 fclef7 fl29 fl3 fl5 fl6 (:key-signature nil :flat :flat nil nil :flat :flat)
            b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b38 sb6 b38 sb7 b22 sb8 b22 sb9 b22 sb10 bl)
    (:text 110 58
@@ -301,13 +310,15 @@
           (1332 nil "Quarto ordine."))
    (:music 2221
            (:section s17)
-           (:alt (:diplomatic)
-                 (:critical (:newline)))
+           (:alt (:original-layout)
+                 (:alternative-layout (:newline))
+                 (:flag :layout) (:id 0))
            (:key-signature nil nil nil nil nil nil nil)
            cclef1 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38 b22 b22
            (:section s25)
-           (:alt (:diplomatic)
-                 (:critical (:newline)))
+           (:alt (:original-layout)
+                 (:alternative-layout (:newline))
+                 (:flag :layout) (:id 0))
            cclef7 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38 bl)
 
    (:text 110 58
@@ -339,13 +350,15 @@
           (1398 nil "ᴅel quarto ordine."))
    (:music 2209
            (:section s20)
-           (:alt (:diplomatic)
-                 (:critical (:newline)))
+           (:alt (:original-layout)
+                 (:alternative-layout (:newline))
+                 (:flag :layout) (:id 0))
            cclef5 b38 fl4 (:key-signature nil nil nil nil nil nil :flat)
            b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b22
            (:section s28)
-           (:alt (:diplomatic)
-                 (:critical (:newline)))
+           (:alt (:original-layout)
+                 (:alternative-layout (:newline))
+                 (:flag :layout) (:id 0))
            cclef5 (:key-signature nil nil nil nil nil nil nil)
            b22 sb0 b22 sh1 sb1 b22 sh2 sb2 b22 sb3 b22 sb4 sh5 sb5 b22 sh6 sb6 b22 sb7 sh8 sb8 sh9 sb9 sb10 bl)
    (:text 110 58
@@ -369,12 +382,14 @@
           (1393 nil "Del quarto ordine."))
    (:music 2209
            (:section s23)
-           (:alt (:diplomatic)
-                 (:critical (:newline)))
+           (:alt (:original-layout)
+                 (:alternative-layout (:newline))
+                 (:flag :layout) (:id 0))
            (:f-clef) max7 fclef7 b38 sb0 fl1 sb1 b22 fl2 sb2 b22 fl3 sb3 b22 sbd3 b22 fl5 sb5 b22 fl6 sb6 b22 sb7 b22 fl8 sb8 b22 fl9 sb9 fl10 sb10 b38
            (:section s31)
-           (:alt (:diplomatic)
-                 (:critical (:newline)))
+           (:alt (:original-layout)
+                 (:alternative-layout (:newline))
+                 (:flag :layout) (:id 0))
            (:f-clef) max7 fclef7 b22 fl310 (:key-signature nil nil nil nil nil nil :flat)
            b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sb10 bl)
    (:text 110 58
@@ -400,12 +415,14 @@
           (1359 nil "Seſto ordine."))
    (:music 2237
            (:section s33)
-           (:alt (:diplomatic)
-                 (:critical (:newline)))
+           (:alt (:original-layout)
+                 (:alternative-layout (:newline))
+                 (:flag :layout) (:id 0))
            cclef3 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38 b38 b38
            (:section s41)
-           (:alt (:diplomatic)
-                 (:critical (:newline)))
+           (:alt (:original-layout)
+                 (:alternative-layout (:newline))
+                 (:flag :layout) (:id 0))
            cclef5 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b22 b22 bl)
    (:text 110 58
           (329 nil "Del quinto ordine.")
@@ -424,12 +441,14 @@
           (1352 nil "ᴅel seſto ordine."))
    (:music 2232
            (:section s36)
-           (:alt (:diplomatic)
-                 (:critical (:newline)))
+           (:alt (:original-layout)
+                 (:alternative-layout (:newline))
+                 (:flag :layout) (:id 0))
            cclef5 b22 sb0 b22 sh1 sb1 b22 sh2 sb2 b22 sb3 b22 sb4 sh5 sb5 b22 sb6 b22 sb7 b22 sh8 b22 sb8 b22 sh9 sb9 b22 sb10 b22
            (:section s44)
-           (:alt (:diplomatic)
-                 (:critical (:newline)))
+           (:alt (:original-layout)
+                 (:alternative-layout (:newline))
+                 (:flag :layout) (:id 0))
            (:alt (:diplomatic cclef1)
                  (:critical cclef3)
                  (:comment "Original: Der Schlüssel liegt auf der untersten Linie.")
@@ -460,17 +479,19 @@
           (1337 nil "ᴅel seſto ordine."))
    (:music 2207
            (:section s39)
-           (:alt (:diplomatic)
-                 (:critical (:newline)))
+           (:alt (:original-layout)
+                 (:alternative-layout (:newline))
+                 (:flag :layout) (:id 0))
            (:f-clef) max7 fclef7 (:key-signature nil nil nil nil nil nil nil)
            b22 sb0 b22 sb1 b22 sb2 b22 fl3 b22 sb3 b22 sb4 b22 sb5 b22 fl6 sb6 b22 sb7 b22 sb8 b22 sb9 b22 fl10 sb10 b22
            (:section s47)
-           (:alt (:diplomatic)
-                 (:critical (:newline)))
+           (:alt (:original-layout)
+                 (:alternative-layout (:newline))
+                 (:flag :layout) (:id 0))
            (:f-clef) max7 fclef7 sb0 b22 fl1 sb1 fl2 sb2 b22 fl3 sb3 b22 sb4 b22 fl5 sb5 b22 fl6 sb6 b22 sb7 b22 fl8 sb8 fl9 sb9 b22 fl10 sb10 bl)
    (:text 110 58
-          (330 nil "Del quinto ordine.")
-          (1327 nil "ᴅel seſto ordine."))
+     (330 nil "Del quinto ordine.")
+     (1327 nil "ᴅel seſto ordine."))
    (:music 2207
            (:section s40) (:f-clef) max9 fclef9 b38 sb0 b22 sb1 b22 sh2 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b38 sb8 b38 sh9 b22 sb9 b22 sb10 b22
            (:section s48) (:f-clef) max9 fclef9 b22 sb0 b22 fl1 sb1 b22 sb2 b22 sb3 b22 sb4 b22 fl5 b22 sb5 b22 sb6 b22 sb7 b22 fl8 b22 sb8 b22 sb9 sb10 bl)
@@ -480,11 +501,12 @@
 
    ;; Seite 4, fol. 136r, S. 271
    (:text 110 58
-          (530 nil "Settimo ordine."))
+     (530 nil "Settimo ordine."))
    (:music 964
            (:section s49)
-                      (:alt (:diplomatic)
-                 (:critical (:newline)))
+           (:alt (:original-layout)
+                 (:alternative-layout (:newline))
+                 (:flag :layout) (:id 0))
            (:f-clef) max7 fclef7 b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sb10 bl)
    (:text 110 58
           (266 nil "Del settimo ordine."))
@@ -504,8 +526,9 @@
           (350 nil "Del settimo ordine."))
    (:music 1034
            (:section s52)
-           (:alt (:diplomatic)
-                 (:critical (:newline)))
+           (:alt (:original-layout)
+                 (:alternative-layout (:newline))
+                 (:flag :layout) (:id 0))
            cclef3 (:key-signature nil nil nil nil nil nil nil)
            b38 sb0 b22 sb1 b22 sb2 b22 sh3 b22 sb3 b38 sb4 b22 sb5 b22 sh6 sb6 sb7 sb8 sb9 sh10 sb10 b22 b22 (:alt (:critical bl)))
    (:text 110 58
@@ -524,8 +547,9 @@
           (342 nil "Del settimo ordine."))
    (:music 1008
            (:section s55)
-           (:alt (:diplomatic)
-                 (:critical (:newline)))
+           (:alt (:original-layout)
+                 (:alternative-layout (:newline))
+                 (:flag :layout) (:id 0))
            (:f-clef) max5 fclef5 b22 sb0 sb1 sh2 sb2 sh3 sb3 sb4 sh5 sb5 sh6 sb6 sb7 sb8 sh9 sb9 sh10 sb10 b22 (:alt (:critical bl)))
    (:text 110 58
           (349 nil "Del settimo ordine."))

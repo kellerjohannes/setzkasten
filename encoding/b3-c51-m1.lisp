@@ -96,8 +96,8 @@
                  (:flag :draft) (:id 2))
            md4 fl5 sb5 b13 sb3 sbrest3
            b13 sb2 b13 md2 dot2
-           (:alt (:diplomatic sm2) (:critical sm2) (:tatti smd2)
-                 (:comment "Original: Die erste Semiminima im Bass hat keinen enharmonischen Punkt.")
+           (:alt (:diplomatic sm2) (:critical smd2) (:tatti smd2)
+                 (:comment "Original: A.")
                  (:flag :draft) (:id 3))
            b22 m5 b22 m5 brd5 fl6 sb6 b22 mrest3
            b22 m3 b22 md5 b22 md5 md1 b22 md1 b22 sb4 b22 sbd2 b22 sbrest3

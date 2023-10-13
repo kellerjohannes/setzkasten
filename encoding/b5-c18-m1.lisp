@@ -91,7 +91,7 @@
                  (:flag :ready) (:id 2))
            b38 (:divider :regular)
            (:alt (:diplomatic fl2 b38 sb2)
-                 (:critical b38 b38 sb3)
+                 (:critical fl3 b38 sb3)
                  (:coord-barre "2. MZ, 7. N")
                  (:coord-norm "S3, ST2, 2. N")
                  (:comment "Original: A♭.")

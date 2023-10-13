@@ -84,10 +84,10 @@
    (:music 2166
            (:voice v1)
            (:section s3) cclef7 fl6 b22 fl5 b22 fl29 b22 (:key-signature nil nil :flat nil nil :flat :flat)
-           sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 bl
+           sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 (:divider :regular) sb9 b22 bl
            b38 sb2 b38 sb9 b38
            (:section s4) (:newline) cclef5 fl4 b22 fl3 b22 fl07 b22 (:key-signature nil nil :flat nil nil :flat :flat)
-           sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 bl
+           sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 (:divider :regular) sb8 b22 bl
            b38 sb1 b38 sb8 b38 bl)
    (:vspace 30)
    (:text 110 58
