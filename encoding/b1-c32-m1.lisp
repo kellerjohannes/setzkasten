@@ -27,6 +27,7 @@
               (:en "third quarta"))))
    (:section-captions
     (s1 (:alt (:it "salto di quarta\\incomposta")
+    ;; Kommentar Anne  Bei den ersten drei ist das Interval mit einem 4 bezeichnet, mit den letzten mit quarta.
               (:de "")
               (:en "leap of a quarta\\incomposta")))
     (s2 (:alt (:it "salto di quarta\\incomposta")
