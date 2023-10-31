@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio d'andare all'unisono con vari salti, et con la sincopa tutta buona")
                  (:de "")
-                 (:en "Example of going to the unisono with various leaps, and with the completely good syncopation")))
+                 (:en "Example of going to the unisono with various leaps, and with a completely good syncopation")))
    (:section-headings
     (s1 (:alt (:it "Buono")
               (:de "")
