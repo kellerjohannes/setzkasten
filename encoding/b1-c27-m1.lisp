@@ -8,6 +8,7 @@
                  (:en "Example of the steps of a terza minore accidentale, composti and incomposti")))
    (:section-headings
     (s1 (:alt (:it "grado di 3 minore\\accidentale incomposto")
+    ;; Kommentar Anne  Die Untertiteln hier sind oben daran, obwohl sie in den Beispielen unten daran sind.
               (:de "")
               (:en "step of a 3 minore\\accidentale incomposto")))
     (s2 (:alt (:it "grado di 3 minore\\accidentale composto")
