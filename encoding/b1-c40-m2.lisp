@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio de gradi di quinte accidentali")
                  (:de "")
-                 (:en "Example of the steps of the quinte accidentali")))
+                 (:en "Example of the steps of quinte accidentali")))
    (:section-captions
     (s1 (:alt (:it "gradi della prima quinta\\accidentale per semitono\\minore ascendente composto")
     ;; Kommentar Anne: there is no "ascendente" in this caption in the original.
