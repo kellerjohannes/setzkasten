@@ -8,6 +8,7 @@
               (:de "")
               (:en "for the whole")))
     (s2 (:alt (:it "per la parte\\dinanzi")
+    ;;Kommentar Anne: auch hier ist eine Resolution nicht eine Wiedergabe des Originals. Ich glaube, beide sollten vorhanden sein.
               (:de "")
               (:en "for the part\\in front ")))
     (s3 (:alt (:it "per la parte\\doppo")
