@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio sopra il modo di comporre di quarta in quinta\\sincopata et non sincopata, et di quinta in quarta\\A tre voci")
                  (:de "")
-                 (:en "Example on the method of composing from the quarta to the quinta\\syncopated and non-syncopated, and from the quinta to the quarta\\in three voci")))
+                 (:en "Example on the method of composing from the quarta to the quinta,\\syncopated and non-syncopated, and from the quinta to the quarta\\in three voci")))
    (:voice-labels
     (s1 v1 (:alt (:it "Soprano")
                  (:de "")
