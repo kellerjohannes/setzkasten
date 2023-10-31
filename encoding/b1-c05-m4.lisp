@@ -34,7 +34,7 @@
               (:en "per natura: la\\per ♭: mi\\per ♮: re")))
     (s2 (:alt (:it "per ♮: mi")
               (:de "")
-              (:en "per natura: la\\per ♭: mi\\per ♮: re")))
+              (:en "per ♮: mi")))
     (s3 (:alt (:it "per ♭: sol\\per ♮: fa\\per natura: ut")
               (:de "")
               (:en "per ♭: sol\\per ♮: fa\\per natura: ut")))
