@@ -10,6 +10,7 @@
    (:section-captions
     ;; Zu prüfen: eine kritische Bemerkung zu »salti« fehlt
     (s1 (:alt (:it "salto di più\\di quarta\\accidentale\\incomposto")
+    ;;Kommentar Anne: Alle Beispiele im Original haben 4 anstatt quarta geschrieben
               (:de "")
               (:en "leap of a più\\di quarta\\accidentale\\incomposto")))
     (s2 (:alt (:it "gradi di più\\di quarta\\accidentale\\composto")
