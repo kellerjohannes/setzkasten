@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio de gradi di alcune quinte imperfette naturali e accidentali")
                  (:de "")
-                 (:en "Example of the steps of some quinte imperfette naturali and accidentali")))
+                 (:en "Example of the steps of some quinte imperfette, naturali and accidentali")))
    (:section-captions
     (s1 (:alt (:it "gradi di quinta\\imperfetta composta\\naturale")
               (:de "")
