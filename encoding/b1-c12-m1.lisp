@@ -8,6 +8,7 @@
               (:de "")
               (:en "for the whole")))
     (s2 (:alt (:it "per la metà\\dinanzi")
+    Für alle Ligaturen ist die Resolution gezeigt und nicht wie es angezeigt ist. Ist das wirklich sinnvoll? Musste nicht entweder das Original stehen oder bedeides? Es macht auf eine Art keinen Sinn nur die Auflösung zu zeigen.
               (:de "")
               (:en "for the half\\in front")))
     (s3 (:alt (:it "per la metà\\doppo")
