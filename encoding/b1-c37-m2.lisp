@@ -11,6 +11,7 @@
               (:de "")
               (:en "steps of a quinta\\imperfetta composta\\naturale")))
     (s2 (:alt (:it "gradi di quinta\\imperfetta composta\\naturale")
+    ;; Kommentar Anne: Im Beispiele 2, 4, und 5 wird nur 5 geschrieben anstatt quinta
               (:de "")
               (:en "steps of a quinta\\imperfetta composta\\naturale")))
     (s3 (:alt (:it "gradi di quinta\\imperfetta composta\\accidentale")
