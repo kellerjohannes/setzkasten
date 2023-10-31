@@ -20,6 +20,7 @@
               (:de "")
               (:en "semitono minore\\incomposto")))
     (s6 (:alt (:it "semitono minore\\incomposto")
+    ;;Kommentar Anne Ich nehme an, dass es eine absichtliche Veränderung der Noten im Original ist, oder?
               (:de "")
               (:en "semitono minore\\incomposto")))
     (s7 (:alt (:it "diesis maggiore\\per semitono minore\\incomposto")
