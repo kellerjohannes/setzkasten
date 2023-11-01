@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio della sesta minore, come in vari modi si può comporre")
                  (:de "")
-                 (:en "Example of the sesta minore, and how it may be composed in various ways")))
+                 (:en "Example of the sesta minore, and how it can be composed in various ways")))
    (:section-headings
     (s1 (:alt (:it "A due voci")
               (:de "")
@@ -54,6 +54,7 @@
            (:voice v1) cclef7 b38 sb3 sb2
            (:alt (:diplomatic) (:critical dot2)
                  (:comment "Punktierung des E wurde ergänzt.")
+                 ;;Kommentar Anne Ich würde den Punkt nicht ergänzen.
                  (:flag :suggestion) (:id 1))
            bl
            (:voice v2) mrest7 m7 dot8 sm6 sb9 bl)))
