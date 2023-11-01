@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio dell'ottava, con i due tenori,\\il primo esempio sarà con l'altro primo\\et così d'uno in altro")
                  (:de "")
-                 (:en "Example of the ottava with two tenors,\\the first example is with the other first\\and thus one after the other ")))
+                 (:en "Example of the ottava with two tenors,\\the first example is with the other marked first\\and likewise one after the other")))
    (:section-headings
     (s1 (:alt (:it "Primo")
               (:de "")
