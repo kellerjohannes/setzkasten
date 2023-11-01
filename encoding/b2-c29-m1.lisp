@@ -36,7 +36,7 @@
               (:de "for five")
               (:en "")))
     (s7 (:alt (:it "A cinque")
-              (:de "")
+              (:de "for five")
               (:en "for five")))
     (s8 (:alt (:it "A quattro")
               (:de "")
