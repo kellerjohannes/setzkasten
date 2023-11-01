@@ -10,7 +10,7 @@
     (s1 (:alt (:it "Quintadecima con\\ottava in mezzo\\ ")
     ;; Kommentar Anne: no need for backslashes without any content thereafter
               (:de "")
-              (:en "Quintadecima con\\ottava in mezzo")))
+              (:en "Quintadecima with an\\ottava in the middle")))
     (s2 (:alt (:it "Vigesima seconda\\con due ottave\\in mezzo")
               (:de "")
               (:en "Vigesima seconda\\with two ottave\\in the middle"))))
