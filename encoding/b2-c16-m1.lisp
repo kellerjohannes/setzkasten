@@ -9,7 +9,7 @@
    (:line-headings
     (:alt (:it "Non si fanno due quinte ne per grado, ne per salto,\\ascendenti ne discendenti")
           (:de "")
-          (:en "Two quinte are not made, neither by step nor by leap,\\neither ascending nor descending")))
+          (:en "Two quinte should not be made, either by step or by leap,\\ascending or descending")))
    (:voice-labels
     (s1 v1 (:alt (:it "Tenore")
                  (:de "")
