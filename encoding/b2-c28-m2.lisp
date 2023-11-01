@@ -6,13 +6,13 @@
    (:line-headings
     (:alt (:it "Molte annotationi sotto et sopra le due note fa et sol\\A due et a più voci si possono comporre")
           (:de "")
-          (:en "Many annotations below and above the two notes fa and sol\\which may be composed for two or more voci"))
+          (:en "Many annotations below and above the two notes fa and sol\\which can be composed for two or more voci"))
     nil
     nil
     nil
     (:alt (:it "Molte annotationi sotto et sopra le due note sol et fa\\A due et a più voci si possono comporre")
           (:de "")
-          (:en "Many annotations below and above the two notes sol and fa\\which may be composed for two or more voci")))
+          (:en "Many annotations below and above the two notes sol and fa\\which can be composed for two or more voci")))
    (:section-captions
     (s40 (:alt (:it "A otto")
                (:de "")
@@ -75,6 +75,7 @@
           (859 nil "& à più uoci")
           (1412 nil "ſi poſſono comporre."))
    (:music 2216
+   ;;Kommentar Anne: Beispiele 18-22 brauchen ein b im Bassschlüssel.
            (:voice v1)
            (:section s1) cclef7 b38 sb3 b38 sb4 b38 bl
            (:section s2) b22 sb3 b22 sb4 b22 bl
