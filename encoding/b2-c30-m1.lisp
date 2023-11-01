@@ -11,9 +11,9 @@
     nil
     nil
     nil
-    (:alt (:it "Molti esempti in due parti scritti, tenore con il basso\\soprani con il basso, et tenore con il basso")
+    (:alt (:it "Molti essempi in due parti scritti, tenore con il basso\\soprani con il basso, et tenore con il basso")
           (:de "")
-          (:en "Many example written in two parts, tenor with the bass\\and sopranos with the bass, and tenor with the bass")))
+          (:en "Many examples written in two parts, tenor with the bass\\and sopranos with the bass, and tenor with the bass")))
    (:section-captions
     (s1 (:alt (:it "A due")
               (:de "")
@@ -57,10 +57,10 @@
                (:en "for two")))
     (s14 (:alt (:it "A sette")
                (:de "")
-               (:en "for six")))
+               (:en "for seven")))
     (s15 (:alt (:it "A sette")
                (:de "")
-               (:en "for six")))
+               (:en "for sette")))
     (s16 (:alt (:it "A cinque")
                (:de "")
                (:en "for five")))
@@ -84,7 +84,7 @@
                (:en "for four")))
     (s23 (:alt (:it "A sette")
                (:de "")
-               (:en "for six")))
+               (:en "for seven")))
     (s24 (:alt (:it "A due")
                (:de "")
                (:en "for two")))
@@ -174,6 +174,7 @@
    (:text 90 58
           (491 1084 "Molti eſſempi di due parti,che inſieme ſaltano."))
    (:music 2220
+   ;;Kommentar Anne: Beispiele 18-23 müssen genau angeschaut werden und korrigiert. Zum Teil würden sie gelesen mit mindestens eine Stimme im Altschlüssel.
            (:voice v1)
            (:section s1) cclef7 b22 sb5 b38 sb7 bl
            (:section s2) sb7 b38 sb5 bl
