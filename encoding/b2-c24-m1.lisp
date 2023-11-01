@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio delle decime maggiori et minori,\\et come in vari modi si possono comporre")
                  (:de "")
-                 (:en "Example of the decime maggiori and minori,\\and how they may be composed in various ways")))
+                 (:en "Example of the decime maggiori and minori,\\and how they can be composed in various ways")))
    (:section-captions
     (s6 (:alt (:it "Dubbio di\\sustentatione")
               (:de "")
