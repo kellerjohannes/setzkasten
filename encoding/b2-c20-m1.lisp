@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio della sesta maggiore come in molti modi, si può comporre")
                  (:de "")
-                 (:en "Example of the sesta maggiore and how it may be composed in many ways")))
+                 (:en "Example of the sesta maggiore and how it can be composed in many ways")))
    (:section-headings
     (s1 (:alt (:it "A due voci")
               (:de "")
