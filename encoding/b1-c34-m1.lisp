@@ -9,7 +9,7 @@
                  ;; JK: nein, Bezug ist 'salto'
                  ;; DONE
                  (:de "")
-                 (:en "Example of the leap più di quarta and of its incomposti and composti steps")))
+                 (:en "Example of the leap più di quarta and of its incomposto and composto steps")))
    (:section-captions
     (s1 (:alt (:it "salto di più\\di quarta\\accidentale\\incomposto")
               ;; Kommentar Anne: Alle Beispiele im Original haben 4 anstatt quarta geschrieben
