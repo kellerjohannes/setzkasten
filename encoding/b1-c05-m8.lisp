@@ -33,14 +33,18 @@
               (:de "")
               (:en "per natura: la-sol-fa-la-sol\\mi and re in ascent")))
     (s2 (:alt (:it "[per natura: sol-fa-la-sol-fa\\re et ut per ascendere]")
-            ;; Kommentar Anne: ich würde nur re per ascendere schreiben.
+              ;; Kommentar Anne: ich würde nur re per ascendere schreiben.
+              ;; OPEN
               (:de "")
               (:en "per natura: sol-fa-la-sol-fa\\re in ascent")))
     (s3 (:alt (:it "per natura: fa-mi-la\\fa-mi-mi")
               ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
+              ;; OPEN
               (:de "")
               (:en "per natura: fa-mi-la\\fa-mi-mi")))
-              ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
+    ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
+    ;; OPEN
+
     (s4 (:alt (:it "per ♮: la-sol-fa-mi-re\\la-sol-fa-la-sol\\mi per ascendere")
               (:de "")
               (:en "per ♮: la-sol-fa-mi-re\\la-sol-fa-la-sol\\mi in ascent")))
@@ -49,14 +53,18 @@
               (:en "per ♭: la-sol-fa-la-sol\\per ♮: sol-fa-la-sol-fa\\re in ascent")))
     (s6 (:alt (:it "per natura: fa-mi-mi")
               ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
+              ;; OPEN
               (:de "")
               (:en "per natura: fa-mi-mi")))
-              ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
+    ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
+    ;; OPEN
     (s7 (:alt (:it "per ♭: fa-mi-la\\fa-mi-mi")
               ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
+              ;; OPEN
               (:de "")
               (:en "per ♭: fa-mi-la\\fa-mi-mi")))))
-              ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
+  ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
+  ;; OPEN
   (:data
    (:text 70 58 (0 2198 "ᴍano ᴇnarmonica , con ſemitoni maggiori diſcendenti nel principio del tono,con il tono, in quattro"))
    (:text 70 58 (0 976 "parti diuiſo , per leſette lettere della ᴍano."))

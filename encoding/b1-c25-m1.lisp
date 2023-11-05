@@ -4,7 +4,12 @@
    (:comment "q021_s041, origin: 470")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio del grado o salto della terza manco di minore,\\overo minima, composto e incomposto")
-                 ;; Kommentar Anne: Sollte es nicht "composta e incomposta" heissen, d.h. Korrektur des Originals?
+                 ;; Kommentar Anne: Sollte es nicht "composta e incomposta" heissen, d.h. Korrektur
+                 ;; des Originals?
+
+                 ;; JK: Hatte ich bereits diskutiert, Konsens war: 'composto e incomposto' beziehen
+                 ;; sich auf 'grado o salto', nicht auf 'terza'. Akzeptabel?
+                 ;; DONE
                  (:de "")
                  (:en "Example of the step or leap of the terza manco di minore,\\or minima, composta and incomposta")))
    (:section-captions
@@ -31,7 +36,7 @@
               (:en "step of a terza\\minima\\incomposta")))))
   (:data
    (:text 90 58
-          (0 2201 "ᴇſſempio del grado ò ſalto della ᴛerza manco di minore, ouero minima compoſto & incompoſto."))
+     (0 2201 "ᴇſſempio del grado ò ſalto della ᴛerza manco di minore, ouero minima compoſto & incompoſto."))
    (:music 2208
            (:voice v1)
            (:section s1)
@@ -49,18 +54,18 @@
            (:section s7)
            b22 sh2 b38 sb2 b38 sb1 bl)
    (:text 70 58
-          (44 nil "grado di 3.")
-          (335 nil "grado di 3.")
-          (641 nil "grado di 3.")
-          (928 nil "grado di 3.")
-          (1237 nil "grado di 3.")
-          (1541 nil "grado di terza")
-          (1903 nil "grado di 3."))
+     (44 nil "grado di 3.")
+     (335 nil "grado di 3.")
+     (641 nil "grado di 3.")
+     (928 nil "grado di 3.")
+     (1237 nil "grado di 3.")
+     (1541 nil "grado di terza")
+     (1903 nil "grado di 3."))
    (:text 70 58
-          (50 nil "mini.incom.")
-          (336 nil "mini.comp.")
-          (639 nil "mini.incom.")
-          (934 nil "mini.comp.")
-          (1245 nil "mini.incom.")
-          (1541 nil "mini.comp.")
-          (1911 nil "mini.incom."))))
+     (50 nil "mini.incom.")
+     (336 nil "mini.comp.")
+     (639 nil "mini.incom.")
+     (934 nil "mini.comp.")
+     (1245 nil "mini.incom.")
+     (1541 nil "mini.comp.")
+     (1911 nil "mini.incom."))))

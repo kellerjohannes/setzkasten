@@ -30,7 +30,16 @@
               (:en "Ffaut"))))
    (:section-captions
     (s1 (:alt (:it "per natura,\\per ♭,\\per ♮:\\la, mi, re,\\ut, fa, sol")
-              ;;Kommentar Anne: Für mich geht diese Reihenfolge nicht, weil es deckt sich nicht weder mit dem Original noch dem Wahrnehmen der Zeit. Die erste Zeile muss la mi re sein in Zusammenhang mit dem Notennamen Alamire, die zweite ut, fa, sol, und die dritte die Hexachorde. Die Hexachorde der ersten Zeile gelten für la mi und re, bei ut fa und sol wären sie Hexachorde auf a, d, e, usw. Dies Prinzip gilt für alle nachher, dass die Silben der erste Reihe gelten für die dargestellten Note(n), die danach für die andere Möglichkeiten. Dies ist kaum zu erkennen von der jetzige Darstellung. Ich habe die englische Darstellung entsprechend (hoffentlich) meine Vorstellungen eingerichtet.
+              ;; Kommentar Anne: Für mich geht diese Reihenfolge nicht, weil es deckt sich nicht
+              ;; weder mit dem Original noch dem Wahrnehmen der Zeit. Die erste Zeile muss la mi re
+              ;; sein in Zusammenhang mit dem Notennamen Alamire, die zweite ut, fa, sol, und die
+              ;; dritte die Hexachorde. Die Hexachorde der ersten Zeile gelten für la mi und re, bei
+              ;; ut fa und sol wären sie Hexachorde auf a, d, e, usw. Dies Prinzip gilt für alle
+              ;; nachher, dass die Silben der erste Reihe gelten für die dargestellten Note(n), die
+              ;; danach für die andere Möglichkeiten. Dies ist kaum zu erkennen von der jetzige
+              ;; Darstellung. Ich habe die englische Darstellung entsprechend (hoffentlich) meine
+              ;; Vorstellungen eingerichtet.
+              ;; OPEN
               (:de "")
               (:en "la, mi, re,\\ut, fa, sol\\per natura,\\per ♭,\\per ♮")))
     (s2 (:alt (:it "per ♭,\\per ♮:\\fa, mi,\\la, sol, re, ut")

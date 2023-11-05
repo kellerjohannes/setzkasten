@@ -8,6 +8,7 @@
                  (:en "Example of composing the quinta imperfetta\\in two or more voci, in various ways")
                  (:comment "Das ganze Beispiel: akut zu diskutieren, insbesondere der zweite Tenor in der dritten Section. Maniates macht eine alternative Stimmverteilung. Alternativ könnte der Tenor stark korrigiert werden.")
                  ;; (Siehe Kommentar unten)
+                 ;; OPEN
                  (:flag :observe) (:id 1)))
    (:section-headings
     (s1 (:alt (:it "A due voci")

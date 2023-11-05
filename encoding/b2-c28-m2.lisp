@@ -75,7 +75,10 @@
           (859 nil "& à più uoci")
           (1412 nil "ſi poſſono comporre."))
    (:music 2216
-   ;;Kommentar Anne: Beispiele 18-22 brauchen ein b im Bassschlüssel.
+           ;; Kommentar Anne: Beispiele 18-22 brauchen ein b im Bassschlüssel.
+           ;; JK: Danke, habe ich ergänzt! Da in der Quelle kein ♭ steht, habe ich es in den Bericht
+           ;; aufgenommen.
+           ;; DONE
            (:voice v1)
            (:section s1) cclef7 b38 sb3 b38 sb4 b38 bl
            (:section s2) b22 sb3 b22 sb4 b22 bl
@@ -99,11 +102,11 @@
            (:section s8) b22 m7 b22 m4 b22 sb8 b22 bl
            (:section s9) b22 sb4 b22 sb1 b22 bl)
    (:text 90 58
-          (545 1100 "Molte annotationi ſopra le due note fa. & ſol."))
+     (545 1100 "Molte annotationi ſopra le due note fa. & ſol."))
    (:text 90 58
-          (366 nil "A due")
-          (818 nil "& à più uoci")
-          (1424 nil "ſi poſſono comporre"))
+     (366 nil "A due")
+     (818 nil "& à più uoci")
+     (1424 nil "ſi poſſono comporre"))
    (:music 2241
            (:voice v1)
            (:section s10) cclef7 b22 fl6 (:key-signature nil nil nil nil nil nil :flat) b22 sb6 b22 sb4 b22 bl
@@ -138,7 +141,11 @@
    (:vspace 90)
    (:music 2239
            (:voice v2)
-           (:section s18) (:f-clef) max7 fclef7 (:key-signature nil nil nil nil nil nil nil) b38 b22 sb3 b38 sb4 b22 b22 bl
+           (:section s18) (:f-clef)
+           (:alt (:diplomatic max7 fclef7)
+                 (:critical max7 fclef7)
+                 (:comment "Original: ♭-Vorzeichnung beim Schlüssel fehlt, betrifft section 18-22.") (:flag :draft) (:id 0))
+           (:key-signature nil nil nil nil nil nil :flat) b38 b22 sb3 b38 sb4 b22 b22 bl
            (:section s19) b22 b22 sb3 b38 b22 sb4 b22 b22 bl
            (:section s20) b22 b38 sb3 b38 sb4 b22 bl
            (:section s21) b22 sb3 b22 sb4 b22 b22 bl

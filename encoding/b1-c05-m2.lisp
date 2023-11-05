@@ -36,10 +36,19 @@
               (:de "")
               (:en "per ♮: mi")))
     (s3 (:alt (:it "per natura: sol\\per ♭: fa\\per ♮: ut")
-              ;; Kommentar Anne: this corresponds to the original, but is wrong. Either the natura must be ut, the molle must be sol, and the hard must be fa; or the sequence of hexachords must be different, with mollem being first with c as sol; hard second with c as f; and finally natura with c as ut. The German and English must be changed accordingly as well.
+              ;; Kommentar Anne: this corresponds to the original, but is wrong. Either the natura
+              ;; must be ut, the molle must be sol, and the hard must be fa; or the sequence of
+              ;; hexachords must be different, with mollem being first with c as sol; hard second
+              ;; with c as f; and finally natura with c as ut. The German and English must be changed
+              ;; accordingly as well.
+              ;; OPEN
               (:de "")
               (:en "per natura: sol\\per ♭: fa\\per ♮: ut")))
-              ;; Kommentar Anne: this corresponds to the original, but is wrong. Either the natura must be ut, the molle must be sol, and the hard must be fa; or the sequence of hexachords must be different, with mollem being first with c as sol; hard second with c as f; and finally natura with c as ut. The Italian and German must be changed accordingly as well.
+    ;; Kommentar Anne: this corresponds to the original, but is wrong. Either the natura must be ut,
+    ;; the molle must be sol, and the hard must be fa; or the sequence of hexachords must be
+    ;; different, with mollem being first with c as sol; hard second with c as f; and finally natura
+    ;; with c as ut. The Italian and German must be changed accordingly as well.
+    ;; OPEN
     (s4 (:alt (:it "per ♭: la\\per ♮: sol\\per natura: re")
               (:de "")
               (:en "per ♭: la\\per ♮: sol\\per natura: re")))

@@ -8,7 +8,11 @@
               (:de "")
               (:en "for the whole")))
     (s2 (:alt (:it "per la parte\\dinanzi")
-    ;;Kommentar Anne: auch hier ist eine Resolution nicht eine Wiedergabe des Originals. Ich glaube, beide sollten vorhanden sein.
+              ;; Kommentar Anne: auch hier ist eine Resolution nicht eine Wiedergabe des
+              ;; Originals. Ich glaube, beide sollten vorhanden sein.
+
+              ;; JK: Siehe Antwort in b1-c12-m1
+              ;; DONE
               (:de "")
               (:en "for the part\\in front ")))
     (s3 (:alt (:it "per la parte\\doppo")

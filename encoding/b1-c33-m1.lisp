@@ -8,7 +8,10 @@
                  (:en "Example of the leap and the steps of the quarta accidentale, incomposta and composta")))
    (:section-captions
     (s1 (:alt (:it "salto di quarta\\accidentale\\incomposta")
-    ;;Kommentar Anne  Hier haben Beispiele 2 und 6 das Wort quarta ausgeschrieben, ansonsten Nummern
+              ;; Kommentar Anne Hier haben Beispiele 2 und 6 das Wort quarta ausgeschrieben,
+              ;; ansonsten Nummern.
+              ;; JK: dito.
+              ;; DONE
               (:de "")
               (:en "leap of a quarta\\accidentale\\incomposta")))
     (s2 (:alt (:it "gradi di quarta\\accidentale\\composta")
@@ -30,7 +33,7 @@
               (:en "leap of a quarta\\accidentale\\incomposta")))))
   (:data
    (:text 150 58
-          (137 1893 "ᴇſſempio del ſalto,& de i gradi de Ɋuarta accidentale,incompoſta & compoſta."))
+     (137 1893 "ᴇſſempio del ſalto,& de i gradi de Ɋuarta accidentale,incompoſta & compoſta."))
    (:music 2193
            (:voice v1)
            (:section s1)
@@ -46,22 +49,22 @@
            (:section s6)
            fl4 b38 sb4 b22 fl1 b22 sb1 bl)
    (:text 80 58
-          (48 nil "ſalto di 4.")
-          (340 nil "gradi di quarta")
-          (750 nil "gradi di 4.")
-          (1062 nil "ſalto di 4.")
-          (1375 nil "gradi di quarta acci.")
-          (1882 nil "ſalto di 4."))
+     (48 nil "ſalto di 4.")
+     (340 nil "gradi di quarta")
+     (750 nil "gradi di 4.")
+     (1062 nil "ſalto di 4.")
+     (1375 nil "gradi di quarta acci.")
+     (1882 nil "ſalto di 4."))
    (:text 70 58
-          (51 nil "accidentale")
-          (353 nil "accidentale")
-          (746 nil "accidentale")
-          (1067 nil "accidentale")
-          (1366 nil "accidentale comp.")
-          (1880 nil "accidentale"))
+     (51 nil "accidentale")
+     (353 nil "accidentale")
+     (746 nil "accidentale")
+     (1067 nil "accidentale")
+     (1366 nil "accidentale comp.")
+     (1880 nil "accidentale"))
    (:text 70 58
-          (57 nil "incomp.")
-          (360 nil "compoſta")
-          (751 nil "compoſta")
-          (1062 nil "incompoﬆa")
-          (1887 nil "incompoſta"))))
+     (57 nil "incomp.")
+     (360 nil "compoſta")
+     (751 nil "compoſta")
+     (1062 nil "incompoﬆa")
+     (1887 nil "incompoſta"))))

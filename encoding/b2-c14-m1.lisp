@@ -17,7 +17,11 @@
               (:de "")
               (:en "incitato [step]\\and molle")))
     (s4 (:alt (:it "[Gradi] incitati\\ ")
-              ;; Kommentar Anne: willst du noch etwas hinzufügen?   
+              ;; Kommentar Anne: willst du noch etwas hinzufügen?
+              ;; JK: Meinst du wegen der leeren Zeile? Die ist nötig, damit die vertikalen
+              ;; Abstände bei allen sections dieses Beispiels gleich berechnet werden. Keine
+              ;; inhaltliche Bedeutung.
+              ;; OPEN
               (:de "")
               (:en "incitati [steps]")))
     (s5 (:alt (:it "[Grado] incitato\\e molle")
@@ -28,6 +32,8 @@
               (:en "incitato [step]\\and molle")))
     (s7 (:alt (:it "[Gradi] incitati\\ ")
               ;; Kommentar Anne: willst du noch etwas hinzufügen?
+              ;; JK: Siehe Kommentar oben.
+              ;; OPEN
               (:de "")
               (:en "incitati [steps]\\")))
     (s8 (:alt (:it "[Grado] molle\\et incitato")

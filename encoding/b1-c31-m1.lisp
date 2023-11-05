@@ -8,7 +8,9 @@
                  (:en "Example of the steps of the terza più di maggiore, incomposto and composto")))
    (:section-captions
     (s1 (:alt (:it "grado di terza\\più di maggiore\\incomposto")
-    ;;Kommentar Anne  Auch hier sind alle Terzen mit einem 3 ausgedruckt.
+              ;; Kommentar Anne Auch hier sind alle Terzen mit einem 3 ausgedruckt.
+              ;; JK: Siehe Kommentar b1-c29-m1. Kann so bleiben.
+              ;; DONE
               (:de "")
               (:en "step of a terza\\più di maggiore\\incomposto")))
     (s2 (:alt (:it "grado di terza\\più di maggiore\\composto")

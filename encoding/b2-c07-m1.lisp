@@ -19,7 +19,13 @@
     (s2 v2 (:alt (:it "Alto")
                  (:de "")
                  (:en "Alto")
-                 ;; Kommentar Anne: Without the music, this order makes no sense in connection with the original.
+                 ;; Kommentar Anne: Without the music, this order makes no sense in connection with
+                 ;; the original.
+                 ;; JK: Meinst du ohne die nicht gedruckten Stimmen, die der Student selbst zu
+                 ;; ergänzen hat? Ein Kommentar im Bericht ist hier vorgesehen, siehe folgende
+                 ;; Zeile (29) im Code:
+                 ;; OPEN
+
                  (:comment "Die Reihenfolge der Stimmen und die Verteilung auf Sections ist zu disktutieren. Ev. braucht es hier einen Kommentar, dass diese Konstellationen eher in vielstimmigen Sätzen plausibel sind.")
                  (:flag :observe) (:id 1)))
     (s2 v1 (:alt (:it "Tenore")

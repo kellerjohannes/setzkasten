@@ -22,6 +22,8 @@
               (:en "Terza\\maggiore")))
     (s3 (:alt (:it "Quinta\\ ")
               ;; Kommentar Anne: no need for backslashes without any content thereafter
+              ;; JK: dito.
+              ;; DONE
               (:de "")
               (:en "Quinta")))
     (s4 (:alt (:it "Sesta\\maggiore")
@@ -31,7 +33,9 @@
               (:de "")
               (:en "Sesta\\minore")))
     (s6 (:alt (:it "Ottava\\ ")
-    ;; Kommentar Anne: no need for backslashes without any content thereafter
+              ;; Kommentar Anne: no need for backslashes without any content thereafter
+              ;; JK: dito.
+              ;; DONE
               (:de "")
               (:en "Ottava")
               (:comment "Original: »5.«.") (:flag :suggestion) (:id 3)))
@@ -42,11 +46,15 @@
               (:de "")
               (:en "Terza\\minore")))
     (s9 (:alt (:it "Quinta\\ ")
-    ;; Kommentar Anne: no need for backslashes without any content thereafter
+              ;; Kommentar Anne: no need for backslashes without any content thereafter
+              ;; JK: dito.
+              ;; DONE
               (:de "")
               (:en "Quinta")))
     (s10 (:alt (:it "Ottava\\ ")
-    ;; Kommentar Anne: no need for backslashes without any content thereafter
+               ;; Kommentar Anne: no need for backslashes without any content thereafter
+              ;; JK: dito.
+              ;; DONE
                (:de "")
                (:en "Ottava")
                (:comment "Original: »5.«.") (:flag :suggestion) (:id 4)))))

@@ -172,9 +172,10 @@
     (s24 v2 "treble_8")))
   (:data
    (:text 90 58
-          (491 1084 "Molti eſſempi di due parti,che inſieme ſaltano."))
+     (491 1084 "Molti eſſempi di due parti,che inſieme ſaltano."))
    (:music 2220
-   ;;Kommentar Anne: Beispiele 18-23 müssen genau angeschaut werden und korrigiert. Zum Teil würden sie gelesen mit mindestens eine Stimme im Altschlüssel.
+           ;; Kommentar Anne: Beispiele 18-23 müssen genau angeschaut werden und korrigiert. Zum Teil würden sie gelesen mit mindestens eine Stimme im Altschlüssel.
+           ;; OPEN
            (:voice v1)
            (:section s1) cclef7 b22 sb5 b38 sb7 bl
            (:section s2) sb7 b38 sb5 bl
@@ -186,7 +187,10 @@
            (:section s8) sb6 b22 sb4 bl
            (:section s9) (:newline) sb10 b22 sb8 bl
            (:section s10) sb10 b22 sb7 b38
-           ;; Durch die neue Schlüsselung wird hier der Beginn eines neuen inhaltlichen Abschnitts suggeriert, dieser ist aber nicht klar und in der Normalisierung auch nicht dargestellt
+           ;; JK: Durch die neue Schlüsselung wird hier der Beginn eines neuen inhaltlichen
+           ;; Abschnitts suggeriert, dieser ist aber nicht klar und in der Normalisierung auch nicht
+           ;; dargestellt
+           ;; OPEN
            (:section s11) cclef5 b38 sb10 b22 sb8 bl
            (:section s12) sb3 b22 sb5 bl)
    (:text 90 58
@@ -274,7 +278,6 @@
            (:section s33) (:newline) sb10 sb7 bl
            (:section s34) sb9 sb5 bl
            (:section s35) sb8 sb4 b22
-           ;; markiert diese neue Schlüsselung eine neue inhaltliche Einheit?
            (:section s36) cclef5 b22 sb10 sb8 bl)
    (:text 90 58
           (69 nil "à 2.")

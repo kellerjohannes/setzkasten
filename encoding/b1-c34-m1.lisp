@@ -4,15 +4,20 @@
    (:comment "q021_s046, origin: 970")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio del salto più che di quarta e de suoi gradi incomposto e composto")
-                 ;;Kommentar Anne: soll "incomposto e composto" in "incomposti e composti" korrigiert werden?
+                 ;; Kommentar Anne: soll "incomposto e composto" in "incomposti e composti"
+                 ;; korrigiert werden?
+                 ;; JK: nein, Bezug ist 'salto'
+                 ;; DONE
                  (:de "")
                  (:en "Example of the leap più di quarta and of its incomposti and composti steps")))
    (:section-captions
-    ;; Zu prüfen: eine kritische Bemerkung zu »salti« fehlt
     (s1 (:alt (:it "salto di più\\di quarta\\accidentale\\incomposto")
-    ;;Kommentar Anne: Alle Beispiele im Original haben 4 anstatt quarta geschrieben
+              ;; Kommentar Anne: Alle Beispiele im Original haben 4 anstatt quarta geschrieben
+              ;; JK: dito.
+              ;; DONE
               (:de "")
-              (:en "leap of a più\\di quarta\\accidentale\\incomposto")))
+              (:en "leap of a più\\di quarta\\accidentale\\incomposto")
+              (:comment "Original: »salti«.") (:flag :draft) (:id 1)))
     (s2 (:alt (:it "gradi di più\\di quarta\\accidentale\\composto")
               (:de "")
               (:en "steps of a più\\di quarta\\accidentale\\composto")))
@@ -52,9 +57,15 @@
            (:section s7)
            fl4 b38 sbd4 b38 fl1 b22 sb1 bl)
    (:text 80 58
-          (35 nil "ſalti di più")
+          (35 nil
+              (:alt (:diplomatic "ſalti di più")
+                    (:critical "ſalto di più")
+                    (:comment "Original: »ſalti«.") (:flag :draft) (:id 0)))
           (325 nil "gradi di più")
-          (607 nil "ſalto di più")
+          (607 nil
+               (:alt (:diplomatic "ſalto di più")
+                     (:critical "ſalti di più")
+                     (:comment "Original: »ſalto«.") (:flag :draft) (:id 0)))
           (896 nil "gradi di più")
           (1193 nil "ſalto  di più")
           (1503 nil "gradi di più di")

@@ -13,6 +13,8 @@
    (:section-captions
     (s1 (:alt (:it "per ♮: ut-re-mi-fa-re")
               ;; Kommentar Anne: bessere Unterlegung der Silben unter den Noten in allen Sprachen?
+              ;; JK: meinst du im Sinn von gesungenem Text?
+              ;; OPEN
               (:de "")
               (:en "per ♮: ut-re-mi-fa-re")))
     (s2 (:alt (:it "per ♭: re-mi-fa-re-mi")

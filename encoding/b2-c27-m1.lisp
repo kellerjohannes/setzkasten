@@ -8,7 +8,9 @@
                  (:en "Example of the quintadecima, and of the vigesima seconda,\\in three and four voci")))
    (:section-headings
     (s1 (:alt (:it "Quintadecima con\\ottava in mezzo\\ ")
-    ;; Kommentar Anne: no need for backslashes without any content thereafter
+              ;; Kommentar Anne: no need for backslashes without any content thereafter
+              ;; JK: dito.
+              ;; DONE
               (:de "")
               (:en "Quintadecima with an\\ottava in the middle")))
     (s2 (:alt (:it "Vigesima seconda\\con due ottave\\in mezzo")

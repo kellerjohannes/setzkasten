@@ -20,7 +20,10 @@
               (:de "")
               (:en "semitono minore\\incomposto")))
     (s6 (:alt (:it "semitono minore\\incomposto")
-    ;;Kommentar Anne Ich nehme an, dass es eine absichtliche Veränderung der Noten im Original ist, oder?
+              ;; Kommentar Anne Ich nehme an, dass es eine absichtliche Veränderung der Noten im
+              ;; Original ist, oder?
+              ;; JK: Ja, ist auch so im Bericht vermerkt.
+              ;; DONE
               (:de "")
               (:en "semitono minore\\incomposto")))
     (s7 (:alt (:it "diesis maggiore\\per semitono minore\\incomposto")
@@ -44,8 +47,6 @@
            (:newline)
            sb5 b22 sh5 b22 sb5 bl
            (:section s6)
-           ;; Vorschlag zur Idealisierung, da sonst kein 'semitono minore' entsteht. Alternativ
-           ;; könnte man die Unterschrift dieses Taktes anpassen, wäre aber weniger plausibel.
            (:alt (:diplomatic sb9) (:critical sb8)
                  (:comment "Original: E.") (:flag :draft) (:id 1))
            b22 fl8 b22 sb8 bl
