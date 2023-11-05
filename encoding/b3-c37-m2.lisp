@@ -24,13 +24,15 @@
               (:en "")))))
   (:data
    (:text 110 58
-          (0 nil "Seconda quinta.")
-          (459 nil "2. quinta.")
-          (807 nil "Terza quinta.")
-          (1233 nil "3.quinta.")
-          (1545 nil "Qu arta quīta.")
-          ;; Punkt ist hier nach unten verschoben, stillschweigend idealisiert.
-          (1954 nil "4. quinta."))
+     (0 nil "Seconda quinta.")
+     (459 nil "2. quinta.")
+     (807 nil "Terza quinta.")
+     (1233 nil "3.quinta.")
+     (1545 nil "Qu arta quīta.")
+     ;; JK: Punkt ist hier nach unten verschoben, stillschweigend idealisiert.
+     ;; Soll in den Bericht aufgenommen werden.
+     ;; OPEN
+     (1954 nil "4. quinta."))
    (:music 2225
            (:voice v1)
            (:section s1) cclef7 b22 sb2 sb3 sb4 sb5 sb6 b22 bl
@@ -40,9 +42,9 @@
            (:section s5) (:newline) sb4 sb5 sb6 sb7 sb8 bl
            (:section s6) sb4 fl5 sb5 sb5 sb7 fl8 sb8 sb8)
    (:text 70 58
-          (98 nil "Diatonica.")
-          (462 nil "ᴄromatica.")
-          (809 nil "ᴅiatonica.")
-          (1152 nil "ᴄromatica.")
-          (1543 nil "ᴅiatonica.")
-          (1869 nil "ᴄromatica."))))
+     (98 nil "Diatonica.")
+     (462 nil "ᴄromatica.")
+     (809 nil "ᴅiatonica.")
+     (1152 nil "ᴄromatica.")
+     (1543 nil "ᴅiatonica.")
+     (1869 nil "ᴄromatica."))))

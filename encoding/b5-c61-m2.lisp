@@ -51,8 +51,9 @@
            (:section s2) b22 fl8 b22 sb8 sh8 sb8 b22 bl
            (:section s3) b22 sh6 sb6 fl8 sb8 b22 bl
            (:section s4) b22 sb4 b22
-           ;; Kosmetische Korrektur der ♭-Position
-           (:alt (:diplomatic fl4) (:critical fl5)) b22 sbd5 b22 bl
+           (:alt (:diplomatic fl4) (:critical fl5)
+                 (:comment "Original: ♭ steht eine Position tiefer"))
+           b22 sbd5 b22 bl
            (:section s5) b22 sb5 b22 b22 sbd4 b22 b22 bl
            (:section s6) b22 fl5 sbd5 fl6 sb6 b22 bl
            (:section s7) b22 sh4 sb4 sbd5 b22 bl

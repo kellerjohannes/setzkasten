@@ -59,8 +59,9 @@
           (161 466 "ɢ ſol re ut primo.")
           (1304 458 "ɢ ſol re ut primo."))
    (:text 120 58
-          ;; Offensichtliche Textkorrektur, mit Luigi abzugleichen
-          (0 nil (:alt (:diplomatic "La 4.terze.") (:critical "Le 4.terze.")))
+          (0 nil (:alt (:diplomatic "La 4.terze.")
+                       (:critical "Le 4.terze.")
+                       (:comment "Original: »La 4.terze.«.")))
           (547 nil "5.")
           (684 nil "Le 4.seſte.")
           (1061 nil "8.")

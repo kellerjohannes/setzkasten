@@ -47,7 +47,6 @@
     (s13 (:alt (:it "Semitono\\naturale et\\accidentale")
                (:de "")
                (:en "")))
-    ;; Von der Bibelgruppe bestätigt
     (s14 (:alt (:it "Tono\\naturale et\\accidentale")
                (:de "")
                (:en "")

@@ -51,9 +51,12 @@
    (:music 2241
            (:section s11) (:newline) (:f-clef) max7 fclef7 b22 b38 sb6 b38 sb7 b38 b22 bl
            (:section s12) b38 b22 sb3 b38 sb4 b38 b22 bl
-           ;; Das `:newline' hier stellt eine Art von Idealisierung dar, denn es gruppiert die
+           ;; JK: Das `:newline' hier stellt eine Art von Idealisierung dar, denn es gruppiert die
            ;; letzten vier Takte unter dem Titel (`:line-heading') "Voci mobili del genere
            ;; enarmonico".
+
+           ;; JK: Soll ev. im Bericht kommentiert werden.
+           ;; OPEN
            (:section s13) (:newline)b22 b38 sb3 b38 sbd3 b38 sb4 b38 b22 bl
            (:section s14) b38 b22 sb6 b38 sbd6 b38 sb7 b38 b22
            (:section s15) cclef5 b38 sb4 b38 sbd4 b38 sb5 b38 bl

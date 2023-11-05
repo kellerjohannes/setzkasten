@@ -227,11 +227,10 @@
            (:section s14) b38 b38 sbd3 b38 sb3 b38 fl3 b38 sbd3 b38 sh2 b38 sb2 b38 sbd2 b38 b38 bl)
    (:text 90 58
      (175 nil "d.mi. d.mi. d.mag. d.mi.")
-     ;; Von Bibelgruppe bestätigt
-     (:alt (:diplomatic (937 nil "d.mi. d.mi.d.mi.d.mi."))
-           (:critical (937 nil "d.mi. d.mi.d.mi."))
-           (:comment "Original: »d.mi. d.mi.d.mi.d.mi.«")
-           (:flag :draft) (:id 6))
+     (937 nil (:alt (:diplomatic "d.mi. d.mi.d.mi.d.mi.")
+                    (:critical "d.mi. d.mi.d.mi.")
+                    (:comment "Original: »d.mi. d.mi.d.mi.d.mi.«")
+                    (:flag :draft) (:id 6)))
      (1521 nil "d.mi. d.mi. d.ma. d.mi."))
    (:text 70 58
      (252 nil "tono")

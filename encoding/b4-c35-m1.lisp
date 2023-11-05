@@ -13,6 +13,7 @@
 
    ;; Im Moment gibt es keine ergänzenden Elemente, nur das musikalische Material in direkter
    ;; Übertragung, das auch in der Quelle vorliegt.
+   ;; OPEN
    (:section-captions
     (s1 (:alt (:it "A quattro voci")
               (:de "")

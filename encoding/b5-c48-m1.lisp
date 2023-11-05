@@ -128,8 +128,9 @@
      (140 nil "se.mag")
      (493 nil "se.mag.")
      (747 nil "se.minore")
-     ;; Texteingriff, zu bestätigen
-     (1154 nil (:alt (:diplomatic "se. mag. se. mag.") (:critical "se. mag. se. min.")))
+     (1154 nil (:alt (:diplomatic "se. mag. se. mag.")
+                     (:critical "se. mag. se. min.")
+                     (:comment "Original: »se. mag. se. mag.«.")))
      (1729 nil "se.mag. se.min."))
    (:music 2219
            (:section s5) (:f-clef) max7 fclef7 b38 sb6 b38 sbd6 b38 sb7 bl

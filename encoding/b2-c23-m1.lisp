@@ -118,6 +118,5 @@
            (:section s6) b38 b38 sb7 b38 b22 bl
            (:section s7) b38 (:f-clef) max7 fclef7 b38 sb5 b38 b22 bl
            (:section s8) b38 b38 sb4 b38 b38 bl
-           ;; interessante Verwendung von 'nat'
            (:section s9) b38 nat3 b38 sb3 b22 b22 bl
            (:section s10) b38 sh4 b22 sb4 b22 bl)))

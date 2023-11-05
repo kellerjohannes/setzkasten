@@ -191,8 +191,9 @@
            (:section s12) fl5 b22 sb5 sh4 b22 sb4 b22 sbd4 sh3 b22 sb3 b22 sbd3 b22 bl)
    (:text 100 58
      (54 nil "d.mi.d.mi.d.mi.d.ma.")
-     ;; Von der Bibelgruppe bestätigt.
-     (:alt (:diplomatic (570 nil "d.mi.d.mi.d.mi.d.mi.")) (:critical (570 nil "d.mi.d.mi.d.mi.")))
+     (570 nil (:alt (:diplomatic "d.mi.d.mi.d.mi.d.mi.")
+                    (:critical "d.mi.d.mi.d.mi.")
+                    (:comment "Original: »d.mi.d.mi.d.mi.d.mi.«.")))
      (1050 nil "di.mi.di.mi.di.ma.d.mi.")
      (1659 nil "di.mi.d.mi.di.ma.d.mi."))
    (:text 120 58
@@ -208,8 +209,9 @@
            (:section s13) (:newline) (:f-clef) max7 fclef7 b22 sbd3 b22 sb3 b22 fl3 b22 sbd3 b22 fl3 b22 sb3 b22 bl
            (:section s14) fl3 b22 sb3 b22 sh2 b22 sb2 b22 sbd2 b22 fl2 b22 sbd2 b22 fl2 b22 sb2 bl)
    (:text 90 58
-     ;; Von der Bibelgruppe bestätigt
-     (:alt (:diplomatic (50 nil "d.mi.d.mi.d.mi.d.mi.")) (:critical (50 nil "d.mi.d.mi.d.mi.")))
+     (50 nil (:alt (:diplomatic "d.mi.d.mi.d.mi.d.mi.")
+                   (:critical "d.mi.d.mi.d.mi.")
+                   (:comment "Original: »d.mi.d.mi.d.mi.d.mi.«.")))
      (596 nil "di.mi. di.mi. di.ma. di.mi."))
    (:text 70 58
      (93 nil "sem. ᴄro. acc.")

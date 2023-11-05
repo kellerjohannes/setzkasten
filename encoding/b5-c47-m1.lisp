@@ -10,7 +10,6 @@
     (s1 (:alt (:it "Tono\\accidentale\\enarmonico")
               (:de "")
               (:en "")))
-    ;; Von der Bibelgruppe bestätigt
     (s2 (:alt (:it "Semitono\\accidentale\\enarmonico")
               (:de "")
               (:en "")
@@ -100,7 +99,6 @@
     (s27 (:alt (:it "Semitono\\naturale et\\accidentale")
                (:de "")
                (:en "")))
-    ;; Von der Bibelgruppe bestätigt
     (s28 (:alt (:it  "Tono\\naturale et\\accidentale")
                (:de "")
                (:en "")
@@ -149,7 +147,6 @@
      (1986 nil "to.acc."))
    (:music 2255
            (:section s8) (:newline) (:f-clef) max7 fclef7 b22 fl9 b22
-           ;; Diese Idealisierung wurde von der Bibelgruppe bestätigt
            (:alt (:diplomatic sb9) (:critical sbd9)
                  (:comment "Original: Die Erste Note hat keinen Punkt.")
                  (:flag :draft) (:id 10))

@@ -28,6 +28,7 @@
    ;; nach Willi Apel eine punktierte Interpretation, d.h. der erste Color entspricht der
    ;; rhythmischen Figur zu Beginn der Phrase.
 
+   ;; OPEN
    (:section-headings
     (s1 (:alt (:it "Esempio delle note colorite nel canto fermo")
               (:de "")

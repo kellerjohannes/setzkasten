@@ -77,6 +77,7 @@
            ;; Eine Idealisierung würde hier eine komplette Neustrukturierung bedeuten, was
            ;; der Absicht der Edition widerspricht. Ev. müsste dies separat kommentiert werden
            ;; und eine neu strukturierte 'settima ottava' vorgeschlagen werden.
+           ;; OPEN
            (:section s7) (:newline)
            (:alt (:diplomatic  )
                  (:critical  )

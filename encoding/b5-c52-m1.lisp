@@ -50,7 +50,8 @@
                (:de "")
                (:en ""))))
    (:section-captions
-    ;; erste diesis sollte maggiore sein?
+    ;; JK: erste diesis sollte maggiore sein?
+    ;; OPEN
     (s1 (:alt (:it "Semitono maggiore:\\diesis maggiore – diesis minore\\Semitono minore:\\diesis minore – diesis minore")
               (:de "")
               (:en "")))

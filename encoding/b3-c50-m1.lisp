@@ -39,9 +39,12 @@
 
    ;; Im Moment wird hier keine Idealisierung vorgenommen, was der Absicht der Edition entspricht,
    ;; möglichst nur offensichtliche Fehler, aber keine interpretierende Lesarten anzubieten.
+   ;;
+   ;; JK: Soll im Bericht kommentiert werden.
+   ;; OPEN
    (:text 70 58
-          (667 nil "ᴄadentie à quattro uoci,")
-          (1313 nil "Soprano."))
+     (667 nil "ᴄadentie à quattro uoci,")
+     (1313 nil "Soprano."))
    (:music 2233
            (:voice v1)
            (:section s1) cclef1 mrest5 m6 b38 fl6 b38 sb6 b38 br6 bl

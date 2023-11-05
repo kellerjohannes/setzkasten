@@ -75,7 +75,6 @@
            (:section s2) mrest5 m7 sb6 sb5 bl
            (:section s3) mrest7 m8 b22 sb7 sb6 bl
            (:section s4)
-           ;; Kosmetische Idealisierung, Pausenplatzierung
            (:alt (:diplomatic mrest3) (:critical mrest5)
                  (:comment "Original: Minima-Pause steht eine Position tiefer.")
                  (:flag :draft) (:id 1))

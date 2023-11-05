@@ -1,4 +1,5 @@
 ;; Polyrhythmie funktioniert noch nicht!
+;; OPEN
 
 `((:header
    (:filename "b4-c31-m1")
@@ -50,6 +51,8 @@
            (:voice v1)
            (:section s1) cclef7 b22 fl6 (:key-signature nil nil nil nil nil nil :flat) b22 met-imperf-min-dim b38 sb1 b22 m3 dot4 sm4 b22 sm5 b22 sm1 b22 sb8 b22 sh7 b22 m7 b22
            ;; Der custos am Ende dieser Zeile ist merkwürdig, er hat keinen Anschluss
+           ;; Muss kommentiert werden
+           ;; OPEN
            met-perf-min-dim b22 met-3-2 b22 br8 b22 sbrest9 sb4 dot4 m7 b22 m6 b22 m4 b22 fl9 b22 br9 b22 sb8 b22 sb7 sb6 sb5 br4 b22 sh3 b22 sb3 b22
            met-imperf-min-dim b22 sb4 b22
            (:alt (:diplomatic custos6)
@@ -74,8 +77,6 @@
           (111 nil "Proportione ſeſqualtera,due contra tre.")
           (1303 nil "Emiolia maggiore."))
    (:music 2211
-           ;; Bibelgruppe:
-           ;; Anfang erste Zeile: Tenorschlüssel statt Bassschlüssel
            (:voice v2)
            (:alt (:diplomatic (:f-clef) max7 fclef7 fl6) (:critical cclef7 b38 fl6 b38)
                  (:comment "Original: F4-Schlüssel.")

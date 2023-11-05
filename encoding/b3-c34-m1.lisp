@@ -31,7 +31,6 @@
            (:section s3) (:newline) b22 sb8 dot8 sb6 b22 sm5 b22 sm4 sh5 sb5 b22 br6 bl
            (:section s4) sb6 sb8 m7 sb6 sh5 m5 br6 bl
            (:section s5)
-           ;; Kosmetische Idealisierung: Pausenplatzierung
            (:alt (:diplomatic mrest5) (:critical mrest1)
                  (:comment "Original: Minima-Pause steht zwei Positionen höher.")
                  (:flag :draft) (:id 1))
@@ -54,7 +53,6 @@
            (:section s3) b22 b38 sb5 b22 b22 sb7 b22 b22 br6 b22 b22 br5 b38 b22 bl
            (:section s4) sb7 sb5 m6 b22 m7 b38 sb6 br5 bl
            (:section s5)
-           ;; Kosmetische Idealisierung: Pausenplatzierung
            (:alt (:diplomatic mrest7) (:critical mrest3)
                  (:comment "Original: Minima-Pause steht zwei Positionen höher.")
                  (:flag :draft) (:id 2))

@@ -54,6 +54,7 @@
            ;; Alt vermieden würde.
 
            ;; Das beträfe die m4, vor die ein fl4 gesetzt werde müsste. Zu diskutieren.
+           ;; OPEN
            (:section s4) b38 b22 m6 b22 b22
            (:alt (:diplomatic  )
                  (:critical  )

@@ -55,6 +55,7 @@
            (:section s6) mrest7 m7 b22 sb6 b22 sb5 bl
            ;; mögliche Idealisierung hier
            ;; [Bemerkung ist nicht klar, neu zu betrachten]
+           ;; OPEN
            (:section s7) b22 fl6 mrest7 m6 sb5 b22 br5 b22 blbl)
    (:text 110 58
           (652 536 "Cadentie del Tenore."))

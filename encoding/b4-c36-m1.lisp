@@ -38,8 +38,10 @@
    (:music 2224
            (:voice v2) cclef5  b22 met-imperf-min-dim b38 lrest24 b22 mrest5 b22 m5d dot6 sm6 sm7 sm8 sm9 sm7 m8 dot8 sm7 m6 dot6 sm5d m4 m9 smrest5 sm6 sm7 m9 m7 sm5d m6 sm5d sm6 sm7 sm8 m9 m7 sm6 sm7 sm3 m5d sm3 sb8 m7 m8 m7 sb9 sb7 bl)
    ;; "Tenore" ausgelassen, Text-Custos
+   ;; Soll im Bericht kommentiert werden
+   ;; OPEN
    (:text 70 58
-          (685 nil "Tenore."))
+     (685 nil "Tenore."))
    (:music 2228
            (:voice v3) cclef7 b22 met-imperf-min-dim lrest68 b22 lrest68 b22 m4 dot4 sm5 b22 sm6 b22 sm7 b22 sm8 b22 sm6 b22 m7 dot6 sm6 b22 m5 b22 m4 b22 m5 b22 m4 b22 m7 dot8 sm7 b22 sm6 b22 m7 b22 m5d b22 m7 b22 sm6 b22 m7 b22 m4 b22 m5 b22 m7 b22 sb8 b22 sb4 b38 bl)
    (:text 70 58
