@@ -14,6 +14,7 @@
     (s1 (:alt (:it "per ♮: ut-re-mi-fa-re")
               ;; Kommentar Anne: bessere Verteilung der Silben unter den Noten in allen Sprachen?
               ;; JK: meinst du im Sinn von gesungenem Text?
+              ;; NEU Kommentar Anne: Ja
               ;; OPEN
               (:de "")
               (:en "per ♮: ut-re-mi-fa-re")
