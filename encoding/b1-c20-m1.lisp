@@ -95,8 +95,10 @@
            fl5 b38 sb5 b38
            (:alt (:diplomatic sb4 b38 fl4 b38 sb4 b38 sbd4)
                  (:critical sbd4 b38 sb4 b38 fl4 b38 sb4)
+                 (:coord-barre "MZ2 N9-12")
+                 (:coord-norm "G11")
                  (:comment "Original: A♭--G--G♭--Ġ. Dieses Beispiel zeigt zwei alternative Teilungen des _tono_: A♭--Ġ--G♭ und A♭--G--G♭.")
-                 (:flag :draft) (:id 1))
+                 (:flag :ready) (:id 1))
            bl
            (:section s12)
            sb3 b38 sbd2 b38 fl2 b38 sb2 bl

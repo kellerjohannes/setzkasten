@@ -301,9 +301,12 @@
            (:section s29) cclef7 b22 sb8 sb1 b22
            (:section s30) (:f-clef) max7 fclef7 b22 sb5 fl3 b22 sb3 bl
            (:section s31) fl3 b22 sb3
-           (:alt (:diplomatic fl9) (:critical fl10)
-                 (:comment "Original: ♭ steht eine Position zu tief.")
-                 (:flag :draft) (:id 1))
+           (:alt (:diplomatic fl9)
+                 (:critical fl10)
+                 (:coord-barre "MZ6 N14")
+                 (:coord-norm "G31 St2 N2")
+                 (:comment "Original: ♭ steht eine Position tiefer.")
+                 (:flag :ready) (:id 1))
            sb10 bl
            (:section s32) sb2 sb9 bl
            (:section s33) sb0 sb4 bl

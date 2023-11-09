@@ -72,6 +72,8 @@
            (:section s1)
            (:alt (:diplomatic cclef7)
                  (:critical cclef7)
+                 (:coord-barre "MZ2 N5ff.")
+                 (:coord-norm "G2 St2")
                  (:comment "Korrekturvorschlag von Luigi: C-Schlüssel mit einem F-Schlüssel austauschen. Es scheint jedoch kein Fehler vorzuliegen.")
                  (:flag :observe) (:id 1))
            sb5 br7 sb6 sb7 bl

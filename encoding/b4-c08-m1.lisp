@@ -25,6 +25,8 @@
            (:section s1) cclef7 b38 b22
            (:alt (:diplomatic met-imperf-min-dim)
                  (:critical met-imperf-min-dim)
+                 (:coord-barre "MZ1 N1")
+                 (:coord-norm "G1")
                  (:comment "Es muss diskutiert werden, ob diese Signatur auch ternär verstanden werden könnte, siehe im Text »à imitatione del numero ternario«.")
                  (:flag :observe) (:id 1))
            b38 b22 br4 b38 b22 br5 b38 b22 br6 b38 b22 br7 b38 b22 sb6 b22 b38 sb5 b22 b38 br4 b22 b22 bl

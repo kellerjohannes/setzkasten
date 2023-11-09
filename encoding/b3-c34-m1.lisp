@@ -31,9 +31,12 @@
            (:section s3) (:newline) b22 sb8 dot8 sb6 b22 sm5 b22 sm4 sh5 sb5 b22 br6 bl
            (:section s4) sb6 sb8 m7 sb6 sh5 m5 br6 bl
            (:section s5)
-           (:alt (:diplomatic mrest5) (:critical mrest1)
+           (:alt (:diplomatic mrest5)
+                 (:critical mrest1)
+                 (:coord-barre "MZ1 N23")
+                 (:coord-norm "G5 St1")
                  (:comment "Original: Minima-Pause steht zwei Positionen höher.")
-                 (:flag :draft) (:id 1))
+                 (:flag :ready) (:id 1))
            m2 b22 sm3 b22 m4 b22 sm3 sb4 bl)
    (:text 110 58
           (900 nil "ᴄontrʼᴀlto."))
@@ -53,9 +56,12 @@
            (:section s3) b22 b38 sb5 b22 b22 sb7 b22 b22 br6 b22 b22 br5 b38 b22 bl
            (:section s4) sb7 sb5 m6 b22 m7 b38 sb6 br5 bl
            (:section s5)
-           (:alt (:diplomatic mrest7) (:critical mrest3)
+           (:alt (:diplomatic mrest7)
+                 (:critical mrest3)
+                 (:coord-barre "MZ3 N19")
+                 (:coord-norm "G7 St3")
                  (:comment "Original: Minima-Pause steht zwei Positionen höher.")
-                 (:flag :draft) (:id 2))
+                 (:flag :ready) (:id 2))
            m3 b22 sm4 b22 sm5 b22 m4 sb3 bl)
    (:text 110 58
           (1074 nil "Baſſo."))

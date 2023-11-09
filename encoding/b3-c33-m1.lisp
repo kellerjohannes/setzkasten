@@ -108,16 +108,19 @@
    (:music 2237
            (:voice v1)
            ;; Bibelgruppe: Offene Frage nach Ficta: sh4 vor m4?
-           ;; - Argument für f: es ist der einzige und deshalb gewollte Unterschied
+           ;; - Argument für F: es ist der einzige und deshalb gewollte Unterschied
            ;;   zum fünften Takt, um keine Redundanz zu erzeugen.
-           ;; - Argument für f: es gab kein Platz für das ♯-Symbol in der Zeile
-           ;; - Argument für fis: es geht hier nicht um eine Gegenüberstellung von
+           ;; - Argument für F: es gab kein Platz für das ♯-Symbol in der Zeile
+           ;; - Argument für F♯: es geht hier nicht um eine Gegenüberstellung von
            ;;   diatonischem und chromatischem Material, deshalb ist es naheliegend,
            ;;   hier ein fis zu ergänzen
+           ;; OPEN
            (:section s1) cclef1 mrest5 sb5
-           (:alt (:diplomatic  )
-                 (:critical  )
-                 (:comment "Hier kann die Ergänzung eines ♯ diskutiert werden.")
+           (:alt (:diplomatic)
+                 (:critical)
+                 (:coord-barre "MZ1 N2")
+                 (:coord-norm "G1 St1 N2")
+                 (:comment "Hier kann die Ergänzung eines ♯ diskutiert werden. Argumente für beide Varianten liegen vor.")
                  (:flag :observe) (:id 1))
            m4 sb5 bl
            (:section s2) sb2 b22 sb2 b22 sb2 bl

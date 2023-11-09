@@ -5,9 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio di molte cadentie del primo modo, a quattro voci,\\della musica participata e mista per ♮ quadro")
                  (:de "")
-                 (:en "")
-                 (:comment "Original: »... del quarto modo, ...«.")
-                 (:flag :suggestion) (:id 1)))
+                 (:en "")))
    (:voice-labels
     (s1 v1 (:alt (:it "Cadentie del soprano")
                  (:de "")
@@ -26,8 +24,11 @@
           (157 1898
                (:alt (:diplomatic "Eſsempio di molte cadentie del Quarto modo,à quattro uoci , della muſica parti⸗")
                      (:critical "Eſsempio di molte cadentie del Primo modo,à quattro uoci , della muſica parti⸗")
+                     (:coord-barre "TZ1")
+                     (:coord-norm "Ti")
                      (:comment "Original: »... Quarto modo,...«.")
-                     (:flag :suggestion) (:id 2))))
+                     (:flag :ready)
+                     (:id 1))))
    (:text 130 58
           (725 752 "cipata & miſta per ♮. quadro."))
    (:text 90 58

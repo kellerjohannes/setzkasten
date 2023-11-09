@@ -89,9 +89,12 @@
           (2026 nil "ij"))
    (:music 2232
            cclef5 b38 fl4 b22 sb4 b38 mrest3
-           (:alt (:diplomatic b22) (:critical fl4)
-                 (:comment "Original: Alt, T. 17, kein ♭.")
-                 (:flag :draft) (:id 1))
+           (:alt (:diplomatic b22)
+                 (:critical fl4)
+                 (:coord-barre "MZ4 N2")
+                 (:coord-norm "St2 T17 N1")
+                 (:comment "Original: B♮ (ohne ♭ notiert).")
+                 (:flag :ready) (:id 1))
            m4 b38 sb8 dot8 m8 b38 sb8 b38 mrest7 b38 sb9 b22 m2 dot2 sm2 b38 m2 b38 smrest1 b38
            sm2 b22 m9 dot10 sm9 b38 m9 b38 m5 b22 m8 dot8 sm8 b38 m8 sh8 br8 sh8 sb8 sbrest9 sb4
            sh8 br8 b38 blbl b22 b22)
@@ -162,9 +165,12 @@
            (:f-clef) max7 fclef7 b38 fl3 b22 br3 b38 br1 b38 sb1 b38 sb4 b38 mrest3 b38 m4 b38
            sb7 dot8 m7 b38 sb5 b38 sb5 b38 sb3 b38 br6 b38 (:divider :double) br3 b38 blbl
            b38 b38 b38 b38 b38 b38 b38 b38
-           (:alt (:diplomatic mrest7) (:critical b38)
+           (:alt (:diplomatic mrest7)
+                 (:critical b38)
+                 (:coord-barre "MZ10")
+                 (:coord-norm "—")
                  (:comment "Original: Im leeren Abschnitt der Notenzeile nach dem Doppelstrich steht eine bedeutungslose Minima-Pause.")
-                 (:flag :draft) (:id 2))
+                 (:flag :ready) (:id 2))
            b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38)
    (:text 90 58
           (213 nil "ad dominum")

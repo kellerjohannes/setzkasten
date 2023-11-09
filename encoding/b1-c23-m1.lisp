@@ -69,8 +69,10 @@
            cclef7 b38 sh5 b22 sb5 b22
            (:alt (:diplomatic sb4)
                  (:critical sb5)
-                 (:comment "Original: A♯--G--G♯. Umstellung, um eine sinnvolle Tonhöhenabfolge herzustellen.")
-                 (:flag :draft) (:id 1))
+                 (:coord-barre "MZ2 N1-3")
+                 (:coord-norm "G7")
+                 (:comment "Original: A♯--G--G♯. Umstellung für eine sinnvolle Tonhöhenabfolge.")
+                 (:flag :ready) (:id 1))
            b22 sh4 b22 sb4 b38 bl
            (:section s8)
            b38 sh4 b22 sb4 b22 sh3 b22 sb3 b38 bl

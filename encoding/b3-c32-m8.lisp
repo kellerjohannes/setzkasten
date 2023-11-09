@@ -31,8 +31,10 @@
            (:section s3) b22 m8 sb6 sb9
            (:alt (:diplomatic)
                  (:critical sh8)
-                 (:comment "Diskutable Ergänzung. Im Original möglicherweise aus Platzgründen weggelassen. Bibelgruppe unschlüssig.")
-                 (:flag :suggestion) (:id 1))
+                 (:coord-barre "MZ1 N9")
+                 (:coord-norm "G3 St1 N4")
+                 (:comment "Original: Kein ♯. Diskutable Ergänzung. Im Original möglicherweise aus Platzgründen weggelassen.")
+                 (:flag :observe) (:id 1))
            m8 sb9 bl
            (:section s4) (:newline) b22 b22 mrest1 b22 sb2 b22 sh1 m1 b22 b38 bl
            (:section s5) b22 m2 sb4 m3 b22 bl
@@ -56,9 +58,11 @@
            ;; Das beträfe die m4, vor die ein fl4 gesetzt werde müsste. Zu diskutieren.
            ;; OPEN
            (:section s4) b38 b22 m6 b22 b22
-           (:alt (:diplomatic  )
-                 (:critical  )
-                 (:comment "Möglichkeit der Ergänzung eines ♭ (fl4) zur Vermeidung des Querstands zwischen Alt und Bass. Soll eher nicht implementiert werden.")
+           (:alt (:diplomatic)
+                 (:critical)
+                 (:coord-barre "MZ2 N12")
+                 (:coord-norm "G4 St2 N2")
+                 (:comment "Möglichkeit der Ergänzung eines ♭ (fl4) zur Vermeidung des Querstands zwischen Alt und Bass. Solche Querstände sind jedoch typisch für Vicentinos Kompositionsweise.")
                  (:flag :observe) (:id 2))
            m4 b22 b22 sb3 b22 b22 bl
            (:section s5) b22 sb3 b38 sb5 b22 bl

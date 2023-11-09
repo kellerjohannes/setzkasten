@@ -51,8 +51,10 @@
            (:section s3) mrest5 b22 sb6
            (:alt (:diplomatic)
                  (:critical nat5)
-                 (:comment "Offene Frage, ob diese Idealisierung vorgenommen werden soll oder nicht.")
-                 (:flag :suggestion) (:id 1))
+                 (:coord-barre "MZ1 N8")
+                 (:coord-norm "G3 St1 N2")
+                 (:comment "Original: B♭ (ohne ♮ notiert). Offene Frage, ob diese Idealisierung vorgenommen werden soll oder nicht.")
+                 (:flag :observe) (:id 1))
            m5 sb6 b22 bl
            (:section s4) (:newline) mrest7 b22 sb9 m8 sb9 b22 bl
            (:section s5) b22 mrest3 b22 sb3 sh2 m2 sb3 b38 bl

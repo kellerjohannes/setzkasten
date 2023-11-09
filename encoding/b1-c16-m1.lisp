@@ -54,8 +54,10 @@
           sbd5 b38 fl5 b27
            (:alt (:diplomatic sb5)
                  (:critical sbd5)
-                 (:comment "Original: Ȧ--A♭. Könnte alternativ auch in A--A♭ korrigiert werden.")
-                 (:flag :suggestion) (:id 1))
+                 (:coord-barre "N16 (letzte)")
+                 (:coord-norm "G8 N2")
+                 (:comment "Original: Ȧ–A♭. Könnte alternativ auch in A–A♭ korrigiert werden.")
+                 (:flag :ready) (:id 1))
            bl)
    (:text 70 58
          (0 nil "ᴅieſis mag.")

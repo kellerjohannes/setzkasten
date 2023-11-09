@@ -21,9 +21,6 @@
               (:de "")
               (:en "Terza\\maggiore")))
     (s3 (:alt (:it "Quinta\\ ")
-              ;; Kommentar Anne: no need for backslashes without any content thereafter
-              ;; JK: dito.
-              ;; DONE
               (:de "")
               (:en "Quinta")))
     (s4 (:alt (:it "Sesta\\maggiore")
@@ -33,12 +30,8 @@
               (:de "")
               (:en "Sesta\\minore")))
     (s6 (:alt (:it "Ottava\\ ")
-              ;; Kommentar Anne: no need for backslashes without any content thereafter
-              ;; JK: dito.
-              ;; DONE
               (:de "")
-              (:en "Ottava")
-              (:comment "Original: »5.«.") (:flag :suggestion) (:id 3)))
+              (:en "Ottava")))
     (s7 (:alt (:it "Terza\\maggiore")
               (:de "")
               (:en "Terza\\maggiore")))
@@ -46,18 +39,11 @@
               (:de "")
               (:en "Terza\\minore")))
     (s9 (:alt (:it "Quinta\\ ")
-              ;; Kommentar Anne: no need for backslashes without any content thereafter
-              ;; JK: dito.
-              ;; DONE
               (:de "")
               (:en "Quinta")))
     (s10 (:alt (:it "Ottava\\ ")
-               ;; Kommentar Anne: no need for backslashes without any content thereafter
-              ;; JK: dito.
-              ;; DONE
                (:de "")
-               (:en "Ottava")
-               (:comment "Original: »5.«.") (:flag :suggestion) (:id 4)))))
+               (:en "Ottava")))))
   (:data
    (:text 110 58
      (659 766 "Eſſempi dʼalcune Ottaue doppie."))
@@ -99,15 +85,21 @@
           (454 nil "5.")
           (542 nil "6.ma.")
           (710 nil "6.mi.")
-          (1001 nil (:alt (:diplomatic "5.") (:critical "8.")
-                          (:comment "Falsche Intervallbezeichnung im Original.")
-                          (:flag :suggestion) (:id 1)))
+          (1001 nil (:alt (:diplomatic "5.")
+                          (:critical "8.")
+                          (:coord-barre "TZ3 TE6")
+                          (:coord-norm "G6 US")
+                          (:comment "Original: »5.«.")
+                          (:flag :ready) (:id 1)))
           (1269 nil "3.mag.")
           (1510 nil "3.mi.")
           (1825 nil "5.")
-          (2059 nil (:alt (:diplomatic "5.") (:critical "8.")
-                          (:comment "Falsche Intervallbezeichnung im Original.")
-                          (:flag :suggestion) (:id 2))))
+          (2059 nil (:alt (:diplomatic "5.")
+                          (:critical "8.")
+                          (:coord-barre "TZ3 TE10")
+                          (:coord-norm "G10 US")
+                          (:comment "Original: »5.«.")
+                          (:flag :ready) (:id 2))))
    (:music 2235
            (:voice v3)
            (:section s1) (:f-clef) max7 fclef7 b22 sb5 bl

@@ -1468,6 +1468,7 @@
 
 (defparameter *book4-barre*
   `(
+    ("b4-c02-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
     ("b4-c02-m2" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
     ("b4-c03-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
     ("b4-c04-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
@@ -1506,6 +1507,7 @@
 
 (defparameter *book4-crit*
   `(
+    ("b4-c02-m1" "crit" (:critical :barre :diplomatic) ,*vicentino-types-backend* (:critical :barre))
     ("b4-c02-m2" "crit" (:critical :barre :diplomatic) ,*vicentino-types-backend* (:critical :barre))
     ("b4-c03-m1" "crit" (:critical :barre :diplomatic) ,*vicentino-types-backend* (:critical :barre))
     ("b4-c04-m1" "crit" (:critical :barre :diplomatic) ,*vicentino-types-backend* (:critical :barre))

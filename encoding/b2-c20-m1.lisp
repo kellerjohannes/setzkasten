@@ -47,8 +47,10 @@
     (s13 (:alt (:it "[A due voci]")
                (:de "")
                (:en "[for two voci]")
-               (:comment "Der C4-Schlüssel in Section 15 wird als Beginn der dreistimmigen Beispiele gelesen, deshalb wird dieses noch als zweistimmig verstanden.")
-               (:flag :suggestion) (:id 1)))
+               (:coord-barre "MZ3 N15")
+               (:coord-norm "G13")
+               (:comment "Der C4-Schlüssel in G15 wird als Beginn der dreistimmigen Beispiele gelesen, deshalb wird dieses noch als zweistimmig verstanden.")
+               (:flag :ready) (:id 1)))
 
     (s14 (:alt (:it "[A due voci]")
                (:de "")
@@ -132,7 +134,9 @@
            (:section s18) b38
            (:alt (:diplomatic m10 b38 m7 b38 sb9)
                  (:critical m10 b38 m7 b38 sb9)
-                 (:comment "In diesem Beispiel kommt keine Sexte vor. Eine Idealisierung könnte in Betracht gezogen werden. Zur Zeit besteht kein Vorschlag.")
+                 (:coord-barre "MZ5 N10-12 / MZ6 N15-17")
+                 (:coord-norm "G18")
+                 (:comment "In diesem Beispiel kommt keine Sexte vor. Eine Idealisierung könnte in Betracht gezogen werden. Es wurde keine Idealisierung vorgenommen")
                  (:flag :observe) (:id 2))
            b38 bl
            (:section s19) m10 b38 m8 b38 sb9 b38 bl b22 b38)

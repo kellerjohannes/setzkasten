@@ -48,29 +48,37 @@
            b38
            (:alt (:diplomatic sb5 b38 sbd5)
                  (:critical sbd5 b38 sb5)
-                 (:comment "Original: A--Ȧ.")
-                 (:flag :draft) (:id 1))
+                 (:coord-barre "N9-10")
+                 (:coord-norm "G5")
+                 (:comment "Original: A–Ȧ.")
+                 (:flag :ready) (:id 1))
            b38 bl
            (:section s6)
            b38 b22
            (:alt (:diplomatic sb4 b38 sbd4)
                  (:critical sbd4 b38 sb4)
-                 (:comment "Original: G--Ġ.")
-                 (:flag :draft) (:id 2))
+                 (:coord-barre "N11-12")
+                 (:coord-norm "G6")
+                 (:comment "Original: G–Ġ.")
+                 (:flag :ready) (:id 2))
            b38 bl
            (:section s7)
            b38
            (:alt (:diplomatic sb3 b38 sbd3)
                  (:critical sbd3 b38 sb3)
-                 (:comment "Original: F--Ḟ.")
-                 (:flag :draft) (:id 3))
+                 (:coord-barre "N13-14")
+                 (:coord-norm "G7")
+                 (:comment "Original: F–Ḟ.")
+                 (:flag :ready) (:id 3))
            b22 bl
            (:section s8)
            b22
            (:alt (:diplomatic sb2 b38 sbd2)
                  (:critical sbd2 b38 sb2)
-                 (:comment "Original: E--Ė.")
-                 (:flag :draft) (:id 4))
+                 (:coord-barre "N15-16")
+                 (:coord-norm "G8")
+                 (:comment "Original: E–Ė.")
+                 (:flag :ready) (:id 4))
            b38 bl)
    (:text 70 58
           (46 nil "ᴅieſis minore")

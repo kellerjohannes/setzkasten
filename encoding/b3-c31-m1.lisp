@@ -66,8 +66,10 @@
            sb7 b38 sb6 b38 sb5 b22 b38 sb4 b38 b38 bl
            (:section s2) b22 mrest3 b38 m3
            (:alt (:diplomatic dot6) (:critical dot4)
-                 (:comment "Original: Punktierung steht eine Position höher.")
-                 (:flag :draft) (:id 1))
+                 (:coord-barre "MZ3 N5")
+                 (:coord-norm "G2 St3 N1")
+                 (:comment "Original: Rhythmische Punktierung steht eine Position höher.")
+                 (:flag :ready) (:id 1))
            cr2 b38 cr1 b38 m2 b38 sb3 bl
            (:section s3) b38 b38 sb1 b38 b38 sb0 b38 b38 sb7 b38 b38 b38
            (:section s4) cclef7 b38 fl6 (:key-signature nil nil nil nil nil nil :flat)

@@ -71,8 +71,10 @@
            b22
            (:alt (:diplomatic br5 b22 flrev4)
                  (:critical (:ligature-start nil :flat :dot :dot) brd5 b22 flrev4 (:ligature-end))
-                 (:comment "Enharmonischer Punkt ergänzt. Ohne Punkt wäre diese Situation als chromatische Ligatur einzuordnen, die in b1-c12-m1 bereits gezeigt wurde.")
-                 (:flag :draft) (:id 1))
+                 (:coord-barre "MZ1 N7")
+                 (:coord-norm "G7")
+                 (:comment "Original: A/A♭. Der enharmonische Punkt wurde für den gesamten Notenwert ergänzt. Ohne Punkt wäre diese Situation als chromatische Ligatur einzuordnen, was in b1-c12-m1 bereits gezeigt wurde.")
+                 (:flag :ready) (:id 1))
            bl
            (:section s8)
            b22 fl4 b22 brd4 b22 bl

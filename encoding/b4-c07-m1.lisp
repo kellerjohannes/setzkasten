@@ -32,8 +32,10 @@
           (1809 nil
                 (:alt (:diplomatic "non")
                       (:critical "non")
-                      (:comment "Die Positionierung aller Überschriften (»non buono«) ist mehrdeutig. Die Interpretation lautet: Sections 1 und 2 sind implizit »buono«, alle anderen »non buono«. Es ist zu diskutieren, ob der Text bzw. die Textpositionierung idealisiert werden soll.")
-                      (:flag :observe) (:id 1))
+                      (:coord-barre "TZ1-2")
+                      (:coord-norm "—")
+                      (:comment "Die Positionierung aller Überschriften (»non buono«) ist mehrdeutig. Die Interpretation lautet: Untergruppen 1 und 2 sind implizit »buono«, alle anderen »non buono«.")
+                      (:flag :ready) (:id 1))
                 ))
    (:music 2222
            (:voice v1)

@@ -60,8 +60,10 @@
           (527 nil
                (:alt (:diplomatic "buono")
                      (:critical "buono")
-                     (:comment "Es ist zu diskutieren, ob eine Ergänzung von »buono«-Überschriften in den restlichen Sections sinnvoll ist. Sie sind implizit alle »buono«.")
-                     (:flag :observe) (:id 2)))
+                     (:coord-barre "TZ2")
+                     (:coord-norm "—")
+                     (:comment "Alle Untergruppen werden als implizit »buono« interpretiert. Die Überschriften zur NZ1 fehlen.")
+                     (:flag :ready) (:id 1)))
           (950 nil "megliore")
           (1482 nil "buono procedere."))
    (:music 2219

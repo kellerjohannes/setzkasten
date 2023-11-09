@@ -75,9 +75,12 @@
            (:section s2) mrest5 m7 sb6 sb5 bl
            (:section s3) mrest7 m8 b22 sb7 sb6 bl
            (:section s4)
-           (:alt (:diplomatic mrest3) (:critical mrest5)
+           (:alt (:diplomatic mrest3)
+                 (:critical mrest5)
+                 (:coord-barre "MZ3 N10")
+                 (:coord-norm "G4 St3")
                  (:comment "Original: Minima-Pause steht eine Position tiefer.")
-                 (:flag :draft) (:id 1))
+                 (:flag :ready) (:id 1))
            m6 b22 sb6 b22 sb6 bl
            (:section s5) mrest5 m6 b22 sb4 b22 bl
            (:section s6) b22 sb5 b38 sb6 b38 sb6 b22 bl

@@ -20,8 +20,11 @@
            (:section s1) cclef5 b38 sm2 b38 m5 b38 sm4 b38 sb5 b38 bl
            (:section s2) b38 sm2 b22 b22 sm5 dot6 scr4 b22 scr3 b22 sm4 b22 sb5 b22 bl
            (:section s3) (:newline) b22 sm2 b22
-           (:alt (:diplomatic cr5) (:critical sm5)
-                 (:comment "Rhythmische Anpassung, um die gesamte Melodie plausibel erscheinen zu lassen.")
-                 (:flag :draft) (:id 1))
+           (:alt (:diplomatic cr5)
+                 (:critical sm5)
+                 (:coord-barre "N12")
+                 (:coord-norm "G3 N2")
+                 (:comment "Original: Croma.")
+                 (:flag :ready) (:id 1))
            dot6 b22 cr4 b22 cr4 b22 scr3 b22 scr4 b22 sb5 b38 bl
            (:section s4) b22 sm2 b22 sm5 dot6 cr4 b38 sm4 b38 sb5 b22 bl)))

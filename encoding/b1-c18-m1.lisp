@@ -47,8 +47,12 @@
            (:newline)
            sb5 b22 sh5 b22 sb5 bl
            (:section s6)
-           (:alt (:diplomatic sb9) (:critical sb8)
-                 (:comment "Original: E.") (:flag :draft) (:id 1))
+           (:alt (:diplomatic sb9)
+                 (:critical sb8)
+                 (:coord-barre "N14")
+                 (:coord-norm "G6 N1")
+                 (:comment "Original: E.")
+                 (:flag :ready) (:id 1))
            b22 fl8 b22 sb8 bl
            (:section s7)
            sb7 b22 sbd6 bl

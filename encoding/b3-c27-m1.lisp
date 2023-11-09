@@ -48,8 +48,12 @@
            (:section s2) b38 b22 m7 b22 b22 m6 b38 b38 sb5 b38 b22 sb4 b38 bl
            (:section s3) b38 b38 b22 sb7 b38 b38 sb5 b38 b38 sb4 b38 b38 b38 bl
            (:section s4) b38 b38 sb4 b38 b38 sb3 b38 b38 b22
-           (:alt (:diplomatic sb3) (:critical sb2)
-                 (:comment "Original: B♮.") (:flag :suggestion) (:id 2))
+           (:alt (:diplomatic sb3)
+                 (:critical sb2)
+                 (:coord-barre "MZ2 N14")
+                 (:coord-norm "G4 N3")
+                 (:comment "Original: B♮.")
+                 (:flag :ready) (:id 1))
            b38 b38 b38 b38 bl)
    (:vspace 20)
    (:music 2189

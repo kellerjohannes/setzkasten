@@ -23,17 +23,21 @@
    (:music 2211
            (:voice v1)
            (:section s1) cclef7
-           (:alt (:diplomatic b38 met-perf-maj)
-                 (:critical b38 met-perf-maj)
+           (:alt (:diplomatic b38 met-perf-min)
+                 (:barre b38 met-perf-maj)
+                 (:coord-barre "MZ1 N1")
+                 (:coord-norm "—")
                  (:comment "Die Punkte in der Taktsignatur sind im Original von Hand ergänzt.")
-                 (:flag :observe) (:id 1))
+                 (:flag :ready) (:id 1))
            b38 (:duration-override 3/2) sb8 b38 (:duration-override 1) m5 b38 m5 b38 m5 b38 b38 bl
            (:section s2) b38 b38 (:duration-override 3/2) br8 b38 (:duration-override 1) sb5 b38 sb5 b38 sb5 b38 b38 b125
            (:section s3) (:newline) cclef7 b38
-           (:alt (:diplomatic met-imperf-maj)
-                 (:critical met-imperf-maj)
+           (:alt (:diplomatic met-imperf-min)
+                 (:barre met-imperf-maj)
+                 (:coord-barre "MZ1 N9")
+                 (:coord-norm "—")
                  (:comment "Die Punkte in der Taktsignatur sind im Original von Hand ergänzt.")
-                 (:flag :observe) (:id 2))
+                 (:flag :ready) (:id 2))
            b38 (:duration-override 3/2) sb8 b38 (:duration-override 1) m6 b38 m6 b38 m6 b38 b38 bl
            (:section s4) b38 b38 br4 b38 sb6 b38 sb6 b38 bl b22 b22)
    (:text 90 58

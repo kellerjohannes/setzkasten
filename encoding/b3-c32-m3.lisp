@@ -53,9 +53,12 @@
            (:section s3) b38 sb4 b22 sb7 b38 sb8 b38 sb4 b22 bl
            (:section s4) mrest7 m8 b22 sb6 b22 sb5 b22 bl
            (:section s5) m5d
-           (:alt (:diplomatic dot4) (:critical dot6)
-                 (:comment "Original: Punktierung steht eine Position tiefer.")
-                 (:flag :draft) (:id 1))
+           (:alt (:diplomatic dot4)
+                 (:critical dot6)
+                 (:coord-barre "MZ3 N14")
+                 (:coord-norm "G5 St3 N1")
+                 (:comment "Original: Rhythmische Punktierung steht eine Position tiefer.")
+                 (:flag :ready) (:id 1))
            sm6 m7 b22 sm8 sm6 sm9 m8 sm8 sb8 bl
            (:section s6) b22 sb6 sb6 sb6 b22 bl)
    (:text 110 58

@@ -39,16 +39,13 @@
    (:section-captions
     (s1 (:alt (:it "1.")
               (:de "")
-              (:en "1.")
-              (:comment "Bedeutung dieser Ziffer unklar.") (:flag :observe) (:id 1)))
+              (:en "1.")))
     (s2 (:alt (:it "2.")
               (:de "")
-              (:en "2.")
-              (:comment "Bedeutung dieser Ziffer unklar.") (:flag :observe) (:id 2)))
+              (:en "2.")))
     (s3 (:alt (:it "3.")
               (:de "")
-              (:en "3.")
-              (:comment "Bedeutung dieser Ziffer unklar.") (:flag :observe) (:id 3)))))
+              (:en "3.")))))
   (:data
    (:text 70 58
      (75 2090 "Eſſempio della quarta ſincopata à due uoci,& non ſincop. à tre uoci,& con il punto : come"))
@@ -63,9 +60,12 @@
            (:section s5) sb6 dot6 m7 sb6 bl
            (:section s6) sb6 dot6 fl7 m7 sb6 bl
            (:section s7) sb7
-           (:alt (:diplomatic dot6) (:critical dot8)
-                 (:comment "Original: Punktierung steht im dritten Zwischenraum.")
-                 (:flag :draft) (:id 4))
+           (:alt (:diplomatic dot6)
+                 (:critical dot8)
+                 (:coord-barre "MZ1 N20")
+                 (:coord-norm "G7 St1 N1")
+                 (:comment "Original: Rhythmische Punktierung steht eine Position tiefer.")
+                 (:flag :ready) (:id 1))
            m8 sb7 bl
            (:section s8) m7 sb8 m7 sb8 bl)
    (:text 90 58
@@ -90,9 +90,27 @@
            (:section s8) m4 m5 sb4 sb5 bl)
    (:vspace 30)
    (:text 90 58
-          (173 nil "1.")
-          (514 nil "2.")
-          (824 nil "3."))
+          (173 nil
+               (:alt (:diplomatic "1.")
+                     (:critical "1.")
+                     (:coord-barre "TZ4 TE1")
+                     (:coord-norm "G1 US")
+                     (:comment "Bedeutung von »1.« unklar.")
+                     (:flag :observe) (:id 2)))
+          (514 nil
+               (:alt (:diplomatic "2.")
+                     (:critical "2.")
+                     (:coord-barre "TZ4 TE2")
+                     (:coord-norm "G2 US")
+                     (:comment "Bedeutung von »2.« unklar.")
+                     (:flag :observe) (:id 3)))
+          (824 nil
+               (:alt (:diplomatic "3.")
+                     (:critical "3.")
+                     (:coord-barre "TZ4 TE3")
+                     (:coord-norm "G3 US")
+                     (:comment "Bedeutung von »3.« unklar.")
+                     (:flag :observe) (:id 4))))
    (:music 2203
            (:voice v3)
            (:section s4) s1008 (:f-clef) max7 fclef7 sb4 b38 bl

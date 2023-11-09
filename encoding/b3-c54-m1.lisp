@@ -121,33 +121,42 @@
    (:music 2210
            cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat)
            b38 nat7 md7 b22 sb8 b22 sbd5 b22 sbd5 dot6 md5d b22 sb6 b22
-           (:alt (:diplomatic md6) (:critical m6) (:tatti m6)
-                 (:coord-barre "5. MZ, 7. N")
-                 (:coord-norm "ST1, T38, 2. N")
+           (:alt (:diplomatic md6)
+                 (:critical m6)
+                 (:tatti m6)
+                 (:coord-barre "MZ5 N7")
+                 (:coord-norm "St1 T38 N2")
                  (:comment "Original: Ȧ. Es könnte sich hier um eine Verschiebung des fehlenden rhythmischen Punkts der nächsten Note handeln.")
                  (:flag :ready) (:id 1))
            b22 md9
-           (:alt (:diplomatic) (:critical dot10)
-                 (:coord-barre "5. MZ, 8. N")
-                 (:coord-norm "ST1, T38, 3. N")
+           (:alt (:diplomatic)
+                 (:critical dot10)
+                 (:coord-barre "MZ5 N8")
+                 (:coord-norm "St1 T38 N3")
                  (:comment "Original: Das Ḋ ist nicht rhythmisch punktiert.")
                  (:flag :ready) (:id 2))
            b22 smd9 b22 md9
-           (:alt (:diplomatic sh8 sb8) (:critical sh8 sb8) (:tatti fl9 sb9)
-                 (:coord-barre "5. MZ, 11. N")
-                 (:coord-norm "ST1, T39, 3. N")
+           (:alt (:diplomatic sh8 sb8)
+                 (:critical sh8 sb8)
+                 (:tatti fl9 sb9)
+                 (:coord-barre "MZ5 N11")
+                 (:coord-norm "St1 T39 N3")
                  (:comment "Unkoventioneller Zusammenklang. Die Ergänzung eines enharmonischen Punktes würde diese Note konsonant in den Gesamtklang integrieren, allerdings ist die Konstruktion Ċ♯ nicht Teil von Vicentinos Notenschrift. Eine solche Tonhöhe würde als D♭ notiert.")
                  (:flag :ready) (:id 3))
            b22
-           (:alt (:diplomatic sbd9) (:critical sbd9) (:tatti sb9)
-                 (:coord-barre "5. MZ, 12. N")
-                 (:coord-norm "ST1, T40, 1. N")
+           (:alt (:diplomatic sbd9)
+                 (:critical sbd9)
+                 (:tatti sb9)
+                 (:coord-barre "MZ5 N12")
+                 (:coord-norm "St1 T40 N1")
                  (:comment "Dieser Klang besteht im Original aus folgenden Noten (BTAS): D, Ȧ, F♯, Ḋ. Es sind drei Idealisierungen denkbar: 1. Der komplette Klang wird mit Punkten erhöht, wodurch ein fragwürdiges Ḟ♯ entsteht, das gemäss Vicentinos Notenschrift als G♭ notiert werden sollte, was wiederum ein grosser Eingriff in den originalen Notentext ist. 2. Der komplette Klang wird ohne Punkte verstanden, wodurch die Punkte in Sopran und Tenor entfernt werden müssen. 3. Im Bass wird ein Punkt ergänzt, wodurch eine ungewöhnliche _terza manca di minore_ zwischen Bass und Alt entsteht. Für die Aufnahme wurde Variante 1. bevorzugt, da sie eine interessante Symmetrie zur letzten Kadenz des Stücks bildet und da eine Finalis in T. 40 ohne Punkte notorisch problematisch zu intonieren war.")
                  (:flag :draft) (:id 4))
            b22 mrest7 b22 sb8 b22 m8 b22 brd6 b38
-           (:alt (:diplomatic sbd7) (:critical sb7) (:tatti sb7)
-                 (:coord-barre "5. MZ, 16. N")
-                 (:coord-norm "ST1, Mitte T42")
+           (:alt (:diplomatic sbd7)
+                 (:critical sb7)
+                 (:tatti sb7)
+                 (:coord-barre "MZ5 N16")
+                 (:coord-norm "St1 T42 N1")
                  (:comment "Original: Ḃ♭.")
                  (:flag :ready) (:id 5))
            dot8 md7 nat7 m7 dot8 nat7 sm7
@@ -162,16 +171,20 @@
    (:music 2201
            cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat)
            b38 sb8 b38
-           (:alt (:diplomatic m8) (:critical md8) (:tatti md8)
-                 (:coord-barre "6. MZ, 2. N")
-                 (:coord-norm "ST1, T46, 1. N")
+           (:alt (:diplomatic m8)
+                 (:critical md8)
+                 (:tatti md8)
+                 (:coord-barre "MZ6 N2")
+                 (:coord-norm "St1 T46 N1")
                  (:comment "Original: C. Der Punkt wurde vom Setzer möglicherweise fälschlicherweise an das andere Ende der symmetrischen Notenfolge in diesem Takt gesetzt.")
                  (:flag :ready) (:id 6))
            sh8 sb8 sh8
-           (:alt (:diplomatic md8) (:critical m8) (:tatti m8)
-                 (:coord-barre "6. MZ, 4. N")
-                 (:coord-norm "ST1, T46, 3. N")
-                 (:comment "Original: Ċ♯. Siehe Annotation 6.")
+           (:alt (:diplomatic md8)
+                 (:critical m8)
+                 (:tatti m8)
+                 (:coord-barre "MZ6 N4")
+                 (:coord-norm "St1 T46 N3")
+                 (:comment "Original: Ċ♯. Siehe Kommentar Nr. 6.")
                  (:flag :ready) (:id 7))
            b22 fl9 sb9 b22 fl9 b22 sb9 b38
            (:divider :double)
@@ -216,8 +229,8 @@
 
            (:alt (:diplomatic cclef5)
                  (:critical cclef5)
-                 (:coord-barre "9. MZ, Beginn")
-                 (:coord-norm "ST2")
+                 (:coord-barre "MZ9")
+                 (:coord-norm "—")
                  (:comment "Original: Dieser Schlüssel steht auf dem Kopf.")
                  (:flag :ready) (:id 8))
            fl4 (:key-signature nil nil nil nil nil nil :flat)
@@ -248,23 +261,23 @@
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat)
            b22 sb6 b22 sbd9 dot10 md9 b22
            (:alt (:diplomatic sbd7) (:critical sb7) (:tatti sb7)
-                 (:coord-barre "11. MZ, 4. N")
-                 (:coord-norm "ST2, T36, 1. N")
+                 (:coord-barre "MZ11 N4")
+                 (:coord-norm "St2 T36 N1")
                  (:comment "Original: Ė. Bei der Platzierung des enharmonischen Punkts wurde vom Setzer möglicherweise diese Note mit der kommenden Note verwechselt.")
                  (:flag :ready) (:id 9))
            b22
            (:alt (:diplomatic sb7) (:critical sbd7) (:tatti sbd7)
-                 (:coord-barre "11. MZ, 5. N")
-                 (:coord-norm "ST2, T36, 2. N")
-                 (:comment "Original: E. Siehe Annotation 9.")
+                 (:coord-barre "MZ11 N5")
+                 (:coord-norm "St2 T36 N2")
+                 (:comment "Original: E. Siehe Kommentar Nr. 9.")
                  (:flag :draft) (:id 10))
            b38 brd7 b22 m8 b38 m5d b38 m8 b22 fl9 b22 m9 dot10
            fl9 b38 sm9 b38 md8 b22 sbd7
            (:alt (:diplomatic sh8 sb8)
                  (:critical fl9 sb9)
-                 (:coord-barre "11. MZ, 14. N")
-                 (:coord-norm "ST2, T40, 1. N")
-                 (:comment "Original: F♯. Siehe Annotation 4.")
+                 (:coord-barre "MZ11 N14")
+                 (:coord-norm "St2 T40 N1")
+                 (:comment "Original: F♯. Siehe Kommentar Nr. 4.")
                  (:flag :ready) (:id 11))
            b38 mrest7 b22 sb8 b38 m8 b22
            sbd5 fl9 b22 sb9 b22 mrest7 b22 m8 b38 m8 b22 md9 b38 sb6 b38 custos9)
@@ -279,8 +292,8 @@
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat)
            b38 sbd9 b38 sbd9 b38 sbd9 b38 sb7 b38 md7 b38 m7 dot8 sm10 b38 m10 b38
            (:alt (:diplomatic br10) (:critical brd10) (:tatti brd10)
-                 (:coord-barre "12. MZ, 9. N")
-                 (:coord-norm "ST2, T47")
+                 (:coord-barre "MZ12 N9")
+                 (:coord-norm "St2 T47")
                  (:comment "Original: A. In gewissen Quellen ist ein enharmonischer Punkt zu erkennen.")
                  (:flag :observe) (:id 12))
            sh8
@@ -319,8 +332,8 @@
    (:music 2239
            cclef7
            (:alt (:diplomatic fl7) (:critical fl6)
-                 (:coord-barre "15. MZ")
-                 (:coord-norm "ST3")
+                 (:coord-barre "MZ15")
+                 (:coord-norm "—")
                  (:comment "Original: Das ♭ in der Vorzeichnung direkt nach dem Schlüssel steht eine Position höher.")
                  (:flag :ready) (:id 13))
            (:key-signature nil nil nil nil nil nil :flat)
@@ -359,15 +372,15 @@
            cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat)
            sbd7 b22 sbd7 dot8 md7 b22 sb7 m5d b22 md5d dot6 smd5d b22 md5d b22 sbd5 b22
            (:alt (:diplomatic sbd5) (:critical sbd5) (:tatti sb5)
-                 (:coord-barre "17. MZ, 10. N")
-                 (:coord-norm "ST3, T40, 1. N")
-                 (:comment "Soll nicht idealisiert werden, stattdessen wird an dieser Stelle die Note im Bass mit einem Punkt ergänzt. Siehe Annotation 4.")
+                 (:coord-barre "MZ17 N10")
+                 (:coord-norm "St3 T40 N1")
+                 (:comment "Soll nicht idealisiert werden, stattdessen wird an dieser Stelle die Note im Bass mit einem Punkt ergänzt. Siehe Kommentar Nr. 4.")
                  (:flag :draft) (:id 17))
            mrest5
            sb5 b22 m5d b22 sbd5 md8 b22 md8 b22 sb8 b22 m8 b22 md8 b22 sbrest9 b22
            (:alt (:diplomatic sb8) (:critical sbd8) (:tatti sbd8)
-                 (:coord-barre "17. MZ, 19. N")
-                 (:coord-norm "ST3, T44, 1. N")
+                 (:coord-barre "MZ17 N19")
+                 (:coord-norm "St3 T44 N1")
                  (:comment "Original: D.")
                  (:flag :ready) (:id 14))
            b22 sbd8 dot8 md4 b22 sb4 b22 md5 mrest7 m9 dot10 sm9 b22 sbd9 b22 sbd9
@@ -397,8 +410,8 @@
            (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat)
            b22 sb4 b22 m3 b22 m3 dot4 sm3 b22 m3 b22 m0 b22 m4 b22 m7
            (:alt (:diplomatic dot6) (:critical dot8)
-                 (:coord-barre "19. NZ, nach 8. N")
-                 (:coord-norm "ST4, T8, 3. N")
+                 (:coord-barre "MZ19 N8")
+                 (:coord-norm "St4 T8 N3")
                  (:comment "Original: Die rhythmische Punktierung der ersten Note steht eine Position tiefer.")
                  (:flag :ready) (:id 15))
            sm7 b22 sb7 b22 sb4 b22 sb7 b22 sbrest7 b22 m8 dot8 sm8 b22 sb4 b22 sb4 b22 m7 dot8 sm7 b22
@@ -440,10 +453,10 @@
            (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat)
            b22 sbd2 b22
            (:alt (:diplomatic sb5) (:critical sbd5)
-                 (:coord-barre "22. MZ, 2. N")
-                 (:coord-norm "ST4, T40")
-                 (:comment "Original: D. Siehe Annotation 4.")
-                 (:flag :draft) (:id 16))
+                 (:coord-barre "MZ22 N2")
+                 (:coord-norm "St4 T40")
+                 (:comment "Original: D. Siehe Kommentar Nr. 4.")
+                 (:flag :ready) (:id 16))
            b22 mrest5 b22 sb7 b22 m7 b22 sbd7 b22 sbd5 b22 m1 b22 sb3 b22 md1 b22 sb1 b22 sbd1 b22 sbd8 dot8 md8 b22 sb4 b22
            md2 b22 m9 dot10 sm9 b22 m9 b22 brd2 b22
            (:duration-override 1/2) longa5 (:duration-override 1) b38 blbl

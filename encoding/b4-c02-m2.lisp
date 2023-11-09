@@ -92,9 +92,12 @@
    (:music 2218
            (:section s9) cclef3 b22 fl29 (:key-signature nil nil nil nil nil nil :flat) b22 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b22 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38
            (:section s10) cclef3 b22
-           (:alt (:diplomatic fl6 b22 fl18) (:critical b22 fl29 b22)
+           (:alt (:diplomatic fl6 b22 fl18)
+                 (:critical b22 fl29 b22)
+                 (:coord-barre "MZ5 N12")
+                 (:coord-norm "—")
                  (:comment "Original: Die Vorzeichnung besteht aus F♭, A♭ und E♭.")
-                 (:flag :draft) (:id 1))
+                 (:flag :ready) (:id 1))
             b22 fl5 (:key-signature nil nil :flat nil nil :flat :flat) b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b38 sb8 b22 sb9 b38 sb10 bl)
    (:vspace 90)
    (:music 2223

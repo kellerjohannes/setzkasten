@@ -199,9 +199,12 @@
    (:music 2215
            (:f-clef) max7 fclef7 b38 m1 b38 sb4 b38 m0 b38 sb7 b38 m6 b38 sb7 b38 sb5 b38 sb8 b22
            sb4 b22 sbrest7 b22 sb8 b22 sb4 dot4 m0 b22 (:meter-override "2/2" nil) m4
-           (:alt (:diplomatic dot6) (:critical dot4)
-                 (:comment "Original: Punkt steht eine Position höher.")
-                 (:flag :draft) (:id 1))
+           (:alt (:diplomatic dot6)
+                 (:critical dot4)
+                 (:coord-barre "MZ11 N13")
+                 (:coord-norm "St4 T19 N1")
+                 (:comment "Original: Rhythmischer Punkt steht eine Position höher.")
+                 (:flag :ready) (:id 1))
            sm4 b38 met-perf-min-dim b22 met-3-2 b22 br0 sbrest5 b22 br4 b22 sb4 b22 br1 b22 sb1
            b22 br4 b22 sb4 b22 br8 b22 sb8 custos5)
    (:text 90 58

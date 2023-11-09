@@ -29,9 +29,12 @@
    (:music 2238
            (:voice v1)
            (:section s1) cclef3 b22 mrest1 sb1
-           (:alt (:diplomatic sh1) (:critical sh0)
+           (:alt (:diplomatic sh1)
+                 (:critical sh0)
+                 (:coord-barre "MZ1 N2")
+                 (:coord-norm "G1 St1 N2")
                  (:comment "Original: ♯ steht eine Position höher.")
-                 (:flag :draft) (:id 1))
+                 (:flag :ready) (:id 1))
            m0 sb1 bl
            (:section s2) b22 mrest3 b22 sb3 m2 sb3 b22 bl
            (:section s3) b22 mrest3 b22 sb4 sh3 m3 sb4 b22 bl
@@ -39,9 +42,12 @@
            (:section s5) mrest5 sb5 m4 m5 sb7 sh6 m6 sb7 b22 bl
            (:section s6) mrest7 sb8 sh7 m7 sb8 bl
            (:section s7)
-           (:alt (:diplomatic mrest7) (:critical mrest3)
-                 (:comment "Original: Minima-Pause steht eine Position höher.")
-                 (:flag :draft) (:id 2))
+           (:alt (:diplomatic mrest7)
+                 (:critical mrest3)
+                 (:coord-barre "MZ1 N22")
+                 (:coord-norm "G7")
+                 (:comment "Original: Minima-Pause steht zwei Positionen höher.")
+                 (:flag :ready) (:id 2))
            sb4 sh3 m3 br4 b22 blbl)
    (:text 110 58
           (671 630 "Cadentie del ᴄontrʼAlto."))

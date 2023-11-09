@@ -220,8 +220,12 @@
            (:section s31) cclef5 b38 sb9 b38 sb8 bl
            (:section s32) b22 mrest5 b22 sb6 b38 m5 bl
            (:section s33) sb0 b38
-           (:alt (:diplomatic sb2) (:critical sb1)
-                 (:comment "Original: C-E.") (:flag :suggestion) (:id 1))
+           (:alt (:diplomatic sb2)
+                 (:critical sb1)
+                 (:coord-barre "MZ5 N20")
+                 (:coord-norm "G33 St1 N2")
+                 (:comment "Original: G.")
+                 (:flag :ready) (:id 1))
            bl)
    (:text 90 58
           (113 nil "à 6.")

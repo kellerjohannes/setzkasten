@@ -131,7 +131,7 @@
    (:vspace 90)
    (:music 2241
            (:voice v1)
-           (:section s18) cclef7 fl8 (:key-signature nil nil nil nil nil nil :flat) mrest5 b22 m6 b22 m5 b22 m4 b22 bl
+           (:section s18) cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat) mrest5 b22 m6 b22 m5 b22 m4 b22 bl
            (:section s19) mrest5 m6 fl2 m2 b22 m2 b38 bl
            (:section s20) b22 sb1 fl2 b38 sb2 b22 bl
            (:section s21) b22 sb3 b38 sb7 b38 bl
@@ -144,7 +144,10 @@
            (:section s18) (:f-clef)
            (:alt (:diplomatic max7 fclef7)
                  (:critical max7 fclef7)
-                 (:comment "Original: ♭-Vorzeichnung beim Schlüssel fehlt, betrifft section 18-22.") (:flag :draft) (:id 0))
+                 (:coord-barre "MZ6 N1")
+                 (:coord-norm "G18-G22 St2")
+                 (:comment "Original: ♭-Vorzeichnung beim Schlüssel fehlt.")
+                 (:flag :ready) (:id 1))
            (:key-signature nil nil nil nil nil nil :flat) b38 b22 sb3 b38 sb4 b22 b22 bl
            (:section s19) b22 b22 sb3 b38 b22 sb4 b22 b22 bl
            (:section s20) b22 b38 sb3 b38 sb4 b22 bl

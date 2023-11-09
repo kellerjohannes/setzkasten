@@ -51,14 +51,17 @@
            (:voice v2) cclef7 b22 mrest7 sb7 b38 m9 b38
            (:section s4)
            (:voice v1) cclef7 b38 sb3 sb2
-           (:alt (:diplomatic) (:critical dot2)
-                 (:comment "Punktierung des E wurde ergänzt.")
+           (:alt (:diplomatic)
+                 (:critical dot2)
+                 (:coord-barre "N16")
+                 (:coord-norm "G4 St1 N2")
+                 (:comment "Rhythmische Punktierung des E wurde ergänzt, um die beiden Stimmen gleich lang erscheinen zu lassen.")
                  ;; Kommentar Anne Ich würde den Punkt nicht ergänzen.
                  ;; JK: Dann geht das Beispiel aber nicht auf, was für die moderne Notenschrift
                  ;; ein Problem ist. Kannst du damit leben, dass der Punkt ergänzt ist?
                  ;; Alternativ müsste ich schauen, ob ich ihn einpflegen, aber unsichtbar machen
                  ;; kann.
                  ;; OPEN
-                 (:flag :suggestion) (:id 1))
+                 (:flag :ready) (:id 1))
            bl
            (:voice v2) mrest7 m7 dot8 sm6 sb9 bl)))

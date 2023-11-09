@@ -14,7 +14,10 @@
            (:section s1)
            cclef7 b22 fl6 b22 fl29 b22 (:key-signature nil nil :flat nil nil nil :flat)
            sb0 b22 sb3 b22 m0 dot0 sm1 b22 sm2 b22 sm0 b22 m3 dot4 sm4 b38 sm5 b38 sm6 b38 m7 dot8 sm6 b38 sm4 b38 sm5 b38
-           (:alt (:diplomatic m6) (:critical sb6)
-                 (:comment "Rhythmische Korrektur, um die gesamte Länge der Melodie plausibel erscheinen zu lassen. Alternativ könnte auch die fünftletzte Note zu einer Semibrevis verlängert werden.")
-                 (:flag :suggestion) (:id 1))
+           (:alt (:diplomatic m6)
+                 (:critical sb6)
+                 (:coord-barre "N15")
+                 (:coord-norm "N15")
+                 (:comment "Original: Minima. Rhythmische Anpassung, um die Regularität der Phrase herzustellen. Alternativ könnte auch die fünftletzte Note zu einer Semibrevis verlängert werden.")
+                 (:flag :ready) (:id 1))
            b22 m7 b22 m3 dot4 sm2 b22 m1 b22 m0 b22 m2 b22 m3 b22 sb0 b22 br3 b22 blbl)))
