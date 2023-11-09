@@ -32,17 +32,20 @@
     (s1 (:alt (:it "per natura: la-sol-fa-la-sol\\mi e re per ascendere")
               (:de "")
               (:en "per natura: la-sol-fa-la-sol\\mi and re in ascent")))
-    (s2 (:alt (:it "[per natura: sol-fa-la-sol-fa\\re et ut per ascendere]")
+    (s2 (:alt (:it "[per natura: sol-fa-la-sol-fa\\re ascendere]")
               ;; Kommentar Anne: ich würde nur re per ascendere schreiben.
-              ;; OPEN
+              ;; JK: gut, gemacht
+              ;; DONE
               (:de "")
               (:en "per natura: sol-fa-la-sol-fa\\re in ascent")))
-    (s3 (:alt (:it "per natura: fa-mi-la\\fa-mi-mi")
+    (s3 (:alt (:it "per natura: fa-mi-la\\[per ascendere] fa-mi-mi")
               ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
-              ;; OPEN
+              ;; JK: gut, gemacht
+              ;; DONE
               (:de "")
-              (:en "per natura: fa-mi-la\\fa-mi-mi")))
+              (:en "per natura: fa-mi-la\\fa-mi-mi in ascent")))
     ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
+    ;; JK: ich habe hier 'in ascent' im Englischen ergänzt, ohne eckige Klammern, ist das in Ordnung?
     ;; OPEN
 
     (s4 (:alt (:it "per ♮: la-sol-fa-mi-re\\la-sol-fa-la-sol\\mi per ascendere")
@@ -51,19 +54,23 @@
     (s5 (:alt (:it "per ♭: la-sol-fa-la-sol\\per ♮: sol-fa-la-sol-fa\\re per ascendere")
               (:de "")
               (:en "per ♭: la-sol-fa-la-sol\\per ♮: sol-fa-la-sol-fa\\re in ascent")))
-    (s6 (:alt (:it "per natura: fa-mi-mi")
+    (s6 (:alt (:it "per natura: fa-mi-mi [per ascendere]")
               ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
+              ;; JK: ich habe es danach und in eckigen Klammern ergänzt. Gut so?
               ;; OPEN
               (:de "")
-              (:en "per natura: fa-mi-mi")))
+              (:en "per natura: fa-mi-mi [per ascendere]")))
     ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
+    ;; JK: ich habe es danach und in eckigen Klammern ergänzt. Gut so?
     ;; OPEN
-    (s7 (:alt (:it "per ♭: fa-mi-la\\fa-mi-mi")
+    (s7 (:alt (:it "per ♭: fa-mi-la\\fa-mi-mi [per ascendere]")
               ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
+              ;; JK: ich habe es danach und in eckigen Klammern ergänzt. Gut so?
               ;; OPEN
               (:de "")
-              (:en "per ♭: fa-mi-la\\fa-mi-mi")))))
+              (:en "per ♭: fa-mi-la\\fa-mi-mi in ascent")))))
   ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
+  ;; JK: ich habe es im Englischen ergänzt, gut so?
   ;; OPEN
   (:data
    (:text 70 58 (0 2198 "ᴍano ᴇnarmonica , con ſemitoni maggiori diſcendenti nel principio del tono,con il tono, in quattro"))
@@ -74,55 +81,89 @@
      (525 nil
           (:alt (:diplomatic "")
                 (:critical "da ɢ.")
-                (:comment "Dieser Text wurde ergänzt.") (:flag :draft) (:id 0)))
+                (:coord-barre "TZ3 TE3")
+                (:coord-norm "G2 ÜS")
+                (:comment "Dieser Text (»da ɢ.«) wurde ergänzt.")
+                (:flag :ready) (:id 0)))
      (750 nil
           (:alt (:diplomatic "")
                 (:critical "à ꜰ.")
-                (:comment "Dieser Text wurde ergänzt.") (:flag :draft) (:id 0)))
+                (:coord-barre "TZ3 TE3")
+                (:coord-norm "G2 ÜS")
+                (:comment "Dieser Text (»à ꜰ.«) wurde ergänzt.")
+                (:flag :ready) (:id 0)))
      ((:alt (:diplomatic 516)
             (:critical 910)
-            (:comment "Dieser Text wurde nach rechts verschoben.") (:flag :draft) (:id 0))
+            (:coord-barre "TZ3 TE5")
+            (:coord-norm "–")
+            (:comment "Dieser Text (»da ꜰ.«) wurde nach rechts verschoben.")
+            (:flag :ready) (:id 0))
       nil "da ꜰ.")
      ((:alt (:diplomatic 660)
             (:critical 1030)
-            (:comment "Dieser Text wurde nach rechts verschoben.") (:flag :draft) (:id 0))
+            (:coord-barre "TZ3 TE6")
+            (:coord-norm "–")
+            (:comment "Dieser Text (»à ᴇ.«) wurde nach rechts verschoben.")
+            (:flag :ready) (:id 0))
       nil "à ᴇ.")
      ((:alt (:diplomatic 794)
             (:critical 1150)
-            (:comment "Dieser Text wurde nach rechts verschoben.") (:flag :draft) (:id 0))
+            (:coord-barre "TZ3 TE7")
+            (:coord-norm "–")
+            (:comment "Dieser Text (»da ᴇ.«) wurde nach rechts verschoben.")
+            (:flag :ready) (:id 0))
       nil "da ᴇ.")
      ((:alt (:diplomatic 1010)
             (:critical 1400)
-            (:comment "Dieser Text wurde nach rechts verschoben.") (:flag :draft) (:id 0))
+            (:coord-barre "TZ3 TE8")
+            (:coord-norm "–")
+            (:comment "Dieser Text (»à ᴅ.«) wurde nach rechts verschoben.")
+            (:flag :ready) (:id 0))
       nil "à ᴅ.")
      ((:alt (:diplomatic 1234)
             (:critical 1530)
-            (:comment "Dieser Text wurde nach rechts verschoben.") (:flag :draft) (:id 0))
+            (:coord-barre "TZ3 TE9")
+            (:coord-norm "–")
+            (:comment "Dieser Text (»da ᴅ.«) wurde nach rechts verschoben.")
+            (:flag :ready) (:id 0))
       nil "da ᴅ.")
      ((:alt (:diplomatic 1478)
             (:critical 1800)
-            (:comment "Dieser Text wurde nach rechts verschoben.") (:flag :draft) (:id 0))
+            (:coord-barre "TZ3 TE10")
+            (:coord-norm "–")
+            (:comment "Dieser Text (»à ᴄ.«) wurde nach rechts verschoben.")
+            (:flag :ready) (:id 0))
       nil "à ᴄ.")
      ((:alt (:diplomatic 1630)
             (:critical 1920)
-            (:comment "Dieser Text wurde nach rechts verschoben.") (:flag :draft) (:id 0))
+            (:coord-barre "TZ3 TE11")
+            (:coord-norm "–")
+            (:comment "Dieser Text (»da ᴄ. à ʙ.«) wurde nach rechts verschoben.")
+            (:flag :draft) (:id 0))
       234 "da ᴄ. à ʙ.")
      ((:alt (:diplomatic 1916)
             (:critical 2200)
-            (:comment "Dieser Text wurde nach rechts verschoben.") (:flag :draft) (:id 0))
+            (:coord-barre "TZ3 TE12")
+            (:coord-norm "–")
+            (:comment "Dieser Text (»da ʙ. à ᴀ.«) wurde nach rechts verschoben.")
+            (:flag :ready) (:id 0))
       238 "da ʙ. à ᴀ."))
    (:music
-           (:alt (:diplomatic 2198)
-                 (:critical 2450)
-                 (:comment "Die Breite der Notenzeile wurde angepasst, um die Ergänzung von Noten 6-10 zu ermöglichen.") (:flag :draft) (:id 0))
-
-           (:voice v1)
+    (:alt (:diplomatic 2198)
+          (:critical 2450)
+          (:coord-barre "MZ1")
+          (:coord-norm "–")
+          (:comment "Die Breite der Notenzeile wurde angepasst, um die Ergänzung von N6-N10 zu ermöglichen.")
+          (:flag :ready) (:id 0))
+    (:voice v1)
            (:section s1) (:f-clef) max7 fclef7 b22 sb9 fl9 sbd9 sh8 sb8 b22 sbd8 b22 sb8 bl
 
            (:alt (:diplomatic)
                  (:critical (:section s2) sb8 fl8 sbd8 sh7 sb7 sbd7 sb7 bl)
-                 (:comment "Noten 6-10 (Schritt von G zu F): Im Original existiert diese Notenfolge nicht, ist aber inhaltlich plausibel.") (:flag :draft) (:id 0))
-
+                 (:coord-barre "MZ1 N6-N10")
+                 (:coord-norm "G2 N1-N5")
+                 (:comment "Der Schritt von G zu F) existiert im Original nicht, ist aber inhaltlich plausibel.")
+                 (:flag :ready) (:id 0))
            (:section s3) sb7 b22 sbd6 b22 sb6 bl
            (:section s4) sb6 fl6 sbd6 sh5 sb5 b22 sbd5 b22 sb5 bl
            (:section s5) (:newline) sb5 fl5 sbd5 sh4 sb4 b22 sbd4 b22 sb4 bl
@@ -133,7 +174,10 @@
      (454 420
           (:alt (:diplomatic "")
                 (:critical "ꝑ n. ſol.fa.la.ſol.fa.")
-                (:comment "Dieser Text wurde ergänzt.") (:flag :draft) (:id 0)))
+                (:coord-barre "TZ4 TE2")
+                (:coord-norm "G2 US")
+                (:comment "Dieser Text (»ꝑ n. ſol.fa.la.ſol.fa.«) wurde ergänzt.")
+                (:flag :ready) (:id 0)))
      ((:alt (:diplomatic 494)
             (:critical 890)
             (:comment "Dieser Text wurde nach rechts verschoben.") (:flag :draft) (:id 0))

@@ -248,37 +248,6 @@
 
 (defparameter *working*
   `(
-    ;; ("b5-c59-m1" "norm-it" (:it :critical :critical :barre :diplomatic :alternative-layout) ,*lilypond-backend-modern*)
-    ;; ("b5-c59-m2" "norm-it" (:it :critical :critical :barre :diplomatic :alternative-layout) ,*lilypond-backend-modern*)
-    ;; ("b5-c59-m3" "norm-it" (:it :critical :critical :barre :diplomatic :alternative-layout) ,*lilypond-backend-modern*)
-    ;; ("b5-c59-m4" "norm-it" (:it :critical :critical :barre :diplomatic :alternative-layout) ,*lilypond-backend-modern*)
-    ;; ("b5-c59-m5" "norm-it" (:it :critical :critical :barre :diplomatic :alternative-layout) ,*lilypond-backend-modern*)
-
-    ("b3-c54-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
-
-    ("b3-c54-m1" "crit" (:critical :barre :diplomatic) ,*vicentino-types-backend* (:critical :barre))
-
-    ;; ("b3-c54-m1" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-modern-meter*)
-
-    ;; ("b3-c54-m1" "norm-en" (:en :critical :barre :diplomatic) ,*lilypond-backend-modern-meter*)
-
-    ;; ("b3-c54-m1" "norm-de" (:de :critical :barre :diplomatic) ,*lilypond-backend-modern-meter*)
-
-    ;; ("b3-c54-m1" "norm-it-origclef" (:it :critical :barre :diplomatic) ,*lilypond-backend-original-meter*)
-
-    ;; ("b3-c54-m1" "norm-en-origclef" (:en :critical :barre :diplomatic) ,*lilypond-backend-original-meter*)
-
-    ;; ("b3-c54-m1" "norm-de-origclef" (:de :critical :barre :diplomatic) ,*lilypond-backend-original-meter*)
-
-    ;; ("b3-c50-m1" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-modern*)
-
-    ;; ("b1-c37-m1" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-modern*)
-
-    ;; ("b3-c14-m3" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-modern*)
-
-    ;; ("b3-c32-m6" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-modern*)
-
-
     ))
 
 

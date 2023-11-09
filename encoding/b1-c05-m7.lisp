@@ -13,7 +13,11 @@
     (s2 (:alt (:it "da ♭faBmi ...")
               (:de "")
               (:en "from ♭faBmi ...")
-              (:comment "Darstellung unbefriedigend, ist zu diskutieren.") (:flag :observe) (:id 1)))
+              (:comment "Darstellung unbefriedigend, ist zu diskutieren.") (:flag :observe) (:id 3)
+              ;; JK: Die Darstellung von G2-G3 ist zu diskutieren. Notfalls kann sie so bestehen
+              ;; bleiben, sollte aber nochmals bestätigt werden.
+              ;; OPEN
+              ))
     (s3 (:alt (:it "... a C")
               ;; Kommentar Anne: auch hier würde ich die Silben direkt unter den Noten und unter
               ;; einander setzen.
@@ -111,13 +115,18 @@
            (:section s7) sb7 b38 sbd7 b38 fl8 b38
            (:alt (:diplomatic sbd8)
                  (:critical sb8)
-                 (:comment "Original: Ġ♭.") (:flag :draft) (:id 2))
+                 (:coord-barre "MZ2 N6")
+                 (:coord-norm "G7 N3")
+                 (:comment "Original: Ġ♭.")
+                 (:flag :ready) (:id 1))
            b38 fl8 b38 sbd8 b38 sb8 bl
            (:section s8) sb8 b38
            (:alt (:diplomatic sbd9)
                  (:critical sbd8)
+                 (:coord-barre "MZ2 N10")
+                 (:coord-norm "G8 N2")
                  (:comment "Original: Ȧ.")
-                 (:flag :draft) (:id 3))
+                 (:flag :ready) (:id 2))
            b38 fl9 b38 sb9 b38 fl9 b38 sbd9 b38 sb9 bl
            b38 b38 b38 b22 b430)
    (:text 70 58
