@@ -62,8 +62,8 @@
            (:section s1) cclef7 b38 fl4 b38
            (:alt (:diplomatic sb4)
                  (:critical sbd4)
-                 (:coord-barre "1. MZ, 1. N")
-                 (:coord-norm "S1, ST1, 1. N")
+                 (:coord-barre "MZ1 N1")
+                 (:coord-norm "G1 St1 N1")
                  (:comment "Original: G♭.")
                  (:flag :ready) (:id 1))
            b38 fl4 b38 (:divider :regular) sbd4 b38 bl
@@ -85,15 +85,15 @@
            (:section s3) b22
            (:alt (:diplomatic fl2 b38 sbd2)
                  (:critical fl3 b38 sbd3)
-                 (:coord-barre "2. MZ, 6. N")
-                 (:coord-norm "S3, ST2, 1. N")
+                 (:coord-barre "MZ2 N6")
+                 (:coord-norm "G3 St2 N1")
                  (:comment "Original: Ȧ♭.")
                  (:flag :ready) (:id 2))
            b38 (:divider :regular)
            (:alt (:diplomatic fl2 b38 sb2)
                  (:critical fl3 b38 sb3)
-                 (:coord-barre "2. MZ, 7. N")
-                 (:coord-norm "S3, ST2, 2. N")
+                 (:coord-barre "MZ2 N7")
+                 (:coord-norm "G3 St2 N2")
                  (:comment "Original: A♭.")
                  (:flag :ready) (:id 3))
            b22 bl
@@ -109,8 +109,8 @@
            (:section s5) (:newline) cclef3 b38
            (:alt (:diplomatic sh2 b38 sb2)
                  (:critical sh1 b38 sb1)
-                 (:coord-barre "3. MZ, 1. N")
-                 (:coord-norm "S5, ST1, 1. N")
+                 (:coord-barre "MZ3 N1")
+                 (:coord-norm "G5 St1 N1")
                  (:comment "Original: B♯.")
                  (:flag :ready) (:id 4))
            b38 fl2 b38 (:divider :regular) sb2 b38 b38 bl
@@ -120,15 +120,15 @@
            b22 b38
            (:alt (:diplomatic sbd5)
                  (:critical fl5 sbd5)
-                 (:coord-barre "3. MZ, 8. N")
-                 (:coord-norm "S7, 3. N")
+                 (:coord-barre "MZ3 N8")
+                 (:coord-norm "G7 St1 N3")
                  (:comment "Original: Ė.")
                  (:flag :ready) (:id 5))
            b38
            (:alt (:diplomatic sh5 b38 sb5)
                  (:critical b38 b38 sb5)
-                 (:coord-barre "3. MZ, 9. N")
-                 (:coord-norm "S7, 4. N")
+                 (:coord-barre "MZ3 N9")
+                 (:coord-norm "G7 St1 N4")
                  (:comment "Original: E♯.")
                  (:flag :ready) (:id 6))
            b38 b22 bl

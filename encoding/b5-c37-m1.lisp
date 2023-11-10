@@ -66,9 +66,12 @@
            (:section s4) sbd6
            (:section s5) (:newline) cclef7 sbd1 sh1 (:divider :regular) sb1 bl
            fl2 sb2
-           (:alt (:diplomatic fl3) (:critical fl2)
-                 (:comment "Original: Das zweite ♭ steht eine Position höher.")
-                 (:flag :draft) (:id 1))
+           (:alt (:diplomatic fl3)
+                 (:critical fl2)
+                 (:coord-barre "MZ1 N16")
+                 (:coord-norm "G5 St1 N2")
+                 (:comment "Original: Das ♭ steht eine Position höher.")
+                 (:flag :ready) (:id 1))
            sbd2 bl
            (:section s6) fl4 sb4 bl
            (:section s7) sbd4 sh4 (:divider :regular) sb4 bl
@@ -76,8 +79,10 @@
            (:section s8)
            (:alt (:diplomatic sb6)
                  (:critical sbd6)
-                 (:comment "Original: Die Note in der oberen Stimme ist ein B♮.")
-                 (:flag :draft) (:id 3))
+                 (:coord-barre "MZ1 N22")
+                 (:coord-norm "G8 St1 N1")
+                 (:comment "Original: B♮.")
+                 (:flag :ready) (:id 3))
            bl)
    (:text 130 58
      (48 nil "3.mi.prop.")
@@ -93,8 +98,10 @@
            (:section s1) (:f-clef) max7 fclef7
            (:alt (:diplomatic fl8 sb8)
                  (:critical fl9 sb9)
-                 (:comment "Original: Die erste Note in der unteren Stimme ist ein G♭.")
-                 (:flag :draft) (:id 2))
+                 (:coord-barre "MZ2 N1")
+                 (:coord-norm "G1 St2 N1")
+                 (:comment "Original: G♭.")
+                 (:flag :ready) (:id 2))
            sh8 sb8 bl
            sbd8 sbc8 sb8 bl
            (:section s2) sbd6 bl

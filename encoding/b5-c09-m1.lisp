@@ -84,7 +84,9 @@
            b38 sb3 b38 fl3 b38
            (:alt (:diplomatic sbd3)
                  (:critical sbd3)
-                 (:comment "In gewissen Quellen (oder nur im Faksimile) fehlt bei der dritten Note dieser Section ein enharmonischer Punkt.")
+                 (:coord-barre "MZ2 N9")
+                 (:coord-norm "G3 St2 N4")
+                 (:comment "In gewissen Quellen fehlt hier ein enharmonischer Punkt. [Luigi: Quellen müssen genannt werden].")
                  (:flag :observe) (:id 1))
            b22 b38 bl
            (:section s4) b38 b38 sh1 b38 sb1 b38 b38 bl)

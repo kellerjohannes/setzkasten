@@ -82,8 +82,10 @@
            (:section s10) b38
            (:alt (:diplomatic sbd5)
                  (:critical sbd6)
-                 (:comment "Original: Note in der oberen Stimme ist ein Ė.")
-                 (:flag :draft) (:id 1))
+                 (:coord-barre "MZ1 N10")
+                 (:coord-norm "G10 St1 N1")
+                 (:comment "Original: Ė.")
+                 (:flag :ready) (:id 1))
            b38 bl
            (:section s11) b38 fl7 b22 sb7 b38 bl
            (:section s12) b38 sbc8 b22 b22 bl)

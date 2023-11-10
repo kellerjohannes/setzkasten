@@ -75,9 +75,12 @@
            sb3 sbd3 bl
            (:section s6) sb5 bl
            (:section s7) fl6 sb6
-           (:alt (:diplomatic fl7) (:critical fl6)
-                 (:comment "Original: Das zweite ♭ steht eine Position höher.")
-                 (:flag :draft) (:id 1))
+           (:alt (:diplomatic fl7)
+                 (:critical fl6)
+                 (:coord-barre "MZ1 N17")
+                 (:coord-norm "G7 St1 N2")
+                 (:comment "Original: Das ♭ steht eine Position höher.")
+                 (:flag :ready) (:id 1))
            (:divider :regular) sbd6 bl
            sb6 b22 sbd6 bl
            (:section s8) sb8 bl)
@@ -96,16 +99,20 @@
 
            (:alt (:diplomatic fl4 sb4)
                  (:critical fl5 sb5)
-                 (:comment "Original: Die dritte Note in der unteren Stimme ist ein C♭.")
-                 (:flag :draft) (:id 2))
+                 (:coord-barre "MZ2 N3")
+                 (:coord-norm "G1 St2 N3")
+                 (:comment "Original: C♭.")
+                 (:flag :ready) (:id 2))
            sh4 sb4 bl
            (:section s2) fl3 b22 sb3 bl
            (:section s3) sb2 fl2 (:divider :regular) sbd2 b22 bl
            fl2 sb2
            (:alt (:diplomatic sh2 sb2)
                  (:critical sh1 sb1)
-                 (:comment "Original: Die vierte Note in der unteren Stimme ist ein A♯.")
-                 (:flag :draft) (:id 3))
+                 (:coord-barre "MZ2 N9")
+                 (:coord-norm "G3 St2 N4")
+                 (:comment "Original: A♯.")
+                 (:flag :ready) (:id 3))
            b22 bl
            (:section s4) sb0 b38
            (:section s5) (:f-clef) max7 fclef7 b22 sb7 (:divider :regular) sb7 b22 bl

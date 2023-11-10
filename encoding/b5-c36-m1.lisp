@@ -75,13 +75,17 @@
            (:section s3) b38
            (:alt (:diplomatic fl4 b22 b22 sbd4)
                  (:critical fl5 b22 b22 sbd5)
-                 (:comment "Original: Die erste Note in der unteren Stimme ist ein Ċ♭.")
-                 (:flag :draft) (:id 1))
+                 (:coord-barre "MZ2 N6")
+                 (:coord-norm "G3 St2 N1")
+                 (:comment "Original: Ċ♭.")
+                 (:flag :ready) (:id 1))
            b22
            (:alt (:diplomatic fl4 b22 sb4)
                  (:critical fl5 b22 sb5)
-                 (:comment "Original: Die zweite Note in der unteren Stimme ist ein C♭.")
-                 (:flag :draft) (:id 2))
+                 (:coord-barre "MZ2 N7")
+                 (:coord-norm "G3 St2 N2")
+                 (:comment "Original: C♭.")
+                 (:flag :ready) (:id 2))
            b38 bl
            b38 b22 sh4 b38 sb4 b22 b22 sbd4 b38 b22 bl
            (:section s4) b38 b22 sh2 b38 sb2 b38 b38 b22 bl)
@@ -94,38 +98,51 @@
    (:music 2245
            (:voice v1)
            (:section s5) (:newline) cclef7 b38 b22
-           (:alt (:diplomatic sh2) (:critical sh0)
-                 (:comment "Original: Das erste ♯ in der oberen Stimme steht zwei Positionen höher.")
-                 (:flag :draft) (:id 3))
+           (:alt (:diplomatic sh2)
+                 (:critical sh0)
+                 (:coord-barre "MZ3 N1")
+                 (:coord-norm "G6 St1 N1")
+                 (:comment "Original: Das ♯ steht zwei Positionen höher.")
+                 (:flag :ready) (:id 3))
            b38 sb0 b22 fl1 b38 (:divider :regular) sb1 b38 b22 bl
            b38 b22 fl1 b38 sbd1 b38 sb1 b38 b22 bl
            (:section s6) b38 sh2 b38 sb2 b38 b22 bl
            (:section s7) b38
            (:alt (:diplomatic sh4 b38 sb4)
                  (:critical sh3 b38 sb3)
-                 (:comment "Original: Die erste Note in der oberen Stimme ist ein G♯.")
-                 (:flag :draft) (:id 4))
+                 (:coord-barre "MZ3 N6")
+                 (:coord-norm "G7 St1 N1")
+                 (:comment "Original: G♯.")
+                 (:flag :ready) (:id 4))
            b38 (:divider :regular)
            (:alt (:diplomatic fl5 b38 sb5)
                  (:critical fl4 b38 sb4)
-                 (:comment "Original: Die zweite Note in der oberen Stimme ist ein A♭.")
-                 (:flag :draft) (:id 5))
+                 (:coord-barre "MZ3 N7")
+                 (:coord-norm "G7 St1 N2")
+                 (:comment "Original: A♭.")
+                 (:flag :ready) (:id 5))
            b38 b22 bl
            b22
            (:alt (:diplomatic fl5 b22 sbd5)
                  (:critical fl4 b22 sbd4)
-                 (:comment "Original: Die dritte Note in der oberen Stimme ist ein Ȧ♭.")
-                 (:flag :draft) (:id 6))
+                 (:coord-barre "MZ3 N8")
+                 (:coord-norm "G7 St1 N3")
+                 (:comment "Original: Ȧ♭.")
+                 (:flag :ready) (:id 6))
            b22
            (:alt (:diplomatic sbc5)
                  (:critical sbc4)
-                 (:comment "Original: Die vierte Note in der oberen Stimme ist ein A,.")
-                 (:flag :draft) (:id 7))
+                 (:coord-barre "MZ3 N9")
+                 (:coord-norm "G7 St1 N4")
+                 (:comment "Original: Aʼ.")
+                 (:flag :ready) (:id 7))
            b22
            (:alt (:diplomatic sbd5)
                  (:critical sb4)
-                 (:comment "Original: Die fünfte Note in der oberen Stimme ist ein Ȧ.")
-                 (:flag :draft) (:id 8))
+                 (:coord-barre "MZ3 N10")
+                 (:coord-norm "G7 St1 N5")
+                 (:comment "Original: Ȧ.")
+                 (:flag :ready) (:id 8))
            b22 bl
            (:section s8) b38 sh5 b38 sb5 b38 b22 bl)
    (:text 90 78

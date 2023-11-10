@@ -5,9 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Questi sono i toni e semitoni cromatici\\con i diesis cromatici, ascendenti e discendenti,\\in secondo e terzo ordine")
                  (:de "")
-                 (:en "")
-                 (:comment "Original: »... in terzo e quarto ordine ...«")
-                 (:flag :draft) (:id 1)))
+                 (:en "")))
    (:section-captions
     (s1 (:alt (:it "Tono\\accidentale")
               (:de "")
@@ -100,9 +98,12 @@
    (:text 70 58
      (163 1907 "Questi ſono li toni & semitoni ᴄromatici , con li ᴅieſis ᴄromatici, aſcendenti"))
    (:text 130 58
-          (:alt (:diplomatic (589 1032 "& diſcendenti, in terzo & quarto ordine."))
-                (:critical (589 1032 "& diſcendenti, in secondo & terzo ordine."))
-                (:comment "Original: »in terzo & quarto ordine.«") (:flag :draft) (:id 2)))
+          (589 1032 (:alt (:diplomatic "& diſcendenti, in terzo & quarto ordine.")
+                          (:critical "& diſcendenti, in secondo & terzo ordine.")
+                          (:coord-barre "TZ2")
+                          (:coord-norm "Ti")
+                          (:comment "Original: »in terzo & quarto ordine.«")
+                          (:flag :ready) (:id 1))))
    (:text 100 58
      (164 nil "to.")
      (548 nil "se.")

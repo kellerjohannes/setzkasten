@@ -76,22 +76,26 @@
            fl2 sb2 fl2 sbd2 bl
            (:section s6) b22 sbd3 bl
            (:section s7) fl4 sbd4 (:divider :regular) sb4 bl
-
            (:alt (:diplomatic sbd6)
                  (:critical sbd4)
-                 (:comment "Original: Die dritte Note in der oberen Stimme ist ein Ḋ.")
-                 (:flag :draft) (:id 1))
-
+                 (:coord-barre "MZ1 N20")
+                 (:coord-norm "G7 St1 N3")
+                 (:comment "Original: Ḋ.")
+                 (:flag :ready) (:id 1))
            (:alt (:diplomatic sh6 sb6)
                  (:critical sh4 sb4)
-                 (:comment "Original: Die vierte Note in der oberen Stimme ist ein D♯.")
-                 (:flag :draft) (:id 2))
+                 (:coord-barre "MZ1 N21")
+                 (:coord-norm "G7 St1 N4")
+                 (:comment "Original: D♯.")
+                 (:flag :ready) (:id 2))
            bl
            (:section s8)
            (:alt (:diplomatic sbd8)
                  (:critical sbd6)
-                 (:comment "Original: Die Note in der oberen Stimme ist ein Ḟ.")
-                 (:flag :draft) (:id 3))
+                 (:coord-barre "MZ1 N22")
+                 (:coord-norm "G8 St1 N1")
+                 (:comment "Original: Ḟ.")
+                 (:flag :ready) (:id 3))
            bl)
    (:text 130 58
           (53 nil "3.mi.prop.")

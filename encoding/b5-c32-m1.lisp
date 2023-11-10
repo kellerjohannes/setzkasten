@@ -72,13 +72,17 @@
            (:section s1) (:f-clef) max7 fclef7 b22
            (:alt (:diplomatic fl8 b22 sbd8)
                  (:critical fl9 b22 sbd9)
-                 (:comment "Original: Die erste Note der unteren Stimme ist ein  Ġ♭.")
-                 (:flag :draft) (:id 1))
+                 (:coord-barre "MZ2 N1")
+                 (:coord-norm "G1 St2 N1")
+                 (:comment "Original: Ġ♭.")
+                 (:flag :ready) (:id 1))
            b22
            (:alt (:diplomatic fl8 b22 sb8)
                  (:critical fl9 b22 sb9)
-                 (:comment "Original: Die zweite Note der unteren Stimme ist ein G♭.")
-                 (:flag :draft) (:id 2))
+                 (:coord-barre "MZ2 N2")
+                 (:coord-norm "G1 St2 N2")
+                 (:comment "Original: G♭.")
+                 (:flag :ready) (:id 2))
            b22 bl
            b38 b38 sh8 b38 b22 sb8 b38 sbd8 b22 b22 bl
            (:section s2) b38 sh6 b38 sb6 b38 bl
@@ -99,19 +103,25 @@
            (:section s7) b38 b38 sh4 b38 sb4 b38 (:divider :regular)
            (:alt (:diplomatic fl4 b22 sb4)
                  (:critical fl5 b22 sb5)
-                 (:comment "Original: Die zweite Note in der oberen Stimme ist ein G♭.")
-                 (:flag :draft) (:id 3))
+                 (:coord-barre "MZ3 N7")
+                 (:coord-norm "G7 St1 N2")
+                 (:comment "Original: G♭.")
+                 (:flag :ready) (:id 3))
            b38 b38 bl
            b38
            (:alt (:diplomatic fl4 b38 sbd4)
                  (:critical fl5 b38 sbd5)
-                 (:comment "Original: Die dritte Note in der oberen Stimme ist ein Ġ♭.")
-                 (:flag :draft) (:id 4))
+                 (:coord-barre "MZ3 N8")
+                 (:coord-norm "G7 St1 N3")
+                 (:comment "Original: Ġ♭.")
+                 (:flag :ready) (:id 4))
            b38
            (:alt (:diplomatic sb4)
                  (:critical sb5)
-                 (:comment "Original: Die vierte Note in der oberen Stimme ist ein A.")
-                 (:flag :draft) (:id 5))
+                 (:coord-barre "MZ3 N9")
+                 (:coord-norm "G7 St1 N4")
+                 (:comment "Original: A.")
+                 (:flag :ready) (:id 5))
            b38 b22 bl
            (:section s8) b38 sh6 b22 sb6 b38 bl)
    (:text 90 78

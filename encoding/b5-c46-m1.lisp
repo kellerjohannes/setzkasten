@@ -49,9 +49,7 @@
                (:en "")))
     (s14 (:alt (:it "Tono\\naturale et\\accidentale")
                (:de "")
-               (:en "")
-               (:comment "Original: »Semitono naturale et accidentale")
-               (:flag :draft) (:id 1)))
+               (:en "")))
 
     (s15 (:alt (:it "Tono\\naturale")
                (:de "")
@@ -131,8 +129,12 @@
      (1063 nil "to.nat.")
      (1370 nil "to.nat.")
      (1659 nil "se.nat.")
-     (:alt (:diplomatic (1968 nil "se.nat.")) (:critical (1968 nil "to.nat."))
-           (:comment "Original: »se.nat.«") (:flag :draft) (:id 2)))
+     (1968 nil (:alt (:diplomatic "se.nat.")
+                     (:critical "to.nat.")
+                     (:coord-barre "TZ4 TE7")
+                     (:coord-norm "G14 US")
+                     (:comment "Original: »se.nat.«.")
+                     (:flag :ready) (:id 1))))
    (:music 2213
            (:section s8) (:newline) (:f-clef) max7 fclef7 b38 sbd9 b22 b38 sbd8 b22 b22 bl
            (:section s9) b38 sbd8 b38 b22 sbd7 b22 b22 bl

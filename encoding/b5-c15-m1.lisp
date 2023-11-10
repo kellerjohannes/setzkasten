@@ -75,16 +75,19 @@
    (:music 2238
            (:voice v2)
            (:section s1) (:f-clef) max7 fclef7 b38
-
            (:alt (:diplomatic sh6 b38 b22 sb6)
                  (:critical sh5 b38 b22 sb5)
-                 (:comment "Original: Die erste Note in der unteren Stimme ist ein E♯.")
-                 (:flag :draft) (:id 1))
+                 (:coord-barre "MZ2 N1")
+                 (:coord-norm "G1 St2 N1")
+                 (:comment "Original: E♯.")
+                 (:flag :ready) (:id 1))
            b38 b22
            (:alt (:diplomatic fl6 b38 sbd6)
                  (:critical b38 b38 sbd5)
-                 (:comment "Original: Die zweite Note in der unteren Stimme ist ein Ė♭.")
-                 (:flag :draft) (:id 2))
+                 (:coord-barre "MZ2 N2")
+                 (:coord-norm "G1 St2 N2")
+                 (:comment "Original: Ė♭.")
+                 (:flag :ready) (:id 2))
            b38 bl
            b38 sb5 b38 fl5 b38 sbd5 b38 b22 bl
            (:section s2) b38 b38 sb3 b38 b22 b22 bl
@@ -93,9 +96,12 @@
            (:section s4) b22 sh0 b22 sb0 b22 b22 b22 b22 bl)
    (:text 140 120
           (215 nil "le quattro terze")
-          (914 nil (:alt (:diplomatic "quɪnta") (:critical "quinta")
+          (914 nil (:alt (:diplomatic "quɪnta")
+                         (:critical "quinta")
+                         (:coord-barre "TZ4 TE2")
+                         (:coord-norm "G6 ÜS")
                          (:comment "Original: »quɪnta«")
-                         (:flag :draft) (:id 3)))
+                         (:flag :ready) (:id 3)))
           (1282 nil "le quattro seste")
           (1991 nil "ottaua"))
    (:music 2218

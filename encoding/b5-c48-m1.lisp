@@ -130,7 +130,10 @@
      (747 nil "se.minore")
      (1154 nil (:alt (:diplomatic "se. mag. se. mag.")
                      (:critical "se. mag. se. min.")
-                     (:comment "Original: »se. mag. se. mag.«.")))
+                     (:coord-barre "TZ4 TE4")
+                     (:coord-norm "G7 US")
+                     (:comment "Original: »se. mag. se. mag.«.")
+                     (:flag :ready) (:id 1)))
      (1729 nil "se.mag. se.min."))
    (:music 2219
            (:section s5) (:f-clef) max7 fclef7 b38 sb6 b38 sbd6 b38 sb7 bl

@@ -84,9 +84,7 @@
               (:en "")))
     (s10 (:alt (:it "Semitono minore /\\semitono maggiore:\\diesis minore – diesis minore – diesis minore")
                (:de "")
-               (:en "")
-               (:comment "Original: »diesis minore - diesis maggiore - diesis minore«.")
-               (:flag :draft) (:id 3)))
+               (:en "")))
     (s11 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis minore – diesis maggiore")
                (:de "")
                (:en "")))
@@ -116,12 +114,18 @@
            (:section s3) sb3 b22 sbd3
            (:alt (:diplomatic b22 sb4 b22)
                  (:critical sh3 b22 sb3)
-                 (:comment "Original: C.") (:flag :draft) (:id 0))
+                 (:coord-barre "MZ1 N11")
+                 (:coord-norm "G3 N3")
+                 (:comment "Original: C.")
+                 (:flag :ready) (:id 1))
            sbd4 b22 sh4 b22 sb4 bl
            (:section s4) (:newline) sh4 b22 sb4 fl5 b22 sb5 b22 fl5 b22 sbd5 b22
-           (:alt (:diplomatic) (:critical sbd5 b22)
-                 (:comment "Original: Die zweitletzte Note fehlt")
-                 (:flag :draft) (:id 1))
+           (:alt (:diplomatic)
+                 (:critical sbd5 b22)
+                 (:coord-barre "MZ1 N17")
+                 (:coord-norm "G4 N4")
+                 (:comment "Diese Note fehlt im Original.")
+                 (:flag :ready) (:id 2))
            sh5 b22 sb5 b38 bl)
    (:text 70 58
      (124 nil "di.mi. di.mi.di.ma.di.mi.")
@@ -166,7 +170,13 @@
            (:section s11) b38 sh5 b38 sb5 b38 sbd5 b38 sb5 b38 fl5 b38 sbd5 b38 sh4 b38 sb4 b38 bl)
    (:text 100 58
      (95 nil "di. mi. di. mi.di. mi. di. ma.")
-     (881 nil "di. mi. di. ma. di.mi.")
+     (881 nil
+          (:alt (:diplomatic "di. mi. di. ma. di.mi.")
+                (:critical "di. mi. di. mi. di.mi.")
+                (:coord-barre "TZ8 TE2")
+                (:coord-norm "G10 US")
+                (:comment "Original: »di. mi. di. ma. di.mi.«.")
+                (:flag :ready) (:id 3)))
      (1511 nil "di. mi. di. mi. di. mi. di. ma."))
    (:text 120 58
      (92 nil "tono ᴄro. acc.")
@@ -181,9 +191,12 @@
      (1841 nil "sem.min."))
    (:music 2247
            (:section s12) (:f-clef) max7 fclef7 b38 sh4 b38 sb4 b22 b38 sbd4 b38 sb4 b22 b22 sh3 b38
-           (:alt (:diplomatic sbd3) (:critical sb3)
-                 (:comment "Original: Die vierte Note hat keinen enharmonischen Punkt.")
-                 (:flag :draft) (:id 2))
+           (:alt (:diplomatic sbd3)
+                 (:critical sb3)
+                 (:coord-barre "MZ4 N4")
+                 (:coord-norm "G12 N4")
+                 (:comment "Original: Ḃ♯.")
+                 (:flag :ready) (:id 4))
            b38 sb3 bl
            (:section s13) (:newline) b22 sb3 b38 b22 fl3 b22 b38 sbd3 b22 fl3 b38 sb3 b38 sh2 b38 sb2 b22 bl
            (:section s14) b38 sh2 b38 sb2 b38 sbd2 b38 sb2 b38 fl2 b38 sbd2 b38 sh1 b38 sb1 b38 bl)

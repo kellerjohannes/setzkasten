@@ -76,9 +76,11 @@
            b38 b22 sb2 b22 b38 fl2 b38 b22 sbd2 b38 b38 bl
            (:section s4) b38 b22
            (:alt (:diplomatic sh0 b22 sb0)
-                 (:critical sh0 b22 sb0)
-                 (:comment "Der Notenkopf der unteren Stimme steht unüblich tief.")
-                 (:flag :observe) (:id 1))
+                 (:barre sh0 b22 sb0)
+                 (:coord-barre "MZ2 N10")
+                 (:coord-norm "G4 St2 N1")
+                 (:comment "Der Notenkopf steht unüblich weit unterhalb der untersten Notenlinie.")
+                 (:flag :ready) (:id 1))
            b38 b38 bl)
    (:vspace 50)
    (:text 130 58

@@ -68,9 +68,12 @@
            fl8 sbd8 fl8 sbd8 bl
            (:section s4) fl8 sbd8 b22
            (:section s5) (:newline) cclef5 b22
-           (:alt (:diplomatic sh1) (:critical sh0)
-                 (:comment "Original: Das erste ♯ steht eine Position höher.")
-                 (:flag :draft) (:id 1))
+           (:alt (:diplomatic sh1)
+                 (:critical sh0)
+                 (:coord-barre "MZ1 N12")
+                 (:coord-norm "G5 St1 N1")
+                 (:comment "Original: Das ♯ steht eine Position höher.")
+                 (:flag :ready) (:id 1))
            sb0 b22 (:divider :regular) sb1 bl
            b22 sbd1 sh1 sb1 bl
            (:section s6) fl3 sbd3 bl

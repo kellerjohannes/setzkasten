@@ -55,9 +55,11 @@
      (70 2055 "Queſte sono tutte le conſonanze, et le propinque et propinquiſſime di D la ſol re primo"))
    (:text 70 58
           (271 1628 (:alt (:diplomatic "acuto,et diſcendente,et diſ D ol re primo medeſimamente aſcendenti.")
-                          (:critical  "acuto,et diſcendente,et di D ſol re primo medeſimamente aſcendenti.")
+                          (:critical "acuto,et diſcendente,et di D ſol re primo medeſimamente aſcendenti.")
+                          (:coord-barre "TZ2")
+                          (:coord-norm "Ti")
                           (:comment "Original: »... et diſ D ol re ...")
-                          (:flag :draft) (:id 1))))
+                          (:flag :ready) (:id 1))))
    (:text 110 58
      (71 nil "3.mi.")
      (229 nil "3.mag.")
@@ -84,8 +86,10 @@
      (1909 nil
            (:alt (:diplomatic "le cinque")
                  (:critical "le cinque")
-                 (:comment "Diese Reklamante wurde ausnahmsweise in die Transkription übernommen, da sie einen Hinweis auf einen nicht gedruckten Text (»le cinque terze«) gibt.")
-                 (:flag :draft) (:id 2))))
+                 (:coord-barre "TZ4")
+                 (:coord-norm "G5 ÜS")
+                 (:comment "Diese Reklamante (»le cinque«) wurde ausnahmsweise in die Transkription übernommen, da sie einen Hinweis auf einen nicht gedruckten Text ist.")
+                 (:flag :ready) (:id 2))))
    (:vspace 200)
    (:text 110 58
      (97 nil "3 min.")

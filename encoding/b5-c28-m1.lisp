@@ -78,8 +78,10 @@
            (:section s1) cclef7 b38 fl6 b38 sb6 b38
            (:alt (:diplomatic sh6 b38 sb6)
                  (:critical sh5 b38 sb5)
-                 (:comment "Original: Die zweite Note in der unteren Stimme ist ein B♯.")
-                 (:flag :draft) (:id 1))
+                 (:coord-barre "MZ2 N2")
+                 (:coord-norm "G1 St2 N2")
+                 (:comment "Original: B♯.")
+                 (:flag :ready) (:id 1))
            bl
            b38 b38 sbd5 b38 b22 sbc5 b38 b38 sb5 b38 b38 bl
            (:section s2) b38 fl4 b38 sb4 b38 bl

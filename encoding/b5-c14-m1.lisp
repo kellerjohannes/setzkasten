@@ -61,7 +61,10 @@
    (:text 120 58
           (0 nil (:alt (:diplomatic "La 4.terze.")
                        (:critical "Le 4.terze.")
-                       (:comment "Original: »La 4.terze.«.")))
+                       (:coord-barre "TZ3 TE1")
+                       (:coord-norm "G1 ÜS")
+                       (:comment "Original: »La 4.terze.«.")
+                       (:flag :ready) (:id 1)))
           (547 nil "5.")
           (684 nil "Le 4.seſte.")
           (1061 nil "8.")
@@ -92,20 +95,29 @@
            (:voice v2)
            (:section s1) (:f-clef) max7 fclef7 sb6 fl6 sbd6 bl
            fl6 sb6
-           (:alt (:diplomatic sh6 sb6) (:critical sh5 sb5)
-                 (:comment "Original: Die vierte Note in der unteren Stimme ist ein E♯.")
-                 (:flag :draft) (:id 1))
+           (:alt (:diplomatic sh6 sb6)
+                 (:critical sh5 sb5)
+                 (:coord-barre "MZ2 N4")
+                 (:coord-norm "G1 St2 N4")
+                 (:comment "Original: E♯.")
+                 (:flag :ready) (:id 2))
            bl
            (:section s2) b22 sb4 b22 bl
            (:section s3) sb3 fl3
-           (:alt (:diplomatic sb3) (:critical sbd3)
-                 (:comment "Original: Die zweite Note in der unteren Stimme hat keinen enharmonischen Punkt.")
-                 (:flag :draft) (:id 2))
+           (:alt (:diplomatic sb3)
+                 (:critical sbd3)
+                 (:coord-barre "MZ2 N7")
+                 (:coord-norm "G3 St2 N2")
+                 (:comment "Original: B♭.")
+                 (:flag :draft) (:id 3))
            bl
            fl3 sb3
-           (:alt (:diplomatic b22 sbd2) (:critical sh2 sb2)
-                 (:comment "Original: Die vierte Note in der unteren Stimme ist ein Ȧ.")
-                 (:flag :draft) (:id 3))
+           (:alt (:diplomatic b22 sbd2)
+                 (:critical sh2 sb2)
+                 (:coord-barre "MZ2 N9")
+                 (:coord-norm "G3 St2 N4")
+                 (:comment "Original: Ȧ.")
+                 (:flag :ready) (:id 4))
            bl
            (:section s4) b22 sb1 b38
            (:section s5) cclef7 b22 sb4 b22 sb4 bl

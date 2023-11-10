@@ -90,14 +90,20 @@
    (:music 2239
            (:voice v2)
            (:section s1) (:f-clef) max7 fclef7 fl8 sb8
-           (:alt (:diplomatic sh8 sb8) (:critical sh7 sb7)
-                 (:comment "Original: Die zweite Note in der unteren Stimme ist ein G♯.")
-                 (:flag :draft) (:id 1))
+           (:alt (:diplomatic sh8 sb8)
+                 (:critical sh7 sb7)
+                 (:coord-barre "MZ2 N2")
+                 (:coord-norm "G1 St2 N2")
+                 (:comment "Original: G♯.")
+                 (:flag :ready) (:id 1))
            bl sbd7 sb7 bl
            (:section s2)
-           (:alt (:diplomatic sbd5) (:critical sbd5)
-                 (:comment "Dritte Note: In gewissen Quellen (oder nur im Faksimile?) fehlt hier der enharmonische Punkt.")
-                 (:flag :draft) (:id 2))
+           (:alt (:diplomatic sbd5)
+                 (:critical sbd5)
+                 (:coord-barre "MZ2 N5")
+                 (:coord-norm "G2 St2 N1")
+                 (:comment "In gewissen Quellen fehlt hier der enharmonische Punkt. [Luigi: Quellen zu benennen.]")
+                 (:flag :observe) (:id 2))
            bl
            (:section s3) fl5 sb5 sh4 sb4 bl
            sbd4 b22 sb4 bl

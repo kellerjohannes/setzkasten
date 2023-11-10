@@ -69,14 +69,20 @@
            (:section s1) cclef5 b38 fl7 b22 sbd7 b22 fl7 b22 sbd7 b22 fl7 b22 (:divider :regular) sbd7 bl
            b38 fl7 b38 sbd7 b22 fl7 b38 sbd7 b38 bl
            (:section s2) b38
-           (:alt (:diplomatic fl6) (:critical fl7)
-                 (:comment "Original: Das ♭ in der oberen Stimme steht eine Position tiefer.")
-                 (:flag :draft) (:id 1))
+           (:alt (:diplomatic fl6)
+                 (:critical fl7)
+                 (:coord-barre "MZ1 N6")
+                 (:coord-norm "G2 St1 N1")
+                 (:comment "Original: Das ♭ steht eine Position tiefer.")
+                 (:flag :ready) (:id 1))
            b38 sbd7 b38 bl
            (:section s3) b38
-           (:alt (:diplomatic fl6) (:critical fl7)
-                 (:comment "Original: Das erste ♭ in der oberen Stimme steht eine Position tiefer.")
-                 (:flag :draft) (:id 2))
+           (:alt (:diplomatic fl6)
+                 (:critical fl7)
+                 (:coord-barre "MZ1 N7")
+                 (:coord-norm "G3 St1 N1")
+                 (:comment "Original: Das ♭ steht eine Position tiefer.")
+                 (:flag :ready) (:id 2))
            b38 sbd7 b38 fl7 b38 (:divider :regular) sbd7 b38 bl
            b38 fl7 b38 sbd7 b38 fl7 b38 sbd7 (:alt (:it fl7 sbd7)) bl
            (:section s4) b38 fl7 b38 sbd7 b38 bl)
@@ -121,5 +127,8 @@
            (:section s8)
            (:alt (:diplomatic b38 sbd2)
                  (:critical fl2 sbd2)
-                 (:comment "Original: Ė.") (:flag :draft) (:id 0))
+                 (:coord-barre "MZ4 N11")
+                 (:coord-norm "G8 St2 N1")
+                 (:comment "Original: Ė.")
+                 (:flag :ready) (:id 0))
            b38 bl)))
