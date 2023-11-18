@@ -9,22 +9,22 @@
    (:section-captions
     (s1 (:alt (:it "gradi di quinta\\imperfetta composta\\naturale")
               (:de "")
-              (:en "steps of a quinta\\imperfetta composta\\naturale")))
+              (:en "steps of quinta\\imperfetta composta\\naturale")))
     (s2 (:alt (:it "gradi di quinta\\imperfetta composta\\naturale")
               ;; Kommentar Anne: Im Beispiele 2, 4, und 5 wird nur 5 geschrieben anstatt quinta
               ;; JK: dito
               ;; DONE
               (:de "")
-              (:en "steps of a quinta\\imperfetta composta\\naturale")))
+              (:en "steps of quinta\\imperfetta composta\\naturale")))
     (s3 (:alt (:it "gradi di quinta\\imperfetta composta\\accidentale")
               (:de "")
-              (:en "steps of a quinta\\imperfetta composta\\accidentale")))
+              (:en "steps of quinta\\imperfetta composta\\accidentale")))
     (s4 (:alt (:it "gradi di quinta\\imperfetta composta\\accidentale")
               (:de "")
-              (:en "steps of a quinta\\imperfetta composta\\accidentale")))
+              (:en "steps of quinta\\imperfetta composta\\accidentale")))
     (s5 (:alt (:it "gradi di quinta\\imperfetta composta\\accidentale")
               (:de "")
-              (:en "steps of a quinta\\imperfetta composta\\accidentale")))))
+              (:en "steps of quinta\\imperfetta composta\\accidentale")))))
   (:preamble-lilypond
    (:clef-overrides
     (s2 v1 "treble_8")
