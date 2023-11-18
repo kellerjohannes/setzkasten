@@ -4,6 +4,7 @@
    (:comment "q021_s043, origin: 441")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio dei gradi di terza più di minore composto e incomposto")
+   ;; Kommentar David (via Anne): (The original overall caption is amusing here, because "composto" and "incomposto" don't agree with either "gradi" or "terza"!)
                  (:de "")
                  (:en "Example of the steps of the terza più di minore composto and incomposto")))
    (:section-captions
