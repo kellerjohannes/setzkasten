@@ -30,6 +30,7 @@
               (:de "")
               (:en "semitono minore as diesis maggiore\\incomposto")))
     (s8 (:alt (:it "semitono minore\\enarmonico incomposto")
+    ;; Kommentar: David (sent to Anne) this semitono minore incomposto is not enharmonic!  In fact there is no such thing as a semitono minore enarmonico in Vicentino's system – if it's this size and enharmonic then it's a diesis maggiore.  This minor semitone is chromatic.  We need to make this emendation in all of the critical versions of this example.  In the text we would write "chromatic semitono minore incomposto", with the first word in English and the other three words in Italian.  
               (:de "")
               (:en "semitono minore\\enarmonico incomposto")))))
   (:data
