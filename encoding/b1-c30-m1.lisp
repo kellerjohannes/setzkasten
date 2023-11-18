@@ -7,6 +7,7 @@
                  (:de "")
                  (:en "Example of the steps of the terza maggiore accidentale, incomposti and composti")))
    (:section-captions
+   ;; Kommentar David (via Anne) Since each segment shows only one terza maggiore accidentale, I think that all of the captions to the individual segments should be expanded in the feminine singular, as "composta" and "incomposta".
     (s1 (:alt (:it "composti")
               (:de "")
               (:en "composti")))
