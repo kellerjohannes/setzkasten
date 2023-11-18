@@ -12,25 +12,25 @@
               ;; JK: Danke, ich habe [...] ergänzt.
               ;; DONE
               (:de "")
-              (:en "steps of the first quinta\\accidentale per semitono\\minore composto in ascent")))
+              (:en "steps of the first quinta\\accidentale composta ascending\\with semitoni minori")))
     (s2 (:alt (:it "gradi della prima quinta\\accidentale per semitono\\maggiore ascendente composto")
               ;; Kommentar Anne: ascendente is in this caption, but not in the previous one.
               ;; JK: Danke, habe die Klammern entfernt.
               ;; DONE
               (:de "")
-              (:en "steps of the first quinta\\accidentale per semitono\\maggiore composto in ascent")))
+              (:en "steps of the first quinta\\accidentale composta ascending\\with semitoni maggiori")))
     (s3 (:alt (:it "gradi della seconda quinta\\accidentale ascendente\\per semitono minore composto")
               (:de "")
-              (:en "steps of the second quinta\\accidentale in ascent\\per semitono minore composto")))
+              (:en "steps of the second quinta\\accidentale composta ascending\\with semitoni minori")))
     (s4 (:alt (:it "gradi della terza quinta\\accidentale ascendente\\per semitono minore composto")
               (:de "")
-              (:en "steps of the third quinta\\accidentale in ascent\\per semitono minore composto")))
+              (:en "steps of the third quinta\\accidentale composta ascending\\with semitoni minori")))
     (s5 (:alt (:it "gradi della terza quinta\\accidentale ascendente\\per semitono maggiore composto")
               (:de "")
-              (:en "steps of the third quinta\\accidentale in ascent\\per semitono maggiore composto")))
+              (:en "steps of the third quinta\\accidentale composta ascending\\with semitoni maggiori")))
     (s6 (:alt (:it "gradi della quarta quinta\\accidentale ascendente\\per semitono minore composto")
               (:de "")
-              (:en "steps of the fourth quinta\\accidentale in ascent\\per semitono minore composto")))))
+              (:en "steps of the fourth quinta\\accidentale composta ascending\\with semitoni minori")))))
   (:data
    (:text 80 58
           (580 1020 "ᴇſſempio de ɢradi,di Ɋuinte accidentali."))
