@@ -5,36 +5,37 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio dei gradi di terza minore accidentale, composti e incomposti")
                  (:de "")
-                 (:en "Example of the steps of a terza minore accidentale, composti and incomposti")))
+                 (:en "Example of the steps of the terza minore accidentale, composti and incomposti")))
    (:section-captions
     (s1 (:alt (:it "grado di 3 minore\\accidentale incomposto")
               ;; Kommentar Anne Die Untertiteln hier sind oben daran, obwohl sie in den Beispielen
               ;; unten daran sind.
               ;; JK: Danke, habe ich geändert
               ;; DONE
+              ;; Kommentar David: In all of the captions for the individual segments replace "3" with "terza" (to be consistent with later chapters). Also in all of the captions for the individual segments, "composto" and "incomposto" should again be "composta" and "incomposta".
               (:de "")
-              (:en "step of a 3 minore\\accidentale incomposto")))
+              (:en "step of terza minore\\accidentale incomposto")))
     (s2 (:alt (:it "grado di 3 minore\\accidentale composto")
               (:de "")
-              (:en "step of a 3 minore\\accidentale composto")))
+              (:en "step of terza minore\\accidentale composto")))
     (s3 (:alt (:it "grado di 3 minore\\accidentale incomposto")
               (:de "")
-              (:en "step of a 3 minore\\accidentale incomposto")))
+              (:en "step of terza minore\\accidentale incomposto")))
     (s4 (:alt (:it "grado di 3 minore\\accidentale composto")
               (:de "")
-              (:en "step of a 3 minore\\accidentale composto")))
+              (:en "step of terza minore\\accidentale composto")))
     (s5 (:alt (:it "grado di 3 minore\\accidentale incomposto")
               (:de "")
-              (:en "step of a 3 minore\\accidentale incomposto")))
+              (:en "step of terza minore\\accidentale incomposto")))
     (s6 (:alt (:it "grado di 3 minore\\accidentale incomposto")
               (:de "")
-              (:en "step of a 3 minore\\accidentale incomposto")))
+              (:en "step of terza minore\\accidentale incomposto")))
     (s7 (:alt (:it "grado di 3 minore\\accidentale incomposto")
               (:de "")
-              (:en "step of a 3 minore\\accidentale incomposto")))
+              (:en "step of terza minore\\accidentale incomposto")))
     (s8 (:alt (:it "grado di 3 minore\\accidentale incomposto")
               (:de "")
-              (:en "step of a 3 minore\\accidentale incomposto")))))
+              (:en "step of terza minore\\accidentale incomposto")))))
   (:data
    (:text 80 58
           (250 1694 "ᴇſſempio de i gradi di ᴛerza minore accidentale,compoﬆi & incompoſti."))
