@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio di più semitoni maggiori et minori, ascendenti e discendenti,\\composti et incomposti, naturali e accidentali")
                  (:de "")
-                 (:en "Example of more semitoni maggiori and minori, ascending and descending,\\composti and incomposti, naturali and accidentali")))
+                 (:en "Example of many semitoni maggiori and minori, ascending and descending,\\composti and incomposti, naturali and accidentali")))
    (:section-captions
     (s1 (:alt (:it "semitono maggiore\\naturale composto")
               (:de "")
@@ -42,6 +42,9 @@
                (:de "")
                (:en "semitono maggiore\\accidentale incomposto")))
     (s11 (:alt (:it "semitono maggiore\\e minore\\accidentale incomposto")
+    ;; Kommentar David (placed by Anne): No. 11: with your emended version of the pitches in this segment, the caption is misleading. The numerous intervals shown include two semitoni minori accidentali incomposti (Ab–Gdot and G–Gb) and two semitoni maggiori accidentali composti (Ab–Gdot–G and Gdot–G–Gb).   
+
+Personally I think it's possible that Vicentino really did intend the pitches that are printed in the example, because then the caption would be correct (noting that it's ambiguous as to whether it's singular or plural): it shows two semitoni maggiori accidentali incomposti (Ab–G descending and Gb–Gdot ascending) surrounding one semitono minore accidentale incomposto (G–Gb).  Alternatively, and possibly even more likely, he may have meant the last pitch to be Fdot, in which case the caption would still be correct: it would show one semitono maggiore accidentale incomposto (Ab–G) followed by two semitoni minori accidentali incomposti (G–Gb and Gb–Fdot), all descending.
                (:de "")
                (:en "semitono maggiore\\and minore\\accidentale incomposto")))
     (s12 (:alt (:it "semitono minore\\e maggiore\\accidentale incomposto")
