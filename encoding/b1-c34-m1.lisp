@@ -9,34 +9,34 @@
                  ;; JK: nein, Bezug ist 'salto'
                  ;; DONE
                  (:de "")
-                 (:en "Example of the leap più di quarta and of its incomposto and composto steps")))
+                 (:en "Example of the leap più di quarta and of its steps, incomposto and composto")))
    (:section-captions
     (s1 (:alt (:it "salto di più\\di quarta\\accidentale\\incomposto")
               ;; Kommentar Anne: Alle Beispiele im Original haben 4 anstatt quarta geschrieben
               ;; JK: dito.
               ;; DONE
               (:de "")
-              (:en "leap of a più\\di quarta\\accidentale\\incomposto")
+              (:en "leap of più\\di quarta\\accidentale\\incomposto")
               (:comment "Original: »salti«.") (:flag :draft) (:id 1)))
     (s2 (:alt (:it "gradi di più\\di quarta\\accidentale\\composto")
               (:de "")
-              (:en "steps of a più\\di quarta\\accidentale\\composto")))
+              (:en "steps of più\\di quarta\\accidentale\\composto")))
     (s3 (:alt (:it "salti di più\\di quarta\\accidentale\\incomposto")
               (:de "")
               (:en "leaps of più\\di quarta\\accidentale\\incomposto")
               (:comment "Original: »salto«.") (:flag :draft) (:id 1)))
     (s4 (:alt (:it "gradi di più\\di quarta\\accidentale\\composto")
               (:de "")
-              (:en "steps of a più\\di quarta\\accidentale\\composto")))
+              (:en "steps of più\\di quarta\\accidentale\\composto")))
     (s5 (:alt (:it "salto di più\\di quarta\\accidentale\\incomposto")
               (:de "")
-              (:en "leap of a più\\di quarta\\accidentale\\incomposto")))
+              (:en "leap of più\\di quarta\\accidentale\\incomposto")))
     (s6 (:alt (:it "gradi di più\\di quarta\\accidentale\\incomposto")
               (:de "")
-              (:en "steps of a più\\di quarta\\accidentale\\composto")))
+              (:en "steps of più\\di quarta\\accidentale\\composto")))
     (s7 (:alt (:it "salto di più\\di quarta\\accidentale\\incomposto")
               (:de "")
-              (:en "leap of a più\\di quarta\\accidentale\\incomposto")))))
+              (:en "leap of più\\di quarta\\accidentale\\incomposto")))))
   (:data
    (:text 150 58
           (181 1818 "ᴇſſempio del ſalto piùche di Ɋuarta,& de ſuoi gradi incompoſto & compoſto."))
