@@ -6,10 +6,10 @@
    (:section-headings
     (s1 (:alt (:it "tono diviso in 4 parti\\ascendenti")
               (:de "")
-              (:en "tono divided in 4\\ascending parts")))
+              (:en "tono divided into 4\\ascending parts")))
     (s2 (:alt (:it "tono diviso in 4 parti\\ascendenti")
               (:de "")
-              (:en "tono divided in 4\\ascending parts"))))
+              (:en "tono divided into 4\\ascending parts"))))
    (:section-captions
     (s1 (:alt (:it "per ♮: ut-re-mi-fa-re")
               ;; Kommentar Anne: bessere Unterlegung der Silben unter den Noten in allen Sprachen?
@@ -17,10 +17,10 @@
               ;; NEU Kommentar Anne: Ja, ich meine im Sinn von gesungenem Text.
               ;; OPEN
               (:de "")
-              (:en "per ♮: ut-re-mi-fa-re")))
+              (:en "in ♮: ut-re-mi-fa-re")))
     (s2 (:alt (:it "per ♭: re-mi-fa-re-mi")
               (:de "")
-              (:en "per ♭: re-mi-fa-re-mi")))))
+              (:en "in ♭: re-mi-fa-re-mi")))))
   (:data
    (:text 90 58
           (54 720 "ᴛono diuiſo in 4. parti aſcend.")
