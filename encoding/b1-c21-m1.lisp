@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio del grado del tono minore composto e non composto")
                  (:de "")
-                 (:en "Example of the step of a tono minore composto and non composto")))
+                 (:en "Example of the step of the tono minore composto and non composto")))
    (:section-captions
     (s1 (:alt (:it "tono minore\\ascendente\\incomposto")
               (:de "")
