@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio del salto della quarta naturale e de suoi gradi incomposto et composto")
                  (:de "")
-                 (:en "Example of the leap of a quarta naturale, and of its incomposto and composto steps")))
+                 (:en "Example of the leap of the quarta naturale, and of its incomposto and composto steps")))
    (:section-headings
     (s1 (:alt (:it "prima quarta")
               (:de "")
@@ -32,13 +32,13 @@
               ;; JK: dito.
               ;; DONE
               (:de "")
-              (:en "leap of a quarta\\incomposta")))
+              (:en "leap of quarta\\incomposta")))
     (s2 (:alt (:it "salto di quarta\\incomposta")
               (:de "")
-              (:en "leap of a quarta\\incomposta")))
+              (:en "leap of quarta\\incomposta")))
     (s3 (:alt (:it "salto di quarta\\incomposta")
               (:de "")
-              (:en "leap of a quarta\\incomposta")))
+              (:en "leap of quarta\\incomposta")))
     (s4 (:alt (:it "quarta composta\\de gradi")
               (:de "")
               (:en "quarta composta\\in steps")))
