@@ -6,16 +6,16 @@
    (:section-captions
     (s1 (:alt (:it "due diesis in\\un semitono")
               (:de "")
-              (:en "two diesis in\\one semitono")))
+              (:en "two diesis in\\a semitono")))
     (s2 (:alt (:it "4 diesis in un tono\\ascendente")
               (:de "")
-              (:en "4 diesis in one\\ascending tono")))
+              (:en "4 diesis in a\\ascending tono")))
     (s3 (:alt (:it "4 diesis in un tono\\ascendente")
               (:de "")
-              (:en "4 diesis in one\\ascending tono")))
+              (:en "4 diesis in a\\ascending tono")))
     (s4 (:alt (:it "4 diesis in un tono\\discendente")
               (:de "")
-              (:en "4 diesis in one\\descending tono")))))
+              (:en "4 diesis in a\\descending tono")))))
   (:data
    (:music 2214
            (:voice v1)
