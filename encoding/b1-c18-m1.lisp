@@ -28,7 +28,7 @@
               (:en "semitono minore\\incomposto")))
     (s7 (:alt (:it "diesis maggiore\\per semitono minore\\incomposto")
               (:de "")
-              (:en "diesis maggiore\\per semitono minore\\incomposto")))
+              (:en "semitono minore as diesis maggiore\\incomposto")))
     (s8 (:alt (:it "semitono minore\\enarmonico incomposto")
               (:de "")
               (:en "semitono minore\\enarmonico incomposto")))))
