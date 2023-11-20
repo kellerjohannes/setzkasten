@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del sesto modo diatonico semplice,\\da greci detto yppolidio")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the sixth simple diatonic mode,\\called Hypolydian by the Greeks"))))
   (:data
    (:text 90 58
           (172 1671 "Eſſempio del seſto Modo Diatonico ſemplice,da Greci detto Yppolidio."))
