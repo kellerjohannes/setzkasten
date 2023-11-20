@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del settimo modo diatonico semplice,\\da greci detto missolidio")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the seventh simple diatonic mode,\\called Mixolydian by the Greeks"))))
   (:preamble-type-imitation
    (:width nil)
    (:height nil)
