@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del primo modo diatonico semplice,\\da greci detto dorio")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the first diatonic simple mode,\\called Dorian by the Greeks"))))
   (:data
    (:text 70 58
           (303 1557 "Eſſempio del primo Modo Diatonico ſemplice da,Greci detto Dorio."))
