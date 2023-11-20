@@ -23,16 +23,16 @@
     (s1 (:alt (:it "Composta / incomposta")
     ;;Kommentar Anne: Willst du hier composta wirklich gross schreiben?
               (:de "")
-              (:en "Composta / incomposta")))
+              (:en "composta / incomposta")))
     (s2 (:alt (:it "Composta / incomposta")
               (:de "")
-              (:en "Composta / incomposta")))
+              (:en "composta / incomposta")))
     (s3 (:alt (:it "Composta / incomposta")
               (:de "")
-              (:en "Composta / incomposta")))
+              (:en "composta / incomposta")))
     (s4 (:alt (:it "Composta / incomposta")
               (:de "")
-              (:en "Composta / incomposta")))))
+              (:en "composta / incomposta")))))
   (:data
    (:text 130 58
           (335 1554 "Eſſempio delle quattro Ɋuinte ᴅiatoniche,compoſte&incompoſte."))
