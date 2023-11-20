@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio dell'ottavo modo diatonico semplice,\\da Tolomeo detto yppermissolidio")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the eighth simple diatonic mode,\\called Hypomixolydian by Ptolemy"))))
   (:data
    (:text 90 58
           (133 1954 "Eſſempio dellʼottauo Modo, Diatonico ſemplice, da ᴛolomeo detto Yppermiſſolidio."))
