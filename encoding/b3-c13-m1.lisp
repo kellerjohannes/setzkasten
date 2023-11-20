@@ -17,6 +17,7 @@
               (:de "")
               (:en "Third quarta"))))
    (:section-captions
+   ;;Kommentar Anne: Again, do you really want Composta capitalized?
     (s1 (:alt (:it "Composta / incomposta")
               (:de "")
               (:en "composta / incomposta")))
