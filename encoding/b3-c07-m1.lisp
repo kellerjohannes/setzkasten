@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del terzo modo diatonico semplice,\\da greci detto frigio")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the third simple diatonic mode,\\called Phrygian by the Greeks"))))
   (:data
    (:text 90 58
           (303 1586 "Eſſempio del terzo modo ᴅiatonico ſemplice: da Greci detto Frigio."))
