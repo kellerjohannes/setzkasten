@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del quarto modo diatonico semplice,\\da greci detto yppofrigio")
                  (:de "")
-                 (:en "Example of the fourth simple diatonic mode,\\called Hypophrygian by the Greeks"))))
+                 (:en ""))))
   (:preamble-lilypond
    (:alt (:tolgahan (:clef-overrides
                      (s1 v1 "treble_8")))))
