@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del secondo modo diatonico semplice,\\da greci detto yppodorio")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the second simple diatonic mode,\\called Hypodorian by the Greeks"))))
   (:preamble-lilypond
    (:alt (:tolgahan (:clef-overrides
                      (s1 v1 "treble_8")))))
