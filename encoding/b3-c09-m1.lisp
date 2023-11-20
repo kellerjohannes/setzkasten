@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del quinto modo diatonico semplice,\\da greci detto lidio")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the fifth simple diatonic mode,\\called Lydian by the Greeks"))))
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")))
