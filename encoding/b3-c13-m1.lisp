@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio delle tre quarte diatoniche per ♭ molle,\\composte et incomposte")
                  (:de "")
-                 (:en "")))
+                 (:en "Example of the three diatonic quarte in ♭ molle,\\composte and incomposte")))
    (:section-headings
     (s1 (:alt (:it "Prima quarta")
               (:de "")
