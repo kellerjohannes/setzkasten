@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del quarto modo per ♭ molle, senza la sua quinta giusta,\\della musica mista e participata")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the fourth mode in ♭ molle, without its proper quinta,\\of musica mista and participata"))))
   (:data
    (:text 110 58
           (0 2216 "Eſſempio del quarto Modo per ♭.molle,ſenza la ſua quinta giuſta,della muſica miſta , & par."))
