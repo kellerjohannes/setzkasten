@@ -248,6 +248,11 @@
 
 (defparameter *working*
   `(
+    ("b1-c27-m1" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+    ("b1-c27-m1" "norm-en" (:en :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+    ("b1-c27-m1" "norm-de" (:de :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+    ("b1-c27-m1" "norm-en-kursiv" (:en-kursiv :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+    ("b1-c27-m1" "norm-de-kursiv" (:de-kursiv :critical :barre :diplomatic) ,*lilypond-backend-modern*)
     ))
 
 

@@ -23,22 +23,30 @@
 
 ;; string processing in lilypond context
 
-(defparameter *bold-trigger* "*")
 (defparameter *italics-trigger* "_")
 
 (defun find-next-trigger (text-string trigger-string &optional (scan-start 0))
   (search trigger-string text-string :start2 scan-start))
 
-(defun split-formatted-string (text-string &optional (result nil))
-  (let ((bold-pos (find-next-trigger text-string *bold-trigger*))
-        (italics-pos (find-next-trigger text-string *italics-trigger*))))
-  (cond ((and (null bold-pos) (null italics-pos))
-         (reverse result))
-        (italics-pos
-         (push (subseq text-string 0 (find-next-trigger text-string *italics-trigger*)) result)
-         (push :italics result)
-         (split-formatted-string (subseq (find-next-)))
-         )))
+;; Alternative function with only italics, no bold
+
+;; (defun split-formatted-string (text-string &optional result)
+;;   (when (or text-string (not (string= text-string "")))
+;;     (let ((next-trigger (find-next-trigger text-string *italics-trigger*)))
+;;       (cond ((null next-trigger)
+;;              (push :normal result)
+;;              (push text-string result)
+;;              (format t "~&~s" (reverse result))
+;;              (reverse result))
+;;             ((zerop next-trigger)
+;;              (let ((closing-trigger (find-next-trigger text-string *italics-trigger* 1)))
+;;                (push :italics result)
+;;                (push (subseq text-string 1 closing-trigger) result)
+;;                (split-formatted-string (subseq text-string (1+ closing-trigger)) result)))
+;;             (t
+;;              (push :normal result)
+;;              (push (subseq text-string 0 next-trigger) result)
+;;              (split-formatted-string (subseq text-string next-trigger) result))))))
 
 (defun split-formatted-string (text-string &optional result)
   (when (or text-string (not (string= text-string "")))
@@ -47,8 +55,7 @@
       (cond ((and (null bold-pos) (null italics-pos))
              (push :normal result)
              (push text-string result)
-             (reverse result)
-             )
+             (reverse result))
             ((and (and bold-pos (> bold-pos 0)) (null italics-pos))
              (push :normal result)
              (push (subseq text-string 0 bold-pos) result)
