@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del quarto modo per ♮ incitato\\della musica participata e mista,\\con l'ottava sotto del suo fine")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the fourth mode in ♮ incitato\\of musica participata and mista,\\with the ottava below its final"))))
   (:data
    (:text 70 58
           (212 1797 "Eſſempio del quarto Modo per ♮.incitato della ᴍuſica participata & miſta,"))
