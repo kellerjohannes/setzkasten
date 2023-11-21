@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del secondo modo per ♭ molle,\\per haver più varietà che darà la quinta,\\sotto il suo procedere di voci, che sarà il Dsolre")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the second mode in ♭ molle,\\which in order to have more variety gives the quinta\\below its last passage of voci, which is Dsolre"))))
   (:data
    (:text 70 58
           (128 2008 "Eſſempio del ſecondo Modo per ♭.molle,per hauer più uarietà che darà quinta, ſotto"))
