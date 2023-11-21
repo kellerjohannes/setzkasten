@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio dell'ottavo modo per ♮ incitato,\\con la quinta, sotto la sua quarta,\\della musica participata et mista")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the eighth mode in ♮ incitato,\\with the quinta below its quarta,\\of musica participata and mista"))))
   (:data
    (:text 70 58
           (185 1850 "Eſſempio dellʼottauo ᴍodo per ♮. incitato,con la quinta,ſotto la ſua quarta, della"))
