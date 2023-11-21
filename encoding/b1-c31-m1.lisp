@@ -8,9 +8,10 @@
                  ;; caption "composto" and "incomposto" don't agree with either "gradi" or "terza".)
                  ;;
                  ;; JK: changed it in Italien, not in English. Anne, would you adapt it or not?
+                 ;; AS: I changed it. Now it's up to you to close the discussion.
                  ;; OPEN
                  (:de "")
-                 (:en "Example of the steps of the terza più di maggiore, incomposto and composto")))
+                 (:en "Example of the steps of the terza più di maggiore, incomposti and composti")))
    (:section-captions
     (s1 (:alt (:it "grado di terza\\più di maggiore\\incomposto")
               (:de "")
