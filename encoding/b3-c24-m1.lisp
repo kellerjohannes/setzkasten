@@ -4,8 +4,9 @@
    (:comment "q021_s102, rotation: -0.81, origin: 974")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempi delle cadentie maggiori di breve senza punto,\\e con il punto dimiuite.")
+   ;;Kommentar Anne: do you really want a period at the end of the Italian?
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of major cadences of a breve without a dot,\\and diminished with a dot"))))
   (:data
    (:text 110 58
           (169 1882 "Eſſempi delle cadentie maggiori di breue ſenza punto,et con il punto diminuite."))
