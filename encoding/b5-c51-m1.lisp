@@ -111,9 +111,12 @@
            (:voice v1)
            (:section s1) (:f-clef) max7 fclef7 b38 sbd2 b22 fl3 b22 sb3 b22 fl3 b22 sbd3 b22 sb3 b22 sbd3 b22 bl
            (:section s2) b22 sbd3 b22 sh3 b22 sb3 b22
-           (:alt (:diplomatic sb3) (:critical sb4)
-                 (:comment "Original: Die dritte Note ist ein B♮.")
-                 (:flag :draft) (:id 2))
+           (:alt (:diplomatic sb3)
+                 (:critical sb4)
+                 (:coord-barre "MZ1 N8")
+                 (:coord-norm "G2 N3")
+                 (:comment "Original: B♮.")
+                 (:flag :ready) (:id 2))
            b22 sbd4 b22 bl
            (:section s3) b22 sbd4 b22 fl5 b22 sb5 b22 fl5 b22 sbd5 b22 sb5 b22 sbd5 b22 bl
            (:section s4) (:newline) sbd5 b22 fl6 b38 sb6 b22 fl6 b22 sbd6 b22 sb6 b22 sbd6 bl)
@@ -138,10 +141,12 @@
            (:section s6) sbd7 b22 b38 fl8 b38 b22 sb8 b38 b22 fl8 b38 b22 sbd8 b22 b38 sb8 b22 b38 sbd8 b38 bl
            (:section s7) (:newline) b38 sbd8 b38 b22 fl9 b22 b38 sb9 b38 fl9 b22 sbd9 b38 sb9 b38 sbd9 b22 b22 bl)
    (:text 90 58
-     (:alt (:diplomatic (59 nil "di.mi.dimi. di.mi.di.mi."))
-           (:critical (59 nil "di.mi.dimi. di.mi."))
-           (:comment "Original: »di.mi.dimi. di.mi.di.mi.«")
-           (:flag :draft) (:id 3))
+     (59 nil (:alt (:diplomatic "di.mi.dimi. di.mi.di.mi.")
+                   (:critical "di.mi.dimi. di.mi.")
+                   (:coord-barre "TZ5 TE1")
+                   (:coord-norm "G5 US")
+                   (:comment "Original: »di.mi.dimi. di.mi.di.mi.«.")
+                   (:flag :ready) (:id 3)))
      (661 nil "di. ma. di. mi. d.imi. di. mi.")
      (1504 nil "di. ma. di. mi. di.mi. d.mi."))
    (:text 110 58
@@ -188,8 +193,10 @@
      (1646 nil
            (:alt (:diplomatic "d.mi.d.ma.d.mi.d.mi,")
                  (:critical "d.mi.d.ma.d.mi.d.mi.")
-                 (:comment "Original: »d.mi.d.ma.d.mi.d.mi,«")
-                 (:flag :draft) (:id 4))))
+                 (:coord-barre "TZ11 TE4")
+                 (:coord-norm "G14 US")
+                 (:comment "Original: »d.mi.d.ma.d.mi.d.mi,«.")
+                 (:flag :ready) (:id 4))))
    (:text 70 58
      (118 nil "ᴛono")
      (284 nil "ᴄro.")
