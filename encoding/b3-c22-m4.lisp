@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio dell'ottavo modo per musica finta,\\della musica participata e mista")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the eighth mode in musica finta,\\of musica participata and mista"))))
   (:data
    (:text 110 58
           (163 1849 "Eſſempio dellʼottauo ᴍodo per ᴍuſica finta,della Muſica participata & mista."))
