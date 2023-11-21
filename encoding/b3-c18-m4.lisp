@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del quarto modo con tre ♭ molli,\\con la sua quinta giusta,\\della musica participata et mista")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the fourth mode with three ♭ molli,\\with its proper quinta,\\of musica participata and mista"))))
   (:data
    (:text 70 58
           (266 1702 "Eſſempio del quarto ᴍodo con tre ♭. molli,con la ſua quinta giuſta, della"))
