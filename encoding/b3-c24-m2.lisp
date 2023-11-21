@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio delle cadentie minori di semibreve,\\e di minima, diminuite e non")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the minor cadences of a semibreve,\\and of a minima, diminished and not [diminished]"))))
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")
