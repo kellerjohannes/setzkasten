@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del modo misto della quinta, del settimo modo,\\e della terza quarta del quinto modo")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the mixed mode of the quinta of the seventh mode,\\and the third quarta of the fifth mode"))))
   (:data
    (:text 110 58
           (0 2203 "Eſſempio del Modo miſto della Quinta,del 7. Modo , e della terza Quarta del quinto Modo."))
