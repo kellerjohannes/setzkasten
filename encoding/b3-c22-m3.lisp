@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio dell'ottavo modo per ♭ molle,\\della musica participata e mista")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the eighth mode in ♭ molle,\\of musica participata and mista"))))
   (:data
    (:text 110 58
           (217 1743 "Eſſempio dellʼottauo ᴍodo per ♭.molle,della ᴍuſica participata & mista."))
