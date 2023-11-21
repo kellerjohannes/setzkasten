@@ -21,7 +21,7 @@
               (:en "no so [good]")))
     (s5 (:alt (:it "dubbiosa")
               (:de "")
-              (:en "doubtful")))
+              (:en "dubious")))
     (s6 (:alt (:it "buona")
               (:de "")
               (:en "good")))
