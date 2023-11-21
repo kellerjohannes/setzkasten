@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del quinto modo per ♮ incitato\\della musica participata e mista")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the fifth mode in ♮ incitato\\of musica participata and mista"))))
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")))
