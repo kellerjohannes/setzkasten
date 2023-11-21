@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del primo modo per ♮ incitato in ottaua più basso\\dell'ordinario, della musica participata e mista")
                  (:de "")
-                 (:en "Example of the first mode in ♮ incitato an ottava lower\\than is usual, in musica participata and mista"))))
+                 (:en "Example of the first mode in ♮ incitato an ottava lower\\than is usual, of musica participata and mista"))))
   (:data
    (:text 70 58
           (171 1846 "Eſſempio del del ᴘrimo Modo per ♮. incitato in Ottaua piu ʙaſso dellʼordinario,"))
