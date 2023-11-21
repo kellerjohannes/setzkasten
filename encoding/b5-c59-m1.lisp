@@ -14,27 +14,27 @@
               (:de "")
               (:en "")))
     (s17 (:alt (:it "Terzo ordine")
-              (:de "")
-              (:en "")))
+               (:de "")
+               (:en "")))
     (s25 (:alt (:it "Quarto ordine")
-              (:de "")
-              (:en "")))
+               (:de "")
+               (:en "")))
     (s33 (:alt (:it "Quinto ordine")
-              (:de "")
-              (:en "")))
+               (:de "")
+               (:en "")))
     (s41 (:alt (:it "Sesto ordine")
-              (:de "")
-              (:en "")))
+               (:de "")
+               (:en "")))
     (s49 (:alt (:it "Settimo ordine")
-              (:de "")
-              (:en "")))
+               (:de "")
+               (:en "")))
 
     (s2 (:alt (:it "Del primo ordine")
               (:de "")
               (:en "")))
     (s10 (:alt (:it "Del secondo ordine")
-              (:de "")
-              (:en "")))
+               (:de "")
+               (:en "")))
     (s18 (:alt (:it "Del terzo ordine")
                (:de "")
                (:en "")))
@@ -52,8 +52,8 @@
                (:en "")))
 
     (s3 (:alt (:it "Del primo ordine")
-               (:de "")
-               (:en "")))
+              (:de "")
+              (:en "")))
     (s11 (:alt (:it "Del secondo ordine")
                (:de "")
                (:en "")))
@@ -74,8 +74,8 @@
                (:en "")))
 
     (s4 (:alt (:it "Del primo ordine")
-               (:de "")
-               (:en "")))
+              (:de "")
+              (:en "")))
     (s12 (:alt (:it "Del secondo ordine")
                (:de "")
                (:en "")))
@@ -96,8 +96,8 @@
                (:en "")))
 
     (s5 (:alt (:it "Del primo ordine")
-               (:de "")
-               (:en "")))
+              (:de "")
+              (:en "")))
     (s13 (:alt (:it "Del secondo ordine")
                (:de "")
                (:en "")))
@@ -118,8 +118,8 @@
                (:en "")))
 
     (s6 (:alt (:it "Del primo ordine")
-               (:de "")
-               (:en "")))
+              (:de "")
+              (:en "")))
     (s14 (:alt (:it "Del secondo ordine")
                (:de "")
                (:en "")))
@@ -140,8 +140,8 @@
                (:en "")))
 
     (s7 (:alt (:it "Del primo ordine")
-               (:de "")
-               (:en "")))
+              (:de "")
+              (:en "")))
     (s15 (:alt (:it "Del secondo ordine")
                (:de "")
                (:en "")))
@@ -162,8 +162,8 @@
                (:en "")))
 
     (s8 (:alt (:it "Del primo ordine")
-               (:de "")
-               (:en "")))
+              (:de "")
+              (:en "")))
     (s16 (:alt (:it "Del secondo ordine")
                (:de "")
                (:en "")))
@@ -228,9 +228,12 @@
            cclef3 b22 fl29 (:key-signature nil nil nil nil nil nil :flat)
            b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b22 b38
            (:section s11) cclef3 b22 fl2
-           (:alt (:diplomatic fl4) (:critical fl5)
-                 (:comment "Original: Das ♭ in der Signatur steht eine Position tiefer.")
-                 (:flag :draft) (:id 2))
+           (:alt (:diplomatic fl4)
+                 (:critical fl5)
+                 (:coord-barre "MZ3 N12")
+                 (:coord-norm "G11")
+                 (:comment "Original: Das ♭ für E♭ in der Signatur beim Schlüssel steht eine Position tiefer.")
+                 (:flag :ready) (:id 1))
            (:key-signature nil nil :flat nil nil nil :flat)
            b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 bl)
    (:text 110 58
@@ -258,9 +261,12 @@
                  (:alternative-layout)
                  (:flag :layout) (:id 0))
            cclef7 b22 fl29
-           (:alt (:diplomatic fl5) (:critical fl6)
-                 (:comment "Original: Das ♭ in der Signatur steht eine Position tiefer.")
-                 (:flat :draft) (:id 3))
+           (:alt (:diplomatic fl5)
+                 (:critical fl6)
+                 (:coord-barre "MZ5 N1")
+                 (:coord-norm "G5")
+                 (:comment "Original: Das ♭ für B♭ in der Signatur beim Schlüssel steht eine Position tiefer.")
+                 (:flat :ready) (:id 2))
            (:key-signature nil nil :flat nil nil nil :flat)
            b22 sb0 b22 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b22 sb10 b22
            (:section s13) cclef7 fl29 fl5 fl6 (:key-signature nil nil :flat nil nil :flat :flat)
@@ -335,13 +341,17 @@
            (:section s19) cclef3 b22 b22
            (:alt (:diplomatic sb0 sh0)
                  (:critical sh0 sb0)
-                 (:comment "Original: Das erste ♯ steht nach der ersten Note.")
-                 (:flag :draft) (:id 6))
+                 (:coord-barre "MZ3 N1")
+                 (:coord-norm "G19 N1")
+                 (:comment "Original: Das ♯ steht rechts vom Notenkopf.")
+                 (:flag :ready) (:id 3))
            sb1 sb2 sh3 sb3 sb4 sb5 b22 sh6 sb6 b22 sh7 b22 sb7 b22 sb8 b22
            (:alt (:diplomatic sh9 sb9)
                  (:critical b38 sb9)
-                 (:comment "Original: Vor der zweitletzten Note steht ein ♯.")
-                 (:flag :draft) (:id 6))
+                 (:coord-barre "MZ3 N10")
+                 (:coord-norm "G19 N10")
+                 (:comment "Original: B♯.")
+                 (:flag :ready) (:id 4))
            b22 sh10 sb10 b38
            (:section s27)
            cclef3 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sh6 b22 sb6 b22 sb7 b38 sb8 b22 sb9 b22 sb10 bl)
@@ -451,8 +461,10 @@
                  (:flag :layout) (:id 0))
            (:alt (:diplomatic cclef1)
                  (:critical cclef3)
+                 (:coord-barre "MZ4 N12")
+                 (:coord-norm "G44 N1")
                  (:comment "Original: Der Schlüssel liegt auf der untersten Linie.")
-                 (:flag :draft) (:id 0))
+                 (:flag :ready) (:id 5))
            b22 sb0 b22 fl1 b22 sb1 b22 fl2 sb2 b22 sb3 b22 sb4 b22 fl5 sb5 b22 sb6 b22 sb7 b22 fl8 sb8 b22 fl9 sb9 sb10 bl)
    (:text 110 58
           (337 nil "Del quinto ordine.")
@@ -469,8 +481,10 @@
            (:section s38) (:f-clef) max5 fclef5 b22 sb0 b22
            (:alt (:diplomatic sh2 b22 sb1 b22 sb2)
                  (:critical b22 sb1 sh2 b22 sb2)
-                 (:comment "Original: Das erste ♯ steht vor der zweiten Note, ebenfalls im untersten Zwischenraum.")
-                 (:flag :draft) (:id 12))
+                 (:coord-barre "MZ6 N2-3")
+                 (:coord-norm "G38 N2-3")
+                 (:comment "Original: Das ♯ steht vor der zweiten Note, auf der Höhe der dritten Note.")
+                 (:flag :ready) (:id 6))
            b22 sb3 b22 sb4 b22 sh5 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sh9 b22 sb9 sb10 b38
            (:section s46) (:f-clef) max5 fclef5 b22 fl18 (:key-signature nil nil nil nil nil nil :flat)
            b22 sb0 b22 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sb10 bl)
@@ -490,8 +504,8 @@
                  (:flag :layout) (:id 0))
            (:f-clef) max7 fclef7 sb0 b22 fl1 sb1 fl2 sb2 b22 fl3 sb3 b22 sb4 b22 fl5 sb5 b22 fl6 sb6 b22 sb7 b22 fl8 sb8 fl9 sb9 b22 fl10 sb10 bl)
    (:text 110 58
-     (330 nil "Del quinto ordine.")
-     (1327 nil "ᴅel seſto ordine."))
+          (330 nil "Del quinto ordine.")
+          (1327 nil "ᴅel seſto ordine."))
    (:music 2207
            (:section s40) (:f-clef) max9 fclef9 b38 sb0 b22 sb1 b22 sh2 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b38 sb8 b38 sh9 b22 sb9 b22 sb10 b22
            (:section s48) (:f-clef) max9 fclef9 b22 sb0 b22 fl1 sb1 b22 sb2 b22 sb3 b22 sb4 b22 fl5 b22 sb5 b22 sb6 b22 sb7 b22 fl8 b22 sb8 b22 sb9 sb10 bl)
@@ -501,7 +515,7 @@
 
    ;; Seite 4, fol. 136r, S. 271
    (:text 110 58
-     (530 nil "Settimo ordine."))
+          (530 nil "Settimo ordine."))
    (:music 964
            (:section s49)
            (:alt (:original-layout)
@@ -519,9 +533,19 @@
            (:section s51)
            cclef1 fl07 (:key-signature nil nil nil nil nil nil :flat)
            b38 b38 sb0 b22 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b22 sb9
-           (:alt (:diplomatic b38) (:critical sb10 bl)
-                 (:comment "Original: Letzte Note fehlt.")
-                 (:flag :draft) (:id 16)))
+           (:alt (:diplomatic b38)
+                 (:critical sb10)
+                 (:coord-barre "MZ3 N11")
+                 (:coord-norm "G51 N11")
+                 (:comment "Original: E fehlt.")
+                 (:flag :ready) (:id 7))
+
+           (:alt (:diplomatic)
+                 (:critical bl)
+                 (:coord-barre "MZ3")
+                 (:coord-norm "–")
+                 (:comment "Original: Taktstrich fehlt.")
+                 (:flag :ready) (:id 8)))
    (:text 110 58
           (350 nil "Del settimo ordine."))
    (:music 1034
@@ -530,19 +554,37 @@
                  (:alternative-layout (:newline))
                  (:flag :layout) (:id 0))
            cclef3 (:key-signature nil nil nil nil nil nil nil)
-           b38 sb0 b22 sb1 b22 sb2 b22 sh3 b22 sb3 b38 sb4 b22 sb5 b22 sh6 sb6 sb7 sb8 sb9 sh10 sb10 b22 b22 (:alt (:critical bl)))
+           b38 sb0 b22 sb1 b22 sb2 b22 sh3 b22 sb3 b38 sb4 b22 sb5 b22 sh6 sb6 sb7 sb8 sb9 sh10 sb10 b22 b22
+           (:alt (:diplomatic)
+                 (:critical bl)
+                 (:coord-barre "MZ4")
+                 (:coord-norm "–")
+                 (:comment "Original: Taktstrich fehlt.")
+                 (:flag :ready) (:id 9)))
    (:text 110 58
           (359 nil "Del settimo ordine."))
    (:music 1020
            (:section s53)
            cclef5 fl07 b22 fl4 (:key-signature nil nil :flat nil nil nil :flat)
-           sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sb10 b38 b38 (:alt (:critical bl)))
+           sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sb10 b38 b38
+           (:alt (:diplomatic)
+                 (:critical bl)
+                 (:coord-barre "MZ5")
+                 (:coord-norm "–")
+                 (:comment "Original: Taktstrich fehlt.")
+                 (:flag :ready) (:id 10)))
    (:text 110 58
           (350 nil "Del settimo ordine."))
    (:music 1014
            (:section s54)
            cclef7 (:key-signature nil nil nil nil nil nil nil)
-           b22 sb0 b22 sb1 b22 sb2 b22 sh3 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sh10 sb10 b38 (:alt (:critical bl)))
+           b22 sb0 b22 sb1 b22 sb2 b22 sh3 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sh10 sb10 b38
+           (:alt (:diplomatic)
+                 (:critical bl)
+                 (:coord-barre "MZ6")
+                 (:coord-norm "–")
+                 (:comment "Original: Taktstrich fehlt.")
+                 (:flag :ready) (:id 11)))
    (:text 110 58
           (342 nil "Del settimo ordine."))
    (:music 1008
@@ -550,28 +592,48 @@
            (:alt (:original-layout)
                  (:alternative-layout (:newline))
                  (:flag :layout) (:id 0))
-           (:f-clef) max5 fclef5 b22 sb0 sb1 sh2 sb2 sh3 sb3 sb4 sh5 sb5 sh6 sb6 sb7 sb8 sh9 sb9 sh10 sb10 b22 (:alt (:critical bl)))
+           (:f-clef) max5 fclef5 b22 sb0 sb1 sh2 sb2 sh3 sb3 sb4 sh5 sb5 sh6 sb6 sb7 sb8 sh9 sb9 sh10 sb10 b22
+           (:alt (:diplomatic)
+                 (:critical bl)
+                 (:coord-barre "MZ7")
+                 (:coord-norm "–")
+                 (:comment "Original: Taktstrich fehlt.")
+                 (:flag :ready) (:id 12)))
    (:text 110 58
           (349 nil "Del settimo ordine."))
    (:music 1041
            (:section s56)
            (:f-clef) max9 fclef9 b22 sb0 sb1 sh2 sb2 sh3 sb3 sb4 sb5 sh6 sb6 sb7 b22
-           (:alt (:diplomatic sh8 sb8 b22 sb9)
-                 (:critical sb8 sh9 b22 sb9)
-                 (:comment "Original: Das zweitletzt ♯ steht vor der drittletzten Note auf dem obersten Zwischenraum.")
-                 (:flag :draft) (:id 22))
-           b22 sh10 sb10 b38 (:alt (:critical bl)))
+           (:alt (:diplomatic sh8 sb8)
+                 (:critical sb8)
+                 (:coord-barre "MZ8 N9")
+                 (:coord-norm "G56 N9")
+                 (:comment "Original: E♯.")
+                 (:flag :ready) (:id 13))
+           (:alt (:diplomatic b22 sb9)
+                 (:critical sh9 b22 sb9)
+                 (:coord-barre "MZ8 N10")
+                 (:coord-norm "G56 N10")
+                 (:comment "Original: F.")
+                 (:flag :ready) (:id 14))
+           b22 sh10 sb10 b38
+           (:alt (:diplomatic)
+                 (:critical bl)
+                 (:coord-barre "MZ8")
+                 (:coord-norm "–")
+                 (:comment "Original: Taktstrich fehlt.")
+                 (:flag :ready) (:id 15)))
 
    (:alt (:diplomatic
           (:vspace 110)
           (:music 1080
                   b125 b125 b125 b125 b125 b125 b125 b125 b125)
           (:text 70 58
-            (98 900 "Qui finiſcono tutti glʼordini di tutte le"))
+                 (98 900 "Qui finiſcono tutti glʼordini di tutte le"))
           (:text 70 58
-            (0 1009 "chiaui ſcritte in tutte le righe di tutte le"))
+                 (0 1009 "chiaui ſcritte in tutte le righe di tutte le"))
           (:text 110 58
-            (0 841 "parti della noſtra prattica ᴍuſicale."))
+                 (0 841 "parti della noſtra prattica ᴍuſicale."))
           (:music 1045
                   b125 b125 b125 b125 b125 b125 b125 b125 b22 b22 b38))
          (:critical
@@ -579,11 +641,11 @@
           (:music 1080
                   b125 b125 b125 b125 b125 b125 b125 b125 b125)
           (:text 70 58
-            (98 900 "Qui finiſcono tutti glʼordini di tutte le"))
+                 (98 900 "Qui finiſcono tutti glʼordini di tutte le"))
           (:text 70 58
-            (0 1009 "chiaui ſcritte in tutte le righe di tutte le"))
+                 (0 1009 "chiaui ſcritte in tutte le righe di tutte le"))
           (:text 110 58
-            (0 841 "parti della noſtra prattica ᴍuſicale."))
+                 (0 841 "parti della noſtra prattica ᴍuſicale."))
           (:music 1045
                   b125 b125 b125 b125 b125 b125 b125 b125 b22 b22 b38))
          (:comment "Dieser Text (»Qui finiscono ...«) kann entweder im Notenbeispiel oder im Haupttext erscheinen. Ist zu diskutieren. Im Moment steht er in der diplomatischen und idealisierten Transkription, nicht aber in der normalisierten.")

@@ -30,7 +30,7 @@
               (:en "")))))
   (:data
    (:text 90 58
-     (153 1903 "Regola da ritrouave le sette ottaue sopra B mi quinto con li sotto ſcritti eſſempi."))
+          (153 1903 "Regola da ritrouave le sette ottaue sopra B mi quinto con li sotto ſcritti eſſempi."))
    (:text 90 58
           (336 nil "ᴘrima")
           (566 nil "ottaua")
@@ -62,6 +62,8 @@
            (:section s7) (:newline) fl3 b22 sbd3 b22 sbd4 b22 sbd5 b22 fl6 sbd6 b22 sbd7 b22 sbd8 b22
            (:alt (:diplomatic sbd9)
                  (:critical fl9 sbd9)
-                 (:comment "Original: Die zweitletzte Note ist ein Ȧ.")
-                 (:flag :draft) (:id 1))
+                 (:coord-barre "MZ3 N19")
+                 (:coord-norm "G7 N7")
+                 (:comment "Original: Ȧ.")
+                 (:flag :ready) (:id 1))
            b22 fl10 sbd10 bl)))

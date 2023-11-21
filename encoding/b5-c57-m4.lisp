@@ -56,8 +56,10 @@
            (:section s4) (:newline) fl2 sbd2 fl3 sbd3 sh3 sb3 sh4 sb4 fl6 sbd6
            (:alt (:diplomatic sh6 sb6)
                  (:critical fl7 sbd7)
-                 (:comment "Original: Die drittletzte Note ist ein D♯.")
-                 (:flag :draft) (:id 1))
+                 (:coord-barre "MZ2 N14")
+                 (:coord-norm "G4 N6")
+                 (:comment "Original: D♯.")
+                 (:flag :ready) (:id 1))
            sh7 sb7 fl9 sbd9 bl
            (:section s5) b22 fl2 sbd2 sh2 sb2 sh3 sb3 sh4 sb4 fl6 sbd6 b22 custos6)
    (:text 110 58

@@ -42,8 +42,10 @@
            (:section s1) (:f-clef) max7 fclef7 b38 fl3 b22 sb3 b22 sb4 b22 fl5 b22 sb5 b22
            (:alt (:diplomatic sb6)
                  (:critical fl6 sb6)
-                 (:comment "Original: Die vierte Note ist ein E.")
-                 (:flag :draft) (:id 1))
+                 (:coord-barre "MZ1 N6")
+                 (:coord-norm "G1 N6")
+                 (:comment "Original: E.")
+                 (:flag :ready) (:id 1))
            b22 sb7 b22 fl8 b22 sb8 b22 fl9 b22 sb9 fl10 sb10 b38 bl
            (:section s2) b38 fl3 b22 sb3 b22 sbd3 b22 fl5 b22 sb5 b22 fl6 sb6 b22 sbd6 b22 fl8 sb8 b22 fl9 sb9 fl10 sb10 b22 bl
            (:section s3) b22 fl3 sb3 b22 sb4 b22 sb5 custos6)
@@ -57,8 +59,12 @@
            (:f-clef) max7 fclef7 b38 b22 fl6 b22 sb6 b22 sb7 sb8 sb9 fl10 sb10 b38 bl
            (:section s4) (:newline) b38 b22 fl3 b22 sb3 b22 sb4 b22 fl5 b22 sb5 b22 fl6 sb6 sb7 sb8 fl9 sb9 fl10 sb10 b38 b22 bl
            (:section s5) b38 b22 fl3 sb3 sbd3 fl5 sb5 fl6 sb6 sb7 fl8 sb8
-           (:alt (:diplomatic fl8) (:critical fl9)
-                 (:comment "Original: Das zweitletzte ♭ steht eine Position tiefer."))
+           (:alt (:diplomatic fl8)
+                 (:critical fl9)
+                 (:coord-barre "MZ2 N20")
+                 (:coord-norm "G5 N7")
+                 (:comment "Original: Das ♭ steht eine Position tiefer.")
+                 (:flag :ready) (:id 2))
            sb9 fl10 sb10 b38 bl)
    (:text 90 58
           (343 nil "Seſta")

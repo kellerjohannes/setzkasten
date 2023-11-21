@@ -52,8 +52,10 @@
            (:f-clef) max7 fclef7 b38 fl6 sb6 b22 sb7 b22
            (:alt (:diplomatic fl8)
                  (:critical b38)
-                 (:comment "Original: Die zweitletzte Note ist ein G♭.")
-                 (:flag :draft) (:id 1))
+                 (:coord-barre "MZ2 N3")
+                 (:coord-norm "G3 N3")
+                 (:comment "Original: G♭.")
+                 (:flag :ready) (:id 1))
            sb8 b22 fl9 sb9 b22 bl
            (:section s4) (:newline) b22 fl2 sb2 fl3 sb3 b22 sbd3 fl5 sb5 fl6 sb6 sb7 fl8 sb8 fl9 sb9 b22 bl
            (:section s5) b22 fl2 sb2 b22 sbd2 b22 fl4 sb4 b22 fl5 sb5 fl6 sb6 b22 sbd6 b22 fl8 sb8 b22 fl9 sb9 b38 bl)
@@ -67,6 +69,8 @@
            (:section s7) (:newline) b22 b38 fl2 b22 sb2 b22 fl3 b22 sb3 b22
            (:alt (:diplomatic sbd3)
                  (:critical sb4)
-                 (:comment "Original: Die dritte Note ist ein Ḃ♮.")
-                 (:flag :draft) (:id 2))
+                 (:coord-barre "MZ3 N11")
+                 (:coord-norm "G7 N3")
+                 (:comment "Original: Ḃ♮.")
+                 (:flag :ready) (:id 2))
            b22 fl5 b22 sb5 b22 fl6 b22 sb6 b22 sb7 b22 fl8 b22 sb8 b22 fl9 b22 sb9 b38 b38 bl)))

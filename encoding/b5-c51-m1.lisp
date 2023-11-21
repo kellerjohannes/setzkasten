@@ -52,9 +52,7 @@
    (:section-captions
     (s1 (:alt (:it "Semitono maggiore:\\diesis maggiore – diesis minore\\Semitono minore:\\diesis minore – diesis minore")
               (:de "")
-              (:en "")
-              (:comment "Original: Die erste _diesis_ soll »dieses maggiore« sein.")
-              (:flag :draft) (:id 1)))
+              (:en "")))
     (s2 (:alt (:it "Semitono minore /\\semitono maggiore:\\diesis minore – diesis minore – diesis minore")
               (:de "")
               (:en "")))
@@ -121,7 +119,13 @@
            (:section s3) b22 sbd4 b22 fl5 b22 sb5 b22 fl5 b22 sbd5 b22 sb5 b22 sbd5 b22 bl
            (:section s4) (:newline) sbd5 b22 fl6 b38 sb6 b22 fl6 b22 sbd6 b22 sb6 b22 sbd6 bl)
    (:text 70 58
-     (85 nil "da.mi.d.mi.d.mi.d. mi.")
+     (85 nil
+         (:alt (:diplomatic "da.mi.d.mi.d.mi.d. mi.")
+               (:critical "di.ma.d.mi.d.mi.d. mi.")
+               (:coord-barre "TZ2 TE1")
+               (:coord-norm "G1 US")
+               (:comment "Original: »da.mi.«")
+               (:flag :ready) (:id 1)))
      (685 nil "di.mi.d.mi.d.mi.")
      (1114 nil "di.ma.d.mi.d.mi.d.mi.")
      (1662 nil "di.ma.d.mi.di.mi.di.mi."))

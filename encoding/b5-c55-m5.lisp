@@ -30,7 +30,7 @@
               (:en "")))))
   (:data
    (:text 90 58
-     (177 1916 "Regola di ritrouare sette ᴏttaue sopra ᴇla mi ſecondo,con li sottoſcritti eſſempi."))
+          (177 1916 "Regola di ritrouare sette ᴏttaue sopra ᴇla mi ſecondo,con li sottoſcritti eſſempi."))
    (:text 90 58
           (429 nil "Prima")
           (686 nil "ottaua.")
@@ -57,13 +57,18 @@
            (:section s5) b38 sh1 b22 sb1 b22 sb2 b22
            (:alt (:diplomatic sb3)
                  (:critical sh3 sb3)
-                 (:comment "Original: Die dritte Note ist ein F.")
+                 (:coord-barre "MZ3 N6")
+                 (:coord-norm "G5 N3")
+                 (:comment "Original: F.")
                  (:flag :draft) (:id 1))
            b22 sh4 b22 sb4 b22 sh5 b22 sb5 b22 sb6 b22 sh7 b22 sb7 b22 sh8 b22 sb8 b38 bl
            (:section s6) b22 sh1 b22 sb1 b22 sh2
-           (:alt (:diplomatic mrest1) (:critical b22)
-                 (:comment "Original: Zwischen dem zweiten ♯ und dem darauffolgenden Notenkopf steht eine Minima-Pause.")
-                 (:flag :draft) (:id 2))
+           (:alt (:diplomatic mrest1)
+                 (:critical b22)
+                 (:coord-barre "MZ3 N13")
+                 (:coord-norm "G6 N2")
+                 (:comment "Original: Zwischen dem ♯ und dem darauffolgenden Notenkopf steht eine Minima-Pause.")
+                 (:flag :ready) (:id 2))
            sb2 fl4 b22 sbd4 b22 fl5 b22 sbd5 custos5)
    (:text 90 58
           (209 nil "ottaua.")

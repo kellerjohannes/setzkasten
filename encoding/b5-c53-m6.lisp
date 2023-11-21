@@ -39,33 +39,38 @@
     (s7 v1 "treble_8")))
   (:data
    (:text 90 58
-     (175 1906 "Regola di ritrouare le sette ᴏttaue sopra ꜰ fa ut primo , con li sottoſcritti eſſempi."))
+          (175 1906 "Regola di ritrouare le sette ᴏttaue sopra ꜰ fa ut primo , con li sottoſcritti eſſempi."))
    (:text 90 58
-     (258 nil "Prima ottaua.")
-     (854 nil "Seconda ottaua.")
-     (1429 nil "Terza ottaua.")
-     (1949 nil "Quarta"))
+          (258 nil "Prima ottaua.")
+          (854 nil "Seconda ottaua.")
+          (1429 nil "Terza ottaua.")
+          (1949 nil "Quarta"))
    (:music 2214
            (:voice v1)
            (:section s1) cclef5 b38 sb1 sb2 fl3 sb3 fl4 sb4 sb5 fl6 sb6 fl7 sb7 sb8 b22 bl
            (:section s2) b22 sb1 fl2 sb2 fl3 sb3 fl4 sb4 sbd4 fl6 sb6 fl7 sb7 sb8 b22 bl
            (:section s3) b22 sb1 sb2 sb3 fl4 sb4 sb5 sb6 sb7
-           (:alt (:diplomatic sb2) (:critical sb8)
-                 (:comment "Original: Die letzte Note ist ein G (verdrehte Type).")
-                 (:flag :draft) (:id 1))
+           (:alt (:diplomatic sb2)
+                 (:critical sb8)
+                 (:coord-barre "MZ1 N24")
+                 (:coord-norm "G3 N8")
+                 (:comment "Original: G (verdrehte Drucktype).")
+                 (:flag :ready) (:id 1))
            b22 bl
            (:section s4) (:newline) b22 sb1 sb2 fl3 sb3 fl4 sb4 custos5)
    (:text 70 58
-     (163 nil "ottaua.")
-     (489 nil "quinta ottaua.")
-     (1184 nil "Seſta ottaua.")
-     (1713 nil "Settima ottaua."))
+          (163 nil "ottaua.")
+          (489 nil "quinta ottaua.")
+          (1184 nil "Seſta ottaua.")
+          (1713 nil "Settima ottaua."))
    (:music 2221
            cclef5 b38 sb5
            (:alt (:diplomatic fl6)
                  (:critical b38)
-                 (:comment "Original: Die sechste Note ist ein D♭.")
-                 (:flag :draft) (:id 2))
+                 (:coord-barre "MZ2 N2")
+                 (:coord-norm "G4 N6")
+                 (:comment "Original: D♭.")
+                 (:flag :ready) (:id 2))
            sb6 fl7 sb7 sb8 b22 bl
            (:section s5) b22 sb1 fl2 b22 sb2 b22 fl3 sb3 fl4 sb4 sb5 fl6 sb6 fl7 sb7 sb8 b22 bl
            (:section s6) b22 sb1 sb2 sb3 sb4 sb5 sb6 sb7 sb8 b22 bl
