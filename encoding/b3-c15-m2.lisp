@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del primo modo per ♮ incitato nel suo luogo ordinario\\della musica participata e mista")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the first mode in ♮ incitato in its usual place\\in musica participata and mista"))))
   (:data
    (:text 70 58
           (215 1817 "Eſſempio del del primo ᴍodo per ♮. incitato nel ſuo luogo ordinario della ᴍuſica"))
