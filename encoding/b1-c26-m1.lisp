@@ -7,17 +7,24 @@
                  (:de "")
                  (:en "Example of the steps of the terza minore, composti and incomposti")))
    (:section-captions
-    (s1 (:alt (:it "grado di 3\\minore\\naturale\\incomposto")
-    ;; Kommentar David (through Anne) 1.In all of the captions for the individual segments, "composto" and "incomposto" should be "composta" and "incomposta".[If you decide to do this in the Italian, please also change the English] 2.In the captions for the first four individual segments, replace "3" with "terza" (to be consistent with later chapters).
+    (s1 (:alt (:it "grado di terza\\minore\\naturale\\incomposto")
+              ;; Kommentar David (through Anne) 1.In all of the captions for the individual
+              ;; segments, "composto" and "incomposto" should be "composta" and "incomposta".[If you
+              ;; decide to do this in the Italian, please also change the English] 2.In the captions
+              ;; for the first four individual segments, replace "3" with "terza" (to be consistent
+              ;; with later chapters).
+              ;;
+              ;; JK: 3 ersetzt, Endungen belassen, da Referenz auf 'grado'. Akzeptabel?
+              ;; OPEN
               (:de "")
               (:en "step of terza\\minore\\naturale\\incomposto")))
-    (s2 (:alt (:it "grado di 3\\minore\\naturale\\incomposto")
+    (s2 (:alt (:it "grado di terza\\minore\\naturale\\incomposto")
               (:de "")
               (:en "step of terza\\minore\\naturale\\incomposto")))
-    (s3 (:alt (:it "grado di 3\\minore\\naturale\\incomposto")
+    (s3 (:alt (:it "grado di terza\\minore\\naturale\\incomposto")
               (:de "")
               (:en "step of terza\\minore\\naturale\\incomposto")))
-    (s4 (:alt (:it "grado di 3\\minore\\naturale\\incomposto")
+    (s4 (:alt (:it "grado di terza\\minore\\naturale\\incomposto")
               (:de "")
               (:en "step of terza\\minore\\naturale\\incomposto")))
     (s5 (:alt (:it "terza minore\\composto\\di tono\\e semitono")

@@ -20,19 +20,27 @@
               (:de "")
               (:en "semitono minore\\incomposto")))
     (s6 (:alt (:it "semitono minore\\incomposto")
-              ;; Kommentar Anne Ich nehme an, dass es eine absichtliche Veränderung der Noten im
-              ;; Original ist, oder?
-              ;; JK: Ja, ist auch so im Bericht vermerkt.
-              ;; DONE
               (:de "")
               (:en "semitono minore\\incomposto")))
     (s7 (:alt (:it "diesis maggiore\\per semitono minore\\incomposto")
               (:de "")
               (:en "semitono minore as diesis maggiore\\incomposto")))
-    (s8 (:alt (:it "semitono minore\\enarmonico incomposto")
-    ;; Kommentar: David (sent to Anne) this semitono minore incomposto is not enharmonic!  In fact there is no such thing as a semitono minore enarmonico in Vicentino's system – if it's this size and enharmonic then it's a diesis maggiore.  This minor semitone is chromatic.  We need to make this emendation in all of the critical versions of this example.  In the text we would write "chromatic semitono minore incomposto", with the first word in English and the other three words in Italian.  
+    (s8 (:alt (:it "diesis maggiore\\enarmonico incomposto")
+              ;; Kommentar: David (sent to Anne) this semitono minore incomposto is not enharmonic!
+              ;; In fact there is no such thing as a semitono minore enarmonico in Vicentino's
+              ;; system – if it's this size and enharmonic then it's a diesis maggiore.  This minor
+              ;; semitone is chromatic.  We need to make this emendation in all of the critical
+              ;; versions of this example.  In the text we would write "chromatic semitono minore
+              ;; incomposto", with the first word in English and the other three words in Italian.
+              ;;
+              ;; JK: Ja, ich verstehe den Punkt. Ich hätte mich auch vorstellen können, es so zu
+              ;; belassen, aber ich bin einverstanden, es zu idealisieren. Allerdings schlage ich
+              ;; eine andere Idealisierung vor, siehe :it-Text und Vorschlag für die Englische
+              ;; Übersetzung. Ich habe das auch im Fake-Simile entsprechend angepasst.
+
+              ;; OPEN
               (:de "")
-              (:en "semitono minore\\enarmonico incomposto")))))
+              (:en "diesis maggiore\\enarmonico incomposto")))))
   (:data
    (:music 2206
            (:voice v1)
@@ -60,15 +68,21 @@
            (:section s8)
            sb6 fl6 sb6 bl)
    (:text 70 58
-     (36 nil "ſemit.mi.comp.")
-     (414 nil "ſe.mi.comp.")
-     (777 nil "ſem.mi.comp.")
-     (1118 nil "ſe.mi.incō.")
-     (1375 nil "ſe.mi.inc.")
-     (1607 nil "ſem.min.")
-     (1834 nil "di.mag.")
-     (2046 nil "ſe.min."))
+          (36 nil "ſemit.mi.comp.")
+          (414 nil "ſe.mi.comp.")
+          (777 nil "ſem.mi.comp.")
+          (1118 nil "ſe.mi.incō.")
+          (1375 nil "ſe.mi.inc.")
+          (1607 nil "ſem.min.")
+          (1834 nil "di.mag.")
+          (2046 nil
+                (:alt (:diplomatic "ſe.min.")
+                      (:critical "ᴅi.ma.")
+                      (:coord-barre "TZ2 TE8")
+                      (:coord-norm "G8 US")
+                      (:comment "Original: »ſe.min.«. Alternative Idealisierung: »semitono minore cromatico incomposto«.")
+                      (:flag :ready) (:id 2))))
    (:text 70 58
-     (1620 nil "incomp.")
-     (1829 nil "ꝑ ſe.mi.ī")
-     (2045 nil "ᴇn.inc."))))
+          (1620 nil "incomp.")
+          (1829 nil "ꝑ ſe.mi.ī")
+          (2045 nil "ᴇn.inc."))))

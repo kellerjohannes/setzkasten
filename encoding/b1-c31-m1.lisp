@@ -3,15 +3,16 @@
    (:alt-name "m1.039")
    (:comment "q021_s044, origin: 984")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio dei gradi di terza più di maggiore incomposto e composto")
-   ;; Kommentar David (via Anne): (Once again, I note that in the original overall caption "composto" and "incomposto" don't agree with either "gradi" or "terza".) 
+   (:title (:alt (:it "Essempio dei gradi di terza più di maggiore incomposti e composti")
+                 ;; Kommentar David (via Anne): (Once again, I note that in the original overall
+                 ;; caption "composto" and "incomposto" don't agree with either "gradi" or "terza".)
+                 ;;
+                 ;; JK: changed it in Italien, not in English. Anne, would you adapt it or not?
+                 ;; OPEN
                  (:de "")
                  (:en "Example of the steps of the terza più di maggiore, incomposto and composto")))
    (:section-captions
     (s1 (:alt (:it "grado di terza\\più di maggiore\\incomposto")
-              ;; Kommentar Anne Auch hier sind alle Terzen mit einem 3 ausgedruckt.
-              ;; JK: Siehe Kommentar b1-c29-m1. Kann so bleiben.
-              ;; DONE
               (:de "")
               (:en "step of terza\\più di maggiore\\incomposto")))
     (s2 (:alt (:it "grado di terza\\più di maggiore\\composto")
@@ -34,7 +35,14 @@
               (:en "step of terza\\più di maggiore\\incomposto")))))
   (:data
    (:text 150 58
-          (284 1607 "ᴇſſempio de i gradi di ᴛerza più di maggiore incompoﬆo & compoſto."))
+          (284 1607
+               (:alt (:diplomatic "ᴇſſempio de i gradi di ᴛerza più di maggiore incompoﬆo & compoſto.")
+                     (:critical "ᴇſſempio de i gradi di ᴛerza più di maggiore incompoﬆi & compoſti.")
+                     (:coord-barre "TZ1")
+                     (:coord-norm "Ti")
+                     (:comment "Original: »... incompoﬆo & compoſto«.")
+                     (:flag :ready) (:id 1))
+               ))
    (:music 2209
            (:voice v1)
            (:section s1) cclef7 b22 b22 sb0 b38 sbd2 b38 bl
@@ -45,7 +53,7 @@
                  (:coord-barre "N9")
                  (:coord-norm "G3 N4")
                  (:comment "Original: B♮.")
-                 (:flag :ready) (:id 0))
+                 (:flag :ready) (:id 1))
            b22 sbc7 bl
            (:section s4) fl6 b22 sb6 b22 sb7 b22 sbc8 bl
            (:section s5) (:newline) fl8 b22 sb8 b22 sb5 bl

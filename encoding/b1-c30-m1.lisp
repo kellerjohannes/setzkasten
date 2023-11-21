@@ -7,28 +7,34 @@
                  (:de "")
                  (:en "Example of the steps of the terza maggiore accidentale, incomposti and composti")))
    (:section-captions
-   ;; Kommentar David (via Anne) Since each segment shows only one terza maggiore accidentale, I think that all of the captions to the individual segments should be expanded in the feminine singular, as "composta" and "incomposta".
-    (s1 (:alt (:it "composti")
+    ;; Kommentar David (via Anne) Since each segment shows only one terza maggiore accidentale, I
+    ;; think that all of the captions to the individual segments should be expanded in the feminine
+    ;; singular, as "composta" and "incomposta".
+    ;;
+    ;; JK: Agreed about singular, not agreed about feminine (since we treat these cases as referring
+    ;; to 'grado'). I change everything to singulare masculine. Gut so?
+    ;; OPEN
+    (s1 (:alt (:it "composto")
               (:de "")
-              (:en "composti")))
-    (s2 (:alt (:it "incomposti")
+              (:en "composto")))
+    (s2 (:alt (:it "incomposto")
               (:de "")
-              (:en "incomposti")))
-    (s3 (:alt (:it "incomposti")
+              (:en "incomposto")))
+    (s3 (:alt (:it "incomposto")
               (:de "")
-              (:en "incomposti")))
-    (s4 (:alt (:it "composti")
+              (:en "incomposto")))
+    (s4 (:alt (:it "composto")
               (:de "")
-              (:en "composti")))
-    (s5 (:alt (:it "composti")
+              (:en "composto")))
+    (s5 (:alt (:it "composto")
               (:de "")
-              (:en "composti")))
-    (s6 (:alt (:it "incomposti")
+              (:en "composto")))
+    (s6 (:alt (:it "incomposto")
               (:de "")
-              (:en "incomposti")))
-    (s7 (:alt (:it "composti")
+              (:en "incomposto")))
+    (s7 (:alt (:it "composto")
               (:de "")
-              (:en "composti")))))
+              (:en "composto")))))
   (:data
    (:text 70 58
           (217 1780 "ᴇſſempio de i gradi,di ᴛerza maggiore accidentale,incompoſti & compoﬆi."))

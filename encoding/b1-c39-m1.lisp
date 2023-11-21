@@ -3,9 +3,13 @@
    (:alt-name "m1.048")
    (:comment "q021_s049, origin: 395")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio della quinta naturale incomposto")
+   (:title (:alt (:it "Essempio della quinta naturale incomposta")
+                 ;; David: The overall caption should have "incomposta" not "incomposto".
+                 ;;
+                 ;; JK: I changed it in :it and :en.
+                 ;; DONE
                  (:de "")
-                 (:en "Example of the quinta naturale incomposto")))
+                 (:en "Example of the quinta naturale incomposta")))
    (:section-headings
     (s1 (:alt (:it "prima quinta")
               (:de "")
@@ -19,6 +23,12 @@
     (s4 (:alt (:it "quarta quinta")
               (:de "")
               (:en "fourth quinta")))
+    ;; Nos. 5–8 should have a single caption saying "The same quinte descending" instead of
+    ;; individual captions saying "first quinta" etc.
+    ;;
+    ;; JK: Würde ein :line-title erfordern, ist möglich, ich finde es aber inhaltlich deutlicher wie
+    ;; es ist. Akzeptabel?
+    ;; OPEN
     (s5 (:alt (:it "prima quinta")
               (:de "")
               (:en "first quinta")))

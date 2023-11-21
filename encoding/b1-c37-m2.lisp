@@ -11,9 +11,6 @@
               (:de "")
               (:en "steps of quinta\\imperfetta composta\\naturale")))
     (s2 (:alt (:it "gradi di quinta\\imperfetta composta\\naturale")
-              ;; Kommentar Anne: Im Beispiele 2, 4, und 5 wird nur 5 geschrieben anstatt quinta
-              ;; JK: dito
-              ;; DONE
               (:de "")
               (:en "steps of quinta\\imperfetta composta\\naturale")))
     (s3 (:alt (:it "gradi di quinta\\imperfetta composta\\accidentale")
@@ -31,6 +28,13 @@
     (s3 v1 "treble_8")
     (s4 v1 "treble_8")
     (s5 v1 "treble_8")))
+  ;; David: b1-c37-m2> Nos. 2–5 should be notated an octave lower with a G2 clef (to be consistent
+  ;; with the previous example – and I presume this is how we will transcribe music with an original
+  ;; C3 clef throughout the treatise?). This one is not commented in the file, as I didn't know
+  ;; where to put the comment.
+  ;;
+  ;; JK: soll so bleiben, akzeptabel?
+  ;; OPEN
   (:data
    (:text 90 58
           (254 1691 "ᴇſſempio de gradi di alcune Ɋuinte imperfette,naturali & accidentali."))
