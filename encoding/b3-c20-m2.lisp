@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del sesto modo per ♭ molle,\\della musica participata e mista")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the sixth mode in ♭ molle,\\of musica participata and mista"))))
   (:data
    (:text 110 58
           (280 1694 "Eſſempio del ſesto Modo per ♭. molle,della muſica participata & miſta."))
