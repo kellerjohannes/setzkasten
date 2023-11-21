@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del terzo modo per ♮ incitato,\\della musica participata et mista")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the third mode in ♮ incitato,\\of musica participata and mista"))))
   (:data
    (:text 110 58
           (222 1757 "Eſſempio del terzo Modo per ♮.incitato,della muſica participata & miſta."))
