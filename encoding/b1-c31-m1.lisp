@@ -9,6 +9,7 @@
                  ;;
                  ;; JK: changed it in Italien, not in English. Anne, would you adapt it or not?
                  ;; AS: I changed it. Now it's up to you to close the discussion.
+                 ;;
                  ;; OPEN
                  (:de "")
                  (:en "Example of the steps of the terza più di maggiore, incomposti and composti")))
@@ -54,7 +55,7 @@
                  (:coord-barre "N9")
                  (:coord-norm "G3 N4")
                  (:comment "Original: B♮.")
-                 (:flag :ready) (:id 1))
+                 (:flag :ready) (:id 2))
            b22 sbc7 bl
            (:section s4) fl6 b22 sb6 b22 sb7 b22 sbc8 bl
            (:section s5) (:newline) fl8 b22 sb8 b22 sb5 bl

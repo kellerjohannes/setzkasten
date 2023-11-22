@@ -152,6 +152,9 @@
                  (:critical sb8)
                  (:coord-barre "MZ2 N13")
                  (:coord-norm "G7 N4")
+                 ;; JK: Frage an Luigi.
+                 ;;
+                 ;; OPEN
                  (:comment "In gewissen Quellen steht über dieser Note (G♯) ein enharmonischer Punkt. [Luigi: Quellen bennen.]")
                  (:flag :observe) (:id 4))
            fl9 b22 sb9 bl

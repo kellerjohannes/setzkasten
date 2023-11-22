@@ -10,8 +10,11 @@
     (s2 (:alt (:it "Soprano convertito in tenore,\\all'ottava sotto")
               (:de "")
               (:en "")
-              (:comment "Diese Partitur wurde ergänzt, im Original steht nur die umgewandelte Tenor-Stimme.")
-              (:flag :observe) (:id 1))))
+              ;; JK: Diese Partitur wurde ergänzt, im Original steht nur die umgewandelte
+              ;; Tenor-Stimme. Soll dies kommentiert werden?
+              ;;
+              ;; OPEN
+              )))
    (:voice-labels
     (s1 v1 (:alt (:it "Soprano")
                  (:de "")

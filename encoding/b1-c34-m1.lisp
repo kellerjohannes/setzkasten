@@ -7,6 +7,7 @@
                  ;; Kommentar Anne: soll "incomposto e composto" in "incomposti e composti"
                  ;; korrigiert werden?
                  ;; JK: nein, Bezug ist 'salto'
+                 ;;
                  ;; DONE
                  (:de "")
                  (:en "Example of the leap più di quarta and of its steps, incomposto and composto")))
@@ -14,17 +15,16 @@
     (s1 (:alt (:it "salto di più\\di quarta\\accidentale\\incomposto")
               ;; Kommentar Anne: Alle Beispiele im Original haben 4 anstatt quarta geschrieben
               ;; JK: dito.
+              ;;
               ;; DONE
               (:de "")
-              (:en "leap of più\\di quarta\\accidentale\\incomposto")
-              (:comment "Original: »salti«.") (:flag :draft) (:id 1)))
+              (:en "leap of più\\di quarta\\accidentale\\incomposto")))
     (s2 (:alt (:it "gradi di più\\di quarta\\accidentale\\composto")
               (:de "")
               (:en "steps of più\\di quarta\\accidentale\\composto")))
     (s3 (:alt (:it "salti di più\\di quarta\\accidentale\\incomposto")
               (:de "")
-              (:en "leaps of più\\di quarta\\accidentale\\incomposto")
-              (:comment "Original: »salto«.") (:flag :draft) (:id 1)))
+              (:en "leaps of più\\di quarta\\accidentale\\incomposto")))
     (s4 (:alt (:it "gradi di più\\di quarta\\accidentale\\composto")
               (:de "")
               (:en "steps of più\\di quarta\\accidentale\\composto")))

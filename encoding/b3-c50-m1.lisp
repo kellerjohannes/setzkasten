@@ -36,11 +36,12 @@
    ;;   - Quintolen, Referenzmaterial könnten Traktate von Ganassi
    ;;     etc. sein, die im Rahmen von Diminutionsschulen ähnliche
    ;;     Situationen explizit beschreiben.
-
+   ;;
    ;; Im Moment wird hier keine Idealisierung vorgenommen, was der Absicht der Edition entspricht,
    ;; möglichst nur offensichtliche Fehler, aber keine interpretierende Lesarten anzubieten.
    ;;
    ;; JK: Soll im Bericht kommentiert werden.
+   ;;
    ;; OPEN
    (:text 70 58
      (667 nil "ᴄadentie à quattro uoci,")

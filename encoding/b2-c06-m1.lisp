@@ -8,9 +8,8 @@
                  (:en "Example of the syncopated quarta in two voci,\\ and non-syncopated in three voci, and with a dot:\\ and how they are to be composed in many voci, and with the completely bad suspension dissonance of a quarta")))
    ;; Kommentar Anne: or with the "suspension dissonance of a quarta"?
    ;; JK: Ja, würde ich ergänzen, habe ich bereits eingepflegt.
+   ;;
    ;; DONE
-
-
    (:section-headings
     (s1 (:alt (:it "Buona")
               (:de "")
@@ -95,6 +94,9 @@
                      (:critical "1.")
                      (:coord-barre "TZ4 TE1")
                      (:coord-norm "G1 US")
+                     ;; JK: Notwendigkeit eines Kommentars ist zu diskutieren.
+                     ;;
+                     ;; OPEN
                      (:comment "Bedeutung von »1.« unklar.")
                      (:flag :observe) (:id 2)))
           (514 nil
@@ -102,6 +104,9 @@
                      (:critical "2.")
                      (:coord-barre "TZ4 TE2")
                      (:coord-norm "G2 US")
+                     ;; JK: Notwendigkeit eines Kommentars ist zu diskutieren.
+                     ;;
+                     ;; OPEN
                      (:comment "Bedeutung von »2.« unklar.")
                      (:flag :observe) (:id 3)))
           (824 nil
@@ -109,6 +114,9 @@
                      (:critical "3.")
                      (:coord-barre "TZ4 TE3")
                      (:coord-norm "G3 US")
+                     ;; JK: Notwendigkeit eines Kommentars ist zu diskutieren.
+                     ;;
+                     ;; OPEN
                      (:comment "Bedeutung von »3.« unklar.")
                      (:flag :observe) (:id 4))))
    (:music 2203

@@ -271,7 +271,7 @@
                  (:coord-barre "MZ5 N1")
                  (:coord-norm "G5")
                  (:comment "Original: Das ♭ für B♭ in der Signatur beim Schlüssel steht eine Position tiefer.")
-                 (:flat :ready) (:id 2))
+                 (:flag :ready) (:id 2))
            (:key-signature nil nil :flat nil nil nil :flat)
            b22 sb0 b22 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b22 sb10 b22
            (:section s13) cclef7 fl29 fl5 fl6 (:key-signature nil nil :flat nil nil :flat :flat)
@@ -678,12 +678,15 @@
           (:text 70 58
                  (98 900 "Qui finiſcono tutti glʼordini di tutte le"))
           (:text 70 58
-                 (0 1009 "chiaui ſcritte in tutte le righe di tutte le"))
+            (0 1009 "chiaui ſcritte in tutte le righe di tutte le"))
           (:text 110 58
-                 (0 841 "parti della noſtra prattica ᴍuſicale."))
+            (0 841 "parti della noſtra prattica ᴍuſicale."))
           (:music 1045
                   b125 b125 b125 b125 b125 b125 b125 b125 b22 b22 b38))
-                 (:coord-barre "MZ35-36 (S4 MZ9-10)")
-                 (:coord-norm "–")
+         (:coord-barre "MZ35-36 (S4 MZ9-10)")
+         (:coord-norm "–")
+         ;; JK: Entscheidung notwendig.
+         ;;
+         ;; OPEN
          (:comment "Dieser Text (»Qui finiscono ...«) kann entweder im Notenbeispiel oder im Haupttext erscheinen. Ist zu diskutieren. Im Moment steht er in der diplomatischen und idealisierten Transkription, nicht aber in der normalisierten.")
          (:flag :observe) (:id 16))))

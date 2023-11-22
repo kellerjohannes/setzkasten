@@ -86,6 +86,9 @@
                  (:critical sbd3)
                  (:coord-barre "MZ2 N9")
                  (:coord-norm "G3 St2 N4")
+                 ;; JK: Frage an Luigi.
+                 ;;
+                 ;; OPEN
                  (:comment "In gewissen Quellen fehlt hier ein enharmonischer Punkt. [Luigi: Quellen müssen genannt werden].")
                  (:flag :observe) (:id 1))
            b22 b38 bl

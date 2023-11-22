@@ -60,7 +60,7 @@
                  (:coord-barre "MZ3 N6")
                  (:coord-norm "G5 N3")
                  (:comment "Original: F.")
-                 (:flag :draft) (:id 1))
+                 (:flag :ready) (:id 1))
            b22 sh4 b22 sb4 b22 sh5 b22 sb5 b22 sb6 b22 sh7 b22 sb7 b22 sh8 b22 sb8 b38 bl
            (:section s6) b22 sh1 b22 sb1 b22 sh2
            (:alt (:diplomatic mrest1)

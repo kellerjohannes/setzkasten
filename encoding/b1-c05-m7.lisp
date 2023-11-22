@@ -13,14 +13,15 @@
     (s2 (:alt (:it "da ♭faBmi ...")
               (:de "")
               (:en "from ♭faBmi ...")
-              (:comment "Darstellung unbefriedigend, ist zu diskutieren.") (:flag :observe) (:id 3)
               ;; JK: Die Darstellung von G2-G3 ist zu diskutieren. Notfalls kann sie so bestehen
               ;; bleiben, sollte aber nochmals bestätigt werden.
+              ;;
               ;; OPEN
               ))
     (s3 (:alt (:it "... a C")
               ;; Kommentar Anne: auch hier würde ich die Silben direkt unter den Noten und unter
               ;; einander setzen.
+              ;;
               ;; OPEN
               (:de "")
               (:en "... to C")))
@@ -78,12 +79,14 @@
           (2012 nil "à ᴇ."))
    (:music 2202
            ;; JK: Achtung, siehe Maniates S. 65, ev. Korrekturen nötig
+           ;;
            ;; OPEN
            (:voice v1)
            (:section s1) (:f-clef) max7 fclef7 sb2 b22 sbd2 b22 fl3 b22 sb3 b22 fl3 b22 sbd3 b22 sb3 bl
            (:section s2) b22 fl3 b22 sb3 b22 fl3 b22 sbd3 bl
            ;; JK: diese Zeile soll in Lilypond in zwei Systeme geteilt werden, das untere als ossia
            ;; in Klammern
+           ;;
            ;; OPEN
            (:section s3) sb3 b22 sbd3 b22 sb4 bl
            (:section s4) sb4 b22 sbd4 b22 fl5 b22 sb5 b22 fl5 b22 sbd5 b22 sb5 bl

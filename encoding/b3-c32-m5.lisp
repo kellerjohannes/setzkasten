@@ -53,6 +53,9 @@
                  (:critical nat5)
                  (:coord-barre "MZ1 N8")
                  (:coord-norm "G3 St1 N2")
+                 ;; JK: Entscheidung notwendig.
+                 ;;
+                 ;; OPEN
                  (:comment "Original: B♭ (ohne ♮ notiert). Offene Frage, ob diese Idealisierung vorgenommen werden soll oder nicht.")
                  (:flag :observe) (:id 1))
            m5 sb6 b22 bl

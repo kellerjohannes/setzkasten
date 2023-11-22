@@ -78,6 +78,7 @@
            ;; Kommentar Anne: Beispiele 18-22 brauchen ein b im Bassschlüssel.
            ;; JK: Danke, habe ich ergänzt! Da in der Quelle kein ♭ steht, habe ich es in den Bericht
            ;; aufgenommen.
+           ;;
            ;; DONE
            (:voice v1)
            (:section s1) cclef7 b38 sb3 b38 sb4 b38 bl

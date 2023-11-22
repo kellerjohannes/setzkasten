@@ -136,6 +136,9 @@
                  (:critical m10 b38 m7 b38 sb9)
                  (:coord-barre "MZ5 N10-12 / MZ6 N15-17")
                  (:coord-norm "G18")
+                 ;; JK: Soll das nur in einem Kommentar erwähnt werden? Keine Idealisierung?
+                 ;;
+                 ;; OPEN
                  (:comment "In diesem Beispiel kommt keine Sexte vor. Eine Idealisierung könnte in Betracht gezogen werden. Es wurde keine Idealisierung vorgenommen")
                  (:flag :observe) (:id 2))
            b38 bl

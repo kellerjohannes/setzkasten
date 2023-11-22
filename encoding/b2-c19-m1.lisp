@@ -61,6 +61,7 @@
                  ;; ein Problem ist. Kannst du damit leben, dass der Punkt ergänzt ist?
                  ;; Alternativ müsste ich schauen, ob ich ihn einpflegen, aber unsichtbar machen
                  ;; kann.
+                 ;;
                  ;; OPEN
                  (:flag :ready) (:id 1))
            bl

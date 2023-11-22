@@ -87,8 +87,8 @@
     (s9 v3 (:alt (:it "Cadentia del tenore")
                  (:de "")
                  (:en "")))
-
     ;; Hier könnte "Cadentia del basso" für alle übrigen sections ergänzt werden. Zu diskutieren.
+    ;;
     ;; OPEN
     (s4 v4 (:alt (:it "Cadentia del soprano")
                  (:de "")
@@ -114,12 +114,16 @@
            ;; - Argument für F♯: es geht hier nicht um eine Gegenüberstellung von
            ;;   diatonischem und chromatischem Material, deshalb ist es naheliegend,
            ;;   hier ein fis zu ergänzen
+           ;;
            ;; OPEN
            (:section s1) cclef1 mrest5 sb5
            (:alt (:diplomatic)
                  (:critical)
                  (:coord-barre "MZ1 N2")
                  (:coord-norm "G1 St1 N2")
+                 ;; JK: Entscheidung oder Kommentar notwendig.
+                 ;;
+                 ;; OPEN
                  (:comment "Hier kann die Ergänzung eines ♯ diskutiert werden. Argumente für beide Varianten liegen vor.")
                  (:flag :observe) (:id 1))
            m4 sb5 bl

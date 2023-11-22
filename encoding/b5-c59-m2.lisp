@@ -723,5 +723,5 @@
                  (:coord-barre "MZ37 (S4 MZ9) N22")
                  (:coord-norm "G63 N11")
                  (:comment "Kein Eingriff, Ġ entspricht dem B♭ in G55.")
-                 (:flag :observe) (:id 18))
+                 (:flag :ready) (:id 18))
            bl)))

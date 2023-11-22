@@ -39,6 +39,7 @@
               ;; danach für die andere Möglichkeiten. Dies ist kaum zu erkennen von der jetzige
               ;; Darstellung. Ich habe die englische Darstellung entsprechend (hoffentlich) meine
               ;; Vorstellungen eingerichtet.
+              ;;
               ;; OPEN
               (:de "")
               (:en "la, mi, re,\\ut, fa, sol\\per natura,\\per ♭,\\per ♮")))

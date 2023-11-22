@@ -9,6 +9,7 @@
                  ;; they're what it says in the original…)
                  ;;
                  ;; JK: add »grado o salto«?
+                 ;;
                  ;; OPEN
                  (:en "Example of the più di quinta imperfetta accidentale, composto and incomposto ")))
    (:section-captions
@@ -17,6 +18,7 @@
     ;;
     ;; JK: Not sure: I would treat this as a shorthand for 'grado o salto della più di quinta
     ;; imperfetta accidentale'. We could add 'grado o salto', what do you think?
+    ;;
     ;; OPEN
     (s1 (:alt (:it "più di quinta\\imperfetta\\naturale\\composto")
               (:de "")
@@ -54,6 +56,7 @@
   ;; where to put the comment.
   ;;
   ;; JK: soll so bleiben, akzeptabel?
+  ;;
   ;; OPEN
 
   (:data

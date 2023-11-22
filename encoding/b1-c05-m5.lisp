@@ -52,12 +52,7 @@
               (:en "per nat.: mi-mi-fa\\la in descent")))
     (s7 (:alt (:it "per nat.: fa-re-mi-fa-sol\\per ♭: fa-re-mi-fa-re")
               (:de "")
-              (:en "per nat.: fa-re-mi-fa-sol\\per ♭: fa-re-mi-fa-re")
-              (:comment "Original: »per ♭: fa-re-mi-fa-re«. Von Anne zu bestätigen.")
-              ;; Kommentar Anne: Original ist gut, ich habe das italienische zurück korrigiert
-              ;; JK: gut!
-              ;; DONE
-              (:flag :redundant) (:id 3)))
+              (:en "per nat.: fa-re-mi-fa-sol\\per ♭: fa-re-mi-fa-re")))
     (s8 (:alt (:it "per nat.: sol-re-mi-fa-re\\per b: re-mi-fa-re-mi\\per ♮: ut-re-mi-fa-re")
               (:de "")
               (:en "per nat.: sol-re-mi-fa-re\\per b: re-mi-fa-re-mi\\per ♮: ut-re-mi-fa-re")))))

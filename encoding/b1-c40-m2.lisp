@@ -10,12 +10,14 @@
     (s1 (:alt (:it "gradi della prima quinta\\accidentale per semitono\\minore [ascendente] composto")
               ;; Kommentar Anne: there is no "ascendente" in this caption in the original.
               ;; JK: Danke, ich habe [...] ergänzt.
+              ;;
               ;; DONE
               (:de "")
               (:en "steps of the first quinta\\accidentale composta ascending\\with semitoni minori")))
     (s2 (:alt (:it "gradi della prima quinta\\accidentale per semitono\\maggiore ascendente composto")
               ;; Kommentar Anne: ascendente is in this caption, but not in the previous one.
               ;; JK: Danke, habe die Klammern entfernt.
+              ;;
               ;; DONE
               (:de "")
               (:en "steps of the first quinta\\accidentale composta ascending\\with semitoni maggiori")))

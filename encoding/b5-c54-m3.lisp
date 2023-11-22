@@ -63,6 +63,6 @@
                  (:coord-barre "MZ2 N16")
                  (:coord-norm "G6 N5")
                  (:comment "Original: Ġ fehlt im Original.")
-                 (:flag :draft) (:id 2))
+                 (:flag :ready) (:id 2))
            sbd5 sbd6 sbd7 b22 bl
            (:section s7) (:newline) b38 sbd0 b22 sbd1 sbd2 sbd3 sbd4 sbd5 fl6 sbd6 b22 sbd7 bl)))

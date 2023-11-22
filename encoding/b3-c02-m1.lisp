@@ -18,7 +18,10 @@
               (:en "Third quarta"))))
    (:section-captions
     (s1 (:alt (:it "Composta / incomposta")
-    ;;Kommentar Anne: Willst du wirklich composta gross schreiben beid den section captions?
+              ;; Kommentar Anne: Willst du wirklich composta gross schreiben beid den section
+              ;; captions?
+              ;;
+              ;; OPEN
               (:de "")
               (:en "composta / incomposta")))
     (s2 (:alt (:it "Composta / incomposta")

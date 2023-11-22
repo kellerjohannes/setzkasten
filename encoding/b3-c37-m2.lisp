@@ -31,6 +31,7 @@
      (1545 nil "Qu arta quīta.")
      ;; JK: Punkt ist hier nach unten verschoben, stillschweigend idealisiert.
      ;; Soll in den Bericht aufgenommen werden.
+     ;;
      ;; OPEN
      (1954 nil "4. quinta."))
    (:music 2225

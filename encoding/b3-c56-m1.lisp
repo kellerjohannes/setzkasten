@@ -54,8 +54,9 @@
            ;; JK: Das `:newline' hier stellt eine Art von Idealisierung dar, denn es gruppiert die
            ;; letzten vier Takte unter dem Titel (`:line-heading') "Voci mobili del genere
            ;; enarmonico".
-
+           ;;
            ;; JK: Soll ev. im Bericht kommentiert werden.
+           ;;
            ;; OPEN
            (:section s13) (:newline)b22 b38 sb3 b38 sbd3 b38 sb4 b38 b22 bl
            (:section s14) b38 b22 sb6 b38 sbd6 b38 sb7 b38 b22

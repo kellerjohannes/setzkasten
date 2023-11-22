@@ -42,13 +42,11 @@
    (:music 2214
            (:section s1)
            (:voice v1)
-           (:alt (:diplomatic cclef3)
-                 (:critical cclef3)
-                 (:coord-barre "MZ1 N1")
-                 (:coord-norm "G1 St1 N1")
-                 (:comment "Bibelgruppe: Verdacht auf Schlüsselfehler. Scheint aber korrekt zu sein, deshalb soll hier keine Idealisierung stattfinden.")
-                 (:flag :observe) (:id 1))
-           b38 sb5 b22 bl
+           ;; JK: Bibelgruppe: Verdacht auf Schlüsselfehler. Scheint aber korrekt zu sein, deshalb
+           ;; soll hier keine Idealisierung stattfinden.
+           ;;
+           ;; OPEN
+           cclef3 b38 sb5 b22 bl
            (:voice v2) b22 sb3 b22 bl
            b22 b38 b38 b38 bl
            (:section s2)

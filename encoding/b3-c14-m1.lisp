@@ -17,7 +17,9 @@
               (:de "")
               (:en "Third quarta"))))
    (:section-captions
-   ;;Kommentar Anne: Same question
+    ;; Kommentar Anne: Same question
+    ;;
+    ;; OPEN
     (s1 (:alt (:it "Composta / incomposta")
               (:de "")
               (:en "composta / incomposta")))

@@ -17,6 +17,7 @@
               ;; Notenschrift gezeigt werden soll. So erscheinen sie dann auch in den Übertragungen
               ;; (siehe «Madonna il poco dolce»). Für die originale Gestalt gibt es ja das Fake-
               ;; Simile, auf das man mit einem Klick umschalten kann. Ich würde das so lassen.
+              ;;
               ;; DONE
               (:de "")
               (:en "for the first\\half")))

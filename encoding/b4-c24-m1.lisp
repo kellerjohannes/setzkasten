@@ -7,8 +7,12 @@
     (:alt (:it "Decima maggiore all'ottava nei fini et nel basso, ne gl'alti")
           (:de "")
           (:en "")
-          (:comment "Es ist zu diskutieren, ob Sections 1 und 2 als eine zusammengehörende Section dargestellt werden soll. In dieser Form ist die Aufteilung in Bezug auf die Überschrift nicht schlüssig.")
-          (:draft :observer) (:id 1))
+          ;; JK: Es ist zu diskutieren, ob Sections 1 und 2 als eine zusammengehörende Section
+          ;; dargestellt werden soll. In dieser Form ist die Aufteilung in Bezug auf die Überschrift
+          ;; nicht schlüssig.
+          ;;
+          ;; OPEN
+          )
     (:alt (:it "Quinta imperfetta")
           (:de "")
           (:en "")))
@@ -50,6 +54,7 @@
      (1630 nil "quinta")
      ;; der Punkt nach 'imperfetta' liegt markant zu hoch, wurde stillschweigend idealisiert
      ;; JK: soll im Bericht erscheinen
+     ;;
      ;; OPEN
      (1948 nil "imperfetta."))
    (:music 2245

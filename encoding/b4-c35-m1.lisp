@@ -10,9 +10,10 @@
    ;; Das zweite Beispiel ist in zweistimmiger Partitur gesetzt. Es gibt
    ;; keine alternativen Fassungen davon zu rekonstruieren.
    ;; Verlangt nach einer vertieften Betrachtung.
-
+   ;;
    ;; Im Moment gibt es keine ergänzenden Elemente, nur das musikalische Material in direkter
    ;; Übertragung, das auch in der Quelle vorliegt.
+   ;;
    ;; OPEN
    (:section-captions
     (s1 (:alt (:it "A quattro voci")
@@ -21,9 +22,7 @@
    (:line-headings
     (:alt (:it "La prima volta il soprano fara due pause, et l'altra volta le tre parti,\\faranno le due pause del soprano,\\et quello cantera senza pause.")
           (:de "")
-          (:en "")
-          (:comment "Es ist zu diskutieren, ob für dieses Beispiel eine Auflösung angeboten werden soll.")
-          (:flag :observe) (:id 1)))
+          (:en "")))
    (:voice-labels
     (s1 v1 (:alt (:it "Soprano")
                  (:de "")

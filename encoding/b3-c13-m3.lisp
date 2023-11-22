@@ -29,7 +29,9 @@
               (:de "")
               (:en "Seventh ottava"))))
    (:section-captions
-   ;;Kommentar Anne: Do you really want composta capitalized?
+    ;; Kommentar Anne: Do you really want composta capitalized?
+    ;;
+    ;; OPEN
     (s1 (:alt (:it "Composta / incomposta")
               (:de "")
               (:en "composta / incomposta")))

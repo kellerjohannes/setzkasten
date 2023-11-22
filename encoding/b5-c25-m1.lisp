@@ -130,5 +130,5 @@
                  (:coord-barre "MZ4 N11")
                  (:coord-norm "G8 St2 N1")
                  (:comment "Original: Ė.")
-                 (:flag :ready) (:id 0))
+                 (:flag :ready) (:id 3))
            b38 bl)))

@@ -6,10 +6,12 @@
    (:title (:alt (:it "Esempio di comporre la quinta imperfetta\\a due voci, et a più in vari modi")
                  (:de "")
                  (:en "Example of composing the quinta imperfetta\\in two or more voci, in various ways")
-                 (:comment "Das ganze Beispiel: akut zu diskutieren, insbesondere der zweite Tenor in der dritten Section. Maniates macht eine alternative Stimmverteilung. Alternativ könnte der Tenor stark korrigiert werden.")
-                 ;; (Siehe Kommentar unten)
+                 ;; JK: Das ganze Beispiel: akut zu diskutieren, insbesondere der zweite Tenor in
+                 ;; der dritten Section. Maniates macht eine alternative Stimmverteilung. Alternativ
+                 ;; könnte der Tenor stark korrigiert werden.
+                 ;;
                  ;; OPEN
-                 (:flag :observe) (:id 1)))
+                 ))
    (:section-headings
     (s1 (:alt (:it "A due voci")
               (:de "")
@@ -77,12 +79,13 @@
            ;; - Alto + Alto: ok
            ;; - Alto + Tenore + Tenore: Probleme mit dem zweiten Tenor
            ;; - Tenore + Basso + Basso: seltsam, aber ok.
-
+           ;;
            ;; Entweder ist die Lesart zu ändern (wie Maniates), oder der
            ;; problematische Tenor ist (stark) zu korrigieren.
-
+           ;;
            ;; Diese Frage ist offen, im Moment wird nichts idealisiert, das ist
            ;; akut zu diskutieren
+           ;;
            ;; OPEN
            (:section s1)
            (:voice v1) cclef5 b22 sb9 b22 sb8 b22 sb7 b22

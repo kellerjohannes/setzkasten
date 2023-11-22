@@ -6,9 +6,10 @@
    (:title (:alt (:it "Essempio del grado o salto della terza manco di minore,\\overo minima, composto e incomposto")
                  ;; Kommentar Anne: Sollte es nicht "composta e incomposta" heissen, d.h. Korrektur
                  ;; des Originals?
-
+                 ;;
                  ;; JK: Hatte ich bereits diskutiert, Konsens war: 'composto e incomposto' beziehen
                  ;; sich auf 'grado o salto', nicht auf 'terza'. Akzeptabel?
+                 ;;
                  ;; DONE
                  (:de "")
                  (:en "Example of the step or leap of the terza manco di minore,\\or minima, composto and incomposto")))

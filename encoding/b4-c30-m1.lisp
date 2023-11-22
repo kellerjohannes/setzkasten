@@ -10,13 +10,19 @@
     (s2 (:alt (:it " \\Non buona pronuntia")
               (:de "")
               (:en "")
-              (:comment "Nach aktuellem Stand ist es nicht möglich, hier die Taktsignatur zu unterdrücken. Soll dies getan werden, oder ist die ergänzte Taktsignatur sinnvoll?")
-              (:flag :observe) (:id 1)))
+              ;; JK: Nach aktuellem Stand ist es nicht möglich, hier die Taktsignatur zu
+              ;; unterdrücken. Soll dies getan werden, oder ist die ergänzte Taktsignatur sinnvoll?
+              ;;
+              ;; OPEN
+              ))
     (s3 (:alt (:it "Si pronuntia la sillaba\\sotto la nera per bisogno")
               (:de "")
               (:en "")
-              (:comment "Nach aktuellem Stand ist es nicht möglich, hier die Taktsignatur zu unterdrücken. Soll dies getan werden, oder ist die ergänzte Taktsignatur sinnvoll?")
-              (:flag :observe) (:id 2))))
+              ;; JK: Nach aktuellem Stand ist es nicht möglich, hier die Taktsignatur zu
+              ;; unterdrücken. Soll dies getan werden, oder ist die ergänzte Taktsignatur sinnvoll?
+              ;;
+              ;; OPEN
+              )))
    (:voice-order
     (s1 v1)
     (s2 v1)

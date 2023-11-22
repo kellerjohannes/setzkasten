@@ -10,6 +10,7 @@
     (s1 (:alt (:it "Quintadecima con\\ottava in mezzo\\ ")
               ;; Kommentar Anne: no need for backslashes without any content thereafter
               ;; JK: dito.
+              ;;
               ;; DONE
               (:de "")
               (:en "Quintadecima with an\\ottava in the middle")))

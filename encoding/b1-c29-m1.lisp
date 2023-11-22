@@ -12,6 +12,7 @@
               ;; haben "grado di terza"
               ;; JK: Konsens ist nun, alle mit Zahlen abgekürzten Intervalle voll auszuschreiben
               ;; in der modernen Notenschrift. Kann also so bleiben wie es ist.
+              ;;
               ;; DONE
               (:de "")
               (:en "step of terza\\maggiore\\naturale")))

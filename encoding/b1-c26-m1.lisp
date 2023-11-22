@@ -15,6 +15,7 @@
               ;; with later chapters).
               ;;
               ;; JK: 3 ersetzt, Endungen belassen, da Referenz auf 'grado'. Akzeptabel?
+              ;;
               ;; OPEN
               (:de "")
               (:en "step of terza\\minore\\naturale\\incomposto")))

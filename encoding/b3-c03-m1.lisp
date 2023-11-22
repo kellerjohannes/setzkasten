@@ -21,7 +21,9 @@
               (:en "Fourth quinta"))))
    (:section-captions
     (s1 (:alt (:it "Composta / incomposta")
-    ;;Kommentar Anne: Willst du hier composta wirklich gross schreiben?
+              ;; Kommentar Anne: Willst du hier composta wirklich gross schreiben?
+              ;;
+              ;; OPEN
               (:de "")
               (:en "composta / incomposta")))
     (s2 (:alt (:it "Composta / incomposta")

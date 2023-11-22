@@ -150,7 +150,7 @@
                  (:coord-barre "MZ5 N12")
                  (:coord-norm "St1 T40 N1")
                  (:comment "Dieser Klang besteht im Original aus folgenden Noten (BTAS): D, Ȧ, F♯, Ḋ. Es sind drei Idealisierungen denkbar: 1. Der komplette Klang wird mit Punkten erhöht, wodurch ein fragwürdiges Ḟ♯ entsteht, das gemäss Vicentinos Notenschrift als G♭ notiert werden sollte, was wiederum ein grosser Eingriff in den originalen Notentext ist. 2. Der komplette Klang wird ohne Punkte verstanden, wodurch die Punkte in Sopran und Tenor entfernt werden müssen. 3. Im Bass wird ein Punkt ergänzt, wodurch eine ungewöhnliche _terza manca di minore_ zwischen Bass und Alt entsteht. Für die Aufnahme wurde Variante 1. bevorzugt, da sie eine interessante Symmetrie zur letzten Kadenz des Stücks bildet und da eine Finalis in T. 40 ohne Punkte notorisch problematisch zu intonieren war.")
-                 (:flag :draft) (:id 4))
+                 (:flag :ready) (:id 4))
            b22 mrest7 b22 sb8 b22 m8 b22 brd6 b38
            (:alt (:diplomatic sbd7)
                  (:critical sb7)
@@ -270,7 +270,7 @@
                  (:coord-barre "MZ11 N5")
                  (:coord-norm "St2 T36 N2")
                  (:comment "Original: E. Siehe Kommentar Nr. 9.")
-                 (:flag :draft) (:id 10))
+                 (:flag :ready) (:id 10))
            b38 brd7 b22 m8 b38 m5d b38 m8 b22 fl9 b22 m9 dot10
            fl9 b38 sm9 b38 md8 b22 sbd7
            (:alt (:diplomatic sh8 sb8)
@@ -294,6 +294,9 @@
            (:alt (:diplomatic br10) (:critical brd10) (:tatti brd10)
                  (:coord-barre "MZ12 N9")
                  (:coord-norm "St2 T47")
+                 ;; JK: Frage an Luigi, zu verifizieren.
+                 ;;
+                 ;; OPEN
                  (:comment "Original: A. In gewissen Quellen ist ein enharmonischer Punkt zu erkennen.")
                  (:flag :observe) (:id 12))
            sh8
@@ -375,7 +378,7 @@
                  (:coord-barre "MZ17 N10")
                  (:coord-norm "St3 T40 N1")
                  (:comment "Soll nicht idealisiert werden, stattdessen wird an dieser Stelle die Note im Bass mit einem Punkt ergänzt. Siehe Kommentar Nr. 4.")
-                 (:flag :draft) (:id 17))
+                 (:flag :ready) (:id 17))
            mrest5
            sb5 b22 m5d b22 sbd5 md8 b22 md8 b22 sb8 b22 m8 b22 md8 b22 sbrest9 b22
            (:alt (:diplomatic sb8) (:critical sbd8) (:tatti sbd8)

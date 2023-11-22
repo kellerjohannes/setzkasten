@@ -80,7 +80,7 @@
                  (:coord-barre "MZ2 N2")
                  (:coord-norm "G1 St2 N2")
                  (:comment "Original: E♯.")
-                 (:flag :draft) (:id 1))
+                 (:flag :ready) (:id 1))
            b22 bl
            b38 b38 sbd5 b38 b38 sb5 b38 b38 b38 bl
            (:section s2) b38 fl4 b38 sb4 b38 bl

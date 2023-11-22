@@ -37,14 +37,14 @@
                  (:coord-barre "MZ1 N15")
                  (:coord-norm "—")
                  (:comment "Original: Kein Punkt in der ersten Taktsignatur.")
-                 (:flag :draft) (:id 1))
+                 (:flag :ready) (:id 1))
            b22
            (:alt (:diplomatic met-imperf-min)
                  (:critical met-imperf-maj)
                  (:coord-barre "MZ1 N15")
                  (:coord-norm "–")
                  (:comment "Original: Kein Punkt in der zweiten Taktsignatur.")
-                 (:flag :draft) (:id 2))
+                 (:flag :ready) (:id 2))
            b22 sb1 b22 m2 b22 sb3 b22 sb4 b22 m5 bl)
    (:text 110 58
           (107 nil "punti di ritorno")

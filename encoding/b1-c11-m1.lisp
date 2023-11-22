@@ -15,6 +15,7 @@
               ;; Kommentar Anne: bessere Unterlegung der Silben unter den Noten in allen Sprachen?
               ;; JK: meinst du im Sinn von gesungenem Text?
               ;; NEU Kommentar Anne: Ja, ich meine im Sinn von gesungenem Text.
+              ;;
               ;; OPEN
               (:de "")
               (:en "in ♮: ut-re-mi-fa-re")))

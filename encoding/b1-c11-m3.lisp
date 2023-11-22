@@ -13,6 +13,9 @@
     (s2 (:alt (:it "per ♭ molle:\\la-sol-fa-mi-re")
               (:de "")
               (:en "per ♭ molle:\\la-sol-fa-mi-re")
+              ;; JK: Zu bestätigen.
+              ;;
+              ;; OPEN
               (:comment "Maniates: korrigiert zu »la sol fa la sol«, möglicherweise auf der Basis der _mani enarmonici_. Es soll hier keine Korrektur vorgenommen werden.")
               (:flag :observe) (:id 1)))
     (s3 (:alt (:it "per natura:\\sol-fa-la-sol-fa-mi-mi")

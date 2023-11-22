@@ -7,11 +7,13 @@
                  (:de "")
                  (:en "Example of naturali and accidentali cadences,\\in two voci, of musica participata and mista\\which evade their conclusion")))
    (:section-headings
+    ;; JK: »A due voci« steht im Original nur ein einziges Mal und wird für sämtliche folgende
+    ;; Sections ergänzt. Gut so?
+    ;;
+    ;; OPEN
     (s1 (:alt (:it "A due voci")
-              (:de "")  
-              (:en "In two voci")
-              (:comment "»A due voci« steht im Original nur ein einziges Mal und wird für sämtliche folgende Sections ergänzt.")
-              (:flag :observe) (:id 1)))
+              (:de "")
+              (:en "In two voci")))
     (s2 (:alt (:it "[A due voci]")
               (:de "")
               (:en "In two voci")))

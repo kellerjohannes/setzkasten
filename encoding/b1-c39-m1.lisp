@@ -7,6 +7,7 @@
                  ;; David: The overall caption should have "incomposta" not "incomposto".
                  ;;
                  ;; JK: I changed it in :it and :en.
+                 ;;
                  ;; DONE
                  (:de "")
                  (:en "Example of the quinta naturale incomposta")))
@@ -28,6 +29,7 @@
     ;;
     ;; JK: Würde ein :line-title erfordern, ist möglich, ich finde es aber inhaltlich deutlicher wie
     ;; es ist. Akzeptabel?
+    ;;
     ;; OPEN
     (s5 (:alt (:it "prima quinta")
               (:de "")

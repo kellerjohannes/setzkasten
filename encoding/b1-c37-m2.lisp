@@ -34,6 +34,7 @@
   ;; where to put the comment.
   ;;
   ;; JK: soll so bleiben, akzeptabel?
+  ;;
   ;; OPEN
   (:data
    (:text 90 58

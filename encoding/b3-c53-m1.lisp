@@ -133,7 +133,7 @@
                  (:coord-barre "MZ6 N17")
                  (:coord-norm "St2 T8 N1")
                  (:comment "Ḟ♯.")
-                 (:flag :draft) (:id 2))
+                 (:flag :ready) (:id 3))
            sh9 m9 b38 sbd9 b38 m9 b38 b38 b38)
    (:text 90 58
           (210 nil "Madonna")
@@ -197,7 +197,7 @@
                  (:coord-barre "MZ11")
                  (:coord-norm "—")
                  (:comment "Original: Das ♭ in der Vorzeichnung steht eine Position höher.")
-                 (:flag :ready) (:id 3))
+                 (:flag :ready) (:id 4))
            (:key-signature nil nil nil nil nil nil :flat)
            b22 b38 met-imperf-min-dim b38 (:ligature-start :natural :flat nil nil) nat4 br6 (:ligature-end) b22 brd5 b38 sb7 b22 sb6 b22 sb7 b38 sbd8 b38 sbd8 b38 mrest7 b38
            m8 b22 fl9 b22 sb9 dot10 fl9 b22 m9 b38 sbd8 b38 sbd8 b38 sb9 b38 sbd8 b38 mrest5

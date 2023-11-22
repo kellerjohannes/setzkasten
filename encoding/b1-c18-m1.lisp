@@ -37,7 +37,7 @@
               ;; belassen, aber ich bin einverstanden, es zu idealisieren. Allerdings schlage ich
               ;; eine andere Idealisierung vor, siehe :it-Text und Vorschlag für die Englische
               ;; Übersetzung. Ich habe das auch im Fake-Simile entsprechend angepasst.
-
+              ;;
               ;; OPEN
               (:de "")
               (:en "diesis maggiore\\enarmonico incomposto")))))

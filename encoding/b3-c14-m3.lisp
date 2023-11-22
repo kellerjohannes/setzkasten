@@ -29,7 +29,9 @@
               (:de "")
               (:en "Seventh ottava"))))
    (:section-captions
-   ;;Kommentar Anne: same question
+    ;; Kommentar Anne: same question
+    ;;
+    ;; OPEN
     (s1 (:alt (:it "Composta / incomposta")
               (:de "")
               (:en "composta / incomposta")))

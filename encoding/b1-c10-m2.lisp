@@ -6,8 +6,7 @@
    (:section-captions
     (s1 (:alt (:it "spetie cromatica\\semitono cromatico")
               (:de "")
-              (:en "")
-              (:comment "Original: »tono cro.«") (:flag :suggestion) (:id 3)))
+              (:en "")))
     (s2 (:alt (:it "spetie cromatica\\tono cromatico")
               (:de "")
               (:en "")))

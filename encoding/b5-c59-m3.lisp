@@ -216,7 +216,7 @@
     (s59 v1 "treble_8")))
 
   (:data
-   ;; Seite 1, fol. 136v, S. 271
+   ;; Seite 1, fol. 136v, S. 275
 
    (:text 110 58
      (347 nil "Primo ordine Diatonico.")
@@ -342,7 +342,7 @@
 
    (:vspace 200)
 
-   ;; Seite 2
+   ;; Seite 2, fol. 138r, S. 276
 
    (:text 110 58
      (347 nil "Terzo ordine Diatonico.")
@@ -570,7 +570,7 @@
                  (:coord-barre "MZ27 (S3 MZ8) N12")
                  (:coord-norm "G53 N1")
                  (:comment "Original: Das ♯ steht eine Position höher.")
-                 (:flat :ready) (:id 9))
+                 (:flag :ready) (:id 9))
            sb0 sh1 sb1 sb2
            (:alt (:diplomatic sh3 sb3 fl5 sbd5 sh5 sb5 sh6 sb6 fl8 sbd8 fl9 sbd9 sh9 sb9 sh10 sb10)
                  (:critical b38 sb3 sh4 sb4 sb5 sb6 sh7 sb7 sh8 sb8 sb9 sb10)

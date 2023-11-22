@@ -6,6 +6,7 @@
    ;; JK: Achtung, hier habe ich zusätzliche Text-Typen definiert, :de-kursiv und :en-kursiv, um
    ;; typographische Tests zu machen. Das muss nach einer Entscheidung zur Kursivierung rück-
    ;; gängig gemacht werden.
+   ;;
    ;; OPEN
    (:title (:alt (:it "Essempio dei gradi di terza minore accidentale, composti e incomposti")
                  (:de "Beispiel der Schritte der terza minore accidentale, composti e incomposti")
@@ -20,6 +21,7 @@
               ;; and "incomposta".
               ;;
               ;; JK: 3 ersetzt, Endungen belassen.
+              ;;
               ;; OPEN
               (:de "Schritt der terza minore\\accidentale incomposto")
               (:de-kursiv "Schritt der _terza minore_\\_accidentale incomposto_")

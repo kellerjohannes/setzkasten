@@ -15,16 +15,13 @@
               ;; Kommentar Anne: bessere Verteilung der Silben unter den Noten in allen Sprachen?
               ;; JK: meinst du im Sinn von gesungenem Text?
               ;; NEU Kommentar Anne: Ja
+              ;;
               ;; OPEN
               (:de "")
-              (:en "per ♮: ut-re-mi-fa-re")
-              (:comment "»per ♮:« analog zu b1-c11-m1 ergänzt.")
-              (:flag :redundant) (:id 5)))
+              (:en "per ♮: ut-re-mi-fa-re")))
     (s2 (:alt (:it "per ♭: re-mi-fa-re-mi")
               (:de "")
-              (:en "per ♭: re-mi-fa-re-mi")
-              (:comment "»per ♭:« analog zu b1-c11-m1 ergänzt.")
-              (:flag :redundant) (:id 6)))))
+              (:en "per ♭: re-mi-fa-re-mi")))))
   (:data
    (:text 90 58
           (36 691 "Tono diuiſo in 4. parti aſcen.")

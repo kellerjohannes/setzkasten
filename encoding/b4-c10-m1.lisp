@@ -18,16 +18,16 @@
    ;; * 6 schwarze Notation
    ;;     Keine Unterscheidung zu alternativer Notation, nur schwarze Notenwerte
    ;;     werden verwendet für die Notation ('note nere' als rein deskriptive Form)
-
+   ;;
    ;; Auflösung der schwarzen Notation in der Normalisierung noch nicht geklärt (inhaltlich unklar)
    ;; zu diskutieren: Wie ist die schwarze Notation in Lilypond darzustellen?
    ;; Anne: mit eckigen Klammerfragmenten (nicht identisch mit der Klammer, die für chromatisch
    ;; und enharmonische Ligaturen verwendet wird).
-
+   ;;
    ;; Zu s3: Federico sieht entweder eine triolisierende Interpretation, oder (eher wahrscheinlich)
    ;; nach Willi Apel eine punktierte Interpretation, d.h. der erste Color entspricht der
    ;; rhythmischen Figur zu Beginn der Phrase.
-
+   ;;
    ;; OPEN
    (:section-headings
     (s1 (:alt (:it "Esempio delle note colorite nel canto fermo")
@@ -72,11 +72,15 @@
            ;; JK: Hier ist ausnahmsweise eine Abweichung zwischen Idealisierung und
            ;; Normalisierung beabsichtigt, denn die schwarze Notation wird hier als punktierte
            ;; Figur (siehe erste zwei Noten dieser Phrase) gelesen.
+           ;;
+           ;; OPEN
            b22 sm6 b22 m5 b22 m4 b22 sb5 b22
            brbl3 b22 sbbl2
            ;; JK: Hier ist ausnahmsweise eine Abweichung zwischen Idealisierung und
            ;; Normalisierung beabsichtigt, denn die schwarze Notation wird hier als punktierte
            ;; Figur (siehe erste zwei Noten dieser Phrase) gelesen.
+           ;;
+           ;; OPEN
            b22 m1 b22 b22 sb8 b22 m7 b38 br8 b38 bl
            (:section s4) (:newline) b38 brbl1 b22 sbbl2 b22 sbbl3 b22 sbbl4 b22 sbbl5 b22 brbl1 b22 brbl8 b22 brbl7 b22 br8 b38 bl)
    (:text 90 58

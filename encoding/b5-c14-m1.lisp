@@ -109,7 +109,7 @@
                  (:coord-barre "MZ2 N7")
                  (:coord-norm "G3 St2 N2")
                  (:comment "Original: B♭.")
-                 (:flag :draft) (:id 3))
+                 (:flag :ready) (:id 3))
            bl
            fl3 sb3
            (:alt (:diplomatic b22 sbd2)

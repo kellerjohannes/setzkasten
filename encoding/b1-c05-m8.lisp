@@ -33,19 +33,14 @@
               (:de "")
               (:en "per natura: la-sol-fa-la-sol\\mi and re in ascent")))
     (s2 (:alt (:it "[per natura: sol-fa-la-sol-fa\\re ascendere]")
-              ;; Kommentar Anne: ich würde nur re per ascendere schreiben.
-              ;; JK: gut, gemacht
-              ;; DONE
               (:de "")
               (:en "per natura: sol-fa-la-sol-fa\\re in ascent")))
     (s3 (:alt (:it "per natura: fa-mi-la\\[per ascendere] fa-mi-mi")
-              ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
-              ;; JK: gut, gemacht, in eckigen Klammern
-              ;; DONE
               (:de "")
               (:en "per natura: fa-mi-la\\fa-mi-mi in ascent")))
     ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
     ;; JK: ich habe hier 'in ascent' im Englischen ergänzt, ohne eckige Klammern, ist das in Ordnung?
+    ;;
     ;; OPEN
 
     (s4 (:alt (:it "per ♮: la-sol-fa-mi-re\\la-sol-fa-la-sol\\mi per ascendere")
@@ -57,20 +52,24 @@
     (s6 (:alt (:it "per natura: fa-mi-mi [per ascendere]")
               ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
               ;; JK: ich habe es danach und in eckigen Klammern ergänzt. Gut so?
+              ;;
               ;; OPEN
               (:de "")
               (:en "per natura: fa-mi-mi [per ascendere]")))
     ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
     ;; JK: ich habe es danach und in eckigen Klammern ergänzt. Gut so?
+    ;;
     ;; OPEN
     (s7 (:alt (:it "per ♭: fa-mi-la\\fa-mi-mi [per ascendere]")
               ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
               ;; JK: ich habe es danach und in eckigen Klammern ergänzt. Gut so?
+              ;;
               ;; OPEN
               (:de "")
               (:en "per ♭: fa-mi-la\\fa-mi-mi in ascent")))))
   ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
   ;; JK: ich habe es im Englischen ergänzt, gut so?
+  ;;
   ;; OPEN
   (:data
    (:text 70 58 (0 2198 "ᴍano ᴇnarmonica , con ſemitoni maggiori diſcendenti nel principio del tono,con il tono, in quattro"))

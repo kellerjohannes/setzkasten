@@ -52,6 +52,7 @@
               ;; notes. This may mean that it would be better to turn this phrase around, i.e. "per
               ;; discendere fa-mi-la" in order to get the spacing correct. The same is true for the
               ;; German and English.
+              ;;
               ;; OPEN
               (:de "")
               (:en "per ♮: mi-mi-fa-mi-re\\per ♭: fa-mi-la in descent")))))

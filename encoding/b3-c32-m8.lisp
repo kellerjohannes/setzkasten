@@ -33,6 +33,9 @@
                  (:critical sh8)
                  (:coord-barre "MZ1 N9")
                  (:coord-norm "G3 St1 N4")
+                 ;; JK: Entscheidung notwendig.
+                 ;;
+                 ;; OPEN
                  (:comment "Original: Kein ♯. Diskutable Ergänzung. Im Original möglicherweise aus Platzgründen weggelassen.")
                  (:flag :observe) (:id 1))
            m8 sb9 bl
@@ -54,14 +57,18 @@
            ;; della terza minore discendente' geschieht, was dem Prinzip einer
            ;; 'bell'aria' mehr entspricht als wenn der Querstand durch ein ♭ im
            ;; Alt vermieden würde.
-
+           ;;
            ;; Das beträfe die m4, vor die ein fl4 gesetzt werde müsste. Zu diskutieren.
+           ;;
            ;; OPEN
            (:section s4) b38 b22 m6 b22 b22
            (:alt (:diplomatic)
                  (:critical)
                  (:coord-barre "MZ2 N12")
                  (:coord-norm "G4 St2 N2")
+                 ;; JK: Entscheidung oder Kommentar notwendig.
+                 ;;
+                 ;; OPEN
                  (:comment "Möglichkeit der Ergänzung eines ♭ (fl4) zur Vermeidung des Querstands zwischen Alt und Bass. Solche Querstände sind jedoch typisch für Vicentinos Kompositionsweise.")
                  (:flag :observe) (:id 2))
            m4 b22 b22 sb3 b22 b22 bl

@@ -32,8 +32,8 @@
     (s7 v1 "treble_8")))
   (:data
    (:text 110 58
-          (331 nil "prima ottaua Enarmonica")
-          (1422 nil "ſeconda ottaua ᴇnarmonica"))
+     (331 nil "prima ottaua Enarmonica")
+     (1422 nil "ſeconda ottaua ᴇnarmonica"))
    (:music 2202
            (:voice v1)
            (:section s1) (:f-clef) max7 fclef7 sb2 b22 sbd2 fl5 b22 sb5 sb5 b22 sbd5
@@ -46,19 +46,19 @@
            sb8 b22 fl8 b22 sbd8 b38 sb8 b22 sbd8 fl9 b22 sb9 fl9 b22 sbd9 b22 sb9 bl
            (:section s2) sb3 sh5 b22 sb5 fl6 b22 sbd6 b22 sb6 sh8 b22 sb8 fl9 b22 sbd9 sb9 sbd9 fl10 sb10 fl10 sbd10 b22 sb10 bl)
    (:text 90 58
-          (256 nil "terza ottaua Enarmonica")
-          (1241 nil "quarta ottaua Enarmonica"))
+     (256 nil "terza ottaua Enarmonica")
+     (1241 nil "quarta ottaua Enarmonica"))
    (:music 2207
            (:section s3) (:newline) cclef7 b22 sb0 b22 sbd0 fl1 b22 sb1 sb3 b22 sbd3 fl4 b22 sb4 b22 fl4 b22 sbd4 b22 sb4 b22 sbd4 fl5 b22 sb5 b22 sb7 bl
            (:section s4) sb1 b22 sbd1 fl4 b22 sb4 b22 fl4 b22 sbd4 b22 sb4 b22 sbd4 b22 sbd6 b22 sb7 b22 sbd7 fl8 b22 sb8 b38 fl8 b22 sbd8 b38 sb8 bl)
    (:text 90 58
-          (250 nil "quinta ottaua Enarmonica")
-          (1293 nil "ſeſta ottaua Enarmonica"))
+     (250 nil "quinta ottaua Enarmonica")
+     (1293 nil "ſeſta ottaua Enarmonica"))
    (:music 2225
            (:section s5) (:newline) cclef5 sb0 sh2 b22 b22 sb2 fl3 sbd3 sb3 b22 sbd3 fl6 b22 sb6 b22 fl6 sbd6 sb6 sbd6 fl7 b22 sb7 b22 fl7 sbd7 sb7 bl
            (:section s6) sb1 b22 sbd1 fl2 b22 sb2 fl2 b22 sbd2 fl4 b22 sbd4 b22 sb4 b22 sbd4 fl7 b22 sb7 b22 fl7 b22 sbd7 b22 sb7 b38 sbd7 sb8 bl)
    (:text 90 58
-          (327 nil "ſettima ottaua Enarmonica"))
+     (327 nil "ſettima ottaua Enarmonica"))
    (:music 2214
            ;; Bibelgruppe:
            ;; - Generell ist die Konsequenz zu überprüfen, mit der die bereits
@@ -76,10 +76,11 @@
            ;;   fragwürdig, denn sie hat keinen Ton an der Position der Quarte oder
            ;;   der Quinte. D.h. das Konstruktionsprinzip der Kombination von
            ;;   "quarte" und "quinte" lässt sich hier nicht nachvollziehen.
-
+           ;;
            ;; Eine Idealisierung würde hier eine komplette Neustrukturierung bedeuten, was
            ;; der Absicht der Edition widerspricht. Ev. müsste dies separat kommentiert werden
            ;; und eine neu strukturierte 'settima ottava' vorgeschlagen werden.
+           ;;
            ;; OPEN
            (:section s7) (:newline)
            (:alt (:diplomatic  )

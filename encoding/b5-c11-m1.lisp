@@ -102,6 +102,9 @@
                  (:critical sbd5)
                  (:coord-barre "MZ2 N5")
                  (:coord-norm "G2 St2 N1")
+                 ;; JK: Frage an Luigi.
+                 ;;
+                 ;; OPEN
                  (:comment "In gewissen Quellen fehlt hier der enharmonische Punkt. [Luigi: Quellen zu benennen.]")
                  (:flag :observe) (:id 2))
            bl

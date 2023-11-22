@@ -266,7 +266,7 @@
                  (:coord-barre "MZ5 N11")
                  (:coord-norm "G5 N11")
                  (:comment "Original: A.")
-                 (:flag :ready) (:id 0))
+                 (:flag :ready) (:id 1))
            bl)
    (:text 110 58
      (213 nil "Primo ordine ᴄromatico & Enar."))
@@ -291,7 +291,7 @@
                  (:coord-barre "MZ7 N11")
                  (:coord-norm "G7 N11")
                  (:comment "Original: D.")
-                 (:flag :ready) (:id 0))
+                 (:flag :ready) (:id 2))
            bl)
    (:text 110 58
      (178 nil "Primo ordine ᴄromatico & Enar."))
@@ -316,14 +316,14 @@
                  (:coord-barre "MZ9 N8")
                  (:coord-norm "G9 N8")
                  (:comment "Original: Ḋ♭.")
-                 (:flag :ready) (:id 0))
+                 (:flag :ready) (:id 3))
            fl8 sb8 sbd8 b38
            (:alt (:diplomatic sb10)
                  (:critical fl10 sb10)
                  (:coord-barre "MZ9 N11")
                  (:coord-norm "G9 N11")
                  (:comment "Original: G.")
-                 (:flag :ready) (:id 0))
+                 (:flag :ready) (:id 4))
            b22 bl)
 
 
@@ -358,7 +358,7 @@
                  (:coord-barre "MZ11 (S2 MZ2) N22")
                  (:coord-norm "G20 N11")
                  (:comment "Original: G.")
-                 (:flag :ready) (:id 0))
+                 (:flag :ready) (:id 5))
            bl)
    (:text 110 58
      (321 nil "Secondo ordine ᴄromatico.")
@@ -371,7 +371,7 @@
                  (:coord-barre "MZ12 (S2 MZ3) N11")
                  (:coord-norm "G12 N11")
                  (:comment "Original: E.")
-                 (:flag :ready) (:id 0))
+                 (:flag :ready) (:id 6))
            b22
            (:section s21) cclef1 fl0 b22 sb0 b22 sb1 b22 sb2 b22 fl3 b22 sb3 b22 sb4 b22 sb5 b22 fl6 b22 sb6 b22 fl7 sb7 b22 sb8 b22 sb9
            (:alt (:diplomatic b22 sb10)
@@ -379,7 +379,7 @@
                  (:coord-barre "MZ12 (S2 MZ3) N22")
                  (:coord-norm "G21 N11")
                  (:comment "Original: E.")
-                 (:flag :ready) (:id 0))
+                 (:flag :ready) (:id 7))
            b22 bl)
    (:text 110 58
      (323 nil "Secondo ordine ᴄromatico.")
@@ -396,7 +396,7 @@
                  (:coord-barre "MZ13 (S2 MZ4) N11")
                  (:coord-norm "G13 N11")
                  (:comment "Original: B♮.")
-                 (:flag :ready) (:id 0))
+                 (:flag :ready) (:id 8))
            b22
            (:section s22)
            (:alt (:original-layout)
@@ -414,7 +414,7 @@
                  (:coord-barre "MZ14 (S2 MZ5) N1")
                  (:coord-norm "G14 N1")
                  (:comment "Original: E.")
-                 (:flag :draft) (:id 0))
+                 (:flag :ready) (:id 9))
            sb0 sbd0 b22 fl2 sb2 b22 fl3 sb3 b22 sbd3 sbd4 b22 fl6 sb6 b22 fl7 sb7 b22 sbd7 b22 fl9 sb9 fl10 sb10 b38
            (:section s23) cclef5 b38 fl0 sb0 b22 sb1 b22 sb2 b22 fl3 sb3 b22 fl4 sb4 b22 sb5 b22 fl6 sb6 b22 fl7 b22 sb7 b22 sb8 b22 sb9 fl10 sb10 b38 bl)
    (:text 110 58
@@ -429,7 +429,7 @@
                  (:coord-barre "MZ15 (S2 MZ6) N22")
                  (:coord-norm "G24 N11")
                  (:comment "Original: Nach der letzten Note (F♭) steht ein Ḟ.")
-                 (:flag :ready) (:id 0))
+                 (:flag :ready) (:id 10))
            b22 bl)
    (:text 110 58
      (335 nil "Secondo ordine ᴄromatico.")
@@ -457,7 +457,7 @@
                  (:coord-barre "MZ17 (S2 MZ8) N11")
                  (:coord-norm "G17 N11")
                  (:comment "Original: A.")
-                 (:flag :ready) (:id 0))
+                 (:flag :ready) (:id 11))
            b22
            (:section s26) (:f-clef) max7 fclef7 b22 fl0 sb0 b22 fl1 sb1 b22 fl2 sb2 b22 sbd2 sbd3 b22 fl5 sb5 b22 sbd5 b22 sbd6 b22 fl8 sb8 b22 fl9 sb9 sbd9 b22 bl)
    (:text 110 58
@@ -512,7 +512,7 @@
                  (:coord-barre "MZ22 (S3 MZ3) N7")
                  (:coord-norm "G30 N7")
                  (:comment "Original: A.")
-                 (:flag :ready) (:id 0))
+                 (:flag :ready) (:id 12))
            b22 fl7 sb7 b22 sbd7 b22 fl9 sb9 fl10 sb10 b22
            (:section s39) cclef1 fl0 b22 sb0 b22 sb1 b22 sb2 b22 fl3 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 fl7 sb7 b22 sb8 b22 sb9 fl10 sb10 b22 b22 bl)
    (:text 110 58
@@ -581,7 +581,7 @@
                  (:coord-barre "MZ28 (S3 MZ9) N10")
                  (:coord-norm "G36 N10")
                  (:comment "Original: Ė♭.")
-                 (:flag :ready) (:id 0))
+                 (:flag :ready) (:id 13))
            sbd8 fl10 sb10 b22 bl
            (:section s45) (:f-clef) b22 max9 fclef9 b22 fl0 sb0 b22 fl1 sb1 sb2 b22 fl3 sb3 b22 fl4 sb4 fl5 sb5 sb6 fl7 sb7 fl8 sb8 b22 sb9 fl10 sb10 bl)
    (:vspace 110)
@@ -682,7 +682,7 @@
                  (:coord-barre "MZ37 (S4 MZ8) N11")
                  (:coord-norm "G53 N11")
                  (:comment "Original: B♭.")
-                 (:flag :ready) (:id 0))
+                 (:flag :ready) (:id 14))
            (:section s62)
            (:f-clef) max7 fclef7 b38 fl0 sb0 b22 fl1 sb1 b22 fl2 sb2 b22 fl3 sb3 b22 sbd3 b22 fl5 sb5 b22 fl6 sb6 b22 sbd6 b22 fl8 b22 sb8 fl9 sb9 sbd9 b38 bl)
    (:text 110 58

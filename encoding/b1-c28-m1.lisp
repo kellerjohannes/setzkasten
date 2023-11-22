@@ -10,6 +10,7 @@
                  ;;
                  ;; JK: I didn't notice, I suggest to idealise this. Agreed? How does this work for
                  ;; the English translations (I haven't touched it)?
+                 ;;
                  ;; OPEN
                  (:de "")
                  (:en "Example of the steps of the terza più di minore composto and incomposto")))
