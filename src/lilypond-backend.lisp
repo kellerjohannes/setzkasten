@@ -745,7 +745,7 @@
 (defun generate-formatted-text (format-list)
   (do ((rest-list format-list (rest (rest rest-list)))
        (result nil))
-      ((null rest-list) result)
+      ((null rest-list) (concatenate 'string "\\concat { " result " } "))
     (let ((qualifier (first rest-list))
           (content (second rest-list)))
       (cond ;; ((or (null content) (string= content "")) nil)
@@ -885,7 +885,7 @@ dot = {
 ~2,0t\\center-column {
 ~@[~{~4,0t\\line {
 ~6,0t\\center-align
-~6,0t\\fontsize#3 { \\concat {~a} }
+~6,0t\\fontsize#3 { ~a }
 ~8,0t\\vspace #1
 ~4,0t}~}
 ~4,0t\\null~]
@@ -960,7 +960,8 @@ dot = {
                        (voices section)))))))
 
 
-(defun exec-lilypond (input &key (output "")
+(defun exec-lilypond (input &key
+                              (output "")
                               (lilypond-path *lilypond-path*)
                               (output-format :svg-cropped))
   (case output-format
@@ -1011,10 +1012,12 @@ dot = {
                                                 (pathname
                                                  (case (output-format backend)
                                                    (:svg-cropped
-                                                    (format nil "~a-~a.svg"
+                                                    ;; suffix removed (.svg), testing
+                                                    (format nil "~a-~a"
                                                             (filename score-instance) suffix))
                                                    (:pdf-multipage
-                                                    (format nil "~a-~a.pdf"
+                                                    ;; suffix removed (.pdf), testing
+                                                    (format nil "~a-~a"
                                                             (filename score-instance) suffix))))))
     (when (eq (output-format backend) :svg-cropped)
       (rename-file (merge-pathnames *lilypond-export-path*
@@ -1024,7 +1027,8 @@ dot = {
                    (merge-pathnames *lilypond-export-path*
                                     (pathname (format nil "~a-~a.svg"
                                                       (filename score-instance)
-                                                      suffix))))))
+                                                      suffix)))))
+    )
   (format nil "~a-~a" (filename score-instance) suffix))
 
 
