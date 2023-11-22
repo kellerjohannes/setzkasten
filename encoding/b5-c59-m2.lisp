@@ -355,14 +355,14 @@
            (:section s21) gclef3 b22 sbd0 fl1 b22 sbd1 sbd2 b22 sbd3 b22 fl4 b22 sbd4 fl5 b22 sbd5 sbd6 b22 sbd7 b22 fl8 b22 sbd8 b22
            (:alt (:diplomatic sb9)
                  (:critical sbd9)
-                 (:coord-barre "MZ3 N21")
+                 (:coord-barre "MZ12 (S2 MZ3) N21")
                  (:coord-norm "G21 N10")
                  (:comment "Original: F.")
                  (:flag :ready) (:id 3))
 
            (:alt (:diplomatic b38)
                  (:critical sbd10)
-                 (:coord-barre "MZ3 N22")
+                 (:coord-barre "MZ12 (S2 MZ3) N22")
                  (:coord-norm "G21 N11")
                  (:comment "Original: G fehlt.")
                  (:flag :ready) (:id 4))
@@ -421,7 +421,7 @@
            (:section s17) (:f-clef) max7 fclef7 (:key-signature nil nil nil nil nil nil nil) b22 sbd0 b22 sbd1 fl2 sbd2 fl3 b22 sbd3 b22 sbd4 fl5 b22 sbd5 fl6 b22 sbd6 sbd7 sbd8 b22 fl9 sbd9 fl10
            (:alt (:diplomatic sb10)
                  (:critical sbd10)
-                 (:coord-barre "MZ8 N11")
+                 (:coord-barre "MZ17 (S2 MZ8) N11")
                  (:coord-norm "G17 N11")
                  (:comment "Original: B♭.")
                  (:flag :ready) (:id 5))
@@ -558,7 +558,7 @@
            (:f-clef) max7 fclef7 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b22
            (:alt (:diplomatic fl10)
                  (:critical fl10)
-                 (:coord-barre "MZ1 N22")
+                 (:coord-barre "MZ29 (S4 MZ1) N22")
                  (:coord-norm "G55 N11")
                  (:comment "Das B♭ ist unregelmässig, aber musikalisch interessant.")
                  (:flag :ready) (:id 6))
@@ -573,7 +573,7 @@
            gclef3 (:key-signature nil nil nil nil nil nil nil) sbd0 b22 sbd1 b22 fl3 sb3 b22 fl4 sb4 b22 sbd4 b22 sbd5 b22 fl7 b22 sb7 b22 sbd7 b22 sbd8 b22 fl10 sb10 b22
            (:alt (:diplomatic sbd10)
                  (:critical sbd10)
-                 (:coord-barre "MZ2 N22")
+                 (:coord-barre "MZ30 (S4 MZ2) N22")
                  (:coord-norm "G56 N11")
                  (:comment "Kein Eingriff, Ġ entspricht dem B♭ in G55.")
                  (:flag :ready) (:id 7))
@@ -586,7 +586,7 @@
            (:section s48) cclef1 b38 sbd0 b38 sbd1 b38 sbd2 b38 sbd3 b38 fl5 b38 sb5
            (:alt (:diplomatic)
                  (:critical b38 sbd5)
-                 (:coord-barre "MZ3 N6")
+                 (:coord-barre "MZ31 (S4 MZ3) N6")
                  (:coord-norm "G48 N6")
                  (:comment "Original: Ġ fehlt.")
                  (:flag :ready) (:id 8))
@@ -595,7 +595,7 @@
            cclef1 b22 sbd0 b22 fl2 sb2 b22 fl3 sb3 b22 sb4 b22 fl5 sb5 b22 fl6 b22 sb6 b22 fl7 b22 sb7 sbd7 b22 fl9 b22 sb9 fl10 sb10 b22
            (:alt (:diplomatic sbd10)
                  (:critical sbd10)
-                 (:coord-barre "MZ3 N22")
+                 (:coord-barre "MZ31 (S4 MZ3) N22")
                  (:coord-norm "G57 N11")
                  (:comment "Kein Eingriff, Ġ entspricht dem B♭ in G55.")
                  (:flag :ready) (:id 9))
@@ -617,7 +617,7 @@
            cclef3 b22 sbd0 b22 sbd1 b22 sbd2 b22 fl4 b22 sb4 b22 sbd4 b22 sbd5 b22 fl7 b22 sb7 b22 sbd7 b22 sbd8 b22 sbd9 b22
            (:alt (:diplomatic sbd10)
                  (:critical sbd10)
-                 (:coord-barre "MZ4 N22")
+                 (:coord-barre "MZ32 (S4 MZ4) N22")
                  (:coord-norm "G58 N11")
                  (:comment "Kein Eingriff, Ċ entspricht dem B♭ in G55.")
                  (:flag :ready) (:id 10))
@@ -632,7 +632,7 @@
            cclef5 b22 sbd0 b22 fl2 sb2 b22 fl3 sb3 b22 fl4 sb4 b22 sbd4 b22 fl6 sb6 b22 fl7 sb7 b22 sbd7 b22 fl9 sb9 fl10 sb10
            (:alt (:diplomatic sbd10)
                  (:critical sbd10)
-                 (:coord-barre "MZ5 N22")
+                 (:coord-barre "MZ33 (S4 MZ5) N22")
                  (:coord-norm "G59 N11")
                  (:comment "Kein Eingriff, Ȧ entspricht dem B♭ in G55.")
                  (:flag :ready) (:id 11))
@@ -645,14 +645,14 @@
            (:section s51) cclef7 b22 sbd0 b22 fl1 b22 sbd1 b22 fl2 b22 sbd2 b22 sbd3 b22 sbd4 b22 fl5 b22 sbd5 b22 fl6
            (:alt (:diplomatic sb6)
                  (:critical sbd6)
-                 (:coord-barre "MZ6 N7")
+                 (:coord-barre "MZ34 (S4 MZ6) N7")
                  (:coord-norm "G51 N7")
                  (:comment "Original: B♭.")
                  (:flag :ready) (:id 12))
            b22 sbd7
            (:alt (:diplomatic b22)
                  (:critical fl8)
-                 (:coord-barre "MZ6 N9")
+                 (:coord-barre "MZ34 (S4 MZ6) N9")
                  (:coord-norm "G51 N9")
                  (:comment "Original: Ḋ.")
                  (:flag :ready) (:id 13))
@@ -661,7 +661,7 @@
            cclef7 b22 sbd0 b22 sbd1 b22 sbd2 b22 fl4 b22 sb4 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b22
            (:alt (:diplomatic sbd10)
                  (:critical sbd10)
-                 (:coord-barre "MZ6 N22")
+                 (:coord-barre "MZ34 (S4 MZ6) N22")
                  (:coord-norm "G60 N11")
                  (:comment "Kein Eingriff, Ḟ entspricht dem B♭ in G55.")
                  (:flag :ready) (:id 14))
@@ -683,7 +683,7 @@
            (:f-clef) max5 fclef5 (:key-signature nil nil nil nil nil nil nil) b22 sbd0 b22 fl2 sb2 b22 fl3 sb3 fl4 sb4 b22 sbd4 b22 fl6 sb6 b22 fl7 sb7 sbd7 fl9 sb9 fl10 sb10
            (:alt (:diplomatic sbd10)
                  (:critical sbd10)
-                 (:coord-barre "MZ7 N22")
+                 (:coord-barre "MZ35 (S4 MZ7) N22")
                  (:coord-norm "G61 N11")
                  (:comment "Kein Eingriff, Ḋ entspricht dem B♭ in G55.")
                  (:flag :ready) (:id 15))
@@ -698,7 +698,7 @@
            (:f-clef) max7 fclef7 b38 sbd0 b38 sbd1 b38 sbd2 b38 sbd3 b38 sbd4 b38 sbd5 b38 sbd6 b38 sbd7 b22 sbd8 b22 sbd9
            (:alt (:diplomatic fl10 b22 sbd10)
                  (:critical fl10 b22 sbd10)
-                 (:coord-barre "MZ8 N22")
+                 (:coord-barre "MZ35 (S4 MZ8) N22")
                  (:coord-norm "G62 N11")
                  (:comment "Kein Eingriff, Ḃ♭ entspricht dem B♭ in G55.")
                  (:flag :ready) (:id 16))
@@ -713,14 +713,14 @@
            (:f-clef) max9 fclef9 b22 sbd0 b22
            (:alt (:diplomatic fl1)
                  (:critical b38)
-                 (:coord-barre "MZ9 N13")
+                 (:coord-barre "MZ37 (S4 MZ9) N13")
                  (:coord-norm "G63 N2")
                  (:comment "Original: Ė♭.")
                  (:flag :ready) (:id 17))
            sbd1 b22 fl3 sb3 b22 fl4 sb4 sbd4 b22 sbd5 b22 fl7 sb7 b22 sbd7 b22 sbd8 fl10 b22 sb10 b22
            (:alt (:diplomatic sbd10)
                  (:critical sbd10)
-                 (:coord-barre "MZ9 N22")
+                 (:coord-barre "MZ37 (S4 MZ9) N22")
                  (:coord-norm "G63 N11")
                  (:comment "Kein Eingriff, Ġ entspricht dem B♭ in G55.")
                  (:flag :observe) (:id 18))

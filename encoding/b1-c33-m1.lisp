@@ -8,10 +8,6 @@
                  (:en "Example of the leap and the steps of the quarta accidentale, incomposta and composta")))
    (:section-captions
     (s1 (:alt (:it "salto di quarta\\accidentale\\incomposta")
-              ;; Kommentar Anne Hier haben Beispiele 2 und 6 das Wort quarta ausgeschrieben,
-              ;; ansonsten Nummern.
-              ;; JK: dito.
-              ;; DONE
               (:de "")
               (:en "leap of a quarta\\accidentale\\incomposta")))
     (s2 (:alt (:it "gradi di quarta\\accidentale\\composta")
@@ -25,9 +21,7 @@
               (:en "leap of quarta\\accidentale\\incomposta")))
     (s5 (:alt (:it "gradi di quarta\\accidentale\\composta")
               (:de "")
-              (:en "steps of quarta\\accidentale\\composta")
-              (:comment "Original: »... acci. accidentale ...«.")
-              (:flag :draft) (:id 1)))
+              (:en "steps of quarta\\accidentale\\composta")))
     (s6 (:alt (:it "salto di quarta\\accidentale\\incomposta")
               (:de "")
               (:en "leap of quarta\\accidentale\\incomposta")))))

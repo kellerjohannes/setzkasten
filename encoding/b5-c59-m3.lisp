@@ -221,6 +221,7 @@
    (:text 110 58
      (347 nil "Primo ordine Diatonico.")
      (1411 nil "Secondo ordine ᴅiatonico."))
+   ;; MZ1
    (:music 2352
            (:voice v1)
            (:section s1) gclef3 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b125
@@ -232,6 +233,7 @@
    (:text 110 58
      (341 nil "Primo ordine ᴄro.")
      (1409 nil "ᴅel secondo ordine cro."))
+   ;; MZ2
    (:music 2343
            (:section s2)
            (:alt (:original-layout (:newline))
@@ -242,6 +244,7 @@
    (:text 110 58
      (343 nil "Del primo ordine Cro. & ᴇnar.")
      (1404 nil "Del secondo ordine ᴄro."))
+   ;; MZ3
    (:music 2350
            (:section s3)
            (:alt (:original-layout (:newline))
@@ -265,6 +268,7 @@
    (:text 110 58
      (350 nil "Del primo ordine Cro.")
      (1391 nil "ᴅel secondo ordine ᴄro."))
+   ;; MZ4
    (:music 2332
            (:section s4)
            (:alt (:original-layout (:newline))
@@ -279,6 +283,7 @@
    (:text 110 58
      (345 nil "Del primo ordine Cro. & ᴇnar.")
      (1388 nil "ᴅel secondo ordine Cro."))
+   ;; MZ5
    (:music 2339
            (:section s5)
            (:alt (:original-layout (:newline))
@@ -289,6 +294,7 @@
    (:text 110 58
      (343 nil "Del primo ordine Crom.")
      (1416 nil "ᴅel seoncdo ordine ᴄro."))
+   ;; MZ6
    (:music 2323
            (:section s6)
            (:alt (:original-layout (:newline))
@@ -299,6 +305,7 @@
    (:text 110 58
      (339 nil "Del primo ordine ᴄro. & Enar.")
      (1372 nil "Del seoncdo ordine Cro."))
+   ;; MZ7
    (:music 2324
            (:section s7)
            (:alt (:original-layout (:newline))
@@ -313,6 +320,7 @@
    (:text 110 58
      (350 nil "Del primo ordine ᴄro.")
      (1372 nil "Del secondo ordine ᴄro."))
+   ;; MZ8
    (:music 2315
            (:section s8)
            (:alt (:original-layout (:newline))
@@ -323,6 +331,7 @@
    (:text 110 58
      (345 nil "Del primo ordine Cro.")
      (1384 nil "ᴅel secondo ordine Cro."))
+   ;; MZ9
    (:music 2323
            (:section s9)
            (:alt (:original-layout (:newline))
@@ -338,6 +347,7 @@
    (:text 110 58
      (347 nil "Terzo ordine Diatonico.")
      (1404 nil "Quarto ordine ᴅiatonico."))
+   ;; MZ10
    (:music 2351
            (:section s19)
            (:alt (:original-layout)
@@ -352,6 +362,7 @@
    (:text 110 58
      (339 nil "Del terzo ordine ᴄro. et En.")
      (1421 nil "ᴅel quarto ordine ᴄro."))
+   ;; MZ11
    (:music 2334
            (:section s20) gclef3 sh0 sb0 sh1 sb1 fl3 sbd3 sh3 sb3 sh4 sb4 sh5 sb5 sh6 sb6 sh7 sb7 sh8 sb8 fl10 sbd10 sh10 sb10 b38
            (:section s29)
@@ -359,13 +370,14 @@
    (:text 110 58
      (339 nil "Del terzo ordine Cro. & ᴇnar.")
      (1370 nil "Del quarto ordine ᴄro."))
+   ;; MZ12
    (:music 2332
            (:section s21) cclef1 sh0 sb0 fl2 sbd2 fl3 sbd3 sh3 sb3 fl5 sbd5 fl6 sbd6 sh6 sb6 sh7 sb7 fl9 sbd9 fl10 b22 sbd10 sh10 sb10 b22
            (:section s30)
            cclef1 sh0 sb0 sh1 sb1 sh2 sb2 sh3 sb3 fl5 sbd5 sh5 sb5 sh6 sb6 sh7 sb7
            (:alt (:diplomatic fl9 sbd9)
                  (:critical sh8 sb8)
-                 (:coord-barre "MZ3 N20")
+                 (:coord-barre "MZ12 (S2 MZ3) N20")
                  (:coord-norm "G30 N9")
                  (:comment "Original: Ḋ♭.")
                  (:flag :ready) (:id 3))
@@ -373,6 +385,7 @@
    (:text 110 58
      (346 nil "Del terzo ordine Cro.")
      (1373 nil "ᴅel quarto ordine ᴄro."))
+   ;; MZ13
    (:music 2336
            (:section s22)
            (:alt (:original-layout)
@@ -387,6 +400,7 @@
    (:text 110 58
      (341 nil "Del terzo ordine Cro. et ᴇn.")
      (1375 nil "ᴅel quarto ordine Cro."))
+   ;; MZ14
    (:music 2336
            (:section s23) cclef5 sh0 sb0 fl2 sbd2 fl3 sbd3 sh3 sb3 sh4 sb4 fl6 sbd6 sh6 sb6 sh7 sb7 fl9 sbd9 fl10 sbd10 sh10 sb10
            (:section s32)
@@ -394,13 +408,14 @@
    (:text 110 58
      (348 nil "Del terzo ordine Crom.")
      (1400 nil "ᴅel quarto ordine ᴄro."))
+   ;; MZ15
    (:music 2334
            (:section s24) cclef7 sh0 sb0 sh1 sb1 sh2 sb2 sh3 sb3 sh4 sb4 sh5 sb5 sb6 sh7 sb7 sh8 sb8 sh9 sb9 sh10 sb10 b38
            (:section s33)
            cclef7 b22 sh0 sb0 b22 sb1 b22 sb2 b22 sh3 sb3 sh4 sb4 b22 sb5 b22 sb6 b22 sh7 b22 sb7
            (:alt (:diplomatic sh8)
                  (:critical)
-                 (:coord-barre "MZ6 N20")
+                 (:coord-barre "MZ15 (S2 MZ6) N20")
                  (:coord-norm "G33 N9")
                  (:comment "Original: D♯.")
                  (:flag :ready) (:id 4))
@@ -408,6 +423,7 @@
    (:text 110 58
      (346 nil "Del terzo ordine ᴄro. et ᴇn.")
      (1394 nil "Del quarto ordine Cro."))
+   ;; MZ16
    (:music 2339
            (:section s25)
            (:alt (:original-layout)
@@ -416,7 +432,7 @@
            (:f-clef) max5 fclef5 sh0 sb0 sh1 sb1 fl3 sbd3 sh3 sb3 sh4 sb4 fl6 sbd6 sh6 sb6 sh7 sb7 sh8 sb8
            (:alt (:diplomatic sh9 sb9)
                  (:critical fl10 sbd10)
-                 (:coord-barre "MZ7 N10")
+                 (:coord-barre "MZ16 (S2 MZ7) N10")
                  (:coord-norm "G25 N10")
                  (:comment "Original: C♯.")
                  (:flag :ready) (:id 5))
@@ -428,7 +444,7 @@
            (:f-clef) max5 fclef5 sh0 sb0 sb1 sh2 sb2 sh3 sb3 sh4 sb4 sh5 sb5 sh6 sb6 sh7 sb7
            (:alt (:diplomatic sh8 sb8)
                  (:critical b38 sb8)
-                 (:coord-barre "MZ7 N20")
+                 (:coord-barre "MZ16 (S2 MZ7) N20")
                  (:coord-norm "G34 N9")
                  (:comment "Original: B♯.")
                  (:flag :ready) (:id 6))
@@ -436,6 +452,7 @@
    (:text 110 58
      (352 nil "Del terzo ordine ᴄro.")
      (1371 nil "Del quarto ordine ᴄro."))
+   ;; MZ17
    (:music 2325
            (:section s26) (:f-clef) max7 fclef7 b22 sh0 sb0 sh1 sb1 sh2 sb2 sb3 b22 sh4 sb4 b22 sh5 sb5 b22 sb6 sh7 sb7 b22 sh8 sb8 sh9 sb9 sb10 b38
            (:section s35)
@@ -443,10 +460,12 @@
    (:text 110 58
      (257 nil "Del terzo ordine Cro. et ᴇn.")
      (1368 nil "ᴅel quarto ordine Cro."))
+   ;; MZ18
    (:music 2321
            (:section s27) (:f-clef) max9 fclef9 sh0 sb0 sh1 sb1 fl3 sbd3 sh3 sb3 sh4 sb4 sh5 sb5 sh6 sb6 sh7 sb7 sh8 sb8 fl10 sbd10 sh10 sb10 b38
            (:section s36) (:f-clef) max9 fclef9 b22 sh0 sb0 sb1 sh2 sb2 sh3 sb3 sh4 sb4 sb5 sh6 sb6 sh7 sb7 sb8 sh9 sb9 sh10 sb10 bl)
    (:vspace 110)
+   ;; MZ19
    (:music 2323
            b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b22 b22 b125)
 
@@ -455,6 +474,7 @@
    (:text 110 58
      (267 nil "Del quinto ordine ᴅiat.nat.")
      (1447 nil "Del Seſto ordine nat. ᴅiat."))
+   ;; MZ20
    (:music 2347
            (:section s37)
            (:alt (:original-layout)
@@ -469,17 +489,19 @@
    (:text 110 58
      (165 nil "Quinto ordine ᴄromatico & Enar.")
      (1404 nil "Seſto ordine ᴄromatico & ᴇnar."))
+   ;; MZ21
    (:music 2343
            (:section s38) gclef3 b38 sh0 sb0 sh1 sb1 fl3 sbd3 sh3 sb3 sh4 sb4 sh5 sb5 fl7 sbd7 sh7 sb7 sh8 sb8 fl10 sbd10 sh10 sb10
            (:section s47) gclef3 b22 sh0 sb0 sh1 sb1 sh2 sb2 sh3 sb3 sh4 sb4 sb5 sh6 sb6 sh7 sb7 sh8 sb8 sh9 sb9 sh10 sb10 b22 bl)
    (:text 110 58
      (167 nil "quinto ordine ᴄromatico& ᴇnar.")
      (1420 nil "Seſto ordine ᴄromatico & ᴇnar."))
+   ;; MZ22
    (:music 2339
            (:section s39) cclef1 b22 sh0 sb0 fl2 sbd2 fl3 sbd3 sh3 sb3 fl5 sbd5 fl6
            (:alt (:diplomatic sb6)
                  (:critical sbd6)
-                 (:coord-barre "MZ3 N6")
+                 (:coord-barre "MZ22 (S3 MZ3) N6")
                  (:coord-norm "G39 N6")
                  (:comment "Original: A♭.")
                  (:flag :ready) (:id 7))
@@ -488,6 +510,7 @@
    (:text 110 58
      (166 nil "quinto ordine ᴄromatico& ᴇnar.")
      (1379 nil "Seſto ordine ᴄromatico & Enar."))
+   ;; MZ23
    (:music 2330
            (:section s40)
            (:alt (:original-layout)
@@ -502,43 +525,28 @@
    (:text 110 58
      (159 nil "quinto ordine ᴄromatico & Enar.")
      (1400 nil "Seſto ordine ᴄromatico & Enar."))
+   ;; MZ24
    (:music 2346
            (:section s41) cclef5 b38 sh0 sb0 fl2 sbd2 fl3 sbd3 sh3 sb3 sh4 sb4 fl6 sbd6 b22 fl7 sbd7 sh7 sb7 fl9 sbd9 fl10 sbd10 sh10 sb10 b38
            (:section s50) cclef5 b22 sh0 sb0 fl2 sbd2 sh2 sb2 sh3 sb3 sh4 sb4 sh5 sb5 sh6 sb6 sh7 sb7 fl9 sbd9 sh9 sb9 sh10 sb10 bl)
    (:text 110 58
      (157 nil "quinto ordine ᴄromatico & Enar.")
      (1416 nil "Seſto ordine ᴄromatico & Enar."))
+   ;; MZ25
    (:music 2341
            (:section s42) cclef7 b22 sh0 sb0 sh1 sb1 sh2 sb2 sh3 sb3 sh4 sb4 sh5 sb5 sh6 sb6 sh7 sb7 sh8 sb8 sh9 sb9 sh10 sb10
            (:section s51) cclef7 b22 sh0 sb0 sh1 sb1 b22 sb2 sh3 sb3 sh4 sb4 b22 sb5
-           (:alt (:diplomatic sh6 sb6)
-                 (:critical b38 sb6)
-                 (:coord-barre "MZ6 N18")
-                 (:coord-norm "G51 N7")
-                 (:comment "Original: B♯.")
+           (:alt (:diplomatic sh6 sb6 fl8 sbd8 fl9 sbd9 sh9 sb9)
+                 (:critical b38 sb6 sh7 sb7 sh8 sb8 b38 sb9)
+                 (:coord-barre "MZ25 (S3 MZ6) N18-21")
+                 (:coord-norm "G51 N7-10")
+                 (:comment "Original: B♯ Ḋ♭ Ė♭ E♯.")
                  (:flag :ready) (:id 8))
-           (:alt (:diplomatic fl8 sbd8)
-                 (:critical sh7 sb7)
-                 (:coord-barre "MZ6 N19")
-                 (:coord-norm "G51 N8")
-                 (:comment "Original: Ḋ♭.")
-                 (:flag :ready) (:id 9))
-           (:alt (:diplomatic fl9 sbd9)
-                 (:critical sh8 sb8)
-                 (:coord-barre "MZ6 N20")
-                 (:coord-norm "G51 N9")
-                 (:comment "Original: Ė♭.")
-                 (:flag :ready) (:id 10))
-           (:alt (:diplomatic sh9 sb9)
-                 (:critical b38 sb9)
-                 (:coord-barre "MZ6 N21")
-                 (:coord-norm "G51 N10")
-                 (:comment "Original: E♯.")
-                 (:flag :ready) (:id 11))
            sh10 sb10 b22 bl)
    (:text 110 58
      (161 nil "quinto ordine ᴄromatico & Enar.")
      (1418 nil "Seſto ordine ᴄromatico& ᴇnar."))
+   ;; MZ26
    (:music 2346
            (:section s43)
            (:alt (:original-layout)
@@ -553,30 +561,33 @@
    (:text 110 58
      (170 nil "quinto ordine ᴄromatico & ᴇnar.")
      (1395 nil "seſto ordine ᴄromatico & Enar."))
+   ;; MZ27
    (:music 2347
            (:section s44) (:f-clef) max7 fclef7 b22 sh0 sb0 sh1 sb1 sh2 sb2 b22 sb3 sh4 sb4 sh5 sb5 sh6 sb6 sh7 sb7 sh8 sb8 sh9 sb9 b22 sb10 b22
            (:section s53) (:f-clef) max7 fclef7
            (:alt (:diplomatic sh1)
                  (:critical sh0)
-                 (:coord-barre "MZ8 N12")
+                 (:coord-barre "MZ27 (S3 MZ8) N12")
                  (:coord-norm "G53 N1")
                  (:comment "Original: Das ♯ steht eine Position höher.")
-                 (:flat :ready) (:id 12))
+                 (:flat :ready) (:id 9))
            sb0 sh1 sb1 sb2
            (:alt (:diplomatic sh3 sb3 fl5 sbd5 sh5 sb5 sh6 sb6 fl8 sbd8 fl9 sbd9 sh9 sb9 sh10 sb10)
                  (:critical b38 sb3 sh4 sb4 sb5 sb6 sh7 sb7 sh8 sb8 sb9 sb10)
-                 (:coord-barre "MZ8 N15-22")
+                 (:coord-barre "MZ27 (S3 MZ8) N15-22")
                  (:coord-norm "G53 N4-11")
                  (:comment "Original: B♯ Ḋ♭ D♯ E♯ Ġ♭ Ȧ♭ A♯ B♯.")
-                 (:flag :ready) (:id 13))
+                 (:flag :ready) (:id 10))
            bl)
    (:text 110 58
      (184 nil "quinto ordine ᴄromatico & ᴇnar.")
      (1425 nil "seſto ordine ᴄromatico & Enar."))
+   ;; MZ28
    (:music 2343
            (:section s45) (:f-clef) max9 fclef9 sh0 sb0 sh1 sb1 fl3 sbd3 sh3 sb3 sh4 sb4 sh5 sb5 fl7 sbd7 sh7 sb7 sh8 sb8 fl10 sbd10 sh10 sb10
            (:section s54) (:f-clef) max9 fclef9 sh0 sb0 sh1 sb1 sh2 sb2 sh3 sb3 sh4 sb4 sb5 sh6 sb6 sh7 sb7 sh8 sb8 sh9 sb9 sh10 sb10 bl)
    (:vspace 110)
+   ;; MZ29
    (:music 2325
            b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b125 b38 b38 b125 b125 b38 b125 b125 b125 b125 b125 b125)
 
@@ -586,6 +597,7 @@
 
    (:text 110 58
      (90 nil "Del settimo ordine naturale Diatonico."))
+   ;; MZ30
    (:music 1157
            (:section s55)
            (:alt (:original-layout)
@@ -594,62 +606,65 @@
            (:f-clef)
            (:alt (:diplomatic max7 fclef7)
                  (:critical max7 fclef7)
-                 (:coord-barre "MZ1")
+                 (:coord-barre "MZ30 (S4 MZ1)")
                  (:coord-norm "G55")
                  (:comment "An dieser Stelle ist der _settimo ordine_ ohne Vorzeichen zu erwarten. Falls er ergänzt wird, sollte er mit B♭ enden, um die _fa super la_-Situation zu spiegeln.")
-                 (:flag :ready) (:id 14))
+                 (:flag :ready) (:id 11))
            (:alt (:diplomatic sh1)
                  (:critical sh0)
-                 (:coord-barre "MZ1 N1")
+                 (:coord-barre "MZ30 (S4 MZ1) N1")
                  (:coord-norm "G55 N1")
                  (:comment "Original: Das ♯ steht eine Position höher.")
-                 (:flag :ready) (:id 15))
+                 (:flag :ready) (:id 12))
            sb0 sh1 sb1 sh2 sb2 sh3 sb3 sh4 sb4 sh5 sb5 sh6 sb6
            (:alt (:diplomatic sh5)
                  (:critical sh7)
-                 (:coord-barre "MZ1 N8")
+                 (:coord-barre "MZ30 (S4 MZ1) N8")
                  (:coord-norm "G55 N8")
                  (:comment "Original: Das ♯ steht zwei Positionen höher.")
-                 (:flag :ready) (:id 16))
+                 (:flag :ready) (:id 13))
            sb7 sh8 sb8 sh9 sb9
            (:alt (:diplomatic fl10 sb10)
                  (:critical sb10)
-                 (:coord-barre "MZ1 N11")
+                 (:coord-barre "MZ30 (S4 MZ1) N11")
                  (:coord-norm "G55 N11")
                  (:comment "Original: B♭, unplausibel. Die regelmässige Korrektur ist B♯, die erniedrigte Stufe im Sinn eines _fa super la_ ist B♮, wie es für alle anderen _settimo ordine_ dieses Beispiels der Fall ist. Das ♭ könnte als Auflösung des ♯ vor der letzten Note interpretiert werden. Vergleiche auch Section G62, wo die gleiche Skala wie Section 55 abgedruckt ist, allerdings mit B♯ als oberste Note.")
-                 (:flag :ready) (:id 17)))
+                 (:flag :ready) (:id 14)))
    (:text 110 58
      (232 nil "Settimo ordine ᴄromatico Enar."))
+   ;; MZ31
    (:music 1183
            (:section s56)
            gclef3 b38 sh0 sb0 sh1 sb1 b22 fl3 sbd3 b22 fl4 sbd4 sh4 sb4 sh5 sb5
            (:alt (:diplomatic sh6)
                  (:critical)
-                 (:coord-barre "MZ2 N7")
+                 (:coord-barre "MZ31 (S4 MZ2) N7")
                  (:coord-norm "G56 N7")
                  (:comment "Original: Vor dem Ḋ♭ steht ein ♯ auf der Höhe von C, ohne zugehörigen Notenkopf.")
-                 (:flag :ready) (:id 18))
+                 (:flag :ready) (:id 15))
            fl7 sbd7 sh7 sb7 sh8 sb8 fl10 sbd10
            (:alt (:diplomatic sh10 sb10)
                  (:critical sh10 sb10)
-                 (:coord-barre "MZ2 N10")
+                 (:coord-barre "MZ31 (S4 MZ2) N10")
                  (:coord-norm "G56 N10")
                  (:comment "Kein Eingriff, G♯ entspricht der erniedrigten letzten Stufe in G55.")
-                 (:flag :ready) (:id 19)))
+                 (:flag :ready) (:id 16)))
    (:text 110 58
      (239 nil "settimo ordine ᴄromatico Enar."))
+   ;; MZ32
    (:music 1158
            (:section s57)
            cclef1 b22 sh0 sb0 b22 fl2 sbd2 b22 fl3 sbd3 sbd4 b22 fl5 sbd5 b22 fl6 sbd6 fl7 sbd7 sh7 sb7 fl9 sbd9 fl10 sbd10
            (:alt (:diplomatic sh10 sb10)
                  (:critical sh10 sb10)
-                 (:coord-barre "MZ3 N11")
+                 (:coord-barre "MZ32 (S4 MZ3) N11")
                  (:coord-norm "G57 N11")
                  (:comment "Kein Eingriff, E♯ entspricht der erniedrigten letzten Stufe in G55.")
-                 (:flag :ready) (:id 20))
+                 (:flag :ready) (:id 17))
            b38)
    (:text 110 58
      (154 nil "Settimo ordine ᴄromatico & Enar."))
+   ;; MZ33
    (:music 1164
            (:section s58)
            (:alt (:original-layout)
@@ -658,37 +673,40 @@
            cclef3 b22 sh0 sb0 sh1 sb1 sh2 sb2 fl4 sbd4 sh4 sb4 sh5 sb5 fl7 sbd7 sh7 sb7 sh8 sb8 sh9 sb9
            (:alt (:diplomatic sh10 sb10)
                  (:critical sh10 sb10)
-                 (:coord-barre "MZ4 N11")
+                 (:coord-barre "MZ33 (S4 MZ4) N11")
                  (:coord-norm "G58 N11")
                  (:comment "Kein Eingriff, C♯ entspricht der erniedrigten letzten Stufe in G55.")
-                 (:flag :ready) (:id 21))
+                 (:flag :ready) (:id 18))
            b22)
    (:text 110 58
      (182 nil "Settimo ordine ᴄromatico Enar."))
+   ;; MZ34
    (:music 1165
            (:section s59)
            cclef5 sh0 sb0 b22 fl2 sbd2 b22 fl3 sbd3 fl4 sbd4 sh4 sb4 fl6 sbd6 b22 fl7 sbd7 sh7 sb7 fl9 sbd9 fl10 sbd10
            (:alt (:diplomatic sh10 sb10)
                  (:critical sh10 sb10)
-                 (:coord-barre "MZ5 N11")
+                 (:coord-barre "MZ34 (S4 MZ5) N11")
                  (:coord-norm "G59 N11")
                  (:comment "Kein Eingriff, A♯ entspricht der erniedrigten letzten Stufe in G55.")
-                 (:flag :ready) (:id 22))
+                 (:flag :ready) (:id 19))
            b22)
    (:text 110 58
      (174 nil "Settimo ordine ᴄromatico & Enar."))
+   ;; MZ35
    (:music 1164
            (:section s60)
            cclef7 b38 sh0 sb0 sh1 sb1 sh2 sb2 fl4 sbd4 sh4 sb4 sh5 sb5 sh6 sb6 sh7 sb7 sh8 sb8 sh9 sb9
            (:alt (:diplomatic sh10 sb10)
                  (:critical sh10 sb10)
-                 (:coord-barre "MZ6 N11")
+                 (:coord-barre "MZ35 (S4 MZ6) N11")
                  (:coord-norm "G60 N11")
                  (:comment "Kein Eingriff, F♯ entspricht der erniedrigten letzten Stufe in G55.")
-                 (:flag :ready) (:id 23))
+                 (:flag :ready) (:id 20))
            b22)
    (:text 110 58
      (156 nil "Settimo ordine ᴄromatico Enar."))
+   ;; MZ36
    (:music 1165
            (:section s61)
            (:alt (:original-layout)
@@ -697,32 +715,34 @@
            (:f-clef) max5 fclef5 sh0 sb0 sh1 sb1 fl3 sbd3 fl4 sbd4 sh4 sb4 fl6 sbd6 b22 fl7 sbd7 sh7 sb7 sh8 sb8 fl10 sbd10
            (:alt (:diplomatic sh10 sb10)
                  (:critical sh10 sb10)
-                 (:coord-barre "MZ7 N11")
+                 (:coord-barre "MZ36 (S4 MZ7) N11")
                  (:coord-norm "G61 N11")
                  (:comment "Kein Eingriff, D♯ entspricht der erniedrigten letzten Stufe in G55.")
-                 (:flag :ready) (:id 24))
+                 (:flag :ready) (:id 21))
            b38)
    (:text 110 58
      (168 nil "Settimo ordine ᴄromatico."))
+   ;; MZ37
    (:music 1202
            (:section s62)
            (:f-clef) max7 fclef7 sh0 sb0 sh1 sb1 sh2 sb2 sh3 sb3 sh4 sb4 sh5 sb5 sh6 sb6 sh7 sb7 sh8 sb8 sh9 sb9
            (:alt (:diplomatic sh10 sb10)
                  (:critical sh10 sb10)
-                 (:coord-barre "MZ8 N11")
+                 (:coord-barre "MZ37 (S4 MZ8) N11")
                  (:coord-norm "G62 N11")
                  (:comment "Kein Eingriff. B♯ ist unregelmässig, weil in diesem Beispiel alle anderen Skalen im _settimo ordine_ (G55-G63) einen _semitono maggiore_ zur letzten Note haben. Vergleiche G55.")
-                 (:flag :ready) (:id 25))
+                 (:flag :ready) (:id 22))
            b22)
    (:text 110 58
      (186 nil "Settimo ordine ᴄromatico Enar."))
+   ;; MZ38
    (:music 1158
            (:section s63)
            (:f-clef) max9 fclef9 b22 sh0 sb0 sh1 sb1 fl3 sbd3 fl4 sbd4 sh4 sb4 sh5 sb5 fl7 sbd7 sh7 sb7 sh8 sb8 fl10 sbd10
            (:alt (:diplomatic sh10 sb10)
                  (:critical sh10 sb10)
-                 (:coord-barre "MZ9 N11")
+                 (:coord-barre "MZ38 (S4 MZ9) N11")
                  (:coord-norm "G63 N11")
                  (:comment "Kein Eingriff, G♯ entspricht der erniedrigten letzten Stufe in G55.")
-                 (:flag :ready) (:id 25))
+                 (:flag :ready) (:id 23))
            b22)))
