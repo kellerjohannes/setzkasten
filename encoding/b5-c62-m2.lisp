@@ -188,7 +188,10 @@
            (:section s20) b38 sbd4 b38
            (:alt (:diplomatic sh7 b38 sb7)
                  (:critical sh6 b38 sb6)
-                 (:comment "Original: Zweite Note C♯.") (:flag :draft) (:id 0))
+                 (:coord-barre "MZ4 N6")
+                 (:coord-norm "G20 N2")
+                 (:comment "Original: C♯.")
+                 (:flag :ready) (:id 1))
            b38 bl
            (:section s21) b38 fl4 b38 sbd4 b38 sb7 b38 bl
            (:section s22) b38 sbd2 b38 fl5 b38 sbd5 b38 bl
@@ -208,7 +211,11 @@
            (:section s27) b38 sb5 b38 sh7 b38 sbc7 b38 b38
            (:section s28)
            (:alt (:diplomatic cclef5)
-                 (:critical cclef7))
+                 (:critical cclef7)
+                 (:coord-barre "MZ5 N9")
+                 (:coord-norm "G28")
+                 (:comment "Original: C-Schlüssel auf der dritten Linie.")
+                 (:flag :ready) (:id 2))
            fl6 (:key-signature nil nil nil nil nil nil :flat) b38 sb4 b38 nat6 b38 sbc6 b38 b38 bl
            (:section s29) b38 b38 fl5 b38 sb5 b38 sbc7 b38 b38 bl)
    (:text 110 58

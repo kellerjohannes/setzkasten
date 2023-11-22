@@ -51,8 +51,12 @@
            (:section s2) b22 fl8 b22 sb8 sh8 sb8 b22 bl
            (:section s3) b22 sh6 sb6 fl8 sb8 b22 bl
            (:section s4) b22 sb4 b22
-           (:alt (:diplomatic fl4) (:critical fl5)
-                 (:comment "Original: ♭ steht eine Position tiefer"))
+           (:alt (:diplomatic fl4)
+                 (:critical fl5)
+                 (:coord-barre "N8")
+                 (:coord-norm "G4 N2")
+                 (:comment "Original: Das ♭ steht eine Position tiefer.")
+                 (:flag :ready) (:id 1))
            b22 sbd5 b22 bl
            (:section s5) b22 sb5 b22 b22 sbd4 b22 b22 bl
            (:section s6) b22 fl5 sbd5 fl6 sb6 b22 bl

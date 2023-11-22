@@ -220,12 +220,14 @@
 
    (:text 110 58
      (285 nil "Diatonico nat. primo"))
+   ;; MZ1
    (:music 1198
            (:voice v1)
            (:section s1) gclef3 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 b22 sb8 b22 b38 sb9 b38 b22 sb10 b22 b38 bl
            )
    (:text 110 58
      (365 nil "Primo ordine ᴇnar. nat."))
+   ;; MZ2
    (:music 1210
            (:section s2)
            (:alt (:original-layout (:newline))
@@ -235,6 +237,7 @@
            )
    (:text 110 58
      (327 nil "Del primo ordine."))
+   ;; MZ3
    (:music 1216
            (:section s3)
            (:alt (:original-layout (:newline))
@@ -244,6 +247,7 @@
            )
    (:text 110 58
      (355 nil "Del primo ordine."))
+   ;; MZ4
    (:music 1216
            (:section s4)
            (:alt (:original-layout (:newline))
@@ -252,12 +256,15 @@
            cclef3 b22 sbd0 b38 sbd1 b22 fl2 b22
            (:alt (:diplomatic sb2)
                  (:critical sbd2)
-                 (:comment "Original: Die dritte Note hat keinen enharmonischen Punkt.")
-                 (:flag :draft) (:id 1))
+                 (:coord-barre "MZ4 N3")
+                 (:coord-norm "G4 N3")
+                 (:comment "Original: B♭.")
+                 (:flag :ready) (:id 1))
            b38 sbd3 b38 sbd4 b38 sbd5 b38 sbd6 b38 sbd7 b22 b22 sbd8 b22 fl9 b38 sbd9 b38 sbd10 b22 bl
            )
    (:text 110 58
      (340 nil "Del primo ordine."))
+   ;; MZ5
    (:music 1226
            (:section s5)
            (:alt (:original-layout (:newline))
@@ -267,6 +274,7 @@
            )
    (:text 110 58
      (320 nil "Del primo ordine."))
+   ;; MZ6
    (:music 1189
            (:section s6)
            (:alt (:original-layout (:newline))
@@ -276,6 +284,7 @@
            )
    (:text 110 58
      (266 nil "Del primo ordine."))
+   ;; MZ7
    (:music 1145
            (:section s7)
            (:alt (:original-layout (:newline))
@@ -285,6 +294,7 @@
            )
    (:text 110 58
      (253 nil "Del primo ordine."))
+   ;; MZ8
    (:music 1122
            (:section s8)
            (:alt (:original-layout (:newline))
@@ -293,12 +303,15 @@
            (:f-clef) max7 fclef7 b22 sbd0 sbd1 b22 fl2 b22 sbd2 fl3 b22 sbd3 sbd4 sbd5 fl6 b22 sbd6 b22 sbd7 b22 sbd8 fl9 b22 sbd9
            (:alt (:diplomatic b22)
                  (:critical fl10)
-                 (:comment "Original: Die letzte Note hat kein ♭.")
-                 (:flag :draft) (:id 2))
+                 (:coord-barre "MZ8 N11")
+                 (:coord-norm "G8 N11")
+                 (:comment "Original: Ḃ♮.")
+                 (:flag :ready) (:id 2))
            sbd10 b22 bl
            )
    (:text 110 58
      (336 nil "Del primo ordine."))
+   ;; MZ9
    (:music 1188
            (:section s9)
            (:alt (:original-layout (:newline))
@@ -313,6 +326,7 @@
    (:text 110 58
      (172 nil "Secondo ordine nat. Diat.")
      (1317 nil "Terzo ordine ᴅiat. nat."))
+   ;; MZ10
    (:music 2244
            (:section s10)
            (:alt (:original-layout)
@@ -328,27 +342,35 @@
    (:text 110 58
      (246 nil "Del secondo ordine diat. ᴇnar.")
      (1391 nil "ᴅel terzo ordine diat. ᴇnar ."))
+   ;; MZ11
    (:music 2230
            (:section s11) gclef3 b22 fl5 (:key-signature nil nil nil nil nil nil :flat) b22 sbd0 b22 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b38 sbd8 b38 sbd9 b38 sbd10 b38 b38
            (:section s20) cclef1 (:key-signature nil nil nil nil nil nil nil) b38 sbd0 b38 sbd1 b38 sbd2 b22 sbd3 b38 sbd4 b38 sbd5 b38 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b38 sbd10 b38 bl)
    (:text 110 58
      (241 nil "Del secondo ordine diat. ᴇnar.")
      (1275 nil "ᴅel terzo ordine Enar.diat. ᴄro."))
+   ;; MZ12
    (:music 2241
            (:section s12) cclef1 b22 sbd0 b22 fl2 b22 sb2 b22 sbd2 b22 sbd3 b22 fl5 b22 sb5 b22 sbd5 b22 sbd6 b22 sbd7 b22 fl9 b22 sb9 b22 sbd9 b22 sbd10 b38
            (:section s21) gclef3 b22 sbd0 fl1 b22 sbd1 sbd2 b22 sbd3 b22 fl4 b22 sbd4 fl5 b22 sbd5 sbd6 b22 sbd7 b22 fl8 b22 sbd8 b22
            (:alt (:diplomatic sb9)
                  (:critical sbd9)
-                 (:comment "Original: Die zweitletzte Note hat keinen enharmonischen Punkt.")
-                 (:flag :draft) (:id 0))
+                 (:coord-barre "MZ3 N21")
+                 (:coord-norm "G21 N10")
+                 (:comment "Original: F.")
+                 (:flag :ready) (:id 3))
 
            (:alt (:diplomatic b38)
                  (:critical sbd10)
-                 (:comment "Original: Die letzte Note existiert nicht.") (:flag :draft) (:id 0))
+                 (:coord-barre "MZ3 N22")
+                 (:coord-norm "G21 N11")
+                 (:comment "Original: G fehlt.")
+                 (:flag :ready) (:id 4))
            bl)
    (:text 110 58
      (259 nil "Del secondo ordine diat. ᴇnar.")
      (1286 nil "ᴅel terzo ordine Enar.diat.ᴄro."))
+   ;; MZ13
    (:music 2234
            (:section s13)
            (:alt (:original-layout)
@@ -364,12 +386,14 @@
    (:text 110 58
      (188 nil "Del secondo ordine diat. ᴇnar.")
      (1368 nil "ᴅel terzo ordine diat. Ena."))
+   ;; MZ14
    (:music 2231
            (:section s14) cclef5 b22 b22 sbd0 b22 fl2 b22 sb2 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 fl9 sb9 b38 sbd9 b22 sbd10 b38 b22 b22
            (:section s23) cclef5 b22 fl4 (:key-signature nil nil nil nil nil nil :flat) b22 sbd0 b38 sbd1 b38 sbd2 b38 sbd3 b38 sbd4 b38 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b22 sbd10 bl)
    (:text 110 58
      (132 nil "ᴅel secondo ordine diat. ᴇnar.")
      (1264 nil "Del terzo ordine diat. Enar."))
+   ;; MZ15
    (:music 2216
            (:section s15) cclef7 (:key-signature nil nil nil nil nil nil nil) sbd0 b22 sbd1 b22 fl2 sbd2 b22 sbd3 b22 sbd4 b22 fl5 sbd5 b22 fl6 sbd6 b22 sbd7 b22 sbd8 b22 fl9 sbd9 b22 sbd10 b38
            (:section s24) cclef7 b22 sbd0 fl1 sbd1 fl2 sbd2 b22 sbd3 fl4 sbd4 b22 fl5 sbd5 fl6 sbd6 sbd7 b22 fl8 b22 sbd8 b22 fl9 sbd9 b22 sbd10 bl
@@ -377,6 +401,7 @@
    (:text 110 58
      (262 nil "Del secondo ordine diat. Enar.")
      (1280 nil "ᴅel terzo ordine diat. Enar."))
+   ;; MZ16
    (:music 2214
            (:section s16)
            (:alt (:original-layout)
@@ -391,21 +416,26 @@
    (:text 110 58
      (256 nil "Del secondo ordine diat, ᴇnar.")
      (1279 nil "Del terzo ordine Enar."))
+   ;; MZ17
    (:music 2213
            (:section s17) (:f-clef) max7 fclef7 (:key-signature nil nil nil nil nil nil nil) b22 sbd0 b22 sbd1 fl2 sbd2 fl3 b22 sbd3 b22 sbd4 fl5 b22 sbd5 fl6 b22 sbd6 sbd7 sbd8 b22 fl9 sbd9 fl10
            (:alt (:diplomatic sb10)
                  (:critical sbd10)
-                 (:comment "Original: Die letzte Note hat keinen enharmonischen Punkt.")
-                 (:flag :draft) (:id 3))
+                 (:coord-barre "MZ8 N11")
+                 (:coord-norm "G17 N11")
+                 (:comment "Original: B♭.")
+                 (:flag :ready) (:id 5))
            b22
            (:section s26) (:f-clef) max7 fclef7 b22 sbd0 fl1 sbd1 fl2 sbd2 fl3 sbd3 sh3 sb3 fl5 sbd5 fl6 sbd6 sbd7 fl8 sbd8 fl9 sbd9 fl10 sbd10 bl)
    (:text 110 58
      (181 nil "ᴅel secondo ordine ᴇnar.")
      (1304 nil "Del terzo ordine Enar."))
+   ;; MZ18
    (:music 2214
            (:section s18) (:f-clef) max9 fclef9 b22 fl5 (:key-signature nil nil nil nil nil nil :flat) b22 sbd0 b22 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 sbd10 b38
            (:section s27) (:f-clef) max9 fclef9 b22 sbd0 b22 fl1 b22 sbd1 b22 sbd2 b22 sbd3 b22 fl4 b22 sbd4 b22 fl5 b22 sbd5 sbd6 b22 sbd7 b22 fl8 b22 sbd8 sbd9 sbd10 bl)
    (:vspace 110)
+   ;; MZ19
    (:music 2222
            b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38)
 
@@ -416,6 +446,7 @@
    (:text 110 58
      (167 nil "Quarto ordine ᴅiat. nat.")
      (1254 nil "Quinto ordine Diat.nat."))
+   ;; MZ20
    (:music 2225
            (:section s28)
            (:alt (:original-layout)
@@ -432,6 +463,7 @@
    (:text 110 58
      (173 nil "Del quarto ordine diat. Enar.")
      (1368 nil "Del quinto ordine diat. ᴇnar."))
+   ;; MZ21
    (:music 2223
            (:section s29)
            gclef3 b38 sbd0 b22 sbd1 b22 fl3 b22 sb3 b22 sbd3 b22 sbd4 b22 sbd5 b22 fl7 b22 sb7 b22 sbd7 b22 sbd8 b22 fl10 b22 sb10 b22 sbd10 b22
@@ -439,6 +471,7 @@
    (:text 110 58
      (180 nil "ᴅel quarto ordine diat. Enar.")
      (1314 nil "Del quinto ordine diat. Enar."))
+   ;; MZ22
    (:music 2223
            (:section s30)
            cclef1 (:key-signature nil nil nil nil nil nil nil)
@@ -447,6 +480,7 @@
    (:text 110 58
      (178 nil "ᴅel quarto ordine diat. Enar.")
      (1303 nil "Del quinto ordine diat ᴇnar."))
+   ;; MZ23
    (:music 2217
            (:section s31)
            (:alt (:original-layout)
@@ -461,6 +495,7 @@
    (:text 110 58
      (182 nil "Del quarto ordine diat. ᴇnar.")
      (1278 nil "Del quinto ordine diat. Enar."))
+   ;; MZ24
    (:music 2224
            (:section s32)
            cclef5 b22 sbd0 b22 fl2 b22 sb2 b22 fl3 b22 sb3 b22 sbd3 b22 sbd4 fl6 b22 sb6 b22 fl7 sb7 b22 sbd7 b22 fl9 b22 sb9 fl10 b22 sb10 b22 sbd10 b22
@@ -468,12 +503,14 @@
            b22 sbd0 b22 fl2 sb2 b22 fl3 sb3 b22 sbd3 b22 sbd4 b22 fl6 sb6 sbd6 sbd7 fl9 sb9 fl10 b38 sb10 b22 sbd10 bl)
    (:text 110 58
      (1312 nil "Del quinto ordine dia.ᴇnar."))
+   ;; MZ25
    (:music 2214
            (:section s33)
            cclef7 b38 sbd0 b38 sbd1 b38 sbd2 b38 sbd3 b38 sbd4 b38 sbd5 b38 sbd6 b38 sbd7 b38 sbd8 b38 sbd9 b22 sbd10 b38 b22
            (:section s42) cclef7 b22 fl6 (:key-signature nil nil nil nil nil nil :flat) b38 sbd0 b38 sbd1 b38 sbd2 b38 sbd3 b38 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b22 sbd10 b38 bl)
    (:text 110 58
      (1239 nil "Del quinto ordine diat. Enar."))
+   ;; MZ26
    (:music 2221
            (:section s34)
            (:alt (:original-layout)
@@ -487,12 +524,14 @@
            (:f-clef) max5 fclef5 b22 sbd0 b22 sbd1 b22 fl3 sb3 b22 sbd3 b22 sbd4 b22 fl6 b22 sb6 b22 sbd6 b22 sbd7 b22 sbd8 b22 fl10 sb10 b22 sbd10 bl)
    (:text 110 58
      (1250 nil "Del quinto ordine diat. Enar."))
+   ;; MZ27
    (:music 2210
            (:section s35)
            (:f-clef) max7 fclef7 b22 fl3 fl10 (:key-signature nil nil nil nil nil nil :flat) sbd0 b22 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b22 sbd10 b38
            (:section s44) (:f-clef) max7 fclef7 b22 fl3 fl6 fl10 (:key-signature nil nil :flat nil nil nil :flat) sbd0 b22 sbd1 b38 sbd2 b22 sbd3 b22 sbd4 b38 sbd5 b38 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b38 sbd10 b22 bl)
    (:text 110 58
      (1330 nil "Del quinto ordine diat. ᴇnar."))
+   ;; MZ28
    (:music 2204
            (:section s36)
            (:f-clef) max9 fclef9 (:key-signature nil nil nil nil nil nil nil) b22 sbd0 b22 sbd1 b22 fl3 b22 sb3 b22 sbd3 b22 sbd4 b22 sbd5 b22 fl7 b22 sb7 b22 sbd7 sbd8 fl10 b22 sb10 b22 sbd10 b38
@@ -505,6 +544,7 @@
    (:text 110 58
      (242 nil "Seſto ordine diat. nat.")
      (1279 nil "Settimo ordine diat. nat."))
+   ;; MZ29
    (:music 2225
            (:section s46)
            (:alt (:original-layout)
@@ -518,37 +558,52 @@
            (:f-clef) max7 fclef7 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b22
            (:alt (:diplomatic fl10)
                  (:critical fl10)
-                 (:comment "Das letzte ♭ ist unregelmässig, aber musikalisch interessant.") (:flag :observe) (:id 0))
+                 (:coord-barre "MZ1 N22")
+                 (:coord-norm "G55 N11")
+                 (:comment "Das B♭ ist unregelmässig, aber musikalisch interessant.")
+                 (:flag :ready) (:id 6))
            b22 sb10 bl)
    (:text 110 58
      (232 nil "Del seſto ordine diat. ᴇnar.")
      (1275 nil "ᴅel ſettimo ordine diat. Enar."))
+   ;; MZ30
    (:music 2223
            (:section s47) gclef3 fl18 fl5 (:key-signature nil nil :flat nil nil nil :flat) b22 sbd0 b22 fl1 b22 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b22 sbd10 b38 b22
            (:section s56)
            gclef3 (:key-signature nil nil nil nil nil nil nil) sbd0 b22 sbd1 b22 fl3 sb3 b22 fl4 sb4 b22 sbd4 b22 sbd5 b22 fl7 b22 sb7 b22 sbd7 b22 sbd8 b22 fl10 sb10 b22
            (:alt (:diplomatic sbd10)
                  (:critical sbd10)
-                 (:comment "Die letzte Note ist unregelmässig und sollte A♭ lauten. Ġ entspricht der Unregelmässigkeit in s7.") (:flag :observe) (:id 0))
+                 (:coord-barre "MZ2 N22")
+                 (:coord-norm "G56 N11")
+                 (:comment "Kein Eingriff, Ġ entspricht dem B♭ in G55.")
+                 (:flag :ready) (:id 7))
            bl)
    (:text 110 58
      (264 nil "Del sesto ordine diat. ᴇnar.")
      (1238 nil "ᴅel settimo ordine diat. Enar."))
+   ;; MZ31
    (:music 2225
            (:section s48) cclef1 b38 sbd0 b38 sbd1 b38 sbd2 b38 sbd3 b38 fl5 b38 sb5
            (:alt (:diplomatic)
                  (:critical b38 sbd5)
-                 (:comment "Original: Die sechste Note existiert nicht.") (:flag :draft) (:id 0))
+                 (:coord-barre "MZ3 N6")
+                 (:coord-norm "G48 N6")
+                 (:comment "Original: Ġ fehlt.")
+                 (:flag :ready) (:id 8))
            b38 sbd6 b38 sbd7 b22 sbd8 b22 sbd9 b22 sbd10 b22
            (:section s57)
            cclef1 b22 sbd0 b22 fl2 sb2 b22 fl3 sb3 b22 sb4 b22 fl5 sb5 b22 fl6 b22 sb6 b22 fl7 b22 sb7 sbd7 b22 fl9 b22 sb9 fl10 sb10 b22
            (:alt (:diplomatic sbd10)
                  (:critical sbd10)
-                 (:comment "Die letzte Note ist unregelmässig und sollte eigentlich F lauten. Ė entspricht der Unregelmässigkeit in s7.") (:flag :observe) (:id 0))
+                 (:coord-barre "MZ3 N22")
+                 (:coord-norm "G57 N11")
+                 (:comment "Kein Eingriff, Ġ entspricht dem B♭ in G55.")
+                 (:flag :ready) (:id 9))
            bl)
    (:text 110 58
      (259 nil "Del seſto ordine diat. ᴇnar.")
      (1282 nil "ᴅel settimo ordine diat. Enar."))
+   ;; MZ32
    (:music 2227
            (:section s49)
            (:alt (:original-layout)
@@ -562,41 +617,59 @@
            cclef3 b22 sbd0 b22 sbd1 b22 sbd2 b22 fl4 b22 sb4 b22 sbd4 b22 sbd5 b22 fl7 b22 sb7 b22 sbd7 b22 sbd8 b22 sbd9 b22
            (:alt (:diplomatic sbd10)
                  (:critical sbd10)
-                 (:comment "Die letzte Note ist unregelmässig und sollte eigentlich D♭ lauten. Ḋ entspricht der Unregelmässigkeit in s7.") (:flag :observe) (:id 0))
+                 (:coord-barre "MZ4 N22")
+                 (:coord-norm "G58 N11")
+                 (:comment "Kein Eingriff, Ċ entspricht dem B♭ in G55.")
+                 (:flag :ready) (:id 10))
            bl)
    (:text 110 58
      (266 nil "Del seſto ordine diat. ᴇnar.")
      (1309 nil "Del settimo ordine diat. Enar."))
+   ;; MZ33
    (:music 2212
            (:section s50) cclef5 sbd0 b38 b38 sbd1 b38 sbd2 b38 sbd3 b38 sbd4 b38 sbd5 b38 sbd6 b38 sbd7 b38 sbd8 b38 sbd9 b38 sbd10 b38
            (:section s59)
            cclef5 b22 sbd0 b22 fl2 sb2 b22 fl3 sb3 b22 fl4 sb4 b22 sbd4 b22 fl6 sb6 b22 fl7 sb7 b22 sbd7 b22 fl9 sb9 fl10 sb10
            (:alt (:diplomatic sbd10)
                  (:critical sbd10)
-                 (:comment "Die letzte Note ist unregelmässig und sollte eigentlich B♭ lauten. Ȧ entspricht der Unregelmässigkeit in s7.") (:flag :observe) (:id 0))
+                 (:coord-barre "MZ5 N22")
+                 (:coord-norm "G59 N11")
+                 (:comment "Kein Eingriff, Ȧ entspricht dem B♭ in G55.")
+                 (:flag :ready) (:id 11))
            bl)
    (:text 110 58
      (259 nil "Del seſto ordine diat. Enar.")
      (1280 nil "Del settimo ordine diat. Enar."))
+   ;; MZ34
    (:music 2214
            (:section s51) cclef7 b22 sbd0 b22 fl1 b22 sbd1 b22 fl2 b22 sbd2 b22 sbd3 b22 sbd4 b22 fl5 b22 sbd5 b22 fl6
            (:alt (:diplomatic sb6)
                  (:critical sbd6)
-                 (:comment "Original: Die fünftletzte Note hat keinen enharmonischen Punkt.") (:flag :draft) (:id 0))
+                 (:coord-barre "MZ6 N7")
+                 (:coord-norm "G51 N7")
+                 (:comment "Original: B♭.")
+                 (:flag :ready) (:id 12))
            b22 sbd7
            (:alt (:diplomatic b22)
                  (:critical fl8)
-                 (:comment "Original: Die drittletzte Note hat kein ♭.") (:flag :draft) (:id 0))
+                 (:coord-barre "MZ6 N9")
+                 (:coord-norm "G51 N9")
+                 (:comment "Original: Ḋ.")
+                 (:flag :ready) (:id 13))
            sbd8 b22 fl9 sbd9 b22 sbd10 b22
            (:section s60)
            cclef7 b22 sbd0 b22 sbd1 b22 sbd2 b22 fl4 b22 sb4 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b22
            (:alt (:diplomatic sbd10)
                  (:critical sbd10)
-                 (:comment "Die letzte Note ist unregelmässig und sollte eigentlich G♭ lauten. Ḟ entspricht der Unregelmässigkeit in s7.") (:flag :observe) (:id 0))
+                 (:coord-barre "MZ6 N22")
+                 (:coord-norm "G60 N11")
+                 (:comment "Kein Eingriff, Ḟ entspricht dem B♭ in G55.")
+                 (:flag :ready) (:id 14))
            b22 bl)
    (:text 110 58
      (266 nil "Del seſto ordine diat. Enar.")
      (1297 nil "ᴅel settimo ordine diat. ᴇnar."))
+   ;; MZ35
    (:music 2207
            (:section s52)
            (:alt (:original-layout)
@@ -610,32 +683,45 @@
            (:f-clef) max5 fclef5 (:key-signature nil nil nil nil nil nil nil) b22 sbd0 b22 fl2 sb2 b22 fl3 sb3 fl4 sb4 b22 sbd4 b22 fl6 sb6 b22 fl7 sb7 sbd7 fl9 sb9 fl10 sb10
            (:alt (:diplomatic sbd10)
                  (:critical sbd10)
-                 (:comment "Die letzte Note ist unregelmässig und sollte eigentlich E♭ lauten. Ḋ entspricht der Unregelmässigkeit in s7.") (:flag :observe) (:id 0))
+                 (:coord-barre "MZ7 N22")
+                 (:coord-norm "G61 N11")
+                 (:comment "Kein Eingriff, Ḋ entspricht dem B♭ in G55.")
+                 (:flag :ready) (:id 15))
            bl)
    (:text 110 58
      (247 nil "Del seſto ordine diat. ᴇnar.")
      (1270 nil "Del settimo ordine diat. Enar."))
+   ;; MZ36
    (:music 2210
            (:section s53) (:f-clef) max7 fclef7 b22 sbd0 fl1 sbd1 fl2 sbd2 fl3 sbd3 sbd4 fl5 sbd5 fl6 sbd6 sbd7 fl8 sbd8 fl9 sbd9 fl10 sbd10 b38
            (:section s62)
            (:f-clef) max7 fclef7 b38 sbd0 b38 sbd1 b38 sbd2 b38 sbd3 b38 sbd4 b38 sbd5 b38 sbd6 b38 sbd7 b22 sbd8 b22 sbd9
            (:alt (:diplomatic fl10 b22 sbd10)
                  (:critical fl10 b22 sbd10)
-                 (:comment "Die letzte Note ist unregelmässig und sollte eigentlich C♭ (Ḃ♮) lauten. Ḃ♭ entspricht der Unregelmässigkeit in s7.") (:flag :observe) (:id 0))
+                 (:coord-barre "MZ8 N22")
+                 (:coord-norm "G62 N11")
+                 (:comment "Kein Eingriff, Ḃ♭ entspricht dem B♭ in G55.")
+                 (:flag :ready) (:id 16))
            bl)
    (:text 110 58
      (258 nil "Del seſto ordine diat. ᴇnar.")
      (1272 nil "Del settimo ordine diat. Enar."))
+   ;; MZ37
    (:music 2210
            (:section s54) (:f-clef) max9 fclef9 b22 sbd0 fl1 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 fl5 b22 sbd5 b22 sbd6 b22 sbd7 b22 fl8 sbd8 b22 sbd9 b22 sbd10 b22
            (:section s63)
            (:f-clef) max9 fclef9 b22 sbd0 b22
            (:alt (:diplomatic fl1)
                  (:critical b38)
-                 (:comment "Original: Die zweite Note hat ein ♭.") (:flag :draft) (:id 0))
+                 (:coord-barre "MZ9 N13")
+                 (:coord-norm "G63 N2")
+                 (:comment "Original: Ė♭.")
+                 (:flag :ready) (:id 17))
            sbd1 b22 fl3 sb3 b22 fl4 sb4 sbd4 b22 sbd5 b22 fl7 sb7 b22 sbd7 b22 sbd8 fl10 b22 sb10 b22
            (:alt (:diplomatic sbd10)
                  (:critical sbd10)
-                 (:comment "Die letzte Note ist unregelmässig und sollte eigentlich A♭ lauten. Ġ entspricht der Unregelmässigkeit in s7.") (:flag :observe) (:id 0))
-           bl)
-   ))
+                 (:coord-barre "MZ9 N22")
+                 (:coord-norm "G63 N11")
+                 (:comment "Kein Eingriff, Ġ entspricht dem B♭ in G55.")
+                 (:flag :observe) (:id 18))
+           bl)))

@@ -45,5 +45,8 @@
            (:section s6) b38 fl1 b38 sbd1 b38
            (:alt (:diplomatic fl9 b38 sbd9)
                  (:critical fl8 b38 sbd8)
-                 (:comment "Zweite Note: Original: Ḃ♭.") (:flag :draft) (:id 0))
+                 (:coord-barre "N12")
+                 (:coord-norm "G6 N2")
+                 (:comment "Original: Ḃ♭.")
+                 (:flag :ready) (:id 1))
            b22 bl)))

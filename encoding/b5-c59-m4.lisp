@@ -258,7 +258,10 @@
            cclef5 b38 fl0 sb0 b22 sb1 b22 fl2 b22 sb2 b22 fl3 b22 sb3 b22 fl4 sb4 b22 sb5 b22 fl6 sb6 b22 fl7 sb7 sb8 b22 fl9 sb9
            (:alt (:diplomatic sb10)
                  (:critical fl10 sb10)
-                 (:comment "Original: A. A♭ als _fa super la_ ergänzt.") (:flag :draft) (:id 0))
+                 (:coord-barre "MZ5 N11")
+                 (:coord-norm "G5 N11")
+                 (:comment "Original: A.")
+                 (:flag :ready) (:id 0))
            bl)
    (:text 110 58
      (213 nil "Primo ordine ᴄromatico & Enar."))
@@ -278,8 +281,10 @@
            (:f-clef) max5 fclef5 fl0 sb0 b22 fl1 b22 sb1 b22 sbd1 b22 fl3 sb3 b22 fl4 sb4 sb5 b22 fl6 sb6 b22 fl7 sb7 fl8 sb8 sbd8 b22
            (:alt (:diplomatic sb10)
                  (:critical fl10 sb10)
-                 (:comment "Original: D. D♭ als _fa super la_ ergänzt.")
-                 (:flag :draft) (:id 0))
+                 (:coord-barre "MZ7 N11")
+                 (:coord-norm "G7 N11")
+                 (:comment "Original: D.")
+                 (:flag :ready) (:id 0))
            bl)
    (:text 110 58
      (178 nil "Primo ordine ᴄromatico & Enar."))
@@ -299,13 +304,17 @@
            (:f-clef) max9 fclef9 b22 fl0 sb0 b22 fl1 sb1 b22 sbd1 b22 fl3 sb3 b22 fl4 sb4 b22 fl5 sb5 sbd5 b22 fl7
            (:alt (:diplomatic sbd7)
                  (:critical sb7)
-                 (:comment "Original: Die viertletzte Note ist ein Ḋ♭.")
-                 (:flag :draft) (:id 0))
+                 (:coord-barre "MZ9 N8")
+                 (:coord-norm "G9 N8")
+                 (:comment "Original: Ḋ♭.")
+                 (:flag :ready) (:id 0))
            fl8 sb8 sbd8 b38
            (:alt (:diplomatic sb10)
                  (:critical fl10 sb10)
-                 (:comment "Original: G. G♭ als _fa super la_ ergänzt.")
-                 (:flag :draft) (:id 0))
+                 (:coord-barre "MZ9 N11")
+                 (:coord-norm "G9 N11")
+                 (:comment "Original: G.")
+                 (:flag :ready) (:id 0))
            b22 bl)
 
 
@@ -335,8 +344,10 @@
            (:section s20) gclef3 fl0 sb0 b22 fl1 sb1 sb2 b22 fl3 b22 sb3 b22 fl4 b22 sb4 b22 fl5 sb5 b22 sbd5 b22 fl7 sb7 b22 fl8 sb8 b22 sb9
            (:alt (:diplomatic sb10)
                  (:critical fl10 sb10)
+                 (:coord-barre "MZ2 N22")
+                 (:coord-norm "G20 N11")
                  (:comment "Original: G.")
-                 (:flag :draft) (:id 0))
+                 (:flag :ready) (:id 0))
            bl)
    (:text 110 58
      (321 nil "Secondo ordine ᴄromatico.")
@@ -345,14 +356,18 @@
            (:section s12) cclef1 fl0 sb0 b22 sbd0 fl2 sb2 fl3 sb3 b22 sbd3 b22 fl5 sb5 b22 fl6 sb6 b22 fl7 sb7 b22 sbd7 b22 fl9 sb9
            (:alt (:diplomatic b22 sb10)
                  (:critical fl10 sb10)
-                 (:comment "Original: Die letzte Note hat kein ♭.")
-                 (:flag :draft) (:id 0))
+                 (:coord-barre "MZ3 N11")
+                 (:coord-norm "G12 N11")
+                 (:comment "Original: E.")
+                 (:flag :ready) (:id 0))
            b22
            (:section s21) cclef1 fl0 b22 sb0 b22 sb1 b22 sb2 b22 fl3 b22 sb3 b22 sb4 b22 sb5 b22 fl6 b22 sb6 b22 fl7 sb7 b22 sb8 b22 sb9
            (:alt (:diplomatic b22 sb10)
                  (:critical fl10 sb10)
-                 (:comment "Original: Die letzte Note hat kein ♭.")
-                 (:flag :draft) (:id 0))
+                 (:coord-barre "MZ3 N22")
+                 (:coord-norm "G21 N11")
+                 (:comment "Original: E.")
+                 (:flag :ready) (:id 0))
            b22 bl)
    (:text 110 58
      (323 nil "Secondo ordine ᴄromatico.")
@@ -365,8 +380,10 @@
            cclef3 fl0 b22 sb0 b22 sbd0 b22 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b22 fl7 b22 sb7 b22 sbd7 b22 sbd8 b22
            (:alt (:diplomatic sb9)
                  (:critical sbd9)
-                 (:comment "Original: Die letzte Note kein keinen enharmonischen Punkt.")
-                 (:flag :draft) (:id 0))
+                 (:coord-barre "MZ4 N11")
+                 (:coord-norm "G13 N11")
+                 (:comment "Original: B♮.")
+                 (:flag :ready) (:id 0))
            b22
            (:section s22)
            (:alt (:original-layout)
@@ -380,7 +397,9 @@
            (:section s14) cclef5
            (:alt (:diplomatic b38)
                  (:critical fl0)
-                 (:comment "Original: Die erste Note hat kein ♭.")
+                 (:coord-barre "MZ5 N1")
+                 (:coord-norm "G14 N1")
+                 (:comment "Original: E.")
                  (:flag :draft) (:id 0))
            sb0 sbd0 b22 fl2 sb2 b22 fl3 sb3 b22 sbd3 sbd4 b22 fl6 sb6 b22 fl7 sb7 b22 sbd7 b22 fl9 sb9 fl10 sb10 b38
            (:section s23) cclef5 b38 fl0 sb0 b22 sb1 b22 sb2 b22 fl3 sb3 b22 fl4 sb4 b22 sb5 b22 fl6 sb6 b22 fl7 b22 sb7 b22 sb8 b22 sb9 fl10 sb10 b38 bl)
@@ -392,8 +411,10 @@
            (:section s24) cclef7 fl0 b22 sb0 b22 fl1 b22 sb1 b22 fl2 sb2 b22 sbd2 b22 fl4 sb4 b22 fl5 sb5 sbd5 sbd6 b22 fl8 sb8 b22 fl9 sb9 fl10 sb10
            (:alt (:diplomatic sbd10)
                  (:critical)
-                 (:comment "Original: Nach der letzten Note steht ein Ḟ.")
-                 (:flag :draft) (:id 0))
+                 (:coord-barre "MZ6 N22")
+                 (:coord-norm "G24 N11")
+                 (:comment "Original: Nach der letzten Note (F♭) steht ein Ḟ.")
+                 (:flag :ready) (:id 0))
            b22 bl)
    (:text 110 58
      (335 nil "Secondo ordine ᴄromatico.")
@@ -416,8 +437,10 @@
            (:section s17) (:f-clef) max7 fclef7 b22 fl0 sb0 b22 sbd0 b22 sbd1 b22 sbd2 b22 fl3 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22
            (:alt (:diplomatic sb9)
                  (:critical sbd9)
-                 (:comment "Original: Die letzte Note hat keinen enharmonischen Punkt.")
-                 (:flag :draft) (:id 0))
+                 (:coord-barre "MZ8 N11")
+                 (:coord-norm "G17 N11")
+                 (:comment "Original: A.")
+                 (:flag :ready) (:id 0))
            b22
            (:section s26) (:f-clef) max7 fclef7 b22 fl0 sb0 b22 fl1 sb1 b22 fl2 sb2 b22 sbd2 sbd3 b22 fl5 sb5 b22 sbd5 b22 sbd6 b22 fl8 sb8 b22 fl9 sb9 sbd9 b22 bl)
    (:text 110 58
@@ -464,8 +487,10 @@
            cclef1 fl0 b22 sb0 b22 sbd0 fl2 b22 sb2 b22 fl3 sb3 b22 sb4 b22 fl5 sb5
            (:alt (:diplomatic b22 sb6)
                  (:critical fl6 sb6)
-                 (:comment "Original: Die fünftletzte Note hat kein ♭.")
-                 (:flag :draft) (:id 0))
+                 (:coord-barre "MZ3 N7")
+                 (:coord-norm "G30 N7")
+                 (:comment "Original: A.")
+                 (:flag :ready) (:id 0))
            b22 fl7 sb7 b22 sbd7 b22 fl9 sb9 fl10 sb10 b22
            (:section s39) cclef1 fl0 b22 sb0 b22 sb1 b22 sb2 b22 fl3 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 fl7 sb7 b22 sb8 b22 sb9 fl10 sb10 b22 b22 bl)
    (:text 110 58
@@ -525,7 +550,10 @@
            (:f-clef) max9 fclef9 b22 fl0 sb0 b22 sbd0 b22 sbd1 b22 fl3 sb3 b22 fl4 sb4 sbd4 b22 sbd5 b22 fl7 sb7 sbd7
            (:alt (:diplomatic fl8)
                  (:critical b22)
-                 (:comment "Original: Die zweitletzte Note hat ein ♭.") (:flag :draft) (:id 0))
+                 (:coord-barre "MZ9 N10")
+                 (:coord-norm "G36 N10")
+                 (:comment "Original: Ė♭.")
+                 (:flag :ready) (:id 0))
            sbd8 fl10 sb10 b22 bl
            (:section s45) (:f-clef) b22 max9 fclef9 b22 fl0 sb0 b22 fl1 sb1 sb2 b22 fl3 sb3 b22 fl4 sb4 fl5 sb5 sb6 fl7 sb7 fl8 sb8 b22 sb9 fl10 sb10 bl)
    (:vspace 110)
@@ -550,36 +578,21 @@
            (:alt (:original-layout)
                  (:alternative-layout (:newline))
                  (:flag :layout) (:id 0))
-           (:f-clef) max7 fclef7 b38 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9
-           (:alt (:diplomatic fl10 sb10)
-                 (:critical fl10 sb10)
-                 (:comment "Die letzte Note ist unregelmässig erniedrigt, aber plausibel. Die regelmässige Variante ist B♮.")
-                 (:flag :draft) (:id 0))
-           b38 b22 bl)
+           (:f-clef) max7 fclef7 b38 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 fl10 sb10 b38 b22 bl)
    (:text 110 58
      (252 nil "Seſto ordine Cromatico Enar.")
      (1350 nil "Settimo ordine ᴄromatico ᴇnar."))
    (:music 2389
            (:section s47) gclef3 b38 fl0 b38 sb0 b38 fl1 b38 sb1 b38 sbd1 b38 fl3 sb3 fl4 sb4 sbd4 sbd5 fl7 sb7 fl8 sb8 sbd8 fl10 sb10 b38
            (:section s56)
-           gclef3 b22 fl0 b22 sb0 b22 fl1 sb1 b22 sb2 b22 sb3 b22 fl4 sb4 b22 fl5 sb5 b22 sb6 b22 fl7 b22 sb7 b22 fl8 sb8 b22 sb9
-           (:alt (:diplomatic fl10 sb10)
-                 (:critical fl10 sb10)
-                 (:comment "Die letzte Note ist unregelmässig erniedrigt, aber plausibel. Die regelmässige Variante ist G.")
-                 (:flag :draft) (:id 0))
-           b38 bl)
+           gclef3 b22 fl0 b22 sb0 b22 fl1 sb1 b22 sb2 b22 sb3 b22 fl4 sb4 b22 fl5 sb5 b22 sb6 b22 fl7 b22 sb7 b22 fl8 sb8 b22 sb9 fl10 sb10 b38 bl)
    (:text 110 58
      (270 nil "Seſto ordine ᴄromatico Enar.")
      (1313 nil "Settimo ordine ᴄromatico Enar."))
    (:music 2381
            (:section s48) cclef1 b22 fl0 sb0 b22 sb1 b22 fl2 b22 sb2 b22 fl3 b22 sb3 b22 sb4 b22 fl5 b22 sb5 b22 fl6 b22 sb6 b22 fl7 b22 sb7 b22 sb8 b22 fl9 b22 sb9 fl10 sb10 b22
            (:section s57)
-           cclef1 b22 fl0 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 fl7 b22 sb7 b22 sb8 b22 sb9
-           (:alt (:diplomatic fl10 sb10)
-                 (:critical fl10 sb10)
-                 (:comment "Die letzte Note ist unregelmässig erniedrigt, aber plausibel. Die regelmässige Variante ist E.")
-                 (:flag :draft) (:id 0))
-           b22 bl)
+           cclef1 b22 fl0 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 fl7 b22 sb7 b22 sb8 b22 sb9 fl10 sb10 b22 bl)
    (:text 110 58
      (264 nil "Seſto ordine ᴄromatico ᴇnar.")
      (1436 nil "Settimo ordine ᴄromatico Enar."))
@@ -593,36 +606,21 @@
            (:alt (:original-layout)
                  (:alternative-layout (:newline))
                  (:flag :layout) (:id 0))
-           cclef3 b22 fl0 sb0 b22 fl1 sb1 b22 fl2 sb2 sb3 b22 fl4 sb4 b22 fl5 sb5 sb6 b22 fl7 sb7 b22 fl8 sb8 fl9 sb9
-           (:alt (:diplomatic sbd9)
-                 (:critical sbd9)
-                 (:comment "Die letzte Note ist unregelmässig erniedrigt, aber plausibel. Die regelmässige Variante ist C.")
-                 (:flag :draft) (:id 0))
-           b38 bl)
+           cclef3 b22 fl0 sb0 b22 fl1 sb1 b22 fl2 sb2 sb3 b22 fl4 sb4 b22 fl5 sb5 sb6 b22 fl7 sb7 b22 fl8 sb8 fl9 sb9 sbd9 b38 bl)
    (:text 110 58
      (265 nil "Seſto ordine ᴄromatico ᴇnar.")
      (1311 nil "Settimo ordine ᴄromatico Enar."))
    (:music 2385
            (:section s50) cclef5 b22 fl0 b22 sb0 b22 sb1 b22 fl2 b22 sb2 b22 fl3 b22 sb3 b22 fl4 b22 sb4 b22 sbd4 b22 fl6 b22 sb6 b22 fl7 b22 sb7 b22 sb8 b22 fl9 sb9 fl10 sb10 b22
            (:section s59)
-           cclef5 b22 fl0 b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 fl4 b22 sb4 b22 sb5 b22 sb6 b22 fl7 sb7 sb8 sb9
-           (:alt (:diplomatic fl10 sb10)
-                 (:critical fl10 sb10)
-                 (:comment "Die letzte Note ist unregelmässig erniedrigt, aber plausibel. Die regelmässige Variante ist A.")
-                 (:flag :draft) (:id 0))
-           b38 bl)
+           cclef5 b22 fl0 b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 fl4 b22 sb4 b22 sb5 b22 sb6 b22 fl7 sb7 sb8 sb9 fl10 sb10 b38 bl)
    (:text 110 58
      (251 nil "seſto ordine ᴄromatico ᴇnar.")
      (1460 nil "Settimo ordine ᴄromatico ᴇnar."))
    (:music 2384
            (:section s51) cclef7 b22 fl0 b22 sb0 b22 fl1 b22 sb1 b22 sbd1 b22 sbd2 b22 fl4 b22 sb4 b22 sbd4 b22 sbd5 b22 sbd6 b22 fl8 b22 sb8 b22 sbd8 b22 sbd9 b22
            (:section s60)
-           cclef7 fl0 sb0 b22 fl1 b22 sb1 b22 fl2 sb2 b22 sb3 b22 fl4 sb4 b22 fl5 sb5 b22 fl6 sb6 sbd6 b22 fl8 sb8 fl9 sb9
-           (:alt (:diplomatic sbd9)
-                 (:critical sbd9)
-                 (:comment "Die letzte Note ist unregelmässig erniedrigt, aber plausibel. Die regelmässige Variante ist F.")
-                 (:flag :draft) (:id 0))
-           b22 bl)
+           cclef7 fl0 sb0 b22 fl1 b22 sb1 b22 fl2 sb2 b22 sb3 b22 fl4 sb4 b22 fl5 sb5 b22 fl6 sb6 sbd6 b22 fl8 sb8 fl9 sb9 sbd9 b22 bl)
    (:text 110 58
      (261 nil "seſto ordine ᴄromatico Enar.")
      (1368 nil "Settimo ordine ᴄromatico ᴇnar."))
@@ -636,12 +634,7 @@
            (:alt (:original-layout)
                  (:alternative-layout (:newline))
                  (:flag :layout) (:id 0))
-           (:f-clef) max5 fclef5 b22 fl0 sb0 b22 fl1 sb1 b22 sb2 b22 sb3 b22 fl4 sb4 b22 sb5 b22 sb6 b22 fl7 sb7 b22 fl8 sb8 sb9
-           (:alt (:diplomatic fl10 sb10)
-                 (:critical fl10 sb10)
-                 (:comment "Die letzte Note ist unregelmässig erniedrigt, aber plausibel. Die regelmässige Variante ist D.")
-                 (:flag :draft) (:id 0))
-           b38 bl)
+           (:f-clef) max5 fclef5 b22 fl0 sb0 b22 fl1 sb1 b22 sb2 b22 sb3 b22 fl4 sb4 b22 sb5 b22 sb6 b22 fl7 sb7 b22 fl8 sb8 sb9 fl10 sb10 b38 bl)
    (:text 110 58
      (271 nil "Seſto ordine ᴄromatico Enar.")
      (1394 nil "settimo ordine ᴄromatico Enar."))
@@ -649,25 +642,16 @@
            (:section s53) (:f-clef) max7 fclef7 b22 fl0 b22 sb0 b22 fl1 b22 sb1 b22 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 fl8 sb8 sbd8
            (:alt (:diplomatic fl10 sb10)
                  (:critical b22 sbd9)
-                 (:comment "Original: Die letzte Note ist ein Ḃ♭.")
-                 (:flag :draft) (:id 0))
-
+                 (:coord-barre "MZ8 N11")
+                 (:coord-norm "G53 N11")
+                 (:comment "Original: B♭.")
+                 (:flag :ready) (:id 0))
            (:section s62)
-           (:f-clef) max7 fclef7 b38 fl0 sb0 b22 fl1 sb1 b22 fl2 sb2 b22 fl3 sb3 b22 sbd3 b22 fl5 sb5 b22 fl6 sb6 b22 sbd6 b22 fl8 b22 sb8 fl9 sb9
-           (:alt (:diplomatic sbd9)
-                 (:critical sbd9)
-                 (:comment "Die letzte Note ist unregelmässig erniedrigt, aber plausibel. Die regelmässige Variante ist B♭.")
-                 (:flag :draft) (:id 0))
-           b38 bl)
+           (:f-clef) max7 fclef7 b38 fl0 sb0 b22 fl1 sb1 b22 fl2 sb2 b22 fl3 sb3 b22 sbd3 b22 fl5 sb5 b22 fl6 sb6 b22 sbd6 b22 fl8 b22 sb8 fl9 sb9 sbd9 b38 bl)
    (:text 110 58
      (257 nil "Seſto ordine ᴄromatico Enar.")
      (1353 nil "settimo ordine ᴄromatico Enar."))
    (:music 2369
            (:section s54) (:f-clef) max9 fclef9 b22 fl0 sb0 b22 fl1 sb1 b22 sbd1 b22 fl3 sb3 b22 fl4 sb4 b22 sbd4 b22 sbd5 b22 fl7 sb7 b22 fl8 sb8 b22 sbd8 fl10 sb10 b22
            (:section s63)
-           (:f-clef) max9 fclef9 b22 fl0 sb0 b22 fl1 sb1 b22 sb2 b22 sb3 b22 fl4 sb4 b22 fl5 sb5 sb6 b22 fl7 sb7 b22 fl8 sb8 sb9
-           (:alt (:diplomatic fl10 sb10)
-                 (:critical fl10 sb10)
-                 (:comment "Die letzte Note ist unregelmässig erniedrigt, aber plausibel. Die regelmässige Variante ist G.")
-                 (:flag :draft) (:id 0))
-           b22 bl)))
+           (:f-clef) max9 fclef9 b22 fl0 sb0 b22 fl1 sb1 b22 sb2 b22 sb3 b22 fl4 sb4 b22 fl5 sb5 sb6 b22 fl7 sb7 b22 fl8 sb8 sb9 fl10 sb10 b22 bl)))
