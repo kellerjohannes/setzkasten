@@ -24,21 +24,33 @@
 
 (defparameter *svg-export-path*
   (pathname "~/common-lisp/setzkasten-output/svg/"))
+
 (defparameter *apparatus-export-path-raw*
   (pathname "~/common-lisp/setzkasten-output/apparatus/raw/"))
+
 (defparameter *apparatus-export-path-tex-standalones*
   (pathname "~/common-lisp/setzkasten-output/apparatus/tex/standalones/"))
+
 (defparameter *apparatus-export-path-tex-imports*
   (pathname "~/common-lisp/setzkasten-output/apparatus/tex/imports/"))
+
+(defparameter *apparatus-export-path-tei*
+  (pathname "~/common-lisp/setzkasten-output/apparatus/tei/"))
+
 (defparameter *encoding-source*
   (pathname "~/common-lisp/setzkasten/encoding/"))
+
 (defparameter *log-file-path*
   (pathname "~/common-lisp/setzkasten-output/logfiles/"))
+
 (defparameter *configuration-path*
   (pathname "~/common-lisp/setzkasten/backend-configuration/"))
+
 (defparameter *lilypond-export-path*
   (pathname "~/common-lisp/setzkasten-output/ly/"))
+
 (defparameter *lilypond-path*
   (pathname "/usr/bin/lilypond"))
+
 (defparameter *visual-score-export-path*
   (pathname "~/common-lisp/setzkasten-output/visual-score/"))

@@ -263,14 +263,6 @@
                                         (if id id 0)))))
                *latex-table-footer*))
 
-(defun extract-meta-data (data)
-  (rest (find :metadata data :key #'first)))
-
-(defun strip-table-data (data selectors)
-  (remove-if-not (lambda (item)
-                   (and (member (first item) *apparatus-item-types*)
-                        (member (getf (rest item) :reading) selectors)))
-                 data))
 
 (defun generate-latex-entry (filename selectors)
   (with-open-file (in-file (merge-pathnames *apparatus-export-path-raw*

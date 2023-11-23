@@ -44,7 +44,8 @@
   (generate-latex-apparatus-import-fragments (format nil "~a-~a" filename suffix)
                                              apparatus-selectors)
   (generate-latex-apparatus-import-compact-fragments (format nil "~a-~a" filename suffix)
-                                                     apparatus-selectors))
+                                                     apparatus-selectors)
+  (generate-tei-apparatus (format nil "~a-~a" filename suffix) apparatus-selectors))
 
 
 ;; for external use, in case other programs want to operate on a score object
@@ -248,6 +249,10 @@
 
 (defparameter *working*
   `(
+    ("b5-c59-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b5-c59-m1" "crit" (:critical :barre :diplomatic) ,*vicentino-types-backend* (:critical :barre))
+    ("b5-c59-m1" "norm-it" (:it :critical :critical :barre :diplomatic :alternative-layout) ,*lilypond-backend-modern*)
+
     ("b1-c27-m1" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-modern*)
     ("b1-c27-m1" "norm-en" (:en :critical :barre :diplomatic) ,*lilypond-backend-modern*)
     ("b1-c27-m1" "norm-de" (:de :critical :barre :diplomatic) ,*lilypond-backend-modern*)

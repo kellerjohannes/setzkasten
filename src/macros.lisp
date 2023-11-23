@@ -24,6 +24,7 @@
 ;; string processing in lilypond context
 
 (defparameter *italics-trigger* "_")
+(defparameter *bold-trigger* "*")
 
 (defun find-next-trigger (text-string trigger-string &optional (scan-start 0))
   (search trigger-string text-string :start2 scan-start))

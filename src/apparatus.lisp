@@ -232,6 +232,19 @@ replacing the `expression'."
     (values (loop-score score state) (dump-apparatus-data state))))
 
 
+
+(defun strip-table-data (data selectors)
+  (remove-if-not (lambda (item)
+                   (and (member (first item) *apparatus-item-types*)
+                        (member (getf (rest item) :reading) selectors)))
+                 data))
+
+(defun extract-meta-data (data)
+  (rest (find :metadata data :key #'first)))
+
+
+
+
 ;; example for meta data
 '(:metadata
   :filename "b5-c53-m2"
