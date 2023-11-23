@@ -3,7 +3,7 @@
   :version "0.1"
   :author "Johannes Keller <johannkell@gmail.com>"
   :licence "Public Domain"
-  :depends-on (:hunchentoot :cl-who :cl-ppcre :cl-svg :vicentino-tunings)
+  :depends-on (:cl-ppcre :cl-svg :vicentino-tunings)
   :components ((:file "vector-package")
                (:file "setzkasten")
                (:file "macros")
@@ -13,6 +13,8 @@
                (:file "apparatus"
                 :depends-on ("score-parser"))
                (:file "apparatus-tex-backend"
+                :depends-on ("apparatus"))
+               (:file "apparatus-tei-backend"
                 :depends-on ("apparatus"))
                (:file "class-definitions"
                 :depends-on ("macros" "setzkasten"))
@@ -28,10 +30,10 @@
                 :depends-on ("backend-class" "score-parser"))
                (:file "visual-score-backend"
                 :depends-on ("backend-class" "score-parser"))
+               (:file "mei-backend"
+                :depends-on ("backend-class" "score-parser"))
                (:file "dispatcher"
-                :depends-on ("backend-type-imitation" "apparatus" "score-parser"))
-               (:file "webserver-display"
-                :depends-on ("backend-type-imitation")))
+                :depends-on ("backend-type-imitation" "apparatus" "score-parser")))
   :build-pathname "setzkasten-bin"
   :entry-point "setzkasten:main")
 
