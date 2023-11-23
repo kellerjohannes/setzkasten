@@ -228,7 +228,14 @@
            (:alt (:original-layout (:newline))
                  (:alternative-layout)
                  (:flag :layout) (:id 0))
-           cclef3 b22 fl29 (:key-signature nil nil nil nil nil nil :flat)
+
+           (:alt (:diplomatic cclef1)
+                 (:barre cclef3)
+                 (:coord-barre "MZ3 N1")
+                 (:coord-norm "G3 N1")
+                 (:comment "Dieser Schlüssel steht in gewissen Quellen auf dem Kopf. [Achtung, Pseudo-Eintrag, muss gelöscht werden.")
+                 (:flag :test) (:id 17))
+           b22 fl29 (:key-signature nil nil nil nil nil nil :flat)
            b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b22 b38
            (:section s11) cclef3 b22 fl2
            (:alt (:diplomatic fl4)

@@ -966,7 +966,7 @@ dot = {
                               (output-format :svg-cropped))
   (case output-format
     (:svg-cropped
-     (uiop:run-program (list lilypond-path "-dbackend=svg" "-dno-point-and-click" "-dcrop" "-o"
+     (uiop:run-program (list lilypond-path "-dbackend=ps" "-dno-point-and-click" "-dcrop" "-o"
                              (uiop:native-namestring
                               (namestring (make-pathname :type nil :defaults output)))
                              (uiop:native-namestring input))
@@ -1019,15 +1019,15 @@ dot = {
                                                     ;; suffix removed (.pdf), testing
                                                     (format nil "~a-~a"
                                                             (filename score-instance) suffix))))))
-    (when (eq (output-format backend) :svg-cropped)
-      (rename-file (merge-pathnames *lilypond-export-path*
-                                    (pathname (format nil "~a-~a.cropped.svg"
-                                                      (filename score-instance)
-                                                      suffix)))
-                   (merge-pathnames *lilypond-export-path*
-                                    (pathname (format nil "~a-~a.svg"
-                                                      (filename score-instance)
-                                                      suffix)))))
+    ;; (when (eq (output-format backend) :svg-cropped)
+    ;;   (rename-file (merge-pathnames *lilypond-export-path*
+    ;;                                 (pathname (format nil "~a-~a.cropped.svg"
+    ;;                                                   (filename score-instance)
+    ;;                                                   suffix)))
+    ;;                (merge-pathnames *lilypond-export-path*
+    ;;                                 (pathname (format nil "~a-~a.svg"
+    ;;                                                   (filename score-instance)
+    ;;                                                   suffix)))))
     )
   (format nil "~a-~a" (filename score-instance) suffix))
 

@@ -4,7 +4,8 @@
   "<apparatus>")
 
 (defparameter *tei-footer*
-  "</apparatus>")
+  "
+</apparatus>")
 
 (defun generate-tei-table-line (entry filename)
   (format nil "
