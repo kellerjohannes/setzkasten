@@ -233,6 +233,9 @@
                  (:barre cclef3)
                  (:coord-barre "MZ3 N1")
                  (:coord-norm "G3 N1")
+                 ;; JK: Achtung, dieses :alt-Element muss entfernt werden. 'clef3' ist korrekt. Das war nur ein Test für Rolf.
+                 ;;
+                 ;; OPEN
                  (:comment "Dieser Schlüssel steht in gewissen Quellen auf dem Kopf. [Achtung, Pseudo-Eintrag, muss gelöscht werden.")
                  (:flag :test) (:id 17))
            b22 fl29 (:key-signature nil nil nil nil nil nil :flat)
