@@ -249,9 +249,9 @@
 
 (defparameter *working*
   `(
-    ;; ("b5-c59-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
-    ;; ("b5-c59-m1" "crit" (:critical :barre :diplomatic) ,*vicentino-types-backend* (:critical :barre))
-    ;; ("b5-c59-m1" "norm-it" (:it :critical :critical :barre :diplomatic :alternative-layout) ,*lilypond-backend-modern*)
+    ("b5-c59-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
+    ("b5-c59-m1" "crit" (:critical :barre :diplomatic) ,*vicentino-types-backend* (:critical :barre))
+    ("b5-c59-m1" "norm-it" (:it :critical :critical :barre :diplomatic :alternative-layout) ,*lilypond-backend-modern*)
 
     ("b1-c27-m1" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-modern*)
     ("b1-c27-m1" "norm-en" (:en :critical :barre :diplomatic) ,*lilypond-backend-modern*)

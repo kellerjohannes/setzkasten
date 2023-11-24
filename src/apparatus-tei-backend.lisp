@@ -1,15 +1,15 @@
 (in-package :setzkasten)
 
 (defparameter *tei-header*
-  "<apparatus>")
+  "<noteGrp type=\"music\">")
 
 (defparameter *tei-footer*
   "
-</apparatus>")
+</noteGrp>")
 
 (defun generate-tei-table-line (entry filename)
   (format nil "
-  <note type=\"~a\" unique_id=\"~a\" id=\"~a\" location_barre=\"~a\" location_modern=\"~a\">
+  <note type=\"music\" subtype=\"~a\" xml:id=\"~a\" n=\"~a\" corresp-barre=\"~a\" corresp-modern=\"~a\">
     ~a
   </note>"
           (prettify-keyword (getf entry :reading))
