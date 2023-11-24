@@ -104,12 +104,12 @@
 (defparameter *latex-table-header-compact*
    "
 \\renewcommand{\\arraystretch}{1.2}
-\\begin{longtable}{p{2mm}p{1.2cm}p{2.5cm}p{2.5cm}p{9cm}}
+\\begin{longtable}{p{2mm}p{1.2cm}p{1.5cm}p{1.5cm}p{11cm}}
   \\toprule
   ID &
   Kategorie &
-  Koord. Barré &
-  Koord. Normalisierung &
+  Quelle &
+  modern &
   Kommentar \\\\
   \\midrule
 

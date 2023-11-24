@@ -182,14 +182,15 @@
   (execute-book4)
   (execute-book5)
 
-  (dolist (mission  (list
-                     *special*
-                     *tatti*
+  ;; (dolist (mission  (list
+  ;;                    ;; *special*
+  ;;                    ;; *tatti*
 
-                     ;; zu prüfen
-                     *renotations*
-                     ))
-    (execute-mission mission)))
+  ;;                    ;; ;; zu prüfen
+  ;;                    ;; *renotations*
+  ;;                    ))
+  ;;   (execute-mission mission))
+  )
 
 
 (defun execute-book1 ()
