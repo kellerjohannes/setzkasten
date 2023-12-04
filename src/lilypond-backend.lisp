@@ -639,7 +639,7 @@
 
 (defmethod generate-mobject-ly-code ((mobject mobject) (backend lilypond-backend)
                                      clef-state key-state clef-override meter-state)
-  (let ((current-clef (if clef-override
+  (let ((current-clef (if (and clef-override (eq (clef-type backend) :modern))
                           clef-override
                           (clef->ly-clef backend (clef mobject))))
         (current-key (key-signature mobject))
