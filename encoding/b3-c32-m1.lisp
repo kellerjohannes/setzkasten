@@ -5,20 +5,20 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio di molte cadentie del primo modo, a quattro voci,\\della musica participata e mista per ♮ quadro")
                  (:de "")
-                 (:en "")))
+                 (:en "Example of many cadences of the first mode, in four voci,\\in musica participata and mista in ♮ quadro")))
    (:voice-labels
     (s1 v1 (:alt (:it "Cadentie del soprano")
                  (:de "")
-                 (:en "")))
+                 (:en "Cadence of the soprano")))
     (s1 v2 (:alt (:it "Cadentie del contr'alto")
                  (:de "")
-                 (:en "")))
+                 (:en "Cadence of the alto")))
     (s1 v3 (:alt (:it "Cadentie del tenore")
                  (:de "")
-                 (:en "")))
+                 (:en "Cadence of the tenor")))
     (s1 v4 (:alt (:it "Cadentie del basso")
                  (:de "")
-                 (:en "")))))
+                 (:en "Cadence of the bass")))))
   (:data
    (:text 70 58
           (157 1898
