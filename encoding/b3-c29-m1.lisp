@@ -15,7 +15,7 @@
     nil
     (:alt (:it "L'atto che faceva il soprano di sopra; hora il tenore lo farà di sotto, con il contr'alto;\\et in alcuni luoghi si ritroverà la sincopa tutta buona, a due voci")
           (:de "")
-          (:en "The role that the soprano took above is now taken by the tenor below with the alto; in some cases one finds a wholely good syncopa, in two voci."))
+          (:en "The role that the soprano took above is now taken by the tenor below with the alto; in some cases one finds a wholly good syncopa, in two voci."))
     (:alt (:it "Cadentie che fuggano la sua conclusione")
           (:de "")
           (:en "Cadences which evade their conclusions")))
