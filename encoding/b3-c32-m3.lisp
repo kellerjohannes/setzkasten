@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio di molte cadentie del terzo modo\\della musica participata, e mista, per ♮ quadro")
                  (:de "")
-                 (:en "Example of many cadences of the third mode\\in musica participata and mista, in ♮ quadro")))
+                 (:en "Example of many cadences of the third mode\\of musica participata and mista, in ♮ quadro")))
    (:voice-labels
     (s1 v1 (:alt (:it "Cadentie del soprano")
                  (:de "")
