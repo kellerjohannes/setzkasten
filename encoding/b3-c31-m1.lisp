@@ -6,7 +6,7 @@
    (:title (:alt (:it "Esempio delle cadentie a tre voci, della music participata e mista")
    ;;Kommentar Anne: it should be "...della musica participata..."
                  (:de "")
-                 (:en "Example of the cadences in three voci, in musica participata and mista")))
+                 (:en "Example of the cadences in three voci, of musica participata and mista")))
    (:section-captions
     (s1 "")
     (s2 (:alt (:it "tutta buona")
