@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del secondo modo cromatico")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the second chromatic mode"))))
 (:preamble-lilypond
    (:alt (:tolgahan (:clef-overrides
                      (s1 v1 "treble_8")))))
