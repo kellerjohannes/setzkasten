@@ -5,17 +5,18 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio di tre quarte differenti delli tre generi\\musicali, della prima spetie delle quarte")
                  (:de "")
-                 (:en "")))
+                 (:en "Example of the three different quarte of the three musical\\genera of the first species of the quarte")))
    (:section-captions
     (s1 (:alt (:it "Prima quarta\\diatonica")
               (:de "")
-              (:en "")))
+              (:en "First quarta\\diatonic")))
     (s2 (:alt (:it "Prima quarta\\cromatica")
               (:de "")
-              (:en "")))
+              (:en "First quarta\\chromatic")))
     (s3 (:alt (:it "Prima quarta\\enarmonica")
               (:de "")
-              (:en "")))))
+              (:en "First quarta\\enharmonic")))))
+              ;;Kommentar Anne: Ich habe etwas Mühe hier und in Kapitel 36-37, dass die Texte nur auf einer Seite des Beispiels sind, insbesondere im englischen, weil das Adjektiv eigentlich vor dem Substantiv stehen sollten. Wenn sie auf entgegengesetzte Seiten der Musik stehen, deuten sie zwei verschiedenen Ebenen an.
   (:data
    (:text 70 58
           (49 2092 "Eſſempio di tre Ɋuarte differenti delli tre generi muſicali, della prima ſpetie delle quarte."))
