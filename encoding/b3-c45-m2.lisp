@@ -5,17 +5,18 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio di tre quarte, differenti de tre generi musicali,\\della seconda spetie delle quarte")
                  (:de "")
-                 (:en "")))
+                 (:en "Example of the three different quarte of the three musical genera\\of the second species of the quarte")))
    (:section-captions
     (s1 (:alt (:it "Seconda quarta\\diatonica")
               (:de "")
-              (:en "")))
+              (:en "Second quarta\\diatonic")))
     (s2 (:alt (:it "Seconda quarta\\cromatica")
               (:de "")
-              (:en "")))
+              (:en "Second quarta\\chromatic")))
     (s3 (:alt (:it "Seconda quarta\\enarmonica")
               (:de "")
-              (:en "")))))
+              (:en "Second quarta\\enharmonic")))))
+              ;;Kommentar Anne: Gleich wie davor
   (:data
    (:text 70 58
           (64 2085 "Eſſempio di tre quarte,differenti de tre generi muſicali,della ſeconda ſpetie delle quarte."))
