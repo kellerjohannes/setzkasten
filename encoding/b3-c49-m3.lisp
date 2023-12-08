@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del terzo modo enarmonico semplice")
                  (:de "")
-                 (:en "Example of the third simple enharmonic mode"))))
+                 (:en "Example of the simple third enharmonic mode"))))
   (:data
    (:text 90 58
           (512 1108 "Eſſempio del terzo modo Enarmonico ſemplice."))
