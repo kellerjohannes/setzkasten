@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del sesto modo enarmonico semplice")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the simple sixth enharmonic mode"))))
   (:data
    (:text 90 58
           (527 1071 "Eſſempio del ſeſto modo ᴇnarmonico ſemplice."))
