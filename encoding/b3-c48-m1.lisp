@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Prima quarta commista de i tre generi, e variate sorti,\\delle sue spetie ascendenti e discendenti")
                  (:de "")
-                 (:en "First quarta commixed of the three genera, and various kinds of their ascending and descending species"))))
+                 (:en "First quarta commixed of the three genera and various kinds of their ascending and descending species"))))
   (:data
    (:text 70 58
           (0 2186 "Prima Quarta commiſta de i tre generi,e uariate ſorti,delle ſue ſpetie aſcend. et diſcendenti."))
