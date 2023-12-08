@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del quarto modo enarmonico semplice")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the simple fourth enharmonic mode"))))
 
   (:preamble-lilypond
    (:alt (:tolgahan (:clef-overrides
