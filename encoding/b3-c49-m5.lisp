@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del quinto modo enarmonico semplice")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the simple fifth enharmonic mode"))))
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")))
