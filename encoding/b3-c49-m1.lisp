@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del primo modo enarmonico semplice")
                  (:de "")
-                 (:en "Example of the first simple enharmonic mode"))))
+                 (:en "Example of the simple first enharmonic mode"))))
   (:data
    (:text 100 58
           (518 1091 "Eſſempio del primo modo ᴇnarmonico ſemplice."))
