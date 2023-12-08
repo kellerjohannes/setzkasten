@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del secondo modo enarmonico semplice")
                  (:de "")
-                 (:en "Example of the second simple enharmonic mode"))))
+                 (:en "Example of the simple second enharmonic mode"))))
   (:preamble-lilypond
    (:alt (:tolgahan (:clef-overrides
                      (s1 v1 "treble_8")))))
