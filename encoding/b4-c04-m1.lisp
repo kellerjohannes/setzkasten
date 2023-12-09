@@ -6,10 +6,10 @@
    (:line-headings
     (:alt (:it "Esempio del tempo perfetto")
           (:de "")
-          (:en ""))
+          (:en "Example of perfect tempus"))
           (:alt (:it "Esempio del tempo imperfetto")
                 (:de "")
-                (:en ""))))
+                (:en "Example of imperfect tempus"))))
   (:data
    (:text 90 58
           (186 nil "Eſſempio del tempo perfetto.")
