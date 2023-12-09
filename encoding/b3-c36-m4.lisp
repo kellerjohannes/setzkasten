@@ -5,17 +5,17 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio delle tre quarte cromatiche")
                  (:de "")
-                 (:en "")))
+                 (:en "Example of the three chromatic quarte")))
    (:section-captions
     (s1 (:alt (:it "Prima quarta")
               (:de "")
-              (:en "")))
+              (:en "First quarta")))
     (s2 (:alt (:it "Seconda quarta")
               (:de "")
-              (:en "")))
+              (:en "Second quarta")))
     (s3 (:alt (:it "Terza quarta")
               (:de "")
-              (:en "")))))
+              (:en "Third quarta")))))
   (:data
    (:text 70 58
      (446 978 "Eſſempio delle tre quarte ᴄromatiche."))

@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del primo modo, cromatico")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the first chromatic mode"))))
   (:data
    (:text 90 58
           (504 974 "Eſſempio del Primo Modo , ᴄromatico."))

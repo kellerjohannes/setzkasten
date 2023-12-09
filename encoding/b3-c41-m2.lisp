@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del sesto modo cromatico")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the sixth chromatic mode"))))
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")))

@@ -6,13 +6,14 @@
    (:section-captions
     (s1 (:alt (:it "Seconda quinta\\diatonica")
               (:de "")
-              (:en "")))
+              (:en "Second quinta\\diatonic")))
     (s2 (:alt (:it "Seconda quinta\\cromatica")
               (:de "")
-              (:en "")))
+              (:en "Second quinta\\chromatic")))
     (s3 (:alt (:it "Seconda quinta\\enarmonica")
               (:de "")
-              (:en "")))))
+              (:en "Second quinta\\enharmonic")))))
+              ;;Kommentar Anne: same as previous
   (:data
    (:text 70 58
           (152 nil "ſeconda Ɋuinta")

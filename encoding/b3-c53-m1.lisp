@@ -5,8 +5,9 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "[Madonna il poco dolce]")
                  (:de "")
-                 (:en "")))
+                 (:en "[Madonna il poco dolce]")))
    (:voice-labels
+   ;;Kommentar Anne: you don't give us the possibility of translating these to German and English here.
     (s1 v1 "Soprano")
     (s1 v2 "[Alto]")
     (s1 v3 "[Tenore]")

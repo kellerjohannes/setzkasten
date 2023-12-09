@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio dell'ottavo modo cromatico")
                  (:de "")
-                 (:en ""))))
+                 (:en "Example of the eighth chromatic mode"))))
   (:data
    (:text 110 58
           (586 883 "Eſſempio dellʼottauo modo ᴄromatico."))

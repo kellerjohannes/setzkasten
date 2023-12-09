@@ -5,17 +5,18 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio di tre quinte differenti, di i tre generi musicali,\\della prima spetie delle quinte")
                  (:de "")
-                 (:en "")))
+                 (:en "Example of the three different quinte of the three musical genera\\of the first species of the quinte")))
    (:section-captions
     (s1 (:alt (:it "Prima quinta\\diatonica")
               (:de "")
-              (:en "")))
+              (:en "First quinta\\diatonic")))
     (s2 (:alt (:it "Prima quinta\\cromatica")
               (:de "")
-              (:en "")))
+              (:en "First quinta\\chromatic")))
     (s3 (:alt (:it "Prima quinta\\enarmonica")
               (:de "")
-              (:en "")))))
+              (:en "First quinta\\enharmonic")))))
+              ;;Kommentar Anne, same as previous
   (:data
    (:text 70 58
           (93 2031 "Eſſempio di tre quinte differenti,di i tre generi muſicali,della prima ſpetie delle quinte."))

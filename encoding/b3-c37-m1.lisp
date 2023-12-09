@@ -6,10 +6,10 @@
    (:section-headings
     (s1 (:alt (:it "Prima quinta\\diatonica")
               (:de "")
-              (:en "")))
+              (:en "First quinta\\diatonic")))
     (s2 (:alt (:it "Prima quinta\\cromatica")
               (:de "")
-              (:en "")))))
+              (:en "First quinta\\chromatic")))))
   (:data
    (:text 70 58
      (102 nil "Prima quinta ᴅiatonica.")
