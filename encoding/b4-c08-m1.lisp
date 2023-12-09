@@ -6,16 +6,16 @@
    (:section-headings
     (s1 (:alt (:it "Esempio di batter alla breve")
               (:de "")
-              (:en "")))
+              (:en "Example of beating alla breve")))
     (s2 (:alt (:it "Alla breve")
               (:de "")
-              (:en "")))
+              (:en "Alla breve")))
     (s3 (:alt (:it "Alla semibreve")
               (:de "")
-              (:en "")))
+              (:en "Alla semibreve")))
     (s4 (:alt (:it "Di proportione sesqualtera")
               (:de "")
-              (:en "")))))
+              (:en "Of the proportion sesquialtera")))))
   (:data
    (:text 90 58
           (184 nil "Eſſempio di batter alla breue")
