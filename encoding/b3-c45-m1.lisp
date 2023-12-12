@@ -9,14 +9,13 @@
    (:section-captions
     (s1 (:alt (:it "Prima quarta\\diatonica")
               (:de "")
-              (:en "First quarta\\diatonic")))
+              (:en "First diatonic\\quarta")))
     (s2 (:alt (:it "Prima quarta\\cromatica")
               (:de "")
-              (:en "First quarta\\chromatic")))
+              (:en "First chromatic\\quarta")))
     (s3 (:alt (:it "Prima quarta\\enarmonica")
               (:de "")
-              (:en "First quarta\\enharmonic")))))
-              ;;Kommentar Anne: Ich habe etwas Mühe hier und in Kapitel 36-37, dass die Texte nur auf einer Seite des Beispiels sind, insbesondere im englischen, weil das Adjektiv eigentlich vor dem Substantiv stehen sollten. Wenn sie auf entgegengesetzte Seiten der Musik stehen, deuten sie zwei verschiedenen Ebenen an.
+              (:en "First enharmonic\\quarta")))))
   (:data
    (:text 70 58
           (49 2092 "Eſſempio di tre Ɋuarte differenti delli tre generi muſicali, della prima ſpetie delle quarte."))

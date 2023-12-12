@@ -13,8 +13,9 @@
               ;; JK: Nach aktuellem Stand ist es nicht möglich, hier die Taktsignatur zu
               ;; unterdrücken. Soll dies getan werden, oder ist die ergänzte Taktsignatur sinnvoll?
               ;;
-              ;; OPEN
               ;; Kommentar Anne: Ich finde, dass es hier nicht stört.
+              ;;
+              ;; OPEN
               ))
     (s3 (:alt (:it "Si pronuntia la sillaba\\sotto la nera per bisogno")
               (:de "")
@@ -22,8 +23,9 @@
               ;; JK: Nach aktuellem Stand ist es nicht möglich, hier die Taktsignatur zu
               ;; unterdrücken. Soll dies getan werden, oder ist die ergänzte Taktsignatur sinnvoll?
               ;;
-              ;; OPEN
               ;; Kommentar Anne: Ich finde, dass es hier nicht stört.
+              ;;
+              ;; OPEN
               )))
    (:voice-order
     (s1 v1)

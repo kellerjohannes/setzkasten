@@ -9,16 +9,16 @@
    (:section-captions
     (s1 (:alt (:it "Prima quinta\\cromatica")
               (:de "")
-              (:en "First quinta\\chromatic")))
+              (:en "First chromatic\\quinta")))
     (s2 (:alt (:it "Seconda quinta\\cromatica")
               (:de "")
-              (:en "Second quinta\\chromatic")))
+              (:en "Second chromatic\\quinta")))
     (s3 (:alt (:it "Terza quinta\\cromatica")
               (:de "")
-              (:en "Third quinta\\chromatic")))
+              (:en "Third chromatic\\quinta")))
     (s4 (:alt (:it "Quarta quinta\\cromatica")
               (:de "")
-              (:en "Fourth quinta\\chromatic")))))
+              (:en "Fourth chromatic\\quinta")))))
   (:data
    (:text 110 58
           (191 1767 "Eſſempio delle quattro quinte ᴄromatiche : che ſegueno una doppo lʼaltra."))

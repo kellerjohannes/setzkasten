@@ -6,10 +6,10 @@
    (:section-headings
     (s1 (:alt (:it "Terza quarta\\diatonica")
               (:de "")
-              (:en "Third quarta\\diatonic")))
+              (:en "Third diatonic\\quarta")))
     (s2 (:alt (:it "Terza quarta\\cromatica")
               (:de "")
-              (:en "Third quarta\\chromatic")))))
+              (:en "Third chromatic\\quarta")))))
   (:data
    (:text 70 58
      (113 nil "Terza quarta.")

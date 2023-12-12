@@ -35,22 +35,21 @@
     (s2 (:alt (:it "per ♮: mi")
               (:de "")
               (:en "per ♮: mi")))
-    (s3 (:alt (:it "per natura: sol\\per ♭: fa\\per ♮: ut")
+    (s3 (:alt (:it "per natura: ut\\per ♭: sol\\per ♮: fa")
               ;; Kommentar Anne: this corresponds to the original, but is wrong. Either the natura
               ;; must be ut, the molle must be sol, and the hard must be fa; or the sequence of
               ;; hexachords must be different, with mollem being first with c as sol; hard second
-              ;; with c as f; and finally natura with c as ut. The German and English must be changed
-              ;; accordingly as well.
+              ;; with c as f; and finally natura with c as ut. The German and English must be
+              ;; changed accordingly as well.
               ;;
-              ;; OPEN
+              ;; JK: Ich habe Annes ersten Vorschlag implementiert, sowohl im Fake-Simile, wie auch
+              ;; in den modernen Textelementen. Also:
+              ;;
+              ;; "per natura: ut, per ♭: sol und per ♮: fa"
+              ;;
+              ;; DONE
               (:de "")
-              (:en "per natura: sol\\per ♭: fa\\per ♮: ut")))
-    ;; Kommentar Anne: this corresponds to the original, but is wrong. Either the natura must be ut,
-    ;; the molle must be sol, and the hard must be fa; or the sequence of hexachords must be
-    ;; different, with mollem being first with c as sol; hard second with c as f; and finally natura
-    ;; with c as ut. The Italian and German must be changed accordingly as well.
-    ;;
-    ;; OPEN
+              (:en "per natura: ut\\per ♭: sol\\per ♮: fa")))
     (s4 (:alt (:it "per ♭: la\\per ♮: sol\\per natura: re")
               (:de "")
               (:en "per ♭: la\\per ♮: sol\\per natura: re")))
@@ -65,15 +64,15 @@
               (:en "per natura: sol\\per ♭: re\\per ♮: ut")))))
   (:data
    (:text 70 58
-          (90 1974 "ᴅimoſtratione della ᴍano ᴄromatica, aſcendente, con li ꜱemitoni minori, e con l'eſſempio."))
+     (90 1974 "ᴅimoſtratione della ᴍano ᴄromatica, aſcendente, con li ꜱemitoni minori, e con l'eſſempio."))
    (:text 100 58
-          (41 nil "ᴀ lamire")
-          (366 nil "ʙ mi")
-          (680 nil "ᴄ ſolfaut")
-          (1002 nil "ᴅ laſolre")
-          (1301 nil "ᴇ lami")
-          (1613 nil "ꜰ faut")
-          (1919 nil "ɢ ſolreut"))
+     (41 nil "ᴀ lamire")
+     (366 nil "ʙ mi")
+     (680 nil "ᴄ ſolfaut")
+     (1002 nil "ᴅ laſolre")
+     (1301 nil "ᴇ lami")
+     (1613 nil "ꜰ faut")
+     (1919 nil "ɢ ſolreut"))
    (:music 2193
            (:voice v1)
            (:section s1)
@@ -91,18 +90,41 @@
            (:section s7)
            b22 sb8 b22 sh8 b22 sb8 b22 bl b38)
    (:text 60 58
-          (43 nil "la") (121 nil "mi") (206 nil "re")
-          (345 nil "mi")
-          (653 nil "ſol") (740 nil "fa") (835 nil "ut")
-          (959 nil "la") (1044 nil "ſol") (1141 nil "re")
-          (1279 nil "la") (1363 nil "mi")
-          (1567 nil "fa") (1676 nil "ut")
-          (1902 nil "ſol") (1999 nil "re") (2075 nil "ut"))
+     (43 nil "la") (121 nil "mi") (206 nil "re")
+     (345 nil "mi")
+     ;; Korrektur Anne: "per natura: ut, per ♭: sol und per ♮: fa"
+     ;;
+     ;; DONE
+     (653 nil
+          (:alt (:diplomatic "ſol")
+                (:critical "ut")
+                (:coord-barre "TZ3 TE3")
+                (:coord-norm "G3 US")
+                (:comment "Original erste Silbe: »ſol [fa ut]«.")
+                (:flag :ready) (:id 1)))
+     (740 nil
+          (:alt (:diplomatic "fa")
+                (:critical "sol")
+                (:coord-barre "TZ3 TE3")
+                (:coord-norm "G3 US")
+                (:comment "Original zweite Silbe: »[ſol] fa [ut]«.")
+                (:flag :ready) (:id 2)))
+     (835 nil
+          (:alt (:diplomatic "ut")
+                (:critical "fa")
+                (:coord-barre "TZ3 TE3")
+                (:coord-norm "G3 US")
+                (:comment "Original dritte Silbe: »[ſol fa] ut«.")
+                (:flag :ready) (:id 3)))
+     (959 nil "la") (1044 nil "ſol") (1141 nil "re")
+     (1279 nil "la") (1363 nil "mi")
+     (1567 nil "fa") (1676 nil "ut")
+     (1902 nil "ſol") (1999 nil "re") (2075 nil "ut"))
    (:text 100 58
-          (0 nil "per nat.ꝑ ♭.ꝑ ♮.")
-          (431 nil "per ♮.")
-          (569 nil "per n. ꝑ ♭. ꝑ ♮")
-          (959 nil "ꝑ ♭. ꝑ ♮. ꝑ n.")
-          (1309 nil "ꝑ ♮. ꝑ nat.")
-          (1554 nil "per nat.ꝑ ♭.")
-          (1855 nil "ꝑ n. ꝑ ♭. ꝑ ♮."))))
+     (0 nil "per nat.ꝑ ♭.ꝑ ♮.")
+     (431 nil "per ♮.")
+     (569 nil "per n. ꝑ ♭. ꝑ ♮")
+     (959 nil "ꝑ ♭. ꝑ ♮. ꝑ n.")
+     (1309 nil "ꝑ ♮. ꝑ nat.")
+     (1554 nil "per nat.ꝑ ♭.")
+     (1855 nil "ꝑ n. ꝑ ♭. ꝑ ♮."))))

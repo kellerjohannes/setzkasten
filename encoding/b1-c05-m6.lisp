@@ -38,7 +38,7 @@
     (s3 (:alt (:it "per natura: fa-mi-la per discendere\\fa-mi-mi per ascendere")
               (:de "")
               (:en "per natura: fa-mi-la in descent\\fa-mi-mi in ascent")))
-    (s4 (:alt (:it "per ♮: la-sol-fa-mi-re\\la-sol-fa-la-sol\\mi ascende")
+    (s4 (:alt (:it "per ♮: la-sol-fa-mi-re\\la-sol-fa-la-sol\\mi ascendendo")
               (:de "")
               (:en "per ♮: la-sol-fa-mi-re\\la-sol-fa-la-sol\\mi in ascent")))
     (s5 (:alt (:it "per ♭: la-sol-fa-la-sol\\per ♮: sol-fa-la-sol-fa")
@@ -47,15 +47,19 @@
     (s6 (:alt (:it "per ♮: fa-mi-mi")
               (:de "")
               (:en "per ♮: fa-mi-mi")))
-    (s7 (:alt (:it "per ♮: mi-mi-fa-mi-re\\per ♭: fa-mi-la per discendere")
+    (s7 (:alt (:it "per ♮: mi-mi-fa-mi-re\\per ♭: [mi-mi-]fa-mi-la per discendere")
               ;; Kommentar Anne: the "fa-mi-la" of the descent needs to be under the last three
               ;; notes. This may mean that it would be better to turn this phrase around, i.e. "per
               ;; discendere fa-mi-la" in order to get the spacing correct. The same is true for the
               ;; German and English.
               ;;
+              ;; JK: Die horizontale Platzierung von Text zu Notenköpfen ist problematisch, deshalb
+              ;; schlage ich vor, die Zuordnung explizit zu machen, indem wir "[mi-mi-]fa-mi-la per
+              ;; discendere" schreiben. Ist das akzeptabel?
+              ;;
               ;; OPEN
               (:de "")
-              (:en "per ♮: mi-mi-fa-mi-re\\per ♭: fa-mi-la in descent")))))
+              (:en "per ♮: mi-mi-fa-mi-re\\per ♭: [mi-mi-]fa-mi-la in descent")))))
   (:data
    (:text 70 58 (0 2210 "ᴍano ᴇnarmonica diſcendente con i ſemitoni minori, nel principio del tono per le ſette lettere della"))
    (:text 70 58 (0 1484 "ᴍano, con il tono diuiſo in quattro parti:& come ſi à da leggere."))

@@ -5,7 +5,6 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
     (s1 (:alt (:it "Esempio del punto di augumentatione della metà più")
-    ;;Kommentar Anne: corrected spelling of augmentatione
               (:de "")
               (:en "Example of the augmentation dot for half again more")))
     (s2 (:alt (:it "Punto di divisione")
@@ -18,7 +17,6 @@
               (:de "")
               (:en "Repeat dots")))
     (s5 (:alt (:it "Punti di augumentatione di voce")
-    ;;Kommentar Anne: corrected spelling of augmentatione
               (:de "")
               (:en "Augmentation dots of the voci")))
     (s6 (:alt (:it "Segno del comma.")

@@ -3,10 +3,7 @@
    (:alt-name "m3.053")
    (:comment "q021_s102, rotation: -0.81, origin: 974")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempi delle cadentie maggiori di breve senza punto,\\e con il punto dimiuite.")
-                 ;; Kommentar Anne: do you really want a period at the end of the Italian?
-                 ;;
-                 ;; OPEN
+   (:title (:alt (:it "Esempi delle cadentie maggiori di breve senza punto,\\e con il punto dimiuite")
                  (:de "")
                  (:en "Example of major cadences of a breve without a dot,\\and diminished with a dot"))))
   (:data

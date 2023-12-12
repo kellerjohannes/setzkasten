@@ -9,14 +9,13 @@
    (:section-captions
     (s1 (:alt (:it "Seconda quarta\\diatonica")
               (:de "")
-              (:en "Second quarta\\diatonic")))
+              (:en "Second diatonic\\quarta")))
     (s2 (:alt (:it "Seconda quarta\\cromatica")
               (:de "")
-              (:en "Second quarta\\chromatic")))
+              (:en "Second chromatic\\quarta")))
     (s3 (:alt (:it "Seconda quarta\\enarmonica")
               (:de "")
-              (:en "Second quarta\\enharmonic")))))
-              ;;Kommentar Anne: Gleich wie davor
+              (:en "Second enharmonic\\quarta")))))
   (:data
    (:text 70 58
           (64 2085 "Eſſempio di tre quarte,differenti de tre generi muſicali,della ſeconda ſpetie delle quarte."))

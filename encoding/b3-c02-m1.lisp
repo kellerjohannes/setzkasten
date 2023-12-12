@@ -17,17 +17,20 @@
               (:de "")
               (:en "Third quarta"))))
    (:section-captions
-    (s1 (:alt (:it "Composta / incomposta")
+    (s1 (:alt (:it "composta / incomposta")
               ;; Kommentar Anne: Willst du wirklich composta gross schreiben beid den section
               ;; captions?
               ;;
-              ;; OPEN
+              ;; JK: Nein, das war einmal ein Wunsch von Luigi, ist aber aus meiner Sicht
+              ;; neu zu diskutieren (ich meine, die Gross-/Kleinschreibung insgesamt).
+              ;;
+              ;; DONE
               (:de "")
               (:en "composta / incomposta")))
-    (s2 (:alt (:it "Composta / incomposta")
+    (s2 (:alt (:it "composta / incomposta")
               (:de "")
               (:en "composta / incomposta")))
-    (s3 (:alt (:it "Composta / incomposta")
+    (s3 (:alt (:it "composta / incomposta")
               (:de "")
               (:en "composta / incomposta")))))
   (:data

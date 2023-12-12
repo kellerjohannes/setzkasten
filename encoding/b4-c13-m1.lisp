@@ -11,7 +11,14 @@
     (:alt (:it "Punti dubbiosi di pigliar fiato")
           (:de "")
           (:en "Dubious dots for taking a breath")))
-          ;;Kommentar Anne: this does not appear anywhere in your example and probably belongs to the example with the octave and the fifth.
+   ;; Kommentar Anne: this does not appear anywhere in your example and probably belongs to the
+   ;; example with the octave and the fifth.
+   ;;
+   ;; JK: Ich verstehe den Kommentar nicht. Die beiden obigen Textelemente ("Punto in sincopa" /
+   ;; "Punti dubbiosi") erscheinen im modernen Notensatz als Zwischentitel, da ich sie als solche
+   ;; interpretiere. Gut so?
+   ;;
+   ;; OPEN
    (:section-headings
     (s1 (:alt (:it "Esempio del punto di quinta e di seconda")
               (:de "")

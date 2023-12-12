@@ -29,7 +29,7 @@
               (:de "")
               (:en "Ffaut"))))
    (:section-captions
-    (s1 (:alt (:it "per natura,\\per ♭,\\per ♮:\\la, mi, re,\\ut, fa, sol")
+    (s1 (:alt (:it "la, mi, re,\\ut, fa, sol\\per natura,\\per ♭, per ♮")
               ;; Kommentar Anne: Für mich geht diese Reihenfolge nicht, weil es deckt sich nicht
               ;; weder mit dem Original noch dem Wahrnehmen der Zeit. Die erste Zeile muss la mi re
               ;; sein in Zusammenhang mit dem Notennamen Alamire, die zweite ut, fa, sol, und die
@@ -40,25 +40,28 @@
               ;; Darstellung. Ich habe die englische Darstellung entsprechend (hoffentlich) meine
               ;; Vorstellungen eingerichtet.
               ;;
-              ;; OPEN
+              ;; Finde ich sehr gut, ich habe die italienische Reihenfolge der Zeilen nun der
+              ;; Englischen angepasst.
+              ;;
+              ;; DONE
               (:de "")
               (:en "la, mi, re,\\ut, fa, sol\\per natura,\\per ♭,\\per ♮")))
-    (s2 (:alt (:it "per ♭,\\per ♮:\\fa, mi,\\la, sol, re, ut")
+    (s2 (:alt (:it "fa, mi,\\la, sol, re, ut\\per ♭,\\per ♮")
               (:de "")
               (:en "fa, mi,\\la, sol, re, ut\\per ♭,\\per ♮")))
-    (s3 (:alt (:it "per ♮,\\per natura:\\mi, fa, sol,\\la, re, ut")
+    (s3 (:alt (:it "mi, fa, sol,\\la, re, ut\\per ♮,\\per natura")
               (:de "")
               (:en "mi, fa, sol,\\la, re, ut\\per ♮,\\per natura")))
-    (s4 (:alt (:it "per natura,\\per ♭:\\sol, fa, ut,\\re, mi, la")
+    (s4 (:alt (:it "sol, fa, ut,\\re, mi, la\\per natura,\\per ♭")
               (:de "")
               (:en "sol, fa, ut,\\re, mi, la\\per natura,\\per ♭")))
-    (s5 (:alt (:it "per natura,\\per ♭:\\la, sol, re,\\fa, mi, ut")
+    (s5 (:alt (:it "la, sol, re,\\fa, mi, ut\\per natura,\\per ♭")
               (:de "")
               (:en "la, sol, re,\\fa, mi, ut\\per natura,\\per ♭")))
-    (s6 (:alt (:it "per natura,\\per ♮:\\la, mi, fa,\\ut, re, sol")
+    (s6 (:alt (:it "la, mi, fa,\\ut, re, sol\\per natura,\\per ♮")
               (:de "")
               (:en "la, mi, fa,\\ut, re, sol\\per natura,\\per ♮")))
-    (s7 (:alt (:it "per natura,\\per ♭:\\fa, ut, re,\\mi, sol, la")
+    (s7 (:alt (:it "fa, ut, re,\\mi, sol, la\\per natura,\\per ♭")
               (:de "")
               (:en "fa, ut, re,\\mi, sol, la\\per natura,\\per ♭")))))
   (:data

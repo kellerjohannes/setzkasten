@@ -37,9 +37,10 @@
               (:en "per natura: sol-fa-la-sol-fa\\re in ascent")))
     (s3 (:alt (:it "per natura: fa-mi-la\\[per ascendere] fa-mi-mi")
               (:de "")
-              (:en "per natura: fa-mi-la\\fa-mi-mi in ascent")))
+              (:en "per natura: fa-mi-la\\fa-mi-mi [in ascent]")))
     ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
-    ;; JK: ich habe hier 'in ascent' im Englischen ergänzt, ohne eckige Klammern, ist das in Ordnung?
+    ;;
+    ;; JK: ich habe hier 'in ascent' im Englischen ergänzt, in eckigen Klammern, ist das in Ordnung?
     ;;
     ;; OPEN
 
@@ -51,11 +52,12 @@
               (:en "per ♭: la-sol-fa-la-sol\\per ♮: sol-fa-la-sol-fa\\re in ascent")))
     (s6 (:alt (:it "per natura: fa-mi-mi [per ascendere]")
               ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
+              ;;
               ;; JK: ich habe es danach und in eckigen Klammern ergänzt. Gut so?
               ;;
               ;; OPEN
               (:de "")
-              (:en "per natura: fa-mi-mi [per ascendere]")))
+              (:en "per natura: fa-mi-mi [in ascent]")))
     ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
     ;; JK: ich habe es danach und in eckigen Klammern ergänzt. Gut so?
     ;;
@@ -66,7 +68,7 @@
               ;;
               ;; OPEN
               (:de "")
-              (:en "per ♭: fa-mi-la\\fa-mi-mi in ascent")))))
+              (:en "per ♭: fa-mi-la\\fa-mi-mi [in ascent]")))))
   ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
   ;; JK: ich habe es im Englischen ergänzt, gut so?
   ;;

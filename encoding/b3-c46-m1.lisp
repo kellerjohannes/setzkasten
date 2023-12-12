@@ -9,14 +9,13 @@
    (:section-captions
     (s1 (:alt (:it "Prima quinta\\diatonica")
               (:de "")
-              (:en "First quinta\\diatonic")))
+              (:en "First diatonic\\quinta")))
     (s2 (:alt (:it "Prima quinta\\cromatica")
               (:de "")
-              (:en "First quinta\\chromatic")))
+              (:en "First chromatic\\quinta")))
     (s3 (:alt (:it "Prima quinta\\enarmonica")
               (:de "")
-              (:en "First quinta\\enharmonic")))))
-              ;;Kommentar Anne, same as previous
+              (:en "First enharmonic\\quinta")))))
   (:data
    (:text 70 58
           (93 2031 "Eſſempio di tre quinte differenti,di i tre generi muſicali,della prima ſpetie delle quinte."))

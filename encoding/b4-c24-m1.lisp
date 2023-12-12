@@ -11,8 +11,9 @@
           ;; dargestellt werden soll. In dieser Form ist die Aufteilung in Bezug auf die Überschrift
           ;; nicht schlüssig.
           ;;
+          ;; Kommentar Anne: or simply with commentary?
+          ;;
           ;; OPEN
-          ;;Kommentar Anne: or simply with commentary?
           )
     (:alt (:it "Quinta imperfetta")
           (:de "")

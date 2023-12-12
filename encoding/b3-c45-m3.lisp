@@ -9,14 +9,13 @@
    (:section-captions
     (s1 (:alt (:it "Terza quarta\\diatonica")
               (:de "")
-              (:en "Third quarta\\diatonic")))
+              (:en "Third diatonic\\quarta")))
     (s2 (:alt (:it "Terza quarta\\cromatica")
               (:de "")
-              (:en "Third quarta\\chromatic")))
+              (:en "Third chromatic\\quarta")))
     (s3 (:alt (:it "Terza quarta\\enarmonica")
               (:de "")
-              (:en "Third quarta\\enharmonic")))))
-              ;;Kommentar Anne: same as previous
+              (:en "Third enharmonic\\quarta")))))
   (:data
    (:text 70 58
           (93 2061 "Eſſempio di tre quarte differenti de i tre generi Muſicali,della terza ſpetie delle quarte."))

@@ -59,7 +59,7 @@
            (:section s4) mrest7 m7 b22 sb7 sb7 bl
            (:section s5) b22 m6 b22 sb7 m5 sb6 b22 sb8 b22 sb8 bl
            (:section s6) mrest7 m7 b22 sb6 b22 sb5 bl
-           ;; mögliche Idealisierung hier
+           ;; JK: mögliche Idealisierung hier
            ;; [Bemerkung ist nicht klar, neu zu betrachten]
            ;;
            ;; OPEN

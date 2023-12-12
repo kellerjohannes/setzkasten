@@ -87,7 +87,7 @@
     (s9 v3 (:alt (:it "Cadentia del tenore")
                  (:de "")
                  (:en "Cadence of the tenor")))
-    ;; Hier könnte "Cadentia del basso" für alle übrigen sections ergänzt werden. Zu diskutieren.
+    ;; JK: Hier könnte "Cadentia del basso" für alle übrigen sections ergänzt werden. Zu diskutieren.
     ;;
     ;; OPEN
     (s4 v4 (:alt (:it "Cadentia del soprano")
