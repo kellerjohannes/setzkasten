@@ -1,21 +1,5 @@
 (in-package :setzkasten)
 
-;; lesezeichen:
-;; * soave dolce von unten hochkopieren
-;; * rest von unten kontrollieren
-;; * convert anpassen
-;; * tex testen
-;; * historische schlüssel implementieren
-;; * nur historische schlüssel gruppieren, separat exportieren
-;; * historische schlüssel im gesamt-tex ergänzen und testen
-;; * repository ausmisten, alles neu generieren (timing)
-;; * summary-files ausmisten, anpassen, testen
-;; * tag erstellen
-;; restliche korrekturen einpflegen
-;; kommentare anne einpflegen
-;; export für ganze gruppe erstellen
-
-
 (defparameter *score-margins* '(10 10 10 10))
 (defparameter *score-bg-color* "white")
 (defparameter *font-height* 58)
@@ -228,20 +212,6 @@
                          ))
     (execute-mission mission)))
 
-
-
-
-(defun execute-vicentino21 ()
-  (execute-mission (reduce #'append (list *book1-types*
-                                          *book2-types*
-                                          *book3-types*
-                                          *book4-types*
-                                          *book5-types*
-                                          *book1-modern*
-                                          *book2-modern*
-                                          *book3-modern*
-                                          *book4-modern*
-                                          *book5-modern*))))
 
 (defun execute-types ()
   (dolist (mission (list *book1-barre* *book2-barre* *book3-barre* *book4-barre* *book5-barre*
