@@ -222,7 +222,7 @@
 
 (defmethod set-voice-lyrics* ((score score) section-id voice-id lyrics-string)
   "Sets the `lyrics' slot of a voice in a `score', referenced by `voice-id'. Creates the `voice' object if necessary."
-  (setf (lyrics (get-voice-in-section score section-id voice-id)) lyrics-string))
+  (push lyrics-string (lyrics (get-voice-in-section score section-id voice-id))))
 
 (defmethod set-clef-override* ((score score) section-id voice-id override-string)
   "Sets the `clef-override' slot of a voice in a `score', referenced by `voice-id'. Creates the `voice' object if necessary."

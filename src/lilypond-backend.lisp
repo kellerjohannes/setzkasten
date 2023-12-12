@@ -740,7 +740,13 @@
             (if (timep backend)
                 "" ;; nothing in case of time signature
                 (format nil "~18,0t\\cadenzaOff"))
-            (when (lyrics voice) (format nil "~16,0t\\addlyrics { ~a }" (lyrics voice))))))
+            (when (lyrics voice)
+              (let ((lyrics-string ""))
+                (dolist (lyrics-line (reverse (lyrics voice)) lyrics-string)
+                  (setf lyrics-string
+                        (concatenate 'string
+                                     lyrics-string
+                                     (format nil "~16,0t\\addlyrics { ~a }" lyrics-line)))))))))
 
 (defun generate-formatted-text (format-list)
   (do ((rest-list format-list (rest (rest rest-list)))
@@ -798,6 +804,7 @@
 
 (defmethod generate-section-ly-code ((score score) (section section) (backend lilypond-backend) shortest-duration)
   "`shortest-duration' in Lilypond note value (1/2 for minima)."
+  ;; lyrictext override optional
   (let ((section-code (format nil "~
 ~6,0t\\center-column {
 ~@[~a
@@ -966,7 +973,7 @@ dot = {
                               (output-format :svg-cropped))
   (case output-format
     (:svg-cropped
-     (uiop:run-program (list lilypond-path "-dbackend=ps" "-dno-point-and-click" "-dcrop" "-o"
+     (uiop:run-program (list lilypond-path "-dbackend=svg" "-dno-point-and-click" "-dcrop" "-o"
                              (uiop:native-namestring
                               (namestring (make-pathname :type nil :defaults output)))
                              (uiop:native-namestring input))
@@ -1019,15 +1026,15 @@ dot = {
                                                     ;; suffix removed (.pdf), testing
                                                     (format nil "~a-~a"
                                                             (filename score-instance) suffix))))))
-    ;; (when (eq (output-format backend) :svg-cropped)
-    ;;   (rename-file (merge-pathnames *lilypond-export-path*
-    ;;                                 (pathname (format nil "~a-~a.cropped.svg"
-    ;;                                                   (filename score-instance)
-    ;;                                                   suffix)))
-    ;;                (merge-pathnames *lilypond-export-path*
-    ;;                                 (pathname (format nil "~a-~a.svg"
-    ;;                                                   (filename score-instance)
-    ;;                                                   suffix)))))
+    (when (eq (output-format backend) :svg-cropped)
+      (rename-file (merge-pathnames *lilypond-export-path*
+                                    (pathname (format nil "~a-~a.cropped.svg"
+                                                      (filename score-instance)
+                                                      suffix)))
+                   (merge-pathnames *lilypond-export-path*
+                                    (pathname (format nil "~a-~a.svg"
+                                                      (filename score-instance)
+                                                      suffix)))))
     )
   (format nil "~a-~a" (filename score-instance) suffix))
 
