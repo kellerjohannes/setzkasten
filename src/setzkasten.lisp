@@ -1,7 +1,5 @@
 (defpackage :setzkasten
   (:import-from :cl-ppcre :regex-replace-all)
-  (:import-from :hunchentoot :define-easy-handler)
-  (:import-from :cl-who :fmt :htm :with-html-output-to-string)
   (:import-from :vicentino-tunings :setzkasten-pitch)
   (:use :cl)
   (:export "get-parsed-score"
