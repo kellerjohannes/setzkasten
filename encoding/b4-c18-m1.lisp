@@ -5,15 +5,15 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del primo modo perfetto")
                  (:de "")
-                 (:en "")))
+                 (:en "Example of the perfect first mode")))
    (:section-headings
     (s1 "")
     (s2 (:alt (:it "Il procedere non è buono\\per cagion del tritono")
               (:de "")
-              (:en "")))
+              (:en "The movement is not good\\on account of the tritono")))
     (s3 (:alt (:it "Questo procedere è buono\\perche fugge il tritono con il ♭")
               (:de "")
-              (:en "")))))
+              (:en "This movement is good\\because it evades the tritono with the ♭")))))
   (:data
    (:text 90 58
           (538 831 "Eſſempio del primo Modo perfetto."))

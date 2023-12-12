@@ -6,16 +6,16 @@
    (:section-headings
     (s1 (:alt (:it "Esempi dei termini del soprano")
               (:de "")
-              (:en "")))
+              (:en "Example of the limits of the soprano")))
     (s2 (:alt (:it "Termini del contr'alto")
               (:de "")
-              (:en "")))
+              (:en "Limits of the alto")))
     (s3 (:alt (:it "Termini del tenore")
               (:de "")
-              (:en "")))
+              (:en "Limits of the tenor")))
     (s4 (:alt (:it "Termini del basso")
               (:de "")
-              (:en "")))))
+              (:en "Limits of the bass")))))
   (:preamble-lilypond
    (:clef-overrides
     (s2 v1 "treble_8")))

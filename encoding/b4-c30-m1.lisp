@@ -5,23 +5,25 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Regola universale di porre le parole sotto alle note")
                  (:de "")
-                 (:en "")))
+                 (:en "Universal method for setting the words under the notes")))
    (:section-headings
     (s2 (:alt (:it " \\Non buona pronuntia")
               (:de "")
-              (:en "")
+              (:en " \\Poor pronunciation")
               ;; JK: Nach aktuellem Stand ist es nicht möglich, hier die Taktsignatur zu
               ;; unterdrücken. Soll dies getan werden, oder ist die ergänzte Taktsignatur sinnvoll?
               ;;
               ;; OPEN
+              ;; Kommentar Anne: Ich finde, dass es hier nicht stört.
               ))
     (s3 (:alt (:it "Si pronuntia la sillaba\\sotto la nera per bisogno")
               (:de "")
-              (:en "")
+              (:en "One pronounces the syllable\\under the semiminim if necessary")
               ;; JK: Nach aktuellem Stand ist es nicht möglich, hier die Taktsignatur zu
               ;; unterdrücken. Soll dies getan werden, oder ist die ergänzte Taktsignatur sinnvoll?
               ;;
               ;; OPEN
+              ;; Kommentar Anne: Ich finde, dass es hier nicht stört.
               )))
    (:voice-order
     (s1 v1)

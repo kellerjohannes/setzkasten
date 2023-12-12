@@ -6,16 +6,16 @@
    (:section-headings
     (s1 (:alt (:it "Esempio del modo\\maggiore perfetto")
               (:de "")
-              (:en "")))
+              (:en "Example of the major\\perfect mode")))
     (s2 (:alt (:it "Del modo maggiore\\imperfetto")
               (:de "")
-              (:en "")))
+              (:en "Of the major\\imperfect mode")))
     (s3 (:alt (:it "Del minor\\perfetto")
               (:de "")
-              (:en "")))
+              (:en "Of the minor\\perfect [mode]")))
     (s4 (:alt (:it "Del minor\\imperfetto")
               (:de "")
-              (:en "")))))
+              (:en "Of the minor\\imperfect [mode]")))))
   (:data
    (:text 90 58
           (90 912 "Eſſempio del modo maggiore perfetto,")

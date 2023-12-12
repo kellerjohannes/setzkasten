@@ -6,32 +6,33 @@
    (:line-headings
     (:alt (:it "Decima maggiore all'ottava nei fini et nel basso, ne gl'alti")
           (:de "")
-          (:en "")
+          (:en "Decima maggiore to the ottava at the ends and in the bass, in the altos")
           ;; JK: Es ist zu diskutieren, ob Sections 1 und 2 als eine zusammengehörende Section
           ;; dargestellt werden soll. In dieser Form ist die Aufteilung in Bezug auf die Überschrift
           ;; nicht schlüssig.
           ;;
           ;; OPEN
+          ;;Kommentar Anne: or simply with commentary?
           )
     (:alt (:it "Quinta imperfetta")
           (:de "")
-          (:en "")))
+          (:en "Quinta imperfetta")))
    (:section-captions
     (s1 (:alt (:it "Buona")
               (:de "")
-              (:en "")))
+              (:en "Good")))
     (s2 (:alt (:it "Buona")
               (:de "")
-              (:en "")))
+              (:en "Good")))
     (s3 (:alt (:it "Buona")
               (:de "")
-              (:en "")))
+              (:en "Good")))
     (s4 (:alt (:it "Buona")
               (:de "")
-              (:en "")))
+              (:en "Good")))
     (s5 (:alt (:it "Buona")
               (:de "")
-              (:en "")))))
+              (:en "Good")))))
   (:data
    (:text 90 58
      (181 nil "Buona.")

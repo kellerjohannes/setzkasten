@@ -6,16 +6,16 @@
    (:line-headings
     (:alt (:it "Esempio della prolatione perfetta in tempo perfetto")
           (:de "")
-          (:en ""))
+          (:en "Example of perfect prolation in perfect tempus"))
     (:alt (:it "Prolatione perfetta in tempo imperfetto")
           (:de "")
-          (:en ""))
+          (:en "Perfect prolation in imperfect tempus"))
     (:alt (:it "Esempio della prolatione imperfetta in tempo perfetto")
           (:de "")
-          (:en ""))
+          (:en "Example of imperfect prolation in perfect tempus"))
     (:alt (:it "Prolatione imperfetto in tempo imperfetto")
           (:de "")
-          (:en ""))))
+          (:en "Imperfect prolation in imperfect tempus"))))
   (:data
    (:text 90 58
           (0 1115 "Eſſempio della Prolatione perfet. in tēpo perfet.")
