@@ -32,30 +32,35 @@
               (:de "")
               (:en "from Gsolreut to Alamire"))))
    (:section-captions
-    (s1 (:alt (:it "per ♮: re-mi-fa-re-mi\\per ♭: mi-fa-sol-re-mi")
+    (s4 (:alt (:it "sol e fa discendono")
               (:de "")
-              (:en "per ♮: re-mi-fa-re-mi\\per ♭: mi-fa-sol-re-mi")))
-    (s2 (:alt (:it "per ♮: mi-fa-re-mi-fa")
+              (:en "sol and fa in descent")))
+    (s5 (:alt (:it "la e sol discendono")
               (:de "")
-              (:en "per ♮: mi-fa-re-mi-fa")))
-    (s3 (:alt (:it "per ♭: fa-sol-re-mi-fa")
+              (:en "la and sol in descent")))
+    (s6 (:alt (:it "la discende")
               (:de "")
-              (:en "per ♭: fa-sol-re-mi-fa")))
-    (s4 (:alt (:it "per nat.: ut-re-mi-fa-re\\sol e fa discendono")
-              (:de "")
-              (:en "per nat.: ut-re-mi-fa-re\\sol and fa in descent")))
-    (s5 (:alt (:it "per nat.: re-mi-fa-re-mi\\la e sol discendono")
-              (:de "")
-              (:en "per nat.: re-mi-fa-re-mi\\la and sol in descent")))
-    (s6 (:alt (:it "per nat.: mi-mi-fa\\la discende")
-              (:de "")
-              (:en "per nat.: mi-mi-fa\\la in descent")))
-    (s7 (:alt (:it "per nat.: fa-re-mi-fa-sol\\per ♭: fa-re-mi-fa-re")
-              (:de "")
-              (:en "per nat.: fa-re-mi-fa-sol\\per ♭: fa-re-mi-fa-re")))
-    (s8 (:alt (:it "per nat.: sol-re-mi-fa-re\\per b: re-mi-fa-re-mi\\per ♮: ut-re-mi-fa-re")
-              (:de "")
-              (:en "per nat.: sol-re-mi-fa-re\\per b: re-mi-fa-re-mi\\per ♮: ut-re-mi-fa-re")))))
+              (:en "la in descent")))))
+  (:preamble-lilypond
+   (:lyrics
+    ;; JK: Im Auge zu behalten: die Silben werden standardmässig kleiner gesetzt als die "per
+    ;; x:"-Angaben und die 'captions'. Das müsste in der lilypond-backend-Implementierung angepasst
+    ;; werden, falls die Unterschiedlichkeit der Schriftgrössen nicht akzeptabel sein sollte.
+    ;;
+    ;; OPEN
+    (s1 v1 "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } re mi fa re mi")
+    (s1 v1 "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } mi fa sol re mi")
+    (s2 v1 "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } mi fa re mi fa")
+    (s3 v1 "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } fa sol re mi fa")
+    (s4 v1 "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } ut re mi fa re")
+    (s5 v1 "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } re mi fa re mi")
+    (s6 v1 "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } mi mi fa")
+    (s7 v1 "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } fa re mi fa sol")
+    (s7 v1 "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } fa re mi fa re")
+    (s8 v1 "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } sol re mi fa re")
+    (s8 v1 "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } re mi fa re mi")
+    (s8 v1 "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } ut re mi fa re")
+    ))
   (:data
    (:text 70 58 (115 1903 "ᴍano della diuiſione del tono in quattro ᴅieſis ᴇn. aſcendenti con lo ſemitono minore."))
    (:text 100 58

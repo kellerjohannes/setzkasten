@@ -220,7 +220,11 @@
 
 (defparameter *working*
   `(
-    ("b1-c05-m7" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+    ("b1-c05-m4" "norm-en" (:en :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+    ("b1-c05-m5" "norm-en" (:en :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+    ("b1-c05-m6" "norm-en" (:en :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+    ("b1-c05-m7" "norm-en" (:en :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+    ("b1-c05-m8" "norm-en" (:en :critical :barre :diplomatic) ,*lilypond-backend-modern*)
     ;; ("b1-c37-m1" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-original*)
     ;; ("b5-c59-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
     ;; ("b5-c59-m1" "crit" (:critical :barre :diplomatic) ,*vicentino-types-backend* (:critical :barre))

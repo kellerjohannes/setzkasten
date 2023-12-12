@@ -29,50 +29,47 @@
               (:de "")
               (:en "from B to A"))))
    (:section-captions
-    (s1 (:alt (:it "per natura: la-sol-fa-la-sol\\mi e re per ascendere")
+    (s1 (:alt (:it "mi e re per ascendere")
               (:de "")
-              (:en "per natura: la-sol-fa-la-sol\\mi and re in ascent")))
-    (s2 (:alt (:it "[per natura: sol-fa-la-sol-fa\\re ascendere]")
+              (:en "mi and re in ascent")))
+    (s2 (:alt (:it "[re ascendente]")
               (:de "")
-              (:en "per natura: sol-fa-la-sol-fa\\re in ascent")))
-    (s3 (:alt (:it "per natura: fa-mi-la\\[per ascendere] fa-mi-mi")
+              (:en "[re in ascent]")))
+    (s4 (:alt (:it "mi per ascendere")
               (:de "")
-              (:en "per natura: fa-mi-la\\fa-mi-mi [in ascent]")))
-    ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
-    ;;
-    ;; JK: ich habe hier 'in ascent' im Englischen ergänzt, in eckigen Klammern, ist das in Ordnung?
-    ;;
-    ;; OPEN
-
-    (s4 (:alt (:it "per ♮: la-sol-fa-mi-re\\la-sol-fa-la-sol\\mi per ascendere")
+              (:en "mi in ascent")))
+    (s5 (:alt (:it "re per ascendere")
               (:de "")
-              (:en "per ♮: la-sol-fa-mi-re\\la-sol-fa-la-sol\\mi in ascent")))
-    (s5 (:alt (:it "per ♭: la-sol-fa-la-sol\\per ♮: sol-fa-la-sol-fa\\re per ascendere")
+              (:en "re in ascent")))
+    (s6 (:alt (:it "[per ascendere]")
               (:de "")
-              (:en "per ♭: la-sol-fa-la-sol\\per ♮: sol-fa-la-sol-fa\\re in ascent")))
-    (s6 (:alt (:it "per natura: fa-mi-mi [per ascendere]")
-              ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
-              ;;
-              ;; JK: ich habe es danach und in eckigen Klammern ergänzt. Gut so?
-              ;;
-              ;; OPEN
-              (:de "")
-              (:en "per natura: fa-mi-mi [in ascent]")))
-    ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
-    ;; JK: ich habe es danach und in eckigen Klammern ergänzt. Gut so?
-    ;;
-    ;; OPEN
-    (s7 (:alt (:it "per ♭: fa-mi-la\\fa-mi-mi [per ascendere]")
-              ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
-              ;; JK: ich habe es danach und in eckigen Klammern ergänzt. Gut so?
-              ;;
-              ;; OPEN
-              (:de "")
-              (:en "per ♭: fa-mi-la\\fa-mi-mi [in ascent]")))))
+              (:en "[in ascent]")))))
   ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
   ;; JK: ich habe es im Englischen ergänzt, gut so?
   ;;
   ;; OPEN
+  (:preamble-lilypond
+   (:lyrics
+    ;; JK: Im Auge zu behalten: die Silben werden standardmässig kleiner gesetzt als die "per
+    ;; x:"-Angaben und die 'captions'. Das müsste in der lilypond-backend-Implementierung angepasst
+    ;; werden, falls die Unterschiedlichkeit der Schriftgrössen nicht akzeptabel sein sollte.
+    ;;
+    ;; OPEN
+    (s1 v1 "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } la sol fa la sol")
+    (s2 v1 "\\set stanza = \\markup{ \\normal-text \"[per nat:\" } sol fa la sol fa]")
+    (s3 v1 "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } fa mi la")
+    (s3 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"[ascendente\" } fa mi mi]")
+                 (:de "")
+                 (:en "\\set stanza = \\markup{ \\normal-text \"[in ascent\" } fa mi mi]")))
+    (s4 v1 "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } la sol fa mi re")
+    (s4 v1 "\\set stanza = \\markup{ \\normal-text \"\" } la sol fa la sol")
+    (s5 v1 "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } la sol fa la sol")
+    (s5 v1 "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } sol fa la sol fa")
+    (s6 v1 "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } fa mi mi")
+    (s7 v1 "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } fa mi la")
+    (s7 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"[ascendente:]\" } fa mi mi")
+                 (:de "")
+                 (:en "\\set stanza = \\markup{ \\normal-text \"[in ascent:]\" } fa mi mi")))))
   (:data
    (:text 70 58 (0 2198 "ᴍano ᴇnarmonica , con ſemitoni maggiori diſcendenti nel principio del tono,con il tono, in quattro"))
    (:text 70 58 (0 976 "parti diuiſo , per leſette lettere della ᴍano."))

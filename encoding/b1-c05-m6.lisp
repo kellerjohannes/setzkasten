@@ -29,37 +29,40 @@
               (:de "")
               (:en "from B to A"))))
    (:section-captions
-    (s1 (:alt (:it "per natura: la-sol-fa-la-sol\\mi e re ascendino")
+    (s1 (:alt (:it "mi e re ascendino")
               (:de "")
-              (:en "per natura: la-sol-fa-la-sol\\mi and re in ascent")))
-    (s2 (:alt (:it "per natura: sol-fa-la-sol-fa\\re e ut ascendeno")
+              (:en "mi and re in ascent")))
+    (s2 (:alt (:it "re e ut ascendeno")
               (:de "")
-              (:en "per natura: sol-fa-la-sol-fa\\re and ut in ascent")))
-    (s3 (:alt (:it "per natura: fa-mi-la per discendere\\fa-mi-mi per ascendere")
+              (:en "re and ut in ascent")))
+    (s3 (:alt (:it "per ascendere")
               (:de "")
-              (:en "per natura: fa-mi-la in descent\\fa-mi-mi in ascent")))
-    (s4 (:alt (:it "per ♮: la-sol-fa-mi-re\\la-sol-fa-la-sol\\mi ascendendo")
+              (:en "in ascent")))
+    (s4 (:alt (:it "mi ascendendo")
               (:de "")
-              (:en "per ♮: la-sol-fa-mi-re\\la-sol-fa-la-sol\\mi in ascent")))
-    (s5 (:alt (:it "per ♭: la-sol-fa-la-sol\\per ♮: sol-fa-la-sol-fa")
+              (:en "mi in ascent")))
+    (s7 (:alt (:it "per discendere")
               (:de "")
-              (:en "per ♭: la-sol-fa-la-sol\\per ♮: sol-fa-la-sol-fa")))
-    (s6 (:alt (:it "per ♮: fa-mi-mi")
-              (:de "")
-              (:en "per ♮: fa-mi-mi")))
-    (s7 (:alt (:it "per ♮: mi-mi-fa-mi-re\\per ♭: [mi-mi-]fa-mi-la per discendere")
-              ;; Kommentar Anne: the "fa-mi-la" of the descent needs to be under the last three
-              ;; notes. This may mean that it would be better to turn this phrase around, i.e. "per
-              ;; discendere fa-mi-la" in order to get the spacing correct. The same is true for the
-              ;; German and English.
-              ;;
-              ;; JK: Die horizontale Platzierung von Text zu Notenköpfen ist problematisch, deshalb
-              ;; schlage ich vor, die Zuordnung explizit zu machen, indem wir "[mi-mi-]fa-mi-la per
-              ;; discendere" schreiben. Ist das akzeptabel?
-              ;;
-              ;; OPEN
-              (:de "")
-              (:en "per ♮: mi-mi-fa-mi-re\\per ♭: [mi-mi-]fa-mi-la in descent")))))
+              (:en "in descent")))))
+  (:preamble-lilypond
+   (:lyrics
+    ;; JK: Im Auge zu behalten: die Silben werden standardmässig kleiner gesetzt als die "per
+    ;; x:"-Angaben und die 'captions'. Das müsste in der lilypond-backend-Implementierung angepasst
+    ;; werden, falls die Unterschiedlichkeit der Schriftgrössen nicht akzeptabel sein sollte.
+    ;;
+    ;; OPEN
+    (s1 v1 "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } la sol fa la sol")
+    (s2 v1 "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } sol fa la sol fa")
+    (s3 v1 "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } fa mi la")
+    (s3 v1 "\\set stanza = \\markup{ \\normal-text \"\" } fa mi mi")
+    (s4 v1 "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } la sol fa mi re")
+    (s4 v1 "\\set stanza = \\markup{ \\normal-text \"\" } la sol fa la sol")
+    (s5 v1 "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } la sol fa la sol")
+    (s5 v1 "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } sol fa la sol fa")
+    (s6 v1 "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } fa mi mi")
+    (s7 v1 "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } mi mi fa mi re")
+    (s7 v1 "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } \\skip 1 \\skip 1 fa mi la")
+    ))
   (:data
    (:text 70 58 (0 2210 "ᴍano ᴇnarmonica diſcendente con i ſemitoni minori, nel principio del tono per le ſette lettere della"))
    (:text 70 58 (0 1484 "ᴍano, con il tono diuiſo in quattro parti:& come ſi à da leggere."))

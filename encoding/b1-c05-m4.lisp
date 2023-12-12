@@ -27,29 +27,38 @@
               (:en "Ffaut")))
     (s7 (:alt (:it "Gsolreut")
               (:de "")
-              (:en "Gsolreut"))))
-   (:section-captions
-    (s1 (:alt (:it "per natura: la\\per ♭: mi\\per ♮: re")
-              (:de "")
-              (:en "per natura: la\\per ♭: mi\\per ♮: re")))
-    (s2 (:alt (:it "per ♮: mi")
-              (:de "")
-              (:en "per ♮: mi")))
-    (s3 (:alt (:it "per ♭: sol\\per ♮: fa\\per natura: ut")
-              (:de "")
-              (:en "per ♭: sol\\per ♮: fa\\per natura: ut")))
-    (s4 (:alt (:it "per ♭: la\\per ♮: sol\\per natura: re")
-              (:de "")
-              (:en "per ♭: la\\per ♮: sol\\per natura: re")))
-    (s5 (:alt (:it "per ♮: la\\per natura: mi")
-              (:de "")
-              (:en "per ♮: la\\per natura: mi")))
-    (s6 (:alt (:it "per natura: fa\\per ♭: ut")
-              (:de "")
-              (:en "per natura: fa\\per ♭: ut")))
-    (s7 (:alt (:it "per natura: sol\\per ♭: re\\per ♮: ut")
-              (:de "")
-              (:en "per natura: sol\\per ♭: re\\per ♮: ut")))))
+              (:en "Gsolreut")))))
+  (:preamble-lilypond
+   (:lyrics
+    ;; JK: Im Auge zu behalten: die Silben werden standardmässig kleiner gesetzt als die "per
+    ;; x:"-Angaben und die 'captions'. Das müsste in der lilypond-backend-Implementierung angepasst
+    ;; werden, falls die Unterschiedlichkeit der Schriftgrössen nicht akzeptabel sein sollte.
+    ;;
+    ;; OPEN
+    (s1 v1 "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } la")
+    (s1 v1 "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } \\skip 1 mi")
+    (s1 v1 "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } \\skip 1 \\skip 1 re")
+
+    (s2 v1 "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } mi")
+
+    (s3 v1 "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } sol")
+    (s3 v1 "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } \\skip 1 fa")
+    (s3 v1 "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } \\skip 1 \\skip 1 ut")
+
+    (s4 v1 "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } la")
+    (s4 v1 "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } \\skip 1 sol")
+    (s4 v1 "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } \\skip 1 \\skip 1 re")
+
+    (s5 v1 "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } la")
+    (s5 v1 "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } \\skip 1 mi")
+
+    (s6 v1 "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } fa")
+    (s6 v1 "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } \\skip 1 ut")
+
+    (s7 v1 "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } sol")
+    (s7 v1 "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } \\skip 1 re")
+    (s7 v1 "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } \\skip 1 \\skip 1 ut")
+    ))
   (:data
    (:text 70 58 (86 2053 "ᴅimoſtratione della mano ᴇnarmonica ᴅiatonica, aſcendente con le ſette lettere della ᴍano."))
    (:text 90 58
