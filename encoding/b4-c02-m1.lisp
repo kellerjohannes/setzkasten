@@ -22,7 +22,6 @@
     (s5 (:alt (:it "Chiavi di Ffaut")
               (:de "")
               (:en "Chiavi of Ffaut")))))
-
   (:data
    (:text 90 58
           (40 1541 "Eſſempio delle chiaui de i Soprani,& de i Contralti,de i Tenori,")
