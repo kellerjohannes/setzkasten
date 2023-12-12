@@ -3,7 +3,7 @@
   :version "0.1"
   :author "Johannes Keller <johannkell@gmail.com>"
   :licence "Public Domain"
-  :depends-on (:cl-ppcre :cl-svg :vicentino-tunings)
+  :depends-on (:alexandria :cl-ppcre :cl-svg :vicentino-tunings)
   :components ((:file "vector-package")
                (:file "setzkasten")
                (:file "macros")
