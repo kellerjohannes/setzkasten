@@ -6,6 +6,20 @@
 (defgeneric create-score-file (setzkasten-backend score-data suffix)
   (:documentation "Main function to trigger the generation of the graphics file containing the score."))
 
+
+;; TODO
+;; differentiation of score/app import commands to be implemented and tested
+(defparameter *dict-suffix-mini*
+  '(("barre" . "scoreBarre")
+    ("crit" . "scoreCrit")
+    ("norm-it" . "scoreNormIt")
+    ("norm-en" . "scoreNormEn")
+    ("norm-de" . "scoreNormDe")
+    ("norm-it-origclef" . "scoreNormItOrig")
+    ("norm-en-origclef" . "scoreNormEnOrig")
+    ("norm-de-origclef" . "scoreNormDeOrig")
+    ))
+
 (defmethod create-score-file :after ((backend setzkasten-backend) score-data suffix)
   "Creates a standalone .tex file to host a pdf of the generated score, bundled with the apparatus."
   (let ((filename (filename (parse-score score-data))))
@@ -16,7 +30,7 @@
                                     :if-does-not-exist :create
                                     :if-exists :supersede
                                     :direction :output)
-      (format tex-standalone "\\input{standalone-header}
+      (format tex-standalone "\\input{header/standalone-header}
 
 \\begin{document}
 
