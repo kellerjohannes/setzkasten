@@ -6,6 +6,32 @@
 (defgeneric create-score-file (setzkasten-backend score-data suffix)
   (:documentation "Main function to trigger the generation of the graphics file containing the score."))
 
+(defmethod create-score-file :after ((backend setzkasten-backend) score-data suffix)
+  "Creates a standalone .tex file to host a pdf of the generated score, bundled with the apparatus."
+  (let ((filename (filename (parse-score score-data))))
+    (with-open-file (tex-standalone (merge-pathnames *mini-standalones*
+                                                     (pathname (format nil "vicentino21-~a-~a.tex"
+                                                                       filename
+                                                                       suffix)))
+                                    :if-does-not-exist :create
+                                    :if-exists :supersede
+                                    :direction :output)
+      (format tex-standalone "\\input{standalone-header}
+
+\\begin{document}
+
+\\begin{minipage}{21cm}
+
+\\scoreCrit{~a}
+\\appImportCrit{~a}
+
+\\end{minipage}
+
+\\end{document}
+"
+              filename
+              filename))))
+
 (defmethod reset-file-list ((backend setzkasten-backend))
   (setf (output-file-list backend) nil))
 

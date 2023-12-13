@@ -35,6 +35,9 @@
 (defparameter *apparatus-export-path-tei*
   (pathname "~/common-lisp/setzkasten-output/apparatus/tei/"))
 
+(defparameter *mini-standalones*
+  (pathname "~/common-lisp/setzkasten-output/standalones/"))
+
 (defparameter *encoding-source*
   (pathname "~/common-lisp/setzkasten/encoding/"))
 

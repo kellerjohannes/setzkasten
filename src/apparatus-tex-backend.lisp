@@ -80,6 +80,28 @@
           (prettify-keyword (getf meta-data-plist :filter))
           (make-string-latex-friendly (getf meta-data-plist :comment))))
 
+(defun extract-components (filename)
+  (let* ((first-dash (position "-" filename :test #'string-equal))
+         (second-dash (position "-" filename :test #'string-equal :start (1+ first-dash))))
+    (list (parse-integer (subseq filename 1 first-dash))
+          (parse-integer (subseq filename (+ 2 first-dash) second-dash))
+          (parse-integer (subseq filename (+ 2 second-dash))))))
+
+(defun expand-filename-to-german (filename)
+  (let ((data (extract-components filename)))
+    (format nil "Buch ~s, Kapitel ~s, Musikbeispiel ~s" (first data) (second data) (third data))))
+
+(defun generate-latex-title-mini (meta-data-plist)
+  (format nil "
+\\vspace{7mm}
+\\hrule
+\\vspace{7mm}
+
+\\begin{center}
+
+~a"
+          (expand-filename-to-german (getf meta-data-plist :filename))))
+
 (defparameter *latex-table-header*
    "
 \\renewcommand{\\arraystretch}{1.2}
@@ -284,6 +306,15 @@
                      (generate-latex-title-compact (extract-meta-data data))
                      (generate-latex-table-compact (strip-table-data data selectors)))))))
 
+(defun generate-latex-entry-mini (filename selectors)
+  (with-open-file (in-file (merge-pathnames *apparatus-export-path-raw*
+                                            (pathname (format nil "app-~a.lisp" filename))))
+    (with-standard-io-syntax
+      (let ((data (read in-file)))
+        (concatenate 'string
+                     (generate-latex-title-mini (extract-meta-data data))
+                     (generate-latex-table-compact (strip-table-data data selectors)))))))
+
 (defun generate-latex-apparatus-import-compact-fragments (filename selectors)
   (with-open-file (latex-stream
                    (merge-pathnames *apparatus-export-path-tex-imports*
@@ -302,6 +333,23 @@
                                 :if-exists :supersede)
     (format latex-stream "~a"
             (generate-latex-entry filename selectors))))
+
+(defun generate-latex-apparatus-import-mini (filename selectors)
+  (when (with-open-file (in-file (merge-pathnames *apparatus-export-path-raw*
+                                                  (pathname (format nil "app-~a.lisp" filename))))
+        (with-standard-io-syntax
+          (strip-table-data (read in-file) selectors)))
+
+    (with-open-file (latex-stream (merge-pathnames *apparatus-export-path-tex-imports*
+                                                   (pathname (format nil "app-~a-mini.tex"
+                                                                     filename)))
+                                  :direction :output
+                                  :if-does-not-exist :create
+                                  :if-exists :supersede)
+      (format latex-stream "~a"
+              (concatenate 'string
+                           (generate-latex-entry-mini filename selectors)
+                           "\\end{center}")))))
 
 (defun generate-latex-apparatus-standalone (filename selectors)
   (with-open-file (latex-stream (merge-pathnames *apparatus-export-path-tex-standalones*

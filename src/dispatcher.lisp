@@ -29,6 +29,8 @@
                                              apparatus-selectors)
   (generate-latex-apparatus-import-compact-fragments (format nil "~a-~a" filename suffix)
                                                      apparatus-selectors)
+  (generate-latex-apparatus-import-mini (format nil "~a-~a" filename suffix)
+                                                     apparatus-selectors)
   (generate-tei-apparatus (format nil "~a-~a" filename suffix) apparatus-selectors))
 
 
