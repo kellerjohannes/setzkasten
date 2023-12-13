@@ -225,6 +225,27 @@
     ("b1-c05-m6" "norm-en" (:en :critical :barre :diplomatic) ,*lilypond-backend-modern*)
     ("b1-c05-m7" "norm-en" (:en :critical :barre :diplomatic) ,*lilypond-backend-modern*)
     ("b1-c05-m8" "norm-en" (:en :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+    ("b1-c05-m4" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+    ("b1-c05-m5" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+    ("b1-c05-m6" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+    ("b1-c05-m7" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+    ("b1-c05-m8" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+
+    ("b1-c11-m1" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+    ("b1-c11-m1" "norm-en" (:en :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+    ("b1-c11-m2" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+    ("b1-c11-m2" "norm-en" (:en :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+    ("b1-c11-m3" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+    ("b1-c11-m3" "norm-en" (:en :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+
+    ("b1-c06-m1" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+    ("b1-c06-m1" "norm-en" (:en :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+
+    ("b1-c08-m1" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+    ("b1-c08-m1" "norm-en" (:en :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+
+    ("b1-c40-m2" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-modern*)
+    ("b1-c40-m2" "norm-en" (:en :critical :barre :diplomatic) ,*lilypond-backend-modern*)
     ;; ("b1-c37-m1" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-original*)
     ;; ("b5-c59-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
     ;; ("b5-c59-m1" "crit" (:critical :barre :diplomatic) ,*vicentino-types-backend* (:critical :barre))

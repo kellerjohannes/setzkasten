@@ -4,24 +4,20 @@
    (:comment "q021_s031, origin: 1273")
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
-    (s1 (:alt (:it "tono diviso in 4 parti\\ascendenti")
+    (s1 (:alt (:it "tono diviso in quattro\\parti ascendenti")
               (:de "")
-              (:en "tono divided in 4\\ascending parts")))
-    (s2 (:alt (:it "tono diviso in 4 parti\\ascendenti")
+              (:en "tono divided in four\\ascending parts")))
+    (s2 (:alt (:it "tono diviso in quattro\\parti ascendenti")
               (:de "")
-              (:en "tono divided in 4\\ascending parts"))))
-   (:section-captions
-    (s1 (:alt (:it "per ♮: ut-re-mi-fa-re")
-              ;; Kommentar Anne: bessere Verteilung der Silben unter den Noten in allen Sprachen?
-              ;; JK: meinst du im Sinn von gesungenem Text?
-              ;; NEU Kommentar Anne: Ja
-              ;;
-              ;; OPEN
-              (:de "")
-              (:en "per ♮: ut-re-mi-fa-re")))
-    (s2 (:alt (:it "per ♭: re-mi-fa-re-mi")
-              (:de "")
-              (:en "per ♭: re-mi-fa-re-mi")))))
+              (:en "tono divided in four\\ascending parts")))))
+  (:preamble-lilypond
+   (:lyrics
+    (s1 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } ut re mi fa re")
+                 (:de "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } ut re mi fa re")
+                 (:en "\\set stanza = \\markup{ \\normal-text \"in ♮:\" } ut re mi fa re")))
+    (s2 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } re mi fa re mi")
+                 (:de "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } re mi fa re mi")
+                 (:en "\\set stanza = \\markup{ \\normal-text \"in ♭:\" } re mi fa re mi")))))
   (:data
    (:text 90 58
           (36 691 "Tono diuiſo in 4. parti aſcen.")

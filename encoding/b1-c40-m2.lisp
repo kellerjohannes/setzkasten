@@ -6,19 +6,11 @@
    (:title (:alt (:it "Essempio de gradi di quinte accidentali")
                  (:de "")
                  (:en "Example of the steps of quinte accidentali")))
-   (:section-captions
+   (:section-headings
     (s1 (:alt (:it "gradi della prima quinta\\accidentale per semitono\\minore [ascendente] composto")
-              ;; Kommentar Anne: there is no "ascendente" in this caption in the original.
-              ;; JK: Danke, ich habe [...] ergänzt.
-              ;;
-              ;; DONE
               (:de "")
               (:en "steps of the first quinta\\accidentale composta ascending\\with semitoni minori")))
     (s2 (:alt (:it "gradi della prima quinta\\accidentale per semitono\\maggiore ascendente composto")
-              ;; Kommentar Anne: ascendente is in this caption, but not in the previous one.
-              ;; JK: Danke, habe die Klammern entfernt.
-              ;;
-              ;; DONE
               (:de "")
               (:en "steps of the first quinta\\accidentale composta ascending\\with semitoni maggiori")))
     (s3 (:alt (:it "gradi della seconda quinta\\accidentale ascendente\\per semitono minore composto")
@@ -33,9 +25,23 @@
     (s6 (:alt (:it "gradi della quarta quinta\\accidentale ascendente\\per semitono minore composto")
               (:de "")
               (:en "steps of the fourth quinta\\accidentale composta ascending\\with semitoni minori")))))
+  (:preamble-lilypond
+   (:lyrics
+    (s1 v1 "[re mi fa sol la]")
+    (s2 v1 "[re mi fa sol la]")
+    (s3 v1 "[mi fa sol re mi]")
+    (s4 v1 "[fa sol re mi fa]")
+    (s5 v1 "[fa sol re mi fa]")
+    (s6 v1 "[ut re mi fa sol]")))
   (:data
    (:text 80 58
           (580 1020 "ᴇſſempio de ɢradi,di Ɋuinte accidentali."))
+   (:alt (:diplomatic)
+         (:critical)
+         (:coord-barre "–")
+         (:coord-norm "US")
+         (:comment "Die Solmisationssilben sind im Original nicht gedruckt, aber eindeutig im Text beschrieben.")
+         (:flag :ready) (:id 1))
    (:music 2226
            (:voice v1)
            (:section s1)

@@ -4,23 +4,27 @@
    (:comment "q021_s031, origin: 498")
    (:creator "Vicentino21 / Johannes Keller")
    (:section-captions
-    (s1 (:alt (:it "per ♮ incitato:\\la-sol-fa-la-sol")
-              ;; Kommentar Anne: Die Silben sollen als Text unter den Noten gelegt werden, "per
-              ;; incitato" in der zweiten Zeile, bei allen drei und in allen Sprachen.
-              ;; OPEN
+    (s1 (:alt (:it "per ♮ incitato")
               (:de "")
-              (:en "per ♮ incitato:\\la-sol-fa-la-sol")))
-    (s2 (:alt (:it "per ♭ molle:\\la-sol-fa-mi-re")
+              (:en "per ♮ incitato")))
+    (s2 (:alt (:it "per ♭ molle")
               (:de "")
-              (:en "per ♭ molle:\\la-sol-fa-mi-re")
-              ;; JK: Zu bestätigen.
-              ;;
-              ;; OPEN
-              (:comment "Maniates: korrigiert zu »la sol fa la sol«, möglicherweise auf der Basis der _mani enarmonici_. Es soll hier keine Korrektur vorgenommen werden.")
-              (:flag :observe) (:id 1)))
-    (s3 (:alt (:it "per natura:\\sol-fa-la-sol-fa-mi-mi")
+              (:en "per ♭ molle")))
+    (s3 (:alt (:it "per natura")
               (:de "")
-              (:en "per natura:\\sol-fa-la-sol-fa-mi-mi")))))
+              (:en "per natura")))))
+  (:preamble-lilypond
+   (:lyrics
+    (s1 v1 (:alt (:it "la sol fa la sol")
+                 (:de "la sol fa la sol")
+                 (:en "la sol fa la sol")))
+    (s2 v1 (:alt (:it "la sol fa mi re")
+                 (:de "la sol fa mi re")
+                 (:en "la sol fa mi re")))
+    (s3 v1 (:alt (:it "sol fa la sol fa mi mi")
+                 (:de "sol fa la sol fa mi mi")
+                 (:en "sol fa la sol fa mi mi")))
+    ))
   (:data
    (:music 2200
            (:voice v1)

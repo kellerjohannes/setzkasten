@@ -44,10 +44,6 @@
     (s6 (:alt (:it "[per ascendere]")
               (:de "")
               (:en "[in ascent]")))))
-  ;; Kommentar Anne: ich würde "per ascendere" vor fa-mi-mi" schreiben.
-  ;; JK: ich habe es im Englischen ergänzt, gut so?
-  ;;
-  ;; OPEN
   (:preamble-lilypond
    (:lyrics
     ;; JK: Im Auge zu behalten: die Silben werden standardmässig kleiner gesetzt als die "per
@@ -55,21 +51,39 @@
     ;; werden, falls die Unterschiedlichkeit der Schriftgrössen nicht akzeptabel sein sollte.
     ;;
     ;; OPEN
-    (s1 v1 "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } la sol fa la sol")
-    (s2 v1 "\\set stanza = \\markup{ \\normal-text \"[per nat:\" } sol fa la sol fa]")
-    (s3 v1 "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } fa mi la")
+    (s1 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } la sol fa la sol")
+                 (:de "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } la sol fa la sol")
+                 (:en "\\set stanza = \\markup{ \\normal-text \"in nat.:\" } la sol fa la sol")))
+    (s2 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"[per nat:\" } sol fa la sol fa]")
+                 (:de "\\set stanza = \\markup{ \\normal-text \"[per nat:\" } sol fa la sol fa]")
+                 (:en "\\set stanza = \\markup{ \\normal-text \"[in nat:\" } sol fa la sol fa]")))
+    (s3 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } fa mi la")
+                 (:de "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } fa mi la")
+                 (:en "\\set stanza = \\markup{ \\normal-text \"in nat.:\" } fa mi la")))
     (s3 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"[ascendente\" } fa mi mi]")
-                 (:de "")
+                 (:de "\\set stanza = \\markup{ \\normal-text \"[aufsteigend\" } fa mi mi]")
                  (:en "\\set stanza = \\markup{ \\normal-text \"[in ascent\" } fa mi mi]")))
-    (s4 v1 "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } la sol fa mi re")
-    (s4 v1 "\\set stanza = \\markup{ \\normal-text \"\" } la sol fa la sol")
-    (s5 v1 "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } la sol fa la sol")
-    (s5 v1 "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } sol fa la sol fa")
-    (s6 v1 "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } fa mi mi")
-    (s7 v1 "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } fa mi la")
-    (s7 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"[ascendente:]\" } fa mi mi")
-                 (:de "")
-                 (:en "\\set stanza = \\markup{ \\normal-text \"[in ascent:]\" } fa mi mi")))))
+    (s4 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } la sol fa mi re")
+                 (:de "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } la sol fa mi re")
+                 (:en "\\set stanza = \\markup{ \\normal-text \"in ♮:\" } la sol fa mi re")))
+    (s4 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"\" } la sol fa la sol")
+                 (:de "\\set stanza = \\markup{ \\normal-text \"\" } la sol fa la sol")
+                 (:en "\\set stanza = \\markup{ \\normal-text \"\" } la sol fa la sol")))
+    (s5 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } la sol fa la sol")
+                 (:de "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } la sol fa la sol")
+                 (:en "\\set stanza = \\markup{ \\normal-text \"in ♭:\" } la sol fa la sol")))
+    (s5 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } sol fa la sol fa")
+                 (:de "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } sol fa la sol fa")
+                 (:en "\\set stanza = \\markup{ \\normal-text \"in ♮:\" } sol fa la sol fa")))
+    (s6 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } fa mi mi")
+                 (:de "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } fa mi mi")
+                 (:en "\\set stanza = \\markup{ \\normal-text \"in nat.:\" } fa mi mi")))
+    (s7 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } fa mi la")
+                 (:de "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } fa mi la")
+                 (:en "\\set stanza = \\markup{ \\normal-text \"in ♭:\" } fa mi la")))
+    (s7 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"[ascendente]\" } fa mi mi")
+                 (:de "\\set stanza = \\markup{ \\normal-text \"[aufsteigend]\" } fa mi mi")
+                 (:en "\\set stanza = \\markup{ \\normal-text \"[in ascent]\" } fa mi mi")))))
   (:data
    (:text 70 58 (0 2198 "ᴍano ᴇnarmonica , con ſemitoni maggiori diſcendenti nel principio del tono,con il tono, in quattro"))
    (:text 70 58 (0 976 "parti diuiſo , per leſette lettere della ᴍano."))

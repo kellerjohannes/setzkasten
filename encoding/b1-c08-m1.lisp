@@ -3,7 +3,19 @@
    (:alt-name "m1.013")
    (:comment "q021_s029, origin: 1401")
    (:creator "Vicentino21 / Johannes Keller"))
+  (:preamble-lilypond
+   (:lyrics
+    ;; JK: Silben aus dem Haupttext unterlegt, in Ordnung so?
+    ;;
+    ;; OPEN
+    (s1 v1 "[mi mi ut mi]")))
   (:data
+   (:alt (:diplomatic)
+         (:critical)
+         (:coord-barre "–")
+         (:coord-norm "US")
+         (:comment "Die Solmisationssilben stehen im Original nicht im Notenbeispiel, sondern werden im Text erklärt.")
+         (:flag :ready) (:id 1))
    (:music 545
            (:voice v1)
            (:section s1)

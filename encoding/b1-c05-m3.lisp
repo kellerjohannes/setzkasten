@@ -40,7 +40,7 @@
               ;; Darstellung. Ich habe die englische Darstellung entsprechend (hoffentlich) meine
               ;; Vorstellungen eingerichtet.
               ;;
-              ;; Finde ich sehr gut, ich habe die italienische Reihenfolge der Zeilen nun der
+              ;; JK: Finde ich sehr gut, ich habe die italienische Reihenfolge der Zeilen nun der
               ;; Englischen angepasst.
               ;;
               ;; DONE
