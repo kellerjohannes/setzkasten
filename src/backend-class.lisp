@@ -84,16 +84,26 @@
      :score-command "scoreNormDeOrig"
      :app-command "appImportCrit"
      :cite-fun expand-filename-to-german
-     :title "Vicentino21, kritisch, übersetzte Edition in originaler Schlüsselung"
+     :title "Vicentino21, kritische, übersetzte Edition in originaler Schlüsselung"
+     :app-title "Kritischer Bericht")
+    (:suffix "[unknown]"
+     :score-command "scoreNormIt"
+     :app-command "appImportCrit"
+     :cite-fun expand-filename-to-italian
+     :title "Vicentino21, kritische Edition"
      :app-title "Kritischer Bericht")
     ))
 
 (defun get-mini-element (suffix key)
-  (getf (find suffix *dict-suffix-mini*
+  (let ((result (getf (find suffix *dict-suffix-mini*
               :test #'string-equal
               :key #'(lambda (element)
                        (getf element :suffix)))
-        key))
+        key)))
+    (if result
+        result
+        (unless (string= suffix "[unknown]")
+          (get-mini-element "[unknown]" key)))))
 
 
 
