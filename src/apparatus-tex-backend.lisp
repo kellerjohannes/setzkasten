@@ -80,27 +80,9 @@
           (prettify-keyword (getf meta-data-plist :filter))
           (make-string-latex-friendly (getf meta-data-plist :comment))))
 
-(defun extract-components (filename)
-  (let* ((first-dash (position "-" filename :test #'string-equal))
-         (second-dash (position "-" filename :test #'string-equal :start (1+ first-dash))))
-    (list (parse-integer (subseq filename 1 first-dash))
-          (parse-integer (subseq filename (+ 2 first-dash) second-dash))
-          (parse-integer (subseq filename (+ 2 second-dash))))))
-
-(defun expand-filename-to-german (filename)
-  (let ((data (extract-components filename)))
-    (format nil "Buch ~s, Kapitel ~s, Musikbeispiel ~s" (first data) (second data) (third data))))
-
 (defun generate-latex-title-mini (meta-data-plist)
-  (format nil "
-\\vspace{7mm}
-\\hrule
-\\vspace{7mm}
-
-\\begin{center}
-
-~a"
-          (expand-filename-to-german (getf meta-data-plist :filename))))
+  (declare (ignore meta-data-plist))
+  "\\vspace{9mm}")
 
 (defparameter *latex-table-header*
    "
@@ -349,7 +331,10 @@
       (format latex-stream "~a"
               (concatenate 'string
                            (generate-latex-entry-mini filename selectors)
-                           "\\end{center}")))))
+                           ;; obsolete, can be deleted
+                           ;; "\\end{center}"
+                           ""
+                           )))))
 
 (defun generate-latex-apparatus-standalone (filename selectors)
   (with-open-file (latex-stream (merge-pathnames *apparatus-export-path-tex-standalones*

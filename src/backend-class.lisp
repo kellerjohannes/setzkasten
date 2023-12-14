@@ -7,18 +7,95 @@
   (:documentation "Main function to trigger the generation of the graphics file containing the score."))
 
 
-;; TODO
-;; differentiation of score/app import commands to be implemented and tested
+(defun extract-components (filename)
+  (let* ((first-dash (position "-" filename :test #'string-equal))
+         (second-dash (position "-" filename :test #'string-equal :start (1+ first-dash))))
+    (list (parse-integer (subseq filename 1 first-dash))
+          (parse-integer (subseq filename (+ 2 first-dash) second-dash))
+          (parse-integer (subseq filename (+ 2 second-dash))))))
+
+(defparameter *dict-cite-italian-libro*
+  '((0 . "Libro della theorica")
+    (1 . "Primo libro della prattica")
+    (2 . "Secondo libro della prattica")
+    (3 . "Terzo libro della prattica")
+    (4 . "Quarto libro della prattica")
+    (5 . "Quinto libro della prattica")))
+
+(defun expand-filename-to-italian (filename)
+  (let ((data (extract-components filename)))
+    (format nil "~a, capitolo ~@r, esempio ~s"
+            (cdr (assoc (first data) *dict-cite-italian-libro*))
+            (second data)
+            (third data))))
+
+(defun expand-filename-to-german (filename)
+  (let ((data (extract-components filename)))
+    (format nil "Buch ~s, Kapitel ~s, Musikbeispiel ~s" (first data) (second data) (third data))))
+
+(defun expand-filename-to-english (filename)
+  (let ((data (extract-components filename)))
+    (format nil "Book ~s, chapter ~s, example ~s" (first data) (second data) (third data))))
+
 (defparameter *dict-suffix-mini*
-  '(("barre" . "scoreBarre")
-    ("crit" . "scoreCrit")
-    ("norm-it" . "scoreNormIt")
-    ("norm-en" . "scoreNormEn")
-    ("norm-de" . "scoreNormDe")
-    ("norm-it-origclef" . "scoreNormItOrig")
-    ("norm-en-origclef" . "scoreNormEnOrig")
-    ("norm-de-origclef" . "scoreNormDeOrig")
+  '((:suffix "barre"
+     :score-command "scoreBarre"
+     :app-command "appImportBarre"
+     :cite-fun expand-filename-to-italian
+     :title "Vicentino21, Fassung »Barré«"
+     :app-title "Kritischer Bericht")
+    (:suffix "crit"
+     :score-command "scoreCrit"
+     :app-command "appImportCrit"
+     :cite-fun expand-filename-to-italian
+     :title "Vicentino21, kritische Edition"
+     :app-title "Kritischer Bericht")
+    (:suffix "norm-it"
+     :score-command "scoreNormIt"
+     :app-command "appImportCrit"
+     :cite-fun expand-filename-to-italian
+     :title "Vicentino21, kritische Edition"
+     :app-title "Kritischer Bericht")
+    (:suffix "norm-en"
+     :score-command "scoreNormEn"
+     :app-command "appImportCrit"
+     :cite-fun expand-filename-to-english
+     :title "Vicentino21, critical translated edition in modern clefs"
+     :app-title "Critical annotations")
+    (:suffix "norm-de"
+     :score-command "scoreNormDe"
+     :app-command "appImportCrit"
+     :cite-fun expand-filename-to-german
+     :title "Vicentino21, kritische, übersetzte Edition in moderner Schlüsselung"
+     :app-title "Kritischer Bericht")
+    (:suffix "norm-it-origclef"
+     :score-command "scoreNormItOrig"
+     :app-command "appImportCrit"
+     :cite-fun expand-filename-to-italian
+     :title "Vicentino21, kritische Edition in originaler Schlüsselung"
+     :app-title "Kritischer Bericht")
+    (:suffix "norm-en-origclef"
+     :score-command "scoreNormEnOrig"
+     :app-command "appImportCrit"
+     :cite-fun expand-filename-to-english
+     :title "Vicentino21, critical translated edition in original clefs"
+     :app-title "Critical annotations")
+    (:suffix "norm-de-origclef"
+     :score-command "scoreNormDeOrig"
+     :app-command "appImportCrit"
+     :cite-fun expand-filename-to-german
+     :title "Vicentino21, kritisch, übersetzte Edition in originaler Schlüsselung"
+     :app-title "Kritischer Bericht")
     ))
+
+(defun get-mini-element (suffix key)
+  (getf (find suffix *dict-suffix-mini*
+              :test #'string-equal
+              :key #'(lambda (element)
+                       (getf element :suffix)))
+        key))
+
+
 
 (defmethod create-score-file :after ((backend setzkasten-backend) score-data suffix)
   "Creates a standalone .tex file to host a pdf of the generated score, bundled with the apparatus."
@@ -36,14 +113,29 @@
 
 \\begin{minipage}{21cm}
 
-\\scoreCrit{~a}
-\\appImportCrit{~a}
+\\vspace{5mm}
+\\begin{center}
+  {\\Large ~a}\\\\[1mm]
+  \\textit{~a}\\\\
+\\end{center}
+
+\\~a{~a}
+
+\\begin{center}
+
+\\~a{~a}
+
+\\end{center}
 
 \\end{minipage}
 
 \\end{document}
 "
+              (get-mini-element suffix :title)
+              (funcall (get-mini-element suffix :cite-fun) filename)
+              (get-mini-element suffix :score-command)
               filename
+              (get-mini-element suffix :app-command)
               filename))))
 
 (defmethod reset-file-list ((backend setzkasten-backend))
