@@ -31,7 +31,7 @@
    (:section-captions
     (s1 (:alt (:it "per natura: la\\per ♭: mi\\per ♮: re")
               (:de "")
-              (:en "in natural: la\\in ♭: mi\\in ♮: re")))
+              (:en "in nat.: la\\in ♭: mi\\in ♮: re")))
     (s2 (:alt (:it "per ♮: mi")
               (:de "")
               (:en "in ♮: mi")))
@@ -49,19 +49,19 @@
               ;;
               ;; DONE
               (:de "")
-              (:en "in natural: ut\\in ♭: sol\\in ♮: fa")))
+              (:en "in nat.: ut\\in ♭: sol\\in ♮: fa")))
     (s4 (:alt (:it "per ♭: la\\per ♮: sol\\per natura: re")
               (:de "")
-              (:en "in ♭: la\\in ♮: sol\\in natural: re")))
+              (:en "in ♭: la\\in ♮: sol\\in nat.: re")))
     (s5 (:alt (:it "per ♮: la\\per natura: mi")
               (:de "")
-              (:en "in ♮: la\\in natural: mi")))
+              (:en "in ♮: la\\in nat.: mi")))
     (s6 (:alt (:it "per natura: fa\\per ♭: ut")
               (:de "")
-              (:en "in natural: fa\\in ♭: ut")))
+              (:en "in nat.: fa\\in ♭: ut")))
     (s7 (:alt (:it "per natura: sol\\per ♭: re\\per ♮: ut")
               (:de "")
-              (:en "in natural: sol\\in ♭: re\\in ♮: ut")))))
+              (:en "in nat.: sol\\in ♭: re\\in ♮: ut")))))
   (:data
    (:text 70 58
      (90 1974 "ᴅimoſtratione della ᴍano ᴄromatica, aſcendente, con li ꜱemitoni minori, e con l'eſſempio."))
