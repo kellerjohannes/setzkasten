@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio dei gradi, di terza minore, composti, e incomposti")
                  (:de "")
-                 (:en "Example of the steps of the terza minore, composti and incomposti")))
+                 (:en "Example of the composti and incomposti steps of the terza minore")))
    (:section-captions
     (s1 (:alt (:it "grado di terza\\minore\\naturale\\incomposto")
               ;; Kommentar David (through Anne) 1.In all of the captions for the individual
@@ -18,16 +18,16 @@
               ;;
               ;; OPEN
               (:de "")
-              (:en "step of terza\\minore\\naturale\\incomposto")))
+              (:en "incomposto step\\of terza\\minore\\naturale")))
     (s2 (:alt (:it "grado di terza\\minore\\naturale\\incomposto")
               (:de "")
-              (:en "step of terza\\minore\\naturale\\incomposto")))
+              (:en "incomposto step\\of terza\\minore\\naturale")))
     (s3 (:alt (:it "grado di terza\\minore\\naturale\\incomposto")
               (:de "")
-              (:en "step of terza\\minore\\naturale\\incomposto")))
+              (:en "incomposto step\\of terza\\minore\\naturale")))
     (s4 (:alt (:it "grado di terza\\minore\\naturale\\incomposto")
               (:de "")
-              (:en "step of terza\\minore\\naturale\\incomposto")))
+              (:en "incomposto step\\of terza\\minore\\naturale")))
     (s5 (:alt (:it "terza minore\\composto\\di tono\\e semitono")
               (:de "")
               (:en "terza minore\\composto\\of a tono\\and semitono")))
