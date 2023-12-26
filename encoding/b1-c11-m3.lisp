@@ -6,13 +6,13 @@
    (:section-captions
     (s1 (:alt (:it "per ♮ incitato")
               (:de "")
-              (:en "per ♮ incitato")))
+              (:en "in ♮ incitato")))
     (s2 (:alt (:it "per ♭ molle")
               (:de "")
-              (:en "per ♭ molle")))
+              (:en "in ♭ molle")))
     (s3 (:alt (:it "per natura")
               (:de "")
-              (:en "per natura")))))
+              (:en "in natural")))))
   (:preamble-lilypond
    (:lyrics
     (s1 v1 (:alt (:it "la sol fa la sol")
