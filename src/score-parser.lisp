@@ -1020,47 +1020,47 @@
 
 (defparameter *list-of-rests*
   '(
-    lrest24 lrest46 lrest68
-    brrest2 brrest4 brrest6 brrest8
-    sbrest3 sbrest5 sbrest7 sbrest9
-    mrest1 mrest3 mrest5 mrest7
-    smrest1 smrest3 smrest5 smrest7
+    :lrest24 :lrest46 :lrest68
+    :brrest2 :brrest4 :brrest6 :brrest8
+    :sbrest3 :sbrest5 :sbrest7 :sbrest9
+    :mrest1 :mrest3 :mrest5 :mrest7
+    :smrest1 :smrest3 :smrest5 :smrest7
     ))
 
 (defparameter *list-of-notes*
   '(
-    longa1 longa2 longa3 longa4 longa5 longa6 longa7 longa8 longa9 longa10
-    max0 max1 max2 max3 max4 max5 max6 max7 max8 max9 max10
-    br0 br1 br2 br3 br4 br5 br6 br7 br8 br9 br10
-    brd0 brd1 brd2 brd3 brd4 brd5 brd6 brd7 brd8 brd9 brd10
-    sb0 sb1 sb2 sb3 sb4 sb5 sb6 sb7 sb8 sb9 sb10
-    sbd0 sbd1 sbd2 sbd3 sbd4 sbd5 sbd6 sbd7 sbd8 sbd9 sbd10
-    m0 m1 m2 m3 m4 m5 m6 m7 m8 m9 m10 m5d md5d
-    md0 md1 md2 md3 md4 md5 md6 md7 md8 md9 md10
-    sm0 sm1 sm2 sm3 sm4 sm5 sm6 sm7 sm8 sm9 sm10
-    smd0 smd1 smd2 smd3 smd4 smd5 smd6 smd7 smd8 smd9 smd10
-    cr0 cr1 cr2 cr3 cr4 cr5 cr6 cr7 cr8 cr9 cr10
-    scr0 scr1 scr2 scr3 scr4 scr5 scr6 scr7 scr8 scr9 scr10
+    :longa1 :longa2 :longa3 :longa4 :longa5 :longa6 :longa7 :longa8 :longa9 :longa10
+    :max0 :max1 :max2 :max3 :max4 :max5 :max6 :max7 :max8 :max9 :max10
+    :br0 :br1 :br2 :br3 :br4 :br5 :br6 :br7 :br8 :br9 :br10
+    :brd0 :brd1 :brd2 :brd3 :brd4 :brd5 :brd6 :brd7 :brd8 :brd9 :brd10
+    :sb0 :sb1 :sb2 :sb3 :sb4 :sb5 :sb6 :sb7 :sb8 :sb9 :sb10
+    :sbd0 :sbd1 :sbd2 :sbd3 :sbd4 :sbd5 :sbd6 :sbd7 :sbd8 :sbd9 :sbd10
+    :m0 :m1 :m2 :m3 :m4 :m5 :m6 :m7 :m8 :m9 :m10 :m5d :md5d
+    :md0 :md1 :md2 :md3 :md4 :md5 :md6 :md7 :md8 :md9 :md10
+    :sm0 :sm1 :sm2 :sm3 :sm4 :sm5 :sm6 :sm7 :sm8 :sm9 :sm10
+    :smd0 :smd1 :smd2 :smd3 :smd4 :smd5 :smd6 :smd7 :smd8 :smd9 :smd10
+    :cr0 :cr1 :cr2 :cr3 :cr4 :cr5 :cr6 :cr7 :cr8 :cr9 :cr10
+    :scr0 :scr1 :scr2 :scr3 :scr4 :scr5 :scr6 :scr7 :scr8 :scr9 :scr10
     )
   "This is used in the function to determine whether a note has a dotted duration value. Any glyph that can represent a dotted note should be member of this list.")
 
 (defparameter *list-of-duration-dots*
-  '(dot0 dot2 dot4 dot6 dot8 dot10)
+  '(:dot0 :dot2 :dot4 :dot6 :dot8 :dot10)
   "This is used in the function looking ahead to detect rhythmic dots. All glyphs used to represent rhythmic dots should be member of this list.")
 
 (defparameter *list-of-clefs*
-  '(cclef1 cclef3 cclef5 cclef7
-    fclef1 fclef3 fclef5 fclef7 fclef9
-    gclef3))
+  '(:cclef1 :cclef3 :cclef5 :cclef7
+    :fclef1 :fclef3 :fclef5 :fclef7 :fclef9
+    :gclef3))
 
 (defparameter *f-clef-triggers*
-  '(fclef1 fclef3 fclef5 fclef7 fclef9)
+  '(:fclef1 :fclef3 :fclef5 :fclef7 :fclef9)
   "This is used to determine when the definition of an compound f-clef is done and normal glyph parsing can be switched back on. All glyphs that complete an f-clef complex should be member of this list.")
 
 (defparameter *meter-signatures*
-  '((met-perf-min-dim :circle nil :cut)
-    (met-perf-min :circle nil nil)
-    (met-perf-maj :circle :dot nil)
-    (met-imperf-maj :semicircle :dot nil)
-    (met-imperf-min-dim :semicircle nil :cut)
-    (met-imperf-min :semicircle nil nil)))
+  '((:met-perf-min-dim :circle nil :cut)
+    (:met-perf-min :circle nil nil)
+    (:met-perf-maj :circle :dot nil)
+    (:met-imperf-maj :semicircle :dot nil)
+    (:met-imperf-min-dim :semicircle nil :cut)
+    (:met-imperf-min :semicircle nil nil)))
