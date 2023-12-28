@@ -2,12 +2,12 @@
   (:import-from :cl-ppcre :regex-replace-all)
   (:import-from :vicentino-tunings :setzkasten-pitch)
   (:use :cl)
-  (:export "get-parsed-score"
-           "process-score"
-           "execute-mission"
-           "get-mobjects-in-voice"
-           "get-pitch"
-           "execute"))
+  (:export :get-parsed-score
+           :process-score
+           :execute-mission
+           :get-mobjects-in-voice
+           :get-pitch
+           :execute))
 
 (in-package :setzkasten)
 

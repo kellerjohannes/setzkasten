@@ -3298,6 +3298,7 @@
           ("b5-c64-m4" "norm-de-origclef" (:de :critical :critical :barre :diplomatic) ,*lilypond-backend-original*))))
 
 
+(populate-vicentino21 *vicentino21*)
 
 (defun execute-set (hash-table key)
   (execute-mission (gethash key hash-table))
@@ -3308,7 +3309,10 @@
                                                (string-downcase (string key))))))
 
 (defun execute (key-string)
-  (execute-set *vicentino21* (intern (string-upcase key-string))))
+  (let ((key (intern (string-upcase key-string) :keyword)))
+    (format t "~&Executing example ~s." key)
+    (execute-set *vicentino21* key)
+    (format t "~&~s done." key)))
 
 
 
