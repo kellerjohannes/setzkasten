@@ -5,25 +5,25 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:section-captions
     (s1 (:alt (:it "semitono minore\\composto")
-              (:de "")
+              (:de "semitono minore\\composto")
               (:en "semitono minore\\composto")))
     (s2 (:alt (:it "semitono minore\\composto")
-              (:de "")
+              (:de "semitono minore\\composto")
               (:en "semitono minore\\composto")))
     (s3 (:alt (:it "semitono minore\\composto")
-              (:de "")
+              (:de "semitono minore\\composto")
               (:en "semitono minore\\composto")))
     (s4 (:alt (:it "semitono minore\\incomposto")
-              (:de "")
+              (:de "semitono minore\\incomposto")
               (:en "semitono minore\\incomposto")))
     (s5 (:alt (:it "semitono minore\\incomposto")
-              (:de "")
+              (:de "semitono minore\\incomposto")
               (:en "semitono minore\\incomposto")))
     (s6 (:alt (:it "semitono minore\\incomposto")
-              (:de "")
+              (:de "semitono minore\\incomposto")
               (:en "semitono minore\\incomposto")))
     (s7 (:alt (:it "diesis maggiore\\per semitono minore\\incomposto")
-              (:de "")
+              (:de "diesis maggiore\\als semitono minore\\incomposto")
               (:en "semitono minore as diesis maggiore\\incomposto")))
     (s8 (:alt (:it "diesis maggiore\\enarmonico incomposto")
               ;; Kommentar: David (sent to Anne) this semitono minore incomposto is not enharmonic!
@@ -33,13 +33,13 @@
               ;; versions of this example.  In the text we would write "chromatic semitono minore
               ;; incomposto", with the first word in English and the other three words in Italian.
               ;;
-              ;; JK: Ja, ich verstehe den Punkt. Ich hätte mich auch vorstellen können, es so zu
+              ;; JK: Ja, ich verstehe den Punkt. Ich hätte mir auch vorstellen können, es so zu
               ;; belassen, aber ich bin einverstanden, es zu idealisieren. Allerdings schlage ich
               ;; eine andere Idealisierung vor, siehe :it-Text und Vorschlag für die Englische
               ;; Übersetzung. Ich habe das auch im Fake-Simile entsprechend angepasst.
               ;;
               ;; OPEN
-              (:de "")
+              (:de "diesis maggiore\\enarmonico incomposto")
               (:en "diesis maggiore\\enarmonico incomposto")))))
   (:data
    (:music 2206
