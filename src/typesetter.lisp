@@ -59,7 +59,7 @@
    (width :initform 0 :initarg :width :accessor width)
    (height :initform 0 :initarg :height :accessor height)
    (margins :initform '(0 0 0 0) :initarg :margins :accessor margins
-        :documentation "Top, Right, Bottom, Left")
+            :documentation "Top, Right, Bottom, Left")
    (bg-color :initform nil :initarg :bg-color :accessor bg-color)
    (svg-use-container :initform nil :accessor svg-use-container)))
 
@@ -97,7 +97,7 @@
   (push (second music-data) (line-width-list score))
   (mapc (lambda (element)
           (handler-case (add-stencil-to-line score (get-stencil element stencil-list))
-            (stencil-not-found () (format t "~&Stencil with id '~a' not found, skipping."
+            (stencil-not-found () (format t "~&Stencil with id '~s' not found, skipping."
                                           element))))
         (rest (rest music-data)))
   (push (second music-data) (first (line-container score)))
@@ -235,8 +235,9 @@
 ;;; parsing vicentino code
 
 (defun lookup-vicentino-code (item glyph-definitions)
-  (let ((result (third (find item glyph-definitions :key #'second))))
-    (if result result item)))
+  (let ((item-key (make-keyword item)))
+    (let ((result (third (find item-key glyph-definitions :key #'second))))
+      (if result result item-key))))
 
 (defun parse-vicentino-code (data glyph-definitions)
   (mapcar (lambda (line)
