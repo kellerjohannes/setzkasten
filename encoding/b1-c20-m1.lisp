@@ -4,29 +4,29 @@
    (:comment "q021_s038, origin: 939")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio di più semitoni maggiori et minori, ascendenti e discendenti,\\composti et incomposti, naturali e accidentali")
-                 (:de "")
+                 (:de "Beispiel von weiteren semitoni maggiori et minori, aufsteigend und absteigend,\\composti und incomposti, naturali und accidentali")
                  (:en "Example of many semitoni maggiori and minori, ascending and descending,\\composti and incomposti, naturali and accidentali")))
    (:section-captions
     (s1 (:alt (:it "semitono maggiore\\naturale composto")
-              (:de "")
+              (:de "semitono maggiore\\naturale composto")
               (:en "semitono maggiore\\naturale composto")))
     (s2 (:alt (:it "semitono maggiore\\accidentale composto")
-              (:de "")
+              (:de "semitono maggiore\\accidentale composto")
               (:en "semitono maggiore\\accidentale composto")))
     (s3 (:alt (:it "semitono minore\\accidentale incomposto")
-              (:de "")
+              (:de "semitono minore\\accidentale incomposto")
               (:en "semitono minore\\accidentale incomposto")))
     (s4 (:alt (:it "semitono maggiore\\accidentale incomposto")
-              (:de "")
+              (:de "semitono maggiore\\accidentale incomposto")
               (:en "semitono maggiore\\accidentale incomposto")))
     (s5 (:alt (:it "semitono minore\\accidentale composto")
-              (:de "")
+              (:de "semitono minore\\accidentale composto")
               (:en "semitono minore\\accidentale composto")))
     (s6 (:alt (:it "semitono maggiore\\naturale composto")
-              (:de "")
+              (:de "semitono maggiore\\naturale composto")
               (:en "semitono maggiore\\naturale composto")))
     (s7 (:alt (:it "semitono minore\\accidentale incomposto")
-              (:de "")
+              (:de "semitono minore\\accidentale incomposto")
               (:en "semitono minore\\accidentale incomposto")))
     (s8 (:alt (:it "semitoni maggiori\\accidentali incomposti")
               ;; Kommentar Anne: Is the step from d-sharp to d-flat dot really maggiore? If the
@@ -34,13 +34,13 @@
               ;; JK: Ja, ist korrekt so im Original!
               ;;
               ;; DONE
-              (:de "")
+              (:de "semitoni maggiori\\accidentali incomposti")
               (:en "semitoni maggiori\\accidentali incomposti")))
     (s9 (:alt (:it "semitono maggiore\\accidentale composto")
-              (:de "")
+              (:de "semitono maggiore\\accidentale composto")
               (:en "semitono maggiore\\accidentale composto")))
     (s10 (:alt (:it "semitono maggiore\\accidentale incomposto")
-               (:de "")
+               (:de "semitono maggiore\\accidentale incomposto")
                (:en "semitono maggiore\\accidentale incomposto")))
     (s11 (:alt (:it "semitono maggiore\\e minore\\accidentale incomposto")
                ;; Kommentar David (placed by Anne): No. 11: with your emended version of the pitches
@@ -59,10 +59,10 @@
                ;; incomposti (G–Gb and Gb–Fdot), all descending.
                ;;
                ;; OPEN
-               (:de "")
+               (:de "semitono maggiore\\und minore\\accidentale incomposto")
                (:en "semitono maggiore\\and minore\\accidentale incomposto")))
     (s12 (:alt (:it "semitono minore\\e maggiore\\accidentale incomposto")
-               (:de "")
+               (:de "semitono minore\\und maggiore\\accidentale incomposto")
                (:en "semitono minore\\and maggiore\\accidentale incomposto")))))
   (:data
    (:text 90 58
