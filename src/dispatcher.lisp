@@ -3308,6 +3308,15 @@
           (trivial-shell:shell-command (format nil "cp /home/johannes/common-lisp/setzkasten-output/svg/~a* /data/images/"
                                                (string-downcase (string key))))))
 
+(defun execute-book (book-number)
+  (dotimes (chapter-counter 100)
+    (dotimes (music-counter 15)
+      (let ((key (intern (format nil "B~a-C~2,'0d-M~a" book-number chapter-counter music-counter)
+                         :keyword)))
+        (when (gethash key *vicentino21*)
+          (execute-set *vicentino21* key))))))
+
+
 (defun execute (key-string)
   (let ((key (intern (string-upcase key-string) :keyword)))
     (format t "~&Executing example ~s." key)

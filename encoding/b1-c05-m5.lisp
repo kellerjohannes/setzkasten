@@ -39,7 +39,7 @@
               (:de "la und sol absteigend")
               (:en "la and sol in descent")))
     (s6 (:alt (:it "la discende")
-              (:la absteigend")
+              (:de "la absteigend")
               (:en "la in descent")))))
   (:preamble-lilypond
    (:lyrics
