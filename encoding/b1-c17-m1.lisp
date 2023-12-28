@@ -5,16 +5,16 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:section-captions
     (s1 (:alt (:it "due diesis in\\un semitono")
-              (:de "")
+              (:de "zwei diesis in\\einem semitono")
               (:en "two diesis in\\a semitono")))
     (s2 (:alt (:it "4 diesis in un tono\\ascendente")
-              (:de "")
+              (:de "4 diesis in einem tono\\aufsteigend")
               (:en "4 diesis in a\\ascending tono")))
     (s3 (:alt (:it "4 diesis in un tono\\ascendente")
-              (:de "")
+              (:de "4 diesis in einem tono\\aufsteigend")
               (:en "4 diesis in a\\ascending tono")))
     (s4 (:alt (:it "4 diesis in un tono\\discendente")
-              (:de "")
+              (:de "4 diesis in einem tono\\absteigend")
               (:en "4 diesis in a\\descending tono")))))
   (:data
    (:music 2214

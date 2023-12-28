@@ -5,10 +5,10 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
     (s1 (:alt (:it "tono diviso in quattro\\parti ascendenti")
-              (:de "")
+              (:de "tono unterteilt in vier\\aufsteigende Teile")
               (:en "tono divided into four\\ascending parts")))
     (s2 (:alt (:it "tono diviso in quattro\\parti ascendenti")
-              (:de "")
+              (:de "tono unterteilt in vier\\aufsteigende Teile")
               (:en "tono divided into four\\ascending parts")))))
   (:preamble-lilypond
    (:lyrics

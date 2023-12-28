@@ -5,12 +5,12 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:section-captions
     (s1 (:alt (:it "per tutta")
-              (:de "")
+              (:de "für die ganze [sc. Note]")
               (:en "for the whole")))
     (s2 (:alt (:it "per la metà\\dinanzi")
               ;; AS:
               ;; Für alle Ligaturen ist die Resolution gezeigt und nicht wie es angezeigt ist.
-              ;; Ist das wirklich sinnvoll? Musste nicht entweder das Original stehen oder bedeides?
+              ;; Ist das wirklich sinnvoll? Musste nicht entweder das Original stehen oder beides?
               ;; Es macht auf eine Art keinen Sinn nur die Auflösung zu zeigen.
               ;; JK:
               ;; Ja, ich finde das sinnvoll, weil hier ja das Phänomen der Ligaturen in heutiger
@@ -19,28 +19,28 @@
               ;; Simile, auf das man mit einem Klick umschalten kann. Ich würde das so lassen.
               ;;
               ;; DONE
-              (:de "")
+              (:de "für die vordere\\Hälfte")
               (:en "for the first\\half")))
     (s3 (:alt (:it "per la metà\\doppo")
-              (:de "")
+              (:de "für die hintere\\Hälfte")
               (:en "for the second\\half")))
     (s4 (:alt (:it "per tutta")
-              (:de "")
+              (:de "für die ganze [sc. Note]")
               (:en "for the whole")))
     (s5 (:alt (:it "per la metà\\dinanzi")
-              (:de "")
+              (:de "für die vordere\\Hälfte")
               (:en "for the first\\half")))
     (s6 (:alt (:it "per la metà\\doppo")
-              (:de "")
+              (:de "für die hintere\\Hälfte")
               (:en "for the second\\half")))
     (s7 (:alt (:it "per tutta")
-              (:de "")
+              (:de "für die ganze [sc. Note]")
               (:en "for the whole")))
     (s8 (:alt (:it "per la metà\\dinanzi")
-              (:de "")
+              (:de "für die vordere\\Hälfte")
               (:en "for the first\\half")))
     (s9 (:alt (:it "per la metà\\doppo")
-              (:de "")
+              (:de "für die hintere\\Hälfte")
               (:en "for the second\\half")))))
   (:data
    (:music 2168

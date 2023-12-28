@@ -5,13 +5,13 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:section-captions
     (s1 (:alt (:it "per ♮ incitato")
-              (:de "")
+              (:de "per ♮ incitato")
               (:en "in ♮ incitato")))
     (s2 (:alt (:it "per ♭ molle")
-              (:de "")
+              (:de "per ♭ molle")
               (:en "in ♭ molle")))
     (s3 (:alt (:it "per natura")
-              (:de "")
+              (:de "per natura")
               (:en "in natural")))))
   (:preamble-lilypond
    (:lyrics
