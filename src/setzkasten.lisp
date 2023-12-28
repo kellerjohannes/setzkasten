@@ -6,7 +6,8 @@
            "process-score"
            "execute-mission"
            "get-mobjects-in-voice"
-           "get-pitch"))
+           "get-pitch"
+           "execute"))
 
 (in-package :setzkasten)
 

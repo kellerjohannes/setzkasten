@@ -3297,11 +3297,18 @@
           ("b5-c64-m4" "norm-en-origclef" (:en :critical :critical :barre :diplomatic) ,*lilypond-backend-original*)
           ("b5-c64-m4" "norm-de-origclef" (:de :critical :critical :barre :diplomatic) ,*lilypond-backend-original*))))
 
+
+
 (defun execute-set (hash-table key)
   (execute-mission (gethash key hash-table))
-  (format t "~&~a" (trivial-shell:shell-command "mv /home/johannes/common-lisp/setzkasten-output/ly/*.svg /home/johannes/common-lisp/setzkasten-output/svg/"))
-  (format t "~&~a" (trivial-shell:shell-command (format nil "cp /home/johannes/common-lisp/setzkasten-output/svg/~a* /data/images/" (string-downcase (string key))))))
+  (format t "~&~a"
+          (trivial-shell:shell-command "mv /home/johannes/common-lisp/setzkasten-output/ly/*.svg /home/johannes/common-lisp/setzkasten-output/svg/"))
+  (format t "~&~a"
+          (trivial-shell:shell-command (format nil "cp /home/johannes/common-lisp/setzkasten-output/svg/~a* /data/images/"
+                                               (string-downcase (string key))))))
 
+(defun execute (key-string)
+  (execute-set *vicentino21* (intern (string-upcase key-string))))
 
 
 
