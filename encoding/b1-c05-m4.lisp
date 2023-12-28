@@ -4,7 +4,7 @@
    (:comment "q021_s024, origin: 1057")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Dimostratione della mano enarmonica diatonica,\\ascendente con le sette lettere della mano")
-                 (:de "")
+                 (:de "Darstellung der enharmonisch-diatonischen Hand, aufsteigend mit den sieben Buchstaben der Hand.")
                  (:en "Illustration of the diatonic enharmonic hand,\\ascending with the seven letters of the hand")))
    (:section-headings
     (s1 (:alt (:it "Alamire")
