@@ -4,7 +4,7 @@
    (:comment "q021_s022, origin: 1023")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Dimostratione della mano cromatica, ascendente, con li semitoni minore,\\e con l'essempio")
-                 (:de "Darstellung der chromatischen Hand, aufsteigend, mit den semitoni minori, und mit dem Beispiel.")
+                 (:de "Darstellung der chromatischen Hand, aufsteigend, mit den semitoni minori,\\und mit dem Beispiel.")
                  (:en "Illustration of the ascending chromatic hand, with the semitoni minori, and with an example")))
    (:section-headings
     (s1 (:alt (:it "Alamire")
@@ -30,10 +30,10 @@
               (:en "Gsolreut"))))
    (:section-captions
     (s1 (:alt (:it "per natura: la\\per ♭: mi\\per ♮: re")
-              (:de "")
+              (:de "per natura: la\\per ♭: mi\\per ♮: re")
               (:en "in nat.: la\\in ♭: mi\\in ♮: re")))
     (s2 (:alt (:it "per ♮: mi")
-              (:de "")
+              (:de "per ♮: mi")
               (:en "in ♮: mi")))
     (s3 (:alt (:it "per natura: ut\\per ♭: sol\\per ♮: fa")
               ;; Kommentar Anne: this corresponds to the original, but is wrong. Either the natura
@@ -48,19 +48,19 @@
               ;; "per natura: ut, per ♭: sol und per ♮: fa"
               ;;
               ;; DONE
-              (:de "")
+              (:de "per natura: ut\\per ♭: sol\\per ♮: fa")
               (:en "in nat.: ut\\in ♭: sol\\in ♮: fa")))
     (s4 (:alt (:it "per ♭: la\\per ♮: sol\\per natura: re")
-              (:de "")
+              (:de "per ♭: la\\per ♮: sol\\per natura: re")
               (:en "in ♭: la\\in ♮: sol\\in nat.: re")))
     (s5 (:alt (:it "per ♮: la\\per natura: mi")
-              (:de "")
+              (:de "per ♮: la\\per natura: mi")
               (:en "in ♮: la\\in nat.: mi")))
     (s6 (:alt (:it "per natura: fa\\per ♭: ut")
-              (:de "")
+              (:de "per natura: fa\\per ♭: ut")
               (:en "in nat.: fa\\in ♭: ut")))
     (s7 (:alt (:it "per natura: sol\\per ♭: re\\per ♮: ut")
-              (:de "")
+              (:de "per natura: sol\\per ♭: re\\per ♮: ut")
               (:en "in nat.: sol\\in ♭: re\\in ♮: ut")))))
   (:data
    (:text 70 58
