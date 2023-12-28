@@ -31,10 +31,10 @@
    (:section-captions
     (s1 (:alt (:it "per natura: la\\per ♭: mi\\per ♮: re")
               (:de "")
-              (:en "per natura: la\\per ♭: mi\\per ♮: re")))
+              (:en "in nat.: la\\in ♭: mi\\in ♮: re")))
     (s2 (:alt (:it "per ♮: mi")
               (:de "")
-              (:en "per ♮: mi")))
+              (:en "in ♮: mi")))
     (s3 (:alt (:it "per natura: ut\\per ♭: sol\\per ♮: fa")
               ;; Kommentar Anne: this corresponds to the original, but is wrong. Either the natura
               ;; must be ut, the molle must be sol, and the hard must be fa; or the sequence of
@@ -49,19 +49,19 @@
               ;;
               ;; DONE
               (:de "")
-              (:en "per natura: ut\\per ♭: sol\\per ♮: fa")))
+              (:en "in nat.: ut\\in ♭: sol\\in ♮: fa")))
     (s4 (:alt (:it "per ♭: la\\per ♮: sol\\per natura: re")
               (:de "")
-              (:en "per ♭: la\\per ♮: sol\\per natura: re")))
+              (:en "in ♭: la\\in ♮: sol\\in nat.: re")))
     (s5 (:alt (:it "per ♮: la\\per natura: mi")
               (:de "")
-              (:en "per ♮: la\\per natura: mi")))
+              (:en "in ♮: la\\in nat.: mi")))
     (s6 (:alt (:it "per natura: fa\\per ♭: ut")
               (:de "")
-              (:en "per natura: fa\\per ♭: ut")))
+              (:en "in nat.: fa\\in ♭: ut")))
     (s7 (:alt (:it "per natura: sol\\per ♭: re\\per ♮: ut")
               (:de "")
-              (:en "per natura: sol\\per ♭: re\\per ♮: ut")))))
+              (:en "in nat.: sol\\in ♭: re\\in ♮: ut")))))
   (:data
    (:text 70 58
      (90 1974 "ᴅimoſtratione della ᴍano ᴄromatica, aſcendente, con li ꜱemitoni minori, e con l'eſſempio."))
