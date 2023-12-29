@@ -4,7 +4,7 @@
    (:comment "q021_s044, origin: 996")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio dei gradi di terza maggiore accidentale, incomposti e composti")
-                 (:de "")
+                 (:de "Beispiel der Tonschritte der terza maggiore accidentale, incomposti und composti.")
                  (:en "Example of the incomposti and composti steps of the terza maggiore accidentale")))
    (:section-captions
     ;; Kommentar David (via Anne) Since each segment shows only one terza maggiore accidentale, I
@@ -16,25 +16,25 @@
     ;;
     ;; OPEN
     (s1 (:alt (:it "composto")
-              (:de "")
+              (:de "composto")
               (:en "composto")))
     (s2 (:alt (:it "incomposto")
-              (:de "")
+              (:de "incomposto")
               (:en "incomposto")))
     (s3 (:alt (:it "incomposto")
-              (:de "")
+              (:de "incomposto")
               (:en "incomposto")))
     (s4 (:alt (:it "composto")
-              (:de "")
+              (:de "composto")
               (:en "composto")))
     (s5 (:alt (:it "composto")
-              (:de "")
+              (:de "composto")
               (:en "composto")))
     (s6 (:alt (:it "incomposto")
-              (:de "")
+              (:de "incomposto")
               (:en "incomposto")))
     (s7 (:alt (:it "composto")
-              (:de "")
+              (:de "composto")
               (:en "composto")))))
   (:data
    (:text 70 58
