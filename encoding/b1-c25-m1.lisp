@@ -11,7 +11,7 @@
                  ;; sich auf 'grado o salto', nicht auf 'terza'. Akzeptabel?
                  ;;
                  ;; DONE
-                 (:de "Beispiel des Tonschritts oder Sprungs der terza manco di minore,\\oder minima, composto e incomposto.")
+                 (:de "Beispiel des Tonschritts oder Sprungs der terza manco di minore,\\oder minima, composto und incomposto.")
                  (:en "Example of the composto and incomposto step or leap\\of the terza manco di minore,or minima")))
    (:section-captions
     (s1 (:alt (:it "grado di terza\\minima\\incomposta")
