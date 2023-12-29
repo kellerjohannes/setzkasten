@@ -230,8 +230,10 @@
 
 (defun detect-dots (rest-music dot-list note-list)
   (dolist (item rest-music)
-    (when (member item dot-list) (return t))
-    (when (member item note-list) (return nil))))
+    (when (atom item)
+      (let ((item-key (make-keyword item)))
+        (when (member item-key dot-list) (return t))
+        (when (member item-key note-list) (return nil))))))
 
 (defmethod dump-bracket-info ((score score) (parser-state parser-state))
   (mapc (lambda (section-id)
