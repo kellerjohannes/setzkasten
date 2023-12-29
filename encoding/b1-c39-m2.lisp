@@ -45,5 +45,11 @@
    (:text 70 58
           (95 nil "compoſta")
           (580 nil "compoſta")
-          (1097 nil "compoſto")
+          (1097 nil
+                (:alt (:diplomatic "compoſto")
+                      (:critical "compoſta")
+                      (:coord-barre "TZ4 TE4")
+                      (:coord-norm "G4 US")
+                      (:comment "Original: »compoſto«.")
+                      (:flag :ready) (:id 1)))
           (1605 nil "compoſta"))))

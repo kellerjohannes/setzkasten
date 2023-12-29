@@ -3,42 +3,40 @@
    (:alt-name "m1.047")
    (:comment "q021_s048, origin: 1066")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio di più di quinta imperfetta accidentale, composto e incomposto")
+   ;; JK:
+   ;; Die Bezeichnung 'più di quinta imperfetta' ist eine Kurzform von 'salto
+   ;; della più di quinta imperfetta' (wie in der Kapitelüberschrift zu
+   ;; finden), deshalb ist hier die männliche Form von '(in)composto'
+   ;; sinnvoll, wenn auch auf den ersten Blick fragwürdig.
+   ;;
+   ;; Ich kann mir vorstellen, hier jeweils ein [salto della] zu ergänzen,
+   ;; auch im Italienischen. Im Englischen könnte dann die übliche Lösung
+   ;; verwendet werden.
+   ;;
+   ;; OPEN
+   (:title (:alt (:it "Essempio [del salto] di più di quinta imperfetta accidentale, composto e incomposto")
                  (:de "")
-                 ;; (The "composto" and "incomposto" in the overall caption are illogical, but
-                 ;; they're what it says in the original…)
-                 ;;
-                 ;; JK: add »grado o salto«?
-                 ;;
-                 ;; OPEN
                  (:en "Example of the più di quinta imperfetta accidentale, composto and incomposto ")))
    (:section-captions
-    ;; The captions for all of the individual segments should have "in/composta" rather than
-    ;; "in/composto".
-    ;;
-    ;; JK: Not sure: I would treat this as a shorthand for 'grado o salto della più di quinta
-    ;; imperfetta accidentale'. We could add 'grado o salto', what do you think?
-    ;;
-    ;; OPEN
-    (s1 (:alt (:it "più di quinta\\imperfetta\\naturale\\composto")
+    (s1 (:alt (:it "[salto di] più di quinta\\imperfetta naturale\\composto")
               (:de "")
               (:en "più di quinta\\imperfetta\\naturale\\composto")))
-    (s2 (:alt (:it "più di quinta\\imperfetta\\naturale\\incomposto")
+    (s2 (:alt (:it "[salto di] più di quinta\\imperfetta naturale\\incomposto")
               (:de "")
               (:en "più di quinta\\imperfetta\\naturale\\incomposto")))
-    (s3 (:alt (:it "più di quinta\\imperfetta\\accidentale\\incomposto")
+    (s3 (:alt (:it "[salto di] più di quinta\\imperfetta accidentale\\incomposto")
               (:de "")
               (:en "più di quinta\\imperfetta\\accidentale\\incomposto")))
-    (s4 (:alt (:it "più di quinta\\imperfetta\\accidentale\\composto")
+    (s4 (:alt (:it "[salto di] più di quinta\\imperfetta accidentale\\composto")
               (:de "")
               (:en "più di quinta\\imperfetta\\accidentale\\composto")))
-    (s5 (:alt (:it "più di quinta\\imperfetta\\accidentale\\incomposto")
+    (s5 (:alt (:it "[salto di] più di quinta\\imperfetta accidentale\\incomposto")
               (:de "")
               (:en "più di quinta\\imperfetta\\accidentale\\incomposto")))
-    (s6 (:alt (:it "più di quinta\\imperfetta\\accidentale\\composto")
+    (s6 (:alt (:it "[salto di] più di quinta\\imperfetta accidentale\\composto")
               (:de "")
               (:en "più di quinta\\imperfetta\\accidentale\\composto")))
-    (s7 (:alt (:it "più di quinta\\imperfetta\\accidentale\\incomposto")
+    (s7 (:alt (:it "[salto di] più di quinta\\imperfetta accidentale\\incomposto")
               (:de "")
               (:en "più di quinta\\imperfetta\\accidentale\\incomposto")))))
   (:preamble-lilypond

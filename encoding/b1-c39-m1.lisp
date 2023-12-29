@@ -4,11 +4,6 @@
    (:comment "q021_s049, origin: 395")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio della quinta naturale incomposta")
-                 ;; David: The overall caption should have "incomposta" not "incomposto".
-                 ;;
-                 ;; JK: I changed it in :it and :en.
-                 ;;
-                 ;; DONE
                  (:de "")
                  (:en "Example of the quinta naturale incomposta")))
    (:section-headings
