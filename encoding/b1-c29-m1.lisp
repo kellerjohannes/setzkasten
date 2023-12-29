@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio del grado di terza maggiore naturale, incomposto e composto")
                  (:de "")
-                 (:en "Example of the step of the terza maggiore naturale, incomposto and composto")))
+                 (:en "Example of the incomposto and composto step of the terza maggiore naturale")))
    (:section-captions
     (s1 (:alt (:it "grado di terza\\maggiore\\naturale")
               ;; Kommentar Anne Die ersten vier Beispiele haben nur "grado di 3", die zweiten vier

@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio dei gradi di terza maggiore accidentale, incomposti e composti")
                  (:de "")
-                 (:en "Example of the steps of the terza maggiore accidentale, incomposti and composti")))
+                 (:en "Example of the incomposti and composti steps of the terza maggiore accidentale")))
    (:section-captions
     ;; Kommentar David (via Anne) Since each segment shows only one terza maggiore accidentale, I
     ;; think that all of the captions to the individual segments should be expanded in the feminine

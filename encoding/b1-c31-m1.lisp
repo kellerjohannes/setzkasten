@@ -12,29 +12,29 @@
                  ;;
                  ;; OPEN
                  (:de "")
-                 (:en "Example of the steps of the terza più di maggiore, incomposti and composti")))
+                 (:en "Example of the incomposti and composti steps of the terza più di maggiore")))
    (:section-captions
     (s1 (:alt (:it "grado di terza\\più di maggiore\\incomposto")
               (:de "")
-              (:en "step of terza\\più di maggiore\\incomposto")))
+              (:en "incomposto step\\of terza\\più di maggiore")))
     (s2 (:alt (:it "grado di terza\\più di maggiore\\composto")
               (:de "")
-              (:en "step of terza\\più di maggiore\\composto")))
+              (:en "composto step\\of terza\\più di maggiore")))
     (s3 (:alt (:it "grado di terza un\\comma più di maggiore\\incomposto e composto")
               (:de "")
-              (:en "step of a terza a\\comma più di maggiore\\incomposto and composto")))
+              (:en "incomposto and composto\\step of a terza a\\comma più di maggiore")))
     (s4 (:alt (:it "grado di terza\\più di maggiore\\composto")
               (:de "")
-              (:en "step of terza\\più di maggiore\\composto")))
+              (:en "composto\\step of terza\\più di maggiore")))
     (s5 (:alt (:it "grado di terza\\più di maggiore\\incomposto")
               (:de "")
-              (:en "step of terza\\più di maggiore\\incomposto")))
+              (:en "incomposto\\step of terza\\più di maggiore")))
     (s6 (:alt (:it "grado di terza\\più di maggiore\\composto")
               (:de "")
-              (:en "step of terza\\più di maggiore\\composto")))
+              (:en "composto\\step of terza\\più di maggiore")))
     (s7 (:alt (:it "grado di terza\\più di maggiore\\incomposto")
               (:de "")
-              (:en "step of terza\\più di maggiore\\incomposto")))))
+              (:en "incomposto\\step of terza\\più di maggiore")))))
   (:data
    (:text 150 58
           (284 1607
