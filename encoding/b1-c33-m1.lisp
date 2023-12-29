@@ -7,6 +7,20 @@
                  (:de "")
                  (:en "Example of the leap and the steps of the quarta accidentale, incomposta and composta")))
    (:section-captions
+    ;; JK: zu den Endungen von '(in)composty'.
+    ;;
+    ;; Das finde ich sinnvoll, denn hier schreibt er ja von den 'gradi', die in
+    ;; der 'quarta composta' zu finden sind. 'Quarta (in)composta' lese ich als
+    ;; implizite Kurzform von 'salto (in)composto della quarta'. Die 'quarta' und
+    ;; 'quinta' werden oft direkt 'composta' oder 'incomposta' genannt,
+    ;; insbesondere wenn sie im Sinn eines "Tetrachord" oder "Pentachord"
+    ;; verwendet werden (siehe Buch III).
+    ;;
+    ;; Ich finde es gut, in diesem Beispiel ausschliessich die weibliche Form
+    ;; zu verwenden, also stets auf 'quarta' bezogen. So ist es im Moment
+    ;; codiert, auf Italienisch und auf Englisch.
+    ;;
+    ;; DONE
     (s1 (:alt (:it "salto di quarta\\accidentale\\incomposta")
               (:de "")
               (:en "leap of a quarta\\accidentale\\incomposta")))

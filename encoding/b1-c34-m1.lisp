@@ -3,20 +3,31 @@
    (:alt-name "m1.042")
    (:comment "q021_s046, origin: 970")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio del salto più che di quarta e de suoi gradi incomposto e composto")
-                 ;; Kommentar Anne: soll "incomposto e composto" in "incomposti e composti"
-                 ;; korrigiert werden?
-                 ;; JK: nein, Bezug ist 'salto'
-                 ;;
-                 ;; DONE
+   (:title (:alt (:it "Essempio del salto più che di quarta e de suoi gradi, incomposto e composto")
                  (:de "")
                  (:en "Example of the leap più di quarta and of its steps, incomposto and composto")))
    (:section-captions
+    ;; JK:
+    ;; In den Textzeilen unter den Notenbeispielen gibt es zwei Eingriffe: Im
+    ;; ersten Abschnitt korrigiere ich zu 'salto' und im dritten zu
+    ;; 'salti'. Aus meiner Sicht gibt es zwei Möglichkeiten:
+
+    ;; 1. Alle Unterschriften beziehen sich auf 'salto', der teilweise implizit
+    ;; ergänzt werden muss ("gradi [del salto] di più di quarta accidentale,
+    ;; composto"). In diesem Fall muss nur im dritten Abschnitt ein plural
+    ;; gesetzt werden ("salti die più di quarta accidentale, composti"), sonst
+    ;; sind alle '(in)composto' maskulin. Diese Variante nimmt die Schreibart
+    ;; in der Überschrift des Beispiels auf.
+
+    ;; 2. Alle '(in)composty' beziehen sich stets auf die 'quarta', sind also
+    ;; immer feminin. Diese Variante entspricht der Handhabung im
+    ;; vorhergehenden Beispiel (I.33).
+
+    ;; Ich habe die Codierung nicht angefasst und warte auf eine Präferenz
+    ;; eurerseits.
+    ;;
+    ;; OPEN
     (s1 (:alt (:it "salto di più\\di quarta\\accidentale\\incomposto")
-              ;; Kommentar Anne: Alle Beispiele im Original haben 4 anstatt quarta geschrieben
-              ;; JK: dito.
-              ;;
-              ;; DONE
               (:de "")
               (:en "leap of più\\di quarta\\accidentale\\incomposto")))
     (s2 (:alt (:it "gradi di più\\di quarta\\accidentale\\composto")
