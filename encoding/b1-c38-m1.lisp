@@ -12,33 +12,34 @@
    ;; Ich kann mir vorstellen, hier jeweils ein [salto della] zu ergänzen,
    ;; auch im Italienischen. Im Englischen könnte dann die übliche Lösung
    ;; verwendet werden.
+   ;; AS: Ich habe es hier jetzt so angepasst.
    ;;
    ;; OPEN
    (:title (:alt (:it "Essempio [del salto] di più di quinta imperfetta accidentale, composto e incomposto")
                  (:de "")
-                 (:en "Example of the più di quinta imperfetta accidentale, composto and incomposto ")))
+                 (:en "Example of the composto and incomposto [leap] più di quinta imperfetta accidentale")))
    (:section-captions
     (s1 (:alt (:it "[salto di] più di quinta\\imperfetta naturale\\composto")
               (:de "")
-              (:en "più di quinta\\imperfetta\\naturale\\composto")))
+              (:en "composto [leap of]\\ più di quinta\\imperfetta\\naturale")))
     (s2 (:alt (:it "[salto di] più di quinta\\imperfetta naturale\\incomposto")
               (:de "")
-              (:en "più di quinta\\imperfetta\\naturale\\incomposto")))
+              (:en "incomposto [leap of]\\più di quinta\\imperfetta\\naturale")))
     (s3 (:alt (:it "[salto di] più di quinta\\imperfetta accidentale\\incomposto")
               (:de "")
-              (:en "più di quinta\\imperfetta\\accidentale\\incomposto")))
+              (:en "incomposto [leap of]\\più di quinta\\imperfetta\\accidentale")))
     (s4 (:alt (:it "[salto di] più di quinta\\imperfetta accidentale\\composto")
               (:de "")
-              (:en "più di quinta\\imperfetta\\accidentale\\composto")))
+              (:en "composto [leap of]\\più di quinta\\imperfetta\\accidentale")))
     (s5 (:alt (:it "[salto di] più di quinta\\imperfetta accidentale\\incomposto")
               (:de "")
-              (:en "più di quinta\\imperfetta\\accidentale\\incomposto")))
+              (:en "incomposto [leap of]\\più di quinta\\imperfetta\\accidentale")))
     (s6 (:alt (:it "[salto di] più di quinta\\imperfetta accidentale\\composto")
               (:de "")
-              (:en "più di quinta\\imperfetta\\accidentale\\composto")))
+              (:en "composto [leap of]\\più di quinta\\imperfetta\\accidentale")))
     (s7 (:alt (:it "[salto di] più di quinta\\imperfetta accidentale\\incomposto")
               (:de "")
-              (:en "più di quinta\\imperfetta\\accidentale\\incomposto")))))
+              (:en "incomposto [leap of]\\più di quinta\\imperfetta\\accidentale")))))
   (:preamble-lilypond
    (:clef-overrides
     (s2 v1 "treble_8")
