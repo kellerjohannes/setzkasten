@@ -5,11 +5,11 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio della sincopa maggiore, et minore, et minima")
                  (:de "")
-                 (:en "Example of the major, minor, and minima syncopated suspension dissonance")))
+                 (:en "Example of the major, minor, and minimal sincopa")))
    (:section-headings
     (s1 (:alt (:it "A due voci")
               (:de "")
-              (:en "for two voci")))
+              (:en "for 2 voci")))
     (s2 (:alt (:it "A due voci")
               (:de "")
               (:en "for two voci")))
@@ -31,13 +31,13 @@
    (:section-captions
     (s1 (:alt (:it "Sincopa maggiore")
               (:de "")
-              (:en "major syncopation")))
+              (:en "major sincopa")))
     (s2 (:alt (:it "Sincopa minore")
               (:de "")
-              (:en "minor syncopation")))
+              (:en "minor sincopa")))
     (s3 (:alt (:it "Sincopa minima")
               (:de "")
-              (:en "minima syncopation")))))
+              (:en "minimal sincopa")))))
   (:data
    (:text 90 58
      (416 nil "Eſſempio della Sincopa ᴍaggiore,et ᴍinore , et minima."))
