@@ -25,29 +25,31 @@
 
     ;; Ich habe die Codierung nicht angefasst und warte auf eine Präferenz
     ;; eurerseits.
+
+    ;; AS: Ich ziehe die 2. Möglichkeit vor, und habe 'composta' im Bezug zur 'quarta' gewählt.
     ;;
     ;; OPEN
     (s1 (:alt (:it "salto di più\\di quarta\\accidentale\\incomposto")
               (:de "")
-              (:en "leap of più\\di quarta\\accidentale\\incomposto")))
+              (:en "leap of più\\di quarta\\accidentale\\incomposta")))
     (s2 (:alt (:it "gradi di più\\di quarta\\accidentale\\composto")
               (:de "")
-              (:en "steps of più\\di quarta\\accidentale\\composto")))
+              (:en "steps of più\\di quarta\\accidentale\\composta")))
     (s3 (:alt (:it "salti di più\\di quarta\\accidentale\\incomposto")
               (:de "")
-              (:en "leaps of più\\di quarta\\accidentale\\incomposto")))
+              (:en "leaps of più\\di quarta\\accidentale\\incomposta")))
     (s4 (:alt (:it "gradi di più\\di quarta\\accidentale\\composto")
               (:de "")
-              (:en "steps of più\\di quarta\\accidentale\\composto")))
+              (:en "steps of più\\di quarta\\accidentale\\composta")))
     (s5 (:alt (:it "salto di più\\di quarta\\accidentale\\incomposto")
               (:de "")
-              (:en "leap of più\\di quarta\\accidentale\\incomposto")))
+              (:en "leap of più\\di quarta\\accidentale\\incomposta")))
     (s6 (:alt (:it "gradi di più\\di quarta\\accidentale\\incomposto")
               (:de "")
-              (:en "steps of più\\di quarta\\accidentale\\composto")))
+              (:en "steps of più\\di quarta\\accidentale\\composta")))
     (s7 (:alt (:it "salto di più\\di quarta\\accidentale\\incomposto")
               (:de "")
-              (:en "leap of più\\di quarta\\accidentale\\incomposto")))))
+              (:en "leap of più\\di quarta\\accidentale\\incomposta")))))
   (:data
    (:text 150 58
           (181 1818 "ᴇſſempio del ſalto piùche di Ɋuarta,& de ſuoi gradi incompoſto & compoſto."))
