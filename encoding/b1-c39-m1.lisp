@@ -24,6 +24,7 @@
     ;;
     ;; JK: Würde ein :line-title erfordern, ist möglich, ich finde es aber inhaltlich deutlicher wie
     ;; es ist. Akzeptabel?
+    ;; AS: Ja, für mich schon.
     ;;
     ;; OPEN
     (s5 (:alt (:it "prima quinta")
@@ -41,28 +42,28 @@
    (:section-captions
     (s1 (:alt (:it "salto di quinta\\perfetta naturale\\incomposto")
               (:de "")
-              (:en "leap of quinta\\perfetta naturale\\incomposto")))
+              (:en "incomposto\\leap of quinta\\perfetta naturale")))
     (s2 (:alt (:it "salto di quinta\\perfetta naturale\\incomposto")
               (:de "")
-              (:en "leap of quinta\\perfetta naturale\\incomposto")))
+              (:en "incomposto\\leap of quinta\\perfetta naturale")))
     (s3 (:alt (:it "salto di quinta\\perfetta naturale\\incomposto")
               (:de "")
-              (:en "leap of quinta\\perfetta naturale\\incomposto")))
+              (:en "incomposto\\leap of quinta\\perfetta naturale")))
     (s4 (:alt (:it "salto di quinta\\perfetta naturale\\incomposto")
               (:de "")
-              (:en "leap of quinta\\perfetta naturale\\incomposto")))
+              (:en "incomposto\\leap of quinta\\perfetta naturale")))
     (s5 (:alt (:it "salto di quinta\\perfetta naturale\\incomposto")
               (:de "")
-              (:en "leap of quinta\\perfetta naturale\\incomposto")))
+              (:en "incomposto\\leap of quinta\\perfetta naturale")))
     (s6 (:alt (:it "salto di quinta\\perfetta naturale\\incomposto")
               (:de "")
-              (:en "leap of quinta\\perfetta naturale\\incomposto")))
+              (:en "incomposto\\leap of quinta\\perfetta naturale")))
     (s7 (:alt (:it "salto di quinta\\perfetta naturale\\incomposto")
               (:de "")
-              (:en "leap of quinta\\perfetta naturale\\incomposto")))
+              (:en "incomposto\\leap of quinta\\perfetta naturale")))
     (s8 (:alt (:it "salto di quinta\\perfetta naturale\\incomposto")
               (:de "")
-              (:en "leap of quinta\\perfetta naturale\\incomposto")))))
+              (:en "incomposto\\leap of quinta\\perfetta naturale")))))
   (:data
    (:text 140 58
           (595 952 "ᴇſſempio della Quinta naturale incomp."))
