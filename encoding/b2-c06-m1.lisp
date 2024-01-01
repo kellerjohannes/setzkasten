@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio della quarta sincopata a due voci,\\et non sincopata a tre voci, et con il punto:\\come s'ha da comporre a molte voci, et con la sincopa tutta cattiva")
                  (:de "")
-                 (:en "Example of the syncopated quarta in two voci,\\ and non-syncopated in three voci, and with a dot:\\ and how they are to be composed in many voci, and with the\\completely bad suspension dissonance of a quarta")))
+                 (:en "Example of the quarta sincopata in two voci,\\ and not sincopata in three voci;\\and how it is to be composed with the dot in many voci; and with the\\wholly bad sincopa")))
    ;; Kommentar Anne: or with the "suspension dissonance of a quarta"?
    ;; JK: Ja, würde ich ergänzen, habe ich bereits eingepflegt.
    ;;
@@ -25,16 +25,16 @@
               (:en "simple")))
     (s5 (:alt (:it "Sciolta")
               (:de "")
-              (:en "tied over")))
+              (:en "sciolta [unprepared]")))
     (s6 (:alt (:it "A tre voci")
               (:de "")
               (:en "in three voci")))
     (s7 (:alt (:it "Sciolta")
               (:de "")
-              (:en "tied over")))
+              (:en "sciolta [unprepared]")))
     (s8 (:alt (:it "All'antica")
               (:de "")
-              (:en "in the ancient style"))))
+              (:en "in the old style"))))
    (:section-captions
     (s1 (:alt (:it "1.")
               (:de "")
