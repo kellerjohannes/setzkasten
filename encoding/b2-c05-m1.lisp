@@ -21,7 +21,7 @@
               (:en "not very")))
     (s3 (:alt (:it "Buona et a quattro meglio")
               (:de "")
-              (:en "good and better in four voci")))
+              (:en "good and better in four [voci]")))
     (s4 (:alt (:it "Buona")
               (:de "")
               (:en "good")))
