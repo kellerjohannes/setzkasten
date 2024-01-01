@@ -11,17 +11,17 @@
                  ;;
                  ;; DONE
                  (:de "")
-                 (:en "Example of the seconda and the quarta,\\and how they are to be composed in three voci, alto, tenor, and bass")))
+                 (:en "Example of the seconda and the quarta,\\[as to] how they are to be composed in three voci, alto, tenor, and bass")))
    (:section-headings
     (s1 (:alt (:it "Buona")
               (:de "")
               (:en "good")))
     (s2 (:alt (:it "Non troppo")
               (:de "")
-              (:en "not very")))
+              (:en "not too [good]")))
     (s3 (:alt (:it "Buona et a quattro meglio")
               (:de "")
-              (:en "good and better in four [voci]")))
+              (:en "good and in four [voci] better")))
     (s4 (:alt (:it "Buona")
               (:de "")
               (:en "good")))
