@@ -9,7 +9,7 @@
    (:section-headings
     (s1 (:alt (:it "A due voci")
               (:de "")
-              (:en "for 2 voci")))
+              (:en "for two voci")))
     (s2 (:alt (:it "A due voci")
               (:de "")
               (:en "for two voci")))
