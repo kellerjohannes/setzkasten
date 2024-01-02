@@ -5,11 +5,12 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio delle quinte")
                  (:de "")
-                 (:en "Example of the quinte")))
+                 (:en "Example of quinte")))
    (:line-headings
     (:alt (:it "Non si fanno due quinte ne per grado, ne per salto,\\ascendenti ne discendenti")
+    ;; Kommentar AS: David remarks:  This caption in fact refers only to Nos. 2–4, so it should also be placed underneath those examples, as in the original. 
           (:de "")
-          (:en "Two quinte should not be made, either by step or by leap,\\ascending or descending")))
+          (:en "One does not make two [consecutive] quinte, neither by step nor by leap,\\neither ascending nor descending")))
    (:voice-labels
     (s1 v1 (:alt (:it "Tenore")
                  (:de "")
@@ -34,7 +35,7 @@
                  (:en "[Alto")))
     (s4 v2 (:alt (:it "[Tenore]")
                  (:de "")
-                 (:en "Tenor")))))
+                 (:en "[Tenor]")))))
   (:data
    (:text 90 58
      (663 nil "Eſſempio delle Quinte."))
