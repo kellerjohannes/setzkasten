@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del modo di comporre il tritono")
                  (:de "")
-                 (:en "Example of the method of composing the tritono")))
+                 (:en "Example of the method of composing with the tritono")))
    (:section-headings
     (s1 (:alt (:it "A due voci")
               (:de "")
