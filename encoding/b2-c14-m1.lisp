@@ -5,17 +5,18 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio dei molti modi, che si può accompagnare la terza minore")
                  (:de "")
-                 (:en "Example of many ways in which one can accompany the terza minore")))
+                 (:en "Example of the many ways one can accompany the terza minore")))
    (:section-headings
     (s1 (:alt (:it "Grado molle\\e consonante")
               (:de "")
-              (:en "molle step\\and consonant")))
+              (:en "molle and\\consonant step")))
     (s2 (:alt (:it "Grado incitato\\e molle")
               (:de "")
-              (:en "incitato step\\and molle")))
+              (:en "incitato and\\molle step")))
+              ;; AS: Kommentar David:  Captions to Nos. 3–8: personally I don't think it's necessary to add "step[s]" in square brackets – it's obvious from Nos. 1 and 2 that this is also meant for Nos. 3–8.
     (s3 (:alt (:it "[Grado] incitato\\e molle")
               (:de "")
-              (:en "incitato [step]\\and molle")))
+              (:en "incitato and\\molle [step]")))
     (s4 (:alt (:it "[Gradi] incitati\\ ")
               ;; Kommentar Anne: willst du noch etwas hinzufügen?
               ;; JK: Meinst du wegen der leeren Zeile? Die ist nötig, damit die vertikalen
@@ -23,24 +24,26 @@
               ;; inhaltliche Bedeutung.
               ;;
               ;; OPEN
+              ;; AS: OK ich habe verstanden.
               (:de "")
               (:en "incitati [steps]")))
     (s5 (:alt (:it "[Grado] incitato\\e molle")
               (:de "")
-              (:en "incitato [step]\\and molle")))
+              (:en "incitato and\\molle [step]")))
     (s6 (:alt (:it "[Grado] incitato\\e molle")
               (:de "")
-              (:en "incitato [step]\\and molle")))
+              (:en "incitato and\\molle [step]")))
     (s7 (:alt (:it "[Gradi] incitati\\ ")
               ;; Kommentar Anne: willst du noch etwas hinzufügen?
               ;; JK: Siehe Kommentar oben.
               ;;
               ;; OPEN
+              ;; AS: Auch hier verstanden
               (:de "")
               (:en "incitati [steps]\\")))
     (s8 (:alt (:it "[Grado] molle\\et incitato")
               (:de "")
-              (:en "molle [step]\\and incitato")))))
+              (:en "molle and\\incitato [step]")))))
   (:data
    (:text 90 58
      (330 1555 "Eſſempio de i molti modi,che ſi può accompagnare la Terza minore."))
