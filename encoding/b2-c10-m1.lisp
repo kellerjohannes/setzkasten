@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio di comporre la dissonanza detta settima,\\sincopata con la sesta")
                  (:de "")
-                 (:en "Example of composing the dissonance called the settima,\\syncopated with the sesta")))
+                 (:en "Example of composing with the dissonance called the settima,\\sincopata with the sesta")))
    (:section-headings
     (s1 (:alt (:it "A due voci")
               (:de "")
