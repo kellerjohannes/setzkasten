@@ -4,8 +4,9 @@
    (:comment "q021_s061, rotation: 0, origin: 491")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio sopra il modo di comporre di quarta in quinta\\sincopata et non sincopata, et di quinta in quarta\\A tre voci")
+              ;; AS: David questions the placement of "A tre voci", mentioning that it does not belong to the overall caption, but actually to Example 1. I think that I agree with him there, and that the other examples are 2 voci within a larger, undefined constellation. 
                  (:de "")
-                 (:en "Example on the method of composing from the quarta to the quinta,\\syncopated and non-syncopated, and from the quinta to the quarta\\in three voci")))
+                 (:en "Example of the method of composing from the quarta to the quinta,\\syncopata and not syncopata, and from the quinta to the quarta\\in three voci")))
    (:voice-labels
     (s1 v1 (:alt (:it "Soprano")
                  (:de "")
@@ -25,6 +26,7 @@
                  ;; JK: Meinst du ohne die nicht gedruckten Stimmen, die der Student selbst zu
                  ;; ergänzen hat? Ein Kommentar im Bericht ist hier vorgesehen, siehe folgende
                  ;; Zeile (29) im Code:
+                 ;; Kommentar AS: Ich glaube, ich habe geschrieben ohne die Beispiele gesehen zu haben. Mit Kommentar wäre gut. 
                  ;;
                  ;; Alter Kommentar: Die Reihenfolge der Stimmen und die Verteilung auf Sections ist
                  ;; zu disktutieren. Ev. braucht es hier einen Kommentar, dass diese Konstellationen
@@ -43,10 +45,10 @@
                  (:en "Tenor")))
     (s4 v2 (:alt (:it "[Tenore]")
                  (:de "")
-                 (:en "Tenor")))
+                 (:en "[Tenor"])))
     (s4 v1 (:alt (:it "[Tenore]")
                  (:de "")
-                 (:en "Tenor")))))
+                 (:en "[Tenor]")))))
   (:preamble-lilypond
    (:clef-overrides
     (s2 v2 "treble_8")
