@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio della sincopa tutta buona, come in molti modi\\si può usare, a due voci, et a più")
                  (:de "")
-                 (:en "Example of the completely good syncopation, and how it can\\be used in many ways in two and more voci")))
+                 (:en "Example of the wholly good sincopa: how it can\\be used in many ways in two and more voci")))
    (:section-headings
     (s1 (:alt (:it "A due voci")
               (:de "")
@@ -19,7 +19,7 @@
    (:section-captions
     (s3 (:alt (:it "Non insieme con tutte le parti")
               (:de "")
-              (:en "not together with all of the parts"))))
+              (:en "not with all of the parts together"))))
    (:voice-labels
     (s1 v1 (:alt (:it "Alto")
                  (:de "")
@@ -35,10 +35,10 @@
                  (:en "Tenor")))
     (s3 v1 (:alt (:it "[Alto]")
                  (:de "")
-                 (:en "Alto")))
+                 (:en "[Alto]")))
     (s3 v2 (:alt (:it "[Tenore]")
                  (:de "")
-                 (:en "Tenor")))))
+                 (:en "[Tenor]")))))
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")
