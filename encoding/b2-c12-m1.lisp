@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio delle dissonanze sciolte, con li passaggi antichi,\\et moderni, a due voci")
                  (:de "")
-                 (:en "Example of the unprepared dissonances with old and modern\\passagework, in two voci")))
+                 (:en "Example of the sciolte [unprepared] dissonances with old and modern\\passagework, in two voci")))
    (:section-headings
     (s1 (:alt (:it "All'antica")
               (:de "")
