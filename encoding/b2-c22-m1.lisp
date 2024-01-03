@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio dell'ottava, con i due tenori,\\il primo esempio sarà con l'altro primo\\et così d'uno in altro")
                  (:de "")
-                 (:en "Example of the ottava with two tenors,\\the first example is with the other marked first\\and likewise one after the other")))
+                 (:en "Example of the ottava with two tenors;\\the first example goes with the other [labelled as] first,\\and so on from one to another")))
    (:section-headings
     (s1 (:alt (:it "Primo")
               (:de "")
@@ -22,16 +22,16 @@
    (:section-captions
     (s1 (:alt (:it "Non è in uso")
               (:de "")
-              (:en "not in use")))
+              (:en "it is not in use")))
     (s2 (:alt (:it "buona à quattro")
               (:de "")
-              (:en "good in four parts")))
+              (:en "good in four [voci]")))
     (s3 (:alt (:it "Buona")
               (:de "")
               (:en "good")))
     (s4 (:alt (:it "Buona à cinque")
               (:de "")
-              (:en "good")))))
+              (:en "good in five [voci]")))))
   (:data
    (:text 70 58
           (181 1872 "Eſſempio dellʼ ottaua,con i due Tenori,il primo eſſempio ſarà con lʼaltro primo"))
