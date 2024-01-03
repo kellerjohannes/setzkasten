@@ -5,11 +5,11 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio delle decime maggiori et minori,\\et come in vari modi si possono comporre")
                  (:de "")
-                 (:en "Example of the decime maggiori and minori,\\and how they can be composed in various ways")))
+                 (:en "Example of the decime maggiori and minori,\\and how one can compose with them in various ways")))
    (:section-captions
     (s6 (:alt (:it "Dubbio di\\sustentatione")
               (:de "")
-              (:en "instable when\\sustained"))))
+              (:en "dubious [because susceptible]\\to sharpening"))))
    (:voice-order
     (s1 v1 v2)
     (s2 v1 v2)
