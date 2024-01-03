@@ -9,23 +9,23 @@
    (:section-headings
     (s1 (:alt (:it "A due voci")
               (:de "")
-              (:en "for two voci")))
+              (:en "in two voci")))
     (s2 (:alt (:it "A due voci")
               (:de "")
-              (:en "for two voci")))
+              (:en "in two voci")))
     (s3 (:alt (:it "A due voci")
               (:de "")
-              (:en "for two voci")))
+              (:en "in two voci")))
     (s4 (:alt (:it "A due voci")
               (:de "")
-              (:en "for two voci"))))
+              (:en "in two voci"))))
    (:section-captions
     (s1 (:alt (:it "Simili\\maggiori")
               (:de "")
-              (:en "Similar\\maggiori")))
+              (:en "similar\\maggiori")))
     (s2 (:alt (:it "Simili\\minori")
               (:de "")
-              (:en "Similar\\minori")))
+              (:en "similar\\minori")))
     (s3 (:alt (:it "Differenti\\ ")
               (:de "")
               (:en "different\\ ")))
@@ -37,7 +37,7 @@
     ;; DONE
     (s4 (:alt (:it "Simili\\maggiori")
               (:de "")
-              (:en "Similar\\maggiori")))))
+              (:en "similar\\maggiori")))))
   (:data
    (:text 110 58
           (756 631 "Eſſempio delle seſte ſimili."))
