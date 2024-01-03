@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio della quintadecima, et della vigesima seconda,\\a tre voci, et a quattro")
                  (:de "")
-                 (:en "Example of the quintadecima, and of the vigesima seconda,\\in three and four voci")))
+                 (:en "Example of the quinta decima, and of the vigesima seconda,\\in three and four voci")))
    (:section-headings
     (s1 (:alt (:it "Quintadecima con\\ottava in mezzo\\ ")
               ;; Kommentar Anne: no need for backslashes without any content thereafter
@@ -13,10 +13,11 @@
               ;;
               ;; DONE
               (:de "")
-              (:en "Quintadecima with an\\ottava in the middle")))
+              (:en "quinta decima with\\ottava in the middle")))
     (s2 (:alt (:it "Vigesima seconda\\con due ottave\\in mezzo")
               (:de "")
-              (:en "Vigesima seconda\\with two ottave\\in the middle"))))
+              (:en "vigesima seconda\\with two ottave\\in the middle"))))
+              ;; AS: Comment David:  I presume there will be a commentary noting that the Alto voice is printed wrongly – I think it's most likely that the type piece carrying the notehead was set upside-down (the other possibility being that a C1 clef was intended instead of C2). 
    (:voice-labels
     (s1 v1 (:alt (:it "Soprano")
                  (:de "")
