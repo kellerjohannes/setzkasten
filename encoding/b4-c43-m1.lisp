@@ -3,6 +3,17 @@
    (:alt-name "m4.040")
    (:comment "q021_s195, rotation: 0, origin: 466")
    (:creator "Vicentino21 / Johannes Keller")
+   ;; JK, aus der Bibelgruppe vom 3. Januar 2024:
+   ;;
+   ;; Die Kreuze sollten viel stärker differenziert werden. Beschluss
+   ;; - Barré und crit ohne Unterscheidung, x und ♯
+   ;; - Für norm soll ein neues Symbol erstellt werden, ein Kreuz, das
+   ;;   aus zwei Strichen besteht ('quartertone-sharp'?)
+   ;; - Zusätzlich soll, unabhängig von der Edition, eine Übertragung von
+   ;;   Lusitanos Original angefertigt werden, mit zwei unterschiedlichen
+   ;;   Kreuzen: 2 Strichen und 5 Strichen.
+   ;;
+   ;; OPEN
    (:title (:alt (:it "Esempio del sopra detto Don Vincentio,\\come ha posto le consonanze false")
                  (:de "")
                  (:en "")))
