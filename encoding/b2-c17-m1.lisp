@@ -22,9 +22,11 @@
     (s5 (:alt (:it "differenti\\maggiori\\et minori")
               (:de "")
               (:en "different\\maggiori\\and minori")))
+              ;; AS: Kommentar David: this should really be "maggiori and minore" because there are 2 maggiori and only 1 minore.
     (s6 (:alt (:it "differenti\\minori\\et maggiori")
               (:de "")
               (:en "different\\minori\\and maggiori")))))
+              ;; AS: Kommentar David: this should really be "minori and maggiore" because there are 2 minori and only 1 maggiore.
   (:data
    (:text 90 58
      (440 1051 "Eſſempio delle terze ſimili et delle differenti."))
