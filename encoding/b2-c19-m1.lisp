@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio della sesta minore, come in vari modi si può comporre")
                  (:de "")
-                 (:en "Example of the sesta minore, and how it can be composed in various ways")))
+                 (:en "Example of the sesta minore: how it can be composed in various ways")))
    (:section-headings
     (s1 (:alt (:it "A due voci")
               (:de "")
@@ -19,6 +19,7 @@
     (s4 (:alt (:it "A due voci")
               (:de "")
               (:en "for two voci"))))
+              ;; AS: Kommentar David:  No. 4: by comparison with other music examples, and because it retains the overall single breve duration, I think it's much more likely that the voice durations should be matched by ending the leaping voice with a minim (instead of ending the other voice with a dotted semibreve, as Johannes has done).
    (:section-captions
     (s2 (:alt (:it "De salti")
               (:de "")
