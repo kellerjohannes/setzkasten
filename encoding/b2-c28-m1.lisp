@@ -6,23 +6,25 @@
    (:line-headings
     (:alt (:it "Molte annotationi sotto et sopra le due note mi et re\\A due et a più voci si possono comporre")
           (:de "")
-          (:en "Many notes below and above the two notes mi and re\\which can be composed for two or more voci"))
+          (:en "Many annotations below and above the two notes mi and re.\\One can compose with them in two or more voci"))
     nil
     nil
     nil
     (:alt (:it "Molte annotationi sotto et sopra le due note re et mi\\A due et a più voci si possono comporre")
           (:de "")
-          (:en "Many notes below and above the two notes re and mi\\which can be composed for two or more voci")))
+          (:en "Many annotations below and above the two notes re and mi.\\One can compose with them in two or more voci")))
    (:section-captions
     (s10 (:alt (:it "A tre")
                (:de "")
-               (:en "for three")))
+               (:en "in three")))
     (s11 (:alt (:it "A otto")
-               (:de "for eight")
+               (:de "in eight")
                (:en "")))
     (s28 (:alt (:it "A quattro")
                (:de "")
-               (:en "for four"))))
+               (:en "in four"))))
+    (s4 v1 v2)
+               ;; AS: Kommentar David:  No. 11 should have the caption "for eight" -  No. 16 should have the caption "for three" -  Nos. 17–22 should be after the second overall caption since they show re–mi rather than mi–re.
    (:voice-order
     (s1 v1 v2)
     (s2 v1 v2)
