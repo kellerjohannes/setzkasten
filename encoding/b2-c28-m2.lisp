@@ -6,13 +6,13 @@
    (:line-headings
     (:alt (:it "Molte annotationi sotto et sopra le due note fa et sol\\A due et a più voci si possono comporre")
           (:de "")
-          (:en "Many annotations below and above the two notes fa and sol\\which can be composed for two or more voci"))
+          (:en "Many annotations below and above the two notes fa and sol.\\One can compose with them in two or more voci."))
     nil
     nil
     nil
     (:alt (:it "Molte annotationi sotto et sopra le due note sol et fa\\A due et a più voci si possono comporre")
           (:de "")
-          (:en "Many annotations below and above the two notes sol and fa\\which can be composed for two or more voci")))
+          (:en "Many annotations below and above the two notes sol and fa.\\One can compose with them in two or more voci.")))
    (:section-captions
     (s40 (:alt (:it "A otto")
                (:de "")
@@ -80,6 +80,7 @@
            ;; aufgenommen.
            ;;
            ;; DONE
+           ;; AS: Kommentar David:  Nos. 42–49: I'm sure that the intention here is that there should be a signature of a single flat in both voices.  In addition: No. 42 needs flats in front of the E and A (NB the flat at A is currently missing); and No. 48 needs a flat in front of the E.  The Es in Nos. 43 and 45 should be E natural, not E flat.         
            (:voice v1)
            (:section s1) cclef7 b38 sb3 b38 sb4 b38 bl
            (:section s2) b22 sb3 b22 sb4 b22 bl
