@@ -18,7 +18,7 @@
               (:en "[in two voci]")))
     (s4 (:alt (:it "A due voci")
               (:de "")
-              (:en "for two voci"))))
+              (:en "in two voci"))))
               ;; AS: Kommentar David:  No. 4: by comparison with other music examples, and because it retains the overall single breve duration, I think it's much more likely that the voice durations should be matched by ending the leaping voice with a minim (instead of ending the other voice with a dotted semibreve, as Johannes has done).
    (:section-captions
     (s2 (:alt (:it "De salti")
