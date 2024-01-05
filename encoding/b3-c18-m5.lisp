@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del quarto modo, detto per musica finta")
                  (:de "")
-                 (:en "Example of the fourth mode, named musica finta"))))
+                 (:en "Example of the fourth mode, called musica finta"))))
   (:data
    (:text 110 58
           (562 1152 "Eſſempio del quarto Modo,detto per muſica finta."))
