@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio delle quattro quinte diatoniche per ♭ molle,\\composte et incomposte")
                  (:de "")
-                 (:en "Example of the four diatonic fifths in ♭ molle,\\composte and incomposte")))
+                 (:en "Example of the four diatonic quinte in ♭ molle,\\composte and incomposte")))
    (:section-headings
     (s1 (:alt (:it "Prima quinta")
               (:de "")
