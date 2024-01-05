@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del primo modo per ♭ molle\\della musica participata e mista")
                  (:de "")
-                 (:en "Example of the first mode in ♭ molle\\of musica participata and mista"))))
+                 (:en "Example of the first mode in ♭ molle,\\of musica participata and mista"))))
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")))
