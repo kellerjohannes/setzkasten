@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del secondo modo per musica finta,\\et è simile alla participata et mista")
                  (:de "")
-                 (:en "Example of the second mode in musica finta\\ and it is similar to participata and mista"))))
+                 (:en "Example of the second mode in musica finta,\\ and it is similar to the participata and mista"))))
   (:data
    (:text 90 58
           (151 1939 "Eſſempio del ſecondo Modo per muſica finta, & è ſimile alla participata & miſta."))
