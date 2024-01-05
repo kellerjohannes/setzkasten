@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del primo modo detto da prattici musica finta\\et è musica participata e mista")
                  (:de "")
-                 (:en "Example of the first mode called by practical musicians musica finta\\and it is musica participata and mista"))))
+                 (:en "Example of the first mode called by practical musicians musica finta,\\and it is musica participata and mista"))))
   (:data
    (:text 130 58
           (75 2113 "Eſſempio del del ᴘrimo modo detto da prattici ᴍusica finta,& è ᴍusica participata et miſta."))
