@@ -51,7 +51,7 @@
   (reset-file-list *lilypond-backend-modern*)
   (dolist (item mission-list)
     (process-score (first item) (second item) (third item) (fourth item))
-    (when (fifth mission-list)
+    (when (fifth item)
       (process-apparatus (first item) (second item) (fifth item))))
 
   'done)
