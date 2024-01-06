@@ -32,22 +32,22 @@
               ;; JK: dito.
               ;;
               ;; DONE
-              (:de "")
+              (:de "Sprung der quarta\\incomposta")
               (:en "leap of quarta\\incomposta")))
     (s2 (:alt (:it "salto di quarta\\incomposta")
-              (:de "")
+              (:de "Sprung der quarta\\incomposta")
               (:en "leap of quarta\\incomposta")))
     (s3 (:alt (:it "salto di quarta\\incomposta")
-              (:de "")
+              (:de "Sprung der quarta\\incomposta")
               (:en "leap of quarta\\incomposta")))
     (s4 (:alt (:it "quarta composta\\de gradi")
-              (:de "")
+              (:de "quarta composta\\in Tonschritten")
               (:en "quarta composta\\in steps")))
     (s5 (:alt (:it "quarta composta\\de gradi")
-              (:de "")
+              (:de "quarta composta\\in Tonschritten")
               (:en "quarta composta\\in steps")))
     (s6 (:alt (:it "quarta composta\\de gradi")
-              (:de "")
+              (:de "quarta composta\\in Tonschritten")
               (:en "quarta composta\\in steps")))))
   (:data
    (:text 140 58
