@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Fuga mista due sopra uno, sopra due parti, a quattro voci")
                  (:de "")
-                 (:en "Mixed canon, two on one, on two parts, in four voci"))))
+                 (:en "Mixed canon two on one, on two parts, in four voci"))))
   (:data
    (:text 90 58
           (400 1343 "Fuga miſta due ſopra uno,ſopra due parti,à quattro uoci.")
