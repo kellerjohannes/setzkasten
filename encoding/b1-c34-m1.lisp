@@ -4,7 +4,7 @@
    (:comment "q021_s046, origin: 970")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio del salto più che di quarta e de suoi gradi, incomposto e composto")
-                 (:de "")
+                 (:de "Beispiel des Sprungs più che di quarta und von ihren Tonschritten, incomposto und composto")
                  (:en "Example of the leap più di quarta and of its steps, incomposto and composto")))
    (:section-captions
     ;; JK:
@@ -30,25 +30,25 @@
     ;;
     ;; OPEN
     (s1 (:alt (:it "salto di più\\di quarta\\accidentale\\incomposto")
-              (:de "")
+              (:de "Sprung di più\\di quarta\\accidentale\\incomposto")
               (:en "leap of più\\di quarta\\accidentale\\incomposta")))
     (s2 (:alt (:it "gradi di più\\di quarta\\accidentale\\composto")
-              (:de "")
+              (:de "Tonschritte di più\\di quarta\\accidentale\\composto")
               (:en "steps of più\\di quarta\\accidentale\\composta")))
     (s3 (:alt (:it "salti di più\\di quarta\\accidentale\\incomposto")
-              (:de "")
+              (:de "Sprünge di più\\di quarta\\accidentale\\incomposto")
               (:en "leaps of più\\di quarta\\accidentale\\incomposta")))
     (s4 (:alt (:it "gradi di più\\di quarta\\accidentale\\composto")
-              (:de "")
+              (:de "Tonschritte di più\\di quarta\\accidentale\\composto")
               (:en "steps of più\\di quarta\\accidentale\\composta")))
     (s5 (:alt (:it "salto di più\\di quarta\\accidentale\\incomposto")
-              (:de "")
+              (:de "Sprung di più\\di quarta\\accidentale\\incomposto")
               (:en "leap of più\\di quarta\\accidentale\\incomposta")))
     (s6 (:alt (:it "gradi di più\\di quarta\\accidentale\\incomposto")
-              (:de "")
+              (:de "Tonschritte di più\\di quarta\\accidentale\\incomposto")
               (:en "steps of più\\di quarta\\accidentale\\composta")))
     (s7 (:alt (:it "salto di più\\di quarta\\accidentale\\incomposto")
-              (:de "")
+              (:de "Sprung di più\\di quarta\\accidentale\\incomposto")
               (:en "leap of più\\di quarta\\accidentale\\incomposta")))))
   (:data
    (:text 150 58
