@@ -4,7 +4,7 @@
    (:comment "q021_s045, origin: 494")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio del salto e dei gradi de quarta accidentale, incomposta e composta")
-                 (:de "")
+                 (:de "Beispiel des Sprungs und der Tonschritte der quarta accidentale, incomposta und composta.")
                  (:en "Example of the leap and the steps of the quarta accidentale, incomposta and composta")))
    (:section-captions
     ;; JK: zu den Endungen von '(in)composty'.
@@ -22,22 +22,22 @@
     ;;
     ;; DONE
     (s1 (:alt (:it "salto di quarta\\accidentale\\incomposta")
-              (:de "")
+              (:de "Sprung der quarta\\accidentale\\incomposta")
               (:en "leap of a quarta\\accidentale\\incomposta")))
     (s2 (:alt (:it "gradi di quarta\\accidentale\\composta")
-              (:de "")
+              (:de "Tonschritte der quarta\\accidentale\\composta")
               (:en "steps of quarta\\accidentale\\composta")))
     (s3 (:alt (:it "gradi di quarta\\accidentale\\composta")
-              (:de "")
+              (:de "Tonschritte der quarta\\accidentale\\composta")
               (:en "steps of quarta\\accidentale\\composta")))
     (s4 (:alt (:it "salto di quarta\\accidentale\\incomposta")
-              (:de "")
+              (:de "Sprung der quarta\\accidentale\\incomposta")
               (:en "leap of quarta\\accidentale\\incomposta")))
     (s5 (:alt (:it "gradi di quarta\\accidentale\\composta")
-              (:de "")
+              (:de "Tonschritte der quarta\\accidentale\\composta")
               (:en "steps of quarta\\accidentale\\composta")))
     (s6 (:alt (:it "salto di quarta\\accidentale\\incomposta")
-              (:de "")
+              (:de "Sprung der quarta\\accidentale\\incomposta")
               (:en "leap of quarta\\accidentale\\incomposta")))))
   (:data
    (:text 150 58
