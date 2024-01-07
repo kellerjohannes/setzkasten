@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Fuga il contralto per quinta, il tenore per ottava,\\et il basso per duodecima")
                  (:de "")
-                 (:en "Canon: the alto at the quinta, the tenor at the ottava,\\and the bass at the duodecima"))))
+                 (:en "Fuga: the alto at the quinta, the tenor at the ottava,\\and the bass at the duodecima"))))
   (:data
    (:text 90 58
           (195 1820 "Fuga il Contralto per quinta,il Tenore per ottaua,& il Baſſo per duodecima."))
