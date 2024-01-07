@@ -40,13 +40,13 @@
    (:section-captions
     (s2 (:alt (:it "Il medesimo procedere, et i gradi medesimi")
               (:de "")
-              (:en "")))
+              (:en "The same procedure, and the same steps")))
     (s6 (:alt (:it "Il tenore et il soprano\\paiono due ottave et non sono")
               (:de "")
-              (:en "")))
+              (:en "The tenor and the soprano\\appear to be two [consecutive] ottave and are not")))
     (s8 (:alt (:it "Parte ch'era di sotto")
               (:de "")
-              (:en "")))))
+              (:en "Part which is below")))))
   (:data
    (:text 90 58
           (500 970 "A due uoci ſopra il canto fermo per ottaua."))
