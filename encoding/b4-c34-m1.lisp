@@ -40,7 +40,7 @@
    (:section-captions
     (s2 (:alt (:it "Il medesimo procedere, et i gradi medesimi")
               (:de "")
-              (:en "The same procedure, and the same steps")))
+              (:en "The same progression, and the same steps")))
     (s6 (:alt (:it "Il tenore et il soprano\\paiono due ottave et non sono")
               (:de "")
               (:en "The tenor and the soprano\\appear to be two [consecutive] ottave and are not")))
