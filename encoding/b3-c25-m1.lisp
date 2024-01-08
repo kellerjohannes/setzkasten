@@ -18,7 +18,7 @@
                  (:en "Tenor")))
     (s1 v4 (:alt (:it "Basso")
                  (:de "")
-                 (:en "bass")))))
+                 (:en "Bass")))))
   (:data
    (:text 130 58
           (517 1156 "Cadentie Diatoniche del Soprano,à quattro uoci."))
