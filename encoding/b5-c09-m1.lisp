@@ -52,7 +52,7 @@
    (:line-headings
     (:alt (:it "Tutte le consonanze discendenti con le propinque di Alamire secondo")
           (:de "")
-          (:en "All of the descending consonances with the propinque from Alamire secondo"))
+          (:en "All of the descending consonances with the propinque from Alamire secondo")))
     (:alt (:it "Tutte le consonanze ascendenti con le propinque of Alamire secondo")
           (:de "")
           (:en "All of the ascending consonances with the propinque of Alamire secondo"))))
