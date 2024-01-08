@@ -4,7 +4,7 @@
    (:comment "q021_s054, origin 935")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio dall'unisono ad altri gradi e salti")
-                 (:de "Beispiel wie vom unisono zu anderen Tonschritten und Sprüngen [zu gehen ist]")
+                 (:de "Beispiel wie vom unisono zu anderen Tonschritten und Sprüngen [zu gehen ist].")
                  (:en "Example [of going] from the unison to other steps and leaps")))
    (:section-captions
     (s1 (:alt (:it "a 2")
