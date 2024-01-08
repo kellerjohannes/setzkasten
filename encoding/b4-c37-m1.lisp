@@ -6,7 +6,7 @@
    (:section-headings
     (s1 (:alt (:it "Principio et fine")
               (:de "")
-              (:en "")
+              (:en "Beginning and end")
               ;; JK: Es ist zu diskutieren, wie dieses Textelement in der Normalisierung dargestellt
               ;; werden soll. Ausserdem sind verschiedene Auflösungen denkbar, die in separaten
               ;; Musikbeispielen ausgeführt werden könnten. Siehe dazu auch Tigrini, _Compendio
