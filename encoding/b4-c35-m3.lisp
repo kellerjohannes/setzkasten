@@ -6,11 +6,11 @@
    (:section-headings
     (s1 (:alt (:it "Tenore a due voci")
               (:de "")
-              (:en ""))))
+              (:en "Tenor in two voci"))))
    (:section-captions
     (s1 (:alt (:it "Soprano riversciato in tenore alla quinta sotto al canto fermo")
               (:de "")
-              (:en "")))))
+              (:en "Soprano in contrary motion in the tenor at the quinta to canto fermo")))))
   (:data
    (:text 90 58
           (184 460 "Tenore à due ᴠoci.")
