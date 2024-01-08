@@ -6,16 +6,16 @@
    (:section-captions
     (s1 (:alt (:it "semitono maggiore")
               (:de "")
-              (:en "")))
+              (:en "semitono maggiore")))
     (s2 (:alt (:it "semitono minore")
               (:de "")
-              (:en "")))
+              (:en "semitono minore")))
     (s3 (:alt (:it "semitono maggiore")
               (:de "")
-              (:en "")))
+              (:en "semitono maggiore")))
     (s4 (:alt (:it "semitono minore")
               (:de "")
-              (:en "")))))
+              (:en "semitono minore")))))
   (:data
    (:music 2241
            (:voice v1)
