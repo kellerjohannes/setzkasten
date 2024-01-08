@@ -6,10 +6,10 @@
    (:section-captions
     (s1 (:alt (:it "semitono maggiore\\d'Alamire")
               (:de "")
-              (:en "")))
+              (:en "semitono maggiore\\from Alamire")))
     (s2 (:alt (:it "semitono minore\\d'Alamire")
               (:de "")
-              (:en "")))))
+              (:en "semitono minore\\from Alamire")))))
   (:data
    (:music 1244
            (:voice v1)
