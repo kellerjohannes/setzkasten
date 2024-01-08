@@ -22,20 +22,20 @@
    (:line-headings
     (:alt (:it "La prima volta il soprano fara due pause, et l'altra volta le tre parti,\\faranno le due pause del soprano,\\et quello cantera senza pause.")
           (:de "")
-          (:en "")))
+          (:en "The first time the soprano makes two rests, and another time the three parts make the two rests of the soprano,\\and it sings without rests.")))
    (:voice-labels
     (s1 v1 (:alt (:it "Soprano")
                  (:de "")
-                 (:en "")))
+                 (:en "Soprano")))
     (s1 v2 (:alt (:it "Alto")
                  (:de "")
-                 (:en "")))
+                 (:en "Alto")))
     (s1 v3 (:alt (:it "Tenore")
                  (:de "")
-                 (:en "")))
+                 (:en "Tenor")))
     (s1 v4 (:alt (:it "Basso")
                  (:de "")
-                 (:en "")))))
+                 (:en "Bass")))))
   (:data
    (:text 90 58
           (95 nil "Soprano à. 4 uoci.")
