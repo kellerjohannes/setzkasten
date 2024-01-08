@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio delle cadentie minime, di minima e di semiminima\\deminuita e non, con il punto e senza")
                  (:de "")
-                 (:en "Example of the minimal cadences, of a minima and of a semiminima\\diminished and not [diminished], with the dot and without"))))
+                 (:en "Example of the minimal cadences, of a minima and of a semiminima,\\diminished and not [diminished], with the dot and without"))))
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")
