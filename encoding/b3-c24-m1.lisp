@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempi delle cadentie maggiori di breve senza punto,\\e con il punto dimiuite")
                  (:de "")
-                 (:en "Example of major cadences of a breve without a dot,\\and diminished with a dot"))))
+                 (:en "Example of major cadences of a breve without dot,\\and diminished with a dot"))))
   (:data
    (:text 110 58
           (169 1882 "Eſſempi delle cadentie maggiori di breue ſenza punto,et con il punto diminuite."))
