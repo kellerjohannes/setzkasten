@@ -16,20 +16,20 @@
    ;; OPEN
    (:title (:alt (:it "Esempio del sopra detto Don Vincentio,\\come ha posto le consonanze false")
                  (:de "")
-                 (:en "")))
+                 (:en "Example of the aforesaid Don Vincentio\\of how he placed false consonances")))
    (:voice-labels
     (s1 v1 (:alt (:it "Alto con la quinta falsa")
                  (:de "")
-                 (:en "")))
+                 (:en "Alto with the false quinta")))
     (s1 v2 (:alt (:it "Soprano con la decima falsa")
                  (:de "")
-                 (:en "")))
+                 (:en "Soprano with the false decima")))
     (s1 v3 (:alt (:it "Basso")
                  (:de "")
-                 (:en "")))
+                 (:en "Bass")))
     (s1 v4 (:alt (:it "Tenore con le consonanze false")
                  (:de "")
-                 (:en ""))))
+                 (:en "Tenor with the false consonance"))))
    (:voice-order
     (s1 v2 v1 v4 v3)))
   (:data
