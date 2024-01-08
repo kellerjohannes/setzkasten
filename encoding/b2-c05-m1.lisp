@@ -10,26 +10,26 @@
                  ;; JK: Oha, ja natürlich, habe ich geändert.
                  ;;
                  ;; DONE
-                 (:de "")
+                 (:de "Beispiel der seconda und der quarta,\\wie man sie mit drei Stimmen, Alto, Tenore und Basso zusammen setzt.")
                  (:en "Example of the seconda and the quarta,\\[as to] how they are to be composed in three voci, alto, tenor, and bass")))
    (:section-headings
     (s1 (:alt (:it "Buona")
-              (:de "")
+              (:de "gut")
               (:en "good")))
     (s2 (:alt (:it "Non troppo")
-              (:de "")
+              (:de "nicht so [gut]")
               (:en "not too [good]")))
     (s3 (:alt (:it "Buona et a quattro meglio")
-              (:de "")
+              (:de "gut und mit vier [Stimmen] besser")
               (:en "good and in four [voci] better")))
     (s4 (:alt (:it "Buona")
-              (:de "")
+              (:de "gut")
               (:en "good")))
     (s5 (:alt (:it "Buona")
-              (:de "")
+              (:de "gut")
               (:en "good")))
     (s6 (:alt (:it "Buona")
-              (:de "")
+              (:de "gut")
               (:en "good")))))
   (:preamble-lilypond
    (:clef-overrides
