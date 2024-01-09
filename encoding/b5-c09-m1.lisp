@@ -10,7 +10,7 @@
    (:section-headings
     (s1 (:alt (:it "Le quattro terze discendenti\\con le sue propinque")
               (:de "")
-              (:en "The four descending terze\\with their propinque"")))
+              (:en "The four descending terze\\with their propinque")))
     (s2 (:alt (:it " \\Quinta")
               (:de "")
               (:en " \\Quinta")))
