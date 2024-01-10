@@ -12,7 +12,7 @@
               (:en "[The four descending\\terze]")))
     (s2 (:alt (:it " \\[Quinta]")
               (:de "")
-              (:en "[Quinta]")))
+              (:en "[ \\Quinta]")))
     (s3 (:alt (:it "[Le quattro seste\\discendenti]")
               (:de "")
               (:en "[The four descending\\seste]")))
