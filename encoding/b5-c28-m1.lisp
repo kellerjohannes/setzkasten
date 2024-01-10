@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Queste sono tutte le consonanze con le sue propinque,\\e con le propinquissime di Dlasolre terzo discendente,\\e di Dsolre terzo ascendente")
                  (:de "")
-                 (:en "These are all the consonances, with their propinque\\and with the propinquissime, of Dlasolre terzo descending,\\and of Dsolre terzo ascending")))
+                 (:en "These are all the consonances, with their propinque\\and with the propinquissime of Dlasolre terzo descending,\\and of Dsolre terzo ascending")))
    (:section-headings
     (s1 (:alt (:it "Le cinque terze\\[discendenti]")
               (:de "")
