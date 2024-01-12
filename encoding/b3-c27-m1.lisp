@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio delle cadentie a due voci intiere,\\e diminuite, e senza conclusione")
                  (:de "")
-                 (:en "Example of cadences in two plain voci,\\and diminished, and without conclusion")))
+                 (:en "Example of cadences in two undiminished voci,\\and diminished, and without conclusion")))
    (:section-captions
     (s1 (:alt (:it "buona")
               (:de "")
