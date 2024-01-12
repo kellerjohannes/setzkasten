@@ -6,10 +6,10 @@
    (:section-headings
     (s1 (:alt (:it "Immobili ascendenti")
               (:de "")
-              (:en "")))
+              (:en "Ascending immobile [voci]")))
     (s2 (:alt (:it "Immobili discendenti")
               (:de "")
-              (:en "")))))
+              (:en "Descending immobile [voci]")))))
   (:data
    (:text 90 58
      (342 nil "Immobili aſcendenti.")
