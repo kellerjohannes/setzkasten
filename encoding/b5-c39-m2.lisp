@@ -6,18 +6,18 @@
    (:section-headings
     (s1 (:alt (:it " \\Immobili ascendenti")
               (:de "")
-              (:en "")))
+              (:en " \\Ascending immobile [voci]")))
     (s2 (:alt (:it " \\Ne del tutto mobili")
               (:de "")
-              (:en "")))
+              (:en "Not completely mobile [voci]")))
     (s3 (:alt (:it "Ne del tutto immobili,\\genere cromatico")
               (:de "")
-              (:en ""))))
+              (:en "Not completely mobile [voci]\\chromatic genus"))))
    (:line-headings
     ""
     (:alt (:it "Serveno a ambedue i generi al diatonico et al cromatico:")
           (:de "")
-          (:en ""))))
+          (:en "The serve for both genera, for the diatonic and for the chromatic"))))
   (:data
    (:text 90 58
      (176 nil "Immobili aſcendenti.")
