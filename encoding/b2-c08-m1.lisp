@@ -8,10 +8,10 @@
                  (:en "Example of the method of composing with the tritono")))
    (:section-headings
     (s1 (:alt (:it "A due voci")
-              (:de "in zwei Stimmen")
+              (:de "mit zwei Stimmen")
               (:en "for two voci")))
     (s2 (:alt (:it "A tre voci")
-              (:de "in drei Stimmen")
+              (:de "mit drei Stimmen")
               (:en "for three voci"))))
    (:voice-labels
     (s1 v1 (:alt (:it "Tenore")
