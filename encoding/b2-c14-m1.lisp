@@ -4,18 +4,19 @@
    (:comment "q021_s066, rotation: -0.4, origin: 1011")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio dei molti modi, che si può accompagnare la terza minore")
-                 (:de "")
+                 (:de "Beispiel von vielen Arten und Weisen, wie man die terza minore begleiten kann.")
                  (:en "Example of the many ways one can accompany the terza minore")))
    (:section-headings
     (s1 (:alt (:it "Grado molle\\e consonante")
-              (:de "")
+              (:de "molle und\\konsonanter Tonschritt")
               (:en "molle and\\consonant step")))
     (s2 (:alt (:it "Grado incitato\\e molle")
-              (:de "")
+              (:de "incitato\\und molle Tonschritt")
               (:en "incitato and\\molle step")))
               ;; AS: Kommentar David:  Captions to Nos. 3–8: personally I don't think it's necessary to add "step[s]" in square brackets – it's obvious from Nos. 1 and 2 that this is also meant for Nos. 3–8.
+              kir: sehe ich auch so (und vermute generell, dass wir/ich an einigen Stellen 'kürzer' übersetzen sollte ...)
     (s3 (:alt (:it "[Grado] incitato\\e molle")
-              (:de "")
+              (:de "incitato\\und molle")
               (:en "incitato and\\molle [step]")))
     (s4 (:alt (:it "[Gradi] incitati\\ ")
               ;; Kommentar Anne: willst du noch etwas hinzufügen?
@@ -25,13 +26,13 @@
               ;;
               ;; OPEN
               ;; AS: OK ich habe verstanden.
-              (:de "")
+              (:de "incitati")
               (:en "incitati [steps]")))
     (s5 (:alt (:it "[Grado] incitato\\e molle")
-              (:de "")
+              (:de "incitato\\e molle")
               (:en "incitato and\\molle [step]")))
     (s6 (:alt (:it "[Grado] incitato\\e molle")
-              (:de "")
+              (:de "incitato\\e molle")
               (:en "incitato and\\molle [step]")))
     (s7 (:alt (:it "[Gradi] incitati\\ ")
               ;; Kommentar Anne: willst du noch etwas hinzufügen?
@@ -39,10 +40,10 @@
               ;;
               ;; OPEN
               ;; AS: Auch hier verstanden
-              (:de "")
+              (:de "incitati\\")
               (:en "incitati [steps]\\")))
     (s8 (:alt (:it "[Grado] molle\\et incitato")
-              (:de "")
+              (:de "molle\\und incitato")
               (:en "molle and\\incitato [step]")))))
   (:data
    (:text 90 58
