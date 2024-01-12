@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Queste sono tutte le consonanze di Bfabmi primo acuto\\con le sue propinque discendenti,\\et il simile di Bmi primo ascendente")
                  (:de "")
-                 (:en "These are all consonance of Brabmi primo acuto descending,\\with their propinque,\\and the same of Bmi primo ascending")))
+                 (:en "These are all consonances of Bfabmi primo acuto descending,\\with their propinque,\\and the same of Bmi primo ascending")))
    (:section-headings
     (s1 (:alt (:it "Le quattro terze\\[discendenti]")
               (:de "")
