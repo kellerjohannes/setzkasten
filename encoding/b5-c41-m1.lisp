@@ -9,10 +9,10 @@
    (:section-captions
     (s1  (:alt (:it "Semitono\\accidentale\\maggiore")
                (:de "")
-               (:en "")))
+               (:en "Semitono\\accidentale\\maggiore")))
     (s2  (:alt (:it "Semitono\\accidentale\\minore")
                (:de "")
-               (:en "Semitono\\accidentale\\maggiore")))
+               (:en "Semitono\\accidentale\\minore")))
     (s3  (:alt (:it "Semitono\\naturale\\maggiore")
                (:de "")
                (:en "Semitono\\naturale\\maggiore")))
