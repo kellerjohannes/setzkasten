@@ -32,7 +32,7 @@
 
     (s9 (:alt (:it "Tono naturale\\discendente")
               (:de "")
-              (:en "[Descending]\\semitono naturale")))
+              (:en "Descending\\semitono naturale")))
     (s10 (:alt (:it "Semitono accidentale\\e naturale\\discendente")
                (:de "")
                (:en "Descending\\semitono accidentale\\and naturale")))
@@ -42,7 +42,7 @@
 
     (s12 (:alt (:it "Tono naturale\\discendente")
                (:de "")
-               (:en "[Descending]\\semitono naturale")))
+               (:en "Descending\\semitono naturale")))
     (s13 (:alt (:it "[Semi]tono [accidentale \\e] naturale\\[discendente]")
                (:de "")
                (:en "[Descending \\semi]tono [accidentale \\and] naturale")))
