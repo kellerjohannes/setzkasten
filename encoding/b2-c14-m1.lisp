@@ -13,8 +13,12 @@
     (s2 (:alt (:it "Grado incitato\\e molle")
               (:de "incitato\\und molle Tonschritt")
               (:en "incitato and\\molle step")))
-              ;; AS: Kommentar David:  Captions to Nos. 3–8: personally I don't think it's necessary to add "step[s]" in square brackets – it's obvious from Nos. 1 and 2 that this is also meant for Nos. 3–8.
-              kir: sehe ich auch so (und vermute generell, dass wir/ich an einigen Stellen 'kürzer' übersetzen sollte ...)
+    ;; AS: Kommentar David: Captions to Nos. 3–8: personally I don't think it's necessary to add
+    ;; "step[s]" in square brackets – it's obvious from Nos. 1 and 2 that this is also meant for
+    ;; Nos. 3–8.
+    ;;
+    ;; kir: sehe ich auch so (und vermute generell, dass wir/ich an einigen Stellen 'kürzer'
+    ;; übersetzen sollte ...)
     (s3 (:alt (:it "[Grado] incitato\\e molle")
               (:de "incitato\\und molle")
               (:en "incitato and\\molle [step]")))
@@ -47,7 +51,7 @@
               (:en "molle and\\incitato [step]")))))
   (:data
    (:text 90 58
-     (330 1555 "Eſſempio de i molti modi,che ſi può accompagnare la Terza minore."))
+          (330 1555 "Eſſempio de i molti modi,che ſi può accompagnare la Terza minore."))
    (:music 2216
            (:voice v1)
            (:section s1) cclef7 b38 sb2 b38 b38 sb5 b38 b38 bl

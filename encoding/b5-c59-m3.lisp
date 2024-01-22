@@ -15,7 +15,7 @@
                (:en "Third ordine diatonico")))
     (s28 (:alt (:it "Quarto ordine diatonico")
                (:de "")
-               (:en Fourth ordine diatonico
+               (:en "Fourth ordine diatonico")))
     (s37 (:alt (:it "Del quinto ordine diatonico naturale")
                (:de "")
                (:en "Of the fifth ordine diatonico naturale")))

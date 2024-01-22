@@ -24,7 +24,7 @@
               (:en "The four [ascending]\\terze")))
     (s6 (:alt (:it " \\Quinta")
               (:de "")
-              (:en  \\Quinta
+              (:en " \\Quinta")))
     (s7 (:alt (:it "Le quattro seste\\[ascendenti]")
               (:de "")
               (:en "The four [ascending]\\seste")))

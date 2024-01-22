@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Regola di ritrovare le sette ottave sopra Cfaut,\\con i sottoscritti esempi")
                  (:de "")
-                 (:en Method for finding the seven ottave on Cfaut,\\with the examples written below
+                 (:en "Method for finding the seven ottave on Cfaut,\\with the examples written below")))
    (:section-headings
     (s1 (:alt (:it "Prima ottava")
               (:de "")
