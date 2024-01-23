@@ -4,7 +4,7 @@
    (:comment "q021_s066, rotation: -0.4, origin: 1011")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio dei molti modi, che si può accompagnare la terza minore")
-                 (:de "Beispiel von vielen Arten und Weisen, wie man die terza minore begleiten kann.")
+                 (:de "Beispiel für viele Arten und Weisen, wie man die terza minore begleiten kann.")
                  (:en "Example of the many ways one can accompany the terza minore")))
    (:section-headings
     (s1 (:alt (:it "Grado molle\\e consonante")
@@ -33,10 +33,10 @@
               (:de "incitati")
               (:en "incitati [steps]")))
     (s5 (:alt (:it "[Grado] incitato\\e molle")
-              (:de "incitato\\e molle")
+              (:de "incitato\\und molle")
               (:en "incitato and\\molle [step]")))
     (s6 (:alt (:it "[Grado] incitato\\e molle")
-              (:de "incitato\\e molle")
+              (:de "incitato\\und molle")
               (:en "incitato and\\molle [step]")))
     (s7 (:alt (:it "[Gradi] incitati\\ ")
               ;; Kommentar Anne: willst du noch etwas hinzufügen?
