@@ -4,7 +4,7 @@
    (:comment "q021_s064, rotation: -0.48, origin: 1045")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio di comporre la settima che fa parere due ottave,\\et non sono, et così due unisoni,\\et non sono, con due tenore, uno dopo l'altro")
-                 (:de "Beispiel die settima zu setzen, dass es wie zwei ottave scheint,\\und nicht ist, und ebenso zwei unisoni,\\und nicht ist, mit zwei tenore, einer nach dem anderen.")
+                 (:de "Beispiel, die settima zu setzen, dass es wie zwei ottave scheint\\und nicht ist, und ebenso zwei unisoni,\\und nicht ist, mit zwei tenore, einer nach dem anderen.")
                  (:en "Example of composing the seventh which seems like two [consecutive] ottave,\\but is not; and likewise two [consecutive] unisoni,\\but is not; with two tenors, one after the other")))
    (:section-captions
     (s1 (:alt (:it "Per semitono\\con l'unisono")
