@@ -27,7 +27,7 @@
               (:de "mit fünf [Stimmen]")
               (:en "in five [voci]")))
     (s7 (:alt (:it "a 7 e a più voci")
-              (:de "mit sieben udn mehr Stimmen")
+              (:de "mit sieben und mehr Stimmen")
               (:en "in seven and more voci")))))
   (:data
    (:text 90 58
