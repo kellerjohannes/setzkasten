@@ -21,7 +21,7 @@
               (:de "bedenklich")
               (:en "dubious")))
     (s9 (:alt (:it "a 2 cori")
-              (:de "mt zwei Chören")
+              (:de "mit zwei Chören")
               (:en "for two choirs")))
     (s10 (:alt (:it "a 2 cori")
                (:de "mit zwei Chören")
