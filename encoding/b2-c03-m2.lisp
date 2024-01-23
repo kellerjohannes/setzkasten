@@ -4,7 +4,7 @@
    (:comment "q021_s057, rotate: 0.69, origin: music line 1 393, line 2 386, line 3 384, line 4 371")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio d'andare all'unisono con vari salti, naturali e accidentali")
-                 (:de "Beispiel wie vom unisono mit verschiedenen Tonschritten und Sprüngen zu gehen ist, naturali und accidentali.")
+                 (:de "Beispiel, wie vom unisono mit verschiedenen Tonschritten und Sprüngen zu gehen ist, naturali und accidentali.")
                  (:en "Example of going to the unisono with various leaps, naturali and accidentali")))
    (:section-captions
     (s5 (:alt (:it "salto dubbioso")
