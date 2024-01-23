@@ -4,7 +4,7 @@
    (:comment "q021_s069, rotation: 0, origin: 472")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio della sesta minore in vari modi composta con due tenori")
-                 (:de "")
+                 (:de "Beispiel der sesta minori, gesetzt in unterschiedlchen Arten und Weisen, mit zwei Tenori.")
                  (:en "Example of the sesta minore composed in various ways with two tenors"))))
   (:data
    (:text 90 58
