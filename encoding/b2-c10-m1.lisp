@@ -8,10 +8,10 @@
                  (:en "Example of composing with the dissonance called the settima,\\sincopata with the sesta")))
    (:section-headings
     (s1 (:alt (:it "A due voci")
-              (:de "für zwei Stimmen")
+              (:de "mit zwei Stimmen")
               (:en "in two voci")))
     (s2 (:alt (:it "A tre voci")
-              (:de "für drei Stimmen")
+              (:de "mit drei Stimmen")
               (:en "in three voci"))))
    (:voice-labels
     (s1 v1 (:alt (:it "Tenore")
