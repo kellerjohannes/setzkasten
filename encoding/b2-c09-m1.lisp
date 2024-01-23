@@ -4,7 +4,7 @@
    (:comment "q021_s063, rotation: 0.75, origin: 420")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio di comporre la quinta imperfetta\\a due voci, et a più in vari modi")
-                 (:de "Beispiel die quinta imperfetta zu setzen\\in zwei und mehr Stimmen in verschiedenen Arten und Weisen.")
+                 (:de "Beispiel die quinta imperfetta zu setzen\\mit zwei und mehr Stimmen in verschiedenen Arten und Weisen.")
                  (:en "Example of composing with the quinta imperfetta\\in two or more voci, in various ways")
                  ;; JK: Das ganze Beispiel: akut zu diskutieren, insbesondere der zweite Tenor in
                  ;; der dritten Section. Maniates macht eine alternative Stimmverteilung. Alternativ
@@ -14,16 +14,16 @@
                  ))
    (:section-headings
     (s1 (:alt (:it "A due voci")
-              (:de "in zwei Stimmen")
+              (:de "für zwei Stimmen")
               (:en "in two voci")))
     (s2 (:alt (:it "A due voci")
-              (:de "in zwei Stimmen")
+              (:de "für zwei Stimmen")
               (:en "in two voci")))
     (s3 (:alt (:it "A tre voci")
-              (:de "in drei Stimmen")
+              (:de "für drei Stimmen")
               (:en "in three voci")))
     (s4 (:alt (:it "A tre voci et a quattro")
-              (:de "in drei und vier Stimmen")
+              (:de "für drei und vier Stimmen")
               (:en "in three and in four voci"))))
    (:voice-labels
     (s1 v1 (:alt (:it "Alto")
