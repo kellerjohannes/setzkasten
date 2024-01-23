@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio sopra il modo di comporre di quarta in quinta\\sincopata et non sincopata, et di quinta in quarta\\A tre voci")
               ;; AS: David questions the placement of "A tre voci", mentioning that it does not belong to the overall caption, but actually to Example 1. I think that I agree with him there, and that the other examples are 2 voci within a larger, undefined constellation. 
-                 (:de "Beispiel der Art und Weise, von der quarta zur quinta\\synkopiert und nicht synkopiert, und von der quinta zur quarta zu setzen,\\mit drei Stimmen.")
+                 (:de "Beispiel der Art und Weise, von der quarta zur quinta,\\synkopiert und nicht synkopiert, und von der quinta zur quarta zu setzen,\\mit drei Stimmen.")
                  (:en "Example of the method of composing from the quarta to the quinta,\\syncopata and not syncopata, and from the quinta to the quarta\\in three voci")))
    (:voice-labels
     (s1 v1 (:alt (:it "Soprano")
