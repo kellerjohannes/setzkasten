@@ -4,30 +4,30 @@
    (:comment "q021_s072, rotation: 0, origin: 1076")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio delle seste simili")
-                 (:de "")
+                 (:de "Beispiel der ähnlichen seste.")
                  (:en "Example of similar seste")))
    (:section-headings
     (s1 (:alt (:it "A due voci")
-              (:de "")
+              (:de "für zwei Stimmen")
               (:en "in two voci")))
     (s2 (:alt (:it "A due voci")
-              (:de "")
+              (:de "für zwei Stimmen")
               (:en "in two voci")))
     (s3 (:alt (:it "A due voci")
-              (:de "")
+              (:de "für zwei Stimmen")
               (:en "in two voci")))
     (s4 (:alt (:it "A due voci")
-              (:de "")
+              (:de "für zwei Stimmen")
               (:en "in two voci"))))
    (:section-captions
     (s1 (:alt (:it "Simili\\maggiori")
-              (:de "")
+              (:de "ähnlich\\maggiori")
               (:en "similar\\maggiori")))
     (s2 (:alt (:it "Simili\\minori")
-              (:de "")
+              (:de "ähnlich\\minori")
               (:en "similar\\minori")))
     (s3 (:alt (:it "Differenti\\ ")
-              (:de "")
+              (:de "unterschiedlich\\ ")
               (:en "different\\ ")))
     ;; Kommentar Anne: if there is no noun afterwards, the backslashes are also not
     ;; necessary, also in the Italian
@@ -36,7 +36,7 @@
     ;;
     ;; DONE
     (s4 (:alt (:it "Simili\\maggiori")
-              (:de "")
+              (:de "ähnlich\\maggiori")
               (:en "similar\\maggiori")))))
   (:data
    (:text 110 58
