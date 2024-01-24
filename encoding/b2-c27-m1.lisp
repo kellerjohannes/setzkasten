@@ -4,7 +4,7 @@
    (:comment "q021_s078, rotation: -0.92, origin: 966")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio della quintadecima, et della vigesima seconda,\\a tre voci, et a quattro")
-                 (:de "")
+                 (:de "Beispiel der quintadecima und der vigesima seconda,\\für drei und vier Stimmen.")
                  (:en "Example of the quinta decima, and of the vigesima seconda,\\in three and four voci")))
    (:section-headings
     (s1 (:alt (:it "Quintadecima con\\ottava in mezzo\\ ")
@@ -12,33 +12,33 @@
               ;; JK: dito.
               ;;
               ;; DONE
-              (:de "")
+              (:de "quintadecima mit\\ottava in der Mitte")
               (:en "quinta decima with\\ottava in the middle")))
     (s2 (:alt (:it "Vigesima seconda\\con due ottave\\in mezzo")
-              (:de "")
+              (:de "vigesima seconda\\mit zwei ottave\\in der Mitte")
               (:en "vigesima seconda\\with two ottave\\in the middle"))))
               ;; AS: Comment David:  I presume there will be a commentary noting that the Alto voice is printed wrongly – I think it's most likely that the type piece carrying the notehead was set upside-down (the other possibility being that a C1 clef was intended instead of C2). 
    (:voice-labels
     (s1 v1 (:alt (:it "Soprano")
-                 (:de "")
+                 (:de "Soprano")
                  (:en "Soprano")))
     (s1 v2 (:alt (:it "Alto")
-                 (:de "")
+                 (:de "Alto")
                  (:en "Alto")))
     (s1 v3 (:alt (:it "Tenore")
-                 (:de "")
+                 (:de "Tenore")
                  (:en "Tenor")))
     (s2 v1 (:alt (:it "Soprano")
-                 (:de "")
+                 (:de "Soprano")
                  (:en "Soprano")))
     (s2 v2 (:alt (:it "Alto")
-                 (:de "")
+                 (:de "Alto")
                  (:en "Alto")))
     (s2 v3 (:alt (:it "Tenore")
-                 (:de "")
+                 (:de "Tenore")
                  (:en "Tenor")))
     (s2 v4 (:alt (:it "Basso")
-                 (:de "")
+                 (:de "Basso")
                  (:en "Bass")))))
   (:data
    (:text 110 58
