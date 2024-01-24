@@ -4,7 +4,7 @@
    (:comment "q021_s076, rotation: -1.04, origin: 1013")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio delle decime maggiori et minori,\\et come in vari modi si possono comporre")
-                 (:de "")
+                 (:de "Beispiel der decime maggiori und minori,\\und wie sie auf verschiedene Arten und Weisen gesetzt werden können.")
                  (:en "Example of the decime maggiori and minori,\\and how one can compose with them in various ways")))
    (:section-captions
     (s6 (:alt (:it "Dubbio di\\sustentatione")
