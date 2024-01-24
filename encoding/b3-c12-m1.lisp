@@ -4,7 +4,7 @@
    (:comment "q021_s91, origin: 438")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio dell'ottavo modo diatonico semplice,\\da Tolomeo detto yppermissolidio")
-                 (:de "")
+                 (:de "Beispiel des einfachen achten diatonischen Modus,\\von Ptolemaios Hypomixolydisch genannt.")
                  (:en "Example of the eighth simple diatonic mode,\\called Hypomixolydian by Ptolemy"))))
   (:data
    (:text 90 58
