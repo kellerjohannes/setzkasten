@@ -5,17 +5,17 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:line-headings
     (:alt (:it "Molte annotationi sotto et sopra le due note fa et sol\\A due et a più voci si possono comporre")
-          (:de "")
+          (:de "Viele Hinweise, wie man unter und über den zwei Noten fa und sol\\für zwei und mehr Stimmen setzen kann.")
           (:en "Many annotations below and above the two notes fa and sol.\\One can compose with them in two or more voci."))
     nil
     nil
     nil
     (:alt (:it "Molte annotationi sotto et sopra le due note sol et fa\\A due et a più voci si possono comporre")
-          (:de "")
+          (:de "Viele Hinweise, wie man unter und über den zwei Noten sol und fa\\für zwei und mehr Stimmen setzen kann.")
           (:en "Many annotations below and above the two notes sol and fa.\\One can compose with them in two or more voci.")))
    (:section-captions
     (s40 (:alt (:it "A otto")
-               (:de "")
+               (:de "für acht [Stimmen]")
                (:en "for eight"))))
    (:voice-order
     (s1 v1 v2)
