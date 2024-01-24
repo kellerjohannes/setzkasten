@@ -4,34 +4,34 @@
    (:comment "q021_s086, rotation: 1.25, origin: 1025")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio delle tre quarte diatoniche, composte et incomposte")
-                 (:de "")
+                 (:de "Beispiel der drei diatonischen quarte, composte und incomposte.")
                  (:en "Example of the three diatonic quarte, composte and incomposte")))
    (:section-headings
     (s1 (:alt (:it "Prima quarta")
-              (:de "")
+              (:de "erste quarta")
               (:en "First quarta")))
     (s2 (:alt (:it "Seconda quarta")
-              (:de "")
+              (:de "zweite quarta")
               (:en "Second quarta")))
     (s3 (:alt (:it "Terza quarta")
-              (:de "")
+              (:de "dritte quarta")
               (:en "Third quarta"))))
    (:section-captions
     (s1 (:alt (:it "composta / incomposta")
-              ;; Kommentar Anne: Willst du wirklich composta gross schreiben beid den section
+              ;; Kommentar Anne: Willst du wirklich composta gross schreiben bei den section
               ;; captions?
               ;;
               ;; JK: Nein, das war einmal ein Wunsch von Luigi, ist aber aus meiner Sicht
               ;; neu zu diskutieren (ich meine, die Gross-/Kleinschreibung insgesamt).
               ;;
               ;; DONE
-              (:de "")
+              (:de "composta / incomposta")
               (:en "composta / incomposta")))
     (s2 (:alt (:it "composta / incomposta")
-              (:de "")
+              (:de "composta / incomposta")
               (:en "composta / incomposta")))
     (s3 (:alt (:it "composta / incomposta")
-              (:de "")
+              (:de "composta / incomposta")
               (:en "composta / incomposta")))))
   (:data
    (:text 130 58
