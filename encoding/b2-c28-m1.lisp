@@ -4,27 +4,28 @@
    (:comment "q021_s079, rotation: 0, origin: 468")
    (:creator "Vicentino21 / Johannes Keller")
    (:line-headings
-    (:alt (:it "Molte annotationi sotto et sopra le due note mi et re\\A due et a più voci si possono comporre")
-          (:de "")
+    (:alt (:it "Molte annotationi sotto et sopra le due note mi et re.\\A due et a più voci si possono comporre")
+          (:de "Viele Hinweise, wie man unter und über den zwei Noten mi und re\\für zwei und mehr Stimmen setzen kann.")
           (:en "Many annotations below and above the two notes mi and re.\\One can compose with them in two or more voci"))
     nil
     nil
     nil
     (:alt (:it "Molte annotationi sotto et sopra le due note re et mi\\A due et a più voci si possono comporre")
-          (:de "")
+          (:de "Viele Hinweise, wie man unter und über den zwei Noten mi und re\\für zwei und mehr Stimmen setzen kann.")
           (:en "Many annotations below and above the two notes re and mi.\\One can compose with them in two or more voci")))
    (:section-captions
     (s10 (:alt (:it "A tre")
-               (:de "")
+               (:de "für drei [Stimmen]")
                (:en "in three")))
     (s11 (:alt (:it "A otto")
-               (:de "in eight")
-               (:en "")))
+               (:de "für acht [Stimmen]")
+               (:en "in eight")))
     (s28 (:alt (:it "A quattro")
-               (:de "")
+               (:de "für vier [Stimmen]")
                (:en "in four"))))
     (s4 v1 v2)
                ;; AS: Kommentar David:  No. 11 should have the caption "for eight" -  No. 16 should have the caption "for three" -  Nos. 17–22 should be after the second overall caption since they show re–mi rather than mi–re.
+               ;; kir: für mich ist der Titel trotz des Satzpunktes in der Mitte als ein Satz zu lesen
    (:voice-order
     (s1 v1 v2)
     (s2 v1 v2)
