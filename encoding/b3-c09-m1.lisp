@@ -3,7 +3,7 @@
    (:alt-name "m3.008")
    (:comment "q021_s90, origin: 992")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio del quinto modo diatonico semplice,\\da greci detto lidio")
+   (:title (:alt (:it "Essempio del quinto modo diatonico semplice,\\da greci detto lidio")
                  (:de "Beispiel des fünten einfachen diatonischen Modus,\\von den Griechen Lydisch genannt.")
                  (:en "Example of the fifth simple diatonic mode,\\called Lydian by the Greeks"))))
   (:preamble-lilypond
