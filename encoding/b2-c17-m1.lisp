@@ -20,11 +20,11 @@
               (:de "gleiche\\maggiori")
               (:en "similar\\maggiori")))
     (s5 (:alt (:it "differenti\\maggiori\\et minori")
-              (:de "unterschiedliche maggiori\\und minori")
+              (:de "verschiedene maggiori\\und minori")
               (:en "different\\maggiori\\and minori")))
               ;; AS: Kommentar David: this should really be "maggiori and minore" because there are 2 maggiori and only 1 minore.
     (s6 (:alt (:it "differenti\\minori\\et maggiori")
-              (:de "unterschiedliche\\minori\\und mmagiori")
+              (:de "verschiedene\\minori\\und mmagiori")
               (:en "different\\minori\\and maggiori")))))
               ;; AS: Kommentar David: this should really be "minori and maggiore" because there are 2 minori and only 1 maggiore.
   (:data
