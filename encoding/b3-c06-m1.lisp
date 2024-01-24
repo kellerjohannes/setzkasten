@@ -4,7 +4,7 @@
    (:comment "q021_s89, rotation: 0.89, origin: 491")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del secondo modo diatonico semplice,\\da greci detto yppodorio")
-                 (:de "")
+                 (:de "Beispiel des zweiten diatonischen Modus semplice,\\von den Griechen Hypodorisch genannt.")
                  (:en "Example of the second simple diatonic mode,\\called Hypodorian by the Greeks"))))
   (:preamble-lilypond
    (:alt (:tolgahan (:clef-overrides
