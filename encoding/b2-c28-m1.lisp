@@ -11,7 +11,7 @@
     nil
     nil
     (:alt (:it "Molte annotationi sotto et sopra le due note re et mi\\A due et a più voci si possono comporre")
-          (:de "Viele Hinweise, wie man unter und über den zwei Noten mi und re\\für zwei und mehr Stimmen setzen kann.")
+          (:de "Viele Hinweise, wie man unter und über den zwei Noten re und mi\\für zwei und mehr Stimmen setzen kann.")
           (:en "Many annotations below and above the two notes re and mi.\\One can compose with them in two or more voci")))
    (:section-captions
     (s10 (:alt (:it "A tre")
