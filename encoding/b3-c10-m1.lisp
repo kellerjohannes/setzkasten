@@ -4,7 +4,7 @@
    (:comment "q021_s90, rotation: -0.47, origin: 988")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del sesto modo diatonico semplice,\\da greci detto yppolidio")
-                 (:de "")
+                 (:de "Beispiel des sechsten einfachen diatonischen Modus,\\von den Griechen Hypolydisch genannt.")
                  (:en "Example of the sixth simple diatonic mode,\\called Hypolydian by the Greeks"))))
   (:data
    (:text 90 58
