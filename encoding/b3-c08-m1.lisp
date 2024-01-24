@@ -4,7 +4,7 @@
    (:comment "q021_s90, origin: 993")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del quarto modo diatonico semplice,\\da greci detto yppofrigio")
-                 (:de "Beispiel des vierten diatonischen Modus semplice,\\von den Griechen Hypophrygisch genannt.")
+                 (:de "Beispiel des einfachen vierten diatonischen Modus,\\von den Griechen Hypophrygisch genannt.")
                  (:en "Example of the fourth simple diatonic mode,\\called Hypophrygian by the Greeks"))))
   (:preamble-lilypond
    (:alt (:tolgahan (:clef-overrides
