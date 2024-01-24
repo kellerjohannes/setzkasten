@@ -27,7 +27,7 @@
               (:de "ähnlich\\minori")
               (:en "similar\\minori")))
     (s3 (:alt (:it "Differenti\\ ")
-              (:de "unterschiedlich\\ ")
+              (:de "verschieden\\ ")
               (:en "different\\ ")))
     ;; Kommentar Anne: if there is no noun afterwards, the backslashes are also not
     ;; necessary, also in the Italian
