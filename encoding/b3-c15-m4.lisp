@@ -4,7 +4,7 @@
    (:comment "q021_s096, rotation: -1.63, origin: 1058")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del primo modo detto da prattici musica finta\\et è musica participata e mista")
-                 (:de "")
+                 (:de "Beispiel des ersten Modus, von den Praktiker musica finta genannt\\und es ist musica participata und mista.")
                  (:en "Example of the first mode called by practical musicians musica finta,\\and it is musica participata and mista"))))
   (:data
    (:text 130 58
