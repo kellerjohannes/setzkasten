@@ -4,7 +4,7 @@
    (:comment "q021_s096, rotation: -1.63, origin: 1050")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del primo modo per ♭ molle\\della musica participata e mista")
-                 (:de "")
+                 (:de "Beispiel des ersten Modus per ♭ molle\\der musica participata und mista.")
                  (:en "Example of the first mode in ♭ molle,\\of musica participata and mista"))))
   (:preamble-lilypond
    (:clef-overrides
