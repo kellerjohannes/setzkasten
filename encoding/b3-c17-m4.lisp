@@ -4,7 +4,7 @@
    (:comment "q021_s097, rotation: 0.96, origin: 546")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del terzo modo per musica finta, participata e mista")
-                 (:de "")
+                 (:de "Beispiel des dritten Modus per musica finta [der musica] participata und mista.")
                  (:en "Example of the third mode in musica finta, participata and mista"))))
   (:data
    (:text 110 58
