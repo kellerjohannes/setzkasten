@@ -4,7 +4,7 @@
    (:comment "q021_s099, origin: 429")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del sesto modo, detto per musica finta,\\della musica participata e mista")
-                 (:de "")
+                 (:de "Beispiel des sechsten Modus, genannt per musica finta,\\der musica participata und mista.")
                  (:en "Example of the sixth mode, called music finta,\\of musica participata and mista"))))
   (:data
    (:text 110 58
