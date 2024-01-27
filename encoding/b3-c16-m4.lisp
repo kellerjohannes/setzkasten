@@ -4,7 +4,7 @@
    (:comment "q021_s097, rotation: 0.96, origin: 544")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del secondo modo per musica finta,\\et è simile alla participata et mista")
-                 (:de "")
+                 (:de "Beispiel des zweiten Modus per musica finta,\\und es ist ähnlich zur [musica] participata und mista.")
                  (:en "Example of the second mode in musica finta,\\ and it is similar to the participata and mista"))))
   (:data
    (:text 90 58
