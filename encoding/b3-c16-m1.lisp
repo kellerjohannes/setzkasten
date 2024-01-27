@@ -4,7 +4,7 @@
    (:comment "q021_s096, rotation: -1.63, origin: 1062")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del secondo modo per ♮ incitato,\\della musica participata et mista")
-                 (:de "")
+                 (:de "Beispiel des zweiten Modus per ♮ incitato\\der musica participata und mista.")
                  (:en "Example of the second mode in ♮ incitato,\\of musica participata and mista"))))
   (:data
    (:text 130 58
