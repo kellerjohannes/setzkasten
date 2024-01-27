@@ -4,7 +4,7 @@
    (:comment "q021_s098, origin: 954")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del quinto modo per ♮ incitato\\della musica participata e mista")
-                 (:de "")
+                 (:de "Beispiel des fünften Modus per ♮ incitato\\der musica participata und mista.")
                  (:en "Example of the fifth mode in ♮ incitato,\\of musica participata and mista"))))
   (:preamble-lilypond
    (:clef-overrides
