@@ -4,7 +4,7 @@
    (:comment "q021_s097, rotation: 0.96, origin: 552")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del terzo modo per ♭ molle,\\della musica participata e mista")
-                 (:de "")
+                 (:de "Beispiel des dritten Modus per ♭ molle\\der musica participata und mista.")
                  (:en "Example of the third mode in ♭ molle,\\of musica participata and mista"))))
   (:data
    (:text 110 58
