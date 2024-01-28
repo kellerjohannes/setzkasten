@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio della prima quinta delle spetie de i tre generi [commisti,] discendenti")
                  (:de "")
-                 (:en "Example of the first quinta of the species of the three [commixed] genera, descending"))))
+                 (:en "Example of the first quinta of the species of the three [mixed] genera, descending"))))
   (:data
    (:text 70 58
           (239 1598 "Eſſempio della prima Ɋuinta delle ſpetie de i tre generi diſcendenti."))
