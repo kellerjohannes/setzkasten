@@ -4,7 +4,7 @@
    (:comment "q021_s102, rotation: -0.81, origin: 974")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempi delle cadentie maggiori di breve senza punto,\\e con il punto dimiuite")
-                 (:de "")
+                 (:de "Beispiel der Kadenzen maggiori mit Breven ohne Punktierung\\und mit Punktierung diminuiert.")
                  (:en "Example of major cadences of a breve without dot,\\and diminished with a dot"))))
   (:data
    (:text 110 58
