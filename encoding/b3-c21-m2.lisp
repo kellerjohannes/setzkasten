@@ -4,7 +4,7 @@
    (:comment "q021_s100, origin: 992")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del settimo modo per ♮ incitato\\della musica participata et mista")
-                 (:de "")
+                 (:de "Beispiel des siebten Modus per ♮ incitato\\der musica participata und mista.")
                  (:en "Example of the seventh mode in ♮ incitato,\\of musica participata and mista"))))
   (:preamble-lilypond
    (:clef-overrides
