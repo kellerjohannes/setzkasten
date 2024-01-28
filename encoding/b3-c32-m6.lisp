@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio di molte cadentie del sesto modo, a quattro voci\\della musica participata e mista per ♭ molle")
                  (:de "")
-                 (:en "Example of many cadences of the sixth mode, in four voci\\of musica participata and mista in ♭ molle")))
+                 (:en "Example of many cadences of the sixth mode in four voci,\\of musica participata and mista in ♭ molle")))
    (:voice-labels
     (s1 v1 (:alt (:it "Cadentie del soprano")
                  (:de "")
