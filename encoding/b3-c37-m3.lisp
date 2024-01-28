@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio delle quattro quinte cromatiche,\\che segueno una dopo l'altra")
                  (:de "")
-                 (:en "Example of the four chromatic quinte\\which follow one after another")))
+                 (:en "Example of the four chromatic quinte\\which follow one after the other")))
    (:section-captions
     (s1 (:alt (:it "Prima quinta\\cromatica")
               (:de "")
