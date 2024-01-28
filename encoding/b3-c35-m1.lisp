@@ -18,7 +18,7 @@
                  (:en "Not good")))
     (s4 v4 (:alt (:it "Ottava falsa col soprano")
                  (:de "")
-                 (:en "Octave false with the soprano")))
+                 (:en "False ottava with the soprano")))
     (s7 v3 (:alt (:it "Dubbiosa col soprano")
                  (:de "")
                  (:en "Dubious with the soprano"))))
