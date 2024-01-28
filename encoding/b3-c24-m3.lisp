@@ -4,7 +4,7 @@
    (:comment "q021_s102, rotation: -0.81, origin: 960")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio delle cadentie minime, di minima e di semiminima\\deminuita e non, con il punto e senza")
-                 (:de "")
+                 (:de "Beispiel der Kadenzen minime mit Minima und Semiminima,\\diminuiert und nicht, mit Punktierung und ohne.")
                  (:en "Example of the minimal cadences, of a minima and of a semiminima,\\diminished and not [diminished], with the dot and without"))))
   (:preamble-lilypond
    (:clef-overrides
