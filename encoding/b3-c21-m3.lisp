@@ -4,7 +4,7 @@
    (:comment "q021_s100, origin: 994")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del settimo modo per ♭ molle\\della musica participata et mista")
-                 (:de "")
+                 (:de "Beispiel des siebten Modus per ♭ molle\\der musica participata und mista.")
                  (:en "Example of the seventh mode in ♭ molle,\\of musica participata and mista"))))
   (:data
    (:text 110 58
