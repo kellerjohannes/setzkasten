@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio di tre quarte differenti de i tre generi musicali,\\della terza spetie delle quarte.")
                  (:de "")
-                 (:en "Example of the three different quarte of the three musical genera\\of the third species of the quarte")))
+                 (:en "Example of the three different quarte of the three musical genera,\\of the third species of the quarte")))
    (:section-captions
     (s1 (:alt (:it "Terza quarta\\diatonica")
               (:de "")
