@@ -4,7 +4,7 @@
    (:comment "q021_s102, rotation: -0.81, origin: 974")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio delle cadentie minori di semibreve,\\e di minima, diminuite e non")
-                 (:de "")
+                 (:de "Beispiel der Kadenzen minori mit Semibreven\\und mit Minima, diminiert und nicht.")
                  (:en "Example of the minor cadences of a semibreve,\\and of a minima, diminished and not [diminished]"))))
   (:preamble-lilypond
    (:clef-overrides
