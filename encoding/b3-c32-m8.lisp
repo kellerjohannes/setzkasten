@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio di molte cadentie dell'ottavo modo della musica participata e mista")
                  (:de "")
-                 (:en "Example of many cadences of the eighth mode of musica participata and mista")))
+                 (:en "Example of many cadences of the eighth mode, of musica participata and mista")))
    (:voice-labels
     (s1 v1 (:alt (:it "Cadentie del soprano")
                  (:de "")
