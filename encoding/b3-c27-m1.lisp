@@ -4,7 +4,7 @@
    (:comment "q021_s105, origin: 519")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio delle cadentie a due voci intiere,\\e diminuite, e senza conclusione")
-                 (:de "Beispiel von Kadenzen mit zwei Stimmen ganz\\und diminuiert, und ohne Abschluss.")
+                 (:de "Beispiel von Kadenzen mit zwei Stimmen, ganz\\und diminuiert, und ohne Abschluss.")
                  (:en "Example of cadences in two undiminished voci,\\and diminished, and without conclusion")))
    (:section-captions
     (s1 (:alt (:it "buona")
