@@ -4,7 +4,7 @@
    (:comment "q021_s078, rotation: -0.92, origin: 966")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio della quintadecima, et della vigesima seconda,\\a tre voci, et a quattro")
-                 (:de "Beispiel der quintadecima und der vigesima seconda,\\für drei und vier Stimmen.")
+                 (:de "Beispiel der quintadecima und der vigesima seconda,\\mit drei und mit vier Stimmen.")
                  (:en "Example of the quinta decima, and of the vigesima seconda,\\in three and four voci")))
    (:section-headings
     (s1 (:alt (:it "Quintadecima con\\ottava in mezzo\\ ")
