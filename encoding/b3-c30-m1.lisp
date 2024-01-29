@@ -4,7 +4,7 @@
    (:comment "q021_s108, origin: 1007")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempi delle cadentie che fuggano la conclusione,\\per salti naturali all'in giù, et all'in sù")
-                 (:de "")
+                 (:de "Beispiel der Kadenzen, die den Abschluss fliehen,\\mit salti naturali nach unten und nach oben.")
                  (:en "Examples of the cadences which evade their conclusion,\\by naturali leaps going down and up"))))
   (:data
    (:text 110 58
