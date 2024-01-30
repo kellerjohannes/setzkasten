@@ -8,7 +8,7 @@
                  (:en "Example of the decime maggiori and minori,\\and how one can compose with them in various ways")))
    (:section-captions
     (s6 (:alt (:it "Dubbio di\\sustentatione")
-              (:de "bedenklich wegen\\sustentatione")
+              (:de "zweifelhaft wegen\\des Erhöhens")
               (:en "dubious [because susceptible]\\to sharpening"))))
    (:voice-order
     (s1 v1 v2)
