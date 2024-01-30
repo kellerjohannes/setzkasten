@@ -4,7 +4,7 @@
    (:comment "q021_s120, origin: 909")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del primo modo, cromatico")
-                 (:de "")
+                 (:de "Beispiel des ersten chromatischen Modus.")
                  (:en "Example of the first chromatic mode"))))
   (:data
    (:text 90 58
