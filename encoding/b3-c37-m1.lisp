@@ -5,10 +5,10 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
     (s1 (:alt (:it "Prima quinta\\diatonica")
-              (:de "")
+              (:de "erste diatonische\\quinta")
               (:en "First diatonic\\quinta")))
     (s2 (:alt (:it "Prima quinta\\cromatica")
-              (:de "")
+              (:de "erste chromatische\\quinta.")
               (:en "First chromatic\\quinta")))))
   (:data
    (:text 70 58
