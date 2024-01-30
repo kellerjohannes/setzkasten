@@ -5,10 +5,10 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
     (s1 (:alt (:it "Seconda quarta\\diatonica")
-              (:de "")
+              (:de "zweite diatonsiche\\quarta.")
               (:en "Second diatonic\\quarta")))
     (s2 (:alt (:it "Seconda quarta\\cromatica")
-              (:de "")
+              (:de "zweite chromatische\\quarta.")
               (:en "Second chromatic\\quarta")))))
   (:data
    (:text 70 58
