@@ -4,7 +4,7 @@
    (:comment "q021_s120, origin: 945")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del quarto modo cromatico")
-                 (:de "")
+                 (:de "Beispiel des vierten chromatischen Modus.")
                  (:en "Example of the fourth chromatic mode"))))
 (:preamble-lilypond
    (:alt (:tolgahan (:clef-overrides
