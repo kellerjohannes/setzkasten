@@ -4,7 +4,7 @@
    (:comment "q021_s120, origin: 936")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del terzo modo, cromatico")
-                 (:de "")
+                 (:de "Beispiel des dritten chromatischen Modus.")
                  (:en "Example of the third chromatic mode"))))
   (:data
    (:text 110 58
