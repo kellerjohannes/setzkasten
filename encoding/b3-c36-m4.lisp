@@ -4,17 +4,17 @@
    (:comment "q021_s118, origin: 935")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio delle tre quarte cromatiche")
-                 (:de "")
+                 (:de "Beispiel der drei chromatischen quarte.")
                  (:en "Example of the three chromatic quarte")))
    (:section-captions
     (s1 (:alt (:it "Prima quarta")
-              (:de "")
+              (:de "erste quarta")
               (:en "First quarta")))
     (s2 (:alt (:it "Seconda quarta")
-              (:de "")
+              (:de "zweite quarta")
               (:en "Second quarta")))
     (s3 (:alt (:it "Terza quarta")
-              (:de "")
+              (:de "dritte quarta")
               (:en "Third quarta")))))
   (:data
    (:text 70 58
