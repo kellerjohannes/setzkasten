@@ -4,7 +4,7 @@
    (:comment "q021_s120, origin: 918")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del secondo modo cromatico")
-                 (:de "")
+                 (:de "Beispiel des zweiten chromatischen Modus.")
                  (:en "Example of the second chromatic mode"))))
 (:preamble-lilypond
    (:alt (:tolgahan (:clef-overrides
