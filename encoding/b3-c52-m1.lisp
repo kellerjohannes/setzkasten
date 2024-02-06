@@ -16,10 +16,10 @@
                    (:en "[Alto]")))
     (s1 v3 (:alt (:it "[Tenore]")
                    (:de "")
-                   (:en "[Tenore]")))
+                   (:en "[Tenor]")))
     (s1 v4 (:alt (:it "[Basso]")
                    (:de "")
-                   (:en "[Basso]")))))
+                   (:en "[Bass]")))))
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble")
