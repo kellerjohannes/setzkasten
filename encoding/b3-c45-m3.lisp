@@ -4,7 +4,7 @@
    (:comment "q021_s125, rotation: 0.35, origin: 459")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio di tre quarte differenti de i tre generi musicali,\\della terza spetie delle quarte.")
-                 (:de "Beispiel der drei verschiedenen quarte der drei musikalischen Genera,\\der dritten Spezies der quarte.")
+                 (:de "Beispiel der drei verschiedenen quarte in den drei musikalischen Genera,\\der dritten Spezies der quarte.")
                  (:en "Example of the three different quarte of the three musical genera,\\of the third species of the quarte")))
    (:section-captions
     (s1 (:alt (:it "Terza quarta\\diatonica")
