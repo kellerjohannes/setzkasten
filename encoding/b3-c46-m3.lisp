@@ -5,13 +5,13 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:section-captions
     (s1 (:alt (:it "Terza quinta\\diatonica")
-              (:de "")
+              (:de "dritte diatonische\\quinta")
               (:en "Third diatonic\\quinta")))
     (s2 (:alt (:it "Terza quinta\\cromatica")
-              (:de "")
+              (:de "dritte chromatische\\quinta")
               (:en "Third chromatic\\quinta")))
     (s3 (:alt (:it "Terza quinta\\enarmonica")
-              (:de "")
+              (:de "dritte enharmonische\\quinta")
               (:en "Third enharmonic\\quinta")))))
   (:data
    (:text 70 58
