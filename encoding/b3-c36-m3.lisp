@@ -5,10 +5,10 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
     (s1 (:alt (:it "Terza quarta\\diatonica")
-              (:de "dritte diatonische\\quarta.")
+              (:de "Dritte diatonische\\quarta.")
               (:en "Third diatonic\\quarta")))
     (s2 (:alt (:it "Terza quarta\\cromatica")
-              (:de "dritte chromatische\\quarta.")
+              (:de "Dritte chromatische\\quarta.")
               (:en "Third chromatic\\quarta")))))
   (:data
    (:text 70 58
