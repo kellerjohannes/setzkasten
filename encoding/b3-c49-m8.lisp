@@ -4,7 +4,7 @@
    (:comment "q021_s131, origin: 461")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del ottavo modo enarmonico semplice")
-                 (:de "")
+                 (:de "Beispiel des einfachen achten enharmonischen Modus.")
                  (:en "Example of the simple eighth enharmonic mode"))))
   (:data
    (:text 90 58
