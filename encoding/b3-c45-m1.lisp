@@ -4,7 +4,7 @@
    (:comment "q021_s124, origin: 977")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio di tre quarte differenti delli tre generi\\musicali, della prima spetie delle quarte")
-                 (:de "Beispiel der drei unterschiedlichen quarte der drei musikalischen Genera,\\der ersten Spezies der quarte.")
+                 (:de "Beispiel der drei unterschiedlichen quarte in den drei musikalischen Genera,\\der ersten Spezies der quarte.")
                  (:en "Example of the three different quarte of the three musical\\genera, of the first species of the quarte")))
    (:section-captions
     (s1 (:alt (:it "Prima quarta\\diatonica")
