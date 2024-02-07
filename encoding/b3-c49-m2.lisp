@@ -4,7 +4,7 @@
    (:comment "q021_s131, origin: 436")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del secondo modo enarmonico semplice")
-                 (:de "")
+                 (:de "Beispiel des einfachen zweiten enharmonischen Modus.")
                  (:en "Example of the simple second enharmonic mode"))))
   (:preamble-lilypond
    (:alt (:tolgahan (:clef-overrides
