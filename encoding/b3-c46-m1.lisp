@@ -4,17 +4,17 @@
    (:comment "q021_s125, rotation: 0.35, origin: 473")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio di tre quinte differenti, di i tre generi musicali,\\della prima spetie delle quinte")
-                 (:de "")
+                 (:de "Beispiel der drei verschiedenen quinte in den drei musikalischen Genera,\\der ersten Spezies der quinte.")
                  (:en "Example of the three different quinte of the three musical genera,\\of the first species of the quinte")))
    (:section-captions
     (s1 (:alt (:it "Prima quinta\\diatonica")
-              (:de "")
+              (:de "erste diatonische\\quinta")
               (:en "First diatonic\\quinta")))
     (s2 (:alt (:it "Prima quinta\\cromatica")
-              (:de "")
+              (:de "erste chromatische\\quinta")
               (:en "First chromatic\\quinta")))
     (s3 (:alt (:it "Prima quinta\\enarmonica")
-              (:de "")
+              (:de "erste enharmonische\\quinta")
               (:en "First enharmonic\\quinta")))))
   (:data
    (:text 70 58
