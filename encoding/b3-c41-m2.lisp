@@ -4,7 +4,7 @@
    (:comment "q021_s121, origin: 471")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del sesto modo cromatico")
-                 (:de "")
+                 (:de "Beispiel des sechsten chromatischen Modus.")
                  (:en "Example of the sixth chromatic mode"))))
   (:preamble-lilypond
    (:clef-overrides
