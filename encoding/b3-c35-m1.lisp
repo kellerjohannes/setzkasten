@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:voice-labels
     (s1 v4 (:alt (:it "Quinta parte")
-                 (:de "Quinta Stimme.")
+                 (:de "Quinta-Stimme.")
                  (:en "Fifth part")))
     (s2 v4 (:alt (:it "Buona")
                  (:de "gut")
