@@ -4,7 +4,7 @@
    (:comment "q021_s121, origin: 480")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio dell'ottavo modo cromatico")
-                 (:de "")
+                 (:de "Beispiel des achten chromatischen Modus.")
                  (:en "Example of the eighth chromatic mode"))))
   (:data
    (:text 110 58
