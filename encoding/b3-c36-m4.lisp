@@ -8,13 +8,13 @@
                  (:en "Example of the three chromatic quarte")))
    (:section-captions
     (s1 (:alt (:it "Prima quarta")
-              (:de "erste quarta")
+              (:de "Erste quarta.")
               (:en "First quarta")))
     (s2 (:alt (:it "Seconda quarta")
-              (:de "zweite quarta")
+              (:de "Zweite quarta.")
               (:en "Second quarta")))
     (s3 (:alt (:it "Terza quarta")
-              (:de "dritte quarta")
+              (:de "Dritte quarta.")
               (:en "Third quarta")))))
   (:data
    (:text 70 58
