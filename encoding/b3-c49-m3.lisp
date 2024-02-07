@@ -4,7 +4,7 @@
    (:comment "q021_s131, origin: 436")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del terzo modo enarmonico semplice")
-                 (:de "")
+                 (:de "Beispiel des einfachen dritten enharmonischen Modus.")
                  (:en "Example of the simple third enharmonic mode"))))
   (:data
    (:text 90 58
