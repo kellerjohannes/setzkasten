@@ -4,7 +4,7 @@
    (:comment "q021_s129, rotation: 1.14, origin: 459")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Prima quarta commista de i tre generi, e variate sorti,\\delle sue spetie ascendenti e discendenti")
-                 (:de "")
+                 (:de "Erste aus den drei Genera vermischten quarta, und verschiedene Arten\\ihrer aufsteigenden und absteigenden Spezies.")
                  (:en "First mixed quarta of the three genera, and various kinds of their ascending and descending species"))))
   (:data
    (:text 70 58
