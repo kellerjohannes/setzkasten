@@ -4,7 +4,7 @@
    (:comment "q021_s131, origin: 436")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del quarto modo enarmonico semplice")
-                 (:de "")
+                 (:de "Beispiel des einfachen vierten enharmonischen Modus.")
                  (:en "Example of the simple fourth enharmonic mode"))))
 
   (:preamble-lilypond
