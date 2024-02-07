@@ -5,16 +5,16 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:voice-labels
     (s1 v1 (:alt (:it "Cadentie cromatiche")
-                 (:de "")
+                 (:de "Chromatische Kadenzen.")
                  (:en "Chromatic cadences")))
     (s1 v2 (:alt (:it "Cadentie cromatiche")
-                 (:de "")
+                 (:de "Chromatische Kadenzen.")
                  (:en "Chromatic cadences")))
     (s1 v3 (:alt (:it "Cadentie cromatiche")
-                 (:de "")
+                 (:de "Chromatische Kadenzen.")
                  (:en "Chromatic cadences")))
     (s1 v4 (:alt (:it "Cadentie cromatiche")
-                 (:de "")
+                 (:de "Chromatische Kadenzen.")
                  (:en "Chromatic cadences")))))
   (:data
    (:text 90 58
