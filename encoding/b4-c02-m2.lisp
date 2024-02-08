@@ -4,7 +4,7 @@
    (:comment "q021_s145, rotation: 1.8, origin: 529; q021_s146, rotation: -1.2, origin: 859. Für dieses Beispiel wird keine normalisierte Version angeboten. Alternativ könnte eine Normalisierung in originalen Schlüsseln hergestellt werden.")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Dimostratione delle chiavi dei soprani, che insegnano a leggere\\tutte l'altre sorti di chiavi per ♭ incitato et per ♭ molle,\\et per musica finta")
-                 (:de "Dartsellung der Schlüssel der Soprani, die lehren\\alle anderen Arten von Schlüsseln zu lesen per ♭ incitato und per ♭ molle\\und für musica finta.")
+                 (:de "Darstellung der Schlüssel der Soprani, die lehren\\alle anderen Arten von Schlüsseln zu lesen per ♭ incitato und per ♭ molle\\und für musica finta.")
                  (:en "Illustration of the chiavi of the sopranos which give instruction for reading\\all other kinds of chiavi in ♭ incitato and per ♭ molle,\\and musica finta")))
    (:line-headings
     (:alt (:it "Primo ordine")
