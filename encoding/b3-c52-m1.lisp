@@ -4,21 +4,21 @@
    (:comment "q021_s134, origin: 996; q021_s135, rotation: 1.9, origin: 441")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio della prima parte di uno madrigale a quattro voci,\\che si può cantare à cinque modi, cioè,\\diatonico e poi\\cromatico e poi\\cromatico e enarmonico e poi\\diatonico e cromatico e poi\\diatonico e cromatico e enarmonico")
-                 (:de "")
+                 (:de "Beispiel des erten Teils eines Madrigals für vier Stimmen,\\das auf fünf Arten und Weisen gesungen werden kann, d.h. diatonisch und dann chromatisch, und dann chromatisch und enharmonisch, und dann diatonisch und chromatisch, und dann diatonisch und chromatisch und enharmonisch.")
                  (:en "Example of the first part of a madrigal in four voci\\which may be sung in five ways: that is\\diatonic and then\\chromatic and then\\chromatic and enharmonic and then\\diatonic and chromatic and then\\diatonic, chromatic and enharmonic.")))
                  
    (:voice-labels
     (s1 v1 (:alt (:it "[Soprano]")
-                   (:de "")
+                   (:de "[Soprano]")
                    (:en "[Soprano]")))
     (s1 v2 (:alt (:it "[Alto]")
-                   (:de "")
+                   (:de "[Alto]")
                    (:en "[Alto]")))
     (s1 v3 (:alt (:it "[Tenore]")
-                   (:de "")
+                   (:de "[Tenore]")
                    (:en "[Tenor]")))
     (s1 v4 (:alt (:it "[Basso]")
-                   (:de "")
+                   (:de "[Basso]")
                    (:en "[Bass]")))))
   (:preamble-lilypond
    (:clef-overrides
