@@ -4,7 +4,7 @@
    (:comment "q021_s136, origin: 966 et al.; q021_s137, rotation: 1.25, origin: 491")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "[Madonna il poco dolce]")
-                 (:de "")
+                 (:de "[Madonna il poco dolce]")
                  (:en "[Madonna il poco dolce]")))
    (:voice-labels
    ;;Kommentar Anne: you don't give us the possibility of translating these to German and English here.
