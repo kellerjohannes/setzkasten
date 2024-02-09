@@ -5,16 +5,16 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:line-headings
     (:alt (:it "Esempio della prolatione perfetta in tempo perfetto")
-          (:de "")
+          (:de "Beispiel der Prolatio maior im Tempus perfectus.")
           (:en "Example of perfect prolation in perfect tempus"))
-    (:alt (:it "Prolatione perfetta in tempo imperfetto")
-          (:de "")
+    (:alt (:it "[Beispiel der] Prolatione perfetta in tempo imperfetto")
+          (:de "Prolatio maior im Tempus imperfectus.")
           (:en "Perfect prolation in imperfect tempus"))
     (:alt (:it "Esempio della prolatione imperfetta in tempo perfetto")
-          (:de "")
+          (:de "Beispiel der Prolatio minor im Tempus perfectus.")
           (:en "Example of imperfect prolation in perfect tempus"))
     (:alt (:it "Prolatione imperfetto in tempo imperfetto")
-          (:de "")
+          (:de "[Beispiel der] Prolatio minor im Tempus imperfectus.")
           (:en "Imperfect prolation in imperfect tempus"))))
   (:data
    (:text 90 58
