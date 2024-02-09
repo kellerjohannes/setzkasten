@@ -5,10 +5,10 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
     (s1 (:alt (:it "Esempio del modo\\maggiore perfetto")
-              (:de "Beispiel des Modus\\major perfectus")
+              (:de "Beispiel des Modus\\maior perfectus")
               (:en "Example of the major\\perfect mode")))
     (s2 (:alt (:it "Del modo maggiore\\imperfetto")
-              (:de "[Beispiel] des Modus major\\imperfectus")
+              (:de "[Beispiel] des Modus maior\\imperfectus")
               (:en "Of the major\\imperfect mode")))
     (s3 (:alt (:it "Del minor\\perfetto")
               (:de "[Beispiel] des [Modus] minor\\perfectus")
