@@ -5,16 +5,16 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:section-captions
     (s1 (:alt (:it "semitono maggiore")
-              (:de "")
+              (:de "semitono maggiore")
               (:en "semitono maggiore")))
     (s2 (:alt (:it "semitono minore")
-              (:de "")
+              (:de "semitono minore")
               (:en "semitono minore")))
     (s3 (:alt (:it "semitono maggiore")
-              (:de "")
+              (:de "semitono maggiore")
               (:en "semitono maggiore")))
     (s4 (:alt (:it "semitono minore")
-              (:de "")
+              (:de "semitono minore")
               (:en "semitono minore")))))
   (:data
    (:music 2241
