@@ -5,16 +5,16 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
     (s1 (:alt (:it "Esempio di batter alla breve")
-              (:de "")
+              (:de "Beispiel alla breve zu schlagen.")
               (:en "Example of beating alla breve")))
     (s2 (:alt (:it "Alla breve")
-              (:de "")
+              (:de "alla breve")
               (:en "Alla breve")))
     (s3 (:alt (:it "Alla semibreve")
-              (:de "")
+              (:de "alla semibreve")
               (:en "Alla semibreve")))
     (s4 (:alt (:it "Di proportione sesqualtera")
-              (:de "")
+              (:de "in der proportione sesqualtera")
               (:en "Of the proportion sesquialtera")))))
   (:data
    (:text 90 58
