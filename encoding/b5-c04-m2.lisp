@@ -5,10 +5,10 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:section-captions
     (s1 (:alt (:it "semitono minore\\di Alamire")
-              (:de "")
+              (:de "semitono minore\\von Alamire")
               (:en "semitono minore\\from Alamire")))
     (s2 (:alt (:it "semitono maggiore\\di Alamire")
-              (:de "")
+              (:de "semitono maggiore\\von Alamire")
               (:en "semitono maggiore\\from Alamire")))))
   (:data
    (:music 966
