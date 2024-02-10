@@ -4,7 +4,7 @@
    (:comment "q021_s151, rotation: 0, origin: 430. Für dieses Beispiel wird keine normalisierte Version angeboten.")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio de salti cattivi con le pause,\\et i sospiri notati nei luoghi dei salti giusti")
-                 (:de "Beispiel der schlechten Sprünge mit den notierten Pausen\\und den sospiri an den Orten der guten Sprünge.")
+                 (:de "Beispiel der schlechten Sprünge mit den notierten Pausen\\und den sospiri an den Orten der rechten Sprünge.")
                  (:en "Example of bad leaps with the rests\\and the sospiri notated in the locations of the good leaps")))
    (:section-headings
     (s1 (:alt (:it "[Buono]")
