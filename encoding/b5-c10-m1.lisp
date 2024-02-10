@@ -21,7 +21,7 @@
               (:en "The four ascending terze\\with [their] propinque")))
     (s5 (:alt (:it " \\Quinta")
               (:de " \\quinta")
-              (:en "Quinta")))
+              (:en " \\Quinta")))
     (s6 (:alt (:it "Le quattro seste ascendenti\\con le sue propinque")
               (:de "die vier aufsteigenden seste\\mit ihren propinque")
               (:en "The four ascending seste\\with their propinque"))))
