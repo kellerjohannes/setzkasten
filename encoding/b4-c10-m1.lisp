@@ -31,22 +31,22 @@
    ;; OPEN
    (:section-headings
     (s1 (:alt (:it "Esempio delle note colorite nel canto fermo")
-              (:de "")
+              (:de "Beispiel der farbigen Noten im canto fermo.")
               (:en "Example of colored notes in canto fermo")))
     (s2 (:alt (:it "Colorite nel tempo perfetto")
-              (:de "")
+              (:de "farbige [Noten] im Tempus perfectus")
               (:en "Colored [notes] in perfect tempus")))
     (s3 (:alt (:it "Colorite nel tempo imperfetto")
-              (:de "")
+              (:de "farbige [Noten] im Tempus imperfectus")
               (:en "Colored [notes] in imperfect tempus")))
     (s4 (:alt (:it "Colorite nell'emiolia maggiore")
-              (:de "")
+              (:de "farbige [Noten] in Hemiola maior")
               (:en "Colored [notes] in emiolia maggiore")))
     (s5 (:alt (:it "Colorite nell'emiolia minore")
-              (:de "")
+              (:de "farbige [Noten] in Hemiola minor")
               (:en "Colored [notes] in emiolia minore")))
     (s6 (:alt (:it "Cantar alla breve detto da prattici")
-              (:de "")
+              (:de "von den Praktikern Singen alla breve genannt")
               (:en "Called singing alla breve by practical [musicians]")))))
   (:data
    (:text 90 58
