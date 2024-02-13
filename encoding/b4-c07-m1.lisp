@@ -4,7 +4,7 @@
    (:comment "q021_s151, rotation: , origin: 425. Für dieses Beispiel wird keine normalisierte Version angeboten.")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio delle pause notate nel tempo perfetto,\\et nel imperfetto")
-                 (:de "Beispiel der im Tempus perfectus\\und im [Tempus] imperfectus notierten Pausen.")
+                 (:de "Beispiel der im Tempus perfectus\\und im [Tempus] imperfectus notierten Pausen")
                  (:en "Example of notated rests in perfect tempus\\and in imperfect")))
    (:section-captions
     (s1 (:alt (:it "[Buono]")
