@@ -4,7 +4,7 @@
    (:comment "q021_s024, origin: 1052")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Mano della divisione del tono in quattro diesis enarmonici ascendenti\\con lo semitono minore")
-                 (:de "Hand mit der Unterteilung des tono in vier aufsteigenden diesis enarmonici mit dem semitono minore.")
+                 (:de "Hand mit der Unterteilung des tono in vier aufsteigenden diesis enarmonici\\mit dem semitono minore")
                  (:en "Hand of the division of the tono into four ascending diesis enarmonici\\with the semitono minore")))
    (:section-headings
     (s1 (:alt (:it "da Alamire a Bmi")
