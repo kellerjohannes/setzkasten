@@ -5,10 +5,10 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:line-headings
     (:alt (:it "Esempio del tempo perfetto")
-          (:de "Beispiel des Tempus perfectus.")
+          (:de "Beispiel des Tempus perfectus")
           (:en "Example of perfect tempus"))
           (:alt (:it "Esempio del tempo imperfetto")
-                (:de "Beispiel des Tempus imperfectus.")
+                (:de "Beispiel des Tempus imperfectus")
                 (:en "Example of imperfect tempus"))))
   (:data
    (:text 90 58
