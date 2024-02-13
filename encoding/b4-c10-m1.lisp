@@ -31,7 +31,7 @@
    ;; OPEN
    (:section-headings
     (s1 (:alt (:it "Esempio delle note colorite nel canto fermo")
-              (:de "Beispiel der farbigen Noten im canto fermo.")
+              (:de "Beispiel der farbigen Noten im canto fermo")
               (:en "Example of colored notes in canto fermo")))
     (s2 (:alt (:it "Colorite nel tempo perfetto")
               (:de "farbige [Noten] im Tempus perfectus")
