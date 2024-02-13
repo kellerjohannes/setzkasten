@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
     (s1 (:alt (:it "Esempio di batter alla breve")
-              (:de "Beispiel alla breve zu schlagen.")
+              (:de "Beispiel alla breve zu schlagen")
               (:en "Example of beating alla breve")))
     (s2 (:alt (:it "Alla breve")
               (:de "alla breve")
