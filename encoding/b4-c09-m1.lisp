@@ -4,7 +4,7 @@
    (:comment "q021_s152, rotation: 0.79, origin: 961")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio dell'ordine di procedere con le note, una dopo l'altra")
-                 (:de "Beispiel der Ordnung mit den Noten, eine nach der anderen, fortzuschreiten.")
+                 (:de "Beispiel der Ordnung, mit den Noten, eine nach der anderen, fortzuschreiten")
                  (:en "Example of the order of moving with the notes, one after the other")))
    (:section-headings
     (s1 (:alt (:it "[Buono]")
