@@ -4,7 +4,7 @@
    (:comment "q021_s154, rotation: 0, origin: 898")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio della nota imaginativa sussequente a quella nota da chi se parte il salto")
-                 (:de "")
+                 (:de "Beispiel der vorstellenden Note folgend derjenigen Note, von welcher der Sprung beginnt")
                  (:en "Example of the imaginative note subsequent to that note from which the leap begins"))))
   (:data
    (:text 90 58
