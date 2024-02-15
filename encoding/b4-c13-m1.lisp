@@ -5,11 +5,11 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:line-headings
     (:alt (:it "Punto in sincopa a due voci")
-          (:de "")
+          (:de "Punkt in [Vorhalts-]Synkope mit zwei Stimmen")
           (:en "Dot of the sincopa [suspension] in two voci"))
           nil
     (:alt (:it "Punti dubbiosi di pigliar fiato")
-          (:de "")
+          (:de "zweifelhafte Punkte, um Atem zu schnappen")
           (:en "Dubious dots for taking a breath")))
    ;; Kommentar Anne: this does not appear anywhere in your example and probably belongs to the
    ;; example with the octave and the fifth.
@@ -21,25 +21,25 @@
    ;; OPEN
    (:section-headings
     (s1 (:alt (:it "Esempio del punto di quinta e di seconda")
-              (:de "")
+              (:de "Beispiel des Punkts der quinta und der seconda")
               (:en "Example of the dot of the quinta and of the seconda")))
     (s2 (:alt (:it "Punto di quarta")
-              (:de "")
+              (:de "Punkt der quarta")
               (:en "Dot of the quarta")))
     (s3 (:alt (:it "Punto di settima")
-              (:de "")
-              (:en "Dot of the seventh")))
+              (:de "Punkt der settima")
+              (:en "Dot of the settima")))
     (s4 (:alt (:it "[Punto] di undecima")
-              (:de "")
-              (:en "[Dot] of the eleventh")))
+              (:de "[Punkt] der undecima")
+              (:en "[Dot] of the undecima")))
     (s5 (:alt (:it "Punto che salva due ottave")
-              (:de "")
+              (:de "Punkt, der zwei [parallele] ottave rettet")
               (:en "Dot which rescues two [consecutive] ottave")))
     (s6 (:alt (:it "[Punto che] salva due quinte")
-              (:de "")
+              (:de "[Punkt, der] zwei [parallele] quinte rettat")
               (:en "[Dot which] rescues two quinte")))
     (s7 (:alt (:it "Punto d'affanno")
-              (:de "")
+              (:de "Punkt des Schmerzes")
               (:en "Dot of pain")))))
   (:data
    (:text 90 58
