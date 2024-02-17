@@ -4,7 +4,7 @@
    (:comment "q021_s58, rotation: -0.92, origin: 1038")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio della sincopa maggiore, et minore, et minima")
-                 (:de "Beispiel der sincopa maggiore, und minore, und minima.")
+                 (:de "Beispiel der sincopa maggiore, und minore, und minima")
                  (:en "Example of the major, minor, and minimal sincopa")))
    (:section-headings
     (s1 (:alt (:it "A due voci")
