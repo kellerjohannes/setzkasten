@@ -10,8 +10,8 @@
                  ;; JK: Oha, ja natürlich, habe ich geändert.
                  ;;
                  ;; DONE
-                 (:de "Beispiel der seconda und der quarta,\\wie man sie mit drei Stimmen, Alto, Tenore und Basso zusammen setzt.")
-                 (:en "Example of the seconda and the quarta,\\[as to] how they are to be composed in three voci, alto, tenor, and bass")))
+                 (:de "Beispiel der seconda und der quarta,\\wie man sie mit drei Stimmen, Alto, Tenore und Basso zusammen setzt")
+                 (:en "Example of the seconda and the quarta,\\[as to] how they are to be composed in three voci, alto, tenore, and basso")))
    (:section-headings
     (s1 (:alt (:it "Buona")
               (:de "gut")
