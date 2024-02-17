@@ -4,7 +4,7 @@
    (:comment "q021_s072, rotation: 0, origin: 1076")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio delle seste simili")
-                 (:de "Beispiel der ähnlichen seste.")
+                 (:de "Beispiel der ähnlichen seste")
                  (:en "Example of similar seste")))
    (:section-headings
     (s1 (:alt (:it "A due voci")
