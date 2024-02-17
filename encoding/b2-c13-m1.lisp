@@ -4,7 +4,7 @@
    (:comment "q021_s065, rotation: 0, origin: 454")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio della sincopa tutta buona, come in molti modi\\si può usare, a due voci, et a più")
-                 (:de "Beispiel der gänzlich guten [sc. konsonanten] Synkope, wie sie auf viele Arten und Weisen\\gebraucht werden kann, mit zwei und mit mehr Stimmen.")
+                 (:de "Beispiel der gänzlich guten [sc. konsonanten] Synkope, wie sie auf viele Arten und Weisen\\gebraucht werden kann, mit zwei und mit mehr Stimmen")
                  (:en "Example of the wholly good sincopa: how it can\\be used in many ways in two and more voci")))
    (:section-headings
     (s1 (:alt (:it "A due voci")
