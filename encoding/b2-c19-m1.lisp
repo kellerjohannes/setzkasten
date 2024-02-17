@@ -4,7 +4,7 @@
    (:comment "q021_s070, rotation: -0.61, origin: 973")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio della sesta minore, come in vari modi si può comporre")
-                 (:de "Beispiel, wie die sesta minori auf unterschiedlicheArten und Weisen gesetzt werden kann.")
+                 (:de "Beispiel, wie die sesta minori auf unterschiedliche Arten und Weisen gesetzt werden kann")
                  (:en "Example of the sesta minore: how it can be composed in various ways")))
    (:section-headings
     (s1 (:alt (:it "A due voci")
