@@ -4,14 +4,14 @@
    (:comment "q021_s066, rotation: -0.4, origin: 1011")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio dei molti modi, che si può accompagnare la terza minore")
-                 (:de "Beispiel für viele Arten und Weisen, wie man die terza minore begleiten kann.")
+                 (:de "Beispiel von vielen Arten und Weisen, wie man die terza minore begleiten kann")
                  (:en "Example of the many ways one can accompany the terza minore")))
    (:section-headings
     (s1 (:alt (:it "Grado molle\\e consonante")
               (:de "molle und\\konsonanter Tonschritt")
               (:en "molle and\\consonant step")))
     (s2 (:alt (:it "Grado incitato\\e molle")
-              (:de "incitato\\und molle Tonschritt")
+              (:de "incitato\\und molle")
               (:en "incitato and\\molle step")))
     ;; AS: Kommentar David: Captions to Nos. 3–8: personally I don't think it's necessary to add
     ;; "step[s]" in square brackets – it's obvious from Nos. 1 and 2 that this is also meant for
