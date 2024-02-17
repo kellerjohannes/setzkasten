@@ -4,7 +4,7 @@
    (:comment "q021_s060, rotation: 0, origin: 990")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio della quarta sincopata a due voci,\\et non sincopata a tre voci, et con il punto:\\come s'ha da comporre a molte voci, et con la sincopa tutta cattiva")
-                 (:de "Beispiel der synkopierten quarta mit zwei Stimmen,\\ und nicht synkopiert mit drei Stimmen, und mit der Punktierung;\\und wie man sie mit vielen Stimmen setzt und mit der gänzlich schlechten Synkope.")
+                 (:de "Beispiel der synkopierten quarta mit zwei Stimmen,\\ und nicht synkopiert mit drei Stimmen, und mit der Punktierung;\\und wie man sie mit vielen Stimmen setzt und mit der gänzlich schlechten Synkope")
                  (:en "Example of the quarta sincopata in two voci,\\ and not sincopata in three voci;\\and how it is to be composed with the dot in many voci; and with the\\wholly bad sincopa")))
    ;; Kommentar Anne: or with the "suspension dissonance of a quarta"?
    ;; JK: Ja, würde ich ergänzen, habe ich bereits eingepflegt.
