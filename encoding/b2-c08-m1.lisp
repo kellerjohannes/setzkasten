@@ -4,7 +4,7 @@
    (:comment "q021_s062, rotation: -0.75, origin: 937")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del modo di comporre il tritono")
-                 (:de "Beispiel der Art und Weise, den tritono zu setzen.")
+                 (:de "Beispiel der Art und Weise, den tritono zu setzen")
                  (:en "Example of the method of composing with the tritono")))
    (:section-headings
     (s1 (:alt (:it "A due voci")
@@ -16,19 +16,19 @@
    (:voice-labels
     (s1 v1 (:alt (:it "Tenore")
                  (:de "Tenore")
-                 (:en "Tenor")))
+                 (:en "Tenore")))
     (s1 v2 (:alt (:it "Tenore")
                  (:de "Tenore")
-                 (:en "Tenor")))
+                 (:en "Tenore")))
     (s2 v1 (:alt (:it "Alto")
                  (:de "Alto")
                  (:en "Alto")))
     (s2 v2 (:alt (:it "Tenore")
                  (:de "Tenore")
-                 (:en "Tenor")))
+                 (:en "Tenore")))
     (s2 v3 (:alt (:it "Basso")
                  (:de "Basso")
-                 (:en "Bass")))))
+                 (:en "Basso")))))
   (:data
    (:text 70 58
      (538 986 "Eſſempio del modo di comporre il Tritono."))
