@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Dimostratione delle chiavi dei soprani, che insegnano a leggere\\tutte l'altre sorti di chiavi per ♭ incitato et per ♭ molle,\\et per musica finta")
                  (:de "Darstellung der Schlüssel der Soprani, die lehren,\\alle anderen Arten von Schlüsseln zu lesen, per ♭ incitato und per ♭ molle\\und für musica finta")
-                 (:en "Illustration of the chiavi of the sopranos which give instruction for reading\\all other kinds of chiavi in ♭ incitato and per ♭ molle,\\and musica finta")))
+                 (:en "Illustration of the chiavi of the sopranos which give instruction for reading\\all other kinds of chiavi in ♭ incitato and in ♭ molle\\and in musica finta")))
    (:line-headings
     (:alt (:it "Primo ordine")
           (:de "erste Ordnung")
