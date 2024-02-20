@@ -9,13 +9,13 @@
           (:en "Example of perfect prolation in perfect tempus"))
     (:alt (:it "Prolatione perfetta in tempo imperfetto")
           (:de "[Beispiel der] Prolatio maior im Tempus imperfectus")
-          (:en "Perfect prolation in imperfect tempus"))
+          (:en "[Example of] Perfect prolation in imperfect tempus"))
     (:alt (:it "Esempio della prolatione imperfetta in tempo perfetto")
           (:de "Beispiel der Prolatio minor im Tempus perfectus")
           (:en "Example of imperfect prolation in perfect tempus"))
     (:alt (:it "Prolatione imperfetto in tempo imperfetto")
           (:de "[Beispiel der] Prolatio minor im Tempus imperfectus")
-          (:en "Imperfect prolation in imperfect tempus"))))
+          (:en "[Example of] Imperfect prolation in imperfect tempus"))))
   (:data
    (:text 90 58
           (0 1115 "Eſſempio della Prolatione perfet. in tēpo perfet.")
