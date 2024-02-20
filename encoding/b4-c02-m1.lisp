@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio delle chiavi dei soprani, et dei contralti, dei tenori, et dei bassi")
                  (:de "Beispiel der Schlüssel der Soprani und der Contr'alti, der Tenori und der Bassi")
-                 (:en "Example of the chiave of the sopranos, of the altos, of the tenors, and of the basses")))
+                 (:en "Example of the chiavi of the sopranos, of the altos, of the tenors and of the basses")))
    (:section-captions
     (s1 (:alt (:it "Chiave di Gsolreut")
               (:de "Schlüssel des Gsolreut")
