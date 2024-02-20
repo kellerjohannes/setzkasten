@@ -4,18 +4,19 @@
    (:comment "q021_s147, rotation: -1.13, origin: 393. Für dieses Beispiel wird keine normalisierte Version angeboten.")
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
+   ;; Kommentar Anne: In den ersten drei Beispiele hast die Pausen modernisiert. Ich finde es geht hier nicht, weil im Kapitel beschreibt er wie die Striche 3 bis 4 Linien touchieren. Zu dem sind sie keine Pausen in dem Stück, sie geben nur den Modus an und die Form ist wichtig für die Verständnis des Modus. 
     (s1 (:alt (:it "Esempio del modo\\maggiore perfetto")
               (:de "Beispiel des Modus\\maior perfectus")
-              (:en "Example of the major\\perfect mode")))
+              (:en "Example of the major\\perfect modus")))
     (s2 (:alt (:it "Del modo maggiore\\imperfetto")
               (:de "[Beispiel] des Modus maior\\imperfectus")
-              (:en "Of the major\\imperfect mode")))
+              (:en "[Example] of the major\\imperfect modus")))
     (s3 (:alt (:it "Del minor\\perfetto")
               (:de "[Beispiel] des [Modus] minor\\perfectus")
-              (:en "Of the minor\\perfect [mode]")))
+              (:en "[Example] of the minor\\perfect [modus]")))
     (s4 (:alt (:it "Del minor\\imperfetto")
               (:de "[Beispiel] des [Modus] minor\\imperfectus")
-              (:en "Of the minor\\imperfect [mode]")))))
+              (:en "[Example] of the minor\\imperfect [modus]")))))
   (:data
    (:text 90 58
           (90 912 "Eſſempio del modo maggiore perfetto,")
