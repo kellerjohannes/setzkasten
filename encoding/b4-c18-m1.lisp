@@ -4,15 +4,15 @@
    (:comment "q021_s160, rotation: 0, origin: 898")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio del primo modo perfetto")
-                 (:de "")
+                 (:de "Beispiel des perfekten ersten Modus")
                  (:en "Example of the perfect first mode")))
    (:section-headings
     (s1 "")
     (s2 (:alt (:it "Il procedere non è buono\\per cagion del tritono")
-              (:de "")
+              (:de "das Fortschreiten ist nicht gut\\wegen des tritono")
               (:en "The movement is not good\\on account of the tritono")))
     (s3 (:alt (:it "Questo procedere è buono\\perche fugge il tritono con il ♭")
-              (:de "")
+              (:de "dieses Fortschreiten ist gut\\weil der tritono mit dem ♭ vermieden wird")
               (:en "This movement is good\\because it evades the tritono with the ♭")))))
   (:data
    (:text 90 58
