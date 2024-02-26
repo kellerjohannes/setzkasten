@@ -6,12 +6,7 @@
    (:section-headings
     (s2 (:alt (:it "Tenore convertito in soprano\\per ottava più alto")
               (:de "")
-              (:en "Tenor converted to soprano\\an ottava higher")
-              ;; JK: Diese Partitur wurde ergänzt, im Original steht nur die umgewandelte
-              ;; Sopran-Stimme. Soll dies kommentiert werden?
-              ;;
-              ;; OPEN
-              )))
+              (:en "Tenor converted to soprano\\an ottava higher"))))
    (:voice-labels
     (s1 v2 (:alt (:it "[Alto]")
                  (:de "")
@@ -94,7 +89,15 @@
    (:music (1371 -150)
            (:section s1)
            ;; tenore II ('quinto')
-           (:voice v3q) cclef7 b38 met-imperf-min-dim b38 sb2 b38 m2 b38 m5 b38 sb6 b38 m7 b22 sh7 b22 sb7 b38 m8 b38 sb5 b38 m4 b38 sb3 b38 sb2 b38 bl b125)
+           (:voice v3q)
+           (:alt (:diplomatic)
+                 (:critical)
+                 (:coord-barre "MZ3")
+                 (:coord-norm "G2")
+                 (:comment "Original: nur die Tenorstimme ist abgedruckt, die vierstimmige Partitur ist impliziert.")
+                 (:flag :ready)
+                 (:id 1))
+           cclef7 b38 met-imperf-min-dim b38 sb2 b38 m2 b38 m5 b38 sb6 b38 m7 b22 sh7 b22 sb7 b38 m8 b38 sb5 b38 m4 b38 sb3 b38 sb2 b38 bl b125)
    (:text 70 58
           (201 nil "O uoi be")
           (465 nil "a")

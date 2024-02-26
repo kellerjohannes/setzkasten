@@ -6,7 +6,10 @@
    (:title (:alt (:it "Essempio della prima parte di uno madrigale a quattro voci,\\che si può cantare à cinque modi, cioè,\\diatonico e poi\\cromatico e poi\\cromatico e enarmonico e poi\\diatonico e cromatico e poi\\diatonico e cromatico e enarmonico")
                  (:de "Beispiel des erten Teils eines Madrigals für vier Stimmen,\\das auf fünf Arten und Weisen gesungen werden kann, d.h. diatonisch und dann chromatisch, und dann chromatisch und enharmonisch, und dann diatonisch und chromatisch, und dann diatonisch und chromatisch und enharmonisch.")
                  (:en "Example of the first part of a madrigal in four voci\\which may be sung in five ways: that is\\diatonic and then\\chromatic and then\\chromatic and enharmonic and then\\diatonic and chromatic and then\\diatonic, chromatic and enharmonic.")))
-                 
+   ;; JK: Dieses Beispiel wurde in drei Varianten (texttreu, ohne Punkte, ohne Punkte und ohne
+   ;; Versetzungszeichen) aufgenommen. Sollen diese drei Varianten als separate Partituren gegeben
+   ;; werden?
+
    (:voice-labels
     (s1 v1 (:alt (:it "[Soprano]")
                    (:de "[Soprano]")

@@ -47,6 +47,10 @@
      (1893 nil "Quarta"))
    (:music 2230
            (:voice v1)
+           ;; JK: Zweifel, ob in der Quelle wirklich ein Punkt über der vierten Note gedruckt
+           ;; ist. Eine Stellungnahme von Luigi steht aus.
+           ;;
+           ;; OPEN
            (:section s1) cclef5 b22 sbd2 sbd3 fl4 sbd4 sbd5 sbd6 fl7 sbd7 sbd8 sbd9 bl
            (:section s2) b22 sbd2 b22 fl3 sbd3 b22 fl4 sbd4 sbd5 fl6 sbd6 fl7 sbd7 sbd8 sbd9 b22 bl
            (:section s3) b22 sbd2 sbd3 sbd4 sbd5 sbd6 sbd7 fl9 sb9 sbd9 b22 bl

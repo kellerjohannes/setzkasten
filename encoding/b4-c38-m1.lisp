@@ -9,12 +9,7 @@
    (:section-headings
     (s2 (:alt (:it "Soprano convertito in tenore,\\all'ottava sotto")
               (:de "")
-              (:en "Soprano converted to tenor\\in the ottava below")
-              ;; JK: Diese Partitur wurde ergänzt, im Original steht nur die umgewandelte
-              ;; Tenor-Stimme. Soll dies kommentiert werden?
-              ;;
-              ;; OPEN
-              )))
+              (:en "Soprano converted to tenor\\in the ottava below"))))
    (:voice-labels
     (s1 v1 (:alt (:it "Soprano")
                  (:de "")
@@ -97,7 +92,15 @@
    (:music (2222 -200)
            (:section s2)
            ;; tenore II ('quinto')
-           (:voice v3q) (:newline) s720 cclef7 b38 met-imperf-min-dim b38 b22 m6 b38 b22 sm6 b22 b38 m7 b38 b22 sm7 b38 b22 sm5 b38 b22 m5 b38 b22 sm5 b38 b22 m4 b38 b22 sm4 b38 b22 m2 b22 sh1 b22 sm1 b22 b22 bl)
+           (:voice v3q)
+           (:alt (:diplomatic)
+                 (:critical)
+                 (:coord-barre "MZ3")
+                 (:coord-norm "G2")
+                 (:comment "Original: nur die Tenorstimme ist abgedruckt, die vierstimmige Partitur ist impliziert.")
+                 (:flag :ready)
+                 (:id 1))
+           (:newline) s720 cclef7 b38 met-imperf-min-dim b38 b22 m6 b38 b22 sm6 b22 b38 m7 b38 b22 sm7 b38 b22 sm5 b38 b22 m5 b38 b22 sm5 b38 b22 m4 b38 b22 sm4 b38 b22 m2 b22 sh1 b22 sm1 b22 b22 bl)
    (:text 70 58
           (929 nil "Come")
           (1160 nil "dʼogni")
