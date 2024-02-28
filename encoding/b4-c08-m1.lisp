@@ -9,6 +9,7 @@
               (:en "Example of beating alla breve")))
     (s2 (:alt (:it "Alla breve")
               (:de "alla breve")
+              ; Kommentar AS: wäre es nicht besser, wenn alle Teile (d.i. auch s2, s3 und s4) mit "Essempio di batter", bzw. "Beispiel ... zu schlagen" und "Example of beating" beginnen würden?
               (:en "Alla breve")))
     (s3 (:alt (:it "Alla semibreve")
               (:de "alla semibreve")
