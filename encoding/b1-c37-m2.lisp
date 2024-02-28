@@ -3,7 +3,7 @@
    (:alt-name "m1.046")
    (:comment "q021_s047, origin: 372")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio de gradi di alcune quinte imperfette naturali e accidentali")
+   (:title (:alt (:it "Essempio de gradi di alcune Quinte imperfette, naturali & accidentali.")
                  (:de "Beispiel der Tonschritte von einigen quinte imperfette naturali und accidentali.")
                  (:en "Example of the steps of some quinte imperfette, naturali and accidentali")))
    (:section-captions
