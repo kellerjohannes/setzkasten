@@ -3,7 +3,7 @@
    (:alt-name "m1.051")
    (:comment "q021_s050, origin: 1006")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio de gradi di quinte accidentali")
+   (:title (:alt (:it "Essempio de gradi di Quinte accidentali.")
                  (:de "Beispiel der Tonschritte der quinte accidentali")
                  (:en "Example of the steps of quinte accidentali")))
    (:section-headings
