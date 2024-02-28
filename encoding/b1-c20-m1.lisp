@@ -114,7 +114,7 @@
                  (:critical sbd4 b38 sb4 b38 fl4 b38 sb4)
                  (:coord-barre "MZ2 N9-12")
                  (:coord-norm "G11")
-                 (:comment "Original: A♭--G--G♭--Ġ. Dieses Beispiel zeigt zwei alternative Teilungen des _tono_: A♭--Ġ--G♭ und A♭--G--G♭.")
+                 (:comment "Original: A♭–G–G♭–Ġ. Dieses Beispiel zeigt zwei alternative Teilungen des _tono_: A♭–Ġ–G♭ und A♭–G–G♭.")
                  (:flag :ready) (:id 1))
            bl
            (:section s12)
