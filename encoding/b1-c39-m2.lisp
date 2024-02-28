@@ -3,7 +3,7 @@
    (:alt-name "m1.049")
    (:comment "q021_s049, origin: 406")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio dei gradi delle quinte naturali")
+   (:title (:alt (:it "Essempio de i gradi delle Quinte naturali.")
                  (:de "")
                  (:en "Example of the steps of the quinte naturali")))
    (:section-captions
