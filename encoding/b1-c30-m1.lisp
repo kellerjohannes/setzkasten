@@ -3,7 +3,7 @@
    (:alt-name "m1.038")
    (:comment "q021_s044, origin: 996")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio dei gradi di terza maggiore accidentale, incomposti e composti")
+   (:title (:alt (:it "Essempio de i gradi di Terza maggiore accidentale, incomposti e composti.")
                  (:de "Beispiel der Tonschritte der terza maggiore accidentale, incomposti und composti.")
                  (:en "Example of the incomposti and composti steps of the terza maggiore accidentale")))
    (:section-captions
