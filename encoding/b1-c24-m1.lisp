@@ -3,7 +3,7 @@
    (:alt-name "m1.032")
    (:comment "q021_s040, origin: 991")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio del tono maggiore, composto e incomposto")
+   (:title (:alt (:it "Essempio del Tono maggiore, composto et incomposto.")
                  (:de "Beispiel des tono maggiore, composto und incomposto.")
                  (:en "Example of the tono maggiore, composto and incomposto")))
    (:section-captions
