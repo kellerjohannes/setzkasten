@@ -3,7 +3,7 @@
    (:alt-name "m1.030")
    (:comment "q021_s039, origin: 440")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio delli toni e semitoni naturali")
+   (:title (:alt (:it "Essempio delli Toni & Semitoni naturali.")
                  (:de "Beispiel der toni und semitoni naturali.")
                  (:en "Example of the toni and semitoni naturali")))
    (:section-headings
@@ -33,7 +33,7 @@
               (:en "tono")))))
   (:data
    (:text 90 58
-         (429 991 "ᴇſſempio delli ᴛoni, & ꜱemitoni naturali."))
+         (429 991 "ᴇſſempio delli ᴛoni, & Semitoni naturali."))
    (:music 2198
            (:voice v1)
            (:section s1)
