@@ -3,7 +3,7 @@
    (:alt-name "m1.023")
    (:comment "q021_s035, origin: 377")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio delli gradi, delli diesis minori enarmonici, ascendenti e discendenti")
+   (:title (:alt (:it "Essempio delli gradi delli diesis minori enarmonici, ascendenti e discendenti")
                  (:de "Beispiel der Tonschritte der diesis minori enarmonici, aufsteigend und absteigend.")
                  (:en "Example of the steps of the diesis minori enarmonici, ascending and descending")))
    (:section-captions
