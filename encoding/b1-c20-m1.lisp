@@ -42,7 +42,7 @@
     (s10 (:alt (:it "semitono maggiore\\accidentale incomposto")
                (:de "semitono maggiore\\accidentale incomposto")
                (:en "semitono maggiore\\accidentale incomposto")))
-    (s11 (:alt (:it "semitoni maggiori\\e minori\\accidentali incomposti")
+    (s11 (:alt (:it "semitoni maggiori\\et minori\\accidentali incomposti")
                ;; Kommentar David (placed by Anne): No. 11: with your emended version of the pitches
                ;; in this segment, the caption is misleading. The numerous intervals shown include
                ;; two semitoni minori accidentali incomposti (Ab–Gdot and G–Gb) and two semitoni
@@ -61,7 +61,7 @@
                ;; OPEN
                (:de "semitoni maggiori\\und minori\\accidentali incomposti")
                (:en "semitoni maggiori\\and minori\\accidentali incomposti")))
-    (s12 (:alt (:it "semitoni minori\\e maggiori\\accidentali incomposti")
+    (s12 (:alt (:it "semitoni minori\\et maggiori\\accidentali incomposti")
                (:de "semitoni minori\\und maggiori\\accidentali incomposti")
                (:en "semitoni minori\\and maggiori\\accidentali incomposti")))))
   (:data
