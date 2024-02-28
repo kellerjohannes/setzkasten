@@ -3,7 +3,7 @@
    (:alt-name "m1.050")
    (:comment "q021_s050, origin: 1038")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio de salti de quinte accidentali incomposti")
+   (:title (:alt (:it "Essempio de salti de Quinte accidentali, incomposti.")
                  (:de "Beispiel der Sprünge der quinte accidentali incomposti.")
                  (:en "Example of the  incomposti leaps of quinte accidentali")))
    (:section-captions
