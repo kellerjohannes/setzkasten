@@ -3,7 +3,7 @@
    (:alt-name "m1.043")
    (:comment "q021_s046, origin: 925")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio del tritono naturale, incomposto e composto")
+   (:title (:alt (:it "Essempio del Tritono naturale, incomposto et composto")
                  (:de "Beispiel des tritono naturale, incomposto und composto.")
                  (:en "Example of the tritono naturale, incomposto and composto")))
    (:section-captions
