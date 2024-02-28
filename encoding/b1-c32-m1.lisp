@@ -3,7 +3,7 @@
    (:alt-name "m1.040")
    (:comment "q021_s045, origin: 488")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio del salto della quarta naturale e de suoi gradi incomposto et composto")
+   (:title (:alt (:it "Essempio del Salto della Quarta naturale e de suoi gradi, incomposto et composto.")
                  (:de "Beispiel des Sprungs der quarta naturale und von seinen Tonschritten, incomposto und composto.")
                  (:en "Example of the leap of the quarta naturale, and of its incomposto and composto steps")))
    (:section-headings
