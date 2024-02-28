@@ -3,7 +3,7 @@
    (:alt-name "m1.024")
    (:comment "q021_s035, origin: 403")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio delli gradi delli Diesis maggiori Enarmonici, ascendenti & discendenti")
+   (:title (:alt (:it "Essempio delli gradi delli Diesis maggiori Enarmonici, ascendenti & discendenti.")
                  (:de "Beispiel der Tonschritte der diesis maggiori enarmonici, aufsteigend und absteigend.")
                  (:en "Example of the steps of the diesis maggiori enarmonici, ascending and descending")))
    (:section-captions
