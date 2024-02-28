@@ -3,7 +3,7 @@
    (:alt-name "m1.042")
    (:comment "q021_s046, origin: 970")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio del salto più che di quarta e de suoi gradi, incomposto e composto")
+   (:title (:alt (:it "Essempio del salto più che di Quarta e de suoi gradi, incomposto & composto")
                  (:de "Beispiel des Sprungs più che di quarta und von ihren Tonschritten, incomposto und composto")
                  (:en "Example of the leap più di quarta and of its steps, incomposto and composto")))
    (:section-captions
