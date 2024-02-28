@@ -26,5 +26,13 @@
                  (:coord-norm "G3 N2")
                  (:comment "Original: Croma.")
                  (:flag :ready) (:id 1))
-           dot6 b22 cr4 b22 cr4 b22 scr3 b22 scr4 b22 sb5 b38 bl
+           dot6 b22
+           (:alt (:diplomatic cr4 b22 cr4)
+                 (:barre scr4 b22 scr4)
+                 (:critical cr4 b22 cr4)
+                 (:coord-barre "N13-14")
+                 (:coord-norm "G3 N3-4")
+                 (:comment "In q067 und q081 beide Noten als semicroma gedruckt, in allen anderen als croma.")
+                 (:flag :ready) (:id 2))
+           b22 scr3 b22 scr4 b22 sb5 b38 bl
            (:section s4) b22 sm2 b22 sm5 dot6 cr4 b38 sm4 b38 sb5 b22 bl)))

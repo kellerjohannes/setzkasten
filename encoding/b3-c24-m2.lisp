@@ -23,10 +23,10 @@
            (:section s3) m2 b22 sm3 m5 b22 cr4 b22 cr3 b22 m4 b22 sb5 bl
            (:section s4) (:newline) m2 m5 dot6 sm4 b22 sm4 b22 cr3 b22 cr4 b22 sb5 bl
            (:section s5) m2 b38 m5 dot6
-           (:alt (:diplomatic cr4)
+           (:alt (:diplomatic sm4)
                  (:critical sm4)
                  (:coord-barre "N27")
                  (:coord-norm "G5 N3")
-                 (:comment "Original: Croma.")
+                 (:comment "In Quellen q067 und q081 als semiminima gedruckt, in allen anderen als croma.")
                  (:flag :ready) (:id 1))
            m4 sb5 bl)))
