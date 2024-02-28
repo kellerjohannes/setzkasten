@@ -15,7 +15,7 @@
    ;; AS: Ich habe es hier jetzt so angepasst.
    ;;
    ;; OPEN
-   (:title (:alt (:it "Essempio [del salto] di più di quinta imperfetta accidentale, composto e incomposto")
+   (:title (:alt (:it "Essempio [del salto] di più di Quinta imperfetta accidentale, composto & incomposto.")
                  (:de "Beispiel [des Sprungs] più di quinta imperfetta accidentale, composto und incomposto.")
                  (:en "Example of the composto and incomposto [leap] più di quinta imperfetta accidentale")))
    (:section-captions
