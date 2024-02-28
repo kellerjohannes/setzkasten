@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio della nota dimostrativa antecedente a quella nota da chi principia il salto")
                  (:de "Beispiel der darstellenden Note vor derjenigen Note, von welcher der Sprung beginnt")
-                 (:en "Example of the demonstrative note preceding that note from which the leap begins"))))
+                 (:en "Example of the demonstrative note preceding that note from which the leap starts"))))
   (:data
    (:text 90 58
           (132 1916 "Eſſempio della nota dimoſtratiua antecedente à quella nota da chi principia il ſalto.")
