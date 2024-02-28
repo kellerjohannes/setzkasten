@@ -3,7 +3,7 @@
    (:alt-name "m1.048")
    (:comment "q021_s049, origin: 395")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio della quinta naturale incomposta")
+   (:title (:alt (:it "Essempio della Quinta naturale incomposta.")
                  (:de "Beispiel der quinta naturale incomposta.")
                  (:en "Example of the quinta naturale incomposta")))
    (:section-headings
