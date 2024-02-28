@@ -3,8 +3,7 @@
    (:alt-name "m1.033")
    (:comment "q021_s041, origin: 470")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio del grado o salto composto e incomposto \\della Terza manco di minore, overo minima.")
-   ;; LC: Im Apparat 'In allen Exemplaren: «ᴇſſempio del grado ò ſalto della ᴛerza manco di minore, ouero minima compoſto & incompoſto.»'.
+   (:title (:alt (:it "Essempio del grado o salto della Terza manco di minore overo minima,\\ composto e incomposto.")
                  ;; Kommentar Anne: Sollte es nicht "composta e incomposta" heissen, d.h. Korrektur
                  ;; des Originals?
                  ;;
