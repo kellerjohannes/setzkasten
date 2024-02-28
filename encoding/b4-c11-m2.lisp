@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio della nota imaginativa sussequente a quella nota da chi se parte il salto")
                  (:de "Beispiel der vorstellenden Note folgend derjenigen Note, von welcher der Sprung beginnt")
-                 (:en "Example of the imaginative note subsequent to that note from which the leap begins"))))
+                 (:en "Example of the imaginative note subsequent to that note from which the leap starts"))))
   (:data
    (:text 90 58
           (180 1866 "Eſſempio della nota imaginatiua ſuſſequente à quella nota da chi ſe parte il ſalto."))
