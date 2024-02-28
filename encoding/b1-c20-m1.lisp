@@ -19,9 +19,9 @@
     (s4 (:alt (:it "semitono maggiore\\accidentale incomposto")
               (:de "semitono maggiore\\accidentale incomposto")
               (:en "semitono maggiore\\accidentale incomposto")))
-    (s5 (:alt (:it "semitono minore\\accidentale composto")
-              (:de "semitono minore\\accidentale composto")
-              (:en "semitono minore\\accidentale composto")))
+    (s5 (:alt (:it "semitoni minori\\accidentali composti")
+              (:de "semitoni minori\\accidentali composti")
+              (:en "semitoni minori\\accidentali composti")))
     (s6 (:alt (:it "semitono maggiore\\naturale composto")
               (:de "semitono maggiore\\naturale composto")
               (:en "semitono maggiore\\naturale composto")))
@@ -36,13 +36,13 @@
               ;; DONE
               (:de "semitoni maggiori\\accidentali incomposti")
               (:en "semitoni maggiori\\accidentali incomposti")))
-    (s9 (:alt (:it "semitono maggiore\\accidentale composto")
-              (:de "semitono maggiore\\accidentale composto")
-              (:en "semitono maggiore\\accidentale composto")))
+    (s9 (:alt (:it "semitoni maggiori\\accidentali composti")
+              (:de "semitoni maggiori\\accidentali composti")
+              (:en "semitoni maggiori\\accidentali composti")))
     (s10 (:alt (:it "semitono maggiore\\accidentale incomposto")
                (:de "semitono maggiore\\accidentale incomposto")
                (:en "semitono maggiore\\accidentale incomposto")))
-    (s11 (:alt (:it "semitono maggiore\\e minore\\accidentale incomposto")
+    (s11 (:alt (:it "semitoni maggiori\\e minori\\accidentali incomposti")
                ;; Kommentar David (placed by Anne): No. 11: with your emended version of the pitches
                ;; in this segment, the caption is misleading. The numerous intervals shown include
                ;; two semitoni minori accidentali incomposti (Ab–Gdot and G–Gb) and two semitoni
@@ -59,11 +59,11 @@
                ;; incomposti (G–Gb and Gb–Fdot), all descending.
                ;;
                ;; OPEN
-               (:de "semitono maggiore\\und minore\\accidentale incomposto")
-               (:en "semitono maggiore\\and minore\\accidentale incomposto")))
-    (s12 (:alt (:it "semitono minore\\e maggiore\\accidentale incomposto")
-               (:de "semitono minore\\und maggiore\\accidentale incomposto")
-               (:en "semitono minore\\and maggiore\\accidentale incomposto")))))
+               (:de "semitoni maggiori\\und minori\\accidentali incomposti")
+               (:en "semitoni maggiori\\and minori\\accidentali incomposti")))
+    (s12 (:alt (:it "semitoni minori\\e maggiori\\accidentali incomposti")
+               (:de "semitoni minori\\und maggiori\\accidentali incomposti")
+               (:en "semitoni minori\\and maggiori\\accidentali incomposti")))))
   (:data
    (:text 90 58
      (0 2234 "ᴇſſempio di più ꜱemitoni mag.et minori,aſcendenti,et diſcendenti, comp.et incomp.nat.et acci"))
