@@ -8,7 +8,7 @@
    ;; gängig gemacht werden.
    ;;
    ;; OPEN
-   (:title (:alt (:it "Essempio dei gradi di terza minore accidentale, composti e incomposti")
+   (:title (:alt (:it "Essempio de i gradi di Terza minore accidentale, composti & incomposti")
                  (:de "Beispiel der Tonschritte der terza minore accidentale, composti und incomposti.")
                  (:de-kursiv "Beispiel der Tonschritte der _terza minore accidentale_, _composti_ und _incomposti_")
                  (:en "Example of the composti and incomposti steps of the terza minore accidentale")
