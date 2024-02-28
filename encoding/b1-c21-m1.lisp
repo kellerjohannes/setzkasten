@@ -3,7 +3,7 @@
    (:alt-name "m1.029")
    (:comment "q021_s038, origin: 909")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio del grado del tono minore composto e non composto")
+   (:title (:alt (:it "Essempio del grado del tono minore composto e non composto.")
                  (:de "Beispiel des Tonschritts des tono minore composto und non composto.")
                  (:en "Example of the step of the tono minore composto and non composto")))
    (:section-captions

@@ -33,6 +33,7 @@
     (s1 (:alt (:it "Esempio delle note colorite nel canto fermo")
               (:de "Beispiel der farbigen Noten im canto fermo")
               (:en "Example of colored notes in canto fermo")))
+              ;; Anne: sollte nicht alle folgenden auch mit "Example of" beginnen?
     (s2 (:alt (:it "Colorite nel tempo perfetto")
               (:de "farbige [Noten] im Tempus perfectus")
               (:en "Colored [notes] in perfect tempus")))

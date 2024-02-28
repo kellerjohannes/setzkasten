@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio dell'ordine di procedere con le note, una dopo l'altra")
                  (:de "Beispiel der Ordnung, mit den Noten, eine nach der anderen, fortzuschreiten")
-                 (:en "Example of the order of moving with the notes, one after the other")))
+                 (:en "Example of the order of moving with the notes, one after another")))
    (:section-headings
     (s1 (:alt (:it "[Buono]")
               (:de "[gut]")
