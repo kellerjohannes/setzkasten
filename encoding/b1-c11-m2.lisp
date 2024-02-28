@@ -4,10 +4,10 @@
    (:comment "q021_s031, origin: 1273")
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
-    (s1 (:alt (:it "tono diviso in quattro\\parti ascendenti")
+    (s1 (:alt (:it "Tono diviso in 4\\parti ascendenti")
               (:de "tono unterteilt in vier\\aufsteigende Teile")
               (:en "tono divided in four\\ascending parts")))
-    (s2 (:alt (:it "tono diviso in quattro\\parti ascendenti")
+    (s2 (:alt (:it "Tono diviso in 4\\parti ascendenti")
               (:de "tono unterteilt in vier\\aufsteigende Teile")
               (:en "tono divided in four\\ascending parts")))))
   (:preamble-lilypond
