@@ -4,7 +4,12 @@
    (:comment "q021_s147, rotation: -1.13, origin: 393. Für dieses Beispiel wird keine normalisierte Version angeboten.")
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
-   ;; Kommentar Anne: In den ersten drei Beispiele hast die Pausen modernisiert. Ich finde es geht hier nicht, weil im Kapitel beschreibt er wie die Striche 3 bis 4 Linien touchieren. Zu dem sind sie keine Pausen in dem Stück, sie geben nur den Modus an und die Form ist wichtig für die Verständnis des Modus. 
+    ;; Kommentar Anne: In den ersten drei Beispiele hast die Pausen modernisiert. Ich finde es geht
+    ;; hier nicht, weil im Kapitel beschreibt er wie die Striche 3 bis 4 Linien touchieren. Zu dem
+    ;; sind sie keine Pausen in dem Stück, sie geben nur den Modus an und die Form ist wichtig für
+    ;; die Verständnis des Modus.
+    ;;
+    ;; OPEN
     (s1 (:alt (:it "Esempio del modo\\maggiore perfetto")
               (:de "Beispiel des Modus\\maior perfectus")
               (:en "Example of the major\\perfect modus")))

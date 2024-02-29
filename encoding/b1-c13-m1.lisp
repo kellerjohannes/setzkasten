@@ -56,17 +56,52 @@
    (:music 2218
            (:voice v1)
            (:section s1)
-           cclef7 b22 brd4 b22 b38 bl
+           cclef7 b22
+           (:alt (:diplomatic brd4)
+                 (:critical brd4)
+                 (:coord-barre "MZ1 N1")
+                 (:coord-norm "G1 N1")
+                 (:comment "In Exemplaren q005, q067, q081: Enharmonischer Punkt fehlt.")
+                 (:flag :ready) (:id 1))
+           b22 b38 bl
            (:section s2)
-           b27 b27 b27 (:ligature-start nil nil :dot nil) brdl5 (:ligature-end) b27 b27 b27 bl
+           b27 b27 b27 (:ligature-start nil nil :dot nil)
+           (:alt (:diplomatic brdl5)
+                 (:critical brdl5)
+                 (:coord-barre "MZ1 N2")
+                 (:coord-norm "G2 N1")
+                 (:comment "In Exemplaren q005, q067, q081: Enharmonischer Punkt fehlt. In Exemplar q044 wurde er handschriftlich ergänzt.")
+                 (:flag :ready) (:id 2))
+           (:ligature-end) b27 b27 b27 bl
            (:section s3)
-           b27 b27 b27 (:ligature-start nil nil nil :dot) brdr5 (:ligature-end) b22 b22 b22 bl
+           b27 b27 b27 (:ligature-start nil nil nil :dot)
+           (:alt (:diplomatic brdr5)
+                 (:critical brdr5)
+                 (:coord-barre "MZ1 N3")
+                 (:coord-norm "G3 N1")
+                 (:comment "In Exemplaren q005, q067, q081: Enharmonischer Punkt fehlt. In Exemplar q044 wurde er handschriftlich ergänzt.")
+                 (:flag :ready) (:id 3))
+           (:ligature-end) b22 b22 b22 bl
            (:section s4)
            b27 b27 b27 sbd5 b22 bl
            (:section s5)
-           b27 b27 b27 (:ligature-start nil nil :dot nil) sbdl7 (:ligature-end) b22 b22 b22 bl
+           b27 b27 b27 (:ligature-start nil nil :dot nil)
+           (:alt (:diplomatic sbdl7)
+                 (:critical sbdl7)
+                 (:coord-barre "MZ1 N5")
+                 (:coord-norm "G5 N1")
+                 (:comment "In Exemplaren q005, q067, q081: Enharmonischer Punkt fehlt. In Exemplar q044 wurde er handschriftlich ergänzt.")
+                 (:flag :ready) (:id 4))
+           (:ligature-end) b22 b22 b22 bl
            (:section s6)
-           b22 b22 (:ligature-start nil nil nil :dot) sbdr4 (:ligature-end) b22 b22 b22 bl
+           b22 b22 (:ligature-start nil nil nil :dot)
+           (:alt (:diplomatic sbdr4)
+                 (:critical sbdr4)
+                 (:coord-barre "MZ1 N6")
+                 (:coord-norm "G6 N1")
+                 (:comment "In Exemplaren q005, q067, q081: Enharmonischer Punkt fehlt. In Exemplar q044 wurde er handschriftlich ergänzt.")
+                 (:flag :ready) (:id 5))
+           (:ligature-end) b22 b22 b22 bl
            (:section s7)
            cclef7 b22 fl6 (:key-signature nil nil nil nil nil nil :flat)
            b22
@@ -74,14 +109,28 @@
                  (:critical (:ligature-start nil :flat :dot :dot) brd5 b22 flrev4 (:ligature-end))
                  (:coord-barre "MZ1 N7")
                  (:coord-norm "G7")
-                 (:comment "Original: A/A♭. Der enharmonische Punkt wurde für den gesamten Notenwert ergänzt. Ohne Punkt wäre diese Situation als chromatische Ligatur einzuordnen, was in b1-c12-m1 bereits gezeigt wurde.")
-                 (:flag :ready) (:id 1))
+                 (:comment "Original: A/A♭. Der enharmonische Punkt wurde für den gesamten Notenwert ergänzt. Ohne Punkt wäre diese Situation als chromatische Ligatur einzuordnen, was in b1-c12-m1 bereits gezeigt wurde.\\In Exemplaren q005, q067, q081 fehlt das gespiegelte ♭. In Exemplar q044 wurde es handschriftlich ergänzt.")
+                 (:flag :ready) (:id 6))
            bl
            (:section s8)
-           b22 fl4 b22 brd4 b22 bl
+           b22 fl4 b22
+           (:alt (:diplomatic brd4)
+                 (:critical brd4)
+                 (:coord-barre "N8")
+                 (:coord-norm "G8 N1")
+                 (:comment "In Exemplaren q005, q067, q081: Enharmonischer Punkt fehlt. In Exemplar q044 wurde er handschriftlich ergänzt.")
+                 (:flag :ready) (:id 7))
+           b22 bl
            (:section s9)
            (:newline)
-           b38 b22 (:ligature-start :flat nil :dot :dot) fl3 b22 brd4 (:ligature-end) b38 bl)
+           b38 b22 (:ligature-start :flat nil :dot :dot) fl3 b22
+           (:alt (:diplomatic brd4)
+                 (:critical brd4)
+                 (:coord-barre "N9")
+                 (:coord-norm "G9 N1")
+                 (:comment "In Exemplaren q005, q067, q081: Enharmonischer Punkt fehlt. In Exemplar q044 wurde er handschriftlich ergänzt.")
+                 (:flag :ready) (:id 8))
+           (:ligature-end) b38 bl)
    (:text 70 58
           (43 nil "ꝑ tutta")
           (218 nil "ꝑ la parte")
@@ -102,16 +151,51 @@
    (:music 2200
            (:section s10)
            (:key-signature nil nil nil nil nil nil nil)
-           cclef7 b27 b27 b27 (:ligature-start nil :flat :dot nil) brdl5 b22 flrev4 (:ligature-end)
+           cclef7 b27 b27 b27 (:ligature-start nil :flat :dot nil)
+           (:alt (:diplomatic brdl5 b22 flrev4)
+                 (:critical brdl5 b22 flrev4)
+                 (:coord-barre "NZ2 N1")
+                 (:coord-norm "G10 N1")
+                 (:comment "In Exemplaren q005, q067, q081: Der enharmonischer Punkt und das gespiegelte ♭ fehlen. In Exemplar q044 wurden sie handschriftlich ergänzt.")
+                 (:flag :ready) (:id 9))
+           (:ligature-end)
            b27 b27 b27 bl
            (:section s11)
-           b27 b27 b27 (:ligature-start nil :flat :dot :dot) sbd5 b22 flrev4 (:ligature-end) b22 b27 b27 bl
+           b27 b27 b27 (:ligature-start nil :flat :dot :dot) sbd5 b22
+           (:alt (:diplomatic flrev4)
+                 (:critical flrev4)
+                 (:coord-barre "NZ2 N2")
+                 (:coord-norm "G11 N1")
+                 (:comment "In Exemplaren q005, q067, q081 fehlt das gespiegelte ♭. In Exemplar q044 wurde es handschriftlich ergänzt.")
+                 (:flag :ready) (:id 10))
+           (:ligature-end) b22 b27 b27 bl
            (:section s12)
-           b27 b27 b27 b27 md4 b22 b22 b27 bl
+           b27 b27 b27 b27
+           (:alt (:diplomatic md4)
+                 (:critical md4)
+                 (:coord-barre "NZ2 N3")
+                 (:coord-norm "G12 N1")
+                 (:comment "In Exemplaren q005, q067, q081: Die Note und der enharmonische Punkt fehlen. In Exemplar q044 wurde die Note und der enharmonische Punkt handschriftlich ergänzt, mit Hals nach unten.")
+                 (:flag :ready) (:id 11))
+           b22 b22 b27 bl
            (:section s13)
-           b27 b27 b27 (:ligature-start nil nil :dot nil) mdl4 (:ligature-end) b27 b27 b27 b27 bl
+           b27 b27 b27 (:ligature-start nil nil :dot nil)
+           (:alt (:diplomatic mdl4)
+                 (:critical mdl4)
+                 (:coord-barre "MZ2 N4")
+                 (:coord-norm "G13 N1")
+                 (:comment "In Exemplaren q005, q067, q081: Der enharmonischer Punkt fehlt. In Exemplar q044 wurden er handschriftlich ergänzt.")
+                 (:flag :edy (:id 12))
+           (:ligature-end) b27 b27 b27 b27 bl
            (:section s14)
-           b27 b27 b27 b27 (:ligature-start nil nil nil :dot) smdr3 (:ligature-end) b27 b27 b27 bl b677)
+           b27 b27 b27 b27 (:ligature-start nil nil nil :dot)
+           (:alt (:diplomatic smdr3)
+                 (:critical smdr3)
+                 (:coord-barre "MZ2 N5")
+                 (:coord-norm "G14 N1")
+                 (:comment "In Exemplaren q005, q067, q081: Der enharmonischer Punkt fehlt. In Exemplar q044 wurden er handschriftlich ergänzt.")
+                 (:flag :ready) (:id 13))
+           (:ligature-end) b27 b27 b27 bl b677)
    (:text 70 58
           (68 nil "la prima me")
           (362 nil "& la metà ſe")

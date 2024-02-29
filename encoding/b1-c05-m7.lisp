@@ -10,17 +10,17 @@
     (s1 (:alt (:it "da A a B")
               (:de "von A zu B")
               (:en "from A to B")))
-    (s2 (:alt (:it "da ♭faBmi ...")
-              (:de "von ♭faBmi ...")
-              (:en "from ♭faBmi ...")
+    (s2 (:alt (:it "da ♭faBmi")
+              (:de "von ♭faBmi")
+              (:en "from ♭faBmi")
               ;; JK: Die Darstellung von G2-G3 ist zu diskutieren. Notfalls kann sie so bestehen
               ;; bleiben, sollte aber nochmals bestätigt werden.
               ;;
-              ;; OPEN
+              ;; JK&LC: Dieses Textfeld soll rechtsbündig gesetzt werden, das nächste linksbündig
               ))
-    (s3 (:alt (:it "... a C")
-              (:de "... zu C")
-              (:en "... to C")))
+    (s3 (:alt (:it "a C")
+              (:de "zu C")
+              (:en "to C")))
     (s4 (:alt (:it "da C a D")
               (:de "von C zu D")
               (:en "from C to D")))

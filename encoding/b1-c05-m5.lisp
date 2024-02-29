@@ -32,13 +32,13 @@
               (:de "von Gsolreut zu Alamire")
               (:en "from Gsolreut to Alamire"))))
    (:section-captions
-    (s4 (:alt (:it "sol e fa discendono")
+    (s4 (:alt (:it "sol e fa [se] discendono")
               (:de "sol und fa absteigend")
               (:en "sol and fa in descent")))
-    (s5 (:alt (:it "la e sol discendono")
+    (s5 (:alt (:it "la e sol [se] discendono")
               (:de "la und sol absteigend")
               (:en "la and sol in descent")))
-    (s6 (:alt (:it "la discende")
+    (s6 (:alt (:it "la [se] discende")
               (:de "la absteigend")
               (:en "la in descent")))))
   (:preamble-lilypond

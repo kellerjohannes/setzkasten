@@ -32,23 +32,20 @@
     (s1 (:alt (:it "mi e re per ascendere")
               (:de "mi und re aufsteigend")
               (:en "mi and re in ascent")))
-    (s2 (:alt (:it "[re ascendente]")
-              (:de "[re aufsteigend]")
-              (:en "[re in ascent]")))
     (s4 (:alt (:it "mi per ascendere")
               (:de "mi aufsteigend")
               (:en "mi in ascent")))
     (s5 (:alt (:it "re per ascendere")
               (:de "re aufsteigend")
-              (:en "re in ascent")))
-    (s6 (:alt (:it "[per ascendere]")
-              (:de "[aufsteigend]")
-              (:en "[in ascent]")))))
+              (:en "re in ascent")))))
   (:preamble-lilypond
    (:lyrics
     ;; JK: Im Auge zu behalten: die Silben werden standardmässig kleiner gesetzt als die "per
     ;; x:"-Angaben und die 'captions'. Das müsste in der lilypond-backend-Implementierung angepasst
     ;; werden, falls die Unterschiedlichkeit der Schriftgrössen nicht akzeptabel sein sollte.
+    ;;
+    ;; LC: findet Luigi ok, aber der Zeilenabstand ist teilweise optisch zu klein, muss
+    ;; grundsätzlich kontrolliert werden
     ;;
     ;; OPEN
     (s1 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } la sol fa la sol")
@@ -60,9 +57,6 @@
     (s3 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } fa mi la")
                  (:de "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } fa mi la")
                  (:en "\\set stanza = \\markup{ \\normal-text \"in nat.:\" } fa mi la")))
-    (s3 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"[ascendente\" } fa mi mi]")
-                 (:de "\\set stanza = \\markup{ \\normal-text \"[aufsteigend\" } fa mi mi]")
-                 (:en "\\set stanza = \\markup{ \\normal-text \"[in ascent\" } fa mi mi]")))
     (s4 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } la sol fa mi re")
                  (:de "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } la sol fa mi re")
                  (:en "\\set stanza = \\markup{ \\normal-text \"in ♮:\" } la sol fa mi re")))
@@ -81,12 +75,15 @@
     (s7 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } fa mi la")
                  (:de "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } fa mi la")
                  (:en "\\set stanza = \\markup{ \\normal-text \"in ♭:\" } fa mi la")))
+    ;; JK: [per ascendere] soll nach der letzten Silbe angehängt werden.
+    ;;
+    ;; OPEN
     (s7 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"[ascendente]\" } fa mi mi")
                  (:de "\\set stanza = \\markup{ \\normal-text \"[aufsteigend]\" } fa mi mi")
                  (:en "\\set stanza = \\markup{ \\normal-text \"[in ascent]\" } fa mi mi")))))
   (:data
    (:text 70 58 (0 2198 "ᴍano ᴇnarmonica , con ſemitoni maggiori diſcendenti nel principio del tono,con il tono, in quattro"))
-   (:text 70 58 (0 976 "parti diuiſo , per leſette lettere della ᴍano."))
+   (:text 70 58 (0 976 "parti diuiſo , per le ſette lettere della ᴍano."))
    (:text 110 58
      (130 nil "da ᴀ.")
      (364 nil "à ɢ.")
@@ -168,7 +165,10 @@
           (:comment "Die Breite der Notenzeile wurde angepasst, um die Ergänzung von N6-N10 zu ermöglichen.")
           (:flag :ready) (:id 11))
     (:voice v1)
-           (:section s1) (:f-clef) max7 fclef7 b22 sb9 fl9 sbd9 sh8 sb8 b22 sbd8 b22 sb8 bl
+    ;; JK: soll mit farbigen Typen und farbigem Text implementiert werden
+    ;;
+    ;; OPEN
+    (:section s1) (:f-clef) max7 fclef7 b22 sb9 fl9 sbd9 sh8 sb8 b22 sbd8 b22 sb8 bl
 
            (:alt (:diplomatic)
                  (:critical (:section s2) sb8 fl8 sbd8 sh7 sb7 sbd7 sb7 bl)

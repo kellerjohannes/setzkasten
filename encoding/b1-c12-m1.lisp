@@ -46,7 +46,14 @@
    (:music 2168
            (:voice v1)
            (:section s1)
-           cclef7 sh6 max6 bl
+           cclef7 sh6
+           (:alt (:diplomatic max6)
+                 (:critical max6)
+                 (:coord-barre "N1")
+                 (:coord-norm "G1 N1")
+                 (:comment "In Exemplaren q005, q067, q081 fehlt diese Maxima. In Exemplar q044 wurde sie handschriftlich ergänzt.")
+                 (:flag :ready) (:id 1))
+           bl
            (:section s2)
            b22 (:ligature-start :sharp nil nil nil) sh3 longa5 (:ligature-end) b38 b38 bl
            (:section s3)
@@ -56,7 +63,14 @@
            (:section s5)
            b38 b22 (:ligature-start :flat nil nil nil) fl4 br6 (:ligature-end) b38 bl
            (:section s6)
-           b38 (:ligature-start nil :flat nil nil) br5 flrev4 (:ligature-end) b38 b38 bl
+           b38 (:ligature-start nil :flat nil nil) br5
+           (:alt (:diplomatic flrev4)
+                 (:critical flrev4)
+                 (:coord-barre "N6")
+                 (:coord-norm "G6 N1")
+                 (:comment "In Exemplaren q005, q067, q081 fehlt das gespiegelte ♭. In Exemplar q044 wurde es handschriftlich ergänzt.")
+                 (:flag :ready) (:id 2))
+           (:ligature-end) b38 b38 bl
            (:section s7)
            b38 cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat) b22 nat6 br6 b22 bl
            (:section s8)
@@ -72,7 +86,13 @@
      (1155 nil "ꝑ la metà")
      (1484 nil "per tutta")
      (1729 nil "ꝑ la metà")
-     (1968 222 "ꝑ la metà"))
+     (1968 222
+           (:alt (:diplomatic "ꝑ la metà")
+                 (:critical "ꝑ la metà")
+                 (:coord-barre "TZ1 Ende")
+                 (:coord-norm "G9 US")
+                 (:comment "In Exemplaren q005, q067, q081: »ꝑ la meta«.")
+                 (:flag :ready) (:id 3))))
    (:text 70 58
      (271 nil "dinanzi")
      (532 nil "doppò")
