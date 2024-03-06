@@ -94,7 +94,8 @@
     (loop repeat num-lines
           for staff-pos from 1 by 2
           do (let ((y (calculate-absolute-staff-position stencil staff-pos)))
-               (push (output-line offset y (- (glyph-width stencil) offset) y thickness linecap)
+               (push (output-line offset y (- (glyph-width stencil) offset) y thickness linecap
+                                  :color (ink-color stencil))
                      (svg-data stencil))))))
 
 
@@ -169,9 +170,10 @@
       component
     (+ unit-length (* 2 overhead unit-length))))
 
-(defun draw-ledger-line (x-center y line-length)
+(defun draw-ledger-line (x-center y line-length color)
   (let ((h-line-length (* 0.5 line-length)))
-    (output-line (- x-center h-line-length) y (+ x-center h-line-length) y 5 "round")))
+    (output-line (- x-center h-line-length) y (+ x-center h-line-length) y 5 "round"
+                 :color color)))
 
 (defmethod cast ((stencil glyph-notehead))
   "Generates SVG data for a notehead."
@@ -195,7 +197,7 @@
                 (svg-data stencil)))
       (when (or (= (notehead-position stencil) -1)
                 (= (notehead-position stencil) 11))
-        (push (draw-ledger-line x y (* h 1.2))
+        (push (draw-ledger-line x y (* h 1.2) (ink-color stencil))
               (svg-data stencil)))))
   (call-next-method))
 
@@ -456,10 +458,11 @@
 (defun apply-x-offset (v offset)
   (vec:add v (vec:create offset 0)))
 
-(defmacro offset-line (vec1 vec2 x-offset)
+(defmacro offset-line (vec1 vec2 x-offset color)
   `(output-line-vec (apply-x-offset ,vec1 ,x-offset)
                     (apply-x-offset ,vec2 ,x-offset)
-                    line-thickness "round"))
+                    line-thickness "round"
+                    :color ,color))
 
 (defmethod cast ((stencil glyph-sharp))
   "Generates SVG data for a sharp sign."
@@ -476,12 +479,18 @@
              (b (vec:mirror-y a y-center))
              (c (vec:mirror-dot a (vec:create (h-center stencil) y-center)))
              (d (vec:mirror-x a (h-center stencil))))
-        (cond (double-p (push (offset-line a c (* -0.5 offset)) (svg-data stencil))
-                        (push (offset-line b d (* -0.5 offset)) (svg-data stencil))
-                        (push (offset-line a c (* 0.5 offset)) (svg-data stencil))
-                        (push (offset-line b d (* 0.5 offset)) (svg-data stencil)))
-              (t (push (output-line-vec a c line-thickness "round") (svg-data stencil))
-                 (push (output-line-vec b d line-thickness "round") (svg-data stencil)))))))
+        (cond (double-p (push (offset-line a c (* -0.5 offset) (ink-color stencil))
+                              (svg-data stencil))
+                        (push (offset-line b d (* -0.5 offset) (ink-color stencil))
+                              (svg-data stencil))
+                        (push (offset-line a c (* 0.5 offset) (ink-color stencil))
+                              (svg-data stencil))
+                        (push (offset-line b d (* 0.5 offset) (ink-color stencil))
+                              (svg-data stencil)))
+              (t (push (output-line-vec a c line-thickness "round" :color (ink-color stencil))
+                       (svg-data stencil))
+                 (push (output-line-vec b d line-thickness "round" :color (ink-color stencil))
+                       (svg-data stencil)))))))
   (call-next-method))
 
 
@@ -640,7 +649,8 @@
                      (* (overhead (barline-component stencil)) ul))))
       (mapc (lambda (x-position)
               (push (output-line x-position y-bottom x-position y-top
-                                 (thickness (barline-component stencil)) "square")
+                                 (thickness (barline-component stencil)) "square"
+                                 :color (ink-color stencil))
                     (svg-data stencil)))
             (if (zerop double-distance)
                 (list (h-center stencil))
@@ -703,10 +713,10 @@
            (e (vec:mirror-dot b origin))
            (f (vec:mirror-dot c origin)))
       (concatenate 'string
-                   (output-line-vec a c thickness "round")
-                   (output-line-vec a e thickness "round")
-                   (output-line-vec b d thickness "round")
-                   (output-line-vec d f thickness "round")))))
+                   (output-line-vec a c thickness "round" :color (ink-color stencil))
+                   (output-line-vec a e thickness "round" :color (ink-color stencil))
+                   (output-line-vec b d thickness "round" :color (ink-color stencil))
+                   (output-line-vec d f thickness "round" :color (ink-color stencil))))))
 
 (defmethod cast ((stencil glyph-bequadro))
   "Generates SVG data for a 'natural sign'."
@@ -771,7 +781,8 @@
          (y-bottom (- y-top
                       (* (line-length (diminutio-component stencil))
                          (distance-between-lines (staff-component stencil))))))
-    (output-line x y-top x y-bottom (thickness (diminutio-component stencil)) "square")))
+    (output-line x y-top x y-bottom (thickness (diminutio-component stencil)) "square"
+                 :color (ink-color stencil))))
 
 (defmethod cast ((stencil glyph-meter))
   "Generates SVG data for a meter signature."

@@ -95,16 +95,17 @@
       color color
       (make-string-html-compatible text-string)))
 
-(defun output-line (x1 y1 x2 y2 stroke-width stroke-linecap)
-  (format nil "<line x1=\"~d\" y1=\"~d\" x2=\"~d\" y2=\"~d\" stroke-width=\"~d\" stroke-linecap=~s/>"
-      x1 y1 x2 y2 stroke-width stroke-linecap))
+(defun output-line (x1 y1 x2 y2 stroke-width stroke-linecap &key (color "black"))
+  (format nil "<line x1=\"~d\" y1=\"~d\" x2=\"~d\" y2=\"~d\" stroke=~s stroke-width=\"~d\" stroke-linecap=~s/>"
+      x1 y1 x2 y2 color stroke-width stroke-linecap))
 
 
-(defun output-line-vec (vec1 vec2 stroke-width stroke-linecap)
+(defun output-line-vec (vec1 vec2 stroke-width stroke-linecap &key (color "black"))
   (output-line (vec:x-coord vec1) (vec:y-coord vec1)
                (vec:x-coord vec2) (vec:y-coord vec2)
                stroke-width
-               stroke-linecap))
+               stroke-linecap
+               :color color))
 
 (defparameter *path-command-dict* '((l . "L")
                     (lr . "l")

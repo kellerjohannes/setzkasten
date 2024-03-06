@@ -108,17 +108,20 @@
 
   (glyph-blind
    ((id "blind")
+    (ink-color "black")
     (glyph-width 100)
     (glyph-height 1500))
-   ((ink-color "black")))
+   ())
   (glyph-staff
    ((id "glyph-staff")
+    (ink-color "black")
     (staff-component :instance)
     (glyph-width 50)
     (glyph-height 1500))
-   ((ink-color "black")))
+   ())
   (glyph-notehead
    ((id "glyph-notehead")
+    (ink-color "black")
     (staff-component :instance)
     (notehead-component :instance)
     (glyph-width 50)
@@ -127,6 +130,7 @@
    ())
   (glyph-notehead-dot
    ((id "glyph-notehead-dot")
+    (ink-color "black")
     (staff-component :instance)
     (notehead-component :instance)
     (dot-component :instance)
@@ -139,6 +143,7 @@
     (dot-staff-position-correction nil)))
   (glyph-notehead-dot-comma
    ((id "glyph-notehead-dot-comma")
+    (ink-color "black")
     (staff-component :instance)
     (notehead-component :instance)
     (dot-component :instance)
@@ -153,6 +158,7 @@
     (comma-offset 1)))
   (glyph-notehead-stem
    ((id "glyph-notehead-stem")
+    (ink-color "black")
     (staff-component :instance)
     (notehead-component :instance)
     (dot-component :instance)
@@ -168,6 +174,7 @@
    ())
   (glyph-notehead-flag
    ((id "glyph-notehead-flag")
+    (ink-color "black")
     (staff-component :instance)
     (notehead-component :instance)
     (dot-component :instance)
@@ -183,6 +190,7 @@
     (dot-alignment :center)))
   (glyph-rest
    ((id "glyph-rest")
+    (ink-color "black")
     (staff-component :instance)
     (rest-component :instance)
     (glyph-width 40)
@@ -192,6 +200,7 @@
    ())
   (glyph-sharp
    ((id "glyph-sharp")
+    (ink-color "black")
     (staff-component :instance)
     (sharp-component :instance)
     (glyph-width 60)
@@ -200,6 +209,7 @@
    ())
   (glyph-flat
    ((id "glyph-flat")
+    (ink-color "black")
     (staff-component :instance)
     (flat-component :instance)
     (glyph-width 60)
@@ -210,6 +220,7 @@
    ())
   (glyph-bequadro
    ((id "glyph-bequadro")
+    (ink-color "black")
     (staff-component :instance)
     (bequadro-component :instance)
     (glyph-width 10)
@@ -218,6 +229,7 @@
    ())
   (glyph-f-clef-part
    ((id "f-clef")
+    (ink-color "black")
     (staff-component :instance)
     (notehead-component :instance)
     (stem-component :instance)
@@ -227,6 +239,7 @@
    ())
   (glyph-c-clef
    ((id "c-clef")
+    (ink-color "black")
     (staff-component :instance)
     (clef-component :instance)
     (glyph-width 120)
@@ -235,6 +248,7 @@
    ())
   (glyph-g-clef
    ((id "g-clef")
+    (ink-color "black")
     (staff-component :instance)
     (clef-component :instance)
     (glyph-width 120)
@@ -243,6 +257,7 @@
    ())
   (glyph-barline
    ((id "barline")
+    (ink-color "black")
     (staff-component :instance)
     (barline-component :instance)
     (dot-component :instance)
@@ -255,6 +270,7 @@
    ())
   (glyph-dot
    ((id "dot")
+    (ink-color "black")
     (staff-component :instance)
     (dot-component :instance)
     (glyph-width 80)
@@ -263,6 +279,7 @@
    ())
   (glyph-meter
    ((id "meter")
+    (ink-color "black")
     (staff-component :instance)
     (tempus-component :instance)
     (prolatio-component :instance)
@@ -275,6 +292,7 @@
    ())
   (glyph-digit-arc
    ((id "digit-arcs")
+    (ink-color "black")
     (staff-component :instance)
     (list-of-arc-components :instance-list)
     (list-of-arc-positions nil)
@@ -284,6 +302,7 @@
    ())
   (glyph-custos
    ((id "custos")
+    (ink-color "black")
     (staff-component :instance)
     (custos-component :instance)
     (glyph-width 80)

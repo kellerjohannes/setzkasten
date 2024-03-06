@@ -152,7 +152,8 @@
                              (third text-element)
                              *font-height*
                              (second text-element)
-                             :rotation (if (eq (fourth text-element) :upside-down) 180 0))
+                             :rotation (if (eq (fourth text-element) :upside-down) 180 0)
+                             :color (if (fifth text-element) (fifth text-element) "black"))
                 (svg-use-container score)))
         (rest (rest (rest text-data))))
   (second text-data))
