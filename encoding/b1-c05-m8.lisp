@@ -39,6 +39,8 @@
               (:de "re aufsteigend")
               (:en "re in ascent")))))
   (:preamble-lilypond
+   (:brackets
+    (s2 0 5.5 -12 0 5.5 -12))
    (:lyrics
     ;; JK: Im Auge zu behalten: die Silben werden standardmässig kleiner gesetzt als die "per
     ;; x:"-Angaben und die 'captions'. Das müsste in der lilypond-backend-Implementierung angepasst
@@ -48,15 +50,15 @@
     ;; grundsätzlich kontrolliert werden
     ;;
     ;; OPEN
-    (s1 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } la sol fa la sol")
-                 (:de "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } la sol fa la sol")
-                 (:en "\\set stanza = \\markup{ \\normal-text \"in nat.:\" } la sol fa la sol")))
-    (s2 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"[per nat:\" } sol fa la sol fa]")
-                 (:de "\\set stanza = \\markup{ \\normal-text \"[per nat:\" } sol fa la sol fa]")
-                 (:en "\\set stanza = \\markup{ \\normal-text \"[in nat:\" } sol fa la sol fa]")))
-    (s3 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } fa mi la")
-                 (:de "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } fa mi la")
-                 (:en "\\set stanza = \\markup{ \\normal-text \"in nat.:\" } fa mi la")))
+    (s1 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per natura:\" } la sol fa la sol")
+                 (:de "\\set stanza = \\markup{ \\normal-text \"per natura:\" } la sol fa la sol")
+                 (:en "\\set stanza = \\markup{ \\normal-text \"in natura:\" } la sol fa la sol")))
+    (s2 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per natura:\" } sol fa la sol fa")
+                 (:de "\\set stanza = \\markup{ \\normal-text \"per natura:\" } sol fa la sol fa")
+                 (:en "\\set stanza = \\markup{ \\normal-text \"in natura:\" } sol fa la sol fa")))
+    (s3 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per natura:\" } fa mi la")
+                 (:de "\\set stanza = \\markup{ \\normal-text \"per natura:\" } fa mi la")
+                 (:en "\\set stanza = \\markup{ \\normal-text \"in natura:\" } fa mi la")))
     (s4 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } la sol fa mi re")
                  (:de "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } la sol fa mi re")
                  (:en "\\set stanza = \\markup{ \\normal-text \"in ♮:\" } la sol fa mi re")))
@@ -69,18 +71,15 @@
     (s5 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } sol fa la sol fa")
                  (:de "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } sol fa la sol fa")
                  (:en "\\set stanza = \\markup{ \\normal-text \"in ♮:\" } sol fa la sol fa")))
-    (s6 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } fa mi mi")
-                 (:de "\\set stanza = \\markup{ \\normal-text \"per nat.:\" } fa mi mi")
-                 (:en "\\set stanza = \\markup{ \\normal-text \"in nat.:\" } fa mi mi")))
+    (s6 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per natura:\" } fa mi mi")
+                 (:de "\\set stanza = \\markup{ \\normal-text \"per natura:\" } fa mi mi")
+                 (:en "\\set stanza = \\markup{ \\normal-text \"in natura:\" } fa mi mi")))
     (s7 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } fa mi la")
                  (:de "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } fa mi la")
                  (:en "\\set stanza = \\markup{ \\normal-text \"in ♭:\" } fa mi la")))
-    ;; JK: [per ascendere] soll nach der letzten Silbe angehängt werden.
-    ;;
-    ;; OPEN
-    (s7 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"[ascendente]\" } fa mi mi")
-                 (:de "\\set stanza = \\markup{ \\normal-text \"[aufsteigend]\" } fa mi mi")
-                 (:en "\\set stanza = \\markup{ \\normal-text \"[in ascent]\" } fa mi mi")))))
+    (s7 v1 (:alt (:it "fa mi \\once \\override LyricText.self-alignment-X = #LEFT mi_[ascendente]")
+                 (:de "fa mi \\once \\override LyricText.self-alignment-X = #LEFT mi_[aufsteigend]")
+                 (:en "fa mi \\once \\override LyricText.self-alignment-X = #LEFT mi_[in_ascent]")))))
   (:data
    (:text 70 58 (0 2198 "ᴍano ᴇnarmonica , con ſemitoni maggiori diſcendenti nel principio del tono,con il tono, in quattro"))
    (:text 70 58 (0 976 "parti diuiſo , per le ſette lettere della ᴍano."))
@@ -171,7 +170,7 @@
     (:section s1) (:f-clef) max7 fclef7 b22 sb9 fl9 sbd9 sh8 sb8 b22 sbd8 b22 sb8 bl
 
            (:alt (:diplomatic)
-                 (:critical (:section s2) sb8 fl8 sbd8 sh7 sb7 sbd7 sb7 bl)
+                 (:critical (:section s2) (:bracketed) sb8 fl8 sbd8 sh7 sb7 sbd7 sb7 bl)
                  (:coord-barre "N6-N10")
                  (:coord-norm "G2 N1-N5")
                  (:comment "Der Schritt von G zu F existiert im Original nicht, ist aber inhaltlich plausibel.")

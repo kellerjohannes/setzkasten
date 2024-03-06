@@ -28,42 +28,108 @@
     (s7 (:alt (:it "Ffaut")
               (:de "Ffaut")
               (:en "Ffaut"))))
-   (:section-captions
-    (s1 (:alt (:it "la, mi, re,\\ut, fa, sol\\per natura,\\per ♭, per ♮")
-              ;; Kommentar Anne: Für mich geht diese Reihenfolge nicht, weil es deckt sich nicht
-              ;; weder mit dem Original noch dem Wahrnehmen der Zeit. Die erste Zeile muss la mi re
-              ;; sein in Zusammenhang mit dem Notennamen Alamire, die zweite ut, fa, sol, und die
-              ;; dritte die Hexachorde. Die Hexachorde der ersten Zeile gelten für la mi und re, bei
-              ;; ut fa und sol wären sie Hexachorde auf a, d, e, usw. Dies Prinzip gilt für alle
-              ;; nachher, dass die Silben der erste Reihe gelten für die dargestellten Note(n), die
-              ;; danach für die andere Möglichkeiten. Dies ist kaum zu erkennen von der jetzige
-              ;; Darstellung. Ich habe die englische Darstellung entsprechend (hoffentlich) meine
-              ;; Vorstellungen eingerichtet.
-              ;;
-              ;; JK: Finde ich sehr gut, ich habe die italienische Reihenfolge der Zeilen nun der
-              ;; Englischen angepasst.
-              ;;
-              ;; DONE
-              (:de "la, mi, re,\\ut, fa, sol\\per natura,\\per ♭, per ♮")
-              (:en "la, mi, re,\\ut, fa, sol\\in nat.,\\in ♭,\\in ♮")))
-    (s2 (:alt (:it "fa, mi,\\la, sol, re, ut\\per ♭,\\per ♮")
-              (:de "fa, mi,\\la, sol, re, ut\\per ♭,\\per ♮")
-              (:en "fa, mi,\\la, sol, re, ut\\in ♭,\\in ♮")))
-    (s3 (:alt (:it "mi, fa, sol,\\la, re, ut\\per ♮,\\per natura")
-              (:de "mi, fa, sol,\\la, re, ut\\per ♮,\\per natura")
-              (:en "mi, fa, sol,\\la, re, ut\\in ♮,\\in nat.")))
-    (s4 (:alt (:it "sol, fa, ut,\\re, mi, la\\per natura,\\per ♭")
-              (:de "sol, fa, ut,\\re, mi, la\\per natura,\\per ♭")
-              (:en "sol, fa, ut,\\re, mi, la\\in nat.,\\in ♭")))
-    (s5 (:alt (:it "la, sol, re,\\fa, mi, ut\\per natura,\\per ♭")
-              (:de "la, sol, re,\\fa, mi, ut\\per natura,\\per ♭")
-              (:en "la, sol, re,\\fa, mi, ut\\in nat.,\\in ♭")))
-    (s6 (:alt (:it "la, mi, fa,\\ut, re, sol\\per natura,\\per ♮")
-              (:de "la, mi, fa,\\ut, re, sol\\per natura,\\per ♮")
-              (:en "la, mi, fa,\\ut, re, sol\\in nat.,\\in ♮")))
-    (s7 (:alt (:it "fa, ut, re,\\mi, sol, la\\per natura,\\per ♭")
-              (:de "fa, ut, re,\\mi, sol, la\\per natura,\\per ♭")
-              (:en "fa, ut, re,\\mi, sol, la\\in nat.,\\in ♭")))))
+   ;; (:section-captions
+   ;;  (s1 (:alt (:it "la, mi, re,\\ut, fa, sol\\per natura,\\per ♭, per ♮")
+   ;;            ;; Kommentar Anne: Für mich geht diese Reihenfolge nicht, weil es deckt sich nicht
+   ;;            ;; weder mit dem Original noch dem Wahrnehmen der Zeit. Die erste Zeile muss la mi re
+   ;;            ;; sein in Zusammenhang mit dem Notennamen Alamire, die zweite ut, fa, sol, und die
+   ;;            ;; dritte die Hexachorde. Die Hexachorde der ersten Zeile gelten für la mi und re, bei
+   ;;            ;; ut fa und sol wären sie Hexachorde auf a, d, e, usw. Dies Prinzip gilt für alle
+   ;;            ;; nachher, dass die Silben der erste Reihe gelten für die dargestellten Note(n), die
+   ;;            ;; danach für die andere Möglichkeiten. Dies ist kaum zu erkennen von der jetzige
+   ;;            ;; Darstellung. Ich habe die englische Darstellung entsprechend (hoffentlich) meine
+   ;;            ;; Vorstellungen eingerichtet.
+   ;;            ;;
+   ;;            ;; JK: Finde ich sehr gut, ich habe die italienische Reihenfolge der Zeilen nun der
+   ;;            ;; Englischen angepasst.
+   ;;            ;;
+   ;;            ;; DONE
+   ;;            (:de "la, mi, re,\\ut, fa, sol\\per natura,\\per ♭, per ♮")
+   ;;            (:en "la, mi, re,\\ut, fa, sol\\in nat.,\\in ♭,\\in ♮")))
+   ;;  (s2 (:alt (:it "fa, mi,\\la, sol, re, ut\\per ♭,\\per ♮")
+   ;;            (:de "fa, mi,\\la, sol, re, ut\\per ♭,\\per ♮")
+   ;;            (:en "fa, mi,\\la, sol, re, ut\\in ♭,\\in ♮")))
+   ;;  (s3 (:alt (:it "mi, fa, sol,\\la, re, ut\\per ♮,\\per natura")
+   ;;            (:de "mi, fa, sol,\\la, re, ut\\per ♮,\\per natura")
+   ;;            (:en "mi, fa, sol,\\la, re, ut\\in ♮,\\in nat.")))
+   ;;  (s4 (:alt (:it "sol, fa, ut,\\re, mi, la\\per natura,\\per ♭")
+   ;;            (:de "sol, fa, ut,\\re, mi, la\\per natura,\\per ♭")
+   ;;            (:en "sol, fa, ut,\\re, mi, la\\in nat.,\\in ♭")))
+   ;;  (s5 (:alt (:it "la, sol, re,\\fa, mi, ut\\per natura,\\per ♭")
+   ;;            (:de "la, sol, re,\\fa, mi, ut\\per natura,\\per ♭")
+   ;;            (:en "la, sol, re,\\fa, mi, ut\\in nat.,\\in ♭")))
+   ;;  (s6 (:alt (:it "la, mi, fa,\\ut, re, sol\\per natura,\\per ♮")
+   ;;            (:de "la, mi, fa,\\ut, re, sol\\per natura,\\per ♮")
+   ;;            (:en "la, mi, fa,\\ut, re, sol\\in nat.,\\in ♮")))
+   ;;  (s7 (:alt (:it "fa, ut, re,\\mi, sol, la\\per natura,\\per ♭")
+   ;;            (:de "fa, ut, re,\\mi, sol, la\\per natura,\\per ♭")
+   ;;            (:en "fa, ut, re,\\mi, sol, la\\in nat.,\\in ♭"))))
+   )
+  (:preamble-lilypond
+   (:lyrics
+    (s1 v1 (:alt (:it "\\set stanza = \\markup{ \\column { \\vspace #1.23 \\line { \\normal-text \"per natura,\" } \\line { \\normal-text \"per ♭,\" } \\line { \\normal-text \"per ♮:\" } } \\lower #6.2 \\override #'(font-encoding . fetaBraces) \\lookup \"brace210\" } la")
+                 (:de "\\set stanza = \\markup{ \\column { \\vspace #1.23 \\line { \\normal-text \"per natura,\" } \\line { \\normal-text \"per ♭,\" } \\line { \\normal-text \"per ♮:\" } } \\lower #6.2 \\override #'(font-encoding . fetaBraces) \\lookup \"brace210\" } la")
+                 (:en "\\set stanza = \\markup{ \\column { \\vspace #1.23 \\line { \\normal-text \"in natura,\" } \\line { \\normal-text \"in ♭,\" } \\line { \\normal-text \"in ♮:\" } } \\lower #6.2 \\override #'(font-encoding . fetaBraces) \\lookup \"brace210\" } la")))
+    (s1 v1 "mi")
+    (s1 v1 "re")
+    (s1 v1 "ut")
+    (s1 v1 "fa")
+    (s1 v1 "sol")
+
+    (s2 v1 (:alt (:it "\\set stanza = \\markup{ \\column { \\vspace #1.83 \\line { \\normal-text \"per ♭,\" } \\line { \\normal-text \"per natura:\" } } \\lower #6.2 \\override #'(font-encoding . fetaBraces) \\lookup \"brace210\" } fa")
+                 (:de "\\set stanza = \\markup{ \\column { \\vspace #1.83 \\line { \\normal-text \"per ♭,\" } \\line { \\normal-text \"per natura:\" } } \\lower #6.2 \\override #'(font-encoding . fetaBraces) \\lookup \"brace210\" } fa")
+                 (:en "\\set stanza = \\markup{ \\column { \\vspace #1.83 \\line { \\normal-text \"in ♭,\" } \\line { \\normal-text \"in natura:\" } } \\lower #6.2 \\override #'(font-encoding . fetaBraces) \\lookup \"brace210\" } fa")))
+    (s2 v1 "mi")
+    (s2 v1 "la")
+    (s2 v1 "sol")
+    (s2 v1 "re")
+    (s2 v1 "ut")
+
+    (s3 v1 (:alt (:it "\\set stanza = \\markup{ \\column { \\vspace #1.83 \\line { \\normal-text \"per ♮,\" } \\line { \\normal-text \"per natura:\" } } \\lower #6.2 \\override #'(font-encoding . fetaBraces) \\lookup \"brace210\" } mi")
+                 (:de "\\set stanza = \\markup{ \\column { \\vspace #1.83 \\line { \\normal-text \"per ♮,\" } \\line { \\normal-text \"per natura:\" } } \\lower #6.2 \\override #'(font-encoding . fetaBraces) \\lookup \"brace210\" } mi")
+                 (:en "\\set stanza = \\markup{ \\column { \\vspace #1.83 \\line { \\normal-text \"in ♮,\" } \\line { \\normal-text \"in natura:\" } } \\lower #6.2 \\override #'(font-encoding . fetaBraces) \\lookup \"brace210\" } mi")))
+    (s3 v1 "fa")
+    (s3 v1 "sol")
+    (s3 v1 "la")
+    (s3 v1 "re")
+    (s3 v1 "ut")
+
+    (s4 v1 (:alt (:it "\\set stanza = \\markup{ \\column { \\vspace #1.83 \\line { \\normal-text \"per natura,\" } \\line { \\normal-text \"per ♭:\" } } \\lower #6.2 \\override #'(font-encoding . fetaBraces) \\lookup \"brace210\" } sol")
+                 (:de "\\set stanza = \\markup{ \\column { \\vspace #1.83 \\line { \\normal-text \"per natura,\" } \\line { \\normal-text \"per ♭:\" } } \\lower #6.2 \\override #'(font-encoding . fetaBraces) \\lookup \"brace210\" } sol")
+                 (:en "\\set stanza = \\markup{ \\column { \\vspace #1.83 \\line { \\normal-text \"in natura,\" } \\line { \\normal-text \"in ♭:\" } } \\lower #6.2 \\override #'(font-encoding . fetaBraces) \\lookup \"brace210\" } sol")))
+    (s4 v1 "fa")
+    (s4 v1 "ut")
+    (s4 v1 "re")
+    (s4 v1 "mi")
+    (s4 v1 "la")
+
+    (s5 v1 (:alt (:it "\\set stanza = \\markup{ \\column { \\vspace #1.83 \\line { \\normal-text \"per natura,\" } \\line { \\normal-text \"per ♭:\" } } \\lower #6.2 \\override #'(font-encoding . fetaBraces) \\lookup \"brace210\" } la")
+                 (:de "\\set stanza = \\markup{ \\column { \\vspace #1.83 \\line { \\normal-text \"per natura,\" } \\line { \\normal-text \"per ♭:\" } } \\lower #6.2 \\override #'(font-encoding . fetaBraces) \\lookup \"brace210\" } la")
+                 (:en "\\set stanza = \\markup{ \\column { \\vspace #1.83 \\line { \\normal-text \"in natura,\" } \\line { \\normal-text \"in ♭:\" } } \\lower #6.2 \\override #'(font-encoding . fetaBraces) \\lookup \"brace210\" } la")))
+    (s5 v1 "sol")
+    (s5 v1 "re")
+    (s5 v1 "fa")
+    (s5 v1 "mi")
+    (s5 v1 "ut")
+
+    (s6 v1 (:alt (:it "\\set stanza = \\markup{ \\column { \\vspace #1.83 \\line { \\normal-text \"per natura,\" } \\line { \\normal-text \"per ♮:\" } } \\lower #6.2 \\override #'(font-encoding . fetaBraces) \\lookup \"brace210\" } la")
+                 (:de "\\set stanza = \\markup{ \\column { \\vspace #1.83 \\line { \\normal-text \"per natura,\" } \\line { \\normal-text \"per ♮:\" } } \\lower #6.2 \\override #'(font-encoding . fetaBraces) \\lookup \"brace210\" } la")
+                 (:en "\\set stanza = \\markup{ \\column { \\vspace #1.83 \\line { \\normal-text \"in natura,\" } \\line { \\normal-text \"in ♮:\" } } \\lower #6.2 \\override #'(font-encoding . fetaBraces) \\lookup \"brace210\" } la")))
+    (s6 v1 "mi")
+    (s6 v1 "fa")
+    (s6 v1 "ut")
+    (s6 v1 "re")
+    (s6 v1 "sol")
+
+    (s7 v1 (:alt (:it "\\set stanza = \\markup{ \\column { \\vspace #1.83 \\line { \\normal-text \"per natura,\" } \\line { \\normal-text \"per ♭:\" } } \\lower #6.2 \\override #'(font-encoding . fetaBraces) \\lookup \"brace210\" } fa")
+                 (:de "\\set stanza = \\markup{ \\column { \\vspace #1.83 \\line { \\normal-text \"per natura,\" } \\line { \\normal-text \"per ♭:\" } } \\lower #6.2 \\override #'(font-encoding . fetaBraces) \\lookup \"brace210\" } fa")
+                 (:en "\\set stanza = \\markup{ \\column { \\vspace #1.83 \\line { \\normal-text \"in natura,\" } \\line { \\normal-text \"in ♭:\" } } \\lower #6.2 \\override #'(font-encoding . fetaBraces) \\lookup \"brace210\" } fa")))
+    (s7 v1 "ut")
+    (s7 v1 "re")
+    (s7 v1 "mi")
+    (s7 v1 "sol")
+    (s7 v1 "la")
+    ))
   (:data
    (:text 70 58 (231 1648 "ᴅimoſtratione della ᴍano ᴄromatica con li ſemitoni maggiori aſcendenti."))
    (:text 100 58
