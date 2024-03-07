@@ -185,7 +185,7 @@
                  (:coord-barre "MZ2 N4")
                  (:coord-norm "G13 N1")
                  (:comment "In Exemplaren q005, q067, q081: Der enharmonischer Punkt fehlt. In Exemplar q044 wurden er handschriftlich ergänzt.")
-                 (:flag :edy (:id 12))
+                 (:flag :ready :id 12))
            (:ligature-end) b27 b27 b27 b27 bl
            (:section s14)
            b27 b27 b27 b27 (:ligature-start nil nil nil :dot)

@@ -51,7 +51,7 @@
                  (:critical max6)
                  (:coord-barre "N1")
                  (:coord-norm "G1 N1")
-                 (:comment "In Exemplaren q005, q067, q081 fehlt diese Maxima. In Exemplar q044 wurde sie handschriftlich ergänzt.")
+                 (:comment "In den Exemplaren q005, q067, q081 fehlt diese Maxima. In Exemplar q044 wurde sie handschriftlich ergänzt.")
                  (:flag :ready) (:id 1))
            bl
            (:section s2)
@@ -68,7 +68,7 @@
                  (:critical flrev4)
                  (:coord-barre "N6")
                  (:coord-norm "G6 N1")
-                 (:comment "In Exemplaren q005, q067, q081 fehlt das gespiegelte ♭. In Exemplar q044 wurde es handschriftlich ergänzt.")
+                 (:comment "In den Exemplaren q005, q067, q081 fehlt das gespiegelte ♭. In Exemplar q044 wurde es handschriftlich ergänzt.")
                  (:flag :ready) (:id 2))
            (:ligature-end) b38 b38 bl
            (:section s7)
@@ -91,7 +91,7 @@
                  (:critical "ꝑ la metà")
                  (:coord-barre "TZ1 Ende")
                  (:coord-norm "G9 US")
-                 (:comment "In Exemplaren q005, q067, q081: »ꝑ la meta«.")
+                 (:comment "In den Exemplaren q005, q067, q081: »ꝑ la meta«.")
                  (:flag :ready) (:id 3))))
    (:text 70 58
      (271 nil "dinanzi")
