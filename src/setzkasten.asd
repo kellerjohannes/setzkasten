@@ -8,8 +8,9 @@
                (:file "setzkasten")
                (:file "macros")
                (:file "score-class")
+               (:file "statistics")
                (:file "score-parser"
-                :depends-on ("score-class"))
+                :depends-on ("score-class" "statistics"))
                (:file "apparatus"
                 :depends-on ("score-parser"))
                (:file "apparatus-tex-backend"
@@ -21,7 +22,7 @@
                (:file "casting"
                 :depends-on ("class-definitions"))
                (:file "typesetter"
-                :depends-on ("casting"))
+                :depends-on ("casting" "statistics"))
                (:file "svg-generator")
                (:file "backend-class")
                (:file "backend-type-imitation"
@@ -33,7 +34,8 @@
                (:file "mei-backend"
                 :depends-on ("backend-class" "score-parser"))
                (:file "dispatcher"
-                :depends-on ("backend-type-imitation" "apparatus" "score-parser")))
+                :depends-on ("backend-type-imitation" "apparatus" "score-parser"))
+               )
   :build-pathname "setzkasten-bin"
   :entry-point "setzkasten:main")
 

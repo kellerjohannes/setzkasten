@@ -164,6 +164,12 @@
                                              (segno-flag parser-state)
                                              (meter parser-state)))))
     (mapc (lambda (section-id)
+            (when *statistics-active*
+              (push (list :name (filename score)
+                          :section section-id
+                          :voice (voice-id parser-state)
+                          :note note-instance)
+                    *statistics-notes*))
             (add-mobject-to-score score
                                   section-id
                                   (voice-id parser-state)

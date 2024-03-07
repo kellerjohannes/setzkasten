@@ -79,6 +79,8 @@
   )
 
 (defmethod add-stencil-to-line ((score typesetter) (stencil glyph))
+  (when *statistics-active*
+    (push (list :stencil stencil :name (name score)) *statistics-types*))
   (push stencil (first (line-container score))))
 
 (define-condition stencil-not-found (error)

@@ -53,7 +53,6 @@
     (process-score (first item) (second item) (third item) (fourth item))
     (when (fifth item)
       (process-apparatus (first item) (second item) (fifth item))))
-
   'done)
 
 
@@ -3352,8 +3351,9 @@
   (format t "~&~a"
           (trivial-shell:shell-command "mv /home/johannes/common-lisp/setzkasten-output/ly/*.svg /home/johannes/common-lisp/setzkasten-output/svg/"))
   (format t "~&~a"
-          (trivial-shell:shell-command (format nil "cp /home/johannes/common-lisp/setzkasten-output/svg/~a* /data/images/"
-                                               (string-downcase (string key))))))
+          (trivial-shell:shell-command
+           (format nil "cp /home/johannes/common-lisp/setzkasten-output/svg/~a* /data/images/"
+                   (string-downcase (string key))))))
 
 (defun execute-book (book-number)
   (dotimes (chapter-counter 100)
@@ -3362,6 +3362,15 @@
                          :keyword)))
         (when (gethash key *vicentino21*)
           (execute-set *vicentino21* key))))))
+
+(defun execute-statistics (suffix)
+  (reset-statistics)
+  (let ((*statistics-active* t))
+    (loop for key being each hash-key of *vicentino21*
+          do (execute-mission (list (find suffix
+                                          (gethash key *vicentino21*)
+                                          :test #'string=
+                                          :key #'second))))))
 
 (defun execute-hash ()
   (loop for key being each hash-key of *vicentino21*
