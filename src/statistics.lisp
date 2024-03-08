@@ -17,7 +17,7 @@
 \\begin{center}
   {\\Large\\textbf{Moveable Types}}
 \\end{center}
-\\begin{longtable}{p{1cm}p{3cm}p{1cm}p{19cm}}
+\\begin{longtable}{>{\\raggedleft}p{1cm}p{3cm}p{1cm}p{18cm}}
   \\toprule
   & Type ID & Occ. & Locations \\\\\\midrule\\endhead
 ")
@@ -56,24 +56,34 @@
                (push (list key (length val) (make-occurrence-list val))
                      result))
              type-hash)
-    (sort result #'string< :key #'first)))
+    (sort result #'> :key #'second)))
 
 (defun extract-coordinates (id-string)
   (list (parse-integer id-string :start 1 :end 2)
         (parse-integer id-string :start 4 :end 6)
         (parse-integer id-string :start 8 :junk-allowed t)))
 
-(defun generate-id-shorthand (id-string)
-  (let ((coordinates (extract-coordinates id-string)))
-    (format nil "~a$\\cdot$~a$\\cdot$~a"
-            (first coordinates)
-            (second coordinates)
-            (third coordinates))))
+(defun generate-type-id-shorthand (id-string)
+  (if (string= id-string "...")
+      "..."
+      (let ((coordinates (extract-coordinates id-string)))
+        (format nil "~a$\\cdot$~a$\\cdot$~a"
+                (first coordinates)
+                (second coordinates)
+                (third coordinates)))))
 
-(defun generate-occurrence-string (occurrence-list)
+(defun generate-type-occurrence-string (occurrence-list
+                                        &optional (max-number (length occurrence-list)))
   (let ((result ""))
-    (dolist (item occurrence-list (subseq result 0 (- (length result) 2)))
-      (add-code result (format nil "~a (~d), " (generate-id-shorthand (car item)) (cdr item))))))
+    (dolist (item
+             (if (> (length occurrence-list) max-number)
+                 (append (subseq occurrence-list 0 max-number)
+                         (list (cons "..." (- (length occurrence-list) max-number))))
+                 occurrence-list)
+             (subseq result 0 (- (length result) 2)))
+      (add-code result (format nil "~a (~d), "
+                               (generate-type-id-shorthand (car item))
+                               (cdr item))))))
 
 (defun generate-type-sheet ()
   (let ((tex-code *type-sheet-header*)
@@ -89,7 +99,7 @@
                                  (first item)
                                  (first item)
                                  (second item)
-                                 (generate-occurrence-string (third item))))))
+                                 (generate-type-occurrence-string (third item) 20)))))
     (add-code tex-code *sheet-footer*)
     tex-code))
 
@@ -105,40 +115,35 @@
                               :direction :output
                               :if-exists :supersede
                               :if-does-not-exist :create)
-      (format svg-file "~a~a~a"
+      (format svg-file "~a<defs>~a</defs><use xlink:href=\"#~a\" x=\"~d\" y=\"~d\" />~a"
               (toplevel-open (glyph-width glyph)
-                             (glyph-height glyph)
+                             (* 1.3 (glyph-height glyph))
                              (id glyph))
               (svg-data glyph)
+              (id glyph)
+              0
+              (* 0.15 (glyph-height glyph))
               (toplevel-close)))))
 
 
 
+(defun extract-pitch (pitch-list &optional (octave-included-p t))
+  (list (first pitch-list)
+        (when (or (eq (second pitch-list) :sharp) (eq (second pitch-list) :flat))
+          (second pitch-list))
+        (third pitch-list)
+        (when octave-included-p (fourth pitch-list))))
 
 (defun find-note-item (id note-hash)
   (gethash id note-hash))
 
 (defun note-item-in-note-hash-p (item note-hash)
-  (if (find-note-item (pitch (getf item :note)) note-hash) t nil))
+  (if (find-note-item (extract-pitch (pitch (getf item :note)) nil) note-hash) t nil))
 
 (defun generate-note-location (item)
   (append (extract-coordinates (getf item :name))
           (list (getf item :section))
           (list (getf item :voice))))
-
-(defun extract-pitch (pitch-list &optional (octave-included-p t))
-  (list (first pitch-list) (second pitch-list) (third pitch-list)
-        (when octave-included-p (fourth pitch-list))))
-
-(defun make-note-hash ()
-  (let ((result (make-hash-table :test #'equal)))
-    (loop for item in *statistics-notes*
-          do (let ((pitch-id (extract-pitch (pitch (getf item :note)) nil)))
-               (if (note-item-in-note-hash-p item result)
-                   (push (generate-note-location item) (gethash pitch-id result))
-                   (setf (gethash pitch-id result)
-                         (list (generate-note-location item))))))
-    result))
 
 (defun generate-note-id-shorthand (location-list)
   (format nil "~a$\\cdot$~a$\\cdot$~a|~a$\\cdot$~a"
@@ -169,20 +174,25 @@
 (defparameter *dict-accidentals* '((:sharp . "♯")
                                    (:flat . "♭")))
 
-(defparameter *dict-dots* '((:comma . "❜")))
+(defparameter *dict-dots* '((:comma . "❜")
+                            (:dot-comma . "❜")))
 
 (defun convert-letter (pitch-list)
-  (cdr (assoc (first pitch-list) (if (eq (third pitch-list) :dot)
+  (cdr (assoc (first pitch-list) (if (or (eq (third pitch-list) :dot)
+                                         (eq (third pitch-list) :dot-comma))
                                      *dict-dotted-letters*
                                      *dict-letters*))))
 
 (defun convert-accidental (pitch-list)
-  (if (and (not (second pitch-list)) (eq (first pitch-list) :b))
+  (if (and (or (eq (second pitch-list) :natural)
+               (not (second pitch-list)))
+           (eq (first pitch-list) :b))
       "♮"
       (cdr (assoc (second pitch-list) *dict-accidentals*))))
 
 (defun convert-dot (pitch-list)
-  (when (eq (third pitch-list) :comma)
+  (when (or (eq (third pitch-list) :comma)
+            (eq (third pitch-list) :dot-comma))
     (cdr (assoc (third pitch-list) *dict-dots*))))
 
 (defun generate-note-name (pitch-list &optional (octave-included-p t))
@@ -192,6 +202,18 @@
           (convert-dot pitch-list)
           (when octave-included-p (fourth pitch-list))))
 
+
+(defun make-note-hash ()
+  (let ((result (make-hash-table :test #'equal)))
+    (loop for item in *statistics-notes*
+          do (let ((pitch-id (extract-pitch (pitch (getf item :note)) nil)))
+               (if (note-item-in-note-hash-p item result)
+                   (push (generate-note-location item) (gethash pitch-id result))
+                   (setf (gethash pitch-id result)
+                         (list (generate-note-location item))))))
+    result))
+
+
 (defun transform-note-hash-to-list (note-hash)
   (let ((result nil))
     (maphash (lambda (key val)
@@ -200,21 +222,27 @@
                            (make-occurrence-list (mapcar #'generate-note-id-shorthand val)))
                      result))
              note-hash)
-    (sort result #'string< :key #'first)))
+    (sort result #'> :key #'second)))
 
 
 (defparameter *note-sheet-header* "
 \\begin{center}
-  {\\Large\\textbf{Notes}}
+  {\\Large\\textbf{Notes (pitchclasses)}}
 \\end{center}
-\\begin{longtable}{p{1cm}p{1cm}p{23cm}}
+\\begin{longtable}{p{1cm}p{1cm}p{21cm}}
   \\toprule
   Note & Occ. & Locations \\\\\\midrule\\endhead
 ")
 
-(defun generate-note-occurrence-string (occurrence-list)
+(defun generate-note-occurrence-string (occurrence-list
+                                        &optional (max-number (length occurrence-list)))
   (let ((result ""))
-    (dolist (item occurrence-list (subseq result 0 (- (length result) 2)))
+    (dolist (item
+             (if (> (length occurrence-list) max-number)
+                 (append (subseq occurrence-list 0 max-number)
+                         (list (cons "..." (- (length occurrence-list) max-number))))
+                 occurrence-list)
+             (subseq result 0 (- (length result) 2)))
       (add-code result (format nil "~a (~d), " (car item) (cdr item))))))
 
 (defun generate-note-sheet ()
@@ -228,7 +256,7 @@
   \\midrule"
                                  (first item)
                                  (second item)
-                                 (generate-note-occurrence-string (third item))))))
+                                 (generate-note-occurrence-string (third item) 20)))))
     (add-code tex-code *sheet-footer*)
     tex-code))
 
@@ -241,6 +269,7 @@
 \\usepackage{booktabs}
 \\usepackage{graphicx}
 \\usepackage{stackengine}
+\\usepackage{array}
 
 \\usepackage{newunicodechar}
 \\newunicodechar{♮}{$\\natural$}
