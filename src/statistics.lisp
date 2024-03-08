@@ -126,13 +126,18 @@
           (list (getf item :section))
           (list (getf item :voice))))
 
+(defun extract-pitch (pitch-list &optional (octave-included-p t))
+  (list (first pitch-list) (second pitch-list) (third pitch-list)
+        (when octave-included-p (fourth pitch-list))))
+
 (defun make-note-hash ()
   (let ((result (make-hash-table :test #'equal)))
     (loop for item in *statistics-notes*
-          do (if (note-item-in-note-hash-p item result)
-                 (push (generate-note-location item) (gethash (pitch (getf item :note)) result))
-                 (setf (gethash (pitch (getf item :note)) result)
-                       (list (generate-note-location item)))))
+          do (let ((pitch-id (extract-pitch (pitch (getf item :note)) nil)))
+               (if (note-item-in-note-hash-p item result)
+                   (push (generate-note-location item) (gethash pitch-id result))
+                   (setf (gethash pitch-id result)
+                         (list (generate-note-location item))))))
     result))
 
 (defun generate-note-id-shorthand (location-list)
@@ -180,17 +185,17 @@
   (when (eq (third pitch-list) :comma)
     (cdr (assoc (third pitch-list) *dict-dots*))))
 
-(defun generate-note-name (pitch-list)
-  (format nil "~a~@[~a~]~@[~a~][~a]"
+(defun generate-note-name (pitch-list &optional (octave-included-p t))
+  (format nil "~a~@[~a~]~@[~a~]~@[[~a]~]"
           (convert-letter pitch-list)
           (convert-accidental pitch-list)
           (convert-dot pitch-list)
-          (fourth pitch-list)))
+          (when octave-included-p (fourth pitch-list))))
 
 (defun transform-note-hash-to-list (note-hash)
   (let ((result nil))
     (maphash (lambda (key val)
-               (push (list (generate-note-name key)
+               (push (list (generate-note-name key nil)
                            (length val)
                            (make-occurrence-list (mapcar #'generate-note-id-shorthand val)))
                      result))
@@ -235,6 +240,28 @@
 \\usepackage{longtable}
 \\usepackage{booktabs}
 \\usepackage{graphicx}
+\\usepackage{stackengine}
+
+\\usepackage{newunicodechar}
+\\newunicodechar{♮}{$\\natural$}
+\\newunicodechar{♭}{$\\flat$}
+\\newunicodechar{♯}{$\\sharp$}
+\\newunicodechar{➚}{$\\nearrow$}
+\\newunicodechar{➘}{$\\searrow$}
+\\newunicodechar{Ȧ}{\\stackon[0.8pt]{A}{.}}
+\\newunicodechar{Ḃ}{\\stackon[0.8pt]{B}{.}}
+\\newunicodechar{Ċ}{\\stackon[0.8pt]{C}{.}}
+\\newunicodechar{Ḋ}{\\stackon[0.8pt]{D}{.}}
+\\newunicodechar{Ė}{\\stackon[0.8pt]{E}{.}}
+\\newunicodechar{Ḟ}{\\stackon[0.8pt]{F}{.}}
+\\newunicodechar{Ġ}{\\stackon[0.8pt]{G}{.}}
+\\newunicodechar{Ɋ}{\\caps{Q}}
+\\newunicodechar{ꝑ}{{\\per}}
+\\newunicodechar{ﬆ}{st}
+\\newunicodechar{❜}{\\raisebox{0.8em}{,}}
+\\newunicodechar{ſ}{{\\fontencoding{TS1}\\selectfont\\char115}}
+\\newunicodechar{«}{\\frqq{}}
+\\newunicodechar{»}{\\flqq{}}
 
 \\begin{document}")
 
