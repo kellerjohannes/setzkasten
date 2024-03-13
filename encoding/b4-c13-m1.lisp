@@ -17,12 +17,18 @@
    ;; JK: Ich verstehe den Kommentar nicht. Die beiden obigen Textelemente ("Punto in sincopa" /
    ;; "Punti dubbiosi") erscheinen im modernen Notensatz als Zwischentitel, da ich sie als solche
    ;; interpretiere. Gut so?
+   ;; AS: Ich finde es immer noch schwierig, die Textteile im Beispiel zu koordinieren mit dem Original, aber es stimmt grundsätzlich.
    ;;
    ;; OPEN
    (:section-headings
+              ;; AS: Die section-headings sollten alle zentriert über ihre Beispiele sein, oder?
+              ;;
     (s1 (:alt (:it "Esempio del punto di quinta e di seconda")
               (:de "Beispiel des Punkts der quinta und der seconda")
               (:en "Example of the dot of the quinta and of the seconda")))
+              ;;
+              ;; AS: Ich frage mich, ob bei den untenstehenden nicht immer [Example of the] stehen soll. Da die Beispiele vereinzelt stehen, zieht meine Augen nicht das "Essempio del" mit. 
+              ;;
     (s2 (:alt (:it "Punto di quarta")
               (:de "Punkt der quarta")
               (:en "Dot of the quarta")))
@@ -37,10 +43,10 @@
               (:en "Dot which rescues two [consecutive] ottave")))
     (s6 (:alt (:it "[Punto che] salva due quinte")
               (:de "[Punkt, der] zwei [parallele] quinte rettat")
-              (:en "[Dot which] rescues two quinte")))
+              (:en "[Dot which] rescues two [consecutive] quinte")))
     (s7 (:alt (:it "Punto d'affanno")
               (:de "Punkt des Schmerzes")
-              (:en "Dot of pain")))))
+              (:en "Dot of affliction")))))
   (:data
    (:text 90 58
           (10 773 "Eſſempio del punto di 5.& di 2.")
