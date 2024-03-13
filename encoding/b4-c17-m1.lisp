@@ -7,6 +7,8 @@
     (s1 (:alt (:it "Esempi dei termini del soprano")
               (:de "Beispiel der Strukturen des Soprano")
               (:en "Example of the limits of the soprano")))
+              ;; AS: Sollte auch nicht hier [Example of] vor den untenstehenden Exempeln sein?
+              ;;
     (s2 (:alt (:it "Termini del contr'alto")
               (:de "Strukturen des Alto")
               (:en "Limits of the alto")))
