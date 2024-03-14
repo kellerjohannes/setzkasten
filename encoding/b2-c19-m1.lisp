@@ -19,7 +19,12 @@
     (s4 (:alt (:it "A due voci")
               (:de "mit zwei Stimmen")
               (:en "in two voci"))))
-              ;; AS: Kommentar David:  No. 4: by comparison with other music examples, and because it retains the overall single breve duration, I think it's much more likely that the voice durations should be matched by ending the leaping voice with a minim (instead of ending the other voice with a dotted semibreve, as Johannes has done).
+   ;; AS: Kommentar David: No. 4: by comparison with other music examples, and because it retains
+   ;; the overall single breve duration, I think it's much more likely that the voice durations
+   ;; should be matched by ending the leaping voice with a minim (instead of ending the other voice
+   ;; with a dotted semibreve, as Johannes has done).
+   ;;
+   ;; OPEN
    (:section-captions
     (s2 (:alt (:it "De salti")
               (:de "mit Sprüngen")
@@ -31,14 +36,14 @@
     (s4 v1 v2)))
   (:data
    (:text 110 58
-          (353 1487 "Eſſempio della Seſta minore,come in uarij modi ſi può comporre."))
+     (353 1487 "Eſſempio della Seſta minore,come in uarij modi ſi può comporre."))
    (:text 90 58
-          (125 nil "à due")
-          (284 nil "uoci")
-          (532 nil "à tre")
-          (685 nil "uoci")
-          (942 nil "de ſalti")
-          (1800 nil "à due uoci."))
+     (125 nil "à due")
+     (284 nil "uoci")
+     (532 nil "à tre")
+     (685 nil "uoci")
+     (942 nil "de ſalti")
+     (1800 nil "à due uoci."))
    (:music 2218
            (:section s1)
            (:voice v1) cclef7 b38 sb7 sb8 b38

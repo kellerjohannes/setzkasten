@@ -8,6 +8,7 @@
                  ;; caption "composto" and "incomposto" don't agree with either "gradi" or "terza".)
                  ;;
                  ;; JK: changed it in Italien, not in English. Anne, would you adapt it or not?
+                 ;;
                  ;; AS: I changed it. Now it's up to you to close the discussion.
                  ;;
                  ;; OPEN

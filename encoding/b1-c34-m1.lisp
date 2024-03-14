@@ -25,7 +25,7 @@
 
     ;; Ich habe die Codierung nicht angefasst und warte auf eine Präferenz
     ;; eurerseits.
-
+    ;;
     ;; AS: Ich ziehe die 2. Möglichkeit vor, und habe 'composta' im Bezug zur 'quarta' gewählt.
     ;;
     ;; OPEN

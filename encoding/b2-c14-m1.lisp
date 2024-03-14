@@ -19,6 +19,8 @@
     ;;
     ;; kir: sehe ich auch so (und vermute generell, dass wir/ich an einigen Stellen 'kürzer'
     ;; übersetzen sollte ...)
+    ;;
+    ;; OPEN
     (s3 (:alt (:it "[Grado] incitato\\e molle")
               (:de "incitato\\und molle")
               (:en "incitato and\\molle [step]")))

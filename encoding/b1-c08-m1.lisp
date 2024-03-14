@@ -7,7 +7,9 @@
    (:lyrics
     ;; JK: Silben aus dem Haupttext unterlegt, in Ordnung so?
     ;;
-    ;; OPEN
+    ;; JK: von Martin und Luigi bestätigt
+    ;;
+    ;; DONE
     (s1 v1 "[mi mi ut mi]")))
   (:data
    (:alt (:diplomatic)

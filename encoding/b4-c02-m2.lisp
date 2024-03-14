@@ -6,7 +6,10 @@
    (:title (:alt (:it "Dimostratione delle chiavi dei soprani, che insegnano a leggere\\tutte l'altre sorti di chiavi per ♭ incitato et per ♭ molle,\\et per musica finta")
                  (:de "Darstellung der Schlüssel der Soprani, die lehren,\\alle anderen Arten von Schlüsseln zu lesen, per ♭ incitato und per ♭ molle\\und für musica finta")
                  (:en "Illustration of the chiavi of the sopranos which give instruction for reading\\all other kinds of chiavi in ♭ incitato and in ♭ molle\\and in musica finta")))
-                 ;; Kommentar Anne: die dritte Skala vom secondo Ordine und die erste vom sesto Ordine im G Schlüssel sind unangenehm tief zum Lesen - eventuell im einem oktavierten G Schlüssel?
+   ;; Kommentar Anne: die dritte Skala vom secondo Ordine und die erste vom sesto Ordine im G
+   ;; Schlüssel sind unangenehm tief zum Lesen - eventuell im einem oktavierten G Schlüssel?
+   ;;
+   ;; OPEN
    (:line-headings
     (:alt (:it "Primo ordine")
           (:de "erste Ordnung")

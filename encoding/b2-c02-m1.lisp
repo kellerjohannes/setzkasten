@@ -9,6 +9,10 @@
    (:section-captions
     (s1 (:alt (:it "a 2")
               ;; AS: All of these should have the numbers written out.
+              ;;
+              ;; JK: Achtung, hier scheint Luigi anderer Meinung zu sein: muss abgestimmt werden
+              ;;
+              ;; OPEN
               (:de "mit zwei Stimmen")
               (:en "in two [voci]")))
     (s2 (:alt (:it "a 2")

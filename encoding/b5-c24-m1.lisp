@@ -4,7 +4,9 @@
    (:comment "q021_s225, rotation: 0, origin: 509")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Queste sono tutte le consonanze di Elami acuto discendente,\\e di Elami grave ascendente")
-   ;; AS: Sollte nicht auch im italienischen, es "Elami acuto [quarto]" heissen?
+                 ;; AS: Sollte nicht auch im italienischen, es "Elami acuto [quarto]" heissen?
+                 ;;
+                 ;; OPEN
                  (:de "")
                  (:en "These are all descending consonances of Elami acuto [quarto],\\and ascending [consonances] of Elami grave [quarto]")))
    (:section-headings

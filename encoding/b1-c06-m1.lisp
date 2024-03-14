@@ -8,7 +8,9 @@
   ;;
   ;; JK: Die Silben sind nun ergänzt, ok so?
   ;;
-  ;; OPEN
+  ;; JK: von Luigi und Martin bestätigt
+  ;;
+  ;; DONE
   (:preamble-lilypond
    (:lyrics
     (s1 v1 (:alt (:it "[mi fa sol la]")

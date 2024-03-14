@@ -12,8 +12,8 @@
               ;; Für alle Ligaturen ist die Resolution gezeigt und nicht wie es angezeigt ist.
               ;; Ist das wirklich sinnvoll? Musste nicht entweder das Original stehen oder beides?
               ;; Es macht auf eine Art keinen Sinn nur die Auflösung zu zeigen.
-              ;; JK:
-              ;; Ja, ich finde das sinnvoll, weil hier ja das Phänomen der Ligaturen in heutiger
+              ;;
+              ;; JK: Ja, ich finde das sinnvoll, weil hier ja das Phänomen der Ligaturen in heutiger
               ;; Notenschrift gezeigt werden soll. So erscheinen sie dann auch in den Übertragungen
               ;; (siehe «Madonna il poco dolce»). Für die originale Gestalt gibt es ja das Fake-
               ;; Simile, auf das man mit einem Klick umschalten kann. Ich würde das so lassen.

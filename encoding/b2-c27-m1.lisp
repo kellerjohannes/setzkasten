@@ -17,7 +17,11 @@
     (s2 (:alt (:it "Vigesima seconda\\con due ottave\\in mezzo")
               (:de "vigesima seconda\\mit zwei ottave\\in der Mitte")
               (:en "vigesima seconda\\with two ottave\\in the middle"))))
-              ;; AS: Comment David:  I presume there will be a commentary noting that the Alto voice is printed wrongly – I think it's most likely that the type piece carrying the notehead was set upside-down (the other possibility being that a C1 clef was intended instead of C2). 
+   ;; AS: Comment David: I presume there will be a commentary noting that the Alto voice is printed
+   ;; wrongly – I think it's most likely that the type piece carrying the notehead was set
+   ;; upside-down (the other possibility being that a C1 clef was intended instead of C2).
+   ;;
+   ;; OPEN
    (:voice-labels
     (s1 v1 (:alt (:it "Soprano")
                  (:de "Soprano")

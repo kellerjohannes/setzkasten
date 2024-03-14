@@ -24,6 +24,7 @@
     ;;
     ;; JK: Würde ein :line-title erfordern, ist möglich, ich finde es aber inhaltlich deutlicher wie
     ;; es ist. Akzeptabel?
+    ;;
     ;; AS: Ja, für mich schon.
     ;;
     ;; OPEN

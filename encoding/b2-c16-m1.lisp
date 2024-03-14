@@ -8,7 +8,10 @@
                  (:en "Example of quinte")))
    (:line-headings
     (:alt (:it "Non si fanno due quinte ne per grado, ne per salto,\\ascendenti ne discendenti")
-    ;; Kommentar AS: David remarks:  This caption in fact refers only to Nos. 2–4, so it should also be placed underneath those examples, as in the original. 
+          ;; Kommentar AS: David remarks: This caption in fact refers only to Nos. 2–4, so it should
+          ;; also be placed underneath those examples, as in the original.
+          ;;
+          ;; OPEN
           (:de "Man macht nicht zwei [aufeinanderfolgende] quinte, weder mit Tonschritten noch als Sprung,\\aufsteigend und absteigend")
           (:en "One does not make two [consecutive] quinte, neither by step nor by leap,\\neither ascending nor descending")))
    (:voice-labels

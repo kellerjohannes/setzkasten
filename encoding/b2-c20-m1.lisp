@@ -7,7 +7,13 @@
                  (:de "Beispiel der sesta maggiore, wie sie auf viele Arten und Weisen gesetzt werden kann")
                  (:en "Example of the sesta maggiore: how it can be composed in many ways")))
    (:section-headings
-   ;; Kommentar AS: David writes: I find the individual captions for each individual example a bit annoying.  Is there any way that the examples could be arranged in three rows (like the original) rather than four?  Then the first row could be captioned "for two voci", the second row could be captioned "[for two voci]" and the third row could be captioned "for three voci", which would save a lot of rather ugly repetition. 
+    ;; Kommentar AS: David writes: I find the individual captions for each individual example a bit
+    ;; annoying.  Is there any way that the examples could be arranged in three rows (like the
+    ;; original) rather than four?  Then the first row could be captioned "for two voci", the second
+    ;; row could be captioned "[for two voci]" and the third row could be captioned "for three
+    ;; voci", which would save a lot of rather ugly repetition.
+    ;;
+    ;; OPEN
     (s1 (:alt (:it "A due voci")
               (:de "mit zwei Stimmen")
               (:en "in two voci")))

@@ -5,7 +5,9 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "[Del Alamire primo]")
                  ;; AS: Sollte es nicht Alamire primo heissen?
+                 ;;
                  ;; kir: ja
+                 ;;
                  ;; JK: habs auf Italienisch geändert
                  ;;
                  ;; DONE

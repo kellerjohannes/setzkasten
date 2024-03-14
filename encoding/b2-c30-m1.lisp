@@ -176,7 +176,13 @@
    (:music 2220
            ;; Kommentar Anne: Beispiele 18-23 müssen genau angeschaut werden und korrigiert. Zum
            ;; Teil würden sie gelesen mit mindestens eine Stimme im Altschlüssel.
-           ;; AS: Kommentar David: Nos. 13–24: there are two significant errors here: (1) the two voices are swapped over here – ie the original upper voice is the lower voice in the edition, and vice-versa; (2) the original lower voice is presented two steps too high in the upper voice (e.g. the lower voice of No. 13 should be A–F not C–A).  I presume this is all inadvertent and should be corrected. 
+           ;;
+           ;; AS: Kommentar David: Nos. 13–24: there are two significant errors here: (1) the two
+           ;; voices are swapped over here – ie the original upper voice is the lower voice in the
+           ;; edition, and vice-versa; (2) the original lower voice is presented two steps too high
+           ;; in the upper voice (e.g. the lower voice of No. 13 should be A–F not C–A).  I presume
+           ;; this is all inadvertent and should be corrected.
+           ;;
            ;; OPEN
            (:voice v1)
            (:section s1) cclef7 b22 sb5 b38 sb7 bl

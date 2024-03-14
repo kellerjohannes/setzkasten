@@ -24,8 +24,13 @@
                (:de "mit vier [Stimmen]")
                (:en "in four"))))
     (s4 v1 v2)
-               ;; AS: Kommentar David:  No. 11 should have the caption "for eight" -  No. 16 should have the caption "for three" -  Nos. 17–22 should be after the second overall caption since they show re–mi rather than mi–re.
-               ;; kir: für mich ist der Titel trotz des Satzpunktes in der Mitte als ein Satz zu lesen
+   ;; AS: Kommentar David: No. 11 should have the caption "for eight" - No. 16 should have the
+   ;; caption "for three" - Nos. 17–22 should be after the second overall caption since they show
+   ;; re–mi rather than mi–re.
+   ;;
+   ;; kir: für mich ist der Titel trotz des Satzpunktes in der Mitte als ein Satz zu lesen
+   ;;
+   ;; OPEN
    (:voice-order
     (s1 v1 v2)
     (s2 v1 v2)
