@@ -57,7 +57,7 @@
                  (:critical dot6)
                  (:coord-barre "MZ3 N14")
                  (:coord-norm "G5 St3 N1")
-                 (:comment "Original: Rhythmische Punktierung steht eine Position tiefer.")
+                 (:comment "In allen Exemplaren: Rhythmische Punktierung steht eine Position tiefer.")
                  (:flag :ready) (:id 1))
            sm6 m7 b22 sm8 sm6 sm9 m8 sm8 sb8 bl
            (:section s6) b22 sb6 sb6 sb6 b22 bl)

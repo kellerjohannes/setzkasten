@@ -59,7 +59,7 @@
                  (:critical bl fl9)
                  (:coord-barre "MZ1 N4")
                  (:coord-norm "G1 St1 N4")
-                 (:comment "Original: Das ♭ steht unmittelbar vor dem Taktstrich.")
+                 (:comment "In allen Exemplaren: Das ♭ steht unmittelbar vor dem Taktstrich.")
                  (:flag :ready) (:id 1))
            sb9 b38 fl9 b38 sb9 b22 fl9 b22 sb9 bl
            (:section s2) b22 fl9 b38 sb9 b38 bl
@@ -109,7 +109,7 @@
                  (:it fl2 sb2) (:en fl2 sb2) (:de fl2 sb2)
                  (:coord-barre "MZ4 N10")
                  (:coord-norm "G7 St2 N4")
-                 (:comment "Original: Im Anschluss an diese Note fehlt ein weiteres E♭.")
+                 (:comment "In allen Exemplaren: Im Anschluss an diese Note fehlt ein weiteres E♭.")
                  (:flag :ready) (:id 2))
            b38 bl
            (:section s8) b38 fl2 b38 sb2 b22 b22 bl)))

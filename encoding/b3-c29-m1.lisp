@@ -194,7 +194,7 @@
                     (:critical "Lʼatto che faceua il Soprano di ſopra ; hora il ᴛenore lo farà di ſotto, con il ᴄontrʼᴀlto:")
                     (:coord-barre "TZ5")
                     (:coord-norm "ZwTi2")
-                    (:comment "Original: »... fotto ...«.")
+                    (:comment "In allen Exemplaren: »... fotto ...«.")
                     (:flag :ready) (:id 1))))
    (:text 110 58
           (335 1513 "& in alcuni luoghi ſi ritrouerà la ſincopa tutta buona,à due uoci."))

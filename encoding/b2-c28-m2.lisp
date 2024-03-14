@@ -153,7 +153,7 @@
                  (:critical max7 fclef7)
                  (:coord-barre "MZ6 N1")
                  (:coord-norm "G18-G22 St2")
-                 (:comment "Original: ♭-Vorzeichnung beim Schlüssel fehlt.")
+                 (:comment "In allen Exemplaren: ♭-Vorzeichnung beim Schlüssel fehlt.")
                  (:flag :ready) (:id 1))
            (:key-signature nil nil nil nil nil nil :flat) b38 b22 sb3 b38 sb4 b22 b22 bl
            (:section s19) b22 b22 sb3 b38 b22 sb4 b22 b22 bl

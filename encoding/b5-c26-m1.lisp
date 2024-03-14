@@ -58,7 +58,7 @@
                           (:critical "acuto,et diſcendente,et di D ſol re primo medeſimamente aſcendenti.")
                           (:coord-barre "TZ2")
                           (:coord-norm "Ti")
-                          (:comment "Original: »... et diſ D ol re ...")
+                          (:comment "In allen Exemplaren: »... et diſ D ol re ...")
                           (:flag :ready) (:id 1))))
    (:text 110 58
      (71 nil "3.mi.")

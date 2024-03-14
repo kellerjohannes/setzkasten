@@ -61,7 +61,7 @@
                  (:critical sb8)
                  (:coord-barre "MZ3 N9")
                  (:coord-norm "G7 St1 N1")
-                 (:comment "Original: C. Alternativ könnte dieses Beispiel als zwei separate einstimmige Beispiele gelesen werden, wie es die Überschrift suggeriert.")
+                 (:comment "In allen Exemplaren: C. Alternativ könnte dieses Beispiel als zwei separate einstimmige Beispiele gelesen werden, wie es die Überschrift suggeriert.")
                  (:flag :ready) (:id 1))
            b38 m5 b22 fl6 b22 m6 b38 sb4 b38 m5 b38 b38 b38 bl b38 b125)
    (:text 90 58

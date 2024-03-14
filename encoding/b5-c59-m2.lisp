@@ -87,7 +87,7 @@
                (:en "Of the fifth ordine diatonico enarmonico")))
     (s49 (:alt (:it "Del sesto ordine diatonico enarmonico")
                (:de "")
-               (:en "Of the sixth ordine diatonico enarmonico")))    
+               (:en "Of the sixth ordine diatonico enarmonico")))
     (s58 (:alt (:it "Del settimo ordine diatonico enarmonico")
                (:de "")
                (:en "Of the seventh ordine diatonico enarmonico")))
@@ -258,7 +258,7 @@
                  (:critical sbd2)
                  (:coord-barre "MZ4 N3")
                  (:coord-norm "G4 N3")
-                 (:comment "Original: B♭.")
+                 (:comment "In allen Exemplaren: B♭.")
                  (:flag :ready) (:id 1))
            b38 sbd3 b38 sbd4 b38 sbd5 b38 sbd6 b38 sbd7 b22 b22 sbd8 b22 fl9 b38 sbd9 b38 sbd10 b22 bl
            )
@@ -305,7 +305,7 @@
                  (:critical fl10)
                  (:coord-barre "MZ8 N11")
                  (:coord-norm "G8 N11")
-                 (:comment "Original: Ḃ♮.")
+                 (:comment "In allen Exemplaren: Ḃ♮.")
                  (:flag :ready) (:id 2))
            sbd10 b22 bl
            )
@@ -357,14 +357,14 @@
                  (:critical sbd9)
                  (:coord-barre "MZ12 (S2 MZ3) N21")
                  (:coord-norm "G21 N10")
-                 (:comment "Original: F.")
+                 (:comment "In allen Exemplaren: F.")
                  (:flag :ready) (:id 3))
 
            (:alt (:diplomatic b38)
                  (:critical sbd10)
                  (:coord-barre "MZ12 (S2 MZ3) N22")
                  (:coord-norm "G21 N11")
-                 (:comment "Original: G fehlt.")
+                 (:comment "In allen Exemplaren: G fehlt.")
                  (:flag :ready) (:id 4))
            bl)
    (:text 110 58
@@ -423,7 +423,7 @@
                  (:critical sbd10)
                  (:coord-barre "MZ17 (S2 MZ8) N11")
                  (:coord-norm "G17 N11")
-                 (:comment "Original: B♭.")
+                 (:comment "In allen Exemplaren: B♭.")
                  (:flag :ready) (:id 5))
            b22
            (:section s26) (:f-clef) max7 fclef7 b22 sbd0 fl1 sbd1 fl2 sbd2 fl3 sbd3 sh3 sb3 fl5 sbd5 fl6 sbd6 sbd7 fl8 sbd8 fl9 sbd9 fl10 sbd10 bl)
@@ -588,7 +588,7 @@
                  (:critical b38 sbd5)
                  (:coord-barre "MZ31 (S4 MZ3) N6")
                  (:coord-norm "G48 N6")
-                 (:comment "Original: Ġ fehlt.")
+                 (:comment "In allen Exemplaren: Ġ fehlt.")
                  (:flag :ready) (:id 8))
            b38 sbd6 b38 sbd7 b22 sbd8 b22 sbd9 b22 sbd10 b22
            (:section s57)
@@ -647,14 +647,14 @@
                  (:critical sbd6)
                  (:coord-barre "MZ34 (S4 MZ6) N7")
                  (:coord-norm "G51 N7")
-                 (:comment "Original: B♭.")
+                 (:comment "In allen Exemplaren: B♭.")
                  (:flag :ready) (:id 12))
            b22 sbd7
            (:alt (:diplomatic b22)
                  (:critical fl8)
                  (:coord-barre "MZ34 (S4 MZ6) N9")
                  (:coord-norm "G51 N9")
-                 (:comment "Original: Ḋ.")
+                 (:comment "In allen Exemplaren: Ḋ.")
                  (:flag :ready) (:id 13))
            sbd8 b22 fl9 sbd9 b22 sbd10 b22
            (:section s60)
@@ -715,7 +715,7 @@
                  (:critical b38)
                  (:coord-barre "MZ37 (S4 MZ9) N13")
                  (:coord-norm "G63 N2")
-                 (:comment "Original: Ė♭.")
+                 (:comment "In allen Exemplaren: Ė♭.")
                  (:flag :ready) (:id 17))
            sbd1 b22 fl3 sb3 b22 fl4 sb4 sbd4 b22 sbd5 b22 fl7 sb7 b22 sbd7 b22 sbd8 fl10 b22 sb10 b22
            (:alt (:diplomatic sbd10)

@@ -151,7 +151,7 @@
                  (:critical sb8)
                  (:coord-barre "MZ2 N6")
                  (:coord-norm "G7 N3")
-                 (:comment "Original: Ġ♭.")
+                 (:comment "In allen Exemplaren: Ġ♭.")
                  (:flag :ready) (:id 1))
            b38 fl8 b38 sbd8 b38 sb8 bl
            (:section s8) sb8 b38
@@ -159,7 +159,7 @@
                  (:critical sbd8)
                  (:coord-barre "MZ2 N10")
                  (:coord-norm "G8 N2")
-                 (:comment "Original: Ȧ.")
+                 (:comment "In allen Exemplaren: Ȧ.")
                  (:flag :ready) (:id 2))
            b38 fl9 b38 sb9 b38 fl9 b38 sbd9 b38 sb9 bl
            b38 b38 b38 b22 b430)

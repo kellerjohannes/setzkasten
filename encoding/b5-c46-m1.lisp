@@ -133,7 +133,7 @@
                      (:critical "to.nat.")
                      (:coord-barre "TZ4 TE7")
                      (:coord-norm "G14 US")
-                     (:comment "Original: »se.nat.«.")
+                     (:comment "In allen Exemplaren: »se.nat.«.")
                      (:flag :ready) (:id 1))))
    (:music 2213
            (:section s8) (:newline) (:f-clef) max7 fclef7 b38 sbd9 b22 b38 sbd8 b22 b22 bl

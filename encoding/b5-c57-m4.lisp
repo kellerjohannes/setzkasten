@@ -58,7 +58,7 @@
                  (:critical fl7 sbd7)
                  (:coord-barre "MZ2 N14")
                  (:coord-norm "G4 N6")
-                 (:comment "Original: D♯.")
+                 (:comment "In allen Exemplaren: D♯.")
                  (:flag :ready) (:id 1))
            sh7 sb7 fl9 sbd9 bl
            (:section s5) b22 fl2 sbd2 sh2 sb2 sh3 sb3 sh4 sb4 fl6 sbd6 b22 custos6)

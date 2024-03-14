@@ -90,7 +90,7 @@
                  (:critical fl5 sb5)
                  (:coord-barre "MZ2 N3")
                  (:coord-norm "G1 St2 N3")
-                 (:comment "Original: G♭.")
+                 (:comment "In allen Exemplaren: G♭.")
                  (:flag :ready) (:id 1))
            sh4 sb4 b22 bl
            (:section s2) b22 sb3 b22 bl

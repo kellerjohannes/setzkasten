@@ -132,7 +132,7 @@
                      (:critical "se. mag. se. min.")
                      (:coord-barre "TZ4 TE4")
                      (:coord-norm "G7 US")
-                     (:comment "Original: »se. mag. se. mag.«.")
+                     (:comment "In allen Exemplaren: »se. mag. se. mag.«.")
                      (:flag :ready) (:id 1)))
      (1729 nil "se.mag. se.min."))
    (:music 2219

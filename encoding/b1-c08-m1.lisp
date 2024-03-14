@@ -16,7 +16,7 @@
          (:critical)
          (:coord-barre "–")
          (:coord-norm "US")
-         (:comment "Die Solmisationssilben stehen im Original nicht im Notenbeispiel, sondern werden im Text erklärt.")
+         (:comment "Die Solmisationssilben wurden in keinem Exemplar gedruckt. Sie wurden für die kritische Edition gemäss den Informationen im Text ergänzt.")
          (:flag :ready) (:id 1))
    (:music 545
            (:voice v1)

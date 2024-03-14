@@ -64,7 +64,7 @@
                  (:critical sb7)
                  (:coord-barre "N16")
                  (:coord-norm "G8 N2")
-                 (:comment "Original: Ġ♭.")
+                 (:comment "In allen Exemplaren: Ġ♭.")
                  (:flag :ready) (:id 1))
            bl
            (:section s9) sh2 sb2 fl7 sbd7 bl

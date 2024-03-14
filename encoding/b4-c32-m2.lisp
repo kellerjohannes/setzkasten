@@ -18,6 +18,6 @@
                  (:critical dot4)
                  (:coord-barre "N12")
                  (:coord-norm "St2 N1")
-                 (:comment "Original: Der rhythmische Punkt liegt eine Position höher.")
+                 (:comment "In allen Exemplaren: Der rhythmische Punkt liegt eine Position höher.")
                  (:flag :ready) (:id 1))
            sm5 m6 m7 dot8 sm8 b22 m9 m8 b22 m6 b22 sb7 dot8 m5d m6 m7 sb5 (:segno) sb4 b22 bl)))

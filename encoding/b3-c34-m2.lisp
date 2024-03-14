@@ -30,7 +30,7 @@
                  (:critical mrest5)
                  (:coord-barre "MZ1 N1")
                  (:coord-norm "G1 St1")
-                 (:comment "Original: Minima-Pause steht eine Position höher.")
+                 (:comment "In allen Exemplaren: Minima-Pause steht eine Position höher.")
                  (:flag :ready) (:id 1))
            sb5 b22 m4 b22 sb5 b38 bl
            (:section s2) m8 b22 m6 dot6 cr5d b22 cr6 sh5 m5d b22 sb6 bl
@@ -57,7 +57,7 @@
                  (:critical smrest7)
                  (:coord-barre "MZ3 N8")
                  (:coord-norm "G3 St3")
-                 (:comment "Original: Die Pause hat den Wert einer Minima.")
+                 (:comment "In allen Exemplaren: Die Pause hat den Wert einer Minima.")
                  (:flag :ready) (:id 2))
            m7 b38 sm9 b38 sb8 b38 sb7 b38 b22 bl
            (:section s4) b22 b38 m4 b38 b22 m8 b38 b22 sb4 b22 b22 bl

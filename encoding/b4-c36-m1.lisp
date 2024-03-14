@@ -33,7 +33,7 @@
                  (:critical sb6)
                  (:coord-barre "MZ2 N10")
                  (:coord-norm "St1 T8 N1")
-                 (:comment "Original: Minima.")
+                 (:comment "In allen Exemplaren: Minima.")
                  (:flag :ready) (:id 1))
            b38 smrest3 b38 sm2 b38 sm3 b38 m5 b38 m1 b38 sm8 b38 m8 dot8 cr7 b38 cr6 b38 m7 b38 sb8 b38 bl b22 b125 b125)
    (:text 70 58
@@ -46,7 +46,7 @@
                 (:critical "Tenore.")
                 (:coord-barre "TZ3")
                 (:coord-norm "—")
-                (:comment "Unter dem Ende von MZ3 befindet sich im Original ein »Tenore.«. Dabei handelt es sich um eine Reklamante, die nicht übertragen wurde.")
+                (:comment "Unter dem Ende von MZ3 befindet sich in allen Exemplaren ein »Tenore.«. Dabei handelt es sich um eine Reklamante, die nicht übertragen wurde.")
                 (:flag :ready) (:id 2))))
    (:music 2228
            (:voice v3) cclef7 b22 met-imperf-min-dim lrest68 b22 lrest68 b22 m4 dot4 sm5 b22 sm6 b22 sm7 b22 sm8 b22 sm6 b22 m7 dot6 sm6 b22 m5 b22 m4 b22 m5 b22 m4 b22 m7 dot8 sm7 b22 sm6 b22 m7 b22 m5d b22 m7 b22 sm6 b22 m7 b22 m4 b22 m5 b22 m7 b22 sb8 b22 sb4 b38 bl)

@@ -56,7 +56,7 @@
                  (:critical m9)
                  (:coord-barre "N19")
                  (:coord-norm "G4 St2 N3")
-                 (:comment "Original: In allen Exemplaren wurde diese Note als Semibrevis gedruckt. Im Exemplar q067 wurde sie von einem Leser mit Bleistift zu einer Minima korrigiert.")
+                 (:comment "In allen Exemplaren wurde diese Note als Semibrevis gedruckt. Im Exemplar q067 wurde sie von einem Leser mit Bleistift zu einer Minima korrigiert.")
                  (:flag :ready) (:id 1))
                  ;; Kommentar Anne Ich würde den Punkt nicht ergänzen.
                  ;;

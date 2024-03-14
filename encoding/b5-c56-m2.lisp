@@ -44,7 +44,7 @@
                  (:critical fl6 sb6)
                  (:coord-barre "MZ1 N6")
                  (:coord-norm "G1 N6")
-                 (:comment "Original: E.")
+                 (:comment "In allen Exemplaren: E.")
                  (:flag :ready) (:id 1))
            b22 sb7 b22 fl8 b22 sb8 b22 fl9 b22 sb9 fl10 sb10 b38 bl
            (:section s2) b38 fl3 b22 sb3 b22 sbd3 b22 fl5 b22 sb5 b22 fl6 sb6 b22 sbd6 b22 fl8 sb8 b22 fl9 sb9 fl10 sb10 b22 bl
@@ -63,7 +63,7 @@
                  (:critical fl9)
                  (:coord-barre "MZ2 N20")
                  (:coord-norm "G5 N7")
-                 (:comment "Original: Das ♭ steht eine Position tiefer.")
+                 (:comment "In allen Exemplaren: Das ♭ steht eine Position tiefer.")
                  (:flag :ready) (:id 2))
            sb9 fl10 sb10 b38 bl)
    (:text 90 58

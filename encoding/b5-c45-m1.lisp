@@ -102,7 +102,7 @@
                           (:critical "& diſcendenti, in secondo & terzo ordine.")
                           (:coord-barre "TZ2")
                           (:coord-norm "Ti")
-                          (:comment "Original: »in terzo & quarto ordine.«")
+                          (:comment "In allen Exemplaren: »in terzo & quarto ordine.«")
                           (:flag :ready) (:id 1))))
    (:text 100 58
      (164 nil "to.")

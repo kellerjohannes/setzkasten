@@ -37,7 +37,7 @@
               (:en "Terza minore / terza maggiore")))
     (s3 (:alt (:it "Sesta minore / sesta maggiore")
               (:de "")
-              (:en "Sesta minore / sesta maggiore")))             
+              (:en "Sesta minore / sesta maggiore")))
     (s5 (:alt (:it "Terza minore / terza maggiore")
               (:de "")
               (:en "Terza minore / terza maggiore")))
@@ -79,7 +79,7 @@
                  (:critical fl6)
                  (:coord-barre "MZ1 N17")
                  (:coord-norm "G7 St1 N2")
-                 (:comment "Original: Das ♭ steht eine Position höher.")
+                 (:comment "In allen Exemplaren: Das ♭ steht eine Position höher.")
                  (:flag :ready) (:id 1))
            (:divider :regular) sbd6 bl
            sb6 b22 sbd6 bl
@@ -101,7 +101,7 @@
                  (:critical fl5 sb5)
                  (:coord-barre "MZ2 N3")
                  (:coord-norm "G1 St2 N3")
-                 (:comment "Original: C♭.")
+                 (:comment "In allen Exemplaren: C♭.")
                  (:flag :ready) (:id 2))
            sh4 sb4 bl
            (:section s2) fl3 b22 sb3 bl
@@ -111,7 +111,7 @@
                  (:critical sh1 sb1)
                  (:coord-barre "MZ2 N9")
                  (:coord-norm "G3 St2 N4")
-                 (:comment "Original: A♯.")
+                 (:comment "In allen Exemplaren: A♯.")
                  (:flag :ready) (:id 3))
            b22 bl
            (:section s4) sb0 b38

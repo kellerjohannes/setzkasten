@@ -54,7 +54,7 @@
                  (:critical sb8)
                  (:coord-barre "MZ1 N24")
                  (:coord-norm "G3 N8")
-                 (:comment "Original: G (verdrehte Drucktype).")
+                 (:comment "In allen Exemplaren: G (verdrehte Drucktype).")
                  (:flag :ready) (:id 1))
            b22 bl
            (:section s4) (:newline) b22 sb1 sb2 fl3 sb3 fl4 sb4 custos5)
@@ -69,7 +69,7 @@
                  (:critical b38)
                  (:coord-barre "MZ2 N2")
                  (:coord-norm "G4 N6")
-                 (:comment "Original: D♭.")
+                 (:comment "In allen Exemplaren: D♭.")
                  (:flag :ready) (:id 2))
            sb6 fl7 sb7 sb8 b22 bl
            (:section s5) b22 sb1 fl2 b22 sb2 b22 fl3 sb3 fl4 sb4 sb5 fl6 sb6 fl7 sb7 sb8 b22 bl

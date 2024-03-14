@@ -1,6 +1,9 @@
 `((:header
    (:filename "b4-c24-m1")
    (:alt-name "m4.018")
+   ;; JK: Frage an Luigi: ist dies in allen Exemplaren der Fall (Fehler in der Kapitelnummerierung)?
+   ;;
+   ;; OPEN
    (:comment "q021_s167, rotation: 1.14, origin: 514. Kapitel im Original falsch nummeriert: XXIII, korrekt wäre XXIIII")
    (:creator "Vicentino21 / Johannes Keller")
    (:line-headings

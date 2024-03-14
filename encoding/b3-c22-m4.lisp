@@ -18,6 +18,6 @@
                  (:critical sb6)
                  (:coord-barre "N15")
                  (:coord-norm "N15")
-                 (:comment "Original: Minima. Rhythmische Anpassung, um die Regularität der Phrase herzustellen. Alternativ könnte auch die fünftletzte Note zu einer Semibrevis verlängert werden.")
+                 (:comment "In allen Exemplaren: Minima. Rhythmische Anpassung, um die Regularität der Phrase herzustellen. Alternativ könnte auch die fünftletzte Note zu einer Semibrevis verlängert werden.")
                  (:flag :ready) (:id 1))
            b22 m7 b22 m3 dot4 sm2 b22 m1 b22 m0 b22 m2 b22 m3 b22 sb0 b22 br3 b22 blbl)))

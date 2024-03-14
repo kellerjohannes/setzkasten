@@ -16,6 +16,6 @@
                  (:critical sh8)
                  (:coord-barre "N9")
                  (:coord-norm "N9")
-                 (:comment "Original: Das ♯ steht wurde auf dem Kopf stehend gedruckt im untersten Zwischenraum.")
+                 (:comment "In allen Exemplaren: Das ♯ steht wurde auf dem Kopf stehend gedruckt im untersten Zwischenraum.")
                  (:flag :ready) (:id 1))
            b22 sb8 b22 fl9 b22 sbd9 b22 sb9 b22 sbd9 b22 sb10 b22 sbd9 b22 sb9 b22 sb6 b22 sbd6 b22 sb7 b22 sbd6 b22 sb6 b22 sb2 b22 sbd2 b22 sb3 b22 sbd2 b22 br2 b38 bl)))

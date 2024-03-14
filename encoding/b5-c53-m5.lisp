@@ -56,6 +56,6 @@
                  (:critical b38)
                  (:coord-barre "MZ2 N23")
                  (:coord-norm "G7 N4")
-                 (:comment "Original: A♯.")
+                 (:comment "In allen Exemplaren: A♯.")
                  (:flag :ready) (:id 1))
            sb5 sb6 sh7 sb7 sb8 sb9 bl)))

@@ -72,7 +72,7 @@
                  (:critical sh0)
                  (:coord-barre "MZ1 N12")
                  (:coord-norm "G5 St1 N1")
-                 (:comment "Original: Das ♯ steht eine Position höher.")
+                 (:comment "In allen Exemplaren: Das ♯ steht eine Position höher.")
                  (:flag :ready) (:id 1))
            sb0 b22 (:divider :regular) sb1 bl
            b22 sbd1 sh1 sb1 bl

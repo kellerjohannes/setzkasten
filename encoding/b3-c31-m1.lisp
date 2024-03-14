@@ -68,7 +68,7 @@
            (:alt (:diplomatic dot6) (:critical dot4)
                  (:coord-barre "MZ3 N5")
                  (:coord-norm "G2 St3 N1")
-                 (:comment "Original: Rhythmische Punktierung steht eine Position höher.")
+                 (:comment "In allen Exemplaren: Rhythmische Punktierung steht eine Position höher.")
                  (:flag :ready) (:id 1))
            cr2 b38 cr1 b38 m2 b38 sb3 bl
            (:section s3) b38 b38 sb1 b38 b38 sb0 b38 b38 sb7 b38 b38 b38

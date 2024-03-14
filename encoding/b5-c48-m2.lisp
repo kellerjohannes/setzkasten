@@ -160,7 +160,7 @@
                  (:critical sh6 b38 b22 sb6 b38 sbd6)
                  (:coord-barre "MZ3 N7-8")
                  (:coord-norm "G10 N2-3")
-                 (:comment "Original: Ė–E♯.")
+                 (:comment "In allen Exemplaren: Ė–E♯.")
                  (:flag :ready) (:id 1))
            b38 sb6 b38 b22 bl
            (:section s11) b22 b38 sb6 b38 fl6 b38 sbd6 b38
@@ -168,7 +168,7 @@
                  (:critical fl6 b38 sb6)
                  (:coord-barre "MZ3 N12")
                  (:coord-norm "G11 N3")
-                 (:comment "Original: D♯.")
+                 (:comment "In allen Exemplaren: D♯.")
                  (:flag :ready) (:id 2))
            b38 sbd5 b22 b22 sb5 b22 b22 bl)
    (:text 100 58
@@ -195,7 +195,7 @@
                  (:critical sh3 b38 sb3 b38 sbd3)
                  (:coord-barre "MZ4 N7-8")
                  (:coord-norm "G13 N2-3")
-                 (:comment "Original: Ḃ♮–B♯.")
+                 (:comment "In allen Exemplaren: Ḃ♮–B♯.")
                  (:flag :ready) (:id 3))
            b38 sb3 b38 b22 bl
            (:section s14) b22 b38 sb3 b38 b22 fl3 b38 sbd3 b38 b22
@@ -203,7 +203,7 @@
                  (:critical fl3 b38 sb3)
                  (:coord-barre "MZ4 N12")
                  (:coord-norm "G14 N3")
-                 (:comment "Original: A♯.")
+                 (:comment "In allen Exemplaren: A♯.")
                  (:flag :ready) (:id 4))
            b38 sbd2 b38 b22 sb2 b38 b22 bl)
    (:text 90 58
@@ -214,7 +214,7 @@
                 (:critical "di.mi. di mi. di.mi.")
                 (:coord-barre "TZ11 TE3")
                 (:coord-norm "G13 US")
-                (:comment "Original: »di.ma. di mi. di.mi.«.")
+                (:comment "In allen Exemplaren: »di.ma. di mi. di.mi.«.")
                 (:flag :ready) (:id 5)))
      (1471 nil "di. mi. di. mi.")
      (1834 nil "di. ma. di. mi."))

@@ -200,7 +200,7 @@
                 (:critical (770 nil "d.ma.d.mi.d.mi.d.mi."))
                 (:coord-barre "TZ8 TE2")
                 (:coord-norm "G9")
-                (:comment "Original: »d.ma.d.mi.d.mi.d. mi.d.ma.«")
+                (:comment "In allen Exemplaren: »d.ma.d.mi.d.mi.d. mi.d.ma.«")
                 (:flag :ready) (:id 1))
           (1481 nil "d.mi.d.mi.di.mi. di.")
           (1999 nil "ma.d.mi."))
@@ -224,7 +224,7 @@
                 (:critical (606 nil "ma."))
                 (:coord-barre "TZ10 TE4")
                 (:coord-norm "G13 US")
-                (:comment "Original: »mi.«.")
+                (:comment "In allen Exemplaren: »mi.«.")
                 (:flag :ready) (:id 2))
           (729 nil "se.")
 
@@ -232,7 +232,7 @@
                 (:critical (838 nil "min."))
                 (:coord-barre "T10 TE6")
                 (:coord-norm "G13 US")
-                (:comment "Original: »mag.«.")
+                (:comment "In allen Exemplaren: »mag.«.")
                 (:flag :ready) (:id 3))
           (1119 nil "se.")
           (1233 nil "mi. & ma.")
@@ -241,7 +241,7 @@
                 (:critical (1753 nil "ma."))
                 (:coord-barre "TZ10 TE10")
                 (:coord-norm "G14 US")
-                (:comment "Original: »mi.«.")
+                (:comment "In allen Exemplaren: »mi.«.")
                 (:flag :ready) (:id 4))
           (1878 nil "se.")
 
@@ -249,7 +249,7 @@
                 (:critical (1994 nil "mi."))
                 (:coord-barre "TZ10 TE12")
                 (:coord-norm "G14 US")
-                (:comment "Original: »ma.«.")
+                (:comment "In allen Exemplaren: »ma.«.")
                 (:flag :ready) (:id 5)))
    (:music 2215
            (:f-clef) max7 fclef7 b38 sh5 sb5 sbd5 sb5 fl5 sbd5 b38 bl
@@ -264,7 +264,7 @@
                 (:critical (1145 nil "d.mi.d.mi.d.mi."))
                 (:coord-barre "TZ11 TE4")
                 (:coord-norm "G13")
-                (:comment "Original: »d.ma.d.mi.d.mi.d.mi.«.")
+                (:comment "In allen Exemplaren: »d.ma.d.mi.d.mi.d.mi.«.")
                 (:flag :ready) (:id 6))
           (1689 nil "d.mi.d.ma.d.mi.d.mi."))
    (:text 70 58

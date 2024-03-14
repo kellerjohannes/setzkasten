@@ -84,7 +84,7 @@
                  (:critical sbd6)
                  (:coord-barre "MZ1 N10")
                  (:coord-norm "G10 St1 N1")
-                 (:comment "Original: Ė.")
+                 (:comment "In allen Exemplaren: Ė.")
                  (:flag :ready) (:id 1))
            b38 bl
            (:section s11) b38 fl7 b22 sb7 b38 bl

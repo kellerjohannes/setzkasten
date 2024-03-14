@@ -43,7 +43,7 @@
                  (:critical sb4)
                  (:coord-barre "MZ1 N2")
                  (:coord-norm "G1 N2")
-                 (:comment "Original: Ġ♭.")
+                 (:comment "In allen Exemplaren: Ġ♭.")
                  (:flag :ready) (:id 1))
            b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 sbd8 sbd9 b22 bl
            (:section s2) b22 sbd2 sbd3 sbd4 sbd5 fl6 sbd6 sbd7 sbd8 sbd9 bl

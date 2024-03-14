@@ -110,7 +110,7 @@
                          (:critical "ꝑfet. nat.")
                          (:coord-barre "TZ4 TE4")
                          (:coord-norm "G4 US")
-                         (:comment "Original: »ꝑſet. nat.«.")
+                         (:comment "In allen Exemplaren: »ꝑſet. nat.«.")
                          (:flag :ready) (:id 1)))
           (1228 nil "ꝑfet.na.")
           (1446 nil "ꝑfet.nat.")

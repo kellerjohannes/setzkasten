@@ -93,7 +93,7 @@
                           (:critical "8.")
                           (:coord-barre "TZ3 TE6")
                           (:coord-norm "G6 US")
-                          (:comment "Original: »5.«.")
+                          (:comment "In allen Exemplaren: »5.«.")
                           (:flag :ready) (:id 1)))
           (1269 nil "3.mag.")
           (1510 nil "3.mi.")
@@ -102,7 +102,7 @@
                           (:critical "8.")
                           (:coord-barre "TZ3 TE10")
                           (:coord-norm "G10 US")
-                          (:comment "Original: »5.«.")
+                          (:comment "In allen Exemplaren: »5.«.")
                           (:flag :ready) (:id 2))))
    (:music 2235
            (:voice v3)

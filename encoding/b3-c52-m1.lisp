@@ -139,7 +139,7 @@
                  (:tatti m4)
                  (:coord-barre "MZ5 N20")
                  (:coord-norm "St2 T16 N1")
-                 (:comment "Original: Ḃ♭.")
+                 (:comment "In allen Exemplaren: Ḃ♭.")
                  (:flag :ready) (:id 2))
            b22 m1 b22 md8 b22 md8 b22 sb4 b22 m2 m9 b22 m7 fl7 m7 b38)
    (:text 90 58
@@ -152,7 +152,7 @@
                  (:critical m4)
                  (:coord-barre "MZ6 N10")
                  (:coord-norm "St2 T21 N2")
-                 (:comment "Original: Semibrevis.")
+                 (:comment "In allen Exemplaren: Semibrevis.")
                  (:flag :ready) (:id 3))
            b22 m4 b22 m2 b22 m9 b22 m9 b22 m9 sh8 m8 b22 m8 b22 m7 b22 m7 b22 m7 b22 m8 b22 m8 b22 m8 b22 brd4 b22 brd4 b22 blbl b38 b38 b125)
    (:text 100 58

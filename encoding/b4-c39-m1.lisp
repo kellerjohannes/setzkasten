@@ -94,7 +94,7 @@
                  (:critical)
                  (:coord-barre "MZ3")
                  (:coord-norm "G2")
-                 (:comment "Original: nur die Tenorstimme ist abgedruckt, die vierstimmige Partitur ist impliziert.")
+                 (:comment "In allen Exemplaren: nur die Tenorstimme ist abgedruckt, die vierstimmige Partitur ist impliziert.")
                  (:flag :ready)
                  (:id 1))
            cclef7 b38 met-imperf-min-dim b38 sb2 b38 m2 b38 m5 b38 sb6 b38 m7 b22 sh7 b22 sb7 b38 m8 b38 sb5 b38 m4 b38 sb3 b38 sb2 b38 bl b125)

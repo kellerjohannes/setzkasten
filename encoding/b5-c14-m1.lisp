@@ -63,7 +63,7 @@
                        (:critical "Le 4.terze.")
                        (:coord-barre "TZ3 TE1")
                        (:coord-norm "G1 ÜS")
-                       (:comment "Original: »La 4.terze.«.")
+                       (:comment "In allen Exemplaren: »La 4.terze.«.")
                        (:flag :ready) (:id 1)))
           (547 nil "5.")
           (684 nil "Le 4.seſte.")
@@ -99,7 +99,7 @@
                  (:critical sh5 sb5)
                  (:coord-barre "MZ2 N4")
                  (:coord-norm "G1 St2 N4")
-                 (:comment "Original: E♯.")
+                 (:comment "In allen Exemplaren: E♯.")
                  (:flag :ready) (:id 2))
            bl
            (:section s2) b22 sb4 b22 bl
@@ -108,7 +108,7 @@
                  (:critical sbd3)
                  (:coord-barre "MZ2 N7")
                  (:coord-norm "G3 St2 N2")
-                 (:comment "Original: B♭.")
+                 (:comment "In allen Exemplaren: B♭.")
                  (:flag :ready) (:id 3))
            bl
            fl3 sb3
@@ -116,7 +116,7 @@
                  (:critical sh2 sb2)
                  (:coord-barre "MZ2 N9")
                  (:coord-norm "G3 St2 N4")
-                 (:comment "Original: Ȧ.")
+                 (:comment "In allen Exemplaren: Ȧ.")
                  (:flag :ready) (:id 4))
            bl
            (:section s4) b22 sb1 b38

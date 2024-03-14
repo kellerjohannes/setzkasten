@@ -62,7 +62,7 @@
                  (:critical b38)
                  (:coord-barre "MZ2 N2")
                  (:coord-norm "G4 N6")
-                 (:comment "Original: E♭.")
+                 (:comment "In allen Exemplaren: E♭.")
                  (:flag :ready) (:id 1))
            sb7 b38 sb8 b38 sb9 b38 bl
            (:section s5) sb2 b22 fl3 b22 sb3 fl4 b22 sb4 sb5 sb6 fl7 sb7 sb8 sb9 b38 bl

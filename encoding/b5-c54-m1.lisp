@@ -43,7 +43,7 @@
                  (:critical sbd9)
                  (:coord-barre "MZ1 N8")
                  (:coord-norm "G1 N8")
-                 (:comment "Original: A.")
+                 (:comment "In allen Exemplaren: A.")
                  (:flag :ready) (:id 1))
            b22 bl
            (:section s2) b22 sbd2 b22 fl3 b22 sbd3 sbd4 sbd5 b22 fl6 b22 sbd6 sbd7 sbd8 sbd9 b22 bl

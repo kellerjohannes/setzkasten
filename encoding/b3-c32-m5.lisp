@@ -56,7 +56,7 @@
                  ;; JK: Entscheidung notwendig.
                  ;;
                  ;; OPEN
-                 (:comment "Original: B♭ (ohne ♮ notiert). Offene Frage, ob diese Idealisierung vorgenommen werden soll oder nicht.")
+                 (:comment "In allen Exemplaren: B♭ (ohne ♮ notiert). Offene Frage, ob diese Idealisierung vorgenommen werden soll oder nicht.")
                  (:flag :observe) (:id 1))
            m5 sb6 b22 bl
            (:section s4) (:newline) mrest7 b22 sb9 m8 sb9 b22 bl

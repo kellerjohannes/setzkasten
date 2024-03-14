@@ -169,7 +169,7 @@
                  (:critical sb3)
                  (:coord-barre "MZ4 N3")
                  (:coord-norm "G12 N3")
-                 (:comment "Original: Der Notenkopf fehlt, das ♯ ist vorhanden.")
+                 (:comment "In allen Exemplaren: Der Notenkopf fehlt, das ♯ ist vorhanden.")
                  (:flag :ready) (:id 1))
            b38 b22 sbd3 b38 b22 sb3 b38 bl
            (:section s13) (:newline) b22 sb3 b38 b22 fl3 b22 b38 sbd3 b22 b38 sh2 b22 b22 sb2 b22 bl

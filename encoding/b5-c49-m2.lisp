@@ -116,7 +116,7 @@
                  (:critical sh3 b22 sb3)
                  (:coord-barre "MZ1 N11")
                  (:coord-norm "G3 N3")
-                 (:comment "Original: C.")
+                 (:comment "In allen Exemplaren: C.")
                  (:flag :ready) (:id 1))
            sbd4 b22 sh4 b22 sb4 bl
            (:section s4) (:newline) sh4 b22 sb4 fl5 b22 sb5 b22 fl5 b22 sbd5 b22
@@ -124,7 +124,7 @@
                  (:critical sbd5 b22)
                  (:coord-barre "MZ1 N17")
                  (:coord-norm "G4 N4")
-                 (:comment "Diese Note fehlt im Original.")
+                 (:comment "Diese Note fehlt in allen Exemplaren.")
                  (:flag :ready) (:id 2))
            sh5 b22 sb5 b38 bl)
    (:text 70 58
@@ -175,7 +175,7 @@
                 (:critical "di. mi. di. mi. di.mi.")
                 (:coord-barre "TZ8 TE2")
                 (:coord-norm "G10 US")
-                (:comment "Original: »di. mi. di. ma. di.mi.«.")
+                (:comment "In allen Exemplaren: »di. mi. di. ma. di.mi.«.")
                 (:flag :ready) (:id 3)))
      (1511 nil "di. mi. di. mi. di. mi. di. ma."))
    (:text 120 58
@@ -195,7 +195,7 @@
                  (:critical sb3)
                  (:coord-barre "MZ4 N4")
                  (:coord-norm "G12 N4")
-                 (:comment "Original: Ḃ♯.")
+                 (:comment "In allen Exemplaren: Ḃ♯.")
                  (:flag :ready) (:id 4))
            b38 sb3 bl
            (:section s13) (:newline) b22 sb3 b38 b22 fl3 b22 b38 sbd3 b22 fl3 b38 sb3 b38 sh2 b38 sb2 b22 bl

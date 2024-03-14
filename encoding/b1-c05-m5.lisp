@@ -147,7 +147,7 @@
                      (:critical "per ♭.ut.re.mi.fa.re.")
                      (:coord-barre "TZ7 TE3")
                      (:coord-norm "G7 US Z2")
-                     (:comment "Original: »per ♭.fa.re.mi.fa.re.«, wurde durch »per ♭.ut.re.mi.fa.re.« ersetzt.")
+                     (:comment "In allen Exemplaren: »per ♭.ut.re.mi.fa.re.«.")
                      (:flag :ready) (:id 2)))
           (1529 557 "per ♭.re.mi.fa.re.mi."))
    (:text 70 58

@@ -24,7 +24,7 @@
                  (:critical sm5)
                  (:coord-barre "N12")
                  (:coord-norm "G3 N2")
-                 (:comment "Original: Croma.")
+                 (:comment "In allen Exemplaren: Croma.")
                  (:flag :ready) (:id 1))
            dot6 b22
            (:alt (:diplomatic cr4 b22 cr4)

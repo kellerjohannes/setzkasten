@@ -125,7 +125,7 @@
                  (:tatti md9)
                  (:coord-barre "MZ6 N16")
                  (:coord-norm "St2 T7 N2")
-                 (:comment "Original: G. Der hier fehlende enharmonische Punkt könnte vom Setzer irrtümlicherweise auf die nächste Note gesetzt werden, siehe Kommentar Nr. 2.")
+                 (:comment "In allen Exemplaren: G. Der hier fehlende enharmonische Punkt könnte vom Setzer irrtümlicherweise auf die nächste Note gesetzt werden, siehe Kommentar Nr. 2.")
                  (:flag :ready) (:id 2))
            sh9
            (:alt (:diplomatic md9)

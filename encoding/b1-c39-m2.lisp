@@ -50,6 +50,6 @@
                       (:critical "compoſta")
                       (:coord-barre "TZ4 TE4")
                       (:coord-norm "G4 US")
-                      (:comment "Original: »compoſto«.")
+                      (:comment "In allen Exemplaren: »compoſto«.")
                       (:flag :ready) (:id 1)))
           (1605 nil "compoſta"))))

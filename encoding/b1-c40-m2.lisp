@@ -40,7 +40,7 @@
          (:critical)
          (:coord-barre "–")
          (:coord-norm "US")
-         (:comment "Die Solmisationssilben sind im Original nicht gedruckt, aber eindeutig im Text beschrieben.")
+         (:comment "Die Solmisationssilben sind in keinem Exemplar gedruckt, aber eindeutig im Text beschrieben.")
          (:flag :ready) (:id 1))
    (:music 2226
            (:voice v1)

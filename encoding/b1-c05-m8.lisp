@@ -227,7 +227,7 @@
            (:critical (474 nil "re. ꝑ aſcen." nil "blue"))
            (:coord-barre "TZ5 TE2")
            (:coord-norm "–")
-           (:comment "Dieser Text (»re. ꝑ aſcen.«) existiert im Original nicht.")
+           (:comment "In allen Exemplaren: Dieser Text (»re. ꝑ aſcen.«) existiert nicht.")
            (:flag :ready) (:id 19))
      ((:alt (:diplomatic 524)
             (:critical 890)

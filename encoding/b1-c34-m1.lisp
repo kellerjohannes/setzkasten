@@ -75,7 +75,7 @@
                     (:critical "ſalto di più")
                     (:coord-barre "TZ2 TE1")
                     (:coord-norm "G1 US Z1")
-                    (:comment "Original: »ſalti«.")
+                    (:comment "In allen Exemplaren: »ſalti«.")
                     (:flag :ready) (:id 1)))
           (325 nil "gradi di più")
           (613 nil
@@ -83,7 +83,7 @@
                      (:critical "ſalti di più")
                      (:coord-barre "TZ2 TE3")
                      (:coord-norm "G3 US Z1")
-                     (:comment "Original: »ſalto«.")
+                     (:comment "In allen Exemplaren: »ſalto«.")
                      (:flag :ready) (:id 2)))
           (896 nil "gradi di più")
           (1193 nil "ſalto  di più")

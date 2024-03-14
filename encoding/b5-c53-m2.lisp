@@ -50,7 +50,7 @@
                  (:critical b38)
                  (:coord-barre "MZ2 N4")
                  (:coord-norm "G3 N8")
-                 (:comment "Original: A♯.")
+                 (:comment "In allen Exemplaren: A♯.")
                  (:flag :ready) (:id 1))
            b22 sb10 b22 bl
            (:section s4) (:newline) b22 sb3 b22 sh4 b22 sb4 b22 sb5 b22 sb6 b22 sh7 b22 sb7 b22 sh8 b22 sb8 b22 sb9 b22 sb10 b22 bl
@@ -64,13 +64,13 @@
                  (:critical b22 sb3)
                  (:coord-barre "MZ3 N1")
                  (:coord-norm "G6 N1")
-                 (:comment "Original: Die erste Note fehlt.")
+                 (:comment "In allen Exemplaren: Die erste Note fehlt.")
                  (:flag :ready) (:id 2))
            (:alt (:diplomatic)
                  (:critical sh4)
                  (:coord-barre "MZ3 N2")
                  (:coord-norm "G6 N2")
-                 (:comment "Original: C.")
+                 (:comment "In allen Exemplaren: C.")
                  (:flag :ready) (:id 3))
            sb4 b22 sh5 b22 sb5 b22 sh6 b22 sb6 b22 sh7 b22 sb7 b22 sh8 b22 sb8 b22 sh9 b22 sb9 b22 sb10 b38 bl
            (:section s7) (:newline) b38 sb3 b22 sh4 b22 sb4 b22 sh5 b22 sb5 b22 sb6 b22 sh7 b22 sb7 b22 sh8 b22 sb8 b22 sb9 b22 sb10 b38 bl b38 b125)))

@@ -82,7 +82,7 @@
                  (:critical cclef7 b38 fl6 b38)
                  (:coord-barre "MZ4 N1")
                  (:coord-norm "G3-4 St2")
-                 (:comment "Original: F4-Schlüssel.")
+                 (:comment "In allen Exemplaren: F4-Schlüssel.")
                  (:flag :ready) (:id 2))
            (:key-signature nil nil nil nil nil nil :flat) b22 met-perf-min-dim b22 met-3-2 b22 sb1 sb4 sb3 m1 m8 dot8 sm7 sb5 m6 sb7 sb5 sh4 m4 m5 br1
            (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat) sbbl4 dot4 sm3 sbbl2 sbbl1 dot2 sm2 sbbl3 dot4 sm1 sbbl4 sbbl3 sbbl2 brbl7 sbbl5 sbbl6 sm7 sm5d brbl8 sh7 sbbl7 brbl8)
@@ -98,7 +98,7 @@
                  (:critical fl3)
                  (:coord-barre "MZ5 N1")
                  (:coord-norm "G5")
-                 (:comment "Original: ♭-Signatur im dritten Zwischenraum.")
+                 (:comment "In allen Exemplaren: ♭-Signatur im dritten Zwischenraum.")
                  (:flag :ready) (:id 3))
            (:key-signature nil nil nil nil nil nil :flat) b38 met-perf-min-dim b22 met-3-2 b38 sb4 b38 m1 b38 sb8 b38 m8 b38 fl9 b38 m9 b38 m8 b38 m7 b38 m4 b22 sb7 b22 m5d b22 m6 b22 m5d b22 m3 b38 m4 b38 m5 b38 m6 b38 m7 b38 m8 b38 m5d b38 m6 b22 m7 b22 custos6)
    (:text 90 58

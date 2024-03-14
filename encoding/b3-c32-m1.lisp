@@ -26,7 +26,7 @@
                      (:critical "Eſsempio di molte cadentie del Primo modo,à quattro uoci , della muſica parti⸗")
                      (:coord-barre "TZ1")
                      (:coord-norm "Ti")
-                     (:comment "Original: »... Quarto modo,...«.")
+                     (:comment "In allen Exemplaren: »... Quarto modo,...«.")
                      (:flag :ready)
                      (:id 1))))
    (:text 130 58

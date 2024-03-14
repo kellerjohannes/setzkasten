@@ -73,7 +73,7 @@
                  (:critical fl7)
                  (:coord-barre "MZ1 N6")
                  (:coord-norm "G2 St1 N1")
-                 (:comment "Original: Das ♭ steht eine Position tiefer.")
+                 (:comment "In allen Exemplaren: Das ♭ steht eine Position tiefer.")
                  (:flag :ready) (:id 1))
            b38 sbd7 b38 bl
            (:section s3) b38
@@ -81,7 +81,7 @@
                  (:critical fl7)
                  (:coord-barre "MZ1 N7")
                  (:coord-norm "G3 St1 N1")
-                 (:comment "Original: Das ♭ steht eine Position tiefer.")
+                 (:comment "In allen Exemplaren: Das ♭ steht eine Position tiefer.")
                  (:flag :ready) (:id 2))
            b38 sbd7 b38 fl7 b38 (:divider :regular) sbd7 b38 bl
            b38 fl7 b38 sbd7 b38 fl7 b38 sbd7 (:alt (:it fl7 sbd7)) bl
@@ -129,6 +129,6 @@
                  (:critical fl2 sbd2)
                  (:coord-barre "MZ4 N11")
                  (:coord-norm "G8 St2 N1")
-                 (:comment "Original: Ė.")
+                 (:comment "In allen Exemplaren: Ė.")
                  (:flag :ready) (:id 3))
            b38 bl)))

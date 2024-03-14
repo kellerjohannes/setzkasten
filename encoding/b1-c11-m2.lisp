@@ -30,7 +30,9 @@
                  (:critical sb4)
                  (:coord-barre "N3")
                  (:coord-norm "G1 N3")
-                 (:comment "Original: Ġ♯. Begründungen: Vicentino würde diese Tonhöhe als A♭ notieren. Die Ganztonteilung mit A♭ wurde bereits im vorhergehenden Beispiel (b1-c11-m1) behandelt, was die originale Gestalt redundant macht.")
+                 ;; JK: Hier und allgemein: Form der Verweise klären: bx-cy-mz oder I.11,
+                 ;; Notenbeispiel 1?
+                 (:comment "In allen Exemplaren: Ġ♯. Begründungen für die Korrektur in der kritischen Edition: Vicentino würde diese Tonhöhe als A♭ notieren. Die Ganztonteilung mit A♭ wurde bereits im vorhergehenden Beispiel (b1-c11-m1) behandelt, was die originale Gestalt redundant macht.")
                  (:flag :ready) (:id 1))
            b38 fl5 b38 sbd5 b38 sb5 b38
            (:section s2)

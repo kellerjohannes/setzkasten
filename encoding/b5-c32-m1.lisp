@@ -74,14 +74,14 @@
                  (:critical fl9 b22 sbd9)
                  (:coord-barre "MZ2 N1")
                  (:coord-norm "G1 St2 N1")
-                 (:comment "Original: Ġ♭.")
+                 (:comment "In allen Exemplaren: Ġ♭.")
                  (:flag :ready) (:id 1))
            b22
            (:alt (:diplomatic fl8 b22 sb8)
                  (:critical fl9 b22 sb9)
                  (:coord-barre "MZ2 N2")
                  (:coord-norm "G1 St2 N2")
-                 (:comment "Original: G♭.")
+                 (:comment "In allen Exemplaren: G♭.")
                  (:flag :ready) (:id 2))
            b22 bl
            b38 b38 sh8 b38 b22 sb8 b38 sbd8 b22 b22 bl
@@ -105,7 +105,7 @@
                  (:critical fl5 b22 sb5)
                  (:coord-barre "MZ3 N7")
                  (:coord-norm "G7 St1 N2")
-                 (:comment "Original: G♭.")
+                 (:comment "In allen Exemplaren: G♭.")
                  (:flag :ready) (:id 3))
            b38 b38 bl
            b38
@@ -113,14 +113,14 @@
                  (:critical fl5 b38 sbd5)
                  (:coord-barre "MZ3 N8")
                  (:coord-norm "G7 St1 N3")
-                 (:comment "Original: Ġ♭.")
+                 (:comment "In allen Exemplaren: Ġ♭.")
                  (:flag :ready) (:id 4))
            b38
            (:alt (:diplomatic sb4)
                  (:critical sb5)
                  (:coord-barre "MZ3 N9")
                  (:coord-norm "G7 St1 N4")
-                 (:comment "Original: A.")
+                 (:comment "In allen Exemplaren: A.")
                  (:flag :ready) (:id 5))
            b38 b22 bl
            (:section s8) b38 sh6 b22 sb6 b38 bl)

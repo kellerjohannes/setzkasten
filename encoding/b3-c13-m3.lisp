@@ -110,7 +110,7 @@
                  (:critical)
                  (:coord-barre "MZ3 N26")
                  (:coord-norm "G7 N6")
-                 (:comment "Original: A–A (Note fehlerhaft verdoppelt).")
+                 (:comment "In allen Exemplaren: A–A (Note fehlerhaft verdoppelt).")
                  (:flag :ready) (:id 1))
            sb9 (:divider :regular) sb10 bl
            b38 sb3 b38 sb10 bl)))
