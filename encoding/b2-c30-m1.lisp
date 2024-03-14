@@ -314,7 +314,7 @@
                  (:critical fl10)
                  (:coord-barre "MZ6 N14")
                  (:coord-norm "G31 St2 N2")
-                 (:comment "Original: ♭ steht eine Position tiefer.")
+                 (:comment "In allen Exemplaren wurde das ♭ eine Position tiefer gedruckt und handschriftlich korrigiert (In-house Korrektur).")
                  (:flag :ready) (:id 1))
            sb10 bl
            (:section s32) sb2 sb9 bl

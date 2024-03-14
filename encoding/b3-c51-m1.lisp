@@ -58,7 +58,7 @@
                  (:critical fl2 sb2)
                  (:coord-barre "MZ2 N22")
                  (:coord-norm "St2 T12 N1")
-                 (:comment "In zwei Quellen [zu ergänzen] steht im Alt anstelle des G♭ ein Ḟ (kleine Terz zum Bass).")
+                 (:comment "In den Exemplaren q023 und q037 steht im Alt anstelle des G♭ ein Ḟ (kleine Terz zum Bass).")
                  (:flag :ready) (:id 1))
            sbd2 b22 sb2 mrest3
            sbd0 b22 md0 b22 m0 m7 bl)

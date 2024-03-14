@@ -9,20 +9,22 @@
    ;; JK: Dieses Beispiel wurde in drei Varianten (texttreu, ohne Punkte, ohne Punkte und ohne
    ;; Versetzungszeichen) aufgenommen. Sollen diese drei Varianten als separate Partituren gegeben
    ;; werden?
+   ;;
+   ;; OPEN
 
    (:voice-labels
     (s1 v1 (:alt (:it "[Soprano]")
-                   (:de "[Soprano]")
-                   (:en "[Soprano]")))
+                 (:de "[Soprano]")
+                 (:en "[Soprano]")))
     (s1 v2 (:alt (:it "[Alto]")
-                   (:de "[Alto]")
-                   (:en "[Alto]")))
+                 (:de "[Alto]")
+                 (:en "[Alto]")))
     (s1 v3 (:alt (:it "[Tenore]")
-                   (:de "[Tenore]")
-                   (:en "[Tenor]")))
+                 (:de "[Tenore]")
+                 (:en "[Tenor]")))
     (s1 v4 (:alt (:it "[Basso]")
-                   (:de "[Basso]")
-                   (:en "[Bass]")))))
+                 (:de "[Basso]")
+                 (:en "[Bass]")))))
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble")
@@ -179,7 +181,10 @@
                  (:critical br4 b22 sb0)
                  (:coord-barre "MZ9 N1-2")
                  (:coord-norm "St3 T17-18")
-                 (:comment "Original: Anstelle der Brevis auf G steht eine Semibrevis auf B♭, gefolgt von einer Brevis auf G.")
+                 ;; JK: Verweis auf Kapitelkommentar ergänzen.
+                 ;;
+                 ;; OPEN
+                 (:comment "In allen Exemplaren wurde die erste Note als Semibrevis auf B♭ und die zweite Note als Brevis auf C gedruckt. Die zweite Note wurde manuell mit einer Drucktype zu einer Brevis auf G korrigiert (In-house Korrektur). Zur Fassung der kritischen Ausgabe siehe [Kapitelkommentar, Verweis zu ergänzen].")
                  (:flag :ready) (:id 4))
            b22 brrest2
            b22 m2 b22 sb7 sh7 m7 b22 m8 b22 m8 b22 md5 b22 md5 b22 mrest7

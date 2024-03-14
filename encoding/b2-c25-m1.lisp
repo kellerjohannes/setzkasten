@@ -45,8 +45,16 @@
            ;; JK: Bibelgruppe: Verdacht auf Schlüsselfehler. Scheint aber korrekt zu sein, deshalb
            ;; soll hier keine Idealisierung stattfinden.
            ;;
-           ;; OPEN
-           cclef3 b38 sb5 b22 bl
+           ;; JK: Konsens mit Luigi: soll korrigiert werden, da ein Duodecima erscheinen muss.
+           ;;
+           ;; DONE
+           (:alt (:diplomatic cclef3)
+                 (:critical cclef1)
+                 (:coord-barre "MZ1 N1")
+                 (:coord-norm "G1-5 St1-2")
+                 (:comment "In allen Exemplaren wurde dieser Schlüssel als C2 gedruckt. In den Exemplaren q004, q005, q011, q029, q030, q057 wurde er handschriftlich von Lesern zu C1 korrigiert. In Exemplar q034 wurden die ersten zwei Noten der ersten Musikzeile handschriftlich eine Terz nach oben korrigiert und für die letzten zwei Noten der ersten Musikzeile handschriftlich ein C2-Schlüssel ergänzt.")
+                 (:flag :ready) (:id 1))
+           b38 sb5 b22 bl
            (:voice v2) b22 sb3 b22 bl
            b22 b38 b38 b38 bl
            (:section s2)

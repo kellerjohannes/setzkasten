@@ -16,10 +16,6 @@
     (:alt (:it "Gradi et salti")
           (:de "Tonschritte und Sprünge.")
           (:en "Steps and leaps")))
-   ;; AS: Kommentar David: The interlinear caption "Steps and leaps" should apply to Nos. 19 onwards
-   ;; (since in these captions the word that appears first refers to the upper voice).
-   ;;
-   ;; OPEN
    (:section-captions
     (s1 (:alt (:it "A quattro")
               (:de "für vier [Stimmen]")
@@ -234,6 +230,16 @@
                  (:coord-norm "G33 St1 N2")
                  (:comment "Original: G.")
                  (:flag :ready) (:id 1))
+           ;; AS: Kommentar David: The interlinear caption "Steps and leaps" should apply to Nos. 19
+           ;; onwards (since in these captions the word that appears first refers to the upper
+           ;; voice).
+           ;;
+           ;; JK mit Luigi: Das Beispiel lässt sich alternativ auch mit einer Korrektur des
+           ;; Schlüssels der ersten Stimme von C3 zu C4 lösen, wodurch die Stimmführung C-E (statt
+           ;; original E-G) entsteht. Konsens: wir bleiben bei der ursprünglichen Korrektur, die
+           ;; selbstverständlich kommentiert ist.
+           ;;
+           ;; OPEN
            bl)
    (:text 90 58
      (113 nil "à 6.")

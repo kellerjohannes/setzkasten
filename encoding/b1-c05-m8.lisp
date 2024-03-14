@@ -171,7 +171,7 @@
                  (:critical (:section s2) (:bracketed) sb8blue fl8blue sbd8blue sh7blue sb7blue sbd7blue sb7blue blblue)
                  (:coord-barre "N6-N10")
                  (:coord-norm "G2 N1-N5")
-                 (:comment "Der Schritt von G zu F existiert im Original nicht, ist aber inhaltlich plausibel.")
+                 (:comment "Der Schritt von G zu F existiert in keinem Exemplar und wurde analog zu den anderen Musikbeispielen in diesem Kapitel ergänzt.")
                  (:flag :ready) (:id 12))
            (:section s3) sb7 b22 sbd6 b22 sb6 bl
            (:section s4) sb6 fl6 sbd6 sh5 sb5 b22 sbd5 b22 sb5 bl

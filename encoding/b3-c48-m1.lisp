@@ -20,5 +20,12 @@
            (:section s6) sb5 b22 sb3 b22 sb2 bl
            (:section s7) sb5 b22 fl3 b22 sb3 b22 sb2 bl
            (:section s8) sb5 b22 sbd3 b22 sb3 b22 sb2 bl
-           (:section s9) sb5 sbd4 b22 sb4 sb2 bl
+           (:section s9) sb5
+           (:alt (:diplomatic sbd3 b22 sb4)
+                 (:critical sbd4 b22 sb4)
+                 (:coord-barre "MZ2 N16-17")
+                 (:coord-norm "G9 N2-3")
+                 (:comment "In allen Exemplaren als Ḃ♮-C gedruckt. Alternative Korrekturen: Ċ-B♮ oder C-Ḃ♮.")
+                 (:flag :ready) (:id 1))
+           sb2 bl
            (:section s10) sb5 b22 fl5 b22 sbd5 sh4 b22 sb4 b22 sbd4 b22 sb4 sb3 sb2 bl)))

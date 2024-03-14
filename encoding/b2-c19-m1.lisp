@@ -19,12 +19,6 @@
     (s4 (:alt (:it "A due voci")
               (:de "mit zwei Stimmen")
               (:en "in two voci"))))
-   ;; AS: Kommentar David: No. 4: by comparison with other music examples, and because it retains
-   ;; the overall single breve duration, I think it's much more likely that the voice durations
-   ;; should be matched by ending the leaping voice with a minim (instead of ending the other voice
-   ;; with a dotted semibreve, as Johannes has done).
-   ;;
-   ;; OPEN
    (:section-captions
     (s2 (:alt (:it "De salti")
               (:de "mit Sprüngen")
@@ -56,19 +50,30 @@
            (:voice v1) (:f-clef) max7 fclef7 b38 sb6 sb2 b38
            (:voice v2) cclef7 b22 mrest7 sb7 b38 m9 b38
            (:section s4)
-           (:voice v1) cclef7 b38 sb3 sb2
-           (:alt (:diplomatic)
-                 (:critical dot2)
-                 (:coord-barre "N16")
-                 (:coord-norm "G4 St1 N2")
-                 (:comment "Rhythmische Punktierung des E wurde ergänzt, um die beiden Stimmen gleich lang erscheinen zu lassen.")
+           (:voice v1) cclef7 b38 sb3 sb2 bl
+           (:voice v2) mrest7 m7 dot8 sm6
+           (:alt (:diplomatic sb9)
+                 (:critical m9)
+                 (:coord-barre "N19")
+                 (:coord-norm "G4 St2 N3")
+                 (:comment "Original: In allen Exemplaren wurde diese Note als Semibrevis gedruckt. Im Exemplar q067 wurde sie von einem Leser mit Bleistift zu einer Minima korrigiert.")
+                 (:flag :ready) (:id 1))
                  ;; Kommentar Anne Ich würde den Punkt nicht ergänzen.
+                 ;;
                  ;; JK: Dann geht das Beispiel aber nicht auf, was für die moderne Notenschrift
                  ;; ein Problem ist. Kannst du damit leben, dass der Punkt ergänzt ist?
                  ;; Alternativ müsste ich schauen, ob ich ihn einpflegen, aber unsichtbar machen
                  ;; kann.
                  ;;
-                 ;; OPEN
-                 (:flag :ready) (:id 1))
-           bl
-           (:voice v2) mrest7 m7 dot8 sm6 sb9 bl)))
+                 ;; AS: Kommentar David: No. 4: by comparison with other music examples, and because
+                 ;; it retains the overall single breve duration, I think it's much more likely that
+                 ;; the voice durations should be matched by ending the leaping voice with a minim
+                 ;; (instead of ending the other voice with a dotted semibreve, as Johannes has
+                 ;; done).
+                 ;;
+                 ;; JK: Luigi bestätigt, dass diese Korrektur in einer Quelle handschriftlich
+                 ;; gemacht wurde (nicht in-house, sondern von einem Leser). Ich habe den Notentext
+                 ;; entsprechend angepasst.
+                 ;;
+                 ;; DONE
+           bl)))
