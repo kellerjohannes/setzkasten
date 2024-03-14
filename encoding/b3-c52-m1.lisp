@@ -1,3 +1,7 @@
+;; JK: Achtung, alle Custodien fehlen, ist zu ergänzen!
+;;
+;; OPEN
+
 `((:header
    (:filename "b3-c52-m1")
    (:alt-name "m3.115")
