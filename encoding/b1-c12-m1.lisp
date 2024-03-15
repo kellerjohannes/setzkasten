@@ -91,7 +91,7 @@
                  (:critical "ꝑ la metà")
                  (:coord-barre "TZ1 Ende")
                  (:coord-norm "G9 US")
-                 (:comment "In den Exemplaren q005, q067, q081: »per la meta«.")
+                 (:comment "In den Exemplaren q005, q067, q081: »ꝑ la meta«.")
                  (:flag :ready) (:id 3))))
    (:text 70 58
      (271 nil "dinanzi")
