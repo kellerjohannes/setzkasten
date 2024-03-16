@@ -38,7 +38,7 @@
               ;; eine andere Idealisierung vor, siehe :it-Text und Vorschlag für die Englische
               ;; Übersetzung. Ich habe das auch im Fake-Simile entsprechend angepasst.
               ;;
-              ;; OPEN
+              ;; DONE
               (:de "diesis maggiore\\enarmonico incomposto")
               (:en "diesis maggiore\\enarmonico incomposto")))))
   (:data

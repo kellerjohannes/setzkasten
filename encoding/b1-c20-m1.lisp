@@ -58,17 +58,20 @@
                ;; accidentale incomposto (Ab–G) followed by two semitoni minori accidentali
                ;; incomposti (G–Gb and Gb–Fdot), all descending.
                ;;
+               ;; TODO: in kapitelkommentar auslagern, hier schliessen und auf kapitelkommentar
+               ;; verweisen.
+               ;;
                ;; OPEN
                (:de "semitono maggiore\\und minore,\\[beide] accidentali incomposti")
                (:en "semitono maggiore\\and minore,\\[both] accidentali incomposti")))
-               ;; LC: Ich habe hier beide/both eingefügt
+    ;; LC: Ich habe hier beide/both eingefügt
     (s12 (:alt (:it "semitono minore\\et maggiore,\\accidentali incomposti")
                (:de "semitono minore\\und maggiore,\\[beide] accidentali incomposti")
                (:en "semitono minore\\and maggiore,\\[both] accidentali incomposti")))))
-               ;; LC: Ich habe hier beide/both eingefügt
+  ;; LC: Ich habe hier beide/both eingefügt
   (:data
    (:text 90 58
-     (0 2234 "ᴇſſempio di più ꜱemitoni mag.et minori,aſcendenti,et diſcendenti, comp.et incomp.nat.et acci"))
+          (0 2234 "ᴇſſempio di più ꜱemitoni mag.et minori,aſcendenti,et diſcendenti, comp.et incomp.nat.et acci"))
    (:music 2220
            (:voice v1)
            (:section s1)
@@ -87,21 +90,21 @@
            (:section s7)
            sb7 b38 sh7 b27 sb7 bl)
    (:text 70 58
-     (26 nil "ſemit.mag.")
-     (344 nil "ſemit.magg.")
-     (695 nil "ſemit. mi.")
-     (964 nil "ſemit. ma.")
-     (1229 nil "ſemit.minore")
-     (1664 nil "ſemit.mag.")
-     (1955 nil "ſemit.mino."))
+          (26 nil "ſemit.mag.")
+          (344 nil "ſemit.magg.")
+          (695 nil "ſemit. mi.")
+          (964 nil "ſemit. ma.")
+          (1229 nil "ſemit.minore")
+          (1664 nil "ſemit.mag.")
+          (1955 nil "ſemit.mino."))
    (:text 120 58
-     (24 nil "nat.comp.")
-     (337 nil "accid. compo.")
-     (693 nil "acci.inco.")
-     (949 nil "ac.incomp.")
-     (1218 nil "accid.comp.")
-     (1660 nil "nat.comp.")
-     (1951 nil "acc. incom."))
+          (24 nil "nat.comp.")
+          (337 nil "accid. compo.")
+          (693 nil "acci.inco.")
+          (949 nil "ac.incomp.")
+          (1218 nil "accid.comp.")
+          (1660 nil "nat.comp.")
+          (1951 nil "acc. incom."))
    (:music 2225
            (:section s8)
            cclef7 sb9 b22 sh8 b38 sb8 b38 fl8 b38 sbd8 bl
@@ -123,14 +126,14 @@
            sb3 b38 sbd2 b38 fl2 b38 sb2 bl
            b38 b38 b38 b38 b38 b38)
    (:text 70 58
-     (26 nil "ſemit.maggiori")
-     (467 nil "ſem.ma.acc.")
-     (775 nil "ſemit.magg.")
-     (1105 nil "ſemit.magg. et min.")
-     (1622 nil "ſe.min.et mag."))
+          (26 nil "ſemit.maggiori")
+          (467 nil "ſem.ma.acc.")
+          (775 nil "ſemit.magg.")
+          (1105 nil "ſemit.magg. et min.")
+          (1622 nil "ſe.min.et mag."))
    (:text 70 58
-     (39 nil "accid.incomp.")
-     (475 nil "comp.")
-     (778 nil "accid.incom.")
-     (1099 nil "accid.incomp.")
-     (1618 nil "accid.incomp."))))
+          (39 nil "accid.incomp.")
+          (475 nil "comp.")
+          (778 nil "accid.incom.")
+          (1099 nil "accid.incomp.")
+          (1618 nil "accid.incomp."))))

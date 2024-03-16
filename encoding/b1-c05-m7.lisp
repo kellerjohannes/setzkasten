@@ -17,6 +17,8 @@
               ;; bleiben, sollte aber nochmals bestätigt werden.
               ;;
               ;; JK&LC: Dieses Textfeld soll rechtsbündig gesetzt werden, das nächste linksbündig
+              ;;
+              ;; DONE
               ))
     (s3 (:alt (:it "a C")
               (:de "zu C")
@@ -111,14 +113,18 @@
    (:music 2202
            ;; JK: Achtung, siehe Maniates S. 65, ev. Korrekturen nötig
            ;;
-           ;; OPEN
+           ;; JK: Es soll die vorliegende Fassung verwendet werden, unabhängig von Maniates
+           ;;
+           ;; DONE
            (:voice v1)
            (:section s1) (:f-clef) max7 fclef7 sb2 b22 sbd2 b22 fl3 b22 sb3 b22 fl3 b22 sbd3 b22 sb3 bl
            (:section s2) b22 fl3 b22 sb3 b22 fl3 b22 sbd3 bl
            ;; JK: diese Zeile soll in Lilypond in zwei Systeme geteilt werden, das untere als ossia
            ;; in Klammern
            ;;
-           ;; OPEN
+           ;; JK: Das wurde in der Zwischenzeit anders gelöst.
+           ;;
+           ;; DONE
            (:section s3) sb3 b22 sbd3 b22 sb4 bl
            (:section s4) sb4 b22 sbd4 b22 fl5 b22 sb5 b22 fl5 b22 sbd5 b22 sb5 bl
            (:section s5) sb5 b22 sbd5 b22 fl6 b22 sb6 b22 fl6 b22 sbd6 b22 sb6 bl)

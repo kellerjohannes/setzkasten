@@ -162,9 +162,6 @@
           (:comment "Die Breite der Notenzeile wurde angepasst, um die Ergänzung von N6-N10 zu ermöglichen.")
           (:flag :ready) (:id 11))
     (:voice v1)
-    ;; JK: soll mit farbigen Typen und farbigem Text implementiert werden
-    ;;
-    ;; OPEN
     (:section s1) (:f-clef) max7 fclef7 b22 sb9 fl9 sbd9 sh8 sb8 b22 sbd8 b22 sb8 bl
 
            (:alt (:diplomatic)
