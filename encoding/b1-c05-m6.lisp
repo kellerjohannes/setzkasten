@@ -35,16 +35,9 @@
     (s2 (:alt (:it "re e ut [se] ascendeno")
               (:de "re und ut aufsteigend")
               (:en "re and ut in ascent")))
-    ;; (s3 (:alt (:it "per ascendere")
-    ;;           (:de "aufsteigend")
-    ;;           (:en "in ascent")))
     (s4 (:alt (:it "[re et] mi [se] ascende")
               (:de "mi aufsteigend")
-              (:en "mi in ascent")))
-    ;; (s7 (:alt (:it "per discendere")
-    ;;           (:de "absteigend")
-    ;;           (:en "in descent")))
-    ))
+              (:en "mi in ascent")))))
   (:preamble-lilypond
    (:lyrics
     ;; JK: Im Auge zu behalten: die Silben werden standardmässig kleiner gesetzt als die "per

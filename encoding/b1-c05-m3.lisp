@@ -27,44 +27,7 @@
               (:en "Elami")))
     (s7 (:alt (:it "Ffaut")
               (:de "Ffaut")
-              (:en "Ffaut"))))
-   ;; (:section-captions
-   ;;  (s1 (:alt (:it "la, mi, re,\\ut, fa, sol\\per natura,\\per ♭, per ♮")
-   ;;            ;; Kommentar Anne: Für mich geht diese Reihenfolge nicht, weil es deckt sich nicht
-   ;;            ;; weder mit dem Original noch dem Wahrnehmen der Zeit. Die erste Zeile muss la mi re
-   ;;            ;; sein in Zusammenhang mit dem Notennamen Alamire, die zweite ut, fa, sol, und die
-   ;;            ;; dritte die Hexachorde. Die Hexachorde der ersten Zeile gelten für la mi und re, bei
-   ;;            ;; ut fa und sol wären sie Hexachorde auf a, d, e, usw. Dies Prinzip gilt für alle
-   ;;            ;; nachher, dass die Silben der erste Reihe gelten für die dargestellten Note(n), die
-   ;;            ;; danach für die andere Möglichkeiten. Dies ist kaum zu erkennen von der jetzige
-   ;;            ;; Darstellung. Ich habe die englische Darstellung entsprechend (hoffentlich) meine
-   ;;            ;; Vorstellungen eingerichtet.
-   ;;            ;;
-   ;;            ;; JK: Finde ich sehr gut, ich habe die italienische Reihenfolge der Zeilen nun der
-   ;;            ;; Englischen angepasst.
-   ;;            ;;
-   ;;            ;; DONE
-   ;;            (:de "la, mi, re,\\ut, fa, sol\\per natura,\\per ♭, per ♮")
-   ;;            (:en "la, mi, re,\\ut, fa, sol\\in nat.,\\in ♭,\\in ♮")))
-   ;;  (s2 (:alt (:it "fa, mi,\\la, sol, re, ut\\per ♭,\\per ♮")
-   ;;            (:de "fa, mi,\\la, sol, re, ut\\per ♭,\\per ♮")
-   ;;            (:en "fa, mi,\\la, sol, re, ut\\in ♭,\\in ♮")))
-   ;;  (s3 (:alt (:it "mi, fa, sol,\\la, re, ut\\per ♮,\\per natura")
-   ;;            (:de "mi, fa, sol,\\la, re, ut\\per ♮,\\per natura")
-   ;;            (:en "mi, fa, sol,\\la, re, ut\\in ♮,\\in nat.")))
-   ;;  (s4 (:alt (:it "sol, fa, ut,\\re, mi, la\\per natura,\\per ♭")
-   ;;            (:de "sol, fa, ut,\\re, mi, la\\per natura,\\per ♭")
-   ;;            (:en "sol, fa, ut,\\re, mi, la\\in nat.,\\in ♭")))
-   ;;  (s5 (:alt (:it "la, sol, re,\\fa, mi, ut\\per natura,\\per ♭")
-   ;;            (:de "la, sol, re,\\fa, mi, ut\\per natura,\\per ♭")
-   ;;            (:en "la, sol, re,\\fa, mi, ut\\in nat.,\\in ♭")))
-   ;;  (s6 (:alt (:it "la, mi, fa,\\ut, re, sol\\per natura,\\per ♮")
-   ;;            (:de "la, mi, fa,\\ut, re, sol\\per natura,\\per ♮")
-   ;;            (:en "la, mi, fa,\\ut, re, sol\\in nat.,\\in ♮")))
-   ;;  (s7 (:alt (:it "fa, ut, re,\\mi, sol, la\\per natura,\\per ♭")
-   ;;            (:de "fa, ut, re,\\mi, sol, la\\per natura,\\per ♭")
-   ;;            (:en "fa, ut, re,\\mi, sol, la\\in nat.,\\in ♭"))))
-   )
+              (:en "Ffaut")))))
   (:preamble-lilypond
    (:lyrics
     (s1 v1 (:alt (:it "\\set stanza = \\markup{ \\column { \\vspace #1.23 \\line { \\normal-text \"per n,\" } \\line { \\normal-text \"per ♭,\" } \\line { \\normal-text \"per ♮:\" } } \\lower #6.2 \\override #'(font-encoding . fetaBraces) \\lookup \"brace210\" } la")

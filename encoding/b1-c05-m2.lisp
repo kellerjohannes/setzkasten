@@ -27,42 +27,7 @@
               (:en "Ffaut")))
     (s7 (:alt (:it "Gsolreut")
               (:de "Gsolreut")
-              (:en "Gsolreut"))))
-   ;; (:section-captions
-   ;;  (s1 (:alt (:it "per natura: la\\per ♭: mi\\per ♮: re")
-   ;;            (:de "per natura: la\\per ♭: mi\\per ♮: re")
-   ;;            (:en "in nat.: la\\in ♭: mi\\in ♮: re")))
-   ;;  (s2 (:alt (:it "per ♮: mi")
-   ;;            (:de "per ♮: mi")
-   ;;            (:en "in ♮: mi")))
-   ;;  (s3 (:alt (:it "per natura: ut\\per ♭: sol\\per ♮: fa")
-   ;;            ;; Kommentar Anne: this corresponds to the original, but is wrong. Either the natura
-   ;;            ;; must be ut, the molle must be sol, and the hard must be fa; or the sequence of
-   ;;            ;; hexachords must be different, with mollem being first with c as sol; hard second
-   ;;            ;; with c as f; and finally natura with c as ut. The German and English must be
-   ;;            ;; changed accordingly as well.
-   ;;            ;;
-   ;;            ;; JK: Ich habe Annes ersten Vorschlag implementiert, sowohl im Fake-Simile, wie auch
-   ;;            ;; in den modernen Textelementen. Also:
-   ;;            ;;
-   ;;            ;; "per natura: ut, per ♭: sol und per ♮: fa"
-   ;;            ;;
-   ;;            ;; DONE
-   ;;            (:de "per natura: ut\\per ♭: sol\\per ♮: fa")
-   ;;            (:en "in nat.: ut\\in ♭: sol\\in ♮: fa")))
-   ;;  (s4 (:alt (:it "per ♭: la\\per ♮: sol\\per natura: re")
-   ;;            (:de "per ♭: la\\per ♮: sol\\per natura: re")
-   ;;            (:en "in ♭: la\\in ♮: sol\\in nat.: re")))
-   ;;  (s5 (:alt (:it "per ♮: la\\per natura: mi")
-   ;;            (:de "per ♮: la\\per natura: mi")
-   ;;            (:en "in ♮: la\\in nat.: mi")))
-   ;;  (s6 (:alt (:it "per natura: fa\\per ♭: ut")
-   ;;            (:de "per natura: fa\\per ♭: ut")
-   ;;            (:en "in nat.: fa\\in ♭: ut")))
-   ;;  (s7 (:alt (:it "per natura: sol\\per ♭: re\\per ♮: ut")
-   ;;            (:de "per natura: sol\\per ♭: re\\per ♮: ut")
-   ;;            (:en "in nat.: sol\\in ♭: re\\in ♮: ut"))))
-   )
+              (:en "Gsolreut")))))
   (:preamble-lilypond
    (:lyrics
     (s1 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per n:\" } la [la]")
