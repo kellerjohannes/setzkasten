@@ -58,7 +58,7 @@
                  (:critical fl2 sb2)
                  (:coord-barre "MZ2 N22")
                  (:coord-norm "St2 T12 N1")
-                 (:comment "In zwei Quellen [zu ergänzen] steht im Alt anstelle des G♭ ein Ḟ (kleine Terz zum Bass).")
+                 (:comment "In den Exemplaren q023 und q037 steht im Alt anstelle des G♭ ein Ḟ (kleine Terz zum Bass).")
                  (:flag :ready) (:id 1))
            sbd2 b22 sb2 mrest3
            sbd0 b22 md0 b22 m0 m7 bl)
@@ -98,7 +98,7 @@
                  (:critical dot4)
                  (:coord-barre "MZ5 N4")
                  (:coord-norm "St4 T6 N1")
-                 (:comment "Original: Keine rhythmische Punktierung.")
+                 (:comment "In allen Exemplaren: Keine rhythmische Punktierung.")
                  (:flag :ready) (:id 2))
            md4 fl5 sb5 b13 sb3 sbrest3
            b13 sb2 b13 md2 dot2
@@ -107,7 +107,7 @@
                  (:tatti smd2)
                  (:coord-barre "MZ5 N10")
                  (:coord-norm "St4 T9 N2")
-                 (:comment "Original: A.")
+                 (:comment "In allen Exemplaren: A.")
                  (:flag :ready) (:id 3))
            b22 m5 b22 m5 brd5 fl6 sb6 b22 mrest3
            b22 m3 b22 md5 b22 md5 md1 b22 md1 b22 sb4 b22 sbd2 b22 sbrest3

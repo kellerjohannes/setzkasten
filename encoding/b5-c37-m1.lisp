@@ -70,7 +70,7 @@
                  (:critical fl2)
                  (:coord-barre "MZ1 N16")
                  (:coord-norm "G5 St1 N2")
-                 (:comment "Original: Das ♭ steht eine Position höher.")
+                 (:comment "In allen Exemplaren: Das ♭ steht eine Position höher.")
                  (:flag :ready) (:id 1))
            sbd2 bl
            (:section s6) fl4 sb4 bl
@@ -81,7 +81,7 @@
                  (:critical sbd6)
                  (:coord-barre "MZ1 N22")
                  (:coord-norm "G8 St1 N1")
-                 (:comment "Original: B♮.")
+                 (:comment "In allen Exemplaren: B♮.")
                  (:flag :ready) (:id 3))
            bl)
    (:text 130 58
@@ -100,7 +100,7 @@
                  (:critical fl9 sb9)
                  (:coord-barre "MZ2 N1")
                  (:coord-norm "G1 St2 N1")
-                 (:comment "Original: G♭.")
+                 (:comment "In allen Exemplaren: G♭.")
                  (:flag :ready) (:id 2))
            sh8 sb8 bl
            sbd8 sbc8 sb8 bl

@@ -47,7 +47,7 @@
                  (:critical sb5 b22 fl6 b22 sb6)
                  (:coord-barre "N9-N10")
                  (:coord-norm "G5 N1-N2")
-                 (:comment "Original A–G♯. Redundanz zu Section 7.")
+                 (:comment "In allen Exemplaren: A–G♯. Redundanz zu Section 7.")
                  (:flag :ready) (:id 1))
            bl
            (:section s6)
@@ -74,7 +74,7 @@
                         (:critical "ſe.tono cro.")
                         (:coord-barre "TZ2 TE1")
                         (:coord-norm "G1 US Z2")
-                        (:comment "Original: »tono cro.«, im Notentext wird jedoch ein /semitono cromatico/ gezeigt.")
+                        (:comment "In allen Exemplaren: »tono cro.«, im Notentext wird jedoch ein /semitono cromatico/ gezeigt.")
                         (:flag :ready) (:id 2)))
           (316 nil "to. crom.")
           (550 nil "ſem.cro.")

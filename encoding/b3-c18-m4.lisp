@@ -20,7 +20,7 @@
                  (:critical sb2)
                  (:coord-barre "N13")
                  (:coord-norm "N13")
-                 (:comment "Original: Minima. Anpassung, um die Regularität der Phrasenlänge herzustellen.")
+                 (:comment "In allen Exemplaren: Minima. Anpassung, um die Regularität der Phrasenlänge herzustellen.")
                  (:flag :ready) (:id 1))
            b22 m3 dot4
            cr2 b22 cr1 b22 m2 b22 sb3 b22 m2 b22 sb5 b22 sh4 b22 m4 b22 sb5 b22 sb2 b22 sb5 br2 b22 blbl)))

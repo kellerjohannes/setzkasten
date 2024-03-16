@@ -113,7 +113,7 @@
                  (:critical sb4)
                  (:coord-barre "MZ1 N8")
                  (:coord-norm "G2 N3")
-                 (:comment "Original: B♮.")
+                 (:comment "In allen Exemplaren: B♮.")
                  (:flag :ready) (:id 2))
            b22 sbd4 b22 bl
            (:section s3) b22 sbd4 b22 fl5 b22 sb5 b22 fl5 b22 sbd5 b22 sb5 b22 sbd5 b22 bl
@@ -124,7 +124,7 @@
                (:critical "di.ma.d.mi.d.mi.d. mi.")
                (:coord-barre "TZ2 TE1")
                (:coord-norm "G1 US")
-               (:comment "Original: »da.mi.«")
+               (:comment "In allen Exemplaren: »da.mi.«")
                (:flag :ready) (:id 1)))
      (685 nil "di.mi.d.mi.d.mi.")
      (1114 nil "di.ma.d.mi.d.mi.d.mi.")
@@ -149,7 +149,7 @@
                    (:critical "di.mi.dimi. di.mi.")
                    (:coord-barre "TZ5 TE1")
                    (:coord-norm "G5 US")
-                   (:comment "Original: »di.mi.dimi. di.mi.di.mi.«.")
+                   (:comment "In allen Exemplaren: »di.mi.dimi. di.mi.di.mi.«.")
                    (:flag :ready) (:id 3)))
      (661 nil "di. ma. di. mi. d.imi. di. mi.")
      (1504 nil "di. ma. di. mi. di.mi. d.mi."))
@@ -199,7 +199,7 @@
                  (:critical "d.mi.d.ma.d.mi.d.mi.")
                  (:coord-barre "TZ11 TE4")
                  (:coord-norm "G14 US")
-                 (:comment "Original: »d.mi.d.ma.d.mi.d.mi,«.")
+                 (:comment "In allen Exemplaren: »d.mi.d.ma.d.mi.d.mi,«.")
                  (:flag :ready) (:id 4))))
    (:text 70 58
      (118 nil "ᴛono")

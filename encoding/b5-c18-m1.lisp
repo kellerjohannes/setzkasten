@@ -64,7 +64,7 @@
                  (:critical sbd4)
                  (:coord-barre "MZ1 N1")
                  (:coord-norm "G1 St1 N1")
-                 (:comment "Original: G♭.")
+                 (:comment "In allen Exemplaren: G♭.")
                  (:flag :ready) (:id 1))
            b38 fl4 b38 (:divider :regular) sbd4 b38 bl
            b38 fl4 b38 sbd4 b38 fl4 b38 sbd4 b38 bl
@@ -87,14 +87,14 @@
                  (:critical fl3 b38 sbd3)
                  (:coord-barre "MZ2 N6")
                  (:coord-norm "G3 St2 N1")
-                 (:comment "Original: Ȧ♭.")
+                 (:comment "In allen Exemplaren: Ȧ♭.")
                  (:flag :ready) (:id 2))
            b38 (:divider :regular)
            (:alt (:diplomatic fl2 b38 sb2)
                  (:critical fl3 b38 sb3)
                  (:coord-barre "MZ2 N7")
                  (:coord-norm "G3 St2 N2")
-                 (:comment "Original: A♭.")
+                 (:comment "In allen Exemplaren: A♭.")
                  (:flag :ready) (:id 3))
            b22 bl
            b38 b22 sh2 b38 sb2 b38 sbd2 b38 b22 bl
@@ -111,7 +111,7 @@
                  (:critical sh1 b38 sb1)
                  (:coord-barre "MZ3 N1")
                  (:coord-norm "G5 St1 N1")
-                 (:comment "Original: B♯.")
+                 (:comment "In allen Exemplaren: B♯.")
                  (:flag :ready) (:id 4))
            b38 fl2 b38 (:divider :regular) sb2 b38 b38 bl
            b22 b38 fl2 b38 sbd2 b38 sb2 b38 bl
@@ -122,14 +122,14 @@
                  (:critical fl5 sbd5)
                  (:coord-barre "MZ3 N8")
                  (:coord-norm "G7 St1 N3")
-                 (:comment "Original: Ė.")
+                 (:comment "In allen Exemplaren: Ė.")
                  (:flag :ready) (:id 5))
            b38
            (:alt (:diplomatic sh5 b38 sb5)
                  (:critical b38 b38 sb5)
                  (:coord-barre "MZ3 N9")
                  (:coord-norm "G7 St1 N4")
-                 (:comment "Original: E♯.")
+                 (:comment "In allen Exemplaren: E♯.")
                  (:flag :ready) (:id 6))
            b38 b22 bl
            (:section s8) b38 b22 fl7 b38 sbd7 b22 bl)

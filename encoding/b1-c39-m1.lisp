@@ -24,6 +24,7 @@
     ;;
     ;; JK: Würde ein :line-title erfordern, ist möglich, ich finde es aber inhaltlich deutlicher wie
     ;; es ist. Akzeptabel?
+    ;;
     ;; AS: Ja, für mich schon.
     ;;
     ;; OPEN
@@ -109,7 +110,7 @@
                          (:critical "ꝑfet. nat.")
                          (:coord-barre "TZ4 TE4")
                          (:coord-norm "G4 US")
-                         (:comment "Original: »ꝑſet. nat.«.")
+                         (:comment "In allen Exemplaren: »ꝑſet. nat.«.")
                          (:flag :ready) (:id 1)))
           (1228 nil "ꝑfet.na.")
           (1446 nil "ꝑfet.nat.")

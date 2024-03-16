@@ -11,7 +11,11 @@
               (:de "zweifelhafter Sprung")
               (:en "dubious leap")))
     (s6 (:alt (:it "a 5")
-    ;; AS: All the numbers should be written out.
+              ;; AS: All the numbers should be written out.
+              ;;
+              ;; JK: muss mit Luigi abgestimmt werden
+              ;;
+              ;; OPEN
               (:de "mit fünf [Stimmen]")
               (:en "in five [voci]")))
     (s7 (:alt (:it "salto dubbioso")

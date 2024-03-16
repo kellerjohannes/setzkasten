@@ -63,7 +63,7 @@
                  (:critical dot8)
                  (:coord-barre "MZ1 N20")
                  (:coord-norm "G7 St1 N1")
-                 (:comment "Original: Rhythmische Punktierung steht eine Position tiefer.")
+                 (:comment "In allen Exemplaren: Rhythmische Punktierung steht eine Position tiefer.")
                  (:flag :ready) (:id 1))
            m8 sb7 bl
            (:section s8) m7 sb8 m7 sb8 bl)

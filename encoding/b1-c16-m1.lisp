@@ -56,7 +56,7 @@
                  (:critical sbd5)
                  (:coord-barre "N16 (letzte)")
                  (:coord-norm "G8 N2")
-                 (:comment "Original: Ȧ–A♭. Könnte alternativ auch in A–A♭ korrigiert werden.")
+                 (:comment "In allen Exemplaren: Ȧ–A♭. Könnte alternativ auch in A–A♭ korrigiert werden.")
                  (:flag :ready) (:id 1))
            bl)
    (:text 70 58

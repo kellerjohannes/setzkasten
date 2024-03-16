@@ -197,10 +197,10 @@
   (:data
    ;; Seite 1, fol. 134v, S. 268
    (:text 110 58
-          (348 1511 "Eſſempio delle note ſcritte ſecondo lʼuſo naturale nelle tre chiaui."))
+     (348 1511 "Eſſempio delle note ſcritte ſecondo lʼuſo naturale nelle tre chiaui."))
    (:text 110 58
-          (334 nil "Primo ordine.")
-          (1350 nil "Secondo ordine."))
+     (334 nil "Primo ordine.")
+     (1350 nil "Secondo ordine."))
    ;; MZ1
    (:music 2223
            (:voice v1)
@@ -212,16 +212,16 @@
            gclef3 b22 fl5 (:key-signature nil nil nil nil nil nil :flat)
            sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b22 bl)
    (:text 110 58
-          (325 nil "Del primo ordine.")
-          (1333 nil "ᴅel secondo ordine."))
+     (325 nil "Del primo ordine.")
+     (1333 nil "ᴅel secondo ordine."))
    ;; MZ2
    (:music 2227
            (:section s2)
            (:key-signature nil nil nil nil nil nil nil) cclef1 b22 sb0 b22 sh1 sb1 b22 sb2 b22 sb3 b22 sh4 sb4 b22 sh5 sb5 b22 sb6 b22 sb7 b22 sh8 sb8 b22 sb9 sb10 b38
            (:section s10) cclef1 b22 sb0 b22 sh1 b22 sb1 b22 sb2 b22 sb3 b22 sh4 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sh8 b22 sb8 b22 sb9 b22 sb10 bl)
    (:text 110 58
-          (327 nil "Del primo ordine.")
-          (1341 nil "Del secondo ordine."))
+     (327 nil "Del primo ordine.")
+     (1341 nil "Del secondo ordine."))
    ;; MZ3
    (:music 2223
            (:section s3)
@@ -245,13 +245,13 @@
                  (:critical fl5)
                  (:coord-barre "MZ3 N12")
                  (:coord-norm "G11")
-                 (:comment "Original: Das ♭ für E♭ in der Signatur beim Schlüssel steht eine Position tiefer.")
+                 (:comment "In allen Exemplaren: Das ♭ für E♭ in der Signatur beim Schlüssel steht eine Position tiefer.")
                  (:flag :ready) (:id 1))
            (:key-signature nil nil :flat nil nil nil :flat)
            b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 bl)
    (:text 110 58
-          (339 nil "Del primo ordine.")
-          (1341 nil "ᴅel secondo ordine."))
+     (339 nil "Del primo ordine.")
+     (1341 nil "ᴅel secondo ordine."))
    ;; MZ4
    (:music 2225
            (:section s4)
@@ -267,8 +267,8 @@
                  (:flag :layout) (:id 0))
            cclef5 b22 sb0 b22 sh1 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b38 sb7 b38 sh8 b38 sb8 b22 sb9 sb10 bl)
    (:text 110 58
-          (334 nil "Del primo ordine.")
-          (1320 nil "Del secondo ordine."))
+     (334 nil "Del primo ordine.")
+     (1320 nil "Del secondo ordine."))
    ;; MZ5
    (:music 2215
            (:section s5)
@@ -280,15 +280,15 @@
                  (:critical fl6)
                  (:coord-barre "MZ5 N1")
                  (:coord-norm "G5")
-                 (:comment "Original: Das ♭ für B♭ in der Signatur beim Schlüssel steht eine Position tiefer.")
+                 (:comment "In allen Exemplaren: Das ♭ für B♭ in der Signatur beim Schlüssel steht eine Position tiefer.")
                  (:flag :ready) (:id 2))
            (:key-signature nil nil :flat nil nil nil :flat)
            b22 sb0 b22 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b22 sb10 b22
            (:section s13) cclef7 fl29 fl5 fl6 (:key-signature nil nil :flat nil nil :flat :flat)
            b22 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b22 sb5 b22 sb6 b38 sb7 b22 sb8 b22 sb9 b38 sb10 bl)
    (:text 110 58
-          (343 nil "Del primo ordine.")
-          (1345 nil "ᴅel secondo ordine."))
+     (343 nil "Del primo ordine.")
+     (1345 nil "ᴅel secondo ordine."))
    ;; MZ6
    (:music 2209
            (:section s6)
@@ -299,8 +299,8 @@
            b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sh5 b22 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b22 sb10 b22
            (:section s14) (:f-clef) max5 fclef5 b22 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b22 sb10 bl)
    (:text 110 58
-          (329 nil "Del primo ordine.")
-          (1327 nil "ᴅel secondo ordine."))
+     (329 nil "Del primo ordine.")
+     (1327 nil "ᴅel secondo ordine."))
    ;; MZ7
    (:music 2204
            (:section s7)
@@ -316,8 +316,8 @@
            (:f-clef) max7 fclef7 fl29 fl3 fl5 fl6 (:key-signature nil :flat :flat nil nil :flat :flat)
            b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b38 sb6 b38 sb7 b22 sb8 b22 sb9 b22 sb10 bl)
    (:text 110 58
-          (332 nil "Del primo ordine.")
-          (1309 nil "ᴅel secondo ordine."))
+     (332 nil "Del primo ordine.")
+     (1309 nil "ᴅel secondo ordine."))
    ;; MZ8
    (:music 2207
            (:section s8)
@@ -330,8 +330,8 @@
 
    ;; Seite 2, fol. 135r, S. 269
    (:text 110 58
-          (345 nil "Terzo ordine.")
-          (1332 nil "Quarto ordine."))
+     (345 nil "Terzo ordine.")
+     (1332 nil "Quarto ordine."))
    ;; MZ9
    (:music 2221
            (:section s17)
@@ -347,16 +347,16 @@
            cclef7 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b38 bl)
 
    (:text 110 58
-          (347 nil "ᴅel terzo ordine.")
-          (1404 nil "Del quarto ordine."))
+     (347 nil "ᴅel terzo ordine.")
+     (1404 nil "Del quarto ordine."))
    ;; MZ10
    (:music 2225
            (:section s18) gclef3 b22 sb0 b22 fl1 b22 sb1 b22 sb2 b22 sb3 b22 fl4 b22 sb4 b22 fl5 b22 sb5 sb6 sb7 b22 fl8 b22 sb8 b22 sb9 b22 sb10 b22
            (:section s26)
            gclef3 b22 sb0 b22 sb1 b22 sh2 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sh6 b22 sb6 b22 sb7 b22 sb8 b22 sh9 b22 sb9 b22 sb10 bl)
    (:text 110 58
-          (352 nil "ᴅel terzo ordine.")
-          (1434 nil "ᴅel quarto ordine."))
+     (352 nil "ᴅel terzo ordine.")
+     (1434 nil "ᴅel quarto ordine."))
    ;; MZ11
    (:music 2223
            (:section s19) cclef3 b22 b22
@@ -364,21 +364,21 @@
                  (:critical sh0 sb0)
                  (:coord-barre "MZ11 (S2 MZ3) N1")
                  (:coord-norm "G19 N1")
-                 (:comment "Original: Das ♯ steht rechts vom Notenkopf.")
+                 (:comment "In allen Exemplaren: Das ♯ steht rechts vom Notenkopf.")
                  (:flag :ready) (:id 3))
            sb1 sb2 sh3 sb3 sb4 sb5 b22 sh6 sb6 b22 sh7 b22 sb7 b22 sb8 b22
            (:alt (:diplomatic sh9 sb9)
                  (:critical b38 sb9)
                  (:coord-barre "MZ11 (S2 MZ3) N10")
                  (:coord-norm "G19 N10")
-                 (:comment "Original: B♯.")
+                 (:comment "In allen Exemplaren: B♯.")
                  (:flag :ready) (:id 4))
            b22 sh10 sb10 b38
            (:section s27)
            cclef3 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sh6 b22 sb6 b22 sb7 b38 sb8 b22 sb9 b22 sb10 bl)
    (:text 110 58
-          (342 nil "ᴅel terzo ordine.")
-          (1398 nil "ᴅel quarto ordine."))
+     (342 nil "ᴅel terzo ordine.")
+     (1398 nil "ᴅel quarto ordine."))
    ;; MZ12
    (:music 2209
            (:section s20)
@@ -394,16 +394,16 @@
            cclef5 (:key-signature nil nil nil nil nil nil nil)
            b22 sb0 b22 sh1 sb1 b22 sh2 sb2 b22 sb3 b22 sb4 sh5 sb5 b22 sh6 sb6 b22 sb7 sh8 sb8 sh9 sb9 sb10 bl)
    (:text 110 58
-          (335 nil "ᴅel terzo ordine.")
-          (1405 nil "Del quarto ordine."))
+     (335 nil "ᴅel terzo ordine.")
+     (1405 nil "Del quarto ordine."))
    ;; MZ13
    (:music 2206
            (:section s21) cclef7 sb0 fl1 sb1 fl2 sb2 b22 sb3 b22 fl4 sb4 b22 fl5 sb5 b22 fl6 sb6 b22 sb7 b22 fl8 sb8 b22 fl9 sb9 b22 sb10 b22
            (:section s29)
            cclef1 b22 sb0 b22 sh1 sb1 b22 sh2 b22 sb2 b22 sb3 b22 sh4 sb4 sh5 sb5 sh6 sb6 sb7 sh8 sb8 sh9 sb9 sb10 bl)
    (:text 110 58
-          (332 nil "Del terzo ordine.")
-          (1394 nil "Del quarto ordine."))
+     (332 nil "Del terzo ordine.")
+     (1394 nil "Del quarto ordine."))
    ;; MZ14
    (:music 2205
            (:section s22) (:f-clef) max5 fclef5 b22 fl18 fl4 (:key-signature nil nil :flat nil nil nil :flat)
@@ -412,8 +412,8 @@
            (:f-clef) max5 fclef5 (:key-signature nil nil nil nil nil nil nil)
            b22 sb0 sb1 sh2 sb2 b22 sb3 b22 sb4 b22 sh5 sb5 b22 sh6 b22 sb6 b22 sb7 b22 sb8 b22 sh9 b22 sb9 b22 sb10 b22 bl)
    (:text 110 58
-          (341 nil "ᴅel terzo ordine.")
-          (1393 nil "Del quarto ordine."))
+     (341 nil "ᴅel terzo ordine.")
+     (1393 nil "Del quarto ordine."))
    ;; MZ15
    (:music 2209
            (:section s23)
@@ -428,8 +428,8 @@
            (:f-clef) max7 fclef7 b22 fl310 (:key-signature nil nil nil nil nil nil :flat)
            b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sb10 bl)
    (:text 110 58
-          (345 nil "ᴅel terȥo ordine.")
-          (1402 nil "Del quarto ordine."))
+     (345 nil "ᴅel terȥo ordine.")
+     (1402 nil "Del quarto ordine."))
    ;; MZ16
    (:music 2207
            (:section s24) (:f-clef) max9 fclef9 b22 (:key-signature nil nil nil nil nil nil nil)
@@ -449,8 +449,8 @@
 
    ;; Seite 3, fol. 135v, S. 270
    (:text 110 58
-          (323 nil "Quinto ordine.")
-          (1359 nil "Seſto ordine."))
+     (323 nil "Quinto ordine.")
+     (1359 nil "Seſto ordine."))
    ;; MZ19
    (:music 2237
            (:section s33)
@@ -464,22 +464,22 @@
                  (:flag :layout) (:id 0))
            cclef5 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b22 b22 bl)
    (:text 110 58
-          (329 nil "Del quinto ordine.")
-          (1341 nil "ᴅel seſto ordine."))
+     (329 nil "Del quinto ordine.")
+     (1341 nil "ᴅel seſto ordine."))
    ;; MZ20
    (:music 2232
            (:section s34) gclef3 b22 sb0 b22 sb1 b22 sh2 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sh9 b22 sb9 b22 sb10 b38 b38
            (:section s42) gclef3 b22 sb0 b22 fl1 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 fl5 b22 sb5 b22 sb6 b22 sb7 b22 fl8 b22 sb8 b22 sb9 b22 sb10 bl)
    (:text 110 58
-          (335 nil "Del quinto ordine.")
-          (1353 nil "Del seſto ordine."))
+     (335 nil "Del quinto ordine.")
+     (1353 nil "Del seſto ordine."))
    ;; MZ21
    (:music 2234
            (:section s35) cclef1 b22 fl0 b22 sb0 b22 sb1 b22 sb2 b22 fl3 b22 sb3 b22 sb4 b22 sb5 b22 fl6 b22 sb6 b22 fl7 b22 sb7 b22 sb8 b22 sb9 fl10 sb10 b22
            (:section s43) cclef1 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sh4 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b38 sb10 b38 bl)
    (:text 110 58
-          (329 nil "Del quinto ordine.")
-          (1352 nil "ᴅel seſto ordine."))
+     (329 nil "Del quinto ordine.")
+     (1352 nil "ᴅel seſto ordine."))
    ;; MZ22
    (:music 2232
            (:section s36)
@@ -495,12 +495,12 @@
                  (:critical cclef3)
                  (:coord-barre "MZ22 (S3 MZ4) N12")
                  (:coord-norm "G44 N1")
-                 (:comment "Original: Der Schlüssel liegt auf der untersten Linie.")
+                 (:comment "In allen Exemplaren: Der Schlüssel liegt auf der untersten Linie.")
                  (:flag :ready) (:id 5))
            b22 sb0 b22 fl1 b22 sb1 b22 fl2 sb2 b22 sb3 b22 sb4 b22 fl5 sb5 b22 sb6 b22 sb7 b22 fl8 sb8 b22 fl9 sb9 sb10 bl)
    (:text 110 58
-          (337 nil "Del quinto ordine.")
-          (1350 nil "Del sesto ordine."))
+     (337 nil "Del quinto ordine.")
+     (1350 nil "Del sesto ordine."))
    ;; MZ23
    (:music 2228
            (:section s37) cclef7 b38 fl6 (:key-signature nil nil nil nil nil nil :flat)
@@ -508,8 +508,8 @@
            (:section s45) cclef7 b22 (:key-signature nil nil nil nil nil nil nil)
            sb0 b22 fl1 sb1 b22 fl2 sb2 b22 sb3 b22 sb4 b22 fl5 b22 sb5 b22 fl6 sb6 b22 sb7 b22 fl8 sb8 b22 fl9 sb9 b22 sb10 bl)
    (:text 110 58
-          (334 nil "Del quinto ordine.")
-          (1332 nil "ᴅel seſto ordine."))
+     (334 nil "Del quinto ordine.")
+     (1332 nil "ᴅel seſto ordine."))
    ;; MZ24
    (:music 2214
            (:section s38) (:f-clef) max5 fclef5 b22 sb0 b22
@@ -517,14 +517,14 @@
                  (:critical b22 sb1 sh2 b22 sb2)
                  (:coord-barre "MZ24 (S3 MZ6) N2-3")
                  (:coord-norm "G38 N2-3")
-                 (:comment "Original: Das ♯ steht vor der zweiten Note, auf der Höhe der dritten Note.")
+                 (:comment "In allen Exemplaren: Das ♯ steht vor der zweiten Note, auf der Höhe der dritten Note.")
                  (:flag :ready) (:id 6))
            b22 sb3 b22 sb4 b22 sh5 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sh9 b22 sb9 sb10 b38
            (:section s46) (:f-clef) max5 fclef5 b22 fl18 (:key-signature nil nil nil nil nil nil :flat)
            b22 sb0 b22 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sb10 bl)
    (:text 110 58
-          (334 nil "Del quinto ordine.")
-          (1337 nil "ᴅel seſto ordine."))
+     (334 nil "Del quinto ordine.")
+     (1337 nil "ᴅel seſto ordine."))
    ;; MZ25
    (:music 2207
            (:section s39)
@@ -539,8 +539,8 @@
                  (:flag :layout) (:id 0))
            (:f-clef) max7 fclef7 sb0 b22 fl1 sb1 fl2 sb2 b22 fl3 sb3 b22 sb4 b22 fl5 sb5 b22 fl6 sb6 b22 sb7 b22 fl8 sb8 fl9 sb9 b22 fl10 sb10 bl)
    (:text 110 58
-          (330 nil "Del quinto ordine.")
-          (1327 nil "ᴅel seſto ordine."))
+     (330 nil "Del quinto ordine.")
+     (1327 nil "ᴅel seſto ordine."))
    ;; MZ26
    (:music 2207
            (:section s40) (:f-clef) max9 fclef9 b38 sb0 b22 sb1 b22 sh2 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b38 sb8 b38 sh9 b22 sb9 b22 sb10 b22
@@ -551,7 +551,7 @@
 
    ;; Seite 4, fol. 136r, S. 271
    (:text 110 58
-          (530 nil "Settimo ordine."))
+     (530 nil "Settimo ordine."))
    ;; MZ27
    (:music 964
            (:section s49)
@@ -560,13 +560,13 @@
                  (:flag :layout) (:id 0))
            (:f-clef) max7 fclef7 b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sb10 bl)
    (:text 110 58
-          (266 nil "Del settimo ordine."))
+     (266 nil "Del settimo ordine."))
    ;; MZ28
    (:music 977
            (:section s50)
            gclef3 b38 sb0 sb1 sh2 sb2 sh3 sb3 sb4 sb5 sh6 sb6 sb7 sb8 sh9 sb9 sh10 sb10 b22 bl)
    (:text 110 58
-          (359 nil "Del settimo ordine."))
+     (359 nil "Del settimo ordine."))
    ;; MZ29
    (:music 1042
            (:section s51)
@@ -576,17 +576,17 @@
                  (:critical sb10)
                  (:coord-barre "MZ29 (S4 MZ3) N11")
                  (:coord-norm "G51 N11")
-                 (:comment "Original: E fehlt.")
+                 (:comment "In allen Exemplaren: E fehlt.")
                  (:flag :ready) (:id 7))
 
            (:alt (:diplomatic)
                  (:critical bl)
                  (:coord-barre "MZ29 (S4 MZ3)")
                  (:coord-norm "–")
-                 (:comment "Original: Taktstrich fehlt.")
+                 (:comment "In allen Exemplaren: Taktstrich fehlt.")
                  (:flag :ready) (:id 8)))
    (:text 110 58
-          (350 nil "Del settimo ordine."))
+     (350 nil "Del settimo ordine."))
    ;; MZ30
    (:music 1034
            (:section s52)
@@ -599,10 +599,10 @@
                  (:critical bl)
                  (:coord-barre "MZ30 (S4 MZ4)")
                  (:coord-norm "–")
-                 (:comment "Original: Taktstrich fehlt.")
+                 (:comment "In allen Exemplaren: Taktstrich fehlt.")
                  (:flag :ready) (:id 9)))
    (:text 110 58
-          (359 nil "Del settimo ordine."))
+     (359 nil "Del settimo ordine."))
    ;; MZ31
    (:music 1020
            (:section s53)
@@ -612,10 +612,10 @@
                  (:critical bl)
                  (:coord-barre "MZ31 (S4 MZ5)")
                  (:coord-norm "–")
-                 (:comment "Original: Taktstrich fehlt.")
+                 (:comment "In allen Exemplaren: Taktstrich fehlt.")
                  (:flag :ready) (:id 10)))
    (:text 110 58
-          (350 nil "Del settimo ordine."))
+     (350 nil "Del settimo ordine."))
    ;; MZ32
    (:music 1014
            (:section s54)
@@ -625,10 +625,10 @@
                  (:critical bl)
                  (:coord-barre "MZ32 (S4 MZ6)")
                  (:coord-norm "–")
-                 (:comment "Original: Taktstrich fehlt.")
+                 (:comment "In allen Exemplaren: Taktstrich fehlt.")
                  (:flag :ready) (:id 11)))
    (:text 110 58
-          (342 nil "Del settimo ordine."))
+     (342 nil "Del settimo ordine."))
    ;; MZ33
    (:music 1008
            (:section s55)
@@ -640,10 +640,10 @@
                  (:critical bl)
                  (:coord-barre "MZ33 (S4 MZ7)")
                  (:coord-norm "–")
-                 (:comment "Original: Taktstrich fehlt.")
+                 (:comment "In allen Exemplaren: Taktstrich fehlt.")
                  (:flag :ready) (:id 12)))
    (:text 110 58
-          (349 nil "Del settimo ordine."))
+     (349 nil "Del settimo ordine."))
    ;; MZ34
    (:music 1041
            (:section s56)
@@ -652,20 +652,20 @@
                  (:critical sb8)
                  (:coord-barre "MZ34 (S4 MZ8) N9")
                  (:coord-norm "G56 N9")
-                 (:comment "Original: E♯.")
+                 (:comment "In allen Exemplaren: E♯.")
                  (:flag :ready) (:id 13))
            (:alt (:diplomatic b22 sb9)
                  (:critical sh9 b22 sb9)
                  (:coord-barre "MZ34 (S4 MZ8) N10")
                  (:coord-norm "G56 N10")
-                 (:comment "Original: F.")
+                 (:comment "In allen Exemplaren: F.")
                  (:flag :ready) (:id 14))
            b22 sh10 sb10 b38
            (:alt (:diplomatic)
                  (:critical bl)
                  (:coord-barre "MZ34 (S4 MZ8)")
                  (:coord-norm "–")
-                 (:comment "Original: Taktstrich fehlt.")
+                 (:comment "In allen Exemplaren: Taktstrich fehlt.")
                  (:flag :ready) (:id 15)))
 
    ;; MZ35
@@ -674,11 +674,11 @@
           (:music 1080
                   b125 b125 b125 b125 b125 b125 b125 b125 b125)
           (:text 70 58
-                 (98 900 "Qui finiſcono tutti glʼordini di tutte le"))
+            (98 900 "Qui finiſcono tutti glʼordini di tutte le"))
           (:text 70 58
-                 (0 1009 "chiaui ſcritte in tutte le righe di tutte le"))
+            (0 1009 "chiaui ſcritte in tutte le righe di tutte le"))
           (:text 110 58
-                 (0 841 "parti della noſtra prattica ᴍuſicale."))
+            (0 841 "parti della noſtra prattica ᴍuſicale."))
           (:music 1045
                   b125 b125 b125 b125 b125 b125 b125 b125 b22 b22 b38))
          (:critical
@@ -686,7 +686,7 @@
           (:music 1080
                   b125 b125 b125 b125 b125 b125 b125 b125 b125)
           (:text 70 58
-                 (98 900 "Qui finiſcono tutti glʼordini di tutte le"))
+            (98 900 "Qui finiſcono tutti glʼordini di tutte le"))
           (:text 70 58
             (0 1009 "chiaui ſcritte in tutte le righe di tutte le"))
           (:text 110 58

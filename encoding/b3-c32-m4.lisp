@@ -42,14 +42,14 @@
                  (:critical dot6)
                  (:coord-barre "MZ1 N18")
                  (:coord-norm "G5 St1 N2")
-                 (:comment "Original: Punktierung steht eine Position tiefer.")
+                 (:comment "In allen Exemplaren: Punktierung steht eine Position tiefer.")
                  (:flag :ready) (:id 1))
            sm4 sb3 b38 m2 b38
            (:alt (:diplomatic br3)
                  (:critical longa3)
                  (:coord-barre "MZ1 N22")
                  (:coord-norm "G5 N6")
-                 (:comment "Original: Brevis. Verlängerung um alle Stimmen gleich lang erscheinen zu lassen. Diese Drucktype (Longa auf der zweituntersten Notenlinie) wird sonst im Traktat nie verwendet.")
+                 (:comment "In allen Exemplaren: Brevis. Verlängerung um alle Stimmen gleich lang erscheinen zu lassen. Diese Drucktype (Longa auf der zweituntersten Notenlinie) wird sonst im Traktat nie verwendet.")
                  (:flag :ready) (:id 2))
            b38 blbl)
    (:text 110 58

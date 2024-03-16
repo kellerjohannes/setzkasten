@@ -65,10 +65,17 @@
                (:de "semitono maggiore\\und minore,\\[beide] accidentali incomposti")
                (:en "semitono maggiore\\and minore,\\[both] accidentali incomposti")))
     ;; LC: Ich habe hier beide/both eingefügt
+    ;; JK: von der Gruppe zu bestätigen
+    ;;
+    ;; OPEN
+
     (s12 (:alt (:it "semitono minore\\et maggiore,\\accidentali incomposti")
                (:de "semitono minore\\und maggiore,\\[beide] accidentali incomposti")
                (:en "semitono minore\\and maggiore,\\[both] accidentali incomposti")))))
   ;; LC: Ich habe hier beide/both eingefügt
+  ;; JK: von der Gruppe zu bestätigen
+  ;;
+  ;; OPEN
   (:data
    (:text 90 58
           (0 2234 "ᴇſſempio di più ꜱemitoni mag.et minori,aſcendenti,et diſcendenti, comp.et incomp.nat.et acci"))
@@ -119,7 +126,7 @@
                  (:critical sbd4 b38 sb4 b38 fl4 b38 sb4)
                  (:coord-barre "MZ2 N9-12")
                  (:coord-norm "G11")
-                 (:comment "Original: A♭–G–G♭–Ġ. Dieses Beispiel zeigt zwei alternative Teilungen des _tono_: A♭–Ġ–G♭ und A♭–G–G♭.")
+                 (:comment "In allen Exemplaren: A♭–G–G♭–Ġ. Dieses Beispiel zeigt zwei alternative Teilungen des _tono_: A♭–Ġ–G♭ und A♭–G–G♭.")
                  (:flag :ready) (:id 1))
            bl
            (:section s12)

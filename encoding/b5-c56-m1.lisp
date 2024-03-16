@@ -54,7 +54,7 @@
                  (:critical b38)
                  (:coord-barre "MZ2 N3")
                  (:coord-norm "G3 N3")
-                 (:comment "Original: G♭.")
+                 (:comment "In allen Exemplaren: G♭.")
                  (:flag :ready) (:id 1))
            sb8 b22 fl9 sb9 b22 bl
            (:section s4) (:newline) b22 fl2 sb2 fl3 sb3 b22 sbd3 fl5 sb5 fl6 sb6 sb7 fl8 sb8 fl9 sb9 b22 bl
@@ -71,6 +71,6 @@
                  (:critical sb4)
                  (:coord-barre "MZ3 N11")
                  (:coord-norm "G7 N3")
-                 (:comment "Original: Ḃ♮.")
+                 (:comment "In allen Exemplaren: Ḃ♮.")
                  (:flag :ready) (:id 2))
            b22 fl5 b22 sb5 b22 fl6 b22 sb6 b22 sb7 b22 fl8 b22 sb8 b22 fl9 b22 sb9 b38 b38 bl)))

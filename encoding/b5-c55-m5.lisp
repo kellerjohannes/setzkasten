@@ -59,7 +59,7 @@
                  (:critical sh3 sb3)
                  (:coord-barre "MZ3 N6")
                  (:coord-norm "G5 N3")
-                 (:comment "Original: F.")
+                 (:comment "In allen Exemplaren: F.")
                  (:flag :ready) (:id 1))
            b22 sh4 b22 sb4 b22 sh5 b22 sb5 b22 sb6 b22 sh7 b22 sb7 b22 sh8 b22 sb8 b38 bl
            (:section s6) b22 sh1 b22 sb1 b22 sh2
@@ -67,7 +67,7 @@
                  (:critical b22)
                  (:coord-barre "MZ3 N13")
                  (:coord-norm "G6 N2")
-                 (:comment "Original: Zwischen dem ♯ und dem darauffolgenden Notenkopf steht eine Minima-Pause.")
+                 (:comment "In allen Exemplaren: Zwischen dem ♯ und dem darauffolgenden Notenkopf steht eine Minima-Pause.")
                  (:flag :ready) (:id 2))
            sb2 fl4 b22 sbd4 b22 fl5 b22 sbd5 custos5)
    (:text 90 58

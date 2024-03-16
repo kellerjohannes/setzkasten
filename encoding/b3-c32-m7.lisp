@@ -79,7 +79,7 @@
                  (:critical mrest5)
                  (:coord-barre "MZ3 N10")
                  (:coord-norm "G4 St3")
-                 (:comment "Original: Minima-Pause steht eine Position tiefer.")
+                 (:comment "In allen Exemplaren: Minima-Pause steht eine Position tiefer.")
                  (:flag :ready) (:id 1))
            m6 b22 sb6 b22 sb6 bl
            (:section s5) mrest5 m6 b22 sb4 b22 bl

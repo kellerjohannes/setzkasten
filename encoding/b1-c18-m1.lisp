@@ -60,7 +60,7 @@
                  (:critical sb8)
                  (:coord-barre "N14")
                  (:coord-norm "G6 N1")
-                 (:comment "Original: E.")
+                 (:comment "In allen Exemplaren: E.")
                  (:flag :ready) (:id 1))
            b22 fl8 b22 sb8 bl
            (:section s7)
@@ -80,7 +80,7 @@
                       (:critical "ᴅi.ma.")
                       (:coord-barre "TZ2 TE8")
                       (:coord-norm "G8 US")
-                      (:comment "Original: »ſe.min.«. Alternative Idealisierung: »semitono minore cromatico incomposto«.")
+                      (:comment "In allen Exemplaren: »ſe.min.«. Alternative Idealisierung: »semitono minore cromatico incomposto«.")
                       (:flag :ready) (:id 2))))
    (:text 70 58
           (1620 nil "incomp.")

@@ -77,14 +77,14 @@
                  (:critical fl5 b22 b22 sbd5)
                  (:coord-barre "MZ2 N6")
                  (:coord-norm "G3 St2 N1")
-                 (:comment "Original: Ċ♭.")
+                 (:comment "In allen Exemplaren: Ċ♭.")
                  (:flag :ready) (:id 1))
            b22
            (:alt (:diplomatic fl4 b22 sb4)
                  (:critical fl5 b22 sb5)
                  (:coord-barre "MZ2 N7")
                  (:coord-norm "G3 St2 N2")
-                 (:comment "Original: C♭.")
+                 (:comment "In allen Exemplaren: C♭.")
                  (:flag :ready) (:id 2))
            b38 bl
            b38 b22 sh4 b38 sb4 b22 b22 sbd4 b38 b22 bl
@@ -102,7 +102,7 @@
                  (:critical sh0)
                  (:coord-barre "MZ3 N1")
                  (:coord-norm "G6 St1 N1")
-                 (:comment "Original: Das ♯ steht zwei Positionen höher.")
+                 (:comment "In allen Exemplaren: Das ♯ steht zwei Positionen höher.")
                  (:flag :ready) (:id 3))
            b38 sb0 b22 fl1 b38 (:divider :regular) sb1 b38 b22 bl
            b38 b22 fl1 b38 sbd1 b38 sb1 b38 b22 bl
@@ -112,14 +112,14 @@
                  (:critical sh3 b38 sb3)
                  (:coord-barre "MZ3 N6")
                  (:coord-norm "G7 St1 N1")
-                 (:comment "Original: G♯.")
+                 (:comment "In allen Exemplaren: G♯.")
                  (:flag :ready) (:id 4))
            b38 (:divider :regular)
            (:alt (:diplomatic fl5 b38 sb5)
                  (:critical fl4 b38 sb4)
                  (:coord-barre "MZ3 N7")
                  (:coord-norm "G7 St1 N2")
-                 (:comment "Original: A♭.")
+                 (:comment "In allen Exemplaren: A♭.")
                  (:flag :ready) (:id 5))
            b38 b22 bl
            b22
@@ -127,21 +127,21 @@
                  (:critical fl4 b22 sbd4)
                  (:coord-barre "MZ3 N8")
                  (:coord-norm "G7 St1 N3")
-                 (:comment "Original: Ȧ♭.")
+                 (:comment "In allen Exemplaren: Ȧ♭.")
                  (:flag :ready) (:id 6))
            b22
            (:alt (:diplomatic sbc5)
                  (:critical sbc4)
                  (:coord-barre "MZ3 N9")
                  (:coord-norm "G7 St1 N4")
-                 (:comment "Original: Aʼ.")
+                 (:comment "In allen Exemplaren: Aʼ.")
                  (:flag :ready) (:id 7))
            b22
            (:alt (:diplomatic sbd5)
                  (:critical sb4)
                  (:coord-barre "MZ3 N10")
                  (:coord-norm "G7 St1 N5")
-                 (:comment "Original: Ȧ.")
+                 (:comment "In allen Exemplaren: Ȧ.")
                  (:flag :ready) (:id 8))
            b22 bl
            (:section s8) b38 sh5 b38 sb5 b38 b22 bl)

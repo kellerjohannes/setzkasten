@@ -36,7 +36,7 @@
                  ;; JK: Entscheidung notwendig.
                  ;;
                  ;; OPEN
-                 (:comment "Original: Kein ♯. Diskutable Ergänzung. Im Original möglicherweise aus Platzgründen weggelassen.")
+                 (:comment "In allen Exemplaren: Kein ♯. Diskutable Ergänzung. Im Original möglicherweise aus Platzgründen weggelassen.")
                  (:flag :observe) (:id 1))
            m8 sb9 bl
            (:section s4) (:newline) b22 b22 mrest1 b22 sb2 b22 sh1 m1 b22 b38 bl

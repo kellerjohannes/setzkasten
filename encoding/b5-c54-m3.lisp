@@ -54,7 +54,7 @@
                  (:critical sbd5)
                  (:coord-barre "MZ2 N9")
                  (:coord-norm "G5 N6")
-                 (:comment "Original: A♭.")
+                 (:comment "In allen Exemplaren: A♭.")
                  (:flag :ready) (:id 1))
            fl6 sbd6 sbd7 b22 bl
            (:section s6) b22 sbd0 b22 sbd1 sbd2 fl4 b22 sb4
@@ -62,7 +62,7 @@
                  (:critical sbd4 )
                  (:coord-barre "MZ2 N16")
                  (:coord-norm "G6 N5")
-                 (:comment "Original: Ġ fehlt im Original.")
+                 (:comment "In allen Exemplaren: Ġ fehlt im Original.")
                  (:flag :ready) (:id 2))
            sbd5 sbd6 sbd7 b22 bl
            (:section s7) (:newline) b38 sbd0 b22 sbd1 sbd2 sbd3 sbd4 sbd5 fl6 sbd6 b22 sbd7 bl)))

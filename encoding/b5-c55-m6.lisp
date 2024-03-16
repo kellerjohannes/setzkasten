@@ -62,7 +62,7 @@
                  (:critical cclef7)
                  (:coord-barre "MZ2")
                  (:coord-norm "–")
-                 (:comment "Original: Diese Zeile steht im C3-Schlüssel.")
+                 (:comment "In allen Exemplaren: Diese Zeile steht im C3-Schlüssel.")
                  (:flag :ready) (:id 1))
            sh5 sb5 sh6 sb6 fl8 sbd8 fl9 sbd9 sh9 sb9 bl
            (:section s4) (:newline) sh2 sb2 fl4 sbd4 sh4 sb4 sh5 sb5 sh6 sb6 fl8 sbd8 sh8 sb8 sh9 sb9 bl
@@ -71,7 +71,7 @@
                  (:critical sh5)
                  (:coord-barre "MZ2 N17")
                  (:coord-norm "G5 N4")
-                 (:comment "Original: Das ♯ steht zwei Positionen tiefer.")
+                 (:comment "In allen Exemplaren: Das ♯ steht zwei Positionen tiefer.")
                  (:flag :ready) (:id 2))
            sb5 sh6 sb6 sh7 sb7 sh8 sb8 sh9 sb9 b22)
    (:text 70 58

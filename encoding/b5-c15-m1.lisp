@@ -79,14 +79,14 @@
                  (:critical sh5 b38 b22 sb5)
                  (:coord-barre "MZ2 N1")
                  (:coord-norm "G1 St2 N1")
-                 (:comment "Original: E♯.")
+                 (:comment "In allen Exemplaren: E♯.")
                  (:flag :ready) (:id 1))
            b38 b22
            (:alt (:diplomatic fl6 b38 sbd6)
                  (:critical b38 b38 sbd5)
                  (:coord-barre "MZ2 N2")
                  (:coord-norm "G1 St2 N2")
-                 (:comment "Original: Ė♭.")
+                 (:comment "In allen Exemplaren: Ė♭.")
                  (:flag :ready) (:id 2))
            b38 bl
            b38 sb5 b38 fl5 b38 sbd5 b38 b22 bl
@@ -100,7 +100,7 @@
                          (:critical "quinta")
                          (:coord-barre "TZ4 TE2")
                          (:coord-norm "G6 ÜS")
-                         (:comment "Original: »quɪnta«")
+                         (:comment "In allen Exemplaren: »quɪnta«")
                          (:flag :ready) (:id 3)))
           (1282 nil "le quattro seste")
           (1991 nil "ottaua"))

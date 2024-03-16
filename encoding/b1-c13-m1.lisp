@@ -109,7 +109,7 @@
                  (:critical (:ligature-start nil :flat :dot :dot) brd5 b22 flrev4 (:ligature-end))
                  (:coord-barre "MZ1 N7")
                  (:coord-norm "G7")
-                 (:comment "Original: A/A♭. Der enharmonische Punkt wurde für den gesamten Notenwert ergänzt. Ohne Punkt wäre diese Situation als chromatische Ligatur einzuordnen, was in b1-c12-m1 bereits gezeigt wurde.\\In Exemplaren q005, q067, q081 fehlt das gespiegelte ♭. In Exemplar q044 wurde es handschriftlich ergänzt.")
+                 (:comment "In allen Exemplaren: A/A♭. Der enharmonische Punkt wurde für den gesamten Notenwert ergänzt. Ohne Punkt wäre diese Situation als chromatische Ligatur einzuordnen, was in b1-c12-m1 bereits gezeigt wurde.\\In Exemplaren q005, q067, q081 fehlt das gespiegelte ♭. In Exemplar q044 wurde es handschriftlich ergänzt.")
                  (:flag :ready) (:id 6))
            bl
            (:section s8)

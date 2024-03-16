@@ -70,7 +70,7 @@
                  (:critical sh7 b38 sb7)
                  (:coord-barre "MZ2 N4")
                  (:coord-norm "G1 St2 N4")
-                 (:comment "Original: G♯.")
+                 (:comment "In allen Exemplaren: G♯.")
                  (:flag :ready) (:id 1))
            b38 b22 bl
            (:section s2) b38 fl6 b38 sb6 b38 b22 bl

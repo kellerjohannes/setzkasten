@@ -55,7 +55,7 @@
                  (:critical fl5)
                  (:coord-barre "N8")
                  (:coord-norm "G4 N2")
-                 (:comment "Original: Das ♭ steht eine Position tiefer.")
+                 (:comment "In allen Exemplaren: Das ♭ steht eine Position tiefer.")
                  (:flag :ready) (:id 1))
            b22 sbd5 b22 bl
            (:section s5) b22 sb5 b22 b22 sbd4 b22 b22 bl

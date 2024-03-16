@@ -54,7 +54,7 @@
                          (:critical "Le quattro terze.")
                          (:coord-barre "TZ3 TE1")
                          (:coord-norm "G1 ÜS")
-                         (:comment "Original: »La quattro terze.«.")
+                         (:comment "In allen Exemplaren: »La quattro terze.«.")
                          (:flag :ready) (:id 1)))
           (859 nil "Quinta.")
           (1385 nil "Le quattro seſte.")
@@ -76,7 +76,7 @@
                      (:critical "seſta mag.prop.")
                      (:coord-barre "TZ4 TE5")
                      (:coord-norm "G3 US")
-                     (:comment "Original: »seſta mag,prop.«.")
+                     (:comment "In allen Exemplaren: »seſta mag,prop.«.")
                      (:flag :ready) (:id 2))))
    (:text 140 58
      (179 nil "Le quattro terze.")

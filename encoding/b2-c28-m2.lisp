@@ -76,11 +76,16 @@
           (1412 nil "ſi poſſono comporre."))
    (:music 2216
            ;; Kommentar Anne: Beispiele 18-22 brauchen ein b im Bassschlüssel.
+           ;;
            ;; JK: Danke, habe ich ergänzt! Da in der Quelle kein ♭ steht, habe ich es in den Bericht
            ;; aufgenommen.
            ;;
            ;; DONE
-           ;; AS: Kommentar David:  Nos. 42–49: I'm sure that the intention here is that there should be a signature of a single flat in both voices.  In addition: No. 42 needs flats in front of the E and A (NB the flat at A is currently missing); and No. 48 needs a flat in front of the E.  The Es in Nos. 43 and 45 should be E natural, not E flat.         
+           ;;
+           ;; AS: Kommentar David: Nos. 42–49: I'm sure that the intention here is that there should
+           ;; be a signature of a single flat in both voices.  In addition: No. 42 needs flats in
+           ;; front of the E and A (NB the flat at A is currently missing); and No. 48 needs a flat
+           ;; in front of the E.  The Es in Nos. 43 and 45 should be E natural, not E flat.
            (:voice v1)
            (:section s1) cclef7 b38 sb3 b38 sb4 b38 bl
            (:section s2) b22 sb3 b22 sb4 b22 bl
@@ -148,7 +153,7 @@
                  (:critical max7 fclef7)
                  (:coord-barre "MZ6 N1")
                  (:coord-norm "G18-G22 St2")
-                 (:comment "Original: ♭-Vorzeichnung beim Schlüssel fehlt.")
+                 (:comment "In allen Exemplaren: ♭-Vorzeichnung beim Schlüssel fehlt.")
                  (:flag :ready) (:id 1))
            (:key-signature nil nil nil nil nil nil :flat) b38 b22 sb3 b38 sb4 b22 b22 bl
            (:section s19) b22 b22 sb3 b38 b22 sb4 b22 b22 bl

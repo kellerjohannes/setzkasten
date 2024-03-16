@@ -17,7 +17,13 @@
               (:de "modern")
               (:en "modern")))
     (s4 (:alt (:it "Non troppo moderne")
-    ;; Kommentar: AS: David writes the following: This comment applies to the edition and both translations: I notice that No. 4 has barlines in the original!  I think this is unique in the entire treatise and in my view it's almost certainly an error by the typesetter (I bet he thought this was three separate examples).  I think we should omit the barlines, and note them in a commentary. 
+              ;; Kommentar: AS: David writes the following: This comment applies to the edition and
+              ;; both translations: I notice that No. 4 has barlines in the original!  I think this
+              ;; is unique in the entire treatise and in my view it's almost certainly an error by
+              ;; the typesetter (I bet he thought this was three separate examples).  I think we
+              ;; should omit the barlines, and note them in a commentary.
+              ;;
+              ;; OPEN
               (:de "nicht sehr modern")
               (:en "not too modern")))
     (s5 (:alt (:it "Non moderne")

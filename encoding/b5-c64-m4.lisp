@@ -47,6 +47,6 @@
                  (:critical fl8 b38 sbd8)
                  (:coord-barre "N12")
                  (:coord-norm "G6 N2")
-                 (:comment "Original: Ḃ♭.")
+                 (:comment "In allen Exemplaren: Ḃ♭.")
                  (:flag :ready) (:id 1))
            b22 bl)))

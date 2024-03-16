@@ -61,7 +61,7 @@
                  (:critical met-perf-min-dim)
                  (:coord-barre "MZ1 N23")
                  (:coord-norm "G2")
-                 (:comment "Original: Taktsignatur ist ein gestrichenes C.")
+                 (:comment "In allen Exemplaren: Taktsignatur ist ein gestrichenes C.")
                  (:flag :ready) (:id 1))
            met-3-2 b22 br0 sb1 brbl3 b22 brbl2 b22 brbl4 bl)
    (:text 90 58

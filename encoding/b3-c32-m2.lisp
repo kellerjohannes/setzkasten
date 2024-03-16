@@ -33,7 +33,7 @@
                  (:critical sh0)
                  (:coord-barre "MZ1 N2")
                  (:coord-norm "G1 St1 N2")
-                 (:comment "Original: ♯ steht eine Position höher.")
+                 (:comment "In allen Exemplaren: ♯ steht eine Position höher.")
                  (:flag :ready) (:id 1))
            m0 sb1 bl
            (:section s2) b22 mrest3 b22 sb3 m2 sb3 b22 bl
@@ -46,7 +46,7 @@
                  (:critical mrest3)
                  (:coord-barre "MZ1 N22")
                  (:coord-norm "G7")
-                 (:comment "Original: Minima-Pause steht zwei Positionen höher.")
+                 (:comment "In allen Exemplaren: Minima-Pause steht zwei Positionen höher.")
                  (:flag :ready) (:id 2))
            sb4 sh3 m3 br4 b22 blbl)
    (:text 110 58

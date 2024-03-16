@@ -4,7 +4,11 @@
    (:comment "q021_s212, origin: line 1 987, line 2 979,")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Del secondo Alamire")
-              ;; AS: Also here the question whether it should be Alamire secondo as it is referred to that later. I think it has to be in the English translation, as we have sort of used it systematically in the book.
+                 ;; AS: Also here the question whether it should be Alamire secondo as it is
+                 ;; referred to that later. I think it has to be in the English translation, as we
+                 ;; have sort of used it systematically in the book.
+                 ;;
+                 ;; OPEN
                  (:de "Von Alamire secondo.")
                  (:en "Of Alamire secondo")))
    (:section-headings

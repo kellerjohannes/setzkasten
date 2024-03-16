@@ -6,7 +6,10 @@
    (:title (:alt (:it "Dimostratione delle chiavi dei soprani, che insegnano a leggere\\tutte l'altre sorti di chiavi per ♭ incitato et per ♭ molle,\\et per musica finta")
                  (:de "Darstellung der Schlüssel der Soprani, die lehren,\\alle anderen Arten von Schlüsseln zu lesen, per ♭ incitato und per ♭ molle\\und für musica finta")
                  (:en "Illustration of the chiavi of the sopranos which give instruction for reading\\all other kinds of chiavi in ♭ incitato and in ♭ molle\\and in musica finta")))
-                 ;; Kommentar Anne: die dritte Skala vom secondo Ordine und die erste vom sesto Ordine im G Schlüssel sind unangenehm tief zum Lesen - eventuell im einem oktavierten G Schlüssel?
+   ;; Kommentar Anne: die dritte Skala vom secondo Ordine und die erste vom sesto Ordine im G
+   ;; Schlüssel sind unangenehm tief zum Lesen - eventuell im einem oktavierten G Schlüssel?
+   ;;
+   ;; OPEN
    (:line-headings
     (:alt (:it "Primo ordine")
           (:de "erste Ordnung")
@@ -97,7 +100,7 @@
                  (:critical b22 fl29 b22)
                  (:coord-barre "MZ5 N12")
                  (:coord-norm "—")
-                 (:comment "Original: Die Vorzeichnung besteht aus F♭, A♭ und E♭.")
+                 (:comment "In allen Exemplaren: Die Vorzeichnung besteht aus F♭, A♭ und E♭.")
                  (:flag :ready) (:id 1))
             b22 fl5 (:key-signature nil nil :flat nil nil :flat :flat) b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b38 sb8 b22 sb9 b38 sb10 bl)
    (:vspace 90)

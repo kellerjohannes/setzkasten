@@ -51,7 +51,7 @@
                  (:critical fl8 sbd8)
                  (:coord-barre "MZ2 N2")
                  (:coord-norm "G3 N7")
-                 (:comment "Original: F♯.")
+                 (:comment "In allen Exemplaren: F♯.")
                  (:flag :ready) (:id 1))
            b22 sh8 b22 sb8 b38 bl
            (:section s4) (:newline) sh1 sb1 sh2 sb2 sb3 sh4 sb4 sh5 sb5 sh6 sb6 sh7 sb7 sh8 sb8 b38 bl
@@ -65,7 +65,7 @@
                  (:critical sh5)
                  (:coord-barre "MZ3 N5")
                  (:coord-norm "G6 N5")
-                 (:comment "Original: das ♯ steht eine Position höher.")
+                 (:comment "In allen Exemplaren: das ♯ steht eine Position höher.")
                  (:flag :ready) (:id 2))
            b22 sb5 sh6 sb6 b22 fl8 b22 sbd8 b22 sh8 b22 sb8 b38 bl
            (:section s7) (:newline) b22 sh1 sb1 b22 sh2 b22 sb2 sh3 sb3 b22 sh4 b22 sb4 sh5 sb5 sh6 sb6 sh7 sb7 sh8 sb8 b22 bl)))

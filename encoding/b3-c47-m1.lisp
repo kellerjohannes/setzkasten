@@ -41,7 +41,7 @@
                  (:critical fl8)
                  (:coord-barre "MZ1 N6")
                  (:coord-norm "G1 N6")
-                 (:comment "Original: Das ♭ steht zwei Positionen tiefer.")
+                 (:comment "In allen Exemplaren: Das ♭ steht zwei Positionen tiefer.")
                  (:flag :ready) (:id 1))
            sb8 b22 fl8 b22 sbd8 b38 sb8 b22 sbd8 fl9 b22 sb9 fl9 b22 sbd9 b22 sb9 bl
            (:section s2) sb3 sh5 b22 sb5 fl6 b22 sbd6 b22 sb6 sh8 b22 sb8 fl9 b22 sbd9 sb9 sbd9 fl10 sb10 fl10 sbd10 b22 sb10 bl)
@@ -56,10 +56,6 @@
      (1293 nil "ſeſta ottaua Enarmonica"))
    (:music 2225
            (:section s5) (:newline) cclef5 sb0 sh2 b22 b22 sb2 fl3 sbd3 sb3 b22 sbd3 fl6 b22 sb6 b22 fl6 sbd6 sb6 sbd6 fl7 b22 sb7 b22 fl7 sbd7 sb7 bl
-           (:section s6) sb1 b22 sbd1 fl2 b22 sb2 fl2 b22 sbd2 fl4 b22 sbd4 b22 sb4 b22 sbd4 fl7 b22 sb7 b22 fl7 b22 sbd7 b22 sb7 b38 sbd7 sb8 bl)
-   (:text 90 58
-     (327 nil "ſettima ottaua Enarmonica"))
-   (:music 2214
            ;; Bibelgruppe:
            ;; - Generell ist die Konsequenz zu überprüfen, mit der die bereits
            ;;   eingeführten "quarte" und "quinte" in die "ottave" integriert
@@ -81,13 +77,20 @@
            ;; der Absicht der Edition widerspricht. Ev. müsste dies separat kommentiert werden
            ;; und eine neu strukturierte 'settima ottava' vorgeschlagen werden.
            ;;
+           ;; JK mit Luigi: ev. ist dieser Kommentar in einen Kapitelkommentar auszulagern.
+           ;;
            ;; OPEN
-           (:section s7) (:newline)
-           (:alt (:diplomatic  )
-                 (:critical  )
+           (:section s6)
+           (:alt (:diplomatic)
+                 (:critical)
                  (:coord-barre "MZ4")
                  (:coord-norm "G7")
-                 (:comment "Die _settima ottava enarmonica_ hat eine fragwürdige Struktur, da es keine Note auf der Tonhöhe der Quarte und Quinte gibt, d.h. die Zusammensetzung aus einer _quarta enarmonica_ und einer _quinta enarmonica_ lässt sich hier nicht nachvollziehen. Eine Korrektur würde starke Eingriffe erfordern.")
+                 (:comment "Die _sesta ottava enarmonica_ hat eine fragwürdige Struktur, da es keine Note auf der Tonhöhe der Quarte und Quinte gibt, d.h. die Zusammensetzung aus einer _quarta enarmonica_ und einer _quinta enarmonica_ lässt sich hier nicht nachvollziehen. Eine Korrektur würde starke Eingriffe erfordern.")
                  (:flag :ready) (:id 2))
+           sb1 b22 sbd1 fl2 b22 sb2 fl2 b22 sbd2 fl4 b22 sbd4 b22 sb4 b22 sbd4 fl7 b22 sb7 b22 fl7 b22 sbd7 b22 sb7 b38 sbd7 sb8 bl)
+   (:text 90 58
+     (327 nil "ſettima ottaua Enarmonica"))
+   (:music 2214
+           (:section s7) (:newline)
            cclef5 b38 sb2 b38 sbd2 b38 fl3 b38 b22 sb3 b38 sb5 b38 sbd5 b38 fl6 b38 sb6 b38 sb8 b38 sbd8 b38 fl9 b38 b38 sb9 b38 fl9 b38 sbd9 b38 sb9 b22 b22 bl
            b118 b118 b118 b118 b118 b118)))

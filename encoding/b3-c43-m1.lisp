@@ -41,7 +41,7 @@
                  (:critical b22)
                  (:coord-barre "MZ2 N19")
                  (:coord-norm "G6 St2 N3")
-                 (:comment "Original: Minima-Pause zwischen ♯-Zeichen und Brevis-Notenkopf.")
+                 (:comment "In allen Exemplaren: Minima-Pause zwischen ♯-Zeichen und Brevis-Notenkopf.")
                  (:flag :ready) (:id 1))
            br5 b22 bl)
    (:text 90 58

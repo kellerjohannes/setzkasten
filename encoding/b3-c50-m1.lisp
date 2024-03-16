@@ -86,7 +86,7 @@
                  (:critical br2 b38)
                  (:coord-barre "MZ4 N3")
                  (:coord-norm "G1 St4 N3")
-                 (:comment "Original: Unmittelbar nach Brevis A steht eine weitere Brevis auf C.")
+                 (:comment "In allen Exemplaren: Unmittelbar nach Brevis A steht eine weitere Brevis auf C.")
                  (:flag :ready) (:id 1))
            b38 bl
            (:section s2) b38 sb7 b22 b38 sbd4 b38 b22 sb7 b38 bl

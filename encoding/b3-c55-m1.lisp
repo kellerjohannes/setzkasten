@@ -93,7 +93,7 @@
                  (:critical fl4)
                  (:coord-barre "MZ4 N2")
                  (:coord-norm "St2 T17 N1")
-                 (:comment "Original: B♮ (ohne ♭ notiert).")
+                 (:comment "In allen Exemplaren: B♮ (ohne ♭ notiert).")
                  (:flag :ready) (:id 1))
            m4 b38 sb8 dot8 m8 b38 sb8 b38 mrest7 b38 sb9 b22 m2 dot2 sm2 b38 m2 b38 smrest1 b38
            sm2 b22 m9 dot10 sm9 b38 m9 b38 m5 b22 m8 dot8 sm8 b38 m8 sh8 br8 sh8 sb8 sbrest9 sb4
@@ -169,7 +169,7 @@
                  (:critical b38)
                  (:coord-barre "MZ10")
                  (:coord-norm "—")
-                 (:comment "Original: Im leeren Abschnitt der Notenzeile nach dem Doppelstrich steht eine bedeutungslose Minima-Pause.")
+                 (:comment "In allen Exemplaren: Im leeren Abschnitt der Notenzeile nach dem Doppelstrich steht eine bedeutungslose Minima-Pause.")
                  (:flag :ready) (:id 2))
            b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38 b38)
    (:text 90 58

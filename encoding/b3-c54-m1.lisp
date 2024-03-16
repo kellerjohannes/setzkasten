@@ -126,14 +126,14 @@
                  (:tatti m6)
                  (:coord-barre "MZ5 N7")
                  (:coord-norm "St1 T38 N2")
-                 (:comment "Original: Ȧ. Es könnte sich hier um eine Verschiebung des fehlenden rhythmischen Punkts der nächsten Note handeln.")
+                 (:comment "In allen Exemplaren: Ȧ. Es könnte sich hier um eine Verschiebung des fehlenden rhythmischen Punkts der nächsten Note handeln.")
                  (:flag :ready) (:id 1))
            b22 md9
            (:alt (:diplomatic)
                  (:critical dot10)
                  (:coord-barre "MZ5 N8")
                  (:coord-norm "St1 T38 N3")
-                 (:comment "Original: Das Ḋ ist nicht rhythmisch punktiert.")
+                 (:comment "In allen Exemplaren: Das Ḋ ist nicht rhythmisch punktiert.")
                  (:flag :ready) (:id 2))
            b22 smd9 b22 md9
            (:alt (:diplomatic sh8 sb8)
@@ -157,7 +157,7 @@
                  (:tatti sb7)
                  (:coord-barre "MZ5 N16")
                  (:coord-norm "St1 T42 N1")
-                 (:comment "Original: Ḃ♭.")
+                 (:comment "In allen Exemplaren: Ḃ♭.")
                  (:flag :ready) (:id 5))
            dot8 md7 nat7 m7 dot8 nat7 sm7
            nat7 sbd7 nat7 sbd7 nat7 md7 nat7 md7 b38 custos8)
@@ -176,7 +176,7 @@
                  (:tatti md8)
                  (:coord-barre "MZ6 N2")
                  (:coord-norm "St1 T46 N1")
-                 (:comment "Original: C. Der Punkt wurde vom Setzer möglicherweise fälschlicherweise an das andere Ende der symmetrischen Notenfolge in diesem Takt gesetzt.")
+                 (:comment "In allen Exemplaren: C. Der Punkt wurde vom Setzer möglicherweise fälschlicherweise an das andere Ende der symmetrischen Notenfolge in diesem Takt gesetzt.")
                  (:flag :ready) (:id 6))
            sh8 sb8 sh8
            (:alt (:diplomatic md8)
@@ -184,7 +184,7 @@
                  (:tatti m8)
                  (:coord-barre "MZ6 N4")
                  (:coord-norm "St1 T46 N3")
-                 (:comment "Original: Ċ♯. Siehe Kommentar Nr. 6.")
+                 (:comment "In allen Exemplaren: Ċ♯. Siehe Kommentar Nr. 6.")
                  (:flag :ready) (:id 7))
            b22 fl9 sb9 b22 fl9 b22 sb9 b38
            (:divider :double)
@@ -231,7 +231,7 @@
                  (:critical cclef5)
                  (:coord-barre "MZ9")
                  (:coord-norm "—")
-                 (:comment "Original: Dieser Schlüssel steht auf dem Kopf.")
+                 (:comment "In allen Exemplaren: Dieser Schlüssel steht auf dem Kopf.")
                  (:flag :ready) (:id 8))
            fl4 (:key-signature nil nil nil nil nil nil :flat)
            b22 m9 b22 sb5 b22 mrest5 b22 sb6 m3 sb6 b22 m9 b22 sb9 b22 m9 b22 m5 b22 m5 dot6 sm5 b22 m3 b22 m3 dot4
@@ -263,13 +263,13 @@
            (:alt (:diplomatic sbd7) (:critical sb7) (:tatti sb7)
                  (:coord-barre "MZ11 N4")
                  (:coord-norm "St2 T36 N1")
-                 (:comment "Original: Ė. Bei der Platzierung des enharmonischen Punkts wurde vom Setzer möglicherweise diese Note mit der kommenden Note verwechselt.")
+                 (:comment "In allen Exemplaren: Ė. Bei der Platzierung des enharmonischen Punkts wurde vom Setzer möglicherweise diese Note mit der kommenden Note verwechselt.")
                  (:flag :ready) (:id 9))
            b22
            (:alt (:diplomatic sb7) (:critical sbd7) (:tatti sbd7)
                  (:coord-barre "MZ11 N5")
                  (:coord-norm "St2 T36 N2")
-                 (:comment "Original: E. Siehe Kommentar Nr. 9.")
+                 (:comment "In allen Exemplaren: E. Siehe Kommentar Nr. 9.")
                  (:flag :ready) (:id 10))
            b38 brd7 b22 m8 b38 m5d b38 m8 b22 fl9 b22 m9 dot10
            fl9 b38 sm9 b38 md8 b22 sbd7
@@ -277,7 +277,7 @@
                  (:critical fl9 sb9)
                  (:coord-barre "MZ11 N14")
                  (:coord-norm "St2 T40 N1")
-                 (:comment "Original: F♯. Siehe Kommentar Nr. 4.")
+                 (:comment "In allen Exemplaren: F♯. Siehe Kommentar Nr. 4.")
                  (:flag :ready) (:id 11))
            b38 mrest7 b22 sb8 b38 m8 b22
            sbd5 fl9 b22 sb9 b22 mrest7 b22 m8 b38 m8 b22 md9 b38 sb6 b38 custos9)
@@ -297,7 +297,7 @@
                  ;; JK: Frage an Luigi, zu verifizieren.
                  ;;
                  ;; OPEN
-                 (:comment "Original: A. In gewissen Quellen ist ein enharmonischer Punkt zu erkennen.")
+                 (:comment "In allen Exemplaren: A. In gewissen Quellen ist ein enharmonischer Punkt zu erkennen.")
                  (:flag :observe) (:id 12))
            sh8
            (:duration-override 1/2) longa8 (:duration-override 1) b38 blbl
@@ -337,7 +337,7 @@
            (:alt (:diplomatic fl7) (:critical fl6)
                  (:coord-barre "MZ15")
                  (:coord-norm "—")
-                 (:comment "Original: Das ♭ in der Vorzeichnung direkt nach dem Schlüssel steht eine Position höher.")
+                 (:comment "In allen Exemplaren: Das ♭ in der Vorzeichnung direkt nach dem Schlüssel steht eine Position höher.")
                  (:flag :ready) (:id 13))
            (:key-signature nil nil nil nil nil nil :flat)
            b22 m9 b22 m10 m3 dot4 sm3 sh3 m3 sh3 m3 dot4 sh3 sm3 b22 m4 b22 sb8 b22 m8 b22 sbrest7 mrest5 smrest3
@@ -384,7 +384,7 @@
            (:alt (:diplomatic sb8) (:critical sbd8) (:tatti sbd8)
                  (:coord-barre "MZ17 N19")
                  (:coord-norm "St3 T44 N1")
-                 (:comment "Original: D.")
+                 (:comment "In allen Exemplaren: D.")
                  (:flag :ready) (:id 14))
            b22 sbd8 dot8 md4 b22 sb4 b22 md5 mrest7 m9 dot10 sm9 b22 sbd9 b22 sbd9
            (:duration-override 1/2) longa5 (:duration-override 1) blbl)
@@ -415,7 +415,7 @@
            (:alt (:diplomatic dot6) (:critical dot8)
                  (:coord-barre "MZ19 N8")
                  (:coord-norm "St4 T8 N3")
-                 (:comment "Original: Die rhythmische Punktierung der ersten Note steht eine Position tiefer.")
+                 (:comment "In allen Exemplaren: Die rhythmische Punktierung der ersten Note steht eine Position tiefer.")
                  (:flag :ready) (:id 15))
            sm7 b22 sb7 b22 sb4 b22 sb7 b22 sbrest7 b22 m8 dot8 sm8 b22 sb4 b22 sb4 b22 m7 dot8 sm7 b22
            m5 b22 sb5 b22 m5 b22 m1 b22 m8 b22 sb8 b22 sb4 b22 sb7 custos5)
@@ -458,7 +458,7 @@
            (:alt (:diplomatic sb5) (:critical sbd5)
                  (:coord-barre "MZ22 N2")
                  (:coord-norm "St4 T40")
-                 (:comment "Original: D. Siehe Kommentar Nr. 4.")
+                 (:comment "In allen Exemplaren: D. Siehe Kommentar Nr. 4.")
                  (:flag :ready) (:id 16))
            b22 mrest5 b22 sb7 b22 m7 b22 sbd7 b22 sbd5 b22 m1 b22 sb3 b22 md1 b22 sb1 b22 sbd1 b22 sbd8 dot8 md8 b22 sb4 b22
            md2 b22 m9 dot10 sm9 b22 m9 b22 brd2 b22

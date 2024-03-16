@@ -50,15 +50,15 @@
     ;; grundsätzlich kontrolliert werden
     ;;
     ;; OPEN
-    (s1 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per n:\" } la sol fa la sol")
-                 (:de "\\set stanza = \\markup{ \\normal-text \"per n:\" } la sol fa la sol")
-                 (:en "\\set stanza = \\markup{ \\normal-text \"in n:\" } la sol fa la sol")))
-    (s2 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per n:\" } sol fa la sol fa")
-                 (:de "\\set stanza = \\markup{ \\normal-text \"per n:\" } sol fa la sol fa")
-                 (:en "\\set stanza = \\markup{ \\normal-text \"in n:\" } sol fa la sol fa")))
-    (s3 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per n:\" } fa mi la")
-                 (:de "\\set stanza = \\markup{ \\normal-text \"per n:\" } fa mi la")
-                 (:en "\\set stanza = \\markup{ \\normal-text \"in n:\" } fa mi la")))
+    (s1 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per ɴ:\" } la sol fa la sol")
+                 (:de "\\set stanza = \\markup{ \\normal-text \"per ɴ:\" } la sol fa la sol")
+                 (:en "\\set stanza = \\markup{ \\normal-text \"in ɴ:\" } la sol fa la sol")))
+    (s2 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per ɴ:\" } sol fa la sol fa")
+                 (:de "\\set stanza = \\markup{ \\normal-text \"per ɴ:\" } sol fa la sol fa")
+                 (:en "\\set stanza = \\markup{ \\normal-text \"in ɴ:\" } sol fa la sol fa")))
+    (s3 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per ɴ:\" } fa mi la")
+                 (:de "\\set stanza = \\markup{ \\normal-text \"per ɴ:\" } fa mi la")
+                 (:en "\\set stanza = \\markup{ \\normal-text \"in ɴ:\" } fa mi la")))
     (s4 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } la sol fa mi re")
                  (:de "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } la sol fa mi re")
                  (:en "\\set stanza = \\markup{ \\normal-text \"in ♮:\" } la sol fa mi re")))
@@ -71,9 +71,9 @@
     (s5 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } sol fa la sol fa")
                  (:de "\\set stanza = \\markup{ \\normal-text \"per ♮:\" } sol fa la sol fa")
                  (:en "\\set stanza = \\markup{ \\normal-text \"in ♮:\" } sol fa la sol fa")))
-    (s6 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per n:\" } fa mi mi")
-                 (:de "\\set stanza = \\markup{ \\normal-text \"per n:\" } fa mi mi")
-                 (:en "\\set stanza = \\markup{ \\normal-text \"in n:\" } fa mi mi")))
+    (s6 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per ɴ:\" } fa mi mi")
+                 (:de "\\set stanza = \\markup{ \\normal-text \"per ɴ:\" } fa mi mi")
+                 (:en "\\set stanza = \\markup{ \\normal-text \"in ɴ:\" } fa mi mi")))
     (s7 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } fa mi la")
                  (:de "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } fa mi la")
                  (:en "\\set stanza = \\markup{ \\normal-text \"in ♭:\" } fa mi la")))
@@ -162,19 +162,22 @@
           (:comment "Die Breite der Notenzeile wurde angepasst, um die Ergänzung von N6-N10 zu ermöglichen.")
           (:flag :ready) (:id 11))
     (:voice v1)
+    ;; JK: soll mit farbigen Typen und farbigem Text implementiert werden
+    ;;
+    ;; DONE
     (:section s1) (:f-clef) max7 fclef7 b22 sb9 fl9 sbd9 sh8 sb8 b22 sbd8 b22 sb8 bl
 
-           (:alt (:diplomatic)
-                 (:critical (:section s2) (:bracketed) sb8blue fl8blue sbd8blue sh7blue sb7blue sbd7blue sb7blue blblue)
-                 (:coord-barre "N6-N10")
-                 (:coord-norm "G2 N1-N5")
-                 (:comment "Der Schritt von G zu F existiert im Original nicht, ist aber inhaltlich plausibel.")
-                 (:flag :ready) (:id 12))
-           (:section s3) sb7 b22 sbd6 b22 sb6 bl
-           (:section s4) sb6 fl6 sbd6 sh5 sb5 b22 sbd5 b22 sb5 bl
-           (:section s5) (:newline) sb5 fl5 sbd5 sh4 sb4 b22 sbd4 b22 sb4 bl
-           (:section s6) sb4 b22 sbd3 b22 sb3 bl
-           (:section s7) fl3 sb3 b22 sbd2 b22 sb2 b22 bl)
+    (:alt (:diplomatic)
+          (:critical (:section s2) (:bracketed) sb8blue fl8blue sbd8blue sh7blue sb7blue sbd7blue sb7blue blblue)
+          (:coord-barre "N6-N10")
+          (:coord-norm "G2 N1-N5")
+          (:comment "Der Schritt von G zu F existiert in keinem Exemplar und wurde analog zu den anderen Musikbeispielen in diesem Kapitel ergänzt.")
+          (:flag :ready) (:id 12))
+    (:section s3) sb7 b22 sbd6 b22 sb6 bl
+    (:section s4) sb6 fl6 sbd6 sh5 sb5 b22 sbd5 b22 sb5 bl
+    (:section s5) (:newline) sb5 fl5 sbd5 sh4 sb4 b22 sbd4 b22 sb4 bl
+    (:section s6) sb4 b22 sbd3 b22 sb3 bl
+    (:section s7) fl3 sb3 b22 sbd2 b22 sb2 b22 bl)
    (:text 70 58
      (10 440 "ꝑ n. la.ſol.fa.la.ſol.")
      (:alt (:diplomatic )
@@ -219,12 +222,18 @@
             (:flag :ready) (:id 18))
       290 "ꝑ ♭.fa.mi.la."))
    (:text 70 58
+     (:alt (:diplomatic)
+           (:critical)
+           (:coord-barre "allg.")
+           (:coord-norm "allg.")
+           (:comment "Das Zeichen ɴ wird als Abkürzung für _natura_ verwendet.")
+           (:flag :ready) (:id 1))
      (90 370 "mi.et re.ꝑ aſcen.")
      (:alt (:diplomatic)
            (:critical (474 nil "re. ꝑ aſcen." nil "blue"))
            (:coord-barre "TZ5 TE2")
            (:coord-norm "–")
-           (:comment "Dieser Text (»re. ꝑ aſcen.«) existiert im Original nicht.")
+           (:comment "In allen Exemplaren: Dieser Text (»re. ꝑ aſcen.«) existiert nicht.")
            (:flag :ready) (:id 19))
      ((:alt (:diplomatic 524)
             (:critical 890)

@@ -12,6 +12,7 @@
    ;; Ich kann mir vorstellen, hier jeweils ein [salto della] zu ergänzen,
    ;; auch im Italienischen. Im Englischen könnte dann die übliche Lösung
    ;; verwendet werden.
+   ;;
    ;; AS: Ich habe es hier jetzt so angepasst.
    ;;
    ;; OPEN

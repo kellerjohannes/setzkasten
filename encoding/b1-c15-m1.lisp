@@ -50,7 +50,7 @@
                  (:critical sbd5 b38 sb5)
                  (:coord-barre "N9-10")
                  (:coord-norm "G5")
-                 (:comment "Original: A–Ȧ.")
+                 (:comment "In allen Exemplaren: A–Ȧ.")
                  (:flag :ready) (:id 1))
            b38 bl
            (:section s6)
@@ -59,7 +59,7 @@
                  (:critical sbd4 b38 sb4)
                  (:coord-barre "N11-12")
                  (:coord-norm "G6")
-                 (:comment "Original: G–Ġ.")
+                 (:comment "In allen Exemplaren: G–Ġ.")
                  (:flag :ready) (:id 2))
            b38 bl
            (:section s7)
@@ -68,7 +68,7 @@
                  (:critical sbd3 b38 sb3)
                  (:coord-barre "N13-14")
                  (:coord-norm "G7")
-                 (:comment "Original: F–Ḟ.")
+                 (:comment "In allen Exemplaren: F–Ḟ.")
                  (:flag :ready) (:id 3))
            b22 bl
            (:section s8)
@@ -77,7 +77,7 @@
                  (:critical sbd2 b38 sb2)
                  (:coord-barre "N15-16")
                  (:coord-norm "G8")
-                 (:comment "Original: E–Ė.")
+                 (:comment "In allen Exemplaren: E–Ė.")
                  (:flag :ready) (:id 4))
            b38 bl)
    (:text 70 58

@@ -9,7 +9,9 @@
    (:section-headings
     ;; JK: »A due voci« steht im Original nur ein einziges Mal und wird für sämtliche folgende
     ;; Sections ergänzt. Gut so?
+    ;;
     ;; kir: hm, ist vielleicht nicht nötig (weil redundant)
+    ;;
     ;; OPEN
     (s1 (:alt (:it "A due voci")
               (:de "mit zwei Stimmen")

@@ -79,7 +79,7 @@
                  (:critical sh5 b22 sb5)
                  (:coord-barre "MZ2 N2")
                  (:coord-norm "G1 St2 N2")
-                 (:comment "Original: E♯.")
+                 (:comment "In allen Exemplaren: E♯.")
                  (:flag :ready) (:id 1))
            b22 bl
            b38 b38 sbd5 b38 b38 sb5 b38 b38 b38 bl

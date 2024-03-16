@@ -40,7 +40,7 @@
                     (:critical "Chiaue di")
                     (:coord-barre "TZ2 TE1")
                     (:coord-norm "—")
-                    (:comment "Original: »Chiaui«. Korrektur weil nur ein einziger G-Schlüssel gezeigt wird.")
+                    (:comment "In allen Exemplaren: »Chiaui«. Korrektur weil nur ein einziger G-Schlüssel gezeigt wird.")
                     (:flag :ready) (:id 1)))
           (314 nil "Gſolreut et di ᴄſolfaut")
           (893 nil "di ᴄſolfaut")

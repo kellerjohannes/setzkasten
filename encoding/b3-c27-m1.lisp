@@ -52,7 +52,7 @@
                  (:critical sb2)
                  (:coord-barre "MZ2 N14")
                  (:coord-norm "G4 N3")
-                 (:comment "Original: B♮.")
+                 (:comment "In allen Exemplaren: B♮.")
                  (:flag :ready) (:id 1))
            b38 b38 b38 b38 bl)
    (:vspace 20)

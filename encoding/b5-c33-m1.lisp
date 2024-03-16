@@ -86,21 +86,21 @@
                  (:critical sb5)
                  (:coord-barre "MZ2 N3")
                  (:coord-norm "G1 St2 N3")
-                 (:comment "Original: Ȧ.")
+                 (:comment "In allen Exemplaren: Ȧ.")
                  (:flag :ready) (:id 1))
            bl
            (:alt (:diplomatic fl4 sbd4)
                  (:critical fl5 sbd5)
                  (:coord-barre "MZ2 N4")
                  (:coord-norm "G1 St2 N4")
-                 (:comment "Original: Ġ♭.")
+                 (:comment "In allen Exemplaren: Ġ♭.")
                  (:flag :ready) (:id 2))
 
            (:alt (:diplomatic fl4 sb4)
                  (:critical fl5 sb5)
                  (:coord-barre "MZ2 N5")
                  (:coord-norm "G1 St2 N5")
-                 (:comment "Original: G♭.")
+                 (:comment "In allen Exemplaren: G♭.")
                  (:flag :ready) (:id 3))
            bl
            (:section s2) b22 sbd3 b22 bl

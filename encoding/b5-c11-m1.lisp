@@ -94,7 +94,7 @@
                  (:critical sh7 sb7)
                  (:coord-barre "MZ2 N2")
                  (:coord-norm "G1 St2 N2")
-                 (:comment "Original: G♯.")
+                 (:comment "In allen Exemplaren: G♯.")
                  (:flag :ready) (:id 1))
            bl sbd7 sb7 bl
            (:section s2)

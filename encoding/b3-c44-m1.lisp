@@ -203,7 +203,7 @@
                  (:critical dot4)
                  (:coord-barre "MZ11 N13")
                  (:coord-norm "St4 T19 N1")
-                 (:comment "Original: Rhythmischer Punkt steht eine Position höher.")
+                 (:comment "In allen Exemplaren: Rhythmischer Punkt steht eine Position höher.")
                  (:flag :ready) (:id 1))
            sm4 b38 met-perf-min-dim b22 met-3-2 b22 br0 sbrest5 b22 br4 b22 sb4 b22 br1 b22 sb1
            b22 br4 b22 sb4 b22 br8 b22 sb8 custos5)

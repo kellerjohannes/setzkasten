@@ -71,7 +71,7 @@
                  (:critical sb5)
                  (:coord-barre "MZ2 N1-3")
                  (:coord-norm "G7")
-                 (:comment "Original: A♯--G--G♯. Umstellung für eine sinnvolle Tonhöhenabfolge.")
+                 (:comment "In allen Exemplaren: A♯-G-G♯. Umstellung für eine sinnvolle Tonhöhenabfolge.")
                  (:flag :ready) (:id 1))
            b22 sh4 b22 sb4 b38 bl
            (:section s8)

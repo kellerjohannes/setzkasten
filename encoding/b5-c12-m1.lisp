@@ -74,7 +74,7 @@
                  (:critical sbd5)
                  (:coord-barre "MZ1 N6")
                  (:coord-norm "G3 St1 N1")
-                 (:comment "Original: B♭.")
+                 (:comment "In allen Exemplaren: B♭.")
                  (:flag :ready) (:id 1))
            fl5 (:divider :regular) sbd5 bl
            fl5 sbd5 fl5 sbd5 bl
@@ -85,7 +85,7 @@
                  (:critical sh3 sb3)
                  (:coord-barre "MZ1 N14")
                  (:coord-norm "G5 St1 N4")
-                 (:comment "Original: D♭.")
+                 (:comment "In allen Exemplaren: D♭.")
                  (:flag :ready) (:id 2))
            b22 bl
            (:section s6) b22 fl5 sbd5 bl
@@ -105,7 +105,7 @@
                  (:critical sh6 sb6)
                  (:coord-barre "MZ2 N3")
                  (:coord-norm "G1 St2 N3")
-                 (:comment "Original: F♯.")
+                 (:comment "In allen Exemplaren: F♯.")
                  (:flag :ready) (:id 3))
            sbd6 bl
            (:section s2) fl5 sbd5 bl
@@ -115,14 +115,14 @@
                  (:critical sh3 sb3)
                  (:coord-barre "MZ2 N8")
                  (:coord-norm "G3 St2 N3")
-                 (:comment "Original: Ḃ♮.")
+                 (:comment "In allen Exemplaren: Ḃ♮.")
                  (:flag :ready) (:id 4))
 
            (:alt (:diplomatic sb3)
                  (:critical sbd3)
                  (:coord-barre "MZ2 N9")
                  (:coord-norm "G3 St2 N4")
-                 (:comment "Original: B♮.")
+                 (:comment "In allen Exemplaren: B♮.")
                  (:flag :ready) (:id 5))
            b22 bl
            (:section s4) fl2 sbd2
@@ -142,7 +142,7 @@
                           (:critical "3.mag.")
                           (:coord-barre "TZ4 TE6")
                           (:coord-norm "G5 US")
-                          (:comment "Original: »3.min.«.")
+                          (:comment "In allen Exemplaren: »3.min.«.")
                           (:flag :ready) (:id 6)))
           (1658 nil "6.min.")
           (1881 nil "6.mag."))))

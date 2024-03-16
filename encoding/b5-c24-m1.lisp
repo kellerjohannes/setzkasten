@@ -4,7 +4,9 @@
    (:comment "q021_s225, rotation: 0, origin: 509")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Queste sono tutte le consonanze di Elami acuto discendente,\\e di Elami grave ascendente")
-   ;; AS: Sollte nicht auch im italienischen, es "Elami acuto [quarto]" heissen?
+                 ;; AS: Sollte nicht auch im italienischen, es "Elami acuto [quarto]" heissen?
+                 ;;
+                 ;; OPEN
                  (:de "")
                  (:en "These are all descending consonances of Elami acuto [quarto],\\and ascending [consonances] of Elami grave [quarto]")))
    (:section-headings
@@ -69,7 +71,7 @@
                           (:critical "le quattro 6.")
                           (:coord-barre "TZ2 TE7")
                           (:coord-norm "G7 ÜS")
-                          (:comment "Original: »la quattro 6.«")
+                          (:comment "In allen Exemplaren: »la quattro 6.«")
                           (:flag :ready) (:id 1)))
           (2123 nil "8."))
    (:music 2230
@@ -97,13 +99,13 @@
                           (:critical "6.min.")
                           (:coord-barre "TZ3 TE7")
                           (:coord-norm "G7 US")
-                          (:comment "Original: »3.min.«")
+                          (:comment "In allen Exemplaren: »3.min.«")
                           (:flag :ready) (:id 2)))
           (1919 nil (:alt (:diplomatic "3.mag.")
                           (:critical "6.mag.")
                           (:coord-barre "TZ3 TE8")
                           (:coord-norm "G7 US")
-                          (:comment "Original: »3.mag.«")
+                          (:comment "In allen Exemplaren: »3.mag.«")
                           (:flag :ready) (:id 3))))
    (:music 2223
            (:voice v2)
@@ -115,7 +117,7 @@
                  (:critical fl5 sb5)
                  (:coord-barre "MZ2 N7")
                  (:coord-norm "G3 N1")
-                 (:comment "Original: G♭.")
+                 (:comment "In allen Exemplaren: G♭.")
                  (:flag :ready) (:id 4))
            sh4 sb4 bl
            sbd4 sbc4 sb4 bl

@@ -35,7 +35,7 @@
                  (:critical mrest1)
                  (:coord-barre "MZ1 N23")
                  (:coord-norm "G5 St1")
-                 (:comment "Original: Minima-Pause steht zwei Positionen höher.")
+                 (:comment "In allen Exemplaren: Minima-Pause steht zwei Positionen höher.")
                  (:flag :ready) (:id 1))
            m2 b22 sm3 b22 m4 b22 sm3 sb4 bl)
    (:text 110 58
@@ -60,7 +60,7 @@
                  (:critical mrest3)
                  (:coord-barre "MZ3 N19")
                  (:coord-norm "G7 St3")
-                 (:comment "Original: Minima-Pause steht zwei Positionen höher.")
+                 (:comment "In allen Exemplaren: Minima-Pause steht zwei Positionen höher.")
                  (:flag :ready) (:id 2))
            m3 b22 sm4 b22 sm5 b22 m4 sb3 bl)
    (:text 110 58

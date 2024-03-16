@@ -8,6 +8,7 @@
                  ;; caption "composto" and "incomposto" don't agree with either "gradi" or "terza".)
                  ;;
                  ;; JK: changed it in Italien, not in English. Anne, would you adapt it or not?
+                 ;;
                  ;; AS: I changed it. Now it's up to you to close the discussion.
                  ;;
                  ;; OPEN
@@ -42,7 +43,7 @@
                      (:critical "ᴇſſempio de i gradi di ᴛerza più di maggiore incompoﬆi & compoſti.")
                      (:coord-barre "TZ1")
                      (:coord-norm "Ti")
-                     (:comment "Original: »... incompoﬆo & compoſto«.")
+                     (:comment "In allen Exemplaren: »... incompoﬆo & compoſto«.")
                      (:flag :ready) (:id 1))
                ))
    (:music 2209
@@ -54,7 +55,7 @@
                  (:critical fl6 sb6)
                  (:coord-barre "N9")
                  (:coord-norm "G3 N4")
-                 (:comment "Original: B♮.")
+                 (:comment "In allen Exemplaren: B♮.")
                  (:flag :ready) (:id 2))
            b22 sbc7 bl
            (:section s4) fl6 b22 sb6 b22 sb7 b22 sbc8 bl

@@ -17,7 +17,11 @@
     (s2 (:alt (:it "Vigesima seconda\\con due ottave\\in mezzo")
               (:de "vigesima seconda\\mit zwei ottave\\in der Mitte")
               (:en "vigesima seconda\\with two ottave\\in the middle"))))
-              ;; AS: Comment David:  I presume there will be a commentary noting that the Alto voice is printed wrongly – I think it's most likely that the type piece carrying the notehead was set upside-down (the other possibility being that a C1 clef was intended instead of C2). 
+   ;; AS: Comment David: I presume there will be a commentary noting that the Alto voice is printed
+   ;; wrongly – I think it's most likely that the type piece carrying the notehead was set
+   ;; upside-down (the other possibility being that a C1 clef was intended instead of C2).
+   ;;
+   ;; OPEN
    (:voice-labels
     (s1 v1 (:alt (:it "Soprano")
                  (:de "Soprano")
@@ -59,14 +63,14 @@
            b38 b38 b38 b38
            (:section s2)
            (:voice v1) gclef3 b22 sb9 b38 b22 bl
-           (:voice v2) b38 b38
-           (:alt (:diplomatic cclef3)
-                 (:critical cclef1)
+           (:voice v2) b38 b38 cclef3 b38
+           (:alt (:diplomatic sb4)
+                 (:critical sb6)
                  (:coord-barre "N5")
                  (:coord-norm "G2 St2")
-                 (:comment "Original: C2-Schlüssel.")
+                 (:comment "Diese Note ist in allen Exemplaren als D gedruckt. In den Exemplaren q042, q066 und q067 wurde diese Korrektur von Lesern handschriftlich ausgeführt. In den Exemplaren q005, q035 und q057 wurde stattdessen der Schlüssel handschriftlich zu C1 korrigiert.")
                  (:flag :ready) (:id 1))
-           b38 sb4 b38 bl
+           b38 bl
            (:voice v3) b38 b38 cclef7 b38 sb3 b38 bl
            (:voice v4) b38 b38 (:f-clef) max7 fclef7 b38 b38 sb0 b38 bl)
    (:text 70 58

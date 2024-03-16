@@ -4,7 +4,7 @@
    (:comment "q021_s170, rotation: 0.57, origin: 955")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempi dei due bassi, che s'accorderanno,\\quando si canterà a due chori")
-                 (:de "")
+                 (:de "Beispiele von zwei Bassi, die miteinander übereinstimmen,\\wenn man sie in zwei Chören singt")
                  (:en "Example of two basses which agree with one another\\when one sings in two choirs"))))
   (:data
    (:text 90 58

@@ -190,7 +190,7 @@
                  (:critical sh6 b38 sb6)
                  (:coord-barre "MZ4 N6")
                  (:coord-norm "G20 N2")
-                 (:comment "Original: C♯.")
+                 (:comment "In allen Exemplaren: C♯.")
                  (:flag :ready) (:id 1))
            b38 bl
            (:section s21) b38 fl4 b38 sbd4 b38 sb7 b38 bl
@@ -214,7 +214,7 @@
                  (:critical cclef7)
                  (:coord-barre "MZ5 N9")
                  (:coord-norm "G28")
-                 (:comment "Original: C-Schlüssel auf der dritten Linie.")
+                 (:comment "In allen Exemplaren: C-Schlüssel auf der dritten Linie.")
                  (:flag :ready) (:id 2))
            fl6 (:key-signature nil nil nil nil nil nil :flat) b38 sb4 b38 nat6 b38 sbc6 b38 b38 bl
            (:section s29) b38 b38 fl5 b38 sb5 b38 sbc7 b38 b38 bl)

@@ -64,6 +64,6 @@
                  (:critical fl9 sbd9)
                  (:coord-barre "MZ3 N19")
                  (:coord-norm "G7 N7")
-                 (:comment "Original: Ȧ.")
+                 (:comment "In allen Exemplaren: Ȧ.")
                  (:flag :ready) (:id 1))
            b22 fl10 sbd10 bl)))

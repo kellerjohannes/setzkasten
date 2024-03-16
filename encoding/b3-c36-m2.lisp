@@ -17,7 +17,13 @@
    (:music 1165
            (:voice v1)
            (:section s1) (:f-clef) max7 fclef7 b38 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 b38 b22 bl
-           (:section s2) b38 b38 sb3 b38 sb5 sh5 sb5 b38 sb6 b38 b38 bl)
+           (:section s2) b38 b38 sb3 b38 sb5 sh5 sb5 b38 sb6 b38 b38
+           (:alt (:diplomatic bl)
+                 (:barre blbl)
+                 (:coord-barre "N8")
+                 (:coord-norm "")
+                 (:comment "In den Exemplaren q067 und q081 wurde die Seite, die dieses Notenbeispiel enthält, neu gesetzt. In diesen Fassung wurde der letzte Taktstrich als Doppelstrich gedruckt, in allen anderen Exemplaren als einfacher Taktstrich.")
+                 (:flag :ready) (:id 1)))
    (:text 70 58
      (229 nil "Diatonica.")
      (680 nil "Cromatica."))))

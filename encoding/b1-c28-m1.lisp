@@ -46,7 +46,7 @@
                      (:critical "ᴇſſempio de i gradi di ᴛerza più di minore compoﬆi & incompoſti.")
                      (:coord-barre "TZ1")
                      (:coord-norm "Ti")
-                     (:comment "Original: »... compoﬆo & incompoſto«.")
+                     (:comment "In allen Exemplaren: »... compoﬆo & incompoſto«.")
                      (:flag :ready) (:id 1))))
    (:music 2218
            (:voice v1)
