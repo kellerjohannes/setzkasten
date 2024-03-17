@@ -10,6 +10,7 @@
     (s1 (:alt (:it "grado di terza\\maggiore\\naturale")
               ;; Kommentar Anne Die ersten vier Beispiele haben nur "grado di 3", die zweiten vier
               ;; haben "grado di terza"
+              ;;
               ;; JK: Konsens ist nun, alle mit Zahlen abgekürzten Intervalle voll auszuschreiben
               ;; in der modernen Notenschrift. Kann also so bleiben wie es ist.
               ;;

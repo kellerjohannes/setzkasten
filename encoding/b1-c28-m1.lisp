@@ -11,6 +11,10 @@
                  ;; JK: I didn't notice, I suggest to idealise this. Agreed? How does this work for
                  ;; the English translations (I haven't touched it)?
                  ;;
+                 ;; JK an Anne: Luigi ist mit der von mir vorgeschlagenen Idealisierung
+                 ;; einverstanden. Würdest du das im Englischen noch anpassen wollen, also "Example
+                 ;; of the composti and incomposti steps..."?
+                 ;;
                  ;; OPEN
                  (:de "Beispiel der Tonschritte der terza più di minore composti und incomposti.")
                  (:en "Example of the composto and incomposto steps of the terza più di minore")))

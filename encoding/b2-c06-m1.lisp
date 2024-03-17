@@ -92,33 +92,17 @@
           (173 nil
                (:alt (:diplomatic "1.")
                      (:critical "1.")
-                     (:coord-barre "TZ4 TE1")
+                     (:coord-barre "TZ4 TE1-3")
                      (:coord-norm "G1 US")
                      ;; JK: Notwendigkeit eines Kommentars ist zu diskutieren.
                      ;;
-                     ;; OPEN
-                     (:comment "Bedeutung von »1.« unklar.")
+                     ;; JK: Ich habe die Behandlung dieser Unklarheit als Kapitelkommentar angelegt und verweise im kritischen Bericht darauf.
+                     ;;
+                     ;; DONE
+                     (:comment "Zur Bedeutung von »1.«, »2.« und »3.« siehe Kapitelkommentar.")
                      (:flag :observe) (:id 2)))
-          (514 nil
-               (:alt (:diplomatic "2.")
-                     (:critical "2.")
-                     (:coord-barre "TZ4 TE2")
-                     (:coord-norm "G2 US")
-                     ;; JK: Notwendigkeit eines Kommentars ist zu diskutieren.
-                     ;;
-                     ;; OPEN
-                     (:comment "Bedeutung von »2.« unklar.")
-                     (:flag :observe) (:id 3)))
-          (824 nil
-               (:alt (:diplomatic "3.")
-                     (:critical "3.")
-                     (:coord-barre "TZ4 TE3")
-                     (:coord-norm "G3 US")
-                     ;; JK: Notwendigkeit eines Kommentars ist zu diskutieren.
-                     ;;
-                     ;; OPEN
-                     (:comment "Bedeutung von »3.« unklar.")
-                     (:flag :observe) (:id 4))))
+          (514 nil "2.")
+          (824 nil "3."))
    (:music 2203
            (:voice v3)
            (:section s4) s1008 (:f-clef) max7 fclef7 sb4 b38 bl

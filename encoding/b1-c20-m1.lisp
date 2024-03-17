@@ -58,13 +58,14 @@
                ;; accidentale incomposto (Ab–G) followed by two semitoni minori accidentali
                ;; incomposti (G–Gb and Gb–Fdot), all descending.
                ;;
-               ;; TODO: in kapitelkommentar auslagern, hier schliessen und auf kapitelkommentar
-               ;; verweisen.
+               ;; JK: Ich habe diesen Kommentar als Kapitelkommentar angelegt. Ich schlage vor,
+               ;; Davids Argumente dort anzubringen, die Edition aber nicht anzupassen.
                ;;
-               ;; OPEN
+               ;; DONE
                (:de "semitono maggiore\\und minore,\\[beide] accidentali incomposti")
                (:en "semitono maggiore\\and minore,\\[both] accidentali incomposti")))
     ;; LC: Ich habe hier beide/both eingefügt
+    ;;
     ;; JK: von der Gruppe zu bestätigen
     ;;
     ;; OPEN
@@ -73,6 +74,7 @@
                (:de "semitono minore\\und maggiore,\\[beide] accidentali incomposti")
                (:en "semitono minore\\and maggiore,\\[both] accidentali incomposti")))))
   ;; LC: Ich habe hier beide/both eingefügt
+  ;;
   ;; JK: von der Gruppe zu bestätigen
   ;;
   ;; OPEN

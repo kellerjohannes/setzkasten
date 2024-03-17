@@ -3,19 +3,16 @@
    (:alt-name "m1.047")
    (:comment "q021_s048, origin: 1066")
    (:creator "Vicentino21 / Johannes Keller")
-   ;; JK:
-   ;; Die Bezeichnung 'più di quinta imperfetta' ist eine Kurzform von 'salto
-   ;; della più di quinta imperfetta' (wie in der Kapitelüberschrift zu
-   ;; finden), deshalb ist hier die männliche Form von '(in)composto'
-   ;; sinnvoll, wenn auch auf den ersten Blick fragwürdig.
+   ;; JK: Die Bezeichnung 'più di quinta imperfetta' ist eine Kurzform von 'salto della più di
+   ;; quinta imperfetta' (wie in der Kapitelüberschrift zu finden), deshalb ist hier die männliche
+   ;; Form von '(in)composto' sinnvoll, wenn auch auf den ersten Blick fragwürdig.
    ;;
-   ;; Ich kann mir vorstellen, hier jeweils ein [salto della] zu ergänzen,
-   ;; auch im Italienischen. Im Englischen könnte dann die übliche Lösung
-   ;; verwendet werden.
+   ;; Ich kann mir vorstellen, hier jeweils ein [salto della] zu ergänzen, auch im Italienischen. Im
+   ;; Englischen könnte dann die übliche Lösung verwendet werden.
    ;;
    ;; AS: Ich habe es hier jetzt so angepasst.
    ;;
-   ;; OPEN
+   ;; DONE
    (:title (:alt (:it "Essempio [del salto] di più di Quinta imperfetta accidentale, composto & incomposto.")
                  (:de "Beispiel [des Sprungs] più di quinta imperfetta accidentale, composto und incomposto.")
                  (:en "Example of the composto and incomposto [leap] più di quinta imperfetta accidentale")))
@@ -57,7 +54,9 @@
   ;;
   ;; JK: soll so bleiben, akzeptabel?
   ;;
-  ;; OPEN
+  ;; JK: siehe Editionsrichtlinien.
+  ;;
+  ;; DONE
 
   (:data
    (:text 90 58

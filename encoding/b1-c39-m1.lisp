@@ -27,7 +27,10 @@
     ;;
     ;; AS: Ja, für mich schon.
     ;;
-    ;; OPEN
+    ;; JK: gut, das ist mir tatsächlich lieber so, in diesem Sinn übergehen wir den Kommentar von
+    ;; David und ich schliesse die Diskussion.
+    ;;
+    ;; DONE
     (s5 (:alt (:it "prima quinta")
               (:de "erste quinta")
               (:en "first quinta")))

@@ -9,7 +9,8 @@
    ;; LC: Wie oben, würde ich so schreiben: 'Beispiel des incomposto Sprungs…' und 'Example of the
    ;; incompost leap…'
    ;;
-   ;; JK: von Anne zu prüfen und gegebenenfalls in der Englischen Übersetzung anzupassen.
+   ;; JK: von Anne und von Martin zu prüfen und gegebenenfalls in der Englischen Übersetzung
+   ;; anzupassen.
    ;;
    ;; OPEN
    (:section-captions

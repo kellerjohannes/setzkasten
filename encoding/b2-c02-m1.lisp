@@ -7,30 +7,36 @@
                  (:de "Beispiel wie vom unisono zu anderen Tonschritten und Sprüngen [zu gehen ist]")
                  (:en "Example [of going] from the unison to other steps and leaps")))
    (:section-captions
-    (s1 (:alt (:it "a 2")
+    (s1 (:alt (:it "a due")
               ;; AS: All of these should have the numbers written out.
               ;;
               ;; JK: Achtung, hier scheint Luigi anderer Meinung zu sein: muss abgestimmt werden
               ;;
-              ;; OPEN
+              ;; JK: Fehlalarm, Luigi hat das Secondo Libro noch nicht lektoriert, weshalb ich alle
+              ;; "2" nun mit "due" ersetzt. Luigi: bitte melde dich, falls du hier anderer Meinung
+              ;; sein solltest, das müssen wir dann auch mit Anne und Martin abstimmen. Für mich
+              ;; handelt es sich hier um die Auflösung einer Abkürzung, soll also stillschweigend
+              ;; normalisiert werden.
+              ;;
+              ;; DONE
               (:de "mit zwei Stimmen")
               (:en "in two [voci]")))
-    (s2 (:alt (:it "a 2")
+    (s2 (:alt (:it "a due")
               (:de "mit zwei [Stimmen]")
               (:en "in two [voci]")))
-    (s3 (:alt (:it "a 2")
+    (s3 (:alt (:it "a due")
               (:de "mit zwei [Stimmen]")
               (:en "in two [voci]")))
-    (s4 (:alt (:it "a 2")
+    (s4 (:alt (:it "a due")
               (:de "mit zwei [Stimmen]")
               (:en "in two [voci]")))
-    (s5 (:alt (:it "a 3")
+    (s5 (:alt (:it "a tre")
               (:de "mit drei [Stimmen]")
               (:en "in three [voci]")))
-    (s6 (:alt (:it "a 5")
+    (s6 (:alt (:it "a cinque")
               (:de "mit fünf [Stimmen]")
               (:en "in five [voci]")))
-    (s7 (:alt (:it "a 7 e a più voci")
+    (s7 (:alt (:it "a sette e a più voci")
               (:de "mit sieben und mehr Stimmen")
               (:en "in seven and more voci")))))
   (:data

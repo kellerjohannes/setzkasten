@@ -11,7 +11,7 @@
                  ;;
                  ;; AS: I changed it. Now it's up to you to close the discussion.
                  ;;
-                 ;; OPEN
+                 ;; DONE
                  (:de "Beispiel der Tonschritte der terza più di maggiore incomposti und composti.")
                  (:en "Example of the incomposti and composti steps of the terza più di maggiore")))
    (:section-captions

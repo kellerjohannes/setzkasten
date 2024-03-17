@@ -18,6 +18,10 @@
               ;;
               ;; OPEN
               (:de "Tonschritt der terza\\minore\\naturale\\incomposto")
+              ;; JK an Martin: Konsequenterweise müsste hier folgendermassen übersetzt werden:
+              ;; "Incomposto Tonschritt der terza minore naturale". Das wäre auch in den folgenden Beispielen zu prüfen und anzupassen.
+              ;;
+              ;; OPEN
               (:en "incomposto step\\of terza\\minore\\naturale")))
     (s2 (:alt (:it "grado di terza\\minore\\naturale\\incomposto")
               (:de "Tonschritt der terza\\minore\\naturale\\incomposto")

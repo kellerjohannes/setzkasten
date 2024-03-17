@@ -31,13 +31,19 @@
                  ;; JK: Meinst du ohne die nicht gedruckten Stimmen, die der Student selbst zu
                  ;; ergänzen hat? Ein Kommentar im Bericht ist hier vorgesehen, siehe folgende
                  ;; Zeile (29) im Code:
-                 ;; Kommentar AS: Ich glaube, ich habe geschrieben ohne die Beispiele gesehen zu haben. Mit Kommentar wäre gut.
+                 ;;
+                 ;; Kommentar AS: Ich glaube, ich habe geschrieben ohne die Beispiele gesehen zu
+                 ;; haben. Mit Kommentar wäre gut.
                  ;;
                  ;; Alter Kommentar: Die Reihenfolge der Stimmen und die Verteilung auf Sections ist
                  ;; zu disktutieren. Ev. braucht es hier einen Kommentar, dass diese Konstellationen
                  ;; eher in vielstimmigen Sätzen plausibel sind.
                  ;;
-                 ;; OPEN
+                 ;; JK: Ich habe einen Kapitelkommentar angelegt, in dem auf die Situation
+                 ;; aufmerksam gemacht wird, dass diese Beispiele in einem nicht weiter definierten
+                 ;; Kontext mit mehr als den gedruckten Stimmen zu verstehen sind.
+                 ;;
+                 ;; DONE
                  ))
     (s2 v1 (:alt (:it "Tenore")
                  (:de "Tenore")

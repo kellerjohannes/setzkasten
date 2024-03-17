@@ -35,7 +35,9 @@
   ;;
   ;; JK: soll so bleiben, akzeptabel?
   ;;
-  ;; OPEN
+  ;; JK: Update zu diesem Thema: das Problem der Zuordnung der Schlüsselung (welche moderne Schlüssel werden für welche originale Schlüssel gesetzt?) habe ich nun in den Editionsrichtlinien der Musikbeispiele ausführlich kommentiert. Das erachte ich als genügend, weshalb ich diese Diskussion schliesse.
+  ;;
+  ;; DONE
   (:data
    (:text 90 58
           (254 1691 "ᴇſſempio de gradi di alcune Ɋuinte imperfette,naturali & accidentali."))

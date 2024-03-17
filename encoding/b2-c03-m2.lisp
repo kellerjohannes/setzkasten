@@ -10,12 +10,15 @@
     (s5 (:alt (:it "salto dubbioso")
               (:de "zweifelhafter Sprung")
               (:en "dubious leap")))
-    (s6 (:alt (:it "a 5")
+    (s6 (:alt (:it "a cinque")
               ;; AS: All the numbers should be written out.
               ;;
               ;; JK: muss mit Luigi abgestimmt werden
               ;;
-              ;; OPEN
+              ;; JK: Ich habe in der italienischen Textfassung alle Ziffern ausgeschrieben. Luigi:
+              ;; bitte melden, falls du nicht einverstanden bist!
+              ;;
+              ;; DONE
               (:de "mit fünf [Stimmen]")
               (:en "in five [voci]")))
     (s7 (:alt (:it "salto dubbioso")
@@ -24,34 +27,34 @@
     (s8 (:alt (:it "dubbioso")
               (:de "zweifelhaft")
               (:en "dubious")))
-    (s9 (:alt (:it "a 2 cori")
+    (s9 (:alt (:it "a due cori")
               (:de "mit zwei Chören")
               (:en "for two choirs")))
-    (s10 (:alt (:it "a 2 cori")
+    (s10 (:alt (:it "a due cori")
                (:de "mit zwei Chören")
                (:en "for two choirs")))
-    (s11 (:alt (:it "a 6")
+    (s11 (:alt (:it "a sei")
                (:de "mit sechs [Stimmen]")
                (:en "in six [voci]")))
-    (s12 (:alt (:it "a 5")
+    (s12 (:alt (:it "a cinque")
                (:de "mit fünf [Stimmen]")
                (:en "in five [voci]")))
-    (s13 (:alt (:it "a 8")
+    (s13 (:alt (:it "a otto")
                (:de "mit acht [Stimmen]")
                (:en "in eight [voci]")))
-    (s14 (:alt (:it "a 8, dubbioso")
+    (s14 (:alt (:it "a otto, dubbioso")
                (:de "mit acht [Stimmen], bedenklich")
                (:en "in eight [voci], dubious")))
-    (s15 (:alt (:it "a 8")
+    (s15 (:alt (:it "a otto")
                (:de "mit acht [Stimmen]")
                (:en "in eight [voci]")))
-    (s16 (:alt (:it "a 8")
+    (s16 (:alt (:it "a otto")
                (:de "mit acht [Stimmen]")
                (:en "in eight [voci]")))
-    (s17 (:alt (:it "a 8")
+    (s17 (:alt (:it "a otto")
                (:de "mit acht [Stimmen]")
                (:en "in eight [voci]")))
-    (s18 (:alt (:it "a 8")
+    (s18 (:alt (:it "a otto")
                (:de "mit acht [Stimmen]")
                (:en "in eight [voci]"))))
    (:voice-order
