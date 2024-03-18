@@ -1,7 +1,7 @@
 `((:header
    (:filename "b4-c04-m1")
    (:alt-name "m4.004")
-   (:comment "q021_s148, rotation: 1.33, origin: 962. Die Normalisierung dieses Beispiels ist noch nicht implementiert.")
+   (:comment "q021_s148, rotation: 1.33, origin: 962.")
    (:creator "Vicentino21 / Johannes Keller")
    (:line-headings
     (:alt (:it "Esempio del tempo perfetto")

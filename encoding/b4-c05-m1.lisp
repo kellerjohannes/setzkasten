@@ -1,7 +1,7 @@
 `((:header
    (:filename "b4-c05-m1")
    (:alt-name "m4.005")
-   (:comment "q021_s149, rotation: 0, origin: 486. Die Normalisierung dieses Beispiels ist noch nicht implementiert.")
+   (:comment "q021_s149, rotation: 0, origin: 486.")
    (:creator "Vicentino21 / Johannes Keller")
    (:line-headings
     (:alt (:it "Esempio della prolatione perfetta in tempo perfetto")

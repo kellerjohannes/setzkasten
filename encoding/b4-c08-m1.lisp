@@ -7,20 +7,23 @@
     (s1 (:alt (:it "Esempio di batter alla breve")
               (:de "Beispiel alla breve zu schlagen")
               (:en "Example of beating alla breve")))
-    (s2 (:alt (:it "Alla breve")
-              (:de "alla breve")
+    (s2 (:alt (:it "[Esempio di batter] alla breve")
+              (:de "[Beispiel] alla breve [zu schlagen]")
               ;; Kommentar AS: wäre es nicht besser, wenn alle Teile (d.i. auch s2, s3 und s4) mit
               ;; "Essempio di batter", bzw. "Beispiel ... zu schlagen" und "Example of beating"
               ;; beginnen würden?
               ;;
+              ;; JK: Finde ich gut, habe ich entsprechend in allen Sprachen so angepasst. Ist von
+              ;; Luigi und Martin zu bestätigen.
+              ;;
               ;; OPEN
-              (:en "Alla breve")))
-    (s3 (:alt (:it "Alla semibreve")
-              (:de "alla semibreve")
-              (:en "Alla semibreve")))
-    (s4 (:alt (:it "Di proportione sesqualtera")
-              (:de "in der proportione sesqualtera")
-              (:en "Of the proportion sesquialtera")))))
+              (:en "[Example of beating] alla breve")))
+    (s3 (:alt (:it "[Esempio di batter] alla semibreve")
+              (:de "[Beispiel] alla semibreve [zu schlagen]")
+              (:en "[Example of beating] alla semibreve")))
+    (s4 (:alt (:it "[Esempio di batter] di proportione sesqualtera")
+              (:de "[Beispiel] in der proportione sesqualtera [zu schlagen]")
+              (:en "[Example of beating] in the proportion sesquialtera")))))
   (:data
    (:text 90 58
           (184 nil "Eſſempio di batter alla breue")

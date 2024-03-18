@@ -1,7 +1,7 @@
 `((:header
    (:filename "b4-c10-m1")
    (:alt-name "m4.010")
-   (:comment "q021_s153, rotation: 1.16, origin: 464. Von diesem Beispiel ist die Implementierung der Normalisierung noch nicht gemacht.")
+   (:comment "q021_s153, rotation: 1.16, origin: 464.")
    (:creator "Vicentino21 / Johannes Keller")
    ;; Bibelgruppe:
    ;; * 1 Cantus Firmus (erstes Beispiel)

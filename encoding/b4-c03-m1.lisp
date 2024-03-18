@@ -9,6 +9,11 @@
     ;; sind sie keine Pausen in dem Stück, sie geben nur den Modus an und die Form ist wichtig für
     ;; die Verständnis des Modus.
     ;;
+    ;; JK an Anne: du hast hier möglicherweise die moderne Edition angeschaut, die soll aber
+    ;; eigentlich gar nicht existieren. Ich habe sie jetzt aus der Pipeline genommen, weil sie
+    ;; automatisch trotzdem produziert wurde. Wichtig ist hier nur, dass das Fake-Simile stimmt, und
+    ;; das scheint mir der Fall zu sein. Einverstanden?
+    ;;
     ;; OPEN
     (s1 (:alt (:it "Esempio del modo\\maggiore perfetto")
               (:de "Beispiel des Modus\\maior perfectus")
