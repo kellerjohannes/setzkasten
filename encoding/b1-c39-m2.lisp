@@ -7,18 +7,23 @@
                  (:de "")
                  (:en "Example of the steps of the quinte naturali")))
    (:section-captions
-    (s1 (:alt (:it "ordine 1 de gradi\\della prima quinta\\composta")
+    ;; JK: ich schlage vor, auch hier die Ziffern auszuschreiben, also statt "ordine 1 de gradi"
+    ;; "primo ordine de gradi" zu schreiben. Ich habe Italienisch und Englisch angepasst, Deutsch
+    ;; hat Martin noch nicht eingefügt. Das ist von Luigi und Anne zu bestätigen.
+    ;;
+    ;; OPEN
+    (s1 (:alt (:it "primo ordine de gradi\\della prima quinta\\composta")
               (:de "")
-              (:en "order 1 of the steps\\of the first quinta\\composta")))
-    (s2 (:alt (:it "ordine 2 de gradi\\della seconda quinta\\composta")
+              (:en "first order of the steps\\of the first quinta\\composta")))
+    (s2 (:alt (:it "secondo ordine de gradi\\della seconda quinta\\composta")
               (:de "")
-              (:en "order 2 of the steps\\of the second quinta\\composta")))
-    (s3 (:alt (:it "ordine 3 de gradi\\della terza quinta\\composta")
+              (:en "second order of the steps\\of the second quinta\\composta")))
+    (s3 (:alt (:it "terzo ordine de gradi\\della terza quinta\\composta")
               (:de "")
-              (:en "order 3 of the steps\\of the third quinta\\composta")))
-    (s4 (:alt (:it "ordine 4 de gradi\\della quarta quinta\\composta")
+              (:en "third order of the steps\\of the third quinta\\composta")))
+    (s4 (:alt (:it "quarto ordine de gradi\\della quarta quinta\\composta")
               (:de "")
-              (:en "order 4 of the steps\\of the fourth quinta\\composta")))))
+              (:en "fourth order of the steps\\of the fourth quinta\\composta")))))
   (:data
    (:text 90 58
           (595 984 "ᴇſſempio de i gradi delle Ɋuinte naturali."))

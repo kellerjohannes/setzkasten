@@ -15,29 +15,31 @@
               ;;
               ;; JK: 3 ersetzt, Endungen belassen.
               ;;
-              ;; OPEN
-              (:de "Tonschritt der terza minore\\accidentale incomposto")
+              ;; JK: Deutsch angepasst.
+              ;;
+              ;; DONE
+              (:de "Tonschritt incomposto\\der terza minore\\accidentale")
               (:en "incomposto step of terza minore\\accidentale")))
     (s2 (:alt (:it "grado di terza minore\\accidentale composto")
-              (:de "Tonschritt der terza minore\\accidentale composto")
+              (:de "Tonschritt composto\\der terza minore\\accidentale")
               (:en "composto step of terza minore\\accidentale")))
     (s3 (:alt (:it "grado di terza minore\\accidentale incomposto")
-              (:de "Tonschritt der terza minore\\accidentale composto")
+              (:de "Tonschritt composto\\der terza minore\\accidentale")
               (:en "incomposto step of terza minore\\accidentale")))
     (s4 (:alt (:it "grado di terza minore\\accidentale composto")
-              (:de "Tonschritt der terza minore\\accidentale composto")
+              (:de "Tonschritt composto\\der terza minore\\accidentale")
               (:en "composto step of terza minore\\accidentale")))
     (s5 (:alt (:it "grado di terza minore\\accidentale incomposto")
-              (:de "Tonschritt der terza minore\\accidentale composto")
+              (:de "Tonschritt composto\\der terza minore")
               (:en "incomposto step of terza minore\\accidentale")))
     (s6 (:alt (:it "grado di terza minore\\accidentale incomposto")
-              (:de "Tonschritt der terza minore\\accidentale composto")
+              (:de "Tonschritt composto\\der terza minore\\accidentale")
               (:en "incomposto step of terza minore\\accidentale")))
     (s7 (:alt (:it "grado di terza minore\\accidentale incomposto")
-              (:de "Tonschritt der terza minore\\accidentale composto")
+              (:de "Tonschritt composto\\der terza minore\\accidentale")
               (:en "incomposto step of terza minore\\accidentale incomposto")))
     (s8 (:alt (:it "grado di terza minore\\accidentale incomposto")
-              (:de "Tonschritt der terza minore\\accidentale composto")
+              (:de "Tonschritt composto\\der terza minore\\accidentale")
               (:en "incomposto step of terza minore\\accidentale")))))
   (:data
    (:text 80 58

@@ -35,7 +35,10 @@
   ;;
   ;; JK: soll so bleiben, akzeptabel?
   ;;
-  ;; JK: Update zu diesem Thema: das Problem der Zuordnung der Schlüsselung (welche moderne Schlüssel werden für welche originale Schlüssel gesetzt?) habe ich nun in den Editionsrichtlinien der Musikbeispiele ausführlich kommentiert. Das erachte ich als genügend, weshalb ich diese Diskussion schliesse.
+  ;; JK: Update zu diesem Thema: das Problem der Zuordnung der Schlüsselung (welche moderne
+  ;; Schlüssel werden für welche originale Schlüssel gesetzt?) habe ich nun in den
+  ;; Editionsrichtlinien der Musikbeispiele ausführlich kommentiert. Das erachte ich als genügend,
+  ;; weshalb ich diese Diskussion schliesse.
   ;;
   ;; DONE
   (:data

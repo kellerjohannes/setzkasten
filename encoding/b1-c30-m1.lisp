@@ -12,9 +12,9 @@
     ;; singular, as "composta" and "incomposta".
     ;;
     ;; JK: Agreed about singular, not agreed about feminine (since we treat these cases as referring
-    ;; to 'grado'). I change everything to singulare masculine. Gut so?
+    ;; to 'grado'). I changed everything to singular masculine.
     ;;
-    ;; OPEN
+    ;; DONE
     (s1 (:alt (:it "composto")
               (:de "composto")
               (:en "composto")))

@@ -9,32 +9,38 @@
    ;; LC: Wie oben, würde ich so schreiben: 'Beispiel des incomposto Sprungs…' und 'Example of the
    ;; incompost leap…'
    ;;
-   ;; JK: von Anne und von Martin zu prüfen und gegebenenfalls in der Englischen Übersetzung
-   ;; anzupassen.
+   ;; JK an Luigi: in den vorigen Beispielen wurde das, was du vorschlägst nur für die
+   ;; Unterschriften der einzelnen Intervalle umgesetzt, die Titel der Musikbeispiele sind so wie
+   ;; hier, das 'incomposto' stets mit einem Komma getrennt. Ich belasse den Titel, passe aber die
+   ;; Unterschriften (siehe unten) an.
    ;;
-   ;; OPEN
+   ;; DONE
    (:section-captions
     (s1 (:alt (:it "salto di quinta\\imperfetta\\naturale\\incomposto")
-              (:de "Sprung der quinta\\imperfetta\\naturale\\incomposto")
-              (:en "leap of quinta\\imperfetta\\naturale\\incomposto")))
+              (:de "Sprung incomposto\\der quinta\\imperfetta\\naturale")
+              (:en "incomposto leap\\of the quinta\\imperfetta\\naturale")))
+    ;; JK an Anne: Ich habe 'incomposto' nun stets vor 'leap' gesetzt. Scheint mir konsequenter zu
+    ;; sein mit Blick auf die vorangehenden Beispielen. Gut so?
+    ;;
+    ;; OPEN
     (s2 (:alt (:it "salto di quinta\\imperfetta\\naturale\\incomposto")
-              (:de "Sprung der quinta\\imperfetta\\naturale\\incomposto")
-              (:en "leap of quinta\\imperfetta\\naturale\\incomposto")))
+              (:de "Sprung incomposto\\der quinta\\imperfetta\\naturale")
+              (:en "incomposto leap\\of the quinta\\imperfetta\\naturale")))
     (s3 (:alt (:it "salto di quinta\\imperfetta\\naturale\\incomposto")
-              (:de "Sprung der quinta\\imperfetta\\naturale\\incomposto")
-              (:en "leap of quinta\\imperfetta\\accidentale\\incomposto")))
+              (:de "Sprung incomposto\\der quinta\\imperfetta\\naturale")
+              (:en "incomposto leap\\of the quinta\\imperfetta\\accidentale")))
     (s4 (:alt (:it "salto di quinta\\imperfetta\\accidentale\\incomposto")
-              (:de "Sprung der quinta\\imperfetta\\naturale\\incomposto")
-              (:en "leap of quinta\\imperfetta\\accidentale\\incomposto")))
+              (:de "Sprung incomposto\\der quinta\\imperfetta\\naturale")
+              (:en "incomposto leap\\of the quinta\\imperfetta\\accidentale")))
     (s5 (:alt (:it "salto di quinta\\imperfetta\\accidentale\\incomposto")
-              (:de "Sprung der quinta\\imperfetta\\naturale\\incomposto")
-              (:en "leap of quinta\\imperfetta\\accidentale\\incomposto")))
+              (:de "Sprung incomposto\\der quinta\\imperfetta\\naturale")
+              (:en "incomposto leap\\of the quinta\\imperfetta\\accidentale")))
     (s6 (:alt (:it "salto di quinta\\imperfetta\\accidentale\\incomposto")
-              (:de "Sprung der quinta\\imperfetta\\naturale\\incomposto")
-              (:en "leap of quinta\\imperfetta\\accidentale\\incomposto")))
+              (:de "Sprung incomposto\\der quinta\\imperfetta\\naturale")
+              (:en "incomposto leap\\of the quinta\\imperfetta\\accidentale")))
     (s7 (:alt (:it "salto di quinta\\imperfetta\\accidentale\\incomposto")
-              (:de "Sprung der quinta\\imperfetta\\naturale\\incomposto")
-              (:en "leap of quinta\\imperfetta\\accidentale\\incomposto")))))
+              (:de "Sprung incomposto\\der quinta\\imperfetta\\naturale")
+              (:en "incomposto leap\\of the quinta\\imperfetta\\accidentale")))))
   (:preamble-lilypond
    (:clef-overrides
     (s3 v1 "treble_8")

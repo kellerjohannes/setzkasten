@@ -5,6 +5,11 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio del Salto della Quarta naturale e de suoi gradi, incomposto et composto.")
                  (:de "Beispiel des Sprungs der quarta naturale und von seinen Tonschritten, incomposto und composto.")
+                 ;; JK an Anne: Hier würde ich das 'incomposto and composto' auf 'leap' beziehen,
+                 ;; also "Example of the incomposto and composto leap of the quarta naturale, and of
+                 ;; its steps". Was meinst du?
+                 ;;
+                 ;; OPEN
                  (:en "Example of the leap of the quarta naturale, and of its incomposto and composto steps")))
    (:section-headings
     (s1 (:alt (:it "prima quarta")

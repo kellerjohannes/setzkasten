@@ -12,29 +12,32 @@
                  ;; AS: I changed it. Now it's up to you to close the discussion.
                  ;;
                  ;; DONE
-                 (:de "Beispiel der Tonschritte der terza più di maggiore incomposti und composti.")
+                 (:de "Beispiel der Tonschritte der terza più di maggiore, incomposti und composti.")
                  (:en "Example of the incomposti and composti steps of the terza più di maggiore")))
    (:section-captions
     (s1 (:alt (:it "grado di terza\\più di maggiore\\incomposto")
-              (:de "Tonschritt der terza\\più di maggiore\\incomposto")
+              (:de "Tonschritt incomposto\\der terza\\più di maggiore")
+              ;; JK: Deutsch angepasst
+              ;;
+              ;; DONE
               (:en "incomposto step\\of terza\\più di maggiore")))
     (s2 (:alt (:it "grado di terza\\più di maggiore\\composto")
-              (:de "Tonschritt der terza\\più di maggiore\\composto")
+              (:de "Tonschritt composto\\der terza\\più di maggiore")
               (:en "composto step\\of terza\\più di maggiore")))
     (s3 (:alt (:it "grado di terza un\\comma più di maggiore\\incomposto e composto")
-              (:de "Tonschritt der terza um ein\\comma più di maggiore\\incomposto und composto")
+              (:de "Tonschritt composto\\und incomposto\\der terza um ein\\comma più di maggiore")
               (:en "incomposto and composto\\step of a terza a\\comma più di maggiore")))
     (s4 (:alt (:it "grado di terza\\più di maggiore\\composto")
-              (:de "Tonschritt der terza\\più di maggiore\\composto")
+              (:de "Tonschritt composto\\der terza\\più di maggiore")
               (:en "composto\\step of terza\\più di maggiore")))
     (s5 (:alt (:it "grado di terza\\più di maggiore\\incomposto")
-              (:de "Tonschritt der terza\\più di maggiore\\incomposto")
+              (:de "Tonschritt incomposto\\der terza\\più di maggiore")
               (:en "incomposto\\step of terza\\più di maggiore")))
     (s6 (:alt (:it "grado di terza\\più di maggiore\\composto")
-              (:de "Tonschritt der terza\\più di maggiore\\composto")
+              (:de "Tonschritt composto\\der terza\\più di maggiore")
               (:en "composto\\step of terza\\più di maggiore")))
     (s7 (:alt (:it "grado di terza\\più di maggiore\\incomposto")
-              (:de "Tonschritt der terza\\più di maggiore\\incomposto")
+              (:de "Tonschritt incomposto\\der terza\\più di maggiore")
               (:en "incomposto\\step of terza\\più di maggiore")))))
   (:data
    (:text 150 58

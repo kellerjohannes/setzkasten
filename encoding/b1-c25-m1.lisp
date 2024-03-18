@@ -12,28 +12,32 @@
                  ;;
                  ;; DONE
                  (:de "Beispiel des Tonschritts oder Sprungs der terza manco di minore\\oder minima, composto und incomposto.")
+                 ;; JK: Deutsch in Absprache mit Martin angepasst, italienische Endungen auf 'grado'
+                 ;; bezogen.
+                 ;;
+                 ;; DONE
                  (:en "Example of the composto and incomposto step or leap\\of the terza manco di minore, or minima")))
    (:section-captions
-    (s1 (:alt (:it "grado di terza\\minima\\incomposta")
-              (:de "Tonschritt der terza\\minima\\incomposta")
+    (s1 (:alt (:it "grado di terza\\minima\\incomposto")
+              (:de "Tonschritt incomposto\\der terza minima")
               (:en "incomposto\\step of a\\terza minima")))
-    (s2 (:alt (:it "grado di terza\\minima\\composta")
-              (:de "Tonschritt der terza\\minima\\composta")
+    (s2 (:alt (:it "grado di terza\\minima\\composto")
+              (:de "Tonschritt incomposto\\der terza minima")
               (:en "composto\\step of a\\terza minima")))
-    (s3 (:alt (:it "grado di terza\\minima\\incomposta")
-              (:de "Tonschritt der terza\\minima\\incomposta")
+    (s3 (:alt (:it "grado di terza\\minima\\incomposto")
+              (:de "Tonschritt incomposto\\der terza minima")
               (:en "incomposto\\step of a\\terza minima")))
-    (s4 (:alt (:it "grado di terza\\minima\\composta")
-              (:de "Tonschritt der terza\\minima\\composta")
+    (s4 (:alt (:it "grado di terza\\minima\\composto")
+              (:de "Tonschritt incomposto\\der terza minima")
               (:en "composto\\step of a\\terza minima")))
-    (s5 (:alt (:it "grado di terza\\minima\\incomposta")
-              (:de "Tonschritt der terza\\minima\\incomposta")
+    (s5 (:alt (:it "grado di terza\\minima\\incomposto")
+              (:de "Tonschritt incomposto\\der terza minima")
               (:en "incomposto\\step of a\\terza minima")))
-    (s6 (:alt (:it "grado di terza\\minima\\composta")
-              (:de "Tonschritt der terza\\minima\\composta")
+    (s6 (:alt (:it "grado di terza\\minima\\composto")
+              (:de "Tonschritt incomposto\\der terza minima")
               (:en "composto\\step of a\\terza minima")))
-    (s7 (:alt (:it "grado di terza\\minima\\incomposta")
-              (:de "Tonschritt der terza\\minima\\incomposta")
+    (s7 (:alt (:it "grado di terza\\minima\\incomposto")
+              (:de "Tonschritt incomposto\\der terza minima")
               (:en "incomposto\\step of a\\terza minima")))))
   (:data
    (:text 90 58

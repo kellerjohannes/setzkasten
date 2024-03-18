@@ -6,7 +6,7 @@
    ;; JK, aus der Bibelgruppe vom 3. Januar 2024:
    ;;
    ;; Die Kreuze sollten viel stärker differenziert werden. Beschluss
-   ;; - Barré und crit ohne Unterscheidung, x und ♯
+   ;; - Barré und crit ohne Unterscheidung, x und ♯ unterschieden, wie im Original.
    ;; - Für norm soll ein neues Symbol erstellt werden, ein Kreuz, das
    ;;   aus zwei Strichen besteht ('quartertone-sharp'?)
    ;; - Zusätzlich soll, unabhängig von der Edition, eine Übertragung von

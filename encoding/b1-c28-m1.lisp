@@ -13,35 +13,40 @@
                  ;;
                  ;; JK an Anne: Luigi ist mit der von mir vorgeschlagenen Idealisierung
                  ;; einverstanden. Würdest du das im Englischen noch anpassen wollen, also "Example
-                 ;; of the composti and incomposti steps..."?
+                 ;; of the composti and incomposti steps..."? Ich habe diese Anpassung
+                 ;; implementiert, du brauchst du zu kontrollieren, ob du damit einverstanden
+                 ;; bist. Wenn ja, brauchst du nicht zu tun.
                  ;;
                  ;; OPEN
-                 (:de "Beispiel der Tonschritte der terza più di minore composti und incomposti.")
-                 (:en "Example of the composto and incomposto steps of the terza più di minore")))
+                 (:de "Beispiel der Tonschritte der terza più di minore, composti und incomposti.")
+                 ;; JK: Deutsch angepasst.
+                 ;;
+                 ;; DONE
+                 (:en "Example of the composti and incomposti steps of the terza più di minore")))
    (:section-captions
     (s1 (:alt (:it "grado di terza\\più di minore\\incomposto")
-              (:de "Tonschritt der terza\\più di minore\\incomposto")
+              (:de "Tonschritt incomposto\\der terza\\più di minore")
               (:en "incomposto step\\of terza\\più di minore")))
     (s2 (:alt (:it "grado di terza\\più di minore\\composto")
-              (:de "Tonschritt der terza\\più di minore\\composto")
+              (:de "Tonschritt composto\\der terza\\più di minore")
               (:en "composto step\\of terza\\più di minore")))
     (s3 (:alt (:it "grado di terza\\più di minore\\incomposto")
-              (:de "Tonschritt der terza\\più di minore\\incomposto")
+              (:de "Tonschritt incomposto\\der terza\\più di minore")
               (:en "incomposto step\\of terza\\più di minore")))
     (s4 (:alt (:it "grado di terza\\più di minore\\composto")
-              (:de "Tonschritt der terza\\più di minore\\composto")
+              (:de "Tonschritt composto\\der terza\\più di minore")
               (:en "composto step\\of terza\\più di minore")))
     (s5 (:alt (:it "grado di terza\\più di minore\\incomposto")
-              (:de "Tonschritt der terza\\più di minore\\incomposto")
+              (:de "Tonschritt incomposto\\der terza\\più di minore")
               (:en "incomposto step\\of terza\\più di minore")))
     (s6 (:alt (:it "grado di terza\\più di minore\\composto")
-              (:de "Tonschritt der terza\\più di minore\\composto")
+              (:de "Tonschritt composto\\der terza\\più di minore")
               (:en "composto step\\of terza\\più di minore")))
     (s7 (:alt (:it "grado di terza\\più di minore\\incomposto")
-              (:de "Tonschritt der terza\\più di minore\\incomposto")
+              (:de "Tonschritt incomposto\\der terza\\più di minore")
               (:en "incomposto step\\of terza\\più di minore")))
     (s8 (:alt (:it "grado di terza\\più di minore\\composto")
-              (:de "Tonschritt der terza\\più di minore\\composto")
+              (:de "Tonschritt composto\\der terza\\più di minore")
               (:en "composto step\\of terza\\più di minore")))))
   (:data
    (:text 90 58
