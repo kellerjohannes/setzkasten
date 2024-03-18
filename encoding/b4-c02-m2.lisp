@@ -2,6 +2,10 @@
 ;;
 ;; DONE
 
+;; JK: Für dieses Beispiel war ursprünglich keine Normalisierung vorgesehen, nun habe ich sie aber dennoch eingerichtet. Das ist noch zu entscheiden. Im TEI-file scheinen alle Fassungen vorgesehen zu sein, falls keine moderne Notenschrift angeboten werden soll, muss das Rolf kommuniziert werden.
+;;
+;; OPEN
+
 `((:header
    (:filename "b4-c02-m2")
    (:alt-name "m2.002")
@@ -34,7 +38,6 @@
     (:alt (:it "Quinto ordine")
           (:de "fünfte Ordnung")
           (:en "Fifth order"))
-    nil
     (:alt (:it "Sesto ordine")
           (:de "sechste Ordnung")
           (:en "Sixth order"))
@@ -73,7 +76,13 @@
     ;; settimo
     (s23 v1)
     (s24 v1)
-    (s25 v1)))
+    (s25 v1))
+   )
+  (:preamble-lilypond
+   (:clef-overrides
+    (s2 v1 "treble_8")
+    (s6 v1 "treble_8")
+    (s19 v1 "treble_8")))
   (:data
    (:text 70 58
      (10 2144 "Dimoſtratione delle chiaui de i Soprani , che inſegnano à leggere tutte lʼaltre ſorti di chiaui"))
@@ -144,8 +153,8 @@
    (:vspace 90)
    ;; music line 11
    (:music 2214
-           (:section s17) (:newline) (:f-clef) max7 fclef7 b22 fl3 fl6 (:key-signature nil nil :flat nil nil nil :flat) b38 sb0 b38 sb1 b38 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sb10 b38
-           (:section s21) (:newline) cclef3 b22 fl2 fl5 fl18 (:key-signature nil nil :flat nil nil :flat :flat) b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b22 sb10 b22 bl)
+           (:section s17) (:f-clef) max7 fclef7 b22 fl3 fl6 (:key-signature nil nil :flat nil nil nil :flat) b38 sb0 b38 sb1 b38 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sb9 b22 sb10 b38
+           (:section s21) cclef3 b22 fl2 fl5 fl18 (:key-signature nil nil :flat nil nil :flat :flat) b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b22 sb10 b22 bl)
    (:vspace 90)
    ;; music line 12
    (:music 2210
