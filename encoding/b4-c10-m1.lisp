@@ -55,20 +55,28 @@
           (1615 587 "ᴄolorite nel tēpo perfetto"))
    (:music 2209
            (:voice v1)
-           (:section s1) (:f-clef) max5 fclef5 b22 brbl3 b22 brbl5 b22 brbl4 b22 brbl3 b22 brbl7 b22 brbl5 b22 brbl6 b22 brbl7 b22 brbl9 b22 brbl8 b22 brbl7 b22 brbl10 b22 brbl9 brbl8 b22 brbl7 brbl6 brbl7 b22 brbl3 b22 brbl6 b22 brbl5 b22 brbl4 b22 brbl3 b22
-           (:section s2) cclef7 b22
+           (:section s1) (:f-clef) max5 fclef5
+           (:alt (:diplomatic)
+                 (:modern met-imperf-min)
+                 (:coord-barre "")
+                 (:coord-norm "G1")
+                 (:comment "Die Taktsignatur wurde für die moderne Notenschrift ergänzt.")
+                 (:flag :ready) (:id 1))
+           (:duration-override 1/2) b22 brbl3 b22 brbl5 b22 brbl4 b22 brbl3 b22 brbl7 b22 brbl5 b22 brbl6 b22 brbl7 b22 brbl9 b22 brbl8 b22 brbl7 b22 brbl10 b22 brbl9 brbl8 b22 brbl7 brbl6 brbl7 b22 brbl3 b22 brbl6 b22 brbl5 b22 brbl4 b22 brbl3 b22
+           (:duration-override 1)
+           (:section s2) (:newline) cclef7 b22
            (:alt (:diplomatic met-imperf-min-dim)
                  (:critical met-perf-min-dim)
                  (:coord-barre "MZ1 N23")
                  (:coord-norm "G2")
                  (:comment "In allen Exemplaren: Taktsignatur ist ein gestrichenes C.")
-                 (:flag :ready) (:id 1))
-           met-3-2 b22 br0 sb1 brbl3 b22 brbl2 b22 brbl4 bl)
+                 (:flag :ready) (:id 2))
+           met-3-2 b22 br0 sb1 (:color-start) brbl3 b22 brbl2 b22 (:color-stop) brbl4 bl)
    (:text 90 58
           (168 691 "ᴄolorite nel tempo imperfetto")
           (1618 593 "ᴄolorite nellʼEmiolia mag."))
    (:music 2214
-           (:section s3) cclef7 b22 met-imperf-min-dim b22 m1 dot2 sm2 b22 m3 b22 sb4 b22 m5 b22
+           (:section s3) (:newline) cclef7 b22 met-imperf-min-dim b22 m1 dot2 sm2 b22 m3 b22 sb4 b22 m5 b22
            sbbl7
            ;; JK: Hier ist ausnahmsweise eine Abweichung zwischen Idealisierung und
            ;; Normalisierung beabsichtigt, denn die schwarze Notation wird hier als punktierte
@@ -88,5 +96,5 @@
           (259 661 "ᴄolorite nellʼᴇmiolia minore")
           (1290 834 "ᴄantar alla breue detto da Prattici."))
    (:music 2206
-           (:section s5) cclef7 b22 met-imperf-min-dim b22 met-3 sbbl1 b22 sm2 b22 sbbl3 b22 sm1 b22 sbbl8 b22 sm6 b22 sbbl7 b22 sm6 b22 sbbl5 b22 sm4 b22 br5 b22
-           (:section s6) cclef7 b22 met-imperf-min b22 sm4 b22 sm5 b22 sm6 b22 sm7 b22 sm5 dot6 cr4 b22 cr3 b22 cr2 sm1 sm5 sm7 dot8 cr6 cr5d sm6 br7 bl)))
+           (:section s5) (:newline) cclef7 b22 met-imperf-min-dim b22 met-3 sbbl1 b22 sm2 b22 sbbl3 b22 sm1 b22 sbbl8 b22 sm6 b22 sbbl7 b22 sm6 b22 sbbl5 b22 sm4 b22 br5 b22
+           (:section s6) (:newline) cclef7 b22 met-imperf-min b22 sm4 b22 sm5 b22 sm6 b22 sm7 b22 sm5 dot6 cr4 b22 cr3 b22 cr2 sm1 sm5 sm7 dot8 cr6 cr5d sm6 br7 bl)))

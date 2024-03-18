@@ -529,13 +529,13 @@
                 (:double-accidentals-cents-e *dict-ly-notenames-double-accidentals-cents-e*))
               :test #'equal)))
 
-(defun key->ly-pitch (key note-value dottedp duration-override divider segno convention conversion)
+(defun key->ly-pitch (key note-value dottedp duration-override divider segno convention conversion colorp)
   (if key
       (let* ((new-key (convert-pitch key conversion))
              (notename (key->ly-notename (first new-key) (second new-key) (third new-key)
                                          convention)))
-        ;; (format t "~&ly notename: ~s" notename)
-        (format nil "~a~@[~a~]~a~a~a~a~@[~a~]~@[~a~] ~@[~a~]"
+        ;; (format t "~&colorp: ~s" colorp)
+        (format nil "~a~@[~a~]~a~a~a~a~@[~a~]~@[~a~]~@[~a~] ~@[~a~]"
                 (first notename) ;; root name (a, b, c, ...)
                 (second notename) ;; alteration suffix (is, es)
                 (octave->ly-octave (+ (fourth new-key)
@@ -550,6 +550,10 @@
                 (if duration-override (format nil "*~a" duration-override) "") ;; for tuplet implementation
                 (third notename) ;; dot-appendix (-.)
                 (when segno "^\\markup { \\center-column { \\segno } }")
+                (case colorp
+                  (:color-start "\\startGroup")
+                  (:color-stop "\\stopGroup")
+                  (otherwise nil))
                 (case divider
                   (:regular "\\bar \"|\"")
                   (:dashed "\\bar \"!\"")
@@ -671,7 +675,8 @@
                                                     (divider mobject)
                                                     (segno mobject)
                                                     (notename-convention backend)
-                                                    (pitch-conversion backend))
+                                                    (pitch-conversion backend)
+                                                    (colorp mobject))
                                      (key->ly-pitch (list (first old-pitch)
                                                           (second (ligature mobject))
                                                           (fourth (ligature mobject))
@@ -682,7 +687,8 @@
                                                     (divider mobject)
                                                     (segno mobject)
                                                     (notename-convention backend)
-                                                    (pitch-conversion backend))))
+                                                    (pitch-conversion backend)
+                                                    (colorp mobject))))
                            (format nil " ~a"
                                    (key->ly-pitch (pitch mobject)
                                                   (value mobject)
@@ -691,7 +697,8 @@
                                                   (divider mobject)
                                                   (segno mobject)
                                                   (notename-convention backend)
-                                                  (pitch-conversion backend))))))
+                                                  (pitch-conversion backend)
+                                                  (colorp mobject))))))
     (values result current-clef current-key)))
 
 
@@ -827,6 +834,11 @@
 ~16,0t\\Score
 ~16,0t\\override SpacingSpanner.common-shortest-duration = #(ly:make-moment ~a)
 ~16,0t\\override LyricText.font-size = #'-1.0
+~14,0t}
+~14,0t\\context {
+~16,0t\\Voice
+~16,0t\\consists Horizontal_bracket_engraver
+~16,0t\\override HorizontalBracket.direction = #UP
 ~14,0t}
 ~12,0t}
 ~10,0t}

@@ -137,7 +137,11 @@
    (segno :initform nil
           :initarg :segno
           :accessor segno
-          :documentation "When T, this will trigger the output of a 'segno'-sign above this mobject."))
+          :documentation "When T, this will trigger the output of a 'segno'-sign above this mobject.")
+   (colorp :initform nil
+           :initarg :colorp
+           :accessor colorp
+           :documentation "Used to typeset colors (black notation). NIL is as regular note, :color-start marks the beginning of a color, :color-stop its end."))
   (:documentation "This class contains all information about a rest or note. Pitch encoding and duration are obvious. Also clef and tonality context are stored for each note individually. When rendering the `mobject' clef and tonality changes need to be identified with a state variable in order to trigger clef display correctly."))
 
 (defmethod get-pitch ((mobject mobject))
@@ -234,7 +238,7 @@
                mobject-instance))
 
 (defmethod make-note (id lettera chromatic-alteration enharmonic-alteration octave value dottedp
-                      duration-override clef key-signature ligature divider segno meter)
+                      duration-override clef key-signature ligature divider segno meter colorp)
   "Instanciates a `mobject' representing a note (not a rest). `lettera', `chromatic-alteration' and `enharmonic-alteration' all need to be provided in keyword form."
   (make-instance 'mobject :id id
                           :pitch (list lettera chromatic-alteration enharmonic-alteration octave)
@@ -246,7 +250,8 @@
                           :key-signature key-signature
                           :ligature ligature
                           :segno segno
-                          :divider divider))
+                          :divider divider
+                          :colorp colorp))
 
 (defmethod make-rest (id value dottedp duration-override clef key-signature divider meter)
   "Instanciates a `mobject' representing a rest (not a note)."

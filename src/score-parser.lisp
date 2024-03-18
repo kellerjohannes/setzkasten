@@ -31,6 +31,9 @@
    (divider-flag :initform nil
                  :accessor divider-flag
                  :documentation "Registers divider-information in the score encoding data, so that the mobject slot `divider' can be set for the next note accordingly.")
+   (color-flag :initform nil
+               :accessor color-flag
+               :documentation ":color-start to mark the beginning of colored notes, :color-stop to mark its ending.")
    (segno-flag :initform nil
                :accessor segno-flag
                :documentation "Registers a 'segno'-sign belonging to a note, will be transferred into the `mobject'.")
@@ -79,6 +82,9 @@
 
 (defmethod deactivate-ligature-flag ((parser-state parser-state))
   (setf (ligature-flag parser-state) nil))
+
+(defmethod set-color-flag ((parser-state parser-state) flag)
+  (setf (color-flag parser-state) flag))
 
 (defmethod set-key-signature ((parser-state parser-state) accidental-list)
   "`flat-list' and `sharp-list' both contain numbers representing the staff-positions, 0-10."
@@ -162,7 +168,8 @@
                                              (ligature-flag parser-state)
                                              (divider-flag parser-state)
                                              (segno-flag parser-state)
-                                             (meter parser-state)))))
+                                             (meter parser-state)
+                                             (color-flag parser-state)))))
     (mapc (lambda (section-id)
             (when *statistics-active*
               (push (list :name (filename score)
@@ -177,7 +184,8 @@
           (section-ids parser-state)))
 
   (reset-divider-flag parser-state)
-  (reset-segno-flag parser-state))
+  (reset-segno-flag parser-state)
+  (set-color-flag parser-state nil))
 
 
 (defmethod add-rest ((score score) (parser-state parser-state) duration dottedp)
@@ -266,6 +274,8 @@
                 (:duration-override (set-duration-override parser-state (second candidate)))
                 (:meter-override (setf (meter parser-state) candidate))
                 (:ligature-start (set-ligature-flag parser-state (rest candidate)))
+                (:color-start (set-color-flag parser-state :color-start))
+                (:color-stop (set-color-flag parser-state :color-stop))
                 (:ligature-end (deactivate-ligature-flag parser-state))
                 (:newline
                  (mapc (lambda (section-id) (set-newline score section-id))
