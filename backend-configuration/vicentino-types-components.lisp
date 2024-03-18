@@ -17,6 +17,7 @@
   (component-flag        nil "flag-semicroma-right"      3 3 0.25 0.5 t 0.7 0.5)
   (component-sharp       nil "sharp-large"               2.5 1 t 10)
   (component-sharp       nil "sharp-small"               2.5 0.69 t 7)
+  (component-sharp       nil "single-sharp"              4.5 0.69 nil 0)
   (component-dot         nil "enharmonic-dot"      0.3 :dot)
   (component-dot         nil "comma"               80 :comma)
   (component-c-clef      nil "c-clef"              5.5 10.5 3.5 0.8 1.2 2.2 1 0.6)
