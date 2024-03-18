@@ -696,6 +696,7 @@
     (:crd7 (add-note score parser-state :croma dottedp 7 :dot))
     (:scr3 (add-note score parser-state :semicroma dottedp 3 nil))
     (:scr4 (add-note score parser-state :semicroma dottedp 4 nil))
+    (:scr5d (add-note score parser-state :semicroma dottedp 5 nil))
     (:scr6 (add-note score parser-state :semicroma dottedp 6 nil))
     (:scr7 (add-note score parser-state :semicroma dottedp 7 nil))
     (:scrd2 (add-note score parser-state :semicroma dottedp 2 :dot))
