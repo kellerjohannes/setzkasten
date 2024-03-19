@@ -630,13 +630,14 @@
           (convert-key-signature key-signature conversion)))
 
 (defparameter *dict-ly-meter-signatures*
-  '(((:semicircle nil :cut) "\\once \\override Score.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural22\")" "4/2")
-    ((:semicircle nil nil) "\\once \\override Score.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural44\")" "4/2")
-    ((:semicircle :dot nil) "\\once \\override Score.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural64\")" "9/2")
-    ((:circle nil :cut) "\\once \\override Score.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural34\")" "3/1")
-    ((:circle nil nil) "\\once \\override Score.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural32\")" "6/1")
-    ((:circle :dot nil) "\\once \\override Score.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural94\")" "9/1")
-    ((:meter-override "2/2" nil) "\\once \\override Score.TimeSignature.stencil = ##f" "2/2")))
+  '(((:semicircle nil :cut) "\\once \\override Staff.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural22\")" "4/2")
+    ((:semicircle nil nil) "\\once \\override Staff.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural44\")" "4/2")
+    ((:semicircle :dot nil) "\\once \\override Staff.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural64\")" "9/2")
+    ((:circle nil :cut) "\\once \\override Staff.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural34\")" "3/1")
+    ((:circle nil nil) "\\once \\override Staff.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural32\")" "6/1")
+    ((:circle :dot nil) "\\once \\override Staff.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural94\")" "9/1")
+    ((:meter-override "2/2" nil) "\\once \\override Staff.TimeSignature.stencil = ##f" "2/2")
+    ((:meter-override "sesquialtera" nil) "\\once \\override.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural34\")" "3/2")))
 
 (defun generate-ly-meter (meter-description)
   (let ((result (assoc meter-description *dict-ly-meter-signatures* :test #'equalp)))
@@ -827,7 +828,7 @@
 ~{~&~a~}
 ~12,0t>>
 ~12,0t\\layout {
-%~14,0t\\enablePolymeter
+~14,0t\\enablePolymeter
 %~14,0t#(layout-set-staff-size 15)
 ~@[~14,0tindent = ~a\\cm~]
 ~14,0t\\context {

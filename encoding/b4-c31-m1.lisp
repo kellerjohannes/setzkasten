@@ -5,15 +5,22 @@
 `((:header
    (:filename "b4-c31-m1")
    (:alt-name "m4.022")
-   (:comment "q021_s175, rotation: 0, origin: 441; q021_s176, rotation: 1.02, origin: 998. Von diesem Beispiel ist die Normalisierung noch nicht implementiert.")
+   (:comment "q021_s175, rotation: 0, origin: 441; q021_s176, rotation: 1.02, origin: 998.")
    (:creator "Vicentino21 / Johannes Keller")
    (:line-headings
+    ;; JK: hier waren die Überschriften falsch gesetzt, ich habe sie neu verteilt und die Texte
+    ;; angepasst. Das muss von Anne geprüft werden.
+    ;;
+    ;; OPEN
     (:alt (:it "Modo di entrare nella proportione di equalità, tre contra tre, a due voci")
           (:de "")
           (:en "Method of entering into the proportion of equality, three against three, in two voci"))
-    (:alt (:it "Proportione sesqualtera, due contra tre, a due voci. Emiolia maggiore")
+    (:alt (:it "Proportione sesqualtera, due contra tre, a due voci")
           (:de "")
-          (:en "Sesquialtera proportion, two against three, in two voci. Major emiolia"))
+          (:en "Sesquialtera proportion, two against three, in two voci"))
+    (:alt (:it "Emiolia maggiore, a due voci")
+          (:de "")
+          (:en "Major emiolia, in two voci"))
     (:alt (:it "Proportione sesqualtera, buona nel battere et nel levare, a due voci")
           (:de "")
           (:en "Sesquialtera proportion, good on the beat and in elevation, in two voci"))
@@ -44,6 +51,12 @@
                  (:en "Tenor")))
     (s4 v2 (:alt (:it "Basso")
                  (:de "")
+                 (:en "Bass")))
+    (s5 v1 (:alt (:it "Tenore")
+                 (:de "")
+                 (:en "Tenor")))
+    (s5 v2 (:alt (:it "Basso")
+                 (:de "")
                  (:en "Bass")))))
   (:data
    (:text 90 58
@@ -72,28 +85,37 @@
            (:voice v1)
            (:section s2) (:newline) cclef7 b22 fl6 (:key-signature nil nil nil nil nil nil :flat) b38 met-imperf-min-dim b22 br4 b22 br6 b22 br5 b22 longa4 b22 bl
            b38 b125 b125 b22
+           (:section s3) (:newline)
            cclef7 b22 fl6 (:key-signature nil nil nil nil nil nil :flat) b22 brbl4 b22 sbbl5 b22 sbbl6 b22 sbbl4 b22 sbbl3 b22 brbl4 b22 sbbl1 b22 sbbl5 dot6 sm6 b22 sbbl7 b22 sbbl8 b22 sbbl7 b22 sbbl8 b22 sbbl6 b22 brbl5 b22 brbl4 bl)
    (:text 90 58
           (111 nil "Proportione ſeſqualtera,due contra tre.")
           (1303 nil "Emiolia maggiore."))
    (:music 2211
+           (:section s2)
            (:voice v2)
-           (:alt (:diplomatic (:f-clef) max7 fclef7 fl6)
-                 (:critical cclef7 b38 fl6 b38)
-                 (:coord-barre "MZ4 N1")
-                 (:coord-norm "G3-4 St2")
-                 (:comment "In allen Exemplaren: F4-Schlüssel.")
-                 (:flag :ready) (:id 2))
-           (:key-signature nil nil nil nil nil nil :flat) b22 met-perf-min-dim b22 met-3-2 b22 sb1 sb4 sb3 m1 m8 dot8 sm7 sb5 m6 sb7 sb5 sh4 m4 m5 br1
+           (:f-clef) max7 fclef7 fl6
+           ;; JK: Ich habe einen kritischen Eingriff hier entfernt, der diesen Bass-Schlüssel durch
+           ;; einen C4-Schlüssel ersetzte. Es scheint hier kein Eingriff nötig zu sein.
+           ;;
+           ;; DONE
+           (:key-signature nil nil nil nil nil nil :flat) b22
+
+           (:alt (:diplomatic met-perf-min-dim)
+                 (:modern (:meter-override "sesquialtera" nil))
+                 (:coord-barre "")
+                 (:coord-norm "")
+                 (:comment "") (:flag :draft) (:id 0))
+           b22 met-3-2 b22
+           (:duration-override 2/3) sb1 sb4 sb3 m1 m8 dot8 sm7 sb5 m6 sb7 sb5 sh4 m4 m5 br1
+           (:duration-override 1)
+           (:section s3)
            (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat) sbbl4 dot4 sm3 sbbl2 sbbl1 dot2 sm2 sbbl3 dot4 sm1 sbbl4 sbbl3 sbbl2 brbl7 sbbl5 sbbl6 sm7 sm5d brbl8 sh7 sbbl7 brbl8)
-
-
    (:text 90 58
           (281 1310 "ᴘroportione ſeſqualtera,buona nel battere & nel leuare,")
           (1688 nil "Tenore"))
    (:music 2221
            (:voice v1)
-           (:section s3) (:newline) (:f-clef) max7 fclef7 b38
+           (:section s4) (:newline) (:f-clef) max7 fclef7 b38
            (:alt (:diplomatic fl6)
                  (:critical fl3)
                  (:coord-barre "MZ5 N1")
@@ -112,6 +134,6 @@
           (166 nil "ᴇmiolia minore,")
           (906 nil "Tenore & ʙaſſo à due uoci."))
    (:music 2232
-           (:section s4)
+           (:section s5)
            (:voice v1) (:newline) cclef7 b38 fl6 (:key-signature nil nil nil nil nil nil :flat) b38 met-imperf-min-dim b38 met-3 b38 sm4 dot4 cr5 b22 sm6 b22 sm4 b22 sbbl7 b38 sm6 b38 sbbl5 b38 brbl4 b38
            (:voice v2) (:f-clef) max7 fclef7 b38 fl3 (:key-signature nil nil nil nil nil nil :flat) b22 met-imperf-min-dim b22 met-3 b22 sbbl4 b22 sm1 b22 fl6 b22 sm6 dot6 cr5 b22 sm4 b22 sbbl8 b22 sh7 b38 sm7 b22 br8 b38 bl)))

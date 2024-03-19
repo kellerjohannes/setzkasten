@@ -28,26 +28,32 @@
    ;; nach Willi Apel eine punktierte Interpretation, d.h. der erste Color entspricht der
    ;; rhythmischen Figur zu Beginn der Phrase.
    ;;
-   ;; OPEN
+   ;; JK: Ich habe für alle sechs Beispiele konkrete Intepretationen vorgeschlagen. Bei den
+   ;; Kapitelkommentaren habe ich vermerkt, dass man für dieses Kapitel ev. etwas formulieren muss,
+   ;; um die Interpretationen zu begründen.
+   ;;
+   ;; DONE
    (:section-headings
     (s1 (:alt (:it "Esempio delle note colorite nel canto fermo")
               (:de "Beispiel der farbigen Noten im canto fermo")
               (:en "Example of colored notes in canto fermo")))
     ;; Anne: sollte nicht alle folgenden auch mit "Example of" beginnen?
     ;;
-    ;; OPEN
-    (s2 (:alt (:it "Colorite nel tempo perfetto")
-              (:de "farbige [Noten] im Tempus perfectus")
-              (:en "Colored [notes] in perfect tempus")))
-    (s3 (:alt (:it "Colorite nel tempo imperfetto")
-              (:de "farbige [Noten] im Tempus imperfectus")
-              (:en "Colored [notes] in imperfect tempus")))
-    (s4 (:alt (:it "Colorite nell'emiolia maggiore")
-              (:de "farbige [Noten] in Hemiola maior")
-              (:en "Colored [notes] in emiolia maggiore")))
-    (s5 (:alt (:it "Colorite nell'emiolia minore")
-              (:de "farbige [Noten] in Hemiola minor")
-              (:en "Colored [notes] in emiolia minore")))
+    ;; JK: Ja, finde ich gut, habe ich in allen Sprachen in eckigen Klammern ergänzt.
+    ;;
+    ;; DONE
+    (s2 (:alt (:it "[Esempio delle note] colorite nel tempo perfetto")
+              (:de "[Beispiel der] farbigen [Noten] im Tempus perfectus")
+              (:en "[Example of] colored [notes] in perfect tempus")))
+    (s3 (:alt (:it "[Esempio delle note] colorite nel tempo imperfetto")
+              (:de "[Beispiel der] farbigen [Noten] im Tempus imperfectus")
+              (:en "[Example of] colored [notes] in imperfect tempus")))
+    (s4 (:alt (:it "[Esempio delle note] colorite nell'emiolia maggiore")
+              (:de "[Beispiel der] farbigen [Noten] in Hemiola maior")
+              (:en "[Example of] colored [notes] in emiolia maggiore")))
+    (s5 (:alt (:it "[Esempio delle note] colorite nell'emiolia minore")
+              (:de "[Beispiel der] farbigen [Noten] in Hemiola minor")
+              (:en "[Example of] colored [notes] in emiolia minore")))
     (s6 (:alt (:it "Cantar alla breve detto da prattici")
               (:de "von den Praktikern Singen alla breve genannt")
               (:en "Called singing alla breve by practical [musicians]")))))

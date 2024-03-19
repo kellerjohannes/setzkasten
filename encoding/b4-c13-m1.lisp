@@ -17,9 +17,10 @@
    ;; JK: Ich verstehe den Kommentar nicht. Die beiden obigen Textelemente ("Punto in sincopa" /
    ;; "Punti dubbiosi") erscheinen im modernen Notensatz als Zwischentitel, da ich sie als solche
    ;; interpretiere. Gut so?
+   ;;
    ;; AS: Ich finde es immer noch schwierig, die Textteile im Beispiel zu koordinieren mit dem Original, aber es stimmt grundsätzlich.
    ;;
-   ;; OPEN
+   ;; DONE
    (:section-headings
     ;; AS: Die section-headings sollten alle zentriert über ihre Beispiele sein, oder?
     ;;
@@ -40,12 +41,12 @@
     (s4 (:alt (:it "[Punto] di undecima")
               (:de "[Punkt] der undecima")
               (:en "[Dot] of the undecima")))
-    (s5 (:alt (:it "Punto che salva due ottave")
-              (:de "Punkt, der zwei [parallele] ottave rettet")
-              (:en "Dot which rescues two [consecutive] ottave")))
-    (s6 (:alt (:it "[Punto che] salva due quinte")
-              (:de "[Punkt, der] zwei [parallele] quinte rettat")
-              (:en "[Dot which] rescues two [consecutive] quinte")))
+    (s5 (:alt (:it "Punto che salva\\due ottave")
+              (:de "Punkt, der zwei\\[parallele] ottave rettet")
+              (:en "Dot which rescues\\two [consecutive] ottave")))
+    (s6 (:alt (:it "[Punto che] salva\\due quinte")
+              (:de "[Punkt, der] zwei\\[parallele] quinte rettat")
+              (:en "[Dot which] rescues\\two [consecutive] quinte")))
     (s7 (:alt (:it "Punto d'affanno")
               (:de "Punkt des Schmerzes")
               (:en "Dot of affliction")))))
