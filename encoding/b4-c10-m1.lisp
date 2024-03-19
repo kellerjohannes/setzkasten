@@ -104,7 +104,16 @@
            ;;
            ;; DONE
            b22 m1 b22 b22 sb8 b22 m7 b38 br8 b38 bl
-           (:section s4) (:newline) b38 brbl1 b22 sbbl2 b22 sbbl3 b22 sbbl4 b22 sbbl5 b22 brbl1 b22 brbl8 b22 brbl7 b22 br8 b38 bl)
+           (:section s4) (:newline)
+           (:alt (:diplomatic b38 brbl1 b22 sbbl2 b22 sbbl3 b22 sbbl4 b22 sbbl5 b22 brbl1 b22 brbl8 b22 brbl7 b22 br8 b38 bl)
+                 (:modern (:duration-override 2/3)
+                          (:color-start) br1 (:color-stop) sb2
+                          (:color-start) sb3  sb4 (:color-stop) sb5
+                          (:color-start) br1 br8 (:color-stop) br7
+                          (:duration-override 1) br8)
+                 (:coord-barre "")
+                 (:coord-norm "")
+                 (:comment "") (:flag :draft) (:id 0)))
    (:text 90 58
           (259 661 "ᴄolorite nellʼᴇmiolia minore")
           (1290 834 "ᴄantar alla breue detto da Prattici."))
