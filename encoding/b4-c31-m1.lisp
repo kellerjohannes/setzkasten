@@ -101,7 +101,7 @@
            (:key-signature nil nil nil nil nil nil :flat) b22
 
            (:alt (:diplomatic met-perf-min-dim)
-                 (:modern (:meter-override "sesquialtera" nil))
+                 (:modern met-perf-min-dim (:meter-override "sesquialtera" nil))
                  (:coord-barre "")
                  (:coord-norm "")
                  (:comment "") (:flag :draft) (:id 0))

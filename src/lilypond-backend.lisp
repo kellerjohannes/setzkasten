@@ -637,7 +637,7 @@
     ((:circle nil nil) "\\once \\override Staff.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural32\")" "6/1")
     ((:circle :dot nil) "\\once \\override Staff.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural94\")" "9/1")
     ((:meter-override "2/2" nil) "\\once \\override Staff.TimeSignature.stencil = ##f" "2/2")
-    ((:meter-override "sesquialtera" nil) "\\once \\override.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural34\")" "3/2")))
+    ((:meter-override "sesquialtera" nil) "OVERRIDE \\once \\override.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural34\")" "3/2")))
 
 (defun generate-ly-meter (meter-description)
   (let ((result (assoc meter-description *dict-ly-meter-signatures* :test #'equalp)))
@@ -835,6 +835,15 @@
 ~16,0t\\Score
 ~16,0t\\override SpacingSpanner.common-shortest-duration = #(ly:make-moment ~a)
 ~16,0t\\override LyricText.font-size = #'-1.0
+~16,0t\\override Accidental.stencil =
+~16,0t#(lambda (grob)
+~16,0t(let ((alteration (ly:pitch-alteration
+~16,0t                   (ly:event-property
+~16,0t                    (ly:grob-property (ly:grob-property grob 'cause) 'cause)
+~16,0t                    'pitch))))
+~16,0t (cond ((= 1/4 alteration) (grob-interpret-markup grob (markup diesis)))
+~16,0t       ((= 1/2 alteration) (grob-interpret-markup grob (markup diesisCromatico)))
+~16,0t       (else (ly:accidental-interface::print grob)))))
 ~14,0t}
 ~14,0t\\context {
 ~16,0t\\Voice
@@ -904,6 +913,29 @@ dot = {
 ~2,0t \\once \\override Script.font-size = 1
 }
 
+diesisCromatico = \\markup {
+  \\override #'(thickness . 1.7)
+  \\raise #-0.5 \\draw-line #'(1 . 1)
+  \\hspace #-1.4
+  \\override #'(thickness . 1.7)
+  \\raise #-0.5 \\draw-line #'(1 . 1)
+
+  \\hspace #-1.8
+  \\override #'(thickness . 1.7)
+  \\raise #-0.5 \\draw-line #'(-1 . 1)
+  \\hspace #-2.1
+  \\override #'(thickness . 1.7)
+  \\raise #-0.5 \\draw-line #'(-1 . 1)
+}
+
+\\layout {
+  \\context {
+    \\Score
+  }
+}
+
+
+
 \\markup {
 ~2,0t\\center-column {
 ~@[~{~4,0t\\line {
@@ -961,6 +993,22 @@ dot = {
 ~2,0t \\once \\override Script.font-size = 1
 }
 
+
+diesisCromatico = \\markup {
+  \\override #'(thickness . 1.7)
+  \\raise #-0.5 \\draw-line #'(1 . 1)
+  \\hspace #-1.4
+  \\override #'(thickness . 1.7)
+  \\raise #-0.5 \\draw-line #'(1 . 1)
+
+  \\hspace #-1.8
+  \\override #'(thickness . 1.7)
+  \\raise #-0.5 \\draw-line #'(-1 . 1)
+  \\hspace #-2.1
+  \\override #'(thickness . 1.7)
+  \\raise #-0.5 \\draw-line #'(-1 . 1)
+}
+
 \\score {
 ~@[~a~]
 ~2,0t<<
@@ -971,6 +1019,15 @@ dot = {
 ~4,0t\\context {
 ~6,0t\\Score
 ~6,0t\\override LyricText.font-size = #'-1.0
+~6,0t\\override Accidental.stencil =
+~6,0t#(lambda (grob)
+~6,0t(let ((alteration (ly:pitch-alteration
+~6,0t                   (ly:event-property
+~6,0t                    (ly:grob-property (ly:grob-property grob 'cause) 'cause)
+~6,0t                    'pitch))))
+~6,0t (cond ((= 1/4 alteration) (grob-interpret-markup grob (markup diesis)))
+~6,0t       ((= 1/2 alteration) (grob-interpret-markup grob (markup diesisCromatico)))
+~6,0t       (else (ly:accidental-interface::print grob)))))
 ~4,0t}
 ~2,0t}
 }"
