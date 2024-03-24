@@ -4,7 +4,7 @@
    (:comment "q021_s177, rotation: 0, origin: 418")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Fuga mista due sopra uno, sopra due parti, a quattro voci")
-                 (:de "")
+                 (:de "Vermischte Imitation [fuga] mit einer, mit zwei Stimmen, für vier Stimmen.")
                  (:en "Mixed fuga two on one, on two parts, in four voci"))))
   (:data
    (:text 90 58
