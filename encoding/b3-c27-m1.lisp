@@ -20,7 +20,7 @@
               (:de "nicht sehr [gut]")
               (:en "no too [good]")))
     (s5 (:alt (:it "dubbiosa")
-              (:de "zweifelhaft")
+              (:de "bedenklich")
               (:en "dubious")))
     (s6 (:alt (:it "buona")
               (:de "gut")
