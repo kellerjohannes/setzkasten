@@ -11,7 +11,7 @@
                  (:de "gut")
                  (:en "Good")))
     (s3 v1 (:alt (:it "Dubbiosa")
-                 (:de "zweifelhaft")
+                 (:de "bdenklich")
                  (:en "Dubious")))
     (s3 v4 (:alt (:it "Non buona")
                  (:de "nicht gut")
@@ -20,7 +20,7 @@
                  (:de "falsche ottava mit dem Soprano")
                  (:en "False ottava with the soprano")))
     (s7 v3 (:alt (:it "Dubbiosa col soprano")
-                 (:de "zweifelhaft mit dem Soprano")
+                 (:de "bedenklich mit dem Soprano")
                  (:en "Dubious with the soprano"))))
    (:voice-order
     (s1 v1 v2 v3 v4 v5)
