@@ -22,7 +22,7 @@
           (:de "Hemiola maior, mit zwei Stimmen")
           (:en "Major emiolia, in two voci"))
     (:alt (:it "Proportione sesqualtera, buona nel battere et nel levare, a due voci")
-          (:de "Proportione sesqualtera, gut auf dem (Nieder-)Schlag und beim Anheben, mit zwei Stimmen")
+          (:de "Proportione sesqualtera, gut auf dem (Nieder-)Schlag und beim Anheben [der Hand], mit zwei Stimmen")
           (:en "Sesquialtera proportion, good on the beat and in elevation, in two voci"))
     (:alt (:it "Emiolia minore")
           (:de "Hemiola minor")
