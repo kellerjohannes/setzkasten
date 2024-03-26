@@ -34,7 +34,7 @@
                       (:critical "non")
                       (:coord-barre "TZ1-2")
                       (:coord-norm "—")
-                      (:comment "Die Positionierung aller Überschriften (»non buono«) ist mehrdeutig. Die Interpretation lautet: Untergruppen 1 und 2 sind implizit »buono«, alle anderen »non buono«.")
+                      (:comment "Die Positionierung aller Überschriften (»non buono«) ist mehrdeutig. Die Interpretation lautet: die ersten zwei Untergruppen (bis zum zweiten Taktstrich) sind implizit »buono«, die anderen vier »non buono«.")
                       (:flag :ready) (:id 1))
                 ))
    (:music 2222

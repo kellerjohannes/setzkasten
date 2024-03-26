@@ -14,7 +14,11 @@
    ;; Im Moment gibt es keine ergänzenden Elemente, nur das musikalische Material in direkter
    ;; Übertragung, das auch in der Quelle vorliegt.
    ;;
-   ;; OPEN
+   ;; JK & LC: Luigi wird dazu einen Kapitelkommentar verfassen, Johannes setzt seine
+   ;; Interpretationen manuell in Lilypond, um sie im Kapitelkommentar anzuzeigen. Die vorliegende
+   ;; moderne Transkription wird als einzige in die Edition integriert.
+   ;;
+   ;; DONE
    (:section-captions
     (s1 (:alt (:it "A quattro voci")
               (:de "")

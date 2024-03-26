@@ -13,13 +13,17 @@
               ;; Musica_ (1588), der ein sehr ähnliches Beispiel abdruckt, allerdings mit
               ;; vierstimmiger Auflösung.
               ;;
-              ;; OPEN
+              ;; DONE
               ))))
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")))
   (:data
    (:text 110 58
+     ;; JK: Dieser Text soll in der modernen Fassung unter die erste Pause und unter die letzte
+     ;; Noten gesetzt werden.
+     ;;
+     ;; OPEN
      (166 nil "Principio & fine.")
      (2142 nil "Principio & fine." :upside-down))
    (:music 2225

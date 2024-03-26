@@ -32,19 +32,12 @@
            (:section s1) cclef7 b22 max6 dot6 longa7 dot8 br6 dot6 sb5 dot6 m4 dot4 sm3 b22 sm2 dot2 cr1 b22 cr2 dot2 scr3 b22
            (:section s2) cclef7 b38 met-perf-min b38 br1 b22 sb2 b22 dot4 sb3 b38 br4 b38
            (:section s3) cclef7 b22
-           (:alt (:diplomatic met-perf-min)
-                 (:critical met-perf-maj)
+           (:alt (:diplomatic met-perf-min b22 met-imperf-min)
+                 (:critical met-perf-maj b22 met-imperf-maj)
                  (:coord-barre "MZ1 N15")
                  (:coord-norm "—")
-                 (:comment "In allen Exemplaren: Kein Punkt in der ersten Taktsignatur.")
+                 (:comment "Die Punkte in den beiden Taktsignaturen sind in allen Exemplaren von Hand ergänzt.")
                  (:flag :ready) (:id 1))
-           b22
-           (:alt (:diplomatic met-imperf-min)
-                 (:critical met-imperf-maj)
-                 (:coord-barre "MZ1 N15")
-                 (:coord-norm "–")
-                 (:comment "In allen Exemplaren: Kein Punkt in der zweiten Taktsignatur.")
-                 (:flag :ready) (:id 2))
            b22 sb1 b22 m2 b22 sb3 b22 sb4 b22 m5 bl)
    (:text 110 58
           (107 nil "punti di ritorno")

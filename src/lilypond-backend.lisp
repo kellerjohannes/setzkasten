@@ -81,6 +81,7 @@
     ((:f nil nil) "f" "" "")
     ((:f nil :comma) "f" "" "^\\markup{\\hspace #0.8 ,}")
     ((:e :sharp nil) "e" "is" "")
+    ((:e :single-sharp nil) "e" "ih" "")
     ((:f nil :dot) "\\dot f" "" "-.")
     ((:g nil nil) "g" "" "")
     ((:f :sharp nil) "f" "is" "")
@@ -912,6 +913,16 @@ dot = {
 ~2,0t \\once \\override Script.direction = 1
 ~2,0t \\once \\override Script.font-size = 1
 }
+
+
+diesis = \\markup {
+  \\override #'(thickness . 1.7)
+  \\raise #-0.5 \\draw-line #'(1 . 1)
+  \\hspace #-1.8
+  \\override #'(thickness . 1.7)
+  \\raise #-0.5 \\draw-line #'(-1 . 1)
+}
+
 
 diesisCromaticoSmall = \\markup {
   \\override #'(thickness . 1.7)

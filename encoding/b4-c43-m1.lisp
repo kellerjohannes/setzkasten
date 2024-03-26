@@ -18,7 +18,7 @@
    ;;   Lusitanos Original angefertigt werden, mit zwei unterschiedlichen
    ;;   Kreuzen: 2 Strichen und 5 Strichen.
    ;;
-   ;; OPEN
+   ;; DONE
    (:title (:alt (:it "Esempio del sopra detto Don Vincentio,\\come ha posto le consonanze false")
                  (:de "")
                  (:en "Example of the aforesaid Don Vincentio\\of how he placed false consonances")))
@@ -42,15 +42,36 @@
           (227 1768 "Eſſempio del ſopra detto Don Vincentio,come hà posto le conſonanze falſe."))
    (:music 2241
            (:section s1)
-           (:voice v1) cclef5 b38 b22 br3 b22 b38 sb3 dot4 b22 sinsh3 b38 b22 m3 b38 b22 fl4 b38 b22 sb4 b22 b38 sh4 b38 b22 sb4 b22 b38 br5 b38 bl
-           (:voice v2) b38 sb5 b38 sh5 b38 m5 b22 b38 sinsh5 b38 b22 m5 b22 br6 b38 br7 b38 bl
+           (:voice v1) cclef5
+           (:alt (:diplomatic)
+                 (:modern met-imperf-min)
+                 (:coord-barre "")
+                 (:coord-norm "")
+                 (:comment "")
+                 (:flag :internal) (:id 0))
+           b38 b22 br3 b22 b38 sb3 dot4 b22 sinsh3 b38 b22 m3 b38 b22 fl4 b38 b22 sb4 b22 b38 sh4 b38 b22 sb4 b22 b38 br5 b38 bl
+           (:voice v2) b38 sb5 b38 sh5 b38 m5 b22 b38 sinsh5 b38 b22 m5 b22
+           (:alt (:diplomatic br6)
+                 (:critical longa6)
+                 (:coord-barre "MZ1 N10")
+                 (:coord-norm "St1 N4")
+                 (:comment "In allen Exemplaren wurde diese Note als Brevis gedruckt. In den Exemplaren q004, q008 und q034 wurde sie von Lesern handschriftlich zu einer Longa korrigiert, wie es auch im Druck von Lusitano (1553) der Fall ist (siehe Kapitelkommentar).")
+                 (:flag :ready) (:id 1))
+           b38 br7 b38 bl
            b125 b125 b125)
    (:text 90 58
           (178 nil "Alto con la quinta falſa")
           (1212 nil "Soprano con la decima falſa."))
    (:music 2239
-           (:voice v3) (:f-clef) max7 fclef7 b38 met-imperf-min-dim b38 b22 br2 b38 b22 br5 b22 b38 sb1 b22 b38 sb1 b38 b22 br4 b38 b38 bl
-           (:voice v4) b38 b38 sb6 b22 b38 sh6 b38 b22 sb6 b38 b22 sb7 b38 b22 sh7 b38 b22 m7 b38 b22 sinsh7 b38 b22 m7 b38 b22 br8 b38 bl
+           (:voice v3) (:f-clef) max7 fclef7 b38 met-imperf-min b38 b22 br2 b38 b22 br5 b22 b38 sb1 b22 b38 sb1 b38 b22 br4 b38 b38 bl
+           (:voice v4) b38 b38 sb6 b22 b38 sinsh6 b38 b22 sb6 b38 b22 sb7 b38 b22 sh7 b38 b22 m7 b38 b22 sinsh7 b38 b22 m7 b38 b22
+           (:alt (:diplomatic br8)
+                 (:critical longa8)
+                 (:coord-barre "MZ2 N11")
+                 (:coord-norm "St3 N6")
+                 (:comment "In allen Exemplaren: Brevis.")
+                 (:flag :ready) (:id 2))
+           b38 bl
            b38 b38 b22 b125)
    (:text 70 58
           (359 nil "Baſſo")

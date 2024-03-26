@@ -83,7 +83,13 @@
           (1150 nil "ᴀ due uoci ᴛenore & Baſſo."))
    (:music 2234
            (:voice v1)
-           (:section s2) (:newline) cclef7 b22 fl6 (:key-signature nil nil nil nil nil nil :flat) b38 met-imperf-min-dim b22 br4 b22 br6 b22 br5 b22 longa4 b22 bl
+           (:section s2) (:newline)
+           cclef7 b22 fl6 (:key-signature nil nil nil nil nil nil :flat) b38
+           met-imperf-min-dim b22 br4 b22 br6 b22 br5 b22
+           (:duration-override 1/2)
+           longa4
+           (:duration-override 1)
+           b22 bl
            b38 b125 b125 b22
            (:section s3) (:newline)
            (:alt (:diplomatic)
@@ -110,15 +116,12 @@
            (:section s2)
            (:voice v2)
            (:f-clef) max7 fclef7 fl6
-           ;; JK: Ich habe einen kritischen Eingriff hier entfernt, der diesen Bass-Schlüssel durch
-           ;; einen C4-Schlüssel ersetzte. Es scheint hier kein Eingriff nötig zu sein.
-           ;;
-           ;; DONE
            (:key-signature nil nil nil nil nil nil :flat) b22
            met-perf-min-dim (:meter-override "sesquialtera" nil)
            b22 met-3-2 b22
-           (:duration-override 2/3) sb1 sb4 sb3 m1 m8 dot8 sm7 sb5 m6 sb7 sb5 sh4 m4 m5 br1 dot2
+           (:duration-override 2/3) sb1 sb4 sb3 m1 m8 dot8 sm7 sb5 m6 sb7 sb5 sh4 m4 m5
            (:duration-override 1)
+           br1
            (:section s3)
            (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat)
 
@@ -139,16 +142,16 @@
    (:music 2221
            (:voice v1)
            (:section s4) (:newline)
-
-           ;; original:
-           ;; (:f-clef) max7 fclef7 b38
-
-           cclef7 b38
-
-           (:alt (:diplomatic fl6)
-                 (:critical fl3)
+           (:alt (:diplomatic (:f-clef) max7 fclef7 b38)
+                 (:critical cclef7 b38)
                  (:coord-barre "MZ5 N1")
-                 (:coord-norm "G5")
+                 (:coord-norm "G4 St2")
+                 (:comment "In allen Exemplaren: F4-Schlüssel. In den Exemplaren q002 q005, q011, q026, q034, q035, q051, q053, q055, q061, q076 und q081 wurde dieser F4-Schlüssel von Lesern handschriftlich zu einem C4-Schlüssel korrigiert.")
+                 (:flag :ready) (:id 2))
+           (:alt (:diplomatic fl6)
+                 (:critical fl3 b38)
+                 (:coord-barre "MZ5 N1")
+                 (:coord-norm "G4 St2")
                  (:comment "In allen Exemplaren: ♭-Signatur im dritten Zwischenraum.")
                  (:flag :ready) (:id 3))
 
@@ -169,7 +172,7 @@
            (:voice v2)
            (:f-clef) max7 fclef7 b38 fl3 (:key-signature nil nil nil nil nil nil :flat)
            b38 met-perf-min-dim b38 met-3-2 b38
-           (:duration-override 1)
+           (:duration-override 3/2)
            br1 b38 br4 b38 br5 b38
            ;;(:duration-override 1)
            sb8 b38 sb7 b38 sb8 b38 sb5 b38 br1 b22 bl
