@@ -915,17 +915,17 @@ dot = {
 
 diesisCromatico = \\markup {
   \\override #'(thickness . 1.7)
-  \\raise #-0.5 \\draw-line #'(1 . 1)
-  \\hspace #-1.4
-  \\override #'(thickness . 1.7)
-  \\raise #-0.5 \\draw-line #'(1 . 1)
-
+  \\raise #-0.75 \\draw-line #'(1.5 . 1.5)
   \\hspace #-1.8
   \\override #'(thickness . 1.7)
-  \\raise #-0.5 \\draw-line #'(-1 . 1)
-  \\hspace #-2.1
+  \\raise #-0.75 \\draw-line #'(1.5 . 1.5)
+
+  \\hspace #-2.25
   \\override #'(thickness . 1.7)
-  \\raise #-0.5 \\draw-line #'(-1 . 1)
+  \\raise #-0.75 \\draw-line #'(-1.5 . 1.5)
+  \\hspace #-2.73
+  \\override #'(thickness . 1.7)
+  \\raise #-0.75 \\draw-line #'(-1.5 . 1.5)
 }
 
 \\layout {
