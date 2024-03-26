@@ -888,7 +888,7 @@
         (concatenate 'string newline-code section-code)
         section-code)))
 
-
+;; TODO: diesisCromatico should be reduced to one size only
 (defmethod generate-score-ly-code ((score score) (backend lilypond-backend))
   (case (output-format backend)
     (:svg-cropped
@@ -924,6 +924,7 @@ diesis = \\markup {
 }
 
 
+% small
 diesisCromaticoSmall = \\markup {
   \\override #'(thickness . 1.7)
   \\raise #-0.75 \\draw-line #'(1.5 . 1.5)
@@ -939,8 +940,24 @@ diesisCromaticoSmall = \\markup {
   \\raise #-0.75 \\draw-line #'(-1.5 . 1.5)
 }
 
-% large
+% medium and thin
 diesisCromatico = \\markup {
+  \\override #'(thickness . 1.5)
+  \\raise #-0.62 \\draw-line #'(1.2 . 1.2)
+  \\hspace #-1.55
+  \\override #'(thickness . 1.5)
+  \\raise #-0.62 \\draw-line #'(1.2 . 1.2)
+
+  \\hspace #-2.25
+  \\override #'(thickness . 1.5)
+  \\raise #-0.62 \\draw-line #'(-1.2 . 1.2)
+  \\hspace #-1.55
+  \\override #'(thickness . 1.5)
+  \\raise #-0.62 \\draw-line #'(-1.2 . 1.2)
+}
+
+% large
+diesisCromaticoLarge = \\markup {
   \\override #'(thickness . 1.7)
   \\raise #-0.75 \\draw-line #'(1.5 . 1.5)
   \\hspace #-1.8
