@@ -122,7 +122,7 @@
                  (:critical b22 fl29 b22)
                  (:coord-barre "MZ5 N12")
                  (:coord-norm "—")
-                 (:comment "In allen Exemplaren: Die Vorzeichnung besteht aus F♭, A♭ und E♭.")
+                 (:comment "In allen Exemplaren: Die Vorzeichnung besteht aus F♭, A♭ (2 Mal) und E♭.")
                  (:flag :ready) (:id 1))
            b22 fl5 (:key-signature nil nil :flat nil nil :flat :flat) b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b22 sb7 b38 sb8 b22 sb9 b38 sb10 bl)
    (:vspace 90)
