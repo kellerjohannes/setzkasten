@@ -913,6 +913,22 @@ dot = {
 ~2,0t \\once \\override Script.font-size = 1
 }
 
+diesisCromaticoSmall = \\markup {
+  \\override #'(thickness . 1.7)
+  \\raise #-0.75 \\draw-line #'(1.5 . 1.5)
+  \\hspace #-1.8
+  \\override #'(thickness . 1.7)
+  \\raise #-0.75 \\draw-line #'(1.5 . 1.5)
+
+  \\hspace #-2.25
+  \\override #'(thickness . 1.7)
+  \\raise #-0.75 \\draw-line #'(-1.5 . 1.5)
+  \\hspace #-2.73
+  \\override #'(thickness . 1.7)
+  \\raise #-0.75 \\draw-line #'(-1.5 . 1.5)
+}
+
+% large
 diesisCromatico = \\markup {
   \\override #'(thickness . 1.7)
   \\raise #-0.75 \\draw-line #'(1.5 . 1.5)
