@@ -637,7 +637,7 @@
     ((:circle nil nil) "\\once \\override Staff.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural32\")" "6/1")
     ((:circle :dot nil) "\\once \\override Staff.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural94\")" "9/1")
     ((:meter-override "2/2" nil) "\\once \\override Staff.TimeSignature.stencil = ##f" "2/2")
-    ((:meter-override "sesquialtera" nil) "OVERRIDE \\once \\override.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural34\")" "3/2")))
+    ((:meter-override "sesquialtera" nil) "\\once \\override Staff.TimeSignature.stencil = #(fixed-signature-c-cut \"timesig.neomensural34\")" "4/2")))
 
 (defun generate-ly-meter (meter-description)
   (let ((result (assoc meter-description *dict-ly-meter-signatures* :test #'equalp)))

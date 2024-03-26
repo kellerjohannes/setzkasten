@@ -3344,8 +3344,11 @@
 
 (populate-vicentino21 *vicentino21*)
 
-(defun execute-set (hash-table key)
-  (execute-mission (gethash key hash-table))
+(defun execute-set (hash-table key &key suffix)
+  (let ((mission-list (gethash key hash-table)))
+    (if suffix
+        (execute-mission (list (find suffix mission-list :key #'second :test #'string=)))
+        (execute-mission mission-list)))
   (format t "~&~a"
           (trivial-shell:shell-command "mv /home/johannes/common-lisp/setzkasten-output/ly/*.svg /home/johannes/common-lisp/setzkasten-output/svg/"))
   (format t "~&~a"
@@ -3374,8 +3377,8 @@
   (loop for key being each hash-key of *vicentino21*
         do (execute-set *vicentino21* key)))
 
-(defun execute (key-string)
+(defun execute (key-string &optional suffix)
   (let ((key (intern (string-upcase key-string) :keyword)))
     (format t "~&Executing example ~s." key)
-    (execute-set *vicentino21* key)
+    (execute-set *vicentino21* key :suffix suffix)
     (format t "~&~s done." key)))
