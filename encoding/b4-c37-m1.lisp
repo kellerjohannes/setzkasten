@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
     (s1 (:alt (:it "Principio et fine")
-              (:de "")
+              (:de "Beginn und Ende")
               (:en "Beginning and end")
               ;; JK: Es ist zu diskutieren, wie dieses Textelement in der Normalisierung dargestellt
               ;; werden soll. Ausserdem sind verschiedene Auflösungen denkbar, die in separaten
