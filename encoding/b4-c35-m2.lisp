@@ -10,11 +10,11 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
     (s1 (:alt (:it "Soprano a due voci alla quinta sopra del tenore")
-              (:de "")
+              (:de "Soprano für zwei Stimmen in der quinta über dem Tenore")
               (:en "Soprano in two voci at the quinta above the tenor"))))
    (:section-captions
     (s1 (:alt (:it "Tenore riversciato in soprano")
-              (:de "")
+              (:de "Tenore umgekehrt zum Soprano")
               (:en "Tenor in contrary motion in the soprano")))))
   (:data
    (:text 90 58
