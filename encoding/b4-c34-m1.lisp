@@ -39,13 +39,13 @@
     (s8 v1 v2))
    (:section-captions
     (s2 (:alt (:it "Il medesimo procedere, et i gradi medesimi")
-              (:de "")
+              (:de "das gleiche Vorgehen und die gleichen Tonschritte")
               (:en "The same progression, and the same steps")))
     (s6 (:alt (:it "Il tenore et il soprano\\paiono due ottave et non sono")
-              (:de "")
+              (:de "der Tenore und der Soprano\\scheinen zwei [aufeinanerfolgende] ottave und sind es nicht")
               (:en "The tenor and the soprano\\appear to be two [consecutive] ottave and are not")))
     (s8 (:alt (:it "Parte ch'era di sotto")
-              (:de "")
+              (:de "Stimme, die darunter ist")
               (:en "Part which is below")))))
   (:data
    (:text 90 58
