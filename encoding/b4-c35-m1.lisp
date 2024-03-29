@@ -36,7 +36,7 @@
                  (:en "Alto")))
     (s1 v3 (:alt (:it "Tenore")
                  (:de "Tenore")
-                 (:en "Tenor")))
+                 (:en "Tenore")))
     (s1 v4 (:alt (:it "Basso")
                  (:de "Basso")
                  (:en "Basso")))))
