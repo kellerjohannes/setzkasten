@@ -36,7 +36,7 @@
               (:de "terza minore / terza maggiore")
               (:en "Terza minore / terza maggiore")))
     (s3 (:alt (:it "Sesta minore / sesta maggiore")
-              (:de "setsa minore / sesta maggiore")
+              (:de "sesta minore / sesta maggiore")
               (:en "Sesta minore / sesta maggiore")))
     (s5 (:alt (:it "Terza minore / terza maggiore")
               (:de "terza minore / terza maggiore")
@@ -46,10 +46,10 @@
               (:en "Sesta minore / sesta maggiore"))))
    (:line-headings
     (:alt (:it "[Tutte le consonanze di Gsolreut quinto ascendenti]")
-          (:de "[alle die aufsteigenden Konsonanzen von Gsolreut quinto]")
+          (:de "[alle aufsteigenden Konsonanzen von Gsolreut quinto]")
           (:en "All ascending consonances of Gsolreut quinto"))
     (:alt (:it "[Tutte le consonanze di Gsolreut quinto discendenti]")
-          (:de "[alle die absteigenden Konsonanzen von Gsolreut quinto]")
+          (:de "[alle absteigenden Konsonanzen von Gsolreut quinto]")
           (:en "[All descending consonances of Gsolreut quinto]"))))
   (:data
    (:text 90 58
