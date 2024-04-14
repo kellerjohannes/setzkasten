@@ -5,10 +5,10 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
     (s1 (:alt (:it "Immobili ascendenti")
-              (:de "")
+              (:de "Feststehende [voci] aufsteigend")
               (:en "Ascending immobile [voci]")))
     (s2 (:alt (:it "Immobili discendenti")
-              (:de "")
+              (:de "Feststehende [voci] absteigend")
               (:en "Descending immobile [voci]")))))
   (:data
    (:text 90 58
