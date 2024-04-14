@@ -5,19 +5,19 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
     (s1 (:alt (:it " \\Immobili ascendenti")
-              (:de "")
+              (:de " \\feststehende [voci] aufsteigend")
               (:en " \\Ascending immobile [voci]")))
     (s2 (:alt (:it " \\Ne del tutto mobili")
-              (:de "")
+              (:de " \\nicht gänzlich bewegbare [voci]")
               (:en "Not completely mobile [voci]")))
     (s3 (:alt (:it "Ne del tutto immobili,\\genere cromatico")
-              (:de "")
+              (:de "nicht gänzlich bewegbare [voci]\\chromatisches Genus")
               (:en "Not completely mobile [voci]\\chromatic genus"))))
    (:line-headings
     ""
     (:alt (:it "Serveno a ambedue i generi al diatonico et al cromatico:")
-          (:de "")
-          (:en "The serve for both genera, for the diatonic and for the chromatic"))))
+          (:de "dienen für die beiden Genera, dem Diatonischen udn dem Chromatischen")
+          (:en "They serve for both genera, for the diatonic and for the chromatic"))))
   (:data
    (:text 90 58
      (176 nil "Immobili aſcendenti.")
