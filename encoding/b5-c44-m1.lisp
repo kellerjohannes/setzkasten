@@ -4,7 +4,7 @@
    (:comment "q021_s243, rotation: -0.73, origin: 468")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Questi sono i toni e semitoni cromatici\\in secondo, e terzo, e quarto ordine,\\con i ♭ e con i diesis enarmonici")
-                 (:de "Dies sind die chromatischen toni udn semitono\\im secondo, im terzo und quarto ordine,\\mit den ♭ und den diesis enarmonici.")
+                 (:de "Dies sind die chromatischen toni und semitono\\im secondo, und terzo und quarto ordine,\\mit den ♭ und den diesis enarmonici.")
                  (:en "These are the chromatic toni and semitoni\\in the secondo, and terzo, and quarto ordine,\\with the ♭ and with the diesis enarmonici")))
    (:section-captions
     (s1 (:alt (:it "Tono\\accidentale")
