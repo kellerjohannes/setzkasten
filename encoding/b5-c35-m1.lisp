@@ -4,7 +4,7 @@
    (:comment "q021_s233, rotation: 0.55, origin: 495")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Queste sono tutte le consonanze di Bfabmi secondo acuto\\discendenti per una ottava con le sue propinque\\e propinquissime, e le simili di Bmi secondo ascendenti")
-                 (:de "Dies sind alle die Konsonanzen von Bfabmi acuto secondo\\absteigend durch eine ottava mit seinen propinque\\und propinquissime und dasselbe von Bmi secondo aufsteigend.")
+                 (:de "Dies sind alle die Konsonanzen von Bfabmi acuto secondo\\absteigend für eine ottava mit seinen propinque\\und propinquissime und dasselbe von Bmi secondo aufsteigend.")
                  (:en "These are all consonances of Bfabmi secondo acuto\\descending through one ottava with their propinque\\and propinquissime, and the same of Bmi secondo ascending")))
    (:section-headings
     (s1 (:alt (:it "Le quattro terze\\[discendenti]")
