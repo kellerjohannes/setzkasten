@@ -59,9 +59,21 @@
           (583 nil "5.")
           (731 nil "le quattro seſte")
           (1127 nil "8.")
-          (1352 nil "le cinque 3.")
+          (1352 nil
+                (:alt (:diplomatic "le cinque 3.")
+                      (:critical "le quattro 3.")
+                      (:coord-barre "TZ2 TE5")
+                      (:coord-norm "G5 US")
+                      (:comment "»Le cinque 3.« lässt fünf Terzen erwarten, es sind aber nur vier gedruckt. Im Text wird zusätzlich die Terz F-Aʼ genannt.")
+                      (:flag :ready) (:id 4)))
           (1670 nil "5.")
-          (1772 nil "le cinque 6.")
+          (1772 nil
+                (:alt (:diplomatic "le cinque 6.")
+                      (:critical "le quattro 6.")
+                      (:coord-barre "TZ2 TE7")
+                      (:coord-norm "G7 US")
+                      (:comment "»Le cinque 6.« lässt fünf Sexten erwarten, es sind aber nur vier gedruckt. Im Text wird zusätzlich die Sexte F-Dʼ genannt.")
+                      (:flag :ready) (:id 5)))
           (2120 nil "8."))
    (:music 2226
            (:voice v1)

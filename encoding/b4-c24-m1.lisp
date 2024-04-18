@@ -3,8 +3,12 @@
    (:alt-name "m4.018")
    ;; JK: Frage an Luigi: ist dies in allen Exemplaren der Fall (Fehler in der Kapitelnummerierung)?
    ;;
-   ;; OPEN
-   (:comment "q021_s167, rotation: 1.14, origin: 514. Kapitel im Original falsch nummeriert: XXIII, korrekt wäre XXIIII")
+   ;; LC: Hier ist auch die Seite falsch foliert. In Exemplaren q010 wurde sie handschriftlich korrigiert.
+   ;;
+   ;; JK: Habe ich in den internen Metadaten (:comment) ergänzt, wird aber nicht öffentlich sichtbar sein.
+   ;;
+   ;; DONE
+   (:comment "q021_s167, rotation: 1.14, origin: 514. Kapitel im Original falsch nummeriert: XXIII, korrekt wäre XXIIII. In einigen Exemplaren handschriftlich korrigiert.")
    (:creator "Vicentino21 / Johannes Keller")
    (:line-headings
     (:alt (:it "Decima maggiore all'ottava nei fini et nel basso, ne gl'alti")

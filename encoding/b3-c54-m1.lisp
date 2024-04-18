@@ -291,13 +291,18 @@
    (:music 2235
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat)
            b38 sbd9 b38 sbd9 b38 sbd9 b38 sb7 b38 md7 b38 m7 dot8 sm10 b38 m10 b38
-           (:alt (:diplomatic br10) (:critical brd10) (:tatti brd10)
+           (:alt (:diplomatic br10)
+                 (:critical brd10)
+                 (:tatti brd10)
                  (:coord-barre "MZ12 N9")
                  (:coord-norm "St2 T47")
                  ;; JK: Frage an Luigi, zu verifizieren.
                  ;;
-                 ;; OPEN
-                 (:comment "In allen Exemplaren: A. In gewissen Quellen ist ein enharmonischer Punkt zu erkennen.")
+                 ;; LC: Es gibt in keiner Quelle einen enharmonischen Punkt hier. Unsere Korrektur
+                 ;; ist deshalb ausschliesslich herausgeberisch.
+                 ;;
+                 ;; DONE
+                 (:comment "In allen Exemplaren: A.")
                  (:flag :observe) (:id 12))
            sh8
            (:duration-override 1/2) longa8 (:duration-override 1) b38 blbl

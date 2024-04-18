@@ -61,7 +61,19 @@
            (:section s1) cclef7 b38 b22 sbd6 b22 (:divider :regular) sbd6 b38 bl
            sbd6 sbd6 sbd6 b22 bl
            (:section s2) sbd6 bl
-           (:section s3) b22 sbd6 b22 (:divider :regular) sbd6 b38 bl
+           (:section s3) b22
+           ;; JK: diese Type hat zwei Punkte, die im Moment nicht dargestellt werden (nur für die
+           ;; Barré-Fassung relevant). Die Type soll noch hergestellt und entsprechend hier ergänzt
+           ;; werden.
+           ;;
+           ;; OPEN
+           (:alt (:diplomatic sbd6)
+                 (:critical sbd6)
+                 (:coord-barre "MZ N7")
+                 (:coord-norm "G3 N1")
+                 (:comment "In allen Exemplaren steht ein enharmonischer Punkt im Zwischenraum über dem Notenkopf, und ein zweiter enharmonischer Punkt im Raum über der obersten Notenlinie.")
+                 (:flag :ready) (:id 4))
+           b22 (:divider :regular) sbd6 b38 bl
            sbd6 sbd6 sbd6 bl
            (:section s4) sbd6
            (:section s5) (:newline) cclef7 sbd1 sh1 (:divider :regular) sb1 bl

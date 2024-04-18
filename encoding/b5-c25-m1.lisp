@@ -83,8 +83,15 @@
                  (:coord-norm "G3 St1 N1")
                  (:comment "In allen Exemplaren: Das ♭ steht eine Position tiefer.")
                  (:flag :ready) (:id 2))
-           b38 sbd7 b38 fl7 b38 (:divider :regular) sbd7 b38 bl
-           b38 fl7 b38 sbd7 b38 fl7 b38 sbd7 (:alt (:it fl7 sbd7)) bl
+           b38 sbd7
+           (:alt (:diplomatic)
+                 (:critical b38 fl7 sbd7)
+                 (:coord-barre "MZ1 N8")
+                 (:coord-norm "G3 N2")
+                 (:comment "In allen Exemplaren fehlt eine Semibrevis auf Ė♭.")
+                 (:flag :ready) (:id 3))
+           b38 fl7 b38 (:divider :regular) sbd7 b38 bl
+           b38 fl7 b38 sbd7 b38 fl7 b38 sbd7 bl
            (:section s4) b38 fl7 b38 sbd7 b38 bl)
    (:text 90 58
      (168 nil "3.min")
@@ -130,5 +137,5 @@
                  (:coord-barre "MZ4 N11")
                  (:coord-norm "G8 St2 N1")
                  (:comment "In allen Exemplaren: Ė.")
-                 (:flag :ready) (:id 3))
+                 (:flag :ready) (:id 4))
            b38 bl)))

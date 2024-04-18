@@ -69,7 +69,7 @@
                  (:critical longa8)
                  (:coord-barre "MZ2 N11")
                  (:coord-norm "St3 N6")
-                 (:comment "In allen Exemplaren: Brevis.")
+                 (:comment "In allen Exemplaren: Brevis. Im Exemplar q034 hat der Leser Ercole Bottrigari eine zweite Brevis handschriftlich ergänzt.")
                  (:flag :ready) (:id 2))
            b38 bl
            b38 b38 b22 b125)

@@ -97,17 +97,7 @@
                  (:comment "In allen Exemplaren: G♯.")
                  (:flag :ready) (:id 1))
            bl sbd7 sb7 bl
-           (:section s2)
-           (:alt (:diplomatic sbd5)
-                 (:critical sbd5)
-                 (:coord-barre "MZ2 N5")
-                 (:coord-norm "G2 St2 N1")
-                 ;; JK: Frage an Luigi.
-                 ;;
-                 ;; OPEN
-                 (:comment "In gewissen Quellen fehlt hier der enharmonische Punkt. [Luigi: Quellen zu benennen.]")
-                 (:flag :observe) (:id 2))
-           bl
+           (:section s2) sbd5 bl
            (:section s3) fl5 sb5 sh4 sb4 bl
            sbd4 b22 sb4 bl
            (:section s4) sbd2 b22
@@ -123,6 +113,12 @@
           (559 nil "6.min.")
           (774 nil "6.mag.")
           (1038 nil "Terze mi.")
-          (1324 nil "3.min.")
+          (1324 nil
+                (:alt (:diplomatic "3.min.")
+                      (:critical "3.mag.")
+                      (:coord-barre "TZ4 TE6")
+                      (:coord-norm "G5 US")
+                      (:comment "In allen Exemplaren: »3.min.«.")
+                      (:flag :ready) (:id 2)))
           (1634 nil "6.min.")
           (1861 nil "6.mag."))))

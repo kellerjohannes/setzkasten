@@ -4,13 +4,6 @@
    (:comment "q021_s211, origin: 500")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "[Del Alamire primo]")
-                 ;; AS: Sollte es nicht Alamire primo heissen?
-                 ;;
-                 ;; kir: ja
-                 ;;
-                 ;; JK: habs auf Italienisch geändert
-                 ;;
-                 ;; DONE
                  (:de "[von Alamire primo]")
                  (:en "[Of Alamire primo]")))
    (:section-headings

@@ -72,12 +72,22 @@
            (:section s1)
            (:alt (:diplomatic cclef7)
                  (:critical cclef7)
-                 (:coord-barre "MZ2 N5ff.")
-                 (:coord-norm "G2 St2")
+                 (:coord-barre "MZ2 N1-4")
+                 (:coord-norm "G1 St2")
                  ;; JK: Frage an Luigi.
                  ;;
+                 ;; LC: Nur der erste Takt könnte sinnvoll im F-Schlüssel (eine Quinte tiefer)
+                 ;; gelesen werden, weil dann das Beispiel wie alle anderen im unisono
+                 ;; endet. Allerdings müsste die letzte Note korrigiert werden. Ab dem zweiten
+                 ;; 'Takt' ist der C-Schlüssel korrekt.
+                 ;;
+                 ;; LC: Maniates korrigiert die ersten zwei Noten der ersten Stimme zu C und D.
+                 ;;
+                 ;; JK: ist in der Gruppe zu besprechen. Momentane Tendenz in Absprache mit LC:
+                 ;; Original lassen wie es ist.
+                 ;;
                  ;; OPEN
-                 (:comment "Korrekturvorschlag von Luigi: C-Schlüssel mit einem F-Schlüssel austauschen. Es scheint jedoch kein Fehler vorzuliegen.")
+                 (:comment "Korrekturvorschlag von Luigi: C-Schlüssel mit einem F-Schlüssel austauschen. Ist zu diskutieren.")
                  (:flag :observe) (:id 1))
            sb5 br7 sb6 sb7 bl
            (:section s2) b22 m4 dot4 sm3 m2 sb5 sh4 b22 m4 b22 sb5 bl

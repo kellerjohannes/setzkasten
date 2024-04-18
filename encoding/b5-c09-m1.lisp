@@ -3,12 +3,16 @@
    (:alt-name "m5.005")
    (:comment "q021_s212, origin: line 1 987, line 2 979,")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Del secondo Alamire")
+   (:title (:alt (:it "Del Alamire secondo")
                  ;; AS: Also here the question whether it should be Alamire secondo as it is
                  ;; referred to that later. I think it has to be in the English translation, as we
                  ;; have sort of used it systematically in the book.
                  ;;
-                 ;; OPEN
+                 ;; LC: ja, in allen Sprachen soll 'secondo' am Ende stehen.
+                 ;;
+                 ;; JK: ist angepasst.
+                 ;;
+                 ;; DONE
                  (:de "Von Alamire secondo.")
                  (:en "Of Alamire secondo")))
    (:section-headings
@@ -62,7 +66,13 @@
           (:en "All of the ascending consonances with the propinque of Alamire secondo"))))
   (:data
    (:text 110 58
-          (660 573 "ᴅel ſecondo ᴀla mi. re."))
+          (660 573
+               (:alt (:diplomatic "ᴅel ſecondo ᴀla mi. re.")
+                     (:critical "ᴅel ſecondo ᴀla mi. re.")
+                     (:coord-barre "TZ1")
+                     (:coord-norm "T")
+                     (:comment "In allen Exemplaren steht »Del secondo Alamire«.")
+                     (:flag :ready) (:id 1))))
    (:text 90 58
           (162 nil "Le quattro terze. diſcen.")
           (837 nil "Ɋuinta.")
@@ -86,17 +96,7 @@
            b38 sb6 b38 fl6 b38 sbd6 b38 b38 bl
            (:section s2) b38 b38 sh4 b38 sb4 b38 b38 bl
            (:section s3) b38 b38 sh3 b38 sb3 b38 sbd3 b38 bl
-           b38 sb3 b38 fl3 b38
-           (:alt (:diplomatic sbd3)
-                 (:critical sbd3)
-                 (:coord-barre "MZ2 N9")
-                 (:coord-norm "G3 St2 N4")
-                 ;; JK: Frage an Luigi.
-                 ;;
-                 ;; OPEN
-                 (:comment "In gewissen Quellen fehlt hier ein enharmonischer Punkt. [Luigi: Quellen müssen genannt werden].")
-                 (:flag :observe) (:id 1))
-           b22 b38 bl
+           b38 sb3 b38 fl3 b38 sbd3 b22 b38 bl
            (:section s4) b38 b38 sh1 b38 sb1 b38 b38 bl)
    (:text 110 58
           (96 nil "ᴛerza minor.")

@@ -120,7 +120,7 @@
                  (:critical sb5)
                  (:coord-barre "MZ3 N9")
                  (:coord-norm "G7 St1 N4")
-                 (:comment "In allen Exemplaren: A.")
+                 (:comment "In allen Exemplaren: G.")
                  (:flag :ready) (:id 5))
            b38 b22 bl
            (:section s8) b38 sh6 b22 sb6 b38 bl)

@@ -11,17 +11,19 @@
     ;; "primo ordine de gradi" zu schreiben. Ich habe Italienisch und Englisch angepasst, Deutsch
     ;; hat Martin noch nicht eingefügt. Das ist von Luigi und Anne zu bestätigen.
     ;;
-    ;; OPEN
-    (s1 (:alt (:it "primo ordine de gradi\\della prima quinta\\composta")
+    ;; LC: gut so, aber als 'ordine primo' etc. (nicht 'primo ordine')
+    ;;
+    ;; DONE
+    (s1 (:alt (:it "ordine primo de gradi\\della prima quinta\\composta")
               (:de "")
               (:en "first order of the steps\\of the first quinta\\composta")))
-    (s2 (:alt (:it "secondo ordine de gradi\\della seconda quinta\\composta")
+    (s2 (:alt (:it "ordine secondo de gradi\\della seconda quinta\\composta")
               (:de "")
               (:en "second order of the steps\\of the second quinta\\composta")))
-    (s3 (:alt (:it "terzo ordine de gradi\\della terza quinta\\composta")
+    (s3 (:alt (:it "ordine terzo de gradi\\della terza quinta\\composta")
               (:de "")
               (:en "third order of the steps\\of the third quinta\\composta")))
-    (s4 (:alt (:it "quarto ordine de gradi\\della quarta quinta\\composta")
+    (s4 (:alt (:it "ordine quarto de gradi\\della quarta quinta\\composta")
               (:de "")
               (:en "fourth order of the steps\\of the fourth quinta\\composta")))))
   (:data

@@ -57,7 +57,14 @@
                          (:comment "In allen Exemplaren: »La quattro terze.«.")
                          (:flag :ready) (:id 1)))
           (859 nil "Quinta.")
-          (1385 nil "Le quattro seſte.")
+          (1385 nil
+                (:alt (:diplomatic "Le quattro seſte.")
+                      (:critical "Le cinque seſte.")
+                      (:coord-barre "TZ3 TE3")
+                      (:coord-norm "G3 US")
+                      (:comment "In allen Exemplaren: »Le quattro seste«, das Musikbeispiel enthält jedoch fünf Sexten.")
+                      (:flag :ready) (:id 2))
+                )
           (2126 nil "8."))
    (:music 2227
            (:voice v1)
@@ -77,11 +84,17 @@
                      (:coord-barre "TZ4 TE5")
                      (:coord-norm "G3 US")
                      (:comment "In allen Exemplaren: »seſta mag,prop.«.")
-                     (:flag :ready) (:id 2))))
+                     (:flag :ready) (:id 3))))
    (:text 140 58
      (179 nil "Le quattro terze.")
      (841 nil "Quinta.")
-     (1325 nil "Le quattro seſte.")
+     (1325 nil
+           (:alt (:diplomatic "Le quattro seſte.")
+                 (:critical "Le cinque seſte.")
+                 (:coord-barre "TZ5 TE3")
+                 (:coord-norm "G3 US")
+                 (:comment "In allen Exemplaren: »Le quattro seste«, das Musikbeispiel enthält jedoch fünf Sexten.") (:flag :draft) (:id 4))
+           )
      (1995 nil "ᴏttaua."))
    (:music 2232
            (:voice v2)

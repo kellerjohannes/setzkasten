@@ -3,7 +3,7 @@
    (:alt-name "m5.020")
    (:comment "q021_s225, rotation: 0, origin: 509")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Queste sono tutte le consonanze di Elami acuto discendente,\\e di Elami grave ascendente")
+   (:title (:alt (:it "Queste sono tutte le consonanze di Elami acuto [quarto] discendente,\\e di Elami grave [quarto] ascendente")
                  ;; AS: Sollte nicht auch im italienischen, es "Elami acuto [quarto]" heissen?
                  ;; kir: ja!
                  ;; OPEN
@@ -59,7 +59,14 @@
     (s8 v1 "treble_8")))
   (:data
    (:text 110 58
-          (18 2209 "Queſte ſono tutte le conſonanze di Elami acuto diſcentende,& di Elami graue aſcendente."))
+          (18 2209
+              (:alt (:diplomatic "Queſte ſono tutte le conſonanze di Elami acuto diſcentende,& di Elami graue aſcendente.")
+                    (:critical "Queſte ſono tutte le conſonanze di Elami acuto quarto diſcentende,& di Elami graue quarto aſcendente.")
+                    (:coord-barre "TZ1")
+                    (:coord-norm "T")
+                    (:comment "In allen Exemplaren: »Elami acuto« (»quarto« fehlt).")
+                    (:flag :ready) (:id 5))
+              ))
    (:text 110 58
           (57 nil "le cinque 3.")
           (537 nil "5.")

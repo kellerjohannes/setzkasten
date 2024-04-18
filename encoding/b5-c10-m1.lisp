@@ -1,3 +1,7 @@
+;; JK: Hier könnte man eine Oktave ergänzen, die nicht gedruckt ist. Offene Diskussion, im Moment
+;; wird sie nicht ergänzt.
+;;
+;; OPEN
 `((:header
    (:filename "b5-c10-m1")
    (:alt-name "m5.006")
@@ -49,14 +53,14 @@
           (:en "All ascending consonances of Alamire terzo"))))
   (:data
    (:text 110 58
-          (349 1473 "Di ᴀla mi re terzo, le conſonanze diſcententi & aſcendenti."))
+     (349 1473 "Di ᴀla mi re terzo, le conſonanze diſcententi & aſcendenti."))
    (:text 90 58
-          (9 nil "Le 4.terze diſcen.")
-          (516 nil "Ɋuinta.")
-          (766 nil "Le 4. seſte diſce.")
-          (1236 nil "Le 4.terze aſcē.")
-          (1693 nil "5,")
-          (1796 nil "Le4 seﬆe aſcē."))
+     (9 nil "Le 4.terze diſcen.")
+     (516 nil "Ɋuinta.")
+     (766 nil "Le 4. seſte diſce.")
+     (1236 nil "Le 4.terze aſcē.")
+     (1693 nil "5,")
+     (1796 nil "Le4 seﬆe aſcē."))
    (:music 2227
            (:voice v1)
            (:section s1)
@@ -71,11 +75,11 @@
            (:section s6) b22 sbd5 sh5 (:divider :regular) sb5 bl
            b22 sb6 sbd6 b22 bl)
    (:text 110 58
-          (4 nil "con le ſue propinque .")
-          (552 nil "propinq.")
-          (795 nil "propinq.")
-          (1261 nil "cō le propinque.")
-          (1684 nil "con le ſue propinque."))
+     (4 nil "con le ſue propinque .")
+     (552 nil "propinq.")
+     (795 nil "propinq.")
+     (1261 nil "cō le propinque.")
+     (1684 nil "con le ſue propinque."))
    (:music 2237
            (:voice v2)
            (:section s1) (:f-clef) max7 fclef7 b22 sb7 sh6 (:divider :regualr) sb6 bl
@@ -89,14 +93,14 @@
            (:section s6) fl5 sb5 fl5 (:divider :regular) sb5 bl
            fl5 sb5 fl5 sb5 bl)
    (:text 110 58
-          (95 nil "3.min.")
-          (353 nil "3.magg.")
-          (728 nil "6.min")
-          (953 nil "6.mag.")
-          (1175 nil "3.min.")
-          (1386 nil "3.magg.")
-          (1750 nil "6.min.")
-          (2003 nil "6 .ma."))
+     (95 nil "3.min.")
+     (353 nil "3.magg.")
+     (728 nil "6.min")
+     (953 nil "6.mag.")
+     (1175 nil "3.min.")
+     (1386 nil "3.magg.")
+     (1750 nil "6.min.")
+     (2003 nil "6 .ma."))
    (:text 90 58
-          (7 1032 "Tutte le conſonanze diſcē.di A la mi re.3.")
-          (1103 1067 "Tutte le conſonanze aſcenden. dʼ A la mi re.3."))))
+     (7 1032 "Tutte le conſonanze diſcē.di A la mi re.3.")
+     (1103 1067 "Tutte le conſonanze aſcenden. dʼ A la mi re.3."))))
