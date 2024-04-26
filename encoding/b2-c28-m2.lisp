@@ -69,11 +69,11 @@
     (s49 v1 v2)))
   (:data
    (:text 90 58
-          (452 1275 "Molte annotationi ſotto et ſopra le due note fa. & ſol."))
+     (452 1275 "Molte annotationi ſotto et ſopra le due note fa. & ſol."))
    (:text 90 58
-          (437 nil "A due")
-          (859 nil "& à più uoci")
-          (1412 nil "ſi poſſono comporre."))
+     (437 nil "A due")
+     (859 nil "& à più uoci")
+     (1412 nil "ſi poſſono comporre."))
    (:music 2216
            ;; Kommentar Anne: Beispiele 18-22 brauchen ein b im Bassschlüssel.
            ;;
@@ -86,6 +86,8 @@
            ;; be a signature of a single flat in both voices.  In addition: No. 42 needs flats in
            ;; front of the E and A (NB the flat at A is currently missing); and No. 48 needs a flat
            ;; in front of the E.  The Es in Nos. 43 and 45 should be E natural, not E flat.
+           ;;
+           ;; OPEN
            (:voice v1)
            (:section s1) cclef7 b38 sb3 b38 sb4 b38 bl
            (:section s2) b22 sb3 b22 sb4 b22 bl
@@ -163,11 +165,11 @@
            (:section s23) (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat) b22 mrest3 b22 m4 m2 m3 bl
            (:section s24) m4 b38 m3 b38 m2 b38 m5 bl b38 custos6)
    (:text 90 58
-          (460 1265 "Molte annotationi ſotto et ſopra le due note ſol. & fa."))
+     (460 1265 "Molte annotationi ſotto et ſopra le due note ſol. & fa."))
    (:text 90 58
-          (438 nil "A due")
-          (857 nil "& à più uoci")
-          (1414 nil "ſi poſſono comporre."))
+     (438 nil "A due")
+     (857 nil "& à più uoci")
+     (1414 nil "ſi poſſono comporre."))
    (:music 2220
            (:voice v1)
            (:section s25) (:newline) cclef7 (:key-signature nil nil nil nil nil nil nil) b38 sb4 b38 sb3 b22 b22 bl
@@ -203,7 +205,7 @@
            (:section s40) b38 fl9 sb9 b38 sb6 b38 bl
            (:section s41) b22 m4 b22 m5 b22 sb6 bl b38 custos2)
    (:text 90 58
-          (1672 nil "à otto"))
+     (1672 nil "à otto"))
    (:music 2205
            (:voice v2)
            (:section s34) (:f-clef) max7 fclef7 (:key-signature nil nil nil nil nil nil nil) sb5 m6 m7 b22 bl
@@ -215,11 +217,11 @@
            (:section s40) b38 sb4 b22 b38 sb3 b38 b22 bl
            (:section s41) b38 sb4 b38 sb3 b22 bl b38 custos4)
    (:text 90 58
-          (570 1048 "Molte annotationi ſopra le due note ſol. et fa."))
+     (570 1048 "Molte annotationi ſopra le due note ſol. et fa."))
    (:text 90 58
-          (395 nil "A due")
-          (793 nil "& à più uoci")
-          (1334 nil "ſi poſſono comporre"))
+     (395 nil "A due")
+     (793 nil "& à più uoci")
+     (1334 nil "ſi poſſono comporre"))
    (:music 2217
            (:voice v1)
            (:section s42) cclef7 fl6 fl5 (:key-signature nil nil :flat nil nil nil :flat) fl2 m2 m5 sb4 b22 bl

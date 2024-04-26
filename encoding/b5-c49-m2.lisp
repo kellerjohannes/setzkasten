@@ -111,21 +111,14 @@
            (:voice v1)
            (:section s1) (:f-clef) max7 fclef7 b22 sh1 b22 sb1 fl2 b22 sb2 b22 fl2 b22 sbd2 b22 sbd2 b22 sh2 b22 sb2 bl
            (:section s2) sh2 b22 sb2 fl3 b22 sbd3 b22 sb3 bl
-           (:section s3) sb3 b22 sbd3
-           (:alt (:diplomatic b22 sb4 b22)
-                 (:critical sh3 b22 sb3)
-                 (:coord-barre "MZ1 N11")
-                 (:coord-norm "G3 N3")
-                 (:comment "In allen Exemplaren: C.")
-                 (:flag :ready) (:id 1))
-           sbd4 b22 sh4 b22 sb4 bl
+           (:section s3) sb3 b22 sbd3 sh3 b22 sb3 sbd4 b22 sh4 b22 sb4 bl
            (:section s4) (:newline) sh4 b22 sb4 fl5 b22 sb5 b22 fl5 b22 sbd5 b22
            (:alt (:diplomatic)
                  (:critical sbd5 b22)
                  (:coord-barre "MZ1 N17")
                  (:coord-norm "G4 N4")
                  (:comment "Diese Note fehlt in allen Exemplaren.")
-                 (:flag :ready) (:id 2))
+                 (:flag :ready) (:id 1))
            sh5 b22 sb5 b38 bl)
    (:text 70 58
      (124 nil "di.mi. di.mi.di.ma.di.mi.")
@@ -176,7 +169,7 @@
                 (:coord-barre "TZ8 TE2")
                 (:coord-norm "G10 US")
                 (:comment "In allen Exemplaren: »di. mi. di. ma. di.mi.«.")
-                (:flag :ready) (:id 3)))
+                (:flag :ready) (:id 2)))
      (1511 nil "di. mi. di. mi. di. mi. di. ma."))
    (:text 120 58
      (92 nil "tono ᴄro. acc.")
@@ -196,7 +189,7 @@
                  (:coord-barre "MZ4 N4")
                  (:coord-norm "G12 N4")
                  (:comment "In allen Exemplaren: Ḃ♯.")
-                 (:flag :ready) (:id 4))
+                 (:flag :ready) (:id 3))
            b38 sb3 bl
            (:section s13) (:newline) b22 sb3 b38 b22 fl3 b22 b38 sbd3 b22 fl3 b38 sb3 b38 sh2 b38 sb2 b22 bl
            (:section s14) b38 sh2 b38 sb2 b38 sbd2 b38 sb2 b38 fl2 b38 sbd2 b38 sh1 b38 sb1 b38 bl)

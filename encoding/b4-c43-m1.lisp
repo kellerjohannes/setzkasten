@@ -17,6 +17,7 @@
    ;; - Zusätzlich soll, unabhängig von der Edition, eine Übertragung von
    ;;   Lusitanos Original angefertigt werden, mit zwei unterschiedlichen
    ;;   Kreuzen: 2 Strichen und 5 Strichen.
+   ;;   DONE
    ;;
    ;; DONE
    (:title (:alt (:it "Esempio del sopra detto Don Vincentio,\\come ha posto le consonanze false")

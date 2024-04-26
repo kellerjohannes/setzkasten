@@ -114,7 +114,7 @@
                  (:coord-barre "MZ1 N8")
                  (:coord-norm "G2 N3")
                  (:comment "In allen Exemplaren: B♮.")
-                 (:flag :ready) (:id 2))
+                 (:flag :ready) (:id 1))
            b22 sbd4 b22 bl
            (:section s3) b22 sbd4 b22 fl5 b22 sb5 b22 fl5 b22 sbd5 b22 sb5 b22 sbd5 b22 bl
            (:section s4) (:newline) sbd5 b22 fl6 b38 sb6 b22 fl6 b22 sbd6 b22 sb6 b22 sbd6 bl)
@@ -125,12 +125,24 @@
                (:coord-barre "TZ2 TE1")
                (:coord-norm "G1 US")
                (:comment "In allen Exemplaren: »da.mi.«")
-               (:flag :ready) (:id 1)))
+               (:flag :ready) (:id 2)))
      (685 nil "di.mi.d.mi.d.mi.")
-     (1114 nil "di.ma.d.mi.d.mi.d.mi.")
+     (1114 nil
+           (:alt (:diplomatic "di,ma.d.mi.d.mi.d.mi.")
+                 (:critical "di.ma.d.mi.d.mi.d.mi.")
+                 (:coord-barre "TZ2 TE3")
+                 (:coord-norm "G3 US")
+                 (:comment "In allen Exemplaren: »di,ma.d.mi.d.mi.d.mi.«.")
+                 (:flag :ready) (:id 3)))
      (1662 nil "di.ma.d.mi.di.mi.di.mi."))
    (:text 110 58
-     (87 nil "tono ᴄrom. accid")
+     (87 nil
+         (:alt (:diplomatic "tono ᴄrom. accid")
+               (:critical "tono ᴄrom. accid.")
+               (:coord-barre "TZ3 TE1")
+               (:coord-norm "G1 US")
+               (:comment "In allen Exemplaren: »tono ᴄrom. accid«.")
+               (:flag :ready) (:id 4)))
      (707 nil "sem.ᴄrom.acc.")
      (1148 nil "tono ᴄro. accid.")
      (1682 nil "tono ᴄro. accid."))
@@ -150,7 +162,7 @@
                    (:coord-barre "TZ5 TE1")
                    (:coord-norm "G5 US")
                    (:comment "In allen Exemplaren: »di.mi.dimi. di.mi.di.mi.«.")
-                   (:flag :ready) (:id 3)))
+                   (:flag :ready) (:id 5)))
      (661 nil "di. ma. di. mi. d.imi. di. mi.")
      (1504 nil "di. ma. di. mi. di.mi. d.mi."))
    (:text 110 58
@@ -192,7 +204,14 @@
            (:section s14) b22 sbd3 b22 sb3 b22 fl3 sb3 b22 sh2 b22 sb2 b22 sbd2 b22 bl)
    (:text 90 58
      (34 nil "di.mi.di.ma.di.mi.di.mi.")
-     (607 nil "di.mi.di.ma.d.imi.di.mi.")
+     (607 nil
+          (:alt (:diplomatic "di.mi.di.ma.d.imi.di.mi.")
+                (:critical "di.mi.di.ma.di.mi.di.mi.")
+                (:coord-barre "TZ11 TE1")
+                (:coord-norm "G12 US")
+                (:comment "In allen Exemplaren: »di.mi.di.ma.d.imi.di.mi.«.")
+                (:flag :ready) (:id 6))
+          )
      (1201 nil "di.mi. di.mi.di.mi.")
      (1646 nil
            (:alt (:diplomatic "d.mi.d.ma.d.mi.d.mi,")
@@ -200,7 +219,7 @@
                  (:coord-barre "TZ11 TE4")
                  (:coord-norm "G14 US")
                  (:comment "In allen Exemplaren: »d.mi.d.ma.d.mi.d.mi,«.")
-                 (:flag :ready) (:id 4))))
+                 (:flag :ready) (:id 7))))
    (:text 70 58
      (118 nil "ᴛono")
      (284 nil "ᴄro.")

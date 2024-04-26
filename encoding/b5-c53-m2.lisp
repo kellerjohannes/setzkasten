@@ -50,7 +50,7 @@
                  (:critical b38)
                  (:coord-barre "MZ2 N4")
                  (:coord-norm "G3 N8")
-                 (:comment "In allen Exemplaren: A♯.")
+                 (:comment "In allen Exemplaren: B♯.")
                  (:flag :ready) (:id 1))
            b22 sb10 b22 bl
            (:section s4) (:newline) b22 sb3 b22 sh4 b22 sb4 b22 sb5 b22 sb6 b22 sh7 b22 sb7 b22 sh8 b22 sb8 b22 sb9 b22 sb10 b22 bl

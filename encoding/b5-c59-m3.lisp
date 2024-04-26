@@ -491,7 +491,14 @@
      (1404 nil "Seſto ordine ᴄromatico & ᴇnar."))
    ;; MZ21
    (:music 2343
-           (:section s38) gclef3 b38 sh0 sb0 sh1 sb1 fl3 sbd3 sh3 sb3 sh4 sb4 sh5 sb5 fl7 sbd7 sh7 sb7 sh8 sb8 fl10 sbd10 sh10 sb10
+           (:section s38) gclef3 b38 sh0 sb0 sh1 sb1 fl3 sbd3 sh3 sb3 sh4 sb4 sh5 sb5 fl7 sbd7 sh7 sb7 sh8 sb8 fl10 sbd10
+           (:alt (:diplomatic sh10)
+                 (:critical sh10)
+                 (:coord-barre "MZ20 N11")
+                 (:coord-norm "G38 N11")
+                 (:comment "Das ♯ wurde ursprünglich unter der untersten Notenlinie gedruckt und in den meisten Exemplaren in-house korrigiert, indem das gedruckte ♯ mit Tinte übermalt und ein ♯ über der obersten Notenlinie mit einer Drucktype eingefügt wurde. In den Exemplaren q020, q026, q031, q057, q063, q066 und q077 wurden beide Korrekturen nicht ausgeführt. In den Exemplaren q030 und q054 wurde nur das ♯ eingefügt.")
+                 (:flag :ready) (:id 24))
+           sb10
            (:section s47) gclef3 b22 sh0 sb0 sh1 sb1 sh2 sb2 sh3 sb3 sh4 sb4 sb5 sh6 sb6 sh7 sb7 sh8 sb8 sh9 sb9 sh10 sb10 b22 bl)
    (:text 110 58
      (167 nil "quinto ordine ᴄromatico& ᴇnar.")

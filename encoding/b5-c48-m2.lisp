@@ -1,3 +1,7 @@
+;; JK: in diesen Kapiteln ist die Anzahl der Textzeilen in den Überschriften unregelmässig, was zu
+;; einem flatterigen Satz führt. Das ist am Ende der Text-Lektorate zu prüfen und anzupassen.
+;;
+;; OPEN
 `((:header
    (:filename "b5-c48-m2")
    (:alt-name "m5.049")
@@ -90,7 +94,7 @@
                (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
                (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")))
     (s13 (:alt (:it "Semitono minore:\\diesis minore – diesis minore – diesis minore")
-               (:de "semitono minore:\\diesis minore – diesis minore - diesis minore")
+               (:de "semitono minore:\\diesis minore – diesis minore – diesis minore")
                (:en "Semitono minore:\\diesis minore – diesis minore – diesis minore")))
     (s14 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
                (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
@@ -174,7 +178,13 @@
    (:text 100 58
      (45 nil "di. mi. di. mi.")
      (405 nil "di. ma. di. mi.")
-     (893 nil "di. ma. di. mi. di. mi.")
+     (893 nil
+          (:alt (:diplomatic "di. ma. di. mi. di. mi.")
+                (:critical "di. mi. di. mi. di. mi.")
+                (:coord-barre "TZ8 TE2")
+                (:coord-norm "G10 US")
+                (:comment "In allen Exemplaren: »di. ma. di. mi. di. mi.«.")
+                (:flag :ready) (:id 0)))
      (1502 nil "di. mi. di. mi. di. ma. di. mi."))
    (:text 120 58
      (127 nil "tono")
@@ -212,7 +222,7 @@
      (879 nil
           (:alt (:diplomatic "di.ma. di mi. di.mi.")
                 (:critical "di.mi. di mi. di.mi.")
-                (:coord-barre "TZ11 TE3")
+                (:coord-barre "TZ11 TE2")
                 (:coord-norm "G13 US")
                 (:comment "In allen Exemplaren: »di.ma. di mi. di.mi.«.")
                 (:flag :ready) (:id 5)))

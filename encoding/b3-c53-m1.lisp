@@ -1,7 +1,3 @@
-;; JK: Achtung, alle Custodien fehlen, zu ergänzen!
-;;
-;; OPEN
-
 `((:header
    (:filename "b3-c53-m1")
    (:alt-name "m3.116")
@@ -12,10 +8,22 @@
                  (:en "[Madonna il poco dolce]")))
    (:voice-labels
     ;;Kommentar Anne: you don't give us the possibility of translating these to German and English here.
-    (s1 v1 "Soprano")
-    (s1 v2 "[Alto]")
-    (s1 v3 "[Tenore]")
-    (s1 v4 "[Basso]")))
+    ;;
+    ;; JK: Oha, ja, habe ich vorbereitet.
+    ;;
+    ;; OPEN
+    (s1 v1 (:alt (:it "Soprano")
+                 (:de "")
+                 (:en "")))
+    (s1 v2 (:alt (:it "[Alto]")
+                 (:de "")
+                 (:en "")))
+    (s1 v3 (:alt (:it "[Tenore]")
+                 (:de "")
+                 (:en "")))
+    (s1 v4 (:alt (:it "[Basso]")
+                 (:de "")
+                 (:en "")))))
 
   (:preamble-lilypond
    (:standalone-title "»Madonna il poco dolce«")

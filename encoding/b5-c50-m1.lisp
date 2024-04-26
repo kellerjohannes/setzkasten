@@ -154,9 +154,11 @@
                  (:coord-norm "G7 N4")
                  ;; JK: Frage an Luigi.
                  ;;
-                 ;; OPEN
-                 (:comment "In gewissen Quellen steht über dieser Note (G♯) ein enharmonischer Punkt. [Luigi: Quellen bennen.]")
-                 (:flag :observe) (:id 4))
+                 ;; LC: Erledigt.
+                 ;;
+                 ;; DONE
+                 (:comment "Im Exemplar q067 wurde über dieser Note (G♯) ein enharmonischer Punkt von einem Leser handschriftlich ergänzt.")
+                 (:flag :ready) (:id 4))
            fl9 b22 sb9 bl
            (:section s8) fl9 sb9 b22 sbd8 b22 sb8 b22 fl8 b22 sbd8 b22 fl8 b22 sb8 bl)
    (:text 90 58

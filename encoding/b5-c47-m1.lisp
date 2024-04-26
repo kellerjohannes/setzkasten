@@ -153,11 +153,11 @@
      (1986 nil "to.acc."))
    (:music 2255
            (:section s8) (:newline) (:f-clef) max7 fclef7 b22 fl9 b22
-           (:alt (:diplomatic sb9)
+           (:alt (:diplomatic sbd9)
                  (:critical sbd9)
                  (:coord-barre "MZ2 N1")
                  (:coord-norm "G8 N1")
-                 (:comment "In allen Exemplaren: A♭.")
+                 (:comment "Der enharmonische Punkt ist leicht rechts von der Mitte der Drucktype positioniert.")
                  (:flag :ready) (:id 5))
            b22 fl8 b22 sbd8 bl
            (:section s9) fl8 b22 sbd8 b22 sh6 b22 sb6 bl

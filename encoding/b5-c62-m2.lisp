@@ -158,8 +158,15 @@
            (:section s8) b22 sh4 b22 sb4 b22 sh6 b22 sb6 b22 bl
            (:section s9) b38 sbd4 b38 sbd6 b38 bl
            (:section s10) b38 fl4 b22 sbd4 b22 fl6 b22 sbd6 b38 b38 bl
-           (:section s11) b22 b22 sh2 b22 sb2 b22 fl5 b22 sbd5 b38 b22 bl
+           (:section s11)
+           (:alt (:diplomatic b22 b22 sh2 b22 sb2 b22 fl5 b22 sbd5 b38 b22 bl
            b22 b125 b125 b125)
+                 (:critical b22 b22 sh2 b22 sb2 b22 fl5 b22 sbd5 b38 b22 bl
+           b22 b125 b125 b125)
+                 (:coord-barre "MZ2 N8-9")
+                 (:coord-norm "G10-G11")
+                 (:comment "Zwischen G10 und G11 gibt es in den Exemplaren q001, q002, q008, q010, q016, q017, q023, q027, q033, q045, q047, q052, q058, q069, q070, q072, q073 und q076 eine zusätzliche Gruppe mit zwei Intervallen, Ė➚Ḃ♮ und A♭➚E♭. In allen anderen Exemplaren wurden diese vier Noten weggelassen und G11 an G10 angeschlossen und die Musikzeile mit Leertypen aufgefüllt.")
+                 (:flag :ready) (:id 3)))
    (:text 110 58
           (87 2080 "Queſte sottoſcritte ſono tutte terze maggiori,con le ſue propinque,nat.& accidentali."))
    (:text 110 58

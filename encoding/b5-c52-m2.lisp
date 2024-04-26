@@ -119,12 +119,7 @@
            (:section s4) (:newline) b22 fl5 sbd5 b22 sb5 b22 sbd5 sh5 sb5 fl6 sbd6 bl)
    (:text 70 58
           (48 nil "ᴅ.mi.d.mi.di.mi.d.ma.")
-          ((:alt (:diplomatic 593)
-                 (:critical 610)
-                 (:coord-barre "TZ2 TE2")
-                 (:coord-norm "–")
-                 (:comment "Text wurde nach rechts verschoben.")
-                 (:flag :ready) (:id 1))
+          (610 (:alt (:diplomatic 593) (:critical 680))
            nil
            (:alt (:diplomatic "d.mi.d.mi.d.mi.d.mi.")
                  (:critical "d.mi.d.mi.d.mi.")
@@ -207,18 +202,13 @@
           (811 nil "d.mi.d.mi. d.mi. d.ma.")
           (
            (:alt (:diplomatic 1397)
-                 (:critical 1430)
-                 (:coord-barre "TZ8 TE3")
-                 (:coord-norm "–")
-                 (:comment "Text wurde nach rechts verschoben.")
-                 (:flag :ready) (:id 4))
+                 (:critical 1530))
            nil (:alt (:diplomatic "d.mi.d.mi.d.mi.d.ma.")
                      (:critical "d.mi.d.mi.d.ma.")
                      (:coord-barre "TZ8 TE3")
                      (:coord-norm "G10 US")
                      (:comment "In allen Exemplaren: »d.mi.d.mi.d.mi.d.ma.«.")
                      (:flag :ready) (:id 5)))
-
           (1973 nil "d.mi.d.mi."))
    (:text 120 58
           (182 nil "Tono")
@@ -254,21 +244,21 @@
                  (:comment "Sehr seltene Verwendung von Ċ♭. Als Ganzton unter Ḋ♭ ist diese Notation sinnvoll, aber von Vicentino nicht explizit eingeführt oder auf der Klaviatur lokalisiert. Sie ist klanglich identisch mit B♯ (/Csolfaut secondo in terzo ordine/).")
                  (:flag :ready) (:id 6))
            b22 bl
-           (:section s13) (:newline) b38
-           (:alt (:diplomatic fl4 b22 sbd4)
-                 (:critical b38 b22 sbd4)
-                 (:coord-barre "MZ4 N9")
-                 (:coord-norm "G13 N1")
-                 (:comment "In allen Exemplaren: Ċ♭.")
-                 (:flag :ready) (:id 7))
+           (:section s13) (:newline) b38 fl4 b22 sbd4 b22 fl4 b22 sb4
            b22
-           (:alt (:diplomatic fl4 b22 sb4)
-                 (:critical b38 b22 sb4)
-                 (:coord-barre "MZ4 N10")
-                 (:coord-norm "G13 N2")
-                 (:comment "In allen Exemplaren: C♭.")
+           (:alt (:diplomatic sh3 b22 sb3)
+                 (:critical b22 b22 sb3)
+                 (:coord-barre "MZ4 N11")
+                 (:coord-norm "G13 N3")
+                 (:comment "In allen Exemplaren: B♯.")
+                 (:flag :ready) (:id 7))
+           (:alt (:diplomatic b22 sbd3)
+                 (:critical fl3 sbd3)
+                 (:coord-barre "MZ4 N12")
+                 (:coord-norm "G13 N4")
+                 (:comment "In allen Exemplaren: Ḃ♮.")
                  (:flag :ready) (:id 8))
-           b22 sh3 b22 sb3 b22 sbd3 b38 b38 bl
+           b38 b38 bl
            (:section s14) b22
            (:alt (:diplomatic sbd3)
                  (:critical fl3 sbd3)

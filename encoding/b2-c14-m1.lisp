@@ -30,8 +30,9 @@
               ;; Abstände bei allen sections dieses Beispiels gleich berechnet werden. Keine
               ;; inhaltliche Bedeutung.
               ;;
-              ;; OPEN
               ;; AS: OK ich habe verstanden.
+              ;;
+              ;; OPEN
               (:de "incitati")
               (:en "incitati [steps]")))
     (s5 (:alt (:it "[Grado] incitato\\e molle")
@@ -44,8 +45,9 @@
               ;; Kommentar Anne: willst du noch etwas hinzufügen?
               ;; JK: Siehe Kommentar oben.
               ;;
-              ;; OPEN
               ;; AS: Auch hier verstanden
+              ;;
+              ;; OPEN
               (:de "incitati\\")
               (:en "incitati [steps]\\")))
     (s8 (:alt (:it "[Grado] molle\\et incitato")

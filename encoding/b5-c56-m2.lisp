@@ -42,8 +42,8 @@
            (:section s1) (:f-clef) max7 fclef7 b38 fl3 b22 sb3 b22 sb4 b22 fl5 b22 sb5 b22
            (:alt (:diplomatic sb6)
                  (:critical fl6 sb6)
-                 (:coord-barre "MZ1 N6")
-                 (:coord-norm "G1 N6")
+                 (:coord-barre "MZ1 N4")
+                 (:coord-norm "G1 N4")
                  (:comment "In allen Exemplaren: E.")
                  (:flag :ready) (:id 1))
            b22 sb7 b22 fl8 b22 sb8 b22 fl9 b22 sb9 fl10 sb10 b38 bl

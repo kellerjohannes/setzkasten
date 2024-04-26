@@ -49,7 +49,7 @@
    (:text 70 58
      (75 2090 "Eſſempio della quarta ſincopata à due uoci,& non ſincop. à tre uoci,& con il punto : come"))
    (:text 90 58
-          (357 1469 "sʼhà da comporre à molte uoci , & con la ſincopa tutta cattiua."))
+     (357 1469 "sʼhà da comporre à molte uoci , & con la ſincopa tutta cattiua."))
    (:music 2211
            (:voice v1)
            (:section s1) cclef7 b22 mrest7 m7 dot8 sm6 b22 m6 sb7 bl
@@ -89,20 +89,21 @@
            (:section s8) m4 m5 sb4 sb5 bl)
    (:vspace 30)
    (:text 90 58
-          (173 nil
-               (:alt (:diplomatic "1.")
-                     (:critical "1.")
-                     (:coord-barre "TZ4 TE1-3")
-                     (:coord-norm "G1 US")
-                     ;; JK: Notwendigkeit eines Kommentars ist zu diskutieren.
-                     ;;
-                     ;; JK: Ich habe die Behandlung dieser Unklarheit als Kapitelkommentar angelegt und verweise im kritischen Bericht darauf.
-                     ;;
-                     ;; DONE
-                     (:comment "Zur Bedeutung von »1.«, »2.« und »3.« siehe Kapitelkommentar.")
-                     (:flag :observe) (:id 2)))
-          (514 nil "2.")
-          (824 nil "3."))
+     (173 nil
+          (:alt (:diplomatic "1.")
+                (:critical "1.")
+                (:coord-barre "TZ4 TE1-3")
+                (:coord-norm "G1 US")
+                ;; JK: Notwendigkeit eines Kommentars ist zu diskutieren.
+                ;;
+                ;; JK: Ich habe die Behandlung dieser Unklarheit als Kapitelkommentar angelegt und
+                ;; verweise im kritischen Bericht darauf.
+                ;;
+                ;; DONE
+                (:comment "Zur Bedeutung von »1.«, »2.« und »3.« siehe Kapitelkommentar.")
+                (:flag :observe) (:id 2)))
+     (514 nil "2.")
+     (824 nil "3."))
    (:music 2203
            (:voice v3)
            (:section s4) s1008 (:f-clef) max7 fclef7 sb4 b38 bl
