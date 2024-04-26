@@ -35,6 +35,7 @@
                  (:coord-norm "G3 St1 N4")
                  ;; JK: Entscheidung notwendig.
                  ;;
+                 ;; GROUP !!
                  ;; OPEN
                  (:comment "In allen Exemplaren: Kein ♯. Diskutable Ergänzung. Im Original möglicherweise aus Platzgründen weggelassen.")
                  (:flag :observe) (:id 1))
@@ -60,6 +61,7 @@
            ;;
            ;; Das beträfe die m4, vor die ein fl4 gesetzt werde müsste. Zu diskutieren.
            ;;
+           ;; GROUP !!
            ;; OPEN
            (:section s4) b38 b22 m6 b22 b22
            (:alt (:diplomatic)
@@ -68,6 +70,7 @@
                  (:coord-norm "G4 St2 N2")
                  ;; JK: Entscheidung oder Kommentar notwendig.
                  ;;
+                 ;; GROUP !!
                  ;; OPEN
                  (:comment "Möglichkeit der Ergänzung eines ♭ (fl4) zur Vermeidung des Querstands zwischen Alt und Bass. Solche Querstände sind jedoch typisch für Vicentinos Kompositionsweise.")
                  (:flag :observe) (:id 2))

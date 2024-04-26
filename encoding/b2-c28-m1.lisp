@@ -30,6 +30,7 @@
    ;;
    ;; kir: für mich ist der Titel trotz des Satzpunktes in der Mitte als ein Satz zu lesen
    ;;
+   ;; GROUP !
    ;; OPEN
    (:voice-order
     (s1 v1 v2)

@@ -26,7 +26,6 @@
     ;; and only 1 minore.
     ;;
     ;; OPEN
-
     (s6 (:alt (:it "differenti\\minori\\et maggiori")
               (:de "verschiedene\\minori\\und mmagiori")
               (:en "different\\minori\\and maggiori")))))

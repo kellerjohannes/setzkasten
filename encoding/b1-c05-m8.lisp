@@ -42,14 +42,6 @@
    (:brackets
     (s2 0 5.5 -12 0 5.5 -12))
    (:lyrics
-    ;; JK: Im Auge zu behalten: die Silben werden standardmässig kleiner gesetzt als die "per
-    ;; x:"-Angaben und die 'captions'. Das müsste in der lilypond-backend-Implementierung angepasst
-    ;; werden, falls die Unterschiedlichkeit der Schriftgrössen nicht akzeptabel sein sollte.
-    ;;
-    ;; LC: findet Luigi ok, aber der Zeilenabstand ist teilweise optisch zu klein, muss
-    ;; grundsätzlich kontrolliert werden
-    ;;
-    ;; OPEN
     (s1 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per ɴ:\" } la sol fa la sol")
                  (:de "\\set stanza = \\markup{ \\normal-text \"per ɴ:\" } la sol fa la sol")
                  (:en "\\set stanza = \\markup{ \\normal-text \"in ɴ:\" } la sol fa la sol")))

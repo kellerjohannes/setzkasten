@@ -145,6 +145,7 @@
                  (:coord-norm "G18")
                  ;; JK: Soll das nur in einem Kommentar erwähnt werden? Keine Idealisierung?
                  ;;
+                 ;; GROUP !
                  ;; OPEN
                  (:comment "In diesem Beispiel kommt keine Sexte vor. Eine Idealisierung könnte in Betracht gezogen werden. Es wurde keine Idealisierung vorgenommen")
                  (:flag :observe) (:id 2))

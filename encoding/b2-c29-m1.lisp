@@ -239,6 +239,7 @@
            ;; original E-G) entsteht. Konsens: wir bleiben bei der ursprünglichen Korrektur, die
            ;; selbstverständlich kommentiert ist.
            ;;
+           ;; GROUP !
            ;; OPEN
            bl)
    (:text 90 58

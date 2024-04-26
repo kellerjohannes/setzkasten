@@ -10,6 +10,7 @@
                  ;; der dritten Section. Maniates macht eine alternative Stimmverteilung. Alternativ
                  ;; könnte der Tenor stark korrigiert werden.
                  ;;
+                 ;; GROUP !!!
                  ;; OPEN
                  ))
    (:section-headings
@@ -86,6 +87,7 @@
            ;; Diese Frage ist offen, im Moment wird nichts idealisiert, das ist
            ;; akut zu diskutieren
            ;;
+           ;; GROUP !!!
            ;; OPEN
            (:section s1)
            (:voice v1) cclef5 b22 sb9 b22 sb8 b22 sb7 b22

@@ -23,6 +23,7 @@
               ;; the typesetter (I bet he thought this was three separate examples).  I think we
               ;; should omit the barlines, and note them in a commentary.
               ;;
+              ;; GROUP !!
               ;; OPEN
               (:de "nicht sehr modern")
               (:en "not too modern")))

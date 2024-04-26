@@ -50,11 +50,6 @@
               (:en "la in descent")))))
   (:preamble-lilypond
    (:lyrics
-    ;; JK: Im Auge zu behalten: die Silben werden standardmässig kleiner gesetzt als die "per
-    ;; x:"-Angaben und die 'captions'. Das müsste in der lilypond-backend-Implementierung angepasst
-    ;; werden, falls die Unterschiedlichkeit der Schriftgrössen nicht akzeptabel sein sollte.
-    ;;
-    ;; OPEN
     (s1 v1 (:alt (:it "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } mi fa sol re mi")
                  (:de "\\set stanza = \\markup{ \\normal-text \"per ♭:\" } mi fa sol re mi")
                  (:en "\\set stanza = \\markup{ \\normal-text \"in ♭:\" } mi fa sol re mi")))

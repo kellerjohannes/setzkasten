@@ -2,6 +2,11 @@
 ;;
 ;; OPEN
 
+;; JK: Alle 'OPEN'-Kommentare sollen zusätzlich getagged werden (z.B. mit GROUP), für eine
+;; schnellere Besprechung in der Gruppe bzw. einzelnen Beteiligten.
+;;
+;; OPEN
+
 `((:header
    (:filename "b1-c05-m1")
    (:alt-name "m1.003")

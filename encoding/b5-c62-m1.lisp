@@ -57,8 +57,8 @@
                (:de "")
                (:en "Terza\\accidentale\\propinqua")))
 
-    ;; ab hier wird "propinq." stets als "propinquissima" normalisiert
-    ;; soll kommentiert werden
+    ;; JK: ab hier wird "propinq." stets als "propinquissima" normalisiert soll kommentiert
+    ;; werden. Braucht Konsens von der Gruppe.
     ;;
     ;; OPEN
     (s17 (:alt (:it "Terza\\accidentale\\propinquissima")

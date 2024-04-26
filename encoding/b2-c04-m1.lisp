@@ -86,6 +86,7 @@
                  ;; JK: ist in der Gruppe zu besprechen. Momentane Tendenz in Absprache mit LC:
                  ;; Original lassen wie es ist.
                  ;;
+                 ;; GROUP
                  ;; OPEN
                  (:comment "Korrekturvorschlag von Luigi: C-Schlüssel mit einem F-Schlüssel austauschen. Ist zu diskutieren.")
                  (:flag :observe) (:id 1))

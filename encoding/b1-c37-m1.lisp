@@ -22,6 +22,7 @@
     ;; JK an Anne: Ich habe 'incomposto' nun stets vor 'leap' gesetzt. Scheint mir konsequenter zu
     ;; sein mit Blick auf die vorangehenden Beispielen. Gut so?
     ;;
+    ;; ANNE
     ;; OPEN
     (s2 (:alt (:it "salto di quinta\\imperfetta\\naturale\\incomposto")
               (:de "Sprung incomposto\\der quinta\\imperfetta\\naturale")

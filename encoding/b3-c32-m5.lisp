@@ -55,6 +55,7 @@
                  (:coord-norm "G3 St1 N2")
                  ;; JK: Entscheidung notwendig.
                  ;;
+                 ;; GROUP !!
                  ;; OPEN
                  (:comment "In allen Exemplaren: B♭ (ohne ♮ notiert). Offene Frage, ob diese Idealisierung vorgenommen werden soll oder nicht.")
                  (:flag :observe) (:id 1))

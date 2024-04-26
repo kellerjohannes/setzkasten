@@ -2,6 +2,7 @@
 ;; möchte die zweizeilige Anordnung der Silben (wie im Original gedruckt) aufrecht erhalten. Zur
 ;; Zeit besteht kein Konsens.
 ;;
+;; GROUP
 ;; OPEN
 
 `((:header

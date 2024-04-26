@@ -12,6 +12,7 @@
     ;;
     ;; kir: hm, ist vielleicht nicht nötig (weil redundant)
     ;;
+    ;; GROUP !
     ;; OPEN
     (s1 (:alt (:it "A due voci")
               (:de "mit zwei Stimmen")

@@ -68,16 +68,12 @@
     ;;
     ;; JK: von der Gruppe zu bestätigen
     ;;
+    ;; GROUP
     ;; OPEN
 
     (s12 (:alt (:it "semitono minore\\et maggiore,\\accidentali incomposti")
                (:de "semitono minore\\und maggiore,\\[beide] accidentali incomposti")
                (:en "semitono minore\\and maggiore,\\[both] accidentali incomposti")))))
-  ;; LC: Ich habe hier beide/both eingefügt
-  ;;
-  ;; JK: von der Gruppe zu bestätigen
-  ;;
-  ;; OPEN
   (:data
    (:text 90 58
           (0 2234 "ᴇſſempio di più ꜱemitoni mag.et minori,aſcendenti,et diſcendenti, comp.et incomp.nat.et acci"))

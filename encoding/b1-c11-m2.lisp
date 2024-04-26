@@ -33,6 +33,7 @@
                  ;; JK: Hier und allgemein: Form der Verweise klären: bx-cy-mz oder I.11,
                  ;; Notenbeispiel 1?
                  ;;
+                 ;; GROUP
                  ;; OPEN
                  (:comment "In allen Exemplaren: Ġ♯. Begründungen für die Korrektur in der kritischen Edition: Vicentino würde diese Tonhöhe als A♭ notieren. Die Ganztonteilung mit A♭ wurde bereits im vorhergehenden Beispiel (b1-c11-m1) behandelt, was die originale Gestalt redundant macht.")
                  (:flag :ready) (:id 1))

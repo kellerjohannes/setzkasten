@@ -20,6 +20,7 @@
     ;; kir: sehe ich auch so (und vermute generell, dass wir/ich an einigen Stellen 'kürzer'
     ;; übersetzen sollte ...)
     ;;
+    ;; GROUP
     ;; OPEN
     (s3 (:alt (:it "[Grado] incitato\\e molle")
               (:de "incitato\\und molle")
@@ -32,7 +33,7 @@
               ;;
               ;; AS: OK ich habe verstanden.
               ;;
-              ;; OPEN
+              ;; DONE
               (:de "incitati")
               (:en "incitati [steps]")))
     (s5 (:alt (:it "[Grado] incitato\\e molle")
@@ -47,7 +48,7 @@
               ;;
               ;; AS: Auch hier verstanden
               ;;
-              ;; OPEN
+              ;; DONE
               (:de "incitati\\")
               (:en "incitati [steps]\\")))
     (s8 (:alt (:it "[Grado] molle\\et incitato")

@@ -9,6 +9,7 @@
                  ;; also "Example of the incomposto and composto leap of the quarta naturale, and of
                  ;; its steps". Was meinst du?
                  ;;
+                 ;; ANNE
                  ;; OPEN
                  (:en "Example of the leap of the quarta naturale, and of its incomposto and composto steps")))
    (:section-headings

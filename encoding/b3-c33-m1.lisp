@@ -89,6 +89,7 @@
                  (:en "Cadence of the tenor")))
     ;; JK: Hier könnte "Cadentia del basso" für alle übrigen sections ergänzt werden. Zu diskutieren.
     ;;
+    ;; GROUP !
     ;; OPEN
     (s4 v4 (:alt (:it "Cadentia del soprano")
                  (:de "Kadenz des Soprano")
@@ -115,6 +116,7 @@
            ;;   diatonischem und chromatischem Material, deshalb ist es naheliegend,
            ;;   hier ein fis zu ergänzen
            ;;
+           ;; GROUP
            ;; OPEN
            (:section s1) cclef1 mrest5 sb5
            (:alt (:diplomatic)
@@ -123,6 +125,7 @@
                  (:coord-norm "G1 St1 N2")
                  ;; JK: Entscheidung oder Kommentar notwendig.
                  ;;
+                 ;; GROUP !
                  ;; OPEN
                  (:comment "Hier kann die Ergänzung eines ♯ diskutiert werden. Argumente für beide Varianten liegen vor.")
                  (:flag :observe) (:id 1))

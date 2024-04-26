@@ -79,6 +79,7 @@
            ;;
            ;; JK mit Luigi: ev. ist dieser Kommentar in einen Kapitelkommentar auszulagern.
            ;;
+           ;; GROUP !
            ;; OPEN
            (:section s6)
            (:alt (:diplomatic)
