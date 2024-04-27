@@ -4,7 +4,7 @@
    (:comment "q021_s256, rotation: 0.94, origin: 932")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "[Regola di ritrovare le sette ottave sopra Alamire,\\con i sottoscritti esempi]")
-                 (:de "[Methode die sieben ottave über Alamire zu finden,\\mit den daruntergeschriebenen Beispielen.]")
+                 (:de "[Methode die sieben ottave über Alamire zu finden,\\mit den unten geschriebenen Beispielen.]")
                  (:en "[Method for finding the seven ottave on Alamire,\\with the examples written below]")))
    (:section-headings
     (s1 (:alt (:it "Prima ottava")
