@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
     (s1 (:alt (:it "Primo ordine diatonico naturale")
-              (:de "")
+              (:de "erste Anordnung diatonico naturale")
               (:en "First ordine diatonico naturale")))
     (s10 (:alt (:it "Secondo ordine diatonico naturale")
               (:de "")
