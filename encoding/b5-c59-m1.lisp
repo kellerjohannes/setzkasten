@@ -229,16 +229,7 @@
                  (:alternative-layout)
                  (:flag :layout) (:id 0))
 
-           (:alt (:diplomatic cclef1)
-                 (:barre cclef3)
-                 (:coord-barre "MZ3 N1")
-                 (:coord-norm "G3 N1")
-                 ;; JK: Achtung, dieses :alt-Element muss entfernt werden. 'clef3' ist korrekt. Das war nur ein Test für Rolf.
-                 ;;
-                 ;; OPEN
-                 (:comment "Dieser Schlüssel steht in gewissen Quellen auf dem Kopf. [Achtung, Pseudo-Eintrag, muss gelöscht werden.")
-                 (:flag :test) (:id 17))
-           b22 fl29 (:key-signature nil nil nil nil nil nil :flat)
+           cclef3 b22 fl29 (:key-signature nil nil nil nil nil nil :flat)
            b22 sb0 b22 sb1 b22 sb2 b22 sb3 b22 sb4 b22 sb5 b22 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10 b22 b38
            (:section s11) cclef3 b22 fl2
            (:alt (:diplomatic fl4)
@@ -364,7 +355,7 @@
                  (:critical sh0 sb0)
                  (:coord-barre "MZ11 (S2 MZ3) N1")
                  (:coord-norm "G19 N1")
-                 (:comment "In allen Exemplaren: Das ♯ steht rechts vom Notenkopf.")
+                 (:comment "In allen Exemplaren: Das ♯ steht rechts vom Notenkopf. Im Exemplar q009 wurde das ♯ von einem Leser handschriftlich durchgestrichen und links vom Notenkopf ergänzt.")
                  (:flag :ready) (:id 3))
            sb1 sb2 sh3 sb3 sb4 sb5 b22 sh6 sb6 b22 sh7 b22 sb7 b22 sb8 b22
            (:alt (:diplomatic sh9 sb9)
@@ -517,7 +508,7 @@
                  (:critical b22 sb1 sh2 b22 sb2)
                  (:coord-barre "MZ24 (S3 MZ6) N2-3")
                  (:coord-norm "G38 N2-3")
-                 (:comment "In allen Exemplaren: Das ♯ steht vor der zweiten Note, auf der Höhe der dritten Note.")
+                 (:comment "In allen Exemplaren: Das ♯ steht vor dem B♮ (N2), auf der Höhe des C (N3).")
                  (:flag :ready) (:id 6))
            b22 sb3 b22 sb4 b22 sh5 b22 sb5 b22 sb6 b22 sb7 b22 sb8 b22 sh9 b22 sb9 sb10 b38
            (:section s46) (:f-clef) max5 fclef5 b22 fl18 (:key-signature nil nil nil nil nil nil :flat)
@@ -696,6 +687,10 @@
          (:coord-barre "MZ35-36 (S4 MZ9-10)")
          (:coord-norm "–")
          ;; JK: Entscheidung notwendig.
+         ;;
+         ;; LC: Soll im Notenbeispiel bleiben. D.h.:
+         ;; TODO JK kontrolliert mit Rolf, ob dieser Abschnitt auch im Haupttext steht.
+         ;; TODO JK ergänzt diesen Abschnitt in der modernen Notation
          ;;
          ;; OPEN
          (:comment "Dieser Text (»Qui finiscono ...«) kann entweder im Notenbeispiel oder im Haupttext erscheinen. Ist zu diskutieren. Im Moment steht er in der diplomatischen und idealisierten Transkription, nicht aber in der normalisierten.")

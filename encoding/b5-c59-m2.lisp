@@ -364,7 +364,7 @@
                  (:critical sbd10)
                  (:coord-barre "MZ12 (S2 MZ3) N22")
                  (:coord-norm "G21 N11")
-                 (:comment "In allen Exemplaren: G fehlt.")
+                 (:comment "In allen Exemplaren: Ġ fehlt.")
                  (:flag :ready) (:id 4))
            bl)
    (:text 110 58
@@ -556,6 +556,11 @@
                  (:alternative-layout (:newline))
                  (:flag :layout) (:id 0))
            (:f-clef) max7 fclef7 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b22
+           ;; JK & LC: Die fa-super-la-Thematik soll als Kapitelkommentar angelegt werden, was
+           ;; diesen Kommentar hier ersetzt, er kann dann aus dem kritischen Bericht entfernt
+           ;; werden. Das gilt für alle folgenden Einträge, die sich auf diese Problematik beziehen.
+           ;;
+           ;; OPEN
            (:alt (:diplomatic fl10)
                  (:critical fl10)
                  (:coord-barre "MZ29 (S4 MZ1) N22")

@@ -558,7 +558,7 @@
                  (:flag :layout) (:id 0))
            cclef3 b38 fl0 sbd0 fl1 sbd1 sh1 sb1 sh2 sb2 fl4 sbd4 sh4 sb4 sh5 sb5 fl7 b22 sbd7 b22 fl8 sbd8 sh8 sb8
            (:alt (:diplomatic b22 sb10)
-                 (:critical sh9 sb9)
+                 (:critical fl10 sbd10)
                  (:coord-barre "MZ23 (S3 MZ4) N22")
                  (:coord-norm "G49 N11")
                  (:comment "In allen Exemplaren: C.")
@@ -595,7 +595,7 @@
                  (:critical sbd0 b22 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b22 sbd10)
                  (:coord-barre "MZ25 (S3 MZ6) N1-11")
                  (:coord-norm "G42 N1-11")
-                 (:comment "In allen Exemplaren: Ḋ♭ Ė♭ Ḟ Ġ♭ Ȧ♭ Ḃ♮ Ċ♭ Ḋ♭ Ė♭ Ḟ, was bis auf das Ḃ♮ eine Redundanz zu G20 (_terzo ordine_) ist.")
+                 (:comment "In allen Exemplaren: Ḋ♭ Ė♭ Ḟ Ġ♭ Ȧ♭ Ḃ♮ Ċ♭ Ḋ♭ Ė♭ Ḟ. Diese Sequenz mit dem Grundton Ḋ♭ ist bereits in G38 vertreten, wobei das Ḃ♮ zu einem Ḃ♭ korrigiert und ein Ġ♭ als letzte Note ergänzt werden muss. Um diese Redunanz zu vermeiden, bieten sich zwei Korrekturen für G42 an: Ċ Ḋ Ė Ḟ Ġ Ȧ Ḃ♮ Ċ Ḋ Ė Ḟ, was alle Noten ausser der 3., 6. und 10. korrigiert und die letzte ergänzt (gewählt für die kritische Edition) und Ċ♭ Ḋ♭ Ė♭ Ḟ♭ Ġ♭ Ȧ♭ Ḃ♭ Ċ♭ Ḋ♭ Ė♭ E♯/Ḟ♭, was ein F3-Schlüssel und eine Korrektur der 3., 6. und 10. Note, sowie die Ergänzung der letzten Note erfordert.")
                  (:flag :ready) (:id 15))
            b22
            (:section s51) cclef7 b38 sbd0 b22 sbd1 b22 fl2 sbd2 b22 sbd3 b22 sbd4 b22 fl5 b22 sbd5 b22 fl6 b22 sbd6 b22 sbd7 b22 sbd8 b22 fl9 b22 sbd9 b22 sbd10 b22 bl)

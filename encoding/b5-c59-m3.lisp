@@ -463,7 +463,17 @@
    ;; MZ18
    (:music 2321
            (:section s27) (:f-clef) max9 fclef9 sh0 sb0 sh1 sb1 fl3 sbd3 sh3 sb3 sh4 sb4 sh5 sb5 sh6 sb6 sh7 sb7 sh8 sb8 fl10 sbd10 sh10 sb10 b38
-           (:section s36) (:f-clef) max9 fclef9 b22 sh0 sb0 sb1 sh2 sb2 sh3 sb3 sh4 sb4 sb5 sh6 sb6 sh7 sb7 sb8 sh9 sb9 sh10 sb10 bl)
+           (:section s36) (:f-clef) max9 fclef9 b22 sh0 sb0 sb1 sh2 sb2 sh3 sb3 sh4 sb4 sb5 sh6
+           (:alt (:diplomatic sb6)
+                 (:critical sb6)
+                 (:coord-barre "MZ18 (S2 MZ9) N18")
+                 (:coord-norm "G36 N7")
+                 (:comment "In allen Exemplaren wurde ein enharmonischer Punkt unter dem Notenkopf gedruckt.")
+                 ;; JK: :ID neu zu verteilen.
+                 ;;
+                 ;; OPEN
+                 (:flag :ready) (:id 7))
+           sh7 sb7 sb8 sh9 sb9 sh10 sb10 bl)
    (:vspace 110)
    ;; MZ19
    (:music 2323
@@ -494,7 +504,7 @@
            (:section s38) gclef3 b38 sh0 sb0 sh1 sb1 fl3 sbd3 sh3 sb3 sh4 sb4 sh5 sb5 fl7 sbd7 sh7 sb7 sh8 sb8 fl10 sbd10
            (:alt (:diplomatic sh10)
                  (:critical sh10)
-                 (:coord-barre "MZ20 N11")
+                 (:coord-barre "MZ20 (S3 MZ2) N11")
                  (:coord-norm "G38 N11")
                  (:comment "Das ♯ wurde ursprünglich unter der untersten Notenlinie gedruckt und in den meisten Exemplaren in-house korrigiert, indem das gedruckte ♯ mit Tinte übermalt und ein ♯ über der obersten Notenlinie mit einer Drucktype eingefügt wurde. In den Exemplaren q020, q026, q031, q057, q063, q066 und q077 wurden beide Korrekturen nicht ausgeführt. In den Exemplaren q030 und q054 wurde nur das ♯ eingefügt.")
                  (:flag :ready) (:id 24))
@@ -574,14 +584,14 @@
            (:section s53) (:f-clef) max7 fclef7
            (:alt (:diplomatic sh1)
                  (:critical sh0)
-                 (:coord-barre "MZ27 (S3 MZ8) N12")
+                 (:coord-barre "MZ26 (S3 MZ8) N12")
                  (:coord-norm "G53 N1")
                  (:comment "In allen Exemplaren: Das ♯ steht eine Position höher.")
                  (:flag :ready) (:id 9))
            sb0 sh1 sb1 sb2
            (:alt (:diplomatic sh3 sb3 fl5 sbd5 sh5 sb5 sh6 sb6 fl8 sbd8 fl9 sbd9 sh9 sb9 sh10 sb10)
                  (:critical b38 sb3 sh4 sb4 sb5 sb6 sh7 sb7 sh8 sb8 sb9 sb10)
-                 (:coord-barre "MZ27 (S3 MZ8) N15-22")
+                 (:coord-barre "MZ26 (S3 MZ8) N15-22")
                  (:coord-norm "G53 N4-11")
                  (:comment "In allen Exemplaren: B♯ Ḋ♭ D♯ E♯ Ġ♭ Ȧ♭ A♯ B♯.")
                  (:flag :ready) (:id 10))
@@ -591,7 +601,17 @@
      (1425 nil "seſto ordine ᴄromatico & Enar."))
    ;; MZ28
    (:music 2343
-           (:section s45) (:f-clef) max9 fclef9 sh0 sb0 sh1 sb1 fl3 sbd3 sh3 sb3 sh4 sb4 sh5 sb5 fl7 sbd7 sh7 sb7 sh8 sb8 fl10 sbd10 sh10 sb10
+           (:section s45) (:f-clef) max9 fclef9
+           (:alt (:diplomatic sh0)
+                 (:critical sh0)
+                 (:coord-barre "MZ28 (S3 MZ9) N1")
+                 (:coord-norm "G45 N1")
+                 (:comment "Das ♯ wurde in Exemplar q005 auf ein Stück Papier gedruckt und eingeklebt.")
+                 ;; JK: :ID anpassen
+                 ;;
+                 ;; OPEN
+                 (:flag :ready) (:id 0))
+           sb0 sh1 sb1 fl3 sbd3 sh3 sb3 sh4 sb4 sh5 sb5 fl7 sbd7 sh7 sb7 sh8 sb8 fl10 sbd10 sh10 sb10
            (:section s54) (:f-clef) max9 fclef9 sh0 sb0 sh1 sb1 sh2 sb2 sh3 sb3 sh4 sb4 sb5 sh6 sb6 sh7 sb7 sh8 sb8 sh9 sb9 sh10 sb10 bl)
    (:vspace 110)
    ;; MZ29
@@ -615,6 +635,10 @@
                  (:critical max7 fclef7)
                  (:coord-barre "MZ30 (S4 MZ1)")
                  (:coord-norm "G55")
+                 ;; JK & LC: Dieses Beispiel soll ohne Kreuze transkribiert werden. Der Kommentar
+                 ;; ist entsprechend anzupassen.
+                 ;;
+                 ;; OPEN
                  (:comment "An dieser Stelle ist der _settimo ordine_ ohne Vorzeichen zu erwarten. Falls er ergänzt wird, sollte er mit B♭ enden, um die _fa super la_-Situation zu spiegeln.")
                  (:flag :ready) (:id 11))
            (:alt (:diplomatic sh1)
@@ -628,14 +652,14 @@
                  (:critical sh7)
                  (:coord-barre "MZ30 (S4 MZ1) N8")
                  (:coord-norm "G55 N8")
-                 (:comment "In allen Exemplaren: Das ♯ steht zwei Positionen höher.")
+                 (:comment "In den Exemplaren q002 q003 q004 q005 q009 q010 q017 q021 q032 q034 q037 q038 q039 q040 q042 q049 q051 q052 q058 q059 q065 q070 q076 q078 q079 und q081 wurde das ♯ zwei Positionen tiefer gedruckt.")
                  (:flag :ready) (:id 13))
            sb7 sh8 sb8 sh9 sb9
            (:alt (:diplomatic fl10 sb10)
                  (:critical sb10)
                  (:coord-barre "MZ30 (S4 MZ1) N11")
                  (:coord-norm "G55 N11")
-                 (:comment "In allen Exemplaren: B♭, unplausibel. Die regelmässige Korrektur ist B♯, die erniedrigte Stufe im Sinn eines _fa super la_ ist B♮, wie es für alle anderen _settimo ordine_ dieses Beispiels der Fall ist. Das ♭ könnte als Auflösung des ♯ vor der letzten Note interpretiert werden. Vergleiche auch Section G62, wo die gleiche Skala wie Section 55 abgedruckt ist, allerdings mit B♯ als oberste Note.")
+                 (:comment "In allen Exemplaren: B♭, unplausibel. Die regelmässige Korrektur ist B♯, die erniedrigte Stufe im Sinn eines _fa super la_ ist B♮, wie es für alle anderen _settimo ordine_ dieses Beispiels der Fall ist. Das ♭ könnte als Auflösung des ♯ vor der letzten Note interpretiert werden. Vergleiche auch G62, wo die gleiche Skala wie G55 abgedruckt ist, allerdings mit B♯ als oberste Note.")
                  (:flag :ready) (:id 14)))
    (:text 110 58
      (232 nil "Settimo ordine ᴄromatico Enar."))
@@ -652,9 +676,9 @@
            fl7 sbd7 sh7 sb7 sh8 sb8 fl10 sbd10
            (:alt (:diplomatic sh10 sb10)
                  (:critical sh10 sb10)
-                 (:coord-barre "MZ31 (S4 MZ2) N10")
+                 (:coord-barre "MZ31 (S4 MZ2) N11")
                  (:coord-norm "G56 N10")
-                 (:comment "Kein Eingriff, G♯ entspricht der erniedrigten letzten Stufe in G55.")
+                 (:comment "In allen Exemplaren: Das ♯ steht eine Position tiefer.")
                  (:flag :ready) (:id 16)))
    (:text 110 58
      (239 nil "settimo ordine ᴄromatico Enar."))
