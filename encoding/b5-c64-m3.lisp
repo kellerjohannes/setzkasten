@@ -4,7 +4,7 @@
    (:comment "q021_s291, rotation: -0.7, origin: 515")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio delli salti delle seste maggiore,\\ch'in nostra prattica occorgono")
-                 (:de "Beispiel der Sprünge des seset maggiore,\\die in unserer Praxis vorkommen.")
+                 (:de "Beispiel von Sprüngen des seste maggiore,\\die in unserer Praxis vorkommen.")
                  (:en "Example of the leaps of seste maggiore,\\which occur in our practice")))
    (:section-captions
     (s1 (:alt (:it "Naturale")
