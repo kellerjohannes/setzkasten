@@ -4,7 +4,7 @@
    (:comment "q021_s291, rotation: -0.7, origin: 509")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio delli salti delle seste minori, che occorreno a scrivere\\sopra il nostro stromento")
-                 (:de "Beispiel der Sprünge der seste minori, wie sie auf unserem Instrument zu schreiben sind.")
+                 (:de "Beispiel von Sprüngen der seste minori, wie sie auf unserem Instrument zu schreiben sind.")
                  (:en "Example of leaps of seste minori, which need to be written\\on our instrument")))
    (:section-captions
     (s1 (:alt (:it "Naturale")
