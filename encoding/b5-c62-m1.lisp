@@ -85,7 +85,7 @@
    (:line-headings
     (:alt (:it "La proportione della terza minore si dimanda sesquiquinta come è da 5 a 6.\\La proportione della terza minore con la sua propinqua, è come da 4 e mezzo a 5 e mezzo.\\Questa è inrationale.")
           (:de "Die Proportion der terza minore wird sesquiquinta genannt, wie es von 5 zu 6 ist.\\Die Proportion der terza minore mit seiner propinqua ist wie 4 1/2 zu 5 1/2.\\Dies ist irrational.")
-          (:en ""))))
+          (:en "The proportion of the terza minore is called sesquiquinta, as is from 5 to 6.\\The proportion of the terza minore with its propinqua is like from 4 and a half to 5 and a half.\\This is irrational."))))
   (:data
    (:text 90 58
           (157 1826 "Eſſempio delle ᴛerze minori naturali & accidentali , con le loro proportioni."))
