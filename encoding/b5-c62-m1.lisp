@@ -35,9 +35,9 @@
     (s9 (:alt (:it "Terza\\accidentale")
               (:de "terza\\accidentale")
               (:en "Terza\\accidentale")))
-    (s10 (:alt (:it "Terza\\accidentale\\propinqua")
-               (:de "terza\\accidentale\\propinqua")
-               (:en "Terza\\accidentale\\propinqua")))
+    (s10 (:alt (:it "Terza\\accidentale\\[propinqua]")
+               (:de "terza\\accidentale\\[propinqua]")
+               (:en "Terza\\accidentale\\[propinqua]")))
     (s11 (:alt (:it "[Terza\\accidentale\\propinqua]")
                (:de "[terza\\accidentale\\propinqua]")
                (:en "[Terza\\accidentale\\propinqua]")))
@@ -60,7 +60,9 @@
     ;; JK: ab hier wird "propinq." stets als "propinquissima" normalisiert soll kommentiert
     ;; werden. Braucht Konsens von der Gruppe.
     ;;
-    ;; OPEN
+    ;; LC: ja, auf jeden Fall.
+    ;;
+    ;; DONE
     (s17 (:alt (:it "Terza\\accidentale\\propinquissima")
                (:de "terza\\accidentale\\propinquissima")
                (:en "Terza\\accidentale\\propinquissima")))
@@ -125,7 +127,14 @@
    (:music 2200
            (:section s9) (:newline) cclef7 b22 sh5 b22 sb5 b22 fl4 b22 sbd4 b22 bl
            (:section s10) b22 sb3 b22 fl5 sbd5 b22 bl
-           (:section s11) b22 sbd2 b22 fl5 sb5 b22
+           (:section s11) b22
+           (:alt (:diplomatic sbd2 b22 fl5 sb5)
+                 (:critical sbd2 b22 fl5 sb5)
+                 (:coord-barre "MZ2 N5-6")
+                 (:coord-norm "G11")
+                 (:comment "Dieses Intervall (Ė-A♭ in allen Exemplaren) ist eine /terza maggiore/. Soll sie als /terza minore propinqua/ verstanden werden, wie sie in G10-G16 demonstriert werden, sollte G11 entweder zu E♯-A♭ oder Ė-G♯ korrigiert werden.")
+                 (:flag :ready) (:id 1))
+           b22
            (:section s12) cclef7 (:key-signature nil nil nil nil nil nil nil) b22 sb2 b22 sbd4 b22 bl
            (:section s13) b22 sb5 b22 sbd7 b22 bl
            (:section s14) b22 sh4 b22 sb4 b22 sbd6 b22 bl
@@ -133,7 +142,13 @@
            (:section s16) b22 sb3 b22 fl5 sbd5 bl)
    (:text 70 58
           (48 nil "propinquiſs.")
-          (421 nil "propinq.")
+          (421 nil
+               (:alt (:diplomatic "propinq.")
+                     (:critical "propinq.")
+                     (:coord-barre "TZ5 TE2-7")
+                     (:coord-norm "G18-23 US")
+                     (:comment "In allen Exemplaren: »propinq.«, wird stets als Abkürzung von »propinquissima« (wie in G17 ausgeschrieben) interpretiert.")
+                     (:flag :ready) (:id 2)))
           (673 nil "propinq.")
           (910 nil "propinq.")
           (1150 nil "propinq.")

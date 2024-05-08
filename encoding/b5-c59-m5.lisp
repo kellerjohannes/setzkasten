@@ -724,7 +724,14 @@
            (:alt (:original-layout)
                  (:alternative-layout (:newline))
                  (:flag :layout) (:id 0))
-           (:f-clef) max5 fclef5 b38 fl0 b22 sbd0 b22 fl1 b22 sbd1 b22 sbd2 b22 sbd3 b22 fl4 sbd4 sbd5 sbd6 b22 fl7 sbd7 b22 fl8 sbd8 sbd9 fl10 sbd10 b22 bl)
+           (:f-clef) max5 fclef5 b38 fl0 b22 sbd0 b22 fl1 b22 sbd1 b22 sbd2 b22 sbd3 b22 fl4 sbd4 sbd5 sbd6 b22 fl7 sbd7 b22 fl8 sbd8 sbd9 fl10
+           (:alt (:diplomatic sb10)
+                 (:critical sbd10)
+                 (:coord-barre "MZ36 (S4 MZ7) N11")
+                 (:coord-norm "G61 N11")
+                 (:comment "In allen Exemplaren: D♭.")
+                 (:flag :ready) (:id 21))
+           b22 bl)
    (:text 110 58
           (187 nil "Settimo ordine ᴄromatico Enar."))
    ;; MZ37
@@ -736,7 +743,7 @@
                  (:coord-barre "MZ37 (S4 MZ8)")
                  (:coord-norm "G62")
                  (:comment "In allen Exemplaren: Ġ♭ Ȧ♭ Ḃ♭ Ċ Ḋ♭ Ė♭ Ḟ Ġ♭ Ȧ♭ Ḃ♭, was eine Redundanz zu G58 ist, wenn man nach dem letzten Ḃ♭ noch ein B♯ ergänzt.")
-                 (:flag :ready) (:id 21))
+                 (:flag :ready) (:id 22))
            b22 bl)
    (:text 110 58
           (222 nil "Settimo ordine ᴄromatico Enar."))
@@ -749,5 +756,5 @@
                  (:coord-barre "MZ38 (S4 MZ9) N11")
                  (:coord-norm "G63 N11")
                  (:comment "In allen Exemplaren: G♭. Die skalentheoretisch regelmässige Korrektur ist Ġ, die für den _settimo ordine_ typische Erniedrigung der letzten Note ist Ġ♭.")
-                 (:flag :ready) (:id 22))
+                 (:flag :ready) (:id 23))
            b22 bl)))
