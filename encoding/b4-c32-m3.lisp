@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Fuga alla seconda, et alla riverscia, con i semitoni et i toni contrari")
                  (:de "Imitation [fuga] in der seconda und rückwärts, mit den semitoni und toni andersherum.")
-                 (:en "Fuga at the seconda, and in reverse, with the semitoni and toni in contrary motion"))))
+                 (:en "Fuga at the seconda, and in contrary motion, with the semitoni and toni in contrary motion"))))
   (:data
    (:text 90 58
           (227 1645 "Fuga alla ſeconda,& alla riuerſcia,con i ſemitoni & i toni contrarij."))
