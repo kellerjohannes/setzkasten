@@ -13,12 +13,13 @@
    (:line-headings
     (:alt (:it "Decima maggiore all'ottava nei fini et nel basso, ne gl'alti")
           (:de "decima maggiore zur ottava an den Schlüssen und im Basso und in den Alti")
-          (:en "Decima maggiore to the ottava at the ends and in the basso, in the alti")
+          (:en "Decima maggiore to the . At the ends. And in the basso, in the alti")
           ;; JK: Es ist zu diskutieren, ob Sections 1 und 2 als eine zusammengehörende Section
           ;; dargestellt werden soll. In dieser Form ist die Aufteilung in Bezug auf die Überschrift
           ;; nicht schlüssig.
+
+          ;; AS: I am now sure, after much discussion with David, that "Decima maggiore all'ottava" is for section, "nei Fini" is for section 2, and "et nel basso, ne gl'alti" is for section 3, and would be happy to explain to you why. 
           ;;
-          ;; Kommentar Anne: or simply with commentary?
           ;;
           ;; OPEN
           )
