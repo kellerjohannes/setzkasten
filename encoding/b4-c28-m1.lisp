@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempi dei due bassi, che s'accorderanno,\\quando si canterà a due chori")
                  (:de "Beispiele von zwei Bassi, die miteinander übereinstimmen,\\wenn man sie in zwei Chören singt")
-                 (:en "Example of two basses which agree with one another\\when one sings in two choirs"))))
+                 (:en "Example of two basses which are in agreement\\when one sings in two choirs"))))
   (:data
    (:text 90 58
           (231 1728 "Eſſempi de i due Baſſi, che sʼaccorderanno,quando ſi canterà a due ᴄhori."))
