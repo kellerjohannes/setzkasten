@@ -15,7 +15,7 @@
               (:en "In two voci at the decima above")))
     (s4 (:alt (:it "A due voci, con un sospiro, per terza sopra")
               (:de "mit zwei Stimmen, mit einem sospiro, in der terza darüber")
-              (:en "In two voci, with a sospiro [semibreve rest], at the terza above")))
+              (:en "In two voci, with a sospiro, at the terza above")))
     (s5 (:alt (:it "A tre voci alla decima sopra")
               (:de "mit drei Stimme in der decima darüber")
               (:en "In three voci at the decima above")))
@@ -40,7 +40,7 @@
    (:section-captions
     (s2 (:alt (:it "Il medesimo procedere, et i gradi medesimi")
               (:de "das gleiche Vorgehen und die gleichen Tonschritte")
-              (:en "The same progression, and the same steps")))
+              (:en "The same way of proceeding, and the same steps")))
     (s6 (:alt (:it "Il tenore et il soprano\\paiono due ottave et non sono")
               (:de "der Tenore und der Soprano\\scheinen zwei [aufeinanerfolgende] ottave und sind es nicht")
               (:en "The tenor and the soprano\\appear to be two [consecutive] ottave and are not")))
