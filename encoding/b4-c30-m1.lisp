@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Regola universale di porre le parole sotto alle note")
                  (:de "Allgemeine Regel, die Textworte unter die Noten zu setzten.")
-                 (:en "Universal method for setting the words under the notes")))
+                 (:en "Universal rule for placing the words under the notes")))
    (:section-headings
     (s2 (:alt (:it " \\Non buona pronuntia")
               (:de "\\keine gute Aussprache")
@@ -19,7 +19,7 @@
               ))
     (s3 (:alt (:it "Si pronuntia la sillaba\\sotto la nera per bisogno")
               (:de "man spricht die Silbe\\unter der Semimina aus, wenn nötig")
-              (:en "One pronounces the syllable\\under the semiminim if necessary")
+              (:en "One utters the syllable\\under the semiminim if necessary")
               ;; JK: Nach aktuellem Stand ist es nicht möglich, hier die Taktsignatur zu
               ;; unterdrücken. Soll dies getan werden, oder ist die ergänzte Taktsignatur sinnvoll?
               ;;
