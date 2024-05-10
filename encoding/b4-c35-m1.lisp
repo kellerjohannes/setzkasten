@@ -22,7 +22,7 @@
    (:section-captions
     (s1 (:alt (:it "A quattro voci")
               (:de "Mit vier Stimmen")
-              (:en ""))))
+              (:en "In four voci"))))
    (:line-headings
     (:alt (:it "La prima volta il soprano fara due pause, et l'altra volta le tre parti,\\faranno le due pause del soprano,\\et quello cantera senza pause.")
           (:de "Beim ersten Mal macht der Soprnao zwei Pause, und ein anderes machen die drei Stimmen\\die zwei Pausen des Soprano\\und dieser singt ohne Pause")
@@ -36,10 +36,10 @@
                  (:en "Alto")))
     (s1 v3 (:alt (:it "Tenore")
                  (:de "Tenore")
-                 (:en "Tenore")))
+                 (:en "Tenor")))
     (s1 v4 (:alt (:it "Basso")
                  (:de "Basso")
-                 (:en "Basso")))))
+                 (:en "Bass")))))
   (:data
    (:text 90 58
           (95 nil "Soprano à. 4 uoci.")
