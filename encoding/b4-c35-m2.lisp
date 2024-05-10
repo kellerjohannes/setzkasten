@@ -15,7 +15,7 @@
    (:section-captions
     (s1 (:alt (:it "Tenore riversciato in soprano")
               (:de "Tenore umgekehrt zum Soprano")
-              (:en "Tenor in contrary motion in the soprano")))))
+              (:en "Tenor in contrary motion to the soprano")))))
   (:data
    (:text 90 58
      (184 1155 "Soprano à due uoci alla quinta ſopra del ᴛenore.")
