@@ -3,7 +3,7 @@
    (:alt-name "m1.042")
    (:comment "q021_s046, origin: 970")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio del salto più che di Quarta e de suoi gradi, incomposto & composto")
+   (:title (:alt (:it "Essempio del salto più che di Quarta, & de suoi gradi, incomposto & composto.")
                  (:de "Beispiel des Sprungs più che di quarta und von ihren Tonschritten, incomposto und composto")
                  (:en "Example of the leap più di quarta and of its steps, incomposto and composto")))
    (:section-captions
@@ -28,7 +28,7 @@
     ;; Anpassung geschah nach dem Lektorat der italienischen Texte durch Luigi, d.h. er muss das
     ;; nochmals final absegnen. Die Diskussion schliesse ist deshalb noch nicht.
     ;;
-    ;; LUIGI
+    ;; LUIGI: Ich würde den Titel des Musikbeispiels nicht korrigieren, da 'composto & incomposto' auf 'gradi' sich beziehen.
     ;; OPEN
     (s1 (:alt (:it "salto di più\\di quarta\\accidentale\\incomposta")
               (:de "Sprung di più\\di quarta\\accidentale\\incomposta")
