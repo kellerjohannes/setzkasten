@@ -3,7 +3,7 @@
    (:alt-name "m2.020")
    (:comment "q021_s068, rotation: -0.42, origin: 944")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio delle terze simili et delle differenti")
+   (:title (:alt (:it "Essempio delle terze simili et delle differenti.")
                  (:de "Beispiel für ähnliche und unterschiedliche terze")
                  (:en "Example of similar and of different terze")))
    (:section-captions
@@ -19,20 +19,22 @@
     (s4 (:alt (:it "simili\\maggiori")
               (:de "ähnliche\\maggiori")
               (:en "similar\\maggiori")))
-    (s5 (:alt (:it "differenti\\maggiori\\et minori")
-              (:de "verschiedene maggiori\\und minori")
-              (:en "different\\maggiori\\and minori")))
+    (s5 (:alt (:it "differenti\\maggiori\\et minore")
+              (:de "verschiedene maggiori\\und minore")
+              (:en "different\\maggiori\\and minore")))
     ;; AS: Kommentar David: this should really be "maggiori and minore" because there are 2 maggiori
     ;; and only 1 minore.
     ;;
     ;; OPEN
-    (s6 (:alt (:it "differenti\\minori\\et maggiori")
-              (:de "verschiedene\\minori\\und mmagiori")
-              (:en "different\\minori\\and maggiori")))))
+    ;; Luigi: ok!
+    (s6 (:alt (:it "differenti\\minori\\et maggiore")
+              (:de "verschiedene\\minori\\und mmagiore")
+              (:en "different\\minori\\and maggiore")))))
   ;; AS: Kommentar David: this should really be "minori and maggiore" because there are 2 minori and
   ;; only 1 maggiore.
   ;;
   ;; OPEN
+  ;; LUIGI: ok!
   (:data
    (:text 90 58
      (440 1051 "Eſſempio delle terze ſimili et delle differenti."))
