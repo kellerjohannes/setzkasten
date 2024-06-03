@@ -3,7 +3,7 @@
    (:alt-name "m2.029")
    (:comment "q021_s078, rotation: -0.92, origin: 966")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio della quintadecima, et della vigesima seconda,\\a tre voci, et a quattro")
+   (:title (:alt (:it "Essempio della Quintadecima, & della Vigesima seconda,\\à tre uoci, & à quattro.")
                  (:de "Beispiel der quintadecima und der vigesima seconda,\\mit drei und mit vier Stimmen.")
                  (:en "Example of the quinta decima, and of the vigesima seconda,\\in three and four voci")))
    (:section-headings
@@ -14,7 +14,7 @@
               ;; DONE
               (:de "quintadecima mit\\ottava in der Mitte")
               (:en "quinta decima with\\ottava in the middle")))
-    (s2 (:alt (:it "Vigesima seconda\\con due ottave\\in mezzo")
+    (s2 (:alt (:it "Vigesima seconda\\con due ottaue\\in mezzo")
               (:de "vigesima seconda\\mit zwei ottave\\in der Mitte")
               (:en "vigesima seconda\\with two ottave\\in the middle"))))
    ;; AS: Comment David: I presume there will be a commentary noting that the Alto voice is printed
