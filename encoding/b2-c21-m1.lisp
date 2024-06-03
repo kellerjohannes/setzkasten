@@ -3,30 +3,30 @@
    (:alt-name "m2.024")
    (:comment "q021_s072, rotation: 0, origin: 1076")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio delle seste simili")
+   (:title (:alt (:it "Essempio delle Seste simili.")
                  (:de "Beispiel der ähnlichen seste")
                  (:en "Example of similar seste")))
    (:section-headings
-    (s1 (:alt (:it "A due voci")
+    (s1 (:alt (:it "à due uoci")
               (:de "mit zwei Stimmen")
               (:en "in two voci")))
-    (s2 (:alt (:it "A due voci")
+    (s2 (:alt (:it "à due uoci")
               (:de "mit zwei Stimmen")
               (:en "in two voci")))
-    (s3 (:alt (:it "A due voci")
+    (s3 (:alt (:it "à due uoci")
               (:de "mit zwei Stimmen")
               (:en "in two voci")))
-    (s4 (:alt (:it "A due voci")
+    (s4 (:alt (:it "à due uoci")
               (:de "mit zwei Stimmen")
               (:en "in two voci"))))
    (:section-captions
-    (s1 (:alt (:it "Simili\\maggiori")
+    (s1 (:alt (:it "simili\\maggiori")
               (:de "ähnlich\\maggiori")
               (:en "similar\\maggiori")))
-    (s2 (:alt (:it "Simili\\minori")
+    (s2 (:alt (:it "simili\\minori")
               (:de "ähnlich\\minori")
               (:en "similar\\minori")))
-    (s3 (:alt (:it "Differenti\\ ")
+    (s3 (:alt (:it "differenti\\ ")
               (:de "verschieden\\ ")
               (:en "different\\ ")))
     ;; Kommentar Anne: if there is no noun afterwards, the backslashes are also not
@@ -35,7 +35,7 @@
     ;; Abstände korrekt zu berechnen.
     ;;
     ;; DONE
-    (s4 (:alt (:it "Simili\\maggiori")
+    (s4 (:alt (:it "simili\\maggiori")
               (:de "ähnlich\\maggiori")
               (:en "similar\\maggiori")))))
   (:data
