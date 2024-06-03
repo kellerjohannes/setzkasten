@@ -4,7 +4,7 @@
    (:comment "q021_s039, origin: 440")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio delli Toni & Semitoni naturali.")
-                 (:de "Beispiel der toni und semitoni naturali.")
+                 (:de "Beispiel der toni und semitoni naturali")
                  (:en "Example of the toni and semitoni naturali")))
    (:section-headings
     (s1 (:alt (:it "tono")
