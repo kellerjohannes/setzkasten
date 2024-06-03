@@ -3,8 +3,8 @@
    (:alt-name "m1.041")
    (:comment "q021_s045, origin: 494")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio del salto, & de i gradi de Quarta accidentale, incomposta e composta")
-                 (:de "Beispiel des Sprungs und der Tonschritte der quarta accidentale, incomposta und composta.")
+   (:title (:alt (:it "Essempio del salto, & de i gradi de Quarta accidentale, incomposta & composta.")
+                 (:de "Beispiel des Sprungs und der Tonschritte der quarta accidentale, incomposta und composta")
                  (:en "Example of the leap and the steps of the quarta accidentale, incomposta and composta")))
    (:section-captions
     ;; JK: zu den Endungen von '(in)composty'.
