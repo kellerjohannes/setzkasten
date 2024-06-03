@@ -3,7 +3,7 @@
    (:alt-name "m1.009")
    (:comment "q021_s025, origin: 493")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Mano enarmonica ascendente, con i semitoni maggiori, e con il tono diviso in\\quattro parti, e delle sette lettere della mano, come si hanno da leggere")
+   (:title (:alt (:it "Mano Enarmonica ascendente, con i semitoni maggiori, e con il tono diuiso in\\quattro parti, & delle sette lettere della mano, come si hanno da leggere")
                  (:de "Aufsteigende enharmonische Hand mit den semitoni maggiori und mit dem tono unterteilt in\\vier Teile und den sieben Buchstaben der Hand, und wie sie zu lesen sind.")
                  (:en "Ascending enharmonic hand with semitoni maggiori and with the tono divided into\\four parts, and the seven letters of the hand, as they are to be read")))
    (:section-headings
