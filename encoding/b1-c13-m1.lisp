@@ -41,7 +41,7 @@
     (s10 (:alt (:it "la prima metà\\enarmonico e la\\seconda cromatico")
                (:de "die erste Hälfte\\enharmonisch\\und die\\zweite\\chromatisch")
                (:en "the first half\\enharmonic\\and the\\second chromatic")))
-    (s11 (:alt (:it "la prima metà\\enarmonico e la\\metà seconda è\\cromatico e\\enarmonico")
+    (s11 (:alt (:it "la prima metà\\enarmonica e la\\metà seconda è\\cromatica e\\enarmonica")
                (:de "die erste Hälfte\\enharmonisch\\und die\\zweite ist\\chromatisch und\\enharmonisch")
                (:en "the first half\\enharmonic\\and the\\second\\chromatic\\and enharmonic")))
     (s12 (:alt (:it "per tutta")
