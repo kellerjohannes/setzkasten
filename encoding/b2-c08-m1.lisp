@@ -7,10 +7,10 @@
                  (:de "Beispiel der Art und Weise, den tritono zu setzen")
                  (:en "Example of the method of composing with the tritono")))
    (:section-headings
-    (s1 (:alt (:it "A due voci")
+    (s1 (:alt (:it "à due uoci")
               (:de "mit zwei Stimmen")
               (:en "for two voci")))
-    (s2 (:alt (:it "A tre voci")
+    (s2 (:alt (:it "à tre uoci")
               (:de "mit drei Stimmen")
               (:en "for three voci"))))
    (:voice-labels
