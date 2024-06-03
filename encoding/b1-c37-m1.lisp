@@ -4,7 +4,7 @@
    (:comment "q021_s047, origin: 369")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio del salto de Quinta imperfetta, naturale & accidentale, incomposto.")
-                 (:de "Beispiel des Sprungs der quinta imperfetta naturale und accidentale, incomposto.")
+                 (:de "Beispiel des Sprungs der quinta imperfetta naturale und accidentale, incomposto")
                  (:en "Example of the leap of the quinta imperfetta naturale and accidentale, incomposto")))
    ;; LC: Wie oben, würde ich so schreiben: 'Beispiel des incomposto Sprungs…' und 'Example of the
    ;; incompost leap…'
