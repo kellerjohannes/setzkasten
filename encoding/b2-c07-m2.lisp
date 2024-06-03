@@ -3,7 +3,7 @@
    (:alt-name "m2.010")
    (:comment "q021_s062, rotation: -0.75, origin: 937")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio di comporre molte seste, et molte terze, da molti detto\\modo di comporre il Faulx Bordon a tre voci")
+   (:title (:alt (:it "Essempio di comporre molte Seste, et molte Terze, da molti detto\\Modo di comporre il Faulx Bordon à tre uoci.")
                  (:de "Beispiel, viele seste und viele terze zu setzen, von vielen\\Art und Weise, den Fauxbourdon zu setzen, genannt, mit drei Stimmen")
                  (:en "Example of composing with many seste, and many terze, called by many\\method of composing faulx bordon in three voci")))
    (:voice-labels
