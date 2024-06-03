@@ -4,20 +4,20 @@
    (:comment "q021_s079, rotation: 0, origin: 468")
    (:creator "Vicentino21 / Johannes Keller")
    (:line-headings
-    (:alt (:it "Molte annotationi sotto et sopra le due note mi et re.\\A due et a più voci si possono comporre")
+    (:alt (:it "Molte annotationi sotto & sopra le due note mi. & re.\\A due et a più uoci si possono comporre")
           (:de "Viele Hinweise, wie man unter und über den zwei Noten mi und re\\mit zwei und mehr Stimmen setzen kann.")
           (:en "Many annotations below and above the two notes mi and re.\\One can compose with them in two or more voci"))
     nil
     nil
     nil
-    (:alt (:it "Molte annotationi sotto et sopra le due note re et mi\\A due et a più voci si possono comporre")
+    (:alt (:it "Molte annotationi sotto et sopra le due note re. et mi.\\A due & à più voci si possono comporre")
           (:de "Viele Hinweise, wie man unter und über den zwei Noten re und mi\\mit zwei und mehr Stimmen setzen kann.")
           (:en "Many annotations below and above the two notes re and mi.\\One can compose with them in two or more voci")))
    (:section-captions
-    (s10 (:alt (:it "A tre")
+    (s10 (:alt (:it "à tre [voci]")
                (:de "mit drei [Stimmen]")
                (:en "in three")))
-    (s11 (:alt (:it "A otto")
+    (s11 (:alt (:it "à otto")
                (:de "mit acht [Stimmen]")
                (:en "in eight")))
     (s28 (:alt (:it "A quattro")
@@ -76,7 +76,7 @@
    (:text 90 58
           (425 1325 "Molte annotationi ſotto & ſopra le due note mi. & re."))
    (:text 90 58
-          (334 nil "A due")
+          (334 nil "A due [voci]")
           (796 nil "& à più uoci")
           (1434 nil "ſi poſſono comporre."))
    (:music 2228
