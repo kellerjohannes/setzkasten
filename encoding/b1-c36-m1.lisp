@@ -4,7 +4,7 @@
    (:comment "q021_s047, origin: 363")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio del Tritono accidentale, incomposto & composto.")
-                 (:de "Beispiel des tritono accidentale, incomposto und composto.")
+                 (:de "Beispiel des tritono accidentale, incomposto und composto")
                  (:en "Example of the tritono accidentale, incomposto and composto")))
    (:section-captions
     (s1 (:alt (:it "tritono\\incomposto\\accidentale")
