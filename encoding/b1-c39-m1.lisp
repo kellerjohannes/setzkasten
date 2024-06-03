@@ -7,7 +7,9 @@
                  (:de "Beispiel der quinta naturale incomposta.")
                  (:en "Example of the quinta naturale incomposta")))
 
-                 ;; LUIGI: Es fehtl hier auch 'del salto' (vgl. Titel des Kapitels!). In den Übersetzungen zu ergänzen!
+                 ;; LUIGI: Es fehlt hier auch 'del salto' (vgl. Titel des Kapitels!). In den Übersetzungen zu ergänzen!
+
+                 OPEN
 
    (:section-headings
     (s1 (:alt (:it "prima quinta")
