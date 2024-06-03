@@ -11,7 +11,7 @@
                  ;;
                  ;; ANNE
                  ;; OPEN
-                 ;; LUIGI: Ich würde 'incomposto et composto' im Titel des Musikbeispiels als 'incomposta et composta' korrigieren: vgl. Ihnhalt des Musikbeispiels sowie Kap. 33. WICHTIG: Wenn wir den Titel des Musikbeispiels korrigieren, sollen wir auch den Titel des Kapitels XXXII. korrigieren.
+                 ;; LUIGI: Ich würde 'incomposto et composto' im Titel des Musikbeispiels (sowie im Titel des Kapitels) nicht korrigieren. Ausser im Kap. 33, beziehen sich 'incomposto & composto' in den nächsten Kapitel auf Grado, Salto oder Tritono.
                  (:en "Example of the leap of the quarta naturale, and of its incomposto and composto steps")))
    (:section-headings
     (s1 (:alt (:it "Prima Quarta")
