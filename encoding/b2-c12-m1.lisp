@@ -3,20 +3,20 @@
    (:alt-name "m2.015")
    (:comment "q021_s065, rotation: 0, origin: 448")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio delle dissonanze sciolte, con li passaggi antichi,\\et moderni, a due voci")
+   (:title (:alt (:it "Essempio delle dissonanze sciolte, con li passaggi antichi,\\et moderni, à due uoci.")
                  (:de "Beispiel der unvorbereiteten [sciolte] Dissonanzen, mit alten\\und modernen passaggi, mit zwei Stimmen")
                  (:en "Example of the sciolte [unprepared] dissonances with old and modern\\passagework, in two voci")))
    (:section-headings
-    (s1 (:alt (:it "All'antica")
+    (s1 (:alt (:it "all'antica")
               (:de "all'antica")
               (:en "in the old style")))
-    (s2 (:alt (:it "All'antica")
+    (s2 (:alt (:it "all'antica")
               (:de "all'antica")
               (:en "in the old style")))
-    (s3 (:alt (:it "Moderno")
+    (s3 (:alt (:it "moderno")
               (:de "modern")
               (:en "modern")))
-    (s4 (:alt (:it "Non troppo moderne")
+    (s4 (:alt (:it "non troppo moderne")
               ;; Kommentar: AS: David writes the following: This comment applies to the edition and
               ;; both translations: I notice that No. 4 has barlines in the original!  I think this
               ;; is unique in the entire treatise and in my view it's almost certainly an error by
@@ -24,10 +24,11 @@
               ;; should omit the barlines, and note them in a commentary.
               ;;
               ;; GROUP !!
+              ;; 
               ;; OPEN
               (:de "nicht sehr modern")
               (:en "not too modern")))
-    (s5 (:alt (:it "Non moderne")
+    (s5 (:alt (:it "non moderne")
               (:de "nicht modern")
               (:en "not modern")))))
   (:preamble-lilypond
