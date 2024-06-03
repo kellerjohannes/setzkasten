@@ -3,8 +3,8 @@
    (:alt-name "m1.031")
    (:comment "q021_s039, origin: 429")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio d'alcuni Toni, et semitoni accidentali")
-                 (:de "Beispiel von einigen toni und semitoni accidentali.")
+   (:title (:alt (:it "Essempio d'alcuni Toni et semitoni accidentali.")
+                 (:de "Beispiel von einigen toni und semitoni accidentali")
                  (:en "Example of some toni and semitoni accidentali")))
    (:section-captions
     (s1 (:alt (:it "tono accidentale\\composto")
