@@ -3,7 +3,7 @@
    (:alt-name "m2.011")
    (:comment "q021_s062, rotation: -0.75, origin: 937")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio del modo di comporre il tritono")
+   (:title (:alt (:it "Essempio del modo di comporre il Tritono.")
                  (:de "Beispiel der Art und Weise, den tritono zu setzen")
                  (:en "Example of the method of composing with the tritono")))
    (:section-headings
