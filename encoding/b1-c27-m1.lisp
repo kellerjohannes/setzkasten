@@ -3,8 +3,8 @@
    (:alt-name "m1.035")
    (:comment "q021_s042, origin: 960")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio de i gradi di Terza minore accidentale, composti & incomposti")
-                 (:de "Beispiel der Tonschritte der terza minore accidentale, composti und incomposti.")
+   (:title (:alt (:it "Essempio de i gradi di Terza minore accidentale, composti & incomposti.")
+                 (:de "Beispiel der Tonschritte der terza minore accidentale, composti und incomposti")
                  (:en "Example of the composti and incomposti steps of the terza minore accidentale")))
    (:section-captions
     (s1 (:alt (:it "grado di terza minore\\accidentale incomposto")
@@ -18,6 +18,7 @@
               ;; JK: Deutsch angepasst.
               ;;
               ;; DONE
+              ;; Luigi: Es ist für mich der Grado 'incomposto', nicht die Terza.
               (:de "Tonschritt incomposto\\der terza minore\\accidentale")
               (:en "incomposto step\\of terza minore\\accidentale")))
     (s2 (:alt (:it "grado di terza minore\\accidentale composto")
