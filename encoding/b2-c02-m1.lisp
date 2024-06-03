@@ -3,11 +3,11 @@
    (:alt-name "m2.001")
    (:comment "q021_s054, origin 935")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio dall'unisono ad altri gradi e salti")
+   (:title (:alt (:it "Essempio dall'Vnisono ad altri gradi et salti.")
                  (:de "Beispiel wie vom unisono zu anderen Tonschritten und Sprüngen [zu gehen ist]")
                  (:en "Example [of going] from the unison to other steps and leaps")))
    (:section-captions
-    (s1 (:alt (:it "a due")
+    (s1 (:alt (:it "à 2. [voci]")
               ;; AS: All of these should have the numbers written out.
               ;;
               ;; JK: Achtung, hier scheint Luigi anderer Meinung zu sein: muss abgestimmt werden
@@ -21,22 +21,22 @@
               ;; DONE
               (:de "mit zwei Stimmen")
               (:en "in two [voci]")))
-    (s2 (:alt (:it "a due")
+    (s2 (:alt (:it "à 2. [voci]")
               (:de "mit zwei\\[Stimmen]")
               (:en "in two [voci]")))
-    (s3 (:alt (:it "a due")
+    (s3 (:alt (:it "à 2. [voci]")
               (:de "mit zwei\\[Stimmen]")
               (:en "in two [voci]")))
-    (s4 (:alt (:it "a due")
+    (s4 (:alt (:it "à 2. [voci]")
               (:de "mit zwei\\[Stimmen]")
               (:en "in two [voci]")))
-    (s5 (:alt (:it "a tre")
+    (s5 (:alt (:it "à 3. [voci]")
               (:de "mit drei\\[Stimmen]")
               (:en "in three [voci]")))
-    (s6 (:alt (:it "a cinque")
+    (s6 (:alt (:it "à 5. [voci]")
               (:de "mit fünf\\[Stimmen]")
               (:en "in five [voci]")))
-    (s7 (:alt (:it "a sette\\e a più voci")
+    (s7 (:alt (:it "a 7.\\et à più uoci.")
               (:de "mit sieben\\und mehr Stimmen")
               (:en "in seven\\and more voci")))))
   (:data
