@@ -54,7 +54,7 @@
                (:de "für acht\\[Stimmen]")
                (:en "in eight")))
 
-    (s13 (:alt (:it "A 2 [voci]")
+    (s13 (:alt (:it "à 2 [voci]")
                (:de "für zwei\\[Stimmen]")
                (:en "in two")))
     (s14 (:alt (:it "à 5 [voci]")
