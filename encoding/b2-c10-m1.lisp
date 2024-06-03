@@ -3,14 +3,14 @@
    (:alt-name "m2.013")
    (:comment "q021_s063, rotation: 0.75, origin: 414")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio di comporre la dissonanza detta settima,\\sincopata con la sesta")
+   (:title (:alt (:it "Essempio di comporre la dissonanza detta Settima,\\sincopata con la Sesta.")
                  (:de "Beispiel, die Dissonanz genannt settima zu setzen,\\synkopiert mit der sesta")
                  (:en "Example of composing with the dissonance called the settima,\\sincopata with the sesta")))
    (:section-headings
-    (s1 (:alt (:it "A due voci")
+    (s1 (:alt (:it "à due uoci")
               (:de "mit zwei Stimmen")
               (:en "in two voci")))
-    (s2 (:alt (:it "A tre voci")
+    (s2 (:alt (:it "à tre uoci")
               (:de "mit drei Stimmen")
               (:en "in three voci"))))
    (:voice-labels
