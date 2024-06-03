@@ -3,14 +3,14 @@
    (:alt-name "m2.004")
    (:comment "q021_s057, rotate: 0.69, origin: music line 1 393, line 2 386, line 3 384, line 4 371")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio d'andare all'unisono con vari salti, naturali e accidentali")
+   (:title (:alt (:it "Essempio d'andare all'Vnisono con uarij salti, naturali et accidentali")
                  (:de "Beispiel, wie vom unisono mit verschiedenen Tonschritten und Sprüngen zu gehen ist, naturali und accidentali")
                  (:en "Example of going to the unisono with various leaps, naturali and accidentali")))
    (:section-captions
-    (s5 (:alt (:it "salto dubbioso")
+    (s5 (:alt (:it "salto dubioso")
               (:de "zweifelhafter Sprung")
               (:en "dubious leap")))
-    (s6 (:alt (:it "a cinque")
+    (s6 (:alt (:it "à 5. [voci]")
               ;; AS: All the numbers should be written out.
               ;;
               ;; JK: muss mit Luigi abgestimmt werden
@@ -20,41 +20,47 @@
               ;;
               ;; DONE
               (:de "mit fünf [Stimmen]")
+              ;; LUIGI: 'Für zwei Chöre'?
+              ;; OPEN
               (:en "in five [voci]")))
-    (s7 (:alt (:it "salto dubbioso")
+    (s7 (:alt (:it "salto dubioso")
               (:de "zweifelhafter Sprung")
               (:en "dubious leap")))
-    (s8 (:alt (:it "dubbioso")
+    (s8 (:alt (:it "[salto] dubioso")
               (:de "zweifelhaft")
-              (:en "dubious")))
-    (s9 (:alt (:it "a due cori")
+              (:en "dubious")))              
+              ;; LUIGI: 'Salto' in den Übersetzungen ergänzen
+              ;; OPEN
+    (s9 (:alt (:it "à 2. chori")
               (:de "mit zwei Chören")
+              ;; LUIGI: 'Für zwei Chöre'?
+              ;; OPEN
               (:en "for two choirs")))
-    (s10 (:alt (:it "a due cori")
+    (s10 (:alt (:it "à 2. chori")
                (:de "mit zwei Chören")
                (:en "for two choirs")))
-    (s11 (:alt (:it "a sei")
+    (s11 (:alt (:it "à 6. [voci]")
                (:de "mit sechs\\[Stimmen]")
                (:en "in six [voci]")))
-    (s12 (:alt (:it "a cinque")
+    (s12 (:alt (:it "à 5. [voci]")
                (:de "mit fünf\\[Stimmen]")
                (:en "in five [voci]")))
-    (s13 (:alt (:it "a otto")
+    (s13 (:alt (:it "à 8. [voci]")
                (:de "mit acht\\[Stimmen]")
                (:en "in eight [voci]")))
-    (s14 (:alt (:it "a otto, dubbioso")
+    (s14 (:alt (:it "à 8. [voci] dubioso")
                (:de "mit acht\\[Stimmen],\\bedenklich")
                (:en "in eight [voci], dubious")))
-    (s15 (:alt (:it "a otto")
+    (s15 (:alt (:it "à 8. [voci]")
                (:de "mit acht\\[Stimmen]")
                (:en "in eight [voci]")))
-    (s16 (:alt (:it "a otto")
+    (s16 (:alt (:it "à 8. [voci]")
                (:de "mit acht\\[Stimmen]")
                (:en "in eight [voci]")))
-    (s17 (:alt (:it "a otto")
+    (s17 (:alt (:it "à 8. [voci]")
                (:de "mit acht\\[Stimmen]")
                (:en "in eight [voci]")))
-    (s18 (:alt (:it "a otto")
+    (s18 (:alt (:it "à 8. [voci]")
                (:de "mit acht\\[Stimmen]")
                (:en "in eight [voci]"))))
    (:voice-order
