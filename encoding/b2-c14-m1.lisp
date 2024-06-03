@@ -3,14 +3,14 @@
    (:alt-name "m2.017")
    (:comment "q021_s066, rotation: -0.4, origin: 1011")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio dei molti modi, che si può accompagnare la terza minore")
+   (:title (:alt (:it "Essempio de i molti modi, che si può accompagnare la Terza minore.")
                  (:de "Beispiel von vielen Arten und Weisen, wie man die terza minore begleiten kann")
                  (:en "Example of the many ways one can accompany the terza minore")))
    (:section-headings
-    (s1 (:alt (:it "Grado molle\\e consonante")
+    (s1 (:alt (:it "grado molle\\e consonante")
               (:de "molle und\\konsonanter Tonschritt")
               (:en "molle and\\consonant step")))
-    (s2 (:alt (:it "Grado incitato\\e molle")
+    (s2 (:alt (:it "grado incitato\\[e] molle")
               (:de "incitato\\und molle")
               (:en "incitato and\\molle step")))
     ;; AS: Kommentar David: Captions to Nos. 3–8: personally I don't think it's necessary to add
@@ -22,10 +22,10 @@
     ;;
     ;; GROUP
     ;; OPEN
-    (s3 (:alt (:it "[Grado] incitato\\e molle")
+    (s3 (:alt (:it "[grado] incitato\\e molle")
               (:de "incitato\\und molle")
               (:en "incitato and\\molle [step]")))
-    (s4 (:alt (:it "[Gradi] incitati\\ ")
+    (s4 (:alt (:it "[gradi] incitati\\ ")
               ;; Kommentar Anne: willst du noch etwas hinzufügen?
               ;; JK: Meinst du wegen der leeren Zeile? Die ist nötig, damit die vertikalen
               ;; Abstände bei allen sections dieses Beispiels gleich berechnet werden. Keine
@@ -35,14 +35,15 @@
               ;;
               ;; DONE
               (:de "incitati")
+              ;; LUIGI: Es fehlt 'gradi' in der D-Übersetzung
               (:en "incitati [steps]")))
-    (s5 (:alt (:it "[Grado] incitato\\e molle")
+    (s5 (:alt (:it "[grado] incitato\\e molle")
               (:de "incitato\\und molle")
               (:en "incitato and\\molle [step]")))
-    (s6 (:alt (:it "[Grado] incitato\\e molle")
+    (s6 (:alt (:it "[grado] incitato\\e molle")
               (:de "incitato\\und molle")
               (:en "incitato and\\molle [step]")))
-    (s7 (:alt (:it "[Gradi] incitati\\ ")
+    (s7 (:alt (:it "[gradi] incitati\\ ")
               ;; Kommentar Anne: willst du noch etwas hinzufügen?
               ;; JK: Siehe Kommentar oben.
               ;;
@@ -50,9 +51,11 @@
               ;;
               ;; DONE
               (:de "incitati\\")
+              ;; LUIGI: Es fehlt 'gradi' in der D-Übersetzung
               (:en "incitati [steps]\\")))
-    (s8 (:alt (:it "[Grado] molle\\et incitato")
+    (s8 (:alt (:it "[grado] molle\\et incitato")
               (:de "molle\\und incitato")
+              ;; LUIGI: Es fehlt 'grado' in der D-Übersetzung
               (:en "molle and\\incitato [step]")))))
   (:data
    (:text 90 58
