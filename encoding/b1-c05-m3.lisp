@@ -10,7 +10,7 @@
    (:alt-name "m1.005")
    (:comment "q021_s023, origin: 378")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Dimostratione della mano cromatica con li semitoni maggiori ascendenti")
+   (:title (:alt (:it "Dimostratione della mano Cromatica con li semitoni maggiori ascendenti.")
                  (:de "Darstellung der chromatischen Hand mit den aufsteigenden semitoni maggiori")
                  (:en "Illustration of the chromatic hand with the ascending semitoni maggiori")))
    (:section-headings
