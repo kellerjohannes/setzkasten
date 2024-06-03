@@ -3,7 +3,7 @@
    (:alt-name "m1.028")
    (:comment "q021_s038, origin: 939")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio di più semitoni maggiori et minori, ascendenti et discendenti,\\composti et incomposti, naturali et accidentali.")
+   (:title (:alt (:it "Essempio di più Semitoni maggiori et minori, ascendenti et discendenti,\\composti et incomposti, naturali et accidentali")
                  (:de "Beispiel von weiteren semitoni maggiori et minori, aufsteigend und absteigend,\\composti und incomposti, naturali und accidentali")
                  (:en "Example of many semitoni maggiori and minori, ascending and descending,\\composti and incomposti, naturali and accidentali")))
    (:section-captions
