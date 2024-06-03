@@ -3,7 +3,7 @@
    (:alt-name "m1.051")
    (:comment "q021_s050, origin: 1006")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio de gradi di Quinte accidentali.")
+   (:title (:alt (:it "Essempio de Gradi di Quinte accidentali.")
                  (:de "Beispiel der Tonschritte der quinte accidentali")
                  (:en "Example of the steps of quinte accidentali")))
    (:section-headings
@@ -11,22 +11,22 @@
     ;; platziert, um den Bezug deutlicher zu machen.
     ;;
     ;; DONE
-    (s1 (:alt (:it "gradi della prima quinta\\accidentale composta, per semitono\\minore [ascendente]")
+    (s1 (:alt (:it "gradi della prima quinta\\accidentale, [ascendente] per semitono\\minore, composta")
               (:de "Tonschritte der ersten quinta\\accidentale composta, [aufsteigend] mit semitono\\minore")
               (:en "steps of the first quinta\\accidentale composta, [ascending]\\with semitoni minori")))
-    (s2 (:alt (:it "gradi della prima quinta\\accidentale composta, per semitono\\maggiore ascendente")
+    (s2 (:alt (:it "gradi della prima quinta\\accidentale, per semitono\\maggiore ascendente, composta")
               (:de "Tonschritte der ersten quinta\\accidentale composta, aufsteigend mit semitono\\maggiore")
               (:en "steps of the first quinta\\accidentale composta, ascending\\with semitoni maggiori")))
-    (s3 (:alt (:it "gradi della seconda quinta\\accidentale composta, ascendente\\per semitono minore")
+    (s3 (:alt (:it "gradi della seconda quinta\\accidentale, ascendente\\per semitono minore, composta")
               (:de "Tonschritte der zweiten quinta\\accidentale composta, aufsteigend\\mit semitono minore")
               (:en "steps of the second quinta\\accidentale composta, ascending\\with semitoni minori")))
-    (s4 (:alt (:it "gradi della terza quinta\\accidentale composta, ascendente\\per semitono minore")
+    (s4 (:alt (:it "gradi della terza quinta\\accidentale, ascendente\\per semitono minore, composta")
               (:de "Tonschritte der dritten quinta\\accidentale composta, aufsteigend\\mit semitono minore")
               (:en "steps of the third quinta\\accidentale composta, ascending\\with semitoni minori")))
-    (s5 (:alt (:it "gradi della terza quinta\\accidentale composta, ascendente\\per semitono maggiore")
+    (s5 (:alt (:it "gradi della terza quinta\\accidentale, ascendente\\per semitono maggiore, composta")
               (:de "Tonschritte der dritten quinta\\accidentale composta, aufsteigend\\mit semitono maggiore")
               (:en "steps of the third quinta\\accidentale composta, ascending\\with semitoni maggiori")))
-    (s6 (:alt (:it "gradi della quarta quinta\\accidentale composta, ascendente\\per semitono minore")
+    (s6 (:alt (:it "gradi della quarta quinta\\accidentale, ascendente\\per semitono minore, composta")
               (:de "Tonschritte der vierten quinta\\accidentale composta, aufsteigend\\mit semitono minore")
               (:en "steps of the fourth quinta\\accidentale composta, ascending\\with semitoni minori")))))
   (:preamble-lilypond
