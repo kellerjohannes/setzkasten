@@ -3,7 +3,7 @@
    (:alt-name "m1.008")
    (:comment "q021_s025, origin: 488")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Mano Enarmonica discendente con i semitoni minori, nel principio del tono per\\le sette lettere della mano, con il tono diviso in quattro parti: e come si à da leggere.")
+   (:title (:alt (:it "Mano Enarmonica discendente con i semitoni minori, nel principio del tono per\\le sette lettere della mano, con il tono diviso in quattro parti: & come si à da leggere.")
                  (:de "Absteigende enharmonische Hand mit den semitoni minori zu Beginn des tono, durch\\die sieben Buchstaben der Hand, mit dem tono unterteilt in vier Teile, und wie es zu lesen ist")
                  (:en "Descending enharmonic hand with semitoni minori in the beginning of the tono through\\the seven letters of the hand, with the tono divided into four parts: as they are to be read")))
    (:section-headings
