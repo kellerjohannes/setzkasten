@@ -3,7 +3,7 @@
    (:alt-name "m2.003")
    (:comment "q021_s056, origin: 993")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio d'andare all'unisono con vari gradi e salti")
+   (:title (:alt (:it "Essempio d'andare all'Vnisono con uarij gradi & salti.")
                  (:de "Beispiel, wie vom unisono mit verschiedenen Tonschritten und Sprüngen zu gehen ist")
                  (:en "Example of going to the unisono with various steps and leaps"))))
   (:data
