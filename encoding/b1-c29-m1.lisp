@@ -4,7 +4,7 @@
    (:comment "q021_s043, origin: 439")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio del grado di Terza maggiore naturale, incomposto & composto.")
-                 (:de "Beispiel des Tonschritts der terza maggiore naturale, incomposto und composto.")
+                 (:de "Beispiel des Tonschritts der terza maggiore naturale, incomposto und composto")
                  (:en "Example of the incomposto and composto step of the terza maggiore naturale")))
    (:section-captions
     (s1 (:alt (:it "grado di terza\\maggiore\\naturale")
