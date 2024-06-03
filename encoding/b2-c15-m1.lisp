@@ -3,7 +3,7 @@
    (:alt-name "m2.018")
    (:comment "q021_s067, rotation: 0, origin: 447")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio della terza maggiore, et come in vari modi\\si può accompagnare")
+   (:title (:alt (:it "Essempio della Terza maggiore, et come in uarij modi\\si può accompagnare.")
                  (:de "Beispiel der terza maggiore und wie sie auf verschiedene Arten und Weisen\\begleitet werden kann")
                  (:en "Example of the terza maggiore, and how it can be\\accompanied in various ways"))))
   (:data
