@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "I semitoni delli diesis ascendenti sono minori,\\e discendenti maggiori, et il simile del ♮")
                  (:de "Die semitoni der aufsteigenden diesis [cromatici] sind minori\\und absteigend maggiori, und das gleiche bei ♮ [incitato].")
-                 (:en "The semitoni of the ascending diesis are minori,\and [of the] descending maggiori, and the same for ♮")))
+                 (:en "The semitoni of the ascending diesis are minori,\\and [of the] descending maggiori, and the same for ♮")))
    (:section-captions
     (s1 (:alt (:it "Semitono\\minore")
               (:de "semitono\\minore")

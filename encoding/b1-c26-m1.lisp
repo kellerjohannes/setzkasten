@@ -28,16 +28,16 @@
               ;; Endungen habe ich ebenfalls angepasst und stets auf 'grado' bezogen.
               ;;
               ;; DONE
-              (:en "incomposto step\\of terza\\minore\\naturale")))
+              (:en "incomposto\\step\\of terza\\minore\\naturale")))
     (s2 (:alt (:it "grado di terza\\minore\\naturale\\incomposto")
-              (:de "Tonschritt incomposto\\der terza minore\\naturale")
-              (:en "incomposto step\\of terza\\minore\\naturale")))
+              (:de "Tonschritt\\incomposto\\der terza\\minore\\naturale")
+              (:en "incomposto\\step\\of terza\\minore\\naturale")))
     (s3 (:alt (:it "grado di terza\\minore\\naturale\\incomposto")
-              (:de "Tonschritt incomposto\\der terza minore\\naturale")
-              (:en "incomposto step\\of terza\\minore\\naturale")))
+              (:de "Tonschritt\\incomposto\\der terza\\minore\\naturale")
+              (:en "incomposto\\step\\of terza\\minore\\naturale")))
     (s4 (:alt (:it "grado di terza\\minore\\naturale\\incomposto")
-              (:de "Tonschritt incomposto\\der terza minore\\naturale")
-              (:en "incomposto step\\of terza\\minore\\naturale")))
+              (:de "Tonschritt\\incomposto\\der terza\\minore\\naturale")
+              (:en "incomposto\\step\\of terza\\minore\\naturale")))
     (s5 (:alt (:it "terza minore\\composta\\di tono\\e semitono")
               (:de "terza minore\\composta\\aus tono\\und semitono")
               (:en "terza minore\\composta\\of a tono\\and semitono")))

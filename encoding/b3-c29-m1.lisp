@@ -15,7 +15,7 @@
     nil
     (:alt (:it "L'atto che faceva il soprano di sopra; hora il tenore lo farà di sotto, con il contr'alto;\\et in alcuni luoghi si ritroverà la sincopa tutta buona, a due voci")
           (:de "Der Gestus, welcher der Soprano oben macht, macht nun der Tenore unten mit dem Contr'alto;\\und an manchen Stellen findet man eine gänzlich gute Synkope, mit zwei Stimmen.")
-          (:en "The gesture that the soprano took above is now taken by the tenor below with the alto; in some cases one finds a wholly good sincopa, in two voci."))
+          (:en "The gesture that the soprano took above is now taken\\by the tenor below with the alto;\\in some cases one finds a wholly good sincopa, in two voci."))
     (:alt (:it "Cadentie che fuggano la sua conclusione")
           (:de "Kadenzen, die ihren Abschluss fliehen.")
           (:en "Cadences which evade their conclusion")))

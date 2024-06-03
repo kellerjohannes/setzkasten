@@ -4,7 +4,7 @@
    (:comment "q021_s057, rotation: 1.51, origin: 357")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Esempio d'andare all'unisono con vari salti, et con la sincopa tutta buona")
-                 (:de "Beispiel um vom unisono mit verschiedenen Sprüngen zu gehen, und mit einer gänzlich guten Synkope")
+                 (:de "Beispiel um vom unisono mit verschiedenen Sprüngen zu gehen,\\und mit einer gänzlich guten Synkope")
                  (:en "Example of going to the unisono with various leaps, and with a wholly good sincopa")))
    (:section-headings
     (s1 (:alt (:it "Buono")

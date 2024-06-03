@@ -25,22 +25,22 @@
     ;; ANNE
     ;; OPEN
     (s2 (:alt (:it "salto di quinta\\imperfetta\\naturale\\incomposto")
-              (:de "Sprung incomposto\\der quinta\\imperfetta\\naturale")
+              (:de "Sprung\\incomposto\\der quinta\\imperfetta\\naturale")
               (:en "incomposto leap\\of the quinta\\imperfetta\\naturale")))
     (s3 (:alt (:it "salto di quinta\\imperfetta\\naturale\\incomposto")
-              (:de "Sprung incomposto\\der quinta\\imperfetta\\naturale")
+              (:de "Sprung\\incomposto\\der quinta\\imperfetta\\naturale")
               (:en "incomposto leap\\of the quinta\\imperfetta\\accidentale")))
     (s4 (:alt (:it "salto di quinta\\imperfetta\\accidentale\\incomposto")
-              (:de "Sprung incomposto\\der quinta\\imperfetta\\naturale")
+              (:de "Sprung\\incomposto\\der quinta\\imperfetta\\naturale")
               (:en "incomposto leap\\of the quinta\\imperfetta\\accidentale")))
     (s5 (:alt (:it "salto di quinta\\imperfetta\\accidentale\\incomposto")
-              (:de "Sprung incomposto\\der quinta\\imperfetta\\naturale")
+              (:de "Sprung\\incomposto\\der quinta\\imperfetta\\naturale")
               (:en "incomposto leap\\of the quinta\\imperfetta\\accidentale")))
     (s6 (:alt (:it "salto di quinta\\imperfetta\\accidentale\\incomposto")
-              (:de "Sprung incomposto\\der quinta\\imperfetta\\naturale")
+              (:de "Sprung\\incomposto\\der quinta\\imperfetta\\naturale")
               (:en "incomposto leap\\of the quinta\\imperfetta\\accidentale")))
     (s7 (:alt (:it "salto di quinta\\imperfetta\\accidentale\\incomposto")
-              (:de "Sprung incomposto\\der quinta\\imperfetta\\naturale")
+              (:de "Sprung\\incomposto\\der quinta\\imperfetta\\naturale")
               (:en "incomposto leap\\of the quinta\\imperfetta\\accidentale")))))
   (:preamble-lilypond
    (:clef-overrides
