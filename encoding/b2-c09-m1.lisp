@@ -3,7 +3,7 @@
    (:alt-name "m2.012")
    (:comment "q021_s063, rotation: 0.75, origin: 420")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio di comporre la quinta imperfetta\\a due voci, et a più in vari modi")
+   (:title (:alt (:it "Esempio di comporre la Quinta imperfetta\\à due uoci, et à più in uarij modi.")
                  (:de "Beispiel, die quinta imperfetta zu setzen,\\mit zwei und mehr Stimmen auf verschiedenen Arten und Weisen")
                  (:en "Example of composing with the quinta imperfetta\\in two or more voci, in various ways")
                  ;; JK: Das ganze Beispiel: akut zu diskutieren, insbesondere der zweite Tenor in
@@ -14,16 +14,16 @@
                  ;; OPEN
                  ))
    (:section-headings
-    (s1 (:alt (:it "A due voci")
+    (s1 (:alt (:it "à due uoci")
               (:de "mit zwei Stimmen")
               (:en "in two voci")))
-    (s2 (:alt (:it "A due voci")
+    (s2 (:alt (:it "à due uoci")
               (:de "mit zwei Stimmen")
               (:en "in two voci")))
-    (s3 (:alt (:it "A tre voci")
+    (s3 (:alt (:it "à tre uoci")
               (:de "mit drei Stimmen")
               (:en "in three voci")))
-    (s4 (:alt (:it "A tre voci et a quattro")
+    (s4 (:alt (:it "à tre uoci & à quattro")
               (:de "mit drei und vier Stimmen")
               (:en "in three and in four voci"))))
    (:voice-labels
