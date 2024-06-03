@@ -21,7 +21,6 @@
     ;; codiert, auf Italienisch und auf Englisch.
     ;;
     ;; DONE
-    ;; LUIGI: Ich bin mit den vorgeschlagenen Korrekturen der Beschriftung sowie des Titels der Musikbeispiel (und auch des Kapitels?) nicht einverstanden. Hier sehe ich die typische (hier umproblematische) Inkoärenz Vicentinos. 
     (s1 (:alt (:it "salto di quarta\\accidentale\\incomposta")
               (:de "Sprung der quarta\\accidentale\\incomposta")
               (:en "leap of a quarta\\accidentale\\incomposta")))
