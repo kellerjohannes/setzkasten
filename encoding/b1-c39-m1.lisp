@@ -3,9 +3,12 @@
    (:alt-name "m1.048")
    (:comment "q021_s049, origin: 395")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio della Quinta naturale incomposta.")
+   (:title (:alt (:it "Essempio [del salto] della Quinta naturale incomposta.")
                  (:de "Beispiel der quinta naturale incomposta.")
                  (:en "Example of the quinta naturale incomposta")))
+
+                 ;; LUIGI: Es fehtl hier auch 'del salto' (vgl. Titel des Kapitels!). In den Übersetzungen zu ergänzen!
+
    (:section-headings
     (s1 (:alt (:it "prima quinta")
               (:de "erste quinta")
@@ -29,18 +32,20 @@
     ;;
     ;; JK: gut, das ist mir tatsächlich lieber so, in diesem Sinn übergehen wir den Kommentar von
     ;; David und ich schliesse die Diskussion.
+
+    ;; LUIGI: Es ist eine Ergänzung. Es sollten zwischen [] sein! In den Übersetzungen anzupassen. Ich würde auch den Originaltext behalten!
     ;;
-    ;; DONE
-    (s5 (:alt (:it "prima quinta")
+    ;; OPEN
+    (s5 (:alt (:it "[prima quinta]")
               (:de "erste quinta")
               (:en "first quinta")))
-    (s6 (:alt (:it "seconda quinta")
+    (s6 (:alt (:it "[seconda quinta]")
               (:de "zweite quinta")
               (:en "second quinta")))
-    (s7 (:alt (:it "terza quinta")
+    (s7 (:alt (:it "[terza quinta]")
               (:de "dritte quinta")
               (:en "third quinta")))
-    (s8 (:alt (:it "quarta quinta")
+    (s8 (:alt (:it "[quarta quinta]")
               (:de "vierte quinta")
               (:en "fourth quinta"))))
    (:section-captions
