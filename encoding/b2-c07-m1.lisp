@@ -11,7 +11,7 @@
                  ;;
                  ;; GROUP !!
                  ;; OPEN
-                 ;; LUIGI: Ich bin mit David einverstanden: 'à tre uoci' gehört nicht zum Titel des Musikspiels. Es ist eine Information zur Besetzung der Musik
+                 ;; LUIGI: Ich bin mit David einverstanden: 'à tre uoci' gehört nicht zum Titel des Musikspiels. Es ist eine Information zur Besetzung der Musik (vgl. Kap. 8)
                  (:de "Beispiel der Art und Weise, von der quarta zur quinta,\\synkopiert und nicht synkopiert, und von der quinta zur quarta zu setzen,\\mit drei Stimmen")
                  (:en "Example of the method of composing from the quarta to the quinta,\\syncopata and not syncopata, and from the quinta to the quarta\\in three voci")))
    (:voice-labels
