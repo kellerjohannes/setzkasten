@@ -41,6 +41,7 @@
               ;; DONE
               (:de "diesis maggiore\\enarmonico incomposto")
               (:en "diesis maggiore\\enarmonico incomposto")))))
+              ;; LUIGI: Der Salto wäre ein semitono minore enarmonico incomposto, wenn die zweite Note (Bb) einen Punkt hätte. Ich würde die Note(n) statt die Beschriftung.
   (:data
    (:music 2206
            (:voice v1)
