@@ -3,7 +3,7 @@
    (:alt-name "m2.026")
    (:comment "q021_s074, rotation: -0.49, origin: 1000")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempi d'alcune Ottaue doppie.")
+   (:title (:alt (:it "Essempi d'alcune Ottaue doppie.")
                  (:de "Beispiele von einigen ottave doppie")
                  (:en "Examples of some ottave doppie")))
    (:line-headings
