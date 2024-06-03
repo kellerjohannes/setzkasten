@@ -12,7 +12,7 @@
    (:alt-name "m1.003")
    (:comment "q021_s022, origin: 1002")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Dimostratione della mano diatonica")
+   (:title (:alt (:it "Dimostratione della Mano Diatonica.")
                  (:de "Darstellung der diatonischen Hand")
                  (:en "Illustration of the diatonic hand")))
    (:section-headings
