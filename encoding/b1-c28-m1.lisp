@@ -3,7 +3,7 @@
    (:alt-name "m1.036")
    (:comment "q021_s043, origin: 441")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio de i gradi di Terza più di minore, composti & incomposti")
+   (:title (:alt (:it "Essempio de i gradi di Terza più di minore, composti & incomposti.")
                  ;; Kommentar David (via Anne): 1. (The original overall caption is amusing here,
                  ;; because "composto" and "incomposto" don't agree with either "gradi" or "terza"!)
                  ;; and 2. In No. 5 the second note should be A (as in the original) not B.
