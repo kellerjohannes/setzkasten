@@ -3,7 +3,7 @@
    (:alt-name "m2.007")
    (:comment "q021_s059, rotation: 0, origin: 448")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio della seconda, et della quarta,\\come si ha da comporre a tre voci, alto, tenore et basso")
+   (:title (:alt (:it "Esempio della Seconda, et della Quarta,\\come si hà da comporre à tre uoci. Alto, Tenore et Basso.")
                  ;; Kommentar Anne: Ich glaube, dass es "alto, tenore et basso" heissen muss, da im
                  ;; Original es "Al.Ten.et Basso" ist.
                  ;;
@@ -16,19 +16,19 @@
     (s1 (:alt (:it "Buona")
               (:de "gut")
               (:en "good")))
-    (s2 (:alt (:it "Non troppo")
+    (s2 (:alt (:it "non troppo [buona]")
               (:de "nicht so [gut]")
               (:en "not too [good]")))
-    (s3 (:alt (:it "Buona et a quattro meglio")
+    (s3 (:alt (:it "buona et à 4. [voci] meglio")
               (:de "gut und mit vier [Stimmen] besser")
               (:en "good and in four [voci] better")))
-    (s4 (:alt (:it "Buona")
+    (s4 (:alt (:it "buona")
               (:de "gut")
               (:en "good")))
-    (s5 (:alt (:it "Buona")
+    (s5 (:alt (:it "buona")
               (:de "gut")
               (:en "good")))
-    (s6 (:alt (:it "Buona")
+    (s6 (:alt (:it "buona")
               (:de "gut")
               (:en "good")))))
   (:preamble-lilypond
