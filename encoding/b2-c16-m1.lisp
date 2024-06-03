@@ -3,11 +3,11 @@
    (:alt-name "m2.019")
    (:comment "q021_s068, rotation: -0.42, origin: 961")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio delle quinte")
+   (:title (:alt (:it "Esempio delle Quinte")
                  (:de "Beispiel der quinte")
                  (:en "Example of quinte")))
    (:line-headings
-    (:alt (:it "Non si fanno due quinte ne per grado, ne per salto,\\ascendenti ne discendenti")
+    (:alt (:it "Non si fanno due quinte ne per grado ne per salto\\ascendenti ne discendenti")
           ;; Kommentar AS: David remarks: This caption in fact refers only to Nos. 2–4, so it should
           ;; also be placed underneath those examples, as in the original.
           ;;
