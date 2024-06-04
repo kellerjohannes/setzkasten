@@ -3,8 +3,8 @@
    (:alt-name "m3.023")
    (:comment "q021_s096, rotation: -1.63, origin: 1055")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio del secondo modo per ♭ molle\\della musica participata e mista")
-                 (:de "Beispiel des zweiten Modus per ♭ molle\\der musica participata und mista.")
+   (:title (:alt (:it "Essempio del secondo Modo per ♭ molle\\della Musica participata & mista.")
+                 (:de "Beispiel des zweiten Modus per ♭ molle\\der musica participata und mista")
                  (:en "Example of the second mode in ♭ molle,\\of musica participata and mista"))))
   (:data
    (:text 130 58
