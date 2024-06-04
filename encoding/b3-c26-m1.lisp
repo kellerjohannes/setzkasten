@@ -3,14 +3,16 @@
    (:alt-name "m3.057")
    (:comment "q021_s103, origin: 500; q021_s104, rotation: 0.94, origin: 878 et al.")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio della musica diatonica")
-                 (:de "Beispiel der diatonischen Musik.")
+   (:title (:alt (:it "Essempio [della Musica Diatonica, à quattro uoci composta]")
+                 (:de "Beispiel der diatonischen Musik")
                  (:en "Example of diatonic music")))
+                 ;; LUIGI: Es ist eine Bearbeitung des Originals: es muss zwischen [ ] sein. Ich würde auch den Titel des Kapitels vollständig zitieren.
+                 ;;OPEN
    (:voice-labels
-    (s1 v1 (:alt (:it "Soprano diatonico")
+    (s1 v1 (:alt (:it "Soprano Diatonico.")
                    (:de "diatonischer Soprano")
                    (:en "Diatonic soprano")))
-    (s1 v2 (:alt (:it "Contr'alto diatonico")
+    (s1 v2 (:alt (:it "Contr'alto Diatonico.")
                    (:de "diatonischer Contr'alto")
                    (:en "Diatonic alto")))
     (s1 v3 (:alt (:it "Tenore diatonico")
