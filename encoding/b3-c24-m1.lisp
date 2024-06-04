@@ -4,8 +4,8 @@
    (:comment "q021_s102, rotation: -0.81, origin: 974")
    (:creator "Vicentino21 / Johannes Keller")
               ;; AS: The title above the first line of examples does not work because "Decima maggiore all' ottava" is only for the first example. "ne i Fini" only for the second, and "& nel Basso, ne gl'Alti" only for the third example. Having discussed this section in great depth with David, I am sure of this, and am willing to explain it to you if necessary.
-   (:title (:alt (:it "Esempi delle cadentie maggiori di breve senza punto,\\e con il punto dimiuite")
-                 (:de "Beispiel der Kadenzen maggiori mit Breven ohne Punktierung\\und mit Punktierung diminuiert.")
+   (:title (:alt (:it "Essempi delle cadentie maggiori di breue senza punto,\\et con il punto dimiuite.")
+                 (:de "Beispiel der Kadenzen maggiori mit Breven ohne Punktierung\\und mit Punktierung diminuiert")
                  (:en "Example of major cadences of a breve without dot,\\and diminished with a dot"))))
   (:data
    (:text 110 58
