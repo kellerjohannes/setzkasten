@@ -3,8 +3,8 @@
    (:alt-name "m3.033")
    (:comment "q021_s098, origin: 961")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio del quarto modo con tre ♭ molli,\\con la sua quinta giusta,\\della musica participata et mista")
-                 (:de "Beispiel des vierten Modus mit drei ♭ molli,\\mit seiner richtigen quinta,\\der musica participata und mista.")
+   (:title (:alt (:it "Essempio del quarto Modo con tre ♭ molli,\\con la sua quinta giusta,\\della musica participata & mista.")
+                 (:de "Beispiel des vierten Modus mit drei ♭ molli,\\mit seiner richtigen quinta,\\der musica participata und mista")
                  (:en "Example of the fourth mode with three ♭ molli,\\with its proper quinta,\\of musica participata and mista"))))
   (:data
    (:text 70 58
