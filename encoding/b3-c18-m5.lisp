@@ -3,8 +3,8 @@
    (:alt-name "m3.034")
    (:comment "q021_s098, origin: 962")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio del quarto modo, detto per musica finta")
-                 (:de "Beispiel des vierten Modus, genannnt per musica finta.")
+   (:title (:alt (:it "Essempio del quarto Modo, detto per musica finta.")
+                 (:de "Beispiel des vierten Modus, genannnt per musica finta")
                  (:en "Example of the fourth mode, called musica finta"))))
   (:data
    (:text 110 58
