@@ -3,7 +3,7 @@
    (:alt-name "m3.049")
    (:comment "q021_s100, origin: 917")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio dell'ottauo modo per ♭ molle,\\della Musica participata & mista.")
+   (:title (:alt (:it "Essempio dell'ottauo Modo per ♭ molle,\\della Musica participata & mista.")
                  (:de "Beispiel des achten Modus per ♭ molle\\der musica participata und mista")
                  (:en "Example of the eighth mode in ♭ molle,\\of musica participata and mista"))))
   (:data
