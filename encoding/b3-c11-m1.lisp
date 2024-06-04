@@ -3,8 +3,8 @@
    (:alt-name "b3.010")
    (:comment "q021_s91, origin: 429")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio del settimo modo diatonico semplice,\\da greci detto missolidio")
-                 (:de "Beispiel des einfachen siebten diatonischen Modus,\\von den Griechen Mixolydisch genannt.")
+   (:title (:alt (:it "Essempio del settimo Modo Diatonico semplice,\\da Greci detto Missolidio.")
+                 (:de "Beispiel des einfachen siebten diatonischen Modus,\\von den Griechen Mixolydisch genannt")
                  (:en "Example of the seventh simple diatonic mode,\\called Mixolydian by the Greeks"))))
   (:preamble-type-imitation
    (:width nil)
