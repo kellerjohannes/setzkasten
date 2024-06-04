@@ -3,7 +3,7 @@
    (:alt-name "m3.058")
    (:comment "q021_s105, origin: 519")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio delle cadentie à due uoci intiere,\\& diminuite, & senza conclusione.")
+   (:title (:alt (:it "Essempio delle Cadentie à due uoci intiere,\\& diminuite, & senza conclusione.")
                  (:de "Beispiel von Kadenzen mit zwei Stimmen, ganz\\und diminuiert, und ohne Abschluss")
                  (:en "Example of cadences in two undiminished voci,\\and diminished, and without conclusion")))
    (:section-captions
