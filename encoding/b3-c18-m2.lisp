@@ -3,8 +3,8 @@
    (:alt-name "m3.031")
    (:comment "q021_s098, origin: 971")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio del quarto modo per ♮ incitato\\della musica participata e mista,\\con l'ottava sotto del suo fine")
-                 (:de "Beispiel des vierten Modus per ♮ incitato\\der musica participata und mista,\\mit der ottava unter seiner Finalis.")
+   (:title (:alt (:it "Essempio del quarto Modo per ♮ incitato\\della Musica participata & mista,\\con l'ottaua sotto del suo fine.")
+                 (:de "Beispiel des vierten Modus per ♮ incitato\\der musica participata und mista,\\mit der ottava unter seiner Finalis")
                  (:en "Example of the fourth mode in ♮ incitato,\\of musica participata and mista,\\with the ottava below its final"))))
   (:data
    (:text 70 58
