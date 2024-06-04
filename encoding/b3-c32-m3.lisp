@@ -7,7 +7,7 @@
                  (:de "Beispiel von vielen Kadenzen des dritten Modus\\der musica participata und mista per ♮ quadro")
                  (:en "Example of many cadences of the third mode\\of musica participata and mista in ♮ quadro")))
    (:voice-labels
-   ;; LUIGI: Ich würde [a quattro voci] einfügen: Es fehlt nur hier.
+   ;; LUIGI: Ich würde [à quattro uoci,] einfügen: Es fehlt nur hier.
    ;;OPEN
     (s1 v1 (:alt (:it "Cadentie del Soprano")
                  (:de "Kadenzen des Soprano")
