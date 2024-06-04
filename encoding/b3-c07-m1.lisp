@@ -3,7 +3,7 @@
    (:alt-name "m3.006")
    (:comment "q021_s89, rotation: 0.89, origin: 476")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio del terzo modo Diatonico semplice,\\da Greci detto Frigio.")
+   (:title (:alt (:it "Essempio del terzo Modo Diatonico semplice,\\da Greci detto Frigio.")
                  (:de "Beispiel des einfachen dritten diatonischen Modus,\\von den Griechen Phrygisch genannt")
                  (:en "Example of the third simple diatonic mode,\\called Phrygian by the Greeks"))))
   (:data
