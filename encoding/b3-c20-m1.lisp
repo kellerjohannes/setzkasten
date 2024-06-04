@@ -3,8 +3,8 @@
    (:alt-name "m3.039")
    (:comment "q021_s099, origin: 414")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio del sesto modo per ♮ incitato,\\della musica participata e mista")
-                 (:de "Beispiel des sechsten Modus per ♮ incitato\\der musica participata und mista.")
+   (:title (:alt (:it "Essempio del sesto Modo per ♮ incitato,\\della Musica participata & mista.")
+                 (:de "Beispiel des sechsten Modus per ♮ incitato\\der musica participata und mista")
                  (:en "Example of the sixth mode in ♮ incitato,\\of musica participata and mista"))))
   (:data
    (:text 110 58
