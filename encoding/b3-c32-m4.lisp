@@ -3,7 +3,7 @@
    (:alt-name "m3.066")
    (:comment "q021_s111, rotation: 0.68, origin: 484")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio di molte cadentie del quarto modo, a quattro voci\\della musica participata e mista per ♮ quadro")
+   (:title (:alt (:it "Essempio di molte Cadentie del quarto Modo, à quattro uoci\\della musica participata e mista per ♮ quadro")
                  (:de "Beispiel von vielen Kadenzen des vierten Modus mit vier Stimmen\\der musica participata und mista per ♮ quadro.")
                  (:en "Example of many cadences of the fourth mode in four voci,\\of musica participata and mista in ♮ quadro")))
    (:voice-labels
