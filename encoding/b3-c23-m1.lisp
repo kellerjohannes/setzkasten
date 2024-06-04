@@ -3,8 +3,8 @@
    (:alt-name "m3.051")
    (:comment "q021_s100, origin: 445")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio del modo misto della prima quinta del primo modo,\\e della seconda quarta del terzo modo")
-                 (:de "Beispiel des vermischten Modus mit der ersten quinta des ersten Modus\\und der zweiten quarta des dritten Modus.")
+   (:title (:alt (:it "Essempio del Modo misto della prima Quinta del primo Modo,\\e della seconda Quarta del terzo Modo.")
+                 (:de "Beispiel des vermischten Modus mit der ersten quinta des ersten Modus\\und der zweiten quarta des dritten Modus")
                  (:en "Example of the mixed mode of the first quinta, from the first mode,\\and the second quarta, from the third mode"))))
   (:data
    (:text 70 58
