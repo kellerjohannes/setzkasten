@@ -3,7 +3,7 @@
    (:alt-name "m3.052")
    (:comment "q021_s100, origin: 446")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio del modo misto della quinta, del settimo modo,\\e della terza quarta del quinto modo")
+   (:title (:alt (:it "Essempio del Modo misto della Quinta del settimo Modo,\\e della terza Quarta del quinto Modo.")
                  (:de "Beispiel des vermischten Modus mit der quinta des siebten Modus\\und der dritten quarta des fünften Modus.")
                  (:en "Example of the mixed mode of the [fourth] quinta, from the seventh mode,\\and the third quarta, from the fifth mode"))))
   (:data
