@@ -3,8 +3,8 @@
    (:alt-name "m3.059")
    (:comment "q021_s106, origin: 877")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio delle cadentie naturali et accidentali,\\a due voci, della musica participata e mista,\\lequali fuggano la sua conclusione")
-                 (:de "Beispiel der Kadenzen naturali und accidentali\\mit zwei Stimmen der musica participata und mista,\\welche ihren Abschluss fliehen.")
+   (:title (:alt (:it "Esempio delle Cadentie naturali & accidentali,\\à due uoci, della Musica participata & mista,\\lequali fuggano la sua conclusione.")
+                 (:de "Beispiel der Kadenzen naturali und accidentali\\mit zwei Stimmen der musica participata und mista,\\welche ihren Abschluss fliehen")
                  (:en "Example of naturali and accidentali cadences,\\in two voci, of musica participata and mista\\which evade their conclusion")))
    (:section-headings
     ;; JK: »A due voci« steht im Original nur ein einziges Mal und wird für sämtliche folgende
@@ -14,7 +14,7 @@
     ;;
     ;; GROUP !
     ;; OPEN
-    (s1 (:alt (:it "A due voci")
+    (s1 (:alt (:it "A due uoci.")
               (:de "mit zwei Stimmen")
               (:en "In two voci")))
     (s2 (:alt (:it "[A due voci]")
