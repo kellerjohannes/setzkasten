@@ -3,7 +3,7 @@
    (:alt-name "m3.020")
    (:comment "q021_s096, rotation: -1.63, origin: 1050")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio del Primo Modo per ♭ molle\\della Musica participata & mista.")
+   (:title (:alt (:it "Essempio del primo Modo per ♭ molle\\della Musica participata & mista.")
                  (:de "Beispiel des ersten Modus per ♭ molle\\der musica participata und mista.")
                  (:en "Example of the first mode in ♭ molle,\\of musica participata and mista"))))
   (:preamble-lilypond
