@@ -3,8 +3,8 @@
    (:alt-name "m3.062")
    (:comment "q021_s108, origin: 1030")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio delle cadentie a tre voci, della musica participata e mista")
-                 (:de "Beispiel der Kadenzen mit drei Stimmen der musica participata und mista.")
+   (:title (:alt (:it "Essempio delle Cadentie à tre uoci della Musica participata & mista.")
+                 (:de "Beispiel der Kadenzen mit drei Stimmen der musica participata und mista")
                  (:en "Example of the cadences in three voci, of musica participata and mista")))
    (:section-captions
     (s1 "")
