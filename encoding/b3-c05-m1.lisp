@@ -3,8 +3,8 @@
    (:alt-name "m3.004")
    (:comment "q021_s88, rotation: -1.49, origin: 1097")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio del primo modo diatonico semplice,\\da greci detto dorio")
-                 (:de "Beispiel des einfachen ersten diatonischen Modus,\\von den Griechen Dorisch genannt.")
+   (:title (:alt (:it "Essempio del primo Modo Diatonico semplice,\\da Greci detto Dorio.")
+                 (:de "Beispiel des einfachen ersten diatonischen Modus,\\von den Griechen Dorisch genannt")
                  (:en "Example of the first simple diatonic mode,\\called Dorian by the Greeks"))))
                  
   (:data
