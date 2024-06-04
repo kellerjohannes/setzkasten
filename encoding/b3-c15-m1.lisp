@@ -3,7 +3,7 @@
    (:alt-name "m3.018")
    (:comment "q021_s096, rotation: -1.63, origin: 1051")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio del Primo Modo per ♮ incitato in Ottaua più basso\\dell'ordinario, della musica participata & mista.")
+   (:title (:alt (:it "Essempio del Primo Modo per ♮ incitato in Ottaua più basso\\dell'ordinario, della Musica participata & mista.")
                  (:de "Beispiel des ersten Modus per ♮ incitato eine ottava tiefer\\als üblich, der musica participata und mista")
                  (:en "Example of the first mode in ♮ incitato an ottava lower\\than is usual, of musica participata and mista"))))
   (:data
