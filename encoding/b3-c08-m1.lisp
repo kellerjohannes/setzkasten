@@ -3,7 +3,7 @@
    (:alt-name "m3.007")
    (:comment "q021_s90, origin: 993")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio del quarto modo Diatonico semplice,\\da Greci detto Yppofrigio.")
+   (:title (:alt (:it "Essempio del quarto Modo Diatonico semplice,\\da Greci detto Yppofrigio.")
                  (:de "Beispiel des einfachen vierten diatonischen Modus,\\von den Griechen Hypophrygisch genannt")
                  (:en "Example of the fourth simple diatonic mode,\\called Hypophrygian by the Greeks"))))
   (:preamble-lilypond
