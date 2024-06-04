@@ -3,7 +3,7 @@
    (:alt-name "m3.005")
    (:comment "q021_s89, rotation: 0.89, origin: 491")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio del secondo modo Diatonico semplice,\\da Greci detto Yppodorio.")
+   (:title (:alt (:it "Essempio del secondo Modo Diatonico semplice,\\da Greci detto Yppodorio.")
                  (:de "Beispiel des einfachen zweiten diatonischen Modus,\\von den Griechen Hypodorisch genannt")
                  (:en "Example of the second simple diatonic mode,\\called Hypodorian by the Greeks"))))
   (:preamble-lilypond
