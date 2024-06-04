@@ -3,8 +3,8 @@
    (:alt-name "m3.019")
    (:comment "q021_s096, rotation: -1.63, origin: 1046")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio del primo modo per ♮ incitato nel suo luogo ordinario\\della musica participata e mista")
-                 (:de "Beispiel des ersten Modus per ♮ incitato in seiner üblichen Lage\\der musica participata und mista.")
+   (:title (:alt (:it "Essempio del Primo Modo per ♮ incitato nel suo luogo ordinario,\\della musica participata & mista.")
+                 (:de "Beispiel des ersten Modus per ♮ incitato in seiner üblichen Lage\\der musica participata und mista")
                  (:en "Example of the first mode in ♮ incitato in its usual location,\\of musica participata and mista"))))
   (:data
    (:text 70 58
