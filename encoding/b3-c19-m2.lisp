@@ -3,8 +3,8 @@
    (:alt-name "m3.036")
    (:comment "q021_s098, origin: 951")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio del quinto modo per ♮ incitato\\della musica participata e mista")
-                 (:de "Beispiel des fünften Modus per ♮ incitato\\der musica participata und mista.")
+   (:title (:alt (:it "Essempio del quinto Modo per ♮ incitato\\della Musica participata & mista.")
+                 (:de "Beispiel des fünften Modus per ♮ incitato\\der musica participata und mista")
                  (:en "Example of the fifth mode in ♮ incitato,\\of musica participata and mista"))))
   (:data
    (:text 110 58
