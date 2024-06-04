@@ -3,7 +3,7 @@
    (:alt-name "m3.032")
    (:comment "q021_s098, origin: 968")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio del quarto modo per ♭ molle, senza la sua quinta giusta,\\della musica mista e participata")
+   (:title (:alt (:it "Essempio del quarto Modo per ♭ molle, senza la sua quinta giusta,\\della musica mista e participata")
                  (:de "Beispiel des vierten Modus per ♭ molle, ohne seine richtige quinta,\\der musica mista und participata.")
                  (:en "Example of the fourth mode in ♭ molle, without its proper quinta,\\of musica mista and participata"))))
   (:data
