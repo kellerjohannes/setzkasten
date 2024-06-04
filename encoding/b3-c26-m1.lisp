@@ -9,10 +9,10 @@
                  ;; LUIGI: Es ist eine Bearbeitung des Originals: es muss zwischen [ ] sein. Ich würde auch den Titel des Kapitels vollständig zitieren.
                  ;;OPEN
    (:voice-labels
-    (s1 v1 (:alt (:it "Soprano Diatonico.")
+    (s1 v1 (:alt (:it "Soprano diatonico")
                    (:de "diatonischer Soprano")
                    (:en "Diatonic soprano")))
-    (s1 v2 (:alt (:it "Contr'alto Diatonico.")
+    (s1 v2 (:alt (:it "Contr'alto diatonico")
                    (:de "diatonischer Contr'alto")
                    (:en "Diatonic alto")))
     (s1 v3 (:alt (:it "Tenore diatonico")
