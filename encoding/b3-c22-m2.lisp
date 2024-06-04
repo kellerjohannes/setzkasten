@@ -3,8 +3,8 @@
    (:alt-name "m3.048")
    (:comment "q021_s100, origin: 973")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio dell'ottavo modo per ♮ incitato,\\con la quinta, sotto la sua quarta,\\della musica participata et mista")
-                 (:de "Beispiel des achten Modus per ♮ incitato,\\mit der quinta unter ihrer quarta,\\der musica participata und mista.")
+   (:title (:alt (:it "Essempio dell'ottauo Modo per ♮ incitato,\\con la quinta sotto la sua quarta,\\della Musica participata & mista.")
+                 (:de "Beispiel des achten Modus per ♮ incitato,\\mit der quinta unter ihrer quarta,\\der musica participata und mista")
                  (:en "Example of the eighth mode in ♮ incitato,\\with the quinta below its quarta,\\of musica participata and mista"))))
   (:data
    (:text 70 58
