@@ -3,7 +3,7 @@
    (:alt-name "m3.001")
    (:comment "q021_s086, rotation: 1.25, origin: 1025")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio delle tre Quarte Diatoniche, composte & incomposte.")
+   (:title (:alt (:it "Essempio delle tre Quarte Diatoniche, composte & incomposte.")
                  (:de "Beispiel der drei diatonischen quarte, composte und incomposte")
                  (:en "Example of the three diatonic quarte, composte and incomposte")))
    (:section-headings
