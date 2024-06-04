@@ -3,7 +3,7 @@
    (:alt-name "m3.060")
    (:comment "q021_s107, origin: 395")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio delle Cadentie à due uoci")
+   (:title (:alt (:it "Essempio delle Cadentie à due uoci.")
                  (:de "Beispiel der Kadenzen mit zwei Stimmen.")
                  (:en "Example of the cadences in two voci")))
    (:line-headings
