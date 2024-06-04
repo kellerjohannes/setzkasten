@@ -3,20 +3,20 @@
    (:alt-name "m3.060")
    (:comment "q021_s107, origin: 395")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio delle cadentie a due voci")
+   (:title (:alt (:it "Essempio delle Cadentie à due uoci")
                  (:de "Beispiel der Kadenzen mit zwei Stimmen.")
                  (:en "Example of the cadences in two voci")))
    (:line-headings
-    (:alt (:it "Il soprano con il tenore in vari modi, a due voci")
+    (:alt (:it "Il Soprano con il Tenore in uarij modi, à due uoci.")
           (:de "Der Soprano mit dem Tenore auf verschiedene Arten und Weisen, mit zwei Stimmen.")
           (:en "The soprano with the tenor in various ways, in two voci"))
     nil
     nil
     nil
-    (:alt (:it "L'atto che faceva il soprano di sopra; hora il tenore lo farà di sotto, con il contr'alto;\\et in alcuni luoghi si ritroverà la sincopa tutta buona, a due voci")
+    (:alt (:it "L'atto che faceua il Soprano di sopra; hora il Tenore lo farà di sotto, con il Contr'Alto;\\et in alcuni luoghi si ritrouerà la sincopa tutta buona, à due uoci.")
           (:de "Der Gestus, welcher der Soprano oben macht, macht nun der Tenore unten mit dem Contr'alto;\\und an manchen Stellen findet man eine gänzlich gute Synkope, mit zwei Stimmen.")
           (:en "The gesture that the soprano took above is now taken\\by the tenor below with the alto;\\in some cases one finds a wholly good sincopa, in two voci."))
-    (:alt (:it "Cadentie che fuggano la sua conclusione")
+    (:alt (:it "Cadentie che fuggano la sua conclusione.")
           (:de "Kadenzen, die ihren Abschluss fliehen.")
           (:en "Cadences which evade their conclusion")))
    (:section-captions
@@ -55,7 +55,7 @@
     (s11 (:alt (:it "buona")
                (:de "gut")
                (:en "good")))
-    (s12 (:alt (:it "per variare")
+    (s12 (:alt (:it "per uariare")
                (:de "zum Variieren")
                (:en "for variation")))
     (s13 (:alt (:it "per variare")
@@ -68,7 +68,7 @@
     (s15 (:alt (:it "tutta buona")
                (:de "gänzlich gut")
                (:en "wholly good")))
-    (s16 (:alt (:it "per variare")
+    (s16 (:alt (:it "per uariare")
                (:de "zum Variieren")
                (:en "for variation")))
     (s17 "")
