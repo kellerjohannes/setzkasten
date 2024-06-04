@@ -3,7 +3,7 @@
    (:alt-name "m3.068")
    (:comment "q021_s112, rotation: 0, origin: 904")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio di molte Cadentie del sesto Modo, à quattro uoci,\\della mMusica participata & mista per ♭ molle")
+   (:title (:alt (:it "Essempio di molte Cadentie del sesto Modo, à quattro uoci,\\della Musica participata & mista per ♭ molle")
                  (:de "Beispiel von vielen Kadenzen des sechsten Modus mit vier Stimmen\\der musica participata und mista per ♭ molle.")
                  (:en "Example of many cadences of the sixth mode in four voci,\\of musica participata and mista in ♭ molle")))
    (:voice-labels
