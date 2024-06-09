@@ -17,7 +17,7 @@
               (:de "Dritte chromatische\\quinta.")
               (:en "Third chromatic\\quinta")))
     (s4 (:alt (:it "Quarta quinta\\cromatica")
-              (:de "")
+              (:de "Vierte chromatische\\quinta")
               (:en "Fourth chromatic\\quinta")))))
   (:data
    (:text 110 58
