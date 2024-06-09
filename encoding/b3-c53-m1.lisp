@@ -13,16 +13,16 @@
     ;;
     ;; OPEN
     (s1 v1 (:alt (:it "Soprano")
-                 (:de "")
+                 (:de "Soprano")
                  (:en "")))
     (s1 v2 (:alt (:it "[Alto]")
-                 (:de "")
+                 (:de "Alto")
                  (:en "")))
     (s1 v3 (:alt (:it "[Tenore]")
-                 (:de "")
+                 (:de "[Tenore]")
                  (:en "")))
     (s1 v4 (:alt (:it "[Basso]")
-                 (:de "")
+                 (:de "[Basso]")
                  (:en "")))))
 
   (:preamble-lilypond
