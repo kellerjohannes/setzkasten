@@ -4,7 +4,7 @@
    (:comment "q021_s049, origin: 406")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio de i gradi delle Quinte naturali.")
-                 (:de "")
+                 (:de "Beispiel der Tonschritte der quinte naturali.")
                  (:en "Example of the steps of the quinte naturali")))
    (:section-captions
     ;; JK: ich schlage vor, auch hier die Ziffern auszuschreiben, also statt "ordine 1 de gradi"
@@ -15,16 +15,16 @@
     ;;
     ;; DONE
     (s1 (:alt (:it "ordine primo de gradi\\della prima quinta\\composta")
-              (:de "")
+              (:de "erste Reihenfolge der Tonschritte\\der ersten quinta\\composta")
               (:en "first order of the steps\\of the first quinta\\composta")))
     (s2 (:alt (:it "ordine secondo de gradi\\della seconda quinta\\composta")
-              (:de "")
+              (:de "zweite Reihenfolge der Tonschritte\\der zweiten quinta\\composta")
               (:en "second order of the steps\\of the second quinta\\composta")))
     (s3 (:alt (:it "ordine terzo de gradi\\della terza quinta\\composta")
-              (:de "")
+              (:de "dritte Reihenfolge der Tonschritte\\der dritten quinta\\composta")
               (:en "third order of the steps\\of the third quinta\\composta")))
     (s4 (:alt (:it "ordine quarto de gradi\\della quarta quinta\\composta")
-              (:de "")
+              (:de "vierte Reihenfolge der Tonschritte\\der vierten quinta\\composta")
               (:en "fourth order of the steps\\of the fourth quinta\\composta")))))
   (:data
    (:text 90 58

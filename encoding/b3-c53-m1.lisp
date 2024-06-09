@@ -13,17 +13,17 @@
     ;;
     ;; OPEN
     (s1 v1 (:alt (:it "Soprano")
-                 (:de "")
-                 (:en "")))
+                 (:de "Soprano")
+                 (:en "Soprano")))
     (s1 v2 (:alt (:it "[Alto]")
-                 (:de "")
-                 (:en "")))
+                 (:de "[Alto]")
+                 (:en "[Alto]")))
     (s1 v3 (:alt (:it "[Tenore]")
-                 (:de "")
-                 (:en "")))
+                 (:de "[Tenore]")
+                 (:en "[Tenor]")))
     (s1 v4 (:alt (:it "[Basso]")
-                 (:de "")
-                 (:en "")))))
+                 (:de "[Basso]")
+                 (:en "[Bass]")))))
 
   (:preamble-lilypond
    (:standalone-title "»Madonna il poco dolce«")
