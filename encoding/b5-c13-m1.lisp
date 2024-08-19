@@ -44,10 +44,10 @@
    (:line-headings
     (:alt (:it "Alamire sesto discendente con le consonanze di più e di meno una comma")
           (:de "Alamire sesta absteigend mit den um ein comma grösseren und kleineren Konsonanzen")
-          (:en "Alamire sesto descending with the consonances greater and less than a comma"))
+          (:en "Alamire sesto descending with the consonances greater and less by a comma"))
     (:alt (:it "Alamire sesto ascendente con le consonanze di più e di meno di uno comma")
           (:de "Alamire sesta aufsteigend mit den um ein comma grösseren und kleineren Konsonanzen")
-          (:en "Alamire sesto ascending with the consonances greater and less than a comma"))))
+          (:en "Alamire sesto ascending with the consonances greater and less by a comma"))))
   (:data
    (:text 70 58
           (54 nil "La terza piu")
