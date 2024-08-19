@@ -69,7 +69,7 @@
 
     (s5 (:alt (:it "Semitono minore\\e maggiore:\\diesis minore – diesis minore – diesis minore")
               (:de "semitono minore\\e maggiore:\\diesis minore – diesis minore – diesis minore")
-              (:en "Semitono minore\\e maggiore:\\diesis minore – diesis minore – diesis minore")))
+              (:en "Semitono minore\\ andmaggiore:\\diesis minore – diesis minore – diesis minore")))
     (s6 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
               (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
               (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")))
@@ -85,7 +85,7 @@
               (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")))
     (s10 (:alt (:it "Semitono minore\\e maggiore:\\diesis minore – diesis minore – diesis minore")
                (:de "semitono minore\\e maggiore:\\diesis minore – diesis minore – diesis minore")
-               (:en "Semitono minore\\e maggiore:\\diesis minore – diesis minore – diesis minore")))
+               (:en "Semitono minore\\and maggiore:\\diesis minore – diesis minore – diesis minore")))
     (s11 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
                (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
                (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")))
