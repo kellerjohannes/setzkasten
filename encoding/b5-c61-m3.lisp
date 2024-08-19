@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Questi sono toni maggiori accidentali composti di due semitoni maggiori,\\di uno tono naturale, et uno diesis minore,\\et sono di proportione quasi sesquisettima, come sono da 7 a 8\\con qualche poca di differenza")
                  (:de "Dies sind toni maggiori accidentali, die aus zwei semitoni maggiori zusammengesetzt sind,\\einem tono naturale und einem diesis minore,\\und sie sind beinahe von der sesquisettima-Proportion, wie es von 7 zu 8 ist,\\mit einigen wenigen Unterschieden.")
-                 (:en "These are the toni maggiori accidentali made up of two semitoni maggiori,\\of one tono naturale, and one diesis minore,\\and are almost of proportion sesquisettima, as from 7 to 8\\with some slight difference")))
+                 (:en "These are the toni maggiori accidentali made up of two semitoni maggiori,\\of one tono naturale, and one diesis minore,\\and are almost of proportion sesquisettima, as of 7 to 8\\with some slight difference")))
    (:section-captions
     (s1 (:alt (:it "Tono\\minore\\accidentale")
               (:de "tono\\minore\\accidentale")
