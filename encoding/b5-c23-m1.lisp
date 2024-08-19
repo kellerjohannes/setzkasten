@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Queste sono tutte le consonanze di Elami terzo,\\discendenti et ascendenti")
                  (:de "Dies sind alle Beispiele von Elami terzo,\\absteigende und aufsteigende.")
-                 (:en "There are all of the consonances of Elami terzo,\\descending and ascending")))
+                 (:en "These are all of the consonances of Elami terzo,\\descending and ascending")))
    (:section-headings
     (s1 (:alt (:it "Le quattro terze\\[discendenti]")
               (:de "die vier [absteigenden]\\terze")
