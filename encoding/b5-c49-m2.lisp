@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Dimostratione delli diesis enarmonici, incominciando dalla\\divisione delli semitoni minori, nelli toni cromatici\\segnati con li diesis cromatici")
                  (:de "Darstellung der diesis enarmonici, beginnend mit der\\Unterteilung der semitoni minori in den toni cromatici\\bezeichnet mit den diesis cromatici.")
-                 (:en "Illustration of the diesis enarmonici, beginning from the\\division of the semitoni minori, in the toni cromatici\\indicated by the signs of the diesis cromatici")))
+                 (:en "Illustration of the diesis enarmonici, beginning from the\\division of the semitoni minori, in the toni cromatici\\marked by the diesis cromatici")))
    (:section-headings
     (s1 (:alt (:it "Tono cromatico\\accidentale\\[ascendente]")
               (:de "tono cromatico\\accidentale\\[aufsteigend]")
@@ -30,7 +30,7 @@
               (:de "tono cromatico\\accidentale\\[aufsteigend]")
               (:en "[Ascending]\\tono cromatico\\accidentale")))
     (s8 (:alt (:it "Tono cromatico\\accidentale\\discendente")
-              (:de "tono cromatico\\accidentale\\[aufsteigend]")
+              (:de "tono cromatico\\accidentale\\[absteigend]")
               (:en "Descending\\tono cromatico\\accidentale")))
 
     (s9 (:alt (:it "Tono cromatico\\accidentale\\[discendente]")
