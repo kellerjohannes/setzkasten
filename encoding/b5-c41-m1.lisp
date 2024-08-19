@@ -4,8 +4,8 @@
    (:comment "q021_s241, origin: 430")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "I semitoni maggiori e minori discendenti dal quarto ordine naturale,\\semitoni ascendenti minore e maggiori")
-                 (:de "Die absteigenden semitoni maggiori und minori des quarto ordine naturali,\\aufsteigende semitoni minori und maggiore.")
-                 (:en "The descending semitoni maggiori and minori from the quarto ordine naturale,\\ascending semitoni minore and maggiore")))
+                 (:de "Die absteigenden semitoni maggiori und minori des quarto ordine naturale,\\aufsteigende semitoni minori und maggiore.")
+                 (:en "The descending semitoni maggiori and minori of the quarto ordine naturale,\\ascending semitoni minore and maggiore")))
    (:section-captions
     (s1  (:alt (:it "Semitono\\accidentale\\maggiore")
                (:de "semitono\\accidentale\\maggiore")
