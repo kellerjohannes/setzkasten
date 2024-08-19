@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Regola di ritrovare le sette ottave sopra Ffaut primo,\\con i sottoscritti esempi")
                  (:de "Methode, die sieben ottave über Ffaut primo zu finden,\\mit den unten geschriebenen Beispielen.")
-                 (:en "Method of finding the seven ottave on Ffaut primo,\\with the examples written below")))
+                 (:en Rule of finding the seven ottave on Ffaut primo,\\with the examples written below")))
    (:section-headings
     (s1 (:alt (:it "Prima ottava")
               (:de "erste ottava")
