@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Queste sono tutte le consonanze, e le propinque e propinquissime\\di Dlasolre primo acuto, e discendente,\\e di Dsolre primo medesimamente ascendenti")
                  (:de "Dies sind alle Konsonanzen und die propinque und propinquissime\\von Dlasolre acuto primo, und absteigend,\\und von Dlasolre primo gleichermassen aufsteigend.")
-                 (:en "These are all the consonances, and the propinque and propinquissime\\of Dlasolre primo acuto and descending,\\and likewise of Dsolre primo ascending")))
+                 (:en "These are all the consonances, and the propinque and propinquissime\\of Dlasolre primo acuto descending,\\and likewise of Dsolre primo ascending")))
    (:section-headings
     (s1 (:alt (:it "[Le quattro terze\\discendenti]")
               (:de "[die vier absteigenden\\terze]")
