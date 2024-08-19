@@ -9,7 +9,7 @@
    (:line-headings
     (:alt (:it "La proportione della terza maggiore si domanda sesquiquarta come è da 4 a 5.\\La proportione della terza maggiore con la propinqua è in proportione più di sesquiterza,\\come sono da 3 e mezzo a 4 e mezzo.\\Questa è inrationale, come è anchora la propinquissima.\\ \\Queste sono tutte terze maggiori naturali et accidentali")
           (:de "Die Proportion der terza maggiore wird sesquiquarta genannt, wie es von 4 zu 5 ist.\\Die Proportion der terza maggiore mit der propinqua ist grösser als sesquiterza,\\wie es von 3 1/2 zu 4 1/2 ist.\\Dies ist irrational, wie es auch bei der propinquissima ist.\\ Dies sind alle terze maggiori naturali und accidentali.")
-          (:en "The proportion of the terza maggiore is called sesquiquarta as is from 4 to 5.\\The proportion of the terza maggiore with the propinqua is in proportion greater than sesquiterza,\\as are from three and a half to 4 and a half.\\This is irrational, as is also the propinquissima.\\ \\These are all terze maggiori naturali and accidentali."))
+          (:en "The proportion of the terza maggiore is called sesquiquarta as of 4 to 5.\\The proportion of the terza maggiore with the propinqua is in proportion greater than sesquiterza,\\as of three and a half to 4 and a half.\\This is irrational, as is also the propinquissima.\\ \\These are all terze maggiori naturali and accidentali."))
     nil
     (:alt (:it "Queste sottoscritte sono tutte terze maggiori, con le sue propinque,\\naturali & accidentali")
           (:de "Diese unten geschriebenen [Beispiele] sind alle terze maggiori, mit ihren propinque,\\ naturali und accidentali.")
