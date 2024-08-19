@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Questi sono toni minori accidentali composti di due semitoni minori,\\o di uno semitono maggiore, et di uno diesis minore\\che sono di proportione sesquiduodecima,\\come sono da 12 a 13")
                  (:de "Dies sind alle toni minori accidentali, die aus zwei semitoni minori zusammengesetzt sind,\\oder aus einem semitono maggiore und einem diesis minore\\, die von der Proportion sesquiduodecima sind,\\wie es von 12 zu 13 ist.")
-                 (:en "These are toni minori accidentali made up of two semitoni minori,\\or of one semitono maggiore, and of one diesis minore\\which are of proportion sesquiduodecima,\\as from 12 to 13")))
+                 (:en "These are toni minori accidentali made up of two semitoni minori,\\or of one semitono maggiore, and of one diesis minore\\which are of proportion sesquiduodecima,\\as of 12 to 13")))
    (:section-captions
     (s1 (:alt (:it "Tono\\minore\\accidentale")
               (:de "tono\\minore\\accidentale")
