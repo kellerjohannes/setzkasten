@@ -5,7 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Regola di ritrovare le sette ottave sopra Dsolre primo,\\con i sottoscritti esempi")
                  (:de "Methode, die sieben ottave über Dsolre primo zu finden,\\mit den unten geschriebenen Beispielen.")
-                 (:en "Method for finding the seven ottave on Dsolre primo,\\with the examples written below")))
+                 (:en "Rule for finding the seven ottave on Dsolre primo,\\with the examples written below")))
    (:section-headings
     (s1 (:alt (:it "Prima ottava")
               (:de "erste ottava")
