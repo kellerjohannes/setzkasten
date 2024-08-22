@@ -23,7 +23,7 @@
               (:de "sechste Reihe diatonico")
               (:en "Sixth ordine diatonico")))
     (s55 (:alt (:it "Settimo ordine diatonico")
-              (:de ""siebte Reihe diatonico)
+              (:de "siebte Reihe diatonico")
               (:en "Seventh ordine diatonico")))
 
     (s2 (:alt (:it "Primo ordine cromatico et enarmonico")
