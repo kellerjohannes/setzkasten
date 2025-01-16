@@ -254,6 +254,7 @@
            (:section s33) b38 fl4 b38 sb4 b38 fl6 b38 sbdc6 b38 bl
            (:section s34) b38 sbd2 b38 fl5 b22 sbc5 b38 bl
            (:section s35) b38 sh2 b22 sb2 b38 fl5 b22 sbdc5 b38 bl)
+   ;; JK: These lines remain in the music examples. Confirmed by MK und LC.
    (:text 70 58
           (94 1925 "La proportione della terza maggiore ſi domanda ſeſquiquarta come è da 4. à 5."))
    (:text 70 58
