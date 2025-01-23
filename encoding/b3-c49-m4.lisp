@@ -3,7 +3,7 @@
    (:alt-name "m3.108")
    (:comment "q021_s131, origin: 436")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio del quarto modo enarmonico semplice")
+   (:title (:alt (:it "Essempio del quarto Modo enarmonico semplice.")
                  (:de "Beispiel des einfachen vierten enharmonischen Modus.")
                  (:en "Example of the simple fourth enharmonic mode"))))
 

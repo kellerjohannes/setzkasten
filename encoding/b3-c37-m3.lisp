@@ -3,7 +3,7 @@
    (:alt-name "m3.081")
    (:comment "q021_s118, origin: 959")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio delle quattro quinte cromatiche,\\che segueno una dopo l'altra")
+   (:title (:alt (:it "Essempio delle quattro quinte cromatiche,\\che segueno una doppo l'altra.")
                  (:de "Beispiel der vier chromatischen quinte,\\eine auf die andere folgend.")
                  (:en "Example of the four chromatic quinte\\which follow one after the other")))
    (:section-captions

@@ -3,7 +3,7 @@
    (:alt-name "m3.072")
    (:comment "q021_s114, rotation: 0, origin: 929")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title  (:alt (:it "Esempio delle cadentie maggiori non moderne,\\con il punto et senza, et con la sincopa\\tutta cattiva a quattro voci")
+   (:title  (:alt (:it "Essempio delle Cadentie maggiori non moderne,\\con il punto et senza, & con la sincopa\\tutta cattiua a quattro uoci.")
                   (:de "Beispiel der nicht modernen maggiori Kadenzen,\\mit Punktierung und ohne, und mit der gänzlich schlechten Synkope, mit vier Stimmen.")
                   (:en "Example of major non-modern cadences,\\with and without the dot, and with the wholly bad sincopa\\in four voci")))
    (:voice-labels

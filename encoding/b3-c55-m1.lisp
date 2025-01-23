@@ -3,7 +3,7 @@
    (:alt-name "m3.118")
    (:comment "q021_s140, origin: 959; q021_s141, rotation 1.04, origin 470 et al.")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio del genere cromatico, e delle sue spetie a cinque voci")
+   (:title (:alt (:it "Essempio del genere cromatico, & delle sue spetie à cinque uoci.")
                  (:de "Beispiel des chromatischen Genus und seiner Spezies, für fünf Stimmen.")
                  (:en "Example of the chromatic genus and its species in five voci")))
    (:voice-labels

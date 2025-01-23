@@ -3,7 +3,7 @@
    (:alt-name "m3.078")
    (:comment "q021_s118, origin: 935")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio delle tre quarte cromatiche")
+   (:title (:alt (:it "Essempio delle tre quarte cromatiche.")
                  (:de "Beispiel der drei chromatischen quarte.")
                  (:en "Example of the three chromatic quarte")))
    (:section-captions

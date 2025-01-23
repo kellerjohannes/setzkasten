@@ -3,7 +3,7 @@
    (:alt-name "m3.109")
    (:comment "q021_s131, origin: 448")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio del quinto modo enarmonico semplice")
+   (:title (:alt (:it "Essempio del quinto Modo enarmonico semplice.")
                  (:de "Beispiel des einfachen fünften enharmonischen Modus.")
                  (:en "Example of the simple fifth enharmonic mode"))))
   (:preamble-lilypond

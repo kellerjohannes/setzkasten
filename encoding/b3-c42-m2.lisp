@@ -3,7 +3,7 @@
    (:alt-name "m3.090")
    (:comment "q021_s121, origin: 480")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio dell'ottavo modo cromatico")
+   (:title (:alt (:it "Essempio dell'ottauo Modo cromatico.")
                  (:de "Beispiel des achten chromatischen Modus.")
                  (:en "Example of the eighth chromatic mode"))))
   (:data

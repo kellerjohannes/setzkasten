@@ -3,6 +3,12 @@
    (:alt-name "m3.119")
    (:comment "q021_s143, rotation: 1.02, origin: 448")
    (:creator "Vicentino21 / Johannes Keller")
+   ;; OPEN
+   ;;
+   ;; JK: Titel ergänzt, muss übersetzt werden.
+   (:title (:alt (:it "[Essempio delle uoci mobili & immobili.]")
+                 (:de "")
+                 (:en "")))
    (:line-headings
     (:alt (:it "Voci immobili in tutti tre generi")
           (:de "Feststehende voci in allen drei Genera.")
@@ -16,7 +22,7 @@
     (:alt (:it "Voci mobili in tutti tre i generi")
           (:de "Bewegbare voci in allen drei Genera.")
           (:en "Mobile voci in all three genera"))
-    (:alt (:it "Voci immobili in diatonico et in cromatico")
+    (:alt (:it "Voci immobili in diatonico & in cromatico")
           (:de "Feststehende voci in allen drei Genera.")
           (:en "Immobile voci in the diatonic and in the chromatic [genera]"))
     (:alt (:it "Voci mobili nel genere enarmonico")

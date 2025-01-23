@@ -3,7 +3,7 @@
    (:alt-name "m3.067")
    (:comment "q021_s111, rotation: 0.68, origin: 482")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio di molte Cadentie del quinto Modo, à quattro voci\\della Musica participata & mista per ♭ molle")
+   (:title (:alt (:it "Essempio di molte Cadentie del quinto Modo, à quattro voci\\della Musica participata & mista per ♭ molle.")
                  (:de "Beispiel von vielen Kadenzen des fünften Modus mit vier Stimmen\\der musica participata und mista per ♭ molle.")
                  (:en "Example of many cadences of the fifth mode in four voci,\\of musica participata and mista in ♭ molle")))
    (:voice-labels

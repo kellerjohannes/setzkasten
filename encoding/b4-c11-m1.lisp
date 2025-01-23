@@ -3,13 +3,12 @@
    (:alt-name "m4.011")
    (:comment "q021_s154, rotation: 0, origin: 898")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio della nota dimostrativa antecedente a quella nota da chi principia il salto")
+   (:title (:alt (:it "Essempio della nota dimostratiua antecedente à quella nota da chi principia il salto.")
                  (:de "Beispiel der darstellenden Note vor derjenigen Note, von welcher der Sprung beginnt")
                  (:en "Example of the demonstrative note preceding that note from which the leap starts"))))
   (:data
    (:text 90 58
-          (132 1916 "Eſſempio della nota dimoſtratiua antecedente à quella nota da chi principia il ſalto.")
-          )
+          (132 1916 "Eſſempio della nota dimoſtratiua antecedente à quella nota da chi principia il ſalto."))
    (:music 2223
            (:voice v1)
            (:section s1) cclef7 b38 mrest7 b38 sb7 b22 m6 b22 sb0 b38 bl

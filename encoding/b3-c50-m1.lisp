@@ -3,7 +3,10 @@
    (:alt-name "m3.113")
    (:comment "q021_s132, origin: 975")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Cadentie a quattro voci")
+   ;; OPEN
+   ;;
+   ;; JK: Im Titel habe ich zwei [] ergänzt, müssen übersetzt werden.
+   (:title (:alt (:it "[Essempio delle] Cadentie [enarmoniche] à quattro uoci.")
                  (:de "Kadenzen für vier Stimmen.")
                  (:en "Cadences in four voci")))
    (:voice-labels

@@ -3,7 +3,7 @@
    (:alt-name "m3.089")
    (:comment "q021_s121, origin: 467")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio del settimo modo cromatico")
+   (:title (:alt (:it "Essempio del settimo Modo cromatico.")
                  (:de "Beispiel des siebten chromatischen Modus.")
                  (:en "Example of the seventh chromatic mode"))))
   (:preamble-lilypond

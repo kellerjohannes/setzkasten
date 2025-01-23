@@ -4,11 +4,11 @@
    (:comment "q021_s156, rotation: 2.75, origin: 1080")
    (:creator "Vicentino21 / Johannes Keller")
    (:line-headings
-    (:alt (:it "Punto in sincopa a due voci")
+    (:alt (:it "Punto in sincopa à due uoci.")
           (:de "Punkt in [Vorhalts-]Synkope mit zwei Stimmen")
           (:en "Dot of the sincopa [suspension] in two voci"))
     nil
-    (:alt (:it "Punti dubbiosi di pigliar fiato")
+    (:alt (:it "Punti dubbiosi di pigliar fiato.")
           (:de "zweifelhafte Punkte, um Atem zu schnappen")
           (:en "Dubious dots for taking a breath")))
    ;; Kommentar Anne: this does not appear anywhere in your example and probably belongs to the
@@ -25,29 +25,33 @@
     ;; AS: Die section-headings sollten alle zentriert über ihre Beispiele sein, oder?
     ;;
     ;; OPEN
-    (s1 (:alt (:it "Esempio del punto di quinta e di seconda")
+    (s1 (:alt (:it "Essempio del punto di quinta & di seconda.")
               (:de "Beispiel des Punkts der quinta und der seconda")
               (:en "Example of the dot of the quinta and of the seconda")))
     ;; AS: Ich frage mich, ob bei den untenstehenden nicht immer [Example of the] stehen soll. Da
     ;; die Beispiele vereinzelt stehen, zieht meine Augen nicht das "Essempio del" mit.
     ;;
     ;; OPEN
-    (s2 (:alt (:it "Punto di quarta")
+
+    ;; JK: Diverse [Essempio di] ergänzt, muss in allen Sprachen angepasst werden.
+    ;;
+    ;; OPEN
+    (s2 (:alt (:it "[Essempio del] punto di quarta.")
               (:de "Punkt der quarta")
               (:en "Dot of the quarta")))
-    (s3 (:alt (:it "Punto di settima")
+    (s3 (:alt (:it "[Essempio del] punto di settima.")
               (:de "Punkt der settima")
               (:en "Dot of the settima")))
-    (s4 (:alt (:it "[Punto] di undecima")
+    (s4 (:alt (:it "[Essempio del punto] di undecima.")
               (:de "[Punkt] der undecima")
               (:en "[Dot] of the undecima")))
-    (s5 (:alt (:it "Punto che salva\\due ottave")
+    (s5 (:alt (:it "[Essempio del] punto\\che salua due ottaue.")
               (:de "Punkt, der zwei\\[parallele] ottave rettet")
               (:en "Dot which rescues\\two [consecutive] ottave")))
-    (s6 (:alt (:it "[Punto che] salva\\due quinte")
+    (s6 (:alt (:it "[Essempio del punto che]\\salua due quinte.")
               (:de "[Punkt, der] zwei\\[parallele] quinte rettat")
               (:en "[Dot which] rescues\\two [consecutive] quinte")))
-    (s7 (:alt (:it "Punto d'affanno")
+    (s7 (:alt (:it "[Essempio del]\\punto d'affanno.")
               (:de "Punkt des Schmerzes")
               (:en "Dot of affliction")))))
   (:data

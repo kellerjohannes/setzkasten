@@ -3,7 +3,7 @@
    (:alt-name "m3.064")
    (:comment "q021_s110, origin: 955")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio di molte Cadentie del secondo Modo, à quattro uoci\\della Musica participata & mista, per ♮ quadro.")
+   (:title (:alt (:it "Essempio di molte Cadentie del secondo Modo, à quattro uoci\\della Musica participata, & mista, per ♮ quadro.")
                  (:de "Beispiel von vielen Kadenzen des zweiten Modus mit vier Stimmen\\der musica participata und mista per ♮ quadro")
                  (:en "Example of many cadences of the second mode in four voci,\\of musica participata and mista in ♮ quadro")))
    (:voice-labels

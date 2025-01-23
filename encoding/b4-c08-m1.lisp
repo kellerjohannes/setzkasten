@@ -4,10 +4,10 @@
    (:comment "q021_s151, rotation: 0, origin: 414")
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
-    (s1 (:alt (:it "Esempio di batter alla breve")
+    (s1 (:alt (:it "Essempio di batter alla breue.")
               (:de "Beispiel alla breve zu schlagen")
               (:en "Example of beating alla breve")))
-    (s2 (:alt (:it "[Esempio di batter] alla breve")
+    (s2 (:alt (:it "[Essempio di batter] alla breue.")
               (:de "[Beispiel] alla breve [zu schlagen]")
               ;; Kommentar AS: wäre es nicht besser, wenn alle Teile (d.i. auch s2, s3 und s4) mit
               ;; "Essempio di batter", bzw. "Beispiel ... zu schlagen" und "Example of beating"
@@ -16,12 +16,14 @@
               ;; JK: Finde ich gut, habe ich entsprechend in allen Sprachen so angepasst. Ist von
               ;; Luigi und Martin zu bestätigen.
               ;;
-              ;; OPEN
+              ;; LC: einverstanden
+              ;;
+              ;; DONE
               (:en "[Example of beating] alla breve")))
-    (s3 (:alt (:it "[Esempio di batter] alla semibreve")
+    (s3 (:alt (:it "[Essempio di batter] alla semibreue.")
               (:de "[Beispiel] alla semibreve [zu schlagen]")
               (:en "[Example of beating] alla semibreve")))
-    (s4 (:alt (:it "[Esempio di batter] di proportione sesqualtera")
+    (s4 (:alt (:it "[Essempio di batter] di proportione sesqualtera.")
               (:de "[Beispiel] in der proportione sesqualtera [zu schlagen]")
               (:en "[Example of beating] in the proportion sesquialtera")))))
   (:data

@@ -7,7 +7,7 @@
                  (:de "Beispiel von vielen Kadenzen des ersten Modus, mit vier Stimmen\\der musica participata und mista per ♮ quadro.")
                  (:en "Example of many cadences of the first mode in four voci,\\of musica participata and mista in ♮ quadro")))
    (:voice-labels
-    (s1 v1 (:alt (:it "Cadentie del Aoprano")
+    (s1 v1 (:alt (:it "Cadentie del Soprano")
                  (:de "Kadenzen des Soprano")
                  (:en "Cadence of the soprano")))
     (s1 v2 (:alt (:it "Cadentie del Contr'alto")

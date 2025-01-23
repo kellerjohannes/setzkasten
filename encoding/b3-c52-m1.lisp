@@ -7,7 +7,12 @@
    (:alt-name "m3.115")
    (:comment "q021_s134, origin: 996; q021_s135, rotation: 1.9, origin: 441")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio della prima parte di uno madrigale a quattro voci,\\che si può cantare à cinque modi, cioè,\\diatonico e poi\\cromatico e poi\\cromatico e enarmonico e poi\\diatonico e cromatico e poi\\diatonico e cromatico e enarmonico")
+   ;; OPEN
+   ;;
+   ;; JK an Anne: Ich habe die '& poi' jeweils an den Anfang der neuen Zeile gesetzt, so wie Martin
+   ;; das auch auf Deutsch macht. Möchtest du das im Englischen anpassen, oder so lassen?
+
+   (:title (:alt (:it "Essempio della prima parte di uno madrigale à quattro uoci,\\che si può cantare à cinque modi, cioè,\\diatonico\\& poi cromatico\\& poi cromatico & enarmonico\\& poi diatonico & cromatico\\& poi diatonico & cromatico & enarmonico.")
                  (:de "Beispiel des erten Teils eines Madrigals für vier Stimmen,\\das auf fünf Arten und Weisen gesungen werden kann,\\d.h. diatonisch\\und dann chromatisch,\\und dann chromatisch und enharmonisch,\\und dann diatonisch und chromatisch,\\und dann diatonisch und chromatisch und enharmonisch.")
                  (:en "Example of the first part of a madrigal in four voci\\which may be sung in five ways: that is\\diatonic and then\\chromatic and then\\chromatic and enharmonic and then\\diatonic and chromatic and then\\diatonic, chromatic and enharmonic.")))
    ;; JK: Dieses Beispiel wurde in drei Varianten (texttreu, ohne Punkte, ohne Punkte und ohne

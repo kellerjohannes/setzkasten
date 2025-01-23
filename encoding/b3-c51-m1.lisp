@@ -3,9 +3,9 @@
    (:alt-name "m3.114")
    (:comment "q021_s133, rotation: 1.60, origin: 392")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "[»Soav'e dolc'ardore«]")
-                 (:de "[»Soav'e dolc'ardore«]")
-                 (:en "[»Soav'e dolc'ardore«]")))
+   (:title (:alt (:it "[«Soav'e dolc'ardore»]")
+                 (:de "[«Soav'e dolc'ardore»]")
+                 (:en "[«Soav'e dolc'ardore»]")))
    (:voice-labels
     (s1 v1 (:alt (:it "[Soprano]")
                    (:de "[Soprano]")
@@ -22,7 +22,7 @@
   (:preamble-lilypond
    (:clef-overrides
     (s1 v2 "treble_8"))
-   (:standalone-title "»Soave dolc' ardore«")
+   (:standalone-title "«Soave dolc' ardore»")
    (:standalone-subtitle (:alt (:c-standalone "Libro 3, Capitolo 51, fol. 67r")
                                (:tatti "Libro 3, Capitolo 51, fol. 67r, Export »I Tatti«")
                                (:transposition-quarta-discendente

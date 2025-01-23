@@ -3,6 +3,12 @@
    (:alt-name "m3.097")
    (:comment "q021_s126, origin: 991")
    (:creator "Vicentino21 / Johannes Keller")
+   ;; OPEN
+   ;;
+   ;; JK und LC: Titel ergänzt, falls akzeptiert, muss er übersetzt werden.
+   (:title (:alt (:it "[Essempio di tre quinte differenti, dei generi musicali, della seconda spetie delle quinte.]")
+                 (:de)
+                 (:en)))
    (:section-captions
     (s1 (:alt (:it "Seconda quinta\\diatonica")
               (:de "zweite diatonische\\quinta")

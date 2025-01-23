@@ -3,7 +3,7 @@
    (:alt-name "m2.009")
    (:comment "q021_s061, rotation: 0, origin: 491")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio sopra il modo di comporre di quarta in quinta\\sincopata, et non sincopata, et di quinta in quarta\\A tre voci")
+   (:title (:alt (:it "Essempio sopra il modo di comporre di quarta in quinta\\sincopata, et non sincopata, et di quinta in quarta.\\A tre voci")
                  ;; AS: David questions the placement of "A tre voci", mentioning that it does not
                  ;; belong to the overall caption, but actually to Example 1. I think that I agree
                  ;; with him there, and that the other examples are 2 voci within a larger,

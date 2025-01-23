@@ -3,7 +3,7 @@
    (:alt-name "m3.103")
    (:comment "q021_s130, origin: 1005")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio della prima quinta delle spetie de i tre generi commisti, ascendenti")
+   (:title (:alt (:it "Essempio della prima quinta delle spetie dei tre generi commisti, ascendenti.")
                  (:de "Beispiel der ersten quinta der Spezies der drei vermischten Genera, aufsteigend.")
                  (:en "Example of the first quinta of the species of the three mixed genera, ascending"))))
   (:data

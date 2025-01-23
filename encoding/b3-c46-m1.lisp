@@ -3,7 +3,7 @@
    (:alt-name "m3.096")
    (:comment "q021_s125, rotation: 0.35, origin: 473")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio di tre quinte differenti, di i tre generi musicali,\\della prima spetie delle quinte")
+   (:title (:alt (:it "Essempio di tre quinte differenti, dei tre generi musicali,\\della prima spetie delle quinte.")
                  (:de "Beispiel der drei verschiedenen quinte in den drei musikalischen Genera,\\der ersten Spezies der quinte.")
                  (:en "Example of the three different quinte of the three musical genera,\\of the first species of the quinte")))
    (:section-captions
@@ -18,7 +18,14 @@
               (:en "First enharmonic\\quinta")))))
   (:data
    (:text 70 58
-          (93 2031 "Eſſempio di tre quinte differenti,di i tre generi muſicali,della prima ſpetie delle quinte."))
+          (93 2031
+              (:alt (:diplomatic "Eſſempio di tre quinte differenti,di i tre generi muſicali,della prima ſpetie delle quinte.")
+                    (:critical "Eſſempio di tre quinte differenti,de i tre generi muſicali,della prima ſpetie delle quinte.")
+                    (:coord-barre "T")
+                    (:coord-norm "T")
+                    (:comment "In allen Exemplaren: «di i tre».")
+                    (:flag :ready) (:id 1))
+              ))
    (:text 70 58
           (177 nil "Diatonica")
           (743 nil "ᴄromatica")

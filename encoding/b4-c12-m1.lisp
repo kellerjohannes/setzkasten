@@ -4,7 +4,7 @@
    (:comment "q021_s155, rotation: -1.82, origin: 329. Für dieses Beispiel wird keine normalisierte Version angeboten.")
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
-    (s1 (:alt (:it "Esempio del punto di augumentatione della metà più")
+    (s1 (:alt (:it "Essempio del punto di augumentatione della metà più.")
               (:de "Beispiel des Punkts der Augmentation um die Hälfte mehr")
               (:en "Example of the dot of augmentation of a half more")))
     (s2 (:alt (:it "Punto di divisione")

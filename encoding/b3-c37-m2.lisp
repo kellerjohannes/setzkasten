@@ -28,7 +28,7 @@
      (459 nil "2. quinta.")
      (807 nil "Terza quinta.")
      (1233 nil "3.quinta.")
-     (1545 nil "Qu arta quīta.")
+     (1545 nil "Quarta quīta.")
      ;; JK: Punkt ist hier nach unten verschoben, stillschweigend idealisiert.
      ;; Soll in den Bericht aufgenommen werden.
      ;;

@@ -3,7 +3,7 @@
    (:alt-name "m3.100")
    (:comment "q021_s127, origin: 495")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Essempio delle tre quarte, e quattro quinte enarmoniche")
+   (:title (:alt (:it "Essempio delle tre quarte, & quattro quinte enarmoniche.")
                  (:de "Beispiel der drei enharmonischen quarte und vier [enharmonischen] quinte.")
                  (:en "Example of the three enharmonic quarte and four [enharmonic] quinte")))
    (:section-captions

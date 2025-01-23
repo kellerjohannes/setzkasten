@@ -4,12 +4,12 @@
    (:comment "q021_s148, rotation: 1.33, origin: 962.")
    (:creator "Vicentino21 / Johannes Keller")
    (:line-headings
-    (:alt (:it "Esempio del tempo perfetto")
+    (:alt (:it "Essempio del Tempo perfetto.")
           (:de "Beispiel des Tempus perfectus")
           (:en "Example of perfect tempus"))
-          (:alt (:it "Esempio del tempo imperfetto")
-                (:de "Beispiel des Tempus imperfectus")
-                (:en "Example of imperfect tempus"))))
+    (:alt (:it "Essempio del Tempo imperfetto.")
+          (:de "Beispiel des Tempus imperfectus")
+          (:en "Example of imperfect tempus"))))
   (:data
    (:text 90 58
           (186 nil "Eſſempio del tempo perfetto.")

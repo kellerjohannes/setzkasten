@@ -3,7 +3,7 @@
    (:alt-name "m3.087")
    (:comment "q021_s121, origin: 458")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio del quinto modo cromatico")
+   (:title (:alt (:it "Essempio del quinto Modo cromatico.")
                  (:de "Beispiel des fünften chromatischen Modus.")
                  (:en "Example of the fifth chromatic mode"))))
   (:preamble-lilypond

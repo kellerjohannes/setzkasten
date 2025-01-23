@@ -3,6 +3,18 @@
    (:alt-name "m3.074")
    (:comment "q021_s116, rotation: 0, origin: 899")
    (:creator "Vicentino21 / Johannes Keller")
+   ;; OPEN
+   ;; GROUP!
+   ;;
+   ;; LC: Vorschlag für einen ergänzten Titel:
+   ;;
+   ;; "[Essempi delle Cadentie dubbiose, buone & false della Musica mista e participata, à cinque
+   ;; uoci.]"
+   ;;
+   ;; Falls akzeptiert, muss dieser Titel übersetzt werden.
+   (:title  (:alt (:it "[Essempi delle Cadentie dubbiose, buone & false della Musica mista e participata, à cinque uoci.]")
+                  (:de "")
+                  (:en "")))
    (:voice-labels
     (s1 v4 (:alt (:it "Quinta parte")
                  (:de "Quinta-Stimme.")
@@ -16,10 +28,10 @@
     (s3 v4 (:alt (:it "Non buona")
                  (:de "nicht gut")
                  (:en "Not good")))
-    (s4 v4 (:alt (:it "Ottava falsa col soprano")
+    (s4 v4 (:alt (:it "Ottaua falsa col Soprano")
                  (:de "falsche ottava mit dem Soprano")
                  (:en "False ottava with the soprano")))
-    (s7 v3 (:alt (:it "Dubbiosa col soprano")
+    (s7 v3 (:alt (:it "Dubbiosa col Soprano")
                  (:de "bedenklich mit dem Soprano")
                  (:en "Dubious with the soprano"))))
    (:voice-order

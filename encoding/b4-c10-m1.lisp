@@ -1,3 +1,8 @@
+;; OPEN
+;;
+;; LC: Würde G5 anders notieren (als semibrevis/minima, alles mit geschwärzten Notenköpfen). Er
+;; zweifelt auch an der Auflösung von G3.
+
 `((:header
    (:filename "b4-c10-m1")
    (:alt-name "m4.010")
@@ -34,7 +39,7 @@
    ;;
    ;; DONE
    (:section-headings
-    (s1 (:alt (:it "Esempio delle note colorite nel canto fermo")
+    (s1 (:alt (:it "Essempio delle note colorite nel canto fermo.")
               (:de "Beispiel der farbigen Noten im canto fermo")
               (:en "Example of colored notes in canto fermo")))
     ;; Anne: sollte nicht alle folgenden auch mit "Example of" beginnen?
@@ -42,19 +47,19 @@
     ;; JK: Ja, finde ich gut, habe ich in allen Sprachen in eckigen Klammern ergänzt.
     ;;
     ;; DONE
-    (s2 (:alt (:it "[Esempio delle note] colorite nel tempo perfetto")
+    (s2 (:alt (:it "[Essempio delle note] colorite nel Tempo perfetto.")
               (:de "[Beispiel der] farbigen [Noten] im Tempus perfectus")
               (:en "[Example of] colored [notes] in perfect tempus")))
-    (s3 (:alt (:it "[Esempio delle note] colorite nel tempo imperfetto")
+    (s3 (:alt (:it "[Essempio delle note] colorite nel Tempo imperfetto.")
               (:de "[Beispiel der] farbigen [Noten] im Tempus imperfectus")
               (:en "[Example of] colored [notes] in imperfect tempus")))
-    (s4 (:alt (:it "[Esempio delle note] colorite nell'emiolia maggiore")
+    (s4 (:alt (:it "[Essempio delle note] colorite nell'emiolia maggiore.")
               (:de "[Beispiel der] farbigen [Noten] in Hemiola maior")
               (:en "[Example of] colored [notes] in emiolia maggiore")))
-    (s5 (:alt (:it "[Esempio delle note] colorite nell'emiolia minore")
+    (s5 (:alt (:it "[Essempio delle note] colorite nell'emiolia minore.")
               (:de "[Beispiel der] farbigen [Noten] in Hemiola minor")
               (:en "[Example of] colored [notes] in emiolia minore")))
-    (s6 (:alt (:it "Cantar alla breve detto da prattici")
+    (s6 (:alt (:it "[Essempio del] cantar alla breve detto da prattici.")
               (:de "von den Praktikern Singen alla breve genannt")
               (:en "Called singing alla breve by practical [musicians]")))))
   (:data
@@ -70,13 +75,16 @@
                  (:coord-norm "G1")
                  (:comment "Die Taktsignatur wurde für die moderne Notenschrift ergänzt.")
                  (:flag :ready) (:id 1))
-            b22 brbl3 b22 brbl5 b22 brbl4 b22 brbl3 b22 brbl7 b22 brbl5 b22 brbl6 b22 brbl7 b22 brbl9 b22 brbl8 b22 brbl7 b22 brbl10 b22 brbl9 brbl8 b22 brbl7 brbl6 brbl7 b22 brbl3 b22 brbl6 b22 brbl5 b22 brbl4 b22 brbl3 b22
+           b22 brbl3 b22 brbl5 b22 brbl4 b22 brbl3 b22 brbl7 b22 brbl5 b22 brbl6 b22 brbl7 b22 brbl9 b22 brbl8 b22 brbl7 b22 brbl10 b22 brbl9 brbl8 b22 brbl7 brbl6 brbl7 b22 brbl3 b22 brbl6 b22 brbl5 b22 brbl4 b22 brbl3 b22
            (:section s2) (:newline) cclef7 b22
            (:alt (:diplomatic met-imperf-min-dim)
                  (:critical met-perf-min-dim)
                  (:coord-barre "MZ1 N23")
                  (:coord-norm "G2")
                  (:comment "In allen Exemplaren: Taktsignatur ist ein gestrichenes C.")
+                 ;; OPEN
+                 ;;
+                 ;; Taktsignatur entfernen und ohne Taktstriche notieren. Ev. Notenköpfe schwärzen.
                  (:flag :ready) (:id 2))
            met-3-2 b22 br0 sb1 (:color-start) brbl3 b22 brbl2 b22 (:color-stop) brbl4 bl)
    (:text 90 58
@@ -121,8 +129,8 @@
                  (:coord-norm "")
                  (:comment "") (:flag :draft) (:id 0)))
    (:text 90 58
-          (259 661 "ᴄolorite nellʼᴇmiolia minore")
-          (1290 834 "ᴄantar alla breue detto da Prattici."))
+     (259 661 "ᴄolorite nellʼᴇmiolia minore")
+     (1290 834 "ᴄantar alla breue detto da Prattici."))
    (:music 2206
            (:section s5) (:newline) cclef7 b22 met-imperf-min-dim b22 met-3
 
