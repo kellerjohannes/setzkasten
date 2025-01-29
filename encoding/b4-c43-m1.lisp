@@ -20,7 +20,7 @@
    ;;   DONE
    ;;
    ;; DONE
-   (:title (:alt (:it "Esempio del sopra detto Don Vincentio,\\come ha posto le consonanze false")
+   (:title (:alt (:it "Essempio del sopra detto Don Vincentio,\\come hà posto le consonanze false.")
                  (:de "Beispiel des vorgenannten Don Vincentio,\\wie er die falsche Konsonanzen gesetzt hat.")
                  (:en "Example of the aforesaid Don Vincentio\\of how he placed false consonances")))
    (:voice-labels

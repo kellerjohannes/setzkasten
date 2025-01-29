@@ -3,11 +3,11 @@
    (:alt-name "m4.033")
    (:comment "q021_s184, rotation: 0, origin: 962")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Compositione a quattro voci,\\soprano mutabile per ottava di sotto")
+   (:title (:alt (:it "Compositione à quattro voci.\\Soprano mutabile per ottaua di sotto.")
                  (:de "Komposition für vier Stimmen,\\der Soprano eine ottava darunter austauschbar")
                  (:en "Composition in four voci,\\soprano exchangeable an ottava below")))
    (:section-headings
-    (s2 (:alt (:it "Soprano convertito in tenore,\\all'ottava sotto")
+    (s2 (:alt (:it "Soprano conuertito in Tenore,\\all'ottaua sotto.")
               (:de "Soprano umgewandelt in Tenore,\\in der ottava darunter")
               (:en "Soprano converted to tenor\\in the ottava below"))))
    (:voice-labels
@@ -40,14 +40,14 @@
     (s2 v2 v3 v3q v4)))
   (:preamble-lilypond
    (:lyrics
-    (s1 v1 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- vo.")
-    (s1 v2 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- vo.")
-    (s1 v3 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- vo.")
-    (s1 v4 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- vo.")
-    (s2 v2 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- vo.")
-    (s2 v3 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- vo.")
-    (s2 v3q "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- vo.")
-    (s2 v4 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- vo.")
+    (s1 v1 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- uo.")
+    (s1 v2 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- uo.")
+    (s1 v3 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- uo.")
+    (s1 v4 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- uo.")
+    (s2 v2 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- uo.")
+    (s2 v3 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- uo.")
+    (s2 v3q "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- uo.")
+    (s2 v4 "Co -- me d'o -- gni mio ben ri -- ma -- si pri -- uo.")
     ))
   (:data
    (:text 90 58

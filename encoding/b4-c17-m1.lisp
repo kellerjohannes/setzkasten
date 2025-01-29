@@ -4,19 +4,19 @@
    (:comment "q021_s159, rotation: 0.89, origin: 468")
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
-    (s1 (:alt (:it "Esempi dei termini del soprano")
+    (s1 (:alt (:it "Essempio dei termini del Soprano.")
               (:de "Beispiel der Strukturen des Soprano")
               (:en "Example of the limits of the soprano")))
     ;; AS: Sollte auch nicht hier [Example of] vor den untenstehenden Exempeln sein?
     ;;
     ;; OPEN
-    (s2 (:alt (:it "Termini del contr'alto")
+    (s2 (:alt (:it "[Essempio dei] Termini del Contr'alto.")
               (:de "Strukturen des Alto")
               (:en "Limits of the alto")))
-    (s3 (:alt (:it "Termini del tenore")
+    (s3 (:alt (:it "[Essempio dei] Termini del Tenore.")
               (:de "Strukturen des Tenore")
               (:en "Limits of the tenor")))
-    (s4 (:alt (:it "Termini del basso")
+    (s4 (:alt (:it "[Essempio dei] Termini del Basso.")
               (:de "Strukturen des Basso")
               (:en "Limits of the bass")))))
   (:preamble-lilypond

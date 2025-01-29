@@ -10,22 +10,37 @@
    ;; DONE
    (:comment "q021_s167, rotation: 1.14, origin: 514. Kapitel im Original falsch nummeriert: XXIII, korrekt wäre XXIIII. In einigen Exemplaren handschriftlich korrigiert.")
    (:creator "Vicentino21 / Johannes Keller")
-   (:line-headings
-    (:alt (:it "Decima maggiore all'ottava nei fini et nel basso, ne gl'alti")
-          (:de "decima maggiore zur ottava an den Schlüssen und im Basso und in den Alti")
-          (:en "Decima maggiore to the . At the ends. And in the basso, in the alti")
-          ;; JK: Es ist zu diskutieren, ob Sections 1 und 2 als eine zusammengehörende Section
-          ;; dargestellt werden soll. In dieser Form ist die Aufteilung in Bezug auf die Überschrift
-          ;; nicht schlüssig.
+   ;; JK: Titel ergänzt, muss übersetzt werden.
+   ;;
+   ;; OPEN
+   (:title (:alt (:it "[Essempi del Modo di comporre à due uoci.]")
+                 (:de "")
+                 (:en "")))
+   ;; JK: Es ist zu diskutieren, ob Sections 1 und 2 als eine zusammengehörende Section
+   ;; dargestellt werden soll. In dieser Form ist die Aufteilung in Bezug auf die Überschrift
+   ;; nicht schlüssig.
 
-          ;; AS: I am now sure, after much discussion with David, that "Decima maggiore all'ottava" is for section, "nei Fini" is for section 2, and "et nel basso, ne gl'alti" is for section 3, and would be happy to explain to you why. 
-          ;;
-          ;;
-          ;; OPEN
-          )
-    (:alt (:it "Quinta imperfetta")
-          (:de "quinta imperfett")
-          (:en "Quinta imperfetta")))
+   ;; AS: I am now sure, after much discussion with David, that "Decima maggiore all'ottava" is for section, "nei Fini" is for section 2, and "et nel basso, ne gl'alti" is for section 3, and would be happy to explain to you why.
+   ;;
+   ;; JK & LC: Finden wir sehr gut, ist genauso übernommen.
+   ;;
+   ;; DONE
+   (:section-headings
+    (s1 (:alt (:it "Decima maggiore all'ottaua")
+              (:de "")
+              (:en "")))
+    (s2 (:alt (:it "nei fini")
+              (:de "")
+              (:en "")))
+    (s3 (:alt (:it "& nel Basso, negl'Alti")
+              (:de "")
+              (:en "")))
+    (s4 (:alt (:it "quinta [imperfetta]")
+              (:de "")
+              (:en "")))
+    (s5 (:alt (:it "[quinta] imperfetta")
+              (:de "")
+              (:en ""))))
    (:section-captions
     (s1 (:alt (:it "Buona")
               (:de "gut")

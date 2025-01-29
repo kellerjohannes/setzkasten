@@ -3,8 +3,11 @@
    (:alt-name "m4.034")
    (:comment "q021_s185, rotation: 1.45, origin: 474")
    (:creator "Vicentino21 / Johannes Keller")
+   (:title (:alt (:it "[Compositione à quattro uoci.\\Tenore mutabile per ottaua di sopra.]")
+                 (:de "")
+                 (:en "")))
    (:section-headings
-    (s2 (:alt (:it "Tenore convertito in soprano\\per ottava più alto")
+    (s2 (:alt (:it "Tenore conuertito in Soprano\\per ottaua piu alto.")
               (:de "Tenore umgewandelt in Soprano\\eine ottava höher")
               (:en "Tenor converted to soprano\\an ottava higher"))))
    (:voice-labels
@@ -38,14 +41,14 @@
     (s2 v1 v2 v3 v4)))
   (:preamble-lilypond
    (:lyrics
-    (s1 v2 "O voi be -- a -- ta se si lar -- ghi do -- ni.")
-    (s1 v3 "O voi be -- a -- ta se si lar -- ghi do -- ni.")
-    (s1 v3q "O voi be -- a -- ta se si lar -- ghi do -- ni.")
-    (s1 v4 "O voi be -- a -- ta se si lar -- ghi do -- ni.")
-    (s2 v1 "O voi be -- a -- ta se si lar -- ghi do -- ni.")
-    (s2 v2 "O voi be -- a -- ta se si lar -- ghi do -- ni.")
-    (s2 v3 "O voi be -- a -- ta se si lar -- ghi do -- ni.")
-    (s2 v4 "O voi be -- a -- ta se si lar -- ghi do -- ni.")))
+    (s1 v2 "O uoi be -- a -- ta se si lar -- ghi do -- ni.")
+    (s1 v3 "O uoi be -- a -- ta se si lar -- ghi do -- ni.")
+    (s1 v3q "O uoi be -- a -- ta se si lar -- ghi do -- ni.")
+    (s1 v4 "O uoi be -- a -- ta se si lar -- ghi do -- ni.")
+    (s2 v1 "O uoi be -- a -- ta se si lar -- ghi do -- ni.")
+    (s2 v2 "O uoi be -- a -- ta se si lar -- ghi do -- ni.")
+    (s2 v3 "O uoi be -- a -- ta se si lar -- ghi do -- ni.")
+    (s2 v4 "O uoi be -- a -- ta se si lar -- ghi do -- ni.")))
   (:data
    (:music 2229
            (:section s1 s2)

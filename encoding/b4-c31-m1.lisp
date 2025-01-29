@@ -1,3 +1,7 @@
+;; JK: Generell: 3/2 soll bei den Signaturen in der Normalisierung erscheinen.
+;;
+;; OPEN
+
 ;; Polyrhythmie funktioniert noch nicht!
 ;;
 ;; OPEN
@@ -11,20 +15,30 @@
     ;; JK: hier waren die Überschriften falsch gesetzt, ich habe sie neu verteilt und die Texte
     ;; angepasst. Das muss von Anne geprüft werden.
     ;;
+    ;; JK & LC: Die Titelverteilung wurde nochmals überarbeitet, ist zu prüfen und von der Gruppe zu bestätigen.
+    ;;
     ;; OPEN
-    (:alt (:it "Modo di entrare nella proportione di equalità, tre contra tre, a due voci")
+
+    ;; JK: Überschriften wurden modifiziert, ist zu übersetzen.
+    ;;
+    ;; OPEN
+
+    (:alt (:it "Modo di entrare nella proportione di equalità, à due uoci.")
           (:de "Art und Weise in die proportione di equalità, drei gegen drei, einzutreten, mit zwei Stimmen.")
           (:en "Method of entering into the proportione di equalità, three against three, in two voci"))
-    (:alt (:it "Proportione sesqualtera, due contra tre, a due voci")
+    (:alt (:it "Proportione di equalità tre contra tre.")
+          (:de "")
+          (:en ""))
+    (:alt (:it "Proportione sesqualtera, due contra tre.\\A due uoci.")
           (:de "Proportione sesqualtera, zwei gegen drei, mit zwei Stimmen")
           (:en "Sesqualtera proportion, two against three, in two voci"))
-    (:alt (:it "Emiolia maggiore, a due voci")
+    (:alt (:it "Emiolia maggiore.\\A due uoci.")
           (:de "Hemiola maior, mit zwei Stimmen")
           (:en "Emiolia maggiore, in two voci"))
-    (:alt (:it "Proportione sesqualtera, buona nel battere et nel levare, a due voci")
+    (:alt (:it "Proportione sesqualtera, buona nel battere et nel levare.\\A due uoci.")
           (:de "Proportione sesqualtera, gut auf dem (Nieder-)Schlag und beim Anheben [der Hand], mit zwei Stimmen")
-          (:en "roportione sesqualtera, good on the beat and on the elevation, in two voci"))
-    (:alt (:it "Emiolia minore")
+          (:en "Proportione sesqualtera, good on the beat and on the elevation, in two voci"))
+    (:alt (:it "Emiolia minore, à due uoci.")
           (:de "Hemiola minor")
           (:en "Emiolia minore")))
    (:voice-labels
@@ -34,12 +48,8 @@
     (s1 v2 (:alt (:it "Basso")
                  (:de "Basso")
                  (:en "Bass")))
-    (s2 v1 (:alt (:it "Tenore")
-                 (:de "Tenore")
-                 (:en "Tenor")))
-    (s2 v2 (:alt (:it "Basso")
-                 (:de "Basso")
-                 (:en "Bass")))
+    (s2 v1 "")
+    (s2 v2 "")
     (s3 v1 (:alt (:it "Tenore")
                  (:de "Tenore")
                  (:en "Tenor")))
@@ -57,14 +67,20 @@
                  (:en "Tenor")))
     (s5 v2 (:alt (:it "Basso")
                  (:de "Basso")
+                 (:en "Bass")))
+    (s6 v1 (:alt (:it "Tenore")
+                 (:de "Tenore")
+                 (:en "Tenor")))
+    (s6 v2 (:alt (:it "Basso")
+                 (:de "Basso")
                  (:en "Bass")))))
   (:data
    (:text 90 58
-          (207 1809 "ᴍodo di entrare nella proportione di equalità,à due uoci. Tenore & Baſſo."))
+     (207 1809 "ᴍodo di entrare nella proportione di equalità,à due uoci. Tenore & Baſſo."))
    (:music 2238
            (:voice v1)
            (:section s1) cclef7 b22 fl6 (:key-signature nil nil nil nil nil nil :flat) b22 met-imperf-min-dim b38 sb1 b22 m3 dot4 sm4 b22 sm5 b22 sm1 b22 sb8 b22 sh7 b22 m7 b22
-           met-perf-min-dim b22 met-3-2 b22 br8 b22 sbrest9 sb4 dot4 m7 b22 m6 b22 m4 b22 fl9 b22 br9 b22 sb8 b22 sb7 sb6 sb5 br4 b22 sh3 b22 sb3 b22
+           (:section s2) (:newline) met-perf-min-dim b22 met-3-2 b22 br8 b22 sbrest9 sb4 dot4 m7 b22 m6 b22 m4 b22 fl9 b22 br9 b22 sb8 b22 sb7 sb6 sb5 br4 b22 sh3 b22 sb3 b22
            met-imperf-min-dim b22 sb4 b22
            (:alt (:diplomatic custos6)
                  (:critical custos6)
@@ -73,17 +89,24 @@
                  (:comment "Dieser Custos hat keinen Anschluss.")
                  (:flag :ready) (:id 1)))
    (:text 90 58
-          (1086 nil "ᴘroportione di equalità tre contra tre."))
+     (1086 nil "ᴘroportione di equalità tre contra tre."))
    (:music 2241
-           (:voice v2) (:f-clef) max7 fclef7 b22 fl3 (:key-signature nil nil nil nil nil nil :flat) b22 met-imperf-min-dim b22 mrest5 b22 m5 dot6 sm4 b22 m3 b22 sm2 b22 sm9 b22 sm8 b22 fl9 b22 sm10 sb9 b22
-           met-perf-min-dim b22 met-3-2 b22 sb5 dot6 m8 m7 m5d b22 fl6 b22 br6 b22 sb6 b22 br4 sb3 sb7 sb8 fl6 sb5 sb6 b22 br5 b22
+           (:section s1) (:voice v2) (:f-clef) max7 fclef7 b22 fl3 (:key-signature nil nil nil nil nil nil :flat) b22 met-imperf-min-dim b22 mrest5 b22 m5 dot6 sm4 b22 m3 b22 sm2 b22 sm9 b22 sm8 b22
+           (:alt (:diplomatic fl9)
+                 (:critical fl10)
+                 (:coord-barre "MZ2 N7")
+                 (:coord-norm "G1 St2 N7")
+                 (:comment "In allen Exemplaren: Das ♭ steht auf der obersten Linie.")
+                 (:flag :ready) (:id 4))
+           b22 sm10 sb9 b22
+           (:section s2) met-perf-min-dim b22 met-3-2 b22 sb5 dot6 m8 m7 m5d b22 fl6 b22 br6 b22 sb6 b22 br4 sb3 sb7 sb8 fl6 sb5 sb6 b22 br5 b22
            met-imperf-min-dim b22 sb1 bl)
    (:text 90 58
-          (180 nil "ᴀ due uoci Tenore & Baſſo")
-          (1150 nil "ᴀ due uoci ᴛenore & Baſſo."))
+     (180 nil "ᴀ due uoci Tenore & Baſſo")
+     (1150 nil "ᴀ due uoci ᴛenore & Baſſo."))
    (:music 2234
            (:voice v1)
-           (:section s2) (:newline)
+           (:section s3) (:newline)
            cclef7 b22 fl6 (:key-signature nil nil nil nil nil nil :flat) b38
            met-imperf-min-dim b22 br4 b22 br6 b22 br5 b22
            (:duration-override 1/2)
@@ -91,7 +114,7 @@
            (:duration-override 1)
            b22 bl
            b38 b125 b125 b22
-           (:section s3) (:newline)
+           (:section s4) (:newline)
            (:alt (:diplomatic)
                  (:modern met-imperf-min-dim)
                  (:coord-barre "")
@@ -110,10 +133,10 @@
                  (:coord-norm "")
                  (:comment "") (:flag :draft) (:id 0)))
    (:text 90 58
-          (111 nil "Proportione ſeſqualtera,due contra tre.")
-          (1303 nil "Emiolia maggiore."))
+     (111 nil "Proportione ſeſqualtera,due contra tre.")
+     (1303 nil "Emiolia maggiore."))
    (:music 2211
-           (:section s2)
+           (:section s3)
            (:voice v2)
            (:f-clef) max7 fclef7 fl6
            (:key-signature nil nil nil nil nil nil :flat) b22
@@ -122,7 +145,7 @@
            (:duration-override 2/3) sb1 sb4 sb3 m1 m8 dot8 sm7 sb5 m6 sb7 sb5 sh4 m4 m5
            (:duration-override 1)
            br1
-           (:section s3)
+           (:section s4)
            (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat)
 
            (:alt (:diplomatic sbbl4 dot4 sm3 sbbl2 sbbl1 dot2 sm2 sbbl3 dot4 sm1
@@ -137,11 +160,11 @@
                  (:comment "") (:flag :draft) (:id 0))
            )
    (:text 90 58
-          (281 1310 "ᴘroportione ſeſqualtera,buona nel battere & nel leuare,")
-          (1688 nil "Tenore"))
+     (281 1310 "ᴘroportione ſeſqualtera,buona nel battere & nel leuare,")
+     (1688 nil "Tenore"))
    (:music 2221
            (:voice v1)
-           (:section s4) (:newline)
+           (:section s5) (:newline)
            (:alt (:diplomatic (:f-clef) max7 fclef7 b38)
                  (:critical cclef7 b38)
                  (:coord-barre "MZ5 N1")
@@ -163,8 +186,8 @@
 
            )
    (:text 90 58
-          (330 nil "ᴀ due uoci,")
-          (1086 nil "Baſſo."))
+     (330 nil "ᴀ due uoci,")
+     (1086 nil "Baſſo."))
    (:music 2218
            cclef7 b38 fl6 (:key-signature nil nil nil nil nil nil :flat) b38 sb6 b22 m4 b38 sb4 b38 sh3 b38 m3 b38 br4 b38 b38
 
@@ -178,10 +201,10 @@
            sb8 b38 sb7 b38 sb8 b38 sb5 b38 br1 b22 bl
            b125 b125 b125)
    (:text 90 58
-          (166 nil "ᴇmiolia minore,")
-          (906 nil "Tenore & ʙaſſo à due uoci."))
+     (166 nil "ᴇmiolia minore,")
+     (906 nil "Tenore & ʙaſſo à due uoci."))
    (:music 2232
-           (:section s5)
+           (:section s6)
            (:voice v1) (:newline)
            cclef7 b38 fl6 (:key-signature nil nil nil nil nil nil :flat)
            b38 met-imperf-min-dim b38 met-3 b38

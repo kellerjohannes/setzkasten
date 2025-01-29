@@ -3,7 +3,7 @@
    (:alt-name "m4.031")
    (:comment "q021_s182, rotation: 0, origin: 996; q021_s183, rotation: 0.87, origin: 493")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Compositione a quattro voci")
+   (:title (:alt (:it "Compositione à quattro uoci.")
                  (:de "Komposition mit vier Stimmen.")
                  (:en "Compostion in four voci")))
    (:voice-labels

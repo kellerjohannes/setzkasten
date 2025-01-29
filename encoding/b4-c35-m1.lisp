@@ -20,11 +20,11 @@
    ;;
    ;; DONE
    (:section-captions
-    (s1 (:alt (:it "A quattro voci")
+    (s1 (:alt (:it "A quattro uoci.")
               (:de "Mit vier Stimmen")
               (:en "In four voci"))))
    (:line-headings
-    (:alt (:it "La prima volta il soprano fara due pause, et l'altra volta le tre parti,\\faranno le due pause del soprano,\\et quello cantera senza pause.")
+    (:alt (:it "La prima uolta il Soprano fara due pause. \\& l'altra uolta le tre parti,\\faranno le due pause del Soprano,\\& quello cantera senza pause.")
           (:de "Beim ersten Mal macht der Soprnao zwei Pause, und ein anderes machen die drei Stimmen\\die zwei Pausen des Soprano\\und dieser singt ohne Pause")
           (:en "The first time the soprano makes two rests, and another time the three parts make the two rests of the soprano,\\and it sings without rests.")))
    (:voice-labels

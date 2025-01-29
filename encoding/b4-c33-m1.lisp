@@ -4,7 +4,13 @@
    (:comment "q021_s180, rotation: 0, origin: 1025")
    (:creator "Vicentino21 / Johannes Keller")
         ;; AS: Is there any reason that the second section is significantly higher on the page than the others?
-   (:title (:alt (:it "All'undecima")
+   ;;
+   ;; OPEN
+
+   ;; JK: Titel ergänzt, muss übersetzt werden.
+   ;;
+   ;; OPEN
+   (:title (:alt (:it "[Canone] All'undecima")
                  (:de "in der undecima")
                  (:en "At the undecima")))
    (:section-headings

@@ -3,7 +3,7 @@
    (:alt-name "m4.021")
    (:comment "q021_s173, rotation: 1.01, origin: 471")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Regola universale di porre le parole sotto alle note")
+   (:title (:alt (:it "Regola uniuersale di porre le parole sotto alle note.")
                  (:de "Allgemeine Regel, die Textworte unter die Noten zu setzten.")
                  (:en "Universal rule for placing the words under the notes")))
    (:section-headings
@@ -15,7 +15,7 @@
               ;;
               ;; Kommentar Anne: Ich finde, dass es hier nicht stört.
               ;;
-              ;; OPEN
+              ;; DONE
               ))
     (s3 (:alt (:it "Si pronuntia la sillaba\\sotto la nera per bisogno")
               (:de "man spricht die Silbe\\unter der Semimina aus, wenn nötig")
@@ -25,7 +25,7 @@
               ;;
               ;; Kommentar Anne: Ich finde, dass es hier nicht stört.
               ;;
-              ;; OPEN
+              ;; DONE
               )))
    (:voice-order
     (s1 v1)
@@ -33,6 +33,9 @@
     (s3 v1)))
   (:preamble-lilypond
    (:lyrics
+    ;; JK: Schlechte Darstellung der Trennstriche, muss untersucht werden.
+    ;;
+    ;; OPEN
     (s1 v1 "Gau -- de -- a -- _ _ _ _ mus om -- _ _ nes in do -- _ _ _ _ mi -- no di -- em fe -- _ _ stum")
     (s2 v1 "di -- em fe -- stum")
     (s3 v1 "di -- em fe -- stum")))

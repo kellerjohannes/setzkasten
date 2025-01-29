@@ -23,7 +23,7 @@
            cclef7 b38 b22 sb5 b38 b22 fl6 b38 b22 sb6 b38 b38 bl
            (:section s2)
            b38 b38 fl6 b22 b38 sb6 b38 b22 sb6 b38 b22 bl
-           (:section s3)
+           (:section s3) (:newline)
            b38 b38 b125 b125 cclef1 b38 b22 sb6 b38 b22 fl7 b38 b22 sb7 b38 b38 bl
            (:section s4)
            b38 b38 fl7 b38 sb7 b38 sb7 b38 b22 bl b38)

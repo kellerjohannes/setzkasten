@@ -3,7 +3,7 @@
    (:alt-name "m4.025")
    (:comment "q021_s177, rotation: 0, origin: 414")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Fuga alla seconda, et alla riverscia, con i semitoni et i toni contrari")
+   (:title (:alt (:it "Fuga alla seconda, & alla riuerscia, con i semitoni & i toni contrarii.")
                  (:de "Imitation [fuga] in der seconda und rückwärts, mit den semitoni und toni andersherum.")
                  (:en "Fuga at the seconda, and in contrary motion, with the semitoni and toni in contrary motion"))))
   (:data

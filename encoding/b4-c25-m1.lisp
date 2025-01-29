@@ -3,14 +3,20 @@
    (:alt-name "m4.019")
    (:comment "q021_s167, rotation: 1.14, origin: 475")
    (:creator "Vicentino21 / Johannes Keller")
+   ;; JK: Titel ergänzt, muss übersetzt werden.
+   ;;
+   ;; OPEN
+   (:title (:alt (:it "[Essempi del Modo di comporre à tre uoci.]")
+                 (:de "")
+                 (:en "")))
    (:section-captions
-    (s1 (:alt (:it "A tre voci")
+    (s1 (:alt (:it "A tre uoci")
               (:de "für drei Stimmen")
               (:en "In three voci")))
-    (s2 (:alt (:it "A tre voci")
+    (s2 (:alt (:it "A tre uoci")
               (:de "für drei Stimmen")
               (:en "In three voci")))
-    (s3 (:alt (:it "A tre voci")
+    (s3 (:alt (:it "A tre uoci")
               (:de "für drei Stimmen")
               (:en "In three voci"))))
    (:voice-labels

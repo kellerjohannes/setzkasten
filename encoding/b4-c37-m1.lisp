@@ -4,7 +4,10 @@
    (:comment "q021_s183, rotation: 0.87, origin: 461")
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
-    (s1 (:alt (:it "Principio et fine")
+    (s1 (:alt (:it "Principio & fine.")
+              ;; JK: BUG, in der deutschen normalisierung mit orig. Schlüsseln steht 'principio et fine'.
+              ;;
+              ;; OPEN
               (:de "Beginn und Ende")
               (:en "Beginning and end")
               ;; JK: Es ist zu diskutieren, wie dieses Textelement in der Normalisierung dargestellt
