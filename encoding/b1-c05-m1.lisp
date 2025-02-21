@@ -140,6 +140,10 @@
            (:coord-barre "allg.")
            (:coord-norm "allg.")
            (:comment "Das Zeichen ɴ wird als Abkürzung für _natura_ verwendet.")
+           ;; In the critical notes to all of these 8 examples the letter "N" is missing after
+           ;; "Zeichen"
+           ;;
+           ;; OPEN
            (:flag :ready) (:id 1))
      (153 nil "per nat.")
      (834 nil "per ♭.")
