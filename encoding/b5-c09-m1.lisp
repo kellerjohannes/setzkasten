@@ -3,7 +3,7 @@
    (:alt-name "m5.005")
    (:comment "q021_s212, origin: line 1 987, line 2 979,")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Del Alamire secondo")
+   (:title (:alt (:it "[Consonanze di] Alamire secondo")
                  ;; AS: Also here the question whether it should be Alamire secondo as it is
                  ;; referred to that later. I think it has to be in the English translation, as we
                  ;; have sort of used it systematically in the book.
@@ -13,8 +13,8 @@
                  ;; JK: ist angepasst.
                  ;;
                  ;; DONE
-                 (:de "Von Alamire secondo.")
-                 (:en "Of Alamire secondo")))
+                 (:de "Konsonanzen von Alamire secondo.")
+                 (:en "Consonances of Alamire secondo")))
    (:section-headings
     (s1 (:alt (:it "Le quattro terze discendenti\\con le sue propinque")
               (:de "die vier absteigenden terze\\mit ihren propinque")
@@ -55,13 +55,13 @@
     (s6 "")
     (s7 (:alt (:it "Sesta minore / sesta maggiore")
               (:de "sesta minore / sesta maggiore")
-              (:en "Testa minore / sesta maggiore")))
+              (:en "Sesta minore / sesta maggiore")))
     (s8 ""))
    (:line-headings
     (:alt (:it "Tutte le consonanze discendenti con le propinque di Alamire secondo")
           (:de "Alle  Konsonanzen absteigend mit ihren propinque von Alamire secondo.")
           (:en "All of the descending consonances with the propinque of Alamire secondo"))
-    (:alt (:it "Tutte le consonanze ascendenti con le propinque of Alamire secondo")
+    (:alt (:it "Tutte le consonanze ascendenti con le propinque di Alamire secondo")
           (:de "Alle  Konsonanzen aufsteigend mit ihren propinque von Alamire secondo.")
           (:en "All of the ascending consonances with their propinque of Alamire secondo"))))
   (:data

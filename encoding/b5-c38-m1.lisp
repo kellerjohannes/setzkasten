@@ -43,7 +43,15 @@
               (:en "Terze minori / terze maggiori")))
     (s7 (:alt (:it "Seste minori / seste maggiori")
               (:de "seste minori / seste maggiori")
-              (:en "Seste minori / seste maggiori")))))
+              (:en "Seste minori / seste maggiori"))))
+   (:line-headings
+    (:alt (:it "Tutte le consonanze di Bfabmi quinto discendenti")
+          (:de "Alle absteigenden Konsonanzen von Bfabmi quinto.")
+          (:en "All descending consonances of Bfabmi quinto"))
+    (:alt (:it "Tutte le consonanze di Bfabmi quinto ascendenti")
+          (:de "Alle aufsteigenden Konsonanzen von Bfabmi quinto.")
+          (:en "All ascending consonances of Bfabmi quinto")))
+   )
   (:data
    (:text 70 58
      (0 2217 "Queſte ſono tutte le conſonanze di ʙ fa.♭ mi quinto diſcendenti con le ſue propinque &"))

@@ -43,7 +43,15 @@
               (:en "Terze minori / terze maggiori")))
     (s7 (:alt (:it "Seste minori / seste maggiori")
               (:de "seste minor / seste maggiori")
-              (:en "Seste minori / seste maggiori")))))
+              (:en "Seste minori / seste maggiori"))))
+   (:line-headings
+    (:alt (:it "Tutte le consonanze di Dlasolre terzo discendenti")
+          (:de "Alle absteigenden Konsonanzen von Dlasolre terzo.")
+          (:en "All descending consonances of Dlasolre terzo"))
+    (:alt (:it "Tutte le consonanze di Dlasolre terzo ascendenti")
+          (:de "Alle aufsteigenden Konsonanzen von Dlasolre terzo.")
+          (:en "All ascending consonances of Dlasolre terzo")))
+   )
   (:preamble-lilypond
    (:clef-overrides
     (s5 v1 "treble_8")

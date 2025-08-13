@@ -43,7 +43,15 @@
               (:en "Terza minore / terza maggiore")))
     (s7 (:alt (:it "[Sesta minore / sesta maggiore]")
               (:de "[sesta minore / sesta maggiore]")
-              (:en "Sesta minore / sesta maggiore")))))
+              (:en "Sesta minore / sesta maggiore"))))
+   (:line-headings
+    (:alt (:it "Tutte le consonanze di Cfaut terzo in quarto ordine discendenti")
+          (:de "Alle absteigenden Konsonanzen von Cfaut terzo in quarto ordine.")
+          (:en "All descending consonances of Cfaut terzo in quarto ordine"))
+    (:alt (:it "Tutte le consonanze di Cfaut terzo in quarto ordine ascendenti")
+          (:de "Alle aufsteigenden Konsonanzen von Cfaut terzo in quarto ordine.")
+          (:en "All ascending consonances of Cfaut terzo in quarto ordine")))
+   )
   (:data
    (:text 70 58
      (0 2238 "Queſte sono tutte le conſonanze di ᴄ sol fa ut acuto terzo in quarto ordine diſcendenti con"))

@@ -3,9 +3,9 @@
    (:alt-name "m5.007")
    (:comment "q021_s214, origin: 945")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "[Del Alamire quarto]")
-                 (:de "[Von Alamire quarto]")
-                 (:en "[Of Alamire quarto")))
+   (:title (:alt (:it "[Consonanze del Alamire quarto]")
+                 (:de "Konsonanzen von Alamire quarto.")
+                 (:en "Consonances of Alamire quarto")))
    (:section-headings
     (s1 (:alt (:it "Le quattro terze\\con le loro propinque")
               (:de "die vier terze\\mit ihren propinque")

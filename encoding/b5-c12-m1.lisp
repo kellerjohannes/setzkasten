@@ -3,9 +3,9 @@
    (:alt-name "m5.008")
    (:comment "q021_s214, origin: 954")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "[Del Alamire quinto]")
-                 (:de "[Von Alamire quinto]")
-                 (:en "[Of Alamire quinto]")))
+   (:title (:alt (:it "[Consonanze di Alamire quinto]")
+                 (:de "Konsonanzen von Alamire quinto.")
+                 (:en "Consonances of Alamire quinto")))
    (:section-headings
     (s1 (:alt (:it "Le quattro terze\\con le loro propinque")
               (:de "die vier terze\\mit ihren propinque")
@@ -46,10 +46,10 @@
               (:en "Seste minori / seste maggiori"))))
    (:line-headings
     (:alt (:it "Tutte le consonanze d'Alamire quinto discendenti")
-          (:de "alle absteigenden Konsonanzen von Alamire quinto")
+          (:de "Alle absteigenden Konsonanzen von Alamire quinto.")
           (:en "All descending consonances of Alamire quinto"))
     (:alt (:it "Tutte le consonanze d'Alamire quinto ascendenti")
-          (:de "alle aufsteigenden Konsonanzen von Alamire quinto")
+          (:de "Alle aufsteigenden Konsonanzen von Alamire quinto.")
           (:en "All ascending consonances of Alamire quinto"))))
   (:data
    (:text 110 58

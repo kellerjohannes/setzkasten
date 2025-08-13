@@ -43,7 +43,15 @@
               (:en "Terze minori / terze maggiori")))
     (s7 (:alt (:it "Seste minori / seste maggiori")
               (:de "seste minori / seste maggiori")
-              (:en "Seste minori / seste maggiori")))))
+              (:en "Seste minori / seste maggiori"))))
+   (:line-headings
+    (:alt (:it "Tutte le consonanze di Dlasolre secondo discendenti")
+          (:de "Alle absteigenden Konsonanzen von Dlasolre secondo.")
+          (:en "All descending consonances of Dlasolre secondo"))
+    (:alt (:it "Tutte le consonanze di Dlasolre secondo ascendenti")
+          (:de "Alle aufsteigenden Konsonanzen von Dlasolre secondo.")
+          (:en "All ascending consonances of Dlasolre secondo")))
+   )
   (:data
    (:text 70 58
      (18 2213 "Queſte ſono tutte le conſonanze, & le propinque & propinquiſſime di D la ſol re ſecondo"))

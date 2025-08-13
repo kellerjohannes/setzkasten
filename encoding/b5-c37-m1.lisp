@@ -43,7 +43,15 @@
               (:en "Terza minore / terza maggiore")))
     (s7 (:alt (:it "Sesta minore / sesta maggiore")
               (:de "sesta minore / sesta maggiore")
-              (:en "Sesta minore / sesta maggiore")))))
+              (:en "Sesta minore / sesta maggiore"))))
+   (:line-headings
+    (:alt (:it "Tutte le consonanze di Bfabmi quarto discendenti")
+          (:de "Alle absteigenden Konsonanzen von Bfabmi quarto.")
+          (:en "All descending consonances of Bfabmi quarto"))
+    (:alt (:it "Tutte le consonanze di Bfabmi quarto ascendenti")
+          (:de "Alle aufsteigenden Konsonanzen von Bfabmi quarto.")
+          (:en "All ascending consonances of Bfabmi quarto")))
+   )
   (:data
    (:text 110 58
      (94 nil "ʟe cinque")

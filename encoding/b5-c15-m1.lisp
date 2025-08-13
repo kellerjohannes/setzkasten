@@ -3,9 +3,9 @@
    (:alt-name "m5.011")
    (:comment "q021_s217, origin: line 1-2 518, line 3-4 225")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "[Del Gsolreut secondo]")
-                 (:de "[Von Gsolreut secondo]")
-                 (:en "[Of Gsolreut secondo]")))
+   (:title (:alt (:it "[Consonanze di Gsolreut secondo]")
+                 (:de "Konsonanzen von Gsolreut secondo.")
+                 (:en "Consonances of Gsolreut secondo")))
    (:section-headings
     (s1 (:alt (:it "Le quattro terze")
               (:de "die vier terze")
@@ -45,15 +45,23 @@
               (:de "sesta minore / sesta maggiore")
               (:en "Sesta minore / sesta maggiore"))))
    (:line-headings
-    (:alt (:it "Tutte le consonanze di Gsolreut secondo ascendenti")
-          (:de "alle aufsteigenden Konsonanzen von Gsolreut secondo")
-          (:en "All ascending consonances of Gsolreut secondo"))
     (:alt (:it "Tutte le consonanze di Gsolreut secondo discendenti")
-          (:de "alle absteigenden Konsonanzen von Gsolreut secondo")
-          (:en "All descending consonances of Gsolreut secondo"))))
+          (:de "Alle absteigenden Konsonanzen von Gsolreut secondo")
+          (:en "All descending consonances of Gsolreut secondo"))
+    (:alt (:it "Tutte le consonanze di Gsolreut secondo ascendenti")
+          (:de "Alle aufsteigenden Konsonanzen von Gsolreut secondo.")
+          (:en "All ascending consonances of Gsolreut secondo"))))
   (:data
    (:text 100 58
-          (104 2024 "Tutte le conſonanze di ɢſolreut ſecondo aſcend. at diſcendenti, sono qui ſotto notate."))
+          (104 2024
+               (:alt (:diplomatic "Tutte le conſonanze di ɢſolreut ſecondo aſcend. at diſcendenti, sono qui ſotto notate.")
+                     (:critical "Tutte le conſonanze di ɢſolreut ſecondo aſcend. at diſcendenti, sono qui ſotto notate.")
+                     (:coord-barre "TZ1")
+                     (:coord-norm "T")
+                     ;; Koord. prüfen
+                     (:comment "In der normalisierten Fassung »son qui sotto notate« weggelassen.")
+                     (:flag :draft) (:id 0))
+               ))
    (:text 100 58
           (218 nil "le quattro terze")
           (1011 nil "quinta")

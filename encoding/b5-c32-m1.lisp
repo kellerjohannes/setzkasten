@@ -43,7 +43,15 @@
               (:en "Terze minori / terze maggiori")))
     (s7 (:alt (:it "Seste minori / seste maggiori")
               (:de "seste minori / seste maggiori")
-              (:en "Seste minori / seste maggiori")))))
+              (:en "Seste minori / seste maggiori"))))
+   (:line-headings
+    (:alt (:it "Tutte le consonanze di Cfaut secondo discendenti")
+          (:de "Alle absteigenden Konsonanzen von Cfaut secondo.")
+          (:en "All descending consonances of Cfaut secondo"))
+    (:alt (:it "Tutte le consonanze di Cfaut secondo ascendenti")
+          (:de "Alle aufsteigenden Konsonanzen von Cfaut secondo.")
+          (:en "All ascending consonances of Cfaut secondo")))
+   )
   (:data
    (:text 70 58
      (0 2220 "Queſte ſono tutte le conſonanze di C ſol fa ut ſecondo diſcendente con le ſue propinque &"))

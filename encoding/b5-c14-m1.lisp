@@ -3,9 +3,9 @@
    (:alt-name "m5.010")
    (:comment "q021_s216, rotation: 0.76, origin: 1012")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "[Del Gsolreut primo]")
-                 (:de "[Von Gsolreut primo]")
-                 (:en "[Of Gsolreut primo]")))
+   (:title (:alt (:it "[Consonanze di Gsolreut primo]")
+                 (:de "Konsonanzen von Gsolreut primo.")
+                 (:en "Consonances of Gsolreut primo")))
    (:section-headings
     (s1 (:alt (:it "Le quattro terze\\con le sue propinque")
               (:de "die vier terze\\mit ihren propinque")
@@ -46,10 +46,10 @@
               (:en "Sesta minore / sesta maggiore"))))
    (:line-headings
     (:alt (:it "Tutte le consonanze discendenti di Gsolreut primo")
-          (:de "alle absteigenden Konsonanzen von Gsolreut primo")
+          (:de "Alle absteigenden Konsonanzen von Gsolreut primo.")
           (:en "All descending consonances of Gsolreut primo"))
     (:alt (:it "Tutte le consonanze ascendenti di Gsolreut primo")
-          (:de "alle aufsteigenden Konsonanzen von Gsolreut primo")
+          (:de "Alle aufsteigenden Konsonanzen von Gsolreut primo.")
           (:en "All ascending consonances of Gesolreut primo"))))
   (:data
    (:text 70 58

@@ -43,7 +43,14 @@
               (:en "Terze minori / terze maggiori")))
     (s7 (:alt (:it "Seste minori / seste maggiori")
               (:de "seste minori / seste maggiori")
-              (:en "Seste minori / seste maggiori")))))
+              (:en "Seste minori / seste maggiori"))))
+   (:line-headings
+    (:alt (:it "Tutte le consonanze di Elami quinto discendenti")
+          (:de "Alle absteigenden Konsonanzen von Elami quinto.")
+          (:en "All descending consonances of Elami quinto"))
+    (:alt (:it "Tutte le consonanze di Elami quinto ascendenti")
+          (:de "Alle aufsteigenden Konsonanzen von Elami quinto.")
+          (:en "All ascending consonances of Elami quinto"))))
   (:preamble-lilypond
    (:clef-overrides
     (s1 v1 "treble_8")

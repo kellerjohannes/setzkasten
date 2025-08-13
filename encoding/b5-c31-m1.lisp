@@ -43,7 +43,15 @@
               (:en "Terza minore / terza maggiore")))
     (s7 (:alt (:it "Sesta minore / sesta maggiore")
               (:de "sesta minore / sesta maggiore")
-              (:en "Sesta minore / sesta maggiore")))))
+              (:en "Sesta minore / sesta maggiore"))))
+   (:line-headings
+    (:alt (:it "Tutte le consonanze di Cfaut primo discendenti")
+          (:de "Alle absteigenden Konsonanzen von Cfaut primo.")
+          (:en "All descending consonances of Cfaut primo"))
+    (:alt (:it "Tutte le consonanze di Cfaut primo ascendenti")
+          (:de "Alle aufsteigenden Konsonanzen von Cfaut primo.")
+          (:en "All ascending consonances of Cfaut primo")))
+   )
   (:data
    (:text 70 58
      (88 2141 "Queſte sono tutte le conſonanze,con le ſue propinque & propinquiſſime di ᴄ ſol fa ut acu"))

@@ -43,7 +43,15 @@
               (:en "Terza minore / terza maggiore")))
     (s7 (:alt (:it "Sesta minore / sesta maggiore")
               (:de "sesta minore / sesta maggiore")
-              (:en "Sesta minore / sesta maggiore")))))
+              (:en "Sesta minore / sesta maggiore"))))
+   (:line-headings
+    (:alt (:it "Tutte le consonanze di Bfabmi primo discendenti")
+          (:de "Alle absteigenden Konsonanzen von Bfabmi primo.")
+          (:en "All descending consonances of Bfabmi primo"))
+    (:alt (:it "Tutte le consonanze di Bfabmi primo ascendenti")
+          (:de "Alle aufsteigenden Konsonanzen von Bfabmi primo.")
+          (:en "All ascending consonances of Bfabmi primo")))
+   )
   (:data
    (:text 70 58
      (21 2199 "Queſte sono tutte le conſonanze di B fa. ♭ mi primo acuto , con le ſue propinque diſcendenti,"))

@@ -43,7 +43,15 @@
               (:en "Terze minori / terze maggiori")))
     (s7 (:alt (:it "Seste minori / seste maggiori")
               (:de "seste minori / seste maggiori")
-              (:en "Seste minori / seste maggiori")))))
+              (:en "Seste minori / seste maggiori"))))
+(:line-headings
+    (:alt (:it "Tutte le consonanze di Bfabmi terzo discendenti")
+          (:de "Alle absteigenden Konsonanzen von Bfabmi terzo.")
+          (:en "All descending consonances of Bfabmi terzo"))
+    (:alt (:it "Tutte le consonanze di Bfabmi terzo ascendenti")
+          (:de "Alle aufsteigenden Konsonanzen von Bfabmi terzo.")
+          (:en "All ascending consonances of Bfabmi terzo")))
+   )
   (:data
    (:text 70 58
      (127 2092 "Queſte sono tutte le conſonanze, di B fa ♭ mi acuto terzo diſcendenti per una ottaua con le"))
