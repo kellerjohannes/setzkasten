@@ -4,19 +4,22 @@
    (:comment "q021_s237, origin: 470")
    (:creator "Vicentino21 / Johannes Keller")
    (:section-headings
-    (s1 (:alt (:it " \\Immobili ascendenti")
-              (:de " \\feststehende [voci] aufsteigend")
-              (:en " \\Ascending immobile [voci]")))
-    (s2 (:alt (:it " \\Ne del tutto mobili")
-              (:de " \\nicht gänzlich bewegbare [voci]")
-              (:en "Not completely mobile [voci]")))
-    (s3 (:alt (:it "Ne del tutto immobili,\\genere cromatico")
-              (:de "nicht gänzlich bewegbare [voci]\\chromatisches Genus")
-              (:en "Not completely mobile [voci]\\chromatic genus"))))
+    (s1 (:alt (:it "[Voci] immobili ascendenti")
+              (:de "feststehende voci aufsteigend")
+              (:en "Ascending immobile voci")))
+    (s2 (:alt (:it "[Voci] né del tutto mobili,\\ ")
+              (:de "Weder gänzlich bewegbare,")
+              (:en "Neither completely mobile,")))
+    (s3 (:alt (:it "né del tutto immobili,\\genere cromatico")
+              (:de "noch gänzlich nicht bewegbare voci,\\chromatisches Genus")
+              ;; AS: Kontrollieren, Übersetzung angepasst
+              ;;
+              ;; OPEN
+              (:en "nor completely immobile voci,\\chromatic genus"))))
    (:line-headings
     ""
-    (:alt (:it "Serveno a ambedue i generi al diatonico et al cromatico:")
-          (:de "dienen für die beiden Genera, dem Diatonischen udn dem Chromatischen")
+    (:alt (:it "Servono a ambedue i generi, al diatonico et al cromatico:")
+          (:de "dienen für die beiden Genera, dem Diatonischen und dem Chromatischen")
           (:en "They serve for both genera, for the diatonic and for the chromatic"))))
   (:data
    (:text 90 58

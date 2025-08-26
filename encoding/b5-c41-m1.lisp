@@ -3,10 +3,10 @@
    (:alt-name "m5.040")
    (:comment "q021_s241, origin: 430")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "I semitoni maggiori e minori discendenti dal quarto ordine naturale,\\semitoni ascendenti minore e maggiori")
+   (:title (:alt (:it "I semitoni maggiori e minori discendenti\\dal quarto ordine naturale:\\semitoni ascendenti minori e maggiori")
                  (:de "Die absteigenden semitoni maggiori und minori des quarto ordine naturale,\\aufsteigende semitoni minori und maggiore.")
-                 (:en "The descending semitoni maggiori and minori of the quarto ordine naturale,\\ascending semitoni minore and maggiore")))
-   (:section-captions
+                 (:en "The descending semitoni maggiori and minori of the quarto ordine naturale,\\ascending semitoni minori and maggiore")))
+   (:section-headings
     (s1  (:alt (:it "Semitono\\accidentale\\maggiore")
                (:de "semitono\\accidentale\\maggiore")
                (:en "Semitono\\accidentale\\maggiore")))
@@ -58,13 +58,13 @@
            (:voice v1)
            (:section s1) cclef7 b22 sbd5 b22 fl5 b22 sb5 bl
            (:section s2) sbd5 b22 fl5 b22 sbd5 bl
-           (:section s3) sbd7 b22 sbd6 bl
+           (:section s3)  sbd7 b22 sbd6 bl
            (:section s4) sbd7 sh6 b22 sb6 bl
-           (:section s5) sbd3 b22 sbd2 bl
-           (:section s6) (:newline) sbd3 b22 sh2 b22 sb2 bl
-           (:section s7) fl5 b22 sb5 b22 sbd5 bl
+           (:section s5) (:newline) sbd3 b22 sbd2 bl
+           (:section s6) sbd3 b22 sh2 b22 sb2 bl
+           (:section s7)  fl5 b22 sb5 b22 sbd5 bl
            (:section s8) fl5 b22 sbd5 b22 sbd5 bl
-           (:section s9) sbd6 b22 sbd7 bl
+           (:section s9) (:newline) sbd6 b22 sbd7 bl
            (:section s10) sh6 b22 sb6 b22 sbd7 bl
            )
    (:vspace 20)

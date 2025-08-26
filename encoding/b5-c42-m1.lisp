@@ -3,7 +3,13 @@
    (:alt-name "m5.041")
    (:comment "q021_s242, rotation: 0.97, origin: 1052")
    (:creator "Vicentino21 / Johannes Keller")
-   (:section-captions
+   (:title (:alt (:it "[I toni delle corde stabili del primo ordini, con i suoi semitoni]")
+                 ;; AS und MK: neu übersetzen
+                 ;;
+                 ;; OPEN
+                 (:de "")
+                 (:en "")))
+   (:section-headings
     (s1 (:alt (:it "Tono\\naturale")
               (:de "tono\\naturale")
               (:en "Tono\\naturale")))
@@ -64,8 +70,7 @@
            (:section s4)  b38 b22 sb5 b38 b22 sb6 b22 b38 bl
            (:section s5)  b38 b22 sb6 b38 b22 sb7 b38 b22 bl
            (:section s6)  b38 sb7 b38 sb8 b38 bl
-           (:section s7)  b38 sb8 b38 sb9 b22 b22 bl
-           )
+           (:section s7)  b38 sb8 b38 sb9 b22 b22 bl)
    (:text 140 58
      (166 nil "nat.")
      (510 nil "nat.")

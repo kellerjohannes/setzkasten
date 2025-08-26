@@ -1,104 +1,114 @@
 ;; JK: in diesen Kapiteln ist die Anzahl der Textzeilen in den Überschriften unregelmässig, was zu
 ;; einem flatterigen Satz führt. Das ist am Ende der Text-Lektorate zu prüfen und anzupassen.
 ;;
-;; OPEN
+;; JK: Mit Luigi wurde das Layout geändert, ist jetzt homogener und leichter verständlich.
+;;
+;; DONE
+
 `((:header
    (:filename "b5-c48-m2")
    (:alt-name "m5.049")
    (:comment "q021_s248, rotation: 1.01, origin: 980")
    (:creator "Vicentino21 / Johannes Keller")
+   (:title (:alt (:it "[Ascendenza di Are primo fin Alamire primo,\\con la divisione del tono in quattro parti,\\e con la divisione delli semitoni minori e maggiori]")
+                 ;; AS und MK: neu übersetzen
+                 ;;
+                 ;; OPEN
+                 (:de "")
+                 (:en "")))
    (:section-headings
-    (s1 (:alt (:it "Tono naturale\\[ascendente]")
-              (:de "tono naturale\\[aufsteigend]")
-              (:en "[Ascending]\\tono naturale")))
-    (s2 (:alt (:it "Semitono accidentale\\e naturale\\[ascendente]")
-              (:de "semitono accidentale\\und naturale\\[aufsteigend]")
-              (:en "[Ascending]\\semitono accidentale\\and naturale")))
-    (s3 (:alt (:it "Tono naturale\\[ascendente]")
-              (:de "tono naturale\\[aufsteigend]")
-              (:en "[Ascending]\\tono naturale")))
-    (s4 (:alt (:it "Tono naturale\\[ascendente]")
-              (:de "tono naturale\\[aufsteigend]")
-              (:en "[Ascending]\\tono naturale")))
+    (s1 (:alt (:it "Tono naturale\\[ascendente]\\ \\Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
+              (:de "tono naturale\\aufsteigend")
+              (:en "Ascending\\tono naturale")))
+    (s2 (:alt (:it "Semitono accidentale\\e naturale\\[ascendente]\\ \\Semitono minore e\\maggiore:\\diesis minore – diesis minore –\\diesis minore")
+              (:de "semitono accidentale\\und naturale\\aufsteigend")
+              (:en "Ascending\\semitono accidentale\\and naturale")))
+    (s3 (:alt (:it " \\Tono naturale\\[ascendente]\\ \\Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
+              (:de "tono naturale\\aufsteigend")
+              (:en "Ascending\\tono naturale")))
+    (s4 (:alt (:it " \\Tono naturale\\[ascendente]\\ \\Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
+              (:de "tono naturale\\aufsteigend")
+              (:en "Ascending\\tono naturale")))
 
-    (s5 (:alt (:it "Semitono accidentale\\e naturale\\[ascendente]")
-              (:de "semitono accidentale\\und naturale\\[aufsteigend]")
-              (:en "[Ascending]\\semitono accidentale\\and naturale")))
-    (s6 (:alt (:it "Tono naturale\\[ascendente]")
-              (:de "tono naturale\\[aufsteigend]")
-              (:en "[Ascending]\\tono naturale")))
-    (s7 (:alt (:it "Tono naturale\\[ascendente]")
-              (:de "tono naturale\\[aufsteigend]")
-              (:en "[Ascending]\\tono naturale")))
-    (s8 (:alt (:it "Tono naturale\\discendente")
+    (s5 (:alt (:it " \\Semitono accidentale\\e naturale\\[ascendente]\\ \\Semitono minore e\\maggiore:\\diesis minore – diesis minore –\\diesis minore")
+              (:de "semitono accidentale\\und naturale\\aufsteigend")
+              (:en "Ascending\\semitono accidentale\\and naturale")))
+    (s6 (:alt (:it " \\Tono naturale\\[ascendente]\\ \\Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
+              (:de "tono naturale\\aufsteigend")
+              (:en "Ascending\\tono naturale")))
+    (s7 (:alt (:it " \\Tono naturale\\[ascendente]\\ \\Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
+              (:de "tono naturale\\aufsteigend")
+              (:en "Ascending\\tono naturale")))
+    (s8 (:alt (:it " \\Tono naturale\\discendente\\ \\Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
               (:de "tono naturale\\absteigend")
               (:en "Descending\\tono naturale")))
 
-    (s9 (:alt (:it "Tono naturale\\discendente")
+    (s9 (:alt (:it " \\Tono naturale\\[discendente]\\ \\Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
               (:de "tono naturale\\absteigend")
               (:en "Descending\\tono naturale")))
-    (s10 (:alt (:it "Semitono accidentale\\e naturale\\discendente")
+    (s10 (:alt (:it " \\Semitono accidentale\\e naturale\\[discendente]\\ \\Semitono minore e\\maggiore:\\diesis minore – diesis minore –\\diesis minore")
                (:de "semitono accidentale\\und naturale\\absteigend")
                (:en "Descending\\semitono accidentale\\and naturale")))
-    (s11 (:alt (:it "Tono naturale\\[discendente]")
-               (:de "tono naturale\\[absteigend]")
-               (:en "[Descending]\\tono naturale")))
-
-    (s12 (:alt (:it "Tono naturale\\discendente")
+    (s11 (:alt (:it " \\Tono naturale\\[discendente]\\ \\Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
                (:de "tono naturale\\absteigend")
                (:en "Descending\\tono naturale")))
-    (s13 (:alt (:it "[Semi]tono [accidentale\\e] naturale\\[discendente]")
-               (:de "[semi]tono [accidentale\\e] naturale\\[absteigend]")
-               (:en "[Descending\\semi]tono [accidentale\\and] naturale")))
-    (s14 (:alt (:it "Tono naturale\\[discendente]")
-               (:de "tono naturale\\[absteigend]")
-               (:en "[Descending]\\semitono naturale"))))
-   (:section-captions
-    (s1 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
-              (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
-              (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")))
-    (s2 (:alt (:it "Semitono minore\\e maggiore:\\diesis minore – diesis minore – diesis minore")
-              (:de "semitono minore\\e maggiore:\\diesis minore – diesis minore – diesis minore")
-              (:en "Semitono minore\\e maggiore:\\diesis minore – diesis minore – diesis minore")))
-    (s3 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
-              (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
-              (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")))
-    (s4 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
-              (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
-              (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")))
 
-    (s5 (:alt (:it "Semitono minore\\e maggiore:\\diesis minore – diesis minore – diesis minore")
-              (:de "semitono minore\\e maggiore:\\diesis minore – diesis minore – diesis minore")
-              (:en "Semitono minore\\ andmaggiore:\\diesis minore – diesis minore – diesis minore")))
-    (s6 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
-              (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
-              (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")))
-    (s7 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
-              (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
-              (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")))
-    (s8 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
-              (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
-              (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")))
+    (s12 (:alt (:it " \\Tono naturale\\[discendente]\\ \\Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
+               (:de "tono naturale\\absteigend")
+               (:en "Descending\\tono naturale")))
+    (s13 (:alt (:it " \\Semitono [accidentale\\e] naturale\\[discendente]\\ \\Semitono minore e\\maggiore:\\diesis minore – diesis minore –\\diesis minore")
+               (:de "semitono accidentale\\e naturale\\absteigend")
+               (:en "Descending\\semitono accidentale\\and naturale")))
+    (s14 (:alt (:it " \\Tono naturale\\[discendente]\\ \\Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
+               (:de "tono naturale\\absteigend")
+               (:en "Descending\\semitono naturale"))))
+   ;; (:section-captions
+   ;;  (s1 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
+   ;;            (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
+   ;;            (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")))
+   ;;  (s2 (:alt (:it "Semitono minore\\e maggiore:\\diesis minore – diesis minore – diesis minore")
+   ;;            (:de "semitono minore\\e maggiore:\\diesis minore – diesis minore – diesis minore")
+   ;;            (:en "Semitono minore\\e maggiore:\\diesis minore – diesis minore – diesis minore")))
+   ;;  (s3 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
+   ;;            (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
+   ;;            (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")))
+   ;;  (s4 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
+   ;;            (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
+   ;;            (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")))
 
-    (s9 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
-              (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
-              (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")))
-    (s10 (:alt (:it "Semitono minore\\e maggiore:\\diesis minore – diesis minore – diesis minore")
-               (:de "semitono minore\\e maggiore:\\diesis minore – diesis minore – diesis minore")
-               (:en "Semitono minore\\and maggiore:\\diesis minore – diesis minore – diesis minore")))
-    (s11 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
-               (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
-               (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")))
+   ;;  (s5 (:alt (:it "Semitono minore\\e maggiore:\\diesis minore – diesis minore – diesis minore")
+   ;;            (:de "semitono minore\\e maggiore:\\diesis minore – diesis minore – diesis minore")
+   ;;            (:en "Semitono minore\\ andmaggiore:\\diesis minore – diesis minore – diesis minore")))
+   ;;  (s6 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
+   ;;            (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
+   ;;            (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")))
+   ;;  (s7 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
+   ;;            (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
+   ;;            (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")))
+   ;;  (s8 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
+   ;;            (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
+   ;;            (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")))
 
-    (s12 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
-               (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
-               (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")))
-    (s13 (:alt (:it "Semitono minore:\\diesis minore – diesis minore – diesis minore")
-               (:de "semitono minore:\\diesis minore – diesis minore – diesis minore")
-               (:en "Semitono minore:\\diesis minore – diesis minore – diesis minore")))
-    (s14 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
-               (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
-               (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")))))
+   ;;  (s9 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
+   ;;            (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
+   ;;            (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")))
+   ;;  (s10 (:alt (:it "Semitono minore\\e maggiore:\\diesis minore – diesis minore – diesis minore")
+   ;;             (:de "semitono minore\\e maggiore:\\diesis minore – diesis minore – diesis minore")
+   ;;             (:en "Semitono minore\\and maggiore:\\diesis minore – diesis minore – diesis minore")))
+   ;;  (s11 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
+   ;;             (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
+   ;;             (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")))
+
+   ;;  (s12 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
+   ;;             (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
+   ;;             (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")))
+   ;;  (s13 (:alt (:it "Semitono minore:\\diesis minore – diesis minore – diesis minore")
+   ;;             (:de "semitono minore:\\diesis minore – diesis minore – diesis minore")
+   ;;             (:en "Semitono minore:\\diesis minore – diesis minore – diesis minore")))
+   ;;  (s14 (:alt (:it "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore")
+   ;;             (:de "semitono minore:\\diesis minore – diesis minore\\semitono maggiore:\\diesis maggiore – diesis minore")
+   ;;             (:en "Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis maggiore – diesis minore"))))
+   )
   (:data
    (:text 90 58
      (127 nil "se.min.")
@@ -112,8 +122,8 @@
            (:voice v1)
            (:section s1) (:f-clef) max7 fclef7 b22 sb2 b22 sbd2 b22 sh2 b22 sb2 b22 fl3 b22 sbd3 b22 sb3 bl
            (:section s2) sb3 b22 sbd3 b22 sh3 b22 sb3 b22 sb4 b22 bl
-           (:section s3) b22 sb4 b22 sbd4 b22 sh4 b22 sb4 b22 fl5 b22 sbd5 b22 sb5 b22 bl
-           (:section s4) (:newline) b22 sb5 b22 sbd5 b22 sh5 b22 sb5 b22 fl6 b22 sbd6 b22 sb6 b22 bl)
+           (:section s3) (:newline) b22 sb4 b22 sbd4 b22 sh4 b22 sb4 b22 fl5 b22 sbd5 b22 sb5 b22 bl
+           (:section s4)  b22 sb5 b22 sbd5 b22 sh5 b22 sb5 b22 fl6 b22 sbd6 b22 sb6 b22 bl)
    (:text 70 58
      (45 nil "di.mi. di.mi.d.ma. d.mi.")
      (645 nil "di mi. d.mi.di.mi.")
@@ -135,9 +145,9 @@
      (1707 nil "se.min.")
      (1988 nil "se.mag."))
    (:music 2229
-           (:section s5) (:f-clef) max7 fclef7 b22 sb6 b22 sbd6 b22 sh6 b22 sb6 b22 sb7 b22 bl
+           (:section s5) (:newline) (:f-clef) max7 fclef7 b22 sb6 b22 sbd6 b22 sh6 b22 sb6 b22 sb7 b22 bl
            (:section s6) b22 sb7 b22 sbd7 b22 sh7 b22 sb7 b22 fl8 b22 sbd8 b22 sb8 b22 bl
-           (:section s7) (:newline) b22 sb8 b22 sbd8 b22 sh8 b22 sb8 b22 fl9 b22 sbd9 b22 sb9 b22 bl
+           (:section s7) (:newline)  b22 sb8 b22 sbd8 b22 sh8 b22 sb8 b22 fl9 b22 sbd9 b22 sb9 b22 bl
            (:section s8) sb9 b38 fl9 b38 sbd9 b38 fl9 b22 sb9 b22 sbd8 b22 sb8 bl)
    (:text 90 58
      (45 nil "di. mi. d.mi. di. mi.")
@@ -158,8 +168,8 @@
      (1489 nil "sem. min.")
      (1779 nil "sem. mag."))
    (:music 2230
-           (:section s9) (:f-clef) max7 fclef7 b38 sb8 b38 fl8 b38 b22 sbd8 b38 fl8 b38 b22 sb8 b38 b22 sbd7 b38 b22 sb7 b38 b22 bl
-           (:section s10) (:newline) b38 b22 sb7 b38
+           (:section s9) (:newline) (:f-clef) max7 fclef7 b38 sb8 b38 fl8 b38 b22 sbd8 b38 fl8 b38 b22 sb8 b38 b22 sbd7 b38 b22 sb7 b38 b22 bl
+           (:section s10)  b38 b22 sb7 b38
            (:alt (:diplomatic sbd6 b38 sh6 b38 b22 sb6)
                  (:critical sh6 b38 b22 sb6 b38 sbd6)
                  (:coord-barre "MZ3 N7-8")
@@ -167,7 +177,7 @@
                  (:comment "In allen Exemplaren: Ė–E♯.")
                  (:flag :ready) (:id 1))
            b38 sb6 b38 b22 bl
-           (:section s11) b22 b38 sb6 b38 fl6 b38 sbd6 b38
+           (:section s11) (:newline) b22 b38 sb6 b38 fl6 b38 sbd6 b38
            (:alt (:diplomatic sh5 b38 sb5)
                  (:critical fl6 b38 sb6)
                  (:coord-barre "MZ3 N12")

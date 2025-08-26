@@ -32,7 +32,7 @@
               (:de "terza più\\di maggiore")
               (:en "Terza più\\di maggiore")))
     (s9 (:alt (:it "Quinta\\perfetta")
-              (:de "quinta perfetta")
+              (:de "quinta\\perfetta")
               (:en "Quinta\\perfetta")))
     (s10 (:alt (:it "Sesta più\\di minore")
                (:de "sesta più\\di minore")
@@ -44,10 +44,10 @@
                (:de " \\ottava")
                (:en " \\Ottava"))))
    (:line-headings
-    (:alt (:it "Alamire sesto discendente con le consonanze di più e di meno [di] uno comma")
+    (:alt (:it "Alamire sesto con le consonanze discendenti di più e di meno [di] uno comma")
           (:de "Alamire sesta absteigend mit den um ein comma grösseren und kleineren Konsonanzen.")
           (:en "Alamire sesto descending with the consonances greater and less by a comma"))
-    (:alt (:it "Alamire sesto ascendente con le consonanze di più e di meno di uno comma")
+    (:alt (:it "Alamire sesto con le consonanze ascendenti di più e di meno di uno comma")
           (:de "Alamire sesta aufsteigend mit den um ein comma grösseren und kleineren Konsonanzen.")
           (:en "Alamire sesto ascending with the consonances greater and less by a comma"))))
   (:data

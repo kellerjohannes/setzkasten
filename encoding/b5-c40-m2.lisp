@@ -6,7 +6,7 @@
    (:title (:alt (:it "I semitoni delli ♭ molli ascendenti sono maggiori,\\e discendenti dalle corde mobili sono minori")
                  (:de "Die semitoni der aufsteigenden ♭ molli sind maggiori\\und absteigend von den bewegbaren corde sind sie minori.")
                  (:en "The semitoni of the ascending ♭ molli are maggiori,\\and the descending from the mobile corde are minori")))
-   (:section-captions
+   (:section-headings
     (s1 (:alt (:it "Semitono\\maggiore")
               (:de "semitono\\maggiore")
               (:en "Semitono\\maggiore")))
@@ -66,7 +66,7 @@
            (:section s2) b38 fl3 b22 sb3 fl4 b22 sb4 b38 bl
            (:section s3) b38 sb4 b22 fl5 b22 sb5 b38 bl
            (:section s4) b38 sb5 fl6 sb6 b38 bl
-           (:section s5) b38 sb7 b22 fl8 b22 sb8 b38 bl
+           (:section s5) (:newline) b38 sb7 b22 fl8 b22 sb8 b38 bl
            (:section s6) b38 sb8 b22 fl9 b22 sb9 b38 b22 bl
            (:section s7) b38 b22 sb9 fl10 b22 sb10 b38 bl)
    (:text 120 58
@@ -90,7 +90,7 @@
            (:section s9) b22 b22 sb8 b38 fl8 b38 sb8 b38 bl
            (:section s10) b38 sb6 b22 fl6 b22 sb6 b38 bl
            (:section s11) b22 sb5 b22 fl5 sb5 b22 bl
-           (:section s12) b22 b22 sb4 b22 fl4 b22 sb4 b38 bl
+           (:section s12) (:newline) b22 b22 sb4 b22 fl4 b22 sb4 b38 bl
            (:section s13) b38 sb3 b22 fl3 b22 sb3 b38 bl
            (:section s14) b38 sb2 b38 fl2 b38 sb2 b22 bl)
    (:text 70 58

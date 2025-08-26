@@ -6,7 +6,7 @@
    (:title (:alt (:it "Questi sono i toni e semitoni cromatici\\con i diesis cromatici, ascendenti e discendenti,\\in secondo e terzo ordine")
                  (:de "Dies sind die chromatischen toni und semitoni\\mit den diesis cromatici, aufsteigend und absteigend,\\im secondo und terzo ordine.")
                  (:en "These are the chromatic toni and semitoni\\with the diesis cromatici, ascending and descending,\\in the secondo and terzo ordine")))
-   (:section-captions
+   (:section-headings
     (s1 (:alt (:it "Tono\\accidentale")
               (:de "tono\\accidentale")
               (:en "Tono\\accidentale")))

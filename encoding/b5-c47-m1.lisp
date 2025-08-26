@@ -6,7 +6,7 @@
    (:title (:alt (:it "Questi sono i toni e semitoni cromatici enarmonici in quinto et in terzo ordine")
                  (:de "Dieses sind die toni und semitoni cromatici enarmonici im quinto und im terzo ordine.")
                  (:en "These are the toni and semitoni cromatici enarmonici in the quinto and in the terzo ordine")))
-   (:section-captions
+   (:section-headings
     (s1 (:alt (:it "Tono\\accidentale\\enarmonico")
               (:de "tono\\accidentale\\enarmonico")
               (:en "Tono\\accidentale\\enarmonico")))

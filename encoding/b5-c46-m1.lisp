@@ -6,7 +6,7 @@
    (:title (:alt (:it "Questi sono i toni e semitoni naturali enarmonici in quarto ordine")
                  (:de "Dies sind die toni und semitoni naturali enarmonici im quarto ordine.")
                  (:en "These are the toni and semitoni naturali enarmonici in the quarto ordine")))
-   (:section-captions
+   (:section-headings
     (s1 (:alt (:it "Tono\\naturale et\\accidentale")
               (:de "tono\\naturale und\\accidentale")
               (:en "Tono\\naturale and\\accidentale")))

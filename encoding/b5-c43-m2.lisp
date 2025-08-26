@@ -3,7 +3,13 @@
    (:alt-name "m5.043")
    (:comment "q021_s242, origin: 1068")
    (:creator "Vicentino21 / Johannes Keller")
-   (:section-captions
+   (:title (:alt (:it "[I toni che non sono del tutto mobili,\\né del tutto immobili, alzati una quinta]")
+                 ;; AS und MK: neu übersetzen
+                 ;;
+                 ;; OPEN
+                 (:de "")
+                 (:en "")))
+   (:section-headings
     (s1 (:alt (:it "Semitono\\naturale")
               (:de "semitono\\naturale")
               (:en "Semitono\\naturale")))
