@@ -3,7 +3,7 @@
    (:alt-name "m5.082")
    (:comment "q021_s263, rotation: -0.31, origin: 548; q021_s264, rotation: 1.18, origin: 898")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Regola di ritrovare le sette ottave sopra Elami secondo,\\con li sottoscritti esempi")
+   (:title (:alt (:it "Regola di ritrovare le sette ottave sopra Elami secondo,\\con li sottoscritti essempi")
                  (:de "Methode, die sieben ottave über Elami terzo zu finden,\\mit den unten geschriebenen Beispielen.")
                  (:en "Rule for finding the seven ottave on Elami secondo,\\with the examples written below")))
    (:section-headings

@@ -11,6 +11,8 @@
 ;; Diese ottave sollen modern gesetzt und im Kapitelkommentar hinterlegt werden (LC ist
 ;; einverstanden).
 ;;
+;; LC: Es wäre auch sinnvoll, dieses Beispiel im Haupttext einzufügen. Idealerweise dann mit einer durchgehenden Nummerierung der Notenbeispiele.
+;;
 ;; OPEN
 
 `((:header
@@ -19,8 +21,8 @@
    (:comment "q021_s265, rotation: -0.97, origin: 479; q021_s266, rotation: 0.82, origin: 987")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "[Regola di ritrovare le sette ottave sopra Gsolreut quinto,\\con li sottoscritti esempi]")
-                 (:de "[Methode, die sieben ottave über Gsolreut quinto zu finden,\\mit den unten geschriebenen Beispielen.]")
-                 (:en "[Rule for finding the seven ottave on Gsolreut quinto,\\with the examples written below")))
+                 (:de "Methode, die sieben ottave über Gsolreut quinto zu finden,\\mit den unten geschriebenen Beispielen.")
+                 (:en "Rule for finding the seven ottave on Gsolreut quinto,\\with the examples written below")))
    (:section-headings
     (s1 (:alt (:it "Prima ottava")
               (:de "erste ottava")

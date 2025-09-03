@@ -3,7 +3,7 @@
    (:alt-name "m5.64")
    (:comment "q021_s257, rotation: -0.71, origin: 511")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Regola di ritrovare le sette ottave sopra Gsolreut primo,\\con i sottoscritti esempi")
+   (:title (:alt (:it "Regola di ritrovare le sette ottave sopra Gsolreut primo,\\con i sottoscritti essempi")
                  (:de "Methode, die sieben ottave Gsolreut primo zu finden,\\mit den unten geschriebenen Beispielen.")
                  (:en "Rule for finding the seven ottave on Gsolreut primo,\\with the examples written below")))
    (:section-headings

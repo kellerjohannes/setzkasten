@@ -4,8 +4,8 @@
    (:comment "q021_s264, rotation: 1.18, origin: 889")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "[Regola di ritrovare le sette ottave sopra Are quinto,\\con li sottoscritti esempi]")
-                 (:de "[Methode, die sieben ottave über Are quinto zu finden,\\mit den unten geschriebenen Beispielen.]")
-                 (:en "[Rule for finding the seven ottave on Are quinto,\\with the examples written below]")))
+                 (:de "Methode, die sieben ottave über Are quinto zu finden,\\mit den unten geschriebenen Beispielen.")
+                 (:en "Rule for finding the seven ottave on Are quinto,\\with the examples written below")))
    (:section-headings
     (s1 (:alt (:it "Prima ottava")
               (:de "erste ottava")

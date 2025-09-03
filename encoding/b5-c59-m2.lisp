@@ -3,6 +3,12 @@
    (:alt-name "m5.089")
    (:comment "q021_s271, rotation: 0, origin: 1559; q021_s272, rotation: 0, origin: 921; q021_s272, rotation: 0.54, origin: 561; q021_s274, rotation: -0.72, origin: 921")
    (:creator "Vicentino21 / Johannes Keller")
+   (:title (:alt (:it "[Esempio delle note scritte secondo\\l'uso diatonico enarmonico nelle tre chiavi]")
+                 ;; AS, MK: Neu zu übersetzen.
+                 ;;
+                 ;; OPEN
+                 (:de "")
+                 (:en "")))
    (:section-headings
     (s1 (:alt (:it "Diatonico naturale primo")
               (:de "erste [Reihe] diatonico naturale")

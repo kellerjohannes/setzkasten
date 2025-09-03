@@ -3,7 +3,7 @@
    (:alt-name "m5.69")
    (:comment "q021_259, rotation: 0, origin: 588")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Regola di ritrovare le sette ottave sopra Elami quarto,\\con i sottoscritti esempi")
+   (:title (:alt (:it "Regola di ritrovare le sette ottave sopra Elami quarto,\\con i sottoscritti essempi")
                  (:de "Methode, die sieben ottave über Elami quarto zu finden,\\mit den unten geschriebenen Beispielen.")
                  (:en "Rule for finding the seven ottave on Elami quarto,\\with the examples written below")))
    (:section-headings

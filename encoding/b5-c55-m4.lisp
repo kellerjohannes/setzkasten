@@ -3,7 +3,7 @@
    (:alt-name "m5.075")
    (:comment "q021_s261, rotation: -0.44, origin: 496")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Regola di ritrovare le sette ottave sopra Dsolre secondo,\\con li sottoscritti esempi")
+   (:title (:alt (:it "Regola di ritrovare le sette ottave sopra Dsolre secondo,\\con li sottoscritti essempi")
                  (:de "Methode, die sieben ottave über Dsolre secondo zu finden,\\mit den unten geschriebenen Beispielen.")
                  (:en "Rule for finding the seven ottave on Dsolre secondo,\\with the examples written below")))
    (:section-headings

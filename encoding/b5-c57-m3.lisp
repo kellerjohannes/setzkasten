@@ -4,8 +4,8 @@
    (:comment "q021_s265, rotation: -0.97, origin: 459")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "[Regola di ritrovare le sette ottave sopra Dlasolre quinto,\\con li sottoscritti esempi]")
-                 (:de "[Methode, die sieben ottave über Dlasolre quinto zu finden,\\mit den unten geschriebenen Beispielen.]")
-                 (:en "[Rule for finding the seven ottave on Dlasolre quinto,\\with the examples written below")))
+                 (:de "Methode, die sieben ottave über Dlasolre quinto zu finden,\\mit den unten geschriebenen Beispielen.")
+                 (:en "Rule for finding the seven ottave on Dlasolre quinto,\\with the examples written below")))
    (:section-headings
     (s1 (:alt (:it "Prima ottava")
               (:de "erste ottava")

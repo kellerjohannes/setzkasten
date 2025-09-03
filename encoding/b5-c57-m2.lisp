@@ -3,7 +3,7 @@
    (:alt-name "m5.085")
    (:comment "q021_s265, rotation: -0.97, origin: 459")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Regola di ritrovare le sette ottave sopra Bmi quinto,\\con li sottoscritti esempi")
+   (:title (:alt (:it "Regola di ritrovare le sette ottave sopra Bmi quinto,\\con li sottoscritti essempi")
                  (:de "Methode, die sieben ottave über Bmi quinto zu finden,\\mit den unten geschriebenen Beispielen.")
                  (:en "Rule for finding the seven ottave on Bmi quinto,\\with the examples written below")))
    (:section-headings

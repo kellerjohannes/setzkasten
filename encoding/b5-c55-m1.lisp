@@ -3,7 +3,7 @@
    (:alt-name "m5.072")
    (:comment "q021_s260, rotation: 0.65, origin: 909")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Regola di ritrovare le sette ottave sopra Are secondo,\\con li sottoscritti esempi")
+   (:title (:alt (:it "Regola di ritrovare le sette ottave sopra Are secondo,\\con li sottoscritti essempi")
                  (:de "Methode, die sieben ottave über Are secondo zu finden,\\mit den unten geschriebenen Beispielen.")
                  (:en "Rule for finding the seven ottave on Are secondo,\\with the examples written below")))
    (:section-headings

@@ -3,6 +3,12 @@
    (:alt-name "m5.090")
    (:comment "q021_s275, rotation: 0.82, origin: 523; q021_s276, rotation: -1, origin: 807; q021_s277, rotation: 0.3, origin: 487; q021_s278, rotation: -1.01, origin: 800")
    (:creator "Vicentino21 / Johannes Keller")
+   (:title (:alt (:it "[Esempio delle note scritte secondo l'uso cromatico e\\cromatico enarmonico nelle tre chiavi]")
+                 ;; AS, MK: Neu zu übersetzen.
+                 ;;
+                 ;; OPEN
+                 (:de "")
+                 (:en "")))
    (:section-headings
     (s1 (:alt (:it "Primo ordine diatonico")
               (:de "erste Reihe diatonico")
@@ -631,36 +637,17 @@
                  (:alternative-layout (:newline))
                  (:flag :layout) (:id 0))
            (:f-clef)
-           (:alt (:diplomatic max7 fclef7)
-                 (:critical max7 fclef7)
+           (:alt (:diplomatic max7 fclef7 sh1 sb0 sh1 sb1 sh2 sb2 sh3 sb3 sh4 sb4 sh5 sb5 sh6 sb6 sh5 sb7 sh8 sb8 sh9 sb9 sb10)
+                 (:critical max7 fclef7 b38 sb0 b38 sb1 b38 sb2 b38 sb3 b38 sb4 b38 sb5 b38 sb6 b38 sb7 b38 sb8 b38 sb9 b38 sb10)
                  (:coord-barre "MZ30 (S4 MZ1)")
                  (:coord-norm "G55")
                  ;; JK & LC: Dieses Beispiel soll ohne Kreuze transkribiert werden. Der Kommentar
                  ;; ist entsprechend anzupassen.
                  ;;
-                 ;; OPEN
-                 (:comment "An dieser Stelle ist der _settimo ordine_ ohne Vorzeichen zu erwarten. Falls er ergänzt wird, sollte er mit B♭ enden, um die _fa super la_-Situation zu spiegeln.")
+                 ;; DONE
+                 (:comment "In allen Exemplaren: Vor allen Notenköpfen ausser dem letzten steht ein ♯. Vor dem letzten Notenkopf steht ein ♭.")
                  (:flag :ready) (:id 11))
-           (:alt (:diplomatic sh1)
-                 (:critical sh0)
-                 (:coord-barre "MZ30 (S4 MZ1) N1")
-                 (:coord-norm "G55 N1")
-                 (:comment "In allen Exemplaren: Das ♯ steht eine Position höher.")
-                 (:flag :ready) (:id 12))
-           sb0 sh1 sb1 sh2 sb2 sh3 sb3 sh4 sb4 sh5 sb5 sh6 sb6
-           (:alt (:diplomatic sh5)
-                 (:critical sh7)
-                 (:coord-barre "MZ30 (S4 MZ1) N8")
-                 (:coord-norm "G55 N8")
-                 (:comment "In den Exemplaren q002 q003 q004 q005 q009 q010 q017 q021 q032 q034 q037 q038 q039 q040 q042 q049 q051 q052 q058 q059 q065 q070 q076 q078 q079 und q081 wurde das ♯ zwei Positionen tiefer gedruckt.")
-                 (:flag :ready) (:id 13))
-           sb7 sh8 sb8 sh9 sb9
-           (:alt (:diplomatic fl10 sb10)
-                 (:critical sb10)
-                 (:coord-barre "MZ30 (S4 MZ1) N11")
-                 (:coord-norm "G55 N11")
-                 (:comment "In allen Exemplaren: B♭, unplausibel. Die regelmässige Korrektur ist B♯, die erniedrigte Stufe im Sinn eines _fa super la_ ist B♮, wie es für alle anderen _settimo ordine_ dieses Beispiels der Fall ist. Das ♭ könnte als Auflösung des ♯ vor der letzten Note interpretiert werden. Vergleiche auch G62, wo die gleiche Skala wie G55 abgedruckt ist, allerdings mit B♯ als oberste Note.")
-                 (:flag :ready) (:id 14)))
+           )
    (:text 110 58
      (232 nil "Settimo ordine ᴄromatico Enar."))
    ;; MZ31
@@ -758,10 +745,10 @@
            (:section s62)
            (:f-clef) max7 fclef7 sh0 sb0 sh1 sb1 sh2 sb2 sh3 sb3 sh4 sb4 sh5 sb5 sh6 sb6 sh7 sb7 sh8 sb8 sh9 sb9
            (:alt (:diplomatic sh10 sb10)
-                 (:critical sh10 sb10)
+                 (:critical sb10)
                  (:coord-barre "MZ37 (S4 MZ8) N11")
                  (:coord-norm "G62 N11")
-                 (:comment "Kein Eingriff. B♯ ist unregelmässig, weil in diesem Beispiel alle anderen Skalen im _settimo ordine_ (G55-G63) einen _semitono maggiore_ zur letzten Note haben. Vergleiche G55.")
+                 (:comment "In allen Exemplaren: B♯. B♯ ist unregelmässig, weil in diesem Notenbeispiel alle anderen Skalen des _settimo ordine_ (G55-G63) einen _semitono maggiore_ zur letzten Note haben.")
                  (:flag :ready) (:id 22))
            b22)
    (:text 110 58

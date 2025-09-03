@@ -3,9 +3,9 @@
    (:alt-name "m5.71")
    (:comment "q021_259, rotation: 0, origin: 584")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Regola di ritrovare le sette ottave sopra Gsolreut [quarto],\\con i sottoscritti esempi")
+   (:title (:alt (:it "Regola di ritrovare le sette ottave sopra Gsolreut [quarto],\\con i sottoscritti essempi")
                  (:de "Methode, die sieben ottave über Gsolreut quarto zu finden,\\mit den unten geschriebenen Beispielen.")
-                 (:en "Rule of finding the seven ottave on Gsolreut [quarto],\\with the examples written below")))
+                 (:en "Rule of finding the seven ottave on Gsolreut quarto,\\with the examples written below")))
    (:section-headings
     (s1 (:alt (:it "Prima ottava")
               (:de "erste ottava")

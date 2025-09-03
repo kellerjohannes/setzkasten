@@ -1,9 +1,13 @@
+;; JK: F5-Schlüssel fehlt in der originalen Schlüsselung!
+;;
+;; OPEN
+
 `((:header
    (:filename "b5-c59-m1")
    (:alt-name "m")
    (:comment "q021_s268, rotation: 0.95, origin: 1000; q021_s269, rotation: 0.96, origin: 477; q021_s270, rotation: 0, origin: 964; q021_s271, rotation: 0, origin: 534")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio delle note scritte secondo\\l'uso naturale nelle tre chiavi")
+   (:title (:alt (:it "Essempio delle note scritte secondo\\l'uso naturale nelle tre chiavi")
                  (:de "Beispiel der Noten geschrieben nach\\dem Brauch des naturale in den drei Schlüsseln.")
                  (:en "Example of the notes written according\\to the naturale use in the three chiavi")))
    (:section-headings

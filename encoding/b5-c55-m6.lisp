@@ -3,9 +3,9 @@
    (:alt-name "m5.077")
    (:comment "q021_s261, rotation: -0.44, origin: 496; q021_s262, rotation: 0.68, origin: 957")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Regola di ritrovare le sette ottave sopra Ffaut secondo,\\con li sottoscritti esempi")
-                 (:de "Methode, die sieben ottave über Ffaut secondo zu finden,\\mit den unten geschriebenen Beispielen.")
-                 (:en "Rule for finding the seven ottave on Ffaut secondo,\\with the examples written below")))
+   (:title (:alt (:it "Regola di ritrovare le sette ottave sopra Ffaut secondo [in terzo ordine],\\con li sottoscritti essempi")
+                 (:de "Methode, die sieben ottave über Ffaut secondo in terzo ordine zu finden,\\mit den unten geschriebenen Beispielen.")
+                 (:en "Rule for finding the seven ottave on Ffaut secondo in terzo ordine,\\with the examples written below")))
    (:section-headings
     (s1 (:alt (:it "Prima ottava")
               (:de "erste ottava")

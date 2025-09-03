@@ -3,6 +3,12 @@
    (:alt-name "m5.092")
    (:comment "q021_s282, rotation: 0, origin: 820; q021_s283, rotation: 0.65, origin: 511; q021_s284, rotation: 0, origin: 810; q021_s285, rotation: 1.3, origin: 546")
    (:creator "Vicentino21 / Johannes Keller")
+   (:title (:alt (:it "[Esempio delle note scritte secondo l'uso\\cromatico enarmonico nelle tre chiavi]")
+                 ;; AS, MK: Neu zu übersetzen.
+                 ;;
+                 ;; OPEN
+                 (:de "")
+                 (:en "")))
    (:section-headings
     (s1 (:alt (:it "Primo ordine naturale diatonico")
               (:de "erste Reihe naturale diatonico")
@@ -590,12 +596,12 @@
           (1370 nil "Seſto ordine ᴄro.Enar."))
    ;; MZ25
    (:music 2373
-           (:section s42) cclef7 b22
-           (:alt (:diplomatic fl1 sbd1 b22 fl2 b22 sbd2 b22 sbd3 b22 fl4 b22 sbd4 b22 fl5 b22 sbd5 b22 sbd6 b22 fl7 sbd7 b22 fl8 sbd8 fl9 sbd9 sbd10)
-                 (:critical sbd0 b22 sbd1 b22 sbd2 b22 sbd3 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b22 sbd10)
+           (:section s42)
+           (:alt (:diplomatic cclef7 b22 fl1 sbd1 b22 fl2 b22 sbd2 b22 sbd3 b22 fl4 b22 sbd4 b22 fl5 b22 sbd5 b22 sbd6 b22 fl7 sbd7 b22 fl8 sbd8 fl9 sbd9 sbd10)
+                 (:critical cclef7 b22 fl0 sbd0 b22 fl1 sbd1 b22 fl2 b22 sbd2 b22 fl3 sbd3 b22 fl4 b22 sbd4 b22 fl5 b22 sbd5 b22 fl6 sbd6 b22 fl7 sbd7 b22 fl8 sbd8 fl9 sbd9 b22 sbd10)
                  (:coord-barre "MZ25 (S3 MZ6) N1-11")
                  (:coord-norm "G42 N1-11")
-                 (:comment "In allen Exemplaren: Ḋ♭ Ė♭ Ḟ Ġ♭ Ȧ♭ Ḃ♮ Ċ♭ Ḋ♭ Ė♭ Ḟ. Diese Sequenz mit dem Grundton Ḋ♭ ist bereits in G38 vertreten, wobei das Ḃ♮ zu einem Ḃ♭ korrigiert und ein Ġ♭ als letzte Note ergänzt werden muss. Um diese Redunanz zu vermeiden, bieten sich zwei Korrekturen für G42 an: Ċ Ḋ Ė Ḟ Ġ Ȧ Ḃ♮ Ċ Ḋ Ė Ḟ, was alle Noten ausser der 3., 6. und 10. korrigiert und die letzte ergänzt (gewählt für die kritische Edition) und Ċ♭ Ḋ♭ Ė♭ Ḟ♭ Ġ♭ Ȧ♭ Ḃ♭ Ċ♭ Ḋ♭ Ė♭ E♯/Ḟ♭, was ein F3-Schlüssel und eine Korrektur der 3., 6. und 10. Note, sowie die Ergänzung der letzten Note erfordert.")
+                 (:comment "In allen Exemplaren: Ḋ♭ Ė♭ Ḟ Ġ♭ Ȧ♭ Ḃ♮ Ċ♭ Ḋ♭ Ė♭ Ḟ. Diese Sequenz mit dem Grundton Ḋ♭ ist bereits in G38 vertreten, wobei das Ḃ♮ zu einem Ḃ♭ korrigiert und ein Ġ♭ als letzte Note ergänzt werden muss. Um diese Redunanz zu vermeiden, bieten sich zwei Korrekturen für G42 an: Ċ Ḋ Ė Ḟ Ġ Ȧ Ḃ♮ Ċ Ḋ Ė Ḟ (Skala auf einem ergänzten Grundton Ċ), was alle Noten ausser der 3., 6. und 10. korrigiert und die letzte ergänzt (gewählt für die Audio/Video-Aufnahme) und Ċ♭ Ḋ♭ Ė♭ Ḟ♭ Ġ♭ Ȧ♭ Ḃ♭ Ċ♭ Ḋ♭ Ė♭ Ḟ (Skala auf einem ergänzten Grundton Ċ♭, gewählt für das Notenbild der kritischen Edition).")
                  (:flag :ready) (:id 15))
            b22
            (:section s51) cclef7 b38 sbd0 b22 sbd1 b22 fl2 sbd2 b22 sbd3 b22 sbd4 b22 fl5 b22 sbd5 b22 fl6 b22 sbd6 b22 sbd7 b22 sbd8 b22 fl9 b22 sbd9 b22 sbd10 b22 bl)
@@ -710,10 +716,10 @@
            (:section s60)
            cclef7
            (:alt (:diplomatic b22 fl0 b22 sbd0 b22 fl1 b22 sbd1 fl2 sbd2 sbd3 fl4 sbd4 fl5 sbd5 b22 fl6 sbd6 sh6 sb6 fl8 sb8 fl9 sb9 sh9 sb9 b38)
-                 (:critical sbd0 b22 sbd1 b22 sbd2 b22 fl4 sb4 b22 sbd4 b22 sbd5 b22 sbd6 b22 sbd7 b22 sbd8 b22 sbd9 b22 fl11 sb11)
+                 (:critical b22 fl0 b22 sbd0 b22 fl1 b22 sbd1 fl2 sbd2 sbd3 fl4 sbd4 fl5 sbd5 b22 fl6 sbd6 sh6 sb6 fl8 sbd8 fl9 sbd9 sh9 sb9 b38)
                  (:coord-barre "MZ35 (S4 MZ6)")
                  (:coord-norm "G60")
-                 (:comment "In allen Exemplaren: Die Tonfolge lautet Ċ♭ Ḋ♭ Ė♭ Ḟ Ġ♭ Ȧ♭ Ḃ♭ B♯ D♭ E♭ E♯, was eine Redundanz zu G57 in b5-c59-m3 ist, wenn drittletzte Note zu Ḋ♭ und die zweitletzte Note zu Ė♭ korrigiert wird, wie es in der unteren Oktave der Skala (zweite und dritte Note) zu sehen ist.")
+                 (:comment "In allen Exemplaren: die dritt- und die zweitletzte Note ist ohne enharmonischen Punkt notiert. Damit entsteht eine klangliche Redundanz zu G57 in b5-c59-m3. Um diese zu vermeiden, wird hier eine alternative Tonfolge vorgeschlagen (für die Audio/Video-Aufnahme gewählt): Ċ Ḋ Ė ♭G Ġ Ȧ Ḃ♮ Ċ Ḋ Ė ♭G.")
                  (:flag :ready) (:id 20))
            bl)
    (:text 110 58

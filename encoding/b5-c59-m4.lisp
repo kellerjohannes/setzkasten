@@ -3,6 +3,12 @@
    (:alt-name "m5.091")
    (:comment "q021_s278, rotation: -0.86, origin: 2000; q021_s279, rotation: 0.88, origin: 480; q021_s280, rotation: 0, origin: 970; q021_s281, rotation: 0.68, origin: 511")
    (:creator "Vicentino21 / Johannes Keller")
+   (:title (:alt (:it "[Esempio delle note scritte secondo l'uso cromatico e\\cromatico enarmonico nelle tre chiavi]")
+                 ;; AS, MK: Neu zu übersetzen.
+                 ;;
+                 ;; OPEN
+                 (:de "")
+                 (:en "")))
    (:section-headings
     (s1 (:alt (:it "Primo ordine diatonico naturale")
               (:de "erste Reihe diatonico naturale")
