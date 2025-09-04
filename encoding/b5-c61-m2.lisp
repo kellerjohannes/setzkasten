@@ -6,7 +6,7 @@
    ;; JK: Dieser Titel soll im Haupttext erscheinen (im Moment dort nicht codiert), und im
    ;; Musikbeispiel gelöscht werden. Das erfordert Rolf.
    ;;
-   ;; OPEN
+   ;; DONE
 
    ;; (:title (:alt (:it "Questi sono toni minori accidentali composti di due semitoni minori,\\o di uno semitono maggiore, et di uno diesis minore\\che sono di proportione sesquiduodecima,\\come sono da 12 a 13")
    ;;               (:de "Dies sind alle toni minori accidentali, die aus zwei semitoni minori zusammengesetzt sind,\\oder aus einem semitono maggiore und einem diesis minore\\, die von der Proportion sesquiduodecima sind,\\wie es von 12 zu 13 ist.")

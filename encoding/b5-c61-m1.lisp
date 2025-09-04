@@ -6,7 +6,7 @@
    ;; JK: Dieser Titel soll im Haupttext erscheinen (im Moment dort nicht codiert), und im
    ;; Musikbeispiel gelöscht werden. Das erfordert Rolf.
    ;;
-   ;; OPEN
+   ;; DONE
 
    ;; (:title (:alt (:it "Questi sono tutti toni giusti naturali et accidentali\\di proportione da 8 a 9 et da 9 a 10\\di sesquiottava, et di sesquinona")
    ;;               (:de "Dies sind alle toni giusti naturali und accidentali\\der Proportion 8 zu 9 und von 9 zu 10\\ der sesquiottava und der sesquinona.")

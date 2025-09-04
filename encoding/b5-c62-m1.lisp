@@ -89,7 +89,7 @@
    ;; JK: Dieser Titel soll im Haupttext erscheinen (im Moment dort nicht codiert), und im
    ;; Musikbeispiel gelöscht werden. Das erfordert Rolf.
    ;;
-   ;; OPEN
+   ;; DONE
 
    ;; (:line-headings
    ;;  (:alt (:it "La proportione della terza minore si dimanda sesquiquinta come è da 5 a 6.\\La proportione della terza minore con la sua propinqua, è come da 4 e mezzo a 5 e mezzo.\\Questa è inrationale.")
