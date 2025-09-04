@@ -10,6 +10,8 @@
                  ;; JK: Hatte ich bereits diskutiert, Konsens war: 'composto e incomposto' beziehen
                  ;; sich auf 'grado o salto', nicht auf 'terza'. Akzeptabel?
                  ;;
+                 ;; Luigi: ja, es ist der salto 'composto & incomposto'.
+                 ;;
                  ;; DONE
                  (:de "Beispiel des Tonschritts oder Sprungs der terza manco di minore\\oder minima, composto und incomposto.")
                  ;; JK: Deutsch in Absprache mit Martin angepasst, italienische Endungen auf 'grado'
@@ -17,7 +19,6 @@
                  ;;
                  ;; DONE
                  (:en "Example of the composto and incomposto step or leap\\of the terza manco di minore, or minima")))
-                 ;; Luigi: Es ist der salto 'composto & incomposto'
    (:section-captions
     (s1 (:alt (:it "grado di terza\\minima\\incomposto")
               (:de "Tonschritt\\incomposto\\der terza\\minima")

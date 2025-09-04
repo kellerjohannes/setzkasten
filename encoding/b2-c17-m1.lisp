@@ -25,16 +25,18 @@
     ;; AS: Kommentar David: this should really be "maggiori and minore" because there are 2 maggiori
     ;; and only 1 minore.
     ;;
+    ;; LC: ok!
+    ;;
     ;; OPEN
-    ;; Luigi: ok!
     (s6 (:alt (:it "differenti\\minori\\et maggiore")
               (:de "verschiedene\\minori\\und mmagiore")
               (:en "different\\minori\\and maggiore")))))
   ;; AS: Kommentar David: this should really be "minori and maggiore" because there are 2 minori and
   ;; only 1 maggiore.
   ;;
+  ;; LC: ok!
+  ;;
   ;; OPEN
-  ;; LUIGI: ok!
   (:data
    (:text 90 58
      (440 1051 "Eſſempio delle terze ſimili et delle differenti."))

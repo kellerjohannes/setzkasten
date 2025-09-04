@@ -14,9 +14,10 @@
                  ;; JK an Anne: Luigi ist mit der von mir vorgeschlagenen Idealisierung
                  ;; einverstanden. Würdest du das im Englischen noch anpassen wollen, also "Example
                  ;; of the composti and incomposti steps..."? Ich habe diese Anpassung
-                 ;; implementiert, du brauchst du zu kontrollieren, ob du damit einverstanden
+                 ;; implementiert, du brauchst nur zu kontrollieren, ob du damit einverstanden
                  ;; bist. Wenn ja, brauchst du nicht zu tun.
                  ;;
+                 ;; ANNE
                  ;; OPEN
                  (:de "Beispiel der Tonschritte der terza più di minore, composti und incomposti.")
                  ;; JK: Deutsch angepasst.

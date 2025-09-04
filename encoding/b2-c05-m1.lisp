@@ -19,7 +19,7 @@
     (s2 (:alt (:it "non troppo [buona]")
               (:de "nicht so [gut]")
               (:en "not too [good]")))
-    (s3 (:alt (:it "buona et à 4. [voci] meglio")
+    (s3 (:alt (:it "buona et à quattro [voci] meglio")
               (:de "gut und mit vier [Stimmen] besser")
               (:en "good and in four [voci] better")))
     (s4 (:alt (:it "buona")

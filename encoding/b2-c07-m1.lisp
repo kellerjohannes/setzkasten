@@ -9,9 +9,11 @@
                  ;; with him there, and that the other examples are 2 voci within a larger,
                  ;; undefined constellation.
                  ;;
+                 ;; LC: Ich bin mit David einverstanden: 'à tre uoci' gehört nicht zum Titel des
+                 ;; Musikspiels. Es ist eine Information zur Besetzung der Musik (vgl. Kap. 8)
+                 ;;
                  ;; GROUP !!
                  ;; OPEN
-                 ;; LUIGI: Ich bin mit David einverstanden: 'à tre uoci' gehört nicht zum Titel des Musikspiels. Es ist eine Information zur Besetzung der Musik (vgl. Kap. 8)
                  (:de "Beispiel der Art und Weise, von der quarta zur quinta,\\synkopiert und nicht synkopiert, und von der quinta zur quarta zu setzen,\\mit drei Stimmen")
                  (:en "Example of the method of composing from the quarta to the quinta,\\syncopata and not syncopata, and from the quinta to the quarta\\in three voci")))
    (:voice-labels
@@ -68,11 +70,11 @@
     (s3 v1 "treble_8")))
   (:data
    (:text 70 58
-     (0 2227 "Eſſempio ſopra il modo di comporre di 4. in 5. ſincopata,et non ſincop.et di quinta in quarta."))
+          (0 2227 "Eſſempio ſopra il modo di comporre di 4. in 5. ſincopata,et non ſincop.et di quinta in quarta."))
    (:text 90 58
-     (332 nil "à")
-     (878 nil "tre")
-     (1450 nil "uoci"))
+          (332 nil "à")
+          (878 nil "tre")
+          (1450 nil "uoci"))
    (:music 2227
            (:section s1)
            (:voice v1) cclef5 b22 fl4 (:key-signature nil nil nil nil nil nil :flat) b38 sb7 b38 sb8 b38 sb9 b38 bl
@@ -80,9 +82,9 @@
            (:voice v3) b38 b22 b38 (:f-clef) max7 fclef7 b22 fl3 b38 m9 dot10 b22 sm8 b38 m7 b38 m5d b22 fl6 b22 sb6 b38 bl b38 b22 b38 b38 b38 b38 b22 b38)
    (:vspace 30)
    (:text 90 58
-     (171 nil "Soprano")
-     (695 nil "Tenore")
-     (1459 nil "Baſſo"))
+          (171 nil "Soprano")
+          (695 nil "Tenore")
+          (1459 nil "Baſſo"))
    (:music 2220
            (:section s2)
            (:voice v1) cclef7 (:key-signature nil nil nil nil nil nil nil) b38 sb7 b38 sb5 b22 bl
@@ -94,7 +96,7 @@
            (:voice v1) b38 cclef7 b38 sb1 b38 sb2 b38 bl
            (:voice v2) b38 cclef7 b38 sb4 b38 sb6 b38 bl b38 b38 b38 b38)
    (:text 70 58
-     (100 nil "Tenore")
-     (459 nil "ᴀlto")
-     (802 nil "ᴀlto")
-     (1139 nil "Tenore"))))
+          (100 nil "Tenore")
+          (459 nil "ᴀlto")
+          (802 nil "ᴀlto")
+          (1139 nil "Tenore"))))

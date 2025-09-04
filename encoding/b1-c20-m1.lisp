@@ -67,10 +67,9 @@
     ;; LC: Ich habe hier beide/both eingefügt
     ;;
     ;; JK: von der Gruppe zu bestätigen
+    ;; JK: kann Martin direkt entscheiden, per E-Mail angefragt.
     ;;
-    ;; GROUP
     ;; OPEN
-
     (s12 (:alt (:it "semitono minore\\et maggiore,\\accidentali incomposti")
                (:de "semitono minore\\und maggiore,\\[beide] accidentali incomposti")
                (:en "semitono minore\\and maggiore,\\[both] accidentali incomposti")))))

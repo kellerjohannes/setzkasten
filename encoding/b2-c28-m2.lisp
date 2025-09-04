@@ -81,7 +81,7 @@
            ;; aufgenommen.
            ;;
            ;; DONE
-           ;;
+
            ;; AS: Kommentar David: Nos. 42–49: I'm sure that the intention here is that there should
            ;; be a signature of a single flat in both voices.  In addition: No. 42 needs flats in
            ;; front of the E and A (NB the flat at A is currently missing); and No. 48 needs a flat

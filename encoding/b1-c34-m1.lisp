@@ -28,7 +28,10 @@
     ;; Anpassung geschah nach dem Lektorat der italienischen Texte durch Luigi, d.h. er muss das
     ;; nochmals final absegnen. Die Diskussion schliesse ist deshalb noch nicht.
     ;;
-    ;; LUIGI: Ich würde den Titel des Musikbeispiels nicht korrigieren, da 'composto & incomposto' auf 'gradi' sich beziehen.
+    ;; LC: Ich würde den Titel des Musikbeispiels nicht korrigieren, da 'composto & incomposto' auf
+    ;; 'gradi' sich beziehen.
+    ;;
+    ;; LUIGI
     ;; OPEN
     (s1 (:alt (:it "salto di più\\di quarta\\accidentale\\incomposta")
               (:de "Sprung di più\\di quarta\\accidentale\\incomposta")

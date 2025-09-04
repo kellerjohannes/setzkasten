@@ -20,7 +20,9 @@
     ;; kir: sehe ich auch so (und vermute generell, dass wir/ich an einigen Stellen 'kürzer'
     ;; übersetzen sollte ...)
     ;;
-    ;; GROUP
+    ;; JK: in der deutschen Übersetzung fehlen 'schritte' bzw. 'gradi' prinzipiell. So lassen?
+    ;;
+    ;; MARTIN
     ;; OPEN
     (s3 (:alt (:it "[grado] incitato\\e molle")
               (:de "incitato\\und molle")
@@ -35,7 +37,6 @@
               ;;
               ;; DONE
               (:de "incitati")
-              ;; LUIGI: Es fehlt 'gradi' in der D-Übersetzung
               (:en "incitati [steps]")))
     (s5 (:alt (:it "[grado] incitato\\e molle")
               (:de "incitato\\und molle")
@@ -51,11 +52,9 @@
               ;;
               ;; DONE
               (:de "incitati\\")
-              ;; LUIGI: Es fehlt 'gradi' in der D-Übersetzung
               (:en "incitati [steps]\\")))
     (s8 (:alt (:it "[grado] molle\\et incitato")
               (:de "molle\\und incitato")
-              ;; LUIGI: Es fehlt 'grado' in der D-Übersetzung
               (:en "molle and\\incitato [step]")))))
   (:data
    (:text 90 58

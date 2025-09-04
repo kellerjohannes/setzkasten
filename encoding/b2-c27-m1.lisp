@@ -21,7 +21,9 @@
    ;; wrongly – I think it's most likely that the type piece carrying the notehead was set
    ;; upside-down (the other possibility being that a C1 clef was intended instead of C2).
    ;;
-   ;; OPEN
+   ;; JK: ja.
+   ;;
+   ;; DONE
    (:voice-labels
     (s1 v1 (:alt (:it "Soprano")
                  (:de "Soprano")

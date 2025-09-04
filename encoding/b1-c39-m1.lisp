@@ -4,12 +4,14 @@
    (:comment "q021_s049, origin: 395")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio [del salto] della Quinta naturale incomposta.")
-                 (:de "Beispiel der quinta naturale incomposta.")
-                 (:en "Example of the quinta naturale incomposta")))
+                 (:de "Beispiel des Sprungs der quinta naturale incomposta.")
+                 (:en "Example of the leap of the quinta naturale incomposta")))
    ;; LUIGI: Es fehlt hier auch 'del salto' (vgl. Titel des Kapitels!). In den Übersetzungen zu
    ;; ergänzen!
    ;;
-   ;; OPEN
+   ;; JK: habe ich ergänzt.
+   ;;
+   ;; DONE
    (:section-headings
     (s1 (:alt (:it "prima quinta")
               (:de "erste quinta")
@@ -33,10 +35,14 @@
     ;;
     ;; JK: gut, das ist mir tatsächlich lieber so, in diesem Sinn übergehen wir den Kommentar von
     ;; David und ich schliesse die Diskussion.
-
-    ;; LUIGI: Es ist eine Ergänzung. Es sollten zwischen [] sein! In den Übersetzungen anzupassen. Ich würde auch den Originaltext behalten!
     ;;
-    ;; OPEN
+    ;; LUIGI: Es ist eine Ergänzung. Es sollten zwischen [] sein! In den Übersetzungen
+    ;; anzupassen. Ich würde auch den Originaltext behalten!
+    ;;
+    ;; JK: habe ich für die italienische Textfassung ergänzt, in den Übersetzungen wie üblich jedoch
+    ;; nicht.
+    ;;
+    ;; DONE
     (s5 (:alt (:it "[prima quinta]")
               (:de "erste quinta")
               (:en "first quinta")))

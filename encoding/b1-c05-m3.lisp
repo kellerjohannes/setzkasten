@@ -2,6 +2,9 @@
 ;; möchte die zweizeilige Anordnung der Silben (wie im Original gedruckt) aufrecht erhalten. Zur
 ;; Zeit besteht kein Konsens.
 ;;
+;; JK: Die neue Darstellung muss von der Gruppe bestätigt werden. JK ist der Ansicht, dass dies die
+;; bisher beste Variante der Fassung in moderner Notenschrift ist.
+;;
 ;; GROUP
 ;; OPEN
 
@@ -103,13 +106,13 @@
   (:data
    (:text 70 58 (231 1648 "ᴅimoſtratione della ᴍano ᴄromatica con li ſemitoni maggiori aſcendenti."))
    (:text 100 58
-     (42 nil "ᴀ la mire")
-     (287 nil "ʙ fa ♭ mi")
-     (622 nil "ʙ et ᴄ")
-     (866 nil "ᴄ ſol fa ut")
-     (1202 nil "ᴅ la ſol re")
-     (1527 nil "ᴇ la mi")
-     (1778 nil "ꜰ fa ut"))
+          (42 nil "ᴀ la mire")
+          (287 nil "ʙ fa ♭ mi")
+          (622 nil "ʙ et ᴄ")
+          (866 nil "ᴄ ſol fa ut")
+          (1202 nil "ᴅ la ſol re")
+          (1527 nil "ᴇ la mi")
+          (1778 nil "ꜰ fa ut"))
    (:music 2200
            (:voice v1)
            (:section s1)
@@ -127,31 +130,31 @@
            (:section s7)
            b38 sb7 b38 fl8 b38 sb8 b38 bl b70)
    (:text 70 58
-     (:alt (:diplomatic)
-           (:critical)
-           (:coord-barre "allg.")
-           (:coord-norm "allg.")
-           (:comment "Das Zeichen ɴ wird als Abkürzung für _natura_ verwendet.")
-           (:flag :ready) (:id 1))
-     (43 nil "la") (126 nil "mi re")
-     (288 nil "fa") (391 nil "mi")
-     (619 nil "mi fa ſol")
-     (872 nil "ſol fa ut")
-     (1204 nil "la ſol re")
-     (1541 nil "la mi fa")
-     (1794 nil "fa ut re"))
+          (:alt (:diplomatic)
+                (:critical)
+                (:coord-barre "allg.")
+                (:coord-norm "allg.")
+                (:comment "Das Zeichen ɴ wird als Abkürzung für _natura_ verwendet.")
+                (:flag :ready) (:id 1))
+          (43 nil "la") (126 nil "mi re")
+          (288 nil "fa") (391 nil "mi")
+          (619 nil "mi fa ſol")
+          (872 nil "ſol fa ut")
+          (1204 nil "la ſol re")
+          (1541 nil "la mi fa")
+          (1794 nil "fa ut re"))
    (:text 70 58
-     (43 nil "ut fa ſol")
-     (295 nil "la ſol re ut")
-     (635 nil "la re ut")
-     (883 nil "re mi la")
-     (1195 nil "fa mi ut")
-     (1542 nil "ut re ſol")
-     (1799 nil "mi ſol la"))
+          (43 nil "ut fa ſol")
+          (295 nil "la ſol re ut")
+          (635 nil "la re ut")
+          (883 nil "re mi la")
+          (1195 nil "fa mi ut")
+          (1542 nil "ut re ſol")
+          (1799 nil "mi ſol la"))
    (:text 70 58
-     (5 309 "ꝑ n. ꝑ ♭.ꝑ ♮.")
-     (325 218 "ꝑ ♭. ꝑ ♮.")
-     (644 480 "per ♮.ꝑ n. ꝑ n. ꝑ ♭.")
-     (1198 220 "ꝑ n. ꝑ ♭.")
-     (1542 227 "ꝑ n. ꝑ ♮.")
-     (1807 213 "ꝑ n.ꝑ ♭."))))
+          (5 309 "ꝑ n. ꝑ ♭.ꝑ ♮.")
+          (325 218 "ꝑ ♭. ꝑ ♮.")
+          (644 480 "per ♮.ꝑ n. ꝑ n. ꝑ ♭.")
+          (1198 220 "ꝑ n. ꝑ ♭.")
+          (1542 227 "ꝑ n. ꝑ ♮.")
+          (1807 213 "ꝑ n.ꝑ ♭."))))

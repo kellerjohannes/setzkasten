@@ -17,8 +17,9 @@
               ;;
               ;; JK: Deutsch angepasst.
               ;;
-              ;; DONE
               ;; Luigi: Es ist für mich der Grado 'incomposto', nicht die Terza.
+              ;;
+              ;; DONE
               (:de "Tonschritt incomposto\\der terza minore\\accidentale")
               (:en "incomposto step\\of terza minore\\accidentale")))
     (s2 (:alt (:it "grado di terza minore\\accidentale composto")

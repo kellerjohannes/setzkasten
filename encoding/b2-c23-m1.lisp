@@ -33,7 +33,9 @@
               ;; AS: Kommentar David: I presume the commentary will note that Nos. 6 and 10 are
               ;; erroneously labelled "5" in the original (recte ottava)
               ;;
-              ;; OPEN
+              ;; JK: ja.
+              ;;
+              ;; DONE
               (:de "ottava\\ ")
               (:en "ottava\\ ")))
     (s7 (:alt (:it "Terza\\maggiore")

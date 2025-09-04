@@ -34,6 +34,7 @@
 \\newunicodechar{Ḟ}{\\.F}
 \\newunicodechar{Ġ}{\\.G}
 \\newunicodechar{Ɋ}{\\caps{Q}}
+\\newunicodechar{ɴ}{\\caps{n}}
 \\newunicodechar{ꝑ}{{\\per}}
 \\newunicodechar{ſ}{{\\fontencoding{TS1}\\selectfont\\char115}}
 \\newunicodechar{«}{\\frqq{}}

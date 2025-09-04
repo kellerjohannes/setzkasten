@@ -9,9 +9,12 @@
                  ;; also "Example of the incomposto and composto leap of the quarta naturale, and of
                  ;; its steps". Was meinst du?
                  ;;
+                 ;; LC: Ich würde 'incomposto et composto' im Titel des Musikbeispiels (sowie im
+                 ;; Titel des Kapitels) nicht korrigieren. Ausser im Kap. 33, beziehen sich
+                 ;; 'incomposto & composto' in den nächsten Kapitel auf Grado, Salto oder Tritono.
+                 ;;
                  ;; ANNE
                  ;; OPEN
-                 ;; LUIGI: Ich würde 'incomposto et composto' im Titel des Musikbeispiels (sowie im Titel des Kapitels) nicht korrigieren. Ausser im Kap. 33, beziehen sich 'incomposto & composto' in den nächsten Kapitel auf Grado, Salto oder Tritono.
                  (:en "Example of the leap of the quarta naturale, and of its incomposto and composto steps")))
    (:section-headings
     (s1 (:alt (:it "Prima Quarta")

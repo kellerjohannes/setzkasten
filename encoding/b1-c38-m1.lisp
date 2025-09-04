@@ -14,9 +14,13 @@
    ;;
    ;; DONE
    (:title (:alt (:it "Essempio [del salto] di più di Quinta imperfetta accidentale, composto & incomposto.")
-                 (:de "Beispiel [des Sprungs] più di quinta imperfetta accidentale, composto und incomposto.")
-                 (:en "Example of the composto and incomposto [leap] più di quinta imperfetta accidentale")))
-                 ;; LUIGI: in beiden Übersetzungen fehlt eine Preposition fürs Genitiv : leap of / Sprund der 
+                 (:de "Beispiel [des Sprungs der] più di quinta imperfetta accidentale, composto und incomposto.")
+                 (:en "Example of the composto and incomposto [leap of] più di quinta imperfetta accidentale")))
+   ;; LUIGI: in beiden Übersetzungen fehlt eine Preposition fürs Genitiv : leap of / Sprung der
+   ;;
+   ;; JK: habe ich angepasst.
+   ;;
+   ;; DONE
    (:section-captions
     (s1 (:alt (:it "[salto di]\\più di quinta\\imperfetta\\naturale\\composto")
               (:de "[Sprung]\\composto\\der più di quinta\\imperfetta\\naturale")
