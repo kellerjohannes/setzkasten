@@ -3,13 +3,18 @@
    (:alt-name "m5.095")
    (:comment "q021_s286, rotation: 0, origin: 945")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Da 20 a 21 è la proportione del semitono minore, et del diesis maggiore,\\& da 13 a 14 è la proportione del semitono maggiore")
-                 (:de "Von 20 zu 21 ist die Proportion des semitono minore und der diesis maggiore,\\und von 13 zu 14 ist die Proportion des semitono maggiore.")
-                 (:en "From 20 to 21 is the proportion of the semitono minore, and of the diesis maggiore,\\and from 13 to 14 is the proportion of the semitono maggiore")))
+   ;; JK: Dieser Titel soll im Haupttext erscheinen (im Moment dort nicht codiert), und im
+   ;; Musikbeispiel gelöscht werden. Das erfordert Rolf.
+   ;;
+   ;; OPEN
+
+   ;; (:title (:alt (:it "Da 20 a 21 è la proportione del semitono minore, et del diesis maggiore,\\& da 13 a 14 è la proportione del semitono maggiore")
+   ;;               (:de "Von 20 zu 21 ist die Proportion des semitono minore und der diesis maggiore,\\und von 13 zu 14 ist die Proportion des semitono maggiore.")
+   ;;               (:en "From 20 to 21 is the proportion of the semitono minore, and of the diesis maggiore,\\and from 13 to 14 is the proportion of the semitono maggiore")))
    (:section-captions
     (s1 (:alt (:it "Semitono\\minore /\\diesis\\maggiore")
               (:de "semitono\\minore /\\diesis\\maggiore")
-              (:en "Semitono\\minore /\\diesis\\maggiore")))                    
+              (:en "Semitono\\minore /\\diesis\\maggiore")))
     (s2 (:alt (:it "Semitono\\minore")
               (:de "semitono\\minore")
               (:en "Semitono\\minore")))

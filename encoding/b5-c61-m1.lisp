@@ -3,9 +3,14 @@
    (:alt-name "m5.096")
    (:comment "q021_s287, rotation: 0.53, origin: 480")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Questi sono tutti toni giusti naturali et accidentali\\di proportione da 8 a 9 et da 9 a 10\\di sesquiottava, et di sesquinona")
-                 (:de "Dies sind alle toni giusti naturali und accidentali\\der Proportion 8 zu 9 und von 9 zu 10\\ der sesquiottava und der sesquinona.")
-                 (:en "These are all toni giusti naturali and accidentali\\of proportion of 8 to 9 and of 9 to 10\\of sesquiottava, and of sesquinova")))
+   ;; JK: Dieser Titel soll im Haupttext erscheinen (im Moment dort nicht codiert), und im
+   ;; Musikbeispiel gelöscht werden. Das erfordert Rolf.
+   ;;
+   ;; OPEN
+
+   ;; (:title (:alt (:it "Questi sono tutti toni giusti naturali et accidentali\\di proportione da 8 a 9 et da 9 a 10\\di sesquiottava, et di sesquinona")
+   ;;               (:de "Dies sind alle toni giusti naturali und accidentali\\der Proportion 8 zu 9 und von 9 zu 10\\ der sesquiottava und der sesquinona.")
+   ;;               (:en "These are all toni giusti naturali and accidentali\\of proportion of 8 to 9 and of 9 to 10\\of sesquiottava, and of sesquinova")))
    (:section-captions
     (s1 (:alt (:it "Toni\\naturali")
               (:de "toni\\naturali")

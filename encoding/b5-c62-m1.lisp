@@ -3,7 +3,7 @@
    (:alt-name "m5.099")
    (:comment "q021_s288, rotation: -0.78, origin: 1027")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "Esempio delle terze minori naturali et accidentali, con le loro proportioni")
+   (:title (:alt (:it "Essempio delle terze minori naturali et accidentali, con le loro proportioni")
                  (:de "Beispiel der terze minori naturali und accidentali, mit ihren Proportionen.")
                  (:en "Example of the terze minore naturali and accidentali, with their proportions")))
    (:section-captions
@@ -62,6 +62,8 @@
     ;;
     ;; LC: ja, auf jeden Fall.
     ;;
+    ;; JK: erledigt.
+    ;;
     ;; DONE
     (s17 (:alt (:it "Terza\\accidentale\\propinquissima")
                (:de "terza\\accidentale\\propinquissima")
@@ -84,10 +86,16 @@
     (s23 (:alt (:it "Terza\\accidentale\\propinquissima")
                (:de "terza\\accidentale\\propinquissima")
                (:en "Terza\\accidentale\\propinquissima"))))
-   (:line-headings
-    (:alt (:it "La proportione della terza minore si dimanda sesquiquinta come è da 5 a 6.\\La proportione della terza minore con la sua propinqua, è come da 4 e mezzo a 5 e mezzo.\\Questa è inrationale.")
-          (:de "Die Proportion der terza minore wird sesquiquinta genannt, wie es von 5 zu 6 ist.\\Die Proportion der terza minore mit seiner propinqua ist wie 4 1/2 zu 5 1/2.\\Dies ist irrational.")
-          (:en "The proportion of the terza minore is called sesquiquinta, as is from 5 to 6.\\The proportion of the terza minore with its propinqua is like from 4 and a half to 5 and a half.\\This is irrational."))))
+   ;; JK: Dieser Titel soll im Haupttext erscheinen (im Moment dort nicht codiert), und im
+   ;; Musikbeispiel gelöscht werden. Das erfordert Rolf.
+   ;;
+   ;; OPEN
+
+   ;; (:line-headings
+   ;;  (:alt (:it "La proportione della terza minore si dimanda sesquiquinta come è da 5 a 6.\\La proportione della terza minore con la sua propinqua, è come da 4 e mezzo a 5 e mezzo.\\Questa è inrationale.")
+   ;;        (:de "Die Proportion der terza minore wird sesquiquinta genannt, wie es von 5 zu 6 ist.\\Die Proportion der terza minore mit seiner propinqua ist wie 4 1/2 zu 5 1/2.\\Dies ist irrational.")
+   ;;        (:en "The proportion of the terza minore is called sesquiquinta, as is from 5 to 6.\\The proportion of the terza minore with its propinqua is like from 4 and a half to 5 and a half.\\This is irrational.")))
+   )
   (:data
    (:text 90 58
           (157 1826 "Eſſempio delle ᴛerze minori naturali & accidentali , con le loro proportioni."))
