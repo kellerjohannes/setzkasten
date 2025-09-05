@@ -92,9 +92,38 @@
    ;; Musikzeile 1 (Sopran 1)
    (:music 2213
            (:voice v1)
-           (:section s1) cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat) b22 met-imperf-min-dim b22 sb4 b22 m4 sh4 m4 b22 m5 b22 m5 b22 m1 b22 m8 b22 sb6 b22 mrest5
-           b22 m3 b22 m6 b22 m6 sh4 m4 sh4 m4 fl5 m5 fl5 m5 b22 m5 b22 m5 sb2 sb6 sbrest5
-           b22 md5 dot6 smd5 m1 b22 m4 sh4 m4 b22 m4 b22 sm3 b38)
+           (:section s1) cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat) b22 met-imperf-min-dim b22 sb4 b22 m4
+           (:alt (:diplomatic sh4)
+                 (:dolce-alt2 b22))
+           m4 b22 m5 b22 m5 b22 m1 b22 m8 b22 sb6 b22 mrest5
+           b22 m3 b22 m6 b22 m6
+           (:alt (:diplomatic sh4)
+                 (:dolce-alt2 b22))
+           m4
+           (:alt (:diplomatic sh4)
+                 (:dolce-alt2 b22))
+           m4
+           (:alt (:diplomatic fl5)
+                 (:dolce-alt1 sh4)
+                 (:dolce-alt2 b22))
+           (:alt (:diplomatic m5)
+                 (:dolce-alt1 m4))
+           (:alt (:diplomatic fl5)
+                 (:dolce-alt1 sh4)
+                 (:dolce-alt2 b22))
+           (:alt (:diplomatic m5)
+                 (:dolce-alt1 m4))
+           b22 m5 b22 m5 sb2 sb6 sbrest5
+           b22
+           (:alt (:diplomatic md5)
+                 (:dolce-alt1 m5))
+           dot6
+           (:alt (:diplomatic smd5)
+                 (:dolce-alt1 sm5))
+           m1 b22 m4
+           (:alt (:diplomatic sh4)
+                 (:dolce-alt2 b22))
+           m4 b22 m4 b22 sm3 b38)
    (:text 140 58
      (204 nil "Dolce mio ben")
      (590 nil "ij")
@@ -102,8 +131,43 @@
      (1658 548 "dolce mio bē ſon queſti"))
    ;; Musikzeile 2 (Sopran 2)
    (:music 2196
-           cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat) b22 m3 b22 sm3 b22 md6 b22 md3 b22 mrest3
-           b22 m4 b22 sm1 b22 sm1 sb4 b22 m3 fl3 md3 b22 md3 b22 m4 b22 m4 b22 sm4 b22 m4 b22 sm4 sb2 b22 sb2 b22 mrest1 b22 m1 b22 md1 dot2 smd1 fl2 m2 fl2 m2 fl2 sb2 b22 sb2 b22 md2 b22 md2 b38)
+           cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat) b22 m3 b22 sm3 b22
+           (:alt (:diplomatic md6)
+                 (:dolce-alt1 m6))
+           b22
+           (:alt (:diplomatic md3)
+                 (:dolce-alt1 m3))
+           b22 mrest3
+           b22 m4 b22 sm1 b22 sm1 sb4 b22 m3
+           (:alt (:diplomatic fl3)
+                 (:dolce-alt2 b22))
+           (:alt (:diplomatic md3)
+                 (:dolce-alt1 m3))
+           b22
+           (:alt (:diplomatic md3)
+                 (:dolce-alt1 m3))
+           b22 m4 b22 m4 b22 sm4 b22 m4 b22 sm4 sb2 b22 sb2 b22 mrest1 b22 m1 b22
+           (:alt (:diplomatic md1)
+                 (:dolce-alt1 m1))
+           dot2
+           (:alt (:diplomatic smd1)
+                 (:dolce-alt1 sm1))
+
+           (:alt (:diplomatic fl2)
+                 (:dolce-alt2 b22))
+           m2
+           (:alt (:diplomatic fl2)
+                 (:dolce-alt2 b22))
+           m2
+           (:alt (:diplomatic fl2)
+                 (:dolce-alt2 b22))
+           sb2 b22 sb2 b22
+           (:alt (:diplomatic md2)
+                 (:critical m2))
+           b22
+           (:alt (:diplomatic md2)
+                 (:critical m2))
+           b38)
    (:text 120 58
      (123 nil "dolci")
      (272 nil "lumi")
@@ -112,16 +176,51 @@
      (1466 732 "che tanto dolcemente mi con⸗"))
    ;; Musikzeile 3 (Sopran 3)
    (:music 2209
-           cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat) b22 fl3 b22 sb3 b22 m1 b22 sb1 b22 sb8 nat7
+           cclef1 fl7 (:key-signature nil nil nil nil nil nil :flat) b22 fl3 b22 sb3 b22 m1 b22 sb1 b22 sb8
+           (:alt (:diplomatic nat7)
+                 (:dolce-alt2 b22))
            (:alt (:diplomatic md7)
                  (:critical md7)
+                 (:dolce-alt1 m7)
                  (:tatti m7)
                  (:coord-barre "MZ3 N5")
                  (:coord-norm "St1 T18 N2")
                  (:comment "Dieses Ḃ♮ passt nicht zum Bass (G) und zum Alt (G), denn es entsteht eine _terza più di maggiore_. Als melodische Vorausnahme des ersten Klangs in T. 19 wird das Ḃ♮ hier jedoch akzeptiert.")
                  (:flag :ready) (:id 1))
-           nat7 md7 nat7 md7 b22 m8 b22 m5 b22 mrest5
-           b22 m6 sh4 m4 sh4 m4 b22 fl5 b22 m5 b22 fl5 b22 m5 b22 sb5 b22 m5 b22 sb3 b22 m3 sb6 b22 m6 b22 sb6 b22 m6 b22 sb2 b22 (:duration-override 2) brd2 (:duration-override nil) b22 blbl)
+
+           (:alt (:diplomatic nat7)
+                 (:dolce-alt2 b22))
+           (:alt (:diplomatic md7)
+                 (:dolce-alt1 m7))
+           (:alt (:diplomatic nat7)
+                 (:dolce-alt2 b22))
+           (:alt (:diplomatic md7)
+                 (:dolce-alt1 m7))
+           b22 m8 b22 m5 b22 mrest5
+           b22 m6
+           (:alt (:diplomatic sh4)
+                 (:dolce-alt2 b22))
+           m4
+           (:alt (:diplomatic sh4)
+                 (:dolce-alt2 b22))
+           m4 b22
+           (:alt (:diplomatic fl5)
+                 (:dolce-alt1 sh4)
+                 (:dolce-alt2 b22))
+           b22
+           (:alt (:diplomatic m5)
+                 (:dolce-alt1 m4))
+           b22
+           (:alt (:diplomatic fl5)
+                 (:dolce-alt1 sh4)
+                 (:dolce-alt2 b22))
+           b22
+           (:alt (:diplomatic m5)
+                 (:dolce-alt1 m4))
+           b22 sb5 b22 m5 b22 sb3 b22 m3 sb6 b22 m6 b22 sb6 b22 m6 b22 sb2 b22 (:duration-override 2)
+           (:alt (:diplomatic brd2)
+                 (:dolce-alt1 br2))
+           (:duration-override nil) b22 blbl)
    (:text 90 58
      (168 nil "ſumi")
      (325 nil "che tanto")
@@ -132,8 +231,20 @@
    ;; Musikzeile 4 (Alt 1)
    (:music 2229
            (:voice v2)
-           (:section s1) cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat) met-imperf-min-dim b22 sbrest5 b22 sb6 nat4 m4 b22 m5 b22 m3 b22 m3 dot4 sm3 b22 m6 b22 m6 b22 m2 b22 m5 sh5 m5 b22 m6 b22 m6 sbd3 b22 sb6 b22 mrest5
-           b22 m4 b22 m3 b22 m5 sb2 sbd5 m3 b22 m3 b22 m3 b22 m3 b22 m3 b22 m3 b22 b38)
+           (:section s1) cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat) met-imperf-min-dim b22 sbrest5 b22 sb6
+           (:alt (:diplomatic nat4)
+                 (:dolce-alt2 b22))
+           m4 b22 m5 b22 m3 b22 m3 dot4 sm3 b22 m6 b22 m6 b22 m2 b22 m5
+           (:alt (:diplomatic sh5)
+                 (:dolce-alt2 b22))
+           m5 b22 m6 b22 m6
+           (:alt (:diplomatic sbd3)
+                 (:dolce-alt1 sb3))
+           b22 sb6 b22 mrest5
+           b22 m4 b22 m3 b22 m5 sb2
+           (:alt (:diplomatic sbd5)
+                 (:dolce-alt1 sb5))
+           m3 b22 m3 b22 m3 b22 m3 b22 m3 b22 m3 b22 b38)
    (:text 100 58
      (216 nil "Dolce mio ben")
      (610 nil "ij")
@@ -143,41 +254,151 @@
      (1937 nil "ſon queſti"))
    ;; Musikzeile 5 (Alt 2)
    (:music 2224
-           cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat) b38 md0 b22 md3 sh1 m1 b22 sb1 fl3 m3 b22 sb2 sbd5 b22 m3 b22 m5 b22 m3 sb6 m9 b22 m9 b22 m9 m5d dot6 sm5d fl7 sbd7 fl3 sb3 b22 mrest3
+           cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat) b38
+           (:alt (:diplomatic md0)
+                 (:dolce-alt1 m0))
+           b22
+           (:alt (:diplomatic md3)
+                 (:dolce-alt1 m3))
+           (:alt (:diplomatic sh1)
+                 (:dolce-alt2 b22))
+           m1 b22 sb1
+           (:alt (:diplomatic fl3)
+                 (:dolce-alt2 b22))
+           m3 b22 sb2
+           (:alt (:diplomatic sbd5)
+                 (:dolce-alt1 sb5))
+           b22 m3 b22 m5 b22 m3 sb6 m9 b22 m9 b22 m9 m5d dot6 sm5d
+           (:alt (:diplomatic fl7)
+                 (:dolce-alt2 b22))
+           (:alt (:diplomatic sbd7)
+                 (:dolce-alt1 sb7))
+           (:alt (:diplomatic fl3)
+                 (:dolce-alt2 b22))
+           sb3 b22 mrest3
            b22 m4 b22
            (:alt (:diplomatic md4)
                  (:critical m4)
+                 (:dolce-alt1 m4)
                  (:tatti m4)
                  (:coord-barre "MZ5 N20")
                  (:coord-norm "St2 T16 N1")
                  (:comment "In allen Exemplaren: Ḃ♭.")
                  (:flag :ready) (:id 2))
-           b22 m1 b22 md8 b22 md8 b22 sb4 b22 m2 m9 b22 m7 fl7 m7 b38)
+           b22 m1 b22
+           (:alt (:diplomatic md8)
+                 (:dolce-alt1 m8))
+           b22
+           (:alt (:diplomatic md8)
+                 (:dolce-alt1 m8))
+           b22 sb4 b22 m2 m9
+           (:alt (:diplomatic b22)
+                 (:dolce-alt2 fl7))
+           m7 fl7 m7 b38)
    (:text 90 58
      (130 nil "i dolci")
      (321 1852 "lumi i dolci lumi che tāto che tanto dolcemente fanno che dolcemēte che dolce⸗"))
    ;; Musikzeile 6 (Alt 3)
    (:music 2223
-           cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat) b22 m6 b22 m9 b22 md6 b22 md6 b22 m9 b22 sb7 b22 m7 sb3 b22 sbd6 nat4
+           cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat) b22 m6 b22 m9 b22
+           (:alt (:diplomatic md6)
+                 (:dolce-alt1 m6))
+           b22
+           (:alt (:diplomatic md6)
+                 (:dolce-alt1 m6))
+           b22 m9 b22 sb7 b22 m7 sb3 b22
+           (:alt (:diplomatic sbd6)
+                 (:dolce-alt1 sb6))
+           (:alt (:diplomatic nat4)
+                 (:dolce-alt2 b22))
            (:alt (:diplomatic sb4)
                  (:critical m4)
+                 (:dolce-alt1 m4)
                  (:coord-barre "MZ6 N10")
                  (:coord-norm "St2 T21 N2")
                  (:comment "In allen Exemplaren: Semibrevis.")
                  (:flag :ready) (:id 3))
-           b22 m4 b22 m2 b22 m9 b22 m9 b22 m9 sh8 m8 b22 m8 b22 m7 b22 m7 b22 m7 b22 m8 b22 m8 b22 m8 b22 brd4 b22 brd4 b22 blbl b38 b38 b125)
+           b22 m4 b22 m2 b22 m9 b22 m9 b22 m9
+           (:alt (:diplomatic sh8)
+                 (:dolce-alt2 b22))
+           m8 b22 m8 b22 m7 b22 m7 b22 m7 b22 m8 b22 m8 b22 m8 b22
+           (:alt (:diplomatic brd4)
+                 (:dolce-alt1 br4))
+           b22
+           (:alt (:diplomatic brd4)
+                 (:dolce-alt1 br4))
+           b22 blbl b38 b38 b125)
    (:text 100 58
      (91 1851 "mente mi conſumi mi conſumi fanno che dolcemente mi conſumi mi conſum i."))
    ;; Musikzeile 7 (Tenor 1)
    (:music 2221
            (:voice v3) (:section s1)
-           cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat) b22 met-imperf-min-dim b22 brrest4 b22 sbrest5 b22 sb3 b22 m3 sh3 m3 b22 m4 b22 m2 b22 m2 b22 m5 b22 m5 b22 m5 b22 sbd8 nat6 m6 b22 m6 b22 m3 b22 m3 m7 sb3 b22 m2 b22 md2 b22 md2 b22 m3 b22 m3 b22 m1 sb8 sh7 m7 b22 fl8 b22 m8 b22 b38)
+           cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat) b22 met-imperf-min-dim b22 brrest4 b22 sbrest5 b22 sb3 b22 m3
+           (:alt (:diplomatic sh3)
+                 (:dolce-alt2 b22))
+           m3 b22 m4 b22 m2 b22 m2 b22 m5 b22 m5 b22 m5 b22
+           (:alt (:diplomatic sbd8)
+                 (:dolce-alt1 sb8))
+
+           (:alt (:diplomatic nat6)
+                 (:dolce-alt2 b22))
+           m6 b22 m6 b22 m3 b22 m3 m7 sb3 b22 m2 b22
+           (:alt (:diplomatic md2)
+                 (:dolce-alt1 m2))
+           b22
+           (:alt (:diplomatic md2)
+                 (:dolce-alt1 m2))
+           b22 m3 b22 m3 b22 m1 sb8
+           (:alt (:diplomatic sh7)
+                 (:dolce-alt2 b22))
+           m7 b22
+           (:alt (:diplomatic fl8)
+                 (:dolce-alt1 sh7)
+                 (:dolce-alt2 b22))
+           b22
+           (:alt (:diplomatic m8)
+                 (:dolce-alt1 m7))
+           b22 b38)
    (:text 100 58
      (309 1859 "Dolce mio ben ſon queſtʼi dolci  lumi dolce mio bē ſon queſtʼi dolci lumi sō queſtʼi"))
    ;; Musikzeile 8 (Tenor 2)
    (:music 2227
-           cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat) b22 fl8 b22 m8 b22 m8 b22 sb5 b22 m7 b22 m7 b22 m7 b22 sbd4 b22 m7 b22 m5d b22 m7 b22 m3 b22 m3 b22 m6 nat6 m6 b22 m6 b22 fl2 b22 sb2 fl5 b22 md5 b22 fl5 b22 md5 b22 m3 b22 m3 b22 sb3 b22 m3 b22 mrest3
-           b22 md6 b22 md6 b22 b38)
+           cclef7 fl6 (:key-signature nil nil nil nil nil nil :flat) b22
+           (:alt (:diplomatic fl8)
+                 (:dolce-alt1 sh7)
+                 (:dolce-alt2 b22))
+           b22
+           (:alt (:diplomatic m8)
+                 (:dolce-alt1 m7))
+           b22 m8 b22 sb5 b22 m7 b22 m7 b22 m7 b22
+           (:alt (:diplomatic sbd4)
+                 (:dolce-alt1 sb4))
+           b22 m7 b22 m5d b22 m7 b22 m3 b22 m3 b22 m6
+           (:alt (:diplomatic nat6)
+                 (:dolce-alt2 b22))
+           m6 b22 m6 b22
+           (:alt (:diplomatic fl2)
+                 (:dolce-alt2 b22))
+           b22 sb2
+           (:alt (:diplomatic fl5)
+                 (:dolce-alt2 b22))
+           b22
+           (:alt (:diplomatic md5)
+                 (:dolce-alt1 m5))
+           b22
+           (:alt (:diplomatic fl5)
+                 (:dolce-alt2 b22))
+           b22
+           (:alt (:diplomatic md5)
+                 (:dolce-alt1 m5))
+           b22 m3 b22 m3 b22 sb3 b22 m3 b22 mrest3
+           b22
+           (:alt (:diplomatic md6)
+                 (:dolce-alt1 m6))
+           b22
+           (:alt (:diplomatic md6)
+                 (:dolce-alt1 m6))
+           b22 b38)
    (:text 100 58
      (186 nil "dolci lumʼ i dolci lumi")
      (774 nil "che")
@@ -198,9 +419,30 @@
                  (:comment "In allen Exemplaren wurde die erste Note als Semibrevis auf B♭ und die zweite Note als Brevis auf C gedruckt. Die zweite Note wurde manuell mit einer Drucktype zu einer Brevis auf G korrigiert (In-house Korrektur). Zur Fassung der kritischen Ausgabe siehe [Kapitelkommentar, Verweis zu ergänzen].")
                  (:flag :ready) (:id 4))
            b22 brrest2
-           b22 m2 b22 sb7 sh7 m7 b22 m8 b22 m8 b22 md5 b22 md5 b22 mrest7
-           b22 m8 b22 fl9 b22 m9 b22 sb7 b22 m7 b22 mrest5
-           b22 m5d b22 m7 sh7 sb7 b22 m7 b22 m3 b22 m1 b22 brd3 b22 brd3 b22 blbl b118 b118)
+           b22 m2 b22 sb7
+           (:alt (:diplomatic sh7)
+                 (:dolce-alt2 b22))
+           m7 b22 m8 b22 m8 b22
+           (:alt (:diplomatic md5)
+                 (:dolce-alt1 m5))
+           b22
+           (:alt (:diplomatic md5)
+                 (:dolce-alt1 m5))
+           b22 mrest7
+           b22 m8 b22
+           (:alt (:diplomatic fl9)
+                 (:dolce-alt2 b22))
+           b22 m9 b22 sb7 b22 m7 b22 mrest5
+           b22 m5d b22 m7
+           (:alt (:diplomatic sh7)
+                 (:dolce-alt2 b22))
+           sb7 b22 m7 b22 m3 b22 m1 b22
+           (:alt (:diplomatic brd3)
+                 (:dolce-alt1 br3))
+           b22
+           (:alt (:diplomatic brd3)
+                 (:dolce-alt1 br3))
+           b22 blbl b118 b118)
    (:text 100 58
      (122 nil "ſumi")
      (273 nil "che tan")
@@ -213,8 +455,26 @@
    (:music 2227
            (:voice v4)
            (:section s1)
-           (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat) b22 met-imperf-min-dim b22 lrest24 b22 sb5 nat3 m3 b22 m4 b22 sb2 sb5 b22 md5 b22 md5 b22 m1 b22 m1 b22 m3 b22 m3 b22 m0 b22 m0 sb4 b22 sbd4 mrest5
-           b22 m5 dot6 sm5 b22 m5 m2 b22 m2 b22 md2 b22 md2 b22 m5 b22 m5 b22 m7 b22 m7 b22 b38)
+           (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat) b22 met-imperf-min-dim b22 lrest24 b22 sb5
+           (:alt (:diplomatic nat3)
+                 (:dolce-alt2 b22))
+           m3 b22 m4 b22 sb2 sb5 b22
+           (:alt (:diplomatic md5)
+                 (:dolce-alt1 m5))
+           b22
+           (:alt (:diplomatic md5)
+                 (:dolce-alt1 m5))
+           b22 m1 b22 m1 b22 m3 b22 m3 b22 m0 b22 m0 sb4 b22
+           (:alt (:diplomatic sbd4)
+                 (:dolce-alt1 sb4))
+           mrest5
+           b22 m5 dot6 sm5 b22 m5 m2 b22 m2 b22
+           (:alt (:diplomatic md2)
+                 (:dolce-alt1 m2))
+           b22
+           (:alt (:diplomatic md2)
+                 (:dolce-alt1 m2))
+           b22 m5 b22 m5 b22 m7 b22 m7 b22 b38)
    (:text 90 58
      (257 nil "Dolce mio ben")
      (654 nil "ij")
@@ -226,8 +486,45 @@
      (1904 nil "ſon queſtʼi"))
    ;; Musikzeile 11 (Bass 2)
    (:music 2227
-           (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat) b22 m4 b22 m4 b22 sbd4 sb0 mrest3
-           b22 m3 b22 m3 b22 m1 b22 m1 b22 m1 b22 fl2 b22 sb2 b22 fl2 b22 md2 fl2 md2 b22 fl5 b22 m5 b22 fl5 b22 m5 b22 fl5 m5 m3 b22 sb3 b22 sbd3 fl6 b22 sb6 b22 m6 b22 m6 b22 sb8 dot8 m8 b22 sbd8 b38)
+           (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat) b22 m4 b22 m4 b22
+           (:alt (:diplomatic sbd4)
+                 (:dolce-alt1 sb4))
+           sb0 mrest3
+           b22 m3 b22 m3 b22 m1 b22 m1 b22 m1 b22
+           (:alt (:diplomatic fl2)
+                 (:dolce-alt2 b22))
+           b22 sb2 b22
+           (:alt (:diplomatic fl2)
+                 (:dolce-alt2 b22))
+           b22
+           (:alt (:diplomatic md2)
+                 (:dolce-alt1 m2))
+           (:alt (:diplomatic fl2)
+                 (:dolce-alt2 b22))
+           (:alt (:diplomatic md2)
+                 (:dolce-alt1 m2))
+           b22
+           (:alt (:diplomatic fl5)
+                 (:dolce-alt2 b22))
+           b22 m5 b22
+           (:alt (:diplomatic fl5)
+                 (:dolce-alt2 b22))
+           b22 m5 b22
+           (:alt (:diplomatic fl5)
+                 (:critical b22))
+           m5 m3 b22 sb3 b22
+           (:alt (:diplomatic sbd3)
+                 (:dolce-alt1 sb3))
+           fl6 b22 sb6
+           (:alt (:diplomatic b22)
+                 (:dolce-alt2 fl6))
+           m6
+           (:alt (:diplomatic b22)
+                 (:dolce-alt2 fl6))
+           m6 b22 sb8 dot8 m8 b22
+           (:alt (:diplomatic sbd8)
+                 (:dolce-alt1 sb8))
+           b38)
    (:text 110 58
      (179 nil "dolci lumi")
      (459 nil "che")
@@ -238,13 +535,27 @@
      (1727 nil "fanno che mi conſu"))
    ;; Musikzeile 12 (Bass 3)
    (:music 2224
-           (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat) b22 m4 b22 m4 b22 m2 b22 m2 b22 m5 b22 m5 b22 md5 b22 md5 b22 sb1 b22 sb4 b22 sbrest5
-           b22 sb5 b22 sb2 b22 sb2 b22 sb3 b22 (:divider :double) (:duration-override 2) brd3 (:duration-override nil) b38 blbl
-           b38 nat3 b22 sb3 nat3 sb3 b38 blbl b38 b38 b118 b118 b118 b118)
+           (:f-clef) max7 fclef7 fl3 (:key-signature nil nil nil nil nil nil :flat) b22 m4 b22 m4 b22 m2 b22 m2 b22 m5 b22 m5 b22
+           (:alt (:diplomatic md5)
+                 (:dolce-alt1 m5))
+           b22
+           (:alt (:diplomatic md5)
+                 (:dolce-alt1 m5))
+           b22 sb1 b22 sb4 b22 sbrest5
+           b22 sb5 b22 sb2 b22 sb2 b22 sb3 b22 (:divider :double) (:duration-override 2)
+           (:alt (:diplomatic brd3)
+                 (:dolce-alt1 br3))
+           (:duration-override nil) b38 blbl
+           b38
+           (:alt (:diplomatic nat3)
+                 (:dolce-alt2 b22))
+           b22 sb3
+           (:alt (:diplomatic nat3)
+                 (:dolce-alt2 b22))
+           sb3 b38 blbl b38 b38 b118 b118 b118 b118)
    (:text 90 58
      (138 nil "mi che dolcemente mi conſumi")
      (936 nil "mi")
      (1025 nil "conſu")
      (1202 nil "mi.")
-     (1454 nil "Hayme")))
-  )
+     (1454 nil "Hayme"))))

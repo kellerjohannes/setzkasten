@@ -263,13 +263,17 @@
    (:music 2231
            cclef5 fl4 (:key-signature nil nil nil nil nil nil :flat)
            b22 sb6 b22 sbd9 dot10 md9 b22
-           (:alt (:diplomatic sbd7) (:critical sb7) (:tatti sb7)
+           (:alt (:diplomatic sbd7)
+                 (:critical sb7)
+                 (:tatti sb7)
                  (:coord-barre "MZ11 N4")
                  (:coord-norm "St2 T36 N1")
                  (:comment "In allen Exemplaren: Ė. Bei der Platzierung des enharmonischen Punkts wurde vom Setzer möglicherweise diese Note mit der kommenden Note verwechselt.")
                  (:flag :ready) (:id 9))
            b22
-           (:alt (:diplomatic sb7) (:critical sbd7) (:tatti sbd7)
+           (:alt (:diplomatic sb7)
+                 (:critical sbd7)
+                 (:tatti sbd7)
                  (:coord-barre "MZ11 N5")
                  (:coord-norm "St2 T36 N2")
                  (:comment "In allen Exemplaren: E. Siehe Kommentar Nr. 9.")

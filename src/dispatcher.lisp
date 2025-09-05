@@ -1994,6 +1994,7 @@
         `(("b3-c52-m1" "barre" (:barre :diplomatic) ,*vicentino-types-backend* (:barre))
           ("b3-c52-m1" "crit" (:critical :barre :diplomatic) ,*vicentino-types-backend* (:critical :barre))
           ("b3-c52-m1" "norm-it" (:it :critical :barre :diplomatic) ,*lilypond-backend-modern-meter*)
+          ("b3-c52-m1" "norm-it-alt1" (:it :dolce-alt1 :barre :diplomatic) ,*lilypond-backend-modern-meter*)
           ("b3-c52-m1" "norm-en" (:en :critical :barre :diplomatic) ,*lilypond-backend-modern-meter*)
           ("b3-c52-m1" "norm-de" (:de :critical :barre :diplomatic) ,*lilypond-backend-modern-meter*)
           ("b3-c52-m1" "norm-it-origclef" (:it :critical :barre :diplomatic) ,*lilypond-backend-original-meter*)
@@ -2006,6 +2007,10 @@
           ("b3-c52-m1" "crit-norm-en-standalone" (:critical-standalone-en :critical :barre :diplomatic)
                        ,*lilypond-backend-modern-meter-multipage*)
           ("b3-c52-m1" "crit-norm-de-standalone" (:critical-standalone-de :critical :barre :diplomatic)
+                       ,*lilypond-backend-modern-meter-multipage*)
+          ("b3-c52-m1" "crit-norm-de-standalone-alt1" (:critical-standalone-de :dolce-alt1 :critical :barre :diplomatic)
+                       ,*lilypond-backend-modern-meter-multipage*)
+          ("b3-c52-m1" "crit-norm-de-standalone-alt2" (:critical-standalone-de :dolce-alt2 :dolce-alt1 :critical :barre :diplomatic)
                        ,*lilypond-backend-modern-meter-multipage*)
           ("b3-c52-m1" "quarta-discendente-standalone" (:transposition-quarta-discendente :critical-standalone-en :critical :barre :diplomatic)
                        ,*lilypond-backend-modern-meter-quarta-discendente-multipage*)
@@ -3340,6 +3345,7 @@
           ("b5-c64-m4" "norm-it-origclef" (:it :critical :critical :barre :diplomatic) ,*lilypond-backend-original*)
           ("b5-c64-m4" "norm-en-origclef" (:en :critical :critical :barre :diplomatic) ,*lilypond-backend-original*)
           ("b5-c64-m4" "norm-de-origclef" (:de :critical :critical :barre :diplomatic) ,*lilypond-backend-original*))))
+
 
 
 (populate-vicentino21 *vicentino21*)
