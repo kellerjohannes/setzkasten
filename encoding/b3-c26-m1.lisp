@@ -4,23 +4,27 @@
    (:comment "q021_s103, origin: 500; q021_s104, rotation: 0.94, origin: 878 et al.")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio [della Musica Diatonica, à quattro uoci composta]")
-                 (:de "Beispiel der diatonischen Musik")
-                 (:en "Example of diatonic music")))
-                 ;; LUIGI: Es ist eine Bearbeitung des Originals: es muss zwischen [ ] sein. Ich würde auch den Titel des Kapitels vollständig zitieren.
-                 ;;OPEN
+                 (:de "Beispiel der diatonischen Musik, gesetzt in vier Stimmen.")
+                 (:en "Example of diatonic music, composed with four voices")))
+   ;; LUIGI: Es ist eine Bearbeitung des Originals: es muss zwischen [ ] sein. Ich würde auch den
+   ;; Titel des Kapitels vollständig zitieren.
+   ;;
+   ;; JK: habe ich in den beiden Übersetzungen entsprechend angepasst.
+   ;;
+   ;; DONE
    (:voice-labels
     (s1 v1 (:alt (:it "Soprano diatonico")
-                   (:de "diatonischer Soprano")
-                   (:en "Diatonic soprano")))
+                 (:de "diatonischer Soprano")
+                 (:en "Diatonic soprano")))
     (s1 v2 (:alt (:it "Contr'alto diatonico")
-                   (:de "diatonischer Contr'alto")
-                   (:en "Diatonic alto")))
+                 (:de "diatonischer Contr'alto")
+                 (:en "Diatonic alto")))
     (s1 v3 (:alt (:it "Tenore diatonico")
-                   (:de "diatonischer Tenore")
-                   (:en "Diatonic tenor")))
+                 (:de "diatonischer Tenore")
+                 (:en "Diatonic tenor")))
     (s1 v4 (:alt (:it "Basso diatonico")
-                   (:de "diatonischer Basso")
-                   (:en "Diatonic bass")))))
+                 (:de "diatonischer Basso")
+                 (:en "Diatonic bass")))))
   (:preamble-lilypond
    (:alt (:transposition-quarta-discendente (:clef-overrides
                                              (s1 v2 "treble_8"))))

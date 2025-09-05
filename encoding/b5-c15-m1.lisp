@@ -58,7 +58,9 @@
                      (:critical "Tutte le conſonanze di ɢſolreut ſecondo aſcend. at diſcendenti, sono qui ſotto notate.")
                      (:coord-barre "TZ1")
                      (:coord-norm "T")
-                     ;; Koord. prüfen
+                     ;; Koord. prüfen, ab hier überall bis Ende V. Buch. Genauso :id-Nummerierungen.
+                     ;;
+                     ;; OPEN
                      (:comment "In der normalisierten Fassung »son qui sotto notate« weggelassen.")
                      (:flag :draft) (:id 0))
                ))

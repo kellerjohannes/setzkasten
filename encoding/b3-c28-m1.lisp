@@ -12,9 +12,10 @@
     ;;
     ;; kir: hm, ist vielleicht nicht nötig (weil redundant)
     ;;
-    ;; GROUP !
-    ;; OPEN
-    (s1 (:alt (:it "A due uoci.")
+    ;; JK: belasse ich so, weil es an ähnlichen Stellen gleich behandelt wird.
+    ;;
+    ;; DONE
+    (s1 (:alt (:it "A due uoci")
               (:de "mit zwei Stimmen")
               (:en "In two voci")))
     (s2 (:alt (:it "[A due voci]")

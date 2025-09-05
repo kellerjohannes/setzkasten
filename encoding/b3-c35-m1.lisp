@@ -3,15 +3,17 @@
    (:alt-name "m3.074")
    (:comment "q021_s116, rotation: 0, origin: 899")
    (:creator "Vicentino21 / Johannes Keller")
-   ;; OPEN
-   ;; GROUP!
-   ;;
    ;; LC: Vorschlag für einen ergänzten Titel:
    ;;
    ;; "[Essempi delle Cadentie dubbiose, buone & false della Musica mista e participata, à cinque
    ;; uoci.]"
    ;;
    ;; Falls akzeptiert, muss dieser Titel übersetzt werden.
+   ;;
+   ;; JK: würde ich auf jeden Fall akzeptieren, entsprechend zahlreicher ähnlicher Beispiele später.
+   ;;
+   ;; TRANSLATION
+   ;; OPEN
    (:title  (:alt (:it "[Essempi delle Cadentie dubbiose, buone & false della Musica mista e participata, à cinque uoci.]")
                   (:de "")
                   (:en "")))

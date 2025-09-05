@@ -15,6 +15,7 @@
    (:section-captions
     ;; JK: Übersetzung zu ergänzen.
     ;;
+    ;; TRANSLATION
     ;; OPEN
     (s1 (:alt (:it "Tenore à due voci.")
               (:de "")

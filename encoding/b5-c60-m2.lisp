@@ -6,7 +6,7 @@
    ;; JK: Dieser Titel soll im Haupttext erscheinen (im Moment dort nicht codiert), und im
    ;; Musikbeispiel gelöscht werden. Das erfordert Rolf.
    ;;
-   ;; DONE
+   ;; OPEN
 
    ;; (:title (:alt (:it "Da 20 a 21 è la proportione del semitono minore, et del diesis maggiore,\\& da 13 a 14 è la proportione del semitono maggiore")
    ;;               (:de "Von 20 zu 21 ist die Proportion des semitono minore und der diesis maggiore,\\und von 13 zu 14 ist die Proportion des semitono maggiore.")

@@ -15,7 +15,8 @@
     ;; JK: hier waren die Überschriften falsch gesetzt, ich habe sie neu verteilt und die Texte
     ;; angepasst. Das muss von Anne geprüft werden.
     ;;
-    ;; JK & LC: Die Titelverteilung wurde nochmals überarbeitet, ist zu prüfen und von der Gruppe zu bestätigen.
+    ;; JK & LC: Die Titelverteilung wurde nochmals überarbeitet, ist zu prüfen und von der Gruppe zu
+    ;; bestätigen.
     ;;
     ;; OPEN
 

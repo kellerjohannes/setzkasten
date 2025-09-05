@@ -32,7 +32,10 @@
      ;; JK: Punkt ist hier nach unten verschoben, stillschweigend idealisiert.
      ;; Soll in den Bericht aufgenommen werden.
      ;;
-     ;; OPEN
+     ;; JK: Wird nicht im Bericht erwähnt, entsprechend ähnlicher Fälle, die mit LC abgesprochen
+     ;; sind.
+     ;;
+     ;; DONE
      (1954 nil "4. quinta."))
    (:music 2225
            (:voice v1)

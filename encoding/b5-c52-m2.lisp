@@ -6,9 +6,13 @@
    (:title (:alt (:it "[Ascendenza di Are quinto fin Alamire quinto,\\con la divisione del tono in quattro parti,\\e con la divisione delli semitoni minori e maggiori]")
                  ;; AS und MK: neu übersetzen
                  ;;
+                 ;; TRANSLATION
                  ;; OPEN
                  (:de "")
                  (:en "")))
+   ;; JK: Andere Sprachen verschieben
+   ;;
+   ;; OPEN
    (:section-headings
     (s1 (:alt (:it "Tono cromatico\\accidentale\\[ascendente]\\ \\Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis minore – diesis maggiore")
               (:de "tono cromatico\\accidentale\\aufsteigend")
@@ -127,13 +131,13 @@
    (:text 70 58
           (48 nil "ᴅ.mi.d.mi.di.mi.d.ma.")
           (610 (:alt (:diplomatic 593) (:critical 680))
-           nil
-           (:alt (:diplomatic "d.mi.d.mi.d.mi.d.mi.")
-                 (:critical "d.mi.d.mi.d.mi.")
-                 (:coord-barre "TZ2 TE2")
-                 (:coord-norm "G2 US")
-                 (:comment "In allen Exemplaren: »d.mi.d.mi.d.mi.d.mi.«.")
-                 (:flag :ready) (:id 2)))
+               nil
+               (:alt (:diplomatic "d.mi.d.mi.d.mi.d.mi.")
+                     (:critical "d.mi.d.mi.d.mi.")
+                     (:coord-barre "TZ2 TE2")
+                     (:coord-norm "G2 US")
+                     (:comment "In allen Exemplaren: »d.mi.d.mi.d.mi.d.mi.«.")
+                     (:flag :ready) (:id 2)))
           (1118 nil "d.mi. d.mi. d.mi. d.ma.")
           (1704 nil "d.mi.d.mi.d.mi.d.ma."))
    (:text 110 58

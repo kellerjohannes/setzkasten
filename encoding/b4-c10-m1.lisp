@@ -1,7 +1,7 @@
-;; OPEN
-;;
 ;; LC: Würde G5 anders notieren (als semibrevis/minima, alles mit geschwärzten Notenköpfen). Er
 ;; zweifelt auch an der Auflösung von G3.
+;;
+;; OPEN
 
 `((:header
    (:filename "b4-c10-m1")
@@ -64,8 +64,8 @@
               (:en "Called singing alla breve by practical [musicians]")))))
   (:data
    (:text 90 58
-     (163 1037 "Eſſempio delle note colorite nel canto fermo")
-     (1615 587 "ᴄolorite nel tēpo perfetto"))
+          (163 1037 "Eſſempio delle note colorite nel canto fermo")
+          (1615 587 "ᴄolorite nel tēpo perfetto"))
    (:music 2209
            (:voice v1)
            (:section s1) (:f-clef) max5 fclef5
@@ -88,8 +88,8 @@
                  (:flag :ready) (:id 2))
            met-3-2 b22 br0 sb1 (:color-start) brbl3 b22 brbl2 b22 (:color-stop) brbl4 bl)
    (:text 90 58
-     (168 691 "ᴄolorite nel tempo imperfetto")
-     (1618 593 "ᴄolorite nellʼEmiolia mag."))
+          (168 691 "ᴄolorite nel tempo imperfetto")
+          (1618 593 "ᴄolorite nellʼEmiolia mag."))
    (:music 2214
            (:section s3) (:newline) cclef7 b22 met-imperf-min-dim b22 m1 dot2 sm2 b22 m3 b22 sb4 b22 m5 b22
 
@@ -129,8 +129,8 @@
                  (:coord-norm "")
                  (:comment "") (:flag :draft) (:id 0)))
    (:text 90 58
-     (259 661 "ᴄolorite nellʼᴇmiolia minore")
-     (1290 834 "ᴄantar alla breue detto da Prattici."))
+          (259 661 "ᴄolorite nellʼᴇmiolia minore")
+          (1290 834 "ᴄantar alla breue detto da Prattici."))
    (:music 2206
            (:section s5) (:newline) cclef7 b22 met-imperf-min-dim b22 met-3
 

@@ -6,9 +6,13 @@
    (:title (:alt (:it "[Ascendenza di Are terzo fin Alamire terzo,\\con la divisione del tono in quattro parti,\\e con la divisione delli semitoni minori e maggiori]")
                  ;; AS und MK: neu übersetzen
                  ;;
+                 ;; TRANSLATION
                  ;; OPEN
                  (:de "")
                  (:en "")))
+   ;; JK: Andere Sprachen verschieben
+   ;;
+   ;; OPEN
    (:section-headings
     (s1 (:alt (:it "Tono cromatico\\accidentale\\[ascendente]\\ \\Semitono minore:\\diesis minore – diesis minore\\Semitono maggiore:\\diesis minore – diesis maggiore")
               (:de "tono cromatico\\accidentale\\aufsteigend")

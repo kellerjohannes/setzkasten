@@ -14,6 +14,7 @@
               (:de "noch gänzlich nicht bewegbare voci,\\chromatisches Genus")
               ;; AS: Kontrollieren, Übersetzung angepasst
               ;;
+              ;; TRANSLATION
               ;; OPEN
               (:en "nor completely immobile voci,\\chromatic genus"))))
    (:line-headings

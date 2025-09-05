@@ -3,10 +3,12 @@
    (:alt-name "m3.073")
    (:comment "q021_s115, rotation: 0, origin: 455")
    (:creator "Vicentino21 / Johannes Keller")
-   ;; OPEN
-   ;;
    ;; Anne und Martin: Der Haupttitel wurde in zwei Überschriften aufgeteilt, sind sie so noch
    ;; sprachlich korrekt und konsistent?
+   ;;
+   ;; JK: Ich sehe keinen Grund, warum das nochmals explizit diskutiert werden soll.
+   ;;
+   ;; DONE
    (:line-headings
     (:alt (:it "Essempio delle Cadentie minori.")
           (:de "Beispiel der minori Kadenzen")
@@ -29,8 +31,8 @@
                  (:en "Bass")))))
   (:data
    (:text 90 58
-     (179 769 "Eſſempio delle ᴄadentie minori.")
-     (1118 615 "ᴇt delle cadentie minime."))
+          (179 769 "Eſſempio delle ᴄadentie minori.")
+          (1118 615 "ᴇt delle cadentie minime."))
    (:music 2233
            (:voice v1)
            (:section s1) cclef1 b38
@@ -46,7 +48,7 @@
            (:section s4) b22 b22 sm5d b22 m8 b22 b22 sm7 b22 sb8 b22 b22 bl
            (:section s5) sm5d sm8 dot8 scr7 b22 scr6 b22 sm7 sb8 bl)
    (:text 110 58
-     (1233 nil "ContrʼAlto."))
+          (1233 nil "ContrʼAlto."))
    (:music 2220
            (:voice v2)
            (:section s1) cclef5 b38 sb6 b38 sb6 b38 sb6 b22 b22 bl
@@ -55,7 +57,7 @@
            (:section s4) b38 sm7 b38 sm9 b38 m9 b38 sb7 b22 bl
            (:section s5) b38 sm7 b38 m9 b38 sm9 b38 sb9 b22 bl)
    (:text 110 58
-     (1200 nil "Tenore."))
+          (1200 nil "Tenore."))
    (:music 2217
            (:voice v3)
            (:section s1) cclef7 b38 sb6 b38 sb5 b38 sb4 b38 b22 bl
@@ -71,7 +73,7 @@
            (:section s4) b22 b38 m4 b38 b22 m8 b38 b22 sb4 b22 b22 bl
            (:section s5) b22 sm7 b38 sm9 b38 m8 b38 sb7 b38 bl)
    (:text 110 58
-     (1208 nil "Baſso."))
+          (1208 nil "Baſso."))
    (:music 2225
            (:voice v4)
            (:section s1) (:f-clef) max7 fclef7 b22 sb1 b38 sb5 b38 sb1 b38 bl

@@ -696,6 +696,8 @@
          ;; TODO JK kontrolliert mit Rolf, ob dieser Abschnitt auch im Haupttext steht.
          ;; TODO JK ergänzt diesen Abschnitt in der modernen Notation
          ;;
+         ;; JK: alles erledigt, kontrolle durch Rolf ausstehend.
+         ;;
          ;; OPEN
          (:comment "Dieser Text (»Qui finiscono ...«) kann entweder im Notenbeispiel oder im Haupttext erscheinen. Ist zu diskutieren. Im Moment steht er in der diplomatischen und idealisierten Transkription, nicht aber in der normalisierten.")
          (:flag :observe) (:id 16))))

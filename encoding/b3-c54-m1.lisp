@@ -3,14 +3,12 @@
    (:alt-name "m3.117")
    (:comment "q021_s138, origin: 950 et al.; q021_s139, rotation: 1.87, origin: 461 et al.; q021_s140, rotation: 0.54, origin: 977 et al.")
    (:creator "Vicentino21 / Johannes Keller")
-   ;; JK
+   ;; Deutsch und Englisch: Anführungs- und Schlusszeichen ergänzen. Gleich wie Italienisch?
    ;;
    ;; OPEN
-   ;;
-   ;; Deutsch und Englisch: Anführungs- und Schlusszeichen ergänzen. Gleich wie Italienisch?
-   (:title (:alt (:it "[«Musica prisca caput»]")
-                 (:de "[Musica prisca caput]")
-                 (:en "[Musica prisca caput]")))
+   (:title (:alt (:it "[»Musica prisca caput«]")
+                 (:de "[»Musica prisca caput«]")
+                 (:en "[»Musica prisca caput«]")))
    (:voice-labels
     (s1 v1 (:alt (:it "[Soprano]")
                  (:de "[Soprano]")

@@ -6,6 +6,7 @@
    (:title (:alt (:it "[Esempio delle note scritte secondo l'uso cromatico e\\cromatico enarmonico nelle tre chiavi]")
                  ;; AS, MK: Neu zu übersetzen.
                  ;;
+                 ;; TRANSLATION
                  ;; OPEN
                  (:de "")
                  (:en "")))

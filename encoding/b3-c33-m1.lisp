@@ -89,9 +89,9 @@
                  (:en "Cadence of the tenor")))
     ;; JK: Hier könnte "Cadentia del basso" für alle übrigen sections ergänzt werden. Zu diskutieren.
     ;;
-    ;; GROUP !
-    ;; DONE
     ;; LC und JK: Haben wir nun ergänzt, ist damit erledigt.
+    ;;
+    ;; DONE
     (s1 v4 (:alt (:it "[Cadentia del Basso]")
                  (:de "[Kadenz des Basso]")
                  (:en "[Cadence of the bass]")))

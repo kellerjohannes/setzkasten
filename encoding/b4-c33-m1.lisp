@@ -3,12 +3,14 @@
    (:alt-name "m4.026")
    (:comment "q021_s180, rotation: 0, origin: 1025")
    (:creator "Vicentino21 / Johannes Keller")
-        ;; AS: Is there any reason that the second section is significantly higher on the page than the others?
+   ;; AS: Is there any reason that the second section is significantly higher on the page than the
+   ;; others?
    ;;
    ;; OPEN
 
    ;; JK: Titel ergänzt, muss übersetzt werden.
    ;;
+   ;; TRANSLATION
    ;; OPEN
    (:title (:alt (:it "[Canone] All'undecima")
                  (:de "in der undecima")

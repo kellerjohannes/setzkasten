@@ -5,7 +5,12 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio del sesto Modo per ♭ molle,\\della Musica participata & mista,\\con l'ottaua sotto il fine,\\e la quinta sotto il fine della sua quarta.")
                  (:de "Beispiel des sechsten Modus per ♭ molle\\der musica participata und mista,\\mit der ottava unter der Finalis\\und der quinta unter der Finalis als ihre quarta")
-                 ;; LUIGI: Ist die Übersetzung korrekt? Ich würde schreiben: ...der quinta unter der Finalis seiner quarta (d.h. eine Quinte unter der Quarte der Finalis Fa2 > Do2 > Fa1)
+                 ;; LUIGI: Ist die Übersetzung korrekt? Ich würde schreiben: ...der quinta unter der
+                 ;; Finalis seiner quarta (d.h. eine Quinte unter der Quarte der Finalis Fa2 > Do2 >
+                 ;; Fa1)
+                 ;;
+                 ;; MARTIN
+                 ;;
                  ;; OPEN
                  (:en "Example of the sixth mode in ♭ molle,\\of musica participata e mista,\\with the ottava below the final,\\and the quinta below the final as its quarta"))))
   (:data

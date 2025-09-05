@@ -4,11 +4,14 @@
    (:comment "q021_s110, origin: 945")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio di molte Cadentie del terzo Modo [à quattro uoci,]\\della Musica participata & mista, per ♮ quadro.")
-                 (:de "Beispiel von vielen Kadenzen des dritten Modus\\der musica participata und mista per ♮ quadro")
-                 (:en "Example of many cadences of the third mode\\of musica participata and mista in ♮ quadro")))
+                 (:de "Beispiel von vielen Kadenzen des dritten Modus, mit vier Stimmen,\\der musica participata und mista per ♮ quadro")
+                 (:en "Example of many cadences of the third mode, in four voices,\\of musica participata and mista in ♮ quadro")))
    (:voice-labels
-   ;; LUIGI: Ich würde [à quattro uoci,] einfügen: Es fehlt nur hier.
-   ;;OPEN
+    ;; LC: Ich würde [à quattro uoci,] einfügen: Es fehlt nur hier.
+    ;;
+    ;; JK: habe ich in den beiden Übersetzungen ergänzt.
+    ;;
+    ;; DONE
     (s1 v1 (:alt (:it "Cadentie del Soprano")
                  (:de "Kadenzen des Soprano")
                  (:en "Cadences of the soprano")))

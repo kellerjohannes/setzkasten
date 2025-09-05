@@ -3,20 +3,18 @@
    (:alt-name "m3.116")
    (:comment "q021_s136, origin: 966 et al.; q021_s137, rotation: 1.25, origin: 491")
    (:creator "Vicentino21 / Johannes Keller")
-   ;; JK
+   ;; Deutsch und Englisch: Anführungs- und Schlusszeichen ergänzen. Gleich wie Italienisch?
    ;;
    ;; OPEN
-   ;;
-   ;; Deutsch und Englisch: Anführungs- und Schlusszeichen ergänzen. Gleich wie Italienisch?
-   (:title (:alt (:it "[«Madonna il poco dolce»]")
-                 (:de "[Madonna il poco dolce]")
-                 (:en "[Madonna il poco dolce]")))
+   (:title (:alt (:it "[»Madonna il poco dolce«]")
+                 (:de "[»Madonna il poco dolce«]")
+                 (:en "[»Madonna il poco dolce«]")))
    (:voice-labels
-    ;;Kommentar Anne: you don't give us the possibility of translating these to German and English here.
+    ;; Kommentar Anne: you don't give us the possibility of translating these to German and English here.
     ;;
     ;; JK: Oha, ja, habe ich vorbereitet.
     ;;
-    ;; OPEN
+    ;; DONE
     (s1 v1 (:alt (:it "Soprano")
                  (:de "Soprano")
                  (:en "Soprano")))

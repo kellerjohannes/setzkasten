@@ -6,6 +6,7 @@
    (:title (:alt (:it "[I toni che non sono del tutto mobili,\\né del tutto immobili, alzati una quinta]")
                  ;; AS und MK: neu übersetzen
                  ;;
+                 ;; TRANSLATION
                  ;; OPEN
                  (:de "")
                  (:en "")))

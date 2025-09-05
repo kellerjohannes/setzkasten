@@ -4,10 +4,13 @@
    (:comment "q021_s097, rotation: 0.96, origin: 544")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio del secondo Modo per musica finta,\\& è simile alla [Musica] participata & mista.")
-                 (:de "Beispiel des zweiten Modus per musica finta,\\und es ist ähnlich zur [musica] participata und mista.")
-                 (:en "Example of the second mode in musica finta,\\ and it is similar to the participata and mista"))))
-                 ;; LUIGI for ANN: 'Musica' to add also in the title in english?
-                 ;; OPEN
+                 (:de "Beispiel des zweiten Modus per musica finta,\\und es ist ähnlich zur musica participata und mista.")
+                 (:en "Example of the second mode in musica finta,\\ and it is similar to the musica participata and mista"))))
+  ;; LUIGI for ANN: 'Musica' to add also in the title in english?
+  ;;
+  ;; JK: habe ich ergänzt
+  ;;
+  ;; DONE
   (:data
    (:text 90 58
           (151 1939 "Eſſempio del ſecondo Modo per muſica finta, & è ſimile alla participata & miſta."))

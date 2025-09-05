@@ -6,6 +6,7 @@
    (:title (:alt (:it "[Ascendenza di Are quarto fin Alamire quarto,\\con la divisione del tono in quattro parti,\\e con la divisione delli semitoni maggiori e minori]")
                  ;; AS und MK: neu übersetzen
                  ;;
+                 ;; TRANSLATION
                  ;; OPEN
                  (:de "")
                  (:en "")))

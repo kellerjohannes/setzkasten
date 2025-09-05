@@ -5,6 +5,7 @@
    (:creator "Vicentino21 / Johannes Keller")
    ;; JK: Titel ergänzt, muss übersetzt werden.
    ;;
+   ;; TRANSLATION
    ;; OPEN
    (:title (:alt (:it "[Essempi del Modo di comporre à tre uoci.]")
                  (:de "")

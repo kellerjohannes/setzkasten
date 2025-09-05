@@ -3,9 +3,10 @@
    (:alt-name "m3.119")
    (:comment "q021_s143, rotation: 1.02, origin: 448")
    (:creator "Vicentino21 / Johannes Keller")
-   ;; OPEN
-   ;;
    ;; JK: Titel ergänzt, muss übersetzt werden.
+   ;;
+   ;; TRANSLATION
+   ;; OPEN
    (:title (:alt (:it "[Essempio delle uoci mobili & immobili.]")
                  (:de "")
                  (:en "")))

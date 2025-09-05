@@ -1,6 +1,3 @@
-;; JK&LC Lektorat, Lesezeichen. Achtung, bis b5-c38 hat JK alle Überschriften (:line-headings) ergänzt und die Intervalle darin angepasst. Alle übrigen Eingriffe stehen noch aus:
-;; - Standard-Titel ([Consonanze di ...])
-
 `((:header
    (:filename "b5-c24-m1")
    (:alt-name "m5.020")
@@ -8,8 +5,11 @@
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "[Consonanze di Elami quarto]")
                  ;; AS: Sollte nicht auch im italienischen, es "Elami acuto [quarto]" heissen?
+                 ;;
                  ;; kir: ja!
+                 ;;
                  ;; JK: Andere Lösung: an den Standard dieser Kapitel angepasster ergänzter Titel.
+                 ;;
                  ;; DONE
                  (:de "Konsonanzen von Elami quarto.")
                  (:en "Consonances of Elami quarto")))

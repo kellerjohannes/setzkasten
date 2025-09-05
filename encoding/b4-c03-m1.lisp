@@ -14,7 +14,7 @@
     ;; automatisch trotzdem produziert wurde. Wichtig ist hier nur, dass das Fake-Simile stimmt, und
     ;; das scheint mir der Fall zu sein. Einverstanden?
     ;;
-    ;; OPEN
+    ;; DONE
     (s1 (:alt (:it "Esempio del modo\\maggiore perfetto")
               (:de "Beispiel des Modus\\maior perfectus")
               (:en "Example of the major\\perfect modus")))

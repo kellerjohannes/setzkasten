@@ -3,9 +3,13 @@
    (:alt-name "m3.098")
    (:comment "q021_s126, origin: 980")
    (:creator "Vicentino21 / Johannes Keller")
-   ;; OPEN
-   ;;
    ;; JK und LC: Titel ergänzt, falls akzeptiert, muss er übersetzt werden.
+   ;;
+   ;; JK: soll so ergänzt werden.
+   ;;
+   ;; TRANSLATION
+   ;;
+   ;; OPEN
    (:title (:alt (:it "[Essempio di tre quinte differenti, dei generi musicali, della terza spetie delle quinte.]")
                  (:de)
                  (:en)))

@@ -6,6 +6,7 @@
    (:title (:alt (:it "[I toni delle corde stabili del primo ordini, con i suoi semitoni]")
                  ;; AS und MK: neu übersetzen
                  ;;
+                 ;; TRANSLATION
                  ;; OPEN
                  (:de "")
                  (:en "")))

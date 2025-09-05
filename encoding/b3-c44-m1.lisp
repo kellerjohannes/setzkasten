@@ -3,14 +3,14 @@
    (:alt-name "m3.092")
    (:comment "q021_s123, rotation: 1.26, origin: 501 et al.; q021_s124, origin: 958 et al.")
    (:creator "Vicentino21 / Johannes Keller")
-   (:title (:alt (:it "[«Alleluia»]")
-                 ;; JK
+   (:title (:alt (:it "[»Alleluia«]")
+                 ;; Deutsch und Englisch: Anführungs- und Schlusszeichen ergänzen. Gleich wie Italienisch?
+                 ;;
+                 ;; JK: Martin per E-Mail angefragt.
                  ;;
                  ;; OPEN
-                 ;;
-                 ;; Deutsch und Englisch: Anführungs- und Schlusszeichen ergänzen. Gleich wie Italienisch?
-                 (:de "[«Alleluia»]")
-                 (:en "[«Alleluia»]")))
+                 (:de "[»Alleluia«]")
+                 (:en "[»Alleluia«]")))
    (:voice-labels
     (s1 v1 (:alt (:it "[Soprano]")
                    (:de "[Soprano]")

@@ -14,6 +14,7 @@
               (:en ""))))
    ;; JK: Titel zu übersetzen.
    ;;
+   ;; TRANSLATION
    ;; OPEN
    (:section-captions
     (s1 (:alt (:it "Soprano riuersciato in Tenore alla quinta sotto al Canto fermo.")

@@ -4,10 +4,13 @@
    (:comment "q021_s113, rotation: 1.31, origin: 513")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Essempio di molte Cadentie dell'ottavo modo [à quattro uoci,] della musica participata e mista [per ♮ quadro].")
-                 (:de "Beispiel von vielen Kadenzen des achten Modus der musica participata und mista")
-                 (:en "Example of many cadences of the eighth mode, of musica participata and mista")))
-                 ;; LUIGI: Ich würde [à quattro uoci,] und [per ♮ quadro] einfügen.
-                 ;;OPEN
+                 (:de "Beispiel von vielen Kadenzen des achten Modus, in vier Stimmen, der musica participata und mista, per ♮ quadro.")
+                 (:en "Example of many cadences of the eighth mode, in four voices, of musica participata and mista, per ♮ quadro")))
+   ;; LC: Ich würde [à quattro uoci,] und [per ♮ quadro] einfügen.
+   ;;
+   ;; JK: Habe ich in beiden Übersetzungen ergänzt.
+   ;;
+   ;; OPEN
    (:voice-labels
     (s1 v1 (:alt (:it "Cadentie del Soprano")
                  (:de "Kadenzen des Soprano")

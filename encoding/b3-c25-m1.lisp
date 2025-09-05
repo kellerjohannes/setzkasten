@@ -4,11 +4,15 @@
    (:comment "q021_s103, origin: 516")
    (:creator "Vicentino21 / Johannes Keller")
    (:title (:alt (:it "Cadentie Diatoniche del Soprano [del Contr'alto,\\del Tenore, del Basso], à quattro uoci.")
-                 (:de "Diatonische Kadenzen des Soprano, des Contr'alto,\\des Tenore und des Basso")
-                 (:en "Diatonic cadential figures of the soprano, of the alto,\\of the tenor and of the bass")))
+                 (:de "Diatonische Kadenzen des Soprano, des Contr'alto,\\des Tenore und des Basso, mit vier Stimmen.")
+                 (:en "Diatonic cadential figures of the soprano, of the alto,\\of the tenor and of the bass, with four voices")))
    (:voice-labels
-   ;; LUIGI: Wenn wir das Original korrigieren, wäre mein Vorschlag: 'Cadentie Diatoniche del Soprano [del Contr'alto,\\del Tenore, del Basso], à quattro uoci.'
-   ;;OPEN
+    ;; LC: Wenn wir das Original korrigieren, wäre mein Vorschlag: 'Cadentie Diatoniche del Soprano
+    ;; [del Contr'alto,\\del Tenore, del Basso], à quattro uoci.'
+    ;;
+    ;; JK: habe ich in den beiden Übersetzungen entsprechend angepasst.
+    ;;
+    ;; DONE
     (s1 v1 (:alt (:it "Soprano")
                  (:de "Soprano")
                  (:en "Soprano")))
