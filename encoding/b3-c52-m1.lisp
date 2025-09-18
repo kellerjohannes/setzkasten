@@ -2,6 +2,12 @@
 ;;
 ;; OPEN
 
+;; JK: Die drei aufgenommenen Varianten sind sauber herzustellen (im Moment nur für Adamske als
+;; standalone angelegt). Rolf ist zu informieren, dass die hypothetischen Fassungen im
+;; Kapitelkommentar erscheinen sollen.
+;;
+;; OPEN
+
 `((:header
    (:filename "b3-c52-m1")
    (:alt-name "m3.115")

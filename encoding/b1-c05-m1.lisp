@@ -5,6 +5,18 @@
 ;; JK: Alle 'OPEN'-Kommentare sollen zusätzlich getagged werden (z.B. mit GROUP), für eine
 ;; schnellere Besprechung in der Gruppe bzw. einzelnen Beteiligten.
 ;;
+;; DONE
+
+;; Guillements und englische quotation marks auswechseln
+;;
+;; OPEN
+
+;; Verweise im krit. Bericht ausschreiben.
+;;
+;; OPEN
+
+;; Eckige Klammern in Übersetzungen überarbeiten.
+;;
 ;; OPEN
 
 `((:header
